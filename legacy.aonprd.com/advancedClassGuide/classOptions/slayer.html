@@ -1,0 +1,451 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Slayer</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "slayer.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "slayer.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "slayer.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../spells/index.html">Spells</a></li>
+						<li><a href = "../spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "slayer.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "slayer.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "slayer.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "slayer.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "slayer.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "slayer.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "slayer.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "slayer.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "slayer.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "slayer.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "slayer.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "slayer.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "slayer.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "slayer.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "slayer.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "slayer.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "slayer.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "slayer.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+<h1>Slayer</h1>
+<p>Slayers excel at hunting down targets and taking them out. Some do this for a bounty, some to cleanse the world of the filth of the undead, and some because it's what they're good at. The most fearsome hunt and kill because they enjoy it.</p>
+
+	<h2 id="combat-style">Combat Style</h2>
+	<p>The following combat style is available to rangers, slayers, and other classes that can use ranger combat styles.</p>
+	<p id="thrown-weapon"><strong>Thrown Weapon</strong>: If the character selects thrown weapon, he can choose from the following list whenever he gains a combat style feat: <a href="../../ultimateCombat/ultimateCombatFeats.html#distance-thrower">Distance Thrower</a>, Precise Shot, Quick Draw, Two-Weapon Fighting. At 6th level, he adds <a href="../../ultimateCombat/ultimateCombatFeats.html#close-quarters-thrower">Close-Quarters Thrower</a> and <a href="../../ultimateCombat/ultimateCombatFeats.html#false-opening">False Opening</a> to the list. At 10th level, he adds Pinpoint Targeting and Shot on the Run to the list.</p>
+
+	<h2 id="bounty-hunter-archetype">Bounty Hunter (Archetype)</h2>
+	<p>Whether tasked with bringing in wanted criminals or paid to drag debtors back to their loan sharks, bounty hunters are valued for their ability to capture targets alive. </p>
+	<p id="bounty-hunter-proficiencies"><strong>Weapon and Armor Proficiency</strong>: A bounty hunter is proficient with all simple and martial weapons plus the aklys, bolas, dan bong, lasso, and net. Bounty hunters are proficient with light armor, light shields, and bucklers, but not with heavy shields or tower shields. This ability replaces the slayer's weapon and armor proficiency. </p>
+	<p id="dirty-trick"><strong>Dirty Trick (Ex)</strong>: At 2nd level, anytime a bounty hunter is able to deal sneak attack damage to a studied target, he can instead attempt to hamper the target. The bounty hunter must declare that he's using this ability before the attack roll is made. If the attack hits, it deals damage normally, but instead of rolling sneak attack damage, the bounty hunter can attempt a dirty trick combat maneuver against the studied target as a free action, adding 1 to the combat maneuver check for each die of the bounty hunter's sneak attack damage. This combat maneuver does not provoke attacks of opportunity. This ability replaces the slayer talent gained at 2nd level.</p>
+	<p id="submission-hold"><strong>Submission Hold (Ex)</strong>: At 6th level, when a bounty hunter attempts a grapple combat maneuver check to deal damage, he can choose to add his sneak attack damage to the grapple damage for that attack. He takes a &ndash;5 penalty on the combat maneuver check if he does this. This sneak attack damage is nonlethal damage, unless the bounty hunter is able to deal normal damage with a grapple and chooses to do so. This ability replaces the slayer talent gained at 6th level.</p>
+	<p id="incapacitate"><strong>Incapacitate (Ex)</strong>: At 10th level, a bounty hunter can incapacitate a studied target. This ability functions as the assassinate slayer talent, except instead of killing the target, the bounty hunter's successful attack knocks the target unconscious for 1d6 rounds unless it succeeds at its saving throw. If the target does succeed, it still takes the sneak attack damage as normal, but the damage is nonlethal, and the target is immune to that slayer's incapacitate ability for 24 hours. This ability replaces the advanced slayer talent gained at 10th level.</p>
+	<p id="bounty-hunter-slayer-talents"><strong>Slayer Talents</strong>: The following slayer talents (and rogue talents) complement the bounty hunter archetype: <a href="../../advancedPlayersGuide/coreClasses/rogue.html#">camouflage</a>, fast stealth, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#hard-to-fool">hard to fool</a>, <a href="../classes/slayer.html#slowing-strike">slowing strike</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#snap-shot">snap shot</a>, surprise attack, and <a href="../../ultimateCombat/classArchetypes/rogue.html#terrain-mastery">terrain mastery</a>. </p>
+	<p id="bounty-hunter-advanced-slayer-talents"><strong>Advanced Slayer Talents</strong>: The following advanced slayer talents (and advanced rogue talents) complement the bounty hunter archetype: <a href="../../advancedPlayersGuide/coreClasses/rogue.html#hunters-surprise">hunter's surprise</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#knock-out-blow">knock-out blow</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#master-of-disguise">master of disguise</a>, and <a href="../classes/slayer.html#woodland-stride">woodland stride</a>.</p>
+
+	<h2 id="cleaner-archetype">Cleaner (Archetype)</h2>
+	<p>A cleaner is responsible for destroying or removing incriminating evidence from a crime scene, disposing of corpses and eliminating witnesses as necessary to make a crime look like an accident or a mere disappearance. </p>
+	<p id="deceitful"><strong>Deceitful</strong>: At 1st level, a cleaner becomes skilled at deceiving others, and gains Deceitful as a bonus feat. This ability replaces track.</p>
+	<p id="without-a-trace"><strong>Without a Trace (Ex)</strong>: At 4th level, a cleaner is able to study a location, conceal evidence, and hide in or extricate himself quickly from that location. Studying a location takes 1 minute for each 10-foot square. Once he has studied an area, the cleaner can attempt a <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> check to alter evidence or a <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> check to conceal evidence (by cleaning up bloodstains, obscuring footprints, moving a dead body, and so on). Altering a location takes 1d3 &times; 10 minutes of work per 10-foot square. Anyone attempting to determine what actually happened in that area must succeed at an opposed <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> check against the result of the cleaner's <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> or <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> check (cleaner's choice) or accept the altered scene as truth. The cleaner gains a +4 bonus on this check, on <a href="../../coreRulebook/skills/sleightOfHand.html#sleight-of-hand">Sleight of Hand</a> checks to hide objects from that location on his person, and on <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> checks to hide within or escape from that location. The benefits of this ability last as long as the location remains unaltered (except by the cleaner). This ability replaces the slayer talent gained at 4th level.</p>
+	<p id="misdirection"><strong>Misdirection (Sp)</strong>: At 7th level, a cleaner can cast <a href="../../coreRulebook/spells/misdirection.html#misdirection"><em>misdirection</em></a> on himself at will. This benefit lasts until the cleaner uses the ability again or ends the effect as a standard action. This ability replaces stalker.</p>
+	<p id="cleaner-slayer-talents"><strong>Slayer Talents</strong>: The following slayer talents (and rogue talents) complement the cleaner archetype: <a href="../../advancedPlayersGuide/coreClasses/rogue.html#camouflage">camouflage</a>, fast stealth, <a href="../classes/slayer.html#foil-scrutiny">foil scrutiny</a>, rogue crawl, surprise attack, and <a href="../../ultimateCombat/classArchetypes/rogue.html#terrain-mastery">terrain mastery</a>. </p>
+	<p id="cleaner-advanced-slayer-talents"><strong>Advanced Slayer Talents</strong>: The following advanced slayer talents (and advanced rogue talents) complement the cleaner archetype: <a href="../classes/slayer.html#assassinate">assassinate</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#knock-out-blow">knock-out blow</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#master-of-disguise">master of disguise</a>, and <a href="../classes/slayer.html#slayer-camouflage">slayer camouflage</a>.</p>
+
+	<h2 id="cutthroat-archetype">Cutthroat (Archetype)</h2>
+	<p>Street-smart and extremely resourceful, cutthroats stalk city streets and alleyways, preying on those unfortunate enough to catch their eye. More opportunists than careful planners, they don't care who they victimize, and they take advantage of whatever circumstances put them near a suitable target.</p>
+	<p id="cutthroat-class-skills"><strong>Class Skills</strong>: A cutthroat gains <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a>, <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nobility), and <a href="../../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a> as class skills, but does not gain <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (dungeoneering), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (geography), or <a href="../../coreRulebook/skills/survival.html#survival">Survival</a> as class skills.</p>
+	<p id="Street Stalker (Ex)"><strong>Street Stalker (Ex)</strong>: At 1st level, a cutthroat selects <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a>, <a href="../../coreRulebook/skills/climb.html#climb">Climb</a>, or <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (local) . Once selected, this skill cannot be changed. When in urban environments, the cutthroat adds 1/2 his slayer level (minimum 1) to checks attempted with this skill. This ability replaces track.</p>
+	<p id="opportune-target"><strong>Opportune Target (Ex)</strong>: At 2nd level, a cutthroat who catches a foe by surprise can quickly study that foe to find its weaknesses. If a cutthroat can act in the surprise round, once during that surprise round he can study a foe as a free action (instead of a move action) and select it as his studied target. This ability replaces the slayer talent gained at 2nd level.</p>
+	<p id="stab-and-grab"><strong>Stab and Grab (Ex)</strong>: At 6th level, as a swift action a cutthroat can attempt a steal combat maneuver against a dead or unconscious target or a studied target he has just confirmed a critical hit against. A dead or unconscious opponent takes a &ndash;10 penalty to its CMD against this maneuver. This ability replaces the slayer talent gained at 6th level.</p>
+	<p id="cutthroat-slayer-talents"><strong>Slayer Talents</strong>: The following slayer talents (and rogue talents) complement the cutthroat archetype: fast stealth, <a href="../classes/slayer.html#poison-use">poison use</a>, <a href="../classes/slayer.html#slowing-strike">slowing strike</a>, surprise attack, and <a href="../../ultimateCombat/classArchetypes/rogue.html#terrain-mastery">terrain mastery</a>. </p>
+	<p id="Advanced Slayer Talents"><strong>Advanced Slayer Talents</strong>: The following advanced slayer talents (and advanced rogue talents) complement the cutthroat archetype: <a href="../classes/slayer.html#assassinate">assassinate</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#knock-out-blow">knock-out blow</a>, opportunist, and <a href="../classes/slayer.html#slayer-camouflage">slayer camouflage</a>.</p>
+
+	<h2 id="deliverer-archetype">Deliverer (Archetype)</h2>
+	<p>Also known as a divine assassin, god's blade, or wrath-bringer, a deliverer is a weapon chosen by a god to punish those who have committed an affront to that deity. Evil deities are more likely to use assassins than deliverers, but some good deities use deliverers to deal with problems of a subtler nature than a cleric, inquisitor, paladin, or warpriest can typically handle.</p>
+	<p id="deliverer-proficiencies"><strong>Weapon and Armor Proficiency</strong>: A deliverer is proficient with his deity's favored weapon, in addition to the slayer's normal weapon proficiencies. This ability alters the slayer's weapon and armor proficiency.</p>
+	<p id="determined-zeal"><strong>Determined Zeal (Ex)</strong>: At 2nd level, a deliverer shrugs off attempts by his moral opposite to control or kill him. In any round when the deliverer attacks an opponent whose alignment is at least two steps away from his own (such as a lawful good deliverer fighting a chaotic good or lawful evil foe, or a neutral foe with no other alignment components), he gains a +2 bonus on Will saving throws against that opponent's abilities, as well as the benefit of the Diehard feat until the end of his next turn. This ability replaces the slayer talent gained at 2nd level.</p>
+	<p id="true-believer"><strong>True Believer (Ex)</strong>: At 6th level, a deliverer can perform his divine duty even when mortally wounded. In any round in which he gains the benefits of Determined Zeal, he isn't staggered from having negative hit points, nor does he automatically lose 1 hit point per round. This ability replaces the slayer talent gained at 6th level.</p>
+	<p id="divine-anathema"><strong>Divine Anathema (Ex)</strong>: At 10th level, as a free action a deliverer can declare a studied target to be his divine anathema. The studied target's alignment must be at least two steps away from that of the deliverer. Against this target, the deliverer's attacks deal an additional 2d6 points of damage; this damage is directly from divine power and does not stack with the bonus damage from a <em>holy</em> or <em>unholy</em> weapon, or a weapon with a similar weapon special ability or effect. A deliverer can have only one divine anathema at a time. This ability replaces the advanced slayer talent gained at 10th level.</p>
+	<p id="deliverer-slayer-talents"><strong>Slayer Talents</strong>: The following slayer talents (and rogue talents) complement the deliverer archetype: combat trick, finesse rogue, <a href="../classes/slayer.html#foil-scrutiny">foil scrutiny</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#terrain-mastery">terrain mastery</a>, trap spotter, and <a href="../classes/slayer.html#trapfinding">trapfinding. </p>
+	<p id="Advanced Slayer Talents"><strong>Advanced Slayer Talents</strong>: The following advanced slayer talents (and advanced rogue talents) complement the deliverer archetype: <a href="../classes/slayer.html#assassinate">assassinate</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#evasion">evasion</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#hunters-surprise">hunter's surprise</a>, and <a href="../../advancedPlayersGuide/coreClasses/rogue.html#master-of-disguise">master of disguise</a>.</p>
+	<p id="ex-deliverers"><strong>Ex-Deliverers</strong>: A deliverer who grossly violates the code of conduct required by his deity loses all class features granted by this archetype, except for the weapon proficiencies. (He does not gain the slayer class abilities that the archetype replaces.) He cannot thereafter gain levels as a deliverer of that deity until he atones for his deeds (see the <em>atonement</em> spell description).</p>
+
+	<h2 id="grave-warden-archetype">Grave Warden (Archetype)</h2>
+	<p>While paladins and inquisitors use their connection with the divine to fight undead hordes and other horrors of the night, a grave warden relies on knowledge, skill with weapons, and tenacity to put an end to these night-born terrors.</p>
+	<p id="holy-water-sprinkler"><strong>Holy Water Sprinkler (Ex)</strong>: At 2nd level, a grave warden can draw a flask of holy water as if it were a weapon (and can thus use the Quick Draw feat to draw flasks of holy water). As a swift action, he can open a flask of holy water and pour it onto a held or adjacent melee weapon. If the weapon hits an undead creature before the end of the grave warden's next turn, the undead takes damage as if it took a direct hit from the holy water, in addition to the damage from the weapon, if any. This ability replaces the slayer talent gained at 2nd level.</p>
+	<p id="death-ward"><strong>Death Ward (Sp)</strong>: At 7th level, a grave warden learns to perform a short ritual that grants the benefits of <a href="../../coreRulebook/spells/deathWard.html#death-ward"><em>death ward</em></a>, using his slayer level as his caster level. Performing this ritual takes 1 minute and uses 4 flasks of holy water. The grave warden can protect only himself with this ability. This ability replaces stalker.</p>
+	<p id="dustbringer"><strong>Dustbringer (Ex)</strong>: At 10th level, a grave warden can slay a studied undead opponent. This ability functions as the assassinate advanced slayer talent, except it requires a successful Will saving throw instead of a successful Fortitude save, affects only undead, and destroys the target instead of killing it. If the target succeeds at its saving throw, it becomes immune to that grave warden's dustbringer ability for 24 hours. This ability replaces the advanced slayer talent gained at 10th level.</p>
+	<p id="grave-warden-slayer-talents"><strong>Slayer Talents</strong>: The following slayer talents (and rogue talents) complement the deliverer archetype: fast stealth, finesse rogue, surprise attack, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#swift-poison">swift poison</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#terrain-mastery">terrain mastery</a>, trap spotter, and <a href="../../ultimateCombat/classArchetypes/rogue.html#unwitting-ally">unwitting ally</a>.</p>
+	<p id="grave-warden-advanced-slayer-talents"><strong>Advanced Slayer Talents</strong>: The following advanced slayer talents (and advanced rogue talents) complement the grave warden archetype: <a href="../../advancedPlayersGuide/coreClasses/rogue.html#hunters-surprise">hunter's surprise</a> and <a href="../classes/slayer.html#slayer-camouflage">slayer camouflage</a>.</p>
+
+	<h2 id="sniper-archetype">Sniper (Archetype)</h2>
+	<p>Whether it's with a bullet from a sling, a quarrel from a crossbow, or even an expertly thrown dagger, the sniper ensures that a single shot disables his target.</p>
+	<p id="accuracy"><strong>Accuracy (Ex)</strong>: At 1st level, a sniper halves all range increment penalties when making ranged attacks with a bow, a crossbow, or a firearm. This ability replaces track.</p>
+	<p id="deadly-sniper"><strong>Deadly Sniper (Ex)</strong>: At 2nd level, when the sniper makes an attack against a target who is within his weapon's first range increment and completely unaware of his presence, that attack ignores the 30 foot range limit on ranged sneak attacks, and if it is a sneak attack, he adds his sniper level as a bonus on his sneak attack damage roll. After this first attack, the target is aware of the sniper's presence.</p>
+	<p id="sniper-slayer-talents"><strong>Slayer Talents</strong>: The following slayer talents (and rogue talents) complement the sniper archetype: <a href="../../advancedPlayersGuide/coreClasses/rogue.html#camouflage">camouflage</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#snap-shot">snap shot</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#snipers-eye">sniper's eye</a>, and weapon training.</p>
+	<p id="sniper-advanced-slayer-talents"><strong>Advanced Slayer Talents</strong>: The following advanced slayer talents (and advanced rogue talents) complement the sniper archetype: <a href="../../advancedPlayersGuide/coreClasses/rogue.html#deadly-sneak">deadly sneak</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#master-of-disguise">master of disguise</a>, and <a href="../../advancedPlayersGuide/coreClasses/rogue.html#stealthy-sniper">stealthy sniper</a>.</p>
+
+	<h2 id="stygian-slayer-archetype">Stygian Slayer (Archetype)</h2>
+	<p>A stygian slayer crawls out of the darkest shadows to strike fear into the hearts of civilized folk. He's a merciless killer who can control a sliver of magic, allowing him to arrive unseen, commit murder, and depart without detection. </p>
+	<p id="stygian-slayer-proficiencies"><strong>Weapon and Armor Proficiency</strong>: A stygian slayer is proficient with light armor, but not with medium armor, heavy armor, or any kind of shield (including tower shields). This ability replaces the slayer's armor proficiency. </p>
+	<p id="invisibility"><strong>Invisibility (Sp)</strong>: At 4th level, a stygian slayer can cast <em>invisibility</em> once per day, using his slayer level as his caster level. The slayer uses his Intelligence modifier for concentration checks when using this ability. The slayer can use this ability an additional time per day at 8th level and every 4 levels thereafter. This ability replaces the slayer talent gained at 4th level.</p>
+	<p id="spell-use"><strong>Spell Use</strong>: At 7th level, a stygian slayer is able to use spell completion and spell trigger items as if he were an arcane caster with these spells on his spell list: <em>darkness</em>, <a href="../../ultimateMagic/spells/forcedQuiet.html#forced-quiet"><em>forced quiet</em></a>, <a href="../../coreRulebook/spells/modifyMemory.html#modify-memory"><em>modify memory</em></a>, <a href="../../coreRulebook/spells/nondetection.html#nondetection"><em>nondetection</em></a>, <a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist"><em>obscuring mist</em></a>, <a href="../../coreRulebook/spells/phantomSteed.html#phantom-steed"><em>phantom steed</em></a>, <a href="../../coreRulebook/spells/shadowWalk.html#shadow-walk"><em>shadow walk</em></a>, and wizard spells of the illusion school of spell level 0 through 4th. The slayer uses his class level as his caster level for this ability. This ability replaces stalker.</p>
+	<p id="shadowy-mist-form"><strong>Shadowy Mist Form (Sp)</strong>: At 10th level, a stygian slayer can transform into an inky black cloud of mist. This ability functions as <a href="../../coreRulebook/spells/gaseousForm.html#gaseous-form"><em>gaseous form</em></a>, except it also obscures vision as <a href="../../coreRulebook/spells/fogCloud.html"><em>fog cloud</em></a>. The slayer can use this ability for a number of minutes per day equal to his level. The duration does not need to be consecutive, but must be used in 1-minute increments. This ability replaces the advanced slayer talent gained at 10th level.</p>
+	<p id="stygian-slayer-talents"><strong>Slayer Talents</strong>: The following slayer talents (and rogue talents) complement the stygian slayer archetype: bleeding attack, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#lasting-poison">lasting poison</a>, <a href="../classes/slayer.html#poison-use">poison use</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#powerful-sneak">powerful sneak</a>, rogue crawl, slow reactions, surprise attack, and <a href="../../advancedPlayersGuide/coreClasses/rogue.html#swift-poison">swift poison</a>. </p>
+	<p id="stygian-slayer-advanced-slayer-talents"><strong>Advanced Slayer Talents</strong>: The following advanced slayer talents (and advanced rogue talent) complement the stygian slayer archetype: <a href="../classes/slayer.html#assassinate">assassinate</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#hunters-surprise">hunter's surprise</a>, and <a href="../classes/slayer.html#slayer-camouflage">slayer camouflage</a>.</p>
+
+	<h2 id="vanguard-archetype">Vanguard (Archetype)</h2>
+	<p>Vanguards are battlefield commanders who focus on brutally effective combat strategies and lead their allies to bloody victory. Quick to react to danger, a vanguard is a valuable scout, a capable officer, and a skilled tactician.</p>
+	<p id="lookout"><strong>Lookout (Ex)</strong>: At 1st level, a vanguard adds 1/2 his level (minimum 1) to initiative checks. This ability replaces track.</p>
+	<p id="tactician"><strong>Tactician (Ex)</strong>: At 2nd level, a vanguard receives a teamwork feat as a bonus feat. He must meet the prerequisites for this feat. Once per day as a standard action, the vanguard can grant one of his teamwork feats to all allies within 30 feet who can see and hear him. Allies retain the use of this bonus feat for 3 rounds plus 1 round for every 2 levels the vanguard possesses. Allies do not need to meet the prerequisites of this bonus feat. Whenever the vanguard is able to select a new slayer talent, he can instead choose to gain an additional use per day of this ability. This ability replaces the slayer talent gained at 2nd level.</p>
+	<p id="vanguards-bond"><strong>Vanguard's Bond (Ex)</strong>: At 4th level, a vanguard forms a bond with his fighting companions. As a move action, he can choose one of his current studied targets and grant half his studied target bonus against that target to all allies within 30 feet who can see or hear him. This bonus lasts for a number of rounds equal to the slayer's Intelligence modifier (minimum 1). This bonus does not stack with any favored enemy or studied target bonuses possessed by his allies; they use whichever bonus is higher. This ability replaces the slayer talent gained at 4th level.</p>
+	<p id="ever-ready"><strong>Ever Ready (Ex)</strong>: At 7th level, a vanguard is never considered an <a href="../../coreRulebook/combat.html#surprise">unaware combatant</a> and is always able to act in the surprise round. The vanguard is still flat-footed in the surprise round until he acts. This ability replaces stalker.</p>
+	<p id="vanguard-slayer-talents"><strong>Slayer Talents</strong>: The following slayer talents (and rogue talents) complement the vanguard archetype: combat trick, finesse rogue, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#hard-to-fool">hard to fool</a>, rogue crawl, surprise attack, <a href="../../ultimateCombat/classArchetypes/rogue.html#terrain-mastery">terrain mastery</a>, and weapon training. </p>
+	<p id="vanguard-advanced-slayer-talents"><strong>Advanced Slayer Talents</strong>: The following advanced slayer talents (and advanced rogue talents) complement the vanguard archetype: feat, opportunist, <a href="../classes/slayer.html#slayer-camouflage">slayer camouflage</a>, and <a href="../../ultimateCombat/classArchetypes/rogue.html#unwitting-ally">unwitting ally</a>.</p>
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Slayer",globalNavPath=[{ href: '/pathfinderRPG/prd/advancedClassGuide/classOptions/index.html', name: 'Archetypes and Class Options'}];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

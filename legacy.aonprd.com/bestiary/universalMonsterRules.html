@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Universal Monster Rules</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "universalMonsterRules.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "universalMonsterRules.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "universalMonsterRules.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "universalMonsterRules.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "universalMonsterRules.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "universalMonsterRules.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "creatureTypes.html">Creature Types</a></li>
+						<li><a href = "monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "universalMonsterRules.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "universalMonsterRules.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "universalMonsterRules.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "universalMonsterRules.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "universalMonsterRules.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "universalMonsterRules.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "universalMonsterRules.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "universalMonsterRules.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "universalMonsterRules.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "universalMonsterRules.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "universalMonsterRules.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "universalMonsterRules.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "universalMonsterRules.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "universalMonsterRules.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "universalMonsterRules.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id="universal-monster-rules">Universal Monster Rules</h1>
+<p>The following rules are standard and are referenced (but not repeated) in monster stat blocks. Each rule includes a format guide for how it appears in a monster's listing and its location in the stat block. Some mythic abilities from <a href="http://paizo.com/products/btpy8ywe"><em>Pathfinder Roleplaying Game: Mythic Adventures</em></a> are presented here for your convenience, although they are not universal monster rules; these are indicated with a superscript "MA."</p>
+
+<p id = "ability-damage-and-drain"><strong>Ability Damage and Drain (Ex or Su)</strong> Some attacks or special abilities cause ability damage or drain, reducing the designated ability score by the listed amount. Ability damage can be healed naturally. Ability drain is permanent and can only be restored through magic.</p>
+<p><em>Format</em>: 1d4 Str drain; <em>Location</em>: Special Attacks or individual attacks.</p>
+
+<p id = "all-around-vision"><strong>All-Around Vision (Ex)</strong> The creature sees in all directions at once. It cannot be flanked.</p>
+<p><em>Format</em>: all-around vision; <em>Location</em>: Defensive Abilities.</p>
+
+<p id = "amazing-initiative-mythic"><strong>Amazing Initiative<sup>MA</sup> (Ex)</strong> The creature has a bonus on initiative checks equal to its mythic rank. As a free action on its turn, it can expend one use of mythic power to take an additional standard action during that turn. This additional standard action can’t be used to cast a spell. It can’t gain an extra action in this way more than once per round.</p>
+<p><em>Format</em>: amazing initiative; <em>Location</em>: Special Attacks.</p>
+
+<p id = "amorphous"><strong>Amorphous (Ex)</strong> The creature's body is malleable and shapeless. It is immune to precision damage (like sneak attacks) and critical hits.</p>
+<p><em>Format</em>: amorphous; <em>Location</em>: Defensive Abilities.</p>
+
+<p id = "amphibious"><strong>Amphibious (Ex) </strong>Creatures with this special quality have the aquatic subtype, but they can survive indefinitely on land.</p>
+<p><em>Format</em>: amphibious; <em>Location</em>: SQ.</p>
+
+<p id = "attach"><strong>Attach (Ex)</strong> The creature automatically latches onto its target when it successfully makes the listed attack. The creature is considered grappling, but the target is not. The target can attack or grapple the creature as normal, or break the attach with a successful grapple or <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> check. Most creatures with this ability have a racial bonus to maintain a grapple (listed in its CMB entry).</p>
+<p><em>Format</em>: attach; <em>Location</em>: individual attacks.</p>
+
+<p id = "bleed"><strong>Bleed (Ex)</strong> A creature with this ability causes wounds that continue to bleed, inflicting additional damage each round at the start of the affected creature's turn. This bleeding can be stopped by a successful DC 15 <a href="../coreRulebook/skills/heal.html#heal" >Heal</a> skill check or through the application of any magical healing. The amount of damage each round is determined in the creature's entry.</p>
+<p><em>Format</em>: bleed (2d6); <em>Location</em>: Special Attacks and individual attacks.</p>
+
+<p id = "blindsense"><strong>Blindsense (Ex)</strong> Using nonvisual senses, such as acute smell or hearing, a creature with blindsense notices things it cannot see. The creature usually does not need to make <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> checks to pinpoint the location of a creature within range of its blindsense ability, provided that it has line of effect to that creature. Any opponent the creature cannot see still has total concealment against the creature with blindsense, and the creature still has the normal miss chance when attacking foes that have concealment. Visibility still affects the movement of a creature with blindsense. A creature with blindsense is still denied its Dexterity bonus to Armor Class against attacks from creatures it cannot see.</p>
+<p><em>Format</em>: blindsense 60 ft.; <em>Location</em>: Senses.</p>
+
+<p id = "blindsight"><strong>Blindsight (Ex)</strong> This ability is similar to blindsense, but is far more discerning. Using nonvisual senses, such as sensitivity to vibrations, keen smell, acute hearing, or echolocation, a creature with blindsight maneuvers and fights as well as a sighted creature. Invisibility, darkness, and most kinds of concealment are irrelevant, though the creature must have line of effect to a creature or object to discern that creature or object. The ability's range is specified in the creature's descriptive text. The creature usually does not need to make <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> checks to notice creatures within range of its blindsight ability. Unless noted otherwise, blindsight is continuous, and the creature need do nothing to use it. Some forms of blindsight, however, must be triggered as a free action. If so, this is noted in the creature's description. If a creature must trigger its blindsight ability, the creature gains the benefits of blindsight only during its turn.</p>
+<p><em>Format</em>: blindsight 60 ft.; <em>Location</em>: Senses.</p>
+
+<p id = "block-attacks" title = "Pathfinder Roleplaying Game: Bestiary 5"><strong>Block Attacks (Ex)</strong> Once per round, when the creature is hit by a melee or ranged attack, it can attempt a melee attack using its highest attack bonus. If this result exceeds the result from the attack against it, the creature is unaffected by the attack (as if the attack had missed).</p>
+<p><em>Format</em>: block attacks; <em>Location</em>: Defensive Abilities.</p>
+
+<p id = "blood-drain"><strong>Blood Drain (Ex)</strong> The creature drains blood at the end of its turn if it grapples a foe, inflicting Constitution damage.</p>
+<p><em>Format</em>: blood drain (1d2 Constitution); <em>Location</em>: Special Attacks.</p>
+
+<p id = "blood-rage"><strong>Blood Rage (Ex)</strong> When the creature takes damage in combat, on its next turn it can fly into a rage as a free action. It gains +2 Constitution and +2 Strength, but takes a &ndash;2 penalty to its AC. The rage lasts as long as the battle or 1 minute, whichever is shorter. It cannot end its rage voluntarily.</p>
+<p><em>Format</em>: blood rage; <em>Location</em>: Special Attacks.</p>
+
+<p id = "breath-weapon"><strong>Breath Weapon (Su)</strong> Some creatures can exhale a cone, line, or cloud of energy or other magical effects. A breath weapon attack usually deals damage and is often based on some type of energy. Breath weapons allow a Reflex save for half damage (DC 10 + 1/2 breathing creature's racial HD + breathing creature's Con modifier; the exact DC is given in the creature's descriptive text). A creature is immune to its own breath weapon unless otherwise noted. Some breath weapons allow a Fortitude save or a Will save instead of a Reflex save. Each breath weapon also includes notes on how often it can be used, even if this number is limited in times per day.</p>
+<p><em>Format</em>: breath weapon (60-ft. cone, 8d6 fire damage, Reflex DC 20 for half, usable every 1d4 rounds); <em>Location</em>: Special Attacks; if the breath is more complicated than damage, it also appears under Special Abilities with its own entry.</p>
+
+<p id = "burn"><strong>Burn (Ex) </strong>A creature with the burn special attack deals fire damage in addition to damage dealt on a successful hit in melee. Those affected by the burn ability must also succeed on a Reflex save or catch fire, taking the listed damage for an additional 1d4 rounds at the start of its turn (DC 10 + 1/2 burning creature's racial HD + burning creature's Con modifier). A burning creature can attempt a new save as a full-round action. Dropping and rolling on the ground grants a +4 bonus on this save. Creatures that hit a burning creature with natural weapons or unarmed attacks take fire damage as though hit by the burning creature and must make a Reflex save to avoid <a href = "../coreRulebook/environment.html#catching-on-fire">catching on fire</a>.</p>
+<p><em>Format</em>: burn (2d6, DC 15); <em>Location</em>: Special Attacks and individual attacks.</p>
+
+<p id = "capsize-(ex)-"><strong>Capsize (Ex) </strong>A creature with this special quality can attempt to capsize a boat or a ship by ramming it as a charge attack and making a combat maneuver check. The DC of this check is 25, or the result of the captain's <a href="../coreRulebook/skills/profession.html#profession" >Profession</a> (sailor) check, whichever is higher. For each size category the ship is larger than the creature attempting to capsize it, the creature attempting to capsize the ship takes a cumulative &ndash;10 penalty on its combat maneuver check.</p>
+<p><em>Format</em>: capsize; <em>Location</em>: special attacks. </p>
+
+<p id = "change-shape"><strong>Change Shape (Su)</strong> A creature with this special quality has the ability to assume the appearance of a specific creature or type of creature (usually a humanoid), but retains most of its own physical qualities. A creature cannot change shape to a form more than one size category smaller or larger than its original form. This ability functions as a <em><a href="../coreRulebook/spells/polymorph.html#polymorph" >polymorph</a></em> spell, the type of which is listed in the creature's description, but the creature does not adjust its ability scores (although it gains any other abilities of the creature it mimics). Unless otherwise stated, it can remain in an alternate form indefinitely. Some creatures, such as lycanthropes, can transform into unique forms with special modifiers and abilities. These creatures do adjust their ability scores, as noted in their description. </p>
+<p><em>Format</em>: change shape (wolf, <em>beast form I</em>); <em>Location</em>: SQ, and in special abilities for creatures with a unique listing.</p>
+
+<p id = "channel-resistance"><strong>Channel Resistance (Ex) </strong>A creature with this special quality (usually an undead) is less easily affected by clerics or paladins. A creature with channel resistance adds the bonus listed for that creature to saves made to resist the effects of channel energy, including effects that rely on the use of channel energy (such as the <a href="../coreRulebook/feats.html#command-undead" >Command Undead</a> feat).</p>
+<p><em>Format</em>: channel resistance +4; <em>Location</em>: Defensive Abilities.</p>
+
+<p id = "compression"><strong>Compression (Ex)</strong> The creature can move through an area as small as one-quarter its space without squeezing or one-eighth its space when squeezing.</p>
+<p><em>Format</em>: compression; <em>Location</em>: Special Qualities.</p>
+
+<p id = "constrict"><strong>Constrict (Ex)</strong> A creature with this special attack can crush an opponent, dealing bludgeoning damage, when it makes a successful grapple check (in addition to any other effects caused by a successful check, including additional damage). The amount of damage is given in the creature's entry and is typically equal to the amount of damage caused by the creature's melee attack.</p>
+<p><em>Format</em>: constrict (1d8+6); <em>Location</em>: Special Attacks.</p>
+
+<p id = "construct-traits"><strong>Construct Traits (Ex) </strong>Constructs are immune to death effects, disease, mind-affecting effects (charms, compulsions, phantasms, patterns, and morale effects), necromancy effects, paralysis, poison, sleep, stun, and any effect that requires a Fortitude save (unless the effect also works on objects, or is harmless). Constructs are not subject to nonlethal damage, <a href="universalMonsterRules.html#ability-damage-and-drain" >ability damage</a>, <a href="universalMonsterRules.html#ability-damage-and-drain" >ability drain</a>, fatigue, exhaustion, or energy drain. Constructs are not at risk of death from massive damage.</p>
+<p><em>Format</em>: construct traits; <em>Location</em>: Immune.</p>
+
+<p id = "curse"><strong>Curse (Su)</strong> A creature with this ability bestows a curse upon its enemies. The effects of the curse, including its save, frequency, and cure, are included in the creature's description. If a curse allows a saving throw, it is usually a Will save (DC 10 + 1/2 cursing creature's racial HD + creature's Cha modifier; the exact DC is given in the creature's descriptive text). Curses can be removed through <em><a href="../coreRulebook/spells/removeCurse.html#remove-curse" >remove curse</a></em> and similar effects.</p>
+<p><em>Format</em>:<strong> Curse Name (Su) </strong>Slam&mdash;contact; <em>save</em> Will DC 14, <em>frequency</em> 1 day, <em>effect</em> 1d4 Str <a href="universalMonsterRules.html#ability-damage-and-drain" >drain</a>; <em>Location</em>: Special Attacks and individual attacks.</p>
+
+<p id = "curse-of-lycanthropy"><strong>Curse of Lycanthropy (Su)</strong> A natural lycanthrope's bite attack in animal or hybrid form infects a humanoid target with lycanthropy (Fortitude DC 15 negates). If the victim's size is not within one size category of the lycanthrope's size, this ability has no effect.</p>
+<p><em>Format</em>: curse of lycanthropy; <em>Location</em>: individual attacks.</p>
+
+<p id = "damage-reduction"><strong>Damage Reduction (Ex or Su)</strong> A creature with this special quality ignores damage from most weapons and natural attacks. Wounds heal immediately, or the weapon bounces off harmlessly (in either case, the opponent knows the attack was ineffective). The creature takes normal damage from energy attacks (even nonmagical ones), spells, spell-like abilities, and supernatural abilities. A certain kind of weapon can sometimes damage the creature normally, as noted below.</p>
+<p>The entry indicates the amount of damage ignored (usually 5 to 15 points) and the type of weapon that negates the ability. </p>
+<p>Some monsters are vulnerable to piercing, bludgeoning, or slashing damage. Others are vulnerable to certain materials, such as adamantine, alchemical silver, or cold-forged iron. Attacks from weapons that are not of the correct type or made of the correct material have their damage reduced, although a high enhancement bonus can overcome some forms of damage reduction.</p>
+<p>Some monsters are vulnerable to magic weapons. Any weapon with at least a +1 magical enhancement bonus on attack and damage rolls overcomes the damage reduction of these monsters. Such creatures' natural weapons (but not their attacks with weapons) are treated as magic weapons for the purpose of overcoming damage reduction.</p>
+<p>A few very powerful monsters are vulnerable only to epic weapons&mdash;that is, magic weapons with at least a +6 enhancement bonus. Such creatures' natural weapons are also treated as epic weapons for the purpose of overcoming damage reduction.</p>
+<p>Some monsters are vulnerable to good-, evil-, chaotically, or lawfully aligned weapons. When a cleric casts <em><a href="../coreRulebook/spells/alignWeapon.html#align-weapon" >align weapon</a>, </em>affected weapons might gain one or more of these properties, and certain magic weapons have these properties as well. A creature with an alignment subtype (chaotic, evil, good, or lawful) can overcome this type of damage reduction with its natural weapons and weapons it wields as if the weapons or natural weapons had an alignment (or alignments) that matched the subtype(s) of the creature. </p>
+<p>When a damage reduction entry has a dash (&mdash;) after the slash, no weapon negates the damage reduction.</p>
+<p>A few creatures are harmed by more than one kind of weapon. A weapon that inflicts damage of either type overcomes this damage reduction.</p>
+<p>A few other creatures require combinations of different types of attacks to overcome their damage reduction, and a weapon must be both types to overcome this type of damage reduction. A weapon that is only one type is still subject to damage reduction.</p>
+<p><em>Format</em>: DR 5/silver; <em>Location</em>: Defensive Abilities.</p>
+
+<p id = "darkvision"><strong>Darkvision (Ex or Su)</strong> A creature with darkvision can see in total darkness, usually to a range of 60 feet. Within this range the creature can see as clearly as a sighted creature could see in an area of bright light. Darkvision is black and white only but otherwise like normal sight.</p>
+<p><em>Format</em>: darkvision 60 ft.; <em>Location</em>: Senses.</p>
+
+<p id = "demon-lord-traits"><strong>Demon Lord Traits (Ex, Sp, or Su)</strong> A demon lord is a powerful, unique demon that rules a layer of the Abyss. All demon lords are chaotic evil outsiders that are, at a minimum, CR 26. Demon lords have a particular suite of traits (unless otherwise noted in a creature’s entry) as summarized here.
+	<ul>
+		<li>A demon lord can grant spells to its worshipers as if it were a deity. A demon lord’s domains are <a href="../coreRulebook/classes/cleric.html#chaos-domain">Chaos</a>, <a href="../coreRulebook/classes/cleric.html#evil-domain">Evil</a>, and two other domains relevant to its theme and interests. Like a deity, a demon lord has a favored weapon.</li>
+		<li>A demon lord’s natural weapons, as well as any weapons it wields, are treated as chaotic, epic, and evil for the purpose of overcoming <a href="universalMonsterRules.html#damage-reduction">damage reduction</a>.</li>
+		<li><em>Abyssal Resurrection (Ex)</em> A demon lord rules an Abyssal realm, a vast world that not only serves as its home but provides it with power. If a demon lord is slain, its body rapidly melts into corruption (leaving behind any gear it held or carried), its soul returns to a hidden location within its realm, and it is immediately restored to life (as <a href="http://paizo.com/prd/spells/trueResurrection.html#true-resurrection"><em>true resurrection</em></a>) at that location. Once this occurs, a demon lord can’t use this ability again until a full year has passed. A demon lord realizes it is vulnerable during this time and usually doesn’t risk further battles for the remainder of that year, relying on the defenses of its realm and its legions of minions to protect it. A demon lord that is slain again during this year or is killed by unusual methods (such as by a true deity or an artifact created for this purpose) is slain forever—its remains appearing somewhere deep in the Abyss among other dead demon lords from the ages. A demon lord who does not control a domain does not gain this ability.</li>
+		<li><a href="universalMonsterRules.html#frightful-presence"><em>Frightful Presence (Su)</em></a> A demon lord can activate its <a href="universalMonsterRules.html#frightful-presence">frightful presence</a> as a free action as part of any attack, spell-like ability, special attack, or by speaking aloud.</li>
+		<li>Immunity to <a href="universalMonsterRules.html#ability-damage-and-drain">ability damage, ability drain</a>, charm effects, compulsion effects, death effects, <a href="universalMonsterRules.html#energy-drain">energy drain</a>, and petrification.</li>
+		<li><a href="universalMonsterRules.html#regeneration"><em>Regeneration (Ex)</em></a> Only epic and good damage, or damage from a creature of equal or greater power (such as an archdevil, deity, demon lord, or protean lord) interrupts a demon lord’s regeneration.</li>
+		<li><a href="universalMonsterRules.html#resistance">Resistance</a> to acid 30, cold 30, and fire 30</li>
+		<li><a href="universalMonsterRules.html#summon"><em>Summon Demons (Sp)</em></a> Three times per day as a swift action, a demon lord can summon any demon or combination of demons whose total combined CR is 20 or lower. This otherwise works like the summon universal monster rule with a 100% chance of success, and counts as a 9th-level spell effect.</li>
+		<li><a href="universalMonsterRules.html#telepathy">Telepathy</a> 300 feet.</li>
+	</ul>
+</p>
+
+<p id = "disease"><strong>Disease (Ex or Su)</strong> A creature with this ability causes disease in those it contacts. The effects of the disease, including its save, frequency, and cure, are included in the creature's description. The saving throw to negate the disease is usually a Fort save (DC 10 + 1/2 infecting creature's racial HD + the creature's Con modifier; the exact DC is given in the creature's descriptive text). Disease can be removed through <a href="../coreRulebook/spells/removeDisease.html#remove-disease"><em>remove disease</em></a> and similar effects.</p>
+<p><em>Format</em>:<strong> Disease Name (Ex) </strong>Bite&mdash;injury; <em>save</em> Fort DC 15, <em>onset </em>1d3 days, <em>frequency</em> 1 day, <em>effect</em> 1 Con <a href="universalMonsterRules.html#ability-damage-and-drain" >damage</a>, <em>cure</em> 2 consecutive saves; <em>Location</em>: Special Attacks and individual attacks.</p>
+
+<p id = "display-of-strength-mythic"><strong>Display of Strength<sup>MA</sup> (Su)</strong> As a free action, the creature can expend one use of mythic power to attempt a feat of Strength, gaining a +20 circumstance bonus on one Strength-based skill check or Strength ability check. Alternatively, the creature can use this ability to apply a +20 circumstance bonus to its Strength score for a number of hours equal to its mythic rank for the purpose of determining its carrying capacity.</p>
+<p><em>Format</em>: display of strength; <em>Location</em>: SQ.</p>
+
+<p id = "distraction"><strong>Distraction (Ex)</strong> A creature with this ability can nauseate the creatures that it damages. Any living creature that takes damage from a creature with the distraction ability is nauseated for 1 round; a Fortitude save (DC 10 + 1/2 creature's HD + creature's Con modifier) negates the effect.</p>
+<p><em>Format</em>: distraction (DC 14); <em>Location</em>: Special Attacks.</p>
+
+<p id = "dragon-cantrips" title = "Pathfinder Roleplaying Game: Mythic Adventures"><strong>Dragon Cantrips</strong><em>MA</em><strong> (Su)</strong> If the mythic dragon is able to cast arcane spells, it automatically knows all cantrips for its equivalent spellcasting class and can cast them at will.</p>
+<p><em>Format</em>: dragon cantrips; <em>Location</em>: SQ.</p>
+
+<p id = "dual-initiative-mythic"><strong>Dual Initiative<sup>MA</sup> (Ex)</strong> The creature gets two turns each round, one on its initiative count and another on its initiative count – 20. For example, if the monster’s initiative is 23, for its first turn it could make a full attack (and take a 5 foot step) at initiative 23, and for its second turn at initiative 3 it could take a move action and cast a spell. This allows the monster to perform two actions per round that normally take an entire round, such as using a <em>summon monster</em> spell. For the purposes of spells and effects that have a duration of a round or longer or trigger at the beginning of the creature’s round or the start of its turn (such as saving throws against ongoing effects or taking <a href="universalMonsterRules.html#bleed">bleed damage</a>), only the creature’s first turn each round counts toward such durations.</p>
+<p><em>Format</em>: +21/+1; <em>Location</em>: Initiative.</p>
+
+<p id = "earth-glide"><strong>Earth Glide (Ex)</strong> When the creature burrows, it can pass through stone, dirt, or almost any other sort of earth except metal as easily as a fish swims through water. If protected against fire damage, it can even glide through lava. Its burrowing leaves behind no tunnel or hole, nor does it create any ripple or other sign of its presence. A <em><a href="../coreRulebook/spells/moveEarth.html#move-earth" >move earth</a></em> spell cast on an area containing the burrowing creature flings it back 30 feet, stunning it for 1 round unless it succeeds on a DC 15 Fortitude save.</p>
+<p><em>Format</em>: earth glide; <em>Location</em>: Speed.</p>
+
+<p id = "emotion-aura" title = "Pathfinder Roleplaying Game: Bestiary 5"><strong>Emotion Aura (Su)</strong> A creature with this ability surrounds itself with an area of swirling, chaotic emotions. These emotions make it difficult for spellcasters to cast spells with the <a href = "../occultAdventures/psychicMagic.html#components">emotion component</a>. Living creatures within 30 feet must succeed at a concentration check (DC = 10 + 1/2 the HD of the creature with an emotion aura + that creature's Charisma modifier) to cast a spell with an emotion component. Failing this check causes the spell to be lost with no effect. In addition, any spellcaster casting spells with the emotion or fear descriptor on targets inside this aura must succeed at this check or the spell fails to affect targets within the aura (although others outside the area are affected as normal). Creatures with this ability are immune to its effects and can cast spells normally.</p>
+<p><em>Format</em>: emotion (DC 17); <em>Location</em>: Aura.</p>
+
+<p id = "empyreal-lord-traits"><strong>Empyreal Lord Traits (Ex, Sp, or Su)</strong> Empyreal lords are the greatest members of the agathion, angel, archon, and azata races, and are sometimes worshiped as if they were deities. All empyreal lords are good outsiders that are, at a minimum, CR 21. In addition to having <a href="http://paizo.com/prd/bestiary/creatureTypes.html#agathion-subtype">agathion</a>, <a href="http://paizo.com/prd/bestiary/creatureTypes.html#angel-subtype">angel</a>, <a href="http://paizo.com/prd/bestiary/creatureTypes.html#archon-subtype">archon</a>, or <a href="http://paizo.com/prd/bestiary/creatureTypes.html#azata-subtype">azata</a> traits, empyreal lords have a particular suite of traits (unless otherwise noted in a creature’s entry) as summarized here.
+	<ul>
+		<li>An empyreal lord’s natural weapons, as well as any weapons he or she wields, are treated as epic and good for the purpose of overcoming <a href="universalMonsterRules.html#damage-reduction">damage reduction</a>. If the empyreal lord is chaotic or lawful, these attacks also count as that alignment for the purpose of overcoming <a href="universalMonsterRules.html#damage-reduction">damage reduction</a>.</li>
+		<li><a href="http://paizo.com/prd/bestiary/creatureTypes.html#agathion-subtype">Agathion</a>, <a href="http://paizo.com/prd/bestiary/creatureTypes.html#angel-subtype">angel</a>, <a href="http://paizo.com/prd/bestiary/creatureTypes.html#archon-subtype">archon</a>, or <a href="http://paizo.com/prd/bestiary/creatureTypes.html#azata-subtype">azata</a> <a href="universalMonsterRules.html#resistance">energy resistances</a> are increased to 30.</li>
+		<li>An empyreal lord can grant spells to its worshipers as if it were a deity. An empyreal lord’s domains are <a href="../coreRulebook/classes/cleric.html#chaos-domain">Chaos</a> (if chaotic), <a href="../coreRulebook/classes/cleric.html#good-domain">Good</a>, <a href="../coreRulebook/classes/cleric.html#law-domain">Law</a> (if lawful), and two other domains relevant to its theme and interests (or three if it is neither chaotic nor lawful). Like a deity, an empyreal lord has a favored weapon.</li>
+		<li><a href="universalMonsterRules.html#blindsense">Blindsense</a> 60 feet.</li>
+		<li><em>Greater Teleport (Sp)</em> An empyreal lord can use <a href="http://paizo.com/prd/spells/teleport.html#teleport-greater"><em>greater teleport</em></a> at will (caster level 20th).</li>
+		<li>Immunity to <a href="universalMonsterRules.html#ability-damage-and-drain">ability damage, ability drain</a>, charm effects, compulsion effects, death effects, <a href="universalMonsterRules.html#energy-drain">energy drain</a>, and petrification.</li>
+		<li><em>Primal Aura (Su)</em> An aura of primeval power surrounds every empyreal lord. The effects of this aura are unique to each empyreal lord.</li>
+		<li><a href="universalMonsterRules.html#regeneration"><em>Regeneration (Ex)</em></a> Only epic and evil damage, or damage from a creature of equal or greater power (such as an archdevil, deity, demon lord, or protean lord) interrupts an empyreal lord’s <a href="universalMonsterRules.html#regeneration">regeneration</a></li>
+		<li><em>Seed of Life (Sp)</em> An empyreal lord can touch a willing creature and imbue it with magical healing power. The target radiates an aura of good as if it were an <a href="http://paizo.com/prd/bestiary/creatureTypes.html#outsider">outsider</a> and gains a +2 insight bonus on all saving throws against negative energy and death effects. As a standard action, the target can release this energy, turning it inward as a <a href="http://paizo.com/prd/spells/heal.html#heal"><em>heal</em></a> spell upon itself or outward as a <a href="http://paizo.com/prd/spells/cureSeriousWounds.html#cure-serious-wounds-mass"><em>mass cure serious wounds</em></a> spell on allies within 30 feet (caster level 15th). If not released, the energy dissipates harmlessly after 24 hours. The empyreal lord can use this ability 5 times per day, but only on other creatures.</li>
+	</ul>
+</p>
+
+<p id = "energy-drain"><strong>Energy Drain (Su) </strong>This attack saps a living opponent's vital energy and happens automatically when a melee or ranged attack hits. Each successful energy drain bestows one or more negative levels (the creature's description specifies how many). If an attack that includes an energy drain scores a critical hit, it bestows twice the listed number of negative levels. Unless otherwise specified in the creature's description, a draining creature gains 5 temporary hit points for each negative level it bestows on an opponent. These temporary hit points last for a maximum of 1 hour. Negative levels remain until 24 hours have passed or until they are removed with a spell, such as <em><a href="../coreRulebook/spells/restoration.html#restoration" >restoration</a></em>. If a negative level is not removed before 24 hours have passed, the affected creature must attempt a Fortitude save (DC 10 + 1/2 draining creature's racial HD + draining creature's Cha modifier; the exact DC is given in the creature's descriptive text). On a success, the negative level goes away with no harm to the creature. On a failure, the negative level becomes permanent. A separate saving throw is required for each negative level.</p>
+<p><em>Format</em>: energy drain (2 levels, DC 18); <em>Location</em>: Special Attacks and individual attacks.</p>
+
+<p id = "engulf"><strong>Engulf (Ex)</strong> The creature can engulf creatures in its path as part of a standard action. It cannot make other attacks during a round in which it engulfs. The creature merely has to move over its opponents, affecting as many as it can cover. Targeted creatures can make attacks of opportunity against the creature, but if they do so, they are not entitled to a saving throw against the engulf attack. Those who do not attempt attacks of opportunity can attempt a Reflex save to avoid being engulfed&mdash;on a success, they are pushed back or aside (target's choice) as the creature moves forward. Engulfed opponents gain the pinned condition, are in danger of suffocating, are trapped within the creature's body until they are no longer pinned, and may be subject to other special attacks from the creature. The save DC is Strength-based.</p>
+<p><em>Format</em>: engulf (DC 12, 1d6 acid and paralysis); <em>Location</em>: Special Attacks.</p>
+
+<p id = "entrap"><strong>Entrap (Ex or Su)</strong> The creature has an ability that restricts another creature's movement, usually with a physical attack such as ice, mud, lava, or webs. The target of an entrap attack must make a Fortitude save or become entangled for the listed duration. If a target is already entangled by this ability, a second entrap attack means the target must make a Fortitude save or become helpless for the listed duration. The save DCs are Constitution-based. A target made helpless by this ability is conscious but can take no physical actions (except attempting to break free) until the entrapping material is removed. The target can use spells with only verbal components or spell-like abilities if it can make a DC 20 concentration check. An entangled creature can make a Strength check (at the same DC as the entrap saving throw DC) as a full-round action to break free; the DC for a helpless creature is +5 greater than the saving throw DC. Destroying the entrapping material frees the creature.</p>
+<p><em>Format</em>: entrap (DC 13, 1d10 minutes, hardness 5, hp 10); <em>Location</em>: special attacks and individual attacks.</p>
+
+<p id = "fast-healing"><strong>Fast Healing (Ex) </strong>A creature with the fast healing special quality regains hit points at an exceptional rate, usually 1 or more hit points per round, as given in the creature's entry. Except where noted here, fast healing is just like natural healing. Fast healing does not restore hit points lost from starvation, thirst, or suffocation, nor does it allow a creature to regrow lost body parts. Unless otherwise stated, it does not allow lost body parts to be reattached. Fast healing continues to function (even at negative hit points) until a creature dies, at which point the effects of fast healing end immediately.</p>
+<p><em>Format</em>: fast healing 5; <em>Location</em>: hp.</p>
+
+<p id = "fast-swallow"><strong>Fast Swallow (Ex)</strong> The creature can use its swallow whole ability as a free action at any time during its turn, not just at the start of its turn.</p>
+<p><em>Format</em>: fast swallow; <em>Location</em>: Special Attacks.</p>
+
+<p id = "fear"><strong>Fear (Su or Sp)</strong> Fear attacks can have various effects.</p>
+<p><em>Fear Aura (Su) </em>The use of this ability is a free action. The aura can freeze an opponent (as in the case of a mummy's despair) or function like the <em><a href="../coreRulebook/spells/fear.html#fear" >fear</a> </em>spell. Other effects are possible. A fear aura is an area effect. The descriptive text gives the size and kind of the area.</p>
+<p><em>Fear Cone (Sp) and Ray (Su) </em>These effects usually work like the <em><a href="../coreRulebook/spells/fear.html#fear" >fear</a> </em>spell. </p>
+<p>If a fear effect allows a saving throw, it is a Will save (DC 10 + 1/2 fearsome creature's racial HD + creature's Cha modifier; the exact DC is given in the creature's descriptive text). All fear attacks are mind-affecting fear effects.</p>
+<p><em>Format</em>: fear aura (30 ft., DC 17); <em>Location</em>: Aura.</p>
+<p><em>Format</em>: fear cone (50 ft., DC 19); <em>Location</em>: Special Attacks.</p>
+
+<p id = "ferocity"><strong>Ferocity (Ex) </strong>A creature with ferocity remains conscious and can continue fighting even if its hit point total is below 0. The creature is still staggered and loses 1 hit point each round. A creature with ferocity still dies when its hit point total reaches a negative amount equal to its Constitution score.</p>
+<p><em>Format</em>: ferocity; <em>Location</em>: Defensive Abilities.</p>
+<p><strong>Flight (Ex or Su)</strong> A creature with this ability can cease or resume flight as a free action. If the ability is supernatural, it becomes ineffective in an antimagic field, and the creature loses its ability to fly for as long as the antimagic effect persists.</p>
+<p><em>Format</em>: fly 30 ft. (average); <em>Location</em>: Speed.</p>
+
+<p id = "formian-traits"><strong>Formian Traits (Ex or Su)</strong> Formians are a spacefaring race of insectlike creatures from a forest world that aggressively colonize other worlds. A formian possesses the following traits (unless otherwise noted in a creature� entry).</p>
+	<ul>
+		<li><a href="universalMonsterRules.html#darkvision">Darkvision</a> 60 feet and <a href="universalMonsterRules.html#blindsense">blindsense</a> 30 feet.</li>
+		<li><em>Hive Mind (Ex)</em> Formians share a telepathic bond with ther members of their hive that enhances their hive mates’ perception. As long as a formian is within telepathic range of at least one hive mate, it gains a +4 racial bonus on initiative checks and Perception checks. If at least one formian disbelieves an illusion, all formians within its telepathic range are also considered to disbelieve that illusion. If one formian is aware of combatants, all other hive mates within the range of its telepathy are also aware of those combatants.</li>
+		<li><a href="universalMonsterRules.html#resistance">Resistance</a> to sonic 10.</li>
+		<li><em>Telepathic Caster (Ex)</em> Due to a formian’s telepathic nature, if it casts spells it does so as spell-like abilities.</li>
+		<li><a href="universalMonsterRules.html#telepathy">Telepathy</a> 60 ft.</li>
+	</ul>
+
+<p id = "fortification"><strong>Fortification (Ex)</strong> The monster has an 50% chance to treat any critical hit or sneak attack as a normal hit, as if wearing <a href="http://paizo.com/prd/magicItems/armor.html#armor-fortification"><em>moderate fortification</em></a> armor.</p>
+<p><em>Format</em>: fortification (50%); <em>Location</em>: Defensive Abilities.</p>
+
+<p id = "freeze"><strong>Freeze (Ex)</strong> The creature can hold itself so still it appears to be an inanimate object of the appropriate shape (a statue, patch of fungus, and so on). The creature can take 20 on its <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> check to hide in plain sight as this kind of inanimate object.</p>
+<p><em>Format</em>: freeze; <em>Location</em>: Special Qualities.</p>
+
+<p id = "frightful-presence"><strong>Frightful Presence (Ex) </strong>This special quality makes a creature's very presence unsettling to foes. Activating this ability is a free action that is usually part of an attack or charge. Opponents within range who witness the action may become frightened or shaken. The range is usually 30 feet, and the duration is usually 5d6 rounds. This ability affects only opponents with fewer Hit Dice or levels than the creature has. An affected opponent can resist the effects with a successful Will save (DC 10 + 1/2 frightful creature's racial HD + frightful creature's Cha modifier; the exact DC is given in the creature's descriptive text). An opponent that succeeds on the saving throw is immune to that same creature's frightful presence for 24 hours. On a failed save, the opponent is shaken, or panicked if 4 HD or fewer. Frightful presence is a mind-affecting fear effect.</p>
+<p><em>Format</em>: frightful presence (60 ft., DC 21); <em>Location</em>: Aura.</p>
+
+<p id = "gaze"><strong>Gaze (Su)</strong> A gaze special attack takes effect when foes look at the attacking creature's eyes. The attack can have any sort of effect: petrification, death, and charm are common. The typical range is 30 feet, but check the creature's entry for details. The type of saving throw for a gaze attack varies, but it is usually a Will or Fortitude save (DC 10 + 1/2 gazing creature's racial HD + gazing creature's Cha modifier; the exact DC is given in the creature's text). A successful saving throw negates the effect. A monster's gaze attack is described in abbreviated form in its description. Each opponent within range of a gaze attack must attempt a saving throw each round at the beginning of his or her turn in the initiative order. Only looking directly at a creature with a gaze attack leaves an opponent vulnerable. Opponents can avoid the need to make the saving throw by not looking at the creature, in one of two ways. </p>
+<p><em>Averting Eyes</em>: The opponent avoids looking at the creature's face, instead looking at its body, watching its shadow, tracking it in a reflective surface, etc. Each round, the opponent has a 50% chance to avoid having to make a saving throw against the gaze attack. The creature with the gaze attack, however, gains concealment against that opponent.</p>
+<p><em>Wearing a Blindfold</em>: The foe cannot see the creature at all (also possible to achieve by turning one's back on the creature or shutting one's eyes). The creature with the gaze attack gains total concealment against the opponent. </p>
+<p>A creature with a gaze attack can actively gaze as an attack action by choosing a target within range. That opponent must attempt a saving throw but can try to avoid this as described above. Thus, it is possible for an opponent to save against a creature's gaze twice during the same round, once before the opponent's action and once during the creature's turn. </p>
+<p>Gaze attacks can affect ethereal opponents. A creature is immune to gaze attacks of others of its kind unless otherwise noted. Allies of a creature with a gaze attack might be affected. All the creature's allies are considered to be averting their eyes from the creature with the gaze attack, and have a 50% chance to not need to make a saving throw against the gaze attack each round. The creature can also veil its eyes, thus negating its gaze ability.</p>
+<p><em>Format</em>: gaze; <em>Location</em>: Special Attacks.</p>
+
+<p id = "grab"><strong>Grab (Ex)</strong> If a creature with this special attack hits with the indicated attack (usually a claw or bite attack), it deals normal damage and attempts to start a grapple as a free action without provoking an attack of opportunity. Unless otherwise noted, grab can only be used against targets of a size equal to or smaller than the creature with this ability. If the creature can use grab on creatures of other sizes, it is noted in the creature's Special Attacks line. The creature has the option to conduct the grapple normally, or simply use the part of its body it used in the grab to hold the opponent. If it chooses to do the latter, it takes a &ndash;20 penalty on its CMB check to make and maintain the grapple, but does not gain the grappled condition itself. A successful hold does not deal any extra damage unless the creature also has the constrict special attack. If the creature does not constrict, each successful grapple check it makes during successive rounds automatically deals the damage indicated for the attack that established the hold. Otherwise, it deals constriction damage as well (the amount is given in the creature's descriptive text).</p>
+<p>Creatures with the grab special attack receive a +4 bonus on combat maneuver checks made to start and maintain a grapple.</p>
+<p><em>Format</em>: grab; <em>Location</em>: individual attacks.</p>
+
+<p id = "greensight"><strong>Greensight (Su)</strong> The monster can see through thick plant matter as though it were transparent, usually with a range of 60 feet. Leaves, vines, greenery, and undergrowth offer no concealment to the monster’s sight, though solid wood still blocks its line of sight.</p>
+<p><em>Format</em>: greensight 60 ft.; <em>Location</em>: Senses.</p>
+
+<p id = "hardness" title = "Pathfinder Roleplaying Game: Bestiary 5"><strong>Hardness (Ex)</strong> When a creature with hardness takes damage, subtract its hardness from the damage. Only damage in excess of its hardness is subtracted from its hit points. A creature with hardness doesn't further reduce damage from energy attacks, ranged attacks, or other types of attacks as objects typically do. Adamantine weapons bypass hardness of 20 or less.</p>
+<p><em>Format</em>: hardness 10; <em>Location</em>: Defensive Abilities.</p>
+
+<p id = "heat"><strong>Heat (Ex)</strong> The creature generates so much heat that its mere touch deals additional fire damage. The creature's metallic melee weapons also conduct this heat.</p>
+<p><em>Format</em>: heat (1d6 fire); <em>Location</em>: Special Attacks.</p>
+
+<p id = "hold-breath"><strong>Hold Breath (Ex)</strong> The creature can hold its breath for a number of minutes equal to 6 times its Constitution score before it risks drowning.</p>
+<p><em>Format</em>: hold breath; <em>Location</em>: Special Qualities.</p>
+
+<p id = "immunity"><strong>Immunity (Ex or Su)</strong> A creature with immunities takes no damage from listed sources. Immunities can also apply to afflictions, conditions, spells (based on school, level, or save type), and other effects. A creature that is immune does not suffer from these effects, or any secondary effects that are triggered due to an immune effect.</p>
+<p><em>Format</em>:<strong> Immune</strong> acid, fire, paralysis; <em>Location</em>: Defensive Abilities.</p>
+
+<p id = "incorporeal"><strong>Incorporeal (Ex) </strong>An incorporeal creature has no physical body. It can be harmed only by other incorporeal creatures, magic weapons or creatures that strike as magic weapons, and spells, spell-like abilities, or supernatural abilities. It is immune to all nonmagical attack forms. Even when hit by spells or magic weapons, it takes only half damage from a corporeal source (except for channel energy). Although it is not a magical attack, holy water can affect incorporeal undead. Corporeal spells and effects that do not cause damage only have a 50% chance of affecting an incorporeal creature. Force spells and effects, such as from a <em><a href="../coreRulebook/spells/magicMissile.html#magic-missile" >magic missile</a></em>, affect an incorporeal creature normally.</p>
+<p>An incorporeal creature has no natural armor bonus but has a deflection bonus equal to its Charisma bonus (always at least +1, even if the creature's Charisma score does not normally provide a bonus). </p>
+<p>An incorporeal creature can enter or pass through solid objects, but must remain adjacent to the object's exterior, and so cannot pass entirely through an object whose space is larger than its own. It can sense the presence of creatures or objects within a square adjacent to its current location, but enemies have total concealment (50% miss chance) from an incorporeal creature that is inside an object. In order to see beyond the object it is in and attack normally, the incorporeal creature must emerge. An incorporeal creature inside an object has total cover, but when it attacks a creature outside the object it only has cover, so a creature outside with a readied action could strike at it as it attacks. An incorporeal creature cannot pass through a force effect.</p>
+<p>An incorporeal creature's attacks pass through (ignore) natural armor, armor, and shields, although deflection bonuses and force effects (such as <a href = "../coreRulebook/spells/mageArmor.html#mage-armor"><em>mage armor</em></a>) work normally against it. Incorporeal creatures pass through and operate in water as easily as they do in air. Incorporeal creatures cannot fall or take falling damage. Incorporeal creatures cannot make trip or grapple attacks, nor can they be tripped or grappled. In fact, they cannot take any physical action that would move or manipulate an opponent or its equipment, nor are they subject to such actions. Incorporeal creatures have no weight and do not set off traps that are triggered by weight.</p>
+<p>An incorporeal creature moves silently and cannot be heard with <a href = "../coreRulebook/skills/perception.html#perception" >Perception</a> checks if it doesn't wish to be. It has no Strength score, so its Dexterity modifier applies to its melee attacks, ranged attacks, and CMB. Nonvisual senses, such as scent and blindsight, are either ineffective or only partly effective with regard to incorporeal creatures. Incorporeal creatures have an innate sense of direction and can move at full speed even when they cannot see.</p>
+<p><em>Format</em>: incorporeal; <em>Location</em>: Defensive Abilities.</p>
+
+<p id = "jet"><strong>Jet (Ex)</strong> The creature can swim backward as a full-round action at the listed speed. It must move in a straight line while jetting, and does not provoke attacks of opportunity when it does so.</p>
+<p><em>Format</em>: jet (200 ft.); <em>Location</em>: Speed.</p>
+
+<p id = "keen-scent"><strong>Keen Scent (Ex)</strong> The creature can notice other creatures by scent in a 180-foot radius underwater and can detect blood in the water at ranges of up to a mile.</p>
+<p><em>Format</em>: keen scent; <em>Location</em>: Senses.</p>
+
+<p id = "lifesense"><strong>Lifesense (Su)</strong> The creature notices and locates living creatures within 60 feet, just as if it possessed the blindsight ability.</p>
+<p><em>Format</em>: lifesense; <em>Location</em>: Senses.</p>
+
+<p id = "light-blindness"><strong>Light Blindness (Ex) </strong>Creatures with light blindness are blinded for 1 round if exposed to bright light, such as sunlight or the <em><a href="../coreRulebook/spells/daylight.html#daylight" >daylight</a></em> spell. Such creatures are <a href="../coreRulebook/glossary.html#dazzled">dazzled</a> as long as they remain in areas of bright light.</p>
+<p><em>Format</em>: light blindness; <em>Location</em>: Weaknesses.</p>
+
+<p id = "light-sensitivity"><strong>Light Sensitivity (Ex) </strong>Creatures with light sensitivity are <a href="../coreRulebook/glossary.html#dazzled">dazzled</a> in areas of bright sunlight or within the radius of a <em><a href="../coreRulebook/spells/daylight.html#daylight" >daylight</a> </em>spell.</p>
+<p><em>Format</em>:<strong> Weakness</strong> light sensitivity; <em>Location</em>: Weaknesses.</p>
+
+<p id = "lingering-breath"><strong>Lingering Breath</strong><sup>MA</sup> <strong>(Su)</strong> The creature can expend one use of mythic power as a free action when it uses its breath weapon to make the area radiate energy damage (of the same type as the breath weapon) for 1 round per mythic rank. Any creature in, entering, or passing through the breath weapon's area during this duration takes damage according to the creature's size. This ability has no effect on breath weapons that do not deal energy damage.</p>
+<p><em>Format</em>: lingering breath (2d6 fire, 5 rounds); <em>Location</em>: Special Attacks.</p>
+<table>
+	<caption>Lingering Breath Damage</caption>
+	<thead>
+		<tr><th>Creature Size</th><th>Points of Energy Damage</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>Medium or smaller</td><td>2d4</td></tr>
+		<tr><td>Large</td><td>2d6</td></tr>
+		<tr><td>Huge</td><td>2d8</td></tr>
+		<tr><td>Gargantuan</td><td>4d6</td></tr>
+		<tr><td>Colossal</td><td>4d8</td></tr>
+	</tbody>
+</table>
+
+<p id = "low-light-vision"><strong>Low-Light Vision (Ex)</strong> A creature with low-light vision can see twice as far as a human in starlight, moonlight, torchlight, and similar conditions of dim light. It retains the ability to distinguish color and detail under these conditions.</p>
+<p><em>Format</em>: low-light vision; <em>Location</em>: Senses.</p>
+
+<p id = "lycanthropic-empathy"><strong>Lycanthropic Empathy (Ex)</strong> In any form, natural lycanthropes can communicate and empathize with animals related to their animal form. They can use <a href="../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> to alter such an animal's attitude, and when so doing gain a +4 racial bonus on the check. Afflicted lycanthropes only gain this ability in animal or hybrid form.</p>
+<p><em>Format</em>: lycanthropic empathy (bears and dire bears); <em>Location</em>: Special Qualities.</p>
+
+<p id = "mental-static-aura" title = "Pathfinder Roleplaying Game: Bestiary 5"><strong>Mental Static Aura (Su)</strong> A creature with this ability creates a field around it that makes concentrating difficult for those without this ability. Living creatures within 30 feet must succeed at a concentration check (DC = 10 + 1/2 the HD of the creature with a mental static aura + that creature's Charisma modifier) to cast a spell with a <a href = "../occultAdventures/psychicMagic.html#components">thought component</a>. Failing this check causes the spell to be lost with no effect. In addition, all spellcasters must attempt this check at the start of their turns if they are concentrating on an active spell or effect. Failing it means that they cease concentrating on the spell or effect. Creatures with this ability are immune to its effects and can cast spells normally.</p>
+<p><em>Format</em>: mental static (DC 18); <em>Location</em>: Aura.</p>
+
+<p id = "mistsight"><strong>Mistsight (Ex)</strong> The monster can see through fog, mist, and murky water as if they were perfectly clear, ignoring the miss chance for these obstructions, up to its normal range of vision.</p>
+<p><em>Format</em>: mistsight; <em>Location</em>: Senses.</p>
+
+<p id = "multiweapon-mastery"><strong>Multiweapon Mastery (Ex)</strong> The creature never takes penalties on its attack rolls when fighting with multiple weapons.</p>
+<p><em>Format</em>: multiweapon mastery; <em>Location</em>: Special Attacks.</p>
+
+<p id = "mythic-immortality-mythic"><strong>Mythic Immortality<sup>MA</sup> (Su)</strong> If the creature is killed, it returns to life 24 hours later, regardless of the condition of its body or the means by which it was killed. When it returns to life, it isn’t treated as if it had rested, and doesn’t regain the use of abilities that recharge with rest until it next rests. This ability doesn’t apply if it is killed by a coup de grace or critical hit performed by either a mythic creature (or creature of even greater power) or a non-mythic creature wielding a weapon capable of bypassing epic damage reduction. If the creature is mythic rank 10, it can be killed only by a coup de grace or critical hit made with an artifact. (This ability is called <a href="http://paizo.com/prd/mythicAdventures/mythicHeroes.html#immortal">"immortal"</a> in <a href="http://paizo.com/products/btpy8ywe"><em>Pathfinder Roleplaying Game: Mythic Adventures</em></a>.)</p>
+<p><em>Format</em>: mythic immortality; <em>Location</em>: SQ.</p>
+
+<p id = "mythic-magic-mythic"><strong>Mythic Magic<sup>MA</sup> (Su)</strong> Up to three times per day, when the creature casts a spell, it can cast the mythic version instead (as with all mythic spells, the creature must expend mythic power to cast a mythic spell in this way).</p>
+<p><em>Format</em>: mythic magic 3/day; <em>Location</em>: Special Attacks.</p>
+
+<p id = "mythic-power-mythic"><strong>Mythic Power<sup>MA</sup> (Su)</strong> The mythic monster can draw upon a wellspring of power to accomplish amazing deeds and cheat fate. Each day, it can expend a number of uses of mythic power equal to its mythic rank. This amount is its maximum amount of mythic power. If an ability allows it to regain mythic power, it can never gain more than this amount. The monster automatically has the <a href="universalMonsterRules.html#surge-mythic">surge ability</a>, and can use this mythic power to activate it. It may have other abilities that rely on mythic power.</p>
+<p><em>Format</em>: mythic power (3/day, surge +1d6); <em>Location</em>: Special Attacks.</p>
+
+<p id = "natural-attacks"><strong>Natural Attacks</strong> Most creatures possess one or more natural attacks (attacks made without a weapon). These attacks fall into one of two categories, primary and secondary attacks. Primary attacks are made using the creature's full base attack bonus and add the creature's full Strength bonus on damage rolls. Secondary attacks are made using the creature's base attack bonus &ndash;5 and add only 1/2 the creature's Strength bonus on damage rolls. If a creature has only one natural attack, it is always made using the creature's full base attack bonus and adds 1-1/2 the creature's Strength bonus on damage rolls. This increase does not apply if the creature has multiple attacks but only takes one. If a creature has only one type of attack, but has multiple attacks per round, that attack is treated as a primary attack, regardless of its type. Table: Natural Attacks by Size lists some of the most common types of natural attacks and their classifications.</p>
+<p>Some creatures treat one or more of their attacks differently, such as dragons, which always receive 1-1/2 times their Strength bonus on damage rolls with their bite attack. These exceptions are noted in the creature's description.</p>
+<p>Creatures with natural attacks and attacks made with weapons can use both as part of a full attack action (although often a creature must forgo one natural attack for each weapon clutched in that limb, be it a claw, tentacle, or slam). Such creatures attack with their weapons normally but treat all of their natural attacks as secondary attacks during that attack, regardless of the attack's original type.</p>
+<div class = "table">
+	<table id="natural-attacks-by-size">
+		<caption>Natural Attacks by Size</caption>
+		<thead>
+			<tr><th rowspan="2">Natural Attack</th><th colspan="9"><center>Base Damage by Size*</center></th><th rowspan="2">Damage Type</th><th rowspan="2">Attack Type</th></tr>
+			<tr><th>Fine</th><th>Dim.</th><th>Tiny</th><th>Small</th><th>Medium</th><th>Large</th><th>Huge</th><th>Garg.</th><th>Col.</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>Bite</td><td>1</td><td>1d2</td><td>1d3</td><td>1d4</td><td>1d6</td><td>1d8</td><td>2d6</td><td>2d8</td><td>4d6</td><td>B/S/P</td><td>Primary</td></tr>
+			<tr><td>Claw</td><td>&mdash;</td><td>1</td><td>1d2</td><td>1d3</td><td>1d4</td><td>1d6</td><td>1d8</td><td>2d6</td><td>2d8</td><td>B/S</td><td>Primary</td></tr>
+			<tr><td>Gore</td><td>1</td><td>1d2</td><td>1d3</td><td>1d4</td><td>1d6</td><td>1d8</td><td>2d6</td><td>2d8</td><td>4d6</td><td>P</td><td>Primary</td></tr>
+			<tr><td>Hoof, Tentacle, Wing</td><td>&mdash;</td><td>1</td><td>1d2</td><td>1d3</td><td>1d4</td><td>1d6</td><td>1d8</td><td>2d6</td><td>2d8</td><td>B</td><td>Secondary</td></tr>
+			<tr><td>Pincers, Tail Slap</td><td>1</td><td>1d2</td><td>1d3</td><td>1d4</td><td>1d6</td><td>1d8</td><td>2d6</td><td>2d8</td><td>4d6</td><td>B</td><td>Secondary</td></tr>
+			<tr><td>Slam</td><td>&mdash;</td><td>1</td><td>1d2</td><td>1d3</td><td>1d4</td><td>1d6</td><td>1d8</td><td>2d6</td><td>2d8</td><td>B</td><td>Primary</td></tr>
+			<tr><td>Sting</td><td>&mdash;</td><td>1</td><td>1d2</td><td>1d3</td><td>1d4</td><td>1d6</td><td>1d8</td><td>2d6</td><td>2d8</td><td>P</td><td>Primary</td></tr>
+			<tr><td>Talons</td><td>&mdash;</td><td>1</td><td>1d2</td><td>1d3</td><td>1d4</td><td>1d6</td><td>1d8</td><td>2d6</td><td>2d8</td><td>S</td><td>Primary</td></tr>
+			<tr><td>Other</td><td>&mdash;</td><td>1</td><td>1d2</td><td>1d3</td><td>1d4</td><td>1d6</td><td>1d8</td><td>2d6</td><td>2d8</td><td>B/S/P</td><td>Secondary</td></tr>
+		</tbody>
+		<tfoot>
+			<tr><td colspan="12">* Individual creatures vary from this value as appropriate.</td></tr>
+		</tfoot>
+	</table>
+</div>
+<p>The Damage Type column refers to the sort of damage that the natural attack typically deals: bludgeoning (B), slashing (S), or piercing (P). Some attacks deal damage of more than one type, depending on the creature. In such cases all the damage is considered to be of all listed types for the purpose of overcoming damage reduction.</p>
+<p>Some fey, humanoids, monstrous humanoids, and outsiders do not possess natural attacks. These creatures can make unarmed strikes, but treat them as weapons for the purpose of determining attack bonuses, and they must use the two-weapon fighting rules when making attacks with both hands. See Table: Natural Attacks by Size for typical damage values for natural attacks by creature size.</p>
+<p><em>Format</em>: bite +5 (1d6+1), 2 claws +5 (1d4+2), 4 tentacles +0 (1d4+1); <em>Location</em>: Melee and Ranged.</p>
+
+<p id = "natural-invisibility"><strong>Natural Invisibility (Ex or Su)</strong> This ability is constant&mdash;the creature remains invisible at all times, even when attacking. As this ability is inherent, it is not subject to the <em><a href="../coreRulebook/spells/invisibilityPurge.html#invisibility-purge" >invisibility purge</a></em> spell.</p>
+<p><em>Format</em>: natural invisibility; <em>Location</em>: Defensive Abilities.</p>
+
+<p id = "negative-energy-affinity"><strong>Negative Energy Affinity (Ex)</strong> The creature is alive but is healed by negative energy and harmed by positive energy, as if it were an undead creature. <em>Format</em> negative energy affinity; <em>Location</em> Defensive Abilities</p>
+
+<p id = "no-breath"><strong>No Breath (Ex)</strong> The monster does not breathe, and is immune to effects that require breathing (such as inhaled poison). This does not give immunity to cloud or gas attacks that do not require breathing.</p>
+<p><em>Format</em>: no breath; <em>Location</em>: Special Qualities.</p>
+
+<p id = "ooze-traits" title = "Pathfinder Roleplaying Game: Bestiary 5"><strong>Ooze Traits (Ex)</strong> Oozes are immune to critical hits, flanking, precision damage, mind-affecting effects (charms, compulsions, morale effects, patterns, and phantasms), paralysis, poison, polymorph, sleep, stun, and visual effects.</p>
+<p><em>Format</em>: ooze traits; <em>Location</em>: Immune.</p>
+
+<p><b id="paralysis">Paralysis (Ex or Su) </b>This special attack renders the victim immobile. Paralyzed creatures cannot move, speak, or take any physical actions. The creature is rooted to the spot, frozen and helpless. Paralysis works on the body, and a character can usually resist it with a Fortitude saving throw (DC 10 + 1/2 paralyzing creature's racial HD + paralyzing creature's Con modifier; the DC is given in the creature's description). Unlike <em><a href="../coreRulebook/spells/holdPerson.html#hold-person" >hold person</a> </em>and similar effects, a paralysis effect does not allow a new save each round. A winged creature flying in the air at the time that it is paralyzed cannot flap its wings and falls. A swimmer can't swim and may drown. The duration of the paralysis varies and is included in the creature's description.</p>
+<p><em>Format</em>: paralysis (1d4 rounds, DC 18); <em>Location</em>: Special Attacks and individual attacks.</p>
+
+<p id = "plant-traits"><strong>Plant Traits (Ex) </strong>Plants are immune to all mind-affecting effects (charms, compulsions, morale effects, patterns, and phantasms), paralysis, poison, polymorph, sleep, and stun.</p>
+<p><em>Format</em>: plant traits; <em>Location</em>: Immune.</p>
+
+<p id = "plantbringer-mythic"><strong>Plantbringer<sup>MA</sup> (Su)</strong> All plants within a 1-mile radius of the creature grow at double their normal rate and don’t suffer from any diseases or maladies. Allied plant creatures within 30 feet of the creature gain <a href="universalMonsterRules.html#fast-healing">fast healing</a> equal to the creature’s mythic rank. If the creature uses plant shape or wild shape to take the form of a plant, it gains this <a href="universalMonsterRules.html#fast-healing">fast healing</a> in plant form.</p>
+<p><em>Format</em>: plantbringer; <em>Location</em>: SQ</p>
+
+<p id = "poison"><strong>Poison (Ex or Su)</strong> A creature with this ability can poison those it attacks. The effects of the poison, including its save, frequency, and cure, are included in the creature's description. The saving throw to resist a poison is usually a Fort save (DC 10 + 1/2 poisoning creature's racial HD + creature's Con modifier; the exact DC is given in the creature's descriptive text). Poisons can be removed through <em><a href="../coreRulebook/spells/neutralizePoison.html#neutralize-poison" >neutralize poison</a></em> and similar effects.</p>
+<p><em>Format</em>:<strong> Poison Name (Ex) </strong>Sting&mdash;injury; <em>save</em> Fort DC 22, <em>frequency</em> 1/round for 6 rounds, <em>effect</em> 1d4 Con, <em>cure</em> 2 consecutive saves; <em>Location</em>: Special Attacks and individual attacks.</p>
+
+<p id = "poisonous-blood"><strong>Poisonous Blood (Ex)</strong> Any creature that confirms a critical hit against the monster with a piercing or slashing melee weapon is sprayed with <a href="universalMonsterRules.html#poison">poison</a>. (Melee weapons with reach don’t endanger their users in this way.) The type of  <a href="universalMonsterRules.html#poison">poison</a> depends on the monster. Unless otherwise stated, this  <a href="universalMonsterRules.html#poison">poison</a> uses the  <a href="universalMonsterRules.html#poison">poison</a>’s normal DC, though some monsters might have a  <a href="universalMonsterRules.html#poison">poison</a> DC that’s Constitution-based.</p>
+<p><em>Format</em>: poisonous blood (dragon bile); <em>Location</em>: Defensive Abilities.</p>
+
+<p id = "pounce"><strong>Pounce (Ex)</strong> When a creature with this special attack makes a charge, it can make a full attack (including rake attacks if the creature also has the rake ability).</p>
+<p><em>Format</em>: pounce; <em>Location</em>: Special Attacks.</p>
+
+<p id = "powerful-blows"><strong>Powerful Blows (Ex)</strong> The specified attack adds 1-1/2 times the creature’s Strength bonus to damage instead of its normal Strength bonus or half its Strength bonus.</p>
+<p><em>Format</em>: powerful blows (slam); <em>Location</em>: SQ.</p>
+
+<p id = "powerful-charge"><strong>Powerful Charge (Ex)</strong> When a creature with this special attack makes a charge, its attack deals extra damage in addition to the normal benefits and hazards of a charge. The attack and amount of damage from the attack is given in the creature's description.</p>
+<p><em>Format</em>: powerful charge (gore, 4d8+24); <em>Location</em>: Special Attacks.</p>
+
+<p id = "psychic-magic" title = "Pathfinder Roleplaying Game: Bestiary 5"><strong>Psychic Magic (Sp)</strong> A creature with this ability can use the power of its mind to cast certain spells. Each spell cast using psychic magic consumes an amount of psychic energy. The creature has a maximum amount of psychic energy (PE) per day that refreshes after a night's rest. A creature with this ability can cast any of the spells listed in this entry as long as it has enough psychic energy remaining to pay the spell's PE cost. The DC for any of these spells is equal to 10 + the amount of psychic energy used to cast the spell + the creature's Charisma or Intelligence modifier (whichever is higher). Creatures that gain access to <a href = "../occultAdventures/psychicMagic.html#undercasting-spells">undercast spells</a> via this ability can cast an undercast version of the spell by spending 1 PE fewer for each level lower that the spell is cast. A psychic magic spell with a PE cost of 0 can be cast any number of times, and can be cast even if the creature has 0 PE remaining. The psychic magic granted by this ability has the same thought and emotion components as psychic spells. The monster can apply metamagic feats to these spells by spending an amount of additional PE equal to the level increase of the metamagic feat and by increasing the casting time as normal for spontaneously casting a metamagic spell. Because this ability grants psychic spellcasting, it also allows the creature to use <a href = "../occultAdventures/occultRules.html#occult-skill-unlocks">occult skill unlocks</a>.</p>
+<p><em>Format</em>: <strong>Psychic Magic (Sp) </strong>(CL 10th; concentration +14) 12 PE&mdash;<em>charm person </em>(1 PE, DC 14), <em>disguise self </em>(2 PE), <em>mind thrust III</em><em> </em>(3 PE, DC 16), <em>tower of iron will</em> <em>I</em> (5 PE); <em>Location</em>: Before Spell-Like Abilities.</p>
+
+<p id = "psychic-resilience" title = "Pathfinder Roleplaying Game: Bestiary 5"><strong>Psychic Resilience (Ex) </strong>Creatures with this ability are resistant to the effects of many psychic spells. They gain a +4 bonus on saving throws against all psychic spells.</p>
+<p><em>Format</em>: +4 vs. psychic spells; <em>Location</em>: After saves and in Defensive Abilities.</p>
+
+<p id = "pull"><strong>Pull (Ex) </strong>A creature with this ability can choose to make a free combat maneuver check with a successful attack. If successful, this check pulls a creature closer. The distance pulled is set by this ability. The type of attack that causes the pull and the distance pulled are included in the creature's description. This ability only works on creatures of a size equal to or smaller than the pulling creature. Creatures pulled in this way do not provoke attacks of opportunity and stop if the pull would move them into a solid object or creature.</p>
+<p><em>Format</em>: pull (tentacle, 5 feet); <em>Location</em>: Special Attacks and individual attacks.</p>
+
+<p id = "push"><strong>Push (Ex) </strong>A creature with the push ability can choose to make a free combat maneuver check with a certain successful attack (often a slam attack). If successful, this check pushes a creature directly away as with a bull rush, but the distance moved is set by this ability. The type of attack that causes the push and the distance pushed are included in the creature's description. This ability only works on creatures of a size equal to or smaller than the pushing creature. Creatures pushed in this way do not provoke attacks of opportunity and stop if the push would move them into a solid object or creature.</p>
+<p><em>Format</em>: push (slam, 10 feet); <em>Location</em>: Special Attacks and individual attacks.</p>
+
+<p id = "rake"><strong>Rake (Ex)</strong> A creature with this special attack gains extra natural attacks under certain conditions, typically when it grapples its foe. In addition to the options available to all grapplers, a monster with the rake ability gains two free claw attacks that it can use only against a grappled foe. The bonus and damage caused by these attacks is included in the creature's description. A monster with the rake ability must begin its turn already grappling to use its rake&mdash;it can't begin a grapple and rake in the same turn.</p>
+<p><em>Format</em>: rake (2 claws +8, 1d4+2); <em>Location</em>: Special Attacks.</p>
+
+<p id = "recuperation-mythic"><strong>Recuperation<sup>MA</sup> (Ex)</strong> The creature is restored to full hit points after 8 hours of rest so long as it isn’t dead. In addition, by expending one use of mythic power and resting for 1 hour, it regains a number of hit points equal to half its full hit points (up to a maximum of its full hit points) and regain the use of any class features that are limited to a certain number of uses per day (such as barbarian rage, bardic performance, spells per day, and so on). This rest is treated as 8 hours of sleep for such abilities. This rest doesn’t refresh uses of mythic power or any mythic abilities that are limited to a number of times per day.</p>
+<p><em>Format</em>: recuperation; <em>Location</em>: SQ.</p>
+
+<p id = "regeneration"><strong>Regeneration (Ex) </strong>A creature with this ability is difficult to kill. Creatures with regeneration heal damage at a fixed rate, as with fast healing, but they cannot die as long as their regeneration is still functioning (although creatures with regeneration still fall unconscious when their hit points are below 0). Certain attack forms, typically fire and acid, cause a creature's regeneration to stop functioning on the round following the attack. During this round, the creature does not heal any damage and can die normally. The creature's descriptive text describes the types of damage that cause the regeneration to cease functioning. </p>
+<p>Attack forms that don't deal hit point damage are not healed by regeneration. Regeneration also does not restore hit points lost from starvation, thirst, or suffocation. Regenerating creatures can regrow lost portions of their bodies and can reattach severed limbs or body parts if they are brought together within 1 hour of severing. Severed parts that are not reattached wither and die normally.</p>
+<p>A creature must have a Constitution score to have the regeneration ability.</p>
+<p><em>Format</em>: regeneration 5 (fire, acid); <em>Location</em>: hp.</p>
+
+<p id = "rend"><strong>Rend (Ex) </strong>If it hits with two or more natural attacks in 1 round, a creature with the rend special attack can cause tremendous damage by latching onto the opponent's body and tearing flesh. This attack deals an additional amount of damage, but no more than once per round. The type of attacks that must hit and the additional damage are included in the creature's description. The additional damage is usually equal to the damage caused by one of the attacks plus 1-1/2 the creature's Strength bonus.</p>
+<p><em>Format</em>: rend (2 claws, 1d8+9); <em>Location</em>: Special Attacks.</p>
+
+<p id = "resistance"><strong>Resistance (Ex)</strong> A creature with this special quality ignores some damage of the indicated type each time it takes damage of that kind (commonly acid, cold, electricity, or fire). The entry indicates the amount and type of damage ignored.</p>
+<p><em>Format</em>:<strong> Resist</strong> acid 10; <em>Location</em>: Defensive Abilities.</p>
+
+<p id = "rock-catching"><strong>Rock Catching (Ex)</strong>&nbsp;The creature (which must be of at least Large size) can catch Small, Medium, or Large rocks (or projectiles of similar shape). Once per round, a creature that would normally be hit by a rock can make a Reflex save to catch it as a free action. The DC is 15 for a Small rock, 20 for a Medium one, and 25 for a Large one. (If the projectile provides a magical bonus on attack rolls, the DC increases by that amount.) The creature must be aware of the attack in order to make a rock catching attempt.</p>
+<p><em>Format</em>: rock catching; <em>Location</em>: Defensive Abilities.</p>
+
+<p id = "rock-throwing"><strong>Rock Throwing (Ex)</strong>&nbsp;This creature is an accomplished rock thrower and has a +1 racial bonus on attack rolls with thrown rocks. A creature can hurl rocks up to two categories smaller than its size; for example, a Large hill giant can hurl Small rocks. A "rock" is any large, bulky, and relatively regularly shaped object made of any material with a hardness of at least 5. The creature can hurl the rock up to five range increments. The size of the range increment varies with the creature. Damage from a thrown rock is generally twice the creature's base slam damage plus 1-1/2 its Strength bonus.</p>
+<p><em>Format</em>: rock throwing (120 ft.); <em>Location</em>: Special Attacks (damage is listed in Ranged attack).</p>
+
+<p id = "scent"><strong>Scent (Ex)</strong> This special quality allows a creature to detect approaching enemies, sniff out hidden foes, and track by sense of smell. Creatures with the scent ability can identify familiar odors just as humans do familiar sights.</p>
+<p>The creature can detect opponents within 30 feet by sense of smell. If the opponent is upwind, the range increases to 60 feet; if downwind, it drops to 15 feet. Strong scents, such as smoke or rotting garbage, can be detected at twice the ranges noted above. Overpowering scents, such as skunk musk or troglodyte stench, can be detected at triple normal range.</p>
+<p>When a creature detects a scent, the exact location of the source is not revealed&mdash;only its presence somewhere within range. The creature can take a move action to note the direction of the scent. When the creature is within 5 feet of the source, it pinpoints the source's location.</p>
+<p>A creature with the scent ability can follow tracks by smell, making a Wisdom (or <a href="../coreRulebook/skills/survival.html#survival" >Survival</a>) check to find or follow a track. The typical DC for a fresh trail is 10 (no matter what kind of surface holds the scent). This DC increases or decreases depending on how strong the quarry's odor is, the number of creatures, and the age of the trail. For each hour that the trail is cold, the DC increases by 2. The ability otherwise follows the rules for the <a href="../coreRulebook/skills/survival.html#survival" >Survival</a> skill. Creatures tracking by scent ignore the effects of surface conditions and poor visibility.</p>
+<p><em>Format</em>: scent; <em>Location</em>: Senses.</p>
+
+<p id = "second-save"><strong>Second Save</strong><sup>MA</sup> <strong>(Ex)</strong> Whenever the creature fails a saving throw against an effect with a duration greater than 1 round, it can keep trying to shake off the effect. At the start of its turn, if it's still affected, it can attempt the save one more time as a free action. If this save succeeds, the effect affects the creature as if it had succeeded at its initial saving throw. If the effect already allows another saving throw on a later turn to break the effect (such as for <em>hold monster</em>), this ability is in addition to the extra saving throw from the effect.</p>
+<p><em>Format</em>: second save; <em>Location</em>: After saving throws.</p>
+
+<p id = "see-in-darkness"><strong>See in Darkness (Su)</strong> The creature can see perfectly in darkness of any kind, including that created by <em><a href="../coreRulebook/spells/deeperDarkness.html#deeper-darkness" >deeper darkness</a></em>.</p>
+<p><em>Format</em>: see in darkness; <em>Location</em>: Senses.</p>
+
+<p id = "smother"><strong>Smother (Ex)</strong> If the creature’s opponent is holding its breath, the creature can reduce the time until the target has to attempt suffocation checks. As a free action, the creature can attempt a grapple combat maneuver against the opponent. If it succeeds, the opponent reduces the remaining duration it can hold its breath by 1d6 rounds.</p>
+<p><em>Format</em>: smother; <em>Location</em>: Special Attacks.</p>
+
+<p id = "sound-mimicry"><strong>Sound Mimicry (Ex)</strong> The creature perfectly imitates certain sounds or even specific voices. The creature makes a <a href="../coreRulebook/skills/bluff.html#bluff" >Bluff</a> check opposed by the listener's <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> check to recognize the mimicry, although if the listener isn't familiar with the person or type of creatures mimicked, it takes a &ndash;8 penalty on its <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> check. The creature has a +8 racial bonus on its <a href="../coreRulebook/skills/bluff.html#bluff" >Bluff</a> check to mimic sounds (including accents and speech patterns, if a voice mimic) it has listened to for at least 10 minutes. The creature cannot duplicate the effects of magical abilities (such as bardic performance or a harpy's captivating song), though it may be able to mimic the sound of those abilities. This ability does not allow the creature to speak or understand languages it doesn't know.</p>
+<p><em>Format</em>: sound mimicry (voices); <em>Location</em>: Special Qualities.</p>
+
+<p id = "spell-like-abilities"><strong>Spell-Like Abilities (Sp) </strong>Spell-like abilities are magical and work just like spells (though they are not spells and so have no verbal, somatic, focus, or material components). They go away in an <em><a href="../coreRulebook/spells/antimagicField.html#antimagic-field" >antimagic field</a> </em>and are subject to spell resistance if the spell the ability is based on would be subject to spell resistance.</p>
+<p>A spell-like ability usually has a limit on how often it can be used. A constant spell-like ability or one that can be used at will has no use limit; unless otherwise stated, a creature can only use a constant spell-like ability on itself. Reactivating a constant spell-like ability is a swift action. Using all other spell-like abilities is a standard action unless noted otherwise, and doing so provokes attacks of opportunity. It is possible to make a concentration check to use a spell-like ability defensively and avoid provoking an attack of opportunity, just as when casting a spell. A spell-like ability can be disrupted just as a spell can be. Spell-like abilities cannot be used to counterspell, nor can they be counterspelled.</p>
+<p>For creatures with spell-like abilities, a designated caster level defines how difficult it is to dispel their spell-like effects and to define any level-dependent variables (such as range and duration) the abilities might have. The creature's caster level never affects which spell-like abilities the creature has; sometimes the given caster level is lower than the level a spellcasting character would need to cast the spell of the same name. If no caster level is specified, the caster level is equal to the creature's Hit Dice. The saving throw (if any) against a spell-like ability is 10 + the level of the spell the ability resembles or duplicates + the creature's Charisma modifier.</p>
+<p>Some spell-like abilities duplicate spells that work differently when cast by characters of different classes<em>. </em>A monster's spell-like abilities are presumed to be the sorcerer/wizard versions. If the spell in question is not a sorcerer/wizard spell, then default to cleric, druid, bard, paladin, and ranger, in that order.</p>
+<p><em>Format</em>: At will&mdash;<em><a href="../coreRulebook/spells/burningHands.html#burning-hands" >burning hands</a> </em>(DC 13); <em>Location</em>: Spell-Like Abilities.</p>
+
+<p id = "spell-resistance"><strong>Spell Resistance (Ex) </strong>A creature with spell resistance can avoid the effects of spells and spell-like abilities that directly affect it. To determine if a spell or spell-like ability works against a creature with spell resistance, the caster must make a caster level check (1d20 + caster level). If the result equals or exceeds the creature's spell resistance, the spell works normally, although the creature is still allowed a saving throw.</p>
+<p><em>Format</em>:<strong> SR</strong> 18; <em>Location</em>: Defensive Abilities.</p>
+
+<p id = "spells"><strong>Spells</strong>: The creature is able to cast magical spells like a member of a spellcasting class. The creature counts as a member of that class for any effect or ability relating to casting spells as that class. For example, it can use spell completion and spell trigger items usable by that class or use magic items that affect that class's spellcasting (such as <em>incense of meditation</em> or a <em>pearl of power</em>). If the creature has any other abilities relating to that class (such as cleric domains or a sorcerer bloodline), this is explained in its entry. If the creature gains levels in that spellcasting class, these abilities stack (for example, a spirit naga that gains 3 sorcerer levels casts spells as a 10th-level sorcerer). Some creatures may have unusual abilities unavailable to spellcasters of that class (such as a spirit naga's ability to learn cleric spells with her sorcerer spells known).</p>
+
+<p id = "split"><strong>Split (Ex)</strong> The creature splits into two identical copies of itself if subject to certain attacks or effects. Each copy has half the original's current hit points (rounded down). A creature reduced below the listed hit points cannot be further split and can be killed normally.</p>
+<p><em>Format</em>: split (piercing and slashing, 10 hp); <em>Location</em>: Defensive Abilities.</p>
+
+<p id = "steal" title = "Pathfinder Roleplaying Game: Bestiary 5"><strong>Steal (Ex)</strong> The creature can attempt a <a href = "../advancedPlayersGuide/advancedNewRules.html#steal">steal combat maneuver check</a> against its opponent as a free action without provoking attacks of opportunity if it hits with the specified attack.</p>
+<p><em>Format</em>: steal; <em>Location</em>: individual attacks.</p>
+
+<p id = "stench"><strong>Stench (Ex)</strong> A creature with the stench special ability secretes an oily chemical that nearly every other creature finds offensive. All living creatures (except those with the stench special ability) within 30 feet must succeed on a Fortitude save (DC 10 + 1/2 stench creature's racial HD + stench creature's Con modifier; the exact DC is given in the creature's descriptive text) or be sickened. The duration of the sickened condition is given in the creature's descriptive text. Creatures that successfully save cannot be affected by the same creature's stench for 24 hours. A <a href = "../coreRulebook/spells/delayPoison.html#delay-poison"><em>delay poison</em></a> or <a href = "../coreRulebook/spells/neutralizePoison.html#neutralize-poison"><em>neutralize poison</em></a> spell removes the effect from the sickened creature. Creatures with immunity to poison are unaffected, and creatures resistant to poison receive their normal bonus on their saving throws.</p>
+<p><em>Format</em>: stench (DC 15, 10 rounds); <em>Location</em>: Aura.</p>
+
+<p id = "strangle"><strong>Strangle (Ex)</strong> An opponent grappled by the creature cannot speak or cast spells with verbal components.</p>
+<p><em>Format</em>: strangle; <em>Location</em>: Special Attacks.</p>
+
+<p id = "summon"><strong>Summon (Sp)</strong> A creature with the summon ability can summon other specific creatures of its kind much as though casting a <em>summon monster </em>spell, but it usually has only a limited chance of success (as specified in the creature's entry). Roll d%: On a failure, no creature answers the summons. Summoned creatures automatically return whence they came after 1 hour. A creature summoned in this way cannot use any spells or spell-like abilities that require material components costing more than 1 gp unless those components are supplied, nor can it use its own summon ability for 1 hour. An appropriate spell level is given for each summoning ability for purposes of Will saves, caster level checks, and concentration checks. No experience points are awarded for defeating summoned monsters.</p>
+<p><em>Format</em>: 1/day&mdash;summon (level 4, 1 hezrou 35%); <em>Location</em>: Spell-Like Abilities.</p>
+
+<p id = "sunlight-powerlessness"><strong>Sunlight Powerlessness (Ex)</strong> If the creature is in sunlight (but not in an area of <em><a href="../coreRulebook/spells/daylight.html#daylight" >daylight</a></em> or similar spells), it cannot attack and is staggered.</p>
+<p><em>Format</em>: sunlight powerlessness; <em>Location</em>: Weaknesses.</p>
+
+<p id = "surge-mythic"><strong>Surge<sup>MA</sup> (Su)</strong> The creature can call upon its mythic power to overcome difficult challenges. It can expend one use of mythic power to increase any d20 roll it just made by rolling a die and adding it to the result. Using this ability is an immediate action taken after the original roll is made and the results are revealed. The bonus die depends on the creature’s mythic rank. The monster can use this ability even if it’s mindless or of animal-level intelligence.</p>
+<p>Surge doesn’t have a separate entry in the monster stat block—the surge die is listed in the mythic power ability.</p>
+
+<p id = "swallow-whole"><strong>Swallow Whole (Ex) </strong>If a creature with this special attack begins its turn with an opponent grappled in its mouth (see Grab), it can attempt a new combat maneuver check (as though attempting to pin the opponent). If it succeeds, it swallows its prey, and the opponent takes bite damage. Unless otherwise noted, the opponent can be up to one size category smaller than the swallowing creature. Being swallowed causes a creature to take damage each round. The amount and type of damage varies and is given in the creature's statistics. A swallowed creature keeps the grappled condition, while the creature that did the swallowing does not. A swallowed creature can try to cut its way free with any light slashing or piercing weapon (the amount of cutting damage required to get free is equal to 1/10 the creature's total hit points), or it can just try to escape the grapple. The Armor Class of the interior of a creature that swallows whole is normally 10 + 1/2 its natural armor bonus, with no modifiers for size or Dexterity. If a swallowed creature cuts its way out, the swallowing creature cannot use swallow whole again until the damage is healed. If the swallowed creature escapes the grapple, success puts it back in the attacker's mouth, where it may be bitten or swallowed again.</p>
+<p><em>Format</em>: swallow whole (5d6 acid damage, AC 15, 18 hp); <em>Location</em>: Special Attacks.</p>
+
+<p id = "telepathy"><strong>Telepathy (Su) </strong>The creature can mentally communicate with any other creature within a certain range (specified in the creature's entry, usually 100 feet) that has a language. It is possible to address multiple creatures at once telepathically, although maintaining a telepathic conversation with more than one creature at a time is just as difficult as simultaneously speaking and listening to multiple people at the same time.</p>
+<p><em>Format</em>: telepathy 100 ft.; <em>Location</em>: Languages.</p>
+
+<p id = "thoughtsense" title = "Pathfinder Roleplaying Game: Bestiary 5"><strong>Thoughtsense (Su) </strong>Creatures with this ability automatically detect and locate conscious creatures within the specified range (usually 60 feet). This ability functions similarly to blindsight. <em>Nondetection</em>, <em>mind blank</em>, and similar effects can block thoughtsense. Thoughtsense can distinguish between sentient (Intelligence 3 or greater) and nonsentient (Intelligence 1-2) creatures, but otherwise provides no information about the creatures it detects.</p>
+<p><em>Format</em>: thoughtsense 60 ft.; <em>Location</em>: Senses.</p>
+
+<p id = "trample"><strong>Trample (Ex)</strong> As a full-round action, a creature with the trample ability can attempt to overrun any creature that is at least one size category smaller than itself. This works just like the overrun combat maneuver, but the trampling creature does not need to make a check, it merely has to move over opponents in its path. Targets of a trample take an amount of damage equal to the trampling creature's slam damage + 1-1/2 times its Str modifier. Targets of a trample can make an attack of opportunity, but at a &ndash;4 penalty. If targets forgo an attack of opportunity, they can attempt to avoid the trampling creature and receive a Reflex save to take half damage. The save DC against a creature's trample attack is 10 + 1/2 creature's HD + creature's Str modifier (the exact DC is given in the creature's descriptive text). A trampling creature can only deal trampling damage to each target once per round, no matter how many times its movement takes it over a target creature.</p>
+<p><em>Format</em>: trample (2d6+9, DC 20); <em>Location</em>: Special Attacks.</p>
+
+<p id = "tremorsense"><strong>Tremorsense (Ex)</strong> A creature with tremorsense is sensitive to vibrations in the ground and can automatically pinpoint the location of anything that is in contact with the ground. Aquatic creatures with tremorsense can also sense the location of creatures moving through water. The ability's range is specified in the creature's descriptive text.</p>
+<p><em>Format</em>: tremorsense 60 ft.; <em>Location</em>: Senses.</p>
+
+<p id = "trip"><strong>Trip (Ex)</strong> A creature with the trip special attack can attempt to trip its opponent as a free action without provoking an attack of opportunity if it hits with the specified attack. If the attempt fails, the creature is not tripped in return.</p>
+<p><em>Format</em>: trip (bite); <em>Location</em>: individual attacks.</p>
+
+<p id = "undead-traits"><strong>Undead Traits (Ex)</strong> Undead are immune to death effects, disease, mind-affecting effects (charms, compulsions, morale effects, phantasms, and patterns), paralysis, poison, sleep, stun, and any effect that requires a Fortitude save (unless the effect also works on objects or is harmless). Undead are not subject to <a href="universalMonsterRules.html#ability-damage-and-drain">ability drain</a>, energy drain, or nonlethal damage. Undead are immune to <a href="universalMonsterRules.html#ability-damage-and-drain">damage</a> or penalties to their physical ability scores (Strength, Dexterity, and Constitution), as well as to fatigue and exhaustion effects. Undead are not at risk of death from massive damage.</p>
+<p><em>Format</em>: undead traits; <em>Location</em>: Immune.</p>
+
+<p id = "undersized-weapons"><strong>Undersized Weapons (Ex)</strong> The creature uses manufactured weapons as if it were one size category smaller than the creature's actual size.</p>
+<p><em>Format</em>: undersized weapons; <em>Location</em>: Special Qualities.</p>
+
+<p id = "unnatural-aura"><strong>Unnatural Aura (Su)</strong> Animals do not willingly approach the creature unless the animal's master makes a DC 25 <a href="../coreRulebook/skills/handleAnimal.html#handle-animal" >Handle Animal</a>, <a href="../coreRulebook/skills/ride.html#ride" >Ride</a>, or wild empathy check.</p>
+<p><em>Format</em>: unnatural aura (30 ft.); <em>Location</em>: Aura.</p>
+
+<p id = "unstoppable-mythic"><strong>Unstoppable<sup>MA</sup> (Ex)</strong> The creature can expend one use of mythic power as a free action to immediately end any one of the following conditions currently affecting it: bleed, blind, confused, cowering, dazed, dazzled, deafened, entangled, exhausted, fascinated, fatigued, frightened, nauseated, panicked, paralyzed, shaken, sickened, staggered, or stunned. All other conditions and effects remain, even those resulting from the same spell or effect that caused the selected condition. It can use this ability at the start of its turn even if a condition would prevent it from acting.</p>
+<p><em>Format</em>: unstoppable; <em>Location</em> Defensive Abilities.</p>
+
+<p id = "vulnerabilities"><strong>Vulnerabilties (Ex or Su)</strong> A creature with vulnerabilities takes half again as much damage (+50%) from a specific energy type, regardless of whether a saving throw is allowed or if the save is a success or failure. Creatures with a vulnerability that is not an energy type instead take a &ndash;4 penalty on saves against spells and effects that cause or use the listed vulnerability (such as spells with the light descriptor). Some creatures might suffer additional effects, as noted in their descriptions.</p>
+<p><em>Format</em>: vulnerability to fire; <em>Location</em>: Weaknesses.</p>
+
+<p id = "water-breathing"><strong>Water Breathing (Ex) </strong>A creature with this special ability can breathe underwater indefinitely. It can freely use any breath weapon, spells, or other abilities while submerged. <em>Format</em>: water breathing; <em>Location</em>: SQ.</p>
+
+<p id = "water-dependency"><strong>Water Dependency (Ex) </strong>A creature with this special ability can survive out of water for 1 minute per point of Constitution. Beyond this limit, this creature runs the risk of suffocation, as if it were drowning. <em>Format</em>: water dependency; <em>Location</em>: SQ. </p>
+
+<p id = "web"><strong>Web (Ex) </strong>Creatures with the web ability can use webs to support themselves and up to one additional creature of the same size. In addition, such creatures can throw a web up to eight times per day. This is similar to an attack with a net but has a maximum range of 50 feet, with a range increment of 10 feet, and is effective against targets up to one size category larger than the web spinner. An entangled creature can escape with a successful <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> check or burst the web with a Strength check. Both are standard actions with a DC equal to 10 + 1/2 creature's HD + creature's Con modifier. Attempts to burst a web by those caught in it suffer a &ndash;4 penalty.</p>
+<p>Web spinners can create sheets of sticky webbing up to three times their size. They usually position these sheets to snare flying creatures but can also try to trap prey on the ground. Approaching creatures must succeed on a DC 20 <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> check to notice a web; otherwise they stumble into it and become trapped as though by a successful web attack. Attempts to escape or burst the webbing gain a +5 bonus if the trapped creature has something to walk on or grab while pulling free. Each 5-foot-square section of web has a number of hit points equal to the Hit Dice of the creature that created it and DR 5/&mdash;.</p>
+<p>A creature can move across its own web at its climb speed and can pinpoint the location of any creature touching its web.</p>
+<p><em>Format</em>: web (+8 ranged, DC 16, 5 hp); <em>Location</em>: Special Attacks.</p>
+
+<p id = "whirlwind"><strong>Whirlwind (Su)</strong> Some creatures can transform themselves into whirlwinds and remain in that form for up to 1 round for every 2 HD they have. If the creature has a fly speed, it can continue to fly at that same speed while in whirlwind form, otherwise it gains a fly speed equal to its base land speed (average maneuverability) while in whirlwind form.</p>
+<p>The whirlwind is always 5 feet wide at its base, but its height and width at the top vary from creature to creature (minimum 10 feet high). A whirlwind's width at its peak is always equal to half of its height. The creature controls the exact height, but it must be at least 10 feet high.</p>
+<p>The whirlwind form does not provoke attacks of opportunity, even if the creature enters the space another creature occupies. Another creature might be caught in the whirlwind if it touches or enters the whirlwind, or if the whirlwind moves into or through a creature's space. A creature in whirlwind form cannot make its normal attacks and does not threaten the area around it.</p>
+<p>Creatures one or more size categories smaller than the whirlwind might take damage when caught in the whirlwind (generally damage equal to the monster's slam attack for a creature of its size) and may be lifted into the air. An affected creature must succeed on a Reflex save (DC 10 + half monster's HD + the monster's Strength modifier) when it comes into contact with the whirlwind or take damage as if it were hit by the whirlwind creature's slam attack. It must also succeed on a second Reflex save or be picked up bodily and held suspended in the powerful winds, automatically taking the indicated damage each round. A creature that can fly is allowed a Reflex save each round to escape the whirlwind. The creature still takes damage but can leave if the save is successful.</p>
+<p>Creatures trapped in the whirlwind cannot move except to go where the whirlwind carries them or to escape the whirlwind. Trapped creatures can otherwise act normally, but must succeed on a concentration check (DC 15 + spell level) to cast a spell. Creatures caught in the whirlwind take a &ndash;4 penalty to Dexterity and a &ndash;2 penalty on attack rolls. The whirlwind can have only as many creatures trapped inside at one time as will fit inside the whirlwind's volume. The whirlwind can eject any carried creatures whenever it wishes as a free action, depositing them in its space.</p>
+<p>If the whirlwind's base touches the ground, it creates a swirling cloud of debris. This cloud is centered on the creature and has a diameter equal to half the whirlwind's height. The cloud obscures all vision, including darkvision, beyond 5 feet. Creatures 5 feet away have concealment, while those farther away have total concealment. Those caught in the cloud of debris must succeed on a concentration check (DC 15 + spell level) to cast a spell.</p>
+<p><em>Format</em>: whirlwind (3/day, 10&ndash;30 ft. high, 1d6+6 damage, DC 15); <em>Location</em>: Special Attacks.</p>
+
+<p id = "x-ray-vision" title = "Pathfinder Roleplaying Game: Bestiary 5"><strong>X-Ray Vision (Su)</strong> The monster can see through solid matter as if wearing a <a href = "../coreRulebook/magicItems/rings.html#ring-of-x-ray-vision"><em>ring of x-ray vision</em></a>. This is as exhausting as if the monster were actually using the ring.</p>
+<p><em>Format</em>: x-ray vision; <em>Location</em>: Senses.</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Universal Monster Rules",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

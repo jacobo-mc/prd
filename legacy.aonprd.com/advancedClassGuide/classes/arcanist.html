@@ -1,0 +1,582 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Arcanist</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "arcanist.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "arcanist.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "arcanist.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "index.html">Classes</a></li>
+						<li><a href = "../classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../spells/index.html">Spells</a></li>
+						<li><a href = "../spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "arcanist.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "arcanist.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "arcanist.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "arcanist.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "arcanist.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "arcanist.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "arcanist.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "arcanist.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "arcanist.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "arcanist.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "arcanist.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "arcanist.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "arcanist.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "arcanist.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "arcanist.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "arcanist.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "arcanist.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "arcanist.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1>Arcanist</h1>
+	<p>Some spellcasters seek the secrets of magic, pursuing the power to make the impossible possible. Others are born with magic in their blood, commanding unbelievable forces as effortlessly as they breathe. Yet still others seek to meld the science of arcane scholars with the natural might of innate casters. These arcanists seek to discover the mysterious laws of magic and through will and expertise bend those forces to their whims. Arcanists are the shapers and tinkers of the arcane world, and no magic can resist their control. </p>
+	<p><strong>Role</strong>: Arcanists are scholars of all things magical. They constantly seek out new forms of magic to discover how they work, and in many cases, to collect the energy of such magic for their own uses. Many arcanists are seen as reckless, more concerned with the potency of magic than the ramifications of unleashing such power.</p>
+	<p><strong>Alignment</strong>: Any. </p>
+	<p><strong>Hit Die</strong>: d6.</p>
+	<p><strong>Parent Classes</strong>: Sorcerer and wizard.</p>
+	<p><strong>Starting Wealth</strong>: 2d6 &times; 10 gp (average 70 gp).</p>
+	
+<div class="table">
+
+	<table id = "arcanist-progression-table">
+		<caption>Arcanist</caption>
+		<thead>
+			<tr>
+				<th rowspan = "2">Level</th>
+				<th rowspan = "2">Base Attack Bonus</th>
+				<th rowspan = "2">Fort Save</th>
+				<th rowspan = "2">Ref Save</th>
+				<th rowspan = "2">Will Save</th>
+				<th rowspan = "2">Special</th>
+				<th colspan = "9" style="text-align: center;">Spells per Day</th>
+			</tr>
+			<tr>
+				<th>1st</th>
+				<th>2nd</th>
+				<th>3rd</th>
+				<th>4th</th>
+				<th>5th</th>
+				<th>6th</th>
+				<th>7th</th>
+				<th>8th</th>
+				<th>9th</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>1st</td><td>+0</td><td>+0</td><td>+0</td><td>+2</td><td>Arcane reservoir, arcanist exploit, cantrips, consume spells</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>2nd</td><td>+1</td><td>+0</td><td>+0</td><td>+3</td><td></td><td>3</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>3rd</td><td>+1</td><td>+1</td><td>+1</td><td>+3</td><td>Arcanist exploit</td><td>4</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>4th</td><td>+2</td><td>+1</td><td>+1</td><td>+4</td><td></td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>5th</td><td>+2</td><td>+1</td><td>+1</td><td>+4</td><td>Arcanist exploit</td><td>4</td><td>3</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>6th</td><td>+3</td><td>+2</td><td>+2</td><td>+5</td><td></td><td>4</td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>7th</td><td>+3</td><td>+2</td><td>+2</td><td>+5</td><td>Arcanist exploit</td><td>4</td><td>4</td><td>3</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>8th</td><td>+4</td><td>+2</td><td>+2</td><td>+6</td><td></td><td>4</td><td>4</td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>9th</td><td>+4</td><td>+3</td><td>+3</td><td>+6</td><td>Arcanist exploit</td><td>4</td><td>4</td><td>4</td><td>3</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>10th</td><td>+5</td><td>+3</td><td>+3</td><td>+7</td><td></td><td>4</td><td>4</td><td>4</td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>11th</td><td>+5</td><td>+3</td><td>+3</td><td>+7</td><td>Arcanist exploit, greater exploits</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>12th</td><td>+6/+1</td><td>+4</td><td>+4</td><td>+8</td><td></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>13th</td><td>+6/+1</td><td>+4</td><td>+4</td><td>+8</td><td>Arcanist exploit</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>14th</td><td>+7/+2</td><td>+4</td><td>+4</td><td>+9</td><td></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>15th</td><td>+7/+2</td><td>+5</td><td>+5</td><td>+9</td><td>Arcanist exploit</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>16th</td><td>+8/+3</td><td>+5</td><td>+5</td><td>+10</td><td></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>2</td><td>&mdash;</td></tr>
+			<tr><td>17th</td><td>+8/+3</td><td>+5</td><td>+5</td><td>+10</td><td>Arcanist exploit</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>&mdash;</td></tr>
+			<tr><td>18th</td><td>+9/+4</td><td>+6</td><td>+6</td><td>+11</td><td></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>2</td></tr>
+			<tr><td>19th</td><td>+9/+4</td><td>+6</td><td>+6</td><td>+11</td><td>Arcanist exploit</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td></tr>
+			<tr><td>20th</td><td>+10/+5</td><td>+6</td><td>+6</td><td>+12</td><td>Magical supremacy</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td></tr>
+		</tbody>
+	</table>
+</div>
+
+<table id = "arcanist-spells-prepared">
+	<caption>Arcanist Spells Prepared</caption>
+	<thead>
+		<tr>
+			<th>Level</th><th>0</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th><th>6th</th><th>7th</th><th>8th</th><th>9th</th>
+			
+		</tr>
+	</thead>
+	<tbody>
+<tr><td>1st</td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>2nd</td><td>5</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>3rd</td><td>5</td><td>3</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>4th</td><td>6</td><td>3</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>5th</td><td>6</td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>6th</td><td>7</td><td>4</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>7th</td><td>7</td><td>5</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>8th</td><td>8</td><td>5</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>9th</td><td>8</td><td>5</td><td>4</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>10th</td><td>9</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>11th</td><td>9</td><td>5</td><td>5</td><td>4</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>12th</td><td>9</td><td>5</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>13th</td><td>9</td><td>5</td><td>5</td><td>4</td><td>4</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>14th</td><td>9</td><td>5</td><td>5</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>15th</td><td>9</td><td>5</td><td>5</td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>16th</td><td>9</td><td>5</td><td>5</td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td></tr>
+<tr><td>17th</td><td>9</td><td>5</td><td>5</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>&mdash;</td></tr>
+<tr><td>18th</td><td>9</td><td>5</td><td>5</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>1</td></tr>
+<tr><td>19th</td><td>9</td><td>5</td><td>5</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+<tr><td>20th</td><td>9</td><td>5</td><td>5</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td></tr>
+	</tbody>
+</table>
+
+<h2 id = "class-skills">Class Skills</h2>
+	<p>The arcanist's class skills are <a href="../../coreRulebook/skills/appraise.html#appraise">Appraise</a> (Int), <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (Int), <a href="../../coreRulebook/skills/fly.html#fly">Fly</a> (Dex), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (all) (Int), <a href="../../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a> (Int), <a href="../../coreRulebook/skills/profession.html#profession">Profession</a> (Wis), <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> (Int), and <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> (Cha).</p>
+	<p><strong>Skill Ranks per Level</strong>: 2 + Int modifier.</p>
+
+<h2 id = "class-features">Class Features</h2>
+	<p>The following are the class features of the arcanist.</p>
+	<p><strong>Weapon and Armor Proficiencies</strong>: Arcanists are proficient with all simple weapons. They are not proficient with any type of armor or shield. Armor interferes with an arcanist's gestures, which can cause her spells with somatic components to fail (see <a href="../../coreRulebook/classes/wizard.html#arcane-spells-and-armor">Arcane Spells and Armor</a>).</p>
+	
+	<p><strong>Spells</strong>: An arcanist casts arcane spells drawn from the <a href="../../indices/spelllists.html">sorcerer/wizard spell list</a>. An arcanist must prepare her spells ahead of time, but unlike a wizard, her spells are not expended when they're cast. Instead, she can cast any spell that she has prepared consuming a spell slot of the appropriate level, assuming she hasn't yet used up her spell slots per day for that level.</p>
+		<p>To learn, prepare, or cast a spell, the arcanist must have an Intelligence score equal to at least 10 + the spell's level. The saving throw DC against an arcanist's spell is 10 + the spell's level + the arcanist's Intelligence modifier.</p>
+		<p>An arcanist can only cast a certain number of spells of each spell level per day. Her base daily spell allotment is given in the table above. In addition, she receives bonus spells per day if she has a high Intelligence score.</p>
+		<p>An arcanist may know any number of spells, but the number she can prepare each day is limited. At 1st level, she can prepare four 0-level spells and two 1st-level spells each day. At each new arcanist level, the number of spells she can prepare each day increases, adding new spell levels as indicated on the table above. Unlike the number of spells she can cast per day, the number of spells an arcanist can prepare each day is not affected by her Intelligence score. Feats and other effects that modify the number of spells known by a spellcaster instead affect the number of spells an arcanist can prepare.</p>
+		<p>An arcanist must choose and prepare her spells ahead of time by getting 8 hours of sleep and spending 1 hour studying her spellbook. While studying, the arcanist decides what spells to prepare and refreshes her available spell slots for the day.</p>
+		<p>Like a sorcerer, an arcanist can choose to apply any metamagic feats she knows to a prepared spell as she casts it, with the same increase in casting time (see <a href="../../ultimateCombat/ultimateCombatFeats.html#metamagic-feats">Spontaneous Casting and Metamagic Feats</a>). However, she may also prepare a spell with any metamagic feats she knows and cast it without increasing casting time like a wizard. She cannot combine these options&mdash;a spell prepared with metamagic feats cannot be further modified with another metamagic feat at the time of casting (unless she has the <a href="arcanist.html#metamixing">metamixing</a> arcanist exploit, detailed below).</p>
+	
+	<p><strong>Spellbooks</strong>: An arcanist must study her spellbook each day to prepare her spells. She can't prepare any spell not recorded in her spellbook, except for <a href="../../coreRulebook/spells/readMagic.html#read-magic"><em>read magic</em></a> (which all arcanists can prepare from memory).</p>
+		<p>An arcanist begins play with a spellbook containing all 0-level sorcerer/wizard spells plus three 1st-level spells of her choice. The arcanist also selects a number of additional 1st-level spells equal to her Intelligence modifier to add to the spellbook. At each new arcanist level, she gains two new spells of any spell level or levels that she can cast (based on her new arcanist level) for her spellbook. At any time, an arcanist can also add spells found in wizards' or other arcanists' spellbooks to her own.</p>
+	
+	<p id="arcane-reservoir"><strong>Arcane Reservoir (Su)</strong>: An arcanist has an innate pool of magical energy that she can draw upon to fuel her arcanist exploits and enhance her spells. The arcanist's arcane reservoir can hold a maximum amount of magical energy equal to 3 + the arcanist's level. Each day, when the arcanist prepares spells, the arcanist's arcane reservoir fills with raw magical energy, gaining a number of points equal to 3 + 1/2 her arcanist level. Any points she had from the previous day are lost. She can also regain these points through the consume spells class feature and some arcanist exploits. The arcane reservoir can never hold more points than the maximum amount noted above; points gained in excess of this total are lost.</p>
+		<p>Points from the arcane reservoir are used to fuel many of the arcanist's powers. In addition, the arcanist can expend 1 point from her arcane reservoir as a free action whenever she casts an arcanist spell. If she does, she can choose to increase the caster level by 1 or increase the spell's DC by 1. She can expend no more than 1 point from her reservoir on a given spell in this way.</p>
+		
+	<p id="arcanist-exploit"><strong>Arcanist Exploits</strong>: By bending and sometimes even breaking the rules of magic, the arcanist learns to exploit gaps and exceptions in the laws of magic. Some of these exploits allow her to break down various forms of magic, adding their essence to her arcane reservoir. At 1st level and every 2 levels thereafter, the arcanist learns a new arcane exploit selected from the following list. An arcanist exploit cannot be selected more than once. Once an arcanist exploit has been selected, it cannot be changed. Most arcanist exploits require the arcanist to expend points from her arcane reservoir to function. Unless otherwise noted, the saving throw DC of an arcanist exploit is equal to 10 + 1/2 the arcanist's level + the arcanist's Charisma modifier.</p>
+	
+		<p id="acid-jet"><em>Acid Jet (Su)</em>: The arcanist can unleash a jet of acid by expending 1 point from her arcane reservoir and making a ranged touch attack against any one target within 30 feet. If the attack hits, it deals an amount of acid damage equal to 1d6 + the arcanist's Charisma modifier, plus an additional 1d6 points of acid damage for every 2 levels beyond 1st (to a maximum of 10d6 at 19th level). The target is also sickened for 1d4 rounds. It can attempt a Fortitude saving throw to negate the sickened condition.</p>
+		
+		<p id="arcane-barrier"><em>Arcane Barrier (Su)</em>: As a swift action, the arcanist can expend 1 point from her arcane reservoir to create a barrier of magic that protects her from harm. This barrier grants the arcanist a number of temporary hit points equal to her arcanist level + her Charisma modifier, and lasts for 1 minute per arcanist level or until all the temporary hit points have been lost. Each additional time per day the arcanist uses this ability, the number of arcane reservoir points she must spend to activate it increases by 1 (so the second time it is used, the arcanist must expend 2 points from her arcane reservoir, 3 points for the third time, and so on). The temporary hit points from this ability do not stack with themselves, but additional uses do cause the total number of temporary hit points and the duration to reset.</p>
+		
+		<p id="arcane-weapon"><em>Arcane Weapon (Su)</em>: As a standard action, the arcanist can expend 1 point from her arcane reservoir to enhance her weapon. The weapon is treated as magic for the purpose of overcoming damage reduction. At 5th level, the weapon gains a +1 enhancement bonus, which increases by 1 for every 4 levels beyond 5th (to a maximum of +4 at 17th level). These bonuses stack with any existing bonuses the weapon might have, to a maximum of +5. An arcanist can also use this exploit to add one of the following weapon special abilities: <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-dancing">dancing</a></em>, <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-defending">defending</a></em>, <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-distance">distance</a></em>, <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-flaming">flaming</a></em>, <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-flaming-burst">flaming burst</a></em>, <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-frost">frost</a></em>, <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-icy-burst">icy burst</a></em>, <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-keen">keen</a></em>, <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-shock">shock</a></em>, <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-shocking-burst">shocking burst</a></em>, <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-speed">speed</a></em>, <em><a href="../../coreRulebook/magicItems/weapons.html#_spell-storing">spell storing</a></em>, or <em><a href="../../coreRulebook/magicItems/weapons.html#_throwing">throwing</a></em>. Adding any of these special abilities consumes an amount of enhancement bonus equal to the ability's base price modifier. Duplicate special abilities do not stack. If the weapon is not magical, at least a +1 enhancement bonus must be added to it before any weapon special abilities can be added. The benefits are decided upon when the exploit is used, and they cannot be changed unless the exploit is used again. These benefits apply only to a weapon wielded by the arcanist; if another creature attempts to wield the weapon, it loses these benefits, though they resume if the arcanist regains possession of the weapon. The arcanist cannot have more than one use of this ability active at a time. This effect lasts for a number of minutes equal to the arcanist's Charisma modifier (minimum 1).</p>
+		
+		<p id="bloodline-development"><em>Bloodline Development</em>: The arcanist selects one sorcerer bloodline upon taking this exploit. The arcanist gains that bloodline's 1st-level bloodline power as though she were a 1st-level sorcerer. The arcanist must select an ordinary bloodline with this ability, not one altered by an archetype. As a swift action, the arcanist can expend 1 point from her arcane reservoir to bolster her latent nature, allowing her to treat her arcanist level as her sorcerer level for the purpose of using this ability, which lasts for a number of rounds equal to her Charisma modifier (minimum 1). </p>
+			<p>She does not gain any other abilities when using this exploit in this way, such as bloodline arcana or bloodline powers gained at 3rd level or higher. If this ability is used to gain an arcane bond and a bonded item is selected, the arcanist can use that item only to cast spells that a sorcerer of that level could cast (limiting her to 1st-level spells unless she spends a point from her arcane reservoir). </p>
+			<p>If the arcanist already has a bloodline (or gains one later), taking this exploit instead allows her arcanist levels to stack with the levels of the class that granted her access to the bloodline when determining the powers and abilities of her bloodline.</p>
+			
+		<p id="consume-magic-items"><em>Consume Magic Items (Su)</em>: The arcanist can consume the power of potions, scrolls, staves, and wands, using them to fill her arcane reservoir. She can use this ability a number of times per day equal to her Charisma modifier (minimum 1). Using this ability is a move action that provokes an attack of opportunity. When using this exploit, the arcanist adds a number of points to her arcane reservoir equal to 1/2 the level of the spell contained in the item (0-level and 1st-level spells do not recharge the arcanist's arcane reservoir). If used on a potion or scroll, the item is destroyed. If used on a wand, the wand loses 5 charges; if it has fewer than 5 charges, the wand is destroyed and the arcanist gains no benefit. If used on a staff, it loses 1 charge and the arcanist gains a number of points to his arcane reservoir equal to the level of the highest-level spell the staff can cast using only 1 charge; if the staff has no spells that require only 1 charge, the arcanist cannot consume that staff's magic. No more than 1 charge can be drawn from a staff each day in this way. Points gained in excess of the arcanist's reservoir's maximum are lost. This exploit has no effect on magic armor, weapons, rings, rods, wondrous items, or other magic items besides those noted above.</p>
+		
+		<p id="counterspell"><em>Counterspell (Su)</em>: By expending 1 point from her arcane reservoir, the arcanist can attempt to counter a spell as it is being cast. She must identify the spell being cast as normal. If she successfully does so, the arcanist can attempt to counter the spell as an immediate action and by expending an available arcanist spell slot of a level at least one higher than the level of the spell being cast. To counterspell, the arcanist must attempt a dispel check as if using <em>dispel magic</em>. If the spell being countered is one that the arcanist has prepared, she can instead expend an available arcanist spell slot of the same level, and she receives a +5 bonus on the dispel check. Counterspelling in this way does not trigger any feats or other abilities that normally occur when a spellcaster successfully counters a spell.</p>
+		
+		<p id="dimensional-slide"><em>Dimensional Slide (Su)</em>: The arcanist can expend 1 point from her arcane reservoir to create a dimensional crack that she can step through to reach another location. This ability is used as part of a move action or withdraw action, allowing her to move up to 10 feet per arcanist level to any location she can see. This counts as 5 feet of movement. She can only use this ability once per round. She does not provoke attacks of opportunity when moving in this way, but any other movement she attempts as part of her move action provokes as normal.</p>
+		
+		<p id="energy-shield"><em>Energy Shield (Su)</em>: The arcanist can protect herself from energy damage as a standard action by expending 1 point from her arcane reservoir. She must pick one energy type and gains resistance 10 against that energy type for 1 minute per arcanist level. This protection increases by 5 for every 5 levels the arcanist possesses (up to a maximum of resistance 30 at 20th level).</p>
+		
+		<p id="familiar"><em>Familiar (Ex)</em>: An arcanist with this exploit can acquire a familiar as the <a href="../../coreRulebook/classes/wizard.html#familiars">arcane bond wizard class feature</a>, using her arcanist level as her wizard level to determine any of the statistics and abilities of the familiar. If the arcanist receives a familiar from another class, her levels of arcanist stack with the levels from that class when determining the familiar's statistics and abilities (this ability does not stack with a familiar gained through the bloodline development exploit; she must choose one or the other).</p>
+		
+		<p id="flame-arc"><em>Flame Arc (Su)</em>: The arcanist can unleash an arc of flame by expending 1 point from her arcane reservoir. This creates a 30-foot line of flame that deals a number of points of fire damage equal to 1d6 + the arcanist's Charisma modifier, plus an additional 1d6 points for every 2 levels beyond 1st (to a maximum of 10d6 at 19th level) to each target in the line. Creatures in the area of effect can attempt a Reflex saving throw to halve the damage.</p>
+		
+		<p id="force-strike"><em>Force Strike (Su)</em>: The arcanist can unleash a blast of force by expending 1 point from her arcane reservoir. This attack automatically strikes one target within 30 feet (as <a href="../../coreRulebook/spells/magicMissile.html#magic-missile"><em>magic missile</em></a>) and deals a number of points of force damage equal to 1d4 + 1 per arcanist level. Spells and effects that negate <a href="../../coreRulebook/spells/magicMissile.html#magic-missile"><em>magic missile</em></a> also negate this effect.</p>
+		
+		<p id="ice-missile"><em>Ice Missile (Su)</em>: The arcanist can unleash a freezing projectile by expending 1 point from her arcane reservoir and making a ranged touch attack against any one target within 30 feet. If the attack hits, it deals a number of points of cold damage equal to 1d6 + the arcanist's Charisma modifier, plus an additional 1d6 points for every 2 levels beyond 1st (to a maximum of 10d6 points at 19th level). In addition, the target is staggered for 1 round. It can attempt a Fortitude saving throw to negate the staggered condition.</p>
+		
+		<p id="item-crafting"><em>Item Crafting</em>: The arcanist can select one item creation feat as a bonus feat. She must meet the prerequisites of this feat.</p>
+		
+		<p id="lightning-lance"><em>Lightning Lance (Su)</em>: The arcanist can unleash a lance of lightning by expending 1 point from her arcane reservoir and making a ranged touch attack against any one target within 30 feet. If the attack hits, it deals a number of points of electricity damage equal to 1d6 + the arcanist's Charisma modifier, plus an additional 1d6 points for every 2 levels beyond 1st (to a maximum of 10d6 at 19th level). The target's vision is also impaired, causing the target to treat all creatures as if they had concealment (20% miss chance) for 1 round. It can attempt a Fortitude saving throw to negate the impaired vision.</p>
+
+		<p id="metamagic-knowledge"><em>Metamagic Knowledge</em>: The arcanist can select one metamagic feat as a bonus feat. She must meet the prerequisites of this feat.</p>
+		
+		<p id="metamixing"><em>Metamixing (Su)</em>: The arcanist can expend 1 point from her arcane reservoir to add a metamagic feat that she knows to a spell as she casts it without affecting the casting time (though using a higher-level spell slot as normal). She can use this ability to add a metamagic feat to a spell that she prepared using a metamagic feat, although she cannot add the same metamagic feat to a given spell more than once.</p>
+		
+		<p id="potent-magic"><em>Potent Magic (Su)</em>: Whenever the arcanist expends 1 point from her arcane reservoir to increase the caster level of a spell, the caster level increases by 2 instead of 1. Whenever she expends 1 point from her arcane reservoir to increase a spell's DC, it increases by 2 instead of 1.</p>
+		
+		<p id="quick-study"><em>Quick Study (Ex)</em>: The arcanist can prepare a spell in place of an existing spell by expending 1 point from her arcane reservoir. Using this ability is a full-round action that provokes an attack of opportunity. The arcanist must be able to reference her spellbook when using this ability. The spell prepared must be of the same level as the spell being replaced.</p>
+		
+		<p id="school-understanding"><em>School Understanding</em>: The arcanist can select one arcane school from any of the schools available to a character with the arcane school wizard class feature, but does not have to select any opposition schools. The arcanist gains one ability of that arcane school as though she were a 1st-level wizard, using her Charisma modifier in place of her Intelligence modifier for this ability. The ability must be one gained at 1st level and is limited in its use per day to 3 + the arcanist's Charisma modifier. As a swift action, the arcanist can expend 1 point from her arcane reservoir to bolster her understanding, allowing her to treat her arcanist level as her wizard level for the purpose of using this ability for a number of rounds equal to her Charisma modifier (minimum 1). During this time, she also gains use of the other ability gained at 1st level for her selected school. She does not gain any other abilities when using this exploit in this way, such as those gained at 8th level. </p>
+			<p>If the arcanist already has an arcane school (or gains one later), taking this exploit instead allows her arcanist levels to stack with the levels of the class that granted the arcane school when determining the powers and abilities of her arcane school.</p>
+			
+		<p id="see-magic"><em>See Magic (Su)</em>: The arcanist can see magical auras. If she expends 1 point from her arcane reservoir, for 1 minute she instantly recognizes magic item auras and spell effects (as per <a href="../../coreRulebook/spells/detectMagic.html#detect-magic"><em>detect magic</em></a>). During this time, she is treated as if she had studied each aura for 3 rounds, and she treats her <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge (arcana)</a> check as if she had rolled a 15 on the d20. In addition, if she touches a magic item during this time, she can immediately identify its properties using <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> without needing to spend 3 rounds examining the object. If an enemy possesses the object, the arcanist must first succeed at a melee touch attack in order to touch the item.</p>
+		
+		<p id="spell-disruption"><em>Spell Disruption (Su)</em>: The arcanist can temporarily disrupt a spell by expending 1 point from her arcane reservoir and succeeding at a dispel check against the spell, as <a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic"><em>dispel magic</em></a>. This ability suppresses a spell effect for a number of rounds equal to the arcanist's Charisma modifier (minimum 1). If the spell affects multiple creatures, this ability only suppresses the spell for one creature. At the end of this duration, the spell resumes and the suppressed rounds do not count against its total duration. This ability can be used on unwilling targets, but the arcanist must succeed at a melee touch attack, and the target may attempt a Will saving throw to negate the effect. This ability has no effect on spells that are instantaneous or have a duration of permanent.</p>
+		
+		<p id="spell-resistance"><em>Spell Resistance (Su)</em>: The arcanist can grant herself spell resistance for a number of rounds equal to her Charisma modifier (minimum 1) as a standard action by expending 1 point from her arcane reservoir. This spell resistance is equal to 6 + her arcanist level and cannot be suppressed, but it can be ended as a free action on her turn.</p>
+		
+		<p id="spell-tinkerer"><em>Spell Tinkerer (Su)</em>: The arcanist can alter an existing spell effect by expending 1 point from her arcane reservoir. To use this ability, she must be adjacent to the spell effect (or the effect's target) and be aware of the effect. She can choose to increase or decrease the remaining duration of the spell by 50%. This ability can be used on unwilling targets, but the arcanist must succeed at a melee touch attack, and the target may attempt a Will saving throw to negate the effect. This ability cannot be used on a given spell effect more than once. This ability has no effect on spells that are instantaneous or have a duration of permanent.</p>
+		
+		<p id="swift-consume"><em>Swift Consume (Ex)</em>: The arcanist can use the consume spells class feature or the consume magic items exploit as swift actions instead of as move actions.</p>
+		
+	<p id="cantrips"><strong>Cantrips</strong>: Arcanists can prepare a number of cantrips, or 0-level spells, each day as noted on Table 1&ndash;2. These spells are cast like any other spell, but they do not consume spell slots. As with her other spells, these spells are not expended when cast.</p>
+	
+	<p id="consume-spells"><strong>Consume Spells (Su)</strong>: At 1st level, an arcanist can expend an available arcanist spell slot as a move action, making it unavailable for the rest of the day, just as if she had used it to cast a spell. She can use this ability a number of times per day equal to her Charisma modifier (minimum 1). Doing this adds a number of points to her arcane reservoir equal to the level of the spell slot consumed. She cannot consume cantrips (0 level spells) in this way. Points gained in excess of the reservoir's maximum are lost.</p>
+	
+	<p id="greater-exploits"><strong>Greater Exploits</strong>: At 11th level and every 2 levels thereafter, an arcanist can choose one of the following greater exploits in place of an arcanist exploit.</p>
+	
+		<p id="alter-enhancements"><em>Alter Enhancements (Su)</em>: An arcanist with this exploit can modify the enhancements placed on a weapon, suit of armor, or shield. The arcanist can use this exploit to change one weapon or armor special ability to another with an equal cost. This ability can be used to change only the item's special abilities, not its enhancement bonus. Using this ability requires the arcanist to touch the item as a full-round action and expend 1 point from her arcane reservoir, and doing so provokes an attack of opportunity. This ability cannot be used on an item in the possession of an unwilling creature. This change lasts for a number of minutes equal to the arcanist's Charisma modifier (minimum 1). The arcanist must have the arcane weapon exploit to select this exploit.</p>
+		
+		<p id="burning-flame"><em>Burning Flame (Su)</em>: Whenever the arcanist uses the <a href="arcanist.html#flame-arc">flame arc exploit</a>, she can expend 2 points from her arcane reservoir instead of one. If she does, each target catches on fire if it fails its saving throw. Until the fire is extinguished, the target takes 3d6 points of fire damage at the start of each of its turns. The target can attempt a Reflex saving throw as a full-round action to extinguish the flames. Applying at least 1 gallon of water to the target automatically extinguishes the flames. The arcanist must have the <a href="arcanist.html#flame-arc">flame arc exploit</a> to select this exploit.</p>
+		
+		<p id="counter-drain"><em>Counter Drain (Su)</em>: Whenever the arcanist successfully uses the <a href="arcanist.html#counterspell">counterspell exploit</a>, she regains a number of points to her arcane reservoir, which is determined by the level of the spell countered. Spells of 2nd level or lower do not restore any points to her arcane reservoir. Spells of 3rd and higher restore 1 point to her arcane reservoir for every three spell levels (rounded down), to a maximum of 3 points at 9th level. The arcanist must have the <a href="arcanist.html#counterspell">counterspell exploit</a> to select this exploit.</p>
+		
+		<p id="dancing-electricity"><em>Dancing Electricity (Su)</em>: Whenever the arcanist uses the <a href="arcanist.html#lightning-lance">lightning lance exploit</a>, she can expend 2 points from her arcane reservoir instead of one. If she does, all creatures adjacent to the target take an amount of damage equal to half the amount of electricity damage rolled. Adjacent creatures can attempt a Reflex saving throw to halve this damage. Whether or not the target makes its saving throw has no effect on adjacent targets. The arcanist must have the <a href="arcanist.html#lightning-lance">lightning lance exploit</a> to select this exploit.</p>
+		
+		<p id="energy-absorption"><em>Energy Absorption (Su)</em>: Whenever the arcanist is using the <a href="arcanist.html#energy-shield-exploit">energy shield exploit</a>, and the shield prevents 10 or more points of damage, she can absorb a portion of that energy and use it to fuel her exploits. After absorbing the damage, she can use any exploit that deals the same type of energy damage as the type her shield absorbed, reducing the cost to her arcane reservoir by 1 point. She must use this energy within 1 minute or it is lost. The arcanist does not gain more than one such use of energy per round, and she cannot store more than one use of this energy at a time. The arcanist must have the <a href="arcanist.html#energy-shield-exploit">energy shield exploit</a> to select this exploit.</p>
+		
+		<p id="greater-counterspell"><em>Greater Counterspell (Su)</em>: Whenever the arcanist uses the <a href="arcanist.html#counterspell">counterspell exploit</a>, she can expend any arcanist spell slot of the same level or greater than the spell to be countered (instead of the spell level + 1). The arcanist must have the <a href="arcanist.html#counterspell">counterspell exploit</a> to select this exploit.</p>
+		
+		<p id="greater-metamagic-knowledge"><em>Greater Metamagic Knowledge</em>: The arcanist can select a metamagic feat as a bonus feat. She must meet the prerequisites of this feat. Each morning, when she prepares her spells, the arcanist can expend 1 point from her arcane reservoir to exchange this bonus feat for another metamagic feat, as long as she meets the prerequisites of the new feat. The arcanist must have the <a href="arcanist.html#metamagic-knowledge">metamagic knowledge exploit</a> to select this exploit.</p>
+		
+		<p id="greater-spell-resistance"><em>Greater Spell Resistance (Su)</em>: Whenever the arcanist uses the spell resistance exploit, the spell resistance is equal to 11 + the arcanist's level. The arcanist must have the <a href="arcanist.html#spell-resistance">spell resistance exploit</a> to select this exploit.</p>
+		
+		<p id="greater-spell-disruption"><em>Greater Spell Disruption (Su)</em>: The arcanist can disrupt a spell effect or magic item by expending 1 point from her arcane reservoir. This acts like a targeted <a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic"><em>dispel magic</em></a> with a range of touch. The arcanist can add her Charisma modifier to the dispel check. The arcanist must have the <a href="arcanist.html#spell-disruption">spell disruption exploit</a> to select this exploit.</p>
+		
+		<p id="icy-tomb"><em>Icy Tomb (Su)</em>: Whenever the arcanist uses the <a href="arcanist.html#ice-missile">ice missile exploit</a>, she can expend 2 points from her arcane reservoir instead of one. If she does, the target is coated in rime if it fails its saving throw. As long as the ice remains (typically 1 minute per level in a warm area), the target is entangled (although not anchored) and takes 1 point of Dexterity damage at the start of each of its turns. The target can break free from the ice as a standard action by making a Strength check with a DC equal to 10 + the arcanist's Charisma modifier. If the target takes more than 10 points of fire damage from a single attack, the ice melts and the effect ends. The arcanist must have the <a href="arcanist.html#ice-missile">ice missile exploit</a> to select this exploit.</p>
+		
+		<p id="lingering-acid"><em>Lingering Acid (Su)</em>: Whenever the arcanist uses the <a href="arcanist.html#acid-jet">acid jet exploit</a>, she can expend 2 points from her arcane reservoir instead of one. If she does, the target takes additional damage on the following rounds if it fails its saving throw. The target takes 1d6 points of acid damage on the following round for every 2d6 points of acid damage dealt by the initial attack. On subsequent rounds, the target continues to take 1d6 points of acid damage for every 2d6 points of acid damage dealt on the previous round. The damage continues until the amount of acid damage dealt on the previous round by this effect is 1d6. For example, a 9th level arcanist would deal 5d6 points of acid damage + the arcanist's Charisma modifier, 2d6 points of acid damage on the following round, and 1d6 points of acid damage on the third and final round. The arcanist must have the <a href="arcanist.html#acid-jet">acid jet exploit</a> to select this exploit.</p>
+		
+		<p id="redirect-spell"><em>Redirect Spell (Su)</em>: The arcanist can gain control of a spell cast by another spellcaster. As a standard action by expending 1 point from her arcane reservoir, the arcanist can make a caster level check opposed by the creature controlling the spell. If the arcanist is successful, she can direct the spell as a free action for 1 round, making any decisions allowed by the spell. This only functions on spells that can be directed or changed once they have been cast, such as <em><a href="../../coreRulebook/spells/flamingSphere.html#flaming-sphere">flaming sphere</a> </em>or <a href="../../coreRulebook/spells/spiritualWeapon.html#spiritual-weapon"><em>spiritual weapon</em></a>. The spell returns to its owner's control at the start of the arcanist's next turn, unless the arcanist expends another point from her arcane reservoir at the start of her turn to extend the duration of control by another round. She can continue to control the spell for as long as the spell lasts, provided she keeps spending points from her arcane reservoir.</p>
+		
+		<p id="resistance-drain"><em>Resistance Drain (Su)</em>: Whenever the arcanist is using the <a href="arcanist.html#spell-resistance">spell resistance exploit</a>, she can end the effect as an immediate action whenever her spell resistance successfully protects her from a spell cast by a foe. If she does so, she adds a number of points to her arcane reservoir equal to 1/2 the level of the spell. These points are temporary and are lost after 1 minute unless used. Points gained in excess of her arcane reservoir's maximum are lost. The arcanist must have the <a href="arcanist.html#greater-spell-resistance">greater spell resistance exploit</a> to select this exploit.</p>
+		
+		<p id="siphon-spell"><em>Siphon Spell (Su)</em>: When the arcanist uses the <a href="arcanist.html#greater-spell-disruption">greater spell disruption exploit</a>, she can siphon some of the power of the targeted spell to restore her arcane reservoir. If the caster level of the spell is equal to or higher than that of the arcanist, and she exceeds the DC of the dispel check by 5 or more, she adds 1 point to her arcane reservoir. If she exceeds this check by 10 or more, she instead adds 2 points to her arcane reservoir. This has no effect on magic items. The arcanist must have the <a href="arcanist.html#greater-spell-disruption">greater spell disruption exploit</a> to select this exploit.</p>
+		
+		<p id="spell-thief"><em>Spell Thief (Su)</em>: The arcanist can steal a spell affecting one creature by expending 1 point from her arcane reservoir. If the creature is unwilling, she must succeed at a melee touch attack to steal the spell; the target can attempt a Will saving throw to negate the effect. The arcanist can specify a spell affecting the target to steal, but if she's incorrect or doesn't know what spells are affecting the target, the spell stolen is determined randomly from all those affecting the target. If successful, the spell effect transfers to the arcanist, affecting her for the remaining duration. Unless the effect normally allows for a new saving throw during its duration (such as at the end of each round), this ability doesn't grant the arcanist a saving throw against it. The arcanist cannot use this ability to steal a spell with a range of personal or a duration of permanent. The arcanist must have the <a href="arcanist.html#spell-tinkerer">spell tinkerer exploit</a> to select this exploit.</p>
+		
+		<p id="suffering-knowledge"><em>Suffering Knowledge (Su)</em>: The arcanist can learn to cast a spell by suffering from its effects. When the arcanist fails a saving throw against a spell cast by an enemy, as an immediate action she can expend 1 point from her arcane reservoir to temporarily acquire the spell. She can cast the spell using her spell slots as if it was a spell she had prepared that day. The spell must be on the sorcerer/wizard spell list and must be of a level that she can cast. The ability to cast this spell remains for a number of rounds equal to the arcanist's Charisma modifier (minimum 1).</p>
+		
+	<p id="magical-supremacy"><strong>Magical Supremacy (Su)</strong>: At 20th level, the arcanist learns how to convert her arcane reservoir into spells and back again. She can cast any spell she has prepared by expending a number of points from her arcane reservoir equal to 1 + the level of the spell to be cast instead of expending a spell slot. When she casts a spell in this fashion, she treats her caster level as 2 higher than normal, and the DCs of any saving throws associated with the spell increase by 2. She cannot further expend points from her arcane reservoir to enhance a spell cast in this way.</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Arcanist",globalNavPath=[{ href: '/pathfinderRPG/prd/advancedClassGuide/classes/index.html', name: 'Classes'}];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

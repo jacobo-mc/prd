@@ -1,0 +1,533 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Spell Alterations</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "spellAlterations.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "spellAlterations.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "spellAlterations.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "spellAlterations.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "spellAlterations.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "spellAlterations.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "spellAlterations.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "spellAlterations.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "spellAlterations.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "spellAlterations.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "spellAlterations.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "../skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../gameplay/index.html">Gameplay</a></li>
+						<li><a href = "index.html">Magic</a></li>
+						<li><a href = "../monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "spellAlterations.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "spellAlterations.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "spellAlterations.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "spellAlterations.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "spellAlterations.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "spellAlterations.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "spellAlterations.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "spellAlterations.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "spellAlterations.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "spellAlterations.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id = "spell-alterations">Spell Alterations</h1>
+<p>The following optional rules alter normal spellcasting in fun new ways. Each system is fairly simple in concept, but could generate ramifications not fully detailed below, and GMs should be ready to reconcile or arbitrate unexpected effects.</p>
+
+
+<h2 id = "limited-magic">Limited Magic</h2>
+<p>As a character gains caster levels under the normal magic system, the efficacy of her spells can swing wildly, necessitating a constant reevaluation of each spell's utility. The limited magic rules are meant to keep spells' power more tightly tiered by spell level and reduce the amount by which a caster's power level escalates.</p>
+<p>When using limited magic rules, all spells are cast at the minimum caster level and with the minimum required ability score. The minimum caster level of a spell is fixed at 2 &times; the spell's level &ndash; 1, and does not change based on class levels. A spell's level can vary by class; therefore, different classes may have different minimum caster levels for the same spell. The minimum ability score for any spell is 10 + the spell's level, so the save DC for each spell (10 + the spell's level + the caster's ability score modifier) is also constant. These values are listed below on <a href="spellAlterations.html#limited-magic-table">Table: Limited Magic</a> for ease of reference. The CL (9) column lists the minimum caster level for casters who get up to 9th-level spells, such as the cleric, druid, or wizard. The CL (6) column covers casters who get 6th-level spells, such as bards. The CL (4) column covers casters who get up to only 4th-level spells, such as paladins and rangers. If a class's spellcasting progression differs from these minimum caster levels, it always overrides the numbers on this table.</p>
+
+<table id = "limited-magic-table">
+	<caption>Limited Magic</caption>
+	<thead>
+		<tr><th>Level</th><th>CL (9)*</th><th>CL (6)</th><th>CL (4)</th><th>Ability Score</th><th>DC</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>0</td><td>1</td><td>1</td><td>&mdash;</td><td>10</td><td>10</td></tr>
+		<tr><td>1</td><td>1</td><td>1</td><td>4</td><td>11</td><td>11</td></tr>
+		<tr><td>2</td><td>3</td><td>4</td><td>7</td><td>12</td><td>13</td></tr>
+		<tr><td>3</td><td>5</td><td>7</td><td>10</td><td>13</td><td>14</td></tr>
+		<tr><td>4</td><td>7</td><td>10</td><td>13</td><td>14</td><td>16</td></tr>
+		<tr><td>5</td><td>9</td><td>13</td><td>&mdash;</td><td>15</td><td>17</td></tr>
+		<tr><td>6</td><td>11</td><td>16</td><td>&mdash;</td><td>16</td><td>19</td></tr>
+		<tr><td>7</td><td>13</td><td>&mdash;</td><td>&mdash;</td><td>17</td><td>20</td></tr>
+		<tr><td>8</td><td>15</td><td>&mdash;</td><td>&mdash;</td><td>18</td><td>22</td></tr>
+		<tr><td>9</td><td>17</td><td>&mdash;</td><td>&mdash;</td><td>19</td><td>23</td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan="6">* For a sorcerer, increase the minimum caster level of any spell of 2nd level or higher by 1.</td></tr>
+	</tfoot>
+	</table>
+
+	<h3 id = "magic-items">Magic Items</h3>
+	<p>Spells from magic items use the same rules as above. That means a <a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a> cast from a wand created by a sorcerer or wizard has the same save DC and amount of damage dice as a <a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a> cast by any sorcerer or wizard. When calculating the base cost or price of a magic item, always use the minimum CL as defined by this system (even if the item's creator would have had a higher caster level). Potions and scrolls always default to the appropriate cleric, druid, or wizard spell level to determine their base costs.</p>
+
+	<h3 id = "heighten-spell">Heighten Spell</h3>
+	<p>Under this system, spells can still be improved using Heighten Spell. A heightened spell uses the minimum CL, but does so as though it were a higher-level spell. For example, a <a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a> heightened to 5th level would have a DC of 17 and deal 9d6 points of damage, the same as a <a href="../../coreRulebook/spells/coneOfCold.html#cone-of-cold"><em>cone of cold</em></a> cast in the same slot.</p>
+
+	<h3 id = "other-considerations">Other Considerations</h3>
+	<p>Limited magic can take some getting used to. It reduces the power of most spellcasters dramatically, but can speed the game up by requiring less research into the caster levels of monsters, NPCs, and magic items. Limited magic can also encourage better-rounded spellcaster characters, especially if you're using the purchase system to generate ability scores, as there's less reward for focusing solely on their spellcasting attributes.</p>
+	<p>Using this system means that if a class gets a spell at a lower level than another class does, that spell's effects are weaker for the former class. A bard's <em>heroism</em> is not as good as a wizard's. However, classes with slower spell progressions (such as the bard, paladin, and ranger) have other abilities that keep them competitive when limited magic weakens the overall power of spells.</p>
+	<p>Consider altering other rules to account for a landscape with lower average DCs. For instance, Great Fortitude, Iron Will, and Lightning Reflexes might provide only a +1 bonus on saves, or the increases to spell DCs from Spell Focus and Greater Spell Focus could go up to 2.</p>
+	<p><strong>With Esoteric Spell Components</strong>: This system works especially well with the <a href="esotericMaterialComponents-2.html">esoteric spell components system</a>. Using both systems means that spellcasting in the campaign is weaker overall, but can be boosted on occasion by characters willing to spend money to increase the potency of their spells.</p>
+
+<h2 id = "wild-magic">Wild Magic</h2>
+<p>Though many spellcasters like to consider their use of magic a science, the effects of magic are not always easy to predict. Wild, uncontrolled magic sometimes surges as a side effect of spellcasting or magical experimentation. Wild magic can be used in any situation where magic might cause randomness and chaotic effects. When a character casts a spell or takes an action that could trigger a surge of wild magic (see Implementing Wild Magic below), roll on <a href="spellAlterations.html#wild-magic-surge">Table: Wild Magic Surge</a>.</p>
+<p>Roll to determine the surge effect before the spell is cast, but apply the effect after the spell is cast unless it alters the spell itself in some way (such as changing the effective caster level). Any reference on the table to the spell or the spell's level applies to the spell being cast, supernatural ability being used, or magic item effect being activated. Similarly, any reference to the caster applies to the character who triggers the surge. If an effect requires a caster level, use the caster's full character level.</p>
+<p>If the wild magic surge effect you roll isn't possible due to the nature of the spell or effect, roll instead on <a href="spellAlterations.html#universal-surge-effects">Table: Universal Surge Effects</a>. A wild magic surge effect doesn't allow a saving throw, even if it's replicating a spell that normally would, and any effect that would normally have a limit on the amount of Hit Dice it can affect ignores that limit. Higher results on the table are more likely to be beneficial, so a GM might give a bonus or penalty on the check if an action would alter how likely it is that the wild magic surge would be helpful.</p>
+
+	<h3 id = "implementing-wild-magic">Implementing Wild Magic</h3>
+	<p>Though the rules on when to use wild magic are deliberately vague to give the GM leeway, here are some suggestions, presented in order from simplest to most complex.</p>
+	<p><strong>Failed Concentration</strong>: When a caster fails a concentration check, and thereby loses a spell, some of the spell's energy escapes in a wild magic surge.</p>
+	<p><strong>Dispel and Counterspell</strong>: When a spell or magical effect is dispelled or counterspelled, it triggers a wild magic surge on the caster or subject.</p>
+	<p><strong>Wild Zones</strong>: Some places are magically unstable. When a creature casts a spell, uses a spell-like ability, or activates a magic item in such an area, it causes a wild magic surge.</p>
+	<p><strong>Boost Casting</strong>: A caster can attempt to use a metamagic feat she has with a spell she's casting without expending a higher-level spell slot, needing to prepare the spell at a higher level (if a prepared caster), or increasing the casting time (if a spontaneous caster). To do so, she must attempt a caster level check with a DC equal to 10 + the spell's level + 5 for every increase in spell level the metamagic feat would normally cause. If she succeeds, her spell gains the metamagic feat's benefit and she causes a wild magic surge. If she fails, she still rolls on <a href="spellAlterations.html#wild-magic-surge">Table: Wild Magic Surge</a>, but subtracts from the result a number equal to the amount by which she failed the check.</p>
+
+<table id = "wild-magic-surge">
+	<caption>Wild Magic Surge</caption>
+	<thead>
+		<tr><th>d%</th><th>Surge Effect</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>01&ndash;02</td><td>The caster takes 1d6 points of damage per spell level.</td></tr>
+		<tr><td>03&ndash;04</td><td>The caster is affected by a <em>slow</em> spell for 5 rounds. </td></tr>
+		<tr><td>05</td><td>The spell takes effect at a random location within the spell's range.</td></tr>
+		<tr><td>06</td><td>The caster is confused for 1 round (as <em>confusion</em>).</td></tr>
+		<tr><td>07</td><td>The caster takes 1 point of Constitution bleed.</td></tr>
+		<tr><td>08</td><td>The caster takes 1 point of ability bleed that matches her spellcasting ability score (determine randomly if the creature isn't a spellcaster).</td></tr>
+		<tr><td>09&ndash;10</td><td>The caster is dazed for 1 round (as <a href="../../coreRulebook/spells/dazeMonster.html#daze-monster"><em>daze monster</em></a>).</td></tr>
+		<tr><td>11&ndash;12</td><td>The spell deals half as much damage as normal.</td></tr>
+		<tr><td>13</td><td>The caster takes 1d4 points of bleed damage.</td></tr>
+		<tr><td>14</td><td>The caster falls asleep for 1 minute (as <em>sleep</em>).</td></tr>
+		<tr><td>15&ndash;16</td><td>The caster can't cast or concentrate on spells for 1 round.</td></tr>
+		<tr><td>17</td><td>The caster is affected by <a href="../../coreRulebook/spells/reducePerson.html#reduce-person"><em>reduce person</em></a> for 1 minute.</td></tr>
+		<tr><td>18&ndash;19</td><td>The caster becomes sickened for 5 rounds.</td></tr>
+		<tr><td>20</td><td>A <a href="../../coreRulebook/spells/zoneOfTruth.html#zone-of-truth"><em>zone of truth</em></a> appears, centered on the caster.</td></tr>
+		<tr><td>21&ndash;29</td><td>The caster is affected as if targeted by the spell.</td></tr>
+		<tr><td>30&ndash;32</td><td>All targets of the spell are affected by <a href="../../coreRulebook/spells/restoration.html#lesser-restoration"><em>lesser restoration</em></a>.</td></tr>
+		<tr><td>33&ndash;38</td><td>All targets of the spell are healed of 1d8+1 points of damage. This is a positive energy effect.</td></tr>
+		<tr><td>39&ndash;43</td><td>The spell's area or the targets of the spell become affected by <em>silence</em> for 3 rounds.</td></tr>
+		<tr><td>44&ndash;50</td><td>All targets of the spell become invisible for 1 round (as <em>invisibility</em>).</td></tr>
+		<tr><td>51&ndash;58</td><td>The area of the spell is filled with <em>daylight</em>.</td></tr>
+		<tr><td>59&ndash;64</td><td>A <em>shatter</em> spell affects a 5-foot radius around each target of the spell (or the spell's area).</td></tr>
+		<tr><td>65&ndash;71</td><td>The spell's area is coated in <em>grease</em>.</td></tr>
+		<tr><td>72&ndash;74</td><td>One random tree or animal targeted by the spell or in the spell's area is affected by <em>awaken</em>.</td></tr>
+		<tr><td>75&ndash;78</td><td>An instrument appears adjacent to each target (as <a href="../../coreRulebook/spells/summonInstrument.html#summon-instrument"><em>summon instrument</em></a>).</td></tr>
+		<tr><td>79&ndash;80</td><td>Every door within 100 feet of the caster is affected by a <em>knock</em> spell.</td></tr>
+		<tr><td>81&ndash;83</td><td>The caster teleports to a square of her choice adjacent to the spell's target or within the spell's area.</td></tr>
+		<tr><td>84&ndash;86</td><td>The next spell targeting the caster is turned back, as <a href="../../coreRulebook/spells/spellTurning.html#spell-turning"><em>spell turning</em></a>.</td></tr>
+		<tr><td>87&ndash;90</td><td>The caster gains 2d6 temporary hit points that last 1 hour and don't stack with any other temporary hit points.</td></tr>
+		<tr><td>91&ndash;92</td><td>A random creature from the <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-i"><em>summon monster I</em></a> list is summoned in a square adjacent to the caster. It is under the caster's control.</td></tr>
+		<tr><td>93&ndash;95</td><td>The caster is affected by <em>tongues</em> for 10 minutes.</td></tr>
+		<tr><td>96&ndash;97</td><td>The caster is affected by <em>haste</em> for 5 rounds.</td></tr>
+		<tr><td>98</td><td>The spell is extended.</td></tr>
+		<tr><td>99</td><td>The spell is maximized.</td></tr>
+		<tr><td>100</td><td>The spell slot used to cast the spell is not expended.</td></tr>
+	</tbody>
+</table>
+
+<table id = "universal-surge-effects">
+	<caption>Universal Surge Effects</caption>
+	<thead>
+		<tr><th>d%</th><th>Surge Effect</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>01&ndash;20</td><td>The caster takes 1d6 points of damage that can't be prevented in any way.</td></tr>
+		<tr><td>21&ndash;80</td><td>The caster is affected by <a href="../../coreRulebook/spells/faerieFire.html#faerie-fire"><em>faerie fire</em></a> for 1 round.</td></tr>
+		<tr><td>81&ndash;100</td><td>The caster gains 1d6 temporary hit points that last for 1 hour. These don't stack with other temporary hit points.</td></tr>
+	</tbody>
+</table>
+
+<h2 id = "active-spellcasting">Active Spellcasting</h2>
+<p>Under the core rules, a spellcaster is largely passive when resolving the effects of her spells. She announces which spell she's casting, and the targets roll their saves in response. Compare this with attacks, where the attacker rolls all the dice. The following variants help spellcasters feel more involved in the resolution of spells.</p>
+
+	<h3 id = "overclocked-spells">Overclocked Spells</h3>
+	<p>Using the overclocked spells variant, confident spellcasters can attempt to weave more power into their spells as they cast them. This is not without risk: deviating from the stable, standard formulation of the spell risks collapse of the spell and the magical energy therein.</p>
+	<p>As a swift action while casting a spell, a spellcaster can attempt to increase either the spell's DC or her caster level for the spell. She must attempt a <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> check with a DC equal to 15 + the spell's level + the minimum caster level of that spell for her class. If she succeeds, she can increase either her caster level or the DC of the spell by 2. If she fails, the spell is not cast and she loses the prepared spell or spell slot. If she fails the <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> check by 5 or more, she also suffers a mishap, similar to a <a href="../../coreRulebook/magicItems/scrolls.html">scroll mishap</a>.</p>
+	<p><strong>With Limited Magic</strong>: If you are using the <a href = "spellAlterations.html#limited-magic">limited magic rules</a>, instead of increasing the caster level or DC by 2 on a successfully overclocked spell, instead allow the caster to gain the standard benefits of her full caster level and ability scores.</p>
+	<p><strong>With Spell Fumbles</strong>: Apply the results of a <a href="spellAlterations.html#spell-fumbles">spell fumble</a> in place of a mishap.</p>
+
+	<h3 id = "spell-attack-roll">Spell Attack Roll</h3>
+	<p>When casting a spell or using a magical effect that allows a saving throw, the caster makes a spell attack roll, rolling 1d20 with a bonus equal to her spellcasting ability modifier plus the spell's level. Any bonuses that would normally make the spell more difficult to avoid (such as the Spell Focus feat) also apply. The DC of this roll is equal to 11 + the target's relevant save bonus. If the caster succeeds, treat the spell or effect as if the target had failed its save. Otherwise, treat it as if the target succeeded at its save. Just like an ordinary attack roll, a natural 1 is an automatic failure, while a natural 20 is an automatic success. This rule does not change the chances of success; it just changes who is rolling the die.</p>
+	<p>For example, a wizard with an Intelligence score of 18 casts <em>charm person</em> on an orc guard. Normally, the orc would attempt a DC 15 Will saving throw (10 + 1 for a 1st-level spell + 4 for the wizard's Intelligence bonus). Since the orc's Will save modifier is &ndash;1, he has to roll a 16 to succeed, and thus will fail his save 80% of the time. Under the spell attack roll rules, rather than the orc attempting a Will save, the wizard makes a spell attack roll with a +5 bonus (the spell's DC of 15 &ndash; 10) against a DC of 10 (11 + the orc's &ndash;1 Will save modifier). The wizard has to roll at least a 5 to succeed, so he still affects his target 80% of the time.</p>
+	<p>This variant puts more dice in the hands of the players. Consider running NPC spellcasters under the core rules instead, so that players can feel responsible for their own saves. It's usually easiest for the player to write down the spell attack roll bonus for each level.</p>
+	<p><strong>Faster Variant</strong>: Normally, a caster would roll a separate spell attack roll against each target. A GM who wants to speed up play (at the expense of making the game more prone to extremes and not matching the core rules as closely) can instead require only a single roll and apply it against the defenses of all the targets.</p>
+
+	<h3 id = "spell-critical-hits">Spell Critical Hits</h3>
+	<p>Spells that require attack rolls follow the standard critical hit rules as described in the <em>Core Rulebook</em>. With this variant, spells that require a saving throw gain the same benefit. If a creature rolls a natural 1 on its saving throw, the spell threatens a critical hit. That creature rolls the save again, and if it fails on this second roll, the critical hit is confirmed, and any numeric effect of the spell is doubled. For spells that lack a direct numeric effect, such as <em>charm person</em>, the duration is doubled instead. A spell that requires both an attack roll and a saving throw (such as <a href="../../coreRulebook/spells/rayOfEnfeeblement.html#ray-of-enfeeblement"><em>ray of enfeeblement</em></a>) can threaten a critical hit only on the attack roll.</p>
+	<p>The GM is encouraged to apply other types of doubling where appropriate. For instance, a <em>poison</em> spell might afflict a target with 2 doses of poison on a critical hit instead of doubling the effect of the poison.</p>
+	<p><strong>With Spell Attack Rolls</strong>: This rule combines well with the spell attack roll rule. If you roll a natural 20 on your spell attack roll, you threaten a critical hit, then roll the attack roll again to confirm the critical. Avoid the faster variant of spell attack rolls if you're also using spell critical hits, or at the very least roll to confirm each one separately.</p>
+	<p><strong>With Spell Fumbles</strong>: This system is meant to be used in a campaign alongside the spell fumbles variant, though the two can be used separately.</p>
+
+	<h3 id = "spell-fumbles">Spell Fumbles</h3>
+	<p>Spells have a chance to automatically miss, just like any other attack. Normally, this is represented by the target rolling a natural 20 on its save. However, you might be interested in a more dramatic "fumble" result. If an enemy rolls a natural 20 on its save, it rolls the save again. If it succeeds at the second save, then the spell was fumbled, resulting in an accident similar to a <a href="../../coreRulebook/magicItems/scrolls.html">scroll mishap</a>. Roll 1d10 and consult <a href="spellAlterations.html#spell-fumbles-table">Table: Spell Fumbles</a>. You can fumble only once per spell cast. If more than one target rolls a 20, only the first target rolls to confirm the fumble.</p>
+
+	<table id = "spell-fumbles-table">
+		<caption>Spell Fumbles</caption>
+		<thead>
+			<tr><th>d10</th><th>Fumble Result</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>1</td><td>A surge of uncontrolled magical energy deals 1d6 points of damage per spell level to the caster.</td></tr>
+			<tr><td>2</td><td>The spell strikes the caster or an ally instead of the intended target.</td></tr>
+			<tr><td>3</td><td>The spell takes effect at a random location within the spell's range.</td></tr>
+			<tr><td>4</td><td>The spell's effect on the target is contrary to the spell's normal effect.</td></tr>
+			<tr><td>5</td><td>The spellcaster suffers some minor but bizarre effect related to the spell in some way. Most such effects should last only as long as the original spell's duration, or 2d10 minutes for instantaneous spells.</td></tr>
+			<tr><td>6</td><td>A random innocuous item or items suddenly appear in the spell's area.</td></tr>
+			<tr><td>7</td><td>The spell's effect is delayed. Sometime within the next 1d12 hours, the spell activates. The spell goes off in the general direction of the original target, up to the spell's maximum range if the target has moved away.</td></tr>
+			<tr><td>8</td><td>The caster can't cast or concentrate on spells for 1 round.</td></tr>
+			<tr><td>9</td><td>The caster is dazed for 1 round.</td></tr>
+			<tr><td>10</td><td>The caster takes 1 point of Constitution damage.</td></tr>
+		</tbody>
+	</table>
+
+	<p><strong>With a fumble deck</strong>: If you're using a fumble deck in your game, draw a fumble card and apply the Magic result instead of rolling on the fumble table. You can use the fumble deck for spell fumbles in your game even if you aren't using it to add other fumbles.</p>
+	<p><strong>With Wild Magic</strong>: You can use <a href="spellAlterations.html#wild-magic-surge">Table: Wild Magic Surge</a> instead of <a href="spellAlterations.html#spell-fumbles-table">Table: Spell Fumbles</a>. If you use that table, roll 1d20 instead of d%.</p>
+	<p><strong>With Spell Attack Rolls</strong>: When using the <a href="spellAlterations.html#spell-attack-roll">spell attack roll</a> variant, a fumble might occur if you roll a natural 1 on the attack roll. Roll the attack roll a second time&mdash;if it would miss again, the spell has fumbled.</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Spell Alterations",globalNavPath=[{ href: '/pathfinderRPG/prd/unchained/magic/index.html', name: 'Pathfinder Unchained: Magic' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

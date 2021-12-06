@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Daemon</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "daemon.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "daemon.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "daemon.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "daemon.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "daemon.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "daemon.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "daemon.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "daemon.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "daemon.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "daemon.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "daemon.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "daemon.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "daemon.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "daemon.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "daemon.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "daemon.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "daemon.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "daemon.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "daemon.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "daemon.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "daemon.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+
+			<div>
+				<h1 id="daemon" class="monster-header">Daemon</h1>
+				<p>Harbingers of ruin and embodiments of the worst ways to die, daemons epitomize painful death, the all-consuming hunger of evil, and the utter annihilation of life. While demons seek to pervert and destroy in endless unholy rampages, and devils vex and enslave in hopes of corrupting mortals, daemons seek only to consume mortal life itself. While some use brute force to despoil life or prey upon vulnerable souls, others wage campaigns of deceit to draw whole realms into ruin. With each life claimed and each atrocity meted out, daemons spread fear, mistrust, and despair, tarnishing the luster of existence and drawing the planes ever closer to their final, ultimate ruin. </p>
+				<p>Notorious for their hatred of the living, daemons are the things of dark dreams and fearful tales, as their ultimate ambitions include extinguishing every individual mortal life&mdash;and the more violent or terrible the end, the better. Their methods vary wildly, typically differentiated by daemonic breed. Many seek to infiltrate the mortal plane and sow death by their own taloned hands, while others manipulate agents (both mortal and immortal) as malevolent puppet masters, instigating calamities on massive scales from their grim realms. Such diversity of methods causes many planar scholars to misattribute the machinations of daemons to other types of fiends. These often deadly mistakes are further propagated by daemons' frequent dealings with and manipulation of other outsiders. Yet in all cases, despair, ruin, and death, spreading like contagion, typify the touch of daemonkind, though such symptoms often prove recognizable only after the hour is far too late.</p>
+				<p>Daemons flourish upon the plane of Abaddon, a bleak expanse of cold mists, fearful shapes, and hunted souls. Upon these wastes, the souls of evil mortals flee predation by the native fiends, and terror and the powers of the evil plane eventually transform the most ruthless into daemons themselves. Amid these scarred wastelands, poison swamps, and realms of endless night rise the foul domains of the tyrants of daemonkind, the Four Horsemen of the Apocalypse. Lords of devastation, these powerful and unique daemons desire slaughter, ruin, and death on a cosmic scale, and drive hordes of their lesser kin to spread terror and sorrow across the planes. Although the Horsemen share a singular goal, their tactics and ambitions vary widely.</p>
+				<p>Along with mastery over vast realms, the Horsemen are served by unimaginably enormous armies of their lesser brethren, but are obeyed most closely by retinues of daemons enslaved to their titles. These specific strains of daemonic servitors, known among daemonkind as deacons, serve whoever holds the title of Horseman. Although these instruments of the archdaemons differ in strength and ability, their numbers provide their lords with legions capable of near-equal terrorization. </p>
+				<p>More so than among any other fiendish race, several breeds of daemons lust after souls. While other foul inhabitants of the planes seek the corruption and destruction of living essences, many daemons value possession and control over mortal animas, entrapping and hoarding souls&mdash;and in so doing disrupting the natural progression of life and perverting the quintessence of creation to serve their own terrible whims. While not all daemons possess the ability to steal a mortal being's soul and turn it to their use, the lowliest of daemonkind, the maniacal cacodaemons, endlessly seek life essences to consume and imprison. These base daemons enthusiastically serve their more powerful kin, eager for increased opportunities to doom mortal spirits. While cacodaemons place little value upon the souls they imprison, greater daemons eagerly gather them as trophies, fuel for terrible rites, or offerings to curry the favor of their lords. Several breeds of daemons also posses their own notorious abilities to capture mortal spirits or draw upon the power of souls, turning the forces of utter annihilation to their own sinister ends.</p>
+				<h2>The Four Horsemen</h2>
+				<p>Four dread lords, infamous across all the planes, rule the disparate hordes of daemonkind. Risen from among the ranks of their terrible brethren to displace those fiendish tyrants before them, they are the archdaemons, the End Bringers, the Four Horsemen of the Apocalypse. In the blasphemous annals of fiendish lore, they are the prophesied architects of multiversal ruin, destined to stand triumphant over cadaverous cosmoses and infinities of silence before also giving way to absolute oblivion. Undisputed in his power among their kind, each Horseman rules a vast realm upon the bleak plains of Abaddon and a distinctive method of mortal ruin: pestilence, famine, war, or death from old age. Yet while each archdaemon commands measureless influence, daemons know nothing of loyalty and serve only those they cannot overcome. Thus, though the Horsemen stand peerless in their power and manipulations among daemonkind, they must ever defend their thrones from the machinations of ambitious underlings and the plots of other archdaemons.</p>
+				<p>Upon the poisonous expanses of Abaddon, lesser daemonic peers carve petty fiefdoms and posture as lords, but despite their world-spanning intrigues, all bow before the Horsemen&mdash;though most do so only grudgingly. Ancient myths also tell of a mysterious fifth Horseman, the Oinodaemon, though nearly all mention of such a creature has been scoured from the multiverse.</p>
+			</div>
+
+			<div>
+				<h1 id="daemon,-astradaemon" class="monster-header">Daemon, Astradaemon</h1>
+				<p>Vaguely humanoid in shape, this gaunt fiend has the face of a hideous fish and a body of lanky limbs and writhing tendrils. </p>
+				<p class="stat-block-title"><b>Astradaemon	<span class="stat-block-cr">CR 16</span></b></p>
+				<p class="stat-block-xp"><b>XP 76,800</b></p>
+				<p class="stat-block-1">NE Large <a href="../bestiary/creatureTypes.html#outsider" >outsider</a> (<a href="../bestiary/creatureTypes.html#daemon-subtype" >daemon</a>, <a href="../bestiary/creatureTypes.html#evil-subtype" >evil</a>, <a href="../bestiary/creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +7; <b>Senses</b> darkvision 60 ft., <i><a href="../coreRulebook/spells/deathwatch.html#deathwatch" >deathwatch</a></i>, <i><a href="../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a></i>; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +22</p>
+				<p class="stat-block-1"><b>Aura</b> soul siphon (10 ft.)</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 29, touch 17, flat-footed 21 (+7 Dex, +1 dodge, +12 natural, &ndash;1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 212 (17d10+119)</p>
+				<p class="stat-block-1"><b>Fort</b> +12, <b>Ref</b> +17, <b>Will</b> +14</p>
+				<p class="stat-block-1"><b>Defensive Abilities</b> <i><a href="../coreRulebook/spells/displacement.html#displacement" >displacement</a></i>; <b>DR</b> 10/good and silver; <b>Immune</b> acid, death effects, <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>, <a href="../bestiary/universalMonsterRules.html#poison-(ex-or-su)" >poison</a>; <b>Resist</b> <a href="../bestiary/creatureTypes.html#cold-subtype" >cold</a> 10, electricity 10, <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> 10; <b>SR</b> 27</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 90 ft., fly 90 ft. (good)</p>
+				<p class="stat-block-1"><b>Melee</b> bite +23 (2d6+5 plus energy drain and <a href="../bestiary/universalMonsterRules.html#grab" >grab</a>), 2 claws +23 (1d8+5 plus energy drain), tail slap +18 (1d12+2 plus energy drain)</p>
+				<p class="stat-block-1"><b>Space</b> 10 ft.; <b>Reach</b> 10 ft. (15 ft. with tail)</p>
+				<p class="stat-block-1"><b>Special Attacks</b> devour soul, energy drain (1 level, DC 25)</p>
+				<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 17th; concentration +24)</p>
+				<p class="stat-block-2">Constant&mdash;<i><a href="../coreRulebook/spells/deathwatch.html#deathwatch" >deathwatch</a></i>, <i><a href="../coreRulebook/spells/displacement.html#displacement" >displacement</a>, <a href="../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a></i></p>
+				<p class="stat-block-2">At will&mdash;<i><a href="../coreRulebook/spells/enervation.html#enervation" >enervation</a></i>, <i><a href="../coreRulebook/spells/fear.html#fear" >fear</a></i> (DC21), <i><a href="../coreRulebook/spells/teleport.html#teleport-greater" >greater teleport</a> </i>(self plus 50 lbs. of objects only), <i><a href="../coreRulebook/spells/vampiricTouch.html#vampiric-touch" >vampiric touch</a></i></p>
+				<p class="stat-block-2">3/day&mdash;<i><a href="../coreRulebook/spells/locateCreature.html#locate-creature" >locate creature</a></i>, <i><a href="../coreRulebook/spells/planeShift.html#plane-shift" >plane shift</a></i> (DC 24)</p>
+				<p class="stat-block-2">1/day&mdash;<i><a href="../coreRulebook/spells/energyDrain.html#energy-drain" >energy drain</a></i> (DC 24), <i><a href="../coreRulebook/spells/fingerOfDeath.html#finger-of-death" >finger of death</a></i> (DC 24), summon (level 6, 1d3 derghodaemons 50%)</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 21, <b>Dex</b> 25, <b>Con</b> 24, <b>Int</b> 14, <b>Wis</b> 15, <b>Cha</b> 24</p>
+				<p class="stat-block-1"><b>Base Atk</b> +17; <b>CMB</b> +23; <b>CMD</b> 41</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#combat-reflexes" >Combat Reflexes</a>, <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../bestiary/monsterFeats.html#flyby-attack" >Flyby Attack</a>, <a href="../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../coreRulebook/feats.html#mobility" >Mobility</a>, <a href="../coreRulebook/feats.html#nimble-moves" >Nimble Moves</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a>, <a href="../coreRulebook/feats.html#spring-attack" >Spring Attack</a>, <a href="../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +24 (+48 jump), <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +27, <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> +9, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +27, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +22, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +22, <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +22, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +23, <a href="../coreRulebook/skills/survival.html#survival" >Survival</a> +22</p>
+				<p class="stat-block-1"><b>Languages</b> Abyssal, Infernal; telepathy 100 ft.</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any (Abaddon or Astral Plane)</p>
+				<p class="stat-block-1"><b>Organization</b> solitary, pair, or pack (3&ndash;6)</p>
+				<p class="stat-block-1"><b>Treasure</b> standard</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Devour Soul (Su)</b> As a standard action, an astradaemon that begins its turn with a grappled opponent can attempt to draw out and consume the soul of its victim, killing it instantly. This ability only works on living creatures, which may resist with a DC 25 Fortitude saving throw. The save is Constitution-based. For every 5 HD of the slain creature, the <a href="../bestiary/creatureTypes.html#daemon-subtype" >daemon</a> gains a +1 profane bonus on attacks, saving throws, and checks for 24 hours. This ability does not consume all of the soul, and pieces of it still exist after the <a href="../bestiary/creatureTypes.html#daemon-subtype" >daemon</a> completes its feast (enough to be able to resurrect the slain victim normally).</p>
+				<p class="stat-block-1"><b>Soul Siphon (Su)</b> If a Small or larger living creature dies within 10 feet of an astradaemon, the <a href="../bestiary/creatureTypes.html#daemon-subtype" >daemon</a> gains 1d8 temporary hit points and a +2 bonus to Strength for 10 minutes. These bonuses stack with themselves. <a href="../bestiary/creatureTypes.html#incorporeal-subtype" >Incorporeal</a> <a href="../bestiary/creatureTypes.html#undead" >undead</a> and living spirits traveling outside the body (such as a person using <i><a href="../coreRulebook/spells/astralProjection.html#astral-projection" >astral projection</a></i> or <i><a href="../coreRulebook/spells/magicJar.html#magic-jar" >magic jar</a></i>) take 1d8 points of damage each round within the <a href="../bestiary/creatureTypes.html#daemon-subtype" >daemon</a>'s aura.</p>
+
+				<p>Believed to be creations of the Four Horsemen, astradaemons live out their existence in search of souls to harvest. These deadly creatures are ravening planar predators, openly hunting throughout the void for souls on which to feed. These voracious creatures are the personifications of death resulting from negative energy or level drain. Their vile touch drains life force from their enemies, and even perishing near them sates their thirst for life and souls. </p>
+			</div>
+
+			<div>
+				<h1 id="daemon,-cacodaemon" class="monster-header">Daemon, Cacodaemon</h1>
+				<p>An ever-gnashing maw, filled with row after row of mismatched teeth, dominates this frightful creature's orb-like body.</p>
+				<p class="stat-block-title"><b>Cacodaemon	<span class="stat-block-cr">CR 2</span></b></p>
+				<p class="stat-block-xp"><b>XP 600</b></p>
+				<p class="stat-block-1">NE Tiny <a href="../bestiary/creatureTypes.html#outsider" >outsider</a> (<a href="../bestiary/creatureTypes.html#daemon-subtype" >daemon</a>, <a href="../bestiary/creatureTypes.html#evil-subtype" >evil</a>, <a href="../bestiary/creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +4; <b>Senses</b> darkvision 60 ft., <i><a href="../coreRulebook/spells/detectGood.html#detect-good" >detect good</a></i>, <i><a href="../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i>; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +7</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 16, touch 12, flat-footed 16 (+4 natural, +2 size)</p>
+				<p class="stat-block-1"><b>hp</b> 19 (3d10+3); fast healing 2</p>
+				<p class="stat-block-1"><b>Fort</b> +2, <b>Ref</b> +5, <b>Will</b> +4</p>
+				<p class="stat-block-1"><b>DR</b> 5/good or silver; <b>Immune</b> acid, death effects, <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>, <a href="../bestiary/universalMonsterRules.html#poison-(ex-or-su)" >poison</a>; <b>Resist</b> <a href="../bestiary/creatureTypes.html#cold-subtype" >cold</a> 10, electricity 10, <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> 10</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 5 ft., fly 50 ft. (perfect)</p>
+				<p class="stat-block-1"><b>Melee</b> bite +6 (1d4+1 plus <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>) </p>
+				<p class="stat-block-1"><b>Space</b> 2-1/2 ft.; <b>Reach</b> 0 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> soul lock</p>
+				<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 6th; concentration +7)</p>
+				<p class="stat-block-2">Constant&mdash;<i><a href="../coreRulebook/spells/detectGood.html#detect-good" >detect good</a>, <a href="../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i></p>
+				<p class="stat-block-2">At will&mdash;<i><a href="../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a> </i>(self only)</p>
+				<p class="stat-block-2">3/day&mdash;<i><a href="../coreRulebook/spells/confusion.html#confusion-lesser" >lesser confusion</a> </i>(DC 12)</p>
+				<p class="stat-block-2">1/week&mdash;<i><a href="../coreRulebook/spells/commune.html#commune" >commune</a></i> (CL 12th, six questions)</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 12, <b>Dex</b> 11, <b>Con</b> 13, <b>Int</b> 8, <b>Wis</b> 13, <b>Cha</b> 12</p>
+				<p class="stat-block-1"><b>Base Atk</b> +3; <b>CMB</b> +1; <b>CMD</b> 12</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a>, <a href="../coreRulebook/feats.html#lightning-reflexes" >Lightning Reflexes</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/bluff.html#bluff" >Bluff</a> +7, <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> +18, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +5, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +7, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +14</p>
+				<p class="stat-block-1"><b>Languages</b> Abyssal, Common, Infernal; telepathy 100 ft.</p>
+				<p class="stat-block-1"><b>SQ</b> <a href="../bestiary/universalMonsterRules.html#change-shape" >change shape</a> (2 of the following forms: lizard, octopus, Small scorpion, venomous snake, <i><a href="../coreRulebook/spells/polymorph.html#polymorph" >polymorph</a></i>) </p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any (Abaddon)</p>
+				<p class="stat-block-1"><b>Organization</b> solitary or <a href="../bestiary/creatureTypes.html#swarm-subtype" >swarm</a> (2&ndash;10)</p>
+				<p class="stat-block-1"><b>Treasure</b> standard</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b><a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >Disease</a> (Su)</b> <i>Cacodaemonia</i>: Bite&mdash;injury; <i>save</i> Fort DC 12; <i>onset</i> 1 day; <i>frequency</i> 1/day; <i>effect</i> 1d2 Wis damage, <i>cure</i> 2 consecutive saves. In addition to the normal effects of the <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>, as long as a victim is infected, the cacodaemon can telepathically communicate with the creature over any distance (as long as they remain on the same plane).</p>
+				<p class="stat-block-1"><b>Soul Lock (Su) </b>Once per day as a full-round action, a cacodaemon can ingest the spirit of any sentient creature that has died within the last minute. This causes a soul gem to grow inside of the cacodaemon's gut, which it can regurgitate as a standard action. A soul gem is a fine-sized object with 1 hit point and hardness 2. Destroying a soul gem frees the soul within, though it does not return the deceased creature to life. This is a death effect.&nbsp;Any attempt to resurrect a body whose soul is trapped in a soul gem requires a DC 12 caster level check. Failure results in the spell having no effect, while success shatters the victim's soul gem and returns the creature to life as normal. If the soul gem rests in an unholy location, such as that created by the spell&nbsp;<i><a href="../coreRulebook/spells/unhallow.html#unhallow" >unhallow</a></i>, the DC of this caster level check increases by +2. The caster level check DC is Charisma-based.</p>
+				<p>Any <a href="../bestiary/creatureTypes.html#evil-subtype" >evil</a> <a href="../bestiary/creatureTypes.html#outsider" >outsider</a> can, as a standard action, ingest a soul gem. Doing so frees the soul within, but condemns it to one of the lower planes (though the soul can be returned to life as normal). The <a href="../bestiary/creatureTypes.html#outsider" >outsider</a> gains fast healing 2 for a number of rounds equal to its Hit Dice.</p>
+
+				<p>The least of daemonkind, cacodaemons spawn from eddies of angry, violent, and demented souls amid the mists of Abaddon. Dim-witted but utterly evil, they endlessly seek to cause pain and indulge their hunger for mortal souls. Many more powerful fiends keep cacodaemons as pets, if only to be able to harvest the tiny creatures' soul gems. A 7th-level spellcaster can gain a cacodaemon as a familiar if she has the <a href="../coreRulebook/feats.html#improved-familiar" >Improved Familiar</a> feat.</p>
+			</div>
+
+			<div>
+				<h1 id="daemon,-ceustodaemon" class="monster-header">Daemon, Ceustodaemon</h1>
+				<p>This brown, shaggy-furred beast stands on slate grey hooves. Its head resembles that of a maniacal horned ape.</p>
+				<p class="stat-block-title"><b>Ceustodaemon	<span class="stat-block-cr">CR 6</span></b></p>
+				<p class="stat-block-xp"><b>XP 2,400</b></p>
+				<p class="stat-block-1">NE Large <a href="../bestiary/creatureTypes.html#outsider" >outsider</a> (<a href="../bestiary/creatureTypes.html#daemon-subtype" >daemon</a>, <a href="../bestiary/creatureTypes.html#evil-subtype" >evil</a>, <a href="../bestiary/creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +1; <b>Senses</b> darkvision 60 ft., <i><a href="../coreRulebook/spells/detectGood.html#detect-good" >detect good</a></i>, <i><a href="../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i>, <i><a href="../coreRulebook/spells/seeInvisibility.html#see-invisibility" >see invisibility</a></i>; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +15</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 20, touch 10, flat-footed 19 (+1 Dex, +10 natural, &ndash;1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 68 (8d10+24)</p>
+				<p class="stat-block-1"><b>Fort</b> +9, <b>Ref</b> +3, <b>Will</b> +8</p>
+				<p class="stat-block-1"><b>DR</b> 10/good or silver; <b>Immune</b> acid, death effects, <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>, mind-affecting effects, paralysis, <a href="../bestiary/universalMonsterRules.html#poison-(ex-or-su)" >poison</a>, polymorph effects, sleep effects; <b>Resist</b> <a href="../bestiary/creatureTypes.html#cold-subtype" >cold</a> 10, electricity 10, <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> 10</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> bite +11 (2d6+4), 2 claws +11 (1d6+4)<span class="char-style-override-29"> </span></p>
+				<p class="stat-block-1"><b>Space</b> 10 ft.; <b>Reach</b> 10 ft. </p>
+				<p class="stat-block-1"><b>Special Attacks</b> <a href="../bestiary/universalMonsterRules.html#breath-weapon" >breath weapon</a> (30-ft. cone; 6d6 <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> damage; Reflex DC 17 for half; usable once every 1d4 rounds)</p>
+				<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 8th; concentration +10)</p>
+				<p class="stat-block-2">Constant&mdash;<i><a href="../coreRulebook/spells/detectGood.html#detect-good" >detect good</a>, <a href="../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a>, <a href="../coreRulebook/spells/seeInvisibility.html#see-invisibility" >see invisibility</a></i></p>
+				<p class="stat-block-2">At will&mdash;<i><a href="../coreRulebook/spells/dimensionDoor.html#dimension-door" >dimension door</a></i></p>
+				<p class="stat-block-2">3/day&mdash;<i><a href="../coreRulebook/spells/dispelMagic.html#dispel-magic" >dispel magic</a></i>, <i><a href="../coreRulebook/spells/fly.html" >fly</a></i></p>
+				<p class="stat-block-2">1/day&mdash;<i><a href="../coreRulebook/spells/holdMonster.html#hold-monster" >hold monster</a></i> (DC 17), <i><a href="../coreRulebook/spells/slow.html#slow" >slow</a></i> (DC 15)</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 18, <b>Dex</b> 13, <b>Con</b> 16, <b>Int</b> 11, <b>Wis</b> 14, <b>Cha</b> 15</p>
+				<p class="stat-block-1"><b>Base Atk</b> +8; <b>CMB</b> +13; <b>CMD</b> 24</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#alertness" >Alertness</a>, <a href="../coreRulebook/feats.html#blind-fight" >Blind-Fight</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a>, <a href="../coreRulebook/feats.html#step-up" >Step Up</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/bluff.html#bluff" >Bluff</a> +13, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +11, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +9, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +15, <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +15, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +8, <a href="../coreRulebook/skills/survival.html#survival" >Survival</a> +9</p>
+				<p class="stat-block-1"><b>Languages</b> Abyssal, Infernal; telepathy 100 ft.</p>
+				<p class="stat-block-1"><b>SQ</b> drawn to service</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any (Abaddon)</p>
+				<p class="stat-block-1"><b>Organization</b> solitary</p>
+				<p class="stat-block-1"><b>Treasure</b> none</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Drawn to Service (Su)</b> When brought to another plane with a <i><a href="../coreRulebook/spells/planarBinding.html#planar-binding" >planar binding</a></i> or <i><a href="../coreRulebook/spells/planarAlly.html#planar-ally" >planar ally</a> </i>spell (or any similar calling effect), ceustodaemons take a &ndash;5 penalty on the initial Will save and on their Charisma check to refuse service. Ceustodaemons also take a &ndash;5 penalty on saves against <i><a href="../coreRulebook/spells/binding.html#binding" >binding</a></i>, <i><a href="../coreRulebook/spells/planarBinding.html#planar-binding" >planar binding</a></i>, and other spells designed to bind a creature to a particular plane as long as the <a href="../bestiary/creatureTypes.html#daemon-subtype" >daemon</a> is commanded to serve as a guardian for a single area or small complex. </p>
+
+				<p>Some claim the Four Horsemen created these creatures to serve as summoning fodder. Others believe that they form from neutral evil souls who commit suicide. Wherever the truth lies, ceustodaemons find themselves on the Material Plane more often than any other daemon, as they are easily pressured into service&mdash;many call these creatures "guardian daemons" as a result. Yet in the back of their wicked minds, ceustodaemons always think about escaping their bonds and ripping to shreds the ones who summoned them.</p>
+				<p>Greater and lesser versions of these creatures exist. These variants can be represented by applying either the young creature or advanced creature simple templates, along with the following adjustments.</p>
+				<p id="lesser-ceustodaemon"><b>Lesser Ceustodaemon</b>: This Medium daemon looks like a horned frog with a wide, toothy mouth. Its breath weapon is a chilling cone of ice that deals cold damage.</p>
+				<p id="greater-ceustodaemon"><b>Greater Ceustodaemon</b>: This daemon resembles a gigantic humanoid bear with the talons of an eagle and curling ram horns sprouting from its head. Its breath weapon is a fan of sparks that deals electricity damage.</p>
+			</div>
+
+			<div>
+				<h1 id="daemon,-derghodaemon" class="monster-header">Daemon, Derghodaemon</h1>
+				<p>A deadly and vicious bouquet of insectile claws sprouts from this horrid, three-legged, multi-eyed beast.</p>
+				<p class="stat-block-title"><b>Derghodaemon	<span class="stat-block-cr">CR 12</span></b></p>
+				<p class="stat-block-xp"><b>XP 19,200</b></p>
+				<p class="stat-block-1">NE Large <a href="../bestiary/creatureTypes.html#outsider" >outsider</a> (<a href="../bestiary/creatureTypes.html#daemon-subtype" >daemon</a>, <a href="../bestiary/creatureTypes.html#evil-subtype" >evil</a>, <a href="../bestiary/creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +5; <b>Senses</b> <a href="../bestiary/universalMonsterRules.html#all-around-vision" >all-around vision</a>, darkvision 60 ft., <i><a href="../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i>, <i><a href="../coreRulebook/spells/seeInvisibility.html#see-invisibility" >see invisibility</a></i>; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +28</p>
+				<p class="stat-block-1"><b>Aura</b> <i><a href="../coreRulebook/spells/feeblemind.html#feeblemind" >feeblemind</a></i> (DC 20)</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 27, touch 14, flat-footed 22 (+5 Dex, +13 natural, &ndash;1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 161 (14d10+84)</p>
+				<p class="stat-block-1"><b>Fort</b> +15, <b>Ref</b> +14, <b>Will</b> +7</p>
+				<p class="stat-block-1"><b>DR</b> 10/good; <b>Immune</b> acid, death effects, <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>, <a href="../bestiary/universalMonsterRules.html#poison-(ex-or-su)" >poison</a>; <b>Resist</b> <a href="../bestiary/creatureTypes.html#cold-subtype" >cold</a> 10, electricity 10, <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> 10; <b>SR</b> 23</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 40 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 5 claws +21 (1d6+8/19&ndash;20)</p>
+				<p class="stat-block-1"><b>Space</b> 10 ft.; <b>Reach</b> 10 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> rend (2 claws, 1d8+12 plus 2 Con damage)</p>
+				<p class="stat-block-1"><b>Spell-like Abilities</b> (CL 12th; concentration +15)</p>
+				<p class="stat-block-2">Constant&mdash;<i><a href="../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i>, <i><a href="../coreRulebook/spells/seeInvisibility.html#see-invisibility" >see invisibility</a></i></p>
+				<p class="stat-block-2">At will&mdash;<i><a href="../coreRulebook/spells/teleport.html#teleport-greater" >greater teleport</a></i> (self plus 50 lbs. of objects only)</p>
+				<p class="stat-block-2">3/day&mdash;<i><a href="../coreRulebook/spells/fear.html#fear" >fear</a></i> (DC 17), quickened <i><a href="../coreRulebook/spells/summonSwarm.html#summon-swarm" >summon swarm</a></i></p>
+				<p class="stat-block-2">1/day&mdash;<i><a href="../coreRulebook/spells/creepingDoom.html#creeping-doom" >creeping doom</a></i>, <i><a href="../coreRulebook/spells/insectPlague.html#insect-plague" >insect plague</a></i>, summon (level 4, 1 derghodaemon 30%) </p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 27, <b>Dex</b> 20, <b>Con</b> 22, <b>Int</b> 7, <b>Wis</b> 17, <b>Cha</b> 16</p>
+				<p class="stat-block-1"><b>Base Atk</b> +14; <b>CMB</b> +23; <b>CMD</b> 38 (40 vs. trip)</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#cleave" >Cleave</a>, <a href="../coreRulebook/feats.html#critical-focus" >Critical Focus</a>, <a href="../coreRulebook/feats.html#improved-critical" >Improved Critical</a> (claws), <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a>, <a href="../bestiary/monsterFeats.html#quicken-spell-like-ability" >Quicken Spell-Like Ability</a> (<i><a href="../coreRulebook/spells/summonSwarm.html#summon-swarm" >summon swarm</a></i>), <a href="../coreRulebook/feats.html#sickening-critical" >Sickening Critical</a>, <a href="../coreRulebook/feats.html#vital-strike" >Vital Strike</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +20, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +28, <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +20, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +18; <b>Racial Modifiers</b> +4 Perception</p>
+				<p class="stat-block-1"><b>Languages</b> Abyssal, Draconic, Infernal; telepathy 100 ft.</p>
+				<p class="stat-block-1"><b>SQ</b> swarmwalking</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any (Abaddon)</p>
+				<p class="stat-block-1"><b>Organization </b>solitary or infestation (2&ndash;6)</p>
+				<p class="stat-block-1"><b>Treasure</b> standard</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Feeblemind Aura (Su)</b> By grinding and clicking its mandibles and chitinous plates together (a free action), a derghodaemon can affect all creatures within 30 feet as if by a <i><a href="../coreRulebook/spells/feeblemind.html#feeblemind" >feeblemind</a></i> spell. Daemons are immune to this effect, but all other creatures must make a DC 20 Will save to resist the effects. A creature that makes this save is immune to the effect for 24 hours. A creature that fails remains affected as long as the derghodaemon continues to maintain the aura and the subject remains within 30 feet of the derghodaemon. Once either condition ends, the victim of this effect can attempt a new DC 20 Will save once per minute to recover from the effect; otherwise, it can be cured by a <i><a href="../coreRulebook/spells/heal.html#heal" >heal</a></i>, <i><a href="../coreRulebook/spells/limitedWish.html#limited-wish" >limited wish</a></i>, <i><a href="../coreRulebook/spells/miracle.html#miracle" >miracle</a></i>, or <i><a href="../coreRulebook/spells/wish.html#wish" >wish</a></i> spell. A derghodaemon cannot use its spell-like abilities or rend attack in any round in which it uses its feeblemind aura. This is a sonic mind-affecting effect. The save DC is Charisma-based.</p>
+				<p class="stat-block-1"><b>Swarmwalking (Su)</b> A derghodaemon is immune to damage or <a href="../bestiary/universalMonsterRules.html#distraction" >distraction</a> effects caused by swarms.</p>
+
+				<p>These brutal daemons personify death resulting from violent insanity, such as being murdered by a maniac or torn to shreds by a pack of rabid predators. These insectoid creatures roam the Outer Planes, scavenging battlefields and following the inevitable trail of violence in those hostile worlds. They hunt the weak and dying along the fringe of battles, feeding off their victims' suffering until they make their kill. Attacks from a derghodaemon often come from within a cloud of biting insects.</p>
+				<p>Brutish and low on intellect, derghodaemons find themselves serving as front-line fighters in fiendish armies. A derghodaemon stands 9 feet tall and weighs 800 pounds.</p>
+			</div>
+
+			<div>
+				<h1 id="daemon,-hydrodaemon" class="monster-header">Daemon, Hydrodaemon</h1>
+				<p>The skin on this frog-like fiend is clammy and its eyes look dead and milky; its wide face is split by a fanged maw.</p>
+				<p class="stat-block-title"><b>Hydrodaemon	<span class="stat-block-cr">CR 8</span></b></p>
+				<p class="stat-block-xp"><b>XP 4,800</b></p>
+				<p class="stat-block-1">NE Large <a href="../bestiary/creatureTypes.html#outsider" >outsider</a> (<a href="../bestiary/creatureTypes.html#aquatic-subtype" >aquatic</a>, <a href="../bestiary/creatureTypes.html#daemon-subtype" >daemon</a>, <a href="../bestiary/creatureTypes.html#evil-subtype" >evil</a>, <a href="../bestiary/creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +2; <b>Senses</b> darkvision 60 ft., <i><a href="../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i>; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +15</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 20, touch 11, flat-footed 18 (+2 Dex, +9 natural, &ndash;1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 95 (10d10+40) </p>
+				<p class="stat-block-1"><b>Fort</b> +11, <b>Ref</b> +9, <b>Will</b> +3</p>
+				<p class="stat-block-1"><b>DR</b> 10/cold iron or silver; <b>Immune</b> acid, death effects, <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>, <a href="../bestiary/universalMonsterRules.html#poison-(ex-or-su)" >poison</a>, waters of the River Styx; <b>Resist</b> <a href="../bestiary/creatureTypes.html#cold-subtype" >cold</a> 10, electricity 10, <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> 10; <b>SR</b> 19</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 30 ft., fly 40 ft. (average; see glide, below), swim 60 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> bite +13 (1d8+4 plus <a href="../bestiary/universalMonsterRules.html#grab" >grab</a>), 2 claws +13 (1d6+4)</p>
+				<p class="stat-block-1"><b>Ranged </b>sleep spittle +11 (sleep)</p>
+				<p class="stat-block-1"><b>Space</b> 10 ft.; <b>Reach</b> 10 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> <a href="../bestiary/universalMonsterRules.html#rake" >rake</a> (2 claws +13, 1d6+4)</p>
+				<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 9th; concentration +11)</p>
+				<p class="stat-block-2">Constant&mdash;<i><a href="../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a>, <a href="../coreRulebook/spells/waterWalk.html#water-walk" >water walk</a></i></p>
+				<p class="stat-block-2">At will&mdash;<i><a href="../coreRulebook/spells/acidArrow.html#acid-arrow" >acid arrow</a></i>, <i><a href="../coreRulebook/spells/deeperDarkness.html#deeper-darkness" >deeper darkness</a></i></p>
+				<p class="stat-block-2">3/day&mdash;<i><a href="../coreRulebook/spells/controlWater.html#control-water" >control water</a></i>, <i><a href="../coreRulebook/spells/teleport.html#teleport-greater" >greater teleport</a></i> (self plus 50 lbs. of objects only), <i><a href="../coreRulebook/spells/summonMonster.html#summon-monster-v" >summon monster V</a></i> (Large water elemental only)</p>
+				<p class="stat-block-2">1/day&mdash;<i><a href="../coreRulebook/spells/desecrate.html#desecrate" >desecrate</a></i>, summon (level 3, 1 hydrodaemon 50%)</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 18, <b>Dex</b> 15, <b>Con</b> 18, <b>Int</b> 9, <b>Wis</b> 11, <b>Cha</b> 14</p>
+				<p class="stat-block-1"><b>Base Atk</b> +10; <b>CMB</b> +15 (+9 grapple); <b>CMD</b> 27</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#cleave" >Cleave</a>, <a href="../coreRulebook/feats.html#point-blank-shot" >Point-Blank Shot</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a>, <a href="../coreRulebook/feats.html#precise-shot" >Precise Shot</a>, <a href="../coreRulebook/feats.html#skill-focus" >Skill Focus</a> (<a href="../coreRulebook/skills/perception.html#perception" >Perception</a>)</p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> +0, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +14, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +10, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +15, <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +12, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +10, <a href="../coreRulebook/skills/swim.html#swim" >Swim</a> +21</p>
+				<p class="stat-block-1"><b>Languages</b> Abyssal, Infernal; telepathy 100 ft.</p>
+				<p class="stat-block-1"><b>SQ</b> amphibious, glide</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any (Abaddon)</p>
+				<p class="stat-block-1"><b>Organization</b> solitary, gang (2&ndash;5), or mob (6&ndash;12)</p>
+				<p class="stat-block-1"><b>Treasure</b> standard</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Glide (Ex) </b>A hydrodaemon can launch itself into the <a href="../bestiary/creatureTypes.html#air-subtype" >air</a> and glide along for 1 minute, gaining a fly speed of 40 feet with average maneuverability. While gliding, the hydrodaemon gains the <a href="../bestiary/universalMonsterRules.html#pounce" >pounce</a> ability.</p>
+				<p class="stat-block-1"><b>Sleep Spittle (Su) </b>A hydrodaemon can spit at a single target within 20 feet, making a ranged touch attack as a standard action. A target hit by this spittle must succeed on a DC 19 Will save or fall asleep for 6 rounds. The save DC is Constitution-based.</p>
+				<p>While at first glance these creatures seem like enormous and foul boggards, their dangerous gait, dead eyes, and wicked claws give away their fiendish nature. In their home environment, hydrodaemons swim the sickening rivers and seas of Abaddon and the River Styx, ducking beneath the rivers of pus and bile only to leap out at enemies and rend their flesh with tooth and claw. It is said these are among the few creatures able to survive in the deadly waters of the River Styx. When called to the Material Plane, hydrodaemons serve powerful spellcasters, protecting domains dotted with pools, streams, and even sewer complexes. Associated with death by drowning, these fiends use a favored tactic to draw the most anguish from their victims. Hydrodaemons first attack with their inky black sleep spittle, hoping to render victims unconscious. With their opponents unable to fight back, hydrodaemons drag their enemies into the foul waters they call home and delight as the liquid fills their victims' gasping lungs. If unable to drown a victim, they finish the job with jaws and claws.</p>
+				<p>Hydrodaemons possess an awkward gait, springing back on their heels and leaping about like humanoid frogs. Even so, they move in an unpredictable manner, twisting their bodies with each hopping movement. Hydrodaemons can also unfurl flaps of skin that allow them to glide through the air. Hydrodaemons stand 10 feet tall and weigh upward of 3,000 pounds.</p>
+			</div>
+
+			<div>
+				<h1 id="daemon,-leukodaemon" class="monster-header">Daemon, Leukodaemon</h1>
+				<p>This human-shaped beast has a horse's skull for a head. It walks on cracked hooves and bears the rotting wings of a carrion bird.</p>
+				<p class="stat-block-title"><b>Leukodaemon	<span class="stat-block-cr">CR 9</span></b></p>
+				<p class="stat-block-xp"><b>XP 6,400</b></p>
+				<p class="stat-block-1">NE Large <a href="../bestiary/creatureTypes.html#outsider" >outsider</a> (<a href="../bestiary/creatureTypes.html#daemon-subtype" >daemon</a>, <a href="../bestiary/creatureTypes.html#evil-subtype" >evil</a>, <a href="../bestiary/creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +11; <b>Senses</b> darkvision 60 ft., <i><a href="../coreRulebook/spells/deathwatch.html#deathwatch" >deathwatch</a></i>, <i><a href="../coreRulebook/spells/detectGood.html#detect-good" >detect good</a></i>; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +22</p>
+				<p class="stat-block-1"><b>Aura</b> infectious aura (50 ft.)</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 23, touch 16, flat-footed 16 (+7 Dex, +7 natural, &ndash;1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 115 (10d10+60)</p>
+				<p class="stat-block-1"><b>Fort</b> +9, <b>Ref</b> +14, <b>Will</b> +12</p>
+				<p class="stat-block-1"><b>DR</b> 10/good or silver; <b>Immune</b> acid, death effects, <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>, <a href="../bestiary/universalMonsterRules.html#poison-(ex-or-su)" >poison</a>; <b>Resist</b> <a href="../bestiary/creatureTypes.html#cold-subtype" >cold</a> 10, electricity 10, <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> 10; <b>SR</b> 20</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 30 ft., fly 60 ft. (average)</p>
+				<p class="stat-block-1"><b>Melee</b> bite +16 (1d8+7), 2 claws +16 (1d6+7)</p>
+				<p class="stat-block-1"><b>Ranged </b><i>+1 composite longbow</i> +18/+13 (2d6+8/&times;3 plus contagion)</p>
+				<p class="stat-block-1"><b>Space</b> 10 ft.; <b>Reach</b> 10 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> breath of flies</p>
+				<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 10th; concentration +13)</p>
+				<p class="stat-block-2">Constant&mdash;<i><a href="../coreRulebook/spells/deathwatch.html#deathwatch" >deathwatch</a></i>, <i><a href="../coreRulebook/spells/detectGood.html#detect-good" >detect good</a></i></p>
+				<p class="stat-block-2">At will&mdash;<i><a href="../coreRulebook/spells/contagion.html#contagion" >contagion</a></i> (DC 17), <i><a href="../coreRulebook/spells/dispelMagic.html#dispel-magic" >dispel magic</a></i>, <i><a href="../coreRulebook/spells/teleport.html#teleport-greater" >greater teleport</a></i> (self plus 50 lbs. of objects only)</p>
+				<p class="stat-block-2">1/day&shy;&mdash;<i><a href="../coreRulebook/spells/harm.html#harm" >harm</a></i> (DC 19), summon (level 3, 1 leukodaemon only, 35%)</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 25, <b>Dex</b> 24, <b>Con</b> 23, <b>Int</b> 16, <b>Wis</b> 21, <b>Cha</b> 16</p>
+				<p class="stat-block-1"><b>Base Atk</b> +10; <b>CMB</b> +18; <b>CMD</b> 35</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#alertness" >Alertness</a>, <a href="../bestiary/monsterFeats.html#hover" >Hover</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a>, <a href="../coreRulebook/feats.html#point-blank-shot" >Point-Blank Shot</a>, <a href="../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a> (longbow)</p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> +18, <a href="../coreRulebook/skills/heal.html#heal" >Heal</a> +18, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +16, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +16, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +22, <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +22, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +16, <a href="../coreRulebook/skills/survival.html#survival" >Survival</a> +15, <a href="../coreRulebook/skills/useMagicDevice.html#use-magic-device" >Use Magic Device</a> +16</p>
+				<p class="stat-block-1"><b>Languages</b> Abyssal, Draconic, Infernal; telepathy 100 ft.</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any (Abaddon)</p>
+				<p class="stat-block-1"><b>Organization</b> solitary or wake (2&ndash;10)</p>
+				<p class="stat-block-1"><b>Treasure</b> standard (+1 <i>composite longbow</i>, other treasure)</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Breath of Flies (Su) </b>Once per minute as a standard action, a leukodaemon can unleash a cloud of corpse-bloated, biting black flies in a 20-foot cone. Those caught in the cone take 8d6 points of slashing damage. A DC 21 Reflex save halves this damage. Those who take any damage are also sickened for 1 minute. In addition, the flies linger for 1d4+1 rounds, congealing into a buzzing 20-foot-square cloud centered on the cone's original point of origin. Any creature that ends its turn in this cloud must make a DC 21 Reflex save to avoid taking 4d6 points of damage and becoming sickened for 1 minute. This cloud of flies may be dispersed by any area effect that does damage or creates wind of at least strong wind force. All daemons are immune to this effect. The save DCs are Constitution-based.</p>
+				<p class="stat-block-1"><b>Contagion (Su) </b>Any arrow a leukodaemon fires from a bow is tainted with <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>. If a creature is damaged by a leukodaemon's arrow, it must make a DC 19 Fortitude save or be affected as if by the spell <i><a href="../coreRulebook/spells/contagion.html#contagion" >contagion</a></i>. A leukodaemon can manifest arrows at will and never runs out of ammunition.</p>
+				<p class="stat-block-1"><b>Infectious Aura (Su) </b>All creatures within 50 feet of a leukodaemon take a &ndash;4 penalty on Fortitude saves against <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a> effects.</p>
+
+				<p>Deacons of the Horseman of Pestilence, leukodaemons serve their lord in Abaddon as well as across the planes by spreading plagues and pandemics.</p>
+				<p>Leukodaemons stand upward of 14 feet tall but weigh just over 200 pounds. The skulls that serve as their heads can be replaced with any skulls, yet these creatures choose horse skulls to show their loyalty to the Horsemen. The creature's true head is merely a blistered knob between its shoulders.</p>
+			</div>
+
+			<div>
+				<h1 id="daemon,-meladaemon" class="monster-header">Daemon, Meladaemon</h1>
+				<p>This foul creature looks like an emaciated humanoid with the head of a jackal.</p>
+				<p class="stat-block-title"><b>Meladaemon	<span class="stat-block-cr">CR 11</span></b></p>
+				<p class="stat-block-xp"><b>XP 12,800</b></p>
+				<p class="stat-block-1">NE Large <a href="../bestiary/creatureTypes.html#outsider" >outsider</a> (<a href="../bestiary/creatureTypes.html#daemon-subtype" >daemon</a>, <a href="../bestiary/creatureTypes.html#evil-subtype" >evil</a>, <a href="../bestiary/creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +6; <b>Senses</b> darkvision 60 ft., <i><a href="../coreRulebook/spells/detectGood.html#detect-good" >detect good</a></i>, <i><a href="../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i>; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +20</p>
+				<p class="stat-block-1"><b>Aura</b> consumptive aura (20 ft.)</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 25, touch 15, flat-footed 19 (+6 Dex, +10 natural, &ndash;1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 147 (14d10+70)</p>
+				<p class="stat-block-1"><b>Fort</b> +11, <b>Ref</b> +15, <b>Will</b> +14</p>
+				<p class="stat-block-1"><b>DR</b> 10/good; <b>Immune</b> acid, critical hits, death effects, <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>, <a href="../bestiary/universalMonsterRules.html#poison-(ex-or-su)" >poison</a>, sneak attack; <b>Resist</b> <a href="../bestiary/creatureTypes.html#cold-subtype" >cold</a> 10, electricity 10, <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> 10; <b>SR</b> 22</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 30 ft., fly 60 ft. (average)</p>
+				<p class="stat-block-1"><b>Melee</b> bite +20 (2d8+6/19&ndash;20 plus <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>), 2 claws +19 (2d6+6 plus hunger)</p>
+				<p class="stat-block-1"><b>Space</b> 10 ft.; <b>Reach</b> 10 ft.</p>
+				<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 11th; concentration +15)</p>
+				<p class="stat-block-2">Constant&mdash;<i><a href="../coreRulebook/spells/detectGood.html#detect-good" >detect good</a></i>, <i><a href="../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i>, <i><a href="../coreRulebook/spells/seeInvisibility.html#see-invisibility" >see invisibility</a></i></p>
+				<p class="stat-block-2">At will&mdash;<i>cause fear</i> (DC 15), <i><a href="../coreRulebook/spells/deeperDarkness.html#deeper-darkness" >deeper darkness</a></i>, <i><a href="../coreRulebook/spells/teleport.html#teleport-greater" >greater teleport</a></i> (self plus 50 lbs. of objects only)</p>
+				<p class="stat-block-2">3/day&mdash;<i><a href="../coreRulebook/spells/blight.html#blight" >blight</a> </i>(DC 19), <i><a href="../coreRulebook/spells/diminishPlants.html#diminish-plants" >diminish plants</a></i>, quickened <i><a href="../coreRulebook/spells/magicMissile.html#magic-missile" >magic missile</a></i></p>
+				<p class="stat-block-2">1/day&mdash;<i><a href="../coreRulebook/spells/horridWilting.html#horrid-wilting" >horrid wilting</a></i> (DC 22), <i><a href="../coreRulebook/spells/wavesOfFatigue.html#waves-of-fatigue" >waves of fatigue</a></i></p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 22, <b>Dex</b> 22, <b>Con</b> 21, <b>Int</b> 21, <b>Wis</b> 17, <b>Cha</b> 18</p>
+				<p class="stat-block-1"><b>Base Atk</b> +14; <b>CMB</b> +21; <b>CMD</b> 37</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#blind-fight" >Blind-Fight</a>, <a href="../coreRulebook/feats.html#combat-reflexes" >Combat Reflexes</a>, <a href="../coreRulebook/feats.html#great-fortitude" >Great Fortitude</a>, <a href="../coreRulebook/feats.html#improved-critical" >Improved Critical</a> (bite), <a href="../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../bestiary/monsterFeats.html#quicken-spell-like-ability" >Quicken Spell-Like Ability</a> (<i><a href="../coreRulebook/spells/magicMissile.html#magic-missile" >magic missile</a></i>), <a href="../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a> (bite)</p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/bluff.html#bluff" >Bluff</a> +21, <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> +17, <a href="../coreRulebook/skills/heal.html#heal" >Heal</a> +11, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +21, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +22, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (religion) +22, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +20, <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +20, <a href="../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> +22, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +19, <a href="../coreRulebook/skills/survival.html#survival" >Survival</a> +20, <a href="../coreRulebook/skills/useMagicDevice.html#use-magic-device" >Use Magic Device</a> +14</p>
+				<p class="stat-block-1"><b>Languages</b> Abyssal, Draconic, Infernal; telepathy 100 ft.</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any (Abaddon)</p>
+				<p class="stat-block-1"><b>Organization</b> solitary, pack (2&ndash;5), or cabal (6&ndash;12)</p>
+				<p class="stat-block-1"><b>Treasure</b> standard</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Consumptive Aura (Su)</b> A meladaemon radiates an aura of hunger to a radius of 20 feet. Every round a creature begins its turn within this aura, it must succeed at a DC 22 Fortitude save or take 1d6 nonlethal damage and become fatigued from extreme hunger. Creatures that do not need to eat are immune to this effect. The save DC is Constitution-based.</p>
+				<p class="stat-block-1"><b><a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >Disease</a> (Ex)</b> <i>Daemonic wasting</i>: Bite&mdash;injury; <i>save</i> Fort DC 22; <i>onset</i> 1 day; <i>frequency</i> 1/day; <i>effect</i> 1d4 Con and 1d4 Cha damage; <i>cure</i> 2 consecutive saves. The save DC is Constitution-based.</p>
+				<p class="stat-block-1"><b>Hunger (Su)</b> A meladaemon's claw attack deals an additional 1d6 points of nonlethal damage as it causes sudden pangs of horrific hunger in its foe. Creatures that do not need to eat are immune to this effect.</p>
+
+				<p>As personifications of death from starvation and thirst, these withered fiends spend their time destroying resources and spreading hunger. Deacons of the Horseman of Famine, these creatures visit worlds throughout the planes, destroying acres of crops and slaughtering livestock in order to harvest souls for their honored master. Meladaemons delight in the slow death of starvation, going so far as to experiment with various bodily deficiencies and mortal weaknesses. Arrogant and utterly bound to their patron, meladaemons rarely work with others of their kind and never serve any of the other three Horsemen except in the rarest of circumstances.</p>
+				<p>Meladaemons stand approximately 12 feet tall and weigh 350 pounds.</p>
+			</div>
+
+			<div>
+				<h1 id="daemon,-olethrodaemon" class="monster-header">Daemon, Olethrodaemon</h1>
+				<p>Crowned with a wicked array of twisted horns, this wide-mouthed, spherical behemoth stands on four stout legs.</p>
+				<p class="stat-block-title"><b>Olethrodaemon	<span class="stat-block-cr">CR 20</span></b></p>
+				<p class="stat-block-xp"><b>XP 307,200</b></p>
+				<p class="stat-block-1">NE Gargantuan <a href="../bestiary/creatureTypes.html#outsider" >outsider</a> (<a href="../bestiary/creatureTypes.html#daemon-subtype" >daemon</a>, <a href="../bestiary/creatureTypes.html#evil-subtype" >evil</a>, <a href="../bestiary/creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +12; <b>Senses</b> darkvision 60 ft., <i><a href="../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a></i>; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +31</p>
+				<p class="stat-block-1"><b>Aura</b> <i><a href="../coreRulebook/spells/unholyAura.html#unholy-aura" >unholy aura</a></i></p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 38, touch 18, flat-footed 30 (+4 deflection, +8 Dex, +20 natural, &ndash;4 size)</p>
+				<p class="stat-block-1"><b>hp</b> 370 (20d10+260)</p>
+				<p class="stat-block-1"><b>Fort</b> +29, <b>Ref</b> +18, <b>Will</b> +26</p>
+				<p class="stat-block-1"><b>DR</b> 10/good and silver; <b>Immune</b> acid, death effects, <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>, <a href="../bestiary/universalMonsterRules.html#poison-(ex-or-su)" >poison</a>; <b>Resist</b> <a href="../bestiary/creatureTypes.html#cold-subtype" >cold</a> 10, electricity 10, <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> 10; <b>SR</b> 31</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 40 ft., burrow 50 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 2 bites +28 (2d8+12/19&ndash;20 plus <a href="../bestiary/universalMonsterRules.html#grab" >grab</a>), 4 claws +28 (2d6+12 plus <a href="../bestiary/universalMonsterRules.html#grab" >grab</a>), gore +28 (2d8+12)<span class="char-style-override-29"> </span></p>
+				<p class="stat-block-1"><b>Space</b> 20 ft.; <b>Reach</b> 20 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> drain soul, soul-drained breath, trample (2d8+18, DC 32)</p>
+				<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 20th; concentration +27)</p>
+				<p class="stat-block-2">Constant&mdash;<i><a href="../coreRulebook/spells/airWalk.html#air-walk" >air walk</a></i>, <i><a href="../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a>, <a href="../coreRulebook/spells/unholyAura.html#unholy-aura" >unholy aura</a></i> (DC 25)</p>
+				<p class="stat-block-2">At will&mdash;<i><a href="../coreRulebook/spells/teleport.html#teleport-greater" >greater teleport</a></i> (self plus 50 lbs. objects only), <i><a href="../coreRulebook/spells/telekinesis.html#telekinesis" >telekinesis</a></i>, <i><a href="../coreRulebook/spells/wallOfFire.html#wall-of-fire" >wall of fire</a>, <a href="../coreRulebook/spells/wallOfIce.html#wall-of-ice" >wall of ice</a></i></p>
+				<p class="stat-block-2">3/day&mdash;quickened<i> <a href="../coreRulebook/spells/disintegrate.html#disintegrate" >disintegrate</a> </i>(DC 23), <i><a href="../coreRulebook/spells/wallOfForce.html#wall-of-force" >wall of force</a></i></p>
+				<p class="stat-block-2">1/day&mdash;<i><a href="../coreRulebook/spells/blasphemy.html#blasphemy" >blasphemy</a></i> (DC 24), summon (level 9 any 1 CR 19 or lower daemon, 100%), <i><a href="../coreRulebook/spells/wailOfTheBanshee.html#wail-of-the-banshee" >wail of the banshee</a></i> (DC 26)</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 35, <b>Dex</b> 26, <b>Con</b> 37, <b>Int</b> 12, <b>Wis</b> 26, <b>Cha</b> 25</p>
+				<p class="stat-block-1"><b>Base Atk</b> +20; <b>CMB</b> +36 (+40 grapple); <b>CMD</b> 54 (58 vs. trip)</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../bestiary/monsterFeats.html#awesome-blow" >Awesome Blow</a>, <a href="../coreRulebook/feats.html#cleave" >Cleave</a>, <a href="../coreRulebook/feats.html#great-cleave" >Great Cleave</a>, <a href="../coreRulebook/feats.html#improved-bull-rush" >Improved Bull Rush</a>, <a href="../coreRulebook/feats.html#improved-critical" >Improved Critical</a> (bite), <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a>, <a href="../coreRulebook/feats.html#improved-sunder" >Improved Sunder</a>, <a href="../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a>, <a href="../bestiary/monsterFeats.html#quicken-spell-like-ability" >Quicken Spell-Like Ability</a> (<i><a href="../coreRulebook/spells/disintegrate.html#disintegrate" >disintegrate</a></i>)</p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +35, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +30, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +24, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +31, <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +31, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +19, <a href="../coreRulebook/skills/survival.html#survival" >Survival</a> +31</p>
+				<p class="stat-block-1"><b>Languages</b> Abyssal, Infernal; telepathy 100 ft.</p>
+				<p class="stat-block-1"><b>SQ</b> adamantine claws</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any (Abaddon)</p>
+				<p class="stat-block-1"><b>Organization</b> solitary, pair, or apocalypse (3&ndash;5)</p>
+				<p class="stat-block-1"><b>Treasure</b> standard</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Adamantine Claws (Ex)</b> Able to tear through stone, an olethrodaemon's claws are treated as though they were adamantine. This ability also allows an olethrodaemon to make use of its burrow speed through stone.</p>
+				<p class="stat-block-1"><b>Drain Soul (Su)</b> A creature grappled by an olethrodaemon's <a href="../bestiary/universalMonsterRules.html#grab" >grab</a> attack from its claws can be transferred to its mouth as a move action requiring no combat maneuver check. As a standard action, an olethrodaemon that begins its turn with an opponent grappled in either of its mouths can swallow the opponent by succeeding on another grapple check. If successful, the creature is swallowed into one of the olethrodaemon's many stomachs. These stomachs grind their contents and drain the life force from living creatures. Every round a creature remains in an olethrodaemon's stomach, it takes 4d8+18 points of damage and gains 1d4 negative levels. The creature can attempt to cut its way out of the olethrodaemon's stomach, but it suffers the chance of just cutting into another stomach chamber. An olethrodaemon's stomach is AC 20 and has 40 hit points. Once a creature deals enough damage to allow escape, it has a 50% chance to end up in another stomach chamber instead of escaping. Due to the multiple stomach chambers, an olethrodaemon can house and drain up to four medium creatures at one time. This ability otherwise functions as the swallow whole special attack. It is a DC 33 Fortitude save to remove negative levels gained in this fashion. This save is Constitution-based.</p>
+				<p class="stat-block-1"><b>Soul-Drained Breath (Su)</b> An olethrodaemon can convert life energy it has consumed into a potent <a href="../bestiary/universalMonsterRules.html#breath-weapon" >breath weapon</a>. Up to three times per day, but no more often than once every 1d4 rounds, an olethrodaemon can expel a 120-foot line or a 60-foot cone of shrieking black smoke and wind from one of its mouths as a standard action. Any living creature in the area of this attack takes 20d10 points of damage from negative energy, or half on a successful DC 27 Reflex save. <a href="../bestiary/creatureTypes.html#undead" >Undead</a> creatures caught in this negative energy are healed for the same amount instead of damaged. The save DC for this effect is Charisma-based. </p>
+
+				<p>While some of the more powerful daemons are servitors to one of the Four Horsemen, olethrodaemons serve as juggernauts for all of the Four. These massive creatures are the embodiment of death and destruction&shy;&mdash;the very vessels of apocalypse that daemons wish to see wrought upon the multiverse. These nihilistic behemoths roam the gray expanses of Abaddon, feasting on the souls of evil mortals damned to their realm. When on the Material Plane, olethrodaemons act as agents of destruction, spreading ruin and devouring mortal souls as they plow through cities and countrysides, bent on devastation. It's rare for a mortal to be able to control such a potent force, but sometimes mad spellcasters utilize effects like <i><a href="../coreRulebook/spells/gate.html#gate" >gate</a></i> to urge an olethrodaemon to visit a devastating holocaust upon an enemy region&mdash;the olethrodaemon generally does not hold a grudge against a mortal that asks such a service from it. </p>
+				<p>These immense creatures stand over 25 feet tall and weigh close to 12,000 pounds, their powerful, muscular bodies covered by durable plates and head thronged with dangerous, twisted horns. Olethrodaemons stand on four stout legs, and possess an equal number of arms, each ending in wickedly sharp claws able to tear through stone as easily as flesh. The creature's eyes, as well as its two mouths, glow like coals in a kiln. The creature feeds on souls and has multiple stomachs to digest mortal essences. </p>
+				<p>While not as intelligent or scheming as many other powerful daemons (or other fiends who match their power, for that matter), olethrodaemons remain dangerous foes. They do not generally wish to lead armies and gain power by control, but rather to revel in the evil purity of annihilation. Among olethrodaemons, the greatest desire is to be the one to devour the very last mortal soul. They angle and shove for this honor, often ceding a city or group of victims to a rival if they believe that, in so doing, they might gain the advantage of positioning to consume the final soul once the multiverse has been devoured.</p>
+				<h2>Olethrodaemon Paragons </h2>
+				<p>Just as powerful balors become lords and pit fiends clamor for positions as infernal dukes, olethrodaemons can achieve a unique level of power among their kin. These creatures are known as paragons, and gain this level of power by pledging their loyalty to one of the Four Horsemen as a chosen agent of apocalypse. These advanced olethrodaemons specialize in their patron's particular method of annihilation, their abilities evolving to suit the method of ruin. An olethrodaemon paragon generally has from 4 to 8 additional Hit Dice, and is usually a CR 22 to CR 24 creature.</p>
+				<p>Some planar scholars postulate that olethrodaemons are actually the creations of the Four Horsemen, and that the Four worked foul rites upon a fifth Horseman, with these interactions spawning olethrodaemons to serve their will and spread oblivion throughout the multiverse. The abilities of these chosen spawn warp to the tendencies of their daemonic lords.</p>
+				<p>Olethrodaemons serving the Horseman of Pestilence can infect their victims with a powerful disease by means of all their natural attacks. Creatures who succumb to this attack are affected as if by a maximized <i><a href="../coreRulebook/spells/contagion.html#contagion" >contagion</a></i> spell, heightened to 9th level.</p>
+				<p>Olethrodaemons serving the Horseman of War can imbue their natural attacks with additional properties. As a free action, an olethrodaemon can apply any special weapon property equivalent to a +2 enhancement to its bite, claw, gore, or trample attacks for 1 round&mdash;most of these olethrodaemon paragons elect to grant their natural weapons the unholy enhancement.</p>
+				<p>Olethrodaemons serving the Horseman of Famine gain the consumptive aura ability of the meladaemon, but the nonlethal damage dealt increases to 6d6 and victims who succumb become exhausted rather than merely fatigued.</p>
+				<p>Olethrodaemons serving the Horseman of Death gain the ability to inflict a negative level on a foe each time they strike with a claw attack, or else gain the ability to cause those they damage to age rapidly and grow old and frail with hideous speed.</p>
+		</div>
+
+			<div>
+				<h1 id="daemon,-piscodaemon" class="monster-header">Daemon, Piscodaemon</h1>
+				<p>This hideous cross between a lobster, an octopus, and a human threatens enemies with powerful claws and writhing tentacles.</p>
+				<p class="stat-block-title"><b>Piscodaemon	<span class="stat-block-cr">CR 10</span></b></p>
+				<p><span class="char-style-override-30">XP</span> 9,600</p>
+				<p class="stat-block-1">NE Medium <a href="../bestiary/creatureTypes.html#outsider" >outsider</a> (<a href="../bestiary/creatureTypes.html#aquatic-subtype" >aquatic</a>, <a href="../bestiary/creatureTypes.html#daemon-subtype" >daemon</a>, <a href="../bestiary/creatureTypes.html#evil-subtype" >evil</a>, <a href="../bestiary/creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +8; <b>Senses</b> darkvision 60 ft., <i><a href="../coreRulebook/spells/detectGood.html#detect-good" >detect good</a></i>, <i><a href="../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i>, <i><a href="../coreRulebook/spells/seeInvisibility.html#see-invisibility" >see invisibility</a></i>; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +16</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 24, touch 14, flat-footed 20 (+4 Dex, +10 natural)</p>
+				<p class="stat-block-1"><b>hp</b> 137 (11d10+77)</p>
+				<p class="stat-block-1"><b>Fort</b> +14, <b>Ref</b> +7, <b>Will</b> +9</p>
+				<p class="stat-block-1"><b>DR</b> 10/good; <b>Immune</b> acid, death effects, <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>, <a href="../bestiary/universalMonsterRules.html#poison-(ex-or-su)" >poison</a>; <b>Resist</b> <a href="../bestiary/creatureTypes.html#cold-subtype" >cold</a> 10, electricity 10, <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> 10; <b>SR</b> 21</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 30 ft., swim 50 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 2 claws +18 (2d6+7/18-20/&times;3 plus <a href="../bestiary/universalMonsterRules.html#grab" >grab</a> and 1d6 <a href="../bestiary/universalMonsterRules.html#bleed" >bleed</a>), tentacles +16 (1d10+3 plus <a href="../bestiary/universalMonsterRules.html#poison-(ex-or-su)" >poison</a>)<span class="char-style-override-29"> </span></p>
+				<p class="stat-block-1"><b>Special Attacks</b> <a href="../bestiary/universalMonsterRules.html#constrict" >constrict</a> (2d6+10)</p>
+				<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 11th; concentration +14)</p>
+				<p class="stat-block-2">Constant&mdash;<i><a href="../coreRulebook/spells/detectGood.html#detect-good" >detect good</a></i>, <i><a href="../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i>, <i><a href="../coreRulebook/spells/seeInvisibility.html#see-invisibility" >see invisibility</a></i></p>
+				<p class="stat-block-2">At will&mdash;<i><a href="../coreRulebook/spells/dispelMagic.html#dispel-magic" >dispel magic</a></i>, <i><a href="../coreRulebook/spells/teleport.html#teleport-greater" >greater teleport</a></i> (self plus 50 lbs. of objects only)</p>
+				<p class="stat-block-2">3/day&mdash;<i><a href="../coreRulebook/spells/fly.html" >fly</a></i>, <i><a href="../coreRulebook/spells/stinkingCloud.html#stinking-cloud" >stinking cloud</a></i> (DC 16)</p>
+				<p class="stat-block-2">1/day&mdash;summon (level 4, 1d3 hydrodaemons 35%)</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 25, <b>Dex</b> 18, <b>Con</b> 24, <b>Int</b> 14, <b>Wis</b> 15, <b>Cha</b> 17</p>
+				<p class="stat-block-1"><b>Base Atk</b> +11; <b>CMB</b> +18 (+22 grapple); <b>CMD</b> 32</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#critical-focus" >Critical Focus</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a>, <a href="../bestiary/monsterFeats.html#multiattack" >Multiattack</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a>, <a href="../coreRulebook/feats.html#sickening-critical" >Sickening Critical</a>, <a href="../coreRulebook/feats.html#vital-strike" >Vital Strike</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +18, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +17, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +16, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +16, <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +16, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +18, <a href="../coreRulebook/skills/survival.html#survival" >Survival</a> +16, <a href="../coreRulebook/skills/swim.html#swim" >Swim</a> +29</p>
+				<p class="stat-block-1"><b>Languages</b> Abyssal, Draconic, Infernal; telepathy 100 ft.</p>
+				<p class="stat-block-1"><b>SQ</b> amphibious, <a href="../bestiary/creatureTypes.html#augmented-subtype" >augmented</a> critical</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any (Abaddon)</p>
+				<p class="stat-block-1"><b>Organization</b> solitary, pair, or knot (3&ndash;5)</p>
+				<p class="stat-block-1"><b>Treasure</b> standard</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b><a href="../bestiary/creatureTypes.html#augmented-subtype" >Augmented</a> Critical (Ex)</b> A <span class="char-style-override-31">piscodaemon's claws threaten a critical hit on an 18&ndash;20 and inflict </span><span class="char-style-override-31">&times;3 damage on a successful critical hit.</span></p>
+				<p class="stat-block-1"><b><a href="../bestiary/universalMonsterRules.html#poison-(ex-or-su)" >Poison</a> (Ex)</b> Tentacles&mdash;injury; <i>save</i> Fort DC 22; <i>frequency</i> 1/round for 6 rounds; <i>effect</i> 1d2 Con plus staggered for 1 round; <i>cure</i> 2 consecutive saves.</p>
+
+				<p>These aquatic daemons roam the lower planes sowing misery and blight. They delight in drawn-out deaths, poisoning creatures or dismembering victims to watch them slowly bleed out. On their home plane of Abaddon, piscodaemons gravitate toward the same aquatic regions inhabited by hydrodaemons, and often the stronger among their ranks end up leading armies of hydrodaemons against their enemies. These creatures serve as sergeants in the hierarchy of Abaddon, and run their units with an excess of cruelty and violence. </p>
+				<p>Instead of preying on the weak, piscodaemons enjoy targeting strong, well-armored warriors, knowing the pain of their weakening poison rests poorly on shoulders accustomed to bearing heavy weights and delivering devastating blows.</p>
+				<p>Piscodaemons are 7 feet tall and weigh 400 pounds.</p>
+			</div>
+
+			<div>
+				<h1 id="daemon,-purrodaemon" class="monster-header">Daemon, Purrodaemon</h1>
+				<p>Dozens of weapons pierce this massive monster's body. Red eyes glow with wickedness in its vulture-like head.</p>
+				<p class="stat-block-title"><b>Purrodaemon	<span class="stat-block-cr">CR 18</span></b></p>
+				<p><span class="char-style-override-30">XP</span> 153,600</p>
+				<p class="stat-block-1">NE Large <a href="../bestiary/creatureTypes.html#outsider" >outsider</a> (<a href="../bestiary/creatureTypes.html#daemon-subtype" >daemon</a>, <a href="../bestiary/creatureTypes.html#evil-subtype" >evil</a>, <a href="../bestiary/creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +10; <b>Senses</b> darkvision 60 ft., <i><a href="../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a></i>; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +26</p>
+				<p class="stat-block-1"><b>Aura</b> <a href="../bestiary/universalMonsterRules.html#fear-(su-or-sp)" >fear</a> (15 ft., DC 24), <i><a href="../coreRulebook/spells/unholyAura.html#unholy-aura" >unholy aura</a></i></p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 35, touch 19, flat-footed 29 (+4 deflection, +6 Dex, +16 natural, &ndash;1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 294 (19d10+190) </p>
+				<p class="stat-block-1"><b>Fort</b> +25, <b>Ref</b> +21, <b>Will</b> +14</p>
+				<p class="stat-block-1"><b>DR</b> 10/good and silver; <b>Immune</b> acid, death effects, <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>, <a href="../bestiary/universalMonsterRules.html#poison-(ex-or-su)" >poison</a>; <b>Resist</b> <a href="../bestiary/creatureTypes.html#cold-subtype" >cold</a> 10, electricity 10, <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> 10; <b>SR</b> 29</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 30 ft., fly 60 ft. (good)</p>
+				<p class="stat-block-1"><b>Melee</b> <i>+2 <a href="../coreRulebookmagicItems/weapons.html#wounding" >wounding</a> halberd</i> 2d8+18/19-20/x3, bite +24 (1d8+5)<span class="char-style-override-29"> </span></p>
+				<p class="stat-block-1"><b>Space</b> 10 ft.; <b>Reach</b> 10 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> weapon steep</p>
+				<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 18th; concentration +23)</p>
+				<p class="stat-block-2">Constant&mdash;<i><a href="../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a>, <a href="../coreRulebook/spells/unholyAura.html#unholy-aura" >unholy aura</a></i> (DC 23)</p>
+				<p class="stat-block-2">At will&mdash;<i><a href="../coreRulebook/spells/teleport.html#teleport-greater" >greater teleport</a></i> (self plus 50 lbs. of objects only)</p>
+				<p class="stat-block-2">3/day&mdash;<i><a href="../coreRulebook/spells/chainLightning.html#chain-lightning" >chain lightning</a></i> (DC 21), <i><a href="../coreRulebook/spells/coneOfCold.html#cone-of-cold" >cone of cold</a></i> (DC 20), <i><a href="../coreRulebook/spells/flameStrike.html#flame-strike" >flame strike</a></i> (DC 20)</p>
+				<p class="stat-block-2">1/day&mdash;summon (level 5, 2 derghodaemons 50%)</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 32, <b>Dex</b> 23, <b>Con</b> 30, <b>Int</b> 17, <b>Wis</b> 18, <b>Cha</b> 21</p>
+				<p class="stat-block-1"><b>Base Atk</b> +19; <b>CMB</b> +31; <b>CMD</b> 51</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#combat-expertise" >Combat Expertise</a>, <a href="../coreRulebook/feats.html#combat-reflexes" >Combat Reflexes</a>, <a href="../coreRulebook/feats.html#greater-vital-strike" >Greater Vital Strike</a>, <a href="../coreRulebook/feats.html#improved-critical" >Improved Critical</a><sup>B</sup> (halberd), <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a>, <a href="../coreRulebook/feats.html#improved-sunder" >Improved Sunder</a>, <a href="../coreRulebook/feats.html#improved-vital-strike" >Improved Vital Strike</a>, <a href="../coreRulebook/feats.html#lunge" >Lunge</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a>, <a href="../coreRulebook/feats.html#quick-draw" >Quick Draw</a>, <a href="../coreRulebook/feats.html#vital-strike" >Vital Strike</a>, <a href="../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a><sup>B</sup> (halberd)</p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +28, <a href="../coreRulebook/skills/bluff.html#bluff" >Bluff</a> +21, <a href="../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> +17, <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> +16, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +27, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +25, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +26, <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +26, <a href="../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> +23, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +24, <a href="../coreRulebook/skills/survival.html#survival" >Survival</a> +17</p>
+				<p class="stat-block-1"><b>Languages</b> Abyssal, Draconic, Infernal; telepathy 100 ft.</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any (Abaddon)</p>
+				<p class="stat-block-1"><b>Organization</b> solitary, patrol (2&ndash;5), or unit (6&ndash;12)</p>
+				<p class="stat-block-1"><b>Treasure</b> standard</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Weapon Steep (Su)</b> A purrodaemon can sheathe a weapon in its flesh as a swift action. This does no damage to the <a href="../bestiary/creatureTypes.html#daemon-subtype" >daemon</a>. If a weapon remains sheathed in its body for at least 24 hours, the weapon absorbs some of its essence and gains magical enhancements. A purrodaemon can have up to a dozen weapons lodged in its body at a time, but only one can possess magical enhancements at a time. The total enhancements cannot exceed a +4 effective enhancement&mdash;most purrodaemons opt to create <i>+2 <a href="../coreRulebookmagicItems/weapons.html#wounding" >wounding</a></i> weapons in this manner. A weapon's enhancements vanish as soon as the purrodaemon dies or releases the weapon. A purrodaemon gains <a href="../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a> and <a href="../coreRulebook/feats.html#improved-critical" >Improved Critical</a> as bonus feats as long as it wields a weapon benefiting from its weapon steep ability.</p>
+
+				<p>Deacons of War, purrodaemons ravage the planes as generals of massive battles. They employ creative tactics and never launch an assault without carefully looking over the plans or surveying the battlefield themselves. A purrodaemon is 12 feet tall and weighs 1,300 pounds.</p>
+			</div>
+
+			<div>
+				<h1 id="daemon,-thanadaemon" class="monster-header">Daemon, Thanadaemon</h1>
+				<p>Rattling with each stride, this looming, horned, skeletal figure clutches a wicked staff. A seething glow burns in its eye sockets. </p>
+				<p class="stat-block-title"><b>Thanadaemon	<span class="stat-block-cr">CR 13</span></b></p>
+				<p class="stat-block-xp"><b>XP 25,600</b></p>
+				<p class="stat-block-1">NE Medium <a href="../bestiary/creatureTypes.html#outsider" >outsider</a> (<a href="../bestiary/creatureTypes.html#daemon-subtype" >daemon</a>, <a href="../bestiary/creatureTypes.html#evil-subtype" >evil</a>, <a href="../bestiary/creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +7; <b>Senses</b> darkvision 60 ft., <i><a href="../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a></i>; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +25</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 27, touch 14, flat-footed 23 (+3 Dex, +1 dodge, +13 natural)</p>
+				<p class="stat-block-1"><b>hp</b> 172 (15d10+90)</p>
+				<p class="stat-block-1"><b>Fort</b> +11, <b>Ref</b> +12, <b>Will</b> +14</p>
+				<p class="stat-block-1"><b>DR</b> 10/good; <b>Immune</b> acid, death effects, <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>, <a href="../bestiary/universalMonsterRules.html#poison-(ex-or-su)" >poison</a>; <b>Resist</b> <a href="../bestiary/creatureTypes.html#cold-subtype" >cold</a> 10, electricity 10, <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> 10; <b>SR</b> 24</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> <i>+2 quarterstaff</i> +22/+17/+12 (1d6+9 plus energy drain) or</p>
+				<p>2 claws +20 (1d4+5 plus energy drain)<span class="char-style-override-29"> </span></p>
+				<p class="stat-block-1"><b>Special Attacks</b> draining weapon, energy drain (1 level, DC 21), <a href="../bestiary/universalMonsterRules.html#fear-(su-or-sp)" >fear</a> <a href="../bestiary/universalMonsterRules.html#gaze" >gaze</a>, soul crush</p>
+				<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 15th; concentration +19)</p>
+				<p class="stat-block-2">Constant&mdash;<i><a href="../coreRulebook/spells/airWalk.html#air-walk" >air walk</a></i>, <i><a href="../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a></i></p>
+				<p class="stat-block-2">At will&mdash;<i><a href="../coreRulebook/spells/teleport.html#teleport-greater" >greater teleport</a></i> (self plus skiff and passengers only), <i><a href="../coreRulebook/spells/planeShift.html#plane-shift" >plane shift</a></i> (self plus skiff and passengers only, Astral, Ethereal, and evil-aligned planes only)</p>
+				<p class="stat-block-2">3/day&mdash;<i><a href="../coreRulebook/spells/animateDead.html#animate-dead" >animate dead</a></i>, <i><a href="../coreRulebook/spells/desecrate.html#desecrate" >desecrate</a></i>, <i><a href="../coreRulebook/spells/enervation.html#enervation" >enervation</a></i></p>
+				<p class="stat-block-2">1/day&mdash;summon (level 4, 1d4 hydrodaemons 80% or 1 thanadaemon 35%)</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 21, <b>Dex</b> 16, <b>Con</b> 23, <b>Int</b> 17, <b>Wis</b> 17, <b>Cha</b> 18</p>
+				<p class="stat-block-1"><b>Base Atk</b> +15; <b>CMB</b> +20; <b>CMD</b> 34</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#alertness" >Alertness</a>, <a href="../coreRulebook/feats.html#blind-fight" >Blind-Fight</a>, <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a>, <a href="../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../coreRulebook/feats.html#lunge" >Lunge</a>, <a href="../coreRulebook/feats.html#mobility" >Mobility</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +21, <a href="../coreRulebook/skills/bluff.html#bluff" >Bluff</a> +22, <a href="../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> +22, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +22, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +21, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (religion) +21, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +25, <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +25, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +14, <a href="../coreRulebook/skills/survival.html#survival" >Survival</a> +10</p>
+				<p class="stat-block-1"><b>Languages</b> Abyssal, Draconic, Infernal; telepathy 100 ft.</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any (Abaddon)</p>
+				<p class="stat-block-1"><b>Organization</b> solitary, pair, or council (3&ndash;11)</p>
+				<p class="stat-block-1"><b>Treasure</b> standard (+2 quarterstaff, other treasure)</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Draining Weapon (Su)</b> A thanadaemon's energy drain attack functions through any melee weapon it wields.</p>
+				<p class="stat-block-1"><b><a href="../bestiary/universalMonsterRules.html#fear-(su-or-sp)" >Fear</a> <a href="../bestiary/universalMonsterRules.html#gaze" >Gaze</a> (Su)</b> Cower in <a href="../bestiary/universalMonsterRules.html#fear-(su-or-sp)" >fear</a> for 1d6 rounds, 30 feet, Will DC 21 negates. This is a mind-affecting <a href="../bestiary/universalMonsterRules.html#fear-(su-or-sp)" >fear</a> effect. The save DC is Charisma-based.</p>
+				<p class="stat-block-1"><b>Soul Crush (Su)</b> A thanadaemon can crush a soul gem (see cacodaemon) as a standard action to gain fast healing 15 for 15 rounds (this is a standard action). This action condemns the crushed soul to Abaddon&mdash;resurrecting this victim requires a DC 28 caster level check.</p>
+
+				<p>While all daemons represent death in some fashion, thanadaemons, the Deacons of Death, represent the inevitable death through old age. Thanadaemons effortlessly work eerie skiffs along every pus- and bile-choked river in Abaddon, including the legendary River Styx. For the right price (typically 50 pp or 2 gems worth at least 300 gp each), a thanadaemon will even carry passengers on its skiff, yet those who travel with these fiends should beware&mdash;they frequently renegotiate the terms once they've got their passengers in dangerous realms.</p>
+			</div>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Daemon",globalNavPath=[{ href: '/pathfinderRPG/prd/bestiary2/additionalMonsterIndex.html', name: 'Additional Monster Index' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

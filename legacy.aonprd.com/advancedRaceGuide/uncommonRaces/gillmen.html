@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Gillmen</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "gillmen.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "gillmen.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "gillmen.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "gillmen.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "gillmen.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRaces.html">Core Races</a></li>
+						<li><a href = "../featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "gillmen.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "gillmen.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "gillmen.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "gillmen.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "gillmen.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "gillmen.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "gillmen.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "gillmen.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "gillmen.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "gillmen.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "gillmen.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "gillmen.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "gillmen.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "gillmen.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "gillmen.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "gillmen.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+
+<h1 id="gillmen">Gillmen</h1>
+<p>Gillmen are the remnants of a race of surface-dwelling humanoids whose homeland was drowned in a great cataclysm at the hands of the aboleth. The aboleths rescued a few survivors, warping them into an amphibious race to serve as emissaries to the surface world. Modern gillmen remain reclusive and suspicious, scarred by both the loss of their ancient heritage and the sure knowledge that aboleths do nothing without expecting to profit from it. Physically gillmen have expressive brows, pale skin, dark hair, and bright purple eyes. Three slim gills mark each side of their necks, near the shoulder, but they are otherwise close enough in appearance to humans that they can pass as such (for a time) without fear of detection.</p>
+
+<h1 id="gillman-racial-traits">Gillman Racial Traits</h1>
+<p id="+2-constitution,-+2-charisma,--2-wisdom"><b>+2 Constitution, +2 Charisma, &ndash;2 Wisdom</b>: Gillmen are vigorous and beautiful, but their domination by the aboleths has made them weak-willed.</p>
+<p id="medium"><b>Medium</b>: Gillmen are Medium creatures and have no bonuses or penalties due to their size.</p>
+<p id="aquatic"><b>Aquatic</b>: Gillmen are humanoids with the aquatic subtype.</p>
+<p id="normal-speed"><b>Normal Speed</b>: Gillmen have a base speed of 30 feet on land. As aquatic creatures, they also have a swim speed of 30 feet, can move in water without making <a href="../../coreRulebook/skills/swim.html#swim" >Swim</a> checks, and always treat <a href="../../coreRulebook/skills/swim.html#swim" >Swim</a> as a class skill.</p>
+<p id="amphibious"><b>Amphibious</b>: Gillmen have the aquatic subtype, but can breathe both water and air. </p>
+<p id="enchantment-resistance"><b>Enchantment Resistance</b>: Gillmen gain a +2 racial saving throw bonus against non-aboleth enchantment spells and effects, but take a &ndash;2 penalty on such saving throws against aboleth sources.</p>
+<p id="water-dependent"><b>Water Dependent</b>: A gillman's body requires constant submersion in fresh or salt water. Gillmen who spend more than 1 day without fully submerging themselves in water risk internal organ failure, painful cracking of the skin, and death within 4d6 hours.</p>
+<p id="languages"><b>Languages</b>: Gillmen begin play speaking Common and Aboleth. Gillmen with high Intelligence scores can choose from the following: Aklo, Aquan, Draconic, and Elven.</p>
+			
+<h1 id="alternate-racial-traits">Alternate Racial Traits</h1>
+<p>The following racial traits may be selected instead of existing gillman racial traits. Consult your GM before selecting any of these new options.</p>
+<p id="riverfolk"><b>Riverfolk</b>: Some gillmen groups live in colonies along vast riverways, and have adapted to living on land for much longer periods. Gillmen with this trait have a thin coating of natural oil that keeps their skin from cracking even without water. However, this natural oil also makes such gillmen particularly susceptible to flames, and they gain vulnerability to fire. This racial trait replaces water dependent.</p>
+<p id="slimehunter"><b>Slimehunter</b>: Gillmen with this trait are from lineages that have fought against aboleths since the aberrations rescued their human ancestors. They receive a +2 racial bonus on saving throws against aboleth spells, spell-like abilities, and supernatural abilities. This racial trait replaces enchantment resistance.</p>
+<p id="throwback"><b>Throwback</b>: Some gillmen are throwbacks to their land-dwelling human ancestors. Gillmen with this racial trait do not have the amphibious trait, have the human subtype instead of the aquatic subtype, have no swim speed or bonuses to the <a href="../../coreRulebook/skills/swim.html#swim" >Swim</a> skill, cannot breathe water, and do not have the water dependent racial trait.</p>
+				
+<h1 id="favored-class-options">Favored Class Options</h1>
+<p>The following options are available to all gillmen who have the listed favored class, and unless otherwise stated, the bonus applies each time you select the favored class reward.</p>
+<p id="fighter"><b>Fighter</b>: Add +1 to the fighter's CMD when resisting two combat maneuvers of the character's choice.</p>
+<p id="rogue"><b>Rogue</b>: The rogue gains 1/6 of a new rogue talent.</p>
+<p id="sorcerer"><b>Sorcerer</b>: Add one spell known from the sorcerer spell list. This spell must be at least one level below the highest spell level the sorcerer can cast.</p>
+<p id="wizard"><b>Wizard</b>: Add one spell from the wizard spell list to the wizard's spellbook. This spell must be at least one level below the highest spell level he can cast.</p>
+				
+<h1 id="racial-archetypes">Racial Archetypes</h1>
+<p>The following racial archetype is available to gillmen.</p>
+				
+<h2 id="eldritch-raider-(rogue)">Eldritch Raider (Rogue)</h2>
+<p>An eldritch raider is a rogue who seeks to unravel the mysteries of the destruction of the gillmen's homeland. They explore old ruins that date back to the days of the old human empire and track down relics and lore from its glory days. An eldritch raider has the following class features.</p>
+<p id="class-skills"><b>Class Skills</b>: An eldritch raider adds <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (arcana), <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (history), and <a href="../../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> to her list of class skills and removes <a href="../../coreRulebook/skills/disguise.html#disguise" >Disguise</a>, <a href="../../coreRulebook/skills/perform.html#perform" >Perform</a>, and <a href="../../coreRulebook/skills/sleightOfHand.html#sleight-of-hand" >Sleight of Hand</a> from her list of class skills. </p>
+<p id="skill-ranks-per-level"><b>Skill Ranks per Level</b>: 6 + Int modifier.</p>
+<p id="detect-magic"><b>Detect Magic (Sp)</b>: At 2nd level, an eldritch raider gains the ability to use <i><a href="../../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i> at will. The eldritch raider treats her rogue level as her caster level for this ability. This ability counts as the minor magic rogue talent for purposes of qualifying for other rogue talents. This ability replaces the rogue talent rogues gained at 2nd level.</p>
+<p id="eldritch-intuition"><b>Eldritch Intuition (Ex)</b>: At 3rd level, an eldritch raider gains an intuitive sense that allows her to more easily activate sorcerer and wizard spell completion and spell trigger items. She gains a +1 bonus on <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device" >Use Magic Device</a> checks for this purpose. This bonus increases to +2 at 6th level, +3 at 9th level, +4 at 12th level, +5 at 15th level, and +6 at 18th level. This ability replaces the trap sense class feature.</p>
+<p id="new-talents"><b>New Talents</b>: An eldritch raider has access to the following new advanced talents when selecting rogue advanced talents.</p>
+<blockquote>
+<p id="major-eldritch-magic"><i>Major Eldritch Magic (Sp)</i>: The eldritch raider gains the ability to cast a 3rd-level spell from the sorcerer/wizard spell list two times per day as a spell-like ability. The caster level for this ability is equal to her rogue level. The save DC for this spell is 13 + her Intelligence modifier. The eldritch raider must have an Intelligence of at least 13 to select this talent. The eldritch raider must have the major magic, minor eldritch magic, and minor magic rogue talents before choosing this talent.</p>
+<p id="minor-eldritch-magic"><i>Minor Eldritch Magic (Sp)</i>: The eldritch raider gains the ability to cast a 2nd-level spell from the sorcerer/wizard spell list two times per day as a spell-like ability. The caster level for this ability is equal to her rogue level. The save DC for this spell is 12 + her Intelligence modifier. The eldritch raider must have an Intelligence of at least 12 to select this talent. The eldritch raider must have the major magic and minor magic rogue talents before choosing this talent.</p>
+</blockquote>
+<p id="rogue-talents"><b>Rogue Talents</b>: The following rogue talents complement the eldritch raider archetype: major magic, minor magic, quick disable, trap spotter (<i>Core Rulebook</i>); fast picks ; black market connections, esoteric scholar, ninja trick (slow metabolism, wall climber). </p>
+<p id="advanced-talents"><b>Advanced Talents</b>: The following advanced rogue talents complement the eldritch raider archetype: dispelling attack, improved evasion, slippery mind (<i>Core Rulebook</i>); major eldritch magic, minor eldritch magic; thoughtful reexamination ; familiar, hard to fool. </p>
+				
+<h1 id="new-racial-rules">New Racial Rules</h1>
+<p>The following options are available to gillmen. At the GM's discretion, other appropriate races may make use of these as well.</p>
+				
+<h2 id="gillman-equipment">Gillman Equipment</h2>
+<p>Gillmen have access to the following equipment.</p>
+<p id="sea-knife"><b>Sea-Knife</b>: A sea-knife is a long-handled weapon with a short blade. It is designed to be strapped to the ankle or foot of the wielder, pointing downward and jutting out beyond the wearer's leg. Donning or removing a sea-knife is a full-round action. The wearer cannot use a leg with a sea-knife strapped to it for walking or running. A sea-knife can be used as a light melee weapon when the wielder is swimming, flying, or prone. This allows the wielder to use a two-handed weapon, or wield a weapon with one hand and carry a shield, and still make off-hand attacks with the sea-knife. Attacks made with a sea-knife take a &ndash;2 circumstance penalty on attack rolls in addition to all other attack penalties. </p>
+
+<table><caption>Gillman Weapon</caption>
+<thead><tr><th>Martial Weapons</th><th>Cost</th><th>Dmg (S)</th><th>Dmg (M)</th><th>Critical</th><th>Range</th><th>Weight</th><th>Type</th><th>Special</th></tr></thead>
+<tr><td>Sea-knife</td><td>8 gp</td><td>1d3</td><td>1d4</td><td>19&ndash;20/&times;2</td><td>&mdash;</td><td>1 lb.</td><td>S</td><td>&mdash;</td></tr></table>
+
+<h2 id="gillman-spells">Gillman Spells</h2>
+<p>Gillmen have access to the following new spell.</p>
+<p id="aboleth's-lung" class="stat-block-title">Aboleth's Lung</p>
+<p class="stat-block-1"><b>School</b> transmutation; <b>Level</b> cleric 2, druid 2, sorcerer/wizard 2, witch 2</p>
+<p class="stat-block-1"><b>Casting Time</b> 1 standard action</p>
+<p class="stat-block-1"><b>Components</b> V, S, M/DF (piece of seaweed)</p>
+<p class="stat-block-1"><b>Range</b> touch</p>
+<p class="stat-block-1"><b>Target</b> living creatures touched</p>
+<p class="stat-block-1"><b>Duration</b> 1 hour/level; see text</p>
+<p class="stat-block-1"><b>Saving Throw</b> Will negates; <b>Spell Resistance </b>yes</p>
+<p>The targets are able to breathe water, freely. However, they can no longer breathe air. Divide the duration evenly among all the creatures you touch. This spell has no effect on creatures that can already breathe water.</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Gillmen",globalNavPath=[{ href: '/pathfinderRPG/prd/advancedRaceGuide/uncommonRaces.html', name: 'Uncommon Races'}];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

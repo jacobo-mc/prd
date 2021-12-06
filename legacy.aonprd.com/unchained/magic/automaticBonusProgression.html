@@ -1,0 +1,464 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Automatic Bonus Progression</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "automaticBonusProgression.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "automaticBonusProgression.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "automaticBonusProgression.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "automaticBonusProgression.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "automaticBonusProgression.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "automaticBonusProgression.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "automaticBonusProgression.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "automaticBonusProgression.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "automaticBonusProgression.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "automaticBonusProgression.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "automaticBonusProgression.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "../skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../gameplay/index.html">Gameplay</a></li>
+						<li><a href = "index.html">Magic</a></li>
+						<li><a href = "../monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "automaticBonusProgression.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "automaticBonusProgression.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "automaticBonusProgression.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "automaticBonusProgression.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "automaticBonusProgression.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "automaticBonusProgression.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "automaticBonusProgression.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "automaticBonusProgression.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "automaticBonusProgression.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "automaticBonusProgression.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id = "automatic-bonus-progression">Automatic Bonus Progression</h1>
+<p>In order to face the dangers of the game, characters in the Pathfinder RPG normally need items that grant bonuses to their statistics. With this variant, characters instead gain those bonuses automatically as they increase in level, allowing them to use magic item slots for more interesting items.</p>
+<p>All characters gain the abilities listed on the table below when they reach the appropriate level. Decrease <a href="../../coreRulebook/gamemastering.html#table-12-4-character-wealth-by-level">character wealth by level</a> to half the normal amount. The automatic bonuses are often more beneficial than that reduction in wealth, but characters have less flexibility, so the advantages and disadvantages balance out. Items that only grant bonuses to AC, saving throws, and ability scores don't exist in this variant, and <em>wish </em>and similar spells never grant inherent bonuses to ability scores. Magic weapons and armor do exist, but grant only special abilities, not enhancement bonuses; calculate their prices with the <a href="automaticBonusProgression.html#magic-weapons-and-armor">table below</a>.</p>
+<p>If you want to remove magic items entirely (or make them so exceedingly rare that there is no expectation of finding them), consider giving the characters bonuses from the following table as if they were 2 levels higher. The table extends to 22nd level to account for games without magic items.</p>
+<table>
+	<thead>
+		<tr><th>Level</th><th>Bonuses Gained</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>1st</td><td>&mdash;</td></tr>
+		<tr><td>2nd</td><td>&mdash;</td></tr>
+		<tr><td>3rd</td><td><a href="automaticBonusProgression.html#resistance">Resistance</a> +1 </td></tr>
+		<tr><td>4th</td><td><a href="automaticBonusProgression.html#armor-attunement">Armor attunement</a> +1, <a href="automaticBonusProgression.html#weapon-attunement">weapon attunement</a> +1</td></tr>
+		<tr><td>5th</td><td><a href="automaticBonusProgression.html#deflection">Deflection</a> +1</td></tr>
+		<tr><td>6th</td><td><a href="automaticBonusProgression.html#mental-prowess">Mental prowess</a> +2</td></tr>
+		<tr><td>7th</td><td><a href="automaticBonusProgression.html#physical-prowess">Physical prowess</a> +2</td></tr>
+		<tr><td>8th</td><td><a href="automaticBonusProgression.html#armor-attunement">Armor attunement</a> +1/+1, <a href="automaticBonusProgression.html#resistance">resistance</a> +2, <a href="automaticBonusProgression.html#toughening">toughening</a> +1, <a href="automaticBonusProgression.html#weapon-attunement">weapon attunement</a> +1/+1</td></tr>
+		<tr><td>9th</td><td><a href="automaticBonusProgression.html#armor-attunement">Armor attunement</a> +2, <a href="automaticBonusProgression.html#weapon-attunement">weapon attunement</a> +2</td></tr>
+		<tr><td>10th</td><td><a href="automaticBonusProgression.html#deflection">Deflection</a> +2, <a href="automaticBonusProgression.html#resistance">resistance</a> +3</td></tr>
+		<tr><td>11th</td><td><a href="automaticBonusProgression.html#mental-prowess">Mental prowess</a> +4</td></tr>
+		<tr><td>12th</td><td><a href="automaticBonusProgression.html#physical-prowess">Physical prowess</a> +4</td></tr>
+		<tr><td>13th</td><td><a href="automaticBonusProgression.html#mental-prowess">Mental prowess</a> +4/+2, <a href="automaticBonusProgression.html#physical-prowess">physical prowess</a> +4/+2, <a href="automaticBonusProgression.html#resistance">resistance</a> +4, <a href="automaticBonusProgression.html#toughening">toughening</a> +2</td></tr>
+		<tr><td>14th</td><td><a href="automaticBonusProgression.html#armor-attunement">Armor attunement</a> +2/+2 or +3, <a href="automaticBonusProgression.html#resistance">resistance</a> +5, <a href="automaticBonusProgression.html#weapon-attunement">weapon attunement</a> +2/+2 or +3</td></tr>
+		<tr><td>15th</td><td><a href="automaticBonusProgression.html#armor-attunement">Armor attunement</a> +3/+3 or +4, <a href="automaticBonusProgression.html#mental-prowess">mental prowess</a> +6/+2 or +4/+4, <a href="automaticBonusProgression.html#weapon-attunement">weapon attunement</a> +3/+3 or +4</td></tr>
+		<tr><td>16th</td><td><a href="automaticBonusProgression.html#deflection">Deflection</a> +3, <a href="automaticBonusProgression.html#physical-prowess">physical prowess</a> +6/+2 or +4/+4, <a href="automaticBonusProgression.html#toughening">toughening</a> +3</td></tr>
+		<tr><td>17th</td><td><a href="automaticBonusProgression.html#armor-attunement">Armor attunement</a> +4/+3 or +5, <a href="automaticBonusProgression.html#deflection">deflection</a> +4, <a href="automaticBonusProgression.html#mental-prowess">mental prowess</a> +6/+2/+2 or +4/+4/+2, <a href="automaticBonusProgression.html#physical-prowess">physical prowess</a> +6/+2/+2 or +4/+4/+2, <a href="automaticBonusProgression.html#toughening">toughening</a> +4, <a href="automaticBonusProgression.html#weapon-attunement">weapon attunement</a> +4/+3 or +5</td></tr>
+		<tr><td>18th</td><td><a href="automaticBonusProgression.html#deflection">Deflection</a> +5, <a href="automaticBonusProgression.html#mental-prowess">mental prowess</a> +6/+4/+2 or +4/+4/+4, <a href="automaticBonusProgression.html#physical-prowess">physical prowess</a> +6/+4/+2 or +4/+4/+4, <a href="automaticBonusProgression.html#toughening">toughening</a> +5</td></tr>
+		<tr><td>19th</td><td>3 <a href="automaticBonusProgression.html#legendary-gifts">legendary gifts</a></td></tr>
+		<tr><td>20th</td><td>5 <a href="automaticBonusProgression.html#legendary-gifts">legendary gifts</a> (8 total)</td></tr>
+		<tr><td>21st</td><td>7 <a href="automaticBonusProgression.html#legendary-gifts">legendary gifts</a> (15 total)</td></tr>
+		<tr><td>22nd</td><td>8 <a href="automaticBonusProgression.html#legendary-gifts">legendary gifts</a> (23 total)</td></tr>
+	</tbody>
+</table>
+
+<h2 id = "bonuses">Bonuses</h2>
+<p>The entries below describe the bonuses characters gain.</p>
+
+	<h3 id = "armor-attunement">Armor Attunement</h3>
+	<p>The character can attune herself to one suit of armor or one shield in her possession; she can change that attunement once per day. If she selects a normal set of clothing as her armor, it counts as having a starting enhancement bonus of +0. The attuned suit of armor gains a +1 enhancement bonus at 4th level. At 8th level, she can split her attunement between a suit of armor and a shield, granting each a +1 enhancement bonus. At 9th level, she can grant a suit of armor or a shield a +2 enhancement bonus (instead of granting each a +1 enhancement bonus). At 14th level, she can either grant a suit of armor or a shield a +3 enhancement bonus or grant each a +2 enhancement bonus. At 15th level, she can either grant a suit of armor or a shield a +4 enhancement bonus or grant both a +3 enhancement bonus. At 17th level, she can either grant a suit of armor or a shield a +5 enhancement bonus or grant one a +4 enhancement bonus and the other a +3 enhancement bonus.</p>
+
+	<h3 id = "deflection">Deflection</h3>
+	<p>The character gains a +1 deflection bonus to AC at 5th level; this bonus increases to +2 at 10th level, to +3 at 16th level, to +4 at 17th level, and to +5 at 18th level.</p>
+
+	<h3 id = "legendary-gifts">Legendary Gifts</h3>
+	<p>The character gains three legendary gifts at 19th level and five more at 20th level. (If you're using the variant with no magic treasure, characters gain seven more legendary gifts when their effective level reaches 21 and eight more when it reaches 22.) Select these legendary gifts from the following list.</p>
+	<p><em>Legendary Ability</em>: Gain a +1 inherent bonus to any ability score. You can select this legendary gift multiple times, and it stacks up to +5 in any one ability score.</p>
+	<p><em>Legendary Armor</em>: Your enhancement bonus from armor attunement increases by 2. If you are attuned to a suit of armor and a shield, you can either increase both bonuses by 1 or increase one bonus by 2. The enhancement bonus on a single attuned item can't exceed +5, but you can use the excess to add special abilities to the armor or shield (see <a href="automaticBonusProgression.html#magic-weapons-and-armor">Magic Weapons and Armor</a>). You can select this legendary gift multiple times; it stacks up to +10 on any one suit of armor or shield.</p>
+	<p><em>Legendary Body</em>: Increase your bonuses from physical prowess to +6/+6/+4. This counts as two legendary gifts.</p>
+	<p><em>Legendary Body 2</em>: Increase your bonuses from physical prowess to +6/+6/+6. You must already have legendary body to select this legendary gift.</p>
+	<p><em>Legendary Mind</em>: Increase your bonuses from mental prowess to +6/+6/+4. This counts as two legendary gifts.</p>
+	<p><em>Legendary Mind 2</em>: Increase your bonuses from mental prowess to +6/+6/+6. You must already have legendary mind to select this legendary gift.</p>
+	<p><em>Legendary Shieldmaster</em>: Gain a +5 enhancement bonus from armor attunement for both your armor and your shield. You can select this legendary gift multiple times, choosing a different attuned suit of armor or shield each time.</p>
+	<p><em>Legendary Twin Weapons</em>: Gain a +5 enhancement bonus from weapon attunement for two weapons at the same time. This counts as two legendary gifts. You can select this legendary gift multiple times, adding an additional attuned weapon with a +5 enhancement bonus each time.</p>
+	<p><em>Legendary Weapon</em>: Your enhancement bonus from weapon attunement increases by 1. If you are attuned to more than one weapon, you can increase only one weapon's enhancement bonus in this way. The enhancement bonus on a single weapon can't exceed +5, but you can use the excess to add magic abilities to weapons (see <a href="automaticBonusProgression.html#magic-weapons-and-amor">Magic Weapons and Armor</a>). You can select this legendary gift multiple times, and it stacks up to +10 for any one weapon. </p>
+
+	<h3 id = "mental-prowess">Mental Prowess</h3>
+	<p>At 6th level, the character chooses one mental ability score (Intelligence, Wisdom, or Charisma) to gain a permanent +2 enhancement bonus. At 11th level, this bonus increases to +4. At 13th level, the character chooses a second mental ability score to gain a permanent +2 enhancement bonus. At 15th level, the character increases one of these enhancement bonuses by 2. At 17th level, she chooses a third mental ability score to gain a permanent +2 enhancement bonus.</p>
+
+	<h3 id = "physical-prowess">Physical Prowess</h3>
+	<p>At 7th level, the character chooses one physical ability score (Strength, Dexterity, or Constitution) to gain a permanent +2 enhancement bonus. At 12th level, this bonus increases to +4. At 13th level, the character chooses a second physical ability score to gain a permanent +2 enhancement bonus. At 16th level, the character increases one of these enhancement bonuses by 2. At 17th level, she chooses a third physical ability score to gain a permanent +2 enhancement bonus.</p>
+
+	<h3 id = "resistance">Resistance</h3>
+	<p>At 3rd level, the character gains a +1 resistance bonus on all saving throws. This bonus increases to +2 at 8th level, to +3 at 10th level, to +4 at 13th level, and to +5 at 14th level.</p>
+
+	<h3 id = "toughening">Toughening</h3>
+	<p>At 8th level, the character gains a +1 enhancement bonus to natural armor. This bonus increases to +2 at 13th level, to +3 at 16th level, to +4 at 17th level, and to +5 at 18th level.</p>
+
+	<h3 id = "weapon-attunement">Weapon Attunement</h3>
+	<p>The character can attune herself to any one weapon in her possession, and can change that attunement once per day. The attuned weapon gains a +1 enhancement bonus at 4th level. At 8th level, the character can split her attunement between two weapons, granting each a +1 enhancement bonus. At 9th level, she can grant a single weapon a +2 enhancement bonus instead of granting two weapons a +1 enhancement bonus each. At 14th level, she can either grant a single weapon a +3 enhancement bonus or grant two weapons a +2 enhancement bonus each. At 15th level, she can either grant a single weapon a +4 enhancement bonus or grant two weapons a +3 enhancement bonus each. At 17th level, she can either grant a single weapon a +5 enhancement bonus or grant one weapon a +4 enhancement bonus and another weapon a +3 enhancement bonus.</p>
+
+<h2 id = "magic-weapons-and-armor-">Magic Weapons and Armor </h2>
+<p>In this system, magic weapons, armor, and shields never have enhancement bonuses of their own; those bonuses are granted only through attunement. Any weapon, armor, or shield special abilities on attuned items count against a character's enhancement bonus from attunement. To determine an attuned magic item's enhancement bonus, subtract the cost of its special ability from the enhancement bonus granted by attunement. (This applies only to special abilities whose cost is equivalent to an enhancement bonus, not to those that cost a flat amount of gold pieces.) For example, if a character with a +3 enhancement bonus from weapon attunement wields a <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-keen">keen</a> scimitar</em>, she subtracts 1 point of her enhancement bonus (for the cost of <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-keen">keen</a></em>), leaving her with a <em>+2 <a href="../../coreRulebook/magicItems/weapons.html#_weapons-keen">keen</a> scimitar. </em>If a character doesn't have enough of an enhancement bonus to afford the special ability (such as a 4th-level character with a <em><a href="../../coreRulebook/magicItems/weapons.html#_vorpal">vorpal</a> longsword</em>), she can still use the weapon's power on its own, but the weapon gains no enhancement bonus. </p>
+<p>In this system, adding bonus-equivalent special abilities to items costs significantly less because you are paying only for the special ability, not for a base enhancement bonus (see the table below). To determine the price of specific weapons and armor, remove the flat enhancement bonus and reduce the item's cost by the amount listed on the table below. For example, a <em><a href="../../coreRulebook/magicItems/weapons.html#_flame-tongue">flame tongue</a></em> is normally worth 20,715 gp, but under this system, it would lose its +1 enhancement bonus and its price would be reduced to 18,715 gp. Specific weapons and armor can be attuned; they then grant the character's enhancement bonuses from weapon attunement and armor attunement as normal.</p>
+
+<table>
+	<thead>
+		<tr><th>Base Price Modifier</th><th>Weapon Cost</th><th>Armor/Shield Cost</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>+1</td><td>2,000 gp</td><td>1,000 gp</td></tr>
+		<tr><td>+2</td><td>8,000 gp</td><td>4,000 gp</td></tr>
+		<tr><td>+3</td><td>18,000 gp</td><td>9,000 gp</td></tr>
+		<tr><td>+4</td><td>32,000 gp</td><td>16,000 gp</td></tr>
+		<tr><td>+5</td><td>50,000 gp</td><td>25,000 gp</td></tr>
+	</tbody>
+</table>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Automatic Bonus Progression",globalNavPath=[{ href: '/pathfinderRPG/prd/unchained/magic/index.html', name: 'Pathfinder Unchained: Magic' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

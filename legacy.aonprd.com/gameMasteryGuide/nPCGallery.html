@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>NPC Gallery</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "nPCGallery.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "nPCGallery.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "nPCGallery.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "nPCGallery.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "nPCGallery.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "nPCGallery.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "nPCGallery.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "settlements.html">Settlements</a></li>
+						<li><a href = "fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "chases.html">Chases</a></li>
+						<li><a href = "disasters.html">Disasters</a></li>
+						<li><a href = "drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "haunts.html">Haunts</a></li>
+						<li><a href = "hazards.html">Hazards</a></li>
+						<li><a href = "sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "nPCGallery.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "nPCGallery.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "nPCGallery.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "nPCGallery.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "nPCGallery.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "nPCGallery.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "nPCGallery.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "nPCGallery.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "nPCGallery.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "nPCGallery.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "nPCGallery.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "nPCGallery.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "nPCGallery.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "nPCGallery.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        <h1 id="npc-gallery" class="monster-header">NPC Gallery</h1>
+				<p>For every player character adventuring through a fantasy world, there exist dozens if not hundreds of nonplayer characters, each existing to provide vital services to characters, progress important story lines, or just add flavor between sagas. From the local farmer to the tavern storyteller and from the highest king to the poorest urchin, these characters are the residents of the worlds and stories all GMs craft. They are the allies and hindrances, the employers and victims, the cheering throngs and the booing crowds. Whenever the PCs need aid, have business, or venture off the beaten path, these are the characters ready to come to life. </p>
+				<p>Yet, for all the importance of the lords of the land, the business owners, and the ever-imperiled commonfolk, the meat of most adventures focuses on the monsters, villains, and dangers beyond familiar streets. Thus, when something inevitably goes awry at the local tavern, diplomacy breaks down at the royal court, or any of countless other unanticipated events arise, most GMs find themselves faking dice rolls or leafing through pages for statistics to adapt to the moment's needs. This chapter exists to serve GMs in those times, when they need statistics they didn't anticipate, one more encounter is required on the fly, or players zig when they were expected to zag.</p>
+				<p>The following table presents more than 80 NPCs common to the<i> Pathfinder Roleplaying Game</i>. The majority are not meant to be challenges in direct combat against groups of seasoned adventurers, but rather represent generic statistics to serve in any of a party's myriad less adventurous interactions. Should the GM need to know what the <a href="../coreRulebook/skills/appraise.html#appraise" >Appraise</a> skill is of an average shopkeep or just how capable a sailor actually is at the wheel of a ship, these statistics offer a baseline for a wide variety of everyday characters. That's not to say that a host of dangerous encounters can't arise from these characters. Just as a group of monster-fighting gladiators or military troops prove lethal, so too could a torch-bearing mob of farmers and craftsmen turn deadly. Many of these NPCs also hold the potential to take on far greater roles in a campaign, as there's nothing stopping a GM from making a lethal bounty hunter or a notorious pirate captain the main villain of an entire series of adventures. Alternatively, this chapter might also serve as a shopping list of NPCs characters might employ as hirelings, henchmen, even temporary PCs should they find themselves in a pinch. Ultimately, these characters provide GMs with increased tools and options, remove the need for ad hoc statistics generation and many other game interruptions, and free GMs to focus their time and creativity on the most exciting parts of their games: their own adventures.</p>
+				<h1 id="an-npc-by-any-other-name">An NPC by Any Other Name</h1>
+				<p>This chapter provides statistics for all manner of travelers and shopkeeps, guardsmen and drunkards, princesses and high priests, and dozens of other fantasy world residents. Yet, absent are characters such as explorers, mountain climbers, armada admirals, dragon riders, and countless other NPCs a party might encounter in the course of their adventures. The reasons for this are twofold: First, no list of characters could hope to satisfy all the occupants of every GM's imagination, and thus only a sampling of those that appear most often in <i>Pathfinder RPG </i>adventures appear here. Second, even though a stat block might be titled "guide," there's no reason a GM can't appropriate those statistics for an explorer, outrider, cowboy, or any other similar character he might require. </p>
+				<p>Thus, along with each NPC comes a description of what the character is, how it might be used in its basic form or as a variety of alternative characters, and even what other NPCs it might be found with (along with increased CRs for such groupings). Equipment suites typical of these characters' professions and appropriate to the GP value of characters of their level are also provided. Often, the descriptions contain suggested ideas for alternate equipment or replacement feats to better customize the NPCs for varied roles and different campaigns. As with any other aspect of these characters, these elements can be adjusted however the GM sees fit.</p>
+				<p>In addition, each NPC is grouped into a family of similar characters, both for ease of organization and so GMs seeking a specific type of character find a variety at their disposal (for example, while a CR 1/2 pickpocket might not fit the bill for an encounter, a CR 2 burglar might). Such also serves to make generating encounters using these characters easier, as NPCs with the same backgrounds or from the same walks of life are often found and faced together.</p>
+				<p>GMs are also encouraged to change the NPCs presented here to better suit their individual campaigns. Most of these characters have abilities suiting archetypical views of their roles and bear neutral alignments. Alignments, of course, are easily altered and skills&mdash;especially <a href="../coreRulebook/skills/craft.html#craft" >Craft</a>, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a>, and <a href="../coreRulebook/skills/profession.html#profession" >Profession</a>&mdash;can be exchanged on the fly to create characters of varying expertise. </p>
+				<p>The chart below also lists all of the archetypical characters in this chapter along with their class levels, organized by CR so GMs can more easily find and create challenges appropriate to their party's level. Overall, just as these characters are presented without personalities or agendas, their presented statistics can be molded by GMs to suit whatever roles they require.</p>
+				<p>Thus, from the dozens of NPCs presented, the true number of characters and encounters that can be based on them is limited only by a GM's imagination. </p>
+				<h1 id="npc-boons">NPC Boons</h1>
+				<p><a href="nPCBoons.html">NPC Boons</a> presents an optional system for boons&mdash;minor in-game bonuses and benefits specific NPCs can grant to PCs who befriend them. This system of favors and benefits encourages PCs to invest greater interest in working with NPCs and creates a way to reward characters with something other than experience and treasure. At the end of the statistics for each of the following NPCs is a suggestion for a minor benefit that is appropriate to the NPC and that works within this system. GMs who wish to employ these favors or create their own boons might use those presented here as guides for new benefits. At the same time, GMs should not feel that every one of the following NPCs has to offer exactly these boons, or any boon at all. Those interested in designing their own boons or customizing them to their game should feel free to modify these effects however they feel best suits their needs.</p>
+<div class="table"><table id="table-9--1:-pregenerated-npc-statistics"><caption>Table:  Pregenerated NPC Statistics</caption>
+<thead><tr><th>Archetype</th><th>Class</th><th>CR</th></thead>
+<tbody>
+<tr><td><a href="npcs/military.html#foot-soldier" >Foot Soldier</a></td><td>Warrior 1</td><td>1/3</td></tr>
+<tr><td><a href="npcs/crusaders.html#squire" >Squire</a></td><td>Aristocrat 1</td><td>1/3</td></tr>
+<tr><td><a href="npcs/villagers.html#village-idiot" >Village Idiot</a></td><td>Commoner 1</td><td>1/3</td></tr>
+<tr><td><a href="npcs/temple.html#acolyte" >Acolyte</a></td><td>Cleric 1</td><td>1/2</td></tr>
+<tr><td><a href="npcs/brigands.html#bandit" >Bandit</a></td><td>Warrior 2</td><td>1/2</td></tr>
+<tr><td><a href="npcs/tavern.html#barmaid" >Barmaid</a></td><td>Commoner 2</td><td>1/2</td></tr>
+<tr><td><a href="npcs/villagers.html#farmer" >Farmer</a></td><td>Commoner 1/Expert 1</td><td>1/2</td></tr>
+<tr><td><a href="npcs/criminalsI.html#pickpocket" >Pickpocket</a></td><td>Rogue 1</td><td>1/2</td></tr>
+<tr><td><a href="npcs/sailors.html#shipmate" >Shipmate</a></td><td>Expert 1/Warrior 1</td><td>1/2</td></tr>
+<tr><td><a href="npcs/street.html#beggar" >Beggar</a></td><td>Commoner 1/Rogue 1</td><td>1</td></tr>
+<tr><td><a href="npcs/tribe.html#cannibal" >Cannibal</a></td><td>Barbarian 2</td><td>1</td></tr>
+<tr><td><a href="npcs/mercenaries.html#caravan-guard" >Caravan Guard</a></td><td>Fighter 2</td><td>1</td></tr>
+<tr><td><a href="npcs/seers.html#doomsayer" >Doomsayer</a></td><td>Adept 3</td><td>1</td></tr>
+<tr><td><a href="npcs/tavern.html#drunkard" >Drunkard</a></td><td>Commoner 1/Warrior 2</td><td>1</td></tr>
+<tr><td><a href="npcs/cityWatch.html#guard" >Guard</a></td><td>Warrior 3</td><td>1</td></tr>
+<tr><td><a href="npcs/fightingSchool.html#initiate" >Initiate</a></td><td>Monk 2</td><td>1</td></tr>
+<tr><td><a href="npcs/street.html#prostitute" >Prostitute</a></td><td>Expert 1/Rogue 1</td><td>1</td></tr>
+<tr><td><a href="npcs/merchants.html#shopkeep" >Shopkeep</a></td><td>Expert 3</td><td>1</td></tr>
+<tr><td><a href="npcs/entertainers.html#storyteller" >Storyteller</a></td><td>Bard 2</td><td>1</td></tr>
+<tr><td><a href="npcs/criminalsI.html#street-thug" >Street Thug</a></td><td>Fighter 1/Rogue 1</td><td>1</td></tr>
+<tr><td><a href="npcs/road.html#vagabond" >Vagabond</a></td><td>Commoner 2/Warrior 1</td><td>1</td></tr>
+<tr><td><a href="npcs/criminalsI.html#burglar" >Burglar</a></td><td>Rogue 3</td><td>2</td></tr>
+<tr><td><a href="npcs/heretics.html#cultist" >Cultist</a></td><td>Cleric 3</td><td>2</td></tr>
+<tr><td><a href="npcs/road.html#wanderer" >Wanderer</a></td><td>Bard 1/Rogue 2</td><td>2</td></tr>
+<tr><td><a href="npcs/nobles.html#noble-scion" >Noble Scion</a></td><td>Aristocrat 4</td><td>2</td></tr>
+<tr><td><a href="npcs/dungeon.html#prisoner" >Prisoner</a></td><td>Expert 4</td><td>2</td></tr>
+<tr><td><a href="npcs/tavern.html#barkeep" >Barkeep</a></td><td>Expert 4/Warrior 1</td><td>3</td></tr>
+<tr><td><a href="npcs/street.html#dealer" >Dealer</a></td><td>Expert 1/Rogue 3</td><td>3</td></tr>
+<tr><td><a href="npcs/cityWatch.html#guard-officer" >Guard Officer</a></td><td>Fighter 4</td><td>3</td></tr>
+<tr><td><a href="npcs/road.html#pilgrim" >Pilgrim</a></td><td>Commoner 5</td><td>3</td></tr>
+<tr><td><a href="npcs/criminalsII.html#slaver" >Slaver</a></td><td>Fighter 2/Ranger 2</td><td>3</td></tr>
+<tr><td><a href="npcs/frontier.html#trapper" >Trapper</a></td><td>Ranger 4</td><td>3</td></tr>
+<tr><td><a href="npcs/dungeon.html#turnkey" >Turnkey</a></td><td>Warrior 5</td><td>3</td></tr>
+<tr><td><a href="npcs/fightingSchool.html#battle-monk" >Battle Monk</a></td><td>Monk 5</td><td>4</td></tr>
+<tr><td><a href="npcs/scholars.html#hedge-wizard" >Hedge Wizard</a></td><td>Commoner 2/Wizard 3</td><td>4</td></tr>
+<tr><td><a href="npcs/seers.html#medium" >Medium</a></td><td>Cleric 5</td><td>4</td></tr>
+<tr><td><a href="npcs/adventurers.html#battle-mage" >Battle Mage</a></td><td>Evoker 6</td><td>5</td></tr>
+<tr><td><a href="npcs/military.html#cavalry" >Cavalry</a></td><td>Fighter 6</td><td>5</td></tr>
+<tr><td><a href="npcs/seers.html#fortune-teller" >Fortune Teller</a></td><td>Bard 3/Sorcerer 3</td><td>5</td></tr>
+<tr><td><a href="npcs/coliseum.html#gladiator" >Gladiator</a></td><td>Barbarian 3/Fighter 3</td><td>5</td></tr>
+<tr><td><a href="npcs/entertainers.html#minstrel" >Minstrel</a></td><td>Bard 6</td><td>5</td></tr>
+<tr><td><a href="npcs/adventurers.html#monster-hunter" >Monster Hunter</a></td><td>Ranger 6</td><td>5</td></tr>
+<tr><td><a href="npcs/marauders.html#raider" >Raider</a></td><td>Barbarian 6</td><td>5</td></tr>
+<tr><td><a href="npcs/tribe.html#shaman" >Shaman</a></td><td>Adept 7</td><td>5</td></tr>
+<tr><td><a href="npcs/adventurers.html#tomb-raider" >Tomb Raider</a></td><td>Rogue 6</td><td>5</td></tr>
+<tr><td><a href="npcs/dungeon.html#torturer" >Torturer</a></td><td>Expert 5/Fighter 2</td><td>5</td></tr>
+<tr><td><a href="npcs/merchants.html#traveling-merchant" >Traveling Merchant</a></td><td>Expert 7</td><td>5</td></tr>
+<tr><td><a href="npcs/scholars.html#archaeologist" >Archaeologist</a></td><td>Rogue 7</td><td>6</td></tr>
+<tr><td><a href="npcs/coliseum.html#beast-master" >Beast Master</a></td><td>Ranger 7</td><td>6</td></tr>
+<tr><td><a href="npcs/heretics.html#conjurist" >Conjurist</a></td><td>Conjurer 7</td><td>6</td></tr>
+<tr><td><a href="npcs/frontier.html#hermit" >Hermit</a></td><td>Druid 7</td><td>6</td></tr>
+<tr><td><a href="npcs/brigands.html#highwayman" >Highwayman</a></td><td>Fighter 4/Rogue 3</td><td>6</td></tr>
+<tr><td><a href="npcs/crusaders.html#holy-warrior" >Holy Warrior</a></td><td>Paladin 7</td><td>6</td></tr>
+<tr><td><a href="npcs/royalty.html#princess" >Princess</a></td><td>Aristocrat 8</td><td>6</td></tr>
+<tr><td><a href="npcs/cityWatch.html#watch-captain" >Watch Captain</a></td><td>Fighter 7</td><td>6</td></tr>
+<tr><td><a href="npcs/frontier.html#guide" >Guide</a></td><td>Expert 9</td><td>7</td></tr>
+<tr><td><a href="npcs/nobles.html#knight" >Knight</a></td><td>Aristocrat 2/Paladin 6</td><td>7</td></tr>
+<tr><td><a href="npcs/mercenaries.html#sellsword" >Sellsword</a></td><td>Fighter 8</td><td>7</td></tr>
+<tr><td><a href="npcs/marauders.html#viking" >Viking</a></td><td>Barbarian 2/Fighter 6</td><td>7</td></tr>
+<tr><td><a href="npcs/sailors.html#first-mate" >First Mate</a></td><td>Expert 4/Fighter 5</td><td>8</td></tr>
+<tr><td><a href="npcs/villagers.html#mayor" >Mayor</a></td><td>Aristocrat 3/Expert 7</td><td>8</td></tr>
+<tr><td><a href="npcs/nobles.html#noble" >Noble</a></td><td>Aristocrat 10</td><td>8</td></tr>
+<tr><td><a href="npcs/temple.html#priest" >Priest</a></td><td>Cleric 9</td><td>8</td></tr>
+<tr><td><a href="npcs/criminalsII.html#slayer" >Slayer</a></td><td>Ranger 5/Assassin 4</td><td>8</td></tr>
+<tr><td><a href="npcs/coliseum.html#champion" >Champion</a></td><td>Barbarian 5/Fighter 5</td><td>9</td></tr>
+<tr><td><a href="npcs/merchants.html#merchant-prince" >Merchant Prince</a></td><td>Expert 4/Rogue 6</td><td>9</td></tr>
+<tr><td><a href="npcs/entertainers.html#celebrity-bard" >Celebrity Bard</a></td><td>Bard 11</td><td>10</td></tr>
+<tr><td><a href="npcs/tribe.html#chieftain" >Chieftain</a></td><td>Warrior 12</td><td>10</td></tr>
+<tr><td><a href="npcs/military.html#general" >General</a></td><td>Fighter 11</td><td>10</td></tr>
+<tr><td><a href="npcs/criminalsII.html#guild-master" >Guild Master</a></td><td>Rogue 11</td><td>10</td></tr>
+<tr><td><a href="npcs/royalty.html#queen" >Queen</a></td><td>Aristocrat 12</td><td>10</td></tr>
+<tr><td><a href="npcs/brigands.html#bandit-lord" >Bandit Lord</a></td><td>Fighter 8/Rogue 4</td><td>11</td></tr>
+<tr><td><a href="npcs/mercenaries.html#bounty-hunter" >Bounty Hunter</a></td><td>Ranger 12</td><td>11</td></tr>
+<tr><td><a href="npcs/sailors.html#captain" >Captain</a></td><td>Expert 3/Fighter 9</td><td>11</td></tr>
+<tr><td><a href="npcs/heretics.html#cult-leader" >Cult Leader</a></td><td>Cleric 10/Rogue 2</td><td>11</td></tr>
+<tr><td><a href="npcs/marauders.html#pirate-captain" >Pirate Captain</a></td><td>Fighter 7/Rogue 5</td><td>11</td></tr>
+<tr><td><a href="npcs/scholars.html#sage" >Sage</a></td><td>Expert 7/Abjurer 5</td><td>11</td></tr>
+<tr><td><a href="npcs/crusaders.html#saint" >Saint</a></td><td>Paladin 12</td><td>11</td></tr>
+<tr><td><a href="npcs/temple.html#high-priest" >High Priest</a></td><td>Cleric 13</td><td>12</td></tr>
+<tr><td><a href="npcs/royalty.html#king" >King</a></td><td>Aristocrat 16</td><td>14</td></tr>
+<tr><td><a href="npcs/fightingSchool.html#master" >Master</a></td><td>Monk 15</td><td>14</td></tr></tbody></table></div>
+
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="NPC Gallery",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

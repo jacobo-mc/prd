@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Artifacts</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "artifacts.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "artifacts.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../races.html">Races</a></li>
+						<li><a href = "../classes.html">Classes</a></li>
+						<li><a href = "../usingSkills.html">Using Skills</a></li>
+						<li><a href = "../skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../equipment.html">Equipment</a></li>
+						<li><a href = "../additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../combat.html">Combat</a></li>
+						<li><a href = "../magic.html">Magic</a></li>
+						<li><a href = "../spellLists.html">Spell Lists</a></li>
+						<li><a href = "../spellIndex.html">Spell Index</a></li>
+						<li><a href = "../prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../environment.html">Environment</a></li>
+						<li><a href = "../nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../magicItems.html">Magic Items</a></li>
+						<li><a href = "../glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "artifacts.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "artifacts.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "artifacts.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "artifacts.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "artifacts.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "artifacts.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "artifacts.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "artifacts.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "artifacts.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "artifacts.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "artifacts.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "artifacts.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "artifacts.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "artifacts.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "artifacts.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "artifacts.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "artifacts.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "artifacts.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "artifacts.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="artifacts-477">Artifacts</h1>
+				<p>Artifacts are extremely powerful. Rather than merely another form of magical equipment, they are the sorts of legendary relics that whole campaigns can be based on. Each could be the center of a whole set of adventures&mdash;a quest to recover it, a fight against an opponent wielding it, a mission to cause its destruction, and so on. </p>
+				<p>Unlike normal magic items, artifacts are not easily destroyed. Instead of construction information, each artifact includes one possible means by which it might be destroyed.</p>
+				<p>Artifacts can never be purchased, nor are they found as part of a random treasure hoard. When placing an artifact in your game, be sure to consider its impact and role. Remember that artifacts are fickle objects, and if they become too much of a nuisance, they can easily disappear or become lost once again.</p>
+				<h2 id="minor-artifacts">Minor Artifacts</h2>
+				<p>Minor artifacts are not necessarily unique items. Even so, they are magic items that no longer can be created, at least by common mortal means.</p>
+				<p id="book-of-infinite-spells" class="stat-block-title"><b>Book of Infinite Spells</b></p>
+				<p class="stat-block-1"><b>Aura</b> strong (all schools); <b>CL</b> 18th</p>
+				<p class="stat-block-1"><b>Slot</b> none; <b>Weight</b> 3 lbs.</p>
+				<p class = "stat-block-breaker">Description</p>
+				<p><span class="stat-description-char">This work bestows upon any character of any class the ability to use the spells within its pages. However, any character not already able to use spells gains one </span><a href = "../glossary.html#energy-drain-and-negative-levels" >negative level </a><span class="stat-description-char">for as long as the book is in her possession or while she uses its power. A </span><i>book of infinite spells</i><span class="stat-description-char"> contains 1d8+22 pages. The nature of each page is determined by a d% roll: 01&ndash;50, arcane spell; 51&ndash;100, divine spell. </span></p>
+				<p>Determine the exact spell randomly.</p>
+				<p>Once a page is turned, it can never be flipped back&mdash;paging through a <i>book of infinite spells </i>is a one-way trip. If the book is closed, it always opens again to the page it was on before the book was closed. When the last page is turned, the book vanishes.</p>
+				<p>Once per day the owner of the book can cast the spell to which the book is opened. If that spell happens to be one that is on the character's class spell list, she can cast it up to four times per day. The pages cannot be ripped out without destroying the book. Similarly, the spells cannot be cast as scroll spells, nor can they be copied into a spellbook&mdash;their magic is bound up permanently within the book itself.</p>
+				<p>The owner of the book need not have the book on her person in order to use its power. The book can be stored in a place of safety while the owner is adventuring and still allow its owner to cast spells by means of its power.</p>
+				<p>Each time a spell is cast, there is a chance that the energy connected with its use causes the page to magically turn despite all precautions. The chance of a page turning depends on the spell the page contains and what sort of spellcaster the owner is.</p><table>
+<thead><tr><th>Condition</th><th>Chance of Page Turning</th></tr></thead>
+<tr><td>Caster employing a spell usable by own class and level</td><td>10%</td></tr>
+<tr><td>Caster employing a spell not usable by own class and level</td><td>20%</td></tr>
+<tr><td>Nonspellcaster employing divine spell</td><td>25%</td></tr>
+<tr><td>Nonspellcaster employing arcane spell</td><td>30%</td></tr></table>
+
+				<p>Treat each spell use as if a scroll were being employed, for purposes of determining casting time, spell failure, and so on. </p>
+				<p class = "stat-block-breaker">Destruction</p>
+				<p>The <i>book of infinite spells </i>can be destroyed when the current page contains the <i>erase </i>spell, by casting the spell on the book itself.</p>
+				<p id="deck-of-many-things" class="stat-block-title"><b>Deck of Many Things</b></p>
+				<p class="stat-block-1"><b>Aura</b> strong (all schools); <b>CL</b> 20th</p>
+				<p class="stat-block-1"><b>Slot</b> none; <b>Weight </b>&mdash;</p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>A <i>deck of many things </i>(both beneficial and malign) is usually found in a box or leather pouch. Each deck contains a number of cards or plaques made of ivory or vellum. Each is engraved with glyphs, characters, and sigils. As soon as one of these cards is drawn from the pack, its magic is bestowed upon the person who drew it, for better or worse.</p>
+				<p>The character with a <i>deck of many things </i>who wishes to draw a card must announce how many cards she will draw before she begins. Cards must be drawn within 1 hour of each other, and a character can never draw from this deck any more cards than she has announced. If the character does not willingly draw her allotted number (or if she is somehow prevented from doing so), the cards flip out of the deck on their own. If the Jester is drawn, the possessor of the deck may elect to draw two additional cards.</p>
+				<p>Each time a card is taken from the deck, it is replaced (making it possible to draw the same card twice) unless the draw is the Jester or the Fool, in which case the card is discarded from the pack. A <i>deck of many things </i>contains 22 cards. To simulate the magic cards, you may want to use tarot cards, as indicated in the second column of the accompanying table. If no tarot deck is available, substitute ordinary playing cards instead, as indicated in the third column. The effects of each card, summarized on the table, are fully described below.</p>
+				
+<div class = "table"><table><caption>Deck of Many Things</caption>
+<thead><tr><th>Plaque</th><th>Tarot Card</th><th>Playing Card</th><th>Summary of Effect</th></tr></thead>
+<tr><td>Balance</td><td>XI. Justice</td><td>Two of spades</td><td>Change alignment instantly.</td></tr>
+<tr><td>Comet</td><td>Two of swords</td><td>Two of diamonds</td><td>Defeat the next monster you meet to gain one level.</td></tr>
+<tr><td>Donjon</td><td>Four of swords</td><td>Ace of spades</td><td>You are <i>imprisoned</i>.</td></tr>
+<tr><td>Euryale</td><td>Ten of swords</td><td>Queen of spades</td><td>&ndash;1 penalty on all saving throws henceforth.</td></tr>
+<tr><td>The Fates</td><td>Three of cups</td><td>Ace of hearts</td><td>Avoid any situation you choose, once.</td></tr>
+<tr><td>Flames</td><td>XV. The Devil</td><td>Queen of clubs</td><td>Enmity between you and an outsider.</td></tr>
+<tr><td>Fool</td><td>0. The Fool</td><td>Joker (with trademark)</td><td>Lose 10,000 experience points and you must draw again.</td></tr>
+<tr><td>Gem</td><td>Seven of cups</td><td>Two of hearts</td><td>Gain your choice of 25 pieces of jewelry or 50 gems.</td></tr>
+<tr><td>Idiot</td><td>Two of pentacles</td><td>Two of clubs</td><td>Lose 1d4+1 Intelligence. You may draw again.</td></tr>
+<tr><td>Jester</td><td>XII. The Hanged Man</td><td>Joker (without trademark)</td><td>Gain 10,000 XP or two more draws from the deck.</td></tr>
+<tr><td>Key</td><td>V. The Hierophant</td><td>Queen of hearts</td><td>Gain a major magic weapon.</td></tr>
+<tr><td>Knight</td><td>Page of swords</td><td>Jack of hearts</td><td>Gain the service of a 4th-level fighter.</td></tr>
+<tr><td>Moon</td><td>XVIII. The Moon</td><td>Queen of diamonds</td><td>You are granted 1d4 wishes.</td></tr>
+<tr><td>Rogue</td><td>Five of swords</td><td>Jack of spades</td><td>One of your friends turns against you.</td></tr>
+<tr><td>Ruin</td><td>XVI. The Tower</td><td>King of spades</td><td>Immediately lose all wealth and property.</td></tr>
+<tr><td>Skull</td><td>XIII. Death</td><td>Jack of clubs</td><td>Defeat dread wraith or be forever destroyed.</td></tr>
+<tr><td>Star</td><td>XVII. The Star</td><td>Jack of diamonds</td><td>Immediately gain a +2 inherent bonus to one ability score.</td></tr>
+<tr><td>Sun</td><td>XIX. The Sun</td><td>King of diamonds</td><td>Gain beneficial medium wondrous item and 50,000 XP.</td></tr>
+<tr><td>Talons</td><td>Queen of pentacles</td><td>Ace of clubs</td><td>All magic items you possess disappear permanently.</td></tr>
+<tr><td>Throne</td><td>Four of wands</td><td>King of hearts</td><td>Gain a +6 bonus on Diplomacy checks plus a small castle.</td></tr>
+<tr><td>Vizier</td><td>IX. The Hermit</td><td>Ace of diamonds</td><td>Know the answer to your next dilemma.</td></tr>
+<tr><td>The Void</td><td>Eight of swords</td><td>King of clubs</td><td>Body functions, but soul is trapped elsewhere.</td></tr></table></div>
+				<p><i>Balance</i>: The character must change to a radically different alignment. If the character fails to act according to the new alignment, she gains a negative level.</p>
+				<p><i>Comet</i>: The character must single-handedly defeat the next hostile monster or monsters encountered, or the benefit is lost. If successful, the character gains enough XP to attain the next experience level.</p>
+				<p><i>Donjon</i>: This card signifies imprisonment&mdash;either by the <i><a href="../spells/imprisonment.html#imprisonment" >imprisonment</a> </i>spell or by some powerful being. All gear and spells are stripped from the victim in any case. Draw no more cards.</p>
+				<p><i>Euryale</i>: The medusa-like visage of this card brings a curse that only the Fates card or a deity can remove. The &ndash;1 penalty on all saving throws is otherwise permanent.</p>
+				<p><i>The Fates</i>: This card enables the character to avoid even an instantaneous occurrence if so desired, for the fabric of reality is unraveled and respun. Note that it does not enable something to happen. It can only stop something from happening or reverse a past occurrence. The reversal is only for the character who drew the card; other party members may have to endure the situation.</p>
+				<p><i>Flames</i>: Hot anger, jealousy, and envy are but a few of the possible motivational forces for the enmity. The enmity of the outsider can't be ended until one of the parties has been slain. Determine the outsider randomly, and assume that it attacks the character (or plagues her life in some way) within 1d20 days.</p>
+				<p><i>Fool</i>: The payment of XP and the redraw are mandatory. This card is always discarded when drawn, unlike all others except the Jester.</p>
+				<p><i>Gem</i>: This card indicates wealth. The jewelry is all gold set with gems, each piece worth 2,000 gp, and the gems are worth 1,000 gp each. </p>
+				<p><i>Idiot</i>: This card causes the drain of 1d4+1 points of <a href = "../gettingStarted.html#intelligence" >Intelligence</a> immediately. The additional draw is optional.</p>
+				<p><i>Jester</i>: This card is always discarded when drawn, unlike all others except the Fool. The redraws are optional.</p>
+				<p><i>Key</i>: The magic weapon granted must be one usable by the character. It suddenly appears out of nowhere in the character's hand.</p>
+				<p><i>Knight</i>: The fighter appears out of nowhere and serves loyally until death. He or she is of the same race (or kind) and gender as the character. This fighter can be taken as a cohort by a character with the <a href="../feats.html#leadership" >Leadership</a> feat.</p>
+				<p><i>Moon</i>: This card bears the image of a moonstone gem with the appropriate number of <i>wishes </i>shown as gleams therein; sometimes it depicts a moon with its phase indicating the number of <i>wishes </i>(full = four; gibbous = three; half = two; quarter = one). These <i>wishes </i>are the same as those granted by the 9th-level wizard spell and must be used within a number of minutes equal to the number received.</p>
+				<p><i>Rogue</i>: When this card is drawn, one of the character's NPC friends (preferably a cohort) is totally alienated and made forever hostile. If the character has no cohorts, the enmity of some powerful personage (or community, or religious order) can be substituted. The hatred is secret until the time is ripe for it to be revealed with devastating effect.</p>
+				<p><i>Ruin</i>: As implied by its name, when this card is drawn, all nonmagical possessions of the drawer are lost.</p>
+				<p><i>Skull</i>: A dread wraith appears. The character must fight it alone&mdash;if others help, they get dread wraiths to fight as well. If the character is slain, she is slain forever and cannot be revived, even with a <i><a href="../spells/wish.html#wish" >wish</a> </i>or a <i><a href="../spells/miracle.html#miracle" >miracle</a></i>.</p>
+				<p><i>Star</i>: The 2 points are added to any ability the character chooses. They cannot be divided among two abilities. </p>
+				<p><i>Sun</i>: Roll for a medium wondrous item until a useful item is indicated.</p>
+				<p><i>Talons</i>: When this card is drawn, every magic item owned or possessed by the character is instantly and irrevocably lost, except for the deck.</p>
+				<p><i>Throne</i>: The character becomes a true leader in people's eyes. The castle gained appears in any open area she wishes (but the decision where to place it must be made within 1 hour).</p>
+				<p><i>Vizier</i>: This card empowers the character drawing it with the one-time ability to call upon a source of wisdom to solve any single problem or answer fully any question upon her request. The query or request must be made within 1 year. Whether the information gained can be successfully acted upon is another matter entirely.</p>
+				<p><i>The Void</i>: This black card spells instant disaster. The character's body continues to function, as though comatose, but her psyche is trapped in a prison somewhere&mdash;in an object on a far plane or planet, possibly in the possession of an outsider. A <i><a href="../spells/wish.html#wish" >wish</a> </i>or a <i><a href="../spells/miracle.html#miracle" >miracle</a> </i>does not bring the character back, instead merely revealing the plane of entrapment. Draw no more cards. </p>
+				<p class = "stat-block-breaker">Destruction</p>
+				<p>The <i>deck of many things</i> can be destroyed by losing it in a wager with a deity of law. The deity must be unaware of the nature of the deck.</p>
+				<p id="philosopher-s-stone" class="stat-block-title"><b>Philosopher's Stone</b></p>
+				<p class="stat-block-1"><b>Aura</b> strong transmutation; <b>CL</b> 20th</p>
+				<p class="stat-block-1"><b>Slot</b> none; <b>Weight</b> 3 lbs.</p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>This rare substance appears to be an ordinary, sooty piece of blackish rock. If the stone is broken open (break DC 20), a cavity is revealed at the stone's heart. This cavity is lined with a magical type of quicksilver that enables any character with at least 10 ranks in <a href="../skills/craft.html#craft" >Craft</a> (alchemy) to transmute base metals (iron and lead) into silver and gold. A single <i>philosopher's stone </i>can turn up to 5,000 pounds of iron into silver (worth 25,000 gp), or up to 1,000 pounds of lead into gold (worth 50,000 gp). However, the quicksilver becomes unstable once the stone is opened and loses its potency within 24 hours, so all transmutations must take place within that period.</p>
+				<p>The quicksilver found in the center of the stone may also be put to another use. If mixed with any cure potion while the substance is still potent, it creates a special oil of life that acts as a <i><a href="../spells/trueResurrection.html#true-resurrection" >true resurrection</a></i> spell for any dead body it is sprinkled upon. </p>
+				<p class = "stat-block-breaker">Destruction</p>
+				<p>The philosopher's stone can be destroyed by being placed in the heel of a titan's boot for at least 1 entire week.</p>
+				<p id="sphere-of-annihilation" class="stat-block-title"><b>Sphere of Annihilation</b></p>
+				<p class="stat-block-1"><b>Aura</b> strong transmutation; <b>CL</b> 20th</p>
+				<p class="stat-block-1"><b>Slot</b> none; <b>Weight </b>&mdash;</p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>A <i>sphere of annihilation </i>is a globe of absolute blackness 2 feet in diameter. Any matter that comes in contact with a sphere is instantly sucked into the void and utterly destroyed. Only the direct intervention of a deity can restore an annihilated character.</p>
+				<p>A <i>sphere of annihilation</i> is static, resting in some spot as if it were a normal hole. It can be caused to move, however, by mental effort (think of this as a mundane form of <i><a href="../spells/telekinesis.html#telekinesis" >telekinesis</a></i>, too weak to move actual objects but a force to which the sphere, being weightless, is sensitive). A character's ability to gain control of a <i>sphere of annihilation</i> (or to keep controlling one) is based on the result of a control check against DC 30 (a move action). A control check is 1d20 + character level + character <a href = "../gettingStarted.html#intelligence" >Int</a> modifier. If the check succeeds, the character can move the sphere (perhaps to bring it into contact with an enemy) as a free action.</p>
+				<p>Control of a sphere can be established from as far away as 40 feet (the character need not approach too closely). Once control is established, it must be maintained by continuing to make control checks (all DC 30) each round. For as long as a character maintains control (does not fail a check) in subsequent rounds, he can control the sphere from a distance of 40 feet + 10 feet per character level. The sphere's speed in a round is 10 feet + 5 feet for every 5 points by which the character's control check result in that round exceeded 30.</p>
+				<p>If a control check fails, the sphere slides 10 feet in the direction of the character attempting to move it. If two or more creatures vie for control of a <i>sphere of annihilation</i>, the rolls are opposed. If none are successful, the sphere slips toward the one who rolled lowest.</p>
+				<p>See also <i>talisman of the sphere</i>. </p>
+				<p class = "stat-block-breaker">Destruction</p>
+				<p>Should a <i><a href="../spells/gate.html#gate" >gate</a></i> spell be cast upon a <i>sphere of annihilation</i>, there is a 50% chance (01&ndash;50 on d%) that the spell destroys it, a 35% chance (51&ndash;85) that the spell does nothing, and a 15% chance (86&ndash;100) that a gap is torn in the spatial fabric, catapulting everything within a 180-foot radius into another plane. If a <i>rod of cancellation</i> touches a <i>sphere of annihilation</i>, they negate each other in a tremendous explosion. Everything within a 60-foot radius takes 2d6 &times; 10 points of damage. <i><a href="../spells/dispelMagic.html#dispel-magic" >Dispel magic</a></i> and <i><a href="../spells/mageSDisjunction.html#mage-s-disjunction" >mage's disjunction</a></i> have no effect on a sphere.</p>
+				<p id="staff-of-the-magi" class="stat-block-title"><b>Staff of the Magi</b></p>
+				<p class="stat-block-1"><b>Aura</b> strong (all schools); <b>CL</b> 20th</p>
+				<p class="stat-block-1"><b>Slot</b> none; <b>Weight</b> 5 lbs.</p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>A long wooden staff, shod in iron and inscribed with sigils and runes of all types, this potent artifact contains many spell powers and other functions. Unlike a normal staff, a <i>staff of the magi</i> holds 50 charges and cannot be recharged normally. Some of its powers use charges, while others don't. A <i>staff of the magi</i> does not lose its powers if it runs out of charges. The following powers do not use charges:</p>
+				<ul><li> <i><a href="../spells/detectMagic.html#detect-magic" >Detect magic</a></i></li>
+				<li> <i><a href="../spells/enlargePerson.html#enlarge-person" >Enlarge person</a></i> (<a href="../combat.html#fortitude" >Fortitude</a> DC 15 negates)</li>
+				<li> <i><a href="../spells/holdPortal.html#hold-portal" >Hold portal</a></i></li>
+				<li> <i><a href="../spells/light.html#light" >Light</a></i></li>
+				<li> <i><a href="../spells/mageArmor.html#mage-armor" >Mage armor</a></i></li>
+				<li> <i><a href="../spells/mageHand.html#mage-hand" >Mage hand</a></i></li></ul>
+				<p>The following powers drain 1 charge per usage:</p>
+				<ul><li> <i><a href="../spells/dispelMagic.html#dispel-magic" >Dispel magic</a></i></li>
+				<li> <i><a href="../spells/fireball.html#fireball" >Fireball</a></i> (10d6 damage, <a href="../combat.html#reflex" >Reflex</a> DC 17 half)</li>
+				<li> <i><a href="../spells/iceStorm.html#ice-storm" >Ice storm</a></i></li>
+				<li> <i><a href="../spells/invisibility.html#invisibility" >Invisibility</a></i></li>
+				<li> <i><a href="../spells/knock.html#knock" >Knock</a></i></li>
+				<li> <i><a href="../spells/lightningBolt.html#lightning-bolt" >Lightning bolt</a></i> (10d6 damage, <a href="../combat.html#reflex" >Reflex</a> DC 17 half)</li>
+				<li> <i><a href="../spells/passwall.html#passwall" >Passwall</a></i></li>
+				<li> <i><a href="../spells/pyrotechnics.html#pyrotechnics" >Pyrotechnics</a></i> (<a href="../combat.html#will" >Will</a> or <a href="../combat.html#fortitude" >Fortitude</a> DC 16 negates)</li>
+				<li> <i><a href="../spells/wallOfFire.html#wall-of-fire" >Wall of fire</a></i></li>
+				<li> <i><a href="../spells/web.html#web" >Web</a></i></li></ul>
+				<p>These powers drain 2 charges per usage:</p>
+				<ul><li> <i><a href="../spells/summonMonster.html#summon-monster-ix" >Monster summoning IX</a></i></li>
+				<li> <i><a href="../spells/planeShift.html#plane-shift" >Plane shift</a></i> (<a href="../combat.html#will" >Will</a> DC 21 negates)</li>
+				<li> <i><a href="../spells/telekinesis.html#telekinesis" >Telekinesis</a></i> (400 lbs. maximum weight; <a href="../combat.html#will" >Will</a> DC 19 negates)</li></ul>
+				<p>A <i>staff of the magi</i> gives the wielder <a href = "../glossary.html#spell-resistance" >spell resistance</a> 23. If this is willingly lowered, however, the staff can also be used to absorb arcane spell energy directed at its wielder, as a <i>rod of absorption</i> does. Unlike the rod, this staff converts spell levels into charges rather than retaining them as spell energy usable by a spellcaster. If the staff absorbs enough spell levels to exceed its limit of 50 charges, it explodes as if a retributive strike had been performed (see below). The wielder has no idea how many spell levels are cast at her, for the staff does not communicate this knowledge as a <i><a href="rods.html#rod-of-absorption" >rod of absorption</a></i> does. (Thus, absorbing spells can be risky.)</p>
+				<p class = "stat-block-breaker">Destruction</p>
+				<p>A <i>staff of the magi</i> can be broken for a retributive strike. Such an act must be purposeful and declared by the wielder. All charges in the staff are released in a 30-foot spread. All within 10 feet of the broken staff take hit points of damage equal to 8 times the number of charges in the staff, those between 11 feet and 20 feet away take points equal to 6 times the number of charges, and those 21 feet to 30 feet distant take 4 times the number of charges. A DC 23 <a href="../combat.html#reflex" >Reflex</a> save reduces damage by half. </p>
+				<p>The character breaking the staff has a 50% chance (01&ndash;50 on d%) of traveling to another plane of existence, but if she does not (51&ndash;100), the explosive release of spell energy destroys her (no saving throw). </p>
+				<p id="talisman-of-pure-good" class="stat-block-title"><b>Talisman of Pure Good</b></p>
+				<p class="stat-block-1"><b>Aura</b> strong evocation [good]; <b>CL</b> 18th</p>
+				<p class="stat-block-1"><b>Slot</b> none; <b>Weight </b>&mdash;</p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>A good divine spellcaster who possesses this item can cause a flaming crack to open at the feet of an evil divine spellcaster who is up to 100 feet away. The intended victim is swallowed up forever and sent hurtling to the center of the earth. The wielder of the talisman must be good, and if he is not exceptionally pure in thought and deed, the evil character gains a DC 19 <a href="../combat.html#reflex" >Reflex</a> saving throw to leap away from the crack. Obviously, the target must be standing on solid ground for this item to function. </p>
+				<p>A <i>talisman of pure good</i> has 6 charges. If a neutral (LN, N, CN) divine spellcaster touches one of these stones, he takes 6d6 points of damage per round of contact. If an evil divine spellcaster touches one, he takes 8d6 points of damage per round of contact. All other characters are unaffected by the device. </p>
+				<p class = "stat-block-breaker">Destruction</p>
+				<p>The <i>talisman of pure good</i> can be destroyed by placing it in the mouth of a holy man who died while committing a truly heinous act of his own free will.</p>
+				<p id="talisman-of-the-sphere" class="stat-block-title"><b>Talisman of the Sphere</b></p>
+				<p class="stat-block-1"><b>Aura</b> strong transmutation; <b>CL</b> 16th</p>
+				<p class="stat-block-1"><b>Slot</b> none; <b>Weight</b> 1 lb.</p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>This small adamantine loop and handle is typically fitted with a fine adamantine chain so that it can be worn about as a necklace. A <i>talisman of the sphere</i> is worse than useless to those unable to cast arcane spells. Characters who cannot cast arcane spells take 5d6 points of damage merely from picking up and holding a talisman of this sort. However, when held by an arcane spellcaster who is concentrating on control of a <i><a href="artifacts.html#sphere-of-annihilation" >sphere of annihilation</a>, </i>a <i>talisman of the sphere </i>doubles the character's modifier on his control check (doubling both his <a href = "../gettingStarted.html#intelligence" >Intelligence</a> bonus and his character level for this purpose).</p>
+				<p>If the wielder of a talisman establishes control, he need check for maintaining control only every other round thereafter. If control is not established, the sphere moves toward him. Note that while many spells and effects of cancellation have no effect upon a <i><a href="artifacts.html#sphere-of-annihilation" >sphere of annihilation</a></i>, the talisman's power of control can be suppressed or canceled. </p>
+				<p class = "stat-block-breaker">Destruction</p>
+				<p>A <i>talisman of the sphere</i> can only be destroyed by throwing the item into a <i><a href="artifacts.html#sphere-of-annihilation" >sphere of annihilation</a></i>.</p>
+				<p id="talisman-of-ultimate-evil" class="stat-block-title"><b>Talisman of Ultimate Evil</b></p>
+				<p class="stat-block-1"><b>Aura</b> strong evocation [evil]; <b>CL</b> 18th</p>
+				<p class="stat-block-1"><b>Slot</b> none; <b>Weight </b>&mdash;</p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>An evil divine spellcaster who possesses this item can cause a flaming crack to open at the feet of a good divine spellcaster who is up to 100 feet away. The intended victim is swallowed up forever and sent hurtling to the center of the earth. The wielder of the talisman must be evil, and if she is not exceptionally foul and perverse in the sights of her evil deity, the good character gains a DC 19 <a href="../combat.html#reflex" >Reflex</a> save to leap away from the crack. Obviously, the target must be standing on solid ground for this item to function. </p>
+				<p>A <i>talisman of ultimate evil</i> has 6 charges. If a neutral (LN, N, CN) divine spellcaster touches one of these stones, she takes 6d6 points of damage per round of contact. If a good divine spellcaster touches one, she takes 8d6 points of damage per round of contact. All other characters are unaffected by the device. </p>
+				<p class = "stat-block-breaker">Destruction</p>
+				<p>If a <i>talisman of ultimate evil</i> is given to the newborn child of a redeemed villain, it instantly crumbles to dust.</p>
+				<h2 id="major-artifacts">Major Artifacts</h2>
+				<p>Major artifacts are unique items&mdash;only one of each such item exists. These are the most potent of magic items, capable of altering the balance of a campaign. Unlike all other magic items, major artifacts are not easily destroyed. Each should have only a single, specific means of destruction.</p>
+				<p id="axe-of-the-dwarvish-lords" class="stat-block-title"><b>Axe of the Dwarvish Lords</b></p>
+				<p class="stat-block-1"><b>Aura</b> strong conjuration and transmutation; <b>CL</b> 20th</p>
+				<p class="stat-block-1"><b>Slot</b> none; <b>Weight</b> 12 lbs.</p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>This is a +<i>6 keen throwing goblinoid bane dwarven waraxe</i>. Any dwarf who holds it doubles the range of his or her <a href = "../glossary.html#darkvision" >darkvision</a>. Any nondwarf who grasps the <i>Axe </i>takes 4 points of temporary <a href = "../gettingStarted.html#charisma-new" >Charisma</a> damage; these points cannot be healed or restored in any way while the <i>Axe </i>is held. The current owner of the <i>Axe </i>gains a +10 bonus on <a href="../skills/craft.html#craft" >Craft</a> (armor, jewelry, stonemasonry, traps, and weapons) checks. The wielder of the <i>Axe </i>can summon an elder earth elemental (as <i><a href="../spells/summonMonster.html#summon-monster-ix" >summon monster IX</a>; </i>duration 20 rounds) once per week. </p>
+				<p class = "stat-block-breaker">Destruction</p>
+				<p>The <i>Axe of the Dwarvish Lords </i>rusts away to nothing if it is ever used by a goblin to behead a dwarven king.</p>
+				<p id="codex-of-the-infinite-planes" class="stat-block-title"><b>Codex of the Infinite Planes</b></p>
+				<p class="stat-block-1"><b>Aura</b> overwhelming transmutation; <b>CL</b> 30th</p>
+				<p class="stat-block-1"><b>Slot</b> none; <b>Weight</b> 300 lbs.</p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>The <i>Codex</i> is enormous&mdash;supposedly, it requires two strong men to lift it. No matter how many pages are turned, another always remains. Anyone opening the <i>Codex </i>for the first time is utterly annihilated, as with a <i><a href="../spells/destruction.html#destruction" >destruction</a> </i>spell (<a href="../combat.html#fortitude" >Fortitude</a> DC 30). Those who survive can peruse its pages and learn its powers, though not without risk. Each day spent studying the <i>Codex </i>allows the reader to make a <a href="../skills/spellcraft.html#spellcraft" >Spellcraft</a> check (DC 50) to learn one of its powers (choose the power learned randomly; add a +1 circumstance bonus on the check per additional day spent reading until a power is learned). However, each day of study also forces the reader to make a <a href="../combat.html#will" >Will</a> save (DC 30 + 1 per day of study) to avoid being driven insane (as the <i><a href="../spells/insanity.html#insanity" >insanity</a> </i>spell). The powers of the <i>Codex of the Infinite Planes </i>are as follows: <i><a href="../spells/astralProjection.html#astral-projection" >astral projection</a>, <a href="../spells/banishment.html#banishment" >banishment</a>, <a href="../spells/elementalSwarm.html#elemental-swarm" >elemental swarm</a>, <a href="../spells/gate.html#gate" >gate</a>, <a href="../spells/planarAlly.html#planar-ally-greater" >greater planar ally</a>, <a href="../spells/planarBinding.html#planar-binding-greater" >greater planar binding</a>, <a href="../spells/planeShift.html#plane-shift" >plane shift</a>, </i>and <i><a href="../spells/soulBind.html#soul-bind" >soul bind</a>. </i>Each of these spell-like abilities are usable at will by the owner of the <i>Codex </i>(assuming that he or she has learned how to access the power). The <i>Codex of the Infinite Planes </i>has a caster level of 30th for the purposes of all powers and catastrophes, and all saving throw DCs are 20 + spell level. Activating any power requires a <a href="../skills/spellcraft.html#spellcraft" >Spellcraft</a> check (DC 40 + twice the spell level of the power; the character can't take 10 on this check). Any failure on either check indicates that a catastrophe befalls the user (roll on the table below for the effect). A character can only incur one catastrophe per power use. </p><table>
+<thead><tr><th>d%</th><th>Catastrophe</th></tr></thead>
+<tr><td>01&ndash;25</td><td style="white-space: normal;"><b>Natural Fury</b>: An <i>earthquake </i>spell centered on the reader strikes every round for 1 minute, and an intensified <i><a href="../spells/stormOfVengeance.html#storm-of-vengeance" >storm of vengeance</a> </i>spell is centered and targeted on the reader. </td></tr>
+<tr><td>26&ndash;50</td><td style="white-space: normal;"><b>Fiendish Vengeance</b>: A <i><a href="../spells/gate.html#gate" >gate</a> </i>opens and 1d3+1 balors, pit fiends, or similar evil outsiders step through and attempt to destroy the owner of the <i>Codex. </i></td></tr>
+<tr><td>51&ndash;75</td><td style="white-space: normal;"><b>Ultimate Imprisonment</b>: Reader's soul is captured (as <i><a href="../spells/trapTheSoul.html#trap-the-soul" >trap the soul</a>; </i>no save allowed) in a random gem somewhere on the plane while his or her body is entombed beneath the earth (as <i><a href="../spells/imprisonment.html#imprisonment" >imprisonmen</a></i><a href="../spells/imprisonment.html#imprisonment" >t</a>). </td></tr>
+<tr><td>76&ndash;100</td><td style="white-space: normal;"><b>Death</b>: The reader utters a <i><a href="../spells/wailOfTheBanshee.html#wail-of-the-banshee" >wail of the banshee</a> </i>and then is subject to a <i><a href="../spells/destruction.html#destruction" >destruction</a> </i>spell. This repeats every round for 10 rounds until the reader is dead.</td></tr></table>
+
+				<p class = "stat-block-breaker">Destruction</p>
+				<p>The <i>Codex of the Infinite Planes </i>is destroyed if one page is torn out and left on each plane in existence. Note that tearing out a page immediately triggers a catastrophe.</p>
+				<p id="the-orbs-of-dragonkind" class="stat-block-title"><b>The Orbs of Dragonkind</b></p>
+				<p class="stat-block-1"><b>Aura</b> strong enchantment; <b>CL</b> 20th</p>
+				<p class="stat-block-1"><b>Slot</b> none; <b>Weight</b> 5 lbs.</p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>Each of these fabled <i>Orbs</i> contains the essence and personality of an ancient dragon of a different variety (one for each of the major ten different chromatic and metallic dragons). The bearer of an <i>Orb </i>can, as a standard action, dominate dragons of its particular variety within 500 feet (as <i>dominate monster</i>), the dragon being forced to make a DC 25 <a href="../combat.html#will" >Will</a> save to resist. <a href = "../glossary.html#spell-resistance" >Spell resistance</a> is not useful against this effect. Each <i>Orb of Dragonkind </i>bestows upon the wielder the <a href="../combat.html#armor-class" >AC</a> and saving throw bonuses of the dragon within. These values replace whatever values the character would otherwise have, whether they are better or worse. These values cannot be modified by any means short of ridding the character of the <i>Orb. </i>A character possessing an <i>Orb of Dragonkind </i>is immune to the breath weapon&mdash;but only the breath weapon&mdash;of the dragon variety keyed to the <i>Orb. </i>Finally, a character possessing an <i>Orb </i>can herself use the breath weapon of the dragon in the <i>Orb </i>three times per day.</p>
+				<p>All <i>Orbs of Dragonkind</i> can be used to communicate verbally and visually with the possessors of the other <i>Orbs</i>. The owner of an <i>Orb</i> knows if there are dragons within 10 miles at all times. For dragons of the <i>Orb's</i> particular variety, the range is 100 miles. If within 1 mile of a dragon of the <i>Orb's</i> variety, the wielder can determine the dragon's exact location and age. The bearer of one of these <i>Orbs</i> earns the enmity of dragonkind forever for profiting by draconic enslavement, even if she later loses the item. Each <i>Orb</i> also has an individual power that can be invoked once per round at caster level 10th.</p>
+				<ul><li> <i>Black Dragon Orb</i>: <i>Fly</i>.</li>
+				<li> <i>Blue Dragon Orb</i>: <i><a href="../spells/haste.html#haste" >Haste</a></i>.</li>
+				<li> <i>Brass Dragon Orb</i>: <i><a href="../spells/teleport.html#teleport" >Teleport</a></i>.</li>
+				<li> <i>Bronze Dragon Orb</i>: <i><a href="../spells/scrying.html#scrying" >Scrying</a></i> (<a href="../combat.html#will" >Will</a> DC 18 negates).</li>
+				<li> <i>Copper Dragon Orb</i>: <i><a href="../spells/suggestion.html#suggestion" >Suggestion</a></i> (<a href="../combat.html#will" >Will</a> DC 17 negates).</li>
+				<li> <i>Gold Dragon Orb</i>: The owner of the gold <i>Orb</i> can call upon any power possessed by one of the other <i>Orbs</i>&mdash;including the dominate and breath weapon abilities but not <a href="../combat.html#armor-class" >AC</a>, save bonuses, or breath weapon immunity&mdash;but can only use an individual power once per day. She can dominate any other possessor of an <i>Orb</i> within 1 mile (<a href="../combat.html#will" >Will</a> DC 23 negates).</li>
+				<li> <i>Green Dragon Orb</i>: <i><a href="../spells/spectralHand.html#spectral-hand" >Spectral hand</a></i>.</li>
+				<li> <i>Red Dragon Orb</i>: <i><a href="../spells/wallOfFire.html#wall-of-fire" >Wall of fire</a></i>.</li>
+				<li> <i>Silver Dragon Orb</i>: <i><a href="../spells/cureCriticalWounds.html#cure-critical-wounds" >Cure critical wounds</a></i> (<a href="../combat.html#will" >Will</a> DC 18 half).</li>
+				<li> <i>White Dragon Orb</i>: <i><a href="../spells/protectionFromEnergy.html#protection-from-energy" >Protection from energy</a> (cold)</i> (<a href="../combat.html#fortitude" >Fortitude</a> DC 17 negates)</li></ul>
+				<p class = "stat-block-breaker">Destruction</p>
+				<p>An <i>orb of dragonkind</i> immediately shatters if it is caught in the breath weapon of a dragon who is a blood relative of the dragon trapped within. This causes everyone within 90 feet to be struck by the breath weapon of that dragon, released as the orb explodes.</p>
+				<p id="the-shadowstaff" class="stat-block-title"><b>The Shadowstaff</b></p>
+				<p class="stat-block-1"><b>Aura</b> strong conjuration; <b>CL</b> 20th.</p>
+				<p class="stat-block-1"><b>Slot</b> none; <b>Weight</b> 1 lb.</p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>This artifact was crafted ages ago, weaving together wispy strands of shadow into a twisted black staff. The <i>Shadowstaff </i>makes the wielder slightly shadowy and <a href = "../glossary.html#incorporeal" >incorporeal</a>, granting him a +4 bonus to <a href="../combat.html#armor-class" >AC</a> and on <a href="../combat.html#reflex" >Reflex</a> saves (which stacks with any other bonuses). However, in bright light (such as that of the sun, but not a torch) or in absolute darkness, the wielder takes a &ndash;2 penalty on all attack rolls, saves, and checks. The <i>Shadowstaff</i> also has these powers.</p>
+				<ul><li> <i>Summon Shadows</i>: Three times per day the staff may summon 2d4 shadows. Immune to turning, they serve the wielder as if called by a <i><a href="../spells/summonMonster.html#summon-monster-v" >summon monster V</a> </i>spell cast at 20th level.</li>
+				<li> <i>Summon Nightshade</i>: Once per month, the staff can summon an advanced shadow demon that serves the wielder as if called by a <i><a href="../spells/summonMonster.html#summon-monster-ix" >summon monster IX</a></i> spell cast at 20th level.</li>
+				<li> <i>Shadow Form</i>: Three times per day the wielder can become a living shadow, with all the movement powers granted by <i><a href="../spells/gaseousForm.html#gaseous-form" >gaseous form</a></i>. </li>
+				<li> <i>Shadow Bolt</i>: Three times per day the staff can project a ray attack that deals 10d6 points of cold damage to a single target. The shadow bolt has a range of 100 feet. </li></ul>
+				<p class = "stat-block-breaker">Destruction</p>
+				<p>The <i>Shadowstaff</i> fades away to nothingness if it is exposed to true sunlight for a continuous 24 hour period.</p>
+
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Artifacts",globalNavPath=[{ href: '/pathfinderRPG/prd/coreRulebook/magicItems.html', name: 'Magic Items' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

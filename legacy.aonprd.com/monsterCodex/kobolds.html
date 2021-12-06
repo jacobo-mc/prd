@@ -1,0 +1,901 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Kobolds</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "kobolds.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "kobolds.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "kobolds.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "kobolds.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "kobolds.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "kobolds.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "kobolds.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "kobolds.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "boggards.html">Boggards</a></li>
+						<li><a href = "bugbears.html">Bugbears</a></li>
+						<li><a href = "drow.html">Drow</a></li>
+						<li><a href = "duergar.html">Duergar</a></li>
+						<li><a href = "fireGiants.html">Fire Giants</a></li>
+						<li><a href = "frostGiants.html">Frost Giants</a></li>
+						<li><a href = "ghouls.html">Ghouls</a></li>
+						<li><a href = "gnolls.html">Gnolls</a></li>
+						<li><a href = "goblins.html">Goblins</a></li>
+						<li><a href = "hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "kobolds.html">Kobolds</a></li>
+						<li><a href = "lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "ogres.html">Ogres</a></li>
+						<li><a href = "orcs.html">Orcs</a></li>
+						<li><a href = "ratfolk.html">Ratfolk</a></li>
+						<li><a href = "sahuagin.html">Sahuagin</a></li>
+						<li><a href = "serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "troglodytes.html">Troglodytes</a></li>
+						<li><a href = "trolls.html">Trolls</a></li>
+						<li><a href = "vampires.html">Vampires</a></li>
+						<li><a href = "appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "kobolds.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "kobolds.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "kobolds.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "kobolds.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "kobolds.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "kobolds.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "kobolds.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "kobolds.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "kobolds.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "kobolds.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "kobolds.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "kobolds.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "kobolds.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 class = "monster-header" id = "monster-codex-kobolds">Kobolds</h1>
+
+<p>Creatures of deep, dark places, kobolds are masters of tunneling, mining, and setting traps. They despise those that would take advantage their relative physical weakness or steal the precious ores they mine, and thus devote themselves to creating elaborate mechanical defenses for their lairs. Adventurers attempting to storm a kobold den rarely see an actual kobold until after they've been assaulted by a wide variety of cleverly engineered cruelties. </span></p>
+<p>All kobolds claim to be related to dragons, yet while it's true that kobold scale colors often match those of chromatic dragons, dragons themselves don't reciprocate this feeling of kinship. A kobold who manages to convince a dragon of her worth often serves it as a clever trap-maker or flunky, in exchange for the honor and protection the dragon's presence affords.</p>
+<p>When humanoids and kobolds mix, often as a result of mining operations, kobolds often get a reputation as thieves and nuisances because of their tendency to appear at night and abscond with anything the humans leave lying around. Anything from farming equipment to small animals is seen as fair game to kobolds, who argue that such confiscation is not theft, but rather simply making good use of items the humans clearly don't value properly.</p>
+<p>As creatures of deep caverns and shadowed forests, kobolds have difficulty with light, and even a torch is uncomfortably bright to their eyes. Hence, though they are not naturally nocturnal, they rarely venture to the surface during the day.</p>
+<p>Kobold settlements are elaborate affairs. Though the lairs are relatively small&mdash;generally comprising a few caverns that serve as living quarters, larders, and workshops&mdash;each lair is surrounded by a complex web of tunnels and crawlspaces, all packed with ingenious traps. To kobolds, the best battle is the one they never have to fight at all, so creating new traps is a constant (if somewhat paranoid) policy and pastime in kobold society.</p>
+<p>Tied into this paranoia is kobolds' treatment of egg chambers. The average kobold has no idea where his tribes' eggs are stored until hatching&mdash;preventing him from revealing the location even under coercive or magical interrogation. Only the tribe's chieftain and the kobolds assigned to watch over the eggs know the truth, ensuring that if the tribe's complex is eventually overrun (seen as an inevitability by the fatalistic kobolds), enough eggs will survive to raise a new generation.</p>
+<p>Kobolds' resentment of larger races burns fiercest toward dwarves, gnomes, and other races who tend to mine the mineral veins the kobolds consider theirs. Once a kobold tribe begins digging out precious metals or gems in an area, its members feel that anyone else digging in the same area is a thief. Even if a kobold mining operation accidentally breaks into an established dwarven city, the kobolds' sense of manifest destiny would likely lead them to see the dwarves as the interlopers.</p>
+<p>Yet the resentment kobolds feel toward other races is nothing compared to their animosity toward other kobold tribes that intrude on their mining operations or partake of the food sources their tribe considers its own. The resulting wars are fierce, bloody, and swift, with both tribes attempting to slay as many opponents as possible until one chief dies. Once a tribe has lost its chief, the losing tribe's demoralized survivors become slaves to the victorious tribe, and are sent into the mines to harvest out all the minerals they can for their new masters. If adventurers manage to make it through a tribe's traps, it's inevitably these same slaves who are armed and sent to confront the threat, generally with little hope of winning the ensuing battle. Though some might wonder why kobolds condemned in this way don't turn on their masters, the sad truth is that those who want to rebel are usually cut down before their attempt gets off the ground.</p>
+<p>Most kobold tribes are led by a single chieftain, whose authority is rarely questioned. If a kobold tribe is ruled by a non-kobold, such as a young dragon, a kobold chief is still in charge of carrying out the ruler's instructions and seeing to day-to-day administration. Chieftainship is usually decided through combat, though accidents involving traps are tacitly considered fair game.</p>
+<p>Kobolds worship the dragon gods, and in many cases dragons themselves, seeing little difference between all-powerful deities and (to them) essentially all-powerful dragons. The dragons themselves tend to enjoy the constant, obsequious worship of their lesser cousins&mdash;though the occasional solitude-loving dragon may decide that a kobold supplicant makes a better meal than a servant&mdash;and kobolds' naturally ordered and hierarchical society makes it easy for a creature at the top to command them.</p>
+<p>Although kobolds feel a particular kinship with chromatic dragons and have less affinity for metallic ones, kobold scale colors are not nearly as personality-defining as those of true dragons, though some tribes have superstitions and other beliefs about scale color. Color is inconsistent in kobold genes, and parents of one color may give birth to children of several different scale hues, leading to a full spectrum of the chromatic tones that have little or no correlation to abilities.</p>
+<p>The few metallic-colored kobolds are an exception to this rule. Though no more good-inclined than their fellows, these metallic kobolds are seen as special or marked by some higher power, and often go on to become great chiefs or shamans. Of course, this marking is a double-edged sword, as not every chief wants a potential usurper hanging around, and even those tribes who seek honestly to make use of their "blessed" members may subject them to a battery of dangerous tests in order to ascertain what powers these individuals might possess.</p>
+<p>Full statistics for kobolds can be found in their <a href = "../bestiary/kobold.html"><em>Bestiary</em> entry</a>.</p>
+
+<h1 id = "kobold-new-rules">New Rules</h1>
+<p>Kobolds use a wide variety of tricks and techniques to repel invaders. Below are some new rules displaying the height of kobold defensive tactics and technology.</p>
+
+<h2 id = "kobold-archetypes">Kobold Archetypes</h2>
+<p>The following archetypes are available to kobolds.</p>
+
+<h3 id = "alchemical-trapper">Alchemical Trapper (Alchemist)</h3>
+<p>Because kobolds rely on traps to soften up enemies, kobold alchemists learn to turn bombs into traps. When such alchemists are preparing defenses against larger creatures that might enter their tunnels and attempt to exterminate them, their skills mean the difference between life and death.</p>
+<p id = "bomb-trap"><strong>Bomb Trap (Su)</strong>: At 2nd level, an alchemical trapper can use one of her bombs to make a trap. Setting a bomb trap is a full-round action that provokes attacks of opportunity. A bomb trap fills a single 5-foot square and cannot be placed in the same area as any other trap. The alchemical trapper needs the same materials required for making a bomb. The DCs for <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> checks to notice the trap, <a href = "../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> checks to disable it, and saving throws to avoid it are equal to the DC for the alchemical trapper's bombs. All bomb traps have location triggers and do not reset. The alchemical trapper can use any one discovery that applies to a bomb when making a bomb trap. The bomb trap lasts 10 minutes for each alchemist level the trapper possesses. If the bomb trap is not disabled or exploded within that time frame, the trap becomes inert. Creating a bomb trap uses one of the alchemical trapper's bombs per day. This ability replaces the discovery at 2nd level.</p>
+<p id = "trapfinding"><strong>Trapfinding (Ex)</strong>: At 4th level, an alchemical trapper can find and disable traps, as the rogue class feature of the same name. This ability replaces the discovery at 4th level.</p>
+
+<h3 id = "dragon-yapper">Dragon Yapper (Bard)</h3>
+<p>Kobolds' yammering songs distract opponents in combat, hindering their ability to attack.</p>
+<p><strong>Bardic Performance</strong>: A dragon yapper gains the following types of bardic performance.</p>
+<p><em>Yapping Song (Su)</em> : A dragon yapper can use performance to annoy those that hear it, causing them to take a &ndash;1 penalty on attack and damage rolls (minimum 1) and a &ndash;1 penalty on saves against fear effects and charm effects as long as the dragon yapper continues performing. This penalty increases by 1 at 5th level and every 6 levels thereafter. Yapping song is a mind-affecting ability that uses audible components, but is not language-dependent. This performance replaces fascinate.</p>
+<p><em>Frightful Song (Su)</em> : A dragon yapper of 8th level or higher can amplify his voice to sound like an actual dragon. Enemies within 30 feet become shaken unless they succeed at a Will save (DC 10 +1/2 the dragon yapper's level + the dragon yapper's Charisma modifier). A successful save renders targets immune to this ability for 24 hours. Frightful song is a mind-affecting ability, and a fear effect that uses audible components. This performance replaces dirge of doom.</p>
+<p><em>Versatile Performance (Ex)</em> : A dragon yapper must choose sing at 2nd level.</p>
+
+<h2 id = "kobold-companions">Kobold Companions</h2>
+<p>Each of these animal companions has a different starting speed, attacks, ability scores, and special qualities. As you gain levels, your companion grows in power as well. It gains the same bonuses that are gained by other animal companions . Each companion gains an additional bonus, usually at 4th or 7th level, as listed with each choice. A kobold cavalier can select either of these companions as a mount instead of a dog or pony.</p>
+
+<h3 id = "cave-salamander">Cave Salamander</h3>
+<p><strong>Starting Statistics</strong>: <strong>Size</strong> Medium; <strong>Speed</strong> 40 ft.; <strong>AC</strong> +2 natural armor; <strong>Attack</strong> bite (1d6); <strong>Ability Scores</strong> Str 13, Dex 12, Con 13, Int 1, Wis 12, Cha 4; <strong>Special Qualities</strong> darkvision 60 ft.</p>
+<p><strong>4th-Level Advancement</strong>: <strong>Ability Scores</strong> Str +2, Con +2; <strong>Special Qualities</strong> combat training (see the <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> skill).</p>
+
+<h3 id = "riding-python">Riding Python</h3>
+<p><strong>Starting Statistics</strong>: <strong>Size</strong> Medium; <strong>Speed</strong> 30 ft.; <strong>AC</strong> +1 natural armor; <strong>Attack</strong> bite (1d6); <strong>Ability Scores </strong>Str 11, Dex 14, Con 13, Int 1, Wis 10, Cha 4; <strong>CMD</strong> (can't be tripped); <strong>Special Qualities</strong> blindsight 60 ft.</p>
+<p><strong>4th-Level Advancement</strong>: <strong>Ability Scores</strong> Str +2, Con +2; <strong>Special Qualities</strong> combat training (see the <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> skill).</p>
+
+<h2 id = "kobold-traps">Kobold Traps</h2>
+<p>The following traps are available to kobolds. At the GM's discretion, other races can also make use of these traps.</p>
+
+<p id = "dragonfire-trap" class = "stat-block-title">Dragonfire Trap <span class = "stat-block-cr">CR 1</span></p>
+<p class = "stat-block-1"><strong>Type</strong> mechanical; <strong><a href = "../coreRulebook/skills/perception.html#perception">Perception</a></strong> DC 25; <strong><a href = "../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a></strong> DC 15</p>
+<p class = "stat-block-breaker">Effects</p>
+<p class = "stat-block-1"><strong>Trigger</strong> location; <strong>Reset</strong> none</p>
+<p class = "stat-block-1"><strong>Effect</strong> cone of fire (2d6 fire damage, Reflex DC 20 half); multiple targets (all targets in a 15-ft. cone)</p>
+
+<p id = "ensnaring-dirt-trap" class = "stat-block-title">Ensnaring Dirt Trap <span class = "stat-block-cr">CR 1</span></p>
+<p class = "stat-block-1"><strong>Type</strong> mechanical; <strong><a href = "../coreRulebook/skills/perception.html#perception">Perception</a></strong> DC 20; <strong><a href = "../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a></strong> DC 20</p>
+<p class = "stat-block-breaker">Effects</p>
+<p class = "stat-block-1"><strong>Trigger</strong> location; <strong>Reset</strong> manual</p>
+<p class = "stat-block-1"><strong>Effect</strong> ensnaring dirt (target is entangled until the target succeeds at a DC 25 Strength or <a href = "../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> check); Reflex DC 25 negates</p>
+
+<p id = "acid-drop-trap" class = "stat-block-title">Acid drop Trap <span class = "stat-block-cr">CR 2</span></p>
+<p class = "stat-block-1"><strong>Type</strong> mechanical; <strong><a href = "../coreRulebook/skills/perception.html#perception">Perception</a></strong> DC 25; <strong><a href = "../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a></strong> DC 20</p>
+<p class = "stat-block-breaker">Effects</p>
+<p class = "stat-block-1"><strong>Trigger</strong> location; <strong>Reset</strong> none</p>
+<p class = "stat-block-1"><strong>Effect</strong> falling bag of acid (3d6 acid damage, Reflex DC 20 half)</p>
+
+<p id = "dragon-dung-pit-trap" class = "stat-block-title">Dragon Dung Pit Trap <span class = "stat-block-cr">CR 2</span></p>
+<p class = "stat-block-1"><strong>Type</strong> mechanical; <strong><a href = "../coreRulebook/skills/perception.html#perception">Perception</a></strong> DC 20; <strong><a href = "../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a></strong> DC 20</p>
+<p class = "stat-block-breaker">Effects</p>
+<p class = "stat-block-1"><strong>Trigger</strong> location; <strong>Reset</strong> manual</p>
+<p class = "stat-block-1"><strong>Effect</strong> 20-ft.-deep pit (2d6 falling damage); dragon dung (Atk +10, creature stinks of dragon dung, &ndash;4 on all <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> checks for 24 hours, &ndash;8 on <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> checks if detecting creature has the scent ability); Reflex DC 20 negates; multiple targets (all targets in a 10-ft.-square area)</p>
+
+<p id = "falling-log-trap" class = "stat-block-title">Falling Log Trap <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-1"><strong>Type</strong> mechanical; <strong><a href = "../coreRulebook/skills/perception.html#perception">Perception</a></strong> DC 25; <strong><a href = "../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a></strong> DC 20</p>
+<p class = "stat-block-breaker">Effects</p>
+<p class = "stat-block-1"><strong>Trigger</strong> location; <strong>Reset</strong> repair</p>
+<p class = "stat-block-1"><strong>Effect</strong> Atk +10 melee (1d6+7); multiple targets (all targets within a 20-foot line)</p>
+
+<p id = "snake-spear-trap" class = "stat-block-title">Snake Spear Trap <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-1"><strong>Type</strong> mechanical; <strong><a href = "../coreRulebook/skills/perception.html#perception">Perception</a></strong> DC 20; <strong><a href = "../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a></strong> DC 20</p>
+<p class = "stat-block-breaker">Effects</p>
+<p class = "stat-block-1"><strong>Trigger</strong> location; <strong>Reset</strong> repair</p>
+<p class = "stat-block-1"><strong>Effect</strong> Atk +15 ranged (1d8+6 plus black adder venom)</p>
+
+<p id = "rotting-badger-under-a-falling-rock-trap" class = "stat-block-title">Rotting Badger Under a Falling Rock Trap <span class = "stat-block-cr">CR 4</span></p>
+<p class = "stat-block-1"><strong>Type</strong> mechanical; <strong><a href = "../coreRulebook/skills/perception.html#perception">Perception</a></strong> DC 25; <strong><a href = "../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a></strong> DC 25</p>
+<p class = "stat-block-breaker">Effects</p>
+<p class = "stat-block-1"><strong>Trigger</strong> location; <strong>Reset</strong> repair</p>
+<p class = "stat-block-1"><strong>Effect</strong> Atk +10 melee (1d6+6); rotting badger (nauseated for 1d3 rounds, Fort DC 20 negates); multiple targets (all targets within 10 feet must attempt to save against the rotting badger)</p>
+
+<h2 id = "kobold-feats">Kobold Feats</h2>
+<p>The following feats are unique to kobolds.</p>
+
+<h3 id = "draconic-magic">Draconic Magic</h3>
+<p>Your draconic aspect manifests as magical might.</p>
+<p class = "stat-block-1"><strong>Prerequisites</strong>: Draconic Aspect, kobold.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: You gain a group of spell-like abilities based on the color of your dragon aspect. Each spell-like ability can be used once per day, and the DC of any of these spell-like abilities is 10 + 1/2 your Hit Dice + Charisma modifier.</p>
+<p class = "stat-block-2"><em>Black</em> : <em><a href = "../ultimateMagic/spells/corrosiveTouch.html#_corrosive-touch">Corrosive touch</a></em> <span class = "char-style-override-69">, </span><sup>&dagger;</sup>, <em><a href = "../coreRulebook/spells/darkness.html#darkness">darkness</a></em> .</p>
+<p class = "stat-block-2"><em>Blue</em> : <em><a href = "../coreRulebook/spells/minorImage.html#minor-image">Minor image</a></em>, <em><a href = "../coreRulebook/spells/shockingGrasp.html#shocking-grasp">shocking grasp</a></em> <sup>&dagger;</sup>.</p>
+<p class = "stat-block-2"><em>Green</em> : <em><a href = "../coreRulebook/spells/entangle.html#entangle">Entangle</a></em> <sup>&dagger;</sup>, <em><a href = "../coreRulebook/spells/gustOfWind.html#gust-of-wind">gust of wind</a></em> .</p>
+<p class = "stat-block-2"><em>Red</em> : <em><a href = "../coreRulebook/spells/burningHands.html#burning-hands">Burning hands</a></em> <sup>&dagger;</sup>, <em><a href = "../coreRulebook/spells/pyrotechnics.html#pyrotechnics">pyrotechnics</a></em> .</p>
+<p class = "stat-block-2"><em>White</em> : <em><a href = "../coreRulebook/spells/burningHands.html#burning-hands">Burning hands</a></em> <sup>&dagger;</sup> (deals cold damage instead of fire),<em> <a href = "../coreRulebook/spells/fogCloud.html">fog cloud</a></em> .</p>
+<p class = "stat-block-1"><strong>Special</strong>: You can use this feat instead of Draconic Breath or Draconic Glide to qualify for the Draconic Paragon feat. If you have this feat and Draconic Paragon, you can use the spell-like ability marked with a dagger (&dagger;) twice per day.</p>
+
+<h3 id = "slurk-rider-(combat)">Slurk Rider (Combat)</h3>
+<p>You are skilled at riding slurks into battle.</p>
+<p class = "stat-block-1"><strong>Prerequisite</strong>: Kobold.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: You are able to control, guide, and communicate with slurks (<em>Pathfinder RPG Bestiary 2</em> 251), as if they understood Draconic. You can also spend a standard action to manipulate the nodules on the slurk's back to activate its slime ability. Both you and the slurk can activate this ability during the same round.</p>
+
+<h1 id = "example-kobolds">Example Kobolds</h1>
+
+<h2>Kobold Fighters</h2>
+<p>Kobold warriors are more prudent than brave. They usually opt to attack from hiding with ranged weapons, and move into melee only when absolutely necessary&mdash;such as when the chief doesn't give them any other option.</p>
+
+<p id = "kobold-sniper" class = "stat-block-title">Kobold Sniper <span class = "stat-block-cr">CR 1/2</span></p>
+<p class = "stat-block-xp">XP 200</p>
+<p class = "stat-block-1">Kobold fighter 1</p>
+<p class = "stat-block-1">LE Small humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +4</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 18, touch 14, flat-footed 15 (+3 armor, +3 Dex, +1 natural, +1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 12 (1d10+2)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +3, <strong>Ref</strong> +3, <strong>Will</strong> +1</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light sensitivity</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> short sword +1 (1d4&ndash;1/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk light crossbow +6 (1d6/19&ndash;20)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 9, <strong>Dex</strong> 17, <strong>Con</strong> 12, <strong>Int</strong> 10, <strong>Wis</strong> 12, <strong>Cha</strong> 8</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +1; <strong>CMB</strong> &ndash;1; <strong>CMD</strong> 12</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#point-blank-shot">Point-Blank Shot</a>, <a href = "../coreRulebook/feats.html#precise-shot">Precise Shot</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +3, <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (trapmaking) +2, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +4, <a href = "../coreRulebook/skills/profession.html#profession">Profession</a> (miner) +3</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Draconic</p>
+<p class = "stat-block-1"><strong>SQ</strong> crafty</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> alchemist's fire; <strong>Other Gear </strong>studded leather, mwk light crossbow, short sword</p>
+
+<p id = "kobold-blade" class = "stat-block-title">Kobold Blade <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1">Kobold fighter 4</p>
+<p class = "stat-block-1">LE Small humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +4; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +2</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 22, touch 15, flat-footed 18 (+6 armor, +4 Dex, +1 natural, +1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 30 (4d10+4)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +4, <strong>Ref</strong> +5, <strong>Will</strong> +1 (+1 vs. fear)</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> bravery +1</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light sensitivity</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk rapier +11 (1d4+2/18&ndash;20)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk light crossbow +10 (1d6/19&ndash;20)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 10, <strong>Dex</strong> 18, <strong>Con</strong> 10, <strong>Int</strong> 13, <strong>Wis</strong> 10, <strong>Cha</strong> 8</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +4; <strong>CMB</strong> +3 (+5 dirty trick); <strong>CMD</strong> 17 (19 vs. dirty trick)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#combat-expertise">Combat Expertise</a>, <a href = "../advancedPlayersGuide/advancedFeats.html#improved-dirty-trick">Improved Dirty Trick</a>, <a href = "../coreRulebook/feats.html#weapon-finesse">Weapon Finesse</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (rapier), <a href = "../coreRulebook/feats.html#weapon-specialization">Weapon Specialization</a> (rapier)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (trapmaking) +3, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +6, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (dungeoneering) +8, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +2, <a href = "../coreRulebook/skills/profession.html#profession">Profession</a> (miner) +2, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +13</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Draconic</p>
+<p class = "stat-block-1"><strong>SQ</strong> armor training 1, crafty</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>elixir of <a href = "../advancedPlayersGuide/spells/fireBreath.html#_fire-breath">fire breath</a></em>, <em>potion of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em> ; <strong>Other Gear</strong> mwk breastplate, mwk light crossbow with 10 bolts, mwk rapier</p>
+
+
+<h2>Kobold Sorcerers</h2>
+<p>Kobolds see sorcery as proof of their draconic heritage.</p>
+
+<p id = "kobold-scalecaster" class = "stat-block-title">Kobold Scalecaster <span class = "stat-block-cr">CR 1/2</span></p>
+<p class = "stat-block-xp">XP 200</p>
+<p class = "stat-block-1">Kobold sorcerer 1</p>
+<p class = "stat-block-1">LN Small humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +7; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +3</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 15, touch 14, flat-footed 12 (+3 Dex, +1 natural, +1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 7 (1d6+1)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +0, <strong>Ref</strong> +3, <strong>Will</strong> +3</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light sensitivity</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 60 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> 2 claws &ndash;2 (1d3&ndash;3)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> light crossbow +4 (1d6/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> claws (1d3&ndash;3, 5 rounds/day)</p>
+<p class = "stat-block-1"><strong>Sorcerer Spells Known</strong> (CL 1st; concentration +3)</p>
+<p class = "stat-block-2">1st (4/day)&mdash;<em><a href = "../coreRulebook/spells/burningHands.html#burning-hands">burning hands</a></em> (DC 13), <em><a href = "../coreRulebook/spells/charmPerson.html#charm-person">charm person</a> </em> (DC 13)</p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/dancingLights.html#dancing-lights">dancing lights</a></em>, <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/flare.html#flare">flare</a></em> (DC 12), <em><a href = "../coreRulebook/spells/rayOfFrost.html#ray-of-frost">ray of frost</a></em> </p>
+<p class = "stat-block-1"><strong>Bloodline</strong> draconic (gold)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 4, <strong>Dex</strong> 16, <strong>Con</strong> 10, <strong>Int</strong> 10, <strong>Wis</strong> 13, <strong>Cha</strong> 15</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +0; <strong>CMB</strong> &ndash;4; <strong>CMD</strong> 9</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#eschew-materials">Eschew Materials</a>, <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (trapmaking) +2, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +3, <a href = "../coreRulebook/skills/profession.html#profession">Profession</a> (miner) +3, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +11, <a href = "../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> +6</p>
+<p class = "stat-block-1"><strong>Languages</strong> Draconic</p>
+<p class = "stat-block-1"><strong>SQ </strong>bloodline arcana (fire spells deal +1 damage per die), crafty</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>scroll of <a href = "../coreRulebook/spells/mageArmor.html#mage-armor">mage armor</a></em>, <em>scroll of <a href = "../advancedPlayersGuide/spells/vanish.html#_vanish">vanish</a></em>, caltrops, silversheen; <strong>Other Gear</strong> light crossbow, 54 gp</p>
+
+<p id = "kobold-guilecaster" class = "stat-block-title">Kobold Guilecaster <span class = "stat-block-cr">CR 5</span></p>
+<p class = "stat-block-xp">XP 1,600</p>
+<p class = "stat-block-1">Kobold sorcerer 6</p>
+<p class = "stat-block-1">LE Small humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +2; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +1</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 18, touch 13, flat-footed 16 (+4 armor, +2 Dex, +1 natural, +1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 35 (6d6+12)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +3, <strong>Ref</strong> +4, <strong>Will</strong> +4</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light sensitivity</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> quarterstaff +2 (1d4&ndash;2)</p>
+<p class = "stat-block-1"><strong>Bloodline Spell-Like Abilities </strong>(CL 6th; concentration +9)</p>
+<p class = "stat-block-2">6/day&mdash;trap rune (DC 16)</p>
+<p class = "stat-block-1"><strong>Sorcerer Spells Known</strong> (CL 6th; concentration +9)</p>
+<p class = "stat-block-2">3rd (4/day)&mdash;<em><a href = "../coreRulebook/spells/lightningBolt.html#lightning-bolt">lightning bolt</a></em> (DC 16)</p>
+<p class = "stat-block-2">2nd (6/day)&mdash;<em><a href = "../advancedPlayersGuide/spells/createPit.html#_create-pit-">create pit</a></em>, <em><a href = "../coreRulebook/spells/mirrorImage.html#mirror-image">mirror image</a></em>, <em><a href = "../coreRulebook/spells/scorchingRay.html#scorching-ray">scorching ray</a></em> </p>
+<p class = "stat-block-2">1st (7/day)&mdash;<em><a href = "../coreRulebook/spells/alarm.html#alarm">alarm</a></em>, <em><a href = "../coreRulebook/spells/charmPerson.html#charm-person">charm person</a></em> (DC 14), <em><a href = "../coreRulebook/spells/mageArmor.html#mage-armor">mage armor</a></em>, <em><a href = "../coreRulebook/spells/magicMissile.html#magic-missile">magic missile</a></em>, <em><a href = "../coreRulebook/spells/rayOfEnfeeblement.html#ray-of-enfeeblement">ray of enfeeblement</a></em> (DC 14)</p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/arcaneMark.html#arcane-mark">arcane mark</a></em>, <em><a href = "../coreRulebook/spells/daze.html#daze">daze</a></em>, <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/openClose.html#open-close">open/close</a></em>, <em><a href = "../coreRulebook/spells/prestidigitation.html#prestidigitation">prestidigitation</a></em> (DC 13), <em><a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a></em>, <em><a href = "../advancedPlayersGuide/spells/spark.html#_spark-">spark</a></em></p>
+<p class = "stat-block-1"><strong>Bloodline</strong> kobold</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 6, <strong>Dex</strong> 14, <strong>Con</strong> 12, <strong>Int</strong> 13, <strong>Wis</strong> 8, <strong>Cha</strong> 16</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +3; <strong>CMB</strong> +0; <strong>CMD</strong> 12</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#combat-expertise">Combat Expertise</a>, <a href = "../coreRulebook/feats.html#eschew-materials">Eschew Materials</a>, <a href = "../coreRulebook/feats.html#improved-feint">Improved Feint</a>, <a href = "../coreRulebook/feats.html#skill-focus">Skill Focus</a> (<a href = "../coreRulebook/skills/craft.html#craft">Craft</a> [trapmaking])</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a> +15, <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (trapmaking) +15, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +1, <a href = "../coreRulebook/skills/profession.html#profession">Profession</a> (miner) +1, <a href = "../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> +15; <strong>Racial Modifiers</strong> +2 <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (trapmaking), +2 <a href = "../coreRulebook/skills/perception.html#perception">Perception</a>, +2 <a href = "../coreRulebook/skills/profession.html#profession">Profession</a> (miner)</p>
+<p class = "stat-block-1"><strong>Languages</strong> Draconic, Dwarven</p>
+<p class = "stat-block-1"><strong>SQ</strong> bloodline arcana (+2 to spell DC if target is denied Dex bonus to AC), crafty, trap sense +2</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> antitoxin, thunderstone; <strong>Other Gear</strong> quarterstaff, <em>circlet of persuasion</em>, masterwork artisan's tools, 15 gp</p>
+
+
+<h2>Kobold Riders</h2>
+<p>The boldest kobolds enjoy riding bizarre beasts into battle.</p>
+
+<p id = "kobold-monster-wrangler" class = "stat-block-title">Kobold Monster Wrangler <span class = "stat-block-cr">CR 1</span></p>
+<p class = "stat-block-xp">XP 400</p>
+<p class = "stat-block-1">Kobold cavalier 2</p>
+<p class = "stat-block-1">LE Small humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +2</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 22, touch 14, flat-footed 19 (+5 armor, +3 Dex, +1 natural, +2 shield, +1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 17 (2d10+2)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +3, <strong>Ref</strong> +3, <strong>Will</strong> +0</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light sensitivity</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 20 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk lance +4 (1d6/&times;3)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> challenge (+2, +1, 1/day)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 11, <strong>Dex</strong> 16, <strong>Con</strong> 10, <strong>Int</strong> 8, <strong>Wis</strong> 10, <strong>Cha</strong> 13</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +2; <strong>CMB</strong> +1; <strong>CMD</strong> 14</p>
+<p class = "stat-block-1"><strong>Feats</strong> Paired Opportunists, Slurk Rider</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (trapmaking) +1, <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> +9, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +6, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +2, <a href = "../coreRulebook/skills/profession.html#profession">Profession</a> (miner) +2, <a href = "../coreRulebook/skills/ride.html#ride">Ride</a> +4</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Draconic</p>
+<p class = "stat-block-1"><strong>SQ</strong> crafty, mount (cave salamander or slurk), order of the lion (lion's call), tactician (1/day, 4 rounds, standard action)</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>liquid ice</em>, <em>potion of <a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></em> ; <strong>Other Gear</strong> mwk scale mail, mwk heavy steel shield, mwk lance, 10 gp</p>
+
+<p id = "kobold-battle-master" class = "stat-block-title">Kobold Battle Master <span class = "stat-block-cr">CR 6</span></p>
+<p class = "stat-block-xp">XP 2,400</p>
+<p class = "stat-block-1">Kobold cavalier 7</p>
+<p class = "stat-block-1">LE Small humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +5; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +13</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 23, touch 12, flat-footed 22 (+8 armor, +1 Dex, +1 natural, +2 shield, +1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 57 (7d10+14)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +7, <strong>Ref</strong> +4, <strong>Will</strong> +4; +2 bonus vs. paralysis and sleep</p>
+<p class = "stat-block-1"><strong>Resist</strong> electricity 5</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light sensitivity</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 20 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 lance</em> +11/+6 (1d6+2/&times;3), mwk short sword +10/+5 (1d4+1/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> banner +2/+1, breath weapon (30-ft. line, 2d6 electricity damage, Reflex DC 14 half, usable every 1d4 rounds), cavalier's charge, challenge (+7, +2, 3/day)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 12, <strong>Dex</strong> 12, <strong>Con</strong> 12, <strong>Int</strong> 12, <strong>Wis</strong> 13, <strong>Cha</strong> 8</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +7; <strong>CMB</strong> +7; <strong>CMD</strong> 18</p>
+<p class = "stat-block-1"><strong>Feats</strong> Draconic Aspect (blue), Draconic Breath, <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#mounted-combat">Mounted Combat</a>, Shield Wall, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (lance)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (trapmaking) +3, <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> +9, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +13, <a href = "../coreRulebook/skills/profession.html#profession">Profession</a> (miner) +3, <a href = "../coreRulebook/skills/ride.html#ride">Ride</a> +5, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +9, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +5</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Draconic</p>
+<p class = "stat-block-1"><strong>SQ</strong> crafty, expert trainer +3, mount (cave salamander), order of the dragon (aid allies), tactician (2/day, 6 rounds, standard action)</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>dust of dryness</em> ; <strong>Other Gear</strong> <em>+1 banded mail</em>, mwk heavy steel shield, <em>+1 lance</em>, mwk short sword, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +1</em> </p>
+
+
+<h2>Kobold Tricksters</h2>
+<p>Kobold tricksters are experts at crafting deadly traps&mdash;both magical and mundane&mdash;and at striking from concealment while their enemies are distracted by the traps' effects.</p>
+
+<p id = "kobold-bomber" class = "stat-block-title">Kobold Bomber <span class = "stat-block-cr">CR 1</span></p>
+<p class = "stat-block-xp">XP 400</p>
+<p class = "stat-block-1">Kobold alchemist (alchemical trapper) 2</p>
+<p class = "stat-block-1">LE Small humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +3</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 19, touch 14, flat-footed 16 (+4 armor, +3 Dex, +1 natural, +1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 12 (2d8)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +2, <strong>Ref</strong> +6, <strong>Will</strong> +1; +2 vs. poison</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light sensitivity</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk spear +2 (1d6&ndash;1/&times;3)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> sling +5 (1d3&ndash;1)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> bomb 6/day (1d6+2 fire, DC 13), bomb trap*</p>
+<p class = "stat-block-1"><strong>Alchemist Extracts Prepared</strong> (CL 2nd)</p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../ultimateCombat/spells/adjuringStep.html#_adjuring-step-">adjuring step</a></em>, <em><a href = "../coreRulebook/spells/endureElements.html#endure-elements">endure elements</a></em>, <em><a href = "../coreRulebook/spells/shield.html#shield">shield</a></em> </p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The kobold uses her mutagen and extracts to strengthen her defense, and throws bombs at her enemies.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 8, <strong>Dex</strong> 16, <strong>Con</strong> 8, <strong>Int</strong> 15, <strong>Wis</strong> 13, <strong>Cha</strong> 8</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +1; <strong>CMB</strong> &ndash;1; <strong>CMD</strong> 12</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#brew-potion">Brew Potion</a>, <a href = "../advancedPlayersGuide/advancedFeats.html#extra-bombs">Extra Bombs</a>, <a href = "../coreRulebook/feats.html#throw-anything">Throw Anything</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +3, <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (trapmaking) +9, <a href = "../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> +6, <a href = "../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> +3, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (engineering) +4, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +3, <a href = "../coreRulebook/skills/profession.html#profession">Profession</a> (miner) +3, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +10; <strong>Racial Modifiers</strong> +2 <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (trapmaking), +2 <a href = "../coreRulebook/skills/perception.html#perception">Perception</a>, +2 <a href = "../coreRulebook/skills/profession.html#profession">Profession</a> (miner)</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Draconic, Gnome, Goblin</p>
+<p class = "stat-block-1"><strong>SQ</strong> alchemy (alchemy crafting +2, identify potions), crafty, mutagen (+4/&ndash;2, +2 natural, 20 minutes), poison use</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></em>, acid, alchemist's fire (3); <strong>Other Gear</strong> chain shirt, mwk spear, sling, 8 gp</p>
+
+<p id = "kobold-master-trapper" class = "stat-block-title">Kobold Master Trapper <span class = "stat-block-cr">CR 4</span></p>
+<p class = "stat-block-xp">XP 1,200</p>
+<p class = "stat-block-1">Kobold rogue 5</p>
+<p class = "stat-block-1">LE Small humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +8; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +11</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 21, touch 15, flat-footed 17 (+5 armor, +4 Dex, +1 natural, +1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 31 (5d8+5)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +2, <strong>Ref</strong> +10, <strong>Will</strong> +2</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> evasion, trap sense +1, uncanny dodge</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light sensitivity</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> dagger +3 (1d3&ndash;1/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk shortbow +9 (1d4/&times;3)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> sneak attack +3d6</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>During Combat</strong> If the master trapper's enemies aren't near her traps, she fires arrows or uses her <em>necklace of fireballs</em> .</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 8, <strong>Dex</strong> 18, <strong>Con</strong> 12, <strong>Int</strong> 10, <strong>Wis</strong> 13, <strong>Cha</strong> 8</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +3; <strong>CMB</strong> +1; <strong>CMD</strong> 15</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#lightning-reflexes">Lightning Reflexes</a>, <a href = "../coreRulebook/feats.html#skill-focus">Skill Focus</a> (<a href = "../coreRulebook/skills/craft.html#craft">Craft</a> [trapmaking])</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +11, <a href = "../coreRulebook/skills/appraise.html#appraise">Appraise</a> +8, <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +6, <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (trapmaking) +13, <a href = "../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> +13, <a href = "../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> +11, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +11, <a href = "../coreRulebook/skills/profession.html#profession">Profession</a> (miner) +3, <a href = "../coreRulebook/skills/sleightOfHand.html#sleight-of-hand">Sleight of Hand</a> +11, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +15; <strong>Racial Modifiers</strong> +2 <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (trapmaking), +2 <a href = "../coreRulebook/skills/perception.html#perception">Perception</a>, +2 <a href = "../coreRulebook/skills/profession.html#profession">Profession</a> (miner)</p>
+<p class = "stat-block-1"><strong>Languages</strong> Draconic</p>
+<p class = "stat-block-1"><strong>SQ</strong> crafty, rogue talents (trap spotter, cunning trigger), trapfinding +2</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>necklace of fireballs I</em> ; <strong>Other Gear</strong> <em>+1 chain shirt</em>, dagger, mwk shortbow with 20 arrows, mwk artisan's tools, mwk thieves' tools, 62 gp</p>
+
+
+<h2>Kobold Devilspeaker</h2>
+<p>Kobold devilspeakers are highly respected; some advise tribal chieftains, while others lead tribes outright.</p>
+
+<p id = "kobold-devilspeaker" class = "stat-block-title">Kobold Devilspeaker <span class = "stat-block-cr">CR 7</span></p>
+<p class = "stat-block-xp">XP 3,200</p>
+<p class = "stat-block-1"></p>
+<p class = "stat-block-1">LE Small humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +5</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 21, touch 14, flat-footed 18 (+4 armor, +3 Dex, +1 natural, +2 shield, +1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 47 (8d8+8)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +6, <strong>Ref</strong> +5, <strong>Will</strong> +9</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light sensitivity</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk dagger +5/+0 (1d3&ndash;3/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> dagger +10 (1d3&ndash;3/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> channel negative energy 5/day (DC 16, 4d6), staff of order (4 rounds, 1/day)</p>
+<p class = "stat-block-1"><strong>Domain Spell-Like Abilities</strong> (CL 8th; concentration +11)</p>
+<p class = "stat-block-2">6/day&mdash;<em>copycat</em> (8 rounds), <em>touch of law</em> </p>
+<p class = "stat-block-2">At will&mdash;<em>master's illusion</em> (8 rounds/day)</p>
+<p class = "stat-block-1"><strong>Cleric Spells Prepared</strong> (CL 8th; concentration +11)</p>
+<p class = "stat-block-2">4th&mdash;<em><a href = "../ultimateMagic/spells/auraOfDoom.html#_aura-of-doom">aura of doom</a></em> (DC 17), <em><a href = "../coreRulebook/spells/confusion.html#confusion">confusion</a></em> <sup>D</sup> (DC 17), <em><a href = "../coreRulebook/spells/cureCriticalWounds.html#cure-critical-wounds">cure critical wounds</a></em> </p>
+<p class = "stat-block-2">3rd&mdash;<em><a href = "../coreRulebook/spells/animateDead.html#animate-dead">animate dead</a></em>, <em><a href = "../coreRulebook/spells/blindnessDeafness.html#blindness-deafness">blindness/deafness</a></em> (DC 16), <em><a href = "../coreRulebook/spells/deeperDarkness.html#deeper-darkness">deeper darkness</a></em>, <em><a href = "../coreRulebook/spells/magicCircleAgainstChaos.html#magic-circle-against-chaos">magic circle against chaos</a></em> <sup>D</sup>, <em><a href = "../coreRulebook/spells/summonMonster.html#summon-monster-iii">summon monster III</a></em> </p>
+<p class = "stat-block-2">2nd&mdash;<em><a href = "../coreRulebook/spells/deathKnell.html#death-knell">death knell</a></em> (DC 15), <em><a href = "../coreRulebook/spells/holdPerson.html#hold-person">hold person</a></em> (DC 15), <em><a href = "../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></em> <sup>D</sup>, <em>lesser animate dea d</em>, <em><a href = "../ultimateMagic/spells/protectivePenumbra.html#_protective-penumbra">protective penumbra</a></em> </p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/magicItems/weapons.html#_weapons-bane">bane</a></em> (DC 14), <em><a href = "../coreRulebook/spells/bless.html#bless">bless</a></em>, <em>disguise sel f</em> <sup>D</sup>, <em><a href = "../ultimateCombat/spells/momentOfGreatness.html#_moment-of-greatness">moment of greatness</a></em>, <em><a href = "../coreRulebook/spells/obscuringMist.html#obscuring-mist">obscuring mist</a></em>, <em><a href = "../coreRulebook/spells/sanctuary.html#sanctuary">sanctuary</a></em> (DC 14)</p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/bleed.html#bleed">bleed</a></em> (DC 13), <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/guidance.html#guidance">guidance</a></em>, <em><a href = "../coreRulebook/spells/mending.html#mending">mending</a></em> </p>
+<p class = "stat-block-1"><strong>D</strong> domain spell; <strong>Domains</strong> Law, Trickery</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The devilspeaker casts <em><a href = "../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></em> on herself.</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The devilspeaker stays invisible as long as possible, casting spells such as <em><a href = "../coreRulebook/spells/animateDead.html#animate-dead">animate dead</a></em>, <em><a href = "../ultimateMagic/spells/auraOfDoom.html#_aura-of-doom">aura of doom</a></em>, <em><a href = "../coreRulebook/spells/bless.html#bless">bless</a></em>, <em><a href = "../coreRulebook/spells/cureCriticalWounds.html#cure-critical-wounds">cure critical wounds</a></em>, <em><a href = "../coreRulebook/spells/deeperDarkness.html#deeper-darkness">deeper darkness</a></em>, <em><a href = "../ultimateMagic/spells/animateDead.html#_animate-dead,-lesser">lesser animate dead</a></em>, and <em><a href = "../coreRulebook/spells/summonMonster.html#summon-monster-iii">summon monster III</a></em> as well as using her <em>wand of <a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></em> or channeling negative energy to heal undead.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 4, <strong>Dex</strong> 16, <strong>Con</strong> 10, <strong>Int</strong> 10, <strong>Wis</strong> 16, <strong>Cha</strong> 14</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +6; <strong>CMB</strong> +2; <strong>CMD</strong> 15</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../ultimateMagic/ultimateMagicFeats.html#channeled-shield-wall">Channeled Shield Wall</a>, <a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a>, <a href = "../coreRulebook/feats.html#selective-channeling">Selective Channeling</a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (trapmaking) +2, <a href = "../coreRulebook/skills/heal.html#heal">Heal</a> +14, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +5, <a href = "../coreRulebook/skills/profession.html#profession">Profession</a> (miner) +5, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +11, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +18; <strong>Racial Modifiers</strong> +2 <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (trapmaking), +2 <a href = "../coreRulebook/skills/perception.html#perception">Perception</a>, +2 <a href = "../coreRulebook/skills/profession.html#profession">Profession</a> (miner)</p>
+<p class = "stat-block-1"><strong>Languages</strong> Draconic</p>
+<p class = "stat-block-1"><strong>SQ</strong> crafty</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>feather token </em> (whip), <em>pearl of power</em> (2nd level), <em>wand of <a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></em> ; <strong>Other Gear</strong> <em>+1 studded leather</em>, <em>+1 <a href = "../coreRulebook/spells/light.html#light">light</a> wooden <a href = "../coreRulebook/spells/shield.html#shield">shield</a></em>, dagger, mwk dagger, various onyx gems worth 200 gp</p>
+
+<p>Kobold priests are charged with ensuring both the spiritual and the physical welfare of a kobold tribe. These devilspeakers believe a tribe should work like a well-oiled machine, and while kobolds' natural cowardice sometimes gets in the way, devilspeakers keep their warriors fighting bravely&mdash;whether the troops like it or not. Devilspeakers keep spells like <em><a href = "../coreRulebook/spells/animateDead.html#animate-dead">animate dead</a></em> handy, turning fallen kobold warriors into zombies. These kobold zombies effectively soften up invading adventurers, and dig tirelessly in the mines.</p>
+
+
+<h2>Kobold Leaders</h2>
+<p>Kobold leaders are the undisputed masters of their tribes.</p>
+
+<p id = "kobold-yapper" class = "stat-block-title">Kobold Yapper <span class = "stat-block-cr">CR 7</span></p>
+<p class = "stat-block-xp">XP 3,200</p>
+<p class = "stat-block-1">Kobold bard (dragon yapper) 8</p>
+<p class = "stat-block-1">LE Small humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +4; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +2</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 22, touch 16, flat-footed 17 (+5 armor, +4 Dex, +1 dodge, +1 natural, +1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 31 (8d8&ndash;8)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +0, <strong>Ref</strong> +10, <strong>Will</strong> +6; +4 vs. bardic performance, language-dependent, and sonic</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light sensitivity</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 short sword</em> +7/+2 (1d4/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> <em>+1 shortbow</em> +13/+8 (1d4+1/&times;3)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> bardic performance 20 rounds/day (move action; countersong, frightful song [DC 16], distraction, inspire competence +3, inspire courage +2, suggestion [DC 16], yapping song [DC 16])</p>
+<p class = "stat-block-1"><strong>Bard Spells Known</strong> (CL 8th; concentration +10)</p>
+<p class = "stat-block-2">3rd (2/day)&mdash;<em><a href = "../coreRulebook/spells/confusion.html#confusion">confusion</a> </em> (DC 15), <em><a href = "../coreRulebook/spells/deepSlumber.html#deep-slumber">deep slumber</a></em> (DC 15), <em><a href = "../coreRulebook/spells/haste.html#haste">haste</a></em> </p>
+<p class = "stat-block-2">2nd (5/day)&mdash;<em><a href = "../coreRulebook/spells/blur.html#blur">blur</a></em>, <em><a href = "../coreRulebook/spells/heroism.html#heroism">heroism</a></em>, <em><a href = "../coreRulebook/spells/holdPerson.html#hold-person">hold person</a></em> (DC 14), <em><a href = "../coreRulebook/spells/mirrorImage.html#mirror-image">mirror image</a></em> </p>
+<p class = "stat-block-2">1st (5/day)&mdash;<em><a href = "../coreRulebook/spells/alarm.html#alarm">alarm</a></em>, <em><a href = "../coreRulebook/spells/charmPerson.html#charm-person">charm person</a></em> (DC 13), <em><a href = "../coreRulebook/spells/grease.html#grease">grease</a></em> (DC 13), <em><a href = "../coreRulebook/spells/silentImage.html#silent-image">silent image</a></em> (DC 13), <em><a href = "../coreRulebook/spells/ventriloquism.html#ventriloquism">ventriloquism</a></em> (DC 13)</p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/dancingLights.html#dancing-lights">dancing lights</a></em>, <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/ghostSound.html#ghost-sound">ghost sound</a></em> (DC 12), <em><a href = "../coreRulebook/spells/mageHand.html#mage-hand">mage hand</a></em>, <em><a href = "../coreRulebook/spells/prestidigitation.html#prestidigitation">prestidigitation</a></em> (DC 12), <em><a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a></em> </p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 8, <strong>Dex</strong> 18, <strong>Con</strong> 6, <strong>Int</strong> 13, <strong>Wis</strong> 10, <strong>Cha</strong> 15</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +6; <strong>CMB</strong> +4; <strong>CMD</strong> 19</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#dodge">Dodge</a>, <a href = "../coreRulebook/feats.html#point-blank-shot">Point-Blank Shot</a>, <a href = "../coreRulebook/feats.html#precise-shot">Precise Shot</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (shortbow)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +14, <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a> +13, <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (trapmaking) +3, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +2, <a href = "../coreRulebook/skills/perform.html#perform">Perform</a> (oratory) +13, <a href = "../coreRulebook/skills/perform.html#perform">Perform</a> (sing) +13, <a href = "../coreRulebook/skills/profession.html#profession">Profession</a> (miner) +2, <a href = "../coreRulebook/skills/sleightOfHand.html#sleight-of-hand">Sleight of Hand</a> +14, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +12, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +18</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Draconic, Sylvan</p>
+<p class = "stat-block-1"><strong>SQ</strong> bardic knowledge +4, crafty, lore master 1/day, versatile performance (sing, oratory)</p>
+<p class = "stat-block-1"><strong>Gear</strong> <em>+1 chain shirt</em>, <em>+1 short sword</em>, <em>+1 shortbow</em>, 410 gp</p>
+
+<p id = "kobold-chieftan" class = "stat-block-title">Kobold Chieftain <span class = "stat-block-cr">CR 8</span></p>
+<p class = "stat-block-xp">XP 4,800</p>
+<p class = "stat-block-1">Kobold fighter 5/rogue 3/assassin 1</p>
+<p class = "stat-block-1">LE Small humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +4; Senses darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +14</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 26, touch 15, flat-footed 22 (+7 armor, +4 Dex, +1 natural, +3 shield, +1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 72 (9 HD; 5d10+4d8+23)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +6, <strong>Ref</strong> +9, <strong>Will</strong> +2 (+1 vs. fear)</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> bravery +1, evasion, trap sense +1</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light sensitivity</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 rapier</em> +15/+10 (1d4+2/18&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> death attack (DC 12), sneak attack +3d6, weapon training (light blades +1)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 11, <strong>Dex</strong> 18, <strong>Con</strong> 12, <strong>Int</strong> 13, <strong>Wis</strong> 10, <strong>Cha</strong> 8</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +7; <strong>CMB</strong> +6; <strong>CMD</strong> 20</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#combat-expertise">Combat Expertise</a>, <a href = "../coreRulebook/feats.html#diehard">Diehard</a>, <a href = "../coreRulebook/feats.html#endurance">Endurance</a>, <a href = "../coreRulebook/feats.html#greater-feint">Greater Feint</a>, <a href = "../coreRulebook/feats.html#improved-feint">Improved Feint</a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a>, <a href = "../coreRulebook/feats.html#vital-strike">Vital Strike</a>, <a href = "../coreRulebook/feats.html#weapon-finesse">Weapon Finesse</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (rapier)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a> +11, <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (trapmaking) +3, <a href = "../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> +2, <a href = "../coreRulebook/skills/disguise.html#disguise">Disguise</a> +6, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +6, <a href = "../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a> +7, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +14, <a href = "../coreRulebook/skills/profession.html#profession">Profession</a> (miner) +2, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +6, <a href = "../coreRulebook/skills/sleightOfHand.html#sleight-of-hand">Sleight of Hand</a> +7, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +17, <a href = "../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> +5</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Dark Folk, Draconic, Dwarven, Undercommon</p>
+<p class = "stat-block-1"><strong>SQ</strong> armor training 1, crafty, poison use, rogue talents (finesse rogue), trapfinding +1</p>
+<p class = "stat-block-1"><strong>Gear</strong> <em>+1 breastplate</em>, <em>+1 heavy wooden <a href = "../coreRulebook/spells/shield.html#shield">shield</a></em>, <em>+1 rapier</em>, <em>belt of mighty constitution +2</em>, 1,223 gp</p>
+
+<h2 id = "kyrana">Kyrana</h2>
+<p><em>Long spines jut from the head and neck of this red-scaled iguana, and fire trickles from its open mouth. </em> </p>
+
+<p class = "stat-block-title">Kyrana <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1">NE Medium dragon (fire)</p>
+<p class = "stat-block-1"><strong>Init</strong> +2; <strong>Senses</strong> darkvision 60 ft., low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +9</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 14, touch 12, flat-footed 12 (+2 Dex, +2 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 30 (4d12+4); fiery regeneration</p>
+<p class = "stat-block-1"><strong>Fort</strong> +5, <strong>Ref</strong> +6, <strong>Will</strong> +3</p>
+<p class = "stat-block-1"><strong>Immune</strong> dragon traits, fire, paralysis, sleep</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> vulnerable to cold</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> bite +8 (1d4+3), 2 claws +7 (1d3+3)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> breath weapon (20-ft. line, 3d6 fire damage, Reflex DC 13 half, usable every 1d4 rounds)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 16, <strong>Dex</strong> 15, <strong>Con</strong> 12, <strong>Int</strong> 3, <strong>Wis</strong> 9, <strong>Cha</strong> 6</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +4; <strong>CMB</strong> +7; <strong>CMD</strong> 19 (23 vs. trip)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#skill-focus">Skill Focus</a> (<a href = "../coreRulebook/skills/perception.html#perception">Perception</a>), <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (bite)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +10, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +9</p>
+<p class = "stat-block-1"><strong>Languages</strong> Draconic</p>
+<p class = "stat-block-breaker">Ecology</p>
+<p class = "stat-block-1"><strong>Environment</strong> any underground or warm deserts</p>
+<p class = "stat-block-1"><strong>Organization</strong> solitary, pair</p>
+<p class = "stat-block-1"><strong>Treasure</strong> standard</p>
+<p class = "stat-block-breaker">Special Abilities</p>
+<p class = "stat-block-1"><strong>Fiery Regeneration (Su)</strong> A kyrana does not take damage from fire-based attacks. Additionally, when a kyrana would normally take fire damage, it heals that number of hit points, to a maximum of 5 hit points per round. A kyrana can't use its breath weapon to heal itself.</p>
+
+<p>Kyranas are large, iguana-like relatives of true dragons, with low intelligence and an affinity for fire. Though quite weak as dragons go, kyranas are still dangerous enough to command the fear and respect of kobolds, who often encounter the fire-breathing dragons while digging deep tunnels.</p>
+<p>Kyranas are primarily subterranean creatures, though they can occasionally be found on the surface in extremely hot or volcanic areas. Healed supernaturally by contact with fire, they often spend their time swimming in volcanic calderas or underground lava lakes, taking in geothermic energy and storing it in order to release it on their prey as lines of fiery breath.</p>
+<p>If kyranas stayed confined to their magma homes, they would present little problem to other races. Unfortunately, they're extremely territorial, even toward their own offspring. Kyranas are born in clutches of six to 12 eggs, and raised by both parents. As soon as the creatures reach adulthood at the age of 18 months, however, the parents turn on their offspring and drive them from the nest. The exiled kyranas then split up and wander the surrounding tunnels, traveling hundreds of miles in search of any source of heat. That means they often come waddling into inhabited areas, snorting and ready to burn anyone standing between them and the hearth. Adventurers may find their campfires claimed by a greedy kyrana, or end up being followed for their torchlight. Kobolds often use these barely intelligent dragons as heavy artillery, employing fire arrows and flaming traps to lure them into conflict with enemies.</p>
+<p>An adult kyrana is 5 feet long and weighs 300 pounds on average.</p>
+
+<h1 id = "kobold-encounters">Kobold Encounters</h1>
+<p>Kobolds rarely march out with large bands of warriors, preferring small bands with diverse talents and many tricks up their sleeves. The following are some examples of kobold encounters.</p>
+
+<h2>Miners (CR 2)</h2>
+<p>When a group of kobolds digs its way into a dwarven cavern or a gnomish village or a human dungeon, the group typically consists of miners and a sniper. Should the group encounter resistance, the miners hold off the attackers while the sniper gives what support it can before retreating to warn the tribe.</p>
+
+<p class = "stat-block-title">Kobold Sniper <span class = "stat-block-cr">CR 1/2</span></p>
+<p class = "stat-block-xp">XP 200</p>
+<p class = "stat-block-1"><strong>hp</strong> 12</p>
+
+<p class = "stat-block-title">Kobolds (4) <span class = "stat-block-cr">CR 1/4</span></p>
+<p class = "stat-block-xp">XP 100 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 5 each</p>
+
+<h2>Scouting Party (CR 5)</h2>
+<p>When kobolds discover a new tunnel (or dig into a castle dungeon), they send in a scouting party to test its stability. A pair of bombers set bombs, while a spellcaster or cultist compels the lower-ranked kobolds to set them off.</p>
+
+<p class = "stat-block-title">Kobold Bombers (2) <span class = "stat-block-cr">CR 1</span></p>
+<p class = "stat-block-xp">XP 400 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 12 each</p>
+
+<p class = "stat-block-title">Kobold Scalecaster <span class = "stat-block-cr">CR 1/2</span></p>
+<p class = "stat-block-xp">XP 200</p>
+<p class = "stat-block-1"><strong>hp</strong> 7</p>
+
+<p class = "stat-block-title">Kobolds (6) <span class = "stat-block-cr">CR 1/4</span></p>
+<p class = "stat-block-xp">XP 100 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 5 each</p>
+
+<h2>Kobold Defenders (CR 11)</h2>
+<p>Kobolds prefer to let their slaves and traps do the fighting. If enemies do break through into the heart of a tribe's lair, even the chief fights to defend the eggs and protect the next generation of kobolds, and other kobolds find themselves fighting more fiercely in his presence.</p>
+
+<p class = "stat-block-title">Kobold Battle Master <span class = "stat-block-cr">CR 6</span></p>
+<p class = "stat-block-xp">XP 2,400</p>
+<p class = "stat-block-1"><strong>hp</strong> 57</p>
+
+<p class = "stat-block-title">Kobold Blades (2) <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 30 each</p>
+
+<p class = "stat-block-title">Kobold Chieftain <span class = "stat-block-cr">CR 8</span></p>
+<p class = "stat-block-xp">XP 4,800</p>
+<p class = "stat-block-1"><strong>hp</strong> 72</p>
+
+<p class = "stat-block-title">Kobold Guilecaster <span class = "stat-block-cr">CR 5</span></p>
+<p class = "stat-block-xp">XP 1,600</p>
+<p class = "stat-block-1"><strong>hp</strong> 35</p>
+
+<p class = "stat-block-title">Kobold Devilspeaker <span class = "stat-block-cr">CR 7</span></p>
+<p class = "stat-block-xp">XP 3,200</p>
+<p class = "stat-block-1"><strong>hp</strong> 47</p>
+
+<p class = "stat-block-title">Kobold Snipers (4) <span class = "stat-block-cr">CR 1/2</span></p>
+<p class = "stat-block-xp">XP 200 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 12 each</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Kobolds",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

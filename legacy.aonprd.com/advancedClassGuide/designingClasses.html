@@ -1,0 +1,481 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Designing Classes</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "designingClasses.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "designingClasses.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "designingClasses.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "classes/index.html">Classes</a></li>
+						<li><a href = "classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "feats.html">Feats</a></li>
+						<li><a href = "spells/index.html">Spells</a></li>
+						<li><a href = "spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "designingClasses.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "designingClasses.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "designingClasses.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "designingClasses.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "designingClasses.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "designingClasses.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "designingClasses.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "designingClasses.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "designingClasses.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "designingClasses.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "designingClasses.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "designingClasses.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "designingClasses.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "designingClasses.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "designingClasses.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "designingClasses.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "designingClasses.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "designingClasses.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id = "designing-classes">Designing Classes</h1>
+<p>There are few rules systems as important to the game as those that govern the classes. In the Pathfinder Roleplaying Game, classes represent the legendary heroes of the game, as well as some of its most dastardly villains. Whereas a feat, spell, or magic item has a limited impact on the world as a whole, a class affects the entire game. Classes populate the world, becoming a part of the tapestry that informs the tone and narrative of the game. Because they're so important, designing new classes is one of the most delicate and difficult tasks for a Game Master. This guide is here to walk you through the process of designing a new class by providing rules and advice to help your creation fit seamlessly into the game.</p>
+<p>Much like monster design, the process of creating a class has a number of elements to consider. It requires that you compare your concepts with those of other classes and weigh different abilities against each other. A class feature that is overpowered for one class might be a perfect fit for another, depending on other abilities. Due to the number of variables, there's no concrete system for designing a class (like the one for races in the <i>Pathfinder RPG Advanced Race Guide</i>). Instead, this section gives you an idea of the process Paizo's designers go through when designing a class so you'll know what to consider in your own designs.</p>
+
+<h2>Class, Archetype, or Prestige Class?</h2>
+<p>Classes can take many forms in the game. While most characters pick a class and stick with it for their entire adventuring career, others dabble in archetypes or take a few levels in a prestige class. When designing a class for the game, it's vital to first ask: is this a new class, a class archetype, or a prestige class?</p>
+<p><b>Class</b>: Classes are vital to the game. Progressing from level 1 to 20, each class is designed to give a player a complete experience. Each one has a strong concept and rules niche separating it from the others in the game. In essence, this "flavor," in terms of its ideas and mechanics, allows it to interact with the game in a way that no other class does.</p>
+<p><b>Archetype</b>: An archetype is a close relative of, and builds itself off of, one of the existing classes, modifying a few of its rules and shifting its concept a bit to make for a new way to play. Archetypes are simpler to design than a full class, since much of the work is already done for you. An archetype uses most of the rules and background of its parent class (so you don't have to repeat the same information), while changing a few details and mechanics to make it play a bit differently. To design an archetype, you need to be familiar with the process of designing a class, but there are additional guidelines as well.</p>
+<p><b>Prestige Class</b>: Like a class, a prestige class has its own underlying rules and concept, but a character cannot begin play by taking levels in it. Instead, a character must qualify to take levels of the class (usually having to wait until at least 6th level to take their first). In addition, prestige classes usually only progresses for 5 or 10 levels, meaning that the character will have to take levels in another class later in her career in a campaign that continues to level 20. Prestige classes are very tightly focused on one particular concept or set of rules, making them perfect for the character that wants to specialize in one area, even if that means sacrificing versatility in another. To design a prestige class, you need to be familiar with the process of designing a class, but there are additional guidelines as well.</p>
+
+<h2>Class Design</h2>
+<p>The first step in designing a class is deciding what type of class you want it to be. This has two vital components&mdash;the concept and the rules space&mdash;both of which must be relatively novel to prevent the new class from copying one of the existing classes. </p>
+
+<h3>Concept</h3>
+<p>To start the design process, it is best to determine a concept and decide what the class is all about without directly referencing the rules of the game. Most of the classes in the game draw inspiration from somewhere within the whole of the fantasy genre. When considering the concept for a new class, it is vital to use such sources to inspire and inform it. Often this begins with something as simple as a name and a general idea of what the class is all about.</p>
+<p>For example, let's take a look at the barbarian. The name itself calls to mind a number of historical and fantasy connotations, such as being a fierce warrior and flying into a mindless rage. Compare this with the concept for a ranger. While both are characters that are skilled at martial combat, the ranger is more focused on surviving in the wilderness, tracking down foes, and scouting out unknown areas. When determining the concept for your class, you should look for ways to similarly define its distinctions. If the class you want to design is very close in concept to an existing class, with just a few variations, you might want to investigate creating it as an archetype instead (see <a href = "designingClasses.html#archetype-design">Designing an Archetype</a>).</p>
+
+<h3>Rules Space</h3>
+<p>In addition to having a strong concept, each class should also have a place in the rules that it can occupy. While the rules for a class can share some similarities with those of an existing class, each new class should have something that makes it unusual, giving it a means to interact with the game, and the game's world, in a new and interesting way. Look for a way that the class can perform its role without coming in contact with the rules of another class. If the rules are too close, you might end up with a class that invalidates (or is invalidated by) an existing class's mechanics in a way that makes it unappealing to play.</p>
+<p>For example, the rogue class focuses on moving unseen and striking foes in precisely the right spot to make it hurt. While there are certainly other classes that have rules that allow them to sneak or hit for a lot of damage, the way that the rogue goes about it&mdash;via sneak attack&mdash;is iconic to that class. You want to avoid creating mechanics to do the same things in slightly different ways. At this early stage, this is easy to prevent so long as you ensure that the overall goal of the rules for your concept differs enough from those of another class. If the class you're designing falls too close to the rules of an existing class, you might be better off creating an archetype instead.</p>
+
+<h3>Checking Your Concept</h3>
+<p>Once you've worked out a basic concept and rules niche for the class, you should compare it to other existing classes in the game. Before you start any of the other significantly more time-consuming portions of class design, it's best to ensure that the class works well with the other classes in the game. There are a number of questions you should ask yourself.</p>
+
+<ul><li>Does the class have a novel concept and rules niche?</li>
+<li>Does the class have any obvious synergies with existing classes?</li>
+<li>In a party made up of four players, does the inclusion of this class as one of the players cause the party to have any deficiencies or problems while playing the game?</li></ul>
+
+<p>No class is perfect when it comes to these sorts of questions, but they should get you thinking in ways that can guide the class design going forward so it becomes a seamless and useful part of the game.</p>
+
+<h3>Class Story</h3>
+<p>Once you've got the basics of the concept and the rules worked out, it's time to work on the story that informs your class. This often appears at the beginning of a class description to give a player an idea of what the class is all about without having to decipher charts and read through pages of mechanics. This text provides you with a narrative to inform your decisions about what the class can and cannot do. Think of it as a guide to the mechanical decisions you will be making later. If those later choices don't add up to fulfill the promise of the story, you should consider revising them (or the story if the mechanical components are just too good to pass up).</p>
+
+<h3>Basic Mechanics</h3>
+<p>When designing the mechanical components of a class, begin with the basics present in all of them. The choices you make for these components will help inform the choices you make when it comes to the components and features that are specific to the class.</p>
+<p>Many of the basic mechanics have varying levels of power and ability. No class should be the best at all or even most of these mechanics. In fact, the more a class is exceptionally skilled at the basic mechanics, the less room you have as a designer to include the other interesting class features. Compare your choices with those made for the existing classes to get an understanding of this dynamic and determine how you will balance your new class.</p>
+<p><b>Base Attack Bonus</b>: There are three types of base attack bonus progressions in the game. The slow progression (used by sorcerers and wizards) is usually reserved for arcane spellcasters with a full spellcasting progression (i.e. their spells go up to 9th level). The medium progression (used by bards, clerics, druids, monks, and rogues) is used for most characters that have a wide variety of class features and that are expected to be an active part of combat. The fast progression (used by barbarians, fighters, paladins, and rangers) is used for characters that are expected to be in the thick of every fight and who rely very little on spellcasting.</p>
+<p><b>Hit Dice</b>: The type of Hit Die used by each class is almost always determined by its base attack bonus progression. Those on the slow progression get a d6, medium gets a d8, and fast gets a d10. There are a few exceptions to this rule (like the barbarian), but making this exception can be a significant boost to the class and should be considered when designing other class elements.</p>
+<p><b>Saving Throws</b>: There are two types of saving throw progressions used in the game. For ease of reference, we'll call them "good" and "bad." Each class has one or two good saving throws, while the rest are bad. There is only one class in the game with all good saving throws (the monk), making it a signature bonus of that class and one that should not generally be replicated by others. Which saving throws are good says a lot about the class. Most spellcasters have good Will saves. Most combat-oriented classes have good Fortitude saves. Most classes that focus on mobility and agility have Reflex as one of their good saves.</p>
+<p><b>Skills</b>: When deciding on the skills for your class, there are two things to consider: the number of skill ranks per level and which skills are class skills. In terms of skill points, most classes get only 2 per level (plus the character's Intelligence modifier). A few classes get 4 or even 6, but this is a bonus that should be kept in mind when designing other elements of the class. Only the rogue gets 8 per level, and you should have a very good reason for giving a class a similar number (as this infringes on the rogue's role as the most skilled class). As for class skills, the number and type can vary wildly from class to class. Most classes have around 10 class skills, but those with more ranks per level have more. The class skills you select say a lot about what members of the class consider important. A class should be good at the skills that it needs to perform its role in the game&mdash;and nothing more. It might be tempting to give <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> and <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> to just about every class in the game, but unless you're creating a sneaky class or a class designed to scout, such skills are not necessarily appropriate class skill choices, as it's important to leave holes for other characters in a party to fill. Finally, remember that most classes receive <a href="../coreRulebook/skills/craft.html#craft" >Craft</a> and <a href="../coreRulebook/skills/profession.html#profession" >Profession</a> as class skills unless they're particularly uncivilized (see the barbarian).</p>
+<p><b>Spellcasting</b>: Not every class possesses the ability to cast spells, but it's a common feature and worth considering with the rest of the basic mechanics. The game uses three basic models for spellcasting, although there are variants on these depending on whether or not the character is a prepared or spontaneous spellcaster. The minor spellcaster (like the paladin or ranger) does not start play with spellcasting capability, has a limited spell list, and only gets spells of up to 4th level. The moderate spellcaster (like the bard) begins play with some spellcasting, receives spells of up to 6th level, and has a significantly larger spell&#160;list. The full spellcaster (like the cleric, druid, sorcerer, and wizard) gains spells of up to 9th level, and has an expansive spell list. The minor spellcaster is perfect for classes with a fast BAB progression, whereas moderate or full are usually reserved for slow or medium BAB classes. Avoid creating a class with a fast BAB and a full spellcasting progression. You don't have to design the spell list when determining the basic mechanics, but you should know what kind of spellcasting the class is going to possess (see <a href = "designingClasses.html#designing-a-spell-list">Designing a Spell List</a> for advice on creating a list of spells for your class).</p>
+
+<h3>Class Features</h3>
+<p>Once you have the basic mechanics sorted out, it's time to start designing class features. These are the mechanics that a class gets as it gains levels, and each feature grants it powers and abilities that make it stand out from the other classes in the game.</p>
+<p>Most class features fall into one of two categories: primary features and secondary features. Primary features are a signature of the class. These abilities advance in power and utility as the class progresses through its levels, and improvements to these features are often one of the things players look forward to most as they play a member of that class. Examples of primary class features include barbarian rage, bardic music, smite evil, and sneak attack. Secondary features are often abilities that are gained once and do not change much over the character's adventuring career, or are otherwise relatively minor. Examples of secondary class features include bravery, pass without trace, and trapfinding. Note that while primary features tend to be isolated to just one class, secondary features might appear in multiple classes.</p>
+<p><b>Primary Features</b>: These features are the key to creating a fun and engaging class. They are usually gained at 1st level and improve over the course of leveling, which keeps these features relevant to characters throughout their adventuring&#160;careers. They&#160;are almost universally aimed at granting an advantage in combat, allowing characters that utilize them in interesting ways to engage in those encounters. Rage, for example, grants the barbarian increased power and damage-dealing capability when in use. As the barbarian increases in level, the bonuses granted by rage and the number of rounds per day that the ability can be used increase as well. Sneak attack works much in the same way, increasing in power as the rogue gains levels so it can continue to compete with foes that possess higher hit point totals.</p>
+<p>When designing a new primary feature, use existing primary features as a guide. Most primary class features increase in power every few levels, usually by some small increment. Those that rely on duration often increase in overall duration with each level gained. The duration should be able to be used in discrete increments, so that a character can utilize the ability more than just once per day (unless the duration is quite long).</p>
+<p>Note that in most cases, a class with a full spellcasting progression does not receive a powerful primary class feature. In such cases, the spellcasting itself plays this role. Those with minor or moderate spellcasting progressions often receive a class feature that is related to their spellcasting. Usually this means that the primary class feature does not need to change much as the character gains levels (see the magus's spell combat class feature). The feature can remain relatively constant because it's the spells themselves that get better as the character gains levels.</p>
+<p><b>Secondary Features</b>: These features are designed to round out a class, giving it abilities that allow it to better fit its role. For the most part, secondary features are situational, granting a bonus or useful ability in specific scenarios. Bravery, for example, only grants a bonus on Will saves made against fear. The feature also helps a fighter fill out his role as the brave hero facing against terrifying foes.</p>
+<p>Secondary features don't always improve as the character gains levels. Some simply offer a useful ability that is applicable at any level of play. Woodland stride, for example, is valuable at any level of play, and since it does not grant a bonus to a skill or other check, it doesn't need to become more powerful as the character gains levels.</p>
+<p>Unlike primary features, secondary features may show up in more than one class. While a class should have secondary features that relate to its theme, it is acceptable to use a secondary feature from another class instead of inventing a new feature to accomplish the exact same goal. For example, both the barbarian and rogue gain uncanny dodge as they gain levels. Since both are known for being quick to react to danger, it makes sense for them both to have that feature instead of both receiving different features that effectively do the same thing.</p>
+<p><b>Dead Levels</b>: As you fill out the primary and secondary features of your class, it's vital to sort them by level so that you can readily see when each is gained and (in the case of primary features) when each increases in power and ability. This allows you to ensure that the class is not too loaded up with class features at any given level. This also allows you to avoid "dead levels," meaning levels in which the character would only gain bonuses to their base mechanics. As a general rule, you don't want any level to grant more than one or two class features, and you want to avoid dead levels&mdash;acquiring new and improved abilities is part of the fun of leveling up!</p>
+<p>Spellcasters are sometimes an exception to this guideline. In the case of a full spellcasting class, acquiring a new level of spells to cast is valuable enough to count as a class feature. Take the druid, for example: The class has a few levels in which no new class features are gained or improved upon, but almost all of these levels occur when the druid gains a new level of spells to cast. All of a sorcerer's bloodline abilities come on odd-numbered levels, owing to the fact that they gain new spell levels on every even-numbered level. This principle can be applied to moderate spellcasting classes too, but as a general guide, classes with minor or no spellcasting should receive a class feature, or an increase to an existing feature, at every level from 1st to 20th.</p>
+<p><b>Capstone</b>: Most classes have a capstone ability (i.e. an ability gained at 20th level). In most games, this will be the last ability gained by the character and it should definitely feel like a reward for achieving such lofty heights of power. Feel free to go a bit over the top on this ability. Let it be something that your players long to have. If they've survived that long, they've certainly earned it.</p>
+
+<h3 id = "designing-a-spell-list">Designing a Spell List</h3>
+<p>Designing a spell list for those classes with the ability to cast spells can be a daunting task. You must consider the various sources to use when building your list, while still leaving room for expansion in the future when new spells become available.</p>
+<p>Spell lists must have some form of internal consistency that speaks to the nature of the class. Wizards aren't known for their healing magic, which is why the <i>cure </i>spells aren't on any of their lists. Bards spend much of their time enhancing the abilities of their teammates, which is why many of their spells help one or more characters. When designing a spell list for your class, you should ask yourself, "What does this class accomplish with its spells?" This question, above all others, will help you make a spell list that feels right for the class.</p>
+<p>The number of spells on a class's spell list is also an important consideration. Classes with minor spellcasting generally have a smaller number of spells to choose from, but at their higher levels, they gain access to spells that are normally of a higher level for classes with a moderate or full spellcasting progression. Classes with a full spellcasting progression should have a wide variety of spells to choose from, as this tends to be one of the primary ways they contribute to the game.</p>
+<p>Deciding at what level a spellcaster should have access to a spell is one of the most challenging aspects of spell list design. Various spells should appear at different levels, depending on the class. Take <i><a href="../coreRulebook/spells/holdPerson.html#hold-person" >hold person</a> </i>as an example: clerics receive the spell at 2nd level, whereas for sorcerers and wizards the spell is 3rd level. The vital thing to note here is that some spells (and others that grant a similar ability) should not be available until the PCs are of a certain minimum level. For example, the game generally assumes that the PCs cannot reliably fly until they're 5th level, and that they cannot raise the dead or teleport until they're 9th. There are some exceptions to these guidelines, but they are rare and should be considered very carefully, as adventures are written with these benchmarks in mind. Also, keep in mind that any spell you list as 4th level or lower can then be put into a wand, while those of 3rd level and lower can be made into a potion. When in doubt, look to the cleric or sorcerer/wizard spell lists for guidance.</p>
+
+<h3>Review and Polish</h3>
+<p>Once you've decided on the basic mechanics and designed all of the class features, it's time to take a step back and look at your creation. Ideally, review should be part of your process as the design takes shape, but it's an even more vital step once all of the pieces are in place.</p>
+<p>When reviewing, the first step is to imagine a character as it advances through the levels in the class. Are there any levels that are particularly lackluster or overburdened with options? Does the class have levels to really look forward to? Can the class meaningfully contribute to the game at every level of play? Compare your class to others, looking at it on a level-by-level basis to weigh the power and versatility of the class. If it is better than most at a given level, you might need to scale back some of its class features. Likewise, if it's too weak at a level, you might need to enhance a class feature, or even add a new one.</p>
+<p>Once you're satisfied with the class, it's time to polish the mechanics to ensure that they're clear and concise. Let a friend or fellow player look at the rules as written. They will undoubtedly have a few questions about how things work or how they interact with other existing rules elements. These questions can help you refine the language to make a class that is easy to understand and fun to play.</p>
+<p>Finally, it's time to playtest the class. Build a number of characters using the class rules and run them in mock combat against other characters and monsters. If you're playtesting with only one character versus one opponent, understand that against a character of equal level, the fight should be close to evenly matched, depending on the environment and setup. Against monsters, look to pit your creation against a monster with a CR roughly 4 lower than the character's level to get an idea of how the character can handle itself in a fight. Playtest will give a sense of whether your mechanics are playing out as intended&mdash;though be wary of taking results from fights with extremely lopsided dice-rolling, as these can seriously skew your results.</p>
+<p>The process of designing a class can go through all of these steps a number of times. Don't get discouraged if your first attempts need a lot of work. Design, playtest, and redesign your class concept until you're happy with its final form. Remember, creating a new class is one of the most challenging parts of game design.</p>
+
+<h2 id = "archetype-design">Archetype Design</h2>
+<p>Designing an archetype is similar to designing a class, but much of the work has already been done for you. Like a class, an archetype needs to have a concept and a rules niche, but unlike a class, its characteristics need not be specific to it. An archetype is usually very close to an existing class in terms of concept or rules, but strives to take the class in a slightly different direction, changing a few of its class features to better express its concept.</p>
+
+<h3>Concept and Rules</h3>
+<p>Many archetypes begin as a new class idea, but as they come together, it becomes apparent that they are very similar to an existing class. In such cases, it's better to create an archetype instead of an entirely new class that's trying to live in another's space. Take the skirmisher ranger archetype from the <i>Advanced Player's Guide</i> for example. As a concept, the class is very similar to a ranger: it thrives in a natural setting and is generally oriented toward martial combat. Mechanically, it lends itself to almost all of the rules of the ranger, but gains a set of combat tricks in place of the ranger's spellcasting abilities. Creating an entirely new class with this concept doesn't make sense when a few simple alterations to the ranger itself would be sufficient.</p>
+
+<h3>Design Principles</h3>
+<p>Most of the design work on an archetype has to do with class features. As a general rule, most of the base mechanics do not change. Base attack bonus, Hit Dice, and saving throws almost never change, while skills and spellcasting need not be altered unless the archetype specifically calls for it. </p>
+<p><b>Replacing Class Features</b>: The key to creating a successful archetype is deciding which class features to replace and what to replace them with. Generally speaking, primary class features are the hardest to replace and you should do so very carefully, whereas secondary features have a much lighter impact on the class and are more easily exchanged with new features.</p>
+<p>When deciding what features to replace, keep in mind the theme of the archetype. Is the feature important to the role of the archetype? If removed, does the class still function? Are there other features that rely upon the selected feature to function, and do they need to be replaced as well? These questions will help guide you in determining what features are critical to a class and which ones can be replaced with minimal impact.</p>
+<p>Designing a new class feature for an archetype to replace an existing one follows many of the same rules as designing a class feature for an entirely new class. However, you must consider the power and versatility of the feature you are replacing. Swapping out the bravery fighter class feature for a new feature that grants a bonus to AC is not a fair trade, resulting in an archetype that is more powerful than the base class. While you might endeavor to balance out this exchange by replacing another class feature with a weaker option, such replacements should be avoided if possible. If you must, try to ensure that the weaker option appears at an earlier level than the more powerful option to ensure that the "cost" for the new, powerful feature is paid before the benefit is gained. Doing so prevents characters from taking just a few levels in an archetype to get the powerful class feature, before swapping over to another class to avoid paying the price for that feature. As a guideline, replacement features should serve a similar role and have roughly the same power as the feature they replace. This isn't always the case, but even when deviating from the role, you should be sure that the replacement feature you are creating is not demonstrably more or less powerful than the original.</p>
+<p><b>Partial Replacements</b>: Depending on the circumstance, it can be acceptable to swap out part of a class feature, but only if that feature has bonuses or abilities that are gained over multiple levels. For example, the fighter has the bonus feats class feature. This feature grants a bonus feat at 1st level, 2nd level, and every even level thereafter. An archetype might swap out some or all of these bonus feats, granting new class features in their place.</p>
+<p>Be careful when deciding on a partial replacement. The rules for the feature that you are partially replacing may not indicate what to do with the later iterations of the feature that have not been replaced. Take the channel energy cleric class feature, for example. If you replace the increase to 2d6 gained at 3rd level, what happens at 5th level? Does the character advance to 2d6 or jump directly to 3d6? In such cases, it is best to replace the entire class feature or ensure that the replacement is explicit in describing how to treat the remainder of the existing class feature.</p>
+<p><b>Alternate Classes</b>: Sometimes an archetype exchanges so many class features that it almost becomes a new class itself. In such cases, the class might warrant a representation of all of the class features, even those that it shares with its base class. While still technically an archetype, characters who play this class have all the tools they need to advance their character in one convenient location. The antipaladin, ninja, and samurai are all examples of an alternate class.</p>
+<p><b>Hybrid Classes</b>: A hybrid class is like an archetype in that it draws heavily from existing classes, but the hybrid draws from two different classes to form the basis of its abilities. The result is an entirely new class with its own niche and features.</p>
+
+<h2 id = "prestige-class-design">Prestige Class Design</h2>
+<p>Although similar to a class in many ways, a prestige class is specifically designed to be used by higher-level characters through multiclassing. While the general design principles might be similar, the design of a prestige class has a number of additional factors to consider.</p>
+
+<h3>Concept and Rules</h3>
+<p>A prestige class needs a very strong concept. Not only does it need to make sense in the world, there also needs to be a logical reason why a character cannot begin play by taking levels in the class. Frequently, the rationale can be made in the prestige class's class story. For example, you might design a prestige class for an order of knights, but determine that they only accept and train members who have proven themselves in battle. New, young recruits might be a part of the order but don't receive the special training represented by the prestige class until they have been tried and tested. Other prestige classes might require a certain ability or skill before they can be accessed by PCs. A group of wizards who are experts at flying can't train members who are unable to cast <i><a href="../coreRulebook/spells/fly.html" >fly</a></i>.</p>
+<p>A prestige class should be tightly focused on one rules concept, with most of its features tied to that concept. For our flying wizard example above, the prestige class features might grant bonuses while flying, the ability to cast <i><a href="../coreRulebook/spells/fly.html" >fly</a></i> more often, and the ability to avoid falling damage.</p>
+
+<h3>Requirements and Levels</h3>
+<p>Unlike a normal class or archetype, a prestige class has a few elements that are worth careful examination. First, all prestige classes have a list of requirements that a PC must meet before they can take a level in the class. These requirements should make it impossible for a PC to take levels in the prestige class before 6th level. For example, requiring a base attack bonus of +5, the ability to cast 3rd-level spells, or 5 skill ranks in a certain skill means that a character must hit 5th level before qualifying (meaning that his first level in the prestige class will be his 6th).</p>
+<p>You should also carefully consider how many levels there will be in your prestige class. Most have either 5 or 10 levels that a PC can gain. Although you can work with any number, it is not recommended that you use fewer than 5 levels, as this allows you to include some truly impressive abilities at the higher levels of the prestige class.</p>
+
+<h3>Basic Mechanics</h3>
+<p>Designing a prestige class similar to designing a base class, with some important exceptions. First, prestige classes rarely grant many class skills. Most characters that gain access to the class (if they align with it in terms of theme and concept) will already possess most of the relevant skills, making access redundant. Second, prestige classes use different saving throw progressions for good and bad saves. This prevents inflation of base saving throw bonuses through multiclassing.</p>
+
+<h3>Feature Design</h3>
+<p>While the actual process of designing primary and secondary features of a prestige class is the same as it is for any other class or archetype, keep the actual level of the character in mind when deciding on which level they would gain a given feature. A class feature that might be fine for a 1st-level character would be underpowered as the feature for the 1st level of a prestige class, since that ability would actually be gained at 6th level. Remember that while a character might not qualify for a prestige class at the earliest possible level (i.e. 6th), you should still design the features as if they had to prevent overpowered features from ending up being used by low-level characters.</p>
+
+<h3>Integration</h3>
+<p>Unlike a class, which is designed to provide a complete play experience, a prestige class is designed so that it can be completed before a character reaches the end of her adventuring career. As a result, the character may end up finishing the prestige class at 11th or 16th level and then be forced to turn to another class for the remainder of her levels. A good prestige class should take this into account by giving the character a valuable feature toward the end of the class that can make up for the character being stuck taking levels in another class with features designed for significantly lower-level characters. This should feel similar to a class capstone ability, although designed for the lowest level at which a character can qualify for it.</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Designing Classes",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

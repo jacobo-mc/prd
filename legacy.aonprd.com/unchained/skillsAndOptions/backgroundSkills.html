@@ -1,0 +1,868 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Background Skills</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "backgroundSkills.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "backgroundSkills.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "backgroundSkills.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "backgroundSkills.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "backgroundSkills.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "backgroundSkills.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "backgroundSkills.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "backgroundSkills.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "backgroundSkills.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "backgroundSkills.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "backgroundSkills.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "index.html">Skills and Options</a></li>
+						<li><a href = "../gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../magic/index.html">Magic</a></li>
+						<li><a href = "../monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "backgroundSkills.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "backgroundSkills.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "backgroundSkills.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "backgroundSkills.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "backgroundSkills.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "backgroundSkills.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "backgroundSkills.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "backgroundSkills.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "backgroundSkills.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "backgroundSkills.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1>Background Skills</h1>
+<p>The skill system presented in the <em>Core Rulebook</em> has a lot of versatility. It allows characters to overcome various challenges related to their diverse talents, with simple rules for dealing with beneficial or adverse conditions. Though many players simply spend their skill ranks on the same skills at every level, it is also possible for a character to diversify his investment in order to gain access to more skills overall or to remedy a shortcoming. </p>
+<p>However, not all skills provide the same benefit to characters. It's difficult to argue that a high bonus in a <a href="../../coreRulebook/skills/profession.html#profession">Profession</a> skill has the same value as a high bonus in a more general skill such as <a href="../../coreRulebook/skills/perception.html#perception">Perception</a>. Yet <a href="../../coreRulebook/skills/profession.html#profession">Profession</a> is an important skill for nonplayer characters, as well as for players who wish to show that adventuring isn't the only thing their characters care about.</p>
+<p>The background skills system recognizes that skills such as <a href="../../coreRulebook/skills/craft.html#craft">Craft</a>, <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a>, and <a href="../../coreRulebook/skills/profession.html#profession">Profession</a> serve an important role in the game. Though these skills don't directly affect the careers of typical adventurers the same way that <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a>, <a href="../../coreRulebook/skills/perception.html#perception">Perception</a>, and <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> do, they are useful means for characters to interact with and explore the world outside of combat. You shouldn't have to choose between having the knowledge to understand the world and the ability to survive in it!</p>
+<p>These skills are called background skills because they reflect the non-adventuring interests and passions of a player character, or the skills more important to NPCs. All other skills are called adventuring skills.</p>
+<p>In a campaign that uses the background skills system, each character gains an additional 2 skill ranks per level, which must be spent on background skills. More details appear in the <a href = "backgroundSkills.html#gaining-background-skills">Gaining Background Skills</a> section below. These new rules make characters and their skills more versatile, but because they boost non-adventuring skills, they're unlikely to unbalance a campaign.</p>
+
+<p class = "shortcut-bar">
+	<span class = "nowrap"><a href="backgroundSkills.html#skill-changes">Skill Changes</a></span>
+	<span class = "nowrap"><a href="backgroundSkills.html#gaining-adventuring-skills">Gaining Adventuring Skills</a></span>
+	<span class = "nowrap"><a href="backgroundSkills.html#gaining-background-skills">Gaining Background Skills</a></span>
+	<span class = "nowrap"><a href="backgroundSkills.html#monsters-and-npcs">Monsters and NPCs</a></span>
+	<span class = "nowrap"><a href="backgroundSkills.html#new-skills">New Skills</a></span>
+	<span class = "nowrap"><a href="backgroundSkills.html#expanded-skill-uses">Expanded Skill Uses</a></span>
+	<span class = "nowrap"><a href="backgroundSkills.html#converting-characters">Converting Characters</a></span>
+</p>
+
+
+<h2 id = "skill-changes">Skill Changes</h2>
+<p><a href="../../coreRulebook/skills/appraise.html#appraise">Appraise</a>, <a href="../../coreRulebook/skills/craft.html#craft">Craft</a>, <a href="../../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a>, <a href="../../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a>, <a href="../../coreRulebook/skills/perform.html#perform">Perform</a>, <a href="../../coreRulebook/skills/profession.html#profession">Profession</a>, and some <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> specialties are all background skills. While all of these skills can be useful, or even necessary, in certain types of campaigns (such as <a href="../../coreRulebook/skills/profession.html#profession">Profession</a> [sailor] in a nautical-themed campaign) or for certain types of characters (such as <a href="../../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> for a druid or ranger), they are often of less immediate value than sneaking up on a foe using <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> or journeying through the wilderness using <a href="../../coreRulebook/skills/survival.html#survival">Survival</a>. </p>
+<p>This system also adds two new background skills: <a href = "backgroundSkills.html#artistry-skill">Artistry</a> and <a href = "backgroundSkills.html#lore-skill">Lore</a>. A counterpart to <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> and <a href="../../coreRulebook/skills/perform.html#perform">Perform</a>, <a href = "backgroundSkills.html#artistry-skill">Artistry</a> is about developing a creative work that isn't necessarily an object or a discrete performance. This skill can be used to write plays, musical compositions, poems, and all sorts of other works. <a href = "backgroundSkills.html#lore-skill">Lore</a>, on the other hand, functions like an especially specific <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> skill. A character might know <a href = "backgroundSkills.html#lore-skill">Lore</a> (elven history) without being trained more generally in <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (history), or could be well versed in <a href = "backgroundSkills.html#lore-skill">Lore</a> (artistic masterpieces) without having ranks in <a href="../../coreRulebook/skills/appraise.html#appraise">Appraise</a>, <a href = "backgroundSkills.html#artistry-skill">Artistry</a>, or <a href="../../coreRulebook/skills/craft.html#craft">Craft</a>.</p>
+<p>New skill descriptions can be found on the following pages. These include entries on the new skills and expanded entries on existing skills that are now background skills.</p>
+<p>The table below lists the new and redefined skills, separated into adventuring and background skills.</p>
+
+<table id = "adventuring-background-skills">
+	<thead>
+		<tr>
+			<th>Adventuring Skills</th>
+			<th>Background Skills</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a></td>
+			<td><a href="../../coreRulebook/skills/appraise.html#appraise">Appraise</a></td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a></td>
+			<td><a href="backgroundSkills.html#artistry-skill">Artistry</a></td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/climb.html#climb">Climb</a></td>
+			<td><a href="../../coreRulebook/skills/craft.html#craft">Craft</a></td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a></td>
+			<td><a href="../../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a></td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a></td>
+			<td><a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (engineering)</td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a></td>
+			<td><a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (geography)</td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a></td>
+			<td><a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (history)</td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/fly.html#fly">Fly</a></td>
+			<td><a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nobility)</td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/heal.html#heal">Heal</a></td>
+			<td><a href="../../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a></td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a></td>
+			<td><a href="backgroundSkills.html#lore-skill">Lore</a></td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana)</td>
+			<td><a href="../../coreRulebook/skills/perform.html#perform">Perform</a></td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (dungeoneering)</td>
+			<td><a href="../../coreRulebook/skills/profession.html#profession">Profession</a></td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (local)</td>
+			<td><a href="../../coreRulebook/skills/sleightOfHand.html#sleight-of-hand">Sleight of Hand</a></td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nature)</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (planes)</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion)</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/perception.html#perception">Perception</a></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/ride.html#ride">Ride</a></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/survival.html#survival">Survival</a></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/swim.html#swim">Swim</a></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a></td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<h2 id = "gaining-adventuring-skills">Gaining Adventuring Skills</h2>
+<p>Adventuring skills are those skills that are most relevant for characters while they're actively adventuring. Adventuring skills are purchased with the standard skill ranks each character class receives, modified by a character's Intelligence (and sometimes by race or other factors). No adjustments need to be made to these skills when using the background skills system.</p>
+<p>Most adventuring skills are related to training and practice, and each has a clear and specific application to the everyday challenges that face a professional adventurer. Adventuring skills get used for the majority of skill checks, so most skill ranks should be devoted to those skills.</p>
+
+
+<h2 id = "gaining-background-skills">Gaining Background Skills</h2>
+<p>In addition to their normal allotment of regular skill ranks, all characters gain 2 background skill ranks each time they gain a level in a PC class. The character's Intelligence modifier doesn't adjust this value. Background skill ranks can be used to gain ranks only in background skills, not adventuring skills. Characters can expend their regular skill ranks on background skills if they desire.</p>
+<p>Even the most dedicated adventurers have other things they enjoy doing in their spare time. Some pursue business interests during their downtime between adventures, and though these can be modeled with the <a href="../../ultimateCampaign/downtime.html">downtime rules</a> in <em>Pathfinder Roleplaying Game: Ultimate Campaign, </em>players who aren't interested in such a robust system still might wish to include elements of those interests on their character sheets. </p>
+
+	<h3 id = "class-skills">Class Skills</h3>
+	<p>In the background skills system, classes use their standard class skill lists. Any class that gains <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> or <a href="../../coreRulebook/skills/perform.html#perform">Perform</a> as a class skill also counts <a href = "backgroundSkills.html#artistry-skill">Artistry</a> as a class skill. <a href = "backgroundSkills.html#lore-skill">Lore</a> is always considered a class skill for all characters.</p>
+	<p>For example, a wizard has <a href="../../coreRulebook/skills/appraise.html#appraise">Appraise</a> on his class skill list normally, so a wizard has the <a href="../../coreRulebook/skills/appraise.html#appraise">Appraise</a> background skill as a class skill. <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> is also on his class skill list, so <a href = "backgroundSkills.html#artistry-skill">Artistry</a> is a class skill for him as well (even though <a href="../../coreRulebook/skills/perform.html#perform">Perform</a> isn't on his class skill list).</p>
+
+
+<h2 id = "monsters-and-npcs">Monsters and NPCs</h2>
+<p>Typically, monsters don't gain access to the background skills system from their racial Hit Dice. The Game Master might decide that certain types of monsters might have extensive lives as workers and crafters (such as storm giants, for example) and therefore gain background skills, but this is optional.</p>
+<p>NPCs gain background skills in the same fashion PCs do, but only for PC classes they possess. This also applies to monsters with levels in PC classes. NPCs don't have to spend their background skill ranks, and these skills rarely affect combat. Characters with only NPC classes&mdash;especially aristocrats, commoners, and experts&mdash;often spend their adventuring skill ranks on background skills.</p>
+
+
+<h2 id = "new-skills">New Skills</h2>
+<p>The section presents full entries for two new skills: <a href = "backgroundSkills.html#artistry-skill">Artistry</a> and <a href = "backgroundSkills.html#lore-skill">Lore</a>. Even if you're not using the background skills system, you can still incorporate these skills into your game as normal skills.</p>
+
+
+	<h3 id = "artistry-skill">Artistry (Int)</h3>
+	<p>You are skilled in the creative arts, following your aesthetic sensibilities to bring to life the wonders of your imagination. Like <a href="../../coreRulebook/skills/craft.html#craft">Craft</a>, <a href="../../coreRulebook/skills/perform.html#perform">Perform</a>, and <a href="../../coreRulebook/skills/profession.html#profession">Profession</a>, <a href = "backgroundSkills.html#artistry-skill">Artistry</a> is actually a number of separate skills. You could have several <a href = "backgroundSkills.html#artistry-skill">Artistry</a> skills, each with its own ranks. The most common <a href = "backgroundSkills.html#artistry-skill">Artistry</a> skills are choreography, criticism, literature (including poetry), musical composition, philosophy, and playwriting. </p>
+	<p>Like <a href="../../coreRulebook/skills/craft.html#craft">Craft</a>, an <a href = "backgroundSkills.html#artistry-skill">Artistry</a> skill is focused on creating something. However, what it creates is not necessarily a physical object; it could be a pattern or blueprint for an item, or a better method for crafting a type of item. Thus, an <a href = "backgroundSkills.html#artistry-skill">Artistry</a> (musical composition) check could be used to create a new song, but the important act of creation is the song itself, not the paper on which it is written or even the performance. An artist is not necessarily a skilled performer, though she might be. An artist's province is the creation of ideas and concepts, and the realization of those ideas in a way that can be enjoyed by others and contribute to the broader culture of the arts. Some art forms (such as painting or sculpture) skirt the line between <a href = "backgroundSkills.html#artistry-skill">Artistry</a> and <a href="../../coreRulebook/skills/craft.html#craft">Craft</a>. It's up to the GM to rule whether certain <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> skills can be taken as <a href = "backgroundSkills.html#artistry-skill">Artistry</a> skills instead.</p>
+	<p><strong>Check</strong>: You can create works of art and try to earn a living by impressing possible patrons with your talent and ideas.</p>
+	<table id = "artistry-dc">
+		<thead>
+			<tr>
+				<th>Artistry DC</th>
+				<th>Worksmanship</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>10</td><td>Pedestrian work. No one buys your original work, but you get a few odd jobs using your skills&mdash;often just repairing or copying someone else's work. You earn 1d10 cp per day. </td></tr>
+			<tr><td>15</td><td>Pleasing work. In a prosperous city, you find a few who wish to purchase your work, and earn 1d10 sp per day.</td></tr>
+			<tr><td>20</td><td>Impressive work. In a prosperous city, you earn 3d10 sp per day, and may receive an artistic commission from a wealthy or public figure. As a result, you gain a local reputation.</td></tr>
+			<tr><td>25</td><td>Memorable work. In a prosperous city, you earn 1d6 gp per day, and you are likely to attract the attention of wealthy patrons and to develop a national reputation. </td></tr>
+			<tr><td>30</td><td>Masterful work. In a prosperous city, you earn 3d6 gp per day. In time, you may draw attention from distant patrons, or even from extraplanar beings. </td></tr>
+		</tbody>
+		</table>
+	<p>Since works of art are products of imagination, masterwork tools are of no use in their creation.</p>
+	<p><em>Creating a Commissioned Work</em>: If you are creating a specific commissioned work, determine the value of the work you wish to create by looking at the table below, then follow the listed steps. You must have a patron willing to pay this value to attempt to create a commissioned work. The amount earned from trying to make a living using <a href = "backgroundSkills.html#artistry-skill">Artistry</a> is for works that are distributed among many people and publications, not bought by one patron.</p>
+	<table id="commissioned-work-dc">
+		<thead>
+			<tr>
+				<th>Quality of Work</th>
+				<th>DC</th>
+				<th>Commission Fee</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>Pedestrian work</td><td>10</td><td>1 sp</td></tr>
+			<tr><td>Pleasing work</td><td>15</td><td>25 gp (250 sp)</td></tr>
+			<tr><td>Impressive work</td><td>20</td><td>50 gp (500 sp)</td></tr>
+			<tr><td>Memorable work</td><td>25</td><td>100 gp (1,000 sp)</td></tr>
+			<tr><td>Masterful work</td><td>30</td><td>200 gp (2,000 sp)</td></tr>
+		</tbody>
+	</table>
+	<p>To determine how much time and money it takes to complete a work of art, follow these steps.</p>
+	<p><strong>Step 1</strong>: Find the DC and price corresponding to the quality of the work you intend to create.</p>
+	<p><strong>Step 2</strong>: Spend 1/4 the price of the work you intend to create. This represents buying supplies such as parchment and ink, hiring the services of musicians, paying for research materials, and the like.</p>
+	<p><strong>Step 3</strong>:</td><td>Attempt an <a href = "backgroundSkills.html#artistry-skill">Artistry</a> check with the appropriate DC, representing 1 week's worth of work. If you succeed, multiply your check result by the DC. If the resulting value equals the price of the item in sp, then you have completed the work of art and gain your commission fee. (If the resulting value equals double or triple the price of the work in silver pieces, then you've completed the task in half or one-third of the time. Other multiples of the DC reduce the completion time in the same manner.) If the resulting value doesn't equal the price, then it represents the progress you've made this week in sp. If the check fails, you make no progress.</p>
+	<p><strong>Step 4</strong>: If you didn't complete the work of art, you can either continue working or call it done and cut your losses. If you continue working, you must spend 1/4 the price again for each week you work. Record the result of your check from the first week, and add your progress for each subsequent week to the total until you either complete the item or cut your losses. If you decide to cut your losses, you gain the commission of the highest-quality level that your total could have completed. For instance, if you were trying to create a memorable work (a commission price of 1,000 sp) and have made only 600 sp worth of progress, you can cut your losses to gain a commission fee for an impressive work (500 sp, or 50 gp). You can't earn the value for a higher quality than you were aiming for, so if you aimed to create a memorable work but ended up creating a masterful work, you couldn't gain a commission price higher than 100 gp. When you cut your losses, you don't gain back any money you spent on supplies and services. So if you spent 250 sp when trying to create a memorable work, selling an impressive work would net you only 250 sp total if you spent 1 week of work, and would cause you to break even if you spent 2 weeks. It's possible to lose money working on a commission.</p>
+	<p><strong>Action</strong>: Varies. Trying to earn money by creating minor works of art typically involves a full week's work. If you work less than 1 week, you earn the daily average amount appropriate for your level of workmanship. Creating a commissioned work typically takes a week or more.</p>
+	<p><strong>Try Again</strong>: Yes. Retries are allowed, but they don't negate previous failures. If you're trying to earn a living as an artist in a city where the public hasn't been impressed with your work (because you failed a DC 15 <a href = "backgroundSkills.html#artistry-skill">Artistry</a> check in the previous week), you have a hard time breaking into the marketplace with future artwork (increase the DC by 2 for each previous failure). If you leave the area for a month or more before trying again, this increase resets to 0.</p>
+
+	<h3 id = "lore-skill">Lore (Int; Trained Only)</h3>
+	<p>You possess a specialized area of knowledge, generally narrower than that of a full-fledged scholar. <a href = "backgroundSkills.html#lore-skill">Lore</a> acts as a catchall skill for information, similar to how <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> handles artisanal skills and <a href="../../coreRulebook/skills/profession.html#profession">Profession</a> handles professional skills.</p>
+	<p>The category of a <a href = "backgroundSkills.html#lore-skill">Lore</a> skill can vary widely from that of another <a href = "backgroundSkills.html#lore-skill">Lore</a> skill. It could be regional (such as a city or country), about a discipline (such as cryptography), or related to a narrow set of people (such as famous musicians). The scope of region-based <a href = "backgroundSkills.html#lore-skill">Lore</a> skills can also refer to specific subcategories, such as taverns in a particular region.</p>
+	<p>A <a href = "backgroundSkills.html#lore-skill">Lore</a> skill must be narrow&mdash;far narrower than the most relevant <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> skill. The broader the scope of a given category of <a href = "backgroundSkills.html#lore-skill">Lore</a>, the shallower your knowledge is on that topic. If you know about taverns in a wide region, you know less about each of them than you would if you had <a href = "backgroundSkills.html#lore-skill">Lore</a> in taverns of a specific city. <a href = "backgroundSkills.html#lore-skill">Lore</a> skills normally can't be used to identify monsters the way <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> skills can, unless they refer to a specific type of monster (such as owlbears or vampires). If <a href = "backgroundSkills.html#lore-skill">Lore</a> involves a common, broad category of race or monster, it needs to be more specific. <a href = "backgroundSkills.html#lore-skill">Lore</a> (elves) would be too broad, as would <a href = "backgroundSkills.html#lore-skill">Lore</a> (dragons).</p>
+	<p><strong>Check</strong>: <a href = "backgroundSkills.html#lore-skill">Lore</a> skills use the same DC scale as <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> skills: DC 10 to answer easy questions, DC 15 for basic questions, and DC 20 to 30 for really tough questions. In many cases, <a href = "backgroundSkills.html#lore-skill">Lore</a> can substitute for a <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> skill, such as <a href = "backgroundSkills.html#lore-skill">Lore</a> (elven history) filling in for <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (history) in a check involving elves. At the GM's discretion, a player might be able to apply a <a href = "backgroundSkills.html#lore-skill">Lore</a> skill that's only partially related to a subject with a &ndash;5 penalty, such as using a <a href = "backgroundSkills.html#lore-skill">Lore</a> skill about a region to recall information about a particular city in that region or applying knowledge of distilling to winemaking.</p>
+	<p>The table below describes some examples of <a href = "backgroundSkills.html#lore-skill">Lore</a> skills alongside examples of skills that would be too broad. This is by no means a comprehensive list, and the GM has final say on whether a particular <a href = "backgroundSkills.html#lore-skill">Lore</a> skill is appropriate.</p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Appropriate Lore Skills</th>
+				<th>Inappropriate Choices</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>A particular small city (or smaller settlement)</td><td>Settlements</td></tr>
+			<tr><td>One district of a large city or metropolis</td><td>An entire large city or metropolis</td></tr>
+			<tr><td>A particular monastery</td><td>Monasteries</td></tr>
+			<tr><td>Taverns in a region</td><td>Taverns</td></tr>
+			<tr><td>Bandits in a region</td><td>Banditry</td></tr>
+			<tr><td>Famous battles in a region</td><td>Famous battles</td></tr>
+			<tr><td>The spice trade</td><td>Commerce</td></tr>
+			<tr><td>Cats</td><td>Animals</td></tr>
+			<tr><td>Drow matriarchs</td><td>Drow</td></tr>
+			<tr><td>Dwarven history</td><td>Dwarves</td></tr>
+			<tr><td>Frost giants</td><td>Giants</td></tr>
+			<tr><td>Dagon</td><td>Demon lords</td></tr>
+			<tr><td>Phlegethon</td><td>Hell</td></tr>
+			<tr><td>Military commanders</td><td>Warfare</td></tr>
+			<tr><td>Famous singers</td><td>Music</td></tr>
+			<tr><td>Infernal contracts</td><td>Devils</td></tr>
+			<tr><td>Evocations</td><td>Spells</td></tr>
+			<tr><td>Silver and mithral</td><td>Metals</td></tr>
+			<tr><td>Tea</td><td>Beverages</td></tr>
+			<tr><td>Trees</td><td>Plants</td></tr>
+			<tr><td>Tattoos</td><td>Art</td></tr>
+		</tbody>
+	</table>
+
+	<p><strong>Bards</strong>: <a href = "backgroundSkills.html#lore-skill">Lore</a> is treated as a <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> skill for the purposes of bardic knowledge and lore master, as well as similar abilities found in other classes, creatures, and archetypes. This applies only to <a href = "backgroundSkills.html#lore-skill">Lore</a> skills in which a character is trained. In other circumstances, use the more relevant <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> skill.</p>
+
+
+<h2 id = "expanded-skill-uses">Expanded Skill Uses</h2>
+<p>Skills such as <a href="../../coreRulebook/skills/craft.html#craft">Craft</a>, <a href="../../coreRulebook/skills/perform.html#perform">Perform</a>, and <a href="../../coreRulebook/skills/profession.html#profession">Profession</a> already include basic uses, such as crafting objects and making money. However, they can also be useful for other tasks related to practicing those skills. Further uses are expanded upon here, with sample DCs for common tasks. These expansions are meant to include additional uses to help these skills work into the framework of a regular game, and can be used separately from the background skills system if desired. These uses, particularly those that allow you to aid another at a lower DC, are at the GM's discretion. For more in-depth subsystems to replicate crafting and running a business, see <a href="craftingAndProfession-2.html">Alternate Crafting and Profession Rules</a>.</p>
+
+	<h3 id = "expanded-craft">Expanded Craft</h3>
+	<p>An understanding of the properties and quality of an object comes part and parcel with the ability to craft it. Some of these checks could take extended periods of time, especially involved tasks like restoring a mural, as determined by the GM.</p>
+	<p>This entry also includes two useful <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> skills not specifically listed in the <em>Core Rulebook</em>: <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (blacksmithing) and <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (musical instruments).</p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Task</th>
+				<th><a href="../../coreRulebook/skills/craft.html#craft">Craft</a> Skill</th>
+				<th>DC</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>Determine what culture (e.g., elves, frost giants, etc.) made an item</td><td>By item type</td><td>15</td></tr>
+			<tr><td>Identify a famous maker's mark</td><td>By item type</td><td>10</td></tr>
+			<tr><td>Identify an obscure maker's mark<sup>1</sup></td><td>By item type</td><td>20</td></tr>
+			<tr><td>Identify the creator of an item with no mark<sup>1</sup></td><td>By item type</td><td>30</td></tr>
+			<tr><td>Determine the hardness and hit points of an item<sup>1</sup></td><td>By item type</td><td>20</td></tr>
+			<tr><td>Determine the items an alchemist makes with substances from his lab<sup>1</sup></td><td>Alchemy</td><td>15</td></tr>
+			<tr><td>Etch metal armor plates with decorative designs</td><td>Armor or paintings</td><td>15</td></tr>
+			<tr><td>Identify a suit of masterwork armor on sight</td><td>Armor</td><td>15</td></tr>
+			<tr><td>Determine what type of environment a basket's material came from</td><td>Baskets</td><td>10</td></tr>
+			<tr><td>Determine the specific region a basket's material came from</td><td>Baskets</td><td>20</td></tr>
+			<tr><td>Smelt ore and refine the metal</td><td>Blacksmithing</td><td>15</td></tr>
+			<tr><td>Create armor spikes or shield spikes without <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (armor)<sup>1</sup></td><td>Blacksmithing</td><td>+5</td></tr>
+			<tr><td>Determine a book's approximate age</td><td>Books</td><td>10</td></tr>
+			<tr><td>Identify a composite bow on sight</td><td>Bows</td><td>10</td></tr>
+			<tr><td>Identify a masterwork bow on sight</td><td>Bows</td><td>15</td></tr>
+			<tr><td>Determine a writer's experience level and handedness<sup>1</sup></td><td>Calligraphy</td><td>10</td></tr>
+			<tr><td>Write an invitation that matches appropriate social conventions</td><td>Calligraphy</td><td>10</td></tr>
+			<tr><td>Create a makeshift barrel or crate</td><td>Carpentry</td><td>10</td></tr>
+			<tr><td>Create a rudimentary raft from found materials</td><td>Carpentry or ships</td><td>15</td></tr>
+			<tr><td>Carve fine woodworking</td><td>Carpentry or sculptures</td><td>15</td></tr>
+			<tr><td>Create <a href="../../ultimateEquipment/armsAndArmor/armor.html#wooden">wooden armor</a> or a wooden shield without <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (armor)</td><td>Carpentry</td><td>+5</td></tr>
+			<tr><td>Correctly dye a garment or bolt of cloth</td><td>Cloth</td><td>10</td></tr>
+			<tr><td>Mend a sail</td><td>Cloth, clothing, or ships</td><td>15</td></tr>
+			<tr><td>Tailor a garment to another size or body shape</td><td>Clothing</td><td>10</td></tr>
+			<tr><td>Create temporary cold-weather gear (grants a +2 bonus)</td><td>Clothing</td><td>20</td></tr>
+			<tr><td>Create padded armor without <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (armor)</td><td>Clothing</td><td>+5</td></tr>
+			<tr><td>Locate or identify naturally formed glass</td><td>Glass</td><td>10</td></tr>
+			<tr><td>Identify the work of famous jewelers</td><td>Jewelry</td><td>15</td></tr>
+			<tr><td>Create a fake gemstone<sup>1</sup></td><td>Jewelry</td><td>Opposed<sup>2</sup></td></tr>
+			<tr><td>Identify the sort of creature from which a piece of leather came<sup>1</sup></td><td>Leather</td><td>10<sup>3</sup></td></tr>
+			<tr><td>Skin an animal and tan the hide</td><td>Leather</td><td>15</td></tr>
+			<tr><td>Create a high-quality item from the hide of a nonstandard creature<sup>1</sup></td><td>Leather</td><td>20</td></tr>
+			<tr><td>Create leather, studded leather, or hide armor without <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (armor)</td><td>Leather</td><td>+5</td></tr>
+			<tr><td>Aid another on a <a href="../../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> check to open a lock<sup>1</sup></td><td>Locks</td><td>5</td></tr>
+			<tr><td>Tune a musical instrument</td><td>Musical instruments</td><td>10</td></tr>
+			<tr><td>Create paint or other pigments from scratch</td><td>Paintings</td><td>10</td></tr>
+			<tr><td>Re-create someone's likeness from memory</td><td>Paintings</td><td>15</td></tr>
+			<tr><td>Re-create someone's likeness from an eyewitness account</td><td>Paintings</td><td>20</td></tr>
+			<tr><td>Create a temporary or makeshift kiln</td><td>Pottery</td><td>20</td></tr>
+			<tr><td>Make a mold of an object or part of a body</td><td>Sculptures</td><td>10</td></tr>
+			<tr><td>Alter shoes to a different size or foot shape<sup>1</sup></td><td>Shoes</td><td>10</td></tr>
+			<tr><td>Recognize a famous ship and where it likely came from</td><td>Ships</td><td>10</td></tr>
+			<tr><td>Identify whether a stone wall is entirely stone or a veneer</td><td>Stonemasonry</td><td>10</td></tr>
+			<tr><td>Create a temporary stone support or small rampart with found supplies</td><td>Stonemasonry</td><td>15</td></tr>
+			<tr><td>Determine the age of a mechanical trap</td><td>Traps</td><td>15</td></tr>
+			<tr><td>Identify a masterwork weapon on sight</td><td>Weapons</td><td>15</td></tr>
+		</tbody>
+		<tfoot>
+			<tr><td colspan = "3"><sup>1</sup> A character must be trained in the listed skill to attempt this task.</td></tr>
+			<tr><td colspan = "3"><sup>2</sup> With a successful opposed <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> or <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (jewelry) check, a character identifies the work as a fake.</td></tr>
+			<tr><td colspan = "3"><sup>3</sup> This DC is for items made from the hides of common animals, such as cattle, and increases by 5 for other types of creatures.</td></tr>
+		</tfoot>
+	</table>
+
+	<p>The table below lists which craft skills to use for certain prominent items and adventuring tools. The list omits obvious items&mdash;outfits are made with <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (clothing), keelboats with <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (ships), and so on. More specific skills can also be used instead of the listed skill, such as using <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (tattoos) instead of <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (paintings) for a tattoo.</p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Item</th>
+				<th><a href="../../coreRulebook/skills/craft.html#craft">Craft</a> Skill</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>Alchemist's lab</td><td>Alchemy</td></tr>
+			<tr><td>Artisan's tools</td><td>Blacksmithing or carpentry</td></tr>
+			<tr><td>Backpack</td><td>Clothing or leather</td></tr>
+			<tr><td>Barding</td><td>Armor</td></tr>
+			<tr><td>Bedroll</td><td>Cloth or leather</td></tr>
+			<tr><td>Caltrops</td><td>Weapons</td></tr>
+			<tr><td>Cart or carriage</td><td>Carpentry</td></tr>
+			<tr><td>Chain</td><td>Blacksmithing or traps</td></tr>
+			<tr><td>Chest</td><td>Carpentry or locks</td></tr>
+			<tr><td>Climber's kit</td><td>Blacksmithing</td></tr>
+			<tr><td>Disguise kit</td><td>Alchemy or paintings</td></tr>
+			<tr><td>Flint and steel</td><td>Blacksmithing or stonemasonry</td></tr>
+			<tr><td>Grappling hook</td><td>Blacksmithing or weapons</td></tr>
+			<tr><td><a href="../../ultimateEquipment/gear/adventuringGear.html#gunslinger's-kit">Gunslinger's kit</a></td><td>Alchemy or blacksmithing</td></tr>
+			<tr><td><a href="../../ultimateEquipment/gear/adventuringGear.html#harrow-deck">Harrow deck</a></td><td>Paintings</td></tr>
+			<tr><td>Healer's kit</td><td>Alchemy or cloth</td></tr>
+			<tr><td>Hemp rope</td><td>Baskets or cloth</td></tr>
+			<tr><td>Lamp</td><td>Blacksmithing or glass</td></tr>
+			<tr><td>Manacles</td><td>Blacksmithing or locks</td></tr>
+			<tr><td>Masterwork tool</td><td>Blacksmithing</td></tr>
+			<tr><td>Musical instrument</td><td>Musical instruments</td></tr>
+			<tr><td>Saddle</td><td>Leather</td></tr>
+			<tr><td><a href="../../ultimateEquipment/gear/adventuringGear.html#scroll-case">Scroll case</a></td><td>Carpentry or leather</td></tr>
+			<tr><td>Signet ring</td><td>Jewelry</td></tr>
+			<tr><td>Silk rope</td><td>Cloth</td></tr>
+			<tr><td>Silver holy symbol</td><td>Blacksmithing or sculpture</td></tr>
+			<tr><td><a href="../../ultimateEquipment/gear/adventuringGear.html#skeleton-key">Skeleton key</a></td><td>Locks</td></tr>
+			<tr><td>Spell component pouch</td><td>Leather</td></tr>
+			<tr><td>Spyglass</td><td>Glass</td></tr>
+			<tr><td><a href="../../ultimateEquipment/gear/adventuringGear.html#tattoo">Tattoo</a></td><td>Paintings</td></tr>
+			<tr><td>Tent</td><td>Cloth or leather</td></tr>
+			<tr><td>Thieves' tools</td><td>Blacksmithing or locks</td></tr>
+			<tr><td>Waterskin</td><td>Leather</td></tr>
+			<tr><td>Wood holy symbol</td><td>Carpentry or sculpture</td></tr>
+		</tbody>
+	</table>
+
+	<p>The following table indicates which <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> skills are typically used to create common worn items. While the normal system for creating magic items doesn't incorporate <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> skills, such skills could reasonably be used while creating a magic item to make it appear especially ornate.</p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Worn Item</th>
+				<th><a href="../../coreRulebook/skills/craft.html#craft">Craft</a> Skill</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>Amulet</td><td>Jewelry</td></tr>
+			<tr><td>Belt</td><td>Leather or clothing</td></tr>
+			<tr><td>Bracelet</td><td>Blacksmithing or jewelry</td></tr>
+			<tr><td>Bracer</td><td>Armor or leather</td></tr>
+			<tr><td>Brooch</td><td>Jewelry</td></tr>
+			<tr><td>Cape or cloak</td><td>Cloth or clothing</td></tr>
+			<tr><td>Circlet</td><td>Blacksmithing or jewelry</td></tr>
+			<tr><td>Crown</td><td>Blacksmithing or jewelry</td></tr>
+			<tr><td>Gauntlet</td><td>Armor</td></tr>
+			<tr><td>Girdle</td><td>Clothing or leather</td></tr>
+			<tr><td>Glasses or goggles</td><td>Glass</td></tr>
+			<tr><td>Glove</td><td>Clothing or leather</td></tr>
+			<tr><td>Hat</td><td>Clothing or leather</td></tr>
+			<tr><td>Headband</td><td>Cloth or clothing</td></tr>
+			<tr><td>Helm</td><td>Armor</td></tr>
+			<tr><td>Mask</td><td>Clothing or leather</td></tr>
+			<tr><td>Necklace</td><td>Blacksmithing or jewelry</td></tr>
+			<tr><td>Periapt</td><td>Jewelry</td></tr>
+			<tr><td>Phylactery</td><td>Leather or carpentry</td></tr>
+			<tr><td>Ring</td><td>Jewelry</td></tr>
+			<tr><td>Robe</td><td>Clothing</td></tr>
+			<tr><td>Vestments</td><td>Clothing</td></tr>
+		</tbody>
+	</table>
+
+	<h3 id = "expanded-perform">Expanded Perform</h3>
+	<p>In addition to being able to put on a show, a performer knows the prominent works of her chosen type of performance.</p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Task</th>
+				<th><a href="../../coreRulebook/skills/perform.html#perform">Perform</a> Skill</th>
+				<th>DC</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>Mimic the style of a famous performer</td><td>Varies</td><td>15</td></tr>
+			<tr><td>Recall or recognize all the notes, lyrics, or lines of a popular work</td><td>Varies</td><td>15</td></tr>
+			<tr><td>Recall or recognize all the notes, lyrics, or lines of an obscure work</td><td>Varies</td><td>20</td></tr>
+			<tr><td>Improvise a routine on a specific subject</td><td>Act, comedy, oratory, or sing</td><td>20</td></tr>
+		</tbody>
+	</table>
+
+	<h3 id = "expanded-profession">Expanded Profession</h3>
+	<p>A profession often encompasses many smaller areas of expertise, and these auxiliary skills can come in handy in situations beyond just making money or answering trade-specific questions. Below are some sample additional uses for <a href="../../coreRulebook/skills/profession.html#profession">Profession</a> skills, and GMs are encouraged to create their own.</p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Task</th>
+				<th><a href="../../coreRulebook/skills/profession.html#profession">Profession</a> Skill</th>
+				<th>DC</th>
+			</tr>
+		<tbody>
+			<tr><td>Determine hardness and hit points of a structure</td><td>Architect or engineer</td><td>20</td></tr>
+			<tr><td>Prepare trail rations (takes 1 hour per day's worth of rations)</td><td>Baker or cook</td><td>10</td></tr>
+			<tr><td>Obtain a legal permit</td><td>Barrister or clerk</td><td>15</td></tr>
+			<tr><td>Get someone released from jail who has been imprisoned for a minor crime<sup>1</sup></td><td>Barrister</td><td>20</td></tr>
+			<tr><td>Ask a special favor from a judge (such as arresting someone)</td><td>Barrister</td><td>30</td></tr>
+			<tr><td>Brew alcohol of exceptional quality</td><td>Brewer</td><td>20</td></tr>
+			<tr><td>Notice poison in a beverage</td><td>Brewer</td><td>25</td></tr>
+			<tr><td>Skin an animal and tan the hide</td><td>Butcher, shepherd, or tanner</td><td>10</td></tr>
+			<tr><td>Slaughter and butcher an animal</td><td>Butcher, cook, or shepherd</td><td>15</td></tr>
+			<tr><td>Reduce a legal fine or tax by half the result of the check in gp<sup>2</sup></td><td>Clerk</td><td>20+</td></tr>
+			<tr><td>Cook a meal of exceptional quality</td><td>Cook</td><td>20</td></tr>
+			<tr><td>Notice poison in food</td><td>Cook</td><td>25</td></tr>
+			<tr><td>Find potential clients within an establishment or large group</td><td>Courtesan</td><td>10</td></tr>
+			<tr><td>Assess a social hierarchy</td><td>Courtesan</td><td>15</td></tr>
+			<tr><td>Continue steering a vehicle when you take damage</td><td>Driver or sailor</td><td>5</td></tr>
+			<tr><td>Take cover (as the <a href="../../coreRulebook/skills/ride.html#ride">Ride</a> skill) while steering a vehicle</td><td>Driver or sailor</td><td>15</td></tr>
+			<tr><td>Identify a non-creature plant</td><td>Farmer or gardener</td><td>10</td></tr>
+			<tr><td>Rejuvenate dying plants</td><td>Farmer or gardener</td><td>15</td></tr>
+			<tr><td>Provide 1 day's worth of food for yourself and others in the wild</td><td>Fisherman or trapper</td><td>15<sup>3</sup></td></tr>
+			<tr><td>Recall the rules of a game of chance</td><td>Gambler</td><td>10</td></tr>
+			<tr><td>Get a hunch regarding whether a game is rigged</td><td>Gambler</td><td>20</td></tr>
+			<tr><td>Reduce an average or lower cost of living by 50%</td><td>Innkeeper</td><td>15<sup>3</sup></td></tr>
+			<tr><td>Sate hunger or thirst for 1 day</td><td>Herbalist</td><td>10</td></tr>
+			<tr><td>Identify common medicinal herbs</td><td>Herbalist</td><td>10</td></tr>
+			<tr><td>Identify rare medicinal herbs</td><td>Herbalist</td><td>15</td></tr>
+			<tr><td>Aid another on a <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> check using reference material</td><td>Librarian</td><td>5</td></tr>
+			<tr><td>Recall the name of a rare book</td><td>Librarian</td><td>15</td></tr>
+			<tr><td>Determine where an item was manufactured</td><td>Merchant</td><td>10<sup>4</sup></td></tr>
+			<tr><td>Recall where a common good fetches a higher price</td><td>Merchant</td><td>15</td></tr>
+			<tr><td>Safely deliver a child</td><td>Midwife</td><td>15</td></tr>
+			<tr><td>Safely deliver a child despite complications</td><td>Midwife</td><td>20</td></tr>
+			<tr><td>Grind a small piece of a nonmagical substance into powder</td><td>Miller</td><td>10 + hardness</td></tr>
+			<tr><td>Identify common metal orsemiprecious stone</td><td>Miner</td><td>5</td></tr>
+			<tr><td>Identify rare metal or precious gem</td><td>Miner</td><td>15</td></tr>
+			<tr><td>Ignore half hardness when attacking a stone or metal object</td><td>Miner</td><td>20</td></tr>
+			<tr><td>Increase carrying capacity for 8 hours as if Strength were 2 higher</td><td>Porter</td><td>15</td></tr>
+			<tr><td>Unload a vessel in half the normal time</td><td>Porter</td><td>20</td></tr>
+			<tr><td>Navigate a ship in fair conditions</td><td>Sailor</td><td>20</td></tr>
+			<tr><td>Pilot a ship safely through a hazardous seaway</td><td>Sailor</td><td>25+</td></tr>
+			<tr><td>Determine which scribe wrote a document</td><td>Scribe</td><td>10<sup>4</sup></td></tr>
+			<tr><td>Copy a document (30 minutes per page; requires a blank book)</td><td>Scribe</td><td>10</td></tr>
+			<tr><td>Illuminate a manuscript (1 hour per page)</td><td>Scribe</td><td>20</td></tr>
+			<tr><td>Determine the quality of woolen textiles</td><td>Shepherd</td><td>10</td></tr>
+			<tr><td>Determine whether a weapon or armor is of masterwork quality</td><td>Soldier</td><td>10</td></tr>
+			<tr><td>Estimate the size of a military force</td><td>Soldier</td><td>15</td></tr>
+			<tr><td>Identify advantages and disadvantages of a military formation</td><td>Soldier</td><td>20</td></tr>
+			<tr><td>Keep horses fed in the wild</td><td>Stable master</td><td>10</td></tr>
+			<tr><td>Fit or remove barding in half the normal time</td><td>Stable master</td><td>15</td></tr>
+			<tr><td>Recognize damaged or sabotaged horse tack</td><td>Stable master</td><td>20</td></tr>
+			<tr><td>Determine the quality of leatherwork (and tell if it's masterwork quality)</td><td>Tanner</td><td>10</td></tr>
+			<tr><td>Aid another on an <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> check to get out of a trap or snare</td><td>Trapper</td><td>5</td></tr>
+			<tr><td>Reset a trap in half the normal amount of time</td><td>Trapper</td><td>20</td></tr>
+			<tr><td>Scavenge wood suitable for campfire or shelter</td><td>Woodcutter</td><td>5</td></tr>
+			<tr><td>Ignore half hardness when attacking wooden object</td><td>Woodcutter</td><td>20</td></tr>
+		</tbody>
+		<tfoot>
+			<tr><td colspan = "3"><sup>1</sup> A major crime typically requires a trial involving a series of <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a>, <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a>, <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a>, <a href="../../coreRulebook/skills/profession.html#profession">Profession</a> (barrister), and <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> skill checks, as well as appropriate <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> checks.</td></tr>
+			<tr><td colspan = "3"><sup>2</sup> To a minimum of 25% of the original value.</td></tr>
+			<tr><td colspan = "3"><sup>3</sup> Provide this benefit for yourself plus one other person for every 2 points by which your skill check exceeds the DC.</td></tr>
+			<tr><td colspan = "3"><sup>4</sup> Increase the DC by 5 if the item is from a region the character is unfamiliar with, and by another 5 if it's more than 20 years old. Exceptionally rare or ancient pieces can't usually have their origin identified in this way.</td></tr>
+		</tfoot>
+	</table>
+
+<h2 id = "converting-characters">Converting Characters</h2>
+<p>Implementing background skills in an established campaign is easy. To convert a character's skill ranks into this system, first determine the total number of background skill ranks she has&mdash;this is equal to 2 &times; the PC's character level. Next, find out how many ranks she has already spent on skills that are background skills under this system. The character gains that number of regular skill ranks to spend on <em>any</em> skills&mdash;essentially refunding the regular skill ranks spent on background skills. Finally, subtract this number from the character's total number of background skill ranks to determine how many background skill ranks she still has to spend. For example, a 5th-level rogue would have 10 background skill ranks. If she had already put 5 ranks into skills that are now background skills, she would spend 5 of her background skill ranks on those skills, freeing up the original 5 ranks to spend on any skills, and she would still have 5 background skill ranks left to spend on background skills.</p>
+<p>The GM might want to allow some amount of retraining to factor in the new background skills. A character who took <a href="../../coreRulebook/skills/profession.html#profession">Profession</a> (poet) might prefer to put those ranks in <a href = "backgroundSkills.html#artistry-skill">Artistry</a> (poetry) instead, or a character who took <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (geography) to represent the time she spent traveling a specific river might take <a href = "backgroundSkills.html#lore-skill">Lore</a> in that river instead.</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Background Skills",globalNavPath=[{ href: '/pathfinderRPG/prd/unchained/skillsAndOptions/index.html', name: 'Pathfinder Unchained: Skills and Options' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

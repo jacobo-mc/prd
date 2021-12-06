@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Prestige Classes</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "index.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "index.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../core/index.html">Core Classes</a></li>
+						<li><a  href = "index.html">Prestige Classes</a></li>
+						<li><a href = "../npc/index.html">NPC Classes</a></li>
+						<li><a href = "../appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "index.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "index.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "index.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id="prestige-classes">Prestige Classes</h1>
+
+<p>Prestige classes allow you to customize characters in very specialized ways. However, the prerequisites mean characters with a prestige class tend to be higher level and might require specific kinds of multiclassing to be effective. The <span class="char-style-override-8">NPC Codex saves busy GMs the time it would take to create NPCs with prestige classes.</p>
+<p>This section gives you useful and interesting NPCs at prestige class levels 2, 4, 7, and 10 for each of the 10 prestige classes detailed in the Core Rulebook. The NPCs are character levels 9, 13, 17, and 20, allowing you to use them over a wide range of levels in the campaign.</p>
+<p>All of the NPCs in this chapter use the "heroic" set of base ability scores (15, 14, 13, 12, 10, 8), and the value of their gear has been determined using the Heroic Level column of the <a href="../../coreRulebook/creatingNPCs.html#table-14-9-npc-gear">NPC Gear table</a>.</p>
+<p>In general, the NPCs do not list mundane gear such as rope, torches, belt pouches, and so on unless it is vital to the character (clerics have a holy symbol, rogues with <a href="../../coreRulebook/skills/disableDevice.html#disable-device" >Disable Device</a> have thieves' tools, and so on). You can assume that an NPC is geared appropriately for his or her profession or adventuring career, and if cost is ever a factor, you can mark off some of the character's extra gear for this purpose or swap it for expendable items such as potions, nearly expended wands, and so on.</p>
+<p>As with the core classes, the three most common uses for NPCs in this chapter are as enemies, allies, and player characters, and the same guidelines explained there apply to this chapter. If your campaign requires PCs to train with a member of a prestige class before they can take levels in that prestige class, you may wish to use these NPCs as mentors or trainers for PCs interested in pursuing these specific courses of study.</p>
+
+<h2>Notes on Classes</h2>
+<p>As with the core classes, you always have the option to alter or add to these characters to make them even more useful to your campaign. If you're considering swapping a character's core class abilities for those of another class or archetype, be sure the altered character still qualifies for the prestige class. For example, the arcane trickster class requires a character to have sneak attack +2d6, so don't use a class or rogue archetype that removes the character's sneak attack ability.</p>
+<p>The remainder of this section examines specific alternative class and archetype choices for each of the classes in this chapter.</p>
+
+<h2><a href="arcaneArcher.html">Arcane Archer</a></h2>
+<p>This prestige class requires the ability to cast 1st-level arcane spells, so all four of the arcane archers in this chapter have at least one level in bard, sorcerer, or wizard. If you want to alter the flavor of these characters, you can swap levels in these core classes for levels in a similar arcane spellcasting class such as summoner or witch. You can even hand-wave the minor math differences between the classes (such as the Hit Die type of a summoner compared to that of a wizard) and create an NPC with a very different feel. For example, the tournament champion (arcane archer 4) is a bard/sorcerer, but could easily be a summoner/sorcerer or a bard/witch, which presents a very different concept for the character.</p>
+
+<h2><a href="arcaneTrickster.html">Arcane Trickster</a></h2>
+<p>This prestige class requires sneak attack +2d6, so all of the arcane tricksters presented here have at least three levels in the rogue class. The requirement that the character must be able to cast <i>mage hand</i> means the character must have levels in bard, sorcerer, or wizard, so all of the arcane tricksters are multiclassed with rogue and one of those three classes. You could, however, replace the rogue levels in any of these characters with <a href="../../ultimateCombat/classes/ninja.html">ninja</a>. levels, since the ninja is a modified rogue. The <a href="../../advancedPlayersGuide/coreClasses/bard.html#sandman">sandman bard archetype</a> and <a href="../../ultimateMagic/spellcastingClassOptions/alchemist.html#vivisectionist-(archetype)">vivisectionist alchemist archetype</a> also give the sneak attack ability and would be interesting class swaps for arcane tricksters.</p>
+
+<h2><a href="assassin.html">Assassin</a></h2>
+<p>This prestige class has the easiest requirements to meet (in terms of game mechanics) out of any of the core classes, so the four assassins presented here have a variety of base classes&mdash;a cleric/rogue, a druid/fighter, a monk, and a rogue. This gives you many options when it comes to quickly customizing these assassins to suit your campaign without altering much of the math. The cleric/rogue could be an oracle/rogue, a cleric/bard, or druid/rogue. The monk could be a fighter, ranger, or rogue. The druid/fighter could be a druid/barbarian, druid/ranger, or cleric/fighter. The rogue could be a bard, ninja, or even a summoner.</p>
+
+<h2><a href="dragonDisciple.html">Dragon Disciple</a></h2>
+<p>This class requires levels in a spontaneous-casting arcane class (of which there are only two core examples, the bard and sorcerer), and if the character has sorcerer levels, it requires him to have the draconic bloodline, so this prestige class is perhaps the most specialized from the Core Rulebook. Fortunately, changing the character's dragon type is very easy, allowing you to use these four characters as any of the 10 dragon types listed in the sorcerer class.</p>
+
+<h2><a href="duelist.html">Duelist</a></h2>
+<p>This class requires three combat feats, so it is naturally suited for fighters (and to a lesser extent rogues, who can use rogue talents to gain extra combat feats). Its reliance on using intelligent tactics, wearing light or no armor, wielding a light or one-handed piercing weapon, and having a free hand makes it a suboptimal choice for barbarians (whose rage-based abilities are a poor thematic match), monks (as they can fight without weapons, and there is only one monk weapon they can use with duelist class abilities), paladins (who usually wear heavier armor), and rangers (who for the most part either are archers or fight in melee with two weapons). Therefore, the four duelists presented here all have fighter or rogue levels. Because the duelist doesn't use specific fighter or rogue class features as requirements, you can easily swap out these features with those of another archetype, such as the free hand fighter, mobile fighter, acrobat rogue, or rake rogue, to create a new duelist with this stat block.</p>
+
+<h2><a href="eldritchKnight.html">Eldritch Knight</a></h2>
+<p>This class requires proficiency in all martial weapons and 3rd-level arcane spellcasting, so the character must have levels in barbarian, fighter, paladin, or ranger (the only way to gain proficiency in all martial weapons from the Core Rulebook), and levels in bard, sorcerer, or wizard. Though the theme of this class is mostly taken over by the magus base class, using the prestige class lets you do things that you can't do as a single-classed magus, such as using higher-level spells or arcane spells that aren't on the magus spell list, mixing arcane and divine magic (as the champion of magic eldritch knight does), and using barbarian rage. In most cases, you can swap out the character's spellcasting class for another (such as replacing conjurer levels with summoner levels or sorcerer levels with bard levels) or swap her martial class levels for another martial class (ranger for barbarian, cavalier for fighter, and so on).</p>
+
+<h2><a href="loremaster.html">Loremaster</a></h2>
+<p>Because this class's skill, feat, and spell requirements are very specific and its unique class abilities are not particularly useful in combat, characters of this class are often relegated to NPC status as sages or mentors. The four loremasters presented here focus on knowledge of the gods, nature, humanoid history, and the planes. However, because the prestige class abilities don't alter the base class's abilities or have specific ties to the character's field of study, you can swap out class levels or change the knowledge focus to whatever you need for your campaign. For example, if you need a 9th-level planar expert, use the divine loremaster and swap her <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) and <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (religion) skill bonuses.</p>
+
+<h2><a href="mysticTheurge.html">Mystic Theurge</a></h2>
+<p>This class requires three or more levels of investment in two different spellcasting classes, and a character interested in this path usually can't afford to dip into other classes on the way to taking prestige class levels. One of the two unique class abilities of the mystic theurge is the ability to use spell slots from one class to cast spells from the character's other class. However, because doing so makes the spell use a higher-level spell slot than normal, this is a suboptimal choice&mdash;the character would normally do this only if he needed extra castings of certain spells and didn't have enough spell slots of the right class. Rather than presenting an underpowered character with weaker-than-normal spells, the four mystic theurges in this chapter are not depicted as using that class ability. Feel free to alter their spell lists to take advantage of this ability if it suits your campaign.</p>
+
+<h2><a href="pathfinderChronicler.html">Pathfinder Chronicler</a></h2>
+<p>This class requires a small skill investment and a roleplaying or background requirement that doesn't need a specific class ability and has no effect on the character's stat block; therefore, the example Pathfinder chroniclers represent a variety of classes. As with the example assassin characters, this means you can easy swap base classes to customize these Pathfinder chroniclers to suit your campaign, such as by changing the mad prophet from a cleric to a conjurer, the master storycrafter from a sorcerer to an illusionist, or the battle skald from a barbarian/bard to a ranger/bard.</p>
+
+<h2><a href="shadowdancer.html">Shadowdancer</a></h2>
+<p>This class requires three combat feats and a small skill investment, so while it is mainly suited for martial characters, it is within reach for spellcasters as well. However, many of the shadowdancer's class abilities&mdash; darkvision, evasion, proficiencies, rogue talents, and uncanny dodge&mdash;are available from other classes or races (or can be emulated with other class abilities), so many characters who take levels in this class will have redundant abilities. Creating an effective shadowdancer requires careful selection of base classes and feats to avoid this; if you swap out earlier levels, make sure you minimize the number of these abilities the character gains from two different sources.</p>
+
+
+</div>	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Prestige Classes",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

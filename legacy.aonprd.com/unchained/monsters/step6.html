@@ -1,0 +1,1431 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Step 6: Spells</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "step6.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "step6.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "step6.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "step6.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "step6.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "step6.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "step6.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "step6.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "step6.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "step6.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "step6.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "../skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../magic/index.html">Magic</a></li>
+						<li><a href = "index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "step6.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "step6.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "step6.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "step6.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "step6.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "step6.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "step6.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "step6.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "step6.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "step6.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+<h1>Step 6: Spells</h1>
+<p>This step is only for monsters that use the spellcaster array. For monsters that know only a few spells (rather than being focused primarily on spellcasting), choose an array other than spellcaster and give the monster the secondary spellcasting universal option in Step 7.</p>
+<p>The spell choices for a spellcaster monster are intentionally limited compared to those of a full NPC, since a monster created using the simple monster creation system is designed to have enough spells to last though a single battle or session. If a monster created this way ends up appearing in multiple sessions, you can swap out the spells each time, assuming that doing so fits the nature and theme of the monster.</p>
+<p>The spells you choose for the monster during this step represent its total spellcasting arsenal for an encounter. If you want to treat some of the spells as being cast from scrolls, wands, or staves, implement them as such during play. Regardless of the source, additional spells still count against the total number the monster can cast.</p>
+<p>You'll also notice that some types of spells don't appear on these lists&mdash;especially spells that solely increase statistics, such as <a href="../../coreRulebook/spells/bullSStrength.html#bull-s-strength"><em>bull's strength</em></a>, <a href="../../coreRulebook/spells/falseLife.html#false-life"><em>false life</em></a>, and <a href="../../coreRulebook/spells/mageArmor.html#mage-armor"><em>mage armor</em></a>. That's because such spells are often cast before combat, and the simple monster creation system assumes the effects of those spells are already in the monster's base numbers.</p>
+<p><strong>Spell DCs</strong>: To determine the DC of a spell cast by a monster, add the spell's level to the number listed in the spell DC column of the monster's array. Use the spell's cleric or sorcerer/wizard level if multiple classes can cast it. If neither of those classes has the spell, use the highest spell level listed in the spell's description.</p>
+
+<h2 id = "choosing-spells">Choosing Spells</h2>
+<p>The easiest way to choose spells for a monster is to select a spell list from among those on the following pages that best matches its theme, using the options in this chapter. A fey with powerful spell-like abilities might choose the enchantment, fey, nature, or trickery spell list. A wizard dedicated to flame might choose the fire spell list, a dedicated transmuter would likely pick the transmutation list, and a generalist might take the arcane or magic list.</p>
+<p>When you choose a spell list, the monster gains the following sets of spells according to its CR band&mdash;the spellcasting range its CR falls into.</p>
+<ul>
+	<li>The primary spells of its CR band, usable once per day. These are the monster's highest-level spells.</li>
+	<li>Both the primary and secondary spells of the CR band one step lower than its own CR band, usable three times per day. These account for the monster's less potent spells.</li>
+	<li>The primary spells of the CR band two steps below its own, usable at will. These are the monster's lowest-level spells.</li>
+</ul>
+<p>This setup produces a spellcaster with a small number of powerful spells that it can use rarely, a larger number of weaker but still useful spells that it can use often, and spells so weak that it hardly ever uses them in battle but can use them frequently.</p>
+<p>Note that a CR 0&ndash;3 monster doesn't gain any at-will spells or any spells usable three times per day, and a CR 4&ndash;7 monster doesn't gain any at-will spells.</p>
+<p>Write down the spells and the number of times they can be used. For the sample monsters later in this chapter, the spells are separated into attack spells, defensive spells, and utility spells, but this step is optional.</p>
+<p>When you pick a spell list, the monster automatically gains the benefit listed at the bottom of that spell list. If you choose to create your own spell list, choose the benefit that matches your monster best, or create your own benefit for that monster instead.</p>
+<p>For example, a CR 9 monster using the aberrant spell list would gain feeblemind and spell resistance once per day each (from the 8&ndash;11 CR band); beast shape I, major image, acid arrow, and see invisibility three times per day each (from the 4&ndash;7 CR band); and cause fear and long arm usable at will (from the 0&ndash;3 CR band). It would also gain the spell list's benefit: the fortification universal monster rule.</p>
+
+<h3 id = "in-depth-spell-choice">In-Depth Spell Choice</h3>
+<p>These lists are arranged to facilitate maximum speed in choosing spells, but you can choose spells individually, give the monster secondary spells in place of primary spells (which is why the CR 16+ band lists secondary spells), or mix and match at your discretion. To keep your monster balanced, don't deviate too far from the number of spells listed for its power level, though you can decrease or increase the number of spells within reason.</p>
+<p>If you want to pick spells one by one, use the following spell levels for each CR band.</p>
+<table>
+	<thead><tr><th>CR Band</th><th>Spell Level</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td>0 or 1st</td></tr>
+		<tr><td>4&ndash;7</td><td>2nd or 3rd</td></tr>
+		<tr><td>8&ndash;11</td><td>4th or 5th</td></tr>
+		<tr><td>12&ndash;15</td><td>6th or 7th</td></tr>
+		<tr><td>16+</td><td>8th or 9th</td></tr>
+	</tbody>
+</table>
+
+<h2>Spell Lists</h2>
+<p>The following lists are themed to different uses of magic, and also correspond to bloodlines, domains, and other prominent spell themes. For a monster with a class graft, use the graft's suggested spell lists to help you choose the monster's spells.</p>
+
+
+<h3 id = "aberrant-spell-list">Aberrant Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Cause fear</em>, <a href="../../advancedClassGuide/spells/longArm.html"><em>long arm</em></a><em></em></td><td><em>Daze</em>, <a href="../../coreRulebook/spells/silentImage.html#silent-image"><em>silent image</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/beastShape.html#beast-shape-i"><em>beast shape I</em></a>, <a href="../../coreRulebook/spells/majorImage.html#major-image"><em>major image</em></a></td><td><a href="../../coreRulebook/spells/acidArrow.html#acid-arrow"><em>acid arrow</em></a>, <a href="../../coreRulebook/spells/seeInvisibility.html#see-invisibility"><em>see invisibility</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/feeblemind.html#feeblemind"><em>feeblemind</em></a>, <em>spell resistance</em></td><td><a href="../../coreRulebook/spells/beastShape.html#beast-shape-ii"><em>beast shape II</em></a>, <a href="../../coreRulebook/spells/blackTentacles.html#black-tentacles"><em>black tentacles</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/planeShift.html#plane-shift"><em>plane shift</em></a>, <a href="../../coreRulebook/spells/projectImage.html#project-image"><em>project image</em></a></td><td><a href="../../coreRulebook/spells/beastShape.html#beast-shape-iv"><em>beast shape IV</em></a>, <em>veil</em></td></tr>
+		<tr><td>16+</td><td><em>Foresight</em>, <em>shapechange</em></td><td><a href="../../coreRulebook/spells/mindBlank.html#mind-blank"><em>mind blank</em></a>, <a href="../../coreRulebook/spells/polymorphAnyObject.html#polymorph-any-object"><em>polymorph any object</em></a></td></tr>
+		</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains the benefit of the <a href="../../bestiary/universalMonsterRules.html#fortification">fortification</strong> universal monster rule.</td></tr>
+	</tfoot>
+</table>
+
+<h3 id = "abjuration-spell-list">Abjuration Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/endureElements.html#endure-elements"><em>endure elements</em></a>, <em>protection from chaos/evil/good/law</em></td><td><em>Alarm</em>, <em>hold portal</em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/nondetection.html#nondetection"><em>nondetection</em></a>, <a href="../../coreRulebook/spells/protectionFromEnergy.html#protection-from-energy"><em>protection from energy</em></a></td><td><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic"><em>dispel magic</em></a>, <a href="../../coreRulebook/spells/resistEnergy.html#resist-energy"><em>resist energy</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><em>Dismissal</em>, <a href="../../coreRulebook/spells/stoneskin.html#stoneskin"><em>stoneskin</em></a></td><td><a href="../../coreRulebook/spells/dimensionalAnchor.html#dimensional-anchor"><em>dimensional anchor</em></a>, <em>lesser globe of invulnerability</em></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/antimagicField.html#antimagic-field"><em>antimagic field</em></a>, <a href="../../coreRulebook/spells/banishment.html#banishment"><em>banishment</em></a></td><td><a href="../../coreRulebook/spells/globeOfInvulnerability.html#globe-of-invulnerability"><em>globe of invulnerability</em></a>, <a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic-greater"><em>greater dispel magic</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/mageSDisjunction.html#mage-s-disjunction"><em>mage's disjunction</em></a>, <a href="../../coreRulebook/spells/prismaticSphere.html#prismatic-sphere"><em>prismatic sphere</em></a></td><td><a href="../../coreRulebook/spells/prismaticWall.html#prismatic-wall"><em>prismatic wall</em></a>, <a href="../../coreRulebook/spells/protectionFromSpells.html#protection-from-spells"><em>protection from spells</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Choose one energy type. The monster gains resistance 5 to that type of damage. At CR 12, increase the resistance to 10. At CR 16, increase the resistance to 20.</td></tr>
+	</tfoot>
+</table>
+
+<h3 id = "abyssal-spell-list">Abyssal Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/burningHands.html#burning-hands"><em>burning hands</em></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-i"><em>summon monster I</em></a></td><td><em>Cause fear</em>, <em>protection from good or law</em></td></tr>
+		<tr><td>4&ndash;7</td><td><em>Rage</em>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-iii"><em>summon monster III</em></a></td><td><a href="../../coreRulebook/spells/alterSelf.html#alter-self"><em>alter self</em></a>, <em>scare</em></td></tr>
+		<tr><td>8&ndash;11</td><td><em>Dismissal</em>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-v"><em>summon monster V</em></a></td><td><a href="../../coreRulebook/spells/chaosHammer.html#chaos-hammer"><em>chaos hammer</em></a>, <a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door"><em>dimension door</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/summonMonster.html#summon-monster-vi"><em>summon monster VI</em></a>, <a href="../../coreRulebook/spells/wordOfChaos.html#word-of-chaos"><em>word of chaos</em></a></td><td><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic-greater"><em>greater dispel magic</em></a>, <a href="../../coreRulebook/spells/teleport.html#teleport-greater"><em>greater teleport</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/energyDrain.html#energy-drain"><em>energy drain</em></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-ix"><em>summon monster IX</em></a></td><td><a href="../../coreRulebook/spells/cloakOfChaos.html#cloak-of-chaos"><em>cloak of chaos</em></a>, <a href="../../coreRulebook/spells/unholyAura.html#unholy-aura"><em>unholy aura</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Increase the monster's Strength modifier by 1. At CR 13, increase it by 2 instead. At CR 17, increase it by 3 instead.</td></tr>
+	</tfoot>
+</table>
+
+<h3 id = "acid-spell-list">Acid Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../ultimateMagic/spells/corrosiveTouch.html#corrosive-touch"><em>corrosive touch</em></a>, <a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist"><em>obscuring mist</em></a></td><td><a href="../../coreRulebook/spells/acidSplash.html#acid-splash"><em>acid splash</em></a>, <em>cause fear</em></td></tr>
+		<tr><td>4&ndash;7</td><td>Empowered <a href="../../ultimateMagic/spells/corrosiveTouch.html#corrosive-touch"><em>corrosive touch</em></a>, <a href="../../coreRulebook/spells/protectionFromEnergy.html#protection-from-energy"><em>protection from energy</em></a> (acid only)</td><td><a href="../../coreRulebook/spells/acidArrow.html#acid-arrow"><em>acid arrow</em></a>, <a href="../../coreRulebook/spells/resistEnergy.html#resist-energy"><em>resist energy</em></a> (acid only)</td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../ultimateMagic/spells/acidicSpray.html#acidic-spray"><em>acidic spray</em></a>, <a href="../../ultimateMagic/spells/corrosiveConsumption.html#corrosive-consumption"><em>corrosive consumption</em></a></td><td><a href="../../coreRulebook/spells/rustingGrasp.html#rusting-grasp"><em>rusting grasp</em></a>, <a href="../../coreRulebook/spells/transmuteRockToMud.html#transmute-rock-to-mud"><em>transmute rock to mud</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td>Widened <a href="../../coreRulebook/spells/acidFog.html#acid-fog"><em>acid fog</em></a>, <a href="../../ultimateMagic/spells/causticEruption.html#caustic-eruption"><em>caustic eruption</em></a></td><td>Quickened <a href="../../coreRulebook/spells/acidArrow.html#acid-arrow"><em>acid arrow</em></a>, <a href="../../coreRulebook/spells/acidFog.html#acid-fog"><em>acid fog</em></a></td></tr>
+		<tr><td>16+</td><td>Empowered <a href="../../ultimateMagic/spells/causticEruption.html#caustic-eruption"><em>caustic eruption</em></a>, <a href="../../coreRulebook/spells/formOfTheDragon.html#form-of-the-dragon-iii"><em>form of the dragon III</em></a> (black only)</td><td><em></em>Maximized <a href="../../ultimateMagic/spells/acidicSpray.html#acidic-spray"><em>acidic spray</em></a>, <a href="../../coreRulebook/spells/stormOfVengeance.html#storm-of-vengeance"><em>storm of vengeance</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains acid resistance 5. At CR 12, increase the resistance to 10. At CR 16, the monster gains acid immunity.</td></tr>
+	</tfoot>
+</table>
+
+<h3 id = "air-spell-list">Air Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Jump</em>, <a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist"><em>obscuring mist</em></a></td><td><a href="../../coreRulebook/spells/featherFall.html#feather-fall"><em>feather fall</em></a>, <em>open/close</em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/gaseousForm.html#gaseous-form"><em>gaseous form</em></a>, wind wall</td><td><em>Fly</em>, <a href="../../coreRulebook/spells/gustOfWind.html#gust-of-wind"><em>gust of wind</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><em>Control wind</em>, <a href="../../coreRulebook/spells/overlandFlight.html#overland-flight"><em>overland flight</em></a></td><td><a href="../../coreRulebook/spells/airWalk.html#air-walk"><em>air walk</em></a>, extended <a href="../../coreRulebook/spells/windWall.html#wind-wall"><em>wind wall</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/controlWeather.html#control-weather"><em>control weather</em></a>, <a href="../../coreRulebook/spells/elementalBody.html#elemental-body-iv"><em>elemental body IV</em></a> (air only)</td><td><a href="../../coreRulebook/spells/chainLightning.html#chain-lightning"><em>chain lightning</em></a>, <a href="../../coreRulebook/spells/reverseGravity.html#reverse-gravity"><em>reverse gravity</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/elementalSwarm.html#elemental-swarm"><em>elemental swarm</em></a> (air only), <a href="../../advancedPlayersGuide/spells/windsOfVengeance.html#winds-of-vengeance"><em>winds of vengeance</em></a></td><td><em></em>Empowered <a href="../../coreRulebook/spells/chainLightning.html#chain-lightning"><em>chain lightning</em></a>, <em>whirlwind</em></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Increase the monster's movement speed by 10 feet.</td></tr>
+	</tfoot>
+</table>
+
+<h3 id = "alchemy-spell-list">Alchemy Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat"><em>expeditious retreat</em></a>, <a href="../../coreRulebook/spells/trueStrike.html#true-strike"><em>true strike</em></a></td><td><a href="../../advancedPlayersGuide/spells/antHaul.html#ant-haul-"><em>ant haul</em></a>, <em>jump</em></td></tr>
+		<tr><td>4&ndash;7</td><td><em>Displacement</em>, <em>fly</em></td><td><em>Invisibility</em>, <a href="../../advancedPlayersGuide/spells/vomitSwarm.html#vomit-swarm"><em>vomit swarm</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/magicJar.html#magic-jar"><em>magic jar</em></a>, <a href="../../coreRulebook/spells/overlandFlight.html#overland-flight"><em>overland flight</em></a></td><td><a href="../../advancedPlayersGuide/spells/dragonSBreath.html#dragon's-breath"><em>dragon's breath</em></a>, <a href="../../coreRulebook/spells/stoneskin.html#stoneskin"><em>stoneskin</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><em>Eyebite</em>, <a href="../../advancedPlayersGuide/spells/twinForm.html#twin-form"><em>twin form</em></a></td><td><em>Heal</em>, <a href="../../coreRulebook/spells/trueSeeing.html#true-seeing"><em>true seeing</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../advancedPlayersGuide/spells/fieryBody.html#fiery-body"><em>fiery body</em></a>, <em>shapechange</em></td><td><em>Clone</em>, <a href="../../coreRulebook/spells/simulacrum.html#simulacrum"><em>simulacrum</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains a +2 bonus on saving throws against disease and poison.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "animal-spell-list">Animal Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Hold animal</em>, <a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-i"><em>summon nature's ally I</em></a></td><td><em>Charm animal</em>, <a href="../../coreRulebook/spells/hideFromAnimals.html#hide-from-animals"><em>hide from animals</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/dominateAnimal.html#dominate-animal"><em>dominate animal</em></a>, <a href="../../coreRulebook/spells/magicFang.html#magic-fang-greater"><em>greater magic fang</em></a></td><td><a href="../../coreRulebook/spells/beastShape.html#beast-shape-i"><em>beast shape I</em></a> (animal only), <a href="../../coreRulebook/spells/speakWithAnimals.html#speak-with-animals"><em>speak with animals</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/animalGrowth.html#animal-growth"><em>animal growth</em></a>, <a href="../../coreRulebook/spells/insectPlague.html#insect-plague"><em>insect plague</em></a></td><td><a href="../../coreRulebook/spells/giantVermin.html#giant-vermin"><em>giant vermin</em></a>, <em>locate creature</em></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/antilifeShell.html#antilife-shell"><em>antilife shell</em></a>, <a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-vii"><em>summon nature's ally VII</em></a> (animal only)</td><td><a href="../../coreRulebook/spells/beastShape.html#beast-shape-iv"><em>beast shape IV</em></a> (animal only), <a href="../../coreRulebook/spells/cureLightWounds.html#cure-light-wounds-mass"><em>mass cure light wounds</em></a></td></tr>
+		<tr><td>16+</td><td>Quickened <a href="../../coreRulebook/spells/insectPlague.html#insect-plague"><em>insect plague</em></a>, <em>shapechange</em></td><td><a href="../../coreRulebook/spells/animalShapes.html#animal-shapes"><em>animal shapes</em></a>, <a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-vii"><em>summon nature's ally VII</em></a> (animals only)</td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Animal allies within 20 feet of the monster gain a +1 luck bonus on attack rolls. </td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "arcane-spell-list">Arcane Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat"><em>expeditious retreat</em></a>,</td><td><em>Light</em>, <a href="../../coreRulebook/spells/prestidigitation.html#prestidigitation"><em>prestidigitation</em></a>, <a href="../../coreRulebook/spells/magicMissile.html#magic-missile"><em>magic missile</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic"><em>dispel magic</em></a>, <em>levitate</em></td><td><em>Invisibility</em>, <a href="../../coreRulebook/spells/scorchingRay.html#scorching-ray"><em>scorching ray</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td>Empowered <a href="../../coreRulebook/spells/lightningBolt.html#lightning-bolt"><em>lightning bolt</em></a>, <a href="../../coreRulebook/spells/overlandFlight.html#overland-flight"><em>overland flight</em></a></td><td><a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door"><em>dimension door</em></a>, <em>lesser globe of invulnerability</em></td></tr>
+		<tr><td>12&ndash;15</td><td>Quickened <a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic"><em>dispel magic</em></a>, <a href="../../coreRulebook/spells/teleport.html#teleport-greater"><em>greater teleport</em></a></td><td><em></em>Maximized <a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a>, <a href="../../coreRulebook/spells/trueSeeing.html#true-seeing"><em>true seeing</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/powerWordKill.html#power-word-kill"><em>power word kill</em></a>, quickened <em>wall of force </em></td><td>Maximized <a href="../../coreRulebook/spells/coneOfCold.html#cone-of-cold"><em>cone of cold</em></a>, <a href="../../coreRulebook/spells/powerWordStun.html#power-word-stun"><em>power word stun</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Increase the saving throw DCs of any of the monster's spells to which a metamagic feat has been applied by 1.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "artifice-spell-list">Artifice Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/animateRope.html#animate-rope"><em>animate rope</em></a>, <em>magic stone</em></td><td><a href="../../coreRulebook/spells/floatingDisk.html#floating-disk"><em>floating disk</em></a>, <em>mending</em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/stoneShape.html#stone-shape"><em>stone shape</em></a>, <a href="../../coreRulebook/spells/tinyHut.html#tiny-hut"><em>tiny hut</em></a></td><td><a href="../../coreRulebook/spells/makeWhole.html#make-whole"><em>make whole</em></a>, <a href="../../coreRulebook/spells/woodShape.html#wood-shape"><em>wood shape</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/majorCreation.html#major-creation"><em>major creation</em></a>, <a href="../../coreRulebook/spells/wallOfStone.html#wall-of-stone"><em>wall of stone</em></a></td><td><em>Fabricate</em>, <a href="../../coreRulebook/spells/minorCreation.html#minor-creation"><em>minor creation</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/limitedWish.html#limited-wish"><em>limited wish</em></a>, <a href="../../coreRulebook/spells/wallOfIron.html#wall-of-iron"><em>wall of iron</em></a></td><td><a href="../../coreRulebook/spells/animateObjects.html#animate-objects"><em>animate objects</em></a>, <a href="../../coreRulebook/spells/fleshToStone.html#flesh-to-stone"><em>flesh to stone</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/crushingHand.html#crushing-hand"><em>crushing hand</em></a>, <a href="../../coreRulebook/spells/prismaticSphere.html#prismatic-sphere"><em>prismatic sphere</em></a></td><td><em>Iron body</em>, <a href="../../coreRulebook/spells/polymorphAnyObject.html#polymorph-any-object"><em>polymorph any object</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: When the monster casts a spell from this list, it gains a deflection bonus to AC equal to the spell's level for 1 round.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "battle-spell-list">Battle Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Bless</em>, <a href="../../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat"><em>expeditious retreat</em></a></td><td><em>Bleed</em>, <em>flare</em></td></tr>
+		<tr><td>4&ndash;7</td><td><em>Fly</em>, <em>haste</em></td><td><em>Invisibility</em>, <a href="../../coreRulebook/spells/protectionFromArrows.html#protection-from-arrows"><em>protection from arrows</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/interposingHand.html#interposing-hand"><em>interposing hand</em></a>, <em>teleport</em></td><td><a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door"><em>dimension door</em></a>, <a href="../../coreRulebook/spells/invisibility.html#invisibility-greater"><em>greater invisibility</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/giantForm.html#giant-form-i"><em>giant form I</em></a>, <em>transformation</em></td><td><a href="../../coreRulebook/spells/teleport.html#teleport-greater"><em>greater teleport</em></a>, <a href="../../coreRulebook/spells/trueSeeing.html#true-seeing"><em>true seeing</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/holdMonster.html#hold-monster-mass"><em>mass hold monster</em></a>, <a href="../../coreRulebook/spells/timeStop.html#time-stop"><em>time stop</em></a></td><td><em>Mislead</em>, <a href="../../coreRulebook/spells/powerWordStun.html#power-word-stun"><em>power word stun</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Increase the monster's attack bonus for all attacks by 1.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "celestial-spell-list">Celestial Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Bless</em>, <a href="../../coreRulebook/spells/divineFavor.html#divine-favor"><em>divine favor</em></a></td><td><em>Guidance</em>, <em>light</em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/magicCircleAgainstEvil.html#magic-circle-against-evil"><em>magic circle against evil</em></a>, <em>prayer</em></td><td><a href="../../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds"><em>cure moderate wounds</em></a>, <a href="../../coreRulebook/spells/resistEnergy.html#resist-energy"><em>resist energy</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/flameStrike.html#flame-strike"><em>flame strike</em></a>, <a href="../../coreRulebook/spells/command.html#command-greater"><a href="../../coreRulebook/spells/command.html#greater-command"><em>greater command</em></a></a></td><td><a href="../../advancedPlayersGuide/spells/blessingOfFervor.html#blessing-of-fervor"><em>blessing of fervor</em></a>, <a href="../../coreRulebook/spells/holySmite.html#holy-smite"><em>holy smite</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/banishment.html#banishment"><em>banishment</em></a>, <a href="../../coreRulebook/spells/holyWord.html#holy-word"><em>holy word</em></a></td><td><em></em>Empowered <a href="../../coreRulebook/spells/flameStrike.html#flame-strike"><em>flame strike</em></a>, <a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic-greater"><em>greater dispel magic</em></a></td></tr>
+		<tr><td>16+</td><td>Quickened <a href="../../coreRulebook/spells/flameStrike.html#flame-strike"><em>flame strike</em></a>, <em>gate</em></td><td><a href="../../coreRulebook/spells/holyAura.html#holy-aura"><em>holy aura</em></a>, <em>sunburst</em></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains resistance 5 to acid and cold. At CR 12, these resistances increase to 10.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "chaos-spell-list">Chaos Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Lesser confusion</em>, <a href="../../coreRulebook/spells/protectionFromLaw.html#protection-from-law"><em>protection from law</em></a></td><td><em>Daze</em>, <a href="../../coreRulebook/spells/entropicShield.html#entropic-shield"><em>entropic shield</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/magicCircleAgainstLaw.html#magic-circle-against-law"><em>magic circle against law</em></a>, <em>rage</em></td><td><a href="../../coreRulebook/spells/alterSelf.html#alter-self"><em>alter self</em></a>, <a href="../../coreRulebook/spells/dazeMonster.html#daze-monster"><em>daze monster</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/dispelLaw.html#dispel-law"><em>dispel law</em></a>, <a href="../../coreRulebook/spells/mindFog.html#mind-fog"><em>mind fog</em></a></td><td><a href="../../coreRulebook/spells/chaosHammer.html#chaos-hammer"><em>chaos hammer</em></a>, <em>confusion</em></td></tr>
+		<tr><td>12&ndash;15</td><td><em>Insanity</em>, <a href="../../coreRulebook/spells/wordOfChaos.html#word-of-chaos"><em>word of chaos</em></a></td><td><a href="../../coreRulebook/spells/animateObjects.html#animate-objects"><em>animate objects</em></a>, <em>repulsion</em></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/prismaticSphere.html#prismatic-sphere"><em>prismatic sphere</em></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-ix"><em>summon monster IX</em></a> (chaotic only)</td><td><a href="../../coreRulebook/spells/cloakOfChaos.html#cloak-of-chaos"><em>cloak of chaos</em></a>, <a href="../../coreRulebook/spells/scintillatingPattern.html#scintillating-pattern"><em>scintillating pattern</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster's attacks count as chaotic for the purpose of overcoming damage reduction.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "charm-spell-list">Charm Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Charm person</em>, <em>hypnotism</em></td><td><em>Daze</em>, <em>message</em></td></tr>
+		<tr><td>4&ndash;7</td><td><em>Hold person</em>, <em>suggestion</em></td><td><em>Calm emotions</em>, <a href="../../coreRulebook/spells/dazeMonster.html#daze-monster"><em>daze monster</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><em>Charm monster</em>,</td><td><em>Confusion</em>, <em>lesser geas</em>, <a href="../../coreRulebook/spells/dominatePerson.html#dominate-person"><em>dominate person</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><em>Insanity</em>, <a href="../../coreRulebook/spells/holdPerson.html#hold-person-mass"><em>mass hold person</em></a></td><td><em>Geas/quest</em>, <a href="../../coreRulebook/spells/suggestion.html#suggestion-mass"><em>mass suggestion</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/dominateMonster.html#dominate-monster"><em>dominate monster</em></a>, <a href="../../coreRulebook/spells/holdMonster.html#hold-monster-mass"><em>mass hold monster</em></a></td><td><em>Demand</em>, <a href="../../coreRulebook/spells/charmMonster.html#charm-monster-mass"><em>mass charm monster</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains a +4 bonus on saving throws against charm effects.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "cold-spell-list">Cold Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Frostbite</em>, <a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist"><em>obscuring mist</em></a></td><td><a href="../../coreRulebook/spells/endureElements.html#endure-elements"><em>endure elements</em></a>, <a href="../../coreRulebook/spells/rayOfFrost.html#ray-of-frost"><em>ray of frost</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/protectionFromEnergy.html#protection-from-energy"><em>protection from energy</em></a>, <em>sleet storm</em></td><td><a href="../../coreRulebook/spells/chillMetal.html#chill-metal"><em>chill metal</em></a>, <a href="../../coreRulebook/spells/resistEnergy.html#resist-energy"><em>resist energy</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/coneOfCold.html#cone-of-cold"><em>cone of cold</em></a>, enlarged<a href="../../coreRulebook/spells/iceStorm.html#ice-storm"><em>ice storm</em></a></td><td><a href="../../coreRulebook/spells/iceStorm.html#ice-storm"><em>ice storm</em></a>, <a href="../../coreRulebook/spells/wallOfIce.html#wall-of-ice"><em>wall of ice</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/controlWeather.html#control-weather"><em>control weather</em></a>, <a href="../../coreRulebook/spells/formOfTheDragon.html#form-of-the-dragon-ii"><em>form of the dragon II</em></a> (white dragon only)</td><td>Empowered <a href="../../coreRulebook/spells/coneOfCold.html#cone-of-cold"><em>cone of cold</em></a>, <a href="../../coreRulebook/spells/freezingSphere.html#freezing-sphere"><em>freezing sphere</em></a></td></tr>
+		<tr><td>16+</td><td>Quickened <a href="../../coreRulebook/spells/coneOfCold.html#cone-of-cold"><em>cone of cold</em></a>, <a href="../../coreRulebook/spells/formOfTheDragon.html#form-of-the-dragon-iii"><em>form of the dragon III</em></a> (white dragon only)</td><td><a href="../../coreRulebook/spells/polarRay.html#polar-ray"><em>polar ray</em></a>, <a href="../../coreRulebook/spells/simulacrum.html#simulacrum"><em>simulacrum</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains cold resistance 5. At CR 12, increase the resistance to 10. At CR 16, the monster gains cold immunity.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "community-spell-list">Community Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Bless</em>, <em>sanctuary</em></td><td><a href="../../coreRulebook/spells/cureLightWounds.html#cure-light-wounds"><em>cure light wounds</em></a>, <em>virtue</em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic"><em>dispel magic</em></a>, <em>prayer</em></td><td><em>Aid</em>, <a href="../../coreRulebook/spells/shieldOther.html#shield-other"><em>shield other</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/telepathicBond.html#telepathic-bond"><em>telepathic bond</em></a>, <a href="../../coreRulebook/spells/wallOfStone.html#wall-of-stone"><em>wall of stone</em></a></td><td><a href="../../coreRulebook/spells/cureCriticalWounds.html#cure-critical-wounds"><em>cure critical wounds</em></a>, <em>status</em></td></tr>
+		<tr><td>12&ndash;15</td><td><em>Heal</em>, <em>repulsion</em></td><td><a href="../../coreRulebook/spells/banishment.html#banishment"><em>banishment</em></a>, <a href="../../coreRulebook/spells/bladeBarrier.html#blade-barrier"><em>blade barrier</em></a></td></tr>
+		<tr><td>16+</td><td><em>Foresight</em>, <em>miracle</em></td><td><a href="../../coreRulebook/spells/dimensionalLock.html#dimensional-lock"><em>dimensional lock</em></a>, <a href="../../coreRulebook/spells/cureCriticalWounds.html#cure-critical-wounds-mass"><em>mass cure critical wounds</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> as an additional master skill.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "conjuration-spell-list">Conjuration Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Grease</em>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-i"><em>summon monster I</em></a></td><td><a href="../../coreRulebook/spells/acidSplash.html#acid-splash"><em>acid splash</em></a>, <em>guidance</td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/stinkingCloud.html#stinking-cloud"><em>stinking cloud</em></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-iii"><em>summon monster III</em></a></td><td><a href="../../coreRulebook/spells/acidArrow.html#acid-arrow"><em>acid arrow</em></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-ii"><em>summon monster II</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/summonMonster.html#summon-monster-v"><em>summon monster V</em></a>, <em>teleport</em></td><td><a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door"><em>dimension door</em></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-iv"><em>summon monster IV</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/teleport.html#teleport-greater"><em>greater teleport</em></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-vii"><em>summon monster VII</em></a></td><td><a href="../../coreRulebook/spells/acidFog.html#acid-fog"><em>acid fog</em></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-vi"><em>summon monster VI</em></a></td></tr>
+		<tr><td>16+</td><td><em>Gate</em>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-ix"><em>summon monster IX</em></a></td><td><a href="../../coreRulebook/spells/incendiaryCloud.html#incendiary-cloud"><em>incendiary cloud</em></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-viii"><em>summon monster VIII</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster doubles the duration of all conjuration (summoning) spells it casts.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "darkness-spell-list">Darkness Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Cause fear</em>, <a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist"><em>obscuring mist</em></a></td><td><em>Daze</em>, <a href="../../coreRulebook/spells/silentImage.html#silent-image"><em>silent image</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/deeperDarkness.html#deeper-darkness"><em>deeper darkness</em></a>, <em>displacement</em></td><td><em>Blindness/deafness</em> (only to cause blindness), <em>darkness</em></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/shadowEvocation.html#shadow-evocation"><em>shadow evocation</em></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-v"><em>summon monster V</em></a> (1d3 shadows)</td><td><a href="../../coreRulebook/spells/blackTentacles.html#black-tentacles"><em>black tentacles</em></a>, <a href="../../coreRulebook/spells/shadowConjuration.html#shadow-conjuration"><em>shadow conjuration</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/shadowConjuration.html#shadow-conjuration-greater"><em>greater shadow conjuration</em></a>, <a href="../../coreRulebook/spells/powerWordBlind.html#power-word-blind"><em>power word blind</em></a></td><td><em></em>Quickened <em>darkness</em>, <a href="../../coreRulebook/spells/shadowWalk.html#shadow-walk"><em>shadow walk</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/energyDrain.html#energy-drain"><em>energy drain</em></a>, <em>shades</em></td><td><a href="../../coreRulebook/spells/shadowEvocation.html#shadow-evocation-greater"><em>greater shadow evocation</em></a>, maximized <a href="../../coreRulebook/spells/shadowEvocation.html#shadow-evocation"><em>shadow evocation</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster's spells with the darkness descriptor count as 1 spell level higher.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "death-spell-list">Death Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/chillTouch.html#chill-touch"><em>chill touch</em></a>, <a href="../../coreRulebook/spells/rayOfEnfeeblement.html#ray-of-enfeeblement"><em>ray of enfeeblement</em></a></td><td><em>Bleed</em>, <a href="../../coreRulebook/spells/touchOfFatigue.html#touch-of-fatigue"><em>touch of fatigue</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../advancedClassGuide/spells/strickenHeart.html"><em>stricken heart</em></a>, <a href="../../coreRulebook/spells/vampiricTouch.html#vampiric-touch"><em>vampiric touch</em></a></td><td><a href="../../coreRulebook/spells/deathKnell.html#death-knell"><em>death knell</em></a>, <a href="../../coreRulebook/spells/ghoulTouch.html#ghoul-touch"><em>ghoul touch</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/slayLiving.html#slay-living"><em>slay living</em></a>, <a href="../../coreRulebook/spells/wavesOfFatigue.html#waves-of-fatigue"><em>waves of fatigue</em></a></td><td><a href="../../coreRulebook/spells/deathWard.html#death-ward"><em>death ward</em></a>, <em>enervation</em></td></tr>
+		<tr><td>12&ndash;15</td><td><em>Destruction</em>, <a href="../../coreRulebook/spells/fingerOfDeath.html#finger-of-death"><em>finger of death</em></a></td><td><a href="../../coreRulebook/spells/circleOfDeath.html#circle-of-death"><em>circle of death</em></a>, <a href="../../coreRulebook/spells/undeathToDeath.html#undeath-to-death"><em>undeath to death</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/energyDrain.html#energy-drain"><em>energy drain</em></a>, <a href="../../coreRulebook/spells/wailOfTheBanshee.html#wail-of-the-banshee"><em>wail of the banshee</em></a></td><td><a href="../../coreRulebook/spells/horridWilting.html#horrid-wilting"><em>horrid wilting</em></a>, <a href="../../coreRulebook/spells/symbolOfDeath.html#symbol-of-death"><em>symbol of death</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Increase the saving throw DC of any death spell the monster casts by 1.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "destined-spell-list">Destined Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Alarm</em>, <em>protection from chaos/evil/good/law</em></td><td><a href="../../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat"><em>expeditious retreat</em></a>, <a href="../../coreRulebook/spells/trueStrike.html#true-strike"><em>true strike</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><em>Displacement</em>, <a href="../../coreRulebook/spells/protectionFromEnergy.html#protection-from-energy"><em>protection from energy</em></a></td><td><em>Blur</em>, <em>good hope</em></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/breakEnchantment.html#break-enchantment"><em>break enchantment</em></a>, <a href="../../ultimateCombat/spells/debilitatingPortent.html#debilitating-portent"><em>debilitating portent</em></a></td><td><em>Divination</em>, <a href="../../coreRulebook/spells/freedomOfMovement.html#freedom-of-movement"><em>freedom of movement</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td>Quickened <em>displacement</em>, <a href="../../ultimateCombat/spells/joltingPortent.html#jolting-portent"><em>jolting portent</em></a></td><td><em>Mislead</em>, <a href="../../coreRulebook/spells/spellTurning.html#spell-turning"><em>spell turning</em></a></td></tr>
+		<tr><td>16+</td><td><em>Foresight</em>, quickened <a href="../../coreRulebook/spells/freedomOfMovement.html#freedom-of-movement"><em>freedom of movement</em></a></td><td><a href="../../coreRulebook/spells/mindBlank.html#mind-blank"><em>mind blank</em></a>, <a href="../../coreRulebook/spells/momentOfPrescience.html#moment-of-prescience"><em>moment of prescience</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Increase all the monster's saving throw bonuses by 1.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "destruction-spell-list">Destruction Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/burningHands.html#burning-hands"><em>burning hands</em></a>, <a href="../../coreRulebook/spells/trueStrike.html#true-strike"><em>true strike</em></a></td><td><a href="../../coreRulebook/spells/acidSplash.html#acid-splash"><em>acid splash</em></a>, <a href="../../coreRulebook/spells/rayOfFrost.html#ray-of-frost"><em>ray of frost</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a>, <em>rage</em></td><td><a href="../../coreRulebook/spells/acidArrow.html#acid-arrow"><em>acid arrow</em></a>, <em>shatter</em></td></tr>
+		<tr><td>8&ndash;11</td><td>Maximized <a href="../../coreRulebook/spells/acidArrow.html#acid-arrow"><em>acid arrow</em></a>, <em>shout</em></td><td><a href="../../coreRulebook/spells/iceStorm.html#ice-storm"><em>ice storm</em></a>, <a href="../../coreRulebook/spells/inflictCriticalWounds.html#inflict-critical-wounds"><em>inflict critical wounds</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/disintegrate.html#disintegrate"><em>disintegrate</em></a>, quickened <a href="../../coreRulebook/spells/lightningBolt.html#lightning-bolt"><em>lightning bolt</em></a></td><td>Maximized <a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a>, <em>harm</em></td></tr>
+		<tr><td>16+</td><td>Empowered <a href="../../coreRulebook/spells/disintegrate.html#disintegrate"><em>disintegrate</em></a>, <em>implosion</em></td><td><em>Earthquake</em>, <a href="../../coreRulebook/spells/fireStorm.html#fire-storm"><em>fire storm</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Increase the saving throw DCs of any spells the monster casts that deal damage by 1.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "divination-spell-list">Divination Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../ultimateMagic/spells/anticipatePeril.html#anticipate-peril"><em>anticipate peril</em></a>, <a href="../../ultimateMagic/spells/unpreparedCombatant.html#unprepared-combatant"><em>unprepared combatant</em></a></td><td><em>Guidance</em>, <a href="../../coreRulebook/spells/trueStrike.html#true-strike"><em>true strike</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><em>Clairaudience/clairvoyance</em>, <a href="../../coreRulebook/spells/seeInvisibility.html#see-invisibility"><em>see invisibility</em></a></td><td><a href="../../coreRulebook/spells/arcaneSight.html#arcane-sight"><em>arcane sight</em></a>, <a href="../../coreRulebook/spells/detectThoughts.html#detect-thoughts"><em>detect thoughts</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><em>Scrying</em>, <a href="../../coreRulebook/spells/telepathicBond.html#telepathic-bond"><em>telepathic bond</em></a></td><td><a href="../../coreRulebook/spells/discernLies.html#discern-lies"><em>discern lies</em></a>, <em>locate creature</em></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/arcaneSight.html#arcane-sight-greater"><em>greater arcane sight</em></a>, <a href="../../coreRulebook/spells/scrying.html#scrying-greater"><em>greater scrying</em></a></td><td><a href="../../coreRulebook/spells/findThePath.html#find-the-path"><em>find the path</em></a>, <a href="../../coreRulebook/spells/trueSeeing.html#true-seeing"><em>true seeing</em></a></td></tr>
+		<tr><td>16+</td><td><em>Foresight</em>, <a href="../../ultimateMagic/spells/predictionOfFailure.html#prediction-of-failure"><em>prediction of failure</em></a></td><td><a href="../../coreRulebook/spells/discernLocation.html#discern-location"><em>discern location</em></a>, <a href="../../coreRulebook/spells/momentOfPrescience.html#moment-of-prescience"><em>moment of prescience</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster cannot be surprised while it is conscious and able to take actions.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "draconic-spell-list">Draconic Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/burningHands.html#burning-hands"><em>burning hands</em></a>, <em>cause fear</em></td><td><em>Jump</em>, <a href="../../coreRulebook/spells/trueStrike.html#true-strike"><em>true strike</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><em>Fly</em>, <em>haste</em></td><td><a href="../../advancedPlayersGuide/spells/draconicReservoir.html#draconic-reservoir-"><em>draconic reservoir</em></a>, <em>scare</em></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/overlandFlight.html#overland-flight"><em>overland flight</em></a>, <em>spell resistance</em></td><td><a href="../../advancedPlayersGuide/spells/dragonSBreath.html#dragon's-breath"><em>dragon's breath</em></a>, <em>fear</em></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/formOfTheDragon.html#form-of-the-dragon-ii"><em>form of the dragon II</em></a>, <a href="../../coreRulebook/spells/spellTurning.html#spell-turning"><em>spell turning</em></a></td><td><a href="../../coreRulebook/spells/formOfTheDragon.html#form-of-the-dragon-i"><em>form of the dragon I</em></a>, <a href="../../coreRulebook/spells/symbolOfFear.html#symbol-of-fear"><em>symbol of fear</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/formOfTheDragon.html#form-of-the-dragon-iii"><em>form of the dragon III</em></a>, <em>wish</em></td><td><em>Foresight</em>, <a href="../../coreRulebook/spells/powerWordStun.html#power-word-stun"><em>power word stun</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster's AC and flat-footed AC increase by 2. In addition, the monster gains resistance 5 to your choice of acid, cold, electricity, or fire.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "earth-spell-list">Earth Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../advancedPlayersGuide/spells/expeditiousExcavation.html#expeditious-excavation"><em>expeditious excavation</em></a>, <em>magic stone</em></td><td><a href="../../coreRulebook/spells/acidSplash.html#acid-splash"><em>acid splash</em></a>, <em>resistance</em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/meldIntoStone.html#meld-into-stone"><em>meld into stone</em></a>, <a href="../../coreRulebook/spells/stoneShape.html#stone-shape"><em>stone shape</em></a></td><td><a href="../../coreRulebook/spells/acidArrow.html#acid-arrow"><em>acid arrow</em></a>, <a href="../../coreRulebook/spells/softenEarthAndStone.html#soften-earth-and-stone"><em>soften earth and stone</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/transmuteMudToRock.html#transmute-mud-to-rock"><em>transmute mud to rock</em></a>, <a href="../../coreRulebook/spells/transmuteRockToMud.html#transmute-rock-to-mud"><em>transmute rock to mud</em></a></td><td><a href="../../coreRulebook/spells/spikeStones.html#spike-stones"><em>spike stones</em></a>, <a href="../../coreRulebook/spells/wallOfStone.html#wall-of-stone"><em>wall of stone</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/elementalBody.html#elemental-body-iv"><em>elemental body IV</em></a> (earth only), <a href="../../coreRulebook/spells/wallOfIron.html#wall-of-iron"><em>wall of iron</em></a></td><td><a href="../../coreRulebook/spells/majorCreation.html#major-creation"><em>major creation</em></a>, <a href="../../coreRulebook/spells/moveEarth.html#move-earth"><em>move earth</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/elementalSwarm.html#elemental-swarm"><em>elemental swarm</em></a> (earth only), <a href="../../coreRulebook/spells/imprisonment.html#imprisonment"><em>imprisonment</em></a></td><td><em>Earthquake</em>, <em>iron body</em></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains acid resistance 5. At CR 12, increase the resistance to 10. At CR 16, the monster gains acid immunity.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "electricity-spell-list">Electricity Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat"><em>expeditious retreat</em></a>, <a href="../../coreRulebook/spells/shockingGrasp.html#shocking-grasp"><em>shocking grasp</em></a></td><td><em>Flare</em>, <a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist"><em>obscuring mist</em></a></td></tr>
+		<tr><td><em></em></td><td></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/callLightning.html#call-lightning"><em>call lightning</em></a>, <a href="../../coreRulebook/spells/lightningBolt.html#lightning-bolt"><em>lightning bolt</em></a></td><td><a href="../../advancedPlayersGuide/spells/elementalAura.html#elemental-aura"><em>elemental aura</em></a> (electricity only), <a href="../../advancedPlayersGuide/spells/elementalTouch.html#elemental-touch"><em>elemental touch</em></a> (electricity only)</td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/callLightningStorm.html#call-lightning-storm"><em>call lightning storm</em></a>, empowered <a href="../../coreRulebook/spells/lightningBolt.html#lightning-bolt"><em>lightning bolt</em></a></td><td><a href="../../advancedPlayersGuide/spells/ballLightning.html#ball-lightning"><em>ball lightning</em></a>, <a href="../../advancedPlayersGuide/spells/dragonSBreath.html#dragon's-breath"><em>dragon's breath</em></a> (electricity only)</td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/chainLightning.html#chain-lightning"><em>chain lightning</em></a>, quickened <a href="../../coreRulebook/spells/lightningBolt.html#lightning-bolt"><em>lightning bolt</em></a></td><td><a href="../../coreRulebook/spells/controlWeather.html#control-weather"><em>control weather</em></a>, <a href="../../coreRulebook/spells/formOfTheDragon.html#form-of-the-dragon-ii"><em>form of the dragon II</em></a> (blue or bronze only)</td></tr>
+		<tr><td>16+</td><td>Empowered <a href="../../coreRulebook/spells/chainLightning.html#chain-lightning"><em>chain lightning</em></a>, empowered quickened <a href="../../coreRulebook/spells/lightningBolt.html#lightning-bolt"><em>lightning bolt</em></a></td><td><a href="../../coreRulebook/spells/formOfTheDragon.html#form-of-the-dragon-iii"><em>form of the dragon III</em></a> (blue or bronze only), <a href="../../coreRulebook/spells/powerWordStun.html#power-word-stun"><em>power word stun</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains electricity resistance 5. At CR 12, increase the resistance to 10. At CR 16, the monster gains electricity immunity.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "elemental-spell-list">Elemental Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/burningHands.html#burning-hands"><em>burning hands</em></a>, <a href="../../coreRulebook/spells/produceFlame.html#produce-flame"><em>produce flame</em></a></td><td><a href="../../coreRulebook/spells/rayOfFrost.html#ray-of-frost"><em>ray of frost</em></a>, <em>resistance</em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a>, <a href="../../coreRulebook/spells/lightningBolt.html#lightning-bolt"><em>lightning bolt</em></a></td><td><a href="../../coreRulebook/spells/scorchingRay.html#scorching-ray"><em>scorching ray</em></a>, <em>sleet storm</em></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/controlWinds.html#control-winds"><em>control winds</em></a>, <a href="../../coreRulebook/spells/elementalBody.html#elemental-body-ii"><em>elemental body II</em></a></td><td><a href="../../coreRulebook/spells/elementalBody.html#elemental-body-i"><em>elemental body I</em></a>, <a href="../../coreRulebook/spells/iceStorm.html#ice-storm"><em>ice storm</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/elementalBody.html#elemental-body-iv"><em>elemental body IV</em></a>, <a href="../../coreRulebook/spells/fireStorm.html#fire-storm"><em>fire storm</em></a></td><td><a href="../../coreRulebook/spells/elementalBody.html#elemental-body-iii"><em>elemental body III</em></a>, <a href="../../coreRulebook/spells/freezingSphere.html#freezing-sphere"><em>freezing sphere</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/elementalSwarm.html#elemental-swarm"><em>elemental swarm</em></a>, <em>meteor</em></td><td>Empowered <a href="../../coreRulebook/spells/chainLightning.html#chain-lightning"><em>chain lightning</em></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-viii"><em>summon monster VIII</em></a> (elementals only)</td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains one of the following: a fly speed of 60 feet with average maneuverability, a burrow speed of 30 feet, a 30-foot increase to its base speed, or a swim speed of 60 feet.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "enchantment-spell-list">Enchantment Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Charm person</em>, <em>sleep</em></td><td><em>Daze</em>, <em>hypnotism</em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/hideousLaughter.html#hideous-laughter"><em>hideous laughter</em></a>, <em>hold person</em></td><td><em>Suggestion</em>, <a href="../../coreRulebook/spells/touchOfIdiocy.html#touch-of-idiocy"><em>touch of idiocy</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/dominatePerson.html#dominate-person"><em>dominate person</em></a>, <a href="../../coreRulebook/spells/feeblemind.html#feeblemind"><em>feeblemind</em></a></td><td><em>Charm monster</em>, <em>confusion</em></td></tr>
+		<tr><td>12&ndash;15</td><td><em>Insanity</em>, <a href="../../coreRulebook/spells/suggestion.html#suggestion-mass"><em>mass suggestion</em></a></td><td><a href="../../coreRulebook/spells/holdPerson.html#hold-person-mass"><em>mass hold person</em></a>, <a href="../../coreRulebook/spells/powerWordBlind.html#power-word-blind"><em>power word blind</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/irresistibleDance.html#irresistible-dance"><em>irresistible dance</em></a>, <a href="../../coreRulebook/spells/powerWordKill.html#power-word-kill"><em>power word kill</em></a></td><td><a href="../../coreRulebook/spells/binding.html#binding"><em>binding</em></a>, <a href="../../coreRulebook/spells/powerWordStun.html#power-word-stun"><em>power word stun</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains either <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> or <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> as an additional master skill.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "evil-spell-list">Evil Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Bane</em>, <a href="../../coreRulebook/spells/inflictLightWounds.html#inflict-light-wounds"><em>inflict light wounds</em></a></td><td><em>Bleed</em>, <a href="../../coreRulebook/spells/protectionFromGood.html#protection-from-good"><em>protection from good</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/bestowCurse.html#bestow-curse"><em>bestow curse</em></a>, <a href="../../coreRulebook/spells/magicCircleAgainstGood.html#magic-circle-against-good"><em>magic circle against good</em></a></td><td><em>Darkness</em>, <a href="../../coreRulebook/spells/ghoulTouch.html#ghoul-touch"><em>ghoul touch</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/dispelGood.html#dispel-good"><em>dispel good</em></a>, <a href="../../coreRulebook/spells/slayLiving.html#slay-living"><em>slay living</em></a></td><td><a href="../../coreRulebook/spells/inflictCriticalWounds.html#inflict-critical-wounds"><em>inflict critical wounds</em></a>, <a href="../../coreRulebook/spells/unholyBlight.html#unholy-blight"><em>unholy blight</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/blasphemy.html#blasphemy"><em>blasphemy</em></a>, <em>destruction</em></td><td><em>Harm</em>, <a href="../../coreRulebook/spells/inflictModerateWounds.html#inflict-moderate-wounds-mass"><em>mass inflict moderate wounds</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/powerWordKill.html#power-word-kill"><em>power word kill</em></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-ix"><em>summon monster IX</em></a> (evil only)</td><td><a href="../../coreRulebook/spells/powerWordStun.html#power-word-stun"><em>power word stun</em></a>, <a href="../../coreRulebook/spells/unholyAura.html#unholy-aura"><em>unholy aura</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster's attacks count as evil for the purpose of overcoming damage reduction.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "evocation-spell-list">Evocation Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/burningHands.html#burning-hands"><em>burning hands</em></a>, <a href="../../coreRulebook/spells/magicMissile.html#magic-missile"><em>magic missile</em></a></td><td><em>Light</em>, <a href="../../coreRulebook/spells/rayOfFrost.html#ray-of-frost"><em>ray of frost</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a>, <a href="../../coreRulebook/spells/lightningBolt.html#lightning-bolt"><em>lightning bolt</em></a></td><td><a href="../../coreRulebook/spells/scorchingRay.html#scorching-ray"><em>scorching ray</em></a>, <em>shatter</em></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/coneOfCold.html#cone-of-cold"><em>cone of cold</em></a>, empowered <a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a></td><td><a href="../../coreRulebook/spells/iceStorm.html#ice-storm"><em>ice storm</em></a>, <a href="../../coreRulebook/spells/wallOfFire.html#wall-of-fire"><em>wall of fire</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/delayedBlastFireball.html#delayed-blast-fireball"><em>delayed blast fireball</em></a>, quickened <a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a></td><td><a href="../../coreRulebook/spells/chainLightning.html#chain-lightning"><em>chain lightning</em></a>, maximized <a href="../../coreRulebook/spells/lightningBolt.html#lightning-bolt"><em>lightning bolt</em></a></td></tr>
+		<tr><td>16+</td><td>Quickened <a href="../../coreRulebook/spells/iceStorm.html#ice-storm"><em>ice storm</em></a>, <a href="../../coreRulebook/spells/meteorSwarm.html#meteor-swarm"><em>meteor swarm</em></a></td><td><a href="../../coreRulebook/spells/polarRay.html#polar-ray"><em>polar ray</em></a>, <em>sunburst</em></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster adds 1/2 its CR to the damage dealt with evocation spells it casts.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "fey-spell-list">Fey Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Charm person</em>, <em>entangle</em></td><td><a href="../../coreRulebook/spells/dancingLights.html#dancing-lights"><em>dancing lights</em></a>, <a href="../../coreRulebook/spells/faerieFire.html#faerie-fire"><em>faerie fire</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/deepSlumber.html#deep-slumber"><em>deep slumber</em></a>, <em>suggestion</em></td><td><a href="../../coreRulebook/spells/glitterdust.html#glitterdust"><em>glitterdust</em></a>, <a href="../../coreRulebook/spells/hideousLaughter.html#hideous-laughter"><em>hideous laughter</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/balefulPolymorph.html#baleful-polymorph"><em>baleful polymorph</em></a>, <a href="../../coreRulebook/spells/treeStride.html#tree-stride"><em>tree stride</em></a></td><td><a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door"><em>dimension door</em></a>, <em>poison</em></td></tr>
+		<tr><td>12&ndash;15</td><td><em>Insanity</em>, <a href="../../coreRulebook/spells/phaseDoor.html#phase-door"><em>phase door</em></a></td><td><em>Mislead</em>, <a href="../../coreRulebook/spells/transportViaPlants.html#transport-via-plants"><em>transport via plants</em></a></td></tr>
+		<tr><td>16+</td><td><em>Shambler</em>, <em>shapechange</em></td><td><a href="../../coreRulebook/spells/irresistibleDance.html#irresistible-dance"><em>irresistible dance</em></a>, <a href="../../coreRulebook/spells/scintillatingPattern.html#scintillating-pattern"><em>scintillating pattern</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Increase the saving throw DCs of any compulsion spell the monster casts by 2.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "fire-spell-list">Fire Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/burningHands.html#burning-hands"><em>burning hands</em></a>, <a href="../../coreRulebook/spells/heatMetal.html#heat-metal"><em>heat metal</em></a></td><td><em>Flare</em>, <a href="../../coreRulebook/spells/produceFlame.html#produce-flame"><em>produce flame</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td>Empowered <a href="../../coreRulebook/spells/burningHands.html#burning-hands"><em>burning hands</em></a>, <a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a></td><td><a href="../../coreRulebook/spells/flameBlade.html#flame-blade"><em>flame blade</em></a>, <a href="../../coreRulebook/spells/flamingSphere.html#flaming-sphere"><em>flaming sphere</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td>Empowered <a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a>, <a href="../../coreRulebook/spells/flameStrike.html#flame-strike"><em>flame strike</em></a></td><td><a href="../../coreRulebook/spells/fireShield.html#fire-shield"><em>fire shield</em></a>, <a href="../../coreRulebook/spells/wallOfFire.html#wall-of-fire"><em>wall of fire</em></a></td></tr>
+		<tr><td><em></em></td><td><em></em></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/elementalBody.html#elemental-body-iv"><em>elemental body IV</em></a> (fire only), quickened <a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a></td><td><a href="../../coreRulebook/spells/fireSeeds.html#fire-seeds"><em>fire seeds</em></a>, <a href="../../coreRulebook/spells/fireStorm.html#fire-storm"><em>fire storm</em></a></td></tr>
+		<tr><td>16+</td><td><em>Elemental swarm </em>(fire only), <a href="../../coreRulebook/spells/meteorSwarm.html#meteor-swarm"><em>meteor swarm</em></a></td><td>Empowered <a href="../../coreRulebook/spells/fireStorm.html#fire-storm"><em>fire storm</em></a>, <a href="../../coreRulebook/spells/incendiaryCloud.html#incendiary-cloud"><em>incendiary cloud</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains fire resistance 5. At CR 12, increase the resistance to 10. At CR 16, the monster gains fire immunity.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "glory-spell-list">Glory Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Bless</em>, <em>sanctuary</em></td><td><em>Guidance</em>, <em>resistance</em></td></tr>
+		<tr><td>4&ndash;7</td><td><em>Daylight</em>, <a href="../../coreRulebook/spells/searingLight.html#searing-light"><em>searing light</em></a></td><td><em>Aid</em>, <a href="../../coreRulebook/spells/blessWeapon.html#bless-weapon"><em>bless weapon</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/dispelEvil.html#dispel-evil"><em>dispel evil</em></a>, <a href="../../coreRulebook/spells/flameStrike.html#flame-strike"><em>flame strike</em></a></td><td><em>Dismissal</em>, <a href="../../coreRulebook/spells/holySmite.html#holy-smite"><em>holy smite</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/holySword.html#holy-sword"><em>holy sword</em></a>, <a href="../../coreRulebook/spells/holyWord.html#holy-word"><em>holy word</em></a></td><td><a href="../../coreRulebook/spells/bladeBarrier.html#blade-barrier"><em>blade barrier</em></a>, <a href="../../coreRulebook/spells/undeathToDeath.html#undeath-to-death"><em>undeath to death</em></a></td></tr>
+		<tr><td>16+</td><td><em>Gate</em>, <a href="../../ultimateMagic/spells/overwhelmingPresence.html#overwhelming-presence"><em>overwhelming presence</em></a></td><td><em>Earthquake</em>, <a href="../../coreRulebook/spells/holyAura.html#holy-aura"><em>holy aura</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains a +4 bonus on saves against fear.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "good-spell-list">Good Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Bless</em>, <a href="../../coreRulebook/spells/protectionFromEvil.html#protection-from-evil"><em>protection from evil</em></a></td><td><em>Guidance</em>, <em>virtue</em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/magicCircleAgainstEvil.html#magic-circle-against-evil"><em>magic circle against evil</em></a>, <em>prayer</em></td><td><a href="../../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds"><em>cure moderate wounds</em></a>, <em>hold person</em></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/dispelEvil.html#dispel-evil"><em>dispel evil</em></a>, <a href="../../coreRulebook/spells/planeShift.html#plane-shift"><em>plane shift</em></a></td><td><a href="../../coreRulebook/spells/cureCriticalWounds.html#cure-critical-wounds"><em>cure critical wounds</em></a>, <a href="../../coreRulebook/spells/holySmite.html#holy-smite"><em>holy smite</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/holyWord.html#holy-word"><em>holy word</em></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-vii"><em>summon monster VII</em></a>*</td><td><a href="../../coreRulebook/spells/bladeBarrier.html#blade-barrier"><em>blade barrier</em></a>, <em>heal</em></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/stormOfVengeance.html#storm-of-vengeance"><em>storm of vengeance</em></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-ix"><em>summon monster IX</em></a>*</td><td><a href="../../coreRulebook/spells/holyAura.html#holy-aura"><em>holy aura</em></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-viii"><em>summon monster VIII</em></a>*</td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3">* Can summon good creatures only.</td></tr>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster's attacks count as good for the purpose of overcoming damage reduction.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "healing-spell-list">Healing Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/cureLightWounds.html#cure-light-wounds"><em>cure light wounds</em></a>, <em>sanctuary</em></td><td><em>Stabilize</em>, <em>virtue</em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds"><em>cure serious wounds</em></a>, <a href="../../coreRulebook/spells/removeDisease.html#remove-disease"><em>remove disease</em></a></td><td><a href="../../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds"><em>cure moderate wounds</em></a>, <a href="../../coreRulebook/spells/shieldOther.html#shield-other"><em>shield other</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/breathOfLife.html#breath-of-life"><em>breath of life</em></a>, <a href="../../coreRulebook/spells/cureLightWounds.html#cure-light-wounds-mass"><em>mass cure light wounds</em></a></td><td><a href="../../coreRulebook/spells/cureCriticalWounds.html#cure-critical-wounds"><em>cure critical wounds</em></a>, <a href="../../coreRulebook/spells/neutralizePoison.html#neutralize-poison"><em>neutralize poison</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds-mass"><em>mass cure serious wounds</em></a>, <em>regenerate</em></td><td><em>Heal</em>, <a href="../../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds-mass"><em>mass cure moderate wounds</em></a></td></tr>
+		<tr><td>16+</td><td>Quickened <a href="../../coreRulebook/spells/breathOfLife.html#breath-of-life"><em>breath of life</em></a>, <a href="../../coreRulebook/spells/heal.html#heal-mass"><em>mass heal</em></a></td><td>Quickened <a href="../../coreRulebook/spells/cureCriticalWounds.html#cure-critical-wounds"><em>cure critical wounds</em></a>, <a href="../../coreRulebook/spells/cureCriticalWounds.html#cure-critical-wounds-mass"><em>mass cure critical wounds</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> or <a href="../../coreRulebook/skills/heal.html#heal">Heal</a> as an additional master skill.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "illusion-spell-list">Illusion Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/colorSpray.html#color-spray"><em>color spray</em></a>, <a href="../../coreRulebook/spells/silentImage.html#silent-image"><em>silent image</em></a></td><td><a href="../../coreRulebook/spells/disguiseSelf.html#disguise-self"><em>disguise self</em></a>, <a href="../../coreRulebook/spells/ghostSound.html#ghost-sound"><em>ghost sound</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><em>Displacement</em>, <a href="../../coreRulebook/spells/majorImage.html#major-image"><em>major image</em></a></td><td><em>Invisibility</em>, <a href="../../coreRulebook/spells/minorImage.html#minor-image"><em>minor image</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/mirageArcana.html#mirage-arcana"><em>mirage arcana</em></a>, <a href="../../coreRulebook/spells/persistentImage.html#persistent-image"><em>persistent image</em></a></td><td><a href="../../coreRulebook/spells/invisibility.html#invisibility-greater"><em>greater invisibility</em></a>, <a href="../../coreRulebook/spells/phantasmalKiller.html#phantasmal-killer"><em>phantasmal killer</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td>Quickened <em>displacement</em>, <a href="../../coreRulebook/spells/invisibility.html#invisibility-mass"><em>mass invisibility</em></a></td><td><a href="../../coreRulebook/spells/shadowWalk.html#shadow-walk"><em>shadow walk</em></a>, <em>veil</em></td></tr>
+		<tr><td>16+</td><td><em>Shades</em>, <em>weird</em></td><td><a href="../../coreRulebook/spells/shadowEvocation.html#shadow-evocation-greater"><em>greater shadow evocation</em></a>, <a href="../../coreRulebook/spells/scintillatingPattern.html#scintillating-pattern"><em>scintillating pattern</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Increase the saving throw DCs of any illusion spells the monster casts by 1.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "infernal-spell-list">Infernal Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/burningHands.html#burning-hands"><em>burning hands</em></a>, <a href="../../coreRulebook/spells/protectionFromGood.html#protection-from-good"><em>protection from good</em></a></td><td><em>Charm person</em>, <em>flare</em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a>, <em>suggestion</em></td><td><a href="../../coreRulebook/spells/dazeMonster.html#daze-monster"><em>daze monster</em></a>, <a href="../../coreRulebook/spells/scorchingRay.html#scorching-ray"><em>scorching ray</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/dominatePerson.html#dominate-person"><em>dominate person</em></a>, empowered <a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a></td><td><em>Charm monster</em>, <a href="../../coreRulebook/spells/wallOfFire.html#wall-of-fire"><em>wall of fire</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/blasphemy.html#blasphemy"><em>blasphemy</em></a>, <a href="../../coreRulebook/spells/teleport.html#teleport-greater"><em>greater teleport</em></a></td><td>Quickened <a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a>, <a href="../../coreRulebook/spells/suggestion.html#suggestion-mass"><em>mass suggestion</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/dominateMonster.html#dominate-monster"><em>dominate monster</em></a>, <a href="../../coreRulebook/spells/meteorSwarm.html#meteor-swarm"><em>meteor swarm</em></a></td><td>Empowered maximized <a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a>, <a href="../../coreRulebook/spells/powerWordStun.html#power-word-stun"><em>power word stun</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains fire resistance 5 and a +2 bonus on saving throws against poison. At CR 9, the fire resistance increases to 10 and the bonus on saving throws against poison increases to +4.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "knowledge-spell-list">Knowledge Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../ultimateMagic/spells/anticipatePeril.html#anticipate-peril"><em>anticipate peril</em></a>, <a href="../../coreRulebook/spells/trueStrike.html#true-strike"><em>true strike</em></a></td><td><em>Alarm</em>, <a href="../../coreRulebook/spells/comprehendLanguages.html#comprehend-languages"><em>comprehend languages</em></a></td></tr>
+		<tr><td><em></td><td></em></td><td><em></em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/arcaneSight.html#arcane-sight"><em>arcane sight</em></a>, <em>clairaudience/clairvoyance</em></td><td><a href="../../coreRulebook/spells/detectThoughts.html#detect-thoughts"><em>detect thoughts</em></a>, <em>locate object</em></td></tr>
+		<tr><td>8&ndash;11</td><td><em>Commune</em>, <a href="../../coreRulebook/spells/trueSeeing.html#true-seeing"><em>true seeing</em></a></td><td><em>Divination</em>, <em>locate creature</em></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/contactOtherPlane.html#contact-other-plane"><em>contact other plane</em></a>, <em>vision</em></td><td><a href="../../coreRulebook/spells/findThePath.html#find-the-path"><em>find the path</em></a>, <em>legend lore</em></td></tr>
+		<tr><td>16+</td><td><em>Foresight</em>, <a href="../../ultimateMagic/spells/predictionOfFailure.html#prediction-of-failure"><em>prediction of failure</em></a></td><td><a href="../../coreRulebook/spells/discernLocation.html#discern-location"><em>discern location</em></a>, <a href="../../coreRulebook/spells/momentOfPrescience.html#moment-of-prescience"><em>moment of prescience</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains two <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> skills of your choice as additional master skills.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "law-spell-list">Law Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Command</em>, <a href="../../coreRulebook/spells/protectionFromChaos.html#protection-from-chaos"><em>protection from chaos</em></a></td><td><em>Cause fear</em>, <em>stabilize</em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic"><em>dispel magic</em></a>, <a href="../../coreRulebook/spells/magicCircleAgainstChaos.html#magic-circle-against-chaos"><em>magic circle against chaos</em></a></td><td><em>Calm emotions</em>, <em>enthrall</em></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/dispelChaos.html#dispel-chaos"><em>dispel chaos</em></a>, <a href="../../coreRulebook/spells/command.html#command-greater"><a href="../../coreRulebook/spells/command.html#greater-command"><em>greater command</em></a></a></td><td><a href="../../coreRulebook/spells/dimensionalAnchor.html#dimensional-anchor"><em>dimensional anchor</em></a>, <a href="../../coreRulebook/spells/orderSWrath.html#order-s-wrath"><em>order's wrath</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><em>Dictum</em>, <a href="../../coreRulebook/spells/powerWordBlind.html#power-word-blind"><em>power word blind</em></a></td><td><a href="../../coreRulebook/spells/banishment.html#banishment"><em>banishment</em></a>, <em>hold monster</em></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/powerWordKill.html#power-word-kill"><em>power word kill</em></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-ix"><em>summon monster IX</em></a> (law only)</td><td><a href="../../coreRulebook/spells/shieldOfLaw.html#shield-of-law"><em>shield of law</em></a>, <a href="../../coreRulebook/spells/powerWordStun.html#power-word-stun"><em>power word stun</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster's attacks count as lawful for the purpose of overcoming damage reduction.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "liberation-spell-list">Liberation Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat"><em>expeditious retreat</em></a>, <a href="../../coreRulebook/spells/removeFear.html#remove-fear"><em>remove fear</em></a></td><td><a href="../../coreRulebook/spells/featherFall.html#feather-fall"><em>feather fall</em></a>, <em>open/close</em></td></tr>
+		<tr><td>4&ndash;7</td><td><em>Fly</em>, <a href="../../coreRulebook/spells/removeCurse.html#remove-curse"><em>remove curse</em></a></td><td><em>Knock</em>, <a href="../../coreRulebook/spells/removeParalysis.html#remove-paralysis"><em>remove paralysis</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/breakEnchantment.html#break-enchantment"><em>break enchantment</em></a>, <a href="../../coreRulebook/spells/overlandFlight.html#overland-flight"><em>overland flight</em></a></td><td><a href="../../coreRulebook/spells/freedomOfMovement.html#freedom-of-movement"><em>freedom of movement</em></a>, extended <em>haste</em></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/etherealJaunt.html#ethereal-jaunt"><em>ethereal jaunt</em></a>, <em>refuge</em></td><td>Quickened <em>fly</em>, <a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic-greater"><em>greater dispel magic</em></a></td></tr>
+		<tr><td>16+</td><td><em>Freedom</em>, <em>wish</em></td><td>Quickened <a href="../../coreRulebook/spells/freedomOfMovement.html#freedom-of-movement"><em>freedom of movement</em></a>, <a href="../../coreRulebook/spells/mindBlank.html#mind-blank"><em>mind blank</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> as an additional master skill.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "luck-spell-list">Luck Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/entropicShield.html#entropic-shield"><em>entropic shield</em></a>, <a href="../../coreRulebook/spells/trueStrike.html#true-strike"><em>true strike</em></a></td><td><em>Daze</em>, <a href="../../coreRulebook/spells/featherFall.html#feather-fall"><em>feather fall</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic"><em>dispel magic</em></a>, <em>prayer</em></td><td><em>Aid</em>, <a href="../../coreRulebook/spells/protectionFromEnergy.html#protection-from-energy"><em>protection from energy</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/bestowCurse.html#bestow-curse"><em>bestow curse</em></a>, <a href="../../coreRulebook/spells/breakEnchantment.html#break-enchantment"><em>break enchantment</em></a></td><td><a href="../../coreRulebook/spells/freedomOfMovement.html#freedom-of-movement"><em>freedom of movement</em></a>, <em>serenity</em></td></tr>
+		<tr><td>12&ndash;15</td><td>Quickened <a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic"><em>dispel magic</em></a>, <a href="../../coreRulebook/spells/spellTurning.html#spell-turning"><em>spell turning</em></a></td><td><em>Dismissal</em>, <em>mislead</em></td></tr>
+		<tr><td>16+</td><td><em>Foresight</em>, <em>miracle</em></td><td><a href="../../coreRulebook/spells/antimagicField.html#antimagic-field"><em>antimagic field</em></a>, <a href="../../coreRulebook/spells/momentOfPrescience.html#moment-of-prescience"><em>moment of prescience</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Increase all the monster's saving throw bonuses by 1.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "madness-spell-list">Madness Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Cause fear</em>, <em>lesser confusion</em></td><td><em>Daze</em>, <a href="../../coreRulebook/spells/touchOfFatigue.html#touch-of-fatigue"><em>touch of fatigue</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/majorImage.html#major-image"><em>major image</em></a>, <em>rage</em></td><td><a href="../../coreRulebook/spells/hideousLaughter.html#hideous-laughter"><em>hideous laughter</em></a>, <a href="../../coreRulebook/spells/touchOfIdiocy.html#touch-of-idiocy"><em>touch of idiocy</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><em>Nightmare</em>, <a href="../../coreRulebook/spells/phantasmalKiller.html#phantasmal-killer"><em>phantasmal killer</em></a></td><td><em>Confusion</em>, <a href="../../coreRulebook/spells/crushingDespair.html#crushing-despair"><em>crushing despair</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><em>Insanity</em>, <a href="../../coreRulebook/spells/suggestion.html#suggestion-mass"><em>mass suggestion</em></a></td><td><a href="../../coreRulebook/spells/feeblemind.html#feeblemind"><em>feeblemind</em></a>, <a href="../../coreRulebook/spells/mindFog.html#mind-fog"><em>mind fog</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/dominateMonster.html#dominate-monster"><em>dominate monster</em></a>, <em>weird</em></td><td><a href="../../coreRulebook/spells/irresistibleDance.html#irresistible-dance"><em>irresistible dance</em></a>, <a href="../../coreRulebook/spells/scintillatingPattern.html#scintillating-pattern"><em>scintillating pattern</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains a +2 bonus on saving throws against mind-affecting effects.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "magic-spell-list">Magic Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/magicMissile.html#magic-missile"><em>magic missile</em></a>, <a href="../../coreRulebook/spells/silentImage.html#silent-image"><em>silent image</em></a></td><td><a href="../../coreRulebook/spells/detectMagic.html#detect-magic"><em>detect magic</em></a>, <a href="../../coreRulebook/spells/readMagic.html#read-magic"><em>read magic</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic"><em>dispel magic</em></a>, <em>hold person</em></td><td><em>Invisibility</em>, <a href="../../coreRulebook/spells/scorchingRay.html#scorching-ray"><em>scorching ray</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><em>Spell resistance</em>, <em>teleport</em></td><td><a href="../../coreRulebook/spells/imbueWithSpellAbility.html#imbue-with-spell-ability"><em>imbue with spell ability</em></a>, <em>lesser globe of invulnerability</em></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/mageSSword.html#mage-s-sword"><em>mage's sword</em></a>, <a href="../../coreRulebook/spells/spellTurning.html#spell-turning"><em>spell turning</em></a></td><td><a href="../../coreRulebook/spells/antimagicField.html#antimagic-field"><em>antimagic field</em></a>, <a href="../../coreRulebook/spells/forcefulHand.html#forceful-hand"><em>forceful hand</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/mageSDisjunction.html#mage-s-disjunction"><em>mage's disjunction</em></a>, <a href="../../coreRulebook/spells/timeStop.html#time-stop"><em>time stop</em></a></td><td><a href="../../coreRulebook/spells/clenchedFist.html#clenched-fist"><em>clenched fist</em></a>, <a href="../../coreRulebook/spells/protectionFromSpells.html#protection-from-spells"><em>protection from spells</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains a +2 bonus on caster level checks made to overcome spell resistance.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "metal-spell-list">Metal Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../advancedPlayersGuide/spells/leadBlades.html#lead-blades-"><em>lead blades</em></a>, <a href="../../coreRulebook/spells/shockingGrasp.html#shocking-grasp"><em>shocking grasp</em></a></td><td><a href="../../advancedClassGuide/spells/disguiseWeapon.html"><em>disguise weapon</em></a>, <em>magic weapon</em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/heatMetal.html#heat-metal"><em>heat metal</em></a>, <a href="../../advancedClassGuide/spells/moltenOrb.html"><em>molten orb</em></a></td><td><a href="../../coreRulebook/spells/chillMetal.html#chill-metal"><em>chill metal</em></a>, <a href="../../ultimateCombat/spells/pelletBlast.html#pellet-blast"><em>pellet blast</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/rustingGrasp.html#rusting-grasp"><em>rusting grasp</em></a>, <a href="../../coreRulebook/spells/majorCreation.html#major-creation"><em>major creation</em></a></td><td><a href="../../advancedClassGuide/spells/heartOfTheMetal.html"><em>heart of the metal</em></a>, <a href="../../ultimateCombat/spells/wreathOfBlades.html#wreath-of-blades"><em>wreath of blades</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/transmuteMetalToWood.html#transmute-metal-to-wood"><em>transmute metal to wood</em></a>, <a href="../../coreRulebook/spells/wallOfIron.html#wall-of-iron"><em>wall of iron</em></a></td><td><a href="../../coreRulebook/spells/chainLightning.html#chain-lightning"><em>chain lightning</em></a>, <a href="../../coreRulebook/spells/instantSummons.html#instant-summons"><em>instant summons</em></a></td></tr>
+		<tr><td>16+</td><td><em>Iron body</em>, <a href="../../coreRulebook/spells/repelMetalOrStone.html#repel-metal-or-stone"><em>repel metal or stone</em></a></td><td><a href="../../coreRulebook/spells/mageSDisjunction.html#mage-s-disjunction"><em>mage's disjunction</em></a>, <a href="../../coreRulebook/spells/polymorphAnyObject.html#polymorph-any-object"><em>polymorph any object</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster increases one of its speeds by 10 feet.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "nature-spell-list">Nature Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Entangle</em>, <a href="../../coreRulebook/spells/shillelagh.html#shillelagh"><em>shillelagh</em></a></td><td><em>Charm animal</em>, <a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist"><em>obscuring mist</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/callLightning.html#call-lightning"><em>call lightning</em></a>, <em>sleet storm</em></td><td><a href="../../coreRulebook/spells/flameBlade.html#flame-blade"><em>flame blade</em></a>, <a href="../../coreRulebook/spells/heatMetal.html#heat-metal"><em>heat metal</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/callLightningStorm.html#call-lightning-storm"><em>call lightning storm</em></a>, <a href="../../coreRulebook/spells/wallOfThorns.html#wall-of-thorns"><em>wall of thorns</em></a></td><td><a href="../../coreRulebook/spells/flameStrike.html#flame-strike"><em>flame strike</em></a>, <a href="../../coreRulebook/spells/iceStorm.html#ice-storm"><em>ice storm</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/antilifeShell.html#antilife-shell"><em>antilife shell</em></a>, <a href="../../coreRulebook/spells/controlWeather.html#control-weather"><em>control weather</em></a></td><td><a href="../../coreRulebook/spells/fireSeeds.html#fire-seeds"><em>fire seeds</em></a>, <a href="../../coreRulebook/spells/wallOfStone.html#wall-of-stone"><em>wall of stone</em></a></td></tr>
+		<tr><td>16+</td><td><em>Shambler</em>, <a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-ix"><em>summon nature's ally IX</em></a></td><td><em>Earthquake</em>, <a href="../../coreRulebook/spells/fingerOfDeath.html#finger-of-death"><em>finger of death</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster ignores difficult terrain caused by nonmagical natural terrain. </td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "necromancy-spell-list">Necromancy Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/chillTouch.html#chill-touch"><em>chill touch</em></a>, <a href="../../coreRulebook/spells/rayOfEnfeeblement.html#ray-of-enfeeblement"><em>ray of enfeeblement</em></a></td><td><em>Bleed</em>, <em>touch of enfeeblement</em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/rayOfExhaustion.html#ray-of-exhaustion"><em>ray of exhaustion</em></a>, <a href="../../coreRulebook/spells/vampiricTouch.html#vampiric-touch"><em>vampiric touch</em></a></td><td><em>Blindness/deafness</em>, <em>scare</em></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/animateDead.html#animate-dead"><em>animate dead</em></a>, <a href="../../coreRulebook/spells/bestowCurse.html#bestow-curse"><em>bestow curse</em></a></td><td><em>Contagion</em>, <em>enervation</em></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/fingerOfDeath.html#finger-of-death"><em>finger of death</em></a>, <a href="../../coreRulebook/spells/wavesOfExhaustion.html#waves-of-exhaustion"><em>waves of exhaustion</em></a></td><td><a href="../../coreRulebook/spells/circleOfDeath.html#circle-of-death"><em>circle of death</em></a>, <em>eyebite</em></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/energyDrain.html#energy-drain"><em>energy drain</em></a>, <a href="../../coreRulebook/spells/wailOfTheBanshee.html#wail-of-the-banshee"><em>wail of the banshee</em></a></td><td>Quickened <em>enervation</em>, <a href="../../coreRulebook/spells/horridWilting.html#horrid-wilting"><em>horrid wilting</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains the channel energy option (negative energy only).</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "nobility-spell-list">Nobility Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Bless</em>, <em>command</em></td><td><em>Bane</em>, <em>sanctuary</em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/bestowCurse.html#bestow-curse"><em>bestow curse</em></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-iii"><em>summon monster III</em></a></td><td><em>Enthrall</em>, <a href="../../coreRulebook/spells/shieldOther.html#shield-other"><em>shield other</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/command.html#command-greater"><a href="../../coreRulebook/spells/command.html#greater-command"><em>greater command</em></a></a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-v"><em>summon monster V</em></a></td><td><a href="../../coreRulebook/spells/discernLies.html#discern-lies"><em>discern lies</em></a>, <a href="../../coreRulebook/spells/freedomOfMovement.html#freedom-of-movement"><em>freedom of movement</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><em>Repulsion</em>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-vii"><em>summon monster VII</em></a></td><td><em>Geas/quest</em>, <a href="../../coreRulebook/spells/wordOfRecall.html#word-of-recall"><em>word of recall</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../ultimateMagic/spells/overwhelmingPresence.html#overwhelming-presence"><em>overwhelming presence</em></a>, <a href="../../coreRulebook/spells/stormOfVengeance.html#storm-of-vengeance"><em>storm of vengeance</em></a></td><td><em>Demand</em>, <a href="../../coreRulebook/spells/cureCriticalWounds.html#cure-critical-wounds-mass"><em>mass cure critical wounds</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> or <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> as an additional master skill.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "plant-spell-list">Plant Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Entangle</em>, <a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-i"><em>summon nature's ally I</em></a> (plant only)</td><td><a href="../../coreRulebook/spells/goodberry.html#goodberry"><em>goodberry</em></a>, <a href="../../coreRulebook/spells/passWithoutTrace.html#pass-without-trace"><em>pass without trace</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/plantGrowth.html#plant-growth"><em>plant growth</em></a>, <a href="../../coreRulebook/spells/spikeGrowth.html#spike-growth"><em>spike growth</em></a></td><td><a href="../../coreRulebook/spells/treeShape.html#tree-shape"><em>tree shape</em></a>, <a href="../../coreRulebook/spells/warpWood.html#warp-wood"><em>warp wood</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/treeStride.html#tree-stride"><em>tree stride</em></a>, <a href="../../coreRulebook/spells/wallOfThorns.html#wall-of-thorns"><em>wall of thorns</em></a></td><td><a href="../../coreRulebook/spells/commandPlants.html#command-plants"><em>command plants</em></a>, <a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-iv"><em>summon nature's ally IV</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/animatePlants.html#animate-plants"><em>animate plants</em></a>, <a href="../../coreRulebook/spells/changestaff.html#changestaff"><em>changestaff</em></a></td><td><a href="../../coreRulebook/spells/fireSeeds.html#fire-seeds"><em>fire seeds</em></a>, <a href="../../coreRulebook/spells/repelWood.html#repel-wood"><em>repel wood</em></a></td></tr>
+		<tr><td>16+</td><td>Maximized <a href="../../coreRulebook/spells/fireSeeds.html#fire-seeds"><em>fire seeds</em></a>, <em>shambler</em></td><td><a href="../../coreRulebook/spells/controlPlants.html#control-plants"><em>control plants</em></a>, <a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-viii"><em>summon nature's ally VIII</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster ignores difficult terrain caused by nonmagical natural terrain. </td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "protection-spell-list">Protection Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Hold portal</em>, <em>sanctuary</em></td><td><em>Alarm</em>, <em>resistance</em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic"><em>dispel magic</em></a>, <a href="../../coreRulebook/spells/protectionFromEnergy.html#protection-from-energy"><em>protection from energy</em></a></td><td><a href="../../coreRulebook/spells/resistEnergy.html#resist-energy"><em>resist energy</em></a>, <a href="../../coreRulebook/spells/shieldOther.html#shield-other"><em>shield other</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><em>Dismissal</em>, <em>spell resistance</em></td><td><a href="../../coreRulebook/spells/dimensionalAnchor.html#dimensional-anchor"><em>dimensional anchor</em></a>, <a href="../../coreRulebook/spells/spellImmunity.html#spell-immunity"><em>spell immunity</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/globeOfInvulnerability.html#globe-of-invulnerability"><em>globe of invulnerability</em></a>, <em>repulsion</em></td><td><a href="../../coreRulebook/spells/antimagicField.html#antimagic-field"><em>antimagic field</em></a>, <a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic-greater"><em>greater dispel magic</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/prismaticSphere.html#prismatic-sphere"><em>prismatic sphere</em></a>, <a href="../../advancedPlayersGuide/spells/wallOfSuppression.html#wall-of-suppression-"><em>wall of suppression</em></a></td><td><a href="../../coreRulebook/spells/mindBlank.html#mind-blank"><em>mind blank</em></a>, <a href="../../coreRulebook/spells/prismaticWall.html#prismatic-wall"><em>prismatic wall</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Increase all the monster's saving throw bonuses by 1.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "repose-spell-list">Repose Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/deathwatch.html#deathwatch"><em>deathwatch</em></a>, <a href="../../coreRulebook/spells/rayOfEnfeeblement.html#ray-of-enfeeblement"><em>ray of enfeeblement</em></a></td><td><em>Cause fear</em>, <a href="../../coreRulebook/spells/chillTouch.html#chill-touch"><em>chill touch</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/falseLife.html#false-life"><em>false life</em></a>, <em>scare</em></td><td><a href="../../coreRulebook/spells/gentleRepose.html#gentle-repose"><em>gentle repose</em></a>, <a href="../../coreRulebook/spells/speakWithDead.html#speak-with-dead"><em>speak with dead</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/deathWard.html#death-ward"><em>death ward</em></a>, <a href="../../coreRulebook/spells/slayLiving.html#slay-living"><em>slay living</em></a></td><td><em>Enervation</em>, <em>fear</em></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/circleOfDeath.html#circle-of-death"><em>circle of death</em></a>, <em>destruction</em></td><td><a href="../../coreRulebook/spells/undeathToDeath.html#undeath-to-death"><em>undeath to death</em></a>, <a href="../../coreRulebook/spells/wavesOfFatigue.html#waves-of-fatigue"><em>waves of fatigue</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/powerWordKill.html#power-word-kill"><em>power word kill</em></a>, <a href="../../coreRulebook/spells/wailOfTheBanshee.html#wail-of-the-banshee"><em>wail of the banshee</em></a></td><td><a href="../../coreRulebook/spells/fingerOfDeath.html#finger-of-death"><em>finger of death</em></a>, <a href="../../coreRulebook/spells/wavesOfExhaustion.html#waves-of-exhaustion"><em>waves of exhaustion</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains a +4 bonus on saving throws against death spells and effects.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "rune-spell-list">Rune Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Alarm</em>, <em>erase</em></td><td><a href="../../coreRulebook/spells/arcaneMark.html#arcane-mark"><em>arcane mark</em></a>, <em>protection from chaos/evil/good/law</em></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/arcaneLock.html#arcane-lock"><em>arcane lock</em></a>, <a href="../../coreRulebook/spells/glyphOfWarding.html#glyph-of-warding"><em>glyph of warding</em></a></td><td><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic"><em>dispel magic</em></a>, <a href="../../ultimateMagic/spells/symbolOfMirroring.html#symbol-of-mirroring"><em>symbol of mirroring</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><em>Lesser planar binding</em>, <a href="../../coreRulebook/spells/symbolOfPain.html#symbol-of-pain"><em>symbol of pain</em></a></td><td><a href="../../coreRulebook/spells/explosiveRunes.html#explosive-runes"><em>explosive runes</em></a>, <a href="../../ultimateMagic/spells/symbolOfSlowing.html#symbol-of-slowing"><em>symbol of slowing</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/symbolOfStunning.html#symbol-of-stunning"><em>symbol of stunning</em></a>, <a href="../../coreRulebook/spells/symbolOfWeakness.html#symbol-of-weakness"><em>symbol of weakness</em></a></td><td><a href="../../coreRulebook/spells/glyphOfWarding.html#glyph-of-warding-greater"><em>greater glyph of warding</em></a>, <a href="../../coreRulebook/spells/symbolOfFear.html#symbol-of-fear"><em>symbol of fear</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../ultimateMagic/spells/symbolOfStrife.html#symbol-of-strife"><em>symbol of strife</em></a>, <a href="../../ultimateMagic/spells/symbolOfVulnerability.html#symbol-of-vulnerability"><em>symbol of vulnerability</em></a></td><td><a href="../../coreRulebook/spells/symbolOfDeath.html#symbol-of-death"><em>symbol of death</em></a>, <em>symbol of insanity </em></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Choose one energy type. The monster gains resistance 5 to that type of damage. At CR 12, increase the resistance to 10. At CR 16, increase the resistance to 20. </td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "sonic-spell-list">Sonic Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Command</em>, <em>ear-piercing scream</em></td><td><a href="../../coreRulebook/spells/ghostSound.html#ghost-sound"><em>ghost sound</em></a>, <em>message</em></td></tr>
+		<tr><td>4&ndash;7</td><td><em>Enthrall</em>, <em>silence</em></td><td><em>Shatter</em>, <a href="../../coreRulebook/spells/soundBurst.html#sound-burst"><em>sound burst</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/songOfDiscord.html#song-of-discord"><em>song of discord</em></a>, <a href="../../coreRulebook/spells/zoneOfSilence.html#zone-of-silence"><em>zone of silence</em></a></td><td><em>Shout</em>, empowered <a href="../../coreRulebook/spells/soundBurst.html#sound-burst"><em>sound burst</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td>Maximized <em>shout</em>, quickened <em>silence</em></td><td><a href="../../coreRulebook/spells/shout.html#shout-greater"><em>greater shout</em></a>, <a href="../../coreRulebook/spells/sympatheticVibration.html#sympathetic-vibration"><em>sympathetic vibration</em></a></td></tr>
+		<tr><td>16+</td><td>Maximized <a href="../../coreRulebook/spells/shout.html#shout-greater"><em>greater shout</em></a>, <a href="../../coreRulebook/spells/powerWordKill.html#power-word-kill"><em>power word kill</em></a></td><td><a href="../../coreRulebook/spells/powerWordStun.html#power-word-stun"><em>power word stun</em></a>, quickened <em>shout</em></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains sonic resistance 5. At CR 12, increase the resistance to 10. At CR 16, the monster gains sonic immunity.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "stealth-spell-list">Stealth Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/disguiseSelf.html#disguise-self"><em>disguise self</em></a>, <a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist"><em>obscuring mist</em></a></td><td><em>Flare</em>, <a href="../../coreRulebook/spells/silentImage.html#silent-image"><em>silent image</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><em>Displacement</em>, <a href="../../coreRulebook/spells/nondetection.html#nondetection"><em>nondetection</em></a></td><td><em>Darkness</em>, <em>invisibility</em></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/mageSPrivateSanctum.html#mage-s-private-sanctum"><em>mage's private sanctum</em></a>, <em>seeming</em></td><td><a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door"><em>dimension door</em></a>, <a href="../../coreRulebook/spells/invisibility.html#invisibility-greater"><em>greater invisibility</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><em>Sequester</em>, <a href="../../coreRulebook/spells/shadowWalk.html#shadow-walk"><em>shadow walk</em></a></td><td><a href="../../coreRulebook/spells/teleport.html#teleport-greater"><em>greater teleport</em></a>, <em>mislead</em></td></tr>
+		<tr><td>16+</td><td><em>Screen</em>, <a href="../../coreRulebook/spells/timeStop.html#time-stop"><em>time stop</em></a></td><td>Extended widened <a href="../../coreRulebook/spells/deeperDarkness.html#deeper-darkness"><em>deeper darkness</em></a>, quickened <a href="../../coreRulebook/spells/invisibility.html#invisibility-greater"><em>greater invisibility</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> as an additional master skill.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "strength-spell-list">Strength Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/enlargePerson.html#enlarge-person"><em>enlarge person</em></a>, <a href="../../coreRulebook/spells/gustOfWind.html#gust-of-wind"><em>gust of wind</em></a></td><td><a href="../../coreRulebook/spells/cureLightWounds.html#cure-light-wounds"><em>cure light wounds</em></a>, <em>resistance</em></td></tr>
+		<tr><td>4&ndash;7</td><td><em>Haste</em>, <em>hold person</em></td><td><em>Rage</em>, <a href="../../advancedPlayersGuide/spells/weaponOfAwe.html#weapon-of-awe"><em>weapon of awe</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/interposingHand.html#interposing-hand"><em>interposing hand</em></a>, <em>telekinesis</em></td><td><a href="../../advancedPlayersGuide/spells/blessingOfFervor.html#blessing-of-fervor"><em>blessing of fervor</em></a>, <a href="../../coreRulebook/spells/spellImmunity.html#spell-immunity"><em>spell immunity</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><em>Destruction</em>, <a href="../../coreRulebook/spells/graspingHand.html#grasping-hand"><em>grasping hand</em></a></td><td><a href="../../coreRulebook/spells/forcefulHand.html#forceful-hand"><em>forceful hand</em></a>, <a href="../../coreRulebook/spells/stoneskin.html#stoneskin"><em>stoneskin</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/crushingHand.html#crushing-hand"><em>crushing hand</em></a>, <em>implosion</em></td><td><a href="../../coreRulebook/spells/clenchedFist.html#clenched-fist"><em>clenched fist</em></a>, <em>earthquake</em></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Increase the monster's Strength modifier by 1. At CR 12, increase it by 2 instead. At CR 16, increase it by 3 instead.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "sun-spell-list">Sun Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/burningHands.html#burning-hands"><em>burning hands</em></a>, <a href="../../coreRulebook/spells/endureElements.html#endure-elements"><em>endure elements</em></a></td><td><em>Flare</em>, <em>light</em></td></tr>
+		<tr><td>4&ndash;7</td><td><em>Daylight</em>, <a href="../../coreRulebook/spells/searingLight.html#searing-light"><em>searing light</em></a></td><td><a href="../../coreRulebook/spells/heatMetal.html#heat-metal"><em>heat metal</em></a>, <a href="../../coreRulebook/spells/scorchingRay.html#scorching-ray"><em>scorching ray</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/flameStrike.html#flame-strike"><em>flame strike</em></a>, empowered <a href="../../coreRulebook/spells/searingLight.html#searing-light"><em>searing light</em></a></td><td><a href="../../coreRulebook/spells/fireShield.html#fire-shield"><em>fire shield</em></a>, <a href="../../coreRulebook/spells/flameArrow.html#flame-arrow"><em>flame arrow</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td>Empowered <a href="../../coreRulebook/spells/flameStrike.html#flame-strike"><em>flame strike</em></a>, <em>sunbeam</em></td><td><a href="../../coreRulebook/spells/fireSeeds.html#fire-seeds"><em>fire seeds</em></a>, maximized <a href="../../coreRulebook/spells/fireball.html#fireball"><em>fireball</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/meteorSwarm.html#meteor-swarm"><em>meteor swarm</em></a>, <a href="../../coreRulebook/spells/prismaticSphere.html#prismatic-sphere"><em>prismatic sphere</em></a></td><td><a href="../../coreRulebook/spells/fireStorm.html#fire-storm"><em>fire storm</em></a>, <em>sunburst</em></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Increase the saving throw DC of any spell the monster casts from this spell list by 1.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "transmutation-spell-list">Transmutation Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/enlargePerson.html#enlarge-person"><em>enlarge person</em></a>, <a href="../../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat"><em>expeditious retreat</em></a></td><td><a href="../../coreRulebook/spells/animateRope.html#animate-rope"><em>animate rope</em></a>, <a href="../../coreRulebook/spells/reducePerson.html#reduce-person"><em>reduce person</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><em>Haste</em>, <em>slow</em></td><td><a href="../../coreRulebook/spells/alterSelf.html#alter-self"><em>alter self</em></a>, <em>levitate</em></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/balefulPolymorph.html#baleful-polymorph"><em>baleful polymorph</em></a>, <em>polymorph</em></td><td><a href="../../coreRulebook/spells/beastShape.html#beast-shape-ii"><em>beast shape II</em></a>, <a href="../../coreRulebook/spells/reducePerson.html#reduce-person-mass"><em>mass reduce person</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/giantForm.html#giant-form-i"><em>giant form I</em></a>, <a href="../../coreRulebook/spells/polymorph.html#polymorph-greater"><em>greater polymorph</em></a></td><td><a href="../../coreRulebook/spells/disintegrate.html#disintegrate"><em>disintegrate</em></a>, <a href="../../coreRulebook/spells/fleshToStone.html#flesh-to-stone"><em>flesh to stone</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/formOfTheDragon.html#form-of-the-dragon-iii"><em>form of the dragon III</em></a>, <em>shapechange</em></td><td><em>Iron body</em>, <a href="../../coreRulebook/spells/polymorphAnyObject.html#polymorph-any-object"><em>polymorph any object</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Increase any one of the monster's physical ability score modifiers by 1. At CR 12, increase that modifier by 2 instead. </td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "travel-spell-list">Travel Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Jump</em>, <a href="../../coreRulebook/spells/longstrider.html#longstrider"><em>longstrider</em></a></td><td><a href="../../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat"><em>expeditious retreat</em></a>, <em>open/close</em></td></tr>
+		<tr><td>4&ndash;7</td><td><em>Fly</em>, <a href="../../coreRulebook/spells/gaseousForm.html#gaseous-form"><em>gaseous form</em></a></td><td><em>Knock</em>, <em>levitate</em></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/overlandFlight.html#overland-flight"><em>overland flight</em></a>, <em>teleport</em></td><td><a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door"><em>dimension door</em></a>, <a href="../../coreRulebook/spells/freedomOfMovement.html#freedom-of-movement"><em>freedom of movement</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/teleport.html#teleport-greater"><em>greater teleport</em></a>, <a href="../../coreRulebook/spells/planeShift.html#plane-shift"><em>plane shift</em></a></td><td><a href="../../coreRulebook/spells/findThePath.html#find-the-path"><em>find the path</em></a>, <a href="../../coreRulebook/spells/shadowWalk.html#shadow-walk"><em>shadow walk</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/astralProjection.html#astral-projection"><em>astral projection</em></a>, <em>gate</em></td><td><a href="../../coreRulebook/spells/etherealJaunt.html#ethereal-jaunt"><em>ethereal jaunt</em></a>, <a href="../../coreRulebook/spells/phaseDoor.html#phase-door"><em>phase door</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Increase the monster's movement speed by 10 feet.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "trickery-spell-list">Trickery Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/disguiseSelf.html#disguise-self"><em>disguise self</em></a>, <em>lesser confusion</em></td><td><a href="../../coreRulebook/spells/ghostSound.html#ghost-sound"><em>ghost sound</em></a>, <a href="../../coreRulebook/spells/mageHand.html#mage-hand"><em>mage hand</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/gaseousForm.html#gaseous-form"><em>gaseous form</em></a>, <a href="../../coreRulebook/spells/nondetection.html#nondetection"><em>nondetection</em></a></td><td><em>Invisibility</em>, <a href="../../coreRulebook/spells/minorImage.html#minor-image"><em>minor image</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/invisibility.html#invisibility-greater"><em>greater invisibility</em></a>, <a href="../../coreRulebook/spells/mindFog.html#mind-fog"><em>mind fog</em></a></td><td><em>Confusion</em>, <a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door"><em>dimension door</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/holdPerson.html#hold-person-mass"><em>mass hold person</em></a>, <em>veil</em></td><td><a href="../../coreRulebook/spells/suggestion.html#suggestion-mass"><em>mass suggestion</em></a>, <em>mislead</em></td></tr>
+		<tr><td>16+</td><td><em>Foresight</em>, <a href="../../coreRulebook/spells/timeStop.html#time-stop"><em>time stop</em></a></td><td><a href="../../coreRulebook/spells/charmMonster.html#charm-monster-mass"><em>mass charm monster</em></a>, <a href="../../coreRulebook/spells/invisibility.html#invisibility-mass"><em>mass invisibility</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> or <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> as an additional master skill.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "undead-spell-list">Undead Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/chillTouch.html#chill-touch"><em>chill touch</em></a>, <a href="../../coreRulebook/spells/rayOfEnfeeblement.html#ray-of-enfeeblement"><em>ray of enfeeblement</em></a></td><td><em>Bleed</em>, <a href="../../coreRulebook/spells/touchOfFatigue.html#touch-of-fatigue"><em>touch of fatigue</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/animateDead.html#animate-dead"><em>animate dead</em></a>, <a href="../../coreRulebook/spells/vampiricTouch.html#vampiric-touch"><em>vampiric touch</em></a></td><td><a href="../../coreRulebook/spells/commandUndead.html#command-undead"><em>command undead</em></a>, <a href="../../coreRulebook/spells/ghoulTouch.html#ghoul-touch"><em>ghoul touch</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/magicJar.html#magic-jar"><em>magic jar</em></a>, quickened <a href="../../coreRulebook/spells/rayOfEnfeeblement.html#ray-of-enfeeblement"><em>ray of enfeeblement</em></a></td><td><em>Enervation</em>, <a href="../../coreRulebook/spells/wavesOfFatigue.html#waves-of-fatigue"><em>waves of fatigue</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/controlUndead.html#control-undead"><em>control undead</em></a>, <a href="../../coreRulebook/spells/createUndead.html#create-undead"><em>create undead</em></a></td><td><a href="../../coreRulebook/spells/circleOfDeath.html#circle-of-death"><em>circle of death</em></a>, maximized <a href="../../coreRulebook/spells/vampiricTouch.html#vampiric-touch"><em>vampiric touch</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/createGreaterUndead.html#create-greater-undead"><em>create greater undead</em></a>, <a href="../../coreRulebook/spells/energyDrain.html#energy-drain"><em>energy drain</em></a></td><td><a href="../../coreRulebook/spells/horridWilting.html#horrid-wilting"><em>horrid wilting</em></a>, <a href="../../coreRulebook/spells/wailOfTheBanshee.html#wail-of-the-banshee"><em>wail of the banshee</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains DR 5/&mdash; against nonlethal damage. At CR 8, the DR increases to 10/&mdash;.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "war-spell-list">War Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><em>Cause fear</em>, <a href="../../coreRulebook/spells/trueStrike.html#true-strike"><em>true strike</em></a></td><td><em>Magic weapon</em>, <em>resistance</em></td></tr>
+		<tr><td>4&ndash;7</td><td><em>Prayer</em>, <a href="../../coreRulebook/spells/searingLight.html#searing-light"><em>searing light</em></a></td><td><em>Grace</em>, <a href="../../coreRulebook/spells/spiritualWeapon.html#spiritual-weapon"><em>spiritual weapon</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/flameStrike.html#flame-strike"><em>flame strike</em></a>, <a href="../../coreRulebook/spells/slayLiving.html#slay-living"><em>slay living</em></a></td><td><a href="../../advancedPlayersGuide/spells/blessingOfFervor.html#blessing-of-fervor"><em>blessing of fervor</em></a>, <a href="../../advancedPlayersGuide/spells/spiritualAlly.html#spiritual-ally"><em>spiritual ally</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><em>Destruction</em>, <a href="../../coreRulebook/spells/powerWordBlind.html#power-word-blind"><em>power word blind</em></a></td><td><a href="../../coreRulebook/spells/bladeBarrier.html#blade-barrier"><em>blade barrier</em></a>, <em>harm</em></td></tr>
+		<tr><td>16+</td><td><em>Implosion</em>, <a href="../../coreRulebook/spells/powerWordKill.html#power-word-kill"><em>power word kill</em></a></td><td><em>Earthquake</em>, <a href="../../coreRulebook/spells/powerWordStun.html#power-word-stun"><em>power word stun</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: Increase the monster's attack bonus for all attacks by 1.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "water-spell-list">Water Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../advancedPlayersGuide/spells/hydraulicPush.html#hydraulic-push-"><em>hydraulic push</em></a>, <a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist"><em>obscuring mist</em></a></td><td><a href="../../coreRulebook/spells/rayOfFrost.html#ray-of-frost"><em>ray of frost</em></a>, <a href="../../advancedPlayersGuide/spells/touchOfTheSea.html#touch-of-the-sea"><em>touch of the sea</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/gaseousForm.html#gaseous-form"><em>gaseous form</em></a>, <a href="../../coreRulebook/spells/stinkingCloud.html#stinking-cloud"><em>stinking cloud</em></a></td><td><a href="../../coreRulebook/spells/chillMetal.html#chill-metal"><em>chill metal</em></a>, <a href="../../coreRulebook/spells/fogCloud.html"><em>fog cloud</em></a></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/coneOfCold.html#cone-of-cold"><em>cone of cold</em></a>, <a href="../../coreRulebook/spells/wallOfIce.html#wall-of-ice"><em>wall of ice</em></a></td><td><a href="../../coreRulebook/spells/iceStorm.html#ice-storm"><em>ice storm</em></a>, <a href="../../coreRulebook/spells/solidFog.html#solid-fog"><em>solid fog</em></a></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/controlWater.html#control-water"><em>control water</em></a>, <a href="../../coreRulebook/spells/elementalBody.html#elemental-body-iv"><em>elemental body IV</em></a> (water only) </td><td><a href="../../advancedPlayersGuide/spells/fluidForm.html#fluid-form"><em>fluid form</em></a>, <a href="../../coreRulebook/spells/freezingSphere.html#freezing-sphere"><em>freezing sphere</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/elementalSwarm.html#elemental-swarm"><em>elemental swarm</em></a> (water only), <em>storm of vengeance </em></td><td><a href="../../coreRulebook/spells/horridWilting.html#horrid-wilting"><em>horrid wilting</em></a>, <a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-viii"><em>summon nature's ally VIII</em></a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains cold resistance 5. At CR 12, increase the resistance to 10. At CR 16, the monster gains cold immunity.</td></tr>
+	</tfoot>
+</table>
+
+
+
+<h3 id = "weather-spell-list">Weather Spell List</h3>
+<table>
+	<thead><tr><th>CR Band</th><th>Primary Spells</th><th>Secondary Spells</th></tr></thead>
+	<tbody>
+		<tr><td>0&ndash;3</td><td><a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist"><em>obscuring mist</em></a>, <a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-i"><em>summon nature's ally I</em></a></td><td><a href="../../coreRulebook/spells/faerieFire.html#faerie-fire"><em>faerie fire</em></a>, <a href="../../coreRulebook/spells/shockingGrasp.html#shocking-grasp"><em>shocking grasp</em></a></td></tr>
+		<tr><td>4&ndash;7</td><td><a href="../../coreRulebook/spells/callLightning.html#call-lightning"><em>call lightning</em></a>, <a href="../../coreRulebook/spells/windWall.html#wind-wall"><em>wind wall</em></a></td><td><a href="../../coreRulebook/spells/gustOfWind.html#gust-of-wind"><em>gust of wind</em></a>, <a href="../../coreRulebook/spells/soundBurst.html#sound-burst"><em>sound burst</em></a></td></tr>
+		<tr><td><em></td><td></em></td><td><em></em></td></tr>
+		<tr><td>8&ndash;11</td><td><a href="../../coreRulebook/spells/callLightningStorm.html#call-lightning-storm"><em>call lightning storm</em></a>, <a href="../../coreRulebook/spells/iceStorm.html#ice-storm"><em>ice storm</em></a></td><td><a href="../../coreRulebook/spells/airWalk.html#air-walk"><em>air walk</em></a>, <em>sleet storm</em></td></tr>
+		<tr><td>12&ndash;15</td><td><a href="../../coreRulebook/spells/controlWeather.html#control-weather"><em>control weather</em></a>, <a href="../../coreRulebook/spells/windWalk.html#wind-walk"><em>wind walk</em></a></td><td><a href="../../coreRulebook/spells/controlWinds.html#control-winds"><em>control winds</em></a>, quickened <a href="../../coreRulebook/spells/lightningBolt.html#lightning-bolt"><em>lightning bolt</em></a></td></tr>
+		<tr><td>16+</td><td><a href="../../coreRulebook/spells/stormOfVengeance.html#storm-of-vengeance"><em>storm of vengeance</em></a>, <a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-ix"><em>summon nature's ally IX</em></a></td><td><a href="../../coreRulebook/spells/fireStorm.html#fire-storm"><em>fire storm</em></a>, <em>whirlwind</em></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "3"><strong>Benefit</strong>: The monster gains electricity resistance 5. At CR 12, increase the resistance to 10. At CR 16, the monster gains electricity immunity.</td></tr>
+	</tfoot>
+</table>
+
+
+
+
+\n	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Step 6: Spells",globalNavPath=[{ href: '/pathfinderRPG/prd/unchained/monsters/index.html', name: 'Pathfinder Unchained: Monsters' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

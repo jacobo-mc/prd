@@ -1,0 +1,479 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Survival</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../../index.html"><img src = "../../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../../index.html"><img src = "../../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "survival.html#menu" class = "menu-link has-subnav"><img src = "../../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "survival.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "survival.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "survival.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "survival.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "survival.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "survival.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "survival.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "survival.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "survival.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "survival.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../classes/index.html">Classes</a></li>
+						<li><a href = "../index.html">Skills and Options</a></li>
+						<li><a href = "../../gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../magic/index.html">Magic</a></li>
+						<li><a href = "../../monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "survival.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "survival.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "survival.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "survival.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "survival.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "survival.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "survival.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "survival.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "survival.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "survival.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id = "survival-skill">Survival (Wis)</h1>
+<p>You know how to survive in the wild, navigate the wilderness, and tend wounds.</p>
+<p><strong>Functions</strong>: Determine true north, follow tracks, survive in the wild, tend wounds and ailments.</p>
+<p><strong>Core Skills</strong>: <a href="../../../coreRulebook/skills/heal.html#heal">Heal</a>, <a href="../../../coreRulebook/skills/survival.html#survival">Survival</a>.</p>
+
+	<h2 id = "determine-true-north">Determine True North</h2>
+	<p>If you are trained in Survival, you can automatically determine where true north lies in relation to yourself.</p>
+	<p><strong>Action</strong>: None.</p>
+
+	<h2 id = "follow-tracks">Follow Tracks</h2>
+	<p>You must succeed at a Survival check to find or follow tracks for up to 1 mile. You must attempt an additional check each time the tracks become difficult to follow. While following tracks, you move at half your speed. You can move at your normal speed by taking a &ndash;5 penalty on the check, or twice your normal speed by taking a &ndash;20 penalty on the check. The DC to follow tracks depends on the surface and the prevailing conditions (see <a href="survival.html#surfaces">Surfaces</a>).</p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Surface</th>
+				<th>Survival DC</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>Very soft ground</td><td>5</td></tr>
+			<tr><td>Soft ground</td><td>10</td></tr>
+			<tr><td>Firm ground</td><td>15</td></tr>
+			<tr><td>Hard ground</td><td>20</td></tr>
+		</tbody>
+	</table>
+
+	<p>Your Survival check might be modified based on any of the following conditions. Multiple conditions could affect the same roll, but apply only the size modifier for the largest creature in a group being tracked and apply only the most severe penalty for poor visibility.</p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Tracking Modifiers</th>
+				<th>Survival DC Modifier</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>Multiple creatures in a group</td><td>&ndash;1 per three creatures</td></tr>
+			<tr><td>Size of creatures being tracked</td><td>&nbsp;</td></tr>
+			<tr><td class="indent-1">Fine</td><td>+8</td></tr>
+			<tr><td class="indent-1">Diminutive</td><td>+4</td></tr>
+			<tr><td class="indent-1">Tiny</td><td>+2</td></tr>
+			<tr><td class="indent-1">Small</td><td>+1</td></tr>
+			<tr><td class="indent-1">Medium</td><td>+0</td></tr>
+			<tr><td class="indent-1">Large</td><td>&ndash;1</td></tr>
+			<tr><td class="indent-1">Huge</td><td>&ndash;2</td></tr>
+			<tr><td class="indent-1">Gargantuan</td><td>&ndash;4</td></tr>
+			<tr><td class="indent-1">Colossal</td><td>&ndash;8</td></tr>
+			<tr><td>Time since the tracks were made</td><td>+1 per 24 hours</td></tr>
+			<tr><td>Rain since the tracks were made</td><td>+1 per hour of rain</td></tr>
+			<tr><td>Fresh snow since the tracks were made</td><td>+10</td></tr>
+			<tr><td>Poor visibility</td><td>&nbsp;</td></tr>
+			<tr><td class="indent-1">Fog or precipitation</td><td>+3</td></tr>
+			<tr><td class="indent-1">Moonlight</td><td>+3</td></tr>
+			<tr><td>Overcast or moonless night</td><td>+6</td></tr>
+			<tr><td>Tracked party hides its trail and moves at half speed</td><td>+5</td></tr>
+		</tbody>
+	</table>
+
+	<p><strong>Action</strong>: Full-round action or longer.</p>
+	<p><strong>Try Again</strong>: You can retry a failed check after 1 hour (outdoors) or 10 minutes (indoors).</p>
+	<p><strong>Untrained</strong>: You can follow tracks untrained, but only if the DC is 10 or lower.</p>
+	<p><strong><a href="survival.html#perception-skill">Perception</a></strong>: Detecting a footprint or similar sign of a creature's passage with the <a href="survival.html#perception-skill">Perception</a> skill uses the same DCs as Survival checks to follow tracks, but you can't use <a href="survival.html#perception-skill">Perception</a> to follow tracks.</p>
+
+		<h3 id = "Surfaces">Surfaces</h3>
+		<p>This gives examples of surfaces for the first table presented in <a href="survival.html#follow-tracks">Follow Tracks</a>.</p>
+		<p><strong>Very Soft Ground</strong>: Any surface (fresh snow, thick dust, wet mud) that holds deep, clear impressions of footprints.</p>
+		<p><strong>Soft Ground</strong>: Any surface soft enough to yield to pressure, but firmer than wet mud or fresh snow, in which a creature leaves frequent but shallow footprints.</p>
+		<p><strong>Firm Ground</strong>: Most normal outdoor surfaces (such as lawns, fields, woods, and the like) or exceptionally soft or dirty indoor surfaces (thick rugs and very dirty or dusty floors). The creature might leave some traces (broken branches or tufts of hair), but it leaves only occasional or partial footprints.</p>
+		<p><strong>Hard Ground</strong>: Any surface that doesn't hold footprints at all, such as bare rock or an indoor floor. Most streambeds fall into this category, since any footprints left behind are obscured or washed away. The creature leaves only traces (scuff marks or displaced pebbles).</p>
+
+
+	<h2 id = "survive-in-the-wild">Survive in the Wild</h2>
+	<p>You can keep yourself and others fed and safe in the wilderness. Use the following DCs for certain tasks.</p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Task</th>
+				<th>Survival DC</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>Get along in the wild</td><td>10</td></tr>
+			<tr><td>Endure severe weather</td><td>15</td></tr>
+			<tr><td>Avoid natural hazards, such as quicksand</td><td>15</td></tr>
+			<tr><td>Keep from getting lost</td><td>15</td></tr>
+			<tr><td>Predict the weather up to 24 hours in advance</td><td>15</td></tr>
+		</tbody>
+	</table>
+
+	<p>When you get along in the wild, you can move up to half your overland speed while hunting and foraging without needing food and water supplies. You can provide food and water for one other character for every 2 points by which your check exceeds 10.</p>
+	<p>When you endure severe weather, you gain a +2 bonus on Fortitude saves against severe weather while moving at up to half your overland speed, or a +4 bonus if you remain stationary. You can grant this bonus to one other character for every 1 point by which your check exceeds 15.</p>
+	<p>When you predict the weather, you can predict the weather for one additional day in advance for every 5 points by which your check exceeds 15.</p>
+	<p><strong>Action</strong>: Varies. A single check could represent activity over the course of hours or a full day.</p>
+	<p><strong>Try Again</strong>: You can attempt a Survival check only once every 24 hours to get along in the wild or endure severe weather. You can attempt a check to avoid getting lost or avoid natural hazards for each situation that calls for one, but you can't retry a check to avoid getting lost in a specific situation or to avoid a specific natural hazard.</p>
+
+	<h2 id = "tend-wounds-and-ailments">Tend Wounds and Ailments</h2>
+	<p>This use of Survival functions as the <a href="../../../coreRulebook/skills/heal.html#heal">Heal</a> core skill.</p>
+	<p><strong>Action</strong>: Providing first aid, treating a wound, or treating poison is a standard action. Treating a disease or tending to a creature that has been wounded by a <a href="../../../coreRulebook/spells/spikeGrowth.html#spike-growth"><em>spike growth</em></a> or <a href="../../../coreRulebook/spells/spikeStones.html#spike-stones"><em>spike stones</em></a> spell requires 10 minutes of work. Treating deadly wounds requires 1 hour of work. Providing long-term care requires 8 hours of light activity.</p>
+	<p><strong>Try Again</strong>: Varies. Generally speaking, you can't try to tend wounds and ailments without witnessing proof of the original check's failure. You can always retry a check to provide first aid if the target is still alive.</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Survival",globalNavPath=[{ href: '/pathfinderRPG/prd/unchained/skillsAndOptions/consolidatedSkills/index.html', name: 'Pathfinder Unchained: Skills and Options : Consolidated Skills' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

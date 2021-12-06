@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Alchemist</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "alchemist.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "alchemist.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "alchemist.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "alchemist.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "alchemist.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "alchemist.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "alchemist.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "alchemist.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "alchemist.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "alchemist.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "alchemist.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "alchemist.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "alchemist.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "alchemist.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "alchemist.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "alchemist.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "alchemist.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "alchemist.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "alchemist.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "alchemist.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "alchemist.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="alchemist" class="monster-header">Alchemist</h1>
+				
+				
+				<p>Some alchemists focus on their ability to create destructive magical bombs, while others become masters of all poisons, and still others unlock secret powers tied to their ability-enhancing mutagens. Straddling the border between science and magic, explosions and <a href="../../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a>, alchemists have a unique place among the character classes.</p>
+				<p>This section introduces new alchemist discoveries, which are followed by new alchemist archetypes.</p>
+				<h1 id="discoveries">Discoveries</h1>
+				<p>The following new discoveries can be taken by any alchemist who meets the prerequisites. Discoveries that modify bombs and are marked with a single asterisk (*) do not stack. Only one such discovery can be applied to an individual bomb.</p>
+				<p id="alchemical-simulacrum"><i>Alchemical Simulacrum (Su)</i>: The alchemist gains the ability to create a lesser simulacrum. This works like the <i><a href="../spells/simulacrum.html#simulacrum,-lesser" >lesser simulacrum</a></i>* spell, except it costs 100 gp in alchemical materials per Hit Die of the simulacrum, requires 24 hours to grow, and decays into inert flesh rather than ice or snow if killed. An alchemist must be at least 8th level before selecting this discovery. The created simulacrum is a creature, not a supernatural effect.</p>
+				<p id="alchemical-zombie"><i>Alchemical Zombie (Su)</i>: The alchemist gains the ability to animate a relatively complete corpse as an alchemy-powered zombie. This process takes 1 hour and costs 100 gp in alchemical reagents per HD of the corpse being animated; the dead creature gains the zombie template. Zombies that are created in this manner count as undead created by <i><a href="../../coreRulebook/spells/animateDead.html#animate-dead" >animate dead</a></i> for the purposes of determining how many undead the alchemist can control. An alchemist must be at least 8th level before selecting this discovery. The created zombie is a creature, not a supernatural effect.</p>
+				<p id="blinding-bomb"><i>Blinding Bomb (Su)</i>*: When the alchemist creates a bomb, he can choose for it to detonate very brightly. Creatures that take a direct hit from a blinding bomb are blinded for 1 minute unless they succeed at a Fortitude save. Creatures in the splash area that fail their saves against the bomb are dazzled for 1 minute. This is a light effect. An alchemist must be at least 8th level before selecting this discovery.</p>
+				<p id="bottled-ooze"><i>Bottled Ooze (Su)</i>: The alchemist has learned how to preserve a sample of oozes in a sealed bottle, which he can prepare for use as an extract. When the alchemist activates the extract, he actually throws the bottle at a square within 30 feet, releasing the ooze, which reconstitutes and attacks the closest creature. The ooze is not under the alchemist's control, but is otherwise treated as a summoned creature. The ooze remains for 1 round per caster level, and decays into powder when the duration expires. If the alchemist has the <a href="../../advancedPlayersGuide/baseClasses/alchemist.html#infusion">infusion discovery</a>, another character can use the infused specimen. Creating a bottled ooze requires an extract with a level equal to the ooze's CR (so a CR 4 gray ooze requires a 4th-level extract). An alchemist must be at least 6th level before selecting this discovery.</p>
+				<p id="cognatogen"><i>Cognatogen (Su)</i>: The alchemist gains the ability to create a cognatogen, a mutagen-like mixture that heightens one mental ability score at the expense of a physical ability score. If the cognatogen enhances his Intelligence, it applies a penalty to his Strength. If it enhances his Wisdom, it applies a penalty to his Dexterity. If it enhances his Charisma, it applies a penalty to his Constitution. Otherwise, this ability works just like the mutagen ability (including the natural armor bonus). Anytime the alchemist would prepare a mutagen, he may instead prepare a cognatogen. All limitations of mutagens apply to cognatogens as if they were the same substance&mdash;an alchemist can only maintain one mutagen or cognatogen at a time, a cognatogen that is not in an alchemist's possession becomes inert, drinking a cognatogen makes a non-alchemist sick, and so on. When the effect of the cognatogen ends, the alchemist takes 2 points of ability damage to the ability score penalized by the cognatogen. The infuse mutagen discovery and the persistent mutagen class ability apply to cognatogens.</p>
+				<p id="confusion-bomb*"><i>Confusion Bomb* (Su)</i>: The alchemist's bombs twist the target's perception of friend and foe. A creature that takes a direct hit from a confusion bomb takes damage from the bomb and is under the effect of a <i><a href="../../coreRulebook/spells/confusion.html#confusion" >confusion</a></i> spell for 1 round per caster level of the alchemist. Reduce the amount of normal damage dealt by the bomb by 2d6 (so a bomb that would normally deal 6d6+4 points of damage deals 4d6+4 points of damage instead). An alchemist must be at least 8th level before selecting this discovery.</p>
+				<p id="doppelganger-simulacrum"><i>Doppelganger Simulacrum (Su)</i>: The alchemist learns how to create a <i>simulacrum</i>, a soulless duplicate, into which he can project his consciousness. As a full-round action, he may shift his consciousness from his current body to any one of his available doppelganger simulacra, which must be on the same plane as the alchemist. If killed in a simulacrum, he transfers to his own body automatically; if killed in his own body, he is dead. Unused simulacra (including his abandoned original body) appear to be lifeless corpses, though they do not decay. Creating a duplicate costs 1,000 gp in alchemical materials and requires 1 week to grow. An alchemist must be at least 10th level and must have the alchemical simulacrum discovery before selecting this discovery. The created simulacrum is a creature, not a supernatural effect.</p>
+				<p id="grand-cognatogen"><i>Grand Cognatogen (Su)</i>: The alchemist's cognatogen now grants a +6 natural armor bonus, a +8 alchemical bonus to one mental ability score (Intelligence, Wisdom, or Charisma), a +6 alchemical bonus to a second mental ability score, and a +4 alchemical bonus to a third mental ability score. The alchemist takes a &ndash;2 penalty to his Strength, Dexterity, and Constitution as long as the cognatogen persists, and takes 2 points of ability damage to each physical ability score when the cognatogen ends. An alchemist must be at least 16th level and must have the greater cognatogen discovery or class ability before selecting this discovery.</p>
+				<p id="greater-alchemical-simulacrum"><i>Greater Alchemical Simulacrum (Su)</i>: The alchemist gains the ability to create a simulacrum. This works like the <i><a href="../../coreRulebook/spells/simulacrum.html#simulacrum" >simulacrum</a></i> spell, except it costs 100 gp in alchemical materials per Hit Die of the simulacrum, requires 24 hours to grow, and decays into inert flesh rather than ice or snow if killed. An alchemist must be at least 14th level and must have the alchemical simulacrum discovery before selecting this discovery. The created simulacrum is a creature, not a supernatural effect.</p>
+				<p id="greater-cognatogen"><i>Greater Cognatogen (Su)</i>: The alchemist's mutagen now grants a +4 natural armor bonus, a +6 alchemical bonus to one mental ability score (Intelligence, Wisdom, or Charisma), and a +4 alchemical bonus to a second mental ability score. The alchemist takes a &ndash;2 penalty on both associated physical ability scores as long as the mutagen persists, and takes 2 points of ability damage to both associated physical ability scores when the cognatogen ends. An alchemist must be at least 12th level and must have the cognatogen discovery or class ability before selecting this discovery.</p>
+				<p id="healing-touch"><i>Healing Touch (Ex)</i>: The alchemist gains the ability to heal other creatures. As a standard action, he may touch a creature and apply 1 round's effect of his spontaneous healing discovery to that creature; this counts toward his spontaneous healing limit for the day. The alchemist's daily limit for hit points healed by spontaneous healing increases to 5 &times; his alchemist level. This ability only functions if the target is the same type of creature (humanoid, undead, and so on) as the alchemist. An alchemist must be at least 6th level and must have the spontaneous healing discovery or class ability before selecting this discovery.</p>
+				<p id="lingering-spirit"><i>Lingering Spirit (Ex)</i>: The alchemist is familiar enough with the ties between his body and spirit that he lingers at death's door far longer than a normal person. He treats his Constitution as 10 points higher than normal for the purpose of determining when hit point damage kills him (so an alchemist with a Constitution of 10 and this discovery dies at &ndash;20 hit points instead of &ndash;10). Reducing him to 0 Constitution or its equivalent (from ability damage, ability drain, Constitution penalties, and so on) makes him unconscious and comatose, but he is only killed after taking an additional 5 points of Constitution damage, drain, or penalty (in effect, the alchemist must be brought to &ndash;5 Constitution in order to be killed by these attacks). An alchemist must be at least 4th level before selecting this discovery.</p>
+				<p id="mummification"><i>Mummification (Ex)</i>: The alchemist has mastered preserving flesh and applied this knowledge to his own body, turning himself into an undeadlike creature. After learning this discovery, the alchemist must perform a 30-day regimen of a special diet, rigorous exercise, and drinking a mildly poisonous alchemical tea. At the end of this regimen, he falls unconscious for 24 hours, then awakens as a "living mummy." The alchemist's type does not change, but he becomes immune to cold, nonlethal damage, paralysis, and sleep. An alchemist must be at least 10th level and must have the preserve organs discovery before selecting this discovery.</p>
+				<p id="mutagen"><i>Mutagen (Su)</i>: This discovery gives the alchemist the <a href="../../advancedPlayersGuide/baseClasses/alchemist.html#mutagen">mutagen class ability</a>. (This discovery exists so alchemist archetypes who have variant mutagens, such as the mindchemist, can learn how to make standard mutagens.)</p>
+				<p id="parasitic-twin"><i>Parasitic Twin (Ex)</i>: The alchemist's vestigial limbs are part of a parasitic twin on his torso, consisting of a head, a torso, and two arms (from the vestigial limb discovery). Normally, the twin is mostly recessed within the alchemist's body, with the visible arms acting like the vestigial arm discovery, though the alchemist can manifest or hide the twin as a standard action. The twin is helpless, fully subservient to the alchemist, and cannot be targeted or harmed. Once per day, if the alchemist succumbs to a mental effect that would make him unconscious, helpless, or not in control of his own actions (such as <i><a href="../../coreRulebook/spells/charmPerson.html#charm-person" >charm person</a></i>, <i><a href="../../coreRulebook/spells/feeblemind.html#feeblemind" >feeblemind</a></i>, or <i><a href="../../coreRulebook/spells/holdPerson.html#hold-person" >hold person</a></i>), he can reroll his saving throw; success means the twin absorbs the effect and the alchemist can ignore it. Using this ability sickens the alchemist for the duration of the absorbed effect (removing the effect from the twin ends the sickened condition), and he cannot use the twin's limbs during that time, though passive effects (such as from rings worn on the vestigial limbs) continue normally. The alchemist must have selected the vestigial arm discovery twice before selecting this discovery.</p>
+				<p id="plague-bomb-(su)*"><i>Plague Bomb (Su)*</i>: The effects of the smoke created by an alchemist's bomb duplicates the effects of <i><a href="../../coreRulebook/spells/contagion.html#contagion" >contagion</a></i> instead of <i><a href="../../coreRulebook/spells/fogCloud.html" >fog cloud</a></i>, filling an area equal to twice the bomb's splash area for 1 round per level. An alchemist must be at least 8th level and must have the smoke bomb discovery before selecting this discovery.</p>
+				<p id="preserve-organs"><i>Preserve Organs (Ex)</i>: The alchemist learns how to preserve and protect his vital organs, reducing the chance of a mortal wound. When a critical hit or sneak attack is scored on the alchemist, there is a 25% chance that the critical hit or sneak attack is negated and damage is instead rolled normally. This does not stack with similar abilities that negate critical hits and sneak attacks (such as <i><a href="../../coreRulebook/magicItems/armor.html#armor-fortification" >fortification</a></i> armor). An alchemist can take this discovery up to three times; the effects stack, increasing this chance to 50% and then 75%.</p>
+				<p id="spontaneous-healing"><i>Spontaneous Healing (Ex)</i>: The alchemist gains the ability to heal from wounds rapidly. As a free action once per round, he can heal 5 hit points as if he had the fast healing ability. He can heal 5 hit points per day in this manner for every 2 alchemist levels he possesses. If the alchemist falls unconscious because of hit point damage and he still has healing available from this ability, the ability activates automatically each round until he is conscious again or the ability is depleted for the day.</p>
+				<p id="strafe-bomb"><i>Strafe Bomb (Su)</i>: The alchemist can throw bombs that splash in a 40-foot line rather than affecting a radius. The line starts at the alchemist and extends away from him in the direction he chooses. The alchemist designates one creature in the squares affected by the line to be the target of the bomb and makes his attack roll against that creature; all other squares in the line take splash damage. If the alchemist has the explosive bomb discovery and throws an explosive strafe bomb, the line of splash damage is 80 feet long instead of 40 feet.</p>
+				<p id="sunlight-bomb"><i>Sunlight Bomb (Su)</i>*: The alchemist can throw bombs that explode with a searing radiance equivalent to that of sunlight and that act as blinding bombs. Undead, fungi, molds, oozes, slimes, and creatures to which sunlight is harmful or unnatural take +2 damage per die from the bomb. Undead that are harmed by sunlight and that fail their saves against the bomb are staggered for 1 round. An alchemist must be at least 10th level and must have the blinding bomb discovery before he can select this discovery.</p>
+				<p id="tanglefoot-bomb"><i>Tanglefoot Bomb (Su)</i>*: A creature that takes a direct hit from a tanglefoot bomb must save against the bomb's DC or be entangled and glued to the floor as if it had failed its save against a <a href="../../coreRulebook/equipment.html#special-substances-and-items">tanglefoot bag</a>. Creatures in the splash area that fail their saves are entangled but not glued to the floor; those who make this save are not entangled at all.</p>
+				<p id="tentacle"><i>Tentacle (Ex)</i>: The alchemist gains a prehensile, arm-length tentacle on his body. The tentacle is fully under his control and cannot be concealed except with magic or bulky clothing. The tentacle does not give the alchemist any extra attacks or actions per round, though he can use it to make a tentacle attack (1d4 damage for a Medium alchemist, 1d3 damage for a Small one) with the <a href="../../bestiary/universalMonsterRules.html#grab">grab ability</a>. The tentacle can manipulate or hold items as well as the alchemist's original arms can (for example, allowing the alchemist to use one hand to wield a weapon, the tentacle to hold a potion, and the third hand to throw a bomb). Unlike an arm, the tentacle has no magic item slots.</p>
+				<p id="tumor-familiar"><i>Tumor Familiar (Ex)</i>: The alchemist creates a Diminutive or Tiny tumor on his body, usually on his back or stomach. As a standard action, the alchemist can have the tumor detach itself from his body as a separate creature vaguely resembling a kind of animal suitable for a familiar (bat, cat, and so on) and move about as if it were an independent creature. The tumor can reattach itself to the alchemist as a standard action. The tumor has all the abilities of the animal it resembles (for example, a batlike tumor can fly) and familiar abilities based on the alchemist's caster level (though some familiar abilities may be useless to an alchemist). The tumor acts as the alchemist's familiar whether attached or separated (providing a skill bonus, the <a href="../../coreRulebook/feats.html#alertness" >Alertness</a> feat, and so on). When attached to the alchemist, the tumor has fast healing 5. An alchemist's extracts and mutagens are considered spells for the purposes of familiar abilities like share spells and deliver touch spells. If a tumor familiar is lost or dies, it can be replaced 1 week later through a specialized procedure that costs 200 gp per alchemist level. The ritual takes 8 hours to complete.</p>
+				<p id="vestigial-arm"><i>Vestigial Arm (Ex)</i>: The alchemist gains a new arm (left or right) on his torso. The arm is fully under his control and cannot be concealed except with magic or bulky clothing. The arm does not give the alchemist any extra attacks or actions per round, though the arm can wield a weapon and make attacks as part of the alchemist's attack routine (using two-weapon fighting). The arm can manipulate or hold items as well as the alchemist's original arms (for example, allowing the alchemist to use one hand to wield a weapon, another hand to hold a potion, and the third hand to throw a bomb). The arm has its own "hand" and "ring" magic item slots (though the alchemist can still only wear two rings and two hand magic items at a time). An alchemist may take this discovery up to two times.</p>
+				<p id="wings"><i>Wings (Ex)</i>: The alchemist gains batlike, birdlike, or insectlike functional wings, allowing him to fly as the <i><a href="../../coreRulebook/spells/fly.html" >fly</a></i> spell for a number of minutes per day equal to his caster level. These minutes do not need to be consecutive, but they must be spent in 1-minute increments. An alchemist can select this discovery multiple times; each time he does so, he adds his caster level to the number of minutes per day that he can fly with the wings. This flight is an extraordinary ability. An alchemist must be at least 6th level before selecting this discovery.</p>
+				<h1 id="chirurgeon-(archetype)">Chirurgeon (Archetype)</h1>
+				<p>An alchemist who studies anatomy and uses this knowledge to heal is a chirurgeon. A chirurgeon has the following class features.</p>
+				<p id="infused-curative"><b>Infused Curative</b>: At 2nd level, a chirurgeon's extracts of <i>cure</i> spells automatically act as infusions, and can be used by non-alchemists. When a chirurgeon prepares his extracts, he may choose to render any or all of his infused curatives inert and prepare other extracts to replace them (unlike infusions, which continue to occupy the alchemist's daily extract slots until consumed or used). This ability replaces poison use.</p>
+				<p id="anaesthetic"><b>Anaesthetic</b>: At 5th level, a chirurgeon learns how to supplement uses of the <a href="../../coreRulebook/skills/heal.html#heal" >Heal</a> skill with pain-killing drugs. He gains <a href="../../coreRulebook/feats.html#skill-focus" >Skill Focus</a> (<a href="../../coreRulebook/skills/heal.html#heal" >Heal</a>) as a bonus feat. Any use of the <a href="../../coreRulebook/skills/heal.html#heal" >Heal</a> skill that has a risk of harming the patient (such as extracting a barb) only deals the minimum damage when performed by a chirurgeon. This ability replaces poison resistance +4.</p>
+				<p id="power-over-death"><b>Power Over Death</b>: At 10th level, a chirurgeon adds <i><a href="../../coreRulebook/spells/breathOfLife.html#breath-of-life" >breath of life</a></i> to his formula book as a 4th-level extract. His infused curative ability applies to this extract. This ability replaces poison immunity.</p>
+				<p id="discoveries"><b>Discoveries</b>: The following discoveries complement the chirurgeon archetype: elixir of life, healing touch*, infusion, and spontaneous healing*.</p>
+				<h1 id="clone-master-(archetype)">Clone Master (Archetype)</h1>
+				<p>Clone masters practice duplicating existing creatures in order to better understand how to create new life. A clone master has the following class features.</p>
+				<p id="bomb"><b>Bomb</b>: A clone master's bombs deal damage one die step lower than normal (regular bombs deal d4s, concussive bombs deal 1d3s, and so on). This otherwise functions as and replaces the standard alchemist bomb class feature.</p>
+				<p id="lesser-simulacrum"><b>Lesser Simulacrum</b>: At 7th level, a clone master adds <i><a href="../spells/simulacrum.html#simulacrum,-lesser" >lesser simulacrum</a></i> to his formula book as a 3rd-level extract.</p>
+				<p id="rebirth"><b>Rebirth</b>: At 8th level, a clone master can prepare a clone of himself that awakens if he is slain. Creating the clone costs 5,000 gp, takes 1 week of work, and requires 3 additional weeks for the clone to grow to maturity. If he dies, the clone awakens as if the alchemist had used the <i><a href="../../coreRulebook/spells/clone.html#clone" >clone</a></i> spell on himself. He can have one inert of himself at a time. Unused clones created by a clone master do not rot. This ability replaces poison resistance +6 and poison immunity.</p>
+				<p id="simulacrum"><b>Simulacrum</b>: At 13th level, a clone master adds <i><a href="../../coreRulebook/spells/simulacrum.html#simulacrum" >simulacrum</a></i> to his formula book as a 5th-level extract.</p>
+				<p id="clone"><b>Clone</b>: At 16th level, a clone master adds <i><a href="../../coreRulebook/spells/clone.html#clone" >clone</a></i> to his formula book as a 6th-level extract.</p>
+				<p id="discoveries"><b>Discoveries</b>: The following discoveries complement the clone master archetype: alchemical simulacrum*, doppelganger simulacrum*, preserve organs*, and parasitic twin*.</p>
+				<h1 id="internal-alchemist-(archetype)">Internal Alchemist (Archetype)</h1>
+				<p>An internal alchemist studies medicine, diet, and the living body to purify the self in the hope of gaining immortality by means of alchemical concoctions and controlling vital energy. Internal alchemists develop unusual physical abilities from heightened knowledge of how their bodies work. An internal alchemist has the following class features.</p>
+				<p id="breath-mastery"><b>Breath Mastery</b>: At 1st level, the internal alchemist can control his breath and the flow of vital energy within his body. Without preparation, he can hold his breath for a number of minutes equal to his Constitution score (after this, he must begin making Constitution checks or risk suffocation); by spending a full-round action preparing himself, he can increase this duration to 1 hour per point of Constitution. The alchemist can survive twice as long as normal without food or water before he starts to take penalties. He can put himself into a state of suspended animation as a move action, and is then unconscious and appears completely dead; he awakens at a preset time or in response to a condition set by him when he enters this state. This ability replaces <a href="../../coreRulebook/feats.html#throw-anything" >Throw Anything</a>.</p>
+				<p id="bonus-feats"><b>Bonus Feats</b>: An internal alchemist can select <a href="../../coreRulebook/feats.html#alertness" >Alertness</a>, Extra <i>Ki</i>, <a href="../../coreRulebook/feats.html#great-fortitude" >Great Fortitude</a>, <a href="../../coreRulebook/feats.html#improved-critical" >Improved Critical</a> (unarmed strike), <a href="../../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a>, <a href="../../coreRulebook/feats.html#improved-unarmed-strike" >Improved Unarmed Strike</a>, <a href="../../coreRulebook/feats.html#iron-will" >Iron Will</a>, Lighting Reflexes, <a href="../../coreRulebook/feats.html#stunning-fist" >Stunning Fist</a>, or <a href="../../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a> (unarmed strike) in place of an alchemical discovery.</p>
+				<p id="disease-resistance"><b>Disease Resistance</b>: At 3rd level, an internal alchemist gains a bonus on all saving throws against disease equal to his alchemist class bonus against poison. When he gains the poison immunity alchemist class ability, he becomes immune to disease as well. This ability replaces swift alchemy.</p>
+				<p id="uncanny-dodge"><b>Uncanny Dodge</b>: Starting at 6th level, an internal alchemist can react to danger before his senses would normally allow him to do so. He cannot be caught flat-footed, nor does he lose his Dexterity bonus to AC if the attacker is invisible. However, he still loses his Dexterity bonus to AC if he is immobilized, or if an opponent successfully uses the feint action (see <a href="../../coreRulebook/skills/bluff.html#bluff" >Bluff</a>) against him. If the internal alchemist already has uncanny dodge from a different class, he automatically gains improved uncanny dodge (as a rogue) instead. This ability replaces swift poisoning.</p>
+				<p id="discoveries"><b>Discoveries</b>: The following discoveries complement the internal alchemist archetype: cognatogen*, elixir of life, grand cognatogen*, greater cognatogen*, lingering spirit*, mummification*, and spontaneous healing*.</p>
+				<h1 id="mindchemist-(archetype)">Mindchemist (Archetype)</h1>
+				<p>While most alchemists use mutagens to boost their physical ability at the cost of mental ability, some use alchemy for the opposite purpose&mdash;to boost the power of the mind and memory. A mindchemist can reach incredible levels of mental acuity, but suffers lingering debilitating effects to his physique. A mindchemist has the following class features.</p>
+				<p id="cognatogen"><b>Cognatogen</b>: At 1st level, a mindchemist learns how to create a cognatogen, as per the cognatogen discovery. This ability replaces the mutagen class ability (a mindchemist cannot create mutagens unless he selects mutagen* as a discovery).</p>
+				<p id="perfect-recall"><b>Perfect Recall</b>: At 2nd level, a mindchemist has honed his memory. When making a <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> check, he may add his Intelligence bonus on the check a second time. Thus, a mindchemist with 5 ranks in <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (history) and a +2 Intelligence bonus has a total skill bonus of +9 (5 + 2 + 2) using this ability. The mindchemist can also use this ability when making an Intelligence check to remember something. This ability replaces poison use.</p>
+				<p id="bonus-feats"><b>Bonus Feats</b>: A mindchemist may select <a href="../../coreRulebook/feats.html#skill-focus" >Skill Focus</a> (<a href="../../coreRulebook/skills/disableDevice.html#disable-device" >Disable Device</a>, <a href="../../coreRulebook/skills/disguise.html#disguise" >Disguise</a>, <a href="../../coreRulebook/skills/heal.html#heal" >Heal</a>, any <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> skill, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a>, or <a href="../../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a>) in place of a discovery.</p>
+				<p id="languages"><b>Languages</b>: A mindchemist may learn three languages in place of a discovery.</p>
+				<p id="discoveries"><b>Discoveries</b>: The following discoveries complement the mindchemist archetype: grand cognatogen*, greater cognatogen*, infuse mutagen.</p>
+				<h1 id="preservationist-(archetype)">Preservationist (Archetype)</h1>
+				<p>Some alchemists are obsessed with collecting and preserving exotic creatures. These preservationists may use bottled animals and monsters as teaching tools, but some learn how to reanimate them for short periods to battle on the alchemist's behalf. A preservationist has the following class features.</p>
+				<p id="bottled-ally-i"><b>Bottled Ally I</b>: At 2nd level, a preservationist adds <a href="../../coreRulebook/skills/handleAnimal.html#handle-animal" >Handle Animal</a> to his list of class skills. He adds <i><a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-i" >summon nature's ally I</a></i> to his formula book as a 1st-level extract. When he prepares that extract, he actually prepares a tiny, preserved specimen in a bottle (as with a caster casting the spell, the preservationist doesn't have to choose the creature until he uses the extract). When the alchemist opens the bottle, the specimen animates and grows to normal size, serving the preservationist as per the spell and otherwise being treated as a summoned creature. When the duration expires, the preserved creature decays into powder. If the preservationist has the infusion discovery, another character can use the infused specimen. The <a href="../../coreRulebook/feats.html#augment-summoning" >Augment Summoning</a> feat can be applied to these specimens. This ability replaces poison use.</p>
+				<p id="bottled-ally-ii"><b>Bottled Ally II</b>: At 5th level, a preservationist adds <i><a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-ii" >summon nature's ally II</a></i> to his formula book as a 2nd-level extract. This ability replaces poison resistance +4.</p>
+				<p id="bottled-ally-iii"><b>Bottled Ally III</b>: At 8th level, a preservationist adds <i><a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-iv" >summon nature's ally IV</a></i> to his formula book as a 3rd-level extract. This ability replaces poison resistance +6.</p>
+				<p id="bottled-ally-iv"><b>Bottled Ally IV</b>: At 10th level, a preservationist adds <i><a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-v" >summon nature's ally V</a></i> to his formula book as a 4th-level extract. This ability replaces poison immunity.</p>
+				<p id="bottled-ally-v"><b>Bottled Ally V</b>: At 14th level, a preservationist adds <i><a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-vii" >summon nature's ally VII</a></i> to his formula book as a 5th-level extract. This ability replaces persistent mutagen.</p>
+				<p id="bottled-ally-vi"><b>Bottled Ally VI</b>: At 18 level, a preservationist adds <i><a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-ix" >summon nature's ally IX</a></i> to his formula book as a 6th-level extract. This ability replaces his 18th-level discovery.</p>
+				<p id="discoveries"><b>Discoveries</b>: The following discoveries complement the preservationist archetype: bottled ooze*, preserve organs*, tentacle*, vestigial arm*, and wings*.</p>
+				<h1 id="psychonaut-(archetype)">Psychonaut (Archetype)</h1>
+				<p>A psychonaut uses his knowledge to explore altered states of consciousness and even other planes of existence. A psychonaut has the following class features.</p>
+				<p id="bomb"><b>Bomb</b>: A psychonaut's bombs deal damage one die step lower than normal (regular bombs deal d4s, concussive bombs deal 1d3s, and so on). This ability otherwise functions as and replaces the standard alchemist bomb class feature.</p>
+				<p id="precognition"><b>Precognition</b>: At 5th level, a psychonaut adds <i><a href="../../coreRulebook/spells/augury.html#augury" >augury</a></i> to his formula book as a 2nd-level extract (this extract does not require a divine focus component). This replaces poison resistance +4.</p>
+				<p id="psychic-senses"><b>Psychic Senses</b>: At 8th level, a psychonaut adds <i><a href="../../coreRulebook/spells/clairaudienceClairvoyance.html#clairaudience-clairvoyance" >clairaudience/clairvoyance</a></i>, <i><a href="../../coreRulebook/spells/detectScrying.html#detect-scrying" >detect scrying</a></i>, <i><a href="../../coreRulebook/spells/scrying.html#scrying" >scrying</a></i>, and <i><a href="../../coreRulebook/spells/speakWithDead.html#speak-with-dead" >speak with dead</a></i> to his formula book as 3rd-level extracts (a <i><a href="../../coreRulebook/spells/scrying.html#scrying" >scrying</a></i> extract does not require a focus or divine focus component). When a psychonaut uses a <i><a href="../../coreRulebook/spells/speakWithDead.html#speak-with-dead" >speak with dead</a> </i>extract, he gains the power to hear the lingering spirit within a corpse rather than enabling the corpse to audibly speak, but the extract otherwise works as the spell. This ability replaces poison resistance +6.</p>
+				<p id="remote-consciousness"><b>Remote Consciousness</b>: At 10th level, a psychonaut adds <i><a href="../../coreRulebook/spells/dream.html#dream" >dream</a></i>, <i><a href="../spells/astralProjection.html#astral-projection,-lesser" >lesser astral projection</a></i>, <i><a href="../../coreRulebook/spells/nightmare.html#nightmare" >nightmare</a></i>, <i><a href="../../coreRulebook/spells/planeShift.html#plane-shift" >plane shift</a></i>, <i><a href="../../coreRulebook/spells/sending.html#sending" >sending</a></i>, and <i><a href="../../coreRulebook/spells/telepathicBond.html#telepathic-bond" >telepathic bond</a></i> to his formula book as 4th-level extracts (a <i><a href="../../coreRulebook/spells/planeShift.html#plane-shift" >plane shift</a></i> extract does not require a focus component). This ability replaces poison immunity.</p>
+				<p id="greater-precognition"><b>Greater Precognition</b>: At 15th level, a psychonaut adds <i><a href="../../coreRulebook/spells/momentOfPrescience.html#moment-of-prescience" >moment of prescience</a></i> to his formula book as a 5th-level extract. This ability replaces the increase to bomb damage at this level.</p>
+				<p id="master-precognition"><b>Master Precognition</b>: At 17th level, a psychonaut adds <i><a href="../../coreRulebook/spells/foresight.html#foresight" >foresight</a></i> to his formula book as a 6th-level extract. This ability replaces the increase to bomb damage at this level.</p>
+				<p id="discoveries"><b>Discoveries</b>: The following discoveries complement the psychonaut archetype: confusion bomb*, eternal potion, extend potion, lingering spirit*, and madness bomb.</p>
+				<h1 id="reanimator-(archetype)">Reanimator (Archetype)</h1>
+				<p>A reanimator is an alchemist who has discovered how to infuse a corpse with a semblance of life. Many work in tandem with necromancers to explore the fine border between the worlds of the living and the dead. A reanimator has the following class features.</p>
+				<p id="bomb"><b>Bomb</b>: A reanimator's bombs deal damage one die step lower than normal (regular bombs deal d4s, concussive bombs deal 1d3s, and so on). This ability otherwise functions as and replaces the standard alchemist bomb class feature.</p>
+				<p id="simple-reanimation"><b>Simple Reanimation</b>: At 7th level, a reanimator adds <i><a href="../spells/animateDead.html#animate-dead,-lesser" >lesser animate dead*</a></i> to his formula book as a 3rd-level extract. When he uses that extract, rather than drinking it, he injects it into the corpse he intends to animate, which rises as an undead creature under his control 1 hour later. The extract can only create zombies (including variant zombies). This ability replaces the increase to bomb damage at this level.</p>
+				<p id="create-undead"><b>Create Undead</b>: At 13th level, a reanimator adds <i><a href="../../coreRulebook/spells/createUndead.html#create-undead" >create undead</a></i> to his formula book as a 4th-level extract. When he uses that extract, rather than drinking it, he injects it into the corpse he intends to animate, which rises as an uncontrolled undead 1 hour later. The extract can only create corporeal undead. This ability replaces the increase to bomb damage at this level.</p>
+				<p id="create-greater-undead"><b>Create Greater Undead</b>: At 15th level, a reanimator adds <i><a href="../../coreRulebook/spells/createGreaterUndead.html#create-greater-undead" >create greater undead</a></i> to his formula book as a 5th-level extract. This otherwise acts similarly to a <i><a href="../../coreRulebook/spells/createUndead.html#create-undead" >create undead</a></i> extract. This ability replaces the increase to bomb damage at this level.</p>
+				<p id="discoveries"><b>Discoveries</b>: The following discoveries complement the reanimator archetype: alchemical zombie*, elixir of life, eternal potion, mummification*, and preserve organs*.</p>
+				<h1 id="vivisectionist-(archetype)">Vivisectionist (Archetype)</h1>
+				<p>A vivisectionist studies bodies to better understand their function. Unlike a chirurgeon, a vivisectionist's goals are not related to healing, but rather to experimentation and knowledge that most people would consider evil. A vivisectionist has the following class features.</p>
+				<p id="sneak-attack"><b>Sneak Attack</b>: At 1st level, a vivisectionist gains the sneak attack ability as a rogue of the same level. If a character already has sneak attack from another class, the levels from the classes that grant sneak attack stack to determine the effective rogue level for the sneak attack's extra damage dice (so an alchemist 1/rogue 1 has a +1d6 sneak attack like a 2nd-level rogue, an alchemist 2/rogue 1 has a +2d6 sneak attack like a 3rd-level rogue, and so on). This ability replaces bomb.</p>
+				<p id="torturer's-eye"><b>Torturer's Eye</b>: At 2nd level, a vivisectionist adds <i><a href="../../coreRulebook/spells/deathwatch.html#deathwatch" >deathwatch</a></i> to his formula book as a 1st-level extract.</p>
+				<p id="cruel-anatomist"><b>Cruel Anatomist</b>: At 3rd level, a vivisectionist may use his <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (nature) skill bonus in place of his <a href="../../coreRulebook/skills/heal.html#heal" >Heal</a> skill bonus.</p>
+				<p id="torturous-transformation"><b>Torturous Transformation</b>: At 7th level, a vivisectionist adds <i><a href="../spells/anthropomorphicAnimal.html#anthropomorphic-animal" >anthropomorphic animal</a></i> to his formula book as a 2nd-level extract. When he uses this extract, he injects it into an animal as part of a 2-hour surgical procedure. By using multiple doses of this extract as part of the surgery, he multiplies the duration by the number of extracts used.</p>
+				<p>At 9th level, a vivisectionist adds <i><a href="../../coreRulebook/spells/awaken.html#awaken" >awaken</a></i> and <i><a href="../../coreRulebook/spells/balefulPolymorph.html#baleful-polymorph" >baleful polymorph</a></i> to his formula book as 3rd-level extracts. When he uses the <i><a href="../../coreRulebook/spells/awaken.html#awaken" >awaken</a></i> or <i><a href="../../coreRulebook/spells/balefulPolymorph.html#baleful-polymorph" >baleful polymorph</a></i> extract, he injects it into the target (not a plant) as part of a 24-hour surgical procedure. He can make <i><a href="../spells/anthropomorphicAnimal.html#anthropomorphic-animal" >anthropomorphic animal</a></i> permanent on a creature by spending 7,500 gp.</p>
+				<p>At 15th level, a vivisectionist adds <i><a href="../../coreRulebook/spells/regenerate.html#regenerate" >regenerate</a></i> to his formula book as a 5th-level extract.</p>
+				<p id="bleeding-attack"><b>Bleeding Attack</b>: A vivisectionist may select the bleeding attack rogue talent in place of a discovery.</p>
+				<p id="crippling-strike"><b>Crippling Strike</b>: At 10th level or later, a vivisectionist may select the crippling strike rogue talent in place of a discovery.</p>
+				<p id="discoveries"><b>Discoveries</b>: The following discoveries complement the vivisectionist archetype: alchemical simulacrum*, concentrate poison, doppelganger simulacrum*, feral mutagen, parasitic twin*, preserve organs*, tentacle*, tumor familiar*, vestigial arm*, and wings*.</p>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Alchemist",globalNavPath=[{ href: '/pathfinderRPG/prd/ultimateMagic/spellcastingClassOptions.html', name: 'Spellcasting Class Options' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

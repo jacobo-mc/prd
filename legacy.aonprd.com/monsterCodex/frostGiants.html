@@ -1,0 +1,847 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Frost Giants</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "frostGiants.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "frostGiants.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "frostGiants.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "frostGiants.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "frostGiants.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "frostGiants.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "frostGiants.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "frostGiants.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "boggards.html">Boggards</a></li>
+						<li><a href = "bugbears.html">Bugbears</a></li>
+						<li><a href = "drow.html">Drow</a></li>
+						<li><a href = "duergar.html">Duergar</a></li>
+						<li><a href = "fireGiants.html">Fire Giants</a></li>
+						<li><a href = "frostGiants.html">Frost Giants</a></li>
+						<li><a href = "ghouls.html">Ghouls</a></li>
+						<li><a href = "gnolls.html">Gnolls</a></li>
+						<li><a href = "goblins.html">Goblins</a></li>
+						<li><a href = "hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "kobolds.html">Kobolds</a></li>
+						<li><a href = "lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "ogres.html">Ogres</a></li>
+						<li><a href = "orcs.html">Orcs</a></li>
+						<li><a href = "ratfolk.html">Ratfolk</a></li>
+						<li><a href = "sahuagin.html">Sahuagin</a></li>
+						<li><a href = "serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "troglodytes.html">Troglodytes</a></li>
+						<li><a href = "trolls.html">Trolls</a></li>
+						<li><a href = "vampires.html">Vampires</a></li>
+						<li><a href = "appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "frostGiants.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "frostGiants.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "frostGiants.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "frostGiants.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "frostGiants.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "frostGiants.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "frostGiants.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "frostGiants.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "frostGiants.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "frostGiants.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "frostGiants.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "frostGiants.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "frostGiants.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 class = "monster-header" id = "monster-codex-frost-giants">Frost Giants</h1>
+
+<p>Natives of snow-capped peaks and primordial lands of unending winter, frost giants consider themselves the rightful inheritors of the world's cold places. They raid, conquer, and take slaves with wanton brutality. Lesser races who shiver and hide from the chilling winds exist only to serve them&mdash;as labor, as sport, and sometimes as meat.</p>
+<p>Frost giants are among the larger giants, with males standing 15 feet tall and weighing roughly 2,800 pounds, and females being only slightly smaller. Most frost giants have pale blue skin the color of glacial ice, though shades can vary from deep blue to the white of fresh snow. Their hair grows in pale shades of blue, white, or dirty yellow; it is typically worn long and tied in braids, including beards. A frost giant's eyes typically match its hair, though with much more vivid colors. Frost giants' glacial coloration helps them camouflage themselves in the frigid lands they call home, and they often raid during ice storms to further capitalize on this fact.</p>
+<p>Frost giants bear nearly the same proportions as humans, if more muscle-bound and broad-shouldered on average. Like other humanoids, they are warm-blooded, but their bodies have adapted to emit only infinitesimal amounts of heat via their skin and breath, and their blood cannot freeze, rendering them impervious to even the most frigid cold. However, their blood boils easily, and they become uncomfortably hot in more moderate climes.</p>
+<p>A creature as massive as a frost giant requires a great deal of food to keep going, which the giants supply mostly by hunting and raiding. Caribou, elk, and other megafauna of the frozen reaches make up the bulk of their diet. The skins and hides of these creatures are put to use as clothing, bedding, and tents. Frost giants see no reason to engage in agriculture, mining, or raising livestock, given that their immense strength makes it far easier to raid for what they need. Most goods among the giants are stolen or created by enslaved members of smaller races. Cheese and butter are particularly prized.</p>
+<p>About half of all frost giant tribes are seminomadic, migrating between campsites and temporary settlements whenever the local supply of game or plunder begins to run out. The other half take up permanent residence in captured castles or in fortresses carved from stone or ice. The giants' refusal to practice agriculture, however, means that those who settle in one place require relatively large subject populations to raid from, and may even rely on subordinate frost giant tribes that range farther afield and supply them with tribute.</p>
+<p>Frost giants' love of raiding is legendary, and rightly feared among mountain towns the world over. They have so perfected the art of raiding that they leave enough residents of a town alive that the town can be rebuilt, allowing them to sack it again later once it's amassed enough loot to be worthwhile. In general, frost giants enjoy combat for its own sake, and prefer a quick plundering to holding territory. They particularly enjoy the thrill of fighting smaller humanoids, as it allows them to sate their bloodlust in relative safety.</p>
+<p>Because they value strength over all, frost giants are sometimes brought under the command of yet greater evils. In these cases, they are usually glorified mercenaries, who cooperate as long as they're kept supplied with food, weapons, and riches, be it by pay or by pillage. Yet non-giant individuals capable of cowing a tribe are rare&mdash;even white dragons can end up as thralls of powerful frost giant tribes.</p>
+<p>The ruler of a frost giant tribe typically assumes the title of jarl. This title is never claimed by means of democracy or heredity, but rather belongs to any with the strength to take it via personal challenge. When two jarls meet, one or the other must cede her title and become a mere "chieftain" or "warlord," an issue usually decided by swift and brutal combat. In this way, a strong jarl can command many subordinate tribes, though these arrangements inevitably prove to be temporary, for frost giants rankle at servitude. Most chieftains are continually second-guessing the jarl's leadership and looking for opportunities to break away or take power for themselves.</p>
+<p>As frost giants prefer the glory of combat over the tedium of work, they keep slaves (called thralls) to assist with tasks like preparing food or tanning hides. The giants make poor masters, often killing these thralls through exhaustion or petty cruelty. The giants are also not above eating thralls in lean times, or when the slaves have outlived their usefulness. More successful frost giant tribes sometimes capture hardier creatures such as ice trolls or ogres as thralls&mdash;these fare somewhat better, serving as shock troops in the giants' war bands.</p>
+<p>One of the few labors the giants take pride in is crafting weapons and armor. They manufacture excellent chain armor, which they prefer to plate, as plate makes noise and has joints that can freeze. For weaponry, they favor enormous greataxes, sometimes hafted with whole trees.</p>
+<p>Frost giants enjoy the company of creatures as brutal as themselves, and so take in other tundra creatures as exotic "pets." They favor winter wolves, but frost worms, mammoths, polar bears, svathurims, and yetis are not unknown.</p>
+<p>The vast majority of frost giants worship ancient giant deities of blood, ice, and war. The giants dedicate their battles to these gods out of respect, and appease them with sacrifices of slaves and treasure out of fear. More recently, some tribes have turned to the worship of demon lords of brutality, vengeance, and the deadly cold. This has caused something of a schism: the traditionalists accuse the demon-worshipers of turning their backs on their progenitors and becoming thralls to undeserving masters. Yet in truth, most frost giants will worship any god who caters to their desires.</p>
+<p>Full statistics for frost giants can be found in their <a href = "../bestiary/giant.html#giant-frost"><em>Bestiary</em> entry</a>.</p>
+
+<h1 id = "frost-giant-new-rules">New Rules</h1>
+<p>Many of frost giants' abilities are inspired by their adaptations to the severe cold of their homelands. Others have created versions of existing spells and tactics that take advantage of their incredible size.</p>
+
+<h2 id = "frost-giant-feats">Frost Giant Feats</h2>
+<p>Frost giants have access to the following feats.</p>
+
+<h3 id = "ancestral-enmity">Ancestral Enmity (Combat)</h3>
+<p>You can counter the special defensive training the stouter races have against your kind.</p>
+<p class = "stat-block-1"><strong>Prerequisite</strong>: Giant subtype.</p>
+<p class = "stat-block-1"><strong>Benefits</strong>: You gain a +2 bonus on melee attack rolls against dwarves and gnomes.</p>
+<p class = "stat-block-1"><strong>Special</strong>: You may select this feat twice. Its effects stack.</p>
+
+<h3 id = "awesome-charge">Awesome Charge (Combat)</h3>
+<p>When you charge, you can send your opponent flying.</p>
+<p class = "stat-block-1"><strong>Prerequisites</strong>: Str 25, <a href = "../bestiary/monsterFeats.html#awesome-blow">Awesome Blow</a>, <a href = "../coreRulebook/feats.html#improved-bull-rush">Improved Bull Rush</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: When you hit your opponent with a charge attack, you can attempt an awesome blow combat maneuver against that opponent as a free action.</p>
+
+<h3 id = "born-of-frost">Born of Frost</h3>
+<p>You exude a chill that can harm other creatures.</p>
+<p class = "stat-block-1"><strong>Prerequisite</strong>: Frost giant.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: Your natural weapons and unarmed strikes deal an additional 1d6 points of cold damage. Creatures that strike you with natural weapons or unarmed strikes take 1 point of cold damage.</p>
+
+<h3 id = "chilled-rock">Chilled Rock</h3>
+<p>You can transfer the cold of your body to the rocks you throw.</p>
+<p class = "stat-block-1"><strong>Prerequisites</strong>: Born of Frost, frost giant.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: Any items you throw with your rock throwing ability are chilled by your touch, dealing an additional 1d6 points of cold damage.</p>
+
+<h3 id = "cleaving-sweep">Cleaving Sweep (Combat)</h3>
+<p>You can sweep multiple foes to the ground with a single blow of your axe.</p>
+<p class = "stat-block-1"><strong>Prerequisites</strong>: Str 15, <a href = "../coreRulebook/feats.html#cleave">Cleave</a>, Improved Trip, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (greataxe), base attack bonus +11.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: When using a full-attack action with a two-handed weapon, you can give up your regular attacks and instead attempt a trip combat maneuver at your highest base attack bonus against each opponent within reach. You must attempt a separate combat maneuver check against each opponent.</p>
+
+<h3 id = "icy-stare">Icy Stare</h3>
+<p>Your eyes burn like ice, allowing you to freeze and weaken foes with a glance.</p>
+<p class = "stat-block-1"><strong>Prerequisite</strong>: Born of Frost, frost giant.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: As a standard action, you can direct your icy stare against a single creature or object within 10 feet. Targeted creatures must succeed at a Fortitude save (DC = 10 + 1/2 your Hit Dice + your Charisma modifier) or take 1d6 points of cold damage. Unattended objects cannot attempt a saving throw. Creatures damaged by the spell must succeed at a Fortitude save or take 1 point of Strength damage.</p>
+<p>This feat doesn't grant an actual gaze attack&mdash;foes and allies are not in danger simply by meeting your gaze.</p>
+
+<h3 id = "sure-on-ice">Sure on Ice</h3>
+<p>You move on ice and snow as if it were dry ground.</p>
+<p class = "stat-block-1"><strong>Prerequisite</strong>: Frost giant.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: You can move across icy and snowy surfaces without penalty, and don't need to attempt <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> checks to run or charge on ice. You gain a +4 bonus on <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> checks to climb ice.</p>
+
+<h2 id = "frost-giant-spells">Frost Giant Spells</h2>
+<p>Frost giants developed the following spells to help them hunt and raid in their icy homes.</p>
+
+<p id = "ice-slick" class = "stat-block-title">Ice Slick</p>
+<p class = "stat-block-1"><strong>School</strong> evocation [cold]; <strong>Level</strong> druid 2, magus 2, ranger 2, sorcerer/wizard 2, witch 2</p>
+<p class = "stat-block-1"><strong>Casting Time</strong> 1 standard action</p>
+<p class = "stat-block-1"><strong>Components</strong> V, S</p>
+<p class = "stat-block-1"><strong>Range</strong> close (25 ft. + 5 ft./2 levels)</p>
+<p class = "stat-block-1"><strong>Area</strong> 5-ft.-radius burst</p>
+<p class = "stat-block-1"><strong>Duration</strong> instantaneous (see text)</p>
+<p class = "stat-block-1"><strong>Save</strong> Reflex partial (see text); <strong>SR</strong> see text</p>
+<p class = "stat-block">You create a blast of intense cold, coating all solid surfaces in the area with a thin coating of ice. Any creature in the area when the spell is cast takes 1d6 points of cold damage + 1 point per caster level (maximum +10) and falls prone; creatures that succeed at a Reflex save take half damage and don't fall prone. Spell resistance applies to this initial effect.</p>
+<p class = "stat-block">A creature can walk within or through the area of ice at half its normal speed with a successful DC 10 <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> check. Failure by 4 or less means the creature can't move that round (and must succeed at a Reflex save or fall); failure by 5 or more means it falls. Creatures that do not move on their turn do not need to attempt this check.</p>
+<p class = "stat-block">A 5-foot square of ice has hardness 0 and 3 hit points. The ice is an instantaneous effect, but persists as nonmagical ice. Under temperate conditions, the ice lasts 1 minute per level. In tropical environments, it might last only half as long. In cold environments where ice and snow persist without melting, it could last indefinitely.</p>
+
+<p id = "magic-boulder" class = "stat-block-title">Magic Boulder</p>
+<p class = "stat-block-1"><strong>School</strong> transmutation [earth]; <strong>Level</strong> cleric 2, druid 2</p>
+<p class = "stat-block-1"><strong>Target</strong> up to three boulders touched</p>
+<p class = "stat-block">This spell works like <em><a href = "../coreRulebook/spells/magicStone.html#magic-stone">magic stone</a></em>, except you transmute as many as three boulders (rocks up to two size categories smaller than yourself) to use with the rock throwing ability or as siege engine ammunition. The boulder's damage increases by one step, and the boulder gains a +1 enhancement bonus on attack and damage rolls.</p>
+
+<h2 id = "frost-giant-magic-items">Frost Giant Magic Items</h2>
+<p>Frost giants are reputed to have created the first of these magic items, and most specimens still remain in the hands of their kind. Many a bold hero has sought to infiltrate frost giant strongholds in pursuit of such magical treasures, making dangerous climbs into crag-top castles and glacial palaces. Some of the most successful ones even manage to return home with all of their limbs.</p>
+
+<p id = "fog-cutting-lenses" class = "stat-block-title">Fog-Cutting Lenses</p>
+<p class = "stat-block-1"><strong>Price</strong> 8,000 gp; <strong>Slot</strong> face; <strong>CL</strong> 5th; <strong>Weight</strong> 1 lb.; <strong>Aura</strong> faint transmutation</p>
+<p class = "stat-block">These goggles are made of polished rock crystal, with frames of polished brass and a simple leather strap and buckle sized for a giant's head (but easily adjustable for smaller wearers). The goggles allow the wearer to see through magical and normal fogs, mists, and similar obscurement. They do not confer darkvision or low-light vision. Further, the goggles distort and skew vision strangely, imposing a &ndash;4 penalty on <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> checks.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> 4,000 gp</p>
+<p class = "stat-block-1">Craft Wondrous Item, <em><a href = "../coreRulebook/spells/darkvision.html#darkvision">darkvision</a>, <a href = "../coreRulebook/spells/fogCloud.html">fog cloud</a></em> </p>
+
+<p id = "frostblood-axe" class = "stat-block-title">Frostblood Axe</p>
+<p class = "stat-block-1"><strong>Price</strong> 40,310 gp; <strong>Slot</strong> none; <strong>CL</strong> 10th; <strong>Weight</strong> 6 lbs.; <strong>Aura</strong> moderate necromancy [evil]</p>
+<p class = "stat-block">This <em>+1 frost <a href = "../coreRulebook/magicItems/weapons.html#_wounding">wounding</a> battleaxe</em> sacrifices the souls of those it kills to the foul gods of the frost giants. Whenever it kills a creature with at least 1 Hit Die (including creatures killed by its bleed damage), as an immediate action the wielder can activate either <em><a href = "../coreRulebook/spells/divineFavor.html#divine-favor">divine favor</a></em> on himself or <em><a href = "../coreRulebook/spells/bless.html#bless">bless</a></em> on himself and his allies.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> 20,310 gp</p>
+<p class = "stat-block-1">Craft Wondrous Item, <em><a href = "../coreRulebook/spells/bleed.html#bleed">bleed</a></em>, <em><a href = "../coreRulebook/spells/bless.html#bless">bless</a></em>, <em><a href = "../coreRulebook/spells/chillMetal.html#chill-metal">chill metal</a></em>, <em><a href = "../coreRulebook/spells/deathKnell.html#death-knell">death knell</a></em>, <em><a href = "../coreRulebook/spells/divineFavor.html#divine-favor">divine favor</a></em> </p>
+
+<p id = "irongrip-gauntlets" class = "stat-block-title">Irongrip Gauntlets</p>
+<p class = "stat-block-1"><strong>Price</strong> 4,000 gp; <strong>Slot</strong> hands; <strong>CL</strong> 3rd; <strong>Weight</strong> 2 lbs.; <strong>Aura</strong> faint transmutation</p>
+<p class = "stat-block">These gloves are made of goatskin reinforced with heavy iron strips. They provide a sure, strengthened grip on large or awkwardly shaped items. When the wearer wields an improvised melee weapon or inappropriately sized weapon, reduce the penalty for doing so by 2 (minimum 0). The gloves don't change the number of hands required to wield such a weapon.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> 2,000 gp</p>
+<p class = "stat-block-1">Craft Wondrous Item, <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a>, <a href = "../coreRulebook/spells/enlargePerson.html#enlarge-person">enlarge person</a></em> </p>
+
+<p id = "winter-wolf-runetooth" class = "stat-block-title">Winter Wolf Runetooth</p>
+<p class = "stat-block-1"><strong>Price</strong> 2,500 gp; <strong>Slot</strong> none; <strong>CL</strong> 10th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> moderate conjuration</p>
+<p class = "stat-block">When this canine fang is crushed or broken as a full-round action, it summons a winter wolf. The wolf is under the control of the creature that broke the fang. The wolf remains for 1 minute or until slain.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> 1,250 gp</p>
+<p class = "stat-block-1">Craft Wondrous Item, <em><a href = "../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-v">summon nature's ally V</a></em> </p>
+
+<h1 id = "example-frost-giants">Example Frost Giants</h1>
+
+<h2 id = "frost-giant-raider">Frost Giant Raider</h2>
+<p>Frost giant raiders are the terror of the north, racing out of the snow to rend and slaughter for the sheer joy of battle and conquest.</p>
+
+<p class = "stat-block-title">Frost Giant Raider <span class = "stat-block-cr">CR 11</span></p>
+<p class = "stat-block-xp">XP 12,800</p>
+<p class = "stat-block-1">Frost giant barbarian 2</p>
+<p class = "stat-block-1">CE Large humanoid (cold, giant)</p>
+<p class = "stat-block-1"><strong>Init</strong> +0; <strong>Senses</strong> low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +22</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 23, touch 8, flat-footed 23 (+5 armor, +1 deflection, +10 natural, &ndash;2 rage, &ndash;1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 227 (16 HD; 14d8+2d12+146)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +22, <strong>Ref</strong> +5, <strong>Will</strong> +10.</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> rock catching, uncanny dodge; <strong>Immune</strong> cold</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> vulnerable to fire</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 50 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 greataxe </em> +27/+22/+17 (3d6+22/&times;3)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> rock +11 (1d8+21)</p>
+<p class = "stat-block-1"><strong>Space</strong> 10 ft.; <strong>Reach</strong> 10 ft.</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> rage (13 rounds/day), rage powers (knockback), rock throwing (120 ft.)</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The raider begins combat with <a href = "../coreRulebook/feats.html#dazzling-display">Dazzling Display</a>, then uses <a href = "../coreRulebook/feats.html#shatter-defenses">Shatter Defenses</a> to keep her intimidated targets on the defensive.</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> When she's not raging, the barbarian's statistics are <strong>AC</strong> 25, touch 10, flat-footed 25; <strong>hp</strong> 195; <strong>Fort</strong> +20, <strong>Will</strong> +8; <em>+1 greataxe</em> +25/+20/+15 (3d6+19/&times;3); rock +11 (1d8+18); <strong>Str</strong> 35, <strong>Con</strong> 24; <strong>CMB</strong> +25, <strong>CMD</strong> 36; <strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +18, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +30.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 39, <strong>Dex</strong> 11, <strong>Con</strong> 28, <strong>Int</strong> 10, <strong>Wis</strong> 16, <strong>Cha</strong> 8</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +12; <strong>CMB</strong> +27 (+29 bull rush); <strong>CMD</strong> 36 (38 vs. bull rush)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#cleave">Cleave</a>, <a href = "../coreRulebook/feats.html#dazzling-display">Dazzling Display</a>, <a href = "../coreRulebook/feats.html#great-cleave">Great Cleave</a>, <a href = "../coreRulebook/feats.html#improved-bull-rush">Improved Bull Rush</a>, <a href = "../coreRulebook/feats.html#intimidating-prowess">Intimidating Prowess</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#shatter-defenses">Shatter Defenses</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (greataxe)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +20, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +32, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +22, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> &ndash;5 (&ndash;1 in snow); <strong>Racial Modifiers</strong> +4 <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> in snow</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Giant</p>
+<p class = "stat-block-1"><strong>SQ</strong> fast movement</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potions of <a href = "../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds">cure serious wounds</a></em> (2), <em>potion of <a href = "../coreRulebook/spells/displacement.html#displacement">displacement</a></em>, <em>potion of <a href = "../coreRulebook/spells/protectionFromArrows.html#protection-from-arrows">protection from arrows</a></em>, <em>potion of <a href = "../coreRulebook/spells/protectionFromEnergy.html#protection-from-energy">protection from energy</a></em> (fire), alchemist's fire (5); <strong>Other Gear</strong> <em>+1 chain shirt</em>, <em>+1 greataxe</em>, <em>amulet of natural armor +1</em>, <em>belt of giant strength +2</em>, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +1</em>, <em>ring of protection +1</em>, 380 gp</p>
+
+<p>Raiders are the shock troops of frost giant tribes, usually consisting of the tribe's toughest, most intimidating warriors. On raids, they exult in the fear that their mighty appearance causes, often breaking enemy lines with the sheer sight of their howling charge. Unlike frost giant rangers, frost giant raiders are less concerned with stealth or tactics than with impressing each other via dramatic feats, and wiser jarls know when to rein in their troops lest frost giant bravado and a desire for bragging rights lose them a battle&mdash;or, more often, result in unnecessary destruction of valuable slaves and plunder.</p>
+<p>While larger tribes are usually ruled by a jarl or another powerful figure, in smaller tribes a raider might serve as a leader. Some raiders could even be chieftains who pledge fealty to a mighty jarl's larger clan. Since a frost giant tribe ruled by a mere raider is likely to be easy pickings for a more fearsome tribe looking to increase its holdings, raider-led tribes often find it safer to move out of their traditional homelands and into softer country, and thus they often come into conflict with smaller humanoids.</p>
+
+
+<h2>Frost Giant Rangers</h2>
+<p>Frost giant rangers hunt big game to feed their tribes, and take point on raids.</p>
+
+<p id = "frost-giant-hunter" class = "stat-block-title">Frost Giant Hunter <span class = "stat-block-cr">CR 11</span></p>
+<p class = "stat-block-xp">XP 12,800</p>
+<p class = "stat-block-1">Frost giant ranger 2</p>
+<p class = "stat-block-1">CE Large humanoid (cold, giant)</p>
+<p class = "stat-block-1"><strong>Init</strong> +2; <strong>Senses</strong> low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +22</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 27, touch 12, flat-footed 25 (+5 armor, +1 deflection, +2 Dex, +10 natural, &ndash;1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 170 (16 HD; 14d8+2d10+96)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +18, <strong>Ref</strong> +9, <strong>Will</strong> +9</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> rock catching; <strong>Immune</strong> cold</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> vulnerable to fire</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 40 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 spear</em> +23/+18/+13 (2d6+17/&times;3)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> rock +13 (1d8+16.5)</p>
+<p class = "stat-block-1"><strong>Space</strong> 10 ft.; <strong>Reach</strong> 10 ft.</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> combat style (archery), favored enemy (animals +2), rock throwing (120 ft.)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 32, <strong>Dex</strong> 15, <strong>Con</strong> 23, <strong>Int</strong> 10, <strong>Wis</strong> 16, <strong>Cha</strong> 8</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +12; <strong>CMB</strong> +24; <strong>CMD</strong> 37</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#deadly-aim">Deadly Aim</a>, <a href = "../coreRulebook/feats.html#far-shot">Far Shot</a>, <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#point-blank-shot">Point-Blank Shot</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#precise-shot">Precise Shot</a>, <a href = "../coreRulebook/feats.html#quick-draw">Quick Draw</a>, <a href = "../coreRulebook/feats.html#skill-focus">Skill Focus</a> (<a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a>)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +22, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +22 (+26 in snow), <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +16</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Giant</p>
+<p class = "stat-block-1"><strong>SQ</strong> track +1, wild empathy +1</p>
+<p class = "stat-block-1"><strong>Gear</strong> <em>+1 chain shirt</em>, <em>+1 spear</em>, <em>amulet of natural armor +1</em>, <em>belt of incredible dexterity +2</em>, <em>boots of the winterlands</em>, <em>ring of protection +1</em>, 2,298 gp</p>
+
+<p id = "frost-giant-elite-scout" class = "stat-block-title">Frost Giant Elite Scout <span class = "stat-block-cr">CR 13</span></p>
+<p class = "stat-block-xp">XP 25,600</p>
+<p class = "stat-block-1">Frost giant ranger 4</p>
+<p class = "stat-block-1">CE Large humanoid (cold, giant)</p>
+<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Senses</strong> low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +30</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 30, touch 14, flat-footed 26 (+6 armor, +1 deflection, +3 Dex, +1 dodge, +10 natural, &ndash;1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 197 (18 HD; 14d8+4d10+112)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +19, <strong>Ref</strong> +11, <strong>Will</strong> +10</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> rock catching</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 40 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 spear</em> +24/+19/+14 (2d6+16/&times;3)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> rock +16 (1d8+15)</p>
+<p class = "stat-block-1"><strong>Space</strong> 10 ft.; <strong>Reach</strong> 10 ft.</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> combat style (archery), favored enemy (humans +2), rock throwing (120 ft.)</p>
+<p class = "stat-block-1"><strong>Ranger Spells Prepared</strong> (CL 1st; concentration +4)</p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/spells/longstrider.html#longstrider">longstrider</a></em> </p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 31, <strong>Dex</strong> 16, <strong>Con</strong> 22, <strong>Int</strong> 14, <strong>Wis</strong> 16, <strong>Cha</strong> 8</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +14; <strong>CMB</strong> +25; <strong>CMD</strong> 40</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#dodge">Dodge</a>, <a href = "../coreRulebook/feats.html#endurance">Endurance</a>, <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#mobility">Mobility</a>, <a href = "../coreRulebook/feats.html#point-blank-shot">Point-Blank Shot</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#precise-shot">Precise Shot</a>, <a href = "../coreRulebook/feats.html#quick-draw">Quick Draw</a>, <a href = "../coreRulebook/feats.html#skill-focus">Skill Focus</a> (<a href = "../coreRulebook/skills/perception.html#perception">Perception</a>), <a href = "../coreRulebook/feats.html#skill-focus">Skill Focus</a> (<a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a>), <a href = "../coreRulebook/feats.html#spring-attack">Spring Attack</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +11 (+15 when jumping), <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +21, <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> +11, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (local) +9, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nature) +14, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +30, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +30 (+34 in snow), <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +15</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Giant</p>
+<p class = "stat-block-1"><strong>SQ</strong> favored terrain (cold +2), hunter's bond (companions), track +2, wild empathy +3</p>
+<p class = "stat-block-1"><strong>Gear</strong> <em>+2 chain shirt</em>, <em>+1 spear</em>, <em>amulet of natural armor +1</em>, <em>belt of physical might +2</em> (Dex, Con), <em>boots of the winterlands</em>, <em>ring of protection +1</em>, 3,773 gp</p>
+
+
+<h2 id = "frost-giant-ice-mage">Frost Giant Ice Mage</h2>
+<p>Frost giant sorcerers excel in harnessing the power of the elements and bolstering raiders in combat.</p>
+
+<p class = "stat-block-title">Frost Giant Ice Mage <span class = "stat-block-cr">CR 12</span></p>
+<p class = "stat-block-xp">XP 19,200</p>
+<p class = "stat-block-1">Frost giant sorcerer 6</p>
+<p class = "stat-block-1">CE Large humanoid (cold, giant)</p>
+<p class = "stat-block-1"><strong>Init</strong> +4; <strong>Senses</strong> low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +25</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 26, touch 10, flat-footed 26 (+2 armor, +1 deflection, +10 natural, +4 shield, &ndash;1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 204 (20 HD; 14d8+6d6+120)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +17, <strong>Ref</strong> +8, <strong>Will</strong> +11</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> rock catching; <strong>Immune</strong> cold</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> vulnerable to fire</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 40 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk morningstar +21/+16/+11 (2d6+12) or 2 slams +20 (1d8+8 plus 1d6 cold)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> rock +12 (1d8+12 plus 1d6 cold)</p>
+<p class = "stat-block-1"><strong>Space</strong> 10 ft.; <strong>Reach</strong> 10 ft.</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> rock throwing (120 ft.)</p>
+<p class = "stat-block-1"><strong>Bloodline Spell-Like Abilities</strong> (CL 6th; concentration +9)</p>
+<p class = "stat-block-2">7/day&mdash;cold steel (grant weapon or 50 ammunition <em>frost</em> weapon special ability for 3 rounds)</p>
+<p class = "stat-block-1"><strong>Sorcerer Spells Known</strong> (CL 6th; concentration +9)</p>
+<p class = "stat-block-2">3rd (4/day)&mdash;<em><a href = "../coreRulebook/spells/dispelMagic.html#dispel-magic">dispel magic</a></em> </p>
+<p class = "stat-block-2">2nd (6/day)&mdash;<em><a href = "../ultimateMagic/spells/frigidTouch.html#_frigid-touch">frigid touch</a></em>, <em>ice <a href = "../coreRulebook/magicItems/armor.html#_armor-slick">slick</a></em>, <em><a href = "../coreRulebook/spells/rage.html#rage">rage</a></em> (DC 16)</p>
+<p class = "stat-block-2">1st (7/day)&mdash;<em><a href = "../coreRulebook/spells/enlargePerson.html#enlarge-person">enlarge person</a></em>, <em><a href = "../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat">expeditious retreat</a></em>, <em><a href = "../coreRulebook/spells/obscuringMist.html#obscuring-mist">obscuring mist</a></em>, <em><a href = "../coreRulebook/spells/shield.html#shield">shield</a></em>, <em><a href = "../coreRulebook/spells/trueStrike.html#true-strike">true strike</a></em> </p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/ghostSound.html#ghost-sound">ghost sound</a></em> (DC 13), <em><a href = "../coreRulebook/spells/flare.html#flare">flare</a></em> (DC 13), <em><a href = "../coreRulebook/spells/mageHand.html#mage-hand">mage hand</a></em>, <em><a href = "../coreRulebook/spells/message.html#message">message</a></em>, <em><a href = "../coreRulebook/spells/rayOfFrost.html#ray-of-frost">ray of frost</a></em>, <em><a href = "../coreRulebook/spells/touchOfFatigue.html#touch-of-fatigue">touch of fatigue</a></em> (DC 13)</p>
+<p class = "stat-block-1"><strong>Bloodline</strong> boreal</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> A frost giant ice mage casts <em><a href = "../coreRulebook/spells/shield.html#shield">shield</a></em> and <em><a href = "../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat">expeditious retreat</a></em> .</p>
+<p class = "stat-block-1"><strong>During Combat</strong> A frost giant ice mage uses his <em>wand of <a href = "../coreRulebook/spells/solidFog.html#solid-fog">solid fog</a></em> to trap opponents, then blasts them at range with his <em>wand of <a href = "../coreRulebook/spells/iceStorm.html#ice-storm">ice storm</a></em> or <em>wand of <a href = "../coreRulebook/spells/lightningBolt.html#lightning-bolt">lightning bolt</a></em> . He casts <em>ice <a href = "../coreRulebook/magicItems/armor.html#_armor-slick">slick</a></em> and uses his icewalker bloodline ability to outmaneuver his opponents in icy and snowy areas.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 26, <strong>Dex</strong> 11, <strong>Con</strong> 22, <strong>Int</strong> 14, <strong>Wis</strong> 14, <strong>Cha</strong> 16</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +13; <strong>CMB</strong> +22; <strong>CMD</strong> 33</p>
+<p class = "stat-block-1"><strong>Feats</strong> Arcane Strike, Born of Frost*, Chilled Rock*, <a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a>, <a href = "../coreRulebook/feats.html#eschew-materials">Eschew Materials</a>, <a href = "../coreRulebook/feats.html#extend-spell">Extend Spell</a>, <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, Improved <a href = "../coreRulebook/feats.html#lightning-reflexes">Lightning Reflexes</a>, <a href = "../coreRulebook/feats.html#lightning-reflexes">Lightning Reflexes</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#skill-focus">Skill Focus</a> (<a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a>)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a> +12, <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +21, <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (alchemy) +15, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +16, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana) +15, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +25, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +15, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +12 (+16 in snow); <strong>Racial Modifiers</strong> +4 <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> in snow</p>
+<p class = "stat-block-1"><strong>Languages</strong> Abyssal, Auran, Common, Giant</p>
+<p class = "stat-block-1"><strong>SQ</strong> icewalker</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potions of <a href = "../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds">cure serious wounds</a></em> (2), <em>potion of <a href = "../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></em>, <em>potion of <a href = "../coreRulebook/spells/protectionFromEnergy.html#protection-from-energy">protection from energy</a> (fire)</em>, <em>wand of <a href = "../coreRulebook/spells/iceStorm.html#ice-storm">ice storm</a></em> (10 charges), <em>wand of <a href = "../coreRulebook/spells/lightningBolt.html#lightning-bolt">lightning bolt</a></em> (10 charges), <em>wand of <a href = "../coreRulebook/spells/solidFog.html#solid-fog">solid fog</a></em> (5 charges), alchemist's fire (4); <strong>Other Gear</strong> mwk morningstar, <em>amulet of natural armor +1</em>, <em>bracers of armor +2</em>, <em>ring of protection +1</em>, 362 gp</p>
+
+<p>Ice mages inherit the magic of the icy north. While some are tricksters and manipulators&mdash;perhaps using <em><a href = "../coreRulebook/spells/enlargePerson.html#enlarge-person">enlarge person</a></em> to grow to Huge size and trick travelers into thinking they're cloud giants&mdash;many act as support and artillery for their tribe's raiders, killing at a distance with the power of a storm or increasing their allies' size and ferocity. As powerful as sorcerers may be, frost giant society still places more value in physical strength and melee prowess, meaning sorcerers are usually advisors rather than leaders.</p>
+
+
+<h2 id = "frost-giant-battle-priest">Frost Giant Battle Priest</h2>
+<p>Frost giant priests are as scheming as they are violent, controlling others through fear and tradition.</p>
+
+<p class = "stat-block-title">Frost Giant Battle Priest <span class = "stat-block-cr">CR 13</span></p>
+<p class = "stat-block-xp">XP 25,600</p>
+<p class = "stat-block-1">Frost giant cleric 8</p>
+<p class = "stat-block-1">CE Large humanoid (cold, giant)</p>
+<p class = "stat-block-1"><strong>Init</strong> &ndash;1; <strong>Senses</strong> low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +30</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 27, touch 9, flat-footed 27 (+8 armor, +1 deflection, &ndash;1 Dex, +10 natural, &ndash;1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 195 (22d8+96)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +19, <strong>Ref</strong> +7, <strong>Will</strong> +16.</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> rock catching; <strong>Immune</strong> cold</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> vulnerable to fire</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 battleaxe</em> +28/+23/+18/+13 (2d6+13/&times;3)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> rock +14 (1d8+18)</p>
+<p class = "stat-block-1"><strong>Space</strong> 10 ft.; <strong>Reach</strong> 10 ft.</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> channel negative energy 5/day (DC 16, 4d6), might of the gods (+8, 8 rounds/day), rock throwing (120 ft.), weapon master (8 rounds/day)</p>
+<p class = "stat-block-1"><strong>Domain Spell-Like Abilities</strong> (CL 8th; concentration +14)</p>
+<p class = "stat-block-2">9/day&mdash;strength surge (+4)</p>
+<p class = "stat-block-2">9/day&mdash;battle rage (+4)</p>
+<p class = "stat-block-1"><strong>Cleric Spells Prepared</strong> (CL 8th; concentration +14)</p>
+<p class = "stat-block-2">4th&mdash;<a href = "../advancedPlayersGuide/spells/blessingOfFervor.html#blessing-of-fervor"><em>blessing of fervor</em></a>, <em><a href = "../ultimateCombat/spells/protectionFromEnergy.html#_protection-from-energy,-communal">communal protection from energy</a></em>, <em><a href = "../coreRulebook/spells/divinePower.html#divine-power">divine power</a></em> <sup>D</sup>, <em><a href = "../coreRulebook/spells/unholyBlight.html#unholy-blight">unholy blight</a></em> (DC 20)</p>
+<p class = "stat-block-2">3rd&mdash;<em><a href = "../advancedPlayersGuide/spells/enterImage.html#_enter-image-">enter image</a></em>, <em><a href = "../coreRulebook/spells/invisibilityPurge.html#invisibility-purge">invisibility purge</a></em>, <a href = "../coreRulebook/spells/magicVestment.html#magic-vestment"><em>magic vestment</em></a> <sup>D</sup>, <em><a href = "../coreRulebook/spells/protectionFromEnergy.html#protection-from-energy">protection from energy</a></em>, <em>sacred bon d</em></p>
+<p class = "stat-block-2">2nd&mdash;<em><a href = "../coreRulebook/spells/alignWeapon.html#align-weapon">align weapon</a></em>, <em><a href = "../coreRulebook/spells/deathKnell.html#death-knell">death knell</a></em> (DC 18), <em><a href = "../coreRulebook/spells/holdPerson.html#hold-person">hold person</a></em> (DC 18), <em>magic boulder</em> *, <em><a href = "../coreRulebook/spells/spiritualWeapon.html#spiritual-weapon">spiritual weapon</a></em> <sup>D</sup>, <a href = "../advancedPlayersGuide/spells/weaponOfAwe.html#weapon-of-awe"><em>weapon of awe</em></a></p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/magicItems/weapons.html#_weapons-bane">bane</a></em> (DC 17), <em><a href = "../coreRulebook/spells/bless.html#bless">bless</a></em>, <em><a href = "../coreRulebook/spells/command.html#command">command</a></em> (DC 17), <em><a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></em>, <em><a href = "../coreRulebook/spells/divineFavor.html#divine-favor">divine favor</a></em>, <em><a href = "../coreRulebook/spells/enlargePerson.html#enlarge-person">enlarge person</a></em> <sup>D</sup> (DC 17), <em><a href = "../coreRulebook/spells/shieldOfFaith.html#shield-of-faith">shield of faith</a></em> </p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/guidance.html#guidance">guidance</a></em>, <em><a href = "../coreRulebook/spells/mending.html#mending">mending</a></em>, <em><a href = "../coreRulebook/spells/readMagic.html#read-magic">read magic</a></em> </p>
+<p class = "stat-block-1"><strong>D</strong> domain spell; <strong>Domains</strong> Strength, War</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> A battle priest casts <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em>, <em><a href = "../coreRulebook/spells/magicVestment.html#magic-vestment">magic vestment</a></em>, and <em><a href = "../coreRulebook/spells/protectionFromEnergy.html#protection-from-energy">protection from energy</a></em> (fire) before combat, and <em><a href = "../advancedPlayersGuide/spells/sacredBond.html#_sacred-bond">sacred bond</a></em> if her jarl is present.</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The battle priest opens combat by casting <em><a href = "../coreRulebook/spells/divinePower.html#divine-power">divine power</a></em>, then uses spells like <em><a href = "../advancedPlayersGuide/spells/blessingOfFervor.html#_blessing-of-fervor">blessing of fervor</a></em> to support allies and <em><a href = "../coreRulebook/spells/unholyBlight.html#unholy-blight">unholy blight</a></em> to harm opponents.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 34, <strong>Dex</strong> 8, <strong>Con</strong> 18, <strong>Int</strong> 13, <strong>Wis</strong> 23, <strong>Cha</strong> 14</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +16; <strong>CMB</strong> +29 (+31 sunder); <strong>CMD</strong> 39 (41 vs. sunder)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#brew-potion">Brew Potion</a>, <a href = "../coreRulebook/feats.html#cleave">Cleave</a>, <a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a>, <a href = "pathfinderRPG/prd/feats.html#craft-magic-arms-and-armor"><a href = "pathfinderRPG/prd/feats.html#craft-magic-arms-and-armor">Craft Magic Arms and Armor</a></a>, <a href = "../coreRulebook/spells/protectionFromEnergy.html#craft-wand-(item-creation)">Craft Wand</a>, <a href = "../coreRulebook/feats.html#great-cleave">Great Cleave</a>, <a href = "../coreRulebook/feats.html#improved-sunder">Improved Sunder</a>, <a href = "../coreRulebook/feats.html#lightning-reflexes">Lightning Reflexes</a>, <a href = "../coreRulebook/feats.html#martial-weapon-proficiency">Martial Weapon Proficiency</a> (battleaxe), <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#vital-strike">Vital Strike</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +17, <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (armor) +10, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +15, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) +14, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +30, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +7, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +1 (+5 in snow); <strong>Racial Modifiers</strong> +4 <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> in snow</p>
+<p class = "stat-block-1"><strong>Languages</strong> Abyssal, Common, Giant</p>
+<p class = "stat-block-1"><strong>SQ</strong> icicle 9/day (1d6+3)</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potions of <a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em> (2), <em>potions of cure serious wounds</em> (4), <em>potions of <a href = "../coreRulebook/spells/protectionFromEnergy.html#protection-from-energy">protection from energy</a></em> (2), <em>potion of <a href = "../coreRulebook/spells/waterBreathing.html#water-breathing">water breathing</a></em>, <em>wand of <a href = "../coreRulebook/spells/cureCriticalWounds.html#cure-critical-wounds">cure critical wounds</a></em> (15 charges), <em>wand of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em> (15 charges); <strong>Other Gear</strong> mwk chainmail, <em>+1 battleaxe</em>, <em>amulet of natural armor +1</em>, <em>boots of the winterlands</em>, <em>headband of inspired wisdom +2</em>, <em>ring of protection +1</em>, <em>ring of sustenance</em>, golden bracelets for <em>sacred bond</em> (2), silver unholy symbol, spell component pouch, 4,410 gp</p>
+
+<p>A frost giant battle priest uses her powers seeking out those who would undercut her authority or that of the chief, through spying on, manipulating, and threatening the rest of the tribe. When needed, she's not averse to taking up her battleaxe and splitting a few heads.</p>
+
+
+<h2 id = "frost-giant-houndmaster">Frost Giant Houndmaster</h2>
+<p>Frost giants often use subjugated predators like wolves to help them chase down their quarry.</p>
+
+<p class = "stat-block-title">Frost Giant Houndmaster <span class = "stat-block-cr">CR 14</span></p>
+<p class = "stat-block-xp">XP 38,400</p>
+<p class = "stat-block-1">Frost giant druid (arctic druid) 10</p>
+<p class = "stat-block-1">NE Large humanoid (cold, giant)</p>
+<p class = "stat-block-1"><strong>Init</strong> +4; <strong>Senses</strong> low-light vision, snowcaster; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +29</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 28, touch 10, flat-footed 28 (+7 armor, +1 deflection, +11 natural, &ndash;1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 262 (24d8+154)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +22, <strong>Ref</strong> +10, <strong>Will</strong> +18</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> rock catching; <strong>Immune</strong> cold, dazzled</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> vulnerable to fire</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 greataxe</em> +27/+22/+17/+12 (3d6+14/&times;3)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> rock +16 (1d8+13)</p>
+<p class = "stat-block-1"><strong>Space</strong> 10 ft.; <strong>Reach</strong> 10 ft.</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> rock throwing (120 ft.), snowcaster, wild shape 3/day</p>
+<p class = "stat-block-1"><strong>Druid Spells Prepared</strong> (CL 10th; concentration +16)</p>
+<p class = "stat-block-2">5th&mdash;<em><a href = "../coreRulebook/spells/animalGrowth.html#animal-growth">animal growth</a></em> (DC 21), <em><a href = "../coreRulebook/spells/cureCriticalWounds.html#cure-critical-wounds">cure critical wounds</a></em>, <em><a href = "../coreRulebook/spells/transmuteRockToMud.html#transmute-rock-to-mud">transmute rock to mud</a></em> (DC 21)</p>
+<p class = "stat-block-2">4th&mdash;<em><a href = "../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds">cure serious wounds</a></em>, <em><a href = "../coreRulebook/spells/flameStrike.html#flame-strike">flame strike</a></em> (DC 21), <em><a href = "../coreRulebook/spells/iceStorm.html#ice-storm">ice storm</a></em>, <em><a href = "../coreRulebook/spells/spikeStones.html#spike-stones">spike stones</a></em> (DC 20)</p>
+<p class = "stat-block-2">3rd&mdash;<em><a href = "../coreRulebook/spells/callLightning.html#call-lightning">call lightning</a></em> (DC 20), <em><a href = "../coreRulebook/spells/dominateAnimal.html#dominate-animal">dominate animal</a></em> (DC 19), <em><a href = "../coreRulebook/spells/protectionFromEnergy.html#protection-from-energy">protection from energy</a></em>, <em><a href = "../coreRulebook/spells/sleetStorm.html#sleet-storm">sleet storm</a></em> </p>
+<p class = "stat-block-2">2nd&mdash;<em><a href = "../coreRulebook/spells/animalTrance.html#animal-trance">animal trance</a></em> (DC 18), <em><a href = "../coreRulebook/spells/barkskin.html#barkskin">barkskin</a></em>, <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em>, <em><a href = "../coreRulebook/spells/chillMetal.html#chill-metal">chill metal</a></em>, <em><a href = "../coreRulebook/spells/delayPoison.html#delay-poison">delay poison</a></em>, <em><a href = "../coreRulebook/spells/holdAnimal.html#hold-animal">hold animal</a></em> (DC 18)</p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/spells/charmAnimal.html#charm-animal">charm animal</a></em> (DC 17), <em><a href = "../coreRulebook/spells/entangle.html#entangle">entangle</a></em> (DC 17), <em><a href = "../ultimateMagic/spells/frostbite.html#_frostbite">frostbite</a></em>, <em><a href = "../coreRulebook/spells/obscuringMist.html#obscuring-mist">obscuring mist</a></em>, <em><a href = "../coreRulebook/spells/speakWithAnimals.html#speak-with-animals">speak with animals</a></em> (2)</p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/createWater.html#create-water">create water</a></em>, <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/light.html#light">light</a></em>, <em><a href = "../coreRulebook/spells/purifyFoodAndDrink.html#purify-food-and-drink">purify food and drink</a></em> </p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The houndmaster casts <em><a href = "../coreRulebook/spells/protectionFromEnergy.html#protection-from-energy">protection from energy</a></em> (fire) on herself, casts <em><a href = "../coreRulebook/spells/animalGrowth.html#animal-growth">animal growth</a></em>, <em><a href = "../coreRulebook/spells/barkskin.html#barkskin">barkskin</a></em>, and <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em> on her animal companion, and then casts <em><a href = "../coreRulebook/spells/callLightning.html#call-lightning">call lightning</a></em> .</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The houndmaster fights with axe and magic together, directing lightning bolts from <em><a href = "../coreRulebook/spells/callLightning.html#call-lightning">call lightning</a></em> and miring opponents with <em><a href = "../coreRulebook/spells/entangle.html#entangle">entangle</a></em>, <em><a href = "../coreRulebook/spells/sleetStorm.html#sleet-storm">sleet storm</a></em>, and <em><a href = "../coreRulebook/spells/transmuteRockToMud.html#transmute-rock-to-mud">transmute rock to mud</a></em> .</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 28, <strong>Dex</strong> 10, <strong>Con</strong> 20, <strong>Int</strong> 13, <strong>Wis</strong> 23, <strong>Cha</strong> 14</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +17; <strong>CMB</strong> +27; <strong>CMD</strong> 38</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#cleave">Cleave</a>, <a href = "../coreRulebook/feats.html#great-cleave">Great Cleave</a>, <a href = "../bestiary/monsterFeats.html#improved-natural-armor">Improved Natural Armor</a>, <a href = "../coreRulebook/feats.html#intimidating-prowess">Intimidating Prowess</a>, <a href = "../coreRulebook/feats.html#lightning-reflexes">Lightning Reflexes</a>, <a href = "../coreRulebook/feats.html#martial-weapon-proficiency">Martial Weapon Proficiency</a> (greataxe), <a href = "../coreRulebook/spells/protectionFromEnergy.html#natural-spell">Natural Spell</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#scribe-scroll">Scribe Scroll</a>, <a href = "../coreRulebook/feats.html#spell-focus">Spell Focus</a> (evocation), <a href = "../coreRulebook/feats.html#toughness">Toughness</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (greataxe)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a> +9, <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> +20, <a href = "../coreRulebook/skills/heal.html#heal">Heal</a> +14, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +29, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (geography) +9 (+14 in cold or icy terrain), <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nature) +16, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +29 (+34 in cold or icy terrain), <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> &ndash;6 (+3 in cold or icy terrain), <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +21 (+26 in cold or icy terrain), <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +15; <strong>Racial Modifiers</strong> +4 <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> in snow</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Druidic, Giant, Sylvan</p>
+<p class = "stat-block-1"><strong>SQ</strong> arctic native, icewalking, nature bond (animal companion), nature sense, wild empathy +12</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>pearl of power</em> (2nd), <em>scrolls of <a href = "../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds">cure serious wounds</a></em> (2), antitoxin (2); <strong>Other Gear</strong> <em>+3 hide armor</em>, <em>+1 greataxe</em>, <em>amulet of natural armor +1</em>, <em>belt of mighty constitution +2</em>, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +1</em>, <em>headband of inspired wisdom +2</em>, <em>manacles of cooperation</em> (2), <em>ring of protection +1</em>, 1,465 gp</p>
+
+<p>A houndmaster is responsible for the care of the tribe's pets, frequently polar bears, wolves, and winter wolves. She is fond of pitting her charges against each other, allowing the packs to establish a functional hierarchy and ensuring that only the strongest survive to breed. Some houndmasters choose these pack leaders as animal companions.</p>
+
+
+<h2 id = "frost-giant-jarl">Frost Giant Jarl</h2>
+<p>Brutal lords of the frost giant tribes, jarls brook no argument from those beneath them.</p>
+
+<p class = "stat-block-title">Frost Giant Jarl <span class = "stat-block-cr">CR 18</span></p>
+<p class = "stat-block-xp">XP 153,600</p>
+<p class = "stat-block-1">Frost giant ranger 9</p>
+<p class = "stat-block-1">CE Large humanoid (cold, giant)</p>
+<p class = "stat-block-1"><strong>Init</strong> +4; <strong>Senses</strong> low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +24</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 35, touch 15, flat-footed 31 (+9 armor, +2 deflection, +4 Dex, +11 natural, &ndash;1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 328 (23 HD; 14d8+9d10+216)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +26, <strong>Ref</strong> +17, <strong>Will</strong> +13.</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> evasion, rock catching; <strong>Immune</strong> cold</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> vulnerable to fire</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 40 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 warhammer</em> +27/+22/+17/+12 (2d6+12/&times;3), <em>+1 warhammer</em> +27/+22/+17 (2d6+12/&times;3)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> rock +22 (1d8+16) or <em>+1 warhammer</em> +24/+19 (2d6+1/&times;3)</p>
+<p class = "stat-block-1"><strong>Space</strong> 10 ft.; <strong>Reach</strong> 10 ft.</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> combat style (two-weapon), favored enemy (giants +2, humans +4), rock throwing (120 ft.)</p>
+<p class = "stat-block-1"><strong>Ranger Spells Prepared</strong> (CL 6th; concentration +7)</p>
+<p class = "stat-block-2">2nd&mdash;<em><a href = "../ultimateCombat/spells/returningWeapon.html#_returning-weapon,-communal">communal <a href = "../coreRulebook/magicItems/weapons.html#_weapons-returning">returning</a> weapon</a></em> </p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../advancedPlayersGuide/spells/callAnimal.html#_call-animal">call animal</a></em>, <em><a href = "../coreRulebook/spells/charmAnimal.html#charm-animal">charm animal</a> </em> (DC 12), <em><a href = "../advancedPlayersGuide/spells/leadBlades.html#_lead-blades-">lead blades</a></em></p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The jarl casts <em><a href = "../ultimateCombat/spells/returningWeapon.html#_returning-weapon,-communal">communal <a href = "../coreRulebook/magicItems/weapons.html#_weapons-returning">returning</a> weapon</a></em> on his warhammers.</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The jarl makes full attacks with his warhammers against targets at any range.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 32, <strong>Dex</strong> 19, <strong>Con</strong> 27, <strong>Int</strong> 12, <strong>Wis</strong> 12, <strong>Cha</strong> 10</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +19; <strong>CMB</strong> +31; <strong>CMD</strong> 47</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#double-slice">Double Slice</a>, <a href = "../advancedPlayersGuide/advancedFeats.html#dreadful-carnage">Dreadful Carnage</a>, <a href = "../coreRulebook/feats.html#endurance">Endurance</a>, <a href = "../advancedPlayersGuide/advancedFeats.html#furious-focus">Furious Focus</a>, <a href = "../coreRulebook/feats.html#greater-two-weapon-fighting">Greater Two-Weapon Fighting</a>, <a href = "../coreRulebook/feats.html#improved-iron-will">Improved Iron Will</a>, <a href = "../coreRulebook/feats.html#improved-two-weapon-fighting">Improved Two-Weapon Fighting</a>, <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#point-blank-shot">Point-Blank Shot</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#precise-shot">Precise Shot</a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a>, <a href = "../coreRulebook/feats.html#two-weapon-fighting">Two-Weapon Fighting</a>, <a href = "../coreRulebook/feats.html#two-weapon-rend">Two-Weapon Rend</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (warhammer)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +8 (+12 when jumping), <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +23, <a href = "../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> +5, <a href = "../coreRulebook/skills/heal.html#heal">Heal</a> +9, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +23, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +24, <a href = "../coreRulebook/skills/perform.html#perform">Perform</a> (sing) +5, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +11, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +17 (+21 in snow), <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +14; <strong>Racial Modifiers</strong> +4 <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> when jumping, +4 <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> in snow</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Giant</p>
+<p class = "stat-block-1"><strong>SQ</strong> favored terrain (cold +4, forest +2), hunter's bond (companions), swift tracker, track +4, wild empathy +9, woodland stride</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potions of <a href = "../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds">cure serious wounds</a></em> (3), <em>potion of <a href = "../coreRulebook/spells/protectionFromEnergy.html#protection-from-energy">protection from energy</a></em> (fire), alchemist's fire (2); <strong>Other Gear</strong> <em>+4 chain shirt</em>, <em>+1 warhammer</em> (2), <em>amulet of natural armor +2</em>, <em>belt of physical might +4</em> (Dex, Con), <em>boots of the winterlands</em>, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +3</em>, <em>ring of protection +2</em>, <em>stone of <a href = "../coreRulebook/spells/alarm.html#alarm">alarm</a></em>, 1,886 gp</p>
+
+<p>Jarls rule their tribes and subordinates with an iron fist&mdash;or a hammer to the skull. Jarls take and hold their positions through force. While many might wish to see their stations pass on to their progeny, heredity carries little weight in frost giant society, and jarls understand that their children can assume power only by violently seizing it. As a result, frost giant jarls are hard on their children, encouraging sibling rivalries in hopes that one child will eventually prove strong enough to rule.</p>
+
+
+<h1 id = "svathurim">Svathurim</h1>
+<p>This hulking creature has the lower half of an eight-legged stallion and the upper half of a horned frost giant.</p>
+
+<p class = "stat-block-title">Svathurim <span class = "stat-block-cr">CR 11</span></p>
+<p class = "stat-block-xp">XP 12,800</p>
+<p class = "stat-block-1">CE Huge monstrous humanoid (cold)</p>
+<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +19</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 26, touch 11, flat-footed 23 (+4 armor, +3 Dex, +10 natural, +1 shield, &ndash;2 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 147 (14d10+70)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +11, <strong>Ref</strong> +12, <strong>Will</strong> +11</p>
+<p class = "stat-block-1"><strong>Immune</strong> cold</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> vulnerable to fire</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 50 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk lance +22/+17/+12 (3d6+13/&times;3), gore +21 (2d6+9), 2 hooves +16 (1d8+4)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk composite longbow +16/+11/+6 (3d6+9/&times;3)</p>
+<p class = "stat-block-1"><strong>Space</strong> 15 ft.; <strong>Reach</strong> 10 ft. (20 ft. with lance)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> natural jouster, thunderous trample, trample (1d8+13, DC 26)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 29, <strong>Dex</strong> 17, <strong>Con</strong> 20, <strong>Int</strong> 10, <strong>Wis</strong> 14, <strong>Cha</strong> 11</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +14; <strong>CMB</strong> +25 (+27 bull rush, +29 overrun); <strong>CMD</strong> 38 (40 vs. bull rush, 40 vs. overrun, 50 vs. trip)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../advancedPlayersGuide/advancedFeats.html#charge-through">Charge Through</a>, <a href = "../coreRulebook/feats.html#great-fortitude">Great Fortitude</a>, <a href = "../coreRulebook/feats.html#greater-overrun">Greater Overrun</a>, <a href = "../coreRulebook/feats.html#improved-bull-rush">Improved Bull Rush</a>, <a href = "../coreRulebook/feats.html#improved-overrun">Improved Overrun</a>, <a href = "../coreRulebook/feats.html#intimidating-prowess">Intimidating Prowess</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +12 (+20 when jumping), <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +12, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +25, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +19, <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +14, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +20; <strong>Racial Modifiers</strong> +8 <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> when jumping</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Giant</p>
+<p class = "stat-block-1"><strong>SQ</strong> skyrunner, undersized weapons</p>
+<p class = "stat-block-breaker">Ecology</p>
+<p class = "stat-block-1"><strong>Environment</strong> cold hills, mountains, or plains</p>
+<p class = "stat-block-1"><strong>Organization</strong> solitary, pair, war band (3&ndash;6), or clan (1&ndash;4 svathurim plus 2&ndash;12 frost giants)</p>
+<p class = "stat-block-1"><strong>Treasure</strong> standard (mwk chain shirt, mwk light steel shield, mwk composite longbow with 40 arrows, mwk lance, other treasure)</p>
+<p class = "stat-block-breaker">Special Abilities</p>
+<p class = "stat-block-1"><strong>Natural Jouster (Ex)</strong> A svathurim can wield a lance one-handed as if it were mounted, and it deals double damage with a lance while charging.</p>
+<p class = "stat-block-1"><strong>Skyrunner (Su)</strong> When charging, running, or taking a double move, a svathurim can stride across open air as if it were using <em><a href = "../coreRulebook/spells/airWalk.html#air-walk">air walk</a></em> . This movement is very taxing; a svathurim must succeed at a DC 14 Constitution check at the end of each round it uses this ability or become fatigued for 1 minute. This DC increases by 2 for each round after the first. Returning to the ground resets the DC to 14, but doesn't negate any ongoing fatigue or exhaustion. A svathurim cannot trample when using this ability.</p>
+<p class = "stat-block-1"><strong>Thunderous Trample (Su)</strong> Any creature damaged by a svathurim's trample attack must succeed at a DC 22 Fortitude save or be deafened for 1 minute. The save DC is Constitution-based.</p>
+
+<p>Svathurims and frost giants consider each other allies and distant kin. The hindquarters of an adult svathurim are up to 10 feet tall and 16 feet long, while its giant trunk and head reach up to 18 feet in height. They typically weigh more than 5 tons and may live up to 500 years. Svathurims dwell in arctic regions, galloping along the shores of polar seas or between high mountain peaks, with individuals organized into clans headed by the strongest hunters.</p>
+
+
+<h1 id = "frost-giant-encounters">Encounters</h1>
+<p>Given frost giants' love of raiding, most frost giant encounters are with giants seeking food, loot, or slaves.</p>
+
+<h2>Raiding Party (CR 14)</h2>
+<p>This is a common force that a tribe of frost giants might send to exact tribute from a nearby human settlement, where little serious resistance is expected.</p>
+
+<p class = "stat-block-title">Frost Giant Raiders (2) <span class = "stat-block-cr">CR 11</span></p>
+<p class = "stat-block-xp">XP 12,800 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 227 each</p>
+
+<p class = "stat-block-title">Frost Giants (2) <span class = "stat-block-cr">CR 9</span></p>
+<p class = "stat-block-xp">XP 6,400 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 133 each</p>
+
+<h2>Slave Caravan (CR 15)</h2>
+<p>A houndmaster often travels with a pack, and could be guarding a shipment of slaves, tracking down runaways, or overseeing the trade of thralls between two tribes.</p>
+
+<p class = "stat-block-title">Frost Giant Houndmaster <span class = "stat-block-cr">CR 14</span></p>
+<p class = "stat-block-xp">XP 38,400</p>
+<p class = "stat-block-1"><strong>hp</strong> 262</p>
+
+<p class = "stat-block-title">Winter Wolves (8) <span class = "stat-block-cr">CR 5</span></p>
+<p class = "stat-block-xp">XP 1,600 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 57 each</p>
+
+<h2>Reconnaissance Patrol (CR 16)</h2>
+<p>These scouts can be used as patrols keeping tabs on the tribe's enemies, or as scouts reconnoitering a new area ripe for raiding and plundering.</p>
+
+<p class = "stat-block-title">Frost Giant Battle Priest <span class = "stat-block-cr">CR 13</span></p>
+<p class = "stat-block-xp">XP 25,600</p>
+<p class = "stat-block-1"><strong>hp</strong> 195</p>
+
+<p class = "stat-block-title">Frost Giant Elite Scouts (2) <span class = "stat-block-cr">CR 13</span></p>
+<p class = "stat-block-xp">XP 25,600 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 197 each</p>
+
+<h2>War Band (CR 17)</h2>
+<p>This war band could be called together by a local jarl to solve a specific, difficult problem&mdash;such as evicting monsters from a disused fortress, or stopping a party of adventurers who have been disrupting the tribe's attempts to terrorize nearby settlements. The frost giants' usual forces are bolstered by svathurims recruited to strike thunderous fear into foes.</p>
+
+<p class = "stat-block-title">Frost Giant Houndmaster <span class = "stat-block-cr">CR 14</span></p>
+<p class = "stat-block-xp">XP 38,400</p>
+<p class = "stat-block-1"><strong>hp</strong> 262</p>
+
+<p class = "stat-block-title">Frost Giant Ice Mage <span class = "stat-block-cr">CR 12</span></p>
+<p class = "stat-block-xp">XP 19,200</p>
+<p class = "stat-block-1"><strong>hp</strong> 204</p>
+
+<p class = "stat-block-title">Frost Giant Raiders (2) <span class = "stat-block-cr">CR 11</span></p>
+<p class = "stat-block-xp">XP 12,800 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 227 each</p>
+
+<p class = "stat-block-title">Svathurims (2) <span class = "stat-block-cr">CR 11</span></p>
+<p class = "stat-block-xp">XP 12,800 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 147 each</p>
+
+<p class = "stat-block-title">Winter Wolves (2) <span class = "stat-block-cr">CR 5</span></p>
+<p class = "stat-block-xp">XP 1,600 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 57 each</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Frost Giants",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

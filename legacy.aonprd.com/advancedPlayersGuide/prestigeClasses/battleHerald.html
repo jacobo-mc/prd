@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Battle Herald</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "battleHerald.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "battleHerald.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "battleHerald.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "battleHerald.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "battleHerald.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "battleHerald.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "battleHerald.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "battleHerald.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "battleHerald.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "battleHerald.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "battleHerald.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "battleHerald.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "battleHerald.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "battleHerald.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "battleHerald.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "battleHerald.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "battleHerald.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "battleHerald.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "battleHerald.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "battleHerald.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "battleHerald.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="battle-herald" class="monster-header">Battle Herald</h1>
+				<p>In every army there are leaders who surpass the average cold-hearted mercenary, battle-scarred veteran, or wizened drill instructor, not so much in their skill at arms but in their ability to inspire and lead others. Battle heralds are just such captains&mdash;skilled warriors to be sure, but ones who have honed the art of leadership to a keen edge and keep it as ready as their sword as a means to victory. Battle heralds tap into reservoirs of courage, skill, bravery, and perseverance that those who serve with them never knew they had, and their allies often find themselves ascending the mount of triumph following the battle herald's glorious (if often tattered) banner.</p>
+				<p id="hit-die"><b>Hit Die</b>: d10.</p>
+				<h1 id="requirements">Requirements</h1>
+				<p>To qualify to become a battle herald, a character must fulfill all the following criteria.</p>
+				<p id="base-attack-bonus"><b>Base Attack Bonus</b>: +4.</p>
+				<p><b>Special</b>: Challenge and inspire courage class features.</p>
+				<p id="skills"><b>Skills</b>: <a href="../../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> 5 ranks, <a href="../../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> 5 ranks, <a href="../../coreRulebook/skills/perform.html#perform" >Perform</a> (oratory) 5 ranks, <a href="../../coreRulebook/skills/profession.html#profession" >Profession</a> (soldier) 2 ranks.</p>
+				<h1 id="class-skills">Class Skills</h1>
+				<p>The battle herald's class skills are <a href="../../coreRulebook/skills/bluff.html#bluff" >Bluff</a> (Cha), <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (Int), <a href="../../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> (Cha), <a href="../../coreRulebook/skills/handleAnimal.html#handle-animal" >Handle Animal</a> (Cha), <a href="../../coreRulebook/skills/heal.html#heal" >Heal</a> (Wis), <a href="../../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> (Cha), <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (engineering) (Int), <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (history) (Int), <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (local) (Int), <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (nobility) (Int), <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> (Wis), <a href="../../coreRulebook/skills/profession.html#profession" >Profession</a> (Wis), <a href="../../coreRulebook/skills/ride.html#ride" >Ride</a> (Dex), and <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> (Wis).</p>
+				<p id="skill-ranks-per-level"><b>Skill Ranks per Level</b>: 4 + Int modifier.</p>
+				<div class="table"><table id="table-6-1:-battle-herald"><caption>Table:  Battle Herald</caption>
+<thead><tr id="level-bonus-save-save-save-special-"><th>Level</th><th>Base Attack Bonus</th><th>Fort Save</th><th>Ref Save</th><th>Will Save</th><th>Special</th></tr></thead>
+<tr><td>1st</td><td>+1</td><td>+1</td><td>+0</td><td>+1</td><td style="white-space: normal;">1st <a href="battleHerald.html#inspiring-command" >inspiring command</a> (+1), <a href="battleHerald.html#improved-leadership" >improved leadership</a>, <a href="battleHerald.html#voice-of-authority" >voice of authority</a></td></tr>
+<tr><td>2nd</td><td>+2</td><td>+1</td><td>+1</td><td>+1</td><td style="white-space: normal;"><a href="battleHerald.html#easy-march" >Easy march</a></td></tr>
+<tr><td>3rd</td><td>+3</td><td>+2</td><td>+1</td><td>+2</td><td style="white-space: normal;">2nd <a href="battleHerald.html#inspiring-command" >inspiring command</a></td></tr>
+<tr><td>4th</td><td>+4</td><td>+2</td><td>+1</td><td>+2</td><td style="white-space: normal;"><a href="battleHerald.html#inspiring-command" >Inspiring command</a> (+2), <a href="battleHerald.html#inspire-greatness" >inspire greatness</a></td></tr>
+<tr><td>5th</td><td>+5</td><td>+3</td><td>+2</td><td>+3</td><td style="white-space: normal;">3rd <a href="battleHerald.html#inspiring-command" >inspiring command</a>, <a href="battleHerald.html#banner" >banner</a> </td></tr>
+<tr><td>6th</td><td>+6</td><td>+3</td><td>+2</td><td>+3</td><td style="white-space: normal;"><a href="battleHerald.html#teamwork-feat" >Teamwork feat</a></td></tr>
+<tr><td>7th</td><td>+7</td><td>+4</td><td>+2</td><td>+4</td><td style="white-space: normal;">4th <a href="battleHerald.html#inspiring-command" >inspiring command</a> (+3), <a href="battleHerald.html#demanding-challenge" >demanding challenge</a></td></tr>
+<tr><td>8th</td><td>+8</td><td>+4</td><td>+3</td><td>+4</td><td style="white-space: normal;"><a href="battleHerald.html#persistent-commands" >Persistent commands</a></td></tr>
+<tr><td>9th</td><td>+9</td><td>+5</td><td>+3</td><td>+5</td><td style="white-space: normal;">5th <a href="battleHerald.html#inspiring-command" >inspiring command</a>, <a href="battleHerald.html#inspire-last-stand" >inspire last stand</a></td></tr>
+<tr><td>10th</td><td>+10</td><td>+5</td><td>+3</td><td>+5</td><td style="white-space: normal;"><a href="battleHerald.html#complex-commands" >Complex commands</a>, <a href="battleHerald.html#inspiring-command" >inspiring command</a> (+4)</td></tr></table>
+</div>
+
+				<h1 id="class-features">Class Features</h1>
+				<p>The following are class features of the battle herald prestige class. </p>
+				<p id="weapon-and-armor-proficiency"><b>Weapon and Armor Proficiency</b>: A battle herald gains no proficiency with any weapon or armor.</p>
+				<p id="inspiring-command"><b>Inspiring Command (Ex)</b>: A battle herald uses her keen tactical acumen and decisive judgment to lead others to victory, as well as her mastery of command to assist herself and her allies in battle.</p>
+				<p>All battle heralds may use inspiring command to inspire courage (as the bardic performance ability); bard and battle herald levels stack to determine the bonuses provided by inspire courage.</p>
+				<p>At 1st level, and every two levels thereafter, the battle herald chooses one command to learn. Unless otherwise noted, these abilities provide a competence bonus equal to the battle herald's inspiring command bonus to her and to all allies within 60 feet able to see or hear her. Commands marked with an asterisk have the same range as above but only affect a certain number of allies (which can include the battle herald).</p>
+				<p>Issuing an inspiring command is a move action. At 5th level, this becomes a swift action, and at 10th level, it becomes an immediate action. Maintaining an inspiring command is a free action that cannot be disrupted, but its effects end immediately if the battle herald is killed or otherwise prevented from taking actions (such as being dazed, helpless, or stunned). The battle herald cannot have more than one command in effect at a time. She may use this ability for a number of rounds per day equal to 4 + her Charisma modifier, plus 2 additional rounds per level after 1st. She may use rounds of bardic performance to issue inspiring commands, but not vice versa. Inspiring commands are language-dependent, mind-affecting effects. The battle herald cannot maintain an inspiring command and a bardic performance at the same time (this does not preclude abilities such as persistent command or the <a href="../advancedFeats.html#lingering-performance" >Lingering Performance</a> feat, which continue an inspiring command or bardic performance after the battle herald stops maintaining it).</p>
+				<p id="battle-magic*"><i>Battle Magic*</i>: One ally gains a bonus on caster level checks and concentration checks equal to the battle herald's command bonus.</p>
+				<p id="inspire-hardiness"><i>Inspire Hardiness</i>: Allies gain DR/&mdash; equal to the battle herald's inspiring command bonus.</p>
+				<p id="inspired-tactics"><i>Inspired Tactics</i>: Allies apply the battle herald's inspiring command bonus on critical hit confirmation rolls, on combat maneuver checks, and as a dodge bonus to AC against any attacks of opportunity provoked by combat maneuvers.</p>
+				<p id="keep-your-heads"><i>Keep Your Heads</i>: Allies apply the battle herald's inspiring command bonus on Will saves and concentration checks.</p>
+				<p id="none-shall-fall*"><i>None Shall Fall*</i>: A number of allies equal to the battle herald's inspiring command bonus heal 1d6 points of damage. Targeted allies who are poisoned may attempt a new poison saving throw with a bonus equal to the battle herald's inspiring command bonus; a failed save has no additional effect, but a successful save counts toward curing the poison. This healing is not positive energy and can heal undead creatures.</p>
+				<p id="pincer-maneuver"><i>Pincer Maneuver</i>: Allies apply the battle herald's inspiring command bonus to attack and damage rolls when flanking and as a dodge bonus to AC against attacks of opportunity provoked by movement (including standing from prone).</p>
+				<p id="rally"><i>Rally</i>: Allies affected by a fear effect may attempt a new saving throw against each fear effect on them; this new save has a bonus equal to the battle herald's inspiring command bonus.</p>
+				<p id="reveille"><i>Reveille</i>: Allies affected by exhaustion, fatigue, or sleep effects may attempt a new saving throw against each such effect; this new save has a bonus equal to the battle herald's inspiring command bonus. Allies who are sleeping normally automatically awaken when this ability is used. </p>
+				<p id="scatter*"><i>Scatter*</i>: A number of allies equal to the battle herald's inspiring command bonus gain the benefits of the <a href="../../coreRulebook/feats.html#wind-stance" >Wind Stance</a> feat.</p>
+				<p id="shake-it-off*"><i>Shake It Off*</i>: One ally subject to an ongoing condition may attempt a new saving throw to negate the effects with a bonus equal to the battle herald's inspiring command bonus. This ability does not help against instantaneous effects, effects that require recurring saving throws to avoid additional penalties (such as diseases and poisons), or effects that do not allow a saving throw. </p>
+				<p id="sound-the-charge"><i>Sound the Charge</i>: Allies apply the battle herald's inspiring command bonus to attack and damage rolls. Charging allies increase their speed by 5 feet times the battle herald's inspiring command bonus. </p>
+				<p id="sound-the-retreat"><i>Sound the Retreat</i>: Allies gain the benefit of the <a href="../../coreRulebook/feats.html#lightning-stance" >Lightning Stance</a> feat. The battle herald must have the scatter ability to select this ability.</p>
+				<p id="stand-firm"><i>Stand Firm</i>: Allies apply the battle herald's inspiring command bonus to CMD and on Fortitude saves.</p>
+				<p id="teamwork"><i>Teamwork</i>: Allies add the battle herald's inspiring command bonus on skill checks or attack rolls made when using the aid another action, and if successful, the assisted ally increases the aid another bonus by an amount equal to the battle herald's inspiring command bonus.</p>
+				<p id="tuck-and-roll"><i>Tuck and Roll</i>: Allies apply the battle herald's inspiring command bonus on Reflex saves and <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> checks.</p>
+				<p id="improved-leadership"><b>Improved <a href="../../coreRulebook/feats.html#leadership" >Leadership</a> (Ex)</b>: A battle herald with the <a href="../../coreRulebook/feats.html#leadership" >Leadership</a> feat adds her inspiring command bonus to her leadership score.</p>
+				<p id="voice-of-authority"><b>Voice of Authority (Ex)</b>: A battle herald is skilled at shouting commands over the din of the battlefield and signaling allies when speech is impossible. She gains a +2 bonus on <a href="../../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> and <a href="../../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> checks with creatures with which she shares a language. In addition, her allies gain a bonus equal to the battle herald's class level on <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> or <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> checks to hear her commands or interpret her secret messages conveyed with <a href="../../coreRulebook/skills/bluff.html#bluff" >Bluff</a>. The battle herald's levels stack with cavalier levels for the purpose of the cavalier's tactician ability.</p>
+				<p id="easy-march"><b>Easy March (Ex)</b>: At 2nd level, allies within 60 feet of the battle herald can hustle or force march during overland travel without ill effects for a number of hours per day equal to 1 hour times her inspiring command bonus.</p>
+				<p id="inspire-greatness"><b>Inspire Greatness (Ex)</b>: At 4th level, a battle herald may use her inspiring command ability to inspire greatness (as the 9th-level bardic performance ability). This ability affects one creature at 4th level, two at 7th, and three at 10th.</p>
+				<p id="banner"><b>Banner (Ex)</b>: At 5th level, a battle herald may fly a battle standard that inspires her allies. This ability is identical to the cavalier's banner ability, and cavalier levels stack with battle herald levels to determine the bonuses provided by the banner.</p>
+				<p id="teamwork-feat"><b>Teamwork Feat</b>: At 6th level, a battle herald receives a teamwork feat as a bonus feat. She must meet the prerequisites for this feat. She can use her cavalier tactician ability as a move action to grant this feat to allies (if she has the cavalier greater tactician ability, this is a swift action).</p>
+				<p id="demanding-challenge"><b>Demanding Challenge (Ex)</b>: This ability is identical to the 12th-level cavalier demanding challenge ability.</p>
+				<p id="persistent-commands"><b>Persistent Commands (Ex)</b>: At 8th level, a battle herald may allow her inspiring commands to persist even if she is incapacitated and unable to maintain them. If the player chooses, the effects of the battle herald's inspiring commands persist for a number of rounds equal to her Charisma bonus (these count toward her number of rounds per day limit). This ability does not apply if the battle herald intentionally stops maintaining an inspiring command&mdash;only if she is dazed, held, stunned, killed, and so on, and is unable to maintain them. If the battle herald recovers from incapacity while an inspiring command is ongoing, she may resume maintaining it as a free action.</p>
+				<p id="inspire-last-stand"><b>Inspire Last Stand (Ex)</b>: At 9th level, a battle herald may use inspiring command to grant herself and all allies within 30 feet the benefits of the <a href="../../coreRulebook/feats.html#diehard" >Diehard</a> feat. Conscious affected creatures also gain the benefits of inspire courage while at negative hit points.</p>
+				<p id="complex-commands"><b>Complex Commands (Ex)</b>: At 10th level, a battle herald can have more than one command ability in effect at one time. Each must be begun separately and requires a separate maintenance cost. This allows the battle herald to have more than one single-target command (such as battle magic) in effect at the same time. The effects of multiple instances of the same command ability do not stack, even if the bonuses provided by that ability would normally stack (for example, if the battle herald maintains two pincer maneuver commands, her allies do not get double the bonus, even though dodge bonuses normally stack).</p>
+				<p>The battle herald can also maintain one bardic performance in addition to her inspiring commands, though each must be begun separately and each requires its own maintenance cost.</p><div class="table">
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Battle Herald",globalNavPath=[{ href: '/pathfinderRPG/prd/advancedPlayersGuide/advancedPrestigeClasses.html', name: 'Advanced Prestige Classes' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

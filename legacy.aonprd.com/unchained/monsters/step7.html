@@ -1,0 +1,821 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Step 7: Monster Options</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "step7.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "step7.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "step7.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "step7.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "step7.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "step7.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "step7.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "step7.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "step7.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "step7.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "step7.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "../skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../magic/index.html">Magic</a></li>
+						<li><a href = "index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "step7.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "step7.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "step7.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "step7.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "step7.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "step7.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "step7.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "step7.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "step7.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "step7.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+<h1>Step 7: Monster Options</h1>
+<p>Options are the main way to specialize your monster. They represent feats, universal monster rules, magic items, and all the other abilities a monster has at its disposal beyond its statistics. There are a large number of monster options to choose from, especially compared to the number of choices you make during the other steps of the simple monster creation process. Some are active abilities (such as those that give the monster a special attack), others adjust statistics (such as the power attack option, which has the same purpose as the Power Attack feat), and still others grant conditional modifiers (such as combat casting's bonus to concentration checks). Unless specified otherwise, saving throw DCs in this section use the Ability DC from the monster's array, modified by the monster's grafts.</p>
+
+<h2 id = "choosing-monster-options">Choosing Monster Options</h2>
+<p>Look at the number of monster options you're supposed to choose based on the monster's array and grafts. You should have a list saying how many to pick of each category. When you pick an option, write down the option's name and effects. Adjust any statistics the option's entry tells you to. After you've selected all the monster options you're supposed to, look at the list carefully. Does the monster do everything it needs to do? Does it seem like it has too few or too many options? Using your best judgment, add or remove options as necessary.</p>
+<p><strong>Categories</strong>: Monster options are divided into four categories: combat, magic, social, and universal.</p>
+<p>Combat options are the most numerous, and most monsters the PCs are meant to face in battle should have at least one combat option. These options are subdivided to make them easier to choose based on the monster's theme, though you can choose from any combat option subcategory. Decide whether the monster is primarily cunning, powerful, quick, or tough, and look in that subcategory first. These subcategories correspond roughly to physical ability scores&mdash;Strength, Dexterity, and Constitution, respectively. One additional category, monstrous, lists options that are rarely appropriate for monsters of PC races, such as energy drain or regeneration.</p>
+<p>Magic options benefit monsters that cast spells, and are typically useful only to those with the spellcaster array or the secondary magic universal monster option. They also include some options that mimic PC class features of a magical nature. These options are divided into the creature, offensive, support, and versatile subcategories.</p>
+<p>Social options give a monster advantages in interactions with other creatures. These are divided into the inspiration and miscellaneous subcategories. The inspiration subcategory includes mostly effects that bolster morale or cause fear.</p>
+<p>Universal options can be chosen as though they were listed in any category. This means you can use a combat, magic, social, or "any" option to take a universal option.</p>
+<p><strong>"Any" Options</strong>: When a graft or array tells you to choose "any" option, you can take an option from the combat, magic, social, or universal category.</p>
+<p><strong>Feats</strong>: If you're looking to replicate a certain feat, look for its name in Table 57. Note that many monster options use the same names as feats but have different mechanical effects. This is intentional. The power attack option adjusts the monster's statistics once, applying an effect similar to the Power Attack feat, but making it simpler to use rather than having you choose each time the monster attacks. In a case like this, if you prefer to have the added complexity and flexibility, you can use the feat's rules instead.</p>
+<p><strong>Universal Monster Rules</strong>: As with feats, many of these options mimic but simplify universal monster rules. Other monster rules, such as senses, can be used as-is and aren't repeated in this chapter. See the sidebar on page 229 if you're looking for a specific universal monster rule.</p>
+<p><strong>Duplicate Options</strong>: Generally speaking, you can choose an ability more than once when it makes sense and is useful. For example, you might give a monster the extra attack option twice because it fights with two weapons, one of which is a speed weapon. Use your best judgement to determine whether it's a good idea to do so.</p>
+<p><strong>Damage</strong>: Many options say to use the high or low attack or damage value from the monster's array. Use the values from the high or low weapon attack and damage columns, not the natural attack values (even if the option is more like a natural attack thematically). You can choose to use a lower value if the ability would deal too much damage otherwise.</p>
+
+<div class = "table">
+<table id = "monster-options">
+	<caption>Monster Options</caption>
+	<thead>
+		<tr><th>Name</th><th>Type</th></tr>
+	</thead>
+	<tbody>
+		<tr><td><a href="step7.html#ability-damage">Ability damage</a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#accuracy">Accuracy </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#alertness">Alertness </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#animal-talker">Animal talker </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#at-will-magic">At-will magic </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#athletic">Athletic</a></td><td>Universal</td></tr>
+		<tr><td><a href="step7.html#aura-of-resistance">Aura of resistance </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#awesome-blow">Awesome blow</a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#bestow-major-condition">Bestow major condition </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#bestow-minor-condition">Bestow minor condition </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#bestow-moderate-condition">Bestow moderate condition </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#bleed">Bleed </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#blind-fight">Blind-fight </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#blood-drain">Blood drain </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#bolstering-presence">Bolstering presence </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#bolstering-touch">Bolstering touch </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#bombs">Bombs</a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#breath-weapon">Breath weapon</a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#burn">Burn </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#bypass-dr">Bypass DR </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#challenge">Challenge </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#channel-destruction">Channel destruction </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#channel-energy">Channel energy </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#channel-resistance">Channel resistance </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#children-of-the night">Children of the night </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#combat-casting">Combat casting </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#combat-reflexes">Combat reflexes </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#combatants-touch">Combatant's touch</a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#confusion-aura">Confusion aura </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#constrict">Constrict </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#constant-invisibility">Constant invisibility</a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#contingent-spell">Contingent spell</a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#corrupting-gaze">Corrupting gaze </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#corrupting-touch">Corrupting touch </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#countersong">Countersong </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#create-spawn">Create spawn </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#critical-striker">Critical striker </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#curse-of-lycanthropy">Curse of lycanthropy </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#damage-reduction">Damage reduction </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#damaging-body">Damaging body </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#defense-breaker">Defense breaker </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#deflect-projectiles">Deflect projectiles </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#demoralize-foes">Demoralize foes</a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#diehard">Diehard </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#dimensional-steps">Dimensional steps </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#disease">Disease </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#distraction">Distraction </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#dodge-expert">Dodge expert </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#draining-touch">Draining touch </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#dread">Dread </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#energy-drain">Energy drain </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#energy-explosion">Energy explosion </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#energy-infusion">Energy infusion </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#energy-resistance">Energy resistance </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#engulf">Engulf</a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#evasion">Evasion </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#evil-eye">Evil eye </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#extra-armor">Extra armor </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#extra-attack">Extra attack </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#extra-hit-points">Extra hit points </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#far-shot">Far shot </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#fascinate">Fascinate </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#fast-feint">Fast feint</a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#fast-healing">Fast healing</a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#fast-reload">Fast reload </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#favored-enemy">Favored enemy </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#fear-attack">Fear attack </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#fear-aura">Fear aura </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#firearm-savvy">Firearm savvy </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#fling">Fling</a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#flying-acumen">Flying acumen </a></td><td>Universal</td></tr>
+		<tr><td><a href="step7.html#fortune">Fortune </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#frightful-presence">Frightful presence </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#gaseous-form">Gaseous form </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#healing-touch">Healing touch </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#heroic-recovery">Heroic recovery </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#immunity">Immunity </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#improved-combat-maneuver">Improved combat maneuver</a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#improved-initiative">Improved initiative </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#incorporeal">Incorporeal </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#incorporeal-form">Incorporeal form </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#inspire-competence">Inspire competence </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#inspire-courage">Inspire courage </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#inspire-fear">Inspire fear </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#inspire-heroics">Inspire heroics </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#knowledgeable">Knowledgeable </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#liar">Liar</a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#linguist">Linguist </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#mage-killer">Mage killer</a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#mage-punisher">Mage punisher </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#magic-attack">Magic attack </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#magic-weapon">Magic weapon </a></td><td>Universal</td></tr>
+		<tr><td><a href="step7.html#magical-aptitude">Magical aptitude </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#malevolence">Malevolence </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#mercantile-savvy">Mercantile savvy</a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#metamagic-spell">Metamagic spell </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#misfortune">Misfortune </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#mobile-attack">Mobile attack </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#mobility">Mobility </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#mounted-master">Mounted master </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#mutagen">Mutagen </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#negative-healing">Negative healing </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#paralysis">Paralysis </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#paralyzing-touch">Paralyzing touch </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#persuasive">Persuasive </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#phantom-mount">Phantom mount </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#poison">Poison </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#poisonous-blood">Poisonous blood </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#potent-healing">Potent healing </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#potent-magic-damage">Potent magic damage </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#potions">Potions</a></td><td>Universal</td></tr>
+		<tr><td><a href="step7.html#power-attack">Power attack </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#powerful-charge">Powerful charge </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#powerful-summons">Powerful summons </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#precise-shot">Precise shot</a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#protective-ward">Protective ward </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#quivering-palm">Quivering palm </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#rage">Rage </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#rake">Rake </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#regeneration">Regeneration </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#rejuvenation">Rejuvenation </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#remove-major-condition">Remove major condition </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#remove-minor-condition">Remove minor condition </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#remove-moderate-condition">Remove moderate condition </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#rend">Rend </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#repositioning-attack">Repositioning attack </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#rock-throwing">Rock throwing </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#sacrilegious-aura">Sacrilegious aura </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#save-boost">Save boost </a></td><td>Universal</td></tr>
+		<tr><td><a href="step7.html#secondary-magic">Secondary magic </a></td><td>Universal</td></tr>
+		<tr><td><a href="step7.html#slaying-attack">Slaying attack </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#slippery-mind">Slippery mind </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#smite">Smite </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#snatch">Snatch</a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#sneak-attack">Sneak attack </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#sound-mimicry">Sound mimicry </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#spell-combat">Spell combat </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#spell-penetration">Spell penetration </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#spell-resistance">Spell resistance </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#spellstrike">Spellstrike </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#spontaneous-casting">Spontaneous casting </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#stalwart">Stalwart </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#stench">Stench </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#stun-attack">Stun attack </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#summon-allies">Summon allies </a></td><td>Universal</td></tr>
+		<tr><td><a href="step7.html#swap-places">Swap places</a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#team-fighter">Team fighter</a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#telepathy">Telepathy </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#terrain-stride">Terrain stride </a></td><td>Universal</td></tr>
+		<tr><td><a href="step7.html#trample">Trample </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#transfer-hit-points">Transfer hit points </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#trap-squares">Trap squares </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#turn-undead">Turn undead </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#uncanny-dodge">Uncanny dodge </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#undead-mastery">Undead mastery </a></td><td>Magic</td></tr>
+		<tr><td><a href="step7.html#unflankable">Unflankable </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#vampiric-attack">Vampiric attack </a></td><td>Combat</td></tr>
+		<tr><td><a href="step7.html#weakening-presence">Weakening presence </a></td><td>Social</td></tr>
+		<tr><td><a href="step7.html#whirlwind-attack">Whirlwind attack </a></td><td>Combat</td></tr>
+	</tbody>
+</table>
+
+
+<h2 id = "combat-options">Combat Options</h2>
+<p>Though these options are geared primarily toward combatants, consider giving every monster at least one combat option, unless you intend the monster to never fight in any battle.</p>
+
+	<h3 id = "cunning">Cunning</h3>
+	<p>Thematically, monsters with higher mental ability modifiers are the most likely to have cunning combat options.</p>
+	<p id = "ability-damage"><strong>Ability Damage</strong>: Attacks by this monster deal 1d2 points of damage to one ability score. This can apply to all the monster's attacks, apply only to its weapons, or function as a melee touch attack. This damage increases to 1d4 at CR 5, 1d6 at CR 10, 1d8 at CR 15, and 2d6 at CR 20. Alternatively, the attack can deal damage to two ability scores, but uses the damage value for a creature 5 CR lower. The attack could instead deal ability drain (rather than ability damage), but uses the damage value for a creature 5 CR lower.</p>
+	<p id = "blind-fight"><strong>Blind-Fight</strong>: The monster rolls miss chances due to concealment twice and takes the higher result.</p>
+	<p id = "bombs"><strong>Bombs</strong>: As a standard action, the monster creates a bomb and throws it with a range of 20 feet. Use the throw splash weapon special attack. On a direct hit, the bomb deals fire damage equal to the monster's low weapon damage, using 3d6 damage dice. Splash damage is 6 + 1/2 the monster's CR.</p>
+	<p id = "challenge"><strong>Challenge</strong>: Once per day as a swift action, the monster can challenge one target within sight. The monster gains a bonus on melee damage rolls equal to its CR (minimum 1) against that creature, but takes a &ndash;2 penalty to AC against attacks made by creatures other than the target. The target remains challenged until it is killed, falls unconscious, or the combat ends. The monster can use this ability three times per day at CR 5, and at will at CR 14.</p>
+	<p id = "combatants-touch"><strong>Combatant's Touch</strong>: As a standard action, the monster can touch a creature to grant that creature a bonus equal to 1 + 1/2 the monster's CR on melee attack rolls. Additionally, choose one physical ability modifier. This bonus applies on combat maneuver checks, skill checks, and ability checks that use that ability modifier.</p>
+	<p id = "constant-invisibility"><strong>Constant Invisibility</strong>: Because of its natural appearance or an exterior effect, such as a cloak of invisibility, this monster is invisible at all times. If this ability is used below CR 10, it should be for monsters that aren't focused on combat.</p>
+	<p id = "fast-feint"><strong>Fast-Feint</strong>: The monster can attempt a <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> check to feint as a move action.</p>
+	<p id = "favored-enemy"><strong>Favored Enemy</strong>: Choose a creature type, or a single subtype of humanoid or outsider. The monster gains a +2 bonus on attack and damage rolls against creatures of that type. Increase the bonus and number of creature types chosen based on the monster's CR: +4 and two types at CR 4, +6 and three types at CR 9, +8 and four types at CR 14, and +10 and five types at CR 19.</p>
+	<p id = "improved-combat-maneuver"><strong>Improved Combat Maneuver</strong>: Choose a type of combat maneuver. The monster doesn't provoke attacks of opportunity when using that maneuver, its CMB for that type of maneuver increases by 4, and its CMD increases by 4 against that type of maneuver. You can choose one of the monster's attack types. If you do, whenever the monster hits with an attack of that type, it can automatically attempt a combat maneuver of the type chosen with this option.</p>
+	<p id = "mage-killer"><strong>Mage Killer</strong>: The DC to cast defensively when threatened by this monster increases by 4. Casters that fail attempts to cast defensively provoke attacks of opportunity from this monster.</p>
+	<p id = "mage-punisher"><strong>Mage Punisher</strong>: Whenever an enemy within the monster's reach successfully casts a spell defensively, that enemy provokes an attack of opportunity from the monster after the spell is complete.</p>
+	<p id = "poison"><strong>Poison</strong>: The monster uses poison with its attacks, either through a natural weapon or by applying the poison to a particular manufactured weapon. The target of a successful attack with the chosen weapon must attempt a Fortitude save to resist the poison. The basic poison is type injury, onset 1 minute, frequency 1/minute for 6 minutes, effect 1d2 points of damage to any one ability score (chosen when the monster gains this option), cure 1 save. Choose two of the following additional advantages, plus one advantage for every 3 CR the monster possesses: decrease onset to &mdash;, change the frequency to 1/round for 6 rounds, increase the ability damage to 1d3 points of damage (this option can be chosen multiple times to increase the damage to 1d4, 1d6, and 1d8), damage an additional ability score (using the same damage die as the primary ability damage effect), increase the cure to 2 consecutive saves.</p>
+	<p id = "repositioning-attack"><strong>Repositioning Attack</strong>: When it hits a creature of its size or smaller with a certain type of attack, the monster can immediately attempt a reposition combat maneuver check to push or pull that creature. Its CMB for this check increases by 4. The distance the monster pushes or pulls the creature can increase under certain conditions, such as if the monster has special appendages.</p>
+	<p id = "sneak-attack"><strong>Sneak Attack</strong>: When flanking or attacking a foe denied its Dexterity bonus to AC, this monster deals an additional 1d6 points of damage. This damage increases by 1d6 for every 2 CR the monster possesses. Decrease the base damage of the monster's attacks by 2 points for every 1d6 of sneak attack it has.</p>
+	<p id = "team-fighter"><strong>Team Fighter</strong>: The monster gains a +2 bonus on attack and damage rolls against targets that are threatened by one of the monster's allies (other than itself). This bonus increases by 1 for every 4 CR the monster possesses.</p>
+	<p id = "trap-squares"><strong>Trap-Squares</strong>: The monster can trap any square adjacent to it as a standard action. Any creature that enters the trapped square takes an amount of damage equal to 1d6 + 1/2 the monster's CR of a damage type chosen by the monster while setting the trap. The trap is invisible and lasts for a number a rounds equal to the monster's CR. It can be found with a successful DC 25 <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> check and disarmed with a successful DC 25 <a href="../../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> check. The monster can create three traps per day; at CR 10, this increases to five traps per day. This ability can be used for mundane or magical traps. For mundane traps, choose bludgeoning, piercing, or slashing damage; for magical traps, choose acid, cold, electricity, or fire damage.</p>
+	<p id = "unflankable"><strong>Unflankable</strong>: The monster can't be flanked.</p>
+
+	<h3 id = "monstrous">Monstrous</h3>
+	<p>These abilities are typically supernatural or inhuman in nature. If a monster is meant to be more like an NPC&mdash;and especially if it uses a PC race&mdash;avoid choosing monstrous combat options.</p>
+	<p id = "blood-drain"><strong>Blood Drain</strong>: This monster deals Constitution damage as the ability damage option (see page 228), but does so automatically at the end of the monster's turn to any creature it's grappling.</p>
+	<p id = "breath-weapon"><strong>Breath Weapon</strong>: The monster gains a breath weapon that deals 1d6 points of damage + 1d6 per CR. A target can attempt a Reflex saving throw to take half damage. If the breath weapon is a cone, it's 30 feet long, increasing by 10 feet for each size category above Medium, and decreasing by 5 feet for every size category below Medium. If the breath weapon is a line, its area of effect is twice as long as a cone would be.</p>
+	<p id = "channel-resistance"><strong>Channel Resistance</strong>: The monster gains channel resistance +4 (Bestiary 298).</p>
+	<p id = "confusion-aura"><strong>Confusion Aura</strong>: Any creature that comes within 30 feet of the monster must attempt a Will save (DC = the monster's ability DC &ndash; 5). If it fails, it is confused for a number of rounds equal to the monster's CR. If it succeeds, it can't be affected again by this aura for 24 hours. The range increases to 60 feet at CR 10 and to 120 feet at CR 20.</p>
+	<p id = "corrupting-gaze"><strong>Corrupting Gaze</strong>: The monster has a gaze attack (as the universal monster rule; see page 300 of the Bestiary) with a range of 30 feet. The attack deals 2d10 points of damage and 1d4 points of Charisma damage. A successful Fortitude save negates the Charisma damage.</p>
+	<p id = "corrupting-touch"><strong>Corrupting Touch</strong>: A monster must be incorporeal to have this ability. The monster can make a touch attack. If it hits, the target supernaturally ages and takes 1d6 points of damage per CR the monster possesses (Fortitude half). Targets immune to magical aging are immune to this damage.</p>
+	<p id = "create-spawn"><strong>Create Spawn</strong>: The monster can create spawn out of those it slays. The victim rises from death as the kind of monster that created it in 1d4 days and is under the command of the monster that created it, remaining enslaved until its master's destruction. The monster can have enslaved spawn whose HD total no more than 2 <b>&times;</b> the monster's CR; any spawn it creates that would exceed this limit become free-willed. The monster can free an enslaved spawn in order to create a new enslaved spawn, but once freed, a creature cannot be enslaved again.</p>
+	<p id = "curse-of-lycanthropy"><strong>Curse of Lycanthropy</strong>: The monster bears the curse of lycanthropy. When the monster is in animal or hybrid form and hits a humanoid target with a bite attack, the target must succeed at a Fortitude save (DC = the monster's ability DC &ndash; 5) or become infected by the curse. If the target's size category is not within one size category of the lycanthrope's, this ability has no effect.</p>
+	<p id = "damaging-body"><strong>Damaging Body</strong>: When the monster is hit with an unarmed strike or melee weapon without reach, the attacker takes an amount of damage equal to 1d6 + 1/2 the monster's CR. Choose an appropriate damage type for this option, such as fire if the monster's body is burning or piercing if it's covered in spines.</p>
+	<p id = "disease"><strong>Disease</strong>: One of the monster's attacks causes disease unless the target succeeds at a Fortitude save. The basic disease has onset 1d3 days, frequency 1/day, effect 1 point of damage to any one ability score (chosen when the monster gains this option), cure 2 consecutive saves. Choose two of the following additional advantages, plus one advantage for every 5 CR the monster has: decrease the onset to 1 day (can be chosen multiple times to reduce the onset to 1 hour, then to &mdash;), change the frequency to 1 hour, increase the effect to 1d3 points of damage (this option can be chosen multiple times to further increase the damage to 1d4, then to 1d6), damage an additional ability score (using the same amount of damage as the primary ability damage effect), or change the cure to &mdash;.</p>
+	<p id = "distraction"><strong>Distraction</strong>: A creature damaged by this monster is nauseated for 1 round (Fortitude negates).</p>
+	<p id = "draining-touch"><strong>Draining Touch</strong>: The monster can make a melee touch attack as though it had the ability damage option dealing ability drain (see page 228). Each time the monster drains an ability score in this way, it heals 5 points of damage to itself.</p>
+	<p id = "energy-drain"><strong>Energy Drain</strong>: This monster bestows 1 negative level with its attacks (or attacks of a particular type) and gains 5 temporary hit points for each negative level bestowed. The number of negative levels bestowed increases to 2 at CR 10 and 3 at CR 20.</p>
+	<p id = "engulf"><strong>Engulf</strong>: This functions as the universal monster rule (Bestiary 2 296), but uses the monster's ability DC from its array. The monster can either deal its high weapon damage to engulfed creatures, or deal its low weapon damage and inflict one of the following conditions: bleed (as the option; see page 234), blinded (Fortitude negates), deafened, energy drain (as the option; see above), frightened (Will negates), nauseated (Fortitude negates), or paralyzed (Fortitude negates).</p>
+	<p id = "fast-healing"><strong>Fast Healing</strong>: This monster regains 2 hit points per round. This healing increases to 5 hit points per round at CR 4, 10 at CR 11, 15 at CR 16, and 20 at CR 21.</p>
+	<p id = "fear-attack"><strong>Fear Attack</strong>: This ability functions as the fear aura option (see page 233), but requires a standard action to activate, uses the monster's full ability DC, and affects creatures in a cone, burst, or ray. If used as a ray, it affects only one creature and requires a ranged touch attack to affect the creature. The size of the effect appears on the table below.</p>
+	<table>
+		<thead><tr><th>CR</th><th>Cone</th><th>Burst</th><th>Ray</th></tr></thead>
+		<tbody>
+			<tr><td>0&ndash;9</td><td>60 ft.</td><td>30 ft.</td><td>120 ft.</td></tr>
+			<tr><td>10&ndash;19 </td><td>120 ft.</td><td>60 ft.</td><td>240 ft.</td></tr>
+			<tr><td>20+ </td><td>240 ft.</td><td>120 ft.</td><td>480 ft.</td></tr>
+		</tbody>
+	</table>
+	<p id = "fear-aura"><strong>Fear Aura</strong>: Any creature that comes within 30 feet of the monster must attempt a Will save (DC = the monster's ability DC &ndash; 5). If it fails, it is panicked for a number of rounds equal to the monster's CR; if it succeeds, it is shaken for 1 round. The range increases to 60 feet at CR 10 and 120 feet at CR 20.</p>
+	<p id = "fling"><strong>Fling</strong>: When the monster has a creature grappled, it can fling that creature as a standard action. The flung creature travels 1d6 &times; 10 feet and takes 1d6 points of damage per 10 feet traveled. If the monster can fly, it can instead fling the creature as a free action while airborne. If it does, the flung creature takes damage as specified above or the appropriate falling damage, whichever is greater.</p>
+	<p id = "frightful-presence"><strong>Frightful Presence</strong>: This ability functions as fear aura (see above), but affected creatures are shaken for 15 rounds (or panicked if they have 4 or fewer HD). This ability doesn't affect creatures of a level equal to or higher than the monster's CR + 4, and a creature that succeeds at its save can't be affected by the monster's frightful presence for 24 hours.</p>
+	<p id = "gaseous-form"><strong>Gaseous Form</strong>: As a standard action, the monster can use gaseous form at will, and it can remain in this form indefinitely. While it does, it has a fly speed of 20 feet with perfect maneuverability.</p>
+	<p id = "incorporeal"><strong>Incorporeal</strong>: This functions as the universal monster rule (Bestiary 301), without adjusting AC, attack bonuses, or CMB.</p>
+	<p id = "malevolence"><strong>Malevolence</strong>: Once per round, the monster can attempt to merge its body with a creature within its reach. The target can resist the attack with a successful Will save. A target that succeeds at its save becomes immune to the monster's malevolence for 24 hours. This ability is similar to magic jar, except that it doesn't require a receptacle.</p>
+	<p id = "negative-healing"><strong>Negative Healing</strong>: You heal damage instead of taking damage from negative energy.</p>
+	<p id = "paralysis"><strong>Paralysis</strong>: The monster's attacks paralyze a target for 1d2 rounds unless it succeeds at a Fortitude save. For every 3 CR, improve this ability by increasing the number of rounds (to 1d3, 1d4, 1d6, 1d8, and finally 2d6). At CR 18, targets are paralyzed for 1 round even on a success.</p>
+	<p id = "paralyzing-touch"><strong>Paralyzing Touch</strong>: The monster gains a touch attack. A living creature hit by this attack must succeed at a Fortitude save (DC = the monster's ability DC &ndash; 5) or be permanently paralyzed. Remove paralysis or any spell that can remove a curse can free the victim. The effect cannot be dispelled. Anyone paralyzed by this attack seems dead, though a successful DC 20 <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> check or a successful DC 15 <a href="../../coreRulebook/skills/heal.html#heal">Heal</a> check reveals that the creature is still alive.</p>
+	<p id = "poisonous-blood"><strong>Poisonous Blood</strong>: This functions as the poison option (see page 230), but affects any creature that confirms a critical hit against the monster using a piercing or slashing melee weapon (unless the weapon has reach).</p>
+	<p id = "rake"><strong>Rake</strong>: If the monster begins its turn grappling a creature, it can make two free claw attacks on its turn against that creature, dealing its low weapon damage. If it has pounce (Bestiary 302), it also gains these rake attacks when it pounces.</p>
+	<p id = "regeneration"><strong>Regeneration</strong>: This functions as the fast healing option (see page 232), but the monster can't die while its regeneration still functions. Choose two or more damage types (typically acid and fire damage); these types suppress the regeneration for 1 round.</p>
+	<p id = "rejuvenation"><strong>Rejuvenation</strong>: Once destroyed or killed, the monster restores itself after a set period of time (typically 1d10 days). The specific means for permanently destroying the monster and the time it takes before reforming vary between monsters.</p>
+	<p id = "rock-throwing"><strong>Rock-Throwing</strong>: The monster can throw and catch rocks. The thrown rock is a ranged attack with a range increment of 120 feet, and deals the monster's low weapon damage. Once per round as a free action, the monster can catch a rock that would hit it, taking no damage.</p>
+	<p id = "snatch"><strong>Snatch</strong>: When the monster is grappling a creature three or more size categories smaller than itself that it grabbed after hitting with a bite or claw attack, it deals damage as though it had hit with the attack again each time it successfully rolls to maintain the grapple. If the monster's holding a creature in its mouth, that creature can't save against the monster's breath weapon (if any). The monster can fling a creature it has snatched as though it had the fling option (see above). A monster must have the improved combat maneuver (grab) option (see page 229) to select this option.</p>
+	<p id = "stench"><strong>Stench</strong>: Any living creature within 30 feet of the monster must succeed at a Fortitude save or be sickened for 10 rounds. Creatures that succeed can't be affected by the monster's stench for 24 hours. Stench counts as a poison for effects that resist or remove poisons.</p>
+	<p id = "vampiric-attack"><strong>Vampiric Attack</strong>: Once per day, the monster can leech health from one target as a melee touch attack or as a ranged touch attack with a range of 30 feet. This deals 1d6 points of damage per CR the monster possesses (Fortitude half). The monster gains temporary hit points equal to the amount of damage dealt.</p>
+
+	<h3 id = "powerful">Powerful</h3>
+	<p>These options are most appropriate for monsters with high Strength or that rely on overwhelming physical attacks.</p>
+	<p id = "awesome-blow"><strong>Awesome Blow</strong>: As a standard action, the monster can attempt an awesome blow combat maneuver. If it succeeds, the target takes damage as if it had been hit by one of the monster's attacks, is knocked 10 feet in a direction of the monster's choice, and falls prone. The target must be moved in a straight line; if it hits an obstacle, both it and the obstacle take 1d6 points of damage.</p>
+	<p id = "bleed"><strong>Bleed</strong>:-The-monster's attacks deal 1d6 points of bleed damage. This increases to 1d8 at CR 6, 1d10 at CR 11, 2d6 at CR 16, and 3d6 at CR 21. Bleeding can be stopped by a successful DC 15 <a href="../../coreRulebook/skills/heal.html#heal">Heal</a> check or with any magical healing.</p>
+	<p id = "burn"><strong>Burn</strong>: This uses the same damage values as the bleed option (see above), but deals fire damage and requires the target to succeed at a Reflex save or catch fire.</p>
+	<p id = "constrict"><strong>Constrict</strong>: Whenever this monster succeeds at a grapple combat maneuver, it deals its high weapon damage.</p>
+	<p id = "critical-striker"><strong>Critical Striker</strong>: The monster gains a +4 bonus on rolls to confirm critical hits. This monster also doubles its critical threat range with one of its attacks.</p>
+	<p id = "defense-breaker"><strong>Defense Breaker</strong>: When this monster hits an opponent, that opponent is flat-footed for the next attack made against it. If the monster makes a full-round attack, this takes effect after all its attacks and affects all targets hit.</p>
+	<p id = "power-attack"><strong>Power Attack</strong>: The monster's main attack uses the low attack value, but deals 50% more damage.</p>
+	<p id = "powerful-charge"><strong>Powerful Charge</strong>: The monster's charge attacks deal 50% more damage.</p>
+	<p id = "quivering-palm"><strong>Quivering Palm</strong>: Once per day, the monster can use this option when it makes an attack against a target that is not immune to critical hits. On a hit, the target is affected by the monster's quivering palm. At any point within a number of days equal to the monster's CR, the monster can force the target to attempt a Fortitude save (DC = the monster's ability DC &ndash; 5). The target dies on a failure, and ends the quivering palm effect on a successful one.</p>
+	<p id = "rage"><strong>Rage</strong>: This monster can fly into a rage as a free action, either at its choice (as the barbarian class feature) or on the turn after it takes damage in combat (as the blood rage universal monster rule on page 294 of Bestiary 2). While raging, the monster gains additional hit points equal to double its CR, and deals 3 extra points of damage on Strength-based attacks. The monster also gains a +2 bonus on Will saves and takes a &ndash;2 penalty to AC. The rage lasts until the end of the battle or for 1 minute, whichever comes first.</p>
+		<p><em>CR 10</em>: The monster instead gains hp equal to triple its CR, deals 4 extra points of damage on Strength-based attacks, and gains a +3 bonus on Will saves.</p>
+		<p><em>CR 19</em>: The monster instead gains hp equal to quadruple its CR, deals 6 extra points of damage on Strength-based attacks, and gains a +4 bonus on Will saves.</p>
+	<p id = "rend"><strong>Rend</strong>: If the monster hits the same target with two or more attacks in 1 round, it rends&mdash;dealing its high weapon damage. It can do this once per round.</p>
+	<p id = "slaying-attack"><strong>Slaying Attack</strong>: Once per day as a standard action, the monster can make a single attack that can kill a creature outright. On a hit, the attack deals normal damage and the target must succeed at a save or die. The type of save is either Fortitude or Will, chosen when the monster gains this option. This option typically appears only on monsters of CR 19 or higher.</p>
+	<p id = "stun-attack"><strong>Stun Attack</strong>: The monster can make one of its attacks a stun attack once per round. On a hit, the target takes damage normally and must succeed at a Fortitude save (DC = the monster's ability DC &ndash; 5) or become stunned for 1 round. A creature is immune to this ability if it is a construct, ooze, plant, or undead, or if it is incorporeal or immune to critical hits. The monster can use this option a number of times per day equal to its CR.</p>
+	<p id = "trample"><strong>Trample</strong>: The monster can automatically overrun creatures smaller than itself as a full-round action. It automatically deals its high weapon damage to each creature it runs over in this way (dealing damage only once per round to any given creature). A creature being trampled can either attempt an attack of opportunity at a &ndash;4 penalty or attempt a Reflex save (DC = 2 <b>&times;</b> the monster's ability DC &ndash; 10) to take half damage.</p>
+
+	<h3 id = "quick">Quick</h3>
+	<p>Monsters with high Dexterity tend to take quick combat options, many of which increase mobility.</p>
+	<p id = "accuracy"><strong>Accuracy</strong>: Increase the monster's attack bonuses by 2.</p>
+	<p id = "combat-reflexes"><strong>Combat Reflexes</strong>: The monster can make up to five attacks of opportunity each round, and can make attacks of opportunity while flat-footed.</p>
+	<p id = "deflect-projectiles"><strong>Deflect Projectiles</strong>: When not flat-footed, the monster deflects one ranged attack per round.</p>
+	<p id = "dodge-expert"><strong>Dodge Expert</strong>: Increase the monster's AC by 2 and its touch AC by 4. Decrease its flat-footed AC by 6.</p>
+	<p id = "evasion"><strong>Evasion</strong>: When the monster succeeds on a Reflex saving throw against an effect that normally deals half damage on a successful save, the monster instead takes no damage. At CR 8, it also takes only half damage if it fails its save.</p>
+	<p id = "extra-attack"><strong>Extra Attack</strong>: The monster gains one additional melee or ranged attack at its highest bonus, but reduces its attack bonus by 2 with all attacks of that type. Use this option for monsters that use two-weapon fighting.</p>
+	<p id = "far-shot"><strong>Far Shot</strong>: Double all the monster's range increments and reduce the monster's penalties on ranged attacks from range increments by half.</p>
+	<p id = "fast-reload"><strong>Fast Reload</strong>: The monster can reload a ranged weapon that normally takes a move or standard action to reload as a free action. When it reloads a ranged weapon, it doesn't provoke attacks of opportunity.</p>
+	<p id = "firearm-savvy"><strong>Firearm Savvy</strong>: The monster's firearm attacks target touch AC when firing beyond the first range increment. As a move action, the monster can remove the broken condition from a firearm caused by a misfire.</p>
+	<p id = "improved-initiative"><strong>Improved Initiative</strong>: Increase the monster's initiative bonus by 4.</p>
+	<p id = "mobile-attack"><strong>Mobile Attack</strong>: The monster can move its speed and make an attack (either melee or ranged, chosen when the monster gains this option) at any point during its movement as a full-round action. The monster can use this ability with any of its movement modes.</p>
+	<p id = "mobility"><strong>Mobility</strong>: The monster gains a +4 bonus to AC against attacks of opportunity.</p>
+	<p id = "mounted-master"><strong>Mounted Master</strong>: The monster deals double damage on a mounted charge, halves its penalties on ranged attacks for being mounted, and grants its mount a +4 bonus to AC.</p>
+	<p id = "precise-shot"><strong>Precise Shot</strong>: When making a ranged attack, the monster ignores the &ndash;4 penalty for attacking an opponent engaged in melee as well as the target's AC bonuses from cover and concealment (except total cover or total concealment).</p>
+	<p id = "swap-places"><strong>Swap Places</strong>: The monster can swap positions with an adjacent ally as a move action without provoking attacks of opportunity.</p>
+	<p id = "uncanny-dodge"><strong>Uncanny Dodge</strong>: The monster can't be caught flat-footed.</p>
+	<p id = "whirlwind-attack"><strong>Whirlwind Attack</strong>: The monster can make an attack against each creature within reach at its highest attack bonus as a full attack.</p>
+
+	<h3 id = "tough">Tough</h3>
+	<p>High-Constitution monsters beef up their resistance to being hurt with tough combat options.</p>
+	<p id = "damage-reduction"><strong>Damage Reduction</strong>: The monster gains damage reduction. Cross-reference the monster's CR band and the type of damage that bypasses the reduction to find the value of the monster's DR on the table below. For DR that requires more than one damage type to bypass, the DR equals the lower value &ndash; 5. (If this reduces it to 0, this type of DR is probably too strong.)</p>
+		<table>
+			<thead><tr><th>CR</th><th>Type*</th><th>Material</th><th>Magic</th><th>Alignment</th><th>None</th></tr></thead>
+			<tbody>
+				<tr><td>0&ndash;5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>1</td></tr>
+				<tr><td>6&ndash;10</td><td>10</td><td>10</td><td>10</td><td>5</td><td>3</td></tr>
+				<tr><td>11&ndash;15</td><td>15</td><td>15</td><td>10</td><td>10</td><td>5</td></tr>
+				<tr><td>16&ndash;20</td><td>20</td><td>20</td><td>20</td><td>15</td><td>10</td></tr>
+				<tr><td>21+</td><td>30</td><td>30</td><td>30</td><td>20</td><td>15</td></tr>
+			</tbody>
+			<tfoot>
+				<tr><td colspan = "6">* A bludgeoning, piercing, or slashing weapon.</td></tr>
+			</tfoot>
+		</table>
+	<p id = "diehard"><strong>Diehard</strong>: When reduced to below 0 hit points, this monster automatically stabilizes and can remain conscious.</p>
+	<p id = "energy-resistance"><strong>Energy Resistance</strong>: The monster gains resistance 10 against two energy types. For every 5 CR the monster has, increase the amount of energy resistance by 5, or increase the number of resistances by one. For example, a CR 17 monster might have three resistances at 10 or two resistances at 15.</p>
+	<p id = "extra-armor"><strong>Extra Armor</strong>: Increase the monster's AC by 2 and its flat-footed AC by 4. Decrease its touch AC by 6. Reduce the monster's speed by 10 feet if this change comes from manufactured armor.</p>
+	<p id = "extra-hit-points"><strong>Extra Hit Points</strong>: Increase the monster's hit point total by 20%.</p>
+	<p id = "immunity"><strong>Immunity</strong>: The monster gains immunity from one energy type, affliction, condition, or spell of your choice, plus one additional immunity for every 5 CR it has.</p>
+	<p id = "spell-resistance"><strong>Spell Resistance</strong>: The monster gains spell resistance equal to its CR + 11.</p>
+	<p id = "stalwart"><strong>Stalwart</strong>: When the monster succeeds at a Fortitude or Reflex saving throw against an effect that normally has a reduced effect on a successful save, the monster instead avoids the effect entirely. At CR 8, it also takes only the reduced effect if it fails its save.</p>
+
+<h2 id = "magic-options">Magic Options</h2>
+<p>These options are primarily useful to spellcasters, though combatants and experts blessed with magic can take them.</p>
+
+	<h3 id = "creature">Creature</h3>
+	<p>These options improve a monster's ability to bring minion creatures into the fight.</p>
+	<p id = "children-of-the night"><strong>Children of the Night</strong>: Once per day as a standard action, the monster can call forth 1d6+1 rat swarms, 1d4+1 bat swarms, or 2d6 wolves. (If the monster is not terrestrial, it might summon other creatures of similar power.) These creatures arrive in 2d6 rounds and serve the monster for 1 hour.</p>
+	<p id = "phantom-mount"><strong>Phantom Mount</strong>: Once per hour, the monster can summon a horse similar to a phantom steed. This mount is more substantial than a typical phantom steed, and can carry one additional rider. The mount's powers are based on the monster's total CR rather than caster level.</p>
+	<p id = "powerful-summons"><strong>Powerful Summons</strong>: Increase the duration of the monster's conjuration (summoning) spells by a number of rounds equal to the monster's CR. Any creature summoned by such a spell also gains temporary hit points equal to 1/2 the monster's CR and a +2 bonus on damage rolls.</p>
+	<p id = "undead-mastery"><strong>Undead Mastery</strong>: As a standard action, the monster can choose one undead creature within 50 feet. That creature must succeed at a Will save or fall under the monster's control. This control is permanent for unintelligent undead; an undead creature with an Intelligence score can attempt an additional saving throw each day to break free. A creature that succeeds at its saving throw cannot be affected again by the same monster's undead mastery for 24 hours.</p>
+	<p>A monster can control a number of undead creatures with a combined CR equal to its own CR. If this limit is exceeded, the excess undead become uncontrolled in order from longest-controlled to most recently controlled.</p>
+
+	<h3 id = "offensive">Offensive</h3>
+	<p>These magic options are most useful for aggressive monsters that use their spells to deal damage.</p>
+	<p id = "bestow-major-condition"><strong>Bestow Major Condition</strong>: As a standard action, the monster makes a melee touch attack against one creature it can reach. On a hit, the target gains the condition (dazed, paralyzed, or stunned) that was chosen when the monster gained this option. Each round, the target can attempt a Will save (DC = the monster's ability DC &ndash; 5) to end the condition.</p>
+	<p id = "bestow-minor-condition"><strong>Bestow Minor Condition</strong>: As a standard action, the monster makes a melee touch attack against one creature it can reach. On a hit, the target gains the condition (dazzled, deafened, fatigued, shaken, or sickened) that was chosen when the monster gained this option. Each round, the target can attempt a Will save (DC = the monster's ability DC &ndash; 5) to end the condition.</p>
+	<p id = "bestow-moderate-condition"><strong>Bestow Moderate Condition</strong>: As a standard action, the monster makes a melee touch attack against one creature it can reach. On a hit, the target gains the condition (blinded, exhausted, frightened, or nauseated) that was chosen when the monster gained this option. Each round, the target can attempt a Will save (DC = the monster's ability DC &ndash; 5) to end the condition.</p>
+	<p id = "bypass-dr"><strong>Bypass DR</strong>: The monster's attacks count as being magic, of a particular alignment, or of a particular material for the purpose of overcoming damage reduction. Each time the monster gains this option, choose two from the following: adamantine, chaotic, cold iron, evil, good, lawful, magic, or silver.</p>
+	<p id = "channel-destruction"><strong>Channel Destruction</strong>: Choose one energy type: acid, cold, electricity, or fire. The monster's weapon attacks deal an additional 1d6 points of damage of the chosen type for every 4 CR the monster has.</p>
+	<p id = "energy-explosion"><strong>Energy Explosion</strong>: Choose one of the following: acid, cold, electricity, fire, force, or sonic. Once per day as a standard action, the monster can create a 20-foot-radius burst of energy within 60 feet. This deals an amount of damage equal to 1d6 + the monster's CR of the chosen type to all creatures in the burst. A successful Reflex save halves the damage.</p>
+	<p id = "energy-infusion"><strong>Energy Infusion</strong>: Choose one of the following: acid, cold, electricity, fire, force, or sonic. Each time the monster uses a spell, spell-like ability, or supernatural ability that deals energy damage, it can choose to change the energy damage type dealt by that ability to the chosen type instead.</p>
+	<p id = "evil-eye"><strong>Evil Eye</strong>: As a standard action, the monster chooses one creature within 30 feet that it can see. The target takes a &ndash;2 penalty on either ability checks, attack rolls, saving throws, skill checks, or to AC for 1 minute. If the target succeeds at a Will save, the effect lasts for 1 round instead.</p>
+	<p id = "magic-attack"><strong>Magic Attack</strong>: As a standard action, the monster makes a ranged touch attack against one creature within 30 feet of it. On a hit, the attack inflicts the monster's high weapon damage of one of the following types (chosen when the monster gains this option): bludgeoning, cold, electricity, fire, force, piercing, slashing, or sonic. For force damage, use the low damage value instead of high damage value.</p>
+	<p id = "misfortune"><strong>Misfortune</strong>: As a standard action, the monster targets one creature within 30 feet. The next time the target attempts an ability check, attack roll, saving throw, or skill check before the end of the monster's next turn, the target must roll twice and use the lower result.</p>
+	<p id = "potent-magic-damage"><strong>Potent Magic Damage</strong>: Choose a spell subschool or descriptor, such as fire or phantasm. The monster's spells and spell-like abilities of the chosen type deal an additional 1 point of damage per damage die.</p>
+	<p id = "sacrilegious-aura"><strong>Sacrilegious Aura</strong>: The monster emits an aura of intense evil and negative energy in a 30-foot radius. The aura functions as the desecrate spell cast on an altar. In addition, any creature that attempts to use a positive energy effect in this area must succeed at a concentration check or the positive energy has no effect.</p>
+	<p id = "smite"><strong>Smite</strong>: Choose chaotic, evil, good, or lawful. With one attack per day, the monster can deal additional damage equal to its CR against a creature of the chosen type. The number of uses per day increases by one for every 3 CR the monster has.</p>
+	<p id = "spell-combat"><strong>Spell Combat</strong>: The monster's attacks use the low attack value, but when it makes a full attack the monster can also cast any spell it knows that has a casting time of 1 standard action.</p>
+	<p id = "spell-penetration"><strong>Spell Penetration</strong>: The monster gains a +2 bonus on caster level checks to overcome a creature's spell resistance. At CR 11, the bonus increases to +4.</p>
+	<p id = "spellstrike"><strong>Spellstrike</strong>: Whenever the monster casts a spell with a range of touch, it can deliver the spell as part of a melee attack. The monster makes the melee attack in place of the spell's touch attack. On a hit, the attack deals normal damage and the spell takes effect.</p>
+	<p id = "turn-undead"><strong>Turn Undead</strong>: As a standard action, this monster forces each undead creature within 30 feet of it to attempt a Will save (DC = the monster's ability DC &ndash; 5). On a failed saving throw, the target flees from the monster for 1 minute as if panicked. Intelligent undead receive a new saving throw each round to end the effect.</p>
+
+	<h3 id = "support">Support</h3>
+	<p>These magical benefits protect, heal, or improve the abilities of the monster or its allies.</p>
+	<p id = "bolstering-touch"><strong>Bolstering Touch</strong>: As a standard action, the monster can touch a creature to grant it a bonus equal to 1 + 1/2 the monster's CR on attack rolls, skill checks, ability checks, and saving throws for 1 round.</p>
+	<p id = "channel-energy"><strong>Channel Energy</strong>: As a standard action, the monster releases a burst of energy that affects either all living creatures or all undead creatures in a 30-foot radius. The burst either deals 1d6 points of damage (from negative energy) or heals 1d6 points of damage (from positive energy). A creature that would take damage from this effect can attempt a Will save (DC = the monster's ability DC &ndash; 5) to halve the damage. A monster can use this option 8 times per day. Increase the damage or healing by 1d6 per 2 CR.</p>
+	<p id = "combat-casting"><strong>Combat Casting</strong>: The monster gains a +6 bonus on concentration checks.</p>
+	<p id = "countersong"><strong>Countersong</strong>:-The-monster can attempt a <a href="../../coreRulebook/skills/perform.html#perform">Perform</a> skill check. It and each ally within 30 feet of it can use the result of this check in place of saving throws to resist sonic, language-dependent, illusion (pattern), and illusion (figment) effects.</p>
+	<p id = "fortune"><strong>Fortune</strong>: As a standard action, the monster grants good luck to one creature within 30 feet of it. The next time the target attempts an ability check, attack roll, saving throw, or skill check before the end of the monster's next turn, the target can reroll and must use the second result.</p>
+	<p id = "healing-touch"><strong>Healing Touch</strong>: As a standard action (or a swift action if it targets itself), the monster touches itself or one living creature it can reach. The target heals 1d6 hit points of damage for every 2 CR the monster has (minimum 1d6) and removes one condition of the monster's choice. If the monster targets an undead creature, it must make a melee touch attack. On a hit, the target takes damage instead of being healed. The monster can use this option 5 times per day.</p>
+	<p id = "potent-healing"><strong>Potent Healing</strong>: Whenever the monster heals hit point damage using a spell, spell-like ability, or supernatural ability, it heals a number of additional hit points equal to its CR. This doesn't apply to dealing damage to undead using positive energy, but does apply to using negative energy to heal undead.</p>
+	<p id = "protective-ward"><strong>Protective Ward</strong>: As a standard action, the monster emits a field of protective magic that extends from it in a 10-foot radius. The monster and each allied creature in the area gains a +2 bonus to AC until the end of the monster's next turn.</p>
+	<p id = "remove-major-condition"><strong>Remove Major Condition</strong>: As a standard action, the monster can touch a creature to remove the blinded, paralyzed, or stunned condition. It can use this ability on itself as a swift action.</p>
+	<p id = "remove-minor-condition"><strong>Remove Minor Condition</strong>: As a standard action, the monster can touch a creature to remove the dazzled, deafened, fatigued, shaken, or sickened condition. It can use this ability on itself as a swift action.</p>
+	<p id = "remove-moderate-condition"><strong>Remove Moderate Condition</strong>: As a standard action, the monster can touch a creature to remove the dazed, exhausted, frightened, or nauseated condition. It can use this ability on itself as a swift action.</p>
+	<p id = "transfer-hit-points"><strong>Transfer Hit Points</strong>: As an immediate action, the monster can transfer hit points from either itself to an ally or an ally to itself; choose one when taking this option. The number of hit points it can transfer in this way is equal to its CR + 5.</p>
+
+	<h3 id = "versatile">Versatile</h3>
+	<p>Most of these abilities grant more spellcasting abilities or reflect the monster's deep understanding or clever manipulation of magical forces.</p>
+	<p id = "at-will-magic"><strong>At-Will Magic</strong>: Choose one spell of 0 or 1st level that does not heal damage. The monster can cast this spell at will.</p>
+	<p id = "contingent-spell"><strong>Contingent Spell</strong>: Choose one spell of the monster's CR band or lower (see page 218). This spell comes into effect on the monster under a particular condition you specify (such as "when an enemy attempts to attack the monster" or "when the monster is targeted by an enchantment spell"). This ability can trigger once per day. The spell chosen is in addition to any spells the monster gains from being a spellcaster or having the secondary magic option (see page 239).</p>
+	<p id = "dimensional-steps"><strong>Dimensional Steps</strong>: As a standard action, the monster teleports to an open space it can see within 150 feet of it.</p>
+	<p id = "incorporeal-form"><strong>Incorporeal Form</strong>: Once per day, this monster gains the incorporeal option (see page 233) for 1 minute.</p>
+	<p id = "magical-aptitude"><strong>Magical-Aptitude</strong>: When attempting a <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> or <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> check, the monster rolls twice and takes the higher result.</p>
+	<p id = "metamagic-spell"><strong>Metamagic Spell</strong>: Choose one metamagic feat and one spell the monster knows. That spell gains the benefit of the chosen metamagic feat once per day.</p>
+	<p id = "mutagen"><strong>Mutagen</strong>: Choose one of the following benefits:
+		<ul>
+			<li>The monster's AC, Reflex save bonus, ranged attack bonus, and Dexterity modifier each increase by 2. Its Wisdom modifier decreases by 2.</li>
+			<li>The monster's melee attack bonus, melee damage rolls, and Strength modifier each increase by 2. Its Intelligence modifier decreases by 2.</li>
+			<li>The monster's Fortitude save bonus and Constitution modifier by each increase by 2, and its hit points increase by an amount equal to double its CR. Its Charisma modifier decreases by 2.</li>
+		</ul>
+	</p>
+	<p id = "spontaneous-casting"><strong>Spontaneous Casting</strong>: The monster can spontaneously replace its normal spells with spells of the same level of a particular type. Choose cure spells, inflict spells, summon nature's ally spells, or any type of spell that has one spell per level in a similar fashion. Spontaneously casting a spell in this way uses up the daily use of a spell. A monster must have the spellcaster array to gain this option.</p>
+
+<h2 id = "social-options">Social Options</h2>
+<p>Monsters with the expert array are the most adept with social options, though a charming swashbuckler (combatant) or an inspiring priest (spellcaster) could also benefit from one.</p>
+
+	<h3 id = "inspiration">Inspiration</h3>
+	<p>These abilities manipulate mental states to either hinder enemies or boost allies. Many of them are more applicable in combat than other social options.</p>
+	<p id = "aura-of-resistance"><strong>Aura of Resistance</strong>: Choose two effect descriptors (such as fear or charm). Allies within 10 feet of the monster gain a +4 morale bonus on saving throws against effects with those descriptors.</p>
+	<p id = "bolstering-presence"><strong>Bolstering Presence</strong>: As a standard action, the monster emits an aura that extends from it in a 30-foot radius and lasts for 1 minute. Any allied creature in the aura gains a +2 bonus on ability checks, attack rolls, damage rolls, and skill checks.</p>
+	<p id = "demoralize-foes"><strong>Demoralize-Foes</strong>: As a full-round action, the monster can attempt an <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> check to demoralize all enemies within 30 feet of it. When the monster reduces a creature to 0 or fewer hit points, it can use this ability as a free action.</p>
+	<p id = "dread"><strong>Dread</strong>: As a standard action, the monster causes each creature it chooses within 30 feet of it to become shaken for 1 minute. This option doesn't cause a shaken creature to become frightened or frightened creature to become panicked.</p>
+	<p id = "fascinate"><strong>Fascinate</strong>: As a standard action, the monster forces any number of creatures within 90 feet of it that can see, hear, and pay attention to it to make a Will save (DC = the monster's ability DC &ndash; 5). On a failure, a target becomes fascinated for 1 minute or until it sees someone make a hostile move such as drawing a sword or casting a spell. If successful, the target is immune to this ability for 24 hours.</p>
+	<p id = "heroic-recover"><strong>Heroic Recovery</strong>: Once per day, the monster can grant itself and every ally within 60 feet an additional saving throw against one effect affecting it.</p>
+	<p id = "inspire-competence"><strong>Inspire Competence</strong>: As a standard action, the monster grants a +5 competence bonus on skill checks using a particular skill to one ally within 30 feet of it that can hear it. The effect ends if the monster is killed, knocked unconscious, paralyzed, or otherwise unable to use a free action to continue the inspiration each round.</p>
+	<p id = "inspire-courage"><strong>Inspire Courage</strong>: As a standard action, the monster grants a +1 competence bonus on attack rolls and weapon damage rolls and a +1 morale bonus on saving throws against charm and fear effects to every ally that can hear it. The bonuses increase to +2 at CR 4, +3 at CR 10, and +4 at CR 16. At CR 6, the monster can start this effect as a free action. The effect ends if the monster is killed, knocked unconscious, paralyzed, or otherwise unable to use a free action to continue the inspiration each round.</p>
+	<p id = "inspire-fear"><strong>Inspire Fear</strong>: As a standard action, the monster forces each enemy creature within 30 feet of it that can hear it to attempt a Will saving throw. On a failure, the target becomes frightened and must flee from the monster's presence for 1 minute or until it can no longer hear the monster. If successful, the target becomes immune to this effect for 24 hours.</p>
+	<p id = "inspire-heroics"><strong>Inspire Heroics</strong>: As a standard action, the monster and one willing ally within 30 feet of it gain a +4 morale bonus on saving throws and a +4 dodge bonus to AC for 1 minute. The effect ends if the monster is killed, knocked unconscious, paralyzed, or otherwise unable to use a free action to continue the inspiration each round.</p>
+	<p id = "weakening-presence"><strong>Weakening Presence</strong>: The monster emits an aura that extends from it in a 30-foot radius. Any enemy creature in the aura takes a &ndash;2 penalty on ability checks, attack rolls, damage rolls, and skill checks. A target can attempt a Will save (DC = the monster's ability DC &ndash; 5) when it starts its turn in the aura. If successful, the target is immune to this aura's effect for 24 hours.</p>
+
+	<h3 id = "miscellaneous">Miscellaneous</h3>
+	<p>These options primarily factor into interactions other than combat. Most of them are good for creating adversaries who present a noncombat challenge or for quickly generating NPC allies with useful abilities.</p>
+	<p id = "alertness"><strong>Alertness</strong>:-When-attempting a <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> or <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> check, the monster rolls twice and takes the higher result.</p>
+	<p id = "animal-talker"><strong>Animal-Talker</strong>: The monster can speak with animals, and gains <a href="../../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> as an additional master skill.</p>
+	<p id = "knowledgeable"><strong>Knowledgeable</strong>:-When-attempting any <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> check, the monster rolls twice and takes the higher result.</p>
+	<p id = "liar"><strong>Liar</strong>:-When-attempting a <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a>, <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a>, or <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> skill check, the monster rolls twice and takes the higher result. The monster's lies can't be detected by magic unless the one attempting to detect them succeeds at a caster level check (DC = 15 + the monster's CR).</p>
+	<p id = "linguist"><strong>Linguist</strong>: The monster speaks, reads, and understands all languages.</p>
+	<p id = "mercantile-savvy"><strong>Mercantile-Savvy</strong>: When attempting an <a href="../../coreRulebook/skills/appraise.html#appraise">Appraise</a> check, the monster rolls twice and takes the higher result. In addition, the monster can attempt to identify magic items without casting detect magic, using <a href="../../coreRulebook/skills/appraise.html#appraise">Appraise</a> instead of <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a>. If the monster fails, it can't attempt to identify the same item again.</p>
+	<p id = "persuasive"><strong>Persuasive</strong>: When attempting a Charisma-based skill check, the monster rolls twice and takes the higher result.</p>
+	<p id = "slippery-mind"><strong>Slippery Mind</strong>: If the monster would be affected by an enchantment spell or effect and fails its saving throw, it can repeat the saving throw attempt 1 round later.</p>
+	<p id = "sound-mimicry"><strong>Sound-Mimicry</strong>: The monster can perfectly mimic sounds, and possibly voices. It gains <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> as an additional master skill, and can attempt a <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> check opposed by its targets' <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> checks to mimic a sound convincingly. The target takes a &ndash;8 penalty if it's unfamiliar with the type of sound or creature being imitated.</p>
+	<p id = "telepathy"><strong>Telepathy</strong>: The monster can mentally communicate with any creature within 100 feet that has a language.</p>
+
+<h2 id = "universal-options">Universal Options</h2>
+<p>A universal option can be taken in place of any option granted by an array or graft, regardless of the intended option type. These abilities are suitable for multiple arrays and roles.</p>
+<p id = "athletic"><strong>Athletic</strong>:-When-attempting an <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a>, <a href="../../coreRulebook/skills/climb.html#climb">Climb</a>, or <a href="../../coreRulebook/skills/swim.html#swim">Swim</a> check, the monster rolls twice and takes the higher result.</p>
+<p id = "flying-acumen"><strong>Flying-Acumen</strong>: This monster gains hover (as the monster feat on page 315 of the Bestiary) and gains <a href="../../coreRulebook/skills/fly.html#fly">Fly</a> as an additional master skill.</p>
+<p id = "magic-weapon"><strong>Magic Weapon</strong>: The monster uses a magic weapon. Choose one of the following benefits to apply to its attacks with that weapon.</p>
+	<p><em>Bane</em>:+2d6 points of damage against creatures of a specified type.</p>
+	<p><em>Energy</em>:+1d6 points of energy damage (choose one type).</p>
+	<p><em>Keen</em>:Double critical threat range.</p>
+	<p><em>Returning</em>:Weapon returns if thrown (thrown only).</p>
+	<p><em>Seeking</em>:Negates miss chances (ranged only).</p>
+	<p><em>Vicious</em>:+2d6 points of damage, and also deals 1d6 points of damage to the monster on a hit (melee only).</p>
+	<p>If the monster is CR 10 or higher, you can also choose from the following.</p>
+	<p><em>Aligned</em>:+2d6 points of damage against creatures of a specified alignment (choose chaotic, evil, good, or lawful).</p>
+	<p><em>Energy Burst</em>:+1d6 points of energy damage and an additional 1d10 points of damage on a critical hit (choose one type).</p>
+	<p>To imitate a speed or wounding weapon, use extra attack or bleed, respectively, and apply them only to attacks with the weapon.</p>
+<p id = "potions"><strong>Potions</strong>: The monster has two potions of cure light wounds, which cure 1d8+1 hit points each. At CR 5, these are potions of cure moderate wounds healing 2d8+3 hit points, and at CR 10 they're potions of cure serious wounds healing 3d8+5 hit points.</p>
+<p id = "save-boost"><strong>Save Boost</strong>: Increase the monster's saving throw bonuses by 1, or increase any one of its saving throw bonuses by 3.</p>
+<p id = "secondary-magic"><strong>Secondary Magic</strong>: Though this monster isn't primarily a spellcaster, it does have several spells or spell-like abilities. Choose any spell list. The monster can use each of that list's primary spells of its CR band once per day. This ability can also be used to give a spellcaster extra spell-like abilities to fit its monster type.</p>
+<p id = "summon-allies"><strong>Summon Allies</strong>: This monster can attempt to summon monsters of the same creature type as itself as a full-round action. Choose either a creature of the same CR as the monster (with a 35% chance of success) or a creature with a CR no greater than the monster's &ndash; 5 (with a 60% chance of success). The summoned ally returns to the place from which it came after 1 hour.</p>
+<p id = "terrain-stride"><strong>Terrain Stride</strong>: Choose a type of terrain, such as undergrowth, ice, or rubble. The monster can move through nonmagical terrain of that type without impairing its movement or taking damage.</p>
+
+<h2 id = "universal-monster rules">Universal Monster Rules</h2>
+<p>Some options listed in this section grant a monster the use of a universal monster rule. Often these refer to the entry in the appropriate <em>Bestiary</em> volume, sometimes with notes on how to simplify the ability. When a universal monster rule is gained through this system, use the ability DC from the monster's array instead of calculating the DC by the formula listed in the rule's entry in the <em>Bestiary</em>.</p>
+<p>If you want to give a particular universal monster rule to a monster, look for it in the lists below. Most universal monster rules that aren't appropriate for player races appear in the section of monstrous <a href="step7.html#combat-options">combat rules</a>.</p>
+
+	<h3 id = "simplified-rules">Simplified Rules</h3>
+	<p>The following universal monster rules have been recreated as options in this system, typically to simplify them or give concrete values for numbers that aren't defined in the original universal monster rule.</p>
+	<p>These rules are: bleed, blood drain, breath weapon, channel resistance, constrict, damage reduction, disease, distraction, energy drain, engulf, fast healing, frightful presence, immunity, incorporeal, natural attacks, poison, poisonous blood, powerful charge, rake, regeneration, rend, rock throwing, sound mimicry, spell resistance, stench, telepathy, trample.</p>
+
+	<h3 id = "substitutions">Substitutions</h3>
+	<p>Some universal monster rules are very similar to other combat options, but the combat options use a different name because they're meant to be easier to understand with a quick look. The following list describes these, and shows in parentheses the name of the monster option to use instead: ability drain (ability damage), all-around vision (unflankable), blood rage (rage), fear (fear aura/fear attack), grab (improved combat maneuver), natural invisibility (constant invisibility), powerful blows (power attack), pull (repositioning attack), push (repositioning attack), resistance (energy resistance), rock catching (rock throwing), spell-like abilities (either the spellcaster array or the secondary magic universal option), summon (summon allies).</p>
+
+	<h3 id = "unmodified-rules">Unmodified Rules</h3>
+	<p>Most universal monster rules not mentioned elsewhere in this sidebar can be used as written. Unless they have a major effect on the monster's combat abilities, it's not worth counting them against the suggested number of options the monster can take. Senses, for example, are not covered in this section, and can be used as-is without costing the monster any options. Assume that weaknesses (such as light blindness or vulnerabilities) also fall into this category and can be used unmodified.</p>
+	<p>Other universal rules that can be used without modification, but which should be counted against the monster's number of options are attach, burn, capsize, change shape, curse of lycanthropy, fast swallow, ferocity, fortification, gaze, pounce, web (using the monster's CR as its Hit Dice to determine the web's hit points), whirlwind.</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Step 7: Monster Options",globalNavPath=[{ href: '/pathfinderRPG/prd/unchained/monsters/index.html', name: 'Pathfinder Unchained: Monsters' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

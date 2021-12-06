@@ -1,0 +1,444 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Shaman</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "shaman.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "shaman.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "shaman.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../spells/index.html">Spells</a></li>
+						<li><a href = "../spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "shaman.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "shaman.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "shaman.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "shaman.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "shaman.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "shaman.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "shaman.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "shaman.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "shaman.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "shaman.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "shaman.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "shaman.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "shaman.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "shaman.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "shaman.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "shaman.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "shaman.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "shaman.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+<h1>Shaman</h1>
+<p>Channeling magic from the spirits around them, shamans serve as teachers, spirit guides, and even lawgivers to aboriginal peoples and isolated societies. Some shamans don't just commune with the spirits, but also let them inhabit their bodies. Others look for guidance from whichever spirit would serve them best at the time.</p>
+
+	<h2 id="animist-archetype">Animist (Archetype)</h2>
+	<p>Even among mystical practitioners, the animist has a strange perspective and even stranger magic. The animist perceives that all things have a spirit, including objects, constructs, illnesses, buildings, and the environment. </p>
+	<p id="animist-spirit-magic"><strong>Animist Spirit Magic</strong>: The animist adds the following spells to the list of spells he can cast using spirit magic: <a href="../../coreRulebook/spells/speakWithAnimals.html#speak-with-animals"><em>speak with animals</em></a> (1st), <a href="../../ultimateMagic/spells/skinsend.html#skinsend"><em>skinsend</em></a> (2nd), <a href="../../coreRulebook/spells/speakWithPlants.html#speak-with-plants"><em>speak with plants</em></a> (3rd), <em>malfunction</em> (4th), <em>dream</em> (5th), <em>speak with stone</em> (6th), <a href="../../ultimateMagic/spells/controlConstruct.html#control-construct"><em>control construct</em></a> (7th), <a href="../../coreRulebook/spells/trapTheSoul.html#trap-the-soul"><em>trap the soul</em></a> (8th), and <a href="../../coreRulebook/spells/soulBind.html#soul-bind"><em>soul bind</em></a> (9th). This ability replaces the spirit magic spells gained from the shaman's spirit.</p>
+	<p id="wrangle-condition"><strong>Wrangle Condition (Su)</strong>: At 2nd level, the animist interacts directly with unwholesome spirits of the ills that trouble him or his people. To the animist, negative conditions manifest as anthropomorphic spirits or are caused by such spirits (visited upon the creature by bad magic). Either way, the animist can attempt to persuade the spirit to leave its victim alone, thus performing a miraculous healing. As the animist grows in power, he can simply inform these spirits that they are unwelcome and command them to depart.</p>
+	<p>The animist can attempt a <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> check to persuade the condition's spirit to leave. Conditions the animist can affect are ranked from minor to dire, with each category having an accompanying <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> DC (see below). The animist cannot take 10 or take 20 on the check or receive aid from any creature except another shaman. Failure by 5 or less means the condition's spirit is willing to leave the target and transfer to the animist for the rest of the duration or until cured; this transfer happens only if the animist is willing. Failure by 10 or more means that not only is the target afflicted with the condition, but the animist is as well (whether or not he is willing) for the rest of the duration or until cured.
+	<ul>
+		<li><em>Minor Conditions</em> (DC 15): Fatigued, shaken, and sickened.</li>
+		<li><em>Major Conditions</em> (DC 20): Dazed and staggered.</li>
+		<li><em>Severe Conditions</em> (DC 25): Exhausted, frightened, and nauseated.</li>
+		<li><em>Dire Conditions</em> (DC 30): Blinded, deafened, paralyzed, and stunned.</li>
+	</ul>
+	</p>
+	<p>The animist can use this ability a number of times per day equal to 1/2 his shaman level + his Wisdom modifier. Using this ability is a standard action that requires no contact or shared language with the target, but it relies on audible components and the target must be within 30 feet. If a target is afflicted with multiple conditions, the animist targets one condition at a time (of his choosing). The animist cannot use this ability on himself.</p>
+	<p>At 5th level, the animist can use this ability to exorcise minor conditions without needing to attempt a <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> check. He can dispatch major conditions without a check at 9th level, severe conditions at 13th level, and dire conditions at 17th level. Doing so still requires one use of this ability per condition.</p>
+	<p>This ability replaces the hex gained at 2nd level.</p>
+	<p id="exorcism"><strong>Exorcism (Su)</strong>: At 8th level, the animist can attempt to end effects that control a creature or object, such as <a href="../../coreRulebook/spells/magicJar.html#magic-jar"><em>magic jar</em></a>, <a href="../../ultimateMagic/spells/possessObject.html#possess-object"><em>possess object</em></a>, <a href="../../coreRulebook/spells/dominatePerson.html#dominate-person"><em>dominate person</em></a>, and <a href="../../coreRulebook/spells/dominateMonster.html#dominate-monster"><em>dominate monster</em></a>, or that involve possessing entities such as ghosts. This is a full-round action that requires the animist to touch the target. The possessing or dominating creature must attempt a Will save with a DC equal to 10 + 1/2 the animist's shaman level + his Wisdom modifier. Failure means that the controlling effect ends or the entity is immediately cast out of the target, as appropriate. If the possessing entity is exorcised, it cannot attempt to dominate or possess that target again for 24 hours. The animist can exorcise the same entity out of different targets, but once the entity successfully saves against the animist's exorcism, it cannot be affected by this ability again for 24 hours. This ability replaces the hex gained at 8th level.</p>
+	<p id="dominate-spirit"><strong>Dominate Spirit (Sp)</strong>: At 10th level, the animist can attempt to possess creatures or objects, as per <a href="../../coreRulebook/spells/magicJar.html#magic-jar"><em>magic jar</em></a> or <a href="../../ultimateMagic/spells/possessObject.html#possess-object"><em>possess object</em></a>. When the animist is attempting to possess the creature, his familiar acts as the jar and must be within 10 feet. The animist's soul can perceive his surroundings through the familiar's senses, clearly evaluate potential targets for possession, and communicate with his familiar telepathically. The familiar retains its autonomy while acting as the jar, and is not harmed by being used as a vessel for the animist's soul. The animist can use this ability once per day at 10th level, plus an additional time per day every 4 levels thereafter. This ability replaces the hex gained at 10th level.</p>
+	<p id="contact-with-the-spirit-world"><strong>Contact with the Spirit World (Su)</strong>: At 12th level, the animist can interact with incorporeal entities as if his unarmed strikes and melee weapons had the <em>ghost touch</em> weapon special ability. While using this ability, he can also see nearby ethereal entities and likewise strike at them as if they were incorporeal. He can use this ability for a number of rounds per day equal to his shaman level. This duration does not need to be consecutive. This ability replaces the hex gained at 12th level.</p>
+	<p id="etherealness"><strong>Etherealness (Sp)</strong>: At 18th level, the animist can cast <a href="../../coreRulebook/spells/etherealness.html#etherealness"><em>etherealness</em></a> once per day as a spell-like ability. This ability replaces the hex gained at 18th level.</p>
+	<p id="spirit-shaman"><strong>Spirit Shaman (Sp)</strong>: At 20th level, the animist can use <a href="../../coreRulebook/spells/etherealJaunt.html#ethereal-jaunt"><em>ethereal jaunt</em></a> at will as a spell-like ability, and can cast <a href="../../coreRulebook/spells/astralProjection.html#astral-projection"><em>astral projection</em></a> once per day as a spell-like ability. This ability replaces manifestation.</p>
+
+	<h2 id="possessed-shaman-archetype">Possessed Shaman (Archetype)</h2>
+	<p>For a possessed shaman, merely communing with the spirit world is insufficient. Instead, she invites the spirits to share her body, granting them the chance to experience corporeal existence. In return, they grant her their skills and protect her from otherworldly influence.</p>
+	<p id="shared-skill"><strong>Shared Skill (Su)</strong>: At 1st level, a possessed shaman selects two skills. Both of these skills must have the same key ability. The possessed shaman treats these skills as if she had a number of ranks in them equal to her shaman level, and uses her Wisdom modifier in place of the ability modifier the skills would normally use. If either of the skills are class skills for her, she receives the usual +3 bonus on those checks for having ranks in those skills. These ranks do not stack with her actual skill ranks (only the higher number of ranks in a given skill applies). This ability replaces spirit magic.</p>
+	<p id="crowded-vessel"><strong>Crowded Vessel (Su)</strong>: At 2nd level, whenever a possessed shaman fails a saving throw against a charm or compulsion spell or effect, she can attempt a new saving throw (using the original DC) at the end of her next turn as the spirits inside her attempt to regain control. If the saving throw is successful, the charm or compulsion effect ends. If the saving throw fails, she is affected as normal for the rest of the duration. This ability replaces the hex gained at 2nd level.</p>
+	<p id="wandering-skills"><strong>Wandering Skills (Su)</strong>: At 6th level, a possessed shaman is able to make room for another spirit. When choosing her wandering spirit for the day, the possessed shaman chooses one skill. The possessed shaman treats this skill as if she had a number of ranks in it equal to her shaman level, and uses her Wisdom modifier in place of the ability modifier the skill would normally use. If the skill is a class skill for her, she receives the usual +3 bonus on checks for having ranks in that skill. Each time the possessed shaman changes her wandering spirit, she can change the skill gained through this ability. These ranks do not stack with her actual skill ranks (only the higher number of ranks in the chosen skill applies). This ability replaces the wandering hex gained at 6th level.</p>
+
+	<h2 id="speaker-for-the-past-archetype">Speaker for the Past (Archetype)</h2>
+	<p>A speaker for the past is a shaman who serves as the voice for spirits from her people's history. A speaker for the past is often an advocate of the ancestors of a specific group, the voice of experience, and a powerful resource that enables the past to aid the present.</p>
+	<p id="mysteries-of-the-past"><strong>Mysteries of the Past</strong>: A speaker for the past gains <a href="../../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a>, <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (history), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (local), <a href="../../coreRulebook/skills/perception.html#perception">Perception</a>, and <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> as class skills. Also, she adds the spells from the <a href="../../ultimateMagic/spellcastingClassOptions/oracle.html#ancestor">ancestor</a> and <a href="../../ultimateMagic/spellcastingClassOptions/oracle.html#time">time</a> oracle mysteries to her class spell list (at the cleric level for those spells).</p>
+	<p>This ability replaces the shaman's familiar. The speaker for the past must choose a time when she must spend 1 hour each day in quiet contemplation to regain her daily allotment of spells, but does not need to commune with a familiar during this time. Because she has no familiar, she does not gain a spirit familiar feature from any spirit she bonds with.</p>
+	<p id="revelations-of-the-past"><strong>Revelations of the Past</strong>: At 4th, 6th, 12th, 14th, and 20th levels, the speaker for the past can select a revelation from the ancestor mystery or the time mystery. She uses her shaman level as her oracle level for these revelations, and uses her Wisdom modifier in place of her Charisma modifier for the purposes of the revelation. This ability replaces wandering spirit and wandering hex.</p>
+
+	<h2 id="spirit-warden-archetype">Spirit Warden (Archetype)</h2>
+	<p>Not all spirits deserve reverence and respect. Some are twisted and despicable. It's a spirit warden's duty to end these spirits' existence.</p>
+	<p id="unnatural-mien"><strong>Unnatural Mien (Ex)</strong>: At 1st level, the spirit warden's dealings with the spirit world give her an unsettling demeanor. <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> and <a href="../../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> are not class skills for a spirit warden. <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> is added as a class skill, and she gains a +2 bonus on <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> checks to demoralize a foe. </p>
+	<p id="restless-magic"><strong>Restless Magic (Su)</strong>: The spirit warden adds the following spells to the list of spells she can cast using spirit magic: <a href="../../coreRulebook/spells/detectUndead.html#detect-undead"><em>detect undead</em></a> (1st), <a href="../../coreRulebook/spells/commandUndead.html#command-undead"><em>command undead</em></a> (2nd), <a href="../../coreRulebook/spells/haltUndead.html#halt-undead"><em>halt undead</em></a> (3rd), <a href="../../coreRulebook/spells/deathWard.html#death-ward"><em>death ward</em></a> (4th), <a href="../../ultimateMagic/spells/possessObject.html#possess-object"><em>possess object</em></a> (5th), <em>undead to death</em> (6th), <a href="../../coreRulebook/spells/etherealJaunt.html#ethereal-jaunt"><em>ethereal jaunt</em></a> (7th), <a href="../../coreRulebook/spells/controlUndead.html#control-undead"><em>control undead</em></a> (8th), and <em>foresight</em> (9th). This ability replaces the spirit magic spells gained from the shaman's spirit.</p>
+	<p id="rebuke-spirits"><strong>Rebuke Spirits (Su)</strong>: At 2nd level, the spirit warden gains the ability to channel positive energy as a cleric of her level. Regardless of her alignment, she can use this ability only to harm undead creatures. The spirit warden can use this ability a number of times per day equal to 3 + her Charisma modifier. This ability replaces the hex gained at 2nd level.</p>
+	<p id="laugh-at-death"><strong>Laugh at Death (Su)</strong>: At 10th level, the spirit warden's familiarity with the dead has filled her with contempt for death itself. She gains a +4 insight bonus on saving throws against death effects and to avoid or remove negative levels. This ability replaces the hex gained at 10th level.</p>
+
+	<h2 id="unsworn-shaman-archetype">Unsworn Shaman (Archetype)</h2>
+	<p>An unsworn shaman never binds herself to one specific spirit, always making new deals as she deems necessary for the circumstances that she finds herself in. While this vacillation weakens the powers she can access from any one spirit, it gives her access to a broader overall range of abilities.</p>
+	<p id="minor-spirit"><strong>Minor Spirit (Su)</strong>: At 1st level, the unsworn shaman forms a temporary bond with a minor spirit each day, granting her access to a shaman or witch hex of her choosing, but not a major hex or a grand hex. She must make this selection each day when she prepares her spells for the day. Until she changes the minor spirit, she continues to have access to the shaman or witch hex. At 2nd level, she can instead select a hex from one of her wandering spirits selected for that day. If she selects a witch hex, she treats her shaman level as her witch level and uses her Wisdom in place of her Intelligence for the purpose of that hex.</p>
+	<p>She can make temporary bonds with two minor spirits (thus gaining two hexes) at 4th level, and with one additional minor spirit (and hex) every 4 levels thereafter. This ability replaces spirit and alters hex.</p>
+	<p id="spirit-animal"><strong>Spirit Animal</strong>: At 2nd level, an unsworn shaman's spirit animal gains the spirit animal bonus from one of her wandering spirits (see below). This bonus can be changed each day when the shaman prepares spells, but it must correspond to one of the shaman's wandering spirits. This ability alters spirit animal.</p>
+	<p id="spirit-magic"><strong>Spirit Magic (Sp)</strong>: The unsworn shaman gains this ability at 2nd level rather than at 1st. This ability alters spirit magic.</p>
+	<p id="wandering-spirit"><strong>Wandering Spirit (Su)</strong>: At 2nd level, the unsworn shaman gains access to the wandering spirit class feature. At 10th level, she gains the abilities listed in the greater version of her wandering spirit. At 18th level, she gains the abilities listed in the true version of her wandering spirit.</p>
+	<p>Additionally, at 6th level, she gains a second wandering spirit, gaining the abilities listed in the greater version of that spirit at 14th level, and the abilities listed in the true version at 20th level. This ability alters wandering spirit and replaces wandering hex.</p>
+
+	<h2 id="visionary-archetype">Visionary (Archetype)</h2>
+	<p>The visionary is a master of divination, drawing upon her intimate relationship with the spirit world to ferret out all manner of secrets and insights about the world around her and beyond.</p>
+	<p id="visionary-bonus-feat"><strong>Bonus Feat</strong>: At 4th level, the visionary gains <a href="../../advancedPlayersGuide/advancedFeats.html#diviner's-delvin">Diviner's Delving</a> as a bonus feat, even if she does not meet the prerequisites.</p>
+	<p id="Discern Magical Expertise (Ex)"><strong>Discern Magical Expertise (Ex)</strong>: At 4th level, the visionary can determine what type of spellcasting expertise a creature possesses by studying the creature for 2 rounds with <em>detect magic</em> or any of the following spells: <a href="../../coreRulebook/spells/detectChaos.html#detect-chaos"><em>detect chaos</em></a>, <a href="../../coreRulebook/spells/detectEvil.html#detect-evil"><em>detect evil</em></a>, <a href="../../coreRulebook/spells/detectGood.html#detect-good"><em>detect good</em></a>, or <a href="../../coreRulebook/spells/detectLaw.html#detect-law"><em>detect law</em></a> (if the creature belongs to the alignment). This ability tells the visionary what bloodlines, domains, hexes, schools, and mysteries (if any) the creature possesses. A successful Will saving throw negates this effect (DC = 10 + 1/2 the shaman's level + her Wisdom modifier). A creature affected by this ability cannot be affected by it again for 24 hours. This ability functions through magical sensors, as with <em>clairaudience/clairvoyance</em> and <em>scrying</em>. This ability replaces the wandering spirit gained at 4th level.</p>
+	<p id="vision-spirit-magic"><strong>Vision Spirit Magic</strong>: At 4th level, the visionary adds the following spells to the list of spells she can cast using spirit magic: <a href="../../ultimateCombat/spells/seeAlignment.html#see-alignment"><em>see alignment</em></a> (1st), <a href="../../coreRulebook/spells/seeInvisibility.html#see-invisibility"><em>see invisibility</em></a> (2nd), <em>clairaudience/clairvoyance</em> (3rd), <a href="../../coreRulebook/spells/detectScrying.html#detect-scrying"><em>detect scrying</em></a> (4th), <a href="../../coreRulebook/spells/pryingEyes.html#prying-eyes"><em>prying eyes</em></a> (5th), <em>legend lore</em> (6th), <em>vision</em> (7th), <a href="../../coreRulebook/spells/momentOfPrescience.html#moment-of-prescience"><em>moment of prescience</em></a> (8th), and <em>foresight</em> (9th). This ability replaces the spirit magic spells gained from the shaman's wandering spirit.</p>
+	<p id="improved-divination"><strong>Improved Divination (Su)</strong>: At 6th level, the visionary becomes more adept at divination magic. When she casts the <em>augury</em> spell, her chance for an accurate answer is automatically the maximum of 90%. Likewise, when she casts <em>divination</em>, she has the maximum 90% chance of an accurate answer.</p>
+	<p>In addition, the visionary can prepare <em>scrying</em> as a 4th-level spell, and it requires only 1 minute to cast. The visionary also has a 10% chance per caster level to cast the spells listed in the <em>scrying</em> spell description, instead of 5% per caster level (to a maximum of 100%).</p>
+	<p>The visionary must still prepare these spells to receive these benefits. This ability replaces the wandering hex gained at 6th level.</p>
+	<p id="wandering-spirit"><strong>Wandering Spirit (Su)</strong>: At 12th level, the visionary forms a temporary bond with another spirit (other than the one she selected using her spirit class feature). This ability is identical to the 4th-level wandering spirit class feature. She adds the wandering spirit magic spells to the list of spells she can cast using spirit magic, along with vision spirit magic and her original spirit. At 20th level, she gains the abilities listed in the greater version of her wandering spirit. This ability replaces the greater version of wandering spirit gained at 12th level and the true version of wandering spirit gained at 20th level.</p>
+
+	<h2 id="witch-doctor-archetype">Witch Doctor (Archetype)</h2>
+	<p>The witch doctor is a healer who specializes in afflictions of the soul. Often misunderstood, she protects her tribe with healing powers, powerful defensive magic, and her own divine "witchcraft."</p>
+	<p id="witch-doctor-alignment"><strong>Alignment</strong>: A witch doctor can't be of an evil alignment. This alters the shaman's alignment.</p>
+	<p id="channel-energy"><strong>Channel Energy (Su)</strong>: At 4th level, the witch doctor can draw transcendental energies to her location, flooding it with positive energy as the cleric class feature. The witch doctor uses her shaman level &ndash;3 as her effective cleric level, and can channel energy a number of times per day equal to 3 + her Charisma modifier. This is a separate pool of channel energy that does not stack with the life spirit's channel spirit ability. This ability replaces the hexes gained at 4th and 12th levels.</p>
+	<p id="counter-curse"><strong>Counter Curse (Su)</strong>: At 8th level, the witch doctor can sacrifice any prepared spirit magic spell of 3rd level or higher in order to spontaneously cast <em>dispel magic</em> or <a href="../../coreRulebook/spells/removeCurse.html#remove-curse"><em>remove curse</em></a>. This ability can target only a spell effect that is on an ally (including herself). If she sacrifices a spirit magic spell whose level exceeds 3rd, she gains a +2 sacred bonus on her caster level check to dispel the spell or to remove the curse for every level by which the spell sacrificed exceeds 3rd level. This ability replaces the hex gained at 8th level.</p>
+	<p id="countering-hex"><strong>Countering Hex (Su)</strong>: At 10th level, the witch doctor can use this hex to counterspell as a readied action as if using <a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic"><em>dispel magic</em></a>. She must succeed at a dispel check (1d20 + her shaman level) with a DC equal to 11 + the spell's caster level. If she succeeds, the spell fizzles away and is lost. Failure means the spell is not countered. In either case, the witch doctor cannot attempt to use this hex against any of that caster's spells again for 24 hours. The witch doctor cannot use countering hex on an ongoing effect, a magic item, or a hex. This ability replaces the hex gained at 10th level.</p>
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Shaman",globalNavPath=[{ href: '/pathfinderRPG/prd/advancedClassGuide/classOptions/index.html', name: 'Archetypes and Class Options'}];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Advanced Spell Index</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "advancedSpellIndex.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "advancedSpellIndex.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "advancedSpellIndex.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "advancedSpellIndex.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "advancedRaces.html">Races</a></li>
+						<li><a href = "advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "advancedFeats.html">Feats</a></li>
+						<li><a href = "advancedGear.html">Gear</a></li>
+						<li><a href = "advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "advancedSpellIndex.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "advancedSpellIndex.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "advancedSpellIndex.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "advancedSpellIndex.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "advancedSpellIndex.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "advancedSpellIndex.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "advancedSpellIndex.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "advancedSpellIndex.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "advancedSpellIndex.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "advancedSpellIndex.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "advancedSpellIndex.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "advancedSpellIndex.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "advancedSpellIndex.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "advancedSpellIndex.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "advancedSpellIndex.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "advancedSpellIndex.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "advancedSpellIndex.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="spells" class="monster-header">Spells</h1>
+				<p>The following spells are presented in alphabetical order, with the exception of those whose names begin with "greater," "lesser," or "mass." These spells are alphabetized after the second word of their spell name instead.</p>
+				
+				<p class="shortcut-bar"><a href="advancedSpellIndex.html#index-spells-A">A</a> <a href="advancedSpellIndex.html#index-spells-B">B</a> <a href="advancedSpellIndex.html#index-spells-C">C</a> <a href="advancedSpellIndex.html#index-spells-D">D</a> <a href="advancedSpellIndex.html#index-spells-E">E</a> <a href="advancedSpellIndex.html#index-spells-F">F</a> <a href="advancedSpellIndex.html#index-spells-G">G</a> <a href="advancedSpellIndex.html#index-spells-H">H</a> <a href="advancedSpellIndex.html#index-spells-I">I</a> <a href="advancedSpellIndex.html#index-spells-J">J</a> <a href="advancedSpellIndex.html#index-spells-K">K</a> <a href="advancedSpellIndex.html#index-spells-L">L</a> <a href="advancedSpellIndex.html#index-spells-M">M</a> <a href="advancedSpellIndex.html#index-spells-N">N</a> <a href="advancedSpellIndex.html#index-spells-O">O</a> <a href="advancedSpellIndex.html#index-spells-P">P</a> <a href="advancedSpellIndex.html#index-spells-R">R</a> <a href="advancedSpellIndex.html#index-spells-S">S</a> <a href="advancedSpellIndex.html#index-spells-T">T</a> <a href="advancedSpellIndex.html#index-spells-U">U</a> <a href="advancedSpellIndex.html#index-spells-V">V</a> <a href="advancedSpellIndex.html#index-spells-W">W</a></p>
+
+<div id="spell-index-wrapper" class="index">
+<ul id="index-spells-A" title="A Spells">
+<li><a href="spells/absorbingTouch.html#absorbing-touch">Absorbing Touch</a></li>
+<li><a href="spells/acceleratePoison.html#accelerate-poison">Accelerate Poison</a></li>
+<li><a href="spells/acidPit.html#acid-pit-">Acid Pit</a></li>
+<li><a href="spells/alchemicalAllocation.html#alchemical-allocation">Alchemical Allocation</a></li>
+<li><a href="spells/allfood.html#allfood-">Allfood</a></li>
+<li><a href="spells/alterWinds.html#alter-winds">Alter Winds</a></li>
+<li><a href="spells/amplifyElixir.html#amplify-elixir">Amplify Elixir</a></li>
+<li><a href="spells/antHaul.html#ant-haul-">Ant Haul</a></li>
+<li><a href="spells/aqueousOrb.html#aqueous-orb">Aqueous Orb</a></li>
+<li><a href="spells/arcaneConcordance.html#arcane-concordance">Arcane Concordance</a></li>
+<li><a href="spells/arrowEruption.html#arrow-eruption-">Arrow Eruption</a></li>
+<li><a href="spells/aspectOfTheBear.html#aspect-of-the-bear">Aspect of the Bear</a></li>
+<li><a href="spells/aspectOfTheFalcon.html#aspect-of-the-falcon">Aspect of the Falcon</a></li>
+<li><a href="spells/aspectOfTheStag.html#aspect-of-the-stag">Aspect of the Stag</a></li>
+<li><a href="spells/aspectOfTheWolf.html#aspect-of-the-wolf">Aspect of the Wolf</a></li>
+<li><a href="spells/auraOfGreaterCourage.html#aura-of-greater-courage">Aura of Greater Courage</a></li>
+</ul>
+
+<ul id="index-spells-B" title="B Spells">
+<li><a href="spells/ballLightning.html#ball-lightning">Ball Lightning</a></li>
+<li><a href="spells/banishSeeming.html#banish-seeming">Banish Seeming</a></li>
+<li><a href="spells/bardSEscape.html#bard's-escape">Bard's Escape</a></li>
+<li><a href="spells/beguilingGift.html#beguiling-gift">Beguiling Gift</a></li>
+<li><a href="spells/bestowGrace.html#bestow-grace">Bestow Grace</a></li>
+<li><a href="spells/blazeOfGlory.html#blaze-of-glory-">Blaze of Glory</a></li>
+<li><a href="spells/blessingOfCourageAndLife.html#blessing-of-courage-and-life">Blessing of Courage and Life</a></li>
+<li><a href="spells/blessingOfFervor.html#blessing-of-fervor">Blessing of Fervor</a></li>
+<li><a href="spells/blessingOfTheSalamander.html#blessing-of-the-salamander">Blessing of the Salamander</a></li>
+<li><a href="spells/bloodBiography.html#blood-biography-">Blood Biography</a></li>
+<li><a href="spells/bloodhound.html#bloodhound">Bloodhound</a></li>
+<li><a href="spells/bloodyClaws.html#bloody-claws">Bloody Claws</a></li>
+<li><a href="spells/bomberSEye.html#bomber's-eye">Bomber's Eye</a></li>
+<li><a href="spells/borrowFortune.html#borrow-fortune">Borrow Fortune</a></li>
+<li><a href="spells/borrowSkill.html#borrow-skill">Borrow Skill</a></li>
+<li><a href="spells/bowSpirit.html#bow-spirit">Bow Spirit</a></li>
+<li><a href="spells/brand.html#brand">Brand</a></li>
+<li><a href="spells/brand.html#brand,-greater">Brand, Greater</a></li>
+<li><a href="spells/break.html#break-">Break</a></li>
+<li><a href="spells/brilliantInspiration.html#brilliant-inspiration">Brilliant Inspiration</a></li>
+<li><a href="spells/bristle.html#bristle-">Bristle</a></li>
+<li><a href="spells/burningGaze.html#burning-gaze">Burning Gaze</a></li>
+<li><a href="spells/burstBonds.html#burst-bonds">Burst Bonds</a></li>
+</ul>
+
+<ul id="index-spells-C" title="C Spells">
+<li><a href="spells/cacophonousCall.html#cacophonous-call">Cacophonous Call</a></li>
+<li><a href="spells/cacophonousCall.html#cacophonous-call,-mass">Cacophonous Call, Mass</a></li>
+<li><a href="spells/calcificTouch.html#calcific-touch">Calcific Touch</a></li>
+<li><a href="spells/callAnimal.html#call-animal">Call Animal</a></li>
+<li><a href="spells/campfireWall.html#campfire-wall-">Campfire Wall</a></li>
+<li><a href="spells/castOut.html#cast-out">Cast Out</a></li>
+<li><a href="spells/castigate.html#castigate">Castigate</a></li>
+<li><a href="spells/castigate.html#castigate,-mass">Castigate, Mass</a></li>
+<li><a href="spells/challengeEvil.html#challenge-evil">Challenge Evil</a></li>
+<li><a href="spells/chameleonStride.html#chameleon-stride">Chameleon Stride</a></li>
+<li><a href="spells/clashingRocks.html#clashing-rocks">Clashing Rocks</a></li>
+<li><a href="spells/cleanse.html#cleanse">Cleanse</a></li>
+<li><a href="spells/cloakOfDreams.html#cloak-of-dreams">Cloak of Dreams</a></li>
+<li><a href="spells/cloakOfShade.html#cloak-of-shade">Cloak of Shade</a></li>
+<li><a href="spells/cloakOfWinds.html#cloak-of-winds">Cloak of Winds</a></li>
+<li><a href="spells/confess.html#confess">Confess</a></li>
+<li><a href="spells/contagiousFlame.html#contagious-flame">Contagious Flame</a></li>
+<li><a href="spells/coordinatedEffort.html#coordinated-effort">Coordinated Effort</a></li>
+<li><a href="spells/corruptionResistance.html#corruption-resistance">Corruption Resistance</a></li>
+<li><a href="spells/cowardSLament.html#coward's-lament">Coward's Lament</a></li>
+<li><a href="spells/crafterSCurse.html#crafter's-curse">Crafter's Curse</a></li>
+<li><a href="spells/crafterSFortune.html#crafter's-fortune">Crafter's Fortune</a></li>
+<li><a href="spells/createPit.html#create-pit-">Create Pit</a></li>
+<li><a href="spells/createTreasureMap.html#create-treasure-map-">Create Treasure Map</a></li>
+<li><a href="spells/cupOfDust.html#cup-of-dust">Cup of Dust</a></li>
+</ul>
+
+<ul id="index-spells-D" title="D Spells">
+<li><a href="spells/dancingLantern.html#dancing-lantern-">Dancing Lantern</a></li>
+<li><a href="spells/deadlyFinale.html#deadly-finale">Deadly Finale</a></li>
+<li><a href="spells/deafeningSongBolt.html#deafening-song-bolt">Deafening Song Bolt</a></li>
+<li><a href="spells/defileArmor.html#defile-armor">Defile Armor</a></li>
+<li><a href="spells/deflection.html#deflection-">Deflection</a></li>
+<li><a href="spells/delayedConsumption.html#delayed-consumption">Delayed Consumption</a></li>
+<li><a href="spells/denounce.html#denounce">Denounce</a></li>
+<li><a href="spells/detectAberration.html#detect-aberration">Detect Aberration</a></li>
+<li><a href="spells/detonate.html#detonate">Detonate</a></li>
+<li><a href="spells/devolution.html#devolution">Devolution</a></li>
+<li><a href="spells/discordantBlast.html#discordant-blast">Discordant Blast</a></li>
+<li><a href="spells/divineTransfer.html#divine-transfer">Divine Transfer</a></li>
+<li><a href="spells/divineVessel.html#divine-vessel">Divine Vessel</a></li>
+<li><a href="spells/draconicReservoir.html#draconic-reservoir-">Draconic Reservoir</a></li>
+<li><a href="spells/dragonSBreath.html#dragon's-breath">Dragon's Breath</a></li>
+<li><a href="spells/dustOfTwilight.html#dust-of-twilight">Dust of Twilight</a></li>
+</ul>
+
+<ul id="index-spells-E" title="E Spells">
+<li><a href="spells/eagleEye.html#eagle-eye">Eagle Eye</a></li>
+<li><a href="spells/elementalAura.html#elemental-aura">Elemental Aura</a></li>
+<li><a href="spells/elementalSpeech.html#elemental-speech">Elemental Speech</a></li>
+<li><a href="spells/elementalTouch.html#elemental-touch">Elemental Touch</a></li>
+<li><a href="spells/eludeTime.html#elude-time">Elude Time</a></li>
+<li><a href="spells/enemyHammer.html#enemy-hammer-">Enemy Hammer</a></li>
+<li><a href="spells/enterImage.html#enter-image-">Enter Image</a></li>
+<li><a href="spells/euphoricTranquility.html#euphoric-tranquility">Euphoric Tranquility</a></li>
+<li><a href="spells/evolutionSurge.html#evolution-surge">Evolution Surge</a></li>
+<li><a href="spells/evolutionSurge.html#evolution-surge,-greater">Evolution Surge, Greater</a></li>
+<li><a href="spells/evolutionSurge.html#evolution-surge,-lesser">Evolution Surge, Lesser</a></li>
+<li><a href="spells/expeditiousExcavation.html#expeditious-excavation">Expeditious Excavation</a></li>
+<li><a href="spells/expend.html#expend-">Expend</a></li>
+</ul>
+
+<ul id="index-spells-F" title="F Spells">
+<li><a href="spells/feastOfAshes.html#feast-of-ashes">Feast of Ashes</a></li>
+<li><a href="spells/featherStep.html#feather-step">Feather Step</a></li>
+<li><a href="spells/featherStep.html#feather-step,-mass">Feather Step, Mass</a></li>
+<li><a href="spells/fester.html#fester">Fester</a></li>
+<li><a href="spells/fester.html#fester,-mass">Fester, Mass</a></li>
+<li><a href="spells/fieryBody.html#fiery-body">Fiery Body</a></li>
+<li><a href="spells/fireBreath.html#fire-breath">Fire Breath</a></li>
+<li><a href="spells/fireSnake.html#fire-snake">Fire Snake</a></li>
+<li><a href="spells/fireOfEntanglement.html#fire-of-entanglement">Fire of Entanglement</a></li>
+<li><a href="spells/fireOfJudgment.html#fire-of-judgment">Fire of Judgment</a></li>
+<li><a href="spells/fireOfVengeance.html#fire-of-vengeance">Fire of Vengeance</a></li>
+<li><a href="spells/firebrand.html#firebrand">Firebrand</a></li>
+<li><a href="spells/firefall.html#firefall">Firefall</a></li>
+<li><a href="spells/flamesOfTheFaithful.html#flames-of-the-faithful">Flames of the Faithful</a></li>
+<li><a href="spells/flareBurst.html#flare-burst">Flare Burst</a></li>
+<li><a href="spells/fluidForm.html#fluid-form">Fluid Form</a></li>
+<li><a href="spells/fly.html#fly,-mass">Fly, Mass</a></li>
+<li><a href="spells/foeToFriend.html#foe-to-friend">Foe to Friend</a></li>
+<li><a href="spells/followAura.html#follow-aura">Follow Aura</a></li>
+<li><a href="spells/foolSForbiddance.html#fool's-forbiddance">Fool's Forbiddance</a></li>
+<li><a href="spells/forcedRepentance.html#forced-repentance">Forced Repentance</a></li>
+<li><a href="spells/frozenNote.html#frozen-note-">Frozen Note</a></li>
+</ul>
+
+<ul id="index-spells-G" title="G Spells">
+<li><a href="spells/gallantInspiration.html#gallant-inspiration">Gallant Inspiration</a></li>
+<li><a href="spells/getaway.html#getaway-">Getaway</a></li>
+<li><a href="spells/geyser.html#geyser-">Geyser</a></li>
+<li><a href="spells/ghostbaneDirge.html#ghostbane-dirge">Ghostbane Dirge</a></li>
+<li><a href="spells/ghostbaneDirge.html#ghostbane-dirge,-mass">Ghostbane Dirge, Mass</a></li>
+<li><a href="spells/glide.html#glide-">Glide</a></li>
+<li><a href="spells/grace.html#grace">Grace</a></li>
+<li><a href="spells/gravityBow.html#gravity-bow-">Gravity Bow</a></li>
+<li><a href="spells/groveOfRespite.html#grove-of-respite">Grove of Respite</a></li>
+<li><a href="spells/guidingStar.html#guiding-star-">Guiding Star</a></li>
+</ul>
+
+<ul id="index-spells-H" title="H Spells">
+<li><a href="spells/heroSDefiance.html#hero's-defiance">Hero's Defiance</a></li>
+<li><a href="spells/heroicFinale.html#heroic-finale">Heroic Finale</a></li>
+<li><a href="spells/hiddenSpeech.html#hidden-speech">Hidden Speech</a></li>
+<li><a href="spells/hideCampsite.html#hide-campsite">Hide Campsite</a></li>
+<li><a href="spells/holyWhisper.html#holy-whisper">Holy Whisper</a></li>
+<li><a href="spells/honeyedTongue.html#honeyed-tongue">Honeyed Tongue</a></li>
+<li><a href="spells/hungryPit.html#hungry-pit-">Hungry Pit</a></li>
+<li><a href="spells/hunterSEye.html#hunter's-eye">Hunter's Eye</a></li>
+<li><a href="spells/hunterSHowl.html#hunter's-howl">Hunter's Howl</a></li>
+<li><a href="spells/hydraulicPush.html#hydraulic-push-">Hydraulic Push</a></li>
+<li><a href="spells/hydraulicTorrent.html#hydraulic-torrent-">Hydraulic Torrent</a></li>
+</ul>
+
+<ul id="index-spells-I" title="I Spells">
+<li><a href="spells/illOmen.html#ill-omen">Ill Omen</a></li>
+<li><a href="spells/innocence.html#innocence">Innocence</a></li>
+<li><a href="spells/instantArmor.html#instant-armor-">Instant Armor</a></li>
+<li><a href="spells/instantEnemy.html#instant-enemy">Instant Enemy</a></li>
+<li><a href="spells/invigorate.html#invigorate">Invigorate</a></li>
+<li><a href="spells/invigorate.html#invigorate,-mass">Invigorate, Mass</a></li>
+</ul>
+
+<ul id="index-spells-J" title="J Spells">
+<li><a href="spells/jesterSJaunt.html#jester's-jaunt">Jester's Jaunt</a></li>
+</ul>
+
+<ul id="index-spells-K" title="K Spells">
+<li><a href="spells/keenSenses.html#keen-senses">Keen Senses</a></li>
+<li><a href="spells/kingSCastle.html#king's-castle">King's Castle</a></li>
+<li><a href="spells/knightSCalling.html#knight's-calling">Knight's Calling</a></li>
+</ul>
+
+<ul id="index-spells-L" title="L Spells">
+<li><a href="spells/leadBlades.html#lead-blades-">Lead Blades</a></li>
+<li><a href="spells/lifeBubble.html#life-bubble-">Life Bubble</a></li>
+<li><a href="spells/lightLance.html#light-lance-">Light Lance</a></li>
+<li><a href="spells/lilyPadStride.html#lily-pad-stride">Lily Pad Stride</a></li>
+<li><a href="spells/lockjaw.html#lockjaw">Lockjaw</a></li>
+</ul>
+
+<ul id="index-spells-M" title="M Spells">
+<li><a href="spells/marksOfForbiddance.html#marks-of-forbiddance">Marks Of Forbiddance</a></li>
+<li><a href="spells/maskDweomer.html#mask-dweomer">Mask Dweomer</a></li>
+<li><a href="spells/memoryLapse.html#memory-lapse">Memory Lapse</a></li>
+<li><a href="spells/moonstruck.html#moonstruck">Moonstruck</a></li>
+</ul>
+
+<ul id="index-spells-N" title="N Spells">
+<li><a href="spells/napStack.html#nap-stack-">Nap Stack</a></li>
+<li><a href="spells/naturalRhythm.html#natural-rhythm-">Natural Rhythm</a></li>
+<li><a href="spells/natureSExile.html#nature's-exile">Nature's Exile</a></li>
+<li><a href="spells/negateAroma.html#negate-aroma">Negate Aroma</a></li>
+</ul>
+
+<ul id="index-spells-O" title="O Spells">
+<li><a href="spells/oathOfPeace.html#oath-of-peace">Oath of Peace</a></li>
+<li><a href="spells/oracleSBurden.html#oracle's-burden">Oracle's Burden</a></li>
+</ul>
+
+<ul id="index-spells-P" title="P Spells">
+<li><a href="spells/painStrike.html#pain-strike">Pain Strike</a></li>
+<li><a href="spells/painStrike.html#pain-strike,-mass">Pain Strike, Mass</a></li>
+<li><a href="spells/paladinSSacrifice.html#paladin's-sacrifice">Paladin's Sacrifice</a></li>
+<li><a href="spells/perceiveCues.html#perceive-cues">Perceive Cues</a></li>
+<li><a href="spells/phantasmalRevenge.html#phantasmal-revenge">Phantasmal Revenge</a></li>
+<li><a href="spells/phantasmalWeb.html#phantasmal-web">Phantasmal Web</a></li>
+<li><a href="spells/piedPiping.html#pied-piping-">Pied Piping</a></li>
+<li><a href="spells/pillarOfLife.html#pillar-of-life">Pillar of Life</a></li>
+<li><a href="spells/planarAdaptation.html#planar-adaptation">Planar Adaptation</a></li>
+<li><a href="spells/planarAdaptation.html#planar-adaptation,-mass">Planar Adaptation, Mass</a></li>
+<li><a href="spells/poxPustules.html#pox-pustules">Pox Pustules</a></li>
+<li><a href="spells/protectiveSpirit.html#protective-spirit">Protective Spirit</a></li>
+<li><a href="spells/purgingFinale.html#purging-finale">Purging Finale</a></li>
+<li><a href="spells/purifiedCalling.html#purified-calling">Purified Calling</a></li>
+<li><a href="spells/putrefyFoodAndDrink.html#putrefy-food-and-drink">Putrefy Food and Drink</a></li>
+</ul>
+
+<ul id="index-spells-R" title="R Spells">
+<li><a href="spells/rallyPoint.html#rally-point-">Rally Point</a></li>
+<li><a href="spells/rampart.html#rampart">Rampart</a></li>
+<li><a href="spells/rebuke.html#rebuke">Rebuke</a></li>
+<li><a href="spells/rejuvenateEidolon.html#rejuvenate-eidolon">Rejuvenate Eidolon</a></li>
+<li><a href="spells/rejuvenateEidolon.html#rejuvenate-eidolon,-greater">Rejuvenate Eidolon, Greater</a></li>
+<li><a href="spells/rejuvenateEidolon.html#rejuvenate-eidolon,-lesser">Rejuvenate Eidolon, Lesser</a></li>
+<li><a href="spells/residualTracking.html#residual-tracking">Residual Tracking</a></li>
+<li><a href="spells/resoundingBlow.html#resounding-blow">Resounding Blow</a></li>
+<li><a href="spells/restEternal.html#rest-eternal">Rest Eternal</a></li>
+<li><a href="spells/restfulSleep.html#restful-sleep">Restful Sleep</a></li>
+<li><a href="spells/resurgentTransformation.html#resurgent-transformation">Resurgent Transformation</a></li>
+<li><a href="spells/retribution.html#retribution">Retribution</a></li>
+<li><a href="spells/revivingFinale.html#reviving-finale">Reviving Finale</a></li>
+<li><a href="spells/righteousVigor.html#righteous-vigor">Righteous Vigor</a></li>
+<li><a href="spells/riverOfWind.html#river-of-wind">River of Wind</a></li>
+</ul>
+
+<ul id="index-spells-S" title="S Spells">
+<li><a href="spells/sacredBond.html#sacred-bond">Sacred Bond</a></li>
+<li><a href="spells/sacrificialOath.html#sacrificial-oath">Sacrificial Oath</a></li>
+<li><a href="spells/saddleSurge.html#saddle-surge-">Saddle Surge</a></li>
+<li><a href="spells/sanctifyArmor.html#sanctify-armor">Sanctify Armor</a></li>
+<li><a href="spells/savingFinale.html#saving-finale">Saving Finale</a></li>
+<li><a href="spells/scentTrail.html#scent-trail-">Scent Trail</a></li>
+<li><a href="spells/screech.html#screech">Screech</a></li>
+<li><a href="spells/sculptCorpse.html#sculpt-corpse-">Sculpt Corpse</a></li>
+<li><a href="spells/seamantle.html#seamantle">Seamantle</a></li>
+<li><a href="spells/seekThoughts.html#seek-thoughts">Seek Thoughts</a></li>
+<li><a href="spells/shadowProjection.html#shadow-projection">Shadow Projection</a></li>
+<li><a href="spells/shareLanguage.html#share-language-">Share Language</a></li>
+<li><a href="spells/shareSenses.html#share-senses">Share Senses</a></li>
+<li><a href="spells/sharedWrath.html#shared-wrath">Shared Wrath</a></li>
+<li><a href="spells/shiftingSand.html#shifting-sand">Shifting Sand</a></li>
+<li><a href="spells/sift.html#sift">Sift</a></li>
+<li><a href="spells/sirocco.html#sirocco">Sirocco</a></li>
+<li><a href="spells/sleepwalk.html#sleepwalk">Sleepwalk</a></li>
+<li><a href="spells/slipstream.html#slipstream">Slipstream</a></li>
+<li><a href="spells/snakeStaff.html#snake-staff">Snake Staff</a></li>
+<li><a href="spells/solidNote.html#solid-note">Solid Note</a></li>
+<li><a href="spells/spark.html#spark-">Spark</a></li>
+<li><a href="spells/spikedPit.html#spiked-pit">Spiked Pit</a></li>
+<li><a href="spells/spiritualAlly.html#spiritual-ally">Spiritual Ally</a></li>
+<li><a href="spells/spite.html#spite">Spite</a></li>
+<li><a href="spells/stayTheHand.html#stay-the-hand">Stay the Hand</a></li>
+<li><a href="spells/stoneCall.html#stone-call">Stone Call</a></li>
+<li><a href="spells/stoneFist.html#stone-fist">Stone Fist</a></li>
+<li><a href="spells/stormbolts.html#stormbolts">Stormbolts</a></li>
+<li><a href="spells/strongJaw.html#strong-jaw">Strong Jaw</a></li>
+<li><a href="spells/stumbleGap.html#stumble-gap-">Stumble Gap</a></li>
+<li><a href="spells/stunningFinale.html#stunning-finale">Stunning Finale</a></li>
+<li><a href="spells/suffocation.html#suffocation">Suffocation</a></li>
+<li><a href="spells/suffocation.html#suffocation,-mass">Suffocation, Mass</a></li>
+<li><a href="spells/summonEidolon.html#summon-eidolon">Summon Eidolon</a></li>
+<li><a href="spells/swarmSkin.html#swarm-skin-">Swarm Skin</a></li>
+</ul>
+
+<ul id="index-spells-T" title="T Spells">
+<li><a href="spells/thornBody.html#thorn-body">Thorn Body</a></li>
+<li><a href="spells/threefoldAspect.html#threefold-aspect">Threefold Aspect</a></li>
+<li><a href="spells/thunderingDrums.html#thundering-drums">Thundering Drums</a></li>
+<li><a href="spells/timelyInspiration.html#timely-inspiration">Timely Inspiration</a></li>
+<li><a href="spells/tirelessPursuers.html#tireless-pursuers">Tireless Pursuers</a></li>
+<li><a href="spells/tirelessPursuit.html#tireless-pursuit">Tireless Pursuit</a></li>
+<li><a href="spells/touchOfGracelessness.html#touch-of-gracelessness">Touch of Gracelessness</a></li>
+<li><a href="spells/touchOfTheSea.html#touch-of-the-sea">Touch of the Sea</a></li>
+<li><a href="spells/transmogrify.html#transmogrify">Transmogrify</a></li>
+<li><a href="spells/transmutePotionToPoison.html#transmute-potion-to-poison">Transmute Potion to Poison</a></li>
+<li><a href="spells/treasureStitching.html#treasure-stitching-">Treasure Stitching</a></li>
+<li><a href="spells/trueForm.html#true-form">True Form</a></li>
+<li><a href="spells/tsunami.html#tsunami">Tsunami</a></li>
+<li><a href="spells/twilightKnife.html#twilight-knife-">Twilight Knife</a></li>
+<li><a href="spells/twinForm.html#twin-form">Twin Form</a></li>
+</ul>
+
+<ul id="index-spells-U" title="U Spells">
+<li><a href="spells/unfetter.html#unfetter">Unfetter</a></li>
+<li><a href="spells/universalFormula.html#universal-formula">Universal Formula</a></li>
+<li><a href="spells/unwillingShield.html#unwilling-shield">Unwilling Shield</a></li>
+<li><a href="spells/unwittingAlly.html#unwitting-ally">Unwitting Ally</a></li>
+</ul>
+
+<ul id="index-spells-V" title="V Spells">
+<li><a href="spells/vanish.html#vanish">Vanish</a></li>
+<li><a href="spells/veilOfPositiveEnergy.html#veil-of-positive-energy">Veil of Positive Energy</a></li>
+<li><a href="spells/venomousBolt.html#venomous-bolt">Venomous Bolt</a></li>
+<li><a href="spells/versatileWeapon.html#versatile-weapon">Versatile Weapon</a></li>
+<li><a href="spells/vomitSwarm.html#vomit-swarm">Vomit Swarm</a></li>
+<li><a href="spells/vortex.html#vortex">Vortex</a></li>
+</ul>
+
+<ul id="index-spells-W" title="W Spells">
+<li><a href="spells/wakeOfLight.html#wake-of-light-">Wake of Light</a></li>
+<li><a href="spells/wallOfLava.html#wall-of-lava">Wall of Lava</a></li>
+<li><a href="spells/wallOfSuppression.html#wall-of-suppression-">Wall of Suppression</a></li>
+<li><a href="spells/wanderingStarMotes.html#wandering-star-motes">Wandering Star Motes</a></li>
+<li><a href="spells/wardTheFaithful.html#ward-the-faithful">Ward the Faithful</a></li>
+<li><a href="spells/weaponOfAwe.html#weapon-of-awe">Weapon of Awe</a></li>
+<li><a href="spells/windsOfVengeance.html#winds-of-vengeance">Winds of Vengeance</a></li>
+<li><a href="spells/worldWave.html#world-wave-">World Wave</a></li>
+<li><a href="spells/wrath.html#wrath">Wrath</a></li>
+<li><a href="spells/wrathfulMantle.html#wrathful-mantle">Wrathful Mantle</a></li>
+</ul></div>
+
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Advanced Spell Index",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

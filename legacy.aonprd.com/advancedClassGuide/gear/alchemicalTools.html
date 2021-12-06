@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Alchemist Tools</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "alchemicalTools.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "alchemicalTools.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "alchemicalTools.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "../classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../spells/index.html">Spells</a></li>
+						<li><a href = "../spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "index.html">Gear and Magic Items</a></li>
+						<li><a href = "../designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "alchemicalTools.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "alchemicalTools.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "alchemicalTools.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "alchemicalTools.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "alchemicalTools.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "alchemicalTools.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "alchemicalTools.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "alchemicalTools.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "alchemicalTools.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "alchemicalTools.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "alchemicalTools.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "alchemicalTools.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "alchemicalTools.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "alchemicalTools.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "alchemicalTools.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "alchemicalTools.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "alchemicalTools.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "alchemicalTools.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h3 id = "advanced-class-guide-alchemical-tools">Alchemical Tools</h3>
+<p>Alchemical tools are adventuring items that can prove extremely useful in a variety of situations, including battles, dungeon-delving, or crafting other alchemical items. All of these tools can be made by a character with the <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (alchemy) skill; the DC to craft each item is listed in Table 5&ndash;3: Alchemical Tools.</p>
+
+<table>
+	<caption>Alchemical Tools</caption>
+	<thead>
+		<tr><th>Item</th><th>Cost</th><th>Weight</th><th>Craft DC</th></tr>
+	</thead>
+	<tbody>
+		<tr><td><a href = "alchemicalTools.html#bloodvine-rope">Bloodvine rope</a></td><td>200 gp</td><td>5 lbs.</td><td>30</td></tr>
+		<tr><td><a href = "alchemicalTools.html#gravelly-tonic">Gravelly tonic</a></td><td>50 gp</td><td>&mdash;</td><td>25</td></tr>
+		<tr><td><a href = "alchemicalTools.html#light-fire-ink">Light fire ink, vial</a></td><td>40 gp</td><td>&mdash;</td><td>25</td></tr>
+		<tr><td><a href = "alchemicalTools.html#liquid-traction">Liquid traction</a></td><td>25 gp</td><td>1 lb.</td><td>20</td></tr>
+		<tr><td><a href = "alchemicalTools.html#lozenge-of-the-songbird">Lozenge of the songbird</a></td><td>50 gp</td><td>&mdash;</td><td>25</td></tr>
+		<tr><td><a href = "alchemicalTools.html#masking-scent">Masking scent, animal</a></td><td>25 gp</td><td>&mdash;</td><td>20</td></tr>
+		<tr><td><a href = "alchemicalTools.html#masking-scent">Masking scent, humanoid</a></td><td>50 gp </td><td>&mdash;</td><td>25</td></tr>
+		<tr><td><a href = "alchemicalTools.html#masking-scent">Masking scent, magical beast</a></td><td>100 gp</td><td>&mdash;</td><td>30</td></tr>
+		<tr><td><a href = "alchemicalTools.html#oil-of-the-masters">Oil of the masters</a></td><td>50 gp</td><td>&frac12; lb.</td><td>25</td></tr>
+		<tr><td><a href = "alchemicalTools.html#pathstones">Pathstones </a></td><td>50 gp </td><td>1 lb.</td><td>25</td></tr>
+		<tr><td><a href = "alchemicalTools.html#reagent-paper">Reagent paper</a></td><td>1 gp</td><td>&mdash;</td><td>15</td></tr>
+		<tr><td><a href = "alchemicalTools.html#tracker-snuff">Tracker's snuff</a></td><td>200 gp</td><td>&mdash; </td><td>30</td></tr>
+		<tr><td><a href = "alchemicalTools.html#tracking-powder">Tracking powder </a></td><td>30 gp </td><td>&mdash;</td><td>25</td></tr>
+		<tr><td><a href = "alchemicalTools.html#vomit-capsule">Vomit capsule </a></td><td>12 gp </td><td>&mdash;</td><td>15</td></tr>
+		<tr><td><a href = "alchemicalTools.html#woad-painting-kit">Woad paint (1 block)</a></td><td>60 gp</td><td>&mdash;</td><td>30</td></tr>
+		<tr><td><a href = "alchemicalTools.html#woad-painting-kit">Woad painting kit </a></td><td>300 gp </td><td>1 lb.</td><td>30</td></tr>
+	</tbody>
+</table>
+
+<p id = "bloodvine-rope" class = "stat-block-title">Bloodvine Rope</p>
+<p class = "stat-block-1"><strong>Price</strong> 200 gp; <strong>Weight</strong> 5 lbs.</p>
+<p class = "stat-block">This 50-foot length of tough, lightweight rope is made from alchemically treated bloodvine, a rare scarlet-colored vine that grows only in warm jungle environments. Though prized by climbers for its durability, bloodvine can also be used to bind creatures. Bloodvine rope has a hardness of 5 and 10 hit points, and can be broken with a DC 30 Strength check. A creature bound by bloodvine rope can escape with a DC 35 <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> check or a DC 30 Strength check.</p>
+
+
+<p id = "gravelly-tonic" class = "stat-block-title">Gravelly Tonic</p>
+<p class = "stat-block-1"><strong>Price</strong> 50 gp; <strong>Weight</strong> &mdash;</p>
+<p class = "stat-block">This tonic is sludgy, and its scent resembles the tang of iron shavings. Drinking gravelly tonic causes your voice to deepen and become more grating for 1 hour, granting you a +5 alchemical bonus on <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> checks.</p>
+
+
+<p id = "light-fire-ink" class = "stat-block-title">Light Fire Ink</p>
+<p class = "stat-block-1"><strong>Price</strong> 40 gp; <strong>Weight</strong> &mdash;</p>
+<p class = "stat-block">This alchemically infused ink ensures secret messages destroy themselves after being read. If light strikes the ink after it has dried, chemicals cause it to spontaneously combust within about a minute. The combustion is small&mdash;not significant enough to ignite anything but paper. Ink used on other materials such as stone or wood simply vanishes, leaving no trace of the writing. A vial of this ink holds enough to write 10 brief messages of no more than 50 words each.</p>
+
+
+<p id = "liquid-traction" class = "stat-block-title">Liquid Traction</p>
+<p class = "stat-block-1"><strong>Price</strong> 25 gp; <strong>Weight</strong> 1 lb.</p>
+<p class = "stat-block">This glass bottle is filled with sticky goo prized by sailors for the additional traction it grants on ship decks. When applied to the soles of footwear and allowed to dry for 1 hour, liquid traction grants a +2 alchemical bonus on <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> checks to keep your balance and a +2 bonus to CMD against bull rush. Liquid traction has no effect when it comes into contact with very slick or unnaturally slick surfaces such as ice or <i><a href="../../coreRulebook/spells/grease.html#grease">grease</a></i>.</p>
+
+
+<p id = "lozenge-of-the-songbird" class = "stat-block-title">Lozenge of the Songbird</p>
+<p class = "stat-block-1"><strong>Price</strong> 50 gp; <strong>Weight</strong> &mdash;</p>
+<p class = "stat-block">This honey-coated candy is made of soothing reagents. If eaten, it takes 1 round to begin working, then grants a +2 alchemical bonus on all <a href="../../coreRulebook/skills/perform.html#perform">Perform</a> (sing) checks for 1 hour.</p>
+
+
+<p id = "masking-scent" class = "stat-block-title">Masking Scent</p>
+<p class = "stat-block-1"><strong>Price</strong> varies; <strong>Weight</strong> &mdash;</p>
+<p class = "stat-block-1"><strong>Animal</strong> 25 GP; <strong>Humanoid</strong> 50 GP; <strong>Magical beast</strong> 100 gp</p>
+<p class = "stat-block">This item comes in a variety of scents (matching any one animal, humanoid, or magical beast). One vial applied to a single Medium-sized creature changes its scent to that of the masking scent's creature for 8 hours.</p>
+
+
+<p id = "oil-of-the-masters" class = "stat-block-title">Oil of the Masters</p>
+<p class = "stat-block-1"><strong>Price</strong> 50 gp; <strong>Weight</strong> &frac12; lb.</p>
+<p class = "stat-block">This gold-tinted oil smells of wood shavings. When you apply it to the strings of a stringed instrument or the body of a woodwind, it improves the quality of the instrument's sound. For 1 hour, anyone playing the instrument gains a +2 alchemical bonus on the appropriate <a href="../../coreRulebook/skills/perform.html#perform">Perform</a> check.</p>
+
+<p id = "pathstones" class = "stat-block-title">Pathstones</p>
+<p class = "stat-block-1"><strong>Price</strong> 50 gp; <strong>Weight</strong> 1 lb.</p>
+<p class = "stat-block">Similar to sunrods, these small white pebbles are alchemically treated so that they shed a soft light once activated by striking them together. The glow is faint&mdash;just barely enough to illuminate the stone. Though not bright enough to serve as an effective light source, they can be placed in patterns to create messages or laid out in a path, marking it for others to follow.</p>
+
+
+<p id = "reagent-paper" class = "stat-block-title">Reagent Paper</p>
+<p class = "stat-block-1"><strong>Price</strong> 1 gp; <strong>Weight</strong> &mdash;</p>
+<p class = "stat-block">This slip of paper can aid in the identifying of liquids. Its color changes in accordance to basic traits such as acidity, salinity, or magic. This confers a +2 alchemical bonus on any <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (alchemy) or <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> check made to identify potions or other liquids.</p>
+
+
+<p id = "tracker-snuff" class = "stat-block-title">Tracker's Snuff</p>
+<p class = "stat-block-1"><strong>Price</strong> 200 gp; <strong>Weight</strong> &mdash;</p>
+<p class = "stat-block">When inhaled, this finely ground, alchemically treated tobacco greatly enhances your senses, especially your sense of smell. It grants the scent ability and a +2 alchemical bonus on <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> checks for 1 hour. However, once the effect wears off your body is wracked with terrible pain as your joints begin to stiffen and seize, dealing 1d2 points of Dexterity damage to you.</p>
+
+
+<p id = "tracking-powder" class = "stat-block-title">Tracking Powder</p>
+<p class = "stat-block-1"><strong>Price</strong> 30 gp; <strong>Weight</strong> &mdash;</p>
+<p class = "stat-block">When you scatter this very fine pale blue powder on the ground, it reveals the tracks of any creatures or individuals that have passed through the area within the last 48 hours. The powder also grants you a +10 alchemical bonus on <a href="../../coreRulebook/skills/survival.html#survival">Survival</a> checks to follow tracks or, if you aren't trained in <a href="../../coreRulebook/skills/survival.html#survival">Survival</a>, instead allows you to track creatures whose prints are revealed by the powder for up to 1 mile using <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> instead of <a href="../../coreRulebook/skills/survival.html#survival">Survival</a>. A single application can cover an area of up to 60 square feet. Tracking powder is sold in small leather pouches that hold 10 applications each.</p>
+
+
+<p id = "vomit-capsule" class = "stat-block-title">Vomit Capsule</p>
+<p class = "stat-block-1"><strong>Price</strong> 12 gp; <strong>Weight</strong> &mdash;</p>
+<p class = "stat-block">These small capsules consist of a concentrated mix of nausea-inducing herbs. To use a capsule, you bite down and ingest its contents, which almost immediately cause you to projectile vomit. The vomiting lasts 1 full round, during which you can take no other actions. The following round you recover fully, and suffer no other ill effects. These capsules are most often used by rogues working in teams to create distractions and spectacles in order to draw people's attention away from their activities, as well as by those interested in faking illness, such as pugilists trying to throw fights or criminals seeking to create chaos during an arrest.</p>
+
+
+<p id = "woad-painting-kit" class = "stat-block-title">Woad Painting Kit</p>
+<p class = "stat-block-1"><strong>Price</strong> 300 gp; <strong>Weight</strong> 1 lb.</p>
+<p class = "stat-block">Though associated with the woad plant, the alchemical ingredients of this blue paste can vary considerably. When preparing a spell, you can grind the spell’s material components and mix them into this paste to paint the components directly onto your flesh, allowing you to cast that spell as if you had applied Eschew Materials. Additionally, by painting complex woad designs that symbolize gestures for 10 minutes and succeeding at a <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> check with a DC equal to 15 + the spell level, you can also cast the spell as if you had applied Still Spell. You can have only one spell painted on you in this way at a time, and if you cast the prepared spell or the paint is removed for any reason, the effects of the woad paint are spent.</p>
+<p class = "stat-block">Woad paint is sold in small, concentrated blocks (costing 60 gp each) that must be ground into paste on a wooden or stone pallet with a small amount of water and material spell components. A typical kit contains a pallet and 5 small blocks of paint. One block produces enough paint for 10 component designs or one stilled spell design. Woad paint has no benefit for a non-spellcaster.</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Alchemist Tools",globalNavPath=[{ href: '/pathfinderRPG/prd/advancedClassGuide/gear/index.html', name: 'Gear and Magic Items'}];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

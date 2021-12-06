@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Duels</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "duels.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "duels.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "duels.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "duels.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "duels.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "duels.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "duels.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "duels.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "duels.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "duels.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "duels.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "duels.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "duels.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "duels.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../classes/ninja.html">Ninja</a></li>
+						<li><a href = "../classes/samurai.html">Samurai</a></li>
+						<li><a href = "../classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "duels.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "duels.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "duels.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "duels.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "duels.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "duels.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "duels.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="duels">Duels</h1>
+				
+				
+				<p>There is no form of combat more civilized than the duel. Be it with steel or spells, duels are used to settle disputes in situations where a chaotic melee would be disruptive or even illegal. Although duels are often considered honorable, this does not necessarily make them any less deadly. Duels often permit combatants to engage in more even fights than the fracas of the battlefield, allowing the true skill, power, and wit of each to determine the victor.</p>
+				
+				<h2 id="starting-a-duel">Starting a Duel</h2>
+				<p>A duel is a form of combat, but unlike ordinary combat, the participants must all agree to willingly enter the duel and abide by its rules. If either side breaks the rules, that side is considered the loser of the duel, regardless of any other outcome, and if its members continue aggressive action, the fight continues using the standard rules for combat.</p>
+				<p>The rules for a duel are usually quite simple, but might vary if all of the participants are of a particular class or if all of the participants agree on specific restrictions or guidelines. Such discussions typically happen before the duel, allowing both sides to properly prepare, but as with all elements of a duel, this is not always the case. Most duels utilize the following simple rules.</p>
+				<p>&bull;&nbsp;Each participant must fight alone and can receive no help from outside sources, with the exception of other creatures who are taking part in the duel, such as familiars, animal companions, or other bonded creatures. If the duel consists of more than one participant on a side, those fighting alongside one another are free to aid each other.</p>
+				<p>&bull;&nbsp;The types of weapons that can be used in the duel are agreed upon before the duel begins. Typical restrictions include only using melee weapons, ranged weapons, unarmed (or natural) weapons, magic, or any combination of these. The rules of a duel may require all duel participants to use the same weapon or types of attacks. This is especially the case in duels that require swords, spells, or firearms. Absent any such rules, any type of weapon is permissible.</p>
+				<p>&bull;&nbsp;The duel usually lasts until one of the combatants has been knocked unconscious or otherwise prevented from continuing. Spells such as <i><a href="../../coreRulebook/spells/holdPerson.html#hold-person" >hold person</a></i> do not end duels, but <i><a href="../../coreRulebook/spells/fleshToStone.html#flesh-to-stone" >flesh to stone</a></i> certainly does, assuming the target fails her saving throw. Some duels go to the death and are only ended when one duelist or team is cut to pieces or reduced to a pile of smoking ashes. Other duels last until first blood, first strike, or a number of successful attacks. These latter types of duels are usually intended to settle disputes where a creature's death is not the required end result.</p>
+				<p>&bull;&nbsp;In the case of duels that exclusively use magic, additional rules might prohibit the use of summoned or conjured creatures, unless the duel is performed by such creatures at the behest of the spellcasters involved (as is common among druids and summoners).</p>
+				<p>&bull;&nbsp;In the case of duels exclusively among warriors, additional rules typically prohibit the use of poison or even entire types of attacks (such as prohibiting ranged attacks, or requiring the use of firearms). In addition, most such duels prohibit the use of magic that affects other participants, although spells that enhance the caster are sometimes allowed.</p>
+				<h2 id="duel-combat">Duel Combat</h2>
+				<p>A duel functions much like ordinary combat, with a few notable exceptions. </p>
+				<p>At the start of the duel, each participant makes an initiative check, just like in standard combat. Because duels are always planned and expected, there is never a surprise round. Alternatively, some duels start off with each side facing off, waiting for the other to flinch or break resolve. In such cases, substitute a <a href="../../coreRulebook/skills/bluff.html#bluff" >Bluff</a>, <a href="../../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a>, or <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> check in place of the standard initiative check. The skill used is decided by the individual participants and is reflective of their approach to the duel.</p>
+				<p>At the beginning of each round, the participants check the status of the duel (the GM may want to mark the beginning of each round in some way during initiative tracking as a reminder to check this status). So long as all participants agree to continue dueling, the duel goes on. If any one of the participants withdraws from the duel, the duel immediately ends for all participants, even those who would see it continue. The participant or side that ended the duel is considered the loser of the duel. The duel's remaining participants can, among themselves, agree to resume the duel, but this is considered a separate duel from the previous one and does not involve those who withdrew from the duel.</p>
+				<p>Each participant in a duel can act normally on his turn, but his actions must target or affect either himself or one of the other duel participants (either an ally or an opponent). For example, a warrior might make an attack with his bow against anyone participating in the duel, or he might administer a potion to a wounded ally also involved in the duel, but he could not attack anyone other than a participant. Similarly a dueling wizard could not cast <i><a href="../../coreRulebook/spells/haste.html#haste" >haste</a> </i>on allies outside the duel while excluding himself, but he could cast it on his allies if he was among the targets. The same goes for offensive spells, such as <i><a href="../../coreRulebook/spells/fireball.html#fireball" >fireball</a></i>&mdash;the dueling caster must include one of his opponents in the duel among the targets of the spell, and could not affect some nearby creatures to the exclusion of his opponent.</p>
+				<p>In addition to his normal actions, each participant in a duel may use one of a number of special immediate actions, available only to characters participating in a duel. They may take dueling counters, dueling dodges, dueling parries, or dueling resolve actions, each of which is described below.</p>
+				<h2 id="dueling-counter">Dueling Counter</h2>
+				<p>Each participant in a duel can take a special action called a dueling counter. A dueling counter is similar to a counterspell, but is easier to use.</p>
+				<p>When a dueling opponent tries to cast a spell, the targeted spellcaster can make a <a href="../../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> check (DC 15 + the spell's level) as a free action. If the check succeeds, she can identify her opponent's spell and can attempt a dueling counter. If it fails, she cannot attempt a dueling counter against that spell (although special actions are still available to her).</p>
+				<p>A dueling counter is an immediate action that does not provoke attacks of opportunity. To attempt a dueling counter, the countering duelist must expend a spell or spell slot of a level equal to or higher than that of the spell being cast. Note that characters who cast spells spontaneously (such as bards, oracles, and sorcerers) must choose which exact spell they are using to counterspell in addition to the slot being used. The countering duelist must then make a caster level check against a DC of 15 + the spell's caster level. Unlike when using a true counterspell action (which requires a readied action), even expending an exact copy of the spell being cast does not guarantee success. The caster attempting the counterspell receives a bonus or penalty on her check depending upon the level of the spell slot being expended and the exact spell used, as noted in the table below. If the check is successful, the spell is countered&mdash;it is negated and the spell is lost. If not, the spell takes effect as normal and the duelist attempting to counter the spell takes a &ndash;2 penalty on any saving throws made against the spell's effect.</p>
+				<p>Alternatively, a spellcaster can use <i><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic" >dispel magic</a></i> or <i><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic-greater" >greater dispel magic</a></i> as a dueling counter. When a duelist spellcaster does so, he does not need to identify the spell being cast, can counter a spell of any level, and must succeed at a caster level check against a DC of 11 + the spell's caster level. When <i><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic" >dispel magic</a></i> is used as a dueling counter, it is not modified by any of the circumstances in the table below.</p>
+				<p>Because readying a counterspell is its own action, a dueling spellcaster can prepare to counterspell and make a dueling counter in the same round. This is only useful if the participant is facing multiple opponents, or someone with access to the <a href="../../coreRulebook/feats.html#quicken-spell" >Quicken Spell</a> feat or other abilities that allow casting two spells in the same round.</p>
+				
+				<table id="table-dueling-counter-modifiers"><caption>Table: Dueling Counter Modifiers</caption>
+				<thead><tr><th>Circumstance</th><th>Check Modifier</th></tr></thead>
+				<tr><td>Spell is of a different school</td><td>&ndash;2</td></tr>
+				<tr><td>Spell is of the same school, but not the same spell</td><td>+2</td></tr>
+				<tr><td>Spell is of a higher level than the spell being countered</td><td>+1/level above</td></tr>
+				<tr><td>Spell is the same as the spell being countered</td><td>+10</td></tr></table><br>
+				
+				<h2 id="dueling-dodge">Dueling Dodge</h2>
+				<p>Each participant in a duel can take a special action called a dueling dodge. This special maneuver gives a duelist a temporary bonus to his AC and on Reflex saves, but leaves him vulnerable to other attacks until the start of his next turn.</p>
+				<p>Whenever a character participating in a duel is the target of a melee attack, a ranged attack, a supernatural ability, or a spell or spell-like ability from another participant of the duel, he can declare that he is making a dueling dodge as an immediate action. This grants him a +4 circumstance bonus to his AC and on any Reflex saving throws he must make as a result of the attack. This bonus only applies until the attack that triggered the immediate action is resolved. If the attacker can make more than one such attack, all subsequent attacks are resolved as normal. This immediate action must be declared before the attack is resolved. If the attack does not require an attack roll or a Reflex saving throw, the immediate action is still spent, but with no effect.</p>
+				<p>Once the attack is resolved, the creature that attempted a dueling dodge takes a &ndash;2 penalty to his AC and on all Reflex saving throws until the start of his next turn (even if the duel ends).</p>
+				<h2 id="dueling-parry">Dueling Parry</h2>
+				<p>Each participant in a duel can take a special action called a dueling parry. This special action allows the duelist to deflect a blow from a melee or ranged attack directed at her. A dueling parry cannot deflect spell or firearm ranged attacks.</p>
+				<p>Whenever a character participating in a duel is the target of a melee or ranged attack from another participant of the duel, she can declare that she is attempting to parry the attack as an immediate action. She must then make an attack roll with whatever weapon she is currently wielding, using her full base attack bonus but with a &ndash;5 penalty. If this attack roll is equal to or greater than the attack roll being made against her, she parries the attack and it is considered a miss. If the duelist attempting the parry is unarmed, she takes a further &ndash;2 on the attempt. If the duelist possesses the parry class feature, she can attempt this dueling parry once per round without spending an immediate action if she is using her parry class feature.</p>
+				<p>This dueling parry only applies to one attack. Other attacks made by the same attacker are resolved normally. If the attack is a hit and a critical threat, but would be parried by the duelist, it is still a hit, but no confirmation roll is made and damage is rolled normally.</p>
+				<h2 id="dueling-resolve">Dueling Resolve</h2>
+				<p>Once per duel, a character can use a special action called dueling resolve. This special action allows a duelist to keep on fighting despite a crippling spell or terrible injury.</p>
+				<p>Whenever a character participating in a duel fails a Fortitude or Will saving throw, or is reduced to fewer than 0 hit points, he can use dueling resolve as an immediate action. If he failed a Fortitude or Will saving throw, he can attempt another saving throw, using the same bonus. If this second saving throw is a success, the spell or effect prompting the saving throw does not take effect until the end of his next turn (even though its duration begins immediately). If he is reduced to fewer than 0 hit points (but not slain), he does not fall unconscious or gain the staggered condition, and can act normally until the end of his next turn, at which point he becomes staggered or unconscious based on his current hit points.</p>
+				<p>If, by the end of the character's next turn, the spell or effect ends or he is brought to above 0 hit points, he is fatigued, but otherwise suffers no ill effect. A character can only use this ability once per duel.</p>
+				<h2 id="duels-and-performance-combat">Duels and Performance Combat</h2>
+				<p>If you are using the duel rules within a performance combat, successfully performing a dueling counter, dueling dodge, or dueling resolve all allow the combatant to make a performance combat check as a free action. Since the dueling counter, dueling dodge, and dueling resolve action are all immediate actions, and are usually not done on the character's turn, this means that the combatant using one of these dueling actions must spend a victory point to make the performance combat check (not an action).</p>
+				<h2 id="duel-results">Duel Results</h2>
+				<p>While duels can be treated as another form of combat, they are usually undertaken to resolve a dispute between colleagues or rivals and are not usually intended to end in death. As a result, duels are usually fought with a specific prize in mind. </p>
+				<p>Arcane academies are known for having duels to determine important faculty positions and as competitions between students for social standing and prizes. In some places, duels are so common that special areas are constructed specifically for duels. Such dueling yards are sometimes made with special enchantments that can be turned on for dueling competitions. Such fields typically convert all damage to nonlethal damage and prevent magic that instantly slays a foe or does permanent harm. That is not to say that accidents don't happen, and more than one student has lost a limb or even her life while within such "safe" fields.</p>
+				<p>Fighters, paladins, cavaliers, and other characters that primarily rely on weapon attacks usually engage in duels to settle points of honor, but can also be rather particular in choosing their dueling space.</p>
+				<p>Regardless of the conditions, most duels are serious affairs, with each side putting pride, honor, treasure, and even their lives on the line to win the day. While villains might try to cheat the rules and exploit every advantage, nobler duelists see the competition as a chance to prove their superiority on the field of battle using only their skills and wits, rather than chance or superior numbers.</p>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Duels",globalNavPath=[{ href: '/pathfinderRPG/prd/ultimateCombat/combat/introduction.html', name: 'Mastering Combat' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

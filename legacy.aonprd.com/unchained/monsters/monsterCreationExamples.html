@@ -1,0 +1,864 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Monster Creation Examples</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "monsterCreationExamples.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "monsterCreationExamples.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "monsterCreationExamples.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "monsterCreationExamples.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "monsterCreationExamples.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "monsterCreationExamples.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "monsterCreationExamples.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "monsterCreationExamples.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "monsterCreationExamples.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "monsterCreationExamples.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "monsterCreationExamples.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "../skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../magic/index.html">Magic</a></li>
+						<li><a href = "index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "monsterCreationExamples.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "monsterCreationExamples.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "monsterCreationExamples.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "monsterCreationExamples.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "monsterCreationExamples.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "monsterCreationExamples.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "monsterCreationExamples.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "monsterCreationExamples.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "monsterCreationExamples.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "monsterCreationExamples.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+<link rel="stylesheet" href = "../../include/prd-stylesheet.css" />
+<h1>Monster Creation Examples</h1>
+<p>To show the end result of the simple monster creation process described in this chapter, this section shows existing Pathfinder RPG monsters recreated using this system.</p>
+
+<h2 id = "extended-example-medusa">Extended Example: Medusa</h2>
+<p>This long-form example gives a detailed breakdown of monster creation from start to finish, resulting in a new medusa archer. This illustrates the steps of the process, and shows how to think about creating a monster using this variant system. Throughout, it compares the new medusa to the one found <a href="../../bestiary/medusa.html#medusa">in the <em>Bestiary</em></a>.</p>
+
+	<h3>Monster Concept</h3>
+	<p>The GM wants to create a monster much like the traditional medusa: a humanlike creature with serpents for hair and the ability to turn her enemies to stone. He also wants to make her a skilled archer and focus on that set of abilities. He wants to use the medusa at the same level that she'd normally appear, so he chooses CR 7 (and the medusa's Hit Dice are treated as 7 as well). He knows some other basic details: the medusa is a lawful evil monstrous humanoid, her size is Medium, and she has a base speed of 30 feet.</p>
+
+	<h3>Step 1: Array</h3>
+	<p>This medusa should be a formidable enemy, so the GM chooses the combatant array. He fills out her statistics from the CR 7 entry on <a href="step1.html#combatant-main-statistics">Table: Combatant Main Statistics</a>. She has AC 22, touch 13, flat-footed 16. Her saving throw bonuses are: Fortitude +8, Reflex +8, and Will +6. Her CMD is 24, and she has 93 hit points. The GM makes a note of all these statistics, and won't need to change any of them unless a later graft or option alters them.</p>
+	<p>Next, the GM makes a note of the remaining values he'll be deciding on later. The monster's special abilities will have a DC of 15. He doesn't plan to give her spells, so he skips the spell DC column. Since he's already pretty sure how he wants the medusa's ability modifiers to shake out, he gives her a +6 Dexterity modifier, a +4 Constitution modifier, and a +2 Charisma modifier. Her initiative ends up being +6, matching her Dexterity modifier. He marks down that he'll later pick one master skill with a +15 modifier and two good skills with +12 modifiers. In Step 7, he'll also pick one combat option and one option from any category.</p>
+	<p>The last things to record from the arrays are the medusa's attacks. He wants her to be best at ranged attacks, so he uses the high weapon attack column for a longbow attack, marking down attack bonuses of +13/+8 and noting that he'll later pick a value adding up to 22 points of damage. For her melee attacks, she uses the snakes that make up her hair, and the GM decides that she uses the low weapon attacks table since she's primarily focused on ranged attacks. He marks down a +10/+5 attack bonus that deals 16 points of damage.</p>
+	<p>Her attacks and damage are significantly stronger than those of the monster in the <em>Bestiary</em>. The GM decides to leave them this way for now, planning to compensate by weakening some of her other abilities in later steps.</p>
+
+	<h3>Step 2: Creature Type or Class Graft</h3>
+	<p>Since the medusa is a monstrous humanoid, the GM applies the automatic traits for that creature type graft, giving her darkvision 60 feet. After toying with using the ranger class graft, he decides that doesn't really fit with his concept for the monster. Instead, he uses the monstrous humanoid graft, increasing the medusa's Reflex to +10 and Will to +8, and increasing her attack bonuses to +12/+7 for her snake hair attack and +15/+10 for the longbow. He looks at the elective adjustment of one additional good skill and decides not to give her the extra good skill.</p>
+
+	<h3>Steps 3&ndash;6: Skipped Steps</h3>
+	<p>The medusa doesn't need a subtype, isn't based on a template, is size Medium, and doesn't have spells, so the GM skips steps 3 through 6. Most monsters created using this system will skip at least one or two steps of the monster creation process.</p>
+
+	<h3>Step 7: Monster Options</h3>
+	<p>The GM is sure that he wants the medusa to have a petrifying gaze attack. Because the gaze option uses the same rules as the preexisting universal monster rule, the GM writes down a gaze with a 30-foot range that turns targets to stone permanently. He uses the ability DC from the combatant array: 15. This ability uses up the medusa's one combat option, leaving her with one option from any category.</p>
+	<p>The GM adds poison to the snake bite attack, and decides that the medusa can apply it to her arrows too. Choosing the poison option gives him the base statistics of the poison plus two advantages, plus an additional two advantages since the medusa is CR 7. He ends up with a poison that is: type injury, frequency 1/round for 6 rounds, effect 1d3 Str, cure 2 consecutive saves. This is pretty close to the poison in the Bestiary, though with a lower DC, which is what the GM wants. Though an ability such as all-around vision could be replicated by giving the medusa unflankable as a bonus monster option, the GM decides against that to help compensate for the medusa's stronger attacks.</p>
+
+	<h3>Step 8: Skills</h3>
+	<p>The medusa will have one master skill and two good skills. The GM picks <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> as the master skill instead of leaving it at its default of good, since that fits an archer. The medusa now has <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> +15. For the good skills, he wants one social skill and one physical skill that uses the medusa's Dexterity, so he gives her <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +12 and <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> +12.</p>
+
+	<h3>Step 9: Damage</h3>
+	<p>The longbow attack will deal a total of 22 points of damage, using a d8 damage die (since it's a longbow). The GM finds the 21&ndash;23 row and 1d8 column on <a href="step9.html#damage-dice-values">Table: Damage Dice Values</a>, learning that the attack should deal 1d8+18 points of damage. Thinking about it further, the GM wants to roll more damage dice, just to make the monster's damage a little more variable and sort of like the Manyshot feat. So instead, he uses 2d8+12. The melee attack will deal 16 points of damage using a d4, which turns out to be 1d4+14.</p>
+
+	<h3>Reality Check</h3>
+	<p>Looking back over the monster, the GM thinks that the petrifying gaze plus the powerful attacks make the medusa too powerful. He decides that the part that seems strangest is the damage, particularly since the medusa uses a longbow and gets to deal poison with all her attacks. He decides to trim the damage down as though the medusa were 2 CR lower. The longbow attack now deals 2d8+6 points of damage, and the snake bite deals 1d4+8 points of damage.</p>
+
+	<p class = "stat-block-title">Medusa <span class = "stat-block-cr">CR/HD 7</span></p>
+	<p class = "stat-block-1"><strong>Init</strong> +6; <strong>Perception</strong> +15 (darkvision 60 ft.)</p>
+	<p class = "stat-block-1"><strong>Size </strong>Medium; <strong>Speed</strong> 30 ft.</p>
+	<p class = "stat-block-breaker">Defenses</p>
+	<p class = "stat-block-1"><strong>AC</strong> 22 (touch 13, flat-footed 16); <strong>Fort</strong> +8, <strong>Ref </strong>+10, <strong>Will</strong> +10; <strong>CMD</strong> 24</p>
+	<p class = "stat-block-1"><strong>hp </strong>93<span class="charoverride-14"> </span></p>
+	<p class = "stat-block-breaker">Attacks</p>
+	<p class = "stat-block-1"><strong>Melee</strong> snake bite +12/+7 (1d4+8 plus poison)</p>
+	<p class = "stat-block-1"><strong>Ranged</strong> longbow (range 100 ft.) +15/+10 (2d8+6/&times;3 plus poison)</p>
+	<p class = "stat-block-1"><strong>Attack Options </strong>(DC 15) petrifying gaze (turn to stone permanently, 30 ft., Fort negates), poison (<em>type</em> injury, <em>frequency</em> 1/round for 6 rounds, <em>effect</em> 1d3 Str, <em>cure</em> 2 consecutive saves); <strong>CMB</strong> +13</p>
+	<p class = "stat-block-breaker">Statistics</p>
+	<p class = "stat-block-1"><strong>Dex</strong> +6, <strong>Con</strong> +4, <strong>Cha</strong> +2; <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +12, <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> +12</p>
+	<p class = "stat-block-1"><strong>XP</strong> 3,200; LE monstrous humanoid</p>
+
+
+<h2 id = "monster-examples">Monster Examples</h2>
+<p>The following sections re-create monsters found in the Bestiary. Many of them are variants on the initial creatures, meant to mimic creatures with class levels or alternate ability sets. Each entry includes a breakdown of the significant choices made for the monster, discounting simple procedures such as selecting the attacks and damage for a monster that don't deviate from its array numbers. After each breakdown, the monster's statistics appear in a new format unique to this book, as described in the sidebar above.</p>
+<p>The monsters are presented in order from simplest to most complex. Some of the monsters that appear early on&mdash;particularly combatants&mdash;have a high CR but simple abilities, so they're still easy to create.</p>
+
+	<h3 id = "worg">Worg</h3>
+	<p>The worg is easy to create since it's a simple monster.</p>
+	<p><strong>Array</strong>: The worg is a combatant. As a feral, vicious creature, it has a high Strength. The GM also decides that the worg should have an Intelligence modifier lower than 0.</p>
+	<p><strong>Creature Type</strong>: As a magical beast, the worg gains darkvision and low-light vision as automatic traits. Because it doesn't have a class graft, it also gains the statistics adjustments, increasing its Fortitude from +3 to +5, its Reflex from +3 to +5, and its attack bonus from +4 to +6.</p>
+	<p><strong>Options</strong>: The worg gets one combat option, and gains improved combat maneuver (trip).</p>
+	<p><strong>Skills</strong>: Because it's not a very smart creature, the worg's two good skills are both physical, but it gains <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> as its master skill.</p>
+
+		<p class = "stat-block-title">Worg <span class = "stat-block-cr">CR/HD 2</span></p>
+		<p class = "stat-block-1"><strong>Init</strong> +2; <strong>Perception</strong> +10 (darkvision 60 ft., low-light vision)</p>
+		<p class = "stat-block-1"><strong>Size </strong>Medium; <strong>Speed</strong> 50 ft.</p>
+		<p class = "stat-block-breaker">Defenses</p>
+		<p class = "stat-block-1"><strong>AC</strong> 16 (touch 12, flat-footed 12); <strong>Fort</strong> +5, <strong>Ref </strong>+5, <strong>Will</strong> +1; <strong>CMD</strong> 16 (20 vs. trip)</p>
+		<p class = "stat-block-1"><strong>hp </strong>22</p>
+		<p class = "stat-block-breaker">Attacks</p>
+		<p class = "stat-block-1"><strong>Melee</strong> bite +6 (1d6+7 plus improved combat maneuver [trip])</p>
+		<p class = "stat-block-1"><strong>CMB</strong> +4 (+8 trip)</p>
+		<p class = "stat-block-breaker">Statistics</p>
+		<p class = "stat-block-1"><strong>Str</strong> +3, <strong>Dex</strong> +2, <strong>Con</strong> +1, <strong>Int</strong> &ndash;2; <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> +7, <a href="../../coreRulebook/skills/survival.html#survival">Survival</a> +7</p>
+		<p class = "stat-block-1"><strong>XP</strong> 600; NE magical beast</p>
+
+	<h3 id = "mastodon">Mastodon</h3>
+	<p>As a big, dumb creature, the mastodon requires only a few adjustments despite its high CR.</p>
+	<p><strong>Array</strong>: The mastodon uses the combatant array. The GM adjusts its ability modifiers to +9, +4, and &ndash;1 instead of +7, +4, and +3 to reflect its major emphasis on Strength and its poor Dexterity.</p>
+	<p><strong>Creature Type</strong>: As an animal, the mastodon gains low-light vision and a &ndash;4 Intelligence modifier. It increases its Fortitude and Will saves from +10 to +12.</p>
+	<p><strong>Size</strong>: Since it's Huge, the mastodon reduces its touch AC to 13 and increases its flat-footed AC to 21. It also increases its CMB to 21 and its CMD to 30.</p>
+	<p><strong>Options</strong>: The mastodon uses its combat option to gain improved combat maneuver (bull rush), which also adjusts its CMB to bull rush and its CMD against bull rush. It uses its any option for extra hit points, increasing its hp from 126 to 151.</p>
+	<p><strong>Skills</strong>: Since it's not very intelligent, the mastodon has master <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> but no other skills.</p>
+	<p><strong>Damage</strong>: The mastodon uses the two natural attacks column for its attacks and damage. The two attacks have the same average damage value, but use different damage dice.</p>
+
+		<p class = "stat-block-title">Mastodon <span class = "stat-block-cr">CR/HD 9</span></p>
+		<p class = "stat-block-1"><strong>Init</strong> &ndash;1; <strong>Perception</strong> +17 (low-light vision)</p>
+		<p class = "stat-block-1"><strong>Size </strong>Huge (15 ft.); <strong>Speed</strong> 40 ft.</p>
+		<p class = "stat-block-breaker">Defenses</p>
+		<p class = "stat-block-1"><strong>AC</strong> 25 (touch 13, flat-footed 21); <strong>Fort</strong> +12, <strong>Ref </strong>+12, <strong>Will</strong> +8; <strong>CMD</strong> 30 (33 vs. bull rush)</p>
+		<p class = "stat-block-1"><strong>hp </strong>151</p>
+		<p class = "stat-block-breaker">Attacks</p>
+		<p class = "stat-block-1"><strong>Melee</strong> gore (reach 15 ft.) +17 (2d8+12), slam (reach 15 ft.) +17 (2d6+15)</p>
+		<p class = "stat-block-1"><strong>Attack Options </strong>improved combat maneuver (bull rush);<strong> CMB</strong> +21 (+25 bull rush)</p>
+		<p class = "stat-block-breaker">Statistics</p>
+		<p class = "stat-block-1"><strong>Str</strong> +9, <strong>Dex</strong> &ndash;1, <strong>Con</strong> +4, <strong>Int</strong> &ndash;4</p>
+		<p class = "stat-block-1"><strong>XP</strong> 6,400; N animal</p>
+
+	<h3 id = "griffon">Griffon</h3>
+	<p>A majestic aerial hunter, the griffon's only significant adjustments come from its type and size.</p>
+	<p><strong>Array</strong>: The griffon uses the combatant array. To reflect its balance between speed and toughness, the griffon has ability modifiers of +4, +2, and +2 instead of +4, +3, and +1.</p>
+	<p><strong>Creature Type</strong>: As a magical beast, the griffon gains darkvision 60 feet and low-light vision. Its Fortitude and Reflex bonuses both increase from +5 to +7, and its attack bonuses increase from +8 to +10 for its bite and from +3 to +5 for its talons.</p>
+	<p><strong>Size</strong>: Since it's Large, the griffon changes its touch AC from 12 to 11 and its flat-footed AC from 14 to 15. Its CMB increases from +10 to +12, and its CMD rises from 20 to 21.</p>
+	<p><strong>Options</strong>: The griffon spends both its options on combat options to gain pounce and rake.</p>
+	<p><strong>Skills</strong>: The griffon's master skill is <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> to reflect its keen vision, and its good skills in <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> and <a href="../../coreRulebook/skills/fly.html#fly">Fly</a> give it agility in the air.</p>
+
+		<p class = "stat-block-title">Griffon <span class = "stat-block-cr">CR/HD 4</span></p>
+		<p class = "stat-block-1"><strong>Init</strong> +2; <strong>Perception</strong> +12 (darkvision 60 ft., low-light vision, scent)</p>
+		<p class = "stat-block-1"><strong>Size </strong>Large (10 ft.); <strong>Speed</strong> 30 ft., fly 80 ft. (average)</p>
+		<p class = "stat-block-breaker">Defenses</p>
+		<p class = "stat-block-1"><strong>AC</strong> 19 (touch 11, flat-footed 15); <strong>Fort</strong> +7, <strong>Ref </strong>+7, <strong>Will</strong> +3; <strong>CMD</strong> 21</p>
+		<p class = "stat-block-1"><strong>hp </strong>44</p>
+		<p class = "stat-block-breaker">Attacks</p>
+		<p class = "stat-block-1"><strong>Melee</strong> bite<span class="charoverride-14"> </span>+10 (1d6+10), 2 talons +5 (1d6+4)</p>
+		<p class = "stat-block-1"><strong>Attack Options </strong>(DC 13) pounce, rake;<strong> CMB</strong> +12</p>
+		<p class = "stat-block-breaker">Statistics</p>
+		<p class = "stat-block-1"><strong>Str</strong> +4, <strong>Dex</strong> +2, <strong>Con</strong> +2, <strong>Int</strong> &ndash;3; <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +9, <a href="../../coreRulebook/skills/fly.html#fly">Fly</a> +9</p>
+		<p class = "stat-block-1"><strong>XP</strong> 1,200; N magical beast</p>
+
+	<h3 id = "goblin-fighter">Goblin Fighter</h3>
+	<p>The goblin fighter is a suitable minion for any overlord, provided it doesn't burn the fortress down.</p>
+	<p><strong>Array</strong>: The goblin fighter is a combatant, as required by the fighter class graft.</p>
+	<p><strong>Creature Type</strong>: Because of the fighter class graft, the goblin does not gain anything from the humanoid type.</p>
+	<p><strong>Class</strong>: As a fighter, the goblin increases both its Fortitude and Reflex bonuses from +1 to +2. It also receives one combat option from its fighter graft.</p>
+	<p><strong>Subtype</strong>: The goblin fighter gains <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> as a good skill from the goblinoid subtype.</p>
+	<p><strong>Size</strong>: The goblin's Small size increases its touch AC and flat-footed AC by 1, reduces its CMB by 2, and reduces its CMD by 1. It gains <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> as a good skill (again; see below).</p>
+	<p><strong>Options</strong>: A fighter of this CR typically gets one combat option, but this goblin has two additional options to reflect its quick combat style. The accuracy, dodge expert, and improved initiative options are all calculated in the goblin fighter's statistics. The adjustment to flat-footed AC from dodge expert would have made the goblin's flat-footed AC too low for a monster at this CR, so the goblin gains only a +1 bonus to touch AC and no penalty to its flat-footed AC. Goblins are able to see in the dark, so the goblin gains the darkvision option. As usual, adding a sense didn't count against the goblin's number of options.</p>
+	<p><strong>Skills</strong>: The goblin already gets <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> as a good skill from both the goblinoid and Small grafts, so instead it was discretionarily given <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> as a second master skill.</p>
+
+		<p class = "stat-block-title">Goblin Fighter <span class = "stat-block-cr">CR/HD 1/2</span></p>
+		<p class = "stat-block-1"><strong>Init</strong> +7; <strong>Perception</strong> +5 (darkvision 60 ft.)</p>
+		<p class = "stat-block-1"><strong>Size </strong>Small; <strong>Speed</strong> 30 ft.</p>
+		<p class = "stat-block-breaker">Defenses</p>
+		<p class = "stat-block-1"><strong>AC</strong> 15 (touch 14, flat-footed 13); <strong>Fort</strong> +2, <strong>Ref </strong>+2, <strong>Will</strong> +0; <strong>CMD</strong> 12</p>
+		<p class = "stat-block-1"><strong>hp </strong>11</p>
+		<p class = "stat-block-breaker">Attacks</p>
+		<p class = "stat-block-1"><strong>Melee</strong> short sword +3 (1d4+2/19&ndash;20)</p>
+		<p class = "stat-block-1"><strong>Ranged</strong> shortbow (range 60 ft.) +3 (1d4+2/&times;3)</p>
+		<p class = "stat-block-1"><strong>CMB</strong> +1</p>
+		<p class = "stat-block-breaker">Statistics</p>
+		<p class = "stat-block-1"><strong>Str</strong> +2, <strong>Dex</strong> +3, <strong>Con</strong> +1, <strong>Cha </strong>&ndash;2; <a href="../../coreRulebook/skills/ride.html#ride">Ride</a> +8, <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> +8, <a href="../../coreRulebook/skills/swim.html#swim">Swim</a> +5</p>
+		<p class = "stat-block-1"><strong>XP</strong> 200; CE humanoid (goblinoid) fighter 1</p>
+
+	<h3 id = "zombie-minotaur">Zombie Minotaur</h3>
+	<p>Some templates have complicated alterations, but the zombie template is fairly easy to apply.</p>
+	<p><strong>Array</strong>: The zombie uses the combatant array, as suggested in the zombie template.</p>
+	<p><strong>Creature Type</strong>: The undead graft gives the creature darkvision 60 feet and undead immunities, and sets its Constitution to &mdash;. It also increases the minotaur's Will save from +1 to +3. The elective adjustments for mindless undead will be covered by the template graft.</p>
+	<p><strong>Template</strong>: The zombie template makes the minotaur staggered, changes its Intelligence to &mdash;, gives it DR 5/slashing, and gives it the extra hit points option to represent a zombie's resilience.</p>
+	<p><strong>Size</strong>: As a Large creature, the minotaur changes its touch AC from 12 to 11 and its flat-footed AC from 12 to 13. Its CMB increases from +2 to +4, and its CMD goes from 14 to 15.</p>
+	<p><strong>Options</strong>: The extra hit points option from the zombie template increases the zombie's hp from 16 to 19. Although the zombie template adds more options than the monster would normally have, the zombie still gains the powerful charge option to keep the minotaur feel.</p>
+
+		<p class = "stat-block-title">Zombie Minotaur <span class = "stat-block-cr">CR/HD 1</span></p>
+		<p class = "stat-block-1"><strong>Init</strong> +0; <strong>Perception</strong> +6 (darkvision 60 ft.)</p>
+		<p class = "stat-block-1"><strong>Size </strong>Large (10 ft.); <strong>Speed</strong> 30 ft.</p>
+		<p class = "stat-block-breaker">Defenses</p>
+		<p class = "stat-block-1"><strong>AC</strong> 14 (touch 11, flat-footed 13); <strong>Fort</strong> +2, <strong>Ref </strong>+2, <strong>Will</strong> +3; <strong>CMD</strong> 15</p>
+		<p class = "stat-block-1"><strong>hp </strong>19; <strong>DR </strong>5/slashing; <strong>Immune</strong> undead immunities</p>
+		<p class = "stat-block-1"><strong>Weakness</strong> staggered</p>
+		<p class = "stat-block-breaker">Attacks</p>
+		<p class = "stat-block-1"><strong>Melee</strong> gore (reach 10 ft.) +2 (1d6+4) or slam (reach 10 ft.) +2 (1d8+3)</p>
+		<p class = "stat-block-1"><strong>Attack Options </strong>powerful charge;<strong> CMB</strong> +4</p>
+		<p class = "stat-block-breaker">Statistics</p>
+		<p class = "stat-block-1"><strong>Str</strong> +3, <strong>Con</strong> &mdash;, <strong>Int</strong> &mdash;, <strong>Wis</strong> +1, <strong>Cha</strong> +2</p>
+		<p class = "stat-block-1"><strong>XP</strong> 400; NE undead</p>
+
+	<h3 id = "bat-swarm">Bat Swarm</h3>
+	<p>The bat swarm is straightforward to create, but its swarm subtype is complicated and grants it additional features that make it unlike other monsters.</p>
+	<p><strong>Array</strong>: Since a bat swarm is made up of creatures with only animal intelligence, the combatant array is the only choice for it that makes sense.</p>
+	<p><strong>Creature Type</strong>: The animal type increases the bat swarm's Fortitude and Reflex bonuses each from +3 to +5 and grants low-light vision, but it mandates an Intelligence modifier of either &ndash;4 or &ndash;5. Bats are slightly more intelligent than some other animals, so they have a &ndash;4 modifier.</p>
+	<p><strong>Subtype</strong>: The swarm subtype grants the bat swarm its various immunities, vulnerability to area effects, swarm traits, swarm attack, and distraction.</p>
+	<p><strong>Size</strong>: The bat swarm is made up of many Diminutive creatures, so it gains a +4 bonus to touch and flat-footed AC. As a swarm, it doesn't have CMB or CMD, so the size adjustments to those numbers are ignored. It also gains <a href="../../coreRulebook/skills/fly.html#fly">Fly</a> and <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> as master skills.</p>
+	<p><strong>Options</strong>: The bat swarm's option is a weaker variant of the bleed attack option.</p>
+	<p><strong>Skills</strong>: Other than the master skills from size, the bat swarm's echolocation enhances its ability to notice things, so it gets <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> as a master skill. That's already plenty of skills for an animal, so the bat swarm doesn't have any good skills.</p>
+
+		<p class = "stat-block-title">Bat Swarm <span class = "stat-block-cr">CR/HD 2</span></p>
+		<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Perception</strong> +10 (blindsense 20 ft., low-light vision)</p>
+		<p class = "stat-block-1"><strong>Size </strong>Diminutive (10 ft.); <strong>Speed</strong> 5 ft., fly 40 ft. (good)</p>
+		<p class = "stat-block-breaker">Defenses</p>
+		<p class = "stat-block-1"><strong>AC</strong> 16 (touch 16, flat-footed 16); <strong>Fort</strong> +5, <strong>Ref </strong>+5, <strong>Will</strong> +1</p>
+		<p class = "stat-block-1"><strong>hp </strong>22; <strong>Immune</strong> bull rush, critical hits, flanking, grapple, spells that target a specific number of creatures, trip, weapon damage</p>
+		<p class = "stat-block-1"><strong>Weakness</strong> +50% damage from area effects</p>
+		<p class = "stat-block-1"><strong>Defense Options</strong> swarm traits</p>
+		<p class = "stat-block-breaker">Attacks</p>
+		<p class = "stat-block-1"><strong>Melee</strong> swarm (all targets in the swarm's space) always hits (1d6 plus 1 bleed)</p>
+		<p class = "stat-block-1"><strong>Attack Options </strong>(DC 11) distraction</p>
+		<p class = "stat-block-breaker">Statistics</p>
+		<p class = "stat-block-1"><strong>Str</strong> &ndash;4, <strong>Dex</strong> +3, <strong>Con</strong> +1, <strong>Int</strong> &ndash;4, <strong>Wis</strong> +2; <a href="../../coreRulebook/skills/fly.html#fly">Fly</a> +10, <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> +10</p>
+		<p class = "stat-block-1"><strong>XP</strong> 600; N animal (swarm)</p>
+
+	<h3 id = "imp">Imp</h3>
+	<p>A vexing adversary, this imp has a variety of extra options to confound its enemies.</p>
+	<p><strong>Array</strong>: The imp uses the expert array, with the Reflex and Will saves swapped. The imp has a Strength modifier of &ndash;4 because its size and build make it so physically weak.</p>
+	<p><strong>Creature Type</strong>: The outsider graft gives the imp darkvision 60 feet, increases its Will saving throw from +1 to +3, and increases its attack bonus from +4 to +6. It gains the additional master skill mentioned under elective adjustments.</p>
+	<p><strong>Subtype</strong>: The devil subtype gives the imp the see in darkness sense, energy resistance 10 to acid and cold, immunity to fire and poison, the summon allies option, and telepathy to a range of 100 feet.</p>
+	<p><strong>Size</strong>: Because the imp is Tiny, its touch and flat-footed AC increased from 10 to 12.</p>
+	<p><strong>Spells</strong>: The secondary magic option gives the imp some spell-like abilities.</p>
+	<p><strong>Options</strong>: Instead of the single monster option that would be normal for an expert of its CR, the imp has a total of five options: change shape, dodge expert, poison, and modified versions of constant invisibility and secondary magic. Dodge expert changes the imp's AC from 14 (touch 12, flat-footed 12) to 16 (touch 16, flat-footed 10). By the numbers, the imp's flat-footed AC would drop to 6, but the GM sets it as 10 as part of the reality checking process. For its poison, the imp gets two advantages, which were used to remove the onset time and change the frequency to 1/round for 6 rounds. Instead of the normal effect of constant invisibility, the imp gains invisibility at will, affecting only itself. The modified secondary magic option gives the imp one once-per-day spell and two constant spells instead of two once-per-day spells.</p>
+	<p><strong>Skills</strong>: The imp has an extra master skill from the outsider graft, and gains <a href="../../coreRulebook/skills/fly.html#fly">Fly</a> and <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> from its size graft. The +10 bonus from change shape is included in the <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> skill.</p>
+	<p><strong>Damage</strong>: The imp uses the low damage value on its sting to compensate for being a low-CR creature with poison.</p>
+
+		<p class = "stat-block-title">Imp <span class = "stat-block-cr">CR/HD 2</span></p>
+		<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Perception</strong> +7 (darkvision 60 ft., see in darkness)</p>
+		<p class = "stat-block-1"><strong>Size </strong>Tiny (2-1/2 ft.); <strong>Speed</strong> 20 ft., fly 50 ft. (perfect)</p>
+		<p class = "stat-block-breaker">Defenses</p>
+		<p class = "stat-block-1"><strong>AC</strong> 16 (touch 16, flat-footed 6); <strong>Fort</strong> +1, <strong>Ref </strong>+5, <strong>Will</strong> +3; <strong>CMD</strong> 14; <strong>Concentration</strong> +4</p>
+		<p class = "stat-block-1"><strong>hp </strong>20; <strong>Immune</strong> fire, poison; <strong>Resist</strong> acid 10,cold 10</p>
+		<p class = "stat-block-breaker">Attacks</p>
+		<p class = "stat-block-1"><strong>Melee</strong> sting (reach 0 ft.) +6 (1d4+5 plus poison)</p>
+		<p class = "stat-block-1"><strong>Attack Spell-Like Abilities </strong>(DC 13 + spell's level) 1/day&mdash;<em>suggestion</em></p>
+		<p class = "stat-block-1"><strong>Attack Options </strong>(DC 13) poison (<em>type</em> injury, <em>frequency</em> 1/round for 6 rounds, <em>effect</em> 1d2 Dex damage, <em>cure</em> 1 save);<strong> CMB</strong> +2</p>
+		<p class = "stat-block-breaker">Statistics</p>
+		<p class = "stat-block-1"><strong>Utility Spell-Like Abilities</strong> constant&mdash;<em>detect good, detect magic</em>; at will&mdash;<em>invisibility</em> (self only)</p>
+		<p class = "stat-block-1"><strong>Utility Options</strong><span class="charoverride-14"> </span><em>change shape </em>(boar, giant spider, rat, or raven, <a href="../../coreRulebook/spells/beastShape.html#beast-shape-i"><em>beast shape I</em></a>), summon allies (imp, 35%)</p>
+		<p class = "stat-block-1"><strong>Str</strong> &ndash;4, <strong>Dex</strong> +3, <strong>Int</strong> +1, <strong>Cha</strong> +2; <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +10, <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> +10, <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> +12, <a href="../../coreRulebook/skills/fly.html#fly">Fly</a> +10, <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana) +7, <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (planes) +7, <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> +10; telepathy 100 ft.</p>
+		<p class = "stat-block-1"><strong>XP</strong> 600; LE outsider (devil, evil, extraplanar, lawful)</p>
+
+	<h3 id = "fire-giant">Fire Giant</h3>
+	<p>This monster uses different gear than the Bestiary fire giant, but has the same CR.</p>
+	<p><strong>Array</strong>: The fire giant uses the combatant array.</p>
+	<p><strong>Creature Type</strong>: As a humanoid, the giant increases its Fort save from +11 to +13.</p>
+	<p><strong>Subtype</strong>: The giant graft gives the giant low-light vision and adds <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> as a good skill.</p>
+	<p><strong>Size</strong>: Being Large changes the giant's touch AC from 15 to 14 and its flat-footed AC from 19 to 20. The giant's CMB increases from +18 to +20.</p>
+	<p><strong>Options</strong>: The monster has one combat option and one of any type. The extra armor option alters the giant's AC to 28 (touch 8, flat-footed 24) and makes its speed 30 feet instead of 40 feet. The magic weapon (bane) option causes the giant's greataxe to deal additional damage to dwarves. The monster has rock throwing as a bonus option, and 3 points of that attack's bludgeoning damage have been replaced with 1d6 points of fire damage since the giant heats the rocks.</p>
+	<p><strong>Skills</strong>: This giant is primarily a brute, so its master skill in <a href="../../coreRulebook/skills/climb.html#climb">Climb</a> and the good skill from the giant subtype are sufficient to cover its skills. The GM ignores the remaining two good skills from the combatant array.</p>
+	<p><strong>Damage</strong>: The giant is less adept at ranged attacks, so its rock throw attack uses low attack and damage values.</p>
+
+		<p class = "stat-block-title">Fire Giant <span class = "stat-block-cr">CR/HD 10</span></p>
+		<p class = "stat-block-1"><strong>Init</strong> +0; <strong>Perception</strong> +14 (low-light vision)</p>
+		<p class = "stat-block-1"><strong>Size </strong>Large (10 ft.); <strong>Speed</strong> 30 ft.</p>
+		<p class = "stat-block-breaker">Defenses</p>
+		<p class = "stat-block-1"><strong>AC</strong> 28 (touch 8, flat-footed 24); <strong>Fort</strong> +13, <strong>Ref </strong>+11, <strong>Will</strong> +9; <strong>CMD</strong> 30</p>
+		<p class = "stat-block-1"><strong>hp </strong>143; <strong>Immune</strong> fire</p>
+		<p class = "stat-block-1"><strong>Weakness</strong> vulnerability to cold</p>
+		<p class = "stat-block-1"><strong>Defensive Options</strong> rock throwing</p>
+		<p class = "stat-block-breaker">Attacks</p>
+		<p class = "stat-block-1"><strong>Melee</strong> <em>dwarf-bane greataxe</em> (reach 10 ft.) +18/+13/+8 (3d6+19/&times;3 [+2d6 against dwarves]) or 2 slams (reach 10 ft.) +18 (1d8+21)</p>
+		<p class = "stat-block-1"><strong>Ranged</strong> rock (range 120 ft.) +13 (1d8+15 plus 1d6 fire)</p>
+		<p class = "stat-block-1"><strong>CMB</strong> +20</p>
+		<p class = "stat-block-breaker">Statistics</p>
+		<p class = "stat-block-1"><strong>Str</strong> +7, <strong>Con</strong> +5, <strong>Wis</strong> +3; <a href="../../coreRulebook/skills/climb.html#climb">Climb</a> +18, <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +14</p>
+		<p class = "stat-block-1"><strong>XP</strong> 9,600; LE humanoid (fire, giant)</p>
+
+	<h3 id = "satyr">Satyr</h3>
+	<p>With its unique pipes, the satyr requires a custom ability not included in the monster options.</p>
+	<p><strong>Array</strong>: As a skillful social creature with a magical bent, the satyr uses the expert array with options to cover its magical abilities.</p>
+	<p><strong>Creature Type</strong>: Because of the fey graft, the satyr gains low-light vision. It increases its Reflex from +3 to +5 and its Will from +7 to +9. Its attack bonuses drop from +8 to +6. It has the elective adjustment that grants one additional master skill.</p>
+	<p><strong>Spells</strong>: The satyr can channel magical effects through his pipes, so he gains his spells as spell-like abilities. These are chosen on a case-by-case basis instead of using a spell list.</p>
+	<p><strong>Options</strong>: The satyr uses its one social option for persuasive, uses its any option for damage reduction, and has a bonus pipes ability. Pipes doesn't have a corresponding monster option because it's so specific to satyrs. It's a custom ability based on the Bestiary satyr's pipes, but simplified and using the standard ability DC for the satyr's CR.</p>
+	<p><strong>Skills</strong>: Due to being a fey with the expert array, the satyr has four master skills and two good skills.</p>
+	<p><strong>Damage</strong>: Instead of having a dagger attack like the satyr in the Bestiary, this one uses only its horn attack in melee. The satyr's ranged attacks use the low damage value (but the high attack value).</p>
+
+		<p class = "stat-block-title">Satyr <span class = "stat-block-cr">CR/HD 4</span></p>
+		<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Perception</strong> +12 (low-light vision)</p>
+		<p class = "stat-block-1"><strong>Size </strong>Medium; <strong>Speed</strong> 40 ft.</p>
+		<p class = "stat-block-breaker">Defenses</p>
+		<p class = "stat-block-1"><strong>AC</strong> 17 (touch 10, flat-footed 12); <strong>Fort</strong> +3, <strong>Ref </strong>+5, <strong>Will</strong> +9; <strong>CMD</strong> 18</p>
+		<p class = "stat-block-1"><strong>hp </strong>40; <strong>DR </strong>5/cold iron</p>
+		<p class = "stat-block-breaker">Attacks</p>
+		<p class = "stat-block-1"><strong>Melee</strong> horns +6 (1d6+13)</p>
+		<p class = "stat-block-1"><strong>Ranged</strong> shortbow (range 60 ft.) +6 (1d6+10/&times;3)</p>
+		<p class = "stat-block-1"><strong>Attack Spell-Like Abilities </strong>(DC 14 + spell's level) 1/day&mdash;<em>fear</em>; at will&mdash;<em>charm person</em>, <em>sleep, suggestion</em></p>
+		<p class = "stat-block-1"><strong>Attack Options </strong>(DC 15) pipes; <strong>CMB</strong> +6</p>
+		<p class = "stat-block-breaker">Statistics</p>
+		<p class = "stat-block-1"><strong>Utility Options</strong> persuasive</p>
+		<p class = "stat-block-1"><strong>Dex</strong> +3, <strong>Wis</strong> +1, <strong>Cha</strong> +4; <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> +12, <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> +9, <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +9, <a href="../../coreRulebook/skills/perform.html#perform">Perform</a> (wind) +12, <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> +12</p>
+		<p class = "stat-block-1"><strong>XP</strong> 1,200; CN fey</p>
+		<p class = "stat-block-breaker">Special Abilities</p>
+		<p class = "stat-block-1"><strong>Pipes (Su)</strong> A satyr can play haunting melodies on his panpipes to affect all creatures within a 60-foot radius with a spell (Will DC 15 negates). Each time it uses this ability, the satyr chooses <em>charm person</em>, <em>fear</em>, <em>sleep</em>, or <em>suggestion</em>. A creature that succeeds at its save can't be affected by the same set of pipes for 24 hours.</p>
+
+	<h3 id = "frost-giant-explorer">Frost Giant Explorer</h3>
+	<p>This creature has access to nature magic, much like a druid would. However, turning it into a spellcaster would make it feel unlike a burly frost giant. Instead, this stat block starts with the combatant array and draws inspiration from the options of the druid class graft. This monster is meant to fight alongside a mastodon (see page 244) as a CR 13 encounter.</p>
+	<p><strong>Array</strong>: The frost giant uses the combatant array and gains its spellcasting from its magic options. Its Reflex and Will save bonuses are swapped.</p>
+	<p><strong>Creature Type</strong>: Because the monster's saving throws are uniformly high, it has a &ndash;2 penalty to Reflex instead of increasing any save from the humanoid graft.</p>
+	<p><strong>Class</strong>: Though the giant doesn't use the druid graft, many of its options are drawn from there.</p>
+	<p><strong>Subtype</strong>: The giant subtype grants low-light vision and gives <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> as a good skill.</p>
+	<p><strong>Size</strong>: Because it's Large, the giant decreases its touch AC from 17 to 16 and raises its flat-footed AC from 21 to 22. Its CMB changes from +21 to +23, and its CMD goes from 32 to 33.</p>
+	<p><strong>Spells</strong>: The giant gains a few spells from the Animal spell list due to the secondary magic option. Even though that option says to take the primary spells from the spell lists, it's reasonable to pick and choose from among both the primary and secondary spells of the monster's CR band, as was done here.</p>
+	<p><strong>Options</strong>: Instead of one of its combat options, the giant gains the powerful summons magic option. It spends its other combat option on rock throwing and its any option on secondary magic.</p>
+	<p><strong>Skills</strong>: With its good skill from the giant subtype, the explorer has only one master skill, but a well-rounded set of good skills.</p>
+	<p><strong>Damage</strong>: The giant's thrown rock attack uses the low attack and damage values.</p>
+
+		<p class = "stat-block-title">Frost Giant Explorer <span class = "stat-block-cr">CR/HD 12</span></p>
+		<p class = "stat-block-1"><strong>Init</strong> +0; <strong>Perception</strong> +16 (low-light vision)</p>
+		<p class = "stat-block-1"><strong>Size </strong>Large (10 ft.); <strong>Speed</strong> 40 ft.; <strong>Special Movement </strong>terrain stride (ice)</p>
+		<p class = "stat-block-breaker">Defenses</p>
+		<p class = "stat-block-1"><strong>AC</strong> 29 (touch 16, flat-footed 22); <strong>Fort</strong> +13, <strong>Ref </strong>+9, <strong>Will</strong> +13; <strong>CMD</strong> 33;<strong> Concentration</strong> +17</p>
+		<p class = "stat-block-1"><strong>hp </strong>176; <strong>Immune</strong> cold</p>
+		<p class = "stat-block-1"><strong>Weakness</strong> vulnerability to fire</p>
+		<p class = "stat-block-1"><strong>Defensive Options</strong> rock throwing</p>
+		<p class = "stat-block-breaker">Attacks</p>
+		<p class = "stat-block-1"><strong>Melee</strong> spear (reach 10 ft.) +21/+16/+11 (2d6+27/&times;3) or 2 slams (reach 10 ft.) +21 (1d8+27)</p>
+		<p class = "stat-block-1"><strong>Ranged</strong> rock (range 120 ft.) +15 (1d8+21)</p>
+		<p class = "stat-block-1"><strong>CMB</strong> +23</p>
+		<p class = "stat-block-breaker">Statistics</p>
+		<p class = "stat-block-1"><strong>Utility Spells</strong> 1/day&mdash;<a href="../../coreRulebook/spells/beastShape.html#beast-shape-iv"><em>beast shape IV</em></a> (animal only), <a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-vii"><em>summon nature's ally VII</em></a></p>
+		<p class = "stat-block-1"><strong>Utility Options</strong> powerful summons</p>
+		<p class = "stat-block-1"><strong>Str</strong> +8, <strong>Con</strong> +4, <strong>Wis</strong> +5; <a href="../../coreRulebook/skills/climb.html#climb">Climb</a> +16, <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +16, <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nature) +20, <a href="../../coreRulebook/skills/survival.html#survival">Survival</a> +16</p>
+		<p class = "stat-block-1"><strong>XP</strong> 19,200; CE humanoid (cold, giant)</p>
+
+	<h3 id = "vampire-cleric">Vampire Cleric</h3>
+	<p>For an alternative to the vampire sorcerer in the Bestiary, this vampire is a cleric of a slightly higher CR.</p>
+	<p><strong>Array</strong>: This creature uses the spellcaster array so it can take the cleric class graft.</p>
+	<p><strong>Creature Type</strong>: As indicated in the vampire template graft, the vampire must have the undead type. Because it will have the cleric class graft, the vampire gains only the automatic traits from the undead type: darkvision 60 feet, undead immunities, and a Constitution of &mdash;.</p>
+	<p><strong>Class</strong>: The cleric class graft increases the vampire's Fortitude save from +10 to +12 and gives it <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) as a master skill. It automatically gains the channel energy and spontaneous casting options.</p>
+	<p><strong>Subtype</strong>: The vampire has the augmented humanoid subtype, though this doesn't alter its abilities.</p>
+	<p><strong>Template</strong>: The vampire template graft increases the vampire's AC from 23 to 25 and flat-footed AC from 17 to 19. The vampire also gains spider climb as a constant spell-like ability and gets vampire weaknesses. The template gives a large number of options: at-will magic (dominate person), blood drain, change shape, channel resistance, children of the night, create spawn, damage reduction, energy drain, energy resistance 10 (cold and electricity), fast healing 5, and gaseous form. Because the vampire has DR and so many healing abilities, its hit points are calculated as though its CR were 2 lower, giving it 103 hp.</p>
+	<p><strong>Spells</strong>: Because of its violent and cruel nature, this cleric mixes the Evil and War domain spell lists instead of taking spells from one list exclusively. The monster has the special ability from only the War spell list, which increases its attack bonuses by 1.</p>
+	<p><strong>Options</strong>: As a cleric, the monster would normally have one additional option (of any type) beyond what it has here. However, because the monster gains so many abilities from being a vampire, adding yet another option is unnecessary.</p>
+	<p><strong>Skills</strong>: Because of the vampire template, this creature has <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a>, <a href="../../coreRulebook/skills/perception.html#perception">Perception</a>, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a>, and <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> as master skills. The +10 bonus from change shape is included in the <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> skill.</p>
+	<p><strong>Damage</strong>: The slam attack uses the low damage value since it can also bestow negative levels and heal the vampire. The vampire's ranged attack uses the low attack and damage values.</p>
+
+		<p class = "stat-block-title">Vampire Cleric <span class = "stat-block-cr">CR/HD 11</span></p>
+		<p class = "stat-block-1"><strong>Init</strong> +2; <strong>Perception</strong> +19 (darkvision 60 ft.)</p>
+		<p class = "stat-block-1"><strong>Size </strong>Medium; <strong>Speed</strong> 30 ft.;<span class="charoverride-14"> </span><strong>Special Movement </strong><em>spider climb </em>(constant)</p>
+		<p class = "stat-block-breaker">Defenses</p>
+		<p class = "stat-block-1"><strong>AC</strong> 25 (touch 13, flat-footed 19); <strong>Fort</strong> +12, <strong>Ref </strong>+10, <strong>Will</strong> +14; <strong>CMD</strong> 26; <strong>Concentration</strong> +20</p>
+		<p class = "stat-block-1"><strong>hp </strong>103; fast healing 5; <strong>DR </strong>10/magic and silver; <strong>Immune</strong> undead immunities; <strong>Resist </strong>cold 10, electricity 10</p>
+		<p class = "stat-block-1"><strong>Weakness</strong> vampire weaknesses</p>
+		<p class = "stat-block-1"><strong>Defensive Options </strong>channel resistance +4</p>
+		<p class = "stat-block-breaker">Attacks</p>
+		<p class = "stat-block-1"><strong>Melee</strong> scythe +20/+15 (2d4+25/&times;4) or slam +20 (1d4+20 plus energy drain [2 negative levels])</p>
+		<p class = "stat-block-1"><strong>Ranged</strong> light crossbow (range 80 ft.) +15 (1d8+22/19&ndash;20)</p>
+		<p class = "stat-block-1"><strong>Attack Spells </strong>(DC 17 + spell's level) 1/day&mdash;<em>dispel good, slay living</em>; 3/day&mdash;<em>bestow curse, spiritual weapon</em>; at will&mdash;<em>bane</em>, <em>dominate person, inflict light wounds</em></p>
+		<p class = "stat-block-1"><strong>Attack Options </strong>blood drain, channel energy (negative energy), spontaneous casting (inflict); <strong>CMB</strong> +20</p>
+		<p class = "stat-block-breaker">Statistics</p>
+		<p class = "stat-block-1"><strong>Utility Spells</strong> 3/day&mdash;<em>darkness, prayer</em>; at will&mdash;<em>change shape </em>(dire bat or wolf, <a href="../../coreRulebook/spells/beastShape.html#beast-shape-ii"><em>beast shape II</em></a>)</p>
+		<p class = "stat-block-1"><strong>Utility Options</strong> children of the night, create spawn, gaseous form</p>
+		<p class = "stat-block-1"><strong>Str </strong>+8,<strong> Con </strong>&mdash;, <strong>Dex </strong>+2, <strong>Int </strong>+1,<strong> Wis </strong>+9,<strong> Cha</strong> +5; <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> +19, <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> +15, <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) +19, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +19, <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> +19</p>
+		<p class = "stat-block-1"><strong>XP</strong> 12,800; CE undead (augmented humanoid) cleric 10</p>
+
+	<h3 id = "ogre-mage">Ogre Mage</h3>
+	<p>The ogre mage oni are devious shapeshifters who combine martial prowess with magical threats.</p>
+	<p><strong>Array</strong>: The ogre mage's consistent fallback strategy is its mighty greatsword, so it uses the combatant array. Since oni take many roles depending on the situation, the ogre mage has more high ability modifiers than usual. Since the ogre mage's mind is stronger than its reflexes, it switches its Will and Reflex save bonuses.</p>
+	<p><strong>Creature Type</strong>: As an outsider, the ogre mage gains darkvision and +2 on attack rolls and Fortitude saves.</p>
+	<p><strong>Subtype</strong>: The ogre mage has two subtype grafts, and gains options from both of them. The oni subtype grants the change shape and regeneration options. The giant subtype grants low-light vision as well as <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> as a good skill.</p>
+	<p><strong>Size</strong>: The ogre mage's Large size gives it &ndash;1 to touch AC, +1 to flat-footed AC, +2 to CMB, and +1 to CMD.</p>
+	<p><strong>Spells</strong>: The ogre mage took the secondary magic option twice, gaining a set of custom spells that assist with infiltration and combat. It receives darkness and invisibility at will as an additional bonus.</p>
+	<p><strong>Options</strong>: The improved initiative option is included in the ogre mage's statistics.</p>
+	<p><strong>Skills</strong>: The ogre mage is more of a generalist than a specialist, able to handle a variety of situations equally well. Instead of one master skill and two good skills, the versatile ogre mage has five good skills beyond the two it receives from the giant subtype.</p>
+	<p><strong>Damage</strong>: The ogre mage uses the low attack and damage values for its composite longbow.</p>
+
+		<p class = "stat-block-title">Ogre Mage <span class = "stat-block-cr">CR/HD 8</span></p>
+		<p class = "stat-block-1"><strong>Init</strong> +6; <strong>Perception</strong> +13 (darkvision 60 ft., low-light vision)</p>
+		<p class = "stat-block-1"><strong>Size </strong>Large (10 ft.); <strong>Speed</strong> 40 ft., fly 60 ft. (good)</p>
+		<p class = "stat-block-breaker">Defenses</p>
+		<p class = "stat-block-1"><strong>AC</strong> 23 (touch 12, flat-footed 18); <strong>Fort</strong> +11, <strong>Ref </strong>+7, <strong>Will</strong> +9; <strong>CMD</strong> 27; <strong>SR</strong> 19;<strong> Concentration</strong> +12</p>
+		<p class = "stat-block-1"><strong>hp </strong>110; regeneration 5 (acid, fire)</p>
+		<p class = "stat-block-breaker">Attacks</p>
+		<p class = "stat-block-1"><strong>Melee</strong> greatsword (reach 10 ft.) +17/+12 (3d6+15/19&ndash;20)</p>
+		<p class = "stat-block-1"><strong>Ranged</strong> composite longbow (range 110 ft.) +13/+8 (2d6+12/&times;3)</p>
+		<p class = "stat-block-1"><strong>Attack Spell-Like Abilities </strong>(DC 13 + spell's level) 1/day&mdash; <em>charm monster</em>, <a href="../../coreRulebook/spells/coneOfCold.html#cone-of-cold"><em>cone of cold</em></a>, <a href="../../coreRulebook/spells/deepSlumber.html#deep-slumber"><em>deep slumber</em></a></p>
+		<p class = "stat-block-1"><strong>CMB</strong> +19</p>
+		<p class = "stat-block-breaker">Statistics</p>
+		<p class = "stat-block-1"><strong>Utility Spell-Like Abilities</strong> 1/day&mdash;<a href="../../coreRulebook/spells/gaseousForm.html#gaseous-form"><em>gaseous form</em></a>; at will&mdash;<em>darkness</em>, <em>invisibility</em>;constant&mdash;<em>fly</em></p>
+		<p class = "stat-block-1"><strong>Utility Options </strong>change shape (Small, Medium, or Large humanoid; <a href="../../coreRulebook/spells/alterSelf.html#alter-self"><em>alter self</em></a> or <a href="../../coreRulebook/spells/giantForm.html#giant-form-i"><em>giant form I</em></a>)</p>
+		<p class = "stat-block-1"><strong>Str</strong> +6, <strong>Dex</strong> +2, <strong>Con</strong> +6, <strong>Int</strong> +2, <strong>Wis</strong> +2, <strong>Cha</strong> +4; <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> +13, <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> +23, <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +13, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +13, <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +13, <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> +13</p>
+		<p class = "stat-block-1"><strong>XP</strong> 4,800; LE outsider (giant, native, oni, shapechanger)</p>
+
+	<h3 id = "night-hag-soul-collector">Night Hag Soul Collector</h3>
+	<p>The night hag soul collector is not only a dangerous opponent; she is also dangerously well connected. She can force her captured souls to do her bidding to augment her own combat effectiveness, granting her powers from the summoner class graft.</p>
+	<p><strong>Array</strong>: This night hag is a summoner for all practical purposes, so she uses the spellcaster array, albeit with increased ability modifiers to reflect the fact that she is physically imposing for a spellcaster.</p>
+	<p><strong>Creature Type</strong>: Since her type is outsider, the night hag gains darkvision and a +2 bonus on attack rolls. She trades the outsider saving throw adjustments for the summoner adjustments.</p>
+	<p><strong>Class</strong>: The night hag soul collector's summoner class graft increases her Fortitude and Reflex by 1 and grants <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (planes) as a master skill. The lost soul acts as her eidolon. The night hag is thematically similar to a summoner, but isn't treated as actually having class levels in summoner.</p>
+	<p><strong>Spells</strong>: The night hag uses a modified version of the conjuration spell list, to stay in theme with her spontaneous summoning from the summoner class graft. As a soul broker, she needs constant detection spells to inspect her merchandise, as well as the soul bind spell at will.</p>
+	<p><strong>Options</strong>: From the summoner graft, the night hag gains spontaneous magic (summon monster), as well as one magic option and one any option. She chooses change shape and a custom dream haunting option to allow her to torment her foes from safety. To represent the defenses necessary to ply her trade among evil outsiders, the night hag also has particularly potent spell resistance and damage reduction options for her CR.</p>
+	<p><strong>Skills</strong>: A night hag encounter might be social and deceptive, so the monster has additional master and good skills, and her +10 bonus from change shape is reflected in her <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> skill.</p>
+	<p><strong>Damage</strong>: For damage with three primary attacks, the night hag doubles the damage for two primary attacks (18) to get a total of 36, then divides by three (her total number of attacks). Each attack deals roughly 12 points of damage</p>
+	<p><strong>Lost Soul</strong>: This represents the twisted form of a lost soul that the night hag can call forth to defend her&mdash;effectively her eidolon, since she is using the summoner graft. The soul's twisted form has screaming mouths on long tendrils that bite as it moves, allowing it to pounce.</p>
+	<p>Array: As an eidolon, the lost soul uses the combatant array.</p>
+	<p>Creature Type: The outsider type graft grants the lost soul a +2 bonus on attack rolls and Reflex saving throws.</p>
+	<p>Size: The lost soul's Large size grants it &ndash;1 to touch AC, +1 to flat-footed AC, +2 to CMB, and +1 to CMD.</p>
+	<p>Options: As a combatant, the lost soul gains one combat option and one any option. For these options, it gains pounce and damage reduction.</p>
+	<p>Skills: While a combatant normally has one master skill and two good skills, the lost soul is simple, so the GM gives it only <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> as a master skill and <a href="../../coreRulebook/skills/fly.html#fly">Fly</a> as a good skill.</p>
+	<p>Damage: To determine its damage with four primary attacks, the lost soul doubles the damage value for two primary attacks (22) to get 44 points of damage, then divides by 4. Each attack deals 11 points of damage, or 1d8+6 on Table 5&ndash;9.</p>
+
+		<p class = "stat-block-title">Night Hag Soul Collector <span class = "stat-block-cr">CR/HD 9</span></p>
+		<p class = "stat-block-1"><strong>Init</strong> +4; <strong>Perception</strong> +14 (darkvision 60 ft.)</p>
+		<p class = "stat-block-1"><strong>Size </strong>Medium; <strong>Speed</strong> 30 ft.; <strong>Special Movement </strong><em>etherealness </em>(at will)</p>
+		<p class = "stat-block-breaker">Defenses</p>
+		<p class = "stat-block-1"><strong>AC</strong> 21 (touch 12, flat-footed 15); <strong>Fort</strong> +9, <strong>Ref </strong>+9, <strong>Will</strong> +12; <strong>CMD</strong> 24; <strong>SR</strong> 24;<strong> Concentration</strong> +12</p>
+		<p class = "stat-block-1"><strong>hp </strong>103; <strong>DR </strong>10/cold iron and magic; <strong>Immune</strong> charm, cold, fear, fire, sleep</p>
+		<p class = "stat-block-breaker">Attacks</p>
+		<p class = "stat-block-1"><strong>Melee </strong>2 claws +14 (1d4+9), bite +14 (1d6+9)</p>
+		<p class = "stat-block-1"><strong>Attack Spell-Like Abilities </strong>(DC 16 + spell's level) 1/day&mdash;<a href="../../coreRulebook/spells/deepSlumber.html#deep-slumber"><em>deep slumber</em></a>; at will&mdash;<em>magic missile, ray of enfeeblement</em>,<em> soul bind</em></p>
+		<p class = "stat-block-1"><strong>Attack Options </strong>dream haunting, spontaneous casting (summon monster); <strong>CMB</strong> +14</p>
+		<p class = "stat-block-breaker">Statistics</p>
+		<p class = "stat-block-1"><strong>Utility Spell-Like Abilities</strong> 1/day&mdash;<a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door"><em>dimension door</em></a>; 3/day&mdash;<em>darkness</em>, <a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic"><em>dispel magic</em></a>, <em>haste</em>, <em>invisibility</em>; constant&mdash;<a href="../../coreRulebook/spells/detectChaos.html#detect-chaos"><em>detect chaos</em></a>, <a href="../../coreRulebook/spells/detectEvil.html#detect-evil"><em>detect evil</em></a>, <a href="../../coreRulebook/spells/detectGood.html#detect-good"><em>detect good</em></a>, <a href="../../coreRulebook/spells/detectLaw.html#detect-law"><em>detect law</em></a>, <a href="../../coreRulebook/spells/detectMagic.html#detect-magic"><em>detect magic</em></a>; double the duration of all conjuration (summoning) spells</p>
+		<p class = "stat-block-1"><strong>Utility Options</strong> change shape, soul broker</p>
+		<p class = "stat-block-1"><strong>Str</strong> +6, <strong>Dex</strong> +4, <strong>Con</strong> +6, <strong>Int</strong> +4, <strong>Wis</strong> +3, <strong>Cha</strong> +3; <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> +17, <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> +14, <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> +27, <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +14, <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (planes) +17, <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> +14, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +14, <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +14</p>
+		<p class = "stat-block-1"><strong>XP</strong> 6,400; NE outsider (evil, extraplanar)</p>
+		<p class = "stat-block-breaker">Special Abilities</p>
+		<p class = "stat-block-1"><strong>Dream Haunting (Su)</strong> The night hag can haunt a creature's dreams from her home on the Ethereal Plane. A creature she haunts takes 1 point of Constitution damage when it awakes.</p>
+		<p class = "stat-block-1"><strong>Soul Broker (Su)</strong> As a standard action, the night hag can release one of her captured souls to fight at her side; see the night hag's lost soul statistics, below.</p>
+
+		<p class = "stat-block-title">Night Hag's Lost Soul <span class = "stat-block-cr">CR/HD 9</span></p>
+		<p class = "stat-block-1"><strong>Init</strong> +4; <strong>Perception</strong> +14 (darkvision 60 ft.)</p>
+		<p class = "stat-block-1"><strong>Size </strong>Large (10 ft.); <strong>Speed</strong> 30 ft., fly 60 ft. (good)</p>
+		<p class = "stat-block-breaker">Defenses</p>
+		<p class = "stat-block-1"><strong>AC</strong> 25 (touch 15, flat-footed 18); <strong>Fort</strong> +10, <strong>Ref </strong>+12, <strong>Will</strong> +8; <strong>CMD</strong> 28</p>
+		<p class = "stat-block-1"><strong>hp </strong>126; <strong>DR </strong>10/cold iron and magic</p>
+		<p class = "stat-block-breaker">Attacks</p>
+		<p class = "stat-block-1"><strong>Melee</strong> 4 bites (reach 15 ft.) +19 (1d8+6)</p>
+		<p class = "stat-block-1"><strong>Attack Options </strong>pounce;<strong> CMB</strong> +19</p>
+		<p class = "stat-block-breaker">Statistics</p>
+		<p class = "stat-block-1"><strong>Str</strong> +7, <strong>Dex</strong> +4, <strong>Con</strong> +3; <a href="../../coreRulebook/skills/fly.html#fly">Fly</a> +14, <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +17</p>
+		<p class = "stat-block-1"><strong>XP</strong> 6,400; NE outsider (extraplanar)</p>
+
+	<h3 id = "marilith-general">Marilith General</h3>
+	<p>A six-armed general of the abyssal hordes, the marilith is iconic for its overwhelming number of attacks. This marilith uses custom options to better reflect her skills as a general.</p>
+	<p><strong>Array</strong>: As an abyssal general, the marilith uses the combatant array and has additional strong ability modifiers.</p>
+	<p><strong>Creature Type</strong>: The marilith is an outsider, so she gains darkvision and a +2 bonus on attack rolls and Fortitude saves. She also gains the elective adjustment of spells, with a modified list.</p>
+	<p><strong>Subtype</strong>: From the demon subtype, the marilith gains her immunities, resistances, summon ability, and telepathy. Her tactical nature gives her a wider-than-normal variety of allies she can call forth with her summon ability.</p>
+	<p><strong>Size</strong>: The marilith's Large size grants her &ndash;1 to touch AC, +1 to flat-footed AC, +2 to CMB, and +1 to CMD.</p>
+	<p><strong>Spells</strong>: The marilith prefers to meet her enemies directly with her numerous blades, so her modified spell list is more about trickery, mobility, and battlefield control than about directly attacking her foes with magic.</p>
+	<p><strong>Options</strong>: Normally, a CR 17 combatant has two combat options and one any option, but the marilith general is cunning and tactical. To better lead her forces in battle, in addition to critical striker and damage reduction, she gets the heroic recovery and inspire courage social options.</p>
+	<p><strong>Skills</strong>: In order to keep her command post, a marilith general needs guile and social skills. Therefore, she has more master skills than normal, but trades away one good skill in the bargain.</p>
+	<p><strong>Damage</strong>: The marilith's multi-armed attacks make her damage complex to calculate. Doubling the damage for two natural attacks (50) gives her 100 points of damage. This is then increased by 50%&mdash;since her iterative attacks and tail are less likely to hit&mdash;for a total of 150. Dividing 150 by 10 attacks gets 15, which is 2d6+9 on Table 5&ndash;9 on page 241. The tail slap is weaker, so it uses the low attack and damage values for secondary attacks in the three natural attacks column in the array. This reduces the marilith's overall damage, but not enough to necessitate increasing the rest of her damage.</p>
+
+		<p class = "stat-block-title">Marilith General <span class = "stat-block-cr">CR/HD 17</span></p>
+		<p class = "stat-block-1"><strong>Init</strong> +5; <strong>Perception</strong> +29 (darkvision 60 ft., <a href="../../coreRulebook/spells/trueSeeing.html#true-seeing"><em>true seeing</em></a>)</p>
+		<p class = "stat-block-1"><strong>Size </strong>Large (10 ft.); <strong>Speed</strong> 40 ft.; <strong>Special Movement</strong> <em>greater teleport </em>(at will, self plus 50 lbs. of objects only)</p>
+		<p class = "stat-block-breaker">Defenses</p>
+		<p class = "stat-block-1"><strong>AC</strong> 34 (touch 20, flat-footed 25); <strong>Fort</strong> +20, <strong>Ref </strong>+18, <strong>Will</strong> +15; <strong>CMD</strong> 39 (43 vs. grapple, can't be tripped); <strong>SR</strong> 28;<strong> Concentration</strong> +25</p>
+		<p class = "stat-block-1"><strong>hp </strong>297; <strong>DR </strong>10/cold iron and good; <strong>Immune</strong> electricity, poison; <strong>Resist </strong>acid 10, cold 10, fire 10; <a href="../../coreRulebook/spells/unholyAura.html#unholy-aura"><em>unholy aura</em></a></p>
+		<p class = "stat-block-1"><strong>Defensive Spell-Like Abilities</strong> at will&mdash;<a href="../../coreRulebook/spells/projectImage.html#project-image"><em>project image</em></a></p>
+		<p class = "stat-block-breaker">Attacks</p>
+		<p class = "stat-block-1"><strong>Melee</strong> <em>+1 longsword</em> (reach 10 ft.) +29/+24/+19/+14 (2d6+9/17&ndash;20), 5 <em>+1 longswords</em> (reach 10 ft.) +29 (2d6+9/17&ndash;20), tail slap +24 (2d6+3 plus improved combat maneuver [grapple])</p>
+		<p class = "stat-block-1"><strong>Attack Spell-Like Abilities </strong>(DC 18 + spell's level) 3/day&mdash;<a href="../../coreRulebook/spells/bladeBarrier.html#blade-barrier"><em>blade barrier</em></a>; at will&mdash;<em>telekinesis</em></p>
+		<p class = "stat-block-1"><strong>Attack Options </strong>critical striker;<strong> CMB</strong> +31 (+35 grapple)</p>
+		<p class = "stat-block-breaker">Statistics</p>
+		<p class = "stat-block-1"><strong>Utility Spell-Like Abilities</strong> 3/day&mdash;<em>fly</em></p>
+		<p class = "stat-block-1"><strong>Utility Options</strong> heroic recovery, inspire courage, summon allies (marilith 20%, nalfeshnee 35%, or 1d4 hezrous 60%)</p>
+		<p class = "stat-block-1"><strong>Str</strong> +8, <strong>Dex</strong> +5, <strong>Con</strong> +11, <strong>Int</strong> +5, <strong>Wis</strong> +5, <strong>Cha</strong> +8; <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> +29, <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> +29, <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +29, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +21, <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> +29; telepathy 100 ft.</p>
+		<p class = "stat-block-1"><strong>XP</strong> 102,400; CE outsider (chaotic, demon, evil, extraplanar)</p>
+
+	<h3 id = "ancient-blue-dragon">Ancient Blue Dragon</h3>
+	<p>This ancient blue dragon has additional attacks, with damage extrapolated from the natural attacks column for CR 18. Despite being a combatant, it has a reduced spellcasting ability (as if it were a CR 12&ndash;15 spellcaster) with a DC halfway between combatant and spellcaster to represent a dragon's natural spellcasting prowess. The spells are customized for this dragon, and it doesn't receive an additional boon from selecting one of the preset lists.</p>
+	<p>The dragon has seven options instead of four to reflect its many talents, including several built into its statistics: damage reduction, extra armor, and spell resistance. It adds +4 to the DC of its breath weapon to reflect at ability's raw power. The dragon gains additional Wisdom and Charisma modifiers of +5. It uses the expert array's number of skills, and has the flying acumen option built into its statistics.</p>
+	<p><strong>Array</strong>: The dragon is a mighty and iconic beast. It uses the combatant array, but it also possesses reduced spellcasting abilities, and its advanced age grants it superior mental ability scores.</p>
+	<p><strong>Creature Type</strong>: The dragon type grants the ancient blue dragon darkvision, low-light vision, immunity to paralysis and sleep, and a +2 bonus on attack rolls and Will saves. To emphasize its sheer size, the ancient blue dragon also gains an additional +2 bonus on Fortitude saves.</p>
+	<p><strong>Size</strong>: The dragon's Gargantuan size graft grants it &ndash;4 to touch AC, +5 to flat-footed AC, +8 to CMB, and +4 to CMD.</p>
+	<p><strong>Spells</strong>: To reflect its nature as a slightly lesser spellcaster than a true spellcaster of its CR, the dragon gains the spells of a CR 12&ndash;15 spellcaster instead, with DCs halfway between those of the combatant and spellcaster arrays. Since it has its own customized spell list, the dragon doesn't receive an additional boon from selecting one of the preset lists.</p>
+	<p><strong>Options</strong>: Normally, a CR 18 combatant would have three combat options and one any option, but the ancient blue dragon not only has damage reduction, extra armor, and spell resistance, but also critical striker and defense breaker to reflect its ferocious power.</p>
+	<p><strong>Skills</strong>: As it has collected untold knowledge over its many years, the ancient blue dragon uses the expert's number of skills, and its flying acumen option negates the Gargantuan size graft's prohibition on <a href="../../coreRulebook/skills/fly.html#fly">Fly</a> as a master skill.</p>
+	<p><strong>Damage</strong>: The dragon has three primary attacks and three secondary attacks. The damage for two natural attacks (55) is doubled to 110. This is multiplied by 125% (137 total) since many attacks use a lower bonus. The damage is divided unevenly to emphasize certain attacks: 32 points for the bite and tail slap, 22 per claw, and 13 per wing.</p>
+
+		<p class = "stat-block-title">Ancient Blue Dragon <span class = "stat-block-cr">CR/HD 18</span></p>
+		<p class = "stat-block-1"><strong>Init</strong> +4; <strong>Perception</strong> +31 (blindsense 60 ft., darkvision 60 ft., low-light vision)</p>
+		<p class = "stat-block-1"><strong>Aura</strong> electricity (10 ft., 2d6 electricity), frightful presence (300 ft., DC 25)</p>
+		<p class = "stat-block-1"><strong>Size </strong>Gargantuan (20 ft.); <strong>Speed</strong> 40 ft., burrow 20 ft., fly 250 ft. (clumsy, hover)</p>
+		<p class = "stat-block-breaker">Defenses</p>
+		<p class = "stat-block-1"><strong>AC</strong> 37 (touch 11, flat-footed 35); <strong>Fort</strong> +20, <strong>Ref </strong>+18, <strong>Will</strong> +18; <strong>CMD</strong> 43; <strong>SR</strong> 29;<strong> Concentration</strong> +23</p>
+		<p class = "stat-block-1"><strong>hp </strong>330; <strong>DR </strong>15/magic; <strong>Immune</strong> electricity, paralysis, sleep</p>
+		<p class = "stat-block-1"><strong>Defensive Spells</strong> 1/day&mdash;<em>mislead</em></p>
+		<p class = "stat-block-breaker">Attacks</p>
+		<p class = "stat-block-1"><strong>Melee</strong> bite (reach 20 ft.) +30 (4d6+18/19&ndash;20), 2 claws (reach 15 ft.) +30 (3d6+12), 2 wings (reach 15 ft.) +25 (2d6+6), tail slap (reach 15 ft.) +25 (3d8+18)</p>
+		<p class = "stat-block-1"><strong>Attack Spells </strong>(DC 17 + spell's level) 1/day&mdash;<a href="../../coreRulebook/spells/forcefulHand.html#forceful-hand"><em>forceful hand</em></a>; 3/day&mdash;<em>enervation</em>, <em>hold monster</em>; at will&mdash;<em>haste</em></p>
+		<p class = "stat-block-1"><strong>Attack Options </strong>(DC 27) breath weapon (120-ft. line, 19d6 electricity), critical striker, defense breaker; <strong>CMB</strong> +36</p>
+		<p class = "stat-block-breaker">Statistics</p>
+		<p class = "stat-block-1"><strong>Utility Spells</strong> 3/day&mdash;<a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door"><em>dimension door</em></a>, <a href="../../coreRulebook/spells/hallucinatoryTerrain.html#hallucinatory-terrain"><em>hallucinatory terrain</em></a>; at will&mdash;<em>invisibility</em></p>
+		<p class = "stat-block-1"><strong>Str</strong> +12, <strong>Dex</strong> &ndash;2, <strong>Con</strong> +8, <strong>Int</strong> +6, <strong>Wis</strong> +5, <strong>Cha</strong> +5; <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> +25, <a href="../../coreRulebook/skills/fly.html#fly">Fly</a> +31, <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +31, <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana) +31, <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +25</p>
+		<p class = "stat-block-1"><strong>XP</strong> 153,600; LE dragon (earth)</p>
+
+	<h3 id = "pit-fiend">Pit Fiend</h3>
+	<p>With a diverse spread of abilities useful for both combat and spellcasting, a pit fiend remains fairly complex to create even in the simple monster creation system. It's not really 100% a combatant, so it requires special statistical adjustments.</p>
+	<p><strong>Array</strong>: This monster mostly uses the numbers from the combatant array, but gains a large number of spells, and therefore has the hit points of a spellcaster. As a powerful ruler in Hell, the pit fiend's starting ability modifiers are +13, +13, +9, +9, +6, and +6.</p>
+	<p><strong>Creature Type</strong>: As an outsider, the pit fiend gains darkvision 60 feet, increases its Fortitude from +20 to +22, and increases its attack bonuses from +30 to +32. It also gets the elective adjustment for one additional master skill.</p>
+	<p><strong>Subtype</strong>: The devil subtype graft grants the see in darkness sense, energy resistance 10 to acid and cold, and immunity to fire and poison. It also gives the pit fiend the summon allies option and telepathy 100 feet.</p>
+	<p><strong>Size</strong>: Since it's Large, the pit fiend decreases its touch AC from 22 to 21 and increases its flat-footed AC from 28 to 29. Its CMB goes up from +32 to +34, and its CMD goes from 42 to 43.</p>
+	<p><strong>Spells</strong>: The monster gains spells as though it were a spellcaster. In addition, it can use mass hold monster and greater teleport at will.</p>
+	<p><strong>Options</strong>: For the three combat options given by its array, the pit fiend has constrict, damage reduction, and improved combat maneuver (grapple), which also gives it bonuses on CMB checks made to grapple and to CMD against grapple checks. For its one any option, it has poison with eight advantages (two + 1/3 of the pit fiend's CR of 20). These advantages are removing the onset, changing the frequency to 1/round for 6 rounds, increasing the ability damage three times, increasing the cure to 2 consecutive saves, and two advantages invented specifically for this monster: increasing the frequency to 1/round for 10 rounds, and increasing the cure to 3 consecutive saves. As a nod to classic pit fiends, the monster can regenerate from wounds, but the regeneration amount is so low for its level that it doesn't cost an option. Its diseased bite is also free, since it won't matter much in high-level combat. The devil has a bonus option for its fear aura, and doesn't spend any options for its spells, but these additions are reasonable for a high-level villain such as the pit fiend. The Bestiary pit fiend's devil shaping ability won't come up in combat, so it has been omitted.</p>
+	<p><strong>Skills</strong>: Because of its creature type graft, the pit fiend has two master skills instead of one.</p>
+	<p><strong>Damage</strong>: The number of attacks the pit fiend gains has been reduced from the number in the Bestiary; in particular, its wing attacks have been removed to allow its remaining attacks to have more impact. The array's two natural attacks' damage (66) is doubled to 132, then increased by 25% to get 165, which is then divvied up between four attacks. This sets the damage value at 48 points for each claw, 42 for the bite, and 27 for the tail slap.</p>
+
+		<p class = "stat-block-title">Pit Fiend <span class = "stat-block-cr">CR/HD 20</span></p>
+		<p class = "stat-block-1"><strong>Init</strong> +9; <strong>Perception</strong> +35 (darkvision 60 ft., see in darkness)</p>
+		<p class = "stat-block-1"><strong>Aura</strong> fear (30 ft., DC 20)</p>
+		<p class = "stat-block-1"><strong>Size </strong>Large (10 ft.); <strong>Speed</strong> 40 ft., fly 60 ft. (average); <strong>Special Movement </strong><a href="../../coreRulebook/spells/teleport.html#teleport-greater"><em>greater teleport</em></a> (at will, self plus 50 lbs. of objects only)</p>
+		<p class = "stat-block-breaker">Defenses</p>
+		<p class = "stat-block-1"><strong>AC</strong> 38 (touch 21, flat-footed 29); <strong>Fort</strong> +22, <strong>Ref </strong>+20, <strong>Will</strong> +17; <strong>CMD</strong> 43 (47 vs. grapple); <strong>SR</strong> 31;<span class="charoverride-15"> </span><strong>Concentration</strong> +26</p>
+		<p class = "stat-block-1"><strong>hp </strong>333; regeneration 5 (good weapons, good spells); <strong>DR </strong>10/good and silver;<strong> Immune</strong> fire, poison; <strong>Resist </strong>acid 10, cold 10</p>
+		<p class = "stat-block-breaker">Attacks</p>
+		<p class = "stat-block-1"><strong>Melee</strong> 2 claws (reach 10 ft.) +32 (2d8+42), bite (reach 10 ft.) +32 (4d6+30 plus disease and poison), tail slap (reach 10 ft.) +32 (2d8+18 plus improved combat maneuver [grapple])</p>
+		<p class = "stat-block-1"><strong>Attack Spell-Like Abilities </strong>(DC 17 + spell's level) 1/day&mdash;quickened<em> fireball</em>,<em> meteor swarm</em>; at will&mdash;<a href="../../coreRulebook/spells/holdMonster.html#hold-monster-mass"><em>mass hold monster</em></a>, <a href="../../coreRulebook/spells/wallOfFire.html#wall-of-fire"><em>wall of fire</em></a></p>
+		<p class = "stat-block-1"><strong>Attack Options </strong>(DC 25) constrict (2d8+60), disease (<em>onset</em> immediate, <em>frequency</em> 1/day, <em>effect</em> 1d4 Str damage, <em>cure</em> 2 consecutive saves), poison (<em>type</em> injury, <em>frequency</em> 1/round for 10 rounds, <em>effect</em> 1d6 Con damage, <em>cure</em> 3 consecutive saves);<strong> CMB</strong> +34 (+38 grapple)</p>
+		<p class = "stat-block-breaker">Statistics</p>
+		<p class = "stat-block-1"><strong>Utility Options</strong> summon allies (typically barbed devil or ice devil, 60%)</p>
+		<p class = "stat-block-1"><strong>Str</strong> +13, <strong>Dex</strong> +9, <strong>Con</strong> +13, <strong>Int</strong> +6, <strong>Wis</strong> +9, <strong>Cha</strong> +6; <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> +28, <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +35, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +28; telepathy 100 ft<em>.</em></p>
+		<p class = "stat-block-1"><strong>XP</strong> 307,200; LE outsider (devil, evil, extraplanar, lawful)</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Monster Creation Examples",globalNavPath=[{ href: '/pathfinderRPG/prd/unchained/monsters/index.html', name: 'Pathfinder Unchained: Monsters' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

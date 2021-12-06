@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Monster Creation</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "monsterCreation.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "monsterCreation.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "monsterCreation.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "monsterCreation.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "monsterCreation.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "monsterCreation.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "creatureTypes.html">Creature Types</a></li>
+						<li><a href = "monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "monsterCreation.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "monsterCreation.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "monsterCreation.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "monsterCreation.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "monsterCreation.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "monsterCreation.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "monsterCreation.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "monsterCreation.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "monsterCreation.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "monsterCreation.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "monsterCreation.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "monsterCreation.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "monsterCreation.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "monsterCreation.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "monsterCreation.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+</td><td></td><td></td><td></td><td><h1 id="appendix-1-monster-creation">Monster Creation</h1>
+</td><td></td><td></td><td></td><td><p>Creating a monster is part science and part art. While most monsters follow a general pattern of their overall power and abilities as related to their Challenge Rating (CR), there are many exceptions. Some monsters, for example, have significantly more hit points or a higher AC than the average for their CR, but make up for this advantage by being weak in other areas. Other monsters have significantly higher average damage, but have a lower attack bonus.</p>
+</td><td></td><td></td><td></td><td><h1 id="building-the-monster">Building the Monster</h1>
+</td><td></td><td></td><td></td><td><p>The following guidelines are provided to assist in monster creation and to help balance a creation for its CR.</p>
+</td><td></td><td></td><td></td><td><h2>Step 1: Concept</h2>
+</td><td></td><td></td><td></td><td><p>The first step in creating a new monster is to define its concept and role in the game. Generally, this involves picking the monster's CR, type, physical appearance, and manner of fighting. Once you have these basic pieces of information, you should find a number of similar monsters of the same type and roughly the same CR for comparison purposes.</p>
+</td><td></td><td></td><td></td><td><div class = "table"><table id="table-1-1-monster-statistics-by-cr"><caption>Table: Monster Statistics by CR</caption>
+<thead><tr><th rowspan="2">CR</th><th rowspan="2">Hit Points</th><th rowspan="2">Armor Class</th><th rowspan="2">High Attack</th><th rowspan="2">Low Attack</th><th colspan="2">Average Damage</th><th rowspan="2">Primary Ability DC</th><th rowspan="2">Secondary Ability DC</th><th rowspan="2">Good Save</th><th rowspan="2">Poor Save</th></tr><tr><th>High</th><th>Low</th></tr></thead>
+<tbody>
+<tr><td>1/2</td><td>10</td><td>11</td><td>1</td><td>0</td><td>4</td><td>3</td><td>11</td><td>8</td><td>3</td><td>0</td></tr>
+<tr><td>1</td><td>15</td><td>12</td><td>2</td><td>1</td><td>7</td><td>5</td><td>12</td><td>9</td><td>4</td><td>1</td></tr>
+<tr><td>2</td><td>20</td><td>14</td><td>4</td><td>3</td><td>10</td><td>7</td><td>13</td><td>9</td><td>5</td><td>1</td></tr>
+<tr><td>3</td><td>30</td><td>15</td><td>6</td><td>4</td><td>13</td><td>9</td><td>14</td><td>10</td><td>6</td><td>2</td></tr>
+<tr><td>4</td><td>40</td><td>17</td><td>8</td><td>6</td><td>16</td><td>12</td><td>15</td><td>10</td><td>7</td><td>3</td></tr>
+<tr><td>5</td><td>55</td><td>18</td><td>10</td><td>7</td><td>20</td><td>15</td><td>15</td><td>11</td><td>8</td><td>4</td></tr>
+<tr><td>6</td><td>70</td><td>19</td><td>12</td><td>8</td><td>25</td><td>18</td><td>16</td><td>11</td><td>9</td><td>5</td></tr>
+<tr><td>7</td><td>85</td><td>20</td><td>13</td><td>10</td><td>30</td><td>22</td><td>17</td><td>12</td><td>10</td><td>6</td></tr>
+<tr><td>8</td><td>100</td><td>21</td><td>15</td><td>11</td><td>35</td><td>26</td><td>18</td><td>12</td><td>11</td><td>7</td></tr>
+<tr><td>9</td><td>115</td><td>23</td><td>17</td><td>12</td><td>40</td><td>30</td><td>18</td><td>13</td><td>12</td><td>8</td></tr>
+<tr><td>10</td><td>130</td><td>24</td><td>18</td><td>13</td><td>45</td><td>33</td><td>19</td><td>13</td><td>13</td><td>9</td></tr>
+<tr><td>11</td><td>145</td><td>25</td><td>19</td><td>14</td><td>50</td><td>37</td><td>20</td><td>14</td><td>14</td><td>10</td></tr>
+<tr><td>12</td><td>160</td><td>27</td><td>21</td><td>15</td><td>55</td><td>41</td><td>21</td><td>15</td><td>15</td><td>11</td></tr>
+<tr><td>13</td><td>180</td><td>28</td><td>22</td><td>16</td><td>60</td><td>45</td><td>21</td><td>15</td><td>16</td><td>12</td></tr>
+<tr><td>14</td><td>200</td><td>29</td><td>23</td><td>17</td><td>65</td><td>48</td><td>22</td><td>16</td><td>17</td><td>12</td></tr>
+<tr><td>15</td><td>220</td><td>30</td><td>24</td><td>18</td><td>70</td><td>52</td><td>23</td><td>16</td><td>18</td><td>13</td></tr>
+<tr><td>16</td><td>240</td><td>31</td><td>26</td><td>19</td><td>80</td><td>60</td><td>24</td><td>17</td><td>19</td><td>14</td></tr>
+<tr><td>17</td><td>270</td><td>32</td><td>27</td><td>20</td><td>90</td><td>67</td><td>24</td><td>18</td><td>20</td><td>15</td></tr>
+<tr><td>18</td><td>300</td><td>33</td><td>28</td><td>21</td><td>100</td><td>75</td><td>25</td><td>18</td><td>20</td><td>16</td></tr>
+<tr><td>19</td><td>330</td><td>34</td><td>29</td><td>22</td><td>110</td><td>82</td><td>26</td><td>19</td><td>21</td><td>16</td></tr>
+<tr><td>20</td><td>370</td><td>36</td><td>30</td><td>23</td><td>120</td><td>90</td><td>27</td><td>20</td><td>22</td><td>17</td></tr>
+<tr><td>21</td><td>400</td><td>37</td><td>31</td><td>24</td><td>130</td><td>98</td><td>27</td><td>20</td><td>23</td><td>18</td></tr>
+<tr><td>22</td><td>440</td><td>39</td><td>32</td><td>25</td><td>140</td><td>105</td><td>28</td><td>21</td><td>23</td><td>18</td></tr>
+<tr><td>23</td><td>480</td><td>40</td><td>33</td><td>26</td><td>150</td><td>113</td><td>29</td><td>22</td><td>24</td><td>19</td></tr>
+<tr><td>24</td><td>520</td><td>42</td><td>35</td><td>27</td><td>165</td><td>124</td><td>30</td><td>23</td><td>25</td><td>20</td></tr>
+<tr><td>25</td><td>560</td><td>43</td><td>36</td><td>28</td><td>180</td><td>135</td><td>30</td><td>24</td><td>26</td><td>21</td></tr>
+<tr><td>26</td><td>600</td><td>44</td><td>37</td><td>29</td><td>195</td><td>145</td><td>31</td><td>25</td><td>27</td><td>22</td></tr>
+<tr><td>27</td><td>640</td><td>45</td><td>38</td><td>30</td><td>210</td><td>155</td><td>32</td><td>26</td><td>28</td><td>23</td></tr>
+<tr><td>28</td><td>680</td><td>46</td><td>39</td><td>31</td><td>225</td><td>165</td><td>33</td><td>27</td><td>29</td><td>24</td></tr>
+<tr><td>29</td><td>720</td><td>47</td><td>40</td><td>32</td><td>240</td><td>175</td><td>34</td><td>28</td><td>30</td><td>25</td></tr>
+<tr><td>30</td><td>760</td><td>48</td><td>41</td><td>33</td><td>255</td><td>185</td><td>35</td><td>29</td><td>31</td><td>26</td></tr>
+</tbody></table></div>
+</td><td></td><td></td><td></td><td><h2>Step 2: Target Statistics</h2>
+</td><td></td><td></td><td></td><td><p>Once you have a creature's type and CR determined, use Table: Monster Statistics by CR to determine its approximate statistics by CR. These values are a rough guideline only. You will notice that many of the existing monsters in this book do not follow these guidelines exactly. Most monsters excel in one of these areas, usually in the amount of damage dealt, but lag in one or two other areas to help balance them out. When referring to Table: Monster Statistics by CR, keep the following points in mind.</p>
+</td><td></td><td></td><td></td><td><p><b>CR</b>: This is the approximate CR of the monster. This number might change as design progresses.</p>
+</td><td></td><td></td><td></td><td><p><b>Hit Points</b>: This is the approximate hit point total for the monster. Note that creatures with particularly high Armor Classes or saving throws, or a number of resistances, might have a lower number. Outsiders and constructs typically have lower hit point totals.</p>
+</td><td></td><td></td><td></td><td><p><b>Armor Class</b>: This is the average Armor Class for a creature of this CR. When it comes time to design the creature's protections, keep this number in mind. Creatures with hit points above the average often have lower Armor Class values to compensate.</p>
+</td><td></td><td></td><td></td><td><p><b>High Attack</b>: This is the average total attack bonus for a creature of this CR. This value is for creatures that are primarily melee or ranged combatants. Creatures with a higher than normal average damage typically have a lower attack value to compensate.</p>
+</td><td></td><td></td><td></td><td><p><b>Low Attack</b>: This is the average total attack bonus for a creature of this CR that does not rely upon melee or ranged attacks to deal damage. This includes most creatures that rely on spells and spell-like abilities in combat.</p>
+</td><td></td><td></td><td></td><td><p><b>Average Damage</b>: This is the average amount of damage dealt by a creature of this CR if all of its attacks are successful. To determine a creature's average damage, add the average value for all of the damage dice rolled (as determined by Table: Average Die Results) to the damage modifier for each attack.</p>
+</td><td></td><td></td><td></td><td><p>A creature that relies on melee or ranged weapons in combat should have average damage within the range of high and low damage.</p>
+</td><td></td><td></td><td></td><td><p>A creature with higher than normal attack bonuses will often deal lower damage, while a creature with lower than normal attack bonuses will often deal higher damage.</p>
+</td><td></td><td></td><td></td><td><p><b>Primary Ability DC</b>: This is the average difficulty class (DC) for any spells, spell-like abilities, and special abilities (such as breath weapons) possessed by a creature of this CR that relies on such attacks in combat. If an ability is particularly powerful, it might have a lower DC to compensate.</p>
+</td><td></td><td></td><td></td><td><p><b>Secondary Ability DC</b>: This is the average DC for spells and special abilities for a creature that does not rely on such attacks in combat. Generally, a DC should not be lower than this number.</p>
+</td><td></td><td></td><td></td><td><p><b>Good Save</b>: This is the average saving throw bonus for a creature of this CR if the saving throw is one of the creature's good saving throws.</p>
+</td><td></td><td></td><td></td><td><p><b>Poor Save</b>: This is the average saving throw bonus for a creature of this CR if the saving throw is one of the creature's poor saving throws.</p>
+</td><td></td><td></td><td></td><td><table id="table-1-5-average-die-results"><caption>Table: Average Die Results</caption>
+<thead><tr><th>Die Type</th><th>Average Result*</th></tr></thead>
+<tbody>
+<tr><td>d4</td><td>2.5</td></tr>
+<tr><td>d6</td><td>3.5</td></tr>
+<tr><td>d8</td><td>4.5</td></tr>
+<tr><td>d10</td><td>5.5</td></tr>
+<tr><td>d12</td><td>6.5</td></tr>
+<tr><td>d20</td><td>10.5</td></tr></tbody>
+<tfoot><tr><td colspan="2">*Always round down after multiplying. For example, treat the average of 1d4 as 2, and the average of 2d4 as 5.</td></tr>
+</tfoot></table><h2>Step 3: Hit Dice</h2>
+</td><td></td><td></td><td></td><td><p>The next step in creating a monster is to determine the approximate number of Hit Dice it has. Hit Dice determine a wide variety of other statistics, including the creature's feats, skills, hit points, attack bonuses, and special ability DCs. </p>
+</td><td></td><td></td><td></td><td><p>A creature's total number of Hit Dice depends on a number of factors, but the two most important are its CR and its type. Table: Creature Hit Dice lists the average number of Hit Dice for each creature type, depending on its CR. While many of the monsters in this book are close to these values, some are not. This is because they have higher or lower average hit points to balance out their Armor Class or resistances. </p>
+</td><td></td><td></td><td></td><td><div class = "table"><table id="table-1-2-creature-hit-dice"><caption>Table: Creature Hit Dice</caption>
+<thead><tr><th rowspan="2">Creature Type</th><th colspan="21">Challenge Rating</th><tr><th>1/2</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th><th>19</th><th>20</th></tr></thead>
+<tbody>
+<tr><td><a href="monstersByType.html#appendix-8-monsters-by-type" >Aberration</a></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>7</td><td>9</td><td>10</td><td>12</td><td>14</td><td>15</td><td>16</td><td>17</td><td>19</td><td>20</td><td>22</td><td>24</td><td>26</td><td>28</td><td>30</td><td>34</td></tr>
+<tr><td><a href="creatureTypes.html#animal" >Animal</a></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>7</td><td>9</td><td>10</td><td>12</td><td>14</td><td>15</td><td>16</td><td>17</td><td>19</td><td>20</td><td>22</td><td>24</td><td>26</td><td>28</td><td>30</td><td>34</td></tr>
+<tr><td><a href="creatureTypes.html#construct" >Construct</a></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>8</td><td>9</td><td>10</td><td>12</td><td>13</td><td>14</td><td>16</td><td>18</td><td>19</td><td>20</td><td>21</td><td>23</td><td>25</td><td>28</td><td>31</td></tr>
+<tr><td><a href="creatureTypes.html#dragon" >Dragon</a></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>11</td><td>12</td><td>13</td><td>14</td><td>16</td><td>17</td><td>18</td><td>19</td><td>21</td><td>23</td><td>25</td><td>29</td></tr>
+<tr><td><a href="creatureTypes.html#fey" >Fey</a></td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>8</td><td>10</td><td>12</td><td>13</td><td>15</td><td>17</td><td>18</td><td>20</td><td>22</td><td>23</td><td>25</td><td>26</td><td>28</td><td>31</td><td>33</td><td>37</td></tr>
+<tr><td><a href="creatureTypes.html#humanoid" >Humanoid</a></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>7</td><td>9</td><td>10</td><td>12</td><td>14</td><td>15</td><td>16</td><td>17</td><td>19</td><td>20</td><td>22</td><td>24</td><td>26</td><td>28</td><td>30</td><td>34</td></tr>
+<tr><td><a href="creatureTypes.html#magical-beast" >Magical beast</a></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>8</td><td>9</td><td>10</td><td>12</td><td>13</td><td>14</td><td>16</td><td>18</td><td>19</td><td>20</td><td>21</td><td>23</td><td>25</td><td>28</td><td>31</td></tr>
+<tr><td><a href="creatureTypes.html#monstrous-humanoid" >Monstrous humanoid</a></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>8</td><td>9</td><td>10</td><td>12</td><td>13</td><td>14</td><td>16</td><td>18</td><td>19</td><td>20</td><td>21</td><td>23</td><td>25</td><td>28</td><td>31</td></tr>
+<tr><td><a href="creatureTypes.html#ooze">Ooze</a></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>7</td><td>9</td><td>10</td><td>12</td><td>14</td><td>15</td><td>16</td><td>17</td><td>19</td><td>20</td><td>22</td><td>24</td><td>26</td><td>28</td><td>30</td><td>34</td></tr>
+<tr><td><a href="creatureTypes.html#outsider" >Outsider</a></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>8</td><td>9</td><td>10</td><td>12</td><td>13</td><td>14</td><td>16</td><td>18</td><td>19</td><td>20</td><td>21</td><td>23</td><td>25</td><td>28</td><td>31</td></tr>
+<tr><td><a href="creatureTypes.html#plant" >Plant</a></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>7</td><td>9</td><td>10</td><td>12</td><td>14</td><td>15</td><td>16</td><td>17</td><td>19</td><td>20</td><td>22</td><td>24</td><td>26</td><td>28</td><td>30</td><td>34</td></tr>
+<tr><td><a href="creatureTypes.html#undead" >Undead</a></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>7</td><td>9</td><td>10</td><td>12</td><td>14</td><td>15</td><td>16</td><td>17</td><td>19</td><td>20</td><td>22</td><td>24</td><td>26</td><td>28</td><td>30</td><td>34</td></tr>
+<tr><td><a href="creatureTypes.html#vermin" >Vermin</a></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>7</td><td>9</td><td>10</td><td>12</td><td>14</td><td>15</td><td>16</td><td>17</td><td>19</td><td>20</td><td>22</td><td>24</td><td>26</td><td>28</td><td>30</td><td>32</td></tr></tbody></table></div>
+
+</td><td></td><td></td><td></td><td><div class="table"><table id="table-1-3-size"><caption>Table: Size</caption>
+<thead><tr><th>Size</th><th>Minimum CR</th><th>Maximum CR</th><th>Base Str</th><th>Base Dex</th><th>Base Con</th></tr></thead>
+<tbody>
+<tr><td>Fine</td><td>&mdash;</td><td>2</td><td>1</td><td>18</td><td>8</td></tr>
+<tr><td>Diminutive</td><td>&mdash;</td><td>4</td><td>1</td><td>16</td><td>8</td></tr>
+<tr><td>Tiny</td><td>&mdash;</td><td>6</td><td>2</td><td>14</td><td>8</td></tr>
+<tr><td>Small</td><td>&mdash;</td><td>&mdash;</td><td>6</td><td>12</td><td>8</td></tr>
+<tr><td>Medium</td><td>&mdash;</td><td>&mdash;</td><td>10</td><td>10</td><td>10</td></tr>
+<tr><td>Large</td><td>2</td><td>&mdash;</td><td>18</td><td>8</td><td>14</td></tr>
+<tr><td>Huge</td><td>4</td><td>&mdash;</td><td>26</td><td>6</td><td>18</td></tr>
+<tr><td>Gargantuan</td><td>6</td><td>&mdash;</td><td>34</td><td>6</td><td>22</td></tr>
+<tr><td>Colossal</td><td>8</td><td>&mdash;</td><td>42</td><td>6</td><td>26</td></tr></tbody></table></div>
+</td><td></td><td></td><td></td><td><h2>Step 4: Size</h2>
+</td><td></td><td></td><td></td><td><p>Now that you have the creature's average statistics, it's time to pick its size. Most creatures range in size from Small to Huge, but other sizes are not uncommon. A creature's size sets a baseline for its physical ability scores and its natural weapon damage (as noted in the Natural Attacks description in the Universal Monster Rules&mdash;see Appendix 3, pages 297&ndash;306). You should pick a size that fits well with the creature's intended role in the game and Challenge Rating. If you decide to give a creature an unusual size for its CR or HD, you should justify the unusual choice in the monster's description to account for the discrepancy&mdash;in most cases, such unusually sized monsters should be highly magical in nature. See Table: Size for more information on creature sizes and expected scores.</p>
+</td><td></td><td></td><td></td><td><p><b>Minimum/Maximum CR</b>: These values list the minimum and the maximum challenge ratings a creature of the indicated size should fall between.</p>
+</td><td></td><td></td><td></td><td><p><b>Base Str, Base Dex, Base Con</b>: These list the average scores for a creature of this size. Your specific monster's Strength, Dexterity, or Constitution might vary greatly from these numbers, but if they do, you should pay close attention to how these variances affect its other statistics. </p>
+</td><td></td><td></td><td></td><td>
+</td><td></td><td></td><td></td><td><h2>Step 5: Abilities</h2>
+</td><td></td><td></td><td></td><td><p>Once you have determined a creature's size, type, and Hit Dice, it's time to move on to its ability scores. The bonuses granted from these ability scores should increase a creature's hit points, attack bonuses, and saving throws to the approximate values presented on Table: Monster Statistics by CR.</p>
+</td><td></td><td></td><td></td><td><p>A creature's physical ability scores (Strength, Dexterity, and Constitution) should be relatively close to the base values presented on Table: Size, depending on its size. Creatures with a few Hit Dice but a high average hit point total should have a higher than normal Constitution.</p>
+</td><td></td><td></td><td></td><td><p>A creature's mental ability scores (Intelligence, Wisdom, and Charisma) are largely defined by the creature's concept. The base for all of these abilities is 10. Creatures that rely on spells and spell-like abilities in combat should have one mental ability score that stands out (usually Charisma). Creatures incapable of speech have an Intelligence score of 2 or lower. Unintelligent undead, constructs, oozes, plants, and vermin rarely have an Intelligence score.</p>
+</td><td></td><td></td><td></td><td><h2>Step 6: Skills and Feats</h2>
+</td><td></td><td></td><td></td><td><p>Using Table: Creature Statistics by Type, determine how many skill ranks your creature has based on its type and Hit Dice. Assign these ranks as determined by the creature's concept. A creature’s class skills are determined by its type. Creatures with a low Intelligence typically only have ranks in Dexterity- and Strength-based skills.</p>
+</td><td></td><td></td><td></td><td><p>After you have assigned skills, it's time to assign the creature's feats. Each creature with an Intelligence score receives a number of feats equal to 1 + 1 per every 2 Hit Dice after the first (so, 1 at 1 HD, 2 at 3 HD, etc.). A creature must qualify to take a feat as normal. See Table 1&ndash;6 for a quick feat calculation chart.</p>
+</td><td></td><td></td><td></td><td><div class="table"><table id="table-1-6-statistics-summary"><caption>Table: Statistics Summary</caption>
+<thead><tr><th>HD</th><th>Fast BAB</th><th>Medium BAB</th><th>Slow BAB</th><th>Good Save</th><th>Bad Save</th><th>Feats</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>+1</td><td>+0</td><td>+0</td><td>+2</td><td>+0</td><td>1</td></tr>
+<tr><td>2</td><td>+2</td><td>+1</td><td>+1</td><td>+3</td><td>+0</td><td>1</td></tr>
+<tr><td>3</td><td>+3</td><td>+2</td><td>+1</td><td>+3</td><td>+1</td><td>2</td></tr>
+<tr><td>4</td><td>+4</td><td>+3</td><td>+2</td><td>+4</td><td>+1</td><td>2</td></tr>
+<tr><td>5</td><td>+5</td><td>+3</td><td>+2</td><td>+4</td><td>+1</td><td>3</td></tr>
+<tr><td>6</td><td>+6</td><td>+4</td><td>+3</td><td>+5</td><td>+2</td><td>3</td></tr>
+<tr><td>7</td><td>+7</td><td>+5</td><td>+3</td><td>+5</td><td>+2</td><td>4</td></tr>
+<tr><td>8</td><td>+8</td><td>+6</td><td>+4</td><td>+6</td><td>+2</td><td>4</td></tr>
+<tr><td>9</td><td>+9</td><td>+6</td><td>+4</td><td>+6</td><td>+3</td><td>5</td></tr>
+<tr><td>10</td><td>+10</td><td>+7</td><td>+5</td><td>+7</td><td>+3</td><td>5</td></tr>
+<tr><td>11</td><td>+11</td><td>+8</td><td>+5</td><td>+7</td><td>+3</td><td>6</td></tr>
+<tr><td>12</td><td>+12</td><td>+9</td><td>+6</td><td>+8</td><td>+4</td><td>6</td></tr>
+<tr><td>13</td><td>+13</td><td>+9</td><td>+6</td><td>+8</td><td>+4</td><td>7</td></tr>
+<tr><td>14</td><td>+14</td><td>+10</td><td>+7</td><td>+9</td><td>+4</td><td>7</td></tr>
+<tr><td>15</td><td>+15</td><td>+11</td><td>+7</td><td>+9</td><td>+5</td><td>8</td></tr>
+<tr><td>16</td><td>+16</td><td>+12</td><td>+8</td><td>+10</td><td>+5</td><td>8</td></tr>
+<tr><td>17</td><td>+17</td><td>+12</td><td>+8</td><td>+10</td><td>+5</td><td>9</td></tr>
+<tr><td>18</td><td>+18</td><td>+13</td><td>+9</td><td>+11</td><td>+6</td><td>9</td></tr>
+<tr><td>19</td><td>+19</td><td>+14</td><td>+9</td><td>+11</td><td>+6</td><td>10</td></tr>
+<tr><td>20</td><td>+20</td><td>+15</td><td>+10</td><td>+12</td><td>+6</td><td>10</td></tr>
+<tr><td>21</td><td>+21</td><td>+15</td><td>+10</td><td>+12</td><td>+7</td><td>11</td></tr>
+<tr><td>22</td><td>+22</td><td>+16</td><td>+11</td><td>+13</td><td>+7</td><td>11</td></tr>
+<tr><td>23</td><td>+23</td><td>+17</td><td>+11</td><td>+13</td><td>+7</td><td>12</td></tr>
+<tr><td>24</td><td>+24</td><td>+18</td><td>+12</td><td>+14</td><td>+8</td><td>12</td></tr>
+<tr><td>25</td><td>+25</td><td>+18</td><td>+12</td><td>+14</td><td>+8</td><td>13</td></tr>
+<tr><td>26</td><td>+26</td><td>+19</td><td>+13</td><td>+15</td><td>+8</td><td>13</td></tr>
+<tr><td>27</td><td>+27</td><td>+20</td><td>+13</td><td>+15</td><td>+9</td><td>14</td></tr>
+<tr><td>28</td><td>+28</td><td>+21</td><td>+14</td><td>+16</td><td>+9</td><td>14</td></tr>
+<tr><td>29</td><td>+29</td><td>+21</td><td>+14</td><td>+16</td><td>+9</td><td>15</td></tr>
+<tr><td>30</td><td>+30</td><td>+22</td><td>+15</td><td>+17</td><td>+10</td><td>15</td></tr></tbody></table></div><h2>Step 7: Other Statistics</h2>
+</td><td></td><td></td><td></td><td><p>Using Table: Monster Statitics by CR, Table: Creature Statistics by Type, and Table: Statistics Summary, you can now determine many of the creature's other statistics.</p>
+</td><td></td><td></td><td></td><td><p>When building a creature's Armor Class, start by adding armor, shield, and natural armor bonuses to its Dexterity modifier. If a creature does not wear armor, give it a tougher hide to get it near its average AC. Remember that creatures with higher hit point totals might have a lower Armor Class, whereas creatures with fewer hit points might have a higher Armor Class. If a creature's Armor Class deviates from the average by more than 5 points, it might not be the right CR.</p>
+</td><td></td><td></td><td></td><td><p>When determining a creature's attack bonuses, refer to the guidelines from Table: Monster Statistics by CR based on the creature's CR. If the bonus is too low, consider increasing the creature's Strength or Dexterity, or increasing the amount of damage it deals to above the average. If the bonus is too high, consider decreasing the creature's Strength or Dexterity, or decrease the amount of damage it deals. If this value is significantly different, and the creature is intended to rely on melee or ranged attacks, consider adjusting the creature's CR.</p>
+</td><td></td><td></td><td></td><td><p>Use Table: Average Die Results to determine the number of damage dice, combined with damage bonuses, that the creature needs to reach the average damage for its CR. The creature might need additional or more damaging attacks to approach the average. Remember that creatures that primarily deal damage with other abilities, such as spells, do not need to meet the average damage for their attacks. You can also use Table: Average Die Results to determine a creature's average hit points. Remember that PC class levels provide the maximum number of hit points at 1st level.</p>
+</td><td></td><td></td><td></td><td><p>Repeat this process for a creature's saving throws. If the saving throws are too high, consider altering the ability scores on which they are based. </p>
+</td><td></td><td></td><td></td><td><p>When determining a creature's speed, first decide if it has any alternative modes of movement, such as burrow, climb, fly, or swim. Most Medium creatures have a base speed of 30 feet. Quadrupeds and Large creatures increase this by 10 feet each. Smaller creatures decrease this base speed by 10 feet. If a creature is particularly fast or slow, modify the base speed by 10 feet. Burrow and climb speeds are usually half a creature's base speed, while flying speeds are roughly double. Remember to give a creature the appropriate skills for any unusual movement methods.</p>
+</td><td></td><td></td><td></td><td><div class = "table"><table id="table-1-4-creature-statistics-by-type"><caption>Table: Creature Statistics by Type</caption>
+<thead><tr><th>Type</th><th>Hit Die</th><th>Base Attack Bonus (BAB)</th><th>Good Saving Throws</th><th>Skill Ranks*</th></tr></thead>
+<tbody>
+<tr><td><a href="monstersByType.html#appendix-8-monsters-by-type" >Aberration</a></td><td>d8</td><td>HD &times; 3/4 (Medium BAB)</td><td>Will</td><td>4 + Int mod per HD</td></tr>
+<tr><td><a href="creatureTypes.html#animal" >Animal</a></td><td>d8</td><td>HD &times; 3/4 (Medium BAB)</td><td>Fort, Ref</td><td>2 + Int mod per HD</td></tr>
+<tr><td><a href="creatureTypes.html#construct" >Construct</a></td><td>d10</td><td>HD (Fast BAB)</td><td>&mdash;</td><td>2 + Int mod per HD</td></tr>
+<tr><td><a href="creatureTypes.html#dragon" >Dragon</a></td><td>d12</td><td>HD (Fast BAB)</td><td>Fort, Ref, Will</td><td>6 + Int mod per HD</td></tr>
+<tr><td><a href="creatureTypes.html#fey" >Fey</a></td><td>d6</td><td>HD &times; 1/2 (Slow BAB)</td><td>Ref, Will</td><td>6 + Int mod per HD</td></tr>
+<tr><td><a href="creatureTypes.html#humanoid" >Humanoid</a></td><td>d8</td><td>HD &times; 3/4 (Medium BAB)</td><td>Varies (any one)</td><td>2 + Int mod per HD</td></tr>
+<tr><td><a href="creatureTypes.html#magical-beast" >Magical beast</a></td><td>d10</td><td>HD (Fast BAB)</td><td>Fort, Ref</td><td>2 + Int mod per HD</td></tr>
+<tr><td><a href="creatureTypes.html#monstrous-humanoid" >Monstrous humanoid</a></td><td>d10</td><td>HD (Fast BAB)</td><td>Ref, Will</td><td>4 + Int mod per HD</td></tr></tbody>
+<tr><td><a href="creatureTypes.html#ooze">Ooze</a></td><td>d8</td><td>HD &times; 3/4 (Medium BAB)</td><td>&mdash;</td><td>2 + Int mod per HD</td></tr>
+<tr><td><a href="creatureTypes.html#outsider" >Outsider</a></td><td>d10</td><td>HD (Fast BAB)</td><td>Varies (any two)</td><td>6 + Int mod per HD</td></tr>
+<tr><td><a href="creatureTypes.html#plant" >Plant</a></td><td>d8</td><td>HD &times; 3/4 (Medium BAB)</td><td>Fort</td><td>2 + Int mod per HD</td></tr>
+<tr><td><a href="creatureTypes.html#undead" >Undead</a></td><td>d8</td><td>HD &times; 3/4 (Medium BAB)</td><td>Will</td><td>4 + Int mod per HD</td></tr>
+<tr><td><a href="creatureTypes.html#vermin" >Vermin</a></td><td>d8</td><td>HD &times; 3/4 (Medium BAB)</td><td>Fort</td><td>2 + Int mod per HD</td></tr>
+<tfoot><tr><td colspan="5">* As long as a creature has an Intelligence of at least 1, it gains a minimum of 1 skill point per Hit Die. Creatures with an Intelligence score of "&mdash;" gain no skill points or feats.</td></tr>
+</tfoot></table></div>
+
+</td><td></td><td></td><td></td><td><h2>Step 8: Special Abilities and Qualities</h2>
+</td><td></td><td></td><td></td><td><p>Monsters are different from characters in that they can have all sorts of different special abilities and qualities. Each of these is tied closely to the creature's concept, allowing it to fill a specific role in the game. For examples, look at monsters in this book. Monsters should use abilities from the Universal Monster Rules whenever possible, instead of creating new yet similar abilities&mdash;when you do create new abilities, use the Universal Monster Rules as a template for how to present and create the new abilities.</p>
+</td><td></td><td></td><td></td><td><p>Most special abilities that cause damage, such as breath weapons, give a save (Fortitude, Reflex, or Will depending on the ability). The DC for almost all special abilities is equal to 10 + 1/2 the creature's Hit Dice + a relevant ability modifier (usually Constitution or Charisma depending on the ability). Special abilities that add to melee and ranged attacks generally do not allow a save, as they rely on the attacks hitting to be useful. </p>
+</td><td></td><td></td><td></td><td><p>Special senses and resistances to certain energy types are common in creatures of CR 5 and lower. Damage reduction, energy immunities, and regeneration are more common in creatures above CR 5. Spell resistance and immunities become more common above CR 10. As a general rule a creature's spell resitance should equal its CR + 11.</p>
+</td><td></td><td></td><td></td><td><div class="table"><table id="table-1-7-xp-and-gp-values-by-cr"><caption>Table: </td><td> by CR</caption>
+<thead><tr><th>CR</th><th>XP</th><th>Slow GP</th><th>Medium GP</th><th>Fast GP</th></tr></thead>
+<tbody>
+<tr><td>1/8</td><td>50 XP</td><td>20 gp</td><td>35 gp</td><td>50 gp</td></tr>
+<tr><td>1/6</td><td>65 XP</td><td>30 gp</td><td>45 gp</td><td>65 gp</td></tr>
+<tr><td>1/4</td><td>100 XP</td><td>40 gp</td><td>65 gp</td><td>100 gp</td></tr>
+<tr><td>1/3</td><td>135 XP</td><td>55 gp</td><td>85 gp</td><td>135 gp</td></tr>
+<tr><td>1/2</td><td>200 XP</td><td>85 gp</td><td>130 gp</td><td>200 gp</td></tr>
+<tr><td>1</td><td>400 XP</td><td>170 gp</td><td>260 gp</td><td>400 gp</td></tr>
+<tr><td>2</td><td>600 XP</td><td>350 gp</td><td>550 gp</td><td>800 gp</td></tr>
+<tr><td>3</td><td>800 XP</td><td>550 gp</td><td>800 gp</td><td>1,200 gp</td></tr>
+<tr><td>4</td><td>1,200 XP</td><td>750 gp</td><td>1,150 gp</td><td>1,700 gp</td></tr>
+<tr><td>5</td><td>1,600 XP</td><td>1,000 gp</td><td>1,550 gp</td><td>2,300 gp</td></tr>
+<tr><td>6</td><td>2,400 XP</td><td>1,350 gp</td><td>2,000 gp</td><td>3,000 gp</td></tr>
+<tr><td>7</td><td>3,200 XP</td><td>1,750 gp</td><td>2,600 gp</td><td>3,900 gp</td></tr>
+<tr><td>8</td><td>4,800 XP</td><td>2,200 gp</td><td>3,350 gp</td><td>5,000 gp</td></tr>
+<tr><td>9</td><td>6,400 XP</td><td>2,850 gp</td><td>4,250 gp</td><td>6,400 gp</td></tr>
+<tr><td>10</td><td>9,600 XP</td><td>3,650 gp</td><td>5,450 gp</td><td>8,200 gp</td></tr>
+<tr><td>11</td><td>12,800 XP</td><td>4,650 gp</td><td>7,000 gp</td><td>10,500 gp</td></tr>
+<tr><td>12</td><td>19,200 XP</td><td>6,000 gp</td><td>9,000 gp</td><td>13,500 gp</td></tr>
+<tr><td>13</td><td>25,600 XP</td><td>7,750 gp</td><td>11,600 gp</td><td>17,500 gp</td></tr>
+<tr><td>14</td><td>38,400 XP</td><td>10,000 gp</td><td>15,000 gp</td><td>22,000 gp</td></tr>
+<tr><td>15</td><td>51,200 XP</td><td>13,000 gp</td><td>19,500 gp</td><td>29,000 gp</td></tr>
+<tr><td>16</td><td>76,800 XP</td><td>16,500 gp</td><td>25,000 gp</td><td>38,000 gp</td></tr>
+<tr><td>17</td><td>102,400 XP</td><td>22,000 gp</td><td>32,000 gp</td><td>48,000 gp</td></tr>
+<tr><td>18</td><td>153,600 XP</td><td>28,000 gp</td><td>41,000 gp</td><td>62,000 gp</td></tr>
+<tr><td>19</td><td>204,800 XP</td><td>35,000 gp</td><td>53,000 gp</td><td>79,000 gp</td></tr>
+<tr><td>20</td><td>307,200 XP</td><td>44,000 gp</td><td>67,000 gp</td><td>100,000 gp</td></tr>
+<tr><td>21</td><td>409,600 XP</td><td>55,000 gp</td><td>84,000 gp</td><td>125,000 gp</td></tr>
+<tr><td>22</td><td>615,000 XP</td><td>69,000 gp</td><td>104,000 gp</td><td>155,000 gp</td></tr>
+<tr><td>23</td><td>820,000 XP</td><td>85,000 gp</td><td>127,000 gp</td><td>190,000 gp</td></tr>
+<tr><td>24</td><td>1,230,000 XP</td><td>102,000 gp</td><td>155,000 gp</td><td>230,000 gp</td></tr>
+<tr><td>25</td><td>1,640,000 XP</td><td>125,000 gp</td><td>185,000 gp</td><td>275,000 gp</td></tr>
+<tr><td>26</td><td>2,457,600 XP</td><td>150,000 gp</td><td>220,000 gp</td><td>330,000 gp</td></tr>
+<tr><td>27</td><td>3,276,800 XP</td><td>175,000 gp</td><td>260,000 gp</td><td>390,000 gp</td></tr>
+<tr><td>28</td><td>4,915,200 XP</td><td>205,000 gp</td><td>305,000 gp</td><td>460,000 gp</td></tr>
+<tr><td>29</td><td>6,553,600 XP</td><td>240,000 gp</td><td>360,000 gp</td><td>540,000 gp</td></tr>
+<tr><td>30</td><td>9,830,400 XP</td><td>280,000 gp</td><td>420,000 gp</td><td>630,000 gp</td></tr>
+</tbody></table></div><h2>Step 9: Treasure</h2>
+</td><td></td><td></td><td></td><td><p>A creature should have an amount of treasure appropriate to its CR. See Table: </td><td> by CR for a list of treasure totals based on CR. For some creatures, their treasure consists of the loot from their recent meals strewn across their lairs, while for others it consists of a greed-fueled hoard or even gear it uses in combat. Make sure to account for any weapons or armor that the creature is using, as determined by step 7.</p>
+</td><td></td><td></td><td></td><td>
+</td><td></td><td></td><td></td><td><h2>Step 10: Details</h2>
+</td><td></td><td></td><td></td><td><p>Now that you have all of the creature's statistics sorted out, it's time to fill in all the details&mdash;such as name, alignment, space, reach, environment, and ecology&mdash;as you see fit.</p>
+
+
+
+
+
+
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Monster Creation",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

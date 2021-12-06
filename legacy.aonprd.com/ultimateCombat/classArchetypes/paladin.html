@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Paladin</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "paladin.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../classes/ninja.html">Ninja</a></li>
+						<li><a href = "../classes/samurai.html">Samurai</a></li>
+						<li><a href = "../classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "paladin.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "paladin.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "paladin.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="paladin" class="monster-header">P<span class="char-style-override-5">aladin</span></h1>
+				
+				
+				<p>While all paladins are true believers, not all are the knights in shining armor with glimmering blades portrayed in legends&mdash;some paladins prefer unconventional tactics and forms, and some are the dread antipaladins cloaked in veils of darkness, who can even walk the cursed path of undeath. </p>
+				<h2 id="divine-hunter-(archetype)">Divine Hunter (Archetype)</h2>
+				<p>Most paladins rush into battle, meeting evil toe-to-toe. The divine hunter prefers to engage evil from afar, striking down her foes before they can threaten her allies.</p>
+				<p id="precise-shot"><b><a href="../../coreRulebook/feats.html#precise-shot" >Precise Shot</a></b>: A divine hunter gains <a href="../../coreRulebook/feats.html#precise-shot" >Precise Shot</a> as a bonus feat at 1st level, even if she doesn't meet the prerequisites. This ability replaces her Heavy Armor Proficiency.</p>
+				<p id="shared-precision"><b>Shared Precision (Su)</b>: At 3rd level, when a divine hunter hits a creature with a ranged attack, she grants her allies within 10 feet of her the benefit of the <a href="../../coreRulebook/feats.html#precise-shot" >Precise Shot</a> feat against that target until the start of her next turn. Her allies must remain within 10 feet of her, and must be able both to see and hear the divine hunter to gain this benefit. This ability replaces aura of courage. </p>
+				<p id="divine-bond"><b>Divine Bond (Su)</b>: At 5th level, a divine hunter forms a bond with her deity. This functions as the paladin's divine bond ability, except the bond must always take the form of a ranged or throwing weapon (excluding ammunition). In addition to the listed abilities, a divine hunter can add the <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-distance" >distance</a></i>, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-returning" >returning</a></i>, or <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-seeking" >seeking</a></i> special abilities to her weapon, but she cannot add the <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-defending" >defending</a></i> or <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-disruption" >disruption</a></i> special abilities. Special abilities added to throwing weapons function normally when the weapon is used in melee. This ability replaces the standard paladin's divine bond. </p>
+				<p id="distant-mercy"><b>Distant Mercy (Sp)</b>: At 6th level, a divine hunter can expend two uses of her lay on hand abilities to use her lay on hands ability on a target within 5 feet per paladin level. Distant mercy has no effect on creatures harmed by positive energy, such as undead. This ability replaces the paladin's 6th-level mercy. </p>
+				<p id="aura-of-care"><b>Aura of Care (Su)</b>: At 8th level, a divine hunter and her allies gain a preternatural awareness of each other's position in battle. She and any allies within 10 feet of her no longer provide cover against each other's ranged attacks unless they wish to. Allies who cannot move or otherwise take actions still provide cover, as do flat-footed allies. The divine hunter and her allies must be able to see or hear each other to use this ability. This ability replaces aura of resolve.</p>
+				<p id="hunter's-blessing"><b>Hunter's Blessing (Su)</b>: At 11th level, a divine hunter can expend a use of her smite evil ability as a swift action to grant herself and all allies within 10 feet the <a href="../../coreRulebook/feats.html#deadly-aim" >Deadly Aim</a>, <a href="../../coreRulebook/feats.html#precise-shot" >Precise Shot</a>, and <a href="../../coreRulebook/feats.html#improved-precise-shot" >Improved Precise Shot</a> feats, even if they lack the prerequisites. The effects last for 1 minute. Evil creatures gain no benefit from this ability. This ability replaces aura of justice.</p>
+				<p id="righteous-hunter"><b>Righteous Hunter (Su)</b>: At 14th level, a divine hunter's ranged weapons are treated as good-aligned for the purposes of overcoming damage reduction. Any ranged attacks made by an ally within 10 feet of her are likewise treated as good-aligned for the purposes of overcoming damage reduction.</p>
+				<p>This ability functions only while the divine hunter is conscious. This ability replaces aura of faith.</p>
+				<h2 id="empyreal-knight-(archetype)">Empyreal Knight (Archetype)</h2>
+				<p>The empyreal knight dedicates her life to serving the celestial beings that guide mortals in their struggle toward the light. </p>
+				<p id="voices-of-the-spheres"><b>Voices of the Spheres</b>: At 2nd level, an empyreal knight learns to speak and read Celestial, if she could not already. This ability replaces divine grace.</p>
+				<p id="celestial-heart"><b>Celestial Heart (Su)</b>: As an empyreal knight advances, her ties with the celestial realms grant her a portion of the abilities and defenses of true angels. At 3rd level, she gains resistance 5 against acid, cold, and electricity. At 6th level, she gains a +4 racial bonus on saves against poison. At 9th level, her defenses improve to resistance 10 against acid, cold, and electricity. At 12th level, she gains immunity to petrification. </p>
+				<p>At 15th level, she gains truespeech, the ability to speak with any creature that has a language as though using a <i><a href="../../coreRulebook/spells/tongues.html#tongues" >tongues</a></i> spell. This ability functions with a caster level equal to her character level, and is always active.</p>
+				<p>At 18th level, as a swift action, the empyreal knight can manifest a protective aura against evil. Against abilities or effects created by evil creatures, this ability provides a +4 deflection bonus to AC and a +4 resistance bonus on saving throws to anyone within 20 feet of her. It otherwise functions as a <i><a href="../../coreRulebook/spells/magicCircleAgainstEvil.html#magic-circle-against-evil" >magic circle against evil</a></i>. She can use this ability for a maximum of 1 round per day per paladin level. These rounds do not need to be consecutive. These abilities replace mercy.</p>
+				<p id="celestial-ally"><b>Celestial Ally (Sp)</b>: At 4th level, an empyreal knight can summon a celestial ally as a full-round action. This functions as <i><a href="../../coreRulebook/spells/summonMonster.html#summon-monster-i" >summon monster I</a></i>, except it can only be used to summon celestial creatures, archons, and angels. At 6th level, this improves to <i><a href="../../coreRulebook/spells/summonMonster.html#summon-monster-ii" >summon monster II</a></i>, increasing by one spell level for every two levels thereafter, to a maximum of <i><a href="../../coreRulebook/spells/summonMonster.html#summon-monster-ix" >summon monster IX</a></i> at 20th level. This ability can be used a number of times per day equal to the empyreal knight's Charisma modifier (minimum 1), but only one ally can be summoned at a time. This ability replaces lay on hands and channel positive energy. </p>
+				<p id="divine-bond"><b>Divine Bond (Su)</b>: At 5th level, an empyreal knight forms a bond with a mount, as the standard paladin ability. Her mount gains the celestial template at 8th level. At 12th level, her mount sprouts wings if it cannot already fly, and gains a fly speed of twice its land speed and good maneuverability. If the mount could already fly, its fly speed and maneuverability improve to at least this level. This ability otherwise functions as the paladin ability of the same name.</p>
+				<p id="empyreal-champion"><b>Empyreal Champion</b>: At 20th level, an empyreal knight transcends her mortal self. Her DR increases to 10/evil. Her type is treated as outsider for the purposes of spells and magical effects. She gains darkvision 60 feet and low-light vision. As a standard action and a supernatural ability, she can sprout wings that allow her to fly at twice her land speed with average maneuverability. Any armor or clothing reshapes to allow her to fly when she uses this ability. She can retract the wings as a free action. Unlike other outsiders, an empyreal knight can still be brought back from the dead as if she were a member of her previous creature type. This ability replaces holy champion.</p>
+				<h2 id="holy-gun-(archetype)">Holy Gun (Archetype)</h2>
+				<p>Not all paladins are knights in shining armor. Holy guns roam the world searching for evil. And where they find it, they put it down. </p>
+				<p id="weapon-and-armor-proficiency"><b>Weapon and Armor Proficiency</b>: Holy guns are proficient with all simple and martial weapons, firearms, and light armor. </p>
+				<p id="have-gun"><b>Have Gun</b>: At 1st level, the holy gun gains the <a href="../ultimateCombatFeats.html#amateur-gunslinger-(combat)" >Amateur Gunslinger</a> feat and <a href="../ultimateCombatFeats.html#gunsmithing" >Gunsmithing</a> as a bonus feat. She also gains a battered gun identical to the one gained by the gunslinger. This ability replaces detect evil. </p>
+				<p id="divine-deed"><b>Divine Deed</b>: At 2nd level, the holy gun gains the following deed. This deed works and interacts with grit the same way as gunslinger deeds, but only the holy gun can use it. If the holy gun also has levels in gunslinger, she can spend grit points from that class to use this deed. </p>
+				<p id="smiting-shot" class="stat-block-2"><i>Smiting Shot (Su)</i>: A holy gun can spend 1 grit point to make a smiting shot with a firearm attack as a standard action. If the target is evil, the holy gun adds her Charisma bonus and her paladin level to the damage of the firearm attack. If the target of the smiting shot is an outsider with the evil subtype, an evil-aligned dragon, or an undead creature, the bonus to damage increases to the Charisma modifier plus 2 points of damage per level the paladin possess. Regardless of the target, smiting shot automatically bypasses any DR the creature might have. This ability replaces smite evil.</p>
+				<p id="divine-bond"><b>Divine Bond</b>: At 5th level, a holy gun forms a bond with her deity. This functions as the paladin's divine bond ability, except the bond must always take the form of a firearm. In addition to the listed abilities, a holy gun can add the <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-distance" >distance</a></i>, <i>reliable</i>, or <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-seeking" >seeking</a></i> special abilities to her weapon, but she cannot add the <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-defending" >defending</a></i> or <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-disruption" >disruption</a></i> special abilities. This ability replaces the standard paladin's divine bond. </p>
+				<p id="holy-grit"><b>Holy Grit (Ex)</b>: At 11th level, a holy gun gains a number of grit points equal to her Charisma modifier (minimum 1) and gains the use of a single gunslinger deed. She can select any deed that a gunslinger of her paladin level &ndash;4 could use. At 14th level, and every three levels beyond 14th, the holy gun gains another point of grit and another gunslinger deed that a gunslinger of her level &ndash;4 could use. If she already has levels in gunslinger, she gains a bonus to the maximum amount of grit she can have each day, equal to her Charisma bonus (if any) but gains no extra grit as the start of each day.</p>
+				<p id="holy-slinger"><b>Holy Slinger (Ex)</b>: This ability function like the holy champion paladin class feature, but the <i><a href="../../coreRulebook/spells/banishment.html#banishment" >banishment</a></i> occurs when she hits an evil outsider with the smiting shot deed.</p>
+				<h2 id="holy-tactician-(archetype)">Holy Tactician (Archetype)</h2>
+				<p>The holy tactician inspires her allies on the field of battle. Her place is at their side against overwhelming odds, and her guidance brings out their true potential.</p>
+				<p id="weal's-champion"><b>Weal's Champion (Su)</b>: Once per day as swift action, a holy tactician can call on the powers of good to aid her against evil. Against evil targets, the holy tactician gains her Charisma bonus (if any) on her attack rolls against evil creatures, and if she hits, she adds 1/2 her paladin level on her weapon damage rolls as well. These bonuses last for 1 round for every two paladin levels the holy tactician has attained (minimum 1 round). </p>
+				<p>In addition, for 1 round after the holy tactician successfully strikes an evil creature, all non-evil allies within 30 feet of her gain a competence bonus on attack rolls equal to 1/2 her Charisma bonus against that creature as well as a +1 competence bonus on damage rolls. The bonus on damage rolls increases by +1 for every five levels the holy tactician attains (to a maximum of +5 at 20th level). She can grant this bonus against more than one creature at a time. To gain this benefit, the holy tactician's allies must be able to see or hear her, and she must be conscious.</p>
+				<p>At 4th level, and every three levels thereafter, the holy tactician may use weal's champion one additional time per day (to a maximum of seven times per day at 19th level). This ability replaces smite evil. </p>
+				<p id="tactical-acumen"><b>Tactical Acumen (Ex)</b>: At 3rd level, a holy tactician gains a teamwork feat as a bonus feat. She must meet the prerequisites for this feat. She gains an additional bonus feat for every four levels attained after 3rd, to a maximum of five bonus feats at 19th level. This ability replaces divine health and divine bond.</p>
+				<p id="battlefield-presence"><b>Battlefield Presence (Su)</b>: At 3rd level, a tactician can direct her allies in battle, granting each ally within 30 feet one teamwork feat she possesses as a bonus feat as a standard action. All allies must receive the same feat, but do not need to meet the prerequisites of this bonus feat. This ability does not function if the paladin is flat-footed or unconscious. Allies must be able to see and hear the holy tactician in order to gain this benefit. Changing the bonus feat granted is a swift action. This ability replaces aura of courage.</p>
+				<p id="guide-the-battle"><b>Guide the Battle (Ex)</b>: At 8th level, the paladin can direct her allies into an advantageous position once per round as a move action. Each ally (if physically able to) can move 5 feet without expending an action. This movement does not provoke attacks of opportunity. The allies must be able to see or hear the paladin in order to make this movement and cannot be flat-footed. At 15th level, her allies can make this 5-foot move and ignore difficult terrain. This ability replaces aura of resolve.</p>
+				<p id="weal's-wrath"><b>Weal's Wrath (Su)</b>: At 11th level, a tactician can expend two uses of her weal's champion ability at once to enhance its effects. This functions as weal's champion, except the bonus she provides to her allies lasts until each creature she strikes is slain, her weal's champion ability expires, or the paladin herself is slain or knocked unconscious, whichever happens first. This ability replaces aura of justice.</p>
+				<p id="masterful-presence"><b>Masterful Presence (Su)</b>: At 20th level, a tactician gains the ability to grant a different bonus feat to each ally affected by her battlefield presence. In addition, all critical threats made by her and her allies against creatures affected by her weal's champion ability are automatically confirmed (no confirmation roll is needed). This ability replaces holy champion.</p>
+				<h2 id="knight-of-the-sepulcher-(archetype)">Knight of the Sepulcher (Archetype)</h2>
+				<p>Not content with the antipaladin's mere corruption of the soul, the knight of the sepulcher sacrifices mortality along with morality.</p>
+				<p>The knight of the sepulcher archetype is available only to the antipaladin alternate class.</p>
+				<p id="touch-of-the-crypt"><b>Touch of the Crypt (Ex)</b>: At 5th level, a knight of the sepulcher gains a +2 bonus on saving throws against mind-affecting effects, death effects, and poison. He is harmed by positive energy effects and healed by negative energy effects as though he were undead, although negative energy effects that don't heal undead (such as enervation) affect him normally. The knight of the sepulcher has a 25% chance of ignoring critical hits and the bonus damage from sneak attacks as though he were wearing <i>armor of <a href="../../coreRulebook/spells/light.html#light" >light</a> <a href="../../coreRulebook/magicItems/armor.html#armor-fortification" >fortification</a></i>. This ability replaces the fiendish boon ability.</p>
+				<p id="fortitude-of-the-crypt"><b>Fortitude of the Crypt (Ex)</b>: At 8th level, a knight of the sepulcher gains immunity to poison. He also gains darkvision 60 feet if he does not already possess it. This ability replaces the aura of despair ability.</p>
+				<p id="cloak-of-the-crypt"><b>Cloak of the Crypt (Ex)</b>: At 10th level, the knight of the sepulcher gains immunity to energy drain and harmful negative energy effects. His chance of ignoring critical hits and sneak attacks increases to 50%, as though he were wearing <i>armor of moderate <a href="../../coreRulebook/magicItems/armor.html#armor-fortification" >fortification</a></i>. This ability replaces the smite good use gained at 10th level.</p>
+				<p id="will-of-the-crypt"><b>Will of the Crypt (Ex)</b>: At 11th level, a knight of the sepulcher's bonus on saving throws against mind-affecting effects and death effects increases to +4. This ability replaces the aura of vengeance ability.</p>
+				<p id="weapons-of-sin"><b>Weapons of Sin (Su)</b>: At 14th level, a knight of the sepulcher's weapons are treated as evil-aligned for the purposes of overcoming damage reduction. This ability replaces aura of sin.</p>
+				<p id="crypt-lord"><b>Crypt Lord (Ex)</b>: At 15th level, a knight of the sepulcher's chance of ignoring critical hits and sneak attacks increases to 75%, as though he were wearing <i>armor of heavy <a href="../../coreRulebook/magicItems/armor.html#armor-fortification" >fortification</a></i>. He gains immunity to death effects, paralysis, sleep effects, and stunning. He no longer sleeps. The knight of the sepulcher also gains immunity to effects that cause fatigue, and effects that would cause him to become exhausted instead cause him to become fatigued. This ability replaces cruelty.</p>
+				<p id="soul-of-the-crypt"><b>Soul of the Crypt (Su)</b>: At 17th level, a knight of the sepulcher gains DR 5/bludgeoning and good. This ability replaces aura of depravity.</p>
+				<p id="undying-champion"><b>Undying Champion (Ex)</b>: At 20th level, a knight of the sepulcher joins the ranks of the undead. His DR increases to 10/bludgeoning and good. His type changes to undead, and he acquires all undead traits. Although immune to disease, he can still carry and spread diseases with the antipaladin's plague bringer ability. The undying champion no longer has a Constitution score. He uses his Charisma score for calculating hit points, Fortitude saves, and any special abilities that rely on Constitution. This ability replaces unholy champion.</p>
+				<h2 id="sacred-shield-(archetype)">Sacred Shield (Archetype)</h2>
+				<p>When faced by evil, the sacred shield reaches first not for a weapon, but for her trusty shield. With her faith, she can ward others from harm. </p>
+				<p id="bastion-of-good"><b>Bastion of Good (Su)</b>: At 1st level, a sacred shield can call upon the powers of good to defend her and her allies against evil. This ability functions as smite evil, except that the paladin gains no benefit on attack or damage rolls against her target. Instead, any attacks the target makes against allies within 10 feet of the paladin deal half damage. Attacks against the paladin deal full damage, but the paladin gains a deflection bonus to her AC equal to her Charisma bonus (if any) against attacks made by the target of the smite. This bonus increases by +1 for every four paladin levels (to a maximum of +6 at 20th level). As with smite evil, if the paladin targets a creature that is not evil, her bastion of good ability is wasted with no effect. Feats, abilities, and the like that increase a paladin's number of uses of smite evil per day increase a sacred shield's uses of bastion of good per day. This ability replaces smite evil.</p>
+				<p id="holy-shield"><b>Holy Shield (Su)</b>: At 4th level, a sacred shield can channel her faith into her shield, protecting any nearby allies. All allies adjacent to the paladin gain a shield bonus equal to the sacred shield's own shield bonus, including any increase from the shield's enhancement bonus. This bonus does not stack with any existing shield bonuses. The paladin herself radiates light as a <i><a href="../../coreRulebook/spells/light.html#light" >light</a></i> spell while the shielding is active. At 11th level, this protection expands to cover any allies within 10 feet and the radiance increases to the effects of a <i><a href="../../coreRulebook/spells/daylight.html#daylight" >daylight</a></i> spell. At 20th level, any allies within 20 feet are protected. Using this ability consumes two uses of the sacred shield's lay on hands ability, and the effects last for 3 rounds plus a number of rounds equal to her Charisma bonus (if any). This ability replaces channel positive energy.</p>
+				<p id="divine-bond"><b>Divine Bond (Su)</b>: At 5th level, instead of forming a divine bond with her weapon or a mount, a sacred shield forms a bond with her shield. As a standard action, a sacred shield can enhance her shield by calling on the aid of a celestial spirit. This bond lasts for 1 minute per paladin level. When called, the spirit causes the shield to shed light like a torch. At 5th level, the spirit grants the shield a +1 enhancement bonus. For every three levels beyond 5th, the shield gains another +1 enhancement bonus, to a maximum of +6 at 20th level. These bonuses can be added to the shield, stacking with existing enhancement bonuses to a maximum of +5, or they can be used to add any of the following armor special abilities: <i><a href="../../coreRulebook/magicItems/armor.html#armor-arrow-deflection" >arrow deflection</a></i>, <i><a href="../../coreRulebook/magicItems/armor.html#armor-bashing" >bashing</a></i>, <i><a href="../../coreRulebook/magicItems/armor.html#armor-blinding" >blinding</a></i>, <i><a href="../../coreRulebook/magicItems/armor.html#armor-fortification" >fortification</a></i> (any), <i><a href="../../coreRulebook/magicItems/armor.html#armor-reflecting" >reflecting</a></i>, and <i><a href="../../coreRulebook/magicItems/armor.html#armor-spell-resistance" >spell resistance</a> </i>(any). The <i><a href="../../coreRulebook/magicItems/armor.html#armor-reflecting" >reflecting</a></i> enhancement may be used once each time the sacred shield makes use of her divine bond. Adding these armor special abilities consumes an amount of bonus equal to the property's cost. These bonuses are added to any properties the shield already has, but duplicate special abilities do not grant any extra benefit. If the shield is not magical, at least a +1 enhancement bonus must be added before any other special abilities can be added. The bonus and special abilities granted by the spirit are determined when the spirit is called and cannot be changed until the spirit is called again. The celestial spirit imparts no bonuses if the shield is used by anyone other than the sacred shield, but it resumes giving bonuses if the sacred shield resumes using the shield. A sacred shield can use this ability once per day at 5th level, and one additional time per day for every four levels beyond 5th, to a maximum of four times per day at 17th level.</p>
+				<p>If a shield with a celestial spirit is destroyed, the sacred shield loses the use of this ability for 30 days, or until she gains a level, whichever comes first. During this period, the sacred shield takes a &ndash;1 penalty to her armor class and on saving throws.</p>
+				<p id="improved-bastion"><b>Improved Bastion</b>: At 11th level, the radius of a sacred shield's bastion of good ability increases to 20 feet. This ability replaces the paladin's aura of justice. </p>
+				<p id="perfect-bastion"><b>Perfect Bastion</b>: At 20th level, a sacred shield and her allies within 20 feet gain regeneration 10 against the target of her bastion of good ability (essentially regeneration that is overcome by any damage not caused by the target). This ability replaces the sacred shield's holy champion ability.</p>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Paladin",globalNavPath=[{ href: '/pathfinderRPG/prd/ultimateCombat/classArchetypes.html', name: 'Class Archetypes' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Master Chymist</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "masterChymist.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "masterChymist.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "masterChymist.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "masterChymist.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "masterChymist.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "masterChymist.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "masterChymist.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "masterChymist.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "masterChymist.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "masterChymist.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "masterChymist.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "masterChymist.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "masterChymist.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "masterChymist.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "masterChymist.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "masterChymist.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "masterChymist.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "masterChymist.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "masterChymist.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "masterChymist.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "masterChymist.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="master-chymist" class="monster-header">Master Chymist</h1>
+				<p>When alchemists blithely use mutagens to turn themselves into hulking creatures of muscle and reflex, civilized folk often turn their heads and mutter that such transformations must have a price. For a few alchemists, that price is transformation into a master chymist, a creature able to take a monstrous brute form as an act of will.</p>
+				<p>Master chymists become two personalities sharing a single body. Both the hulking "mutagenic form" of alchemical prowess and the original alchemist who created it think of themselves as the true form, and they must learn to work together to achieve their joint goals. More often than not, master chymists eventually become their mutagenic form, and the original alchemist's body and mind may only be brought forth when required by social custom or a need for obscurity and stealth arises. Unfortunately, the mutagenic form of a master chymist is often a more violent, unforgiving personality (which can lead to conflict between the two versions of the same character).</p>
+				<p id="role"><b>Role</b>: Master chymists are rarely accepted by society once their nature is revealed, and thus they have a strong motivation to keep on the move. Adventuring is one of the few activities that their monstrous form can be useful for, leading many to constantly explore dangerous areas on the edge of civilization. A master chymist's resilience and ability to combine bomb-throwing mayhem with up-close melee carnage is a great benefit to many adventuring parties, buying the master chymist allies who are at least willing to overlook her more distasteful features.</p>
+				<p id="alignment"><b>Alignment</b>: A master chymist actually has two alignments (see the mutagenic form ability). The only restriction on these alignments is that they cannot be exactly the same.</p>
+				<p id="hit-die"><b>Hit Die</b>: d10.</p>
+				<h1 id="requirements">Requirements</h1>
+				<p>To qualify to become a master chymist, a character must fulfill all the following criteria.</p>
+				<p id="spells"><b>Spells</b>: Ability to create 3rd-level extracts.</p>
+				<p><b>Special</b>: Mutagen class feature, feral mutagen or infuse mutagen discovery.</p>
+				<h1 id="class-skills">Class Skills</h1>
+				<p>The master chymist's class skills are <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> (Dex), <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a> (Str), <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> (Dex), <a href="../../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> (Cha), <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (dungeoneering) (Int), <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> (Wis), <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> (Dex), and <a href="../../coreRulebook/skills/swim.html#swim" >Swim</a> (Str).</p>
+				<p id="skill-ranks-at-each-level"><b>Skill Ranks at Each Level</b>: 2 + Int modifier.</p>
+				<div class="table"><table id="table-6-4:-master-chymist"><caption>Table:  Master Chymist</caption>
+<thead><tr id="level-bonus-save-save-save-special-extracts-per-day"><th>Level</th><th>Base Attack Bonus</th><th>Fort Save</th><th>Ref Save</th><th>Will Save</th><th>Special</th><th>Extracts per Day</th></tr></thead>
+<tr><td>1st</td><td>+1</td><td>+1</td><td>+1</td><td>+0</td><td style="white-space: normal;"><a href="masterChymist.html#bomb-thrower" >Bomb-thrower</a>, <a href="masterChymist.html#mutagenic-form" >mutagenic form</a>, <a href="masterChymist.html#mutate" >mutate</a> 2/day</td><td>&mdash;</td></tr>
+<tr><td>2nd</td><td>+2</td><td>+1</td><td>+1</td><td>+1</td><td><a href="masterChymist.html#advanced-mutagen" >Advanced mutagen</a></td><td>+1 level of alchemist</td></tr>
+<tr><td>3rd</td><td>+3</td><td>+2</td><td>+2</td><td>+1</td><td><a href="masterChymist.html#brutality" >Brutality</a> (+2)</td><td>+1 level of alchemist</td></tr>
+<tr><td>4th</td><td>+4</td><td>+2</td><td>+2</td><td>+1</td><td style="white-space: normal;">Advanced mutagen</td><td>&mdash;</td></tr>
+<tr><td>5th</td><td>+5</td><td>+3</td><td>+3</td><td>+2</td><td><a href="masterChymist.html#mutate" >Mutate</a> 3/day</td><td>+1 level of alchemist</td></tr>
+<tr><td>6th</td><td>+6</td><td>+3</td><td> +3</td><td>+2</td><td><a href="masterChymist.html#advanced-mutagen" >Advanced mutagen</a></td><td>+1 level of alchemist</td></tr>
+<tr><td>7th</td><td>+7</td><td>+4</td><td>+4</td><td>+2</td><td><a href="masterChymist.html#brutality" >Brutality</a> (+4)</td><td>+1 level of alchemist</td></tr>
+<tr><td>8th</td><td>+8</td><td>+4</td><td>+4</td><td>+3</td><td style="white-space: normal;"><a href="masterChymist.html#advanced-mutagen" >Advanced mutagen</a>, <a href="masterChymist.html#mutate" >mutate</a> 4/day</td><td>&mdash;</td></tr>
+<tr><td>9th</td><td>+9</td><td>+5</td><td>+5</td><td>+3</td><td><a href="masterChymist.html#brutality" >Brutality</a> (+6)</td><td>+1 level of alchemist</td></tr>
+<tr><td>10th</td><td>+10</td><td>+5</td><td>+5</td><td>+3</td><td><a href="masterChymist.html#advanced-mutagen" >Advanced mutagen</a>, <a href="masterChymist.html#mutate" >mutate</a> 5/day</td><td>+1 level of alchemist</td><td>&mdash;</td></tr></table>
+</div>
+
+				<h1 id="class-features">Class Features</h1>
+				<p>The following are class features of the master chymist prestige class.</p>
+				<p id="weapon-and-armor-proficiency"><b>Weapon and Armor Proficiency</b>: A master chymist gains no proficiency with any weapon or armor.</p>
+				<p id="extracts-per-day"><b>Extracts per Day</b>: At the indicated levels, a master chymist gains new extracts per day as if she had also gained a level in alchemist. She does not, however, gain other benefits a character of that class would have gained, except for extracts per day and an increased effective caster level for extracts.</p>
+				<p id="bomb-thrower"><b>Bomb-Thrower (Ex)</b>: The destructive power of bombs appeals to the violent urges of a master chymist. Add the character's alchemist and master chymist levels together to determine the damage done by her bombs.</p>
+				<p id="mutagenic-form"><b>Mutagenic Form (Ex)</b>: A master chymist's mutagenic form is an alter ego that has a different personality than her normal form, an outgrowth of the mental changes caused by the mutagenic potions she has consumed over the course of her career. The mutagenic form shares memories and basic goals with the chymist's normal personality but goes about meeting those goals in a different manner. The mutagenic form is often ugly and monstrous and may even appear to be a different race or gender than her normal form; they may look as different as two unrelated people. Indeed, the mutagenic form often has his or her own name, and may attempt to maintain independent relationships and strongholds (though the alter ego's limited time in existence often makes this difficult). The mutagenic form even has his or her own alignment (which is selected by the player, but must be different from the master chymist's normal alignment). The change in alignment only affects the master chymist while in her mutagenic form.</p>
+				<p id="example"><i>Example</i>: Darabont is a neutral good gnome alchemist 7/master chymist 4. Her mutagenic form is a deformed, twisted creature called Butcher. Butcher is neutral, and more interested in seeing the world kept in balance than promoting the greatest good. Butcher is aware she exists only when called on by Darabont, but seeks to build her own circle of like-minded friends during the hours she exists. Butcher does not dislike Darabont, but feels her gnome form is too soft and innocent to survive in the harsh world the chymist lives in. As Darabont, the character detects as good and is affected as a good character by spells with effects that vary by alignment; as Butcher, the same character is neutral, is not revealed by a <i><a href="../../coreRulebook/spells/detectGood.html#detect-good" >detect good</a></i> spell, and is treated as neutral for all spells and effects.</p>
+				<p id="mutate"><b>Mutate (Su)</b>: At 1st level, as a result of repeated exposure to her mutagens, the master chymist can now assume a mutagenic form twice per day without imbibing her mutagen. In this form, she gains all the bonuses and penalties of her mutagen and adds together her alchemist and master chymist levels together to determine her effective alchemist level for the duration of this form. Using a mutagen also forces the chymist into this form. Taking a mutagen or using the mutate ability again while in her mutagenic form works normally (with the new mutagen's modifiers replacing the current modifiers, and the longer duration taking precedent). The chymist remains in her mutagenic form until its duration expires, her magic is interrupted (as with an <i><a href="../../coreRulebook/spells/antimagicField.html#antimagic-field" >antimagic field</a></i>), or she expends another use of her mutate ability.</p>
+				<p>A chymist may be forced to take her mutagenic form against her will by stress or damage. Anytime the character is in her normal form and has daily uses of the mutate ability available, she may be forced to switch after suffering a critical hit or failing a Fortitude save. In these situations the chymist must make a DC 25 Will save; if she fails, on her next turn she uses a standard action to change to her mutagenic form (which counts as a use of the mutate ability).</p>
+				<p>At 5th level, the master chymist can assume her mutagenic form three times per day; this increases to four times per day at 8th level and five times per day at 10th level.</p>
+				<p id="advanced-mutagen"><b>Advanced Mutagen (Su)</b>: At 2nd level, the mutagenic form of the master chymist continues to evolve and develop as she grows in power. The master chymist selects an advanced mutagen, a power that changes how her mutagen form works or can only be accessed in her mutagenic form. She gains additional advanced mutagens at 4th, 6th, 8th, and 10th level. The chymist cannot select the same advanced mutagen more than once.</p>
+				<p id="burly"><i>Burly (Ex)</i>: In her mutagenic form, the master chymist's heavy physical frame gives her an alchemical bonus on Strength checks, Constitution checks, and Strength-based skill checks as well as a bonus to CMB and CMD. The bonus is equal to half the master chymist's class level.</p>
+				<p id="disguise"><i><a href="../../coreRulebook/skills/disguise.html#disguise" >Disguise</a> (Ex)</i>: When in her mutagenic form, the chymist can temporarily change her appearance to her normal form and still retain most of the abilities of her mutagenic form. As a standard action, she may make a Will saving throw (DC 20) to assume the appearance of her normal form for one minute. Each additional minute beyond the first requires a new saving throw with a +1 increase to the DC. Failure means the chymist assumes her normal form (as if ending the use of mutagenic form) or reverts fully to her mutagenic form. At any time while using this ability, the chymist can resume her normal form as a standard action or relax her will and revert to her mutagenic form as a free action. Once this ability ends, the chymist cannot use it again until 10 minutes have passed. Obvious physical changes in mutagenic form such as draconic mutagen, feral mutagen, and growth mutagen do not work while the chymist is disguised in her normal form. Time spent disguised counts toward the chymist's time in her mutagenic form.</p>
+				<p id="draconic-mutagen"><i>Draconic Mutagen (Su)</i>: When the chymist assumes her mutagenic form, she gains dragon-like features&mdash;scaly skin, reptilian eyes, and so on, resembling a half-dragon. The chymist chooses one dragon type (see the <a href = "../../coreRulebook/classes/sorcerer.html#draconic">draconic bloodline</a>) when selecting this advanced mutagen; once selected, this choice cannot be changed and determines her draconic resistances and breath weapon type. The chymist gains resistance 20 to the dragon's energy type. The chymist's breath weapon deals 8d8 points of energy damage (Reflex half, DC 10 + the chymist's class level + the chymist's Intelligence modifier); she may use her breath weapon once per transformation into her mutagenic form. The character must have an effective alchemist level (alchemist level plus master chymist levels) of at least 16, must know the <i><a href="../../coreRulebook/spells/formOfTheDragon.html#form-of-the-dragon-i" >form of the dragon I</a></i> extract, and must have the feral mutagen discovery or advanced mutagen to select this ability.</p>
+				<p id="dual-mind"><i>Dual Mind (Ex)</i>: The chymist's alter ego gives her a +2 bonus on Will saving throws in her normal and mutagenic forms. If she is affected by an enchantment spell or effect and fails her saving throw, she can attempt it again 1 round later at the same DC; if she succeeds, she is free of the effect (as if she had made her original save) and immediately changes to her mutagenic form or back to her normal form. If she has no more uses of the mutate ability remaining for the day, she cannot use dual mind. The character must have an effective alchemist level (alchemist level plus master chymist levels) of at least 10 to select this ability.</p>
+				<p id="evasion"><i>Evasion (Ex)</i>: This mutagen functions as the rogue ability of the same name, except that it only applies in the chymist's mutagenic form.</p>
+				<p id="extended-mutagen"><i>Extended Mutagen (Ex)</i>: The duration of the master chymist's mutation is doubled.</p>
+				<p id="feral-mutagen"><i>Feral Mutagen (Ex)</i>: This mutagen is identical to the alchemist discovery of the same name and counts as that discovery for the purpose of qualifying for other discoveries or advanced mutagens.</p>
+				<p id="furious-mutagen"><i><a href="../../coreRulebook/magicItems/weapons.html#furious" >Furious</a> Mutagen (Ex)</i>: The damage dice for the feral mutagen's bite and claw attacks increase by one die step. The character must have an effective alchemist level (alchemist level plus chymist level) of at least 11 and must have the feral mutagen discovery or advanced mutagen to select this ability.</p>
+				<p id="grand-mutagen"><i>Grand Mutagen (Ex)</i>: This mutagen is identical to the alchemist discovery of the same name and counts as that discovery for the purpose of qualifying for other discoveries or advanced mutagens. The character must have an effective alchemist level (alchemist level plus master chymist levels) of at least 16 and must have the feral mutagen discovery or advanced mutagen to select this ability.</p>
+				<p id="greater-mutagen"><i>Greater Mutagen (Ex)</i>: This mutagen is identical to the alchemist discovery of the same name and counts as that discovery for the purpose of qualifying for other discoveries or advanced mutagens. The character must have an effective alchemist level (alchemist level plus chymist level) of at least 12 and must have the feral mutagen discovery or advanced mutagen to select this ability.</p>
+				<p id="growth-mutagen"><i>Growth Mutagen (Su)</i>: When the chymist assumes her mutagenic form, she increases one size category, as if under the effects of an <i><a href="../../coreRulebook/spells/enlargePerson.html#enlarge-person" >enlarge person</a></i> spell. The character must have an effective alchemist level (alchemist level plus chymist level) of at least 16 and must know the <i><a href="../../coreRulebook/spells/enlargePerson.html#enlarge-person" >enlarge person</a></i>, <i><a href="../../coreRulebook/spells/giantForm.html#giant-form-i" >giant form I</a></i>, or <i><a href="../../coreRulebook/spells/polymorph.html#polymorph" >polymorph</a></i> extract to select this ability.</p>
+				<p id="night-vision"><i>Night <a href="../../coreRulebook/spells/vision.html#vision" >Vision</a> (Ex)</i>: The chymist gains darkvision 60 feet and low-light vision in her mutagenic form.</p>
+				<p id="nimble"><i>Nimble (Ex)</i>: The master chymist's lithe physical frame gives her an alchemical bonus on all Dexterity checks, Dexterity skill checks, and CMD, and a natural armor bonus to her Armor Class. The bonus is equal to half the master chymist's class level.</p>
+				<p id="restoring-change"><i>Restoring Change (Su)</i>: When the chymist assumes her mutagenic form or returns to her normal form from her mutagenic form, she heals a number of hit points equal to 1d8 + her character level.</p>
+				<p id="scent"><i>Scent (Ex)</i>: The master chymist gains the scent ability in her mutagenic form.</p>
+				<p id="brutality"><b>Brutality (Ex)</b>: At 3rd level, a master chymist's taste for violence leads her to strike more powerful blows with weapons easily mastered by her bestial mind. At 3rd level, a chymist in her mutagenic form deals +2 damage when attacking with simple weapons and natural attacks. This bonus increases to +4 at 7th level and to +6 at 9th level.</p>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Master Chymist",globalNavPath=[{ href: '/pathfinderRPG/prd/advancedPlayersGuide/advancedPrestigeClasses.html', name: 'Advanced Prestige Classes' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Cursed Items</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "cursedItems.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../races.html">Races</a></li>
+						<li><a href = "../classes.html">Classes</a></li>
+						<li><a href = "../usingSkills.html">Using Skills</a></li>
+						<li><a href = "../skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../equipment.html">Equipment</a></li>
+						<li><a href = "../additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../combat.html">Combat</a></li>
+						<li><a href = "../magic.html">Magic</a></li>
+						<li><a href = "../spellLists.html">Spell Lists</a></li>
+						<li><a href = "../spellIndex.html">Spell Index</a></li>
+						<li><a href = "../prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../environment.html">Environment</a></li>
+						<li><a href = "../nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../magicItems.html">Magic Items</a></li>
+						<li><a href = "../glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "cursedItems.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "cursedItems.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "cursedItems.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="cursed-items">Cursed Items</h1><div class="right"><table id="table-15-27-common-item-curses"><caption>Table: Common Item Curses</caption>
+<thead><tr><th>d%</th><th>Curse</th></tr></thead>
+<tbody>
+<tr><td>01&ndash;15</td><td>Delusion</td></tr>
+<tr><td>16&ndash;35</td><td>Opposite effect or target</td></tr>
+<tr><td>36&ndash;45</td><td>Intermittent functioning</td></tr>
+<tr><td>46&ndash;60</td><td>Requirement</td></tr>
+<tr><td>61&ndash;75</td><td>Drawback</td></tr>
+<tr><td>76&ndash;90</td><td>Completely different effect</td></tr>
+<tr><td>91&ndash;100</td><td>Substitute specific cursed item on Table: Specific Cursed Items</td></tr></tbody></table></div>
+
+				<p>Cursed items are magic items with some sort of potentially negative impact. Occasionally they mix bad with good, forcing characters to make difficult choices. Cursed items are almost never made intentionally. Instead they are the result of rushed work, inexperienced crafters, or a lack of proper components. While many of these items still have functions, they either do not work as intended or come with serious drawbacks. When a magic item creation skill check fails by 5 or more, roll on Table: Common Item Curses to determine the type of curse possessed by the item.</p>
+				<p><b>Identifying Cursed Items</b>: Cursed items are identified like any other magic item with one exception: unless the check made to identify the item exceeds the DC by 10 or more, the curse is not detected. If the check is not made by 10 or more, but still succeeds, all that is revealed is the magic item's original intent. If the item is known to be cursed, the nature of the curse can be determined using the standard DC to identify the item.</p>
+				<p><b>Removing Cursed Items</b>: While some cursed items can be simply discarded, others force a compulsion upon the user to keep the item, no matter the costs. Others reappear even if discarded or are impossible to throw away. These items can only be discarded after the character or item is targeted by a <i><a href="../spells/removeCurse.html#remove-curse" >remove curse</a></i> or similar magic. The DC of the caster level check to undo the curse is equal to 10 + the item's caster level. If the spell is successful, the item can be discarded on the following round, but the curse reasserts itself if the item is used again.</p>
+				<h2 id="common-cursed-item-effects">Common Cursed Item Effects</h2>
+				<p>The following are some of the most common cursed item effects. GMs should feel free to invent new cursed item effects to fit specific items. </p>
+				<p><b>Delusion</b>: The user believes the item is what it appears to be, yet it actually has no magical power other than to deceive. The user is mentally fooled into thinking the item is functioning and cannot be convinced otherwise without the casting of <i><a href="../spells/removeCurse.html#remove-curse" >remove curse</a></i>.</p>
+				<p><b>Opposite Effect or Target</b>: These cursed items malfunction, so that either they do the opposite of what the creator intended, or they target the user instead of someone else. The interesting point to keep in mind here is that these items aren't always bad to have. Opposite-effect items include weapons that impose penalties on attack and damage rolls rather than bonuses. Just as a character shouldn't necessarily immediately know what the enhancement bonus of a noncursed magic item is, she shouldn't immediately know that a weapon is cursed. Once she knows, however, the item can be discarded unless some sort of compulsion is placed upon it that compels the wielder to keep and use it. In such cases, a <i><a href="../spells/removeCurse.html#remove-curse" >remove curse</a> </i>spell is generally needed to get rid of the item.</p>
+				<p><b>Intermittent Functioning</b>: The three varieties of intermittent functioning items all function perfectly as intended&mdash;at least some of the time. The three varieties are unreliable, dependent, and uncontrolled items.</p>
+				<p><i>Unreliable</i>: Each time the item is activated, there is a 5% chance (01&ndash;05 on d%) that it does not function.</p>
+				<p><i>Dependent</i>: The item only functions in certain situations. To determine the situation, select or roll on the following table.</p><table>
+<thead><tr><th>d%</th><th>Situation</th></tr></thead>
+<tbody>
+<tr><td>01&ndash;03</td><td>Temperature below freezing</td></tr>
+<tr><td>04&ndash;05</td><td>Temperature above freezing</td></tr>
+<tr><td>06&ndash;10</td><td>During the day</td></tr>
+<tr><td>11&ndash;15</td><td>During the night</td></tr>
+<tr><td>16&ndash;20</td><td>In direct sunlight</td></tr>
+<tr><td>21&ndash;25</td><td>Out of direct sunlight</td></tr>
+<tr><td>26&ndash;34</td><td>Underwater</td></tr>
+<tr><td>35&ndash;37</td><td>Out of water</td></tr>
+<tr><td>38&ndash;45</td><td>Underground</td></tr>
+<tr><td>46&ndash;55</td><td>Aboveground</td></tr>
+<tr><td>56&ndash;60</td><td>Within 10 feet of a random creature type</td></tr>
+<tr><td>61&ndash;64</td><td>Within 10 feet of a random race or kind of creature</td></tr>
+<tr><td>65&ndash;72</td><td>Within 10 feet of an arcane spellcaster</td></tr>
+<tr><td>73&ndash;80</td><td>Within 10 feet of a divine spellcaster</td></tr>
+<tr><td>81&ndash;85</td><td>In the hands of a nonspellcaster</td></tr>
+<tr><td>86&ndash;90</td><td>In the hands of a spellcaster</td></tr>
+<tr><td>91&ndash;95</td><td>In the hands of a creature of a particular alignment</td></tr>
+<tr><td>96</td><td>In the hands of a creature of a particular gender</td></tr>
+<tr><td>97&ndash;99</td><td>On holy days or during particular astrological events</td></tr>
+<tr><td>100</td><td>More than 100 miles from a particular site</td></tr></tbody></table>
+
+				<p><i>Uncontrolled</i>: An uncontrolled item occasionally activates at random times. Roll d% every day. On a result of 01&ndash;05 the item activates at some random point during that day. </p>
+				<p><b>Requirement</b>: Some items have stringent requirements that must be met for them to be usable. To keep an item with this kind of curse functioning, one or more of the following conditions must be met.</p>
+				<ul><li> Character must eat twice as much as normal.</li>
+				<li> Character must sleep twice as much as normal.</li>
+				<li> Character must undergo a specific quest (one time only, and the item functions normally thereafter).</li>
+				<li> Character must sacrifice (destroy) 100 gp in valuables per day.</li>
+				<li> Character must sacrifice (destroy) 2,000 gp worth of magic items each week.</li>
+				<li> Character must swear fealty to a particular noble or to his entire family.</li>
+				<li> Character must discard all other magic items.</li>
+				<li> Character must worship a particular deity.</li>
+				<li> Character must change her name to a specific name. The item only works for characters of that name.</li>
+				<li> Character must add a specific class at the next opportunity if not of that class already.</li>
+				<li> Character must have a minimum number of ranks in a particular skill.</li>
+				<li> Character must sacrifice some part of her life energy (2 points of <a href = "../gettingStarted.html#constitution" >Constitution</a>) one time. If the character gets the <a href = "../gettingStarted.html#constitution" >Constitution</a> points back (such as from a <i>restoration </i>spell), the item ceases functioning. (The item does not cease functioning if the character receives a <a href = "../gettingStarted.html#constitution" >Constitution</a> increase caused by level gain, a <i><a href="../spells/wish.html#wish" >wish</a>, </i>or the use of a magic item.)</li>
+				<li> Item must be cleansed with holy water each day.</li>
+				<li> Item must be used to kill a living creature each day.</li>
+				<li> Item must be bathed in volcanic lava once per month.</li>
+				<li> Item must be used at least once a day, or it won't function again for its current possessor.</li>
+				<li> Item must draw blood when wielded (weapons only). It can't be put away or exchanged for another weapon until it has scored a hit.</li>
+				<li> Item must have a particular spell cast upon it each day (such as <i><a href="../spells/bless.html#bless" >bless</a>, <a href="../spells/atonement.html#atonement" >atonement</a>, </i>or <i><a href="../spells/animateObjects.html#animate-objects" >animate objects</a></i>).</li></ul>
+				<p>Requirements are so dependent upon suitability to the item that they should never be determined randomly. An intelligent item with a requirement often imposes its requirement through its personality. If the requirement is not met, the item ceases to function. If it is met, usually the item functions for one day before the requirement must be met again (although some requirements are one time only, others monthly, and still others continuous).</p>
+				<p><b>Drawback</b>: Items with drawbacks are usually still beneficial to the possessor but carry some negative aspect. Although sometimes drawbacks occur only when the item is used (or held, in the case of some weapons), usually the drawback remains with the character for as long as she has the item.</p>
+				<p>Unless otherwise indicated, drawbacks remain in effect as long as the item is possessed. The DC to save against any of these effects is usually equal to 10 + the item's caster level.</p><table>
+<thead><tr><th>d%</th><th>Drawback</th></tr></thead>
+<tr><td>01&ndash;04</td><td style="white-space:normal">Character's hair grows 1 inch longer every hour.</td></tr>
+<tr><td>05&ndash;09</td><td style="white-space:normal">Character either shrinks 6 inches (01&ndash;50 on d%) or grows that much taller (51&ndash;100). Only happens once.</td></tr>
+<tr><td>10&ndash;13</td><td style="white-space:normal">Temperature around item is 10° F cooler than normal.</td></tr>
+<tr><td>14&ndash;17</td><td style="white-space:normal">Temperature around item is 10° F warmer than normal.</td></tr>
+<tr><td>18&ndash;21</td><td style="white-space:normal">Character's hair color changes.</td></tr>
+<tr><td>22&ndash;25</td><td style="white-space:normal">Character's skin color changes.</td></tr>
+<tr><td>26&ndash;29</td><td style="white-space:normal">Character now bears some identifying mark (tattoo, weird glow, or the like).</td></tr>
+<tr><td>30&ndash;32</td><td style="white-space:normal">Character's gender changes.</td></tr>
+<tr><td>33&ndash;34</td><td style="white-space:normal">Character's race or kind changes.</td></tr>
+<tr><td>35</td><td style="white-space:normal">Character is afflicted with a random disease that cannot be cured.</td></tr>
+<tr><td>36&ndash;39</td><td style="white-space:normal">Item continually emits a disturbing sound (moaning, weeping, screaming, cursing, insults).</td></tr>
+<tr><td>40</td><td style="white-space:normal">Item looks ridiculous (garishly colored, silly shape, glows bright pink).</td></tr>
+<tr><td>41&ndash;45</td><td style="white-space:normal">Character becomes selfishly possessive.</td></tr>
+<tr><td>46&ndash;49</td><td style="white-space:normal">Character becomes paranoid about losing the item and afraid of damage occurring to it.</td></tr>
+<tr><td>50&ndash;51</td><td style="white-space:normal">Character's alignment changes.</td></tr>
+<tr><td>52&ndash;54</td><td style="white-space:normal">Character must attack nearest creature (5% chance [01&ndash;05 on d%] each day).</td></tr>
+<tr><td>55&ndash;57</td><td style="white-space:normal">Character is <a href = "../glossary.html#stunned" >stunned</a> for 1d4 rounds once item function is finished (or randomly, 1/day).</td></tr>
+<tr><td>58&ndash;60</td><td style="white-space:normal">Character's vision is blurry (&ndash;2 penalty on attack rolls, saves, and skill checks requiring vision).</td></tr>
+<tr><td>61&ndash;64</td><td style="white-space:normal">Character gains one negative level.</td></tr>
+<tr><td>65</td><td style="white-space:normal">Character gains two <a href = "../glossary.html#energy-drain-and-negative-levels" >negative levels</a>.</td></tr>
+<tr><td>66&ndash;70</td><td style="white-space:normal">Character must make a <a href="../combat.html#will" >Will</a> save each day or take 1 point of <a href = "../gettingStarted.html#intelligence" >Intelligence</a> damage.</td></tr>
+<tr><td>71&ndash;75</td><td style="white-space:normal">Character must make a <a href="../combat.html#will" >Will</a> save each day or take 1 point of <a href = "../gettingStarted.html#wisdom" >Wisdom</a> damage.</td></tr>
+<tr><td>76&ndash;80</td><td style="white-space:normal">Character must make a <a href="../combat.html#will" >Will</a> save each day or take 1 point of <a href = "../gettingStarted.html#charisma-new" >Charisma</a> damage.</td></tr>
+<tr><td>81&ndash;85</td><td style="white-space:normal">Character must make a <a href="../combat.html#fortitude" >Fortitude</a> save each day or take 1 point of <a href = "../gettingStarted.html#constitution" >Constitution</a> damage.</td></tr>
+<tr><td>86&ndash;90</td><td style="white-space:normal">Character must make a <a href="../combat.html#fortitude" >Fortitude</a> save each day or take 1 point of Strength damage.</td></tr>
+<tr><td>91&ndash;95</td><td style="white-space:normal">Character must make a <a href="../combat.html#fortitude" >Fortitude</a> save each day or take 1 point of <a href = "../gettingStarted.html#dexterity" >Dexterity</a> damage.</td></tr>
+<tr><td>96</td><td style="white-space:normal">Character is polymorphed into a specific creature (5% chance [01&ndash;05 on d%] each day).</td></tr>
+<tr><td>97</td><td style="white-space:normal">Character cannot cast arcane spells.</td></tr>
+<tr><td>98</td><td style="white-space:normal">Character cannot cast divine spells.</td></tr>
+<tr><td>99</td><td style="white-space:normal">Character cannot cast any spells.</td></tr>
+<tr><td>100</td><td style="white-space:normal">Either pick one of the above that's appropriate or create a drawback specifically for that item.</td></tr></table>
+
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Cursed Items",globalNavPath=[{ href: '/pathfinderRPG/prd/coreRulebook/magicItems.html', name: 'Magic Items' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

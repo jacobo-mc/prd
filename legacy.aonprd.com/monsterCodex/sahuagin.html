@@ -1,0 +1,910 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Sahuagin</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "sahuagin.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "sahuagin.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "sahuagin.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "sahuagin.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "sahuagin.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "sahuagin.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "sahuagin.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "sahuagin.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "boggards.html">Boggards</a></li>
+						<li><a href = "bugbears.html">Bugbears</a></li>
+						<li><a href = "drow.html">Drow</a></li>
+						<li><a href = "duergar.html">Duergar</a></li>
+						<li><a href = "fireGiants.html">Fire Giants</a></li>
+						<li><a href = "frostGiants.html">Frost Giants</a></li>
+						<li><a href = "ghouls.html">Ghouls</a></li>
+						<li><a href = "gnolls.html">Gnolls</a></li>
+						<li><a href = "goblins.html">Goblins</a></li>
+						<li><a href = "hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "kobolds.html">Kobolds</a></li>
+						<li><a href = "lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "ogres.html">Ogres</a></li>
+						<li><a href = "orcs.html">Orcs</a></li>
+						<li><a href = "ratfolk.html">Ratfolk</a></li>
+						<li><a href = "sahuagin.html">Sahuagin</a></li>
+						<li><a href = "serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "troglodytes.html">Troglodytes</a></li>
+						<li><a href = "trolls.html">Trolls</a></li>
+						<li><a href = "vampires.html">Vampires</a></li>
+						<li><a href = "appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "sahuagin.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "sahuagin.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "sahuagin.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "sahuagin.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "sahuagin.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "sahuagin.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "sahuagin.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "sahuagin.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "sahuagin.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "sahuagin.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "sahuagin.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "sahuagin.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "sahuagin.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 class = "monster-header" id = "monster-codex-sahuagin">Sahuagin</h1>
+
+<p>The sahuagin are horrid creatures that lurk in the oceans, ever ready to wreak devastation. These "sea devils" leave ships adrift and crewless, steal away whole villages in the dead of night, and force aquatic elves and merfolk alike to gird for war.</span></p>
+<p>Sahuagin are complex beings. They have keen intellects and crave order and structure, yet they boil with barely suppressed rage and bloodlust. Even the smallest provocation can tip a sahuagin from cold and calculating schemer to murderous assailant. To stay sane and sharp in times of need, sahuagin periodically revel in bloodstained waters&mdash;those who can't satiate their bloodlust either retreat into lethargic apathy or snap and turn against their own.</p>
+<p>As a people, sahuagin seek nothing less than total domination of the seas. Though they love to unleash doom on other intelligent species, sahuagin also live in perpetual war with their own kind. Their kings and queens encourage these petty blood feuds, seeing them as a means to feed the blood frenzy, control their numbers, and further hone their race's already considerable skills in battle.</p>
+<p>Unlike most aquatic humanoids, sahuagin thrive at any depth or temperature. Even still, they show a marked preference for warm coastal waters&mdash;perhaps due to an abundance of both food and beings to terrorize. Sahuagin can be found anywhere from sheltered atolls to lightless trenches, from the tropics to the poles. They have even spread to the Elemental Plane of Water.</p>
+<p>Sahuagin live under a feudal system that embodies a ruthless enforcement of order. Each sahuagin holds a position earned with its prowess and skills, and risks demotion by showing any sign of incompetence&mdash;or death for any sign of weakness. Officers and lords rule minor holdings as vassals to the barons, dukes, and princesses; kings and queens rule entire oceans from their grand palaces within cities boasting populations in the tens of thousands. Each noble sahuagin aspires to bend the others to her will and become the ruler of an oceanic empire, ushering in the inevitable age of sahuagin ascendance.</p>
+<p>Despite their use of noble titles, sahuagin put little stock in bloodlines. Accomplishment trumps parentage, and while sahuagin take pride in relatives with influence and strength, even the offspring of royals must swim unaided. Certainly those children have more opportunities and training than others, but the ambitious daughter of a common laborer might rise to rule a barony, while the inept son of a baron could very well become the meal of his betters.</p>
+<p>Sahuagin view other creatures through the lens of their appetites&mdash;other races live only to serve as slaves, to die in sport or battle, or to fill the belly. Sahuagin rarely ally with creatures other than their beloved sharks and the shark-like adaros, though they occasionally enslave dragon turtles and other fearsome aquatic monsters as beasts of war. They despise aquatic elves, locathahs, merfolk, and tritons, seeing them as weaklings fit only for slavery and feasting. Aboleths and krakens earn a mixture of loathing and respect, as these beings represent the greatest impediment to sahuagin dominion of the seas.</p>
+<p>Young sahuagin are born into clutches of up to 200 eggs, which females lay in well-protected egg chambers. A single settlement typically has one chamber, but larger cities can have up to a dozen. Eggs hatch 3 months after being laid, spawning eel-like fingerlings&mdash;all teeth, jaws, and tail. Hatching provokes a violent frenzy, as the newborn fingerlings devour the smaller and weaker members of their clutch. A number of the survivors fall prey to larger predators, or are eaten by their larger siblings when they grow hungry again after their brutal first meal. Only the clever, fast, or strong survive long in the egg chambers.</p>
+<p>Sahuagin parents return to claim their surviving young after a year has passed, recognizing their offspring by scent. Some young remain unclaimed, because their parents either have perished or cannot track down the scent. The sahuagin barracks raise such foundlings communally, thrusting them into battle as soon as they can wield a trident.</p>
+<p>Sahuagin mature quickly. They develop arms and legs at 6 months of age, grow to around 5 feet tall within a year, and reach their adult size of 7 feet tall around their sixth year. Upon reaching maturity, sahuagin of low social standing must fend for themselves or die&mdash;those of higher status are often trained and protected long enough by their parents to become skilled and deadly warriors.</p>
+<p>As a species, sahuagin are particularly prone to mutation. Most mutants perish in the hatcheries, but those that survive command early respect, their strange abilities seen as proof of divine favor. The most common are the fearsome four-armed sahuagin, perhaps accounting for one in 100 surviving hatchlings. Other mutations appear to arise due to environmental conditions or nearness to other species, or perhaps in response to trace contaminants in the water. Of particular note are the malenti, those sahuagin who for unknown reasons are born looking exactly like aquatic elves.</p>
+<p>Sahuagin have long, possibly unlimited life spans, though violence claims most before they reach their thirtieth year. Some particularly fierce princes and queens have ruled for hundreds of years, however, as sahuagin's bodies don't decline with age. Particularly old sahuagin are significantly larger than their younger kin (growing into Large creatures as they age). Sahuagin of all ages despise infirmity, and attempt to excise it from their midst with atavistic, violent reactions.</p>
+<p>Full statistics for sahuagin can be found in their <a href = "../bestiary/sahuagin.html"><em>Bestiary</em> entry</a>.</p>
+
+<h1 id = "sahuagin-new-rules">New Rules</h1>
+<p>The following section details rules to help represent a wide range of sahuagin.</p>
+
+<h2 id = "sahuagin-mutants">Sahuagin Mutants</h2>
+<p>Inherent instability in sahuagin genes makes them susceptible to mutations. Not all these mutations are beneficial, and defective sahuagin rarely survive long after hatching. Sahuagin mutants that do survive and grow to adulthood command the respect and admiration of their peers, quickly rising to positions of power. Four-armed sahuagin and malenti are the most common forms of mutated sahuagin.</p>
+<p><strong>Four-Armed Sahuagin</strong>: These mutants have four arms, giving them two additional claw attacks. Four-armed sahuagin gain <a href = "../bestiary/monsterFeats.html#multiattack">Multiattack</a> and <a href = "../coreRulebook/feats.html#toughness">Toughness</a> as bonus feats, and gain the multiweapon mastery ability. They have a base CR of 3. Four-armed sahuagin excel as barbarians, fighters, and rangers.</p>
+<p><strong>Malenti</strong>: A malenti resembles an aquatic elf, and receives a +4 bonus to Dexterity and Charisma, gains Deceitful and <a href = "../coreRulebook/feats.html#skill-focus">Skill Focus</a> (<a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a>) as bonus feats, and can use <em><a href = "../coreRulebook/spells/command.html#command">command</a></em> as a spell-like ability three times per day (this ability works only on creatures with the aquatic subtype, representing increased telepathic influence over aquatic creatures). Additionally, a malenti's natural armor bonus decreases to +2 and the malenti loses its light blindness and natural weapons. Malenti excel as bards, oracles, rogues, and wizards.</p>
+<p><strong>Prehistoric Sahuagin</strong>: Also known as adacthys, these sahuagin mutants are throwbacks to a more savage epoch; they're Large, have a +7 natural armor bonus, and can speak with aquatic dinosaurs and aquatic megafauna in addition to sharks. Adacthys are usually found in the same waters as prehistoric creatures.</p>
+<p><strong>Shark-Blooded Sahuagin</strong>: These sahuagin mutants have overly large maws filled with rows of shark-like teeth, as well as the fins and tail of an oversized shark. These abnormalities give them the appearance of monstrous merfolk, a base speed of 5 feet, a swim speed of 80 feet, a bite attack that deals 1d6 points of damage, and immunity to trip attempts. Shark-blooded sahuagin are typically found in sahuagin communities with an unusually high number of shark guardians or near shark breeding grounds.</p>
+<p><strong>Sightless Sahuagin</strong>: These pallid, sickly looking sahuagin lack eyes, but their blindsense increases to 90 feet and they gain <a href = "../coreRulebook/feats.html#blind-fight">Blind Fight</a> as a bonus feat. A glowing tendril protruding from a sightless sahuagin causes all sighted creatures to be dazzled while within 10 feet of the sahuagin, and allows it to use <em><a href = "../coreRulebook/spells/animalTrance.html#animal-trance">animal trance</a></em> once per day as a spell-like ability. This <em><a href = "../coreRulebook/spells/animalTrance.html#animal-trance">animal trance</a></em> effect is entirely visual, so it doesn't have the sonic descriptor or work on blind creatures. As sightless sahuagin are blind, they are immune to all sight-based effects and attacks, including gaze attacks. Isolated sightless sahuagin mutants arise near sites of ancient evil, and make even other sahuagin uneasy. Whole tribes of such mutants dwell in deep underwater trenches and caves, lost cities at the bottom of oceans, and cursed aquatic temples.</p>
+<p><strong>Spined Sahuagin</strong>: Covered in hundreds of needlelike spines, spined sahuagin can raise their piercing protrusions to impale creatures that touch them. Any creature that successfully grapples or is grappled by a spined sahuagin, or hits one with an unarmed strike or natural weapon, takes 1d4 points of piercing damage. Additionally, these mutants gain Defensive Combat Training and <a href = "../coreRulebook/feats.html#improved-grapple">Improved Grapple</a> as bonus feats. Spined sahuagin most commonly appear in depths that also serve as the hunting grounds of sea serpents, thalassic behemoths, or other massive aquatic predators.</p>
+
+<h2 id = "sahuagin-feats">Sahuagin Feats</h2>
+<p>The following feats are common among sahuagin.</p>
+
+<h3 id = "aquatic-advantage">Aquatic Advantage</h3>
+<p>Foes without a swim speed provoke attacks of opportunity from you underwater.</p>
+<p class = "stat-block-1"><strong>Prerequisites</strong>: <a href = "../coreRulebook/feats.html#combat-reflexes">Combat Reflexes</a>, must have a natural swim speed.</p>
+<p class = "stat-block-1"><strong>Benefits</strong>: A creature that lacks a swim speed provokes an attack of opportunity from you when it attacks you underwater. You don't get an attack of opportunity if the attacker is under the effects of <em><a href = "../coreRulebook/spells/freedomOfMovement.html#freedom-of-movement">freedom of movement</a></em> .</p>
+
+<h3 id = "blood-tide">Blood Tide</h3>
+<p>In the throes of blood frenzy, you can unleash a whirlwind of claws and teeth against your foes.</p>
+<p class = "stat-block-1"><strong>Prerequisites</strong>: <a href = "../coreRulebook/feats.html#combat-expertise">Combat Expertise</a>, Greater Blood Frenzy*, base attack bonus +6, blood frenzy ability, sahuagin.</p>
+<p class = "stat-block-1"><strong>Benefits</strong>: When you make a full attack while in a blood frenzy, you can give up your regular attacks to instead make one melee attack at your highest base attack bonus against each bleeding or wounded opponent within reach. You must use a natural weapon with these attacks, and you must make a separate attack roll against each opponent. You do not need to use the same natural weapon against each opponent.</p>
+<p>When you use Blood Tide, you also forfeit any extra attacks granted by other feats, spells, or abilities.</p>
+
+<h3 id = "greater-blood-frenzy">Greater Blood Frenzy</h3>
+<p>Your wounds move you into a deeper frenzy.</p>
+<p class = "stat-block-1"><strong>Prerequisites</strong>: Blood frenzy ability, sahuagin.</p>
+<p class = "stat-block-1"><strong>Benefits</strong>: You no longer take a penalty to AC while in a blood frenzy. In addition, if you strike an enemy with both of your claw attacks&mdash;or two or more claw attacks if you have extra limbs&mdash;while in a blood frenzy, you can rend (as the special attack), dealing an amount of additional damage equal to your claw damage plus 1-1/2 times your Strength bonus (minimum 0).</p>
+
+<h2 id = "sahuagin-spells">Sahuagin Spells</h2>
+<p>Sahuagin choose spells that improve their natural gifts.</p>
+
+<p id = "air-breathing" class = "stat-block-title">Air Breathing</p>
+<p class = "stat-block-1"><strong>School</strong> transmutation; <strong>Level</strong> alchemist 3, bloodrager 3, cleric 3, druid 3, magus 3, shaman 3, sorcerer/wizard 3, summoner 3</p>
+<p class = "stat-block-1"><strong>Casting Time</strong> 1 standard action</p>
+<p class = "stat-block-1"><strong>Components</strong> V, S, M/DF (flower or piece of grass)</p>
+<p class = "stat-block-1"><strong>Range</strong> touch</p>
+<p class = "stat-block-1"><strong>Target</strong> living aquatic creatures touched</p>
+<p class = "stat-block-1"><strong>Duration</strong> 2 hours/level; see text</p>
+<p class = "stat-block-1"><strong>Saving Throw</strong> Will negates (harmless); <strong>Spell Resistance</strong> yes (harmless)</p>
+<p>The transmuted creatures can breathe air freely. Divide the duration evenly among all the creatures you touch. The spell doesn't make creatures unable to breathe water.</p>
+
+<p id = "blood-in-the-water" class = "stat-block-title">Blood in the Water</p>
+<p class = "stat-block-1"><strong>School</strong> necromancy (emotion); <strong>Level</strong> cleric 2, sorcerer/wizard 2</p>
+<p class = "stat-block-1"><strong>Casting Time</strong> 1 standard action</p>
+<p class = "stat-block-1"><strong>Components</strong> V, S, DF</p>
+<p class = "stat-block-1"><strong>Range</strong> 20 ft.</p>
+<p class = "stat-block-1"><strong>Area</strong> 20-ft.-radius emanation centered on you</p>
+<p class = "stat-block-1"><strong>Duration</strong> 1 round/level</p>
+<p class = "stat-block-1"><strong>Saving Throw</strong> Will negates (harmless); <strong>Spell Resistance</strong> yes (harmless)</p>
+<p>As part of the casting of this spell, you must deal 1 point of piercing or slashing damage to yourself to release your blood. This causes you to take 1 point of bleed damage. While the spell is in effect, all sharks, feeders in the depths, and creatures with the blood frenzy ability in the area gain a +2 bonus to Strength and Constitution and take a &ndash;2 penalty to AC. This is treated as blood frenzy for the purposes of other feats and effects, and doesn't stack with the effects of actual blood frenzy. If you cease bleeding, the spell immediately ends.</p>
+
+<p id = "gift-of-the-deep" class = "stat-block-title">Gift of the Deep</p>
+<p class = "stat-block-1"><strong>School</strong> transmutation (polymorph); <strong>Level</strong> cleric 4, sorcerer/wizard 5</p>
+<p class = "stat-block-1"><strong>Casting Time</strong> 1 standard action</p>
+<p class = "stat-block-1"><strong>Components</strong> V, S, DF</p>
+<p class = "stat-block-1"><strong>Range</strong> close (25 ft. + 5 ft./2 levels)</p>
+<p class = "stat-block-1"><strong>Target</strong> one non-mutated sahuagin/level, no two of which can be more than 30 ft. apart</p>
+<p class = "stat-block-1"><strong>Duration</strong> 1 minute/level (D)</p>
+<p class = "stat-block-1"><strong>Saving Throw</strong> Fortitude negate (harmless); <strong>Spell Resistance</strong> yes (harmless)</p>
+<p>You give the targets the appearance and many of the abilities of sahuagin mutants, with effects as described below. Choose one benefit for all targets of this spell. This spell has no effect on sahuagin that are already mutants or already under the effects of <em>gift of the deep</em> .</p>
+<p><em>Four-Armed</em> : The sahuagin sprouts an extra pair of arms&mdash;which can be used to make claw attacks (dealing 1d4 points of damage), or to wield weapons or hold items. It gains the benefits of the <a href = "../bestiary/monsterFeats.html#multiattack">Multiattack</a> and <a href = "../bestiary/monsterFeats.html#multiweapon-fighting">Multiweapon Fighting</a> feats.</p>
+<p><em>Malenti</em> : The sahuagin's features shift to resemble those of an aquatic elf. It loses its light blindness as well as its claw and bite attacks. The sahuagin gains a +4 enhancement bonus to Dexterity and Charisma, and a +10 circumstance bonus on <a href = "../coreRulebook/skills/disguise.html#disguise">Disguise</a> checks to appear to be an aquatic elf.</p>
+<p><em>Prehistoric</em> : The sahuagin grows in size, as <em><a href = "../coreRulebook/spells/enlargePerson.html#enlarge-person">enlarge person</a></em> . It also gains a +2 enhancement bonus to its natural armor.</p>
+<p><em>Shark-Blooded</em> : The sahuagin's tail elongates and melds with its legs. Its mouth enlarges, increasing its bite damage by one size category (to 1d6 for a typical sahuagin). Its swim speed increases by 20 feet, but its land speed is reduced to 5 feet. The sahuagin can't be tripped.</p>
+<p><em>Sightless</em> : The sahuagin is blinded, but gains the benefits of the Blind Fight feat and blindsense with a range of 90 feet.</p>
+<p><em>Spined</em> : Spines grow on the sahuagin's scales. Any creature that successfully grapples with it, is grappled by it, or hits it with an unarmed strike or natural weapon takes 1d4 points of piercing damage. The sahuagin also gains the benefits of the <a href = "../coreRulebook/feats.html#improved-grapple">Improved Grapple</a> feat.</p>
+
+<h1 id = "example-sahuagin">Example Sahuagin</h1>
+
+<h2>Sahuagin Agents</h2>
+<p>Agents lead the way for other sahuagin by scouting enemy patrols and hidden fortifications.</p>
+
+<p id = "sahuagin-scout" class = "stat-block-title">Sahuagin Scout <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1">Sahuagin rogue 2</p>
+<p class = "stat-block-1">LE Medium monstrous humanoid (aquatic)</p>
+<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Senses</strong> blindsense 30 ft., darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +8</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 18, touch 13, flat-footed 15 (+3 Dex, +5 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 34 (4 HD; 2d10+2d8+14)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +3, <strong>Ref</strong> +9, <strong>Will</strong> +4</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> evasion</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light blindness</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft., swim 60 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk trident +8 (1d8+6), bite +2 (1d4+2) or 2 claws +7 (1d4+4), bite +7 (1d4+4)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk underwater heavy crossbow +7 (1d10/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> blood frenzy, sneak attack +1d6</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The scout shoots the appropriate <em><a href = "../coreRulebook/magicItems/weapons.html#_weapons-bane">bane</a> bolts</em> before closing to melee.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 18, <strong>Dex</strong> 17, <strong>Con</strong> 16, <strong>Int</strong> 17, <strong>Wis</strong> 12, <strong>Cha</strong> 7</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +3; <strong>CMB</strong> +7; <strong>CMD</strong> 20</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#combat-expertise">Combat Expertise</a>, <a href = "../ultimateCombat/ultimateCombatFeats.html#rapid-reload">Rapid Reload</a> (heavy crossbow)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +10, <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +11, <a href = "../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> +12, <a href = "../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> +10, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (geography) +7, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +8, <a href = "../coreRulebook/skills/ride.html#ride">Ride</a> +7, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +8, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +10, <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +7, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +12</p>
+<p class = "stat-block-1"><strong>Languages</strong> Aquan, Common, Elven; speak with sharks</p>
+<p class = "stat-block-1"><strong>SQ</strong> rogue talents (bleeding attack +1), trapfinding +1</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>+1 elf-bane bolts</em> (3), <em>+1 human-bane bolts</em> (3), <em>+1 merfolk-bane bolts</em> (3), <em>potion of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em> ; <strong>Other Gear</strong> mwk trident, mwk underwater heavy crossbow with 20 bolts, <em>feather token</em> (anchor), dagger, thieves' tools, 53 gp</p>
+
+<p id = "sahuagin-infiltrator" class = "stat-block-title">Sahuagin Infiltrator <span class = "stat-block-cr">CR 7</span></p>
+<p class = "stat-block-xp">XP 3,200</p>
+<p class = "stat-block-1">Sahuagin rogue 6</p>
+<p class = "stat-block-1">LE Medium monstrous humanoid (aquatic)</p>
+<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Senses</strong> blindsense 30 ft., darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +13</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 22, touch 13, flat-footed 19 (+3 armor, +3 Dex, +5 natural, +1 shield)</p>
+<p class = "stat-block-1"><strong>hp</strong> 52 (8 HD; 2d10+6d8+14)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +6, <strong>Ref</strong> +12, <strong>Will</strong> +8</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> evasion, trap senses +2, uncanny dodge</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light blindness</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft., swim 60 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk dagger +10/+5 (1d4+5/19&ndash;20), mwk dagger +10 (1d4+5/19&ndash;20), bite +6 (1d4+2) or 2 claws +11 (1d4+5), bite +11 (1d4+5)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> dagger +9 (1d4+5/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> blood frenzy, sneak attack +3d6</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The infiltrator darts around the battlefield, attempting to flank its opponents. If it's forced to fight alone, it instead tries to ambush its foes one by one.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 20, <strong>Dex</strong> 16, <strong>Con</strong> 12, <strong>Int</strong> 14, <strong>Wis</strong> 15, <strong>Cha</strong> 11</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +6; <strong>CMB</strong> +11; <strong>CMD</strong> 24</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#double-slice">Double Slice</a>, <a href = "../coreRulebook/feats.html#great-fortitude">Great Fortitude</a>, <a href = "../coreRulebook/feats.html#quick-draw">Quick Draw</a>, <a href = "../coreRulebook/feats.html#two-weapon-defense">Two-Weapon Defense</a>, <a href = "../coreRulebook/feats.html#two-weapon-fighting">Two-Weapon Fighting</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +14, <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a> +11, <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +9, <a href = "../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> +16, <a href = "../coreRulebook/skills/disguise.html#disguise">Disguise</a> +11, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +11, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (local) +8, <a href = "../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a> +8, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +13, <a href = "../coreRulebook/skills/ride.html#ride">Ride</a> +7, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +13, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +19, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +13</p>
+<p class = "stat-block-1"><strong>Languages</strong> Aquan, Common, Elven, Giant, Goblin; speak with sharks</p>
+<p class = "stat-block-1"><strong>SQ</strong> rogue talents (bleeding attack +3, combat trick, fast stealth), trapfinding +3</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em>, <em>potion of <a href = "../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></em> ; <strong>Other Gear</strong> mwk studded leather, mwk daggers (2), daggers (4), <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +1</em>, <em>stalker's mask</em>, masterwork thieves' tools, 13 gp</p>
+
+
+<h2>Sahuagin Marauders</h2>
+<p>These sahuagin revel in their rage and blood frenzy.</p>
+
+<p id = "sahuagin-brute" class = "stat-block-title">Sahuagin Brute <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1">Sahuagin barbarian 1</p>
+<p class = "stat-block-1">NE Medium monstrous humanoid (aquatic)</p>
+<p class = "stat-block-1"><strong>Init</strong> +2; <strong>Senses</strong> blindsense 30 ft., darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +7</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 17, touch 12, flat-footed 15 (+2 Dex, +5 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 36 (3 HD; 2d10+1d12+13)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +7, <strong>Ref</strong> +6, <strong>Will</strong> +5</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light blindness</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 40 ft., swim 60 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk harpoon +8 (1d8+6/&times;3), bite +2 (1d4+2)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk harpoon +6 (1d8+4/&times;3)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> blood frenzy, rage (8 rounds/day)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 19, <strong>Dex</strong> 15, <strong>Con</strong> 18, <strong>Int</strong> 12, <strong>Wis</strong> 13, <strong>Cha</strong> 10</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +3; <strong>CMB</strong> +7; <strong>CMD</strong> 19</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#exotic-weapon-proficiency">Exotic Weapon Proficiency</a> (harpoon), Greater Blood Frenzy*</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +8, <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> +6, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +6, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +7, <a href = "../coreRulebook/skills/ride.html#ride">Ride</a> +6, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +6, <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +6, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +16</p>
+<p class = "stat-block-1"><strong>Languages</strong> Aquan, Common; speak with sharks</p>
+<p class = "stat-block-1"><strong>SQ</strong> fast movement</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></em> ; <strong>Other Gear</strong> mwk harpoon, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +1</em>, silk rope (50 ft.), 280 gp</p>
+
+<p id = "sahuagin-champion" class = "stat-block-title">Sahuagin Champion <span class = "stat-block-cr">CR 10</span></p>
+<p class = "stat-block-xp">XP 9,600</p>
+<p class = "stat-block-1">Four-armed sahuagin barbarian 7</p>
+<p class = "stat-block-1">NE Medium monstrous humanoid (aquatic)</p>
+<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Senses</strong> blindsense 30 ft., darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +13</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 23, touch 11, flat-footed 20 (+3 armor, +3 Dex, +7 natural, &ndash;2 rage, +2 shield)</p>
+<p class = "stat-block-1"><strong>hp</strong> 123 (9 HD; 2d10+7d12+61)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +14, <strong>Ref</strong> +10, <strong>Will</strong> +10</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> improved uncanny dodge, trap sense +2; <strong>DR</strong> 1/&mdash;</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light blindness</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 40 ft., swim 60 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 trident</em> +18/+13 (1d8+13), claw +15 (1d4+4), mwk spiked heavy steel shield +18 (1d6+8), bite +15 (1d4+4)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk underwater heavy crossbow +13 (1d10/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> blood frenzy, multiweapon mastery, rage (19 rounds/day), rage powers (inspire ferocity, no escape, reckless abandon +2)</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> When not raging and not affected by <em><a href = "../coreRulebook/spells/barkskin.html#barkskin">barkskin</a></em>, the champion's statistics are <strong>AC</strong> 21, touch 11, flat-footed 18; <strong>hp</strong> 105; <strong>Fort</strong> +12, <strong>Will</strong> +8; <strong>Melee</strong> <em>+1 trident</em> +16/+11 (1d8+10), claw +13 (1d4+3), mwk spiked heavy steel shield +16 (1d6+6), bite +13 (1d4+3) or 4 claws +15 (1d4+6), bite +15 (1d4+6); <strong>Ranged</strong> mwk heavy crossbow +13 (1d10/19&ndash;20); <strong>Str</strong> 22, <strong>Con</strong> 17; <strong>CMB</strong> +15, <strong>CMD</strong> 28; <strong>Skills</strong> <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +18, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +25.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 26, <strong>Dex</strong> 16, <strong>Con</strong> 21, <strong>Int</strong> 12, <strong>Wis</strong> 13, <strong>Cha</strong> 10</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +9; <strong>CMB</strong> +17; <strong>CMD</strong> 28</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#great-fortitude">Great Fortitude</a>, <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#improved-shield-bash">Improved Shield Bash</a>, <a href = "../coreRulebook/feats.html#intimidating-prowess">Intimidating Prowess</a>, <a href = "../bestiary/monsterFeats.html#multiattack">Multiattack</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +14 (+18 when jumping), <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +20, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +13, <a href = "../coreRulebook/skills/ride.html#ride">Ride</a> +8, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +11, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +27</p>
+<p class = "stat-block-1"><strong>Languages</strong> Aquan, Common; speak with sharks</p>
+<p class = "stat-block-1"><strong>SQ</strong> fast movement</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/barkskin.html#barkskin">barkskin</a></em> ; <strong>Other Gear</strong> mwk studded leather, mwk spiked heavy steel shield, <em>+1 trident</em>, mwk underwater heavy crossbow with 20 bolts, <em>belt of giant strength +2</em>, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +2</em>, 1,038 gp</p>
+
+
+<h2>Shark Speakers</h2>
+<p>Shark speakers prefer the company of vicious fish over other sahuagin.</p>
+
+<p id = "sahuagin-deep-racer" class = "stat-block-title">Sahuagin Deep Racer <span class = "stat-block-cr">CR 4</span></p>
+<p class = "stat-block-xp">XP 1,200</p>
+<p class = "stat-block-1">Shark-blooded sahuagin ranger 2</p>
+<p class = "stat-block-1">LE Medium monstrous humanoid (aquatic)</p>
+<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Senses</strong> blindsense 30 ft., darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +9</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 18, touch 13, flat-footed 15 (+3 Dex, +5 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 40 (4d10+18)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +7, <strong>Ref</strong> +9, <strong>Will</strong> +5; +2 vs. ongoing effects</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light blindness</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 5 ft., swim 80 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk longspear +8 (1d8+4/&times;3), bite +2 (1d6+3) or 2 claws +7 (1d4+3), bite +7 (1d6+3)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk underwater heavy crossbow +8 (1d10/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> blood frenzy, combat style (two-handed weapon), favored enemy (elves +2)</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The deep racer regularly uses <a href = "../advancedPlayersGuide/advancedFeats.html#pushing-assault">Pushing Assault</a>.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 17, <strong>Dex</strong> 17, <strong>Con</strong> 18, <strong>Int</strong> 14, <strong>Wis</strong> 15, <strong>Cha</strong> 6</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +4; <strong>CMB</strong> +7; <strong>CMD</strong> 20 (can't be tripped)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#cleave">Cleave</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../advancedPlayersGuide/advancedFeats.html#pushing-assault">Pushing Assault</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> +5, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (geography) +9, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nature) +9, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +9, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +10, <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +9, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +18</p>
+<p class = "stat-block-1"><strong>Languages</strong> Aquan, Common; speak with sharks</p>
+<p class = "stat-block-1"><strong>SQ</strong> track +1, wild empathy +0</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></em> ; <strong>Other Gear</strong> mwk longspear, mwk underwater heavy crossbow with 20 bolts, <em>hand of the mage</em>, agate earring worth 25 gp, pearls (7, worth 100 gp each), 18 gp</p>
+
+<p id = "sahuagin-shark-sentry" class = "stat-block-title">Sahuagin Shark Sentry <span class = "stat-block-cr">CR 6</span></p>
+<p class = "stat-block-xp">XP 2,400</p>
+<p class = "stat-block-1">Sahuagin ranger 4</p>
+<p class = "stat-block-1">LE Medium monstrous humanoid (aquatic)</p>
+<p class = "stat-block-1"><strong>Init</strong> +2; <strong>Senses</strong> blindsense 30 ft., darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +10</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 23, touch 12, flat-footed 21 (+4 armor, +2 Dex, +7 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 61 (6d10+28)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +8, <strong>Ref</strong> +10, <strong>Will</strong> +6</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light blindness</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft., swim 60 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> 2 <em>+1 claws</em> +12 (1d6+6), <em>+1 bite</em> +12 (1d4+6)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk underwater heavy crossbow +9 (1d10/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> blood frenzy, combat style (natural weapon), favored enemy (elves +2)</p>
+<p class = "stat-block-1"><strong>Ranger Spells Prepared</strong> (CL 1st; concentration +2)</p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../advancedPlayersGuide/spells/hunterSHowl.html#_hunter's-howl">hunter's howl</a></em> (DC 12)</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The shark sentry drinks its <em>potion of greater <a href = "../coreRulebook/spells/magicFang.html#magic-fang">magic fang</a></em>, then reads <em>scrolls of <a href = "../coreRulebook/spells/barkskin.html#barkskin">barkskin</a></em> for itself and an ally.</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> Without <em><a href = "../coreRulebook/spells/magicFang.html#magic-fang-greater">greater magic fang</a></em> and <em><a href = "../coreRulebook/spells/barkskin.html#barkskin">barkskin</a></em>, the shark sentry's statistics are <strong>AC</strong> 21, touch 12, flat-footed 19; <strong>Melee</strong> 2 claws +11 (1d6+5), bite +11 (1d4+5).</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 20, <strong>Dex</strong> 14, <strong>Con</strong> 17, <strong>Int</strong> 12, <strong>Wis</strong> 13, <strong>Cha</strong> 12</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +6; <strong>CMB</strong> +11; <strong>CMD</strong> 23</p>
+<p class = "stat-block-1"><strong>Feats</strong> Aquatic Advantage*, <a href = "../coreRulebook/feats.html#combat-reflexes">Combat Reflexes</a>, <a href = "../coreRulebook/feats.html#endurance">Endurance</a>, <a href = "../bestiary/monsterFeats.html#improved-natural-attack">Improved Natural Attack</a> (claw), <a href = "../coreRulebook/feats.html#toughness">Toughness</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +9, <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> +10, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +10, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nature) +10, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +10, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +11, <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +10, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +17</p>
+<p class = "stat-block-1"><strong>Languages</strong> Aquan, Common; speak with sharks</p>
+<p class = "stat-block-1"><strong>SQ</strong> favored terrain (water +2), hunter's bond (companions), track +2, wild empathy +5</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em>, <em>potion of <a href = "../coreRulebook/spells/magicFang.html#magic-fang-greater">greater magic fang</a></em>, <em>scrolls of <a href = "../coreRulebook/spells/barkskin.html#barkskin">barkskin</a></em> (2), <em>+1 elf-bane bolts</em> (4); <strong>Other Gear</strong> <em>+1 studded leather</em>, mwk underwater heavy crossbow with 20 bolts, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +1</em>, bronze-and-agate pendant worth 50 gp, 9 gp</p>
+
+
+<h2>Sahuagin Priestesses</h2>
+<p>Priestesses lead ceremonies and support military actions.</p>
+
+<p id = "sahuagin-underpriestess" class = "stat-block-title">Sahuagin Underpriestess <span class = "stat-block-cr">CR 5</span></p>
+<p class = "stat-block-xp">XP 1,600</p>
+<p class = "stat-block-1">Sahuagin cleric 4</p>
+<p class = "stat-block-1">LE Medium monstrous humanoid (aquatic)</p>
+<p class = "stat-block-1"><strong>Init</strong> +0; <strong>Senses</strong> blindsense 30 ft., darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +13</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 19, touch 10, flat-footed 19 (+4 armor, +5 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 57 (6 HD; 2d10+4d8+28)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +7, <strong>Ref</strong> +4, <strong>Will</strong> +11; +2 vs. good</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light blindness</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft., swim 60 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk trident +10 (1d8+6), bite +4 (1d4+2)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk underwater heavy crossbow +6 (1d10/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> blood frenzy, channel negative energy 3/day (DC 12, 2d6), destructive smite (+2, 7/day)</p>
+<p class = "stat-block-1"><strong>Domain Spell-Like Abilities</strong> (CL 4th; concentration +8)</p>
+<p class = "stat-block-2">7/day&mdash;icicle (1d6+2 cold)</p>
+<p class = "stat-block-1"><strong>Cleric Spells Prepared</strong> (CL 4th; concentration +8)</p>
+<p class = "stat-block-2">2nd&mdash;<em>blood in the water</em> *, <em><a href = "../coreRulebook/spells/darkness.html#darkness">darkness</a></em>, <em><a href = "../coreRulebook/spells/holdPerson.html#hold-person">hold person</a></em> (DC 16), <a href = "../coreRulebook/spells/shatter.html#shatter"><em>shatter</em></a> <sup>D</sup> (DC 16)</p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/spells/bless.html#bless">bless</a></em>, <em><a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></em>, <em><a href = "../coreRulebook/spells/magicWeapon.html#magic-weapon">magic weapon</a></em>, <em><a href = "../coreRulebook/spells/protectionFromGood.html#protection-from-good">protection from good</a></em>, <em><a href = "../coreRulebook/spells/trueStrike.html#true-strike">true strike</a></em> <sup>D</sup></p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/bleed.html#bleed">bleed</a></em> (DC 14), <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/guidance.html#guidance">guidance</a></em>, <em><a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a></em> </p>
+<p class = "stat-block-2"><strong>D</strong> domain spell; <strong>Domains</strong> Destruction, Water</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 18, <strong>Dex</strong> 10, <strong>Con</strong> 17, <strong>Int</strong> 14, <strong>Wis</strong> 18, <strong>Cha</strong> 11</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +5; <strong>CMB</strong> +9; <strong>CMD</strong> 19</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#brew-potion">Brew Potion</a>, <a href = "../coreRulebook/feats.html#combat-casting"><a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a></a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> +3, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) +11, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +13, <a href = "../coreRulebook/skills/ride.html#ride">Ride</a> +4, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +13, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +11, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +16</p>
+<p class = "stat-block-1"><strong>Languages</strong> Aklo, Aquan, Common; speak with sharks</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/restoration.html#restoration-lesser">lesser restoration</a></em>, <em>wand of cure moderate wounds</em> (11 charges); <strong>Other Gear</strong> <em>+1 studded leather</em>, dagger, mwk trident, mwk underwater heavy crossbow with 10 bolts, gold unholy symbol (worth 100 gp), 317 gp</p>
+
+<p id = "sahuagin-high-priestess" class = "stat-block-title">Sahuagin High Priestess <span class = "stat-block-cr">CR 9</span></p>
+<p class = "stat-block-xp">XP 6,400</p>
+<p class = "stat-block-1">Giant sahuagin cleric 7</p>
+<p class = "stat-block-1">LE Large monstrous humanoid (aquatic)</p>
+<p class = "stat-block-1"><strong>Init</strong> &ndash;1; <strong>Senses</strong> blindsense 30 ft., darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +12</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 23, touch 8, flat-footed 23 (+7 armor, &ndash;1 Dex, +8 natural, &ndash;1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 121 (9 HD; 2d10+7d8+79)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +13, <strong>Ref</strong> +6, <strong>Will</strong> +13</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light blindness</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft., swim 60 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 spear</em> +13/+8 (2d6+8/&times;3), bite +6 (1d8+5)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk underwater heavy crossbow +6 (2d8/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> blood frenzy, channel negative energy 5/day (DC 13, 4d6), destructive smite (+3, 8/day)</p>
+<p class = "stat-block-1"><strong>Cleric Spells Prepared</strong> (CL 7th; concentration +12)</p>
+<p class = "stat-block-2">4th&mdash;<a href = "../coreRulebook/spells/dimensionDoor.html#dimension-door"><em>dimension door</em></a> <sup>D</sup>, <em>gift of the deep</em> *, <em><a href = "../coreRulebook/spells/unholyBlight.html#unholy-blight">unholy blight</a></em> (DC 19)</p>
+<p class = "stat-block-2">3rd&mdash;<em>air breathing</em> *, <em><a href = "../coreRulebook/spells/fly.html">fly</a></em> <sup>D</sup>, <em><a href = "../coreRulebook/spells/prayer.html#prayer">prayer</a></em>, <em><a href = "../coreRulebook/spells/summonMonster.html#summon-monster-iii">summon monster III</a></em> </p>
+<p class = "stat-block-2">2nd&mdash;<em><a href = "../coreRulebook/spells/bearSEndurance.html#bear-s-endurance">bear's endurance</a></em>, <em><a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em>, <a href = "../ultimateMagic/spells/dreadBolt.html#dread-bolt"><em>dread bolt</em></a> (DC 17), <em><a href = "../coreRulebook/spells/holdPerson.html#hold-person">hold person</a></em> (DC 17), <a href = "../coreRulebook/spells/shatter.html#shatter"><em>shatter</em></a> <sup>D</sup> (DC 17)</p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/spells/command.html#command">command</a></em> (DC 16), <em><a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></em> (2), <em><a href = "../coreRulebook/spells/divineFavor.html#divine-favor">divine favor</a></em>, <a href = "../ultimateMagic/spells/murderousCommand.html#murderous-command"><em>murderous command</em></a> (DC 16), <em><a href = "../coreRulebook/spells/sanctuary.html#sanctuary">sanctuary</a></em>, <em><a href = "../coreRulebook/spells/trueStrike.html#true-strike">true strike</a></em> <sup>D</sup></p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/bleed.html#bleed">bleed</a></em> (DC 15), <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/guidance.html#guidance">guidance</a></em>, <em><a href = "../coreRulebook/spells/readMagic.html#read-magic">read magic</a></em> </p>
+<p class = "stat-block-2"><strong>D</strong> domain spell; <strong>Domains</strong> Destruction, Travel</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 20, <strong>Dex</strong> 9, <strong>Con</strong> 26, <strong>Int</strong> 14, <strong>Wis</strong> 20, <strong>Cha</strong> 11</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +7; <strong>CMB</strong> +13; <strong>CMD</strong> 22</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#combat-casting"><a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a></a>, <a href = "../coreRulebook/feats.html#extra-channel">Extra Channel</a>, <a href = "../bestiary/monsterFeats.html#improved-natural-attack">Improved Natural Attack</a> (bite), <a href = "../coreRulebook/feats.html#lightning-reflexes"><a href = "../coreRulebook/feats.html#lightnin-reflexes">Lightning Reflexes</a></a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (spear)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +12, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) +14, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +12, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +17, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +14, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +10</p>
+<p class = "stat-block-1"><strong>Languages</strong> Aquan, Common, Elven, Infernal; speak with sharks</p>
+<p class = "stat-block-1"><strong>SQ</strong> agile feet (8/day)</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>scroll of <a href = "../coreRulebook/spells/cureCriticalWounds.html#cure-critical-wounds">cure critical wounds</a></em> ; <strong>Other Gear</strong> <em>+1 breastplate</em>, <em>+1 spear</em>, mwk underwater heavy crossbow with 20 bolts, <em>headband of inspired wisdom +2</em>, gold unholy symbol (worth 250 gp), 796 gp</p>
+
+
+<h2>Sahuagin Soldiers</h2>
+<p>Powerful warriors occupy the top ranks of sahuagin society.</p>
+
+<p id = "sahuagin-lieutenant" class = "stat-block-title">Sahuagin Lieutenant <span class = "stat-block-cr">CR 5</span></p>
+<p class = "stat-block-xp">XP 1,600</p>
+<p class = "stat-block-1">Sahuagin fighter 3</p>
+<p class = "stat-block-1">LE Medium monstrous humanoid (aquatic)</p>
+<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Senses</strong> blindsense 30 ft., darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +10</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 20, touch 13, flat-footed 17 (+2 armor, +3 Dex, +5 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 50 (5d10+23)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +6, <strong>Ref</strong> +7, <strong>Will</strong> +6 (+1 vs. fear)</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> bravery +1</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light blindness</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft., swim 60 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 trident</em> +11 (1d8+7), bite +4 (1d4+2) or 2 claws +9 (1d4+4), bite +9 (1d4+4)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk underwater heavy crossbow +9 (1d10/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> blood frenzy</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 19, <strong>Dex</strong> 16, <strong>Con</strong> 17, <strong>Int</strong> 12, <strong>Wis</strong> 15, <strong>Cha</strong> 8</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +5; <strong>CMB</strong> +9; <strong>CMD</strong> 22</p>
+<p class = "stat-block-1"><strong>Feats</strong> Greater Blood Frenzy*, <a href = "../coreRulebook/feats.html#intimidating-prowess">Intimidating Prowess</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (trident)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +10, <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> +4, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +11, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +10, <a href = "../coreRulebook/skills/ride.html#ride">Ride</a> +7, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +7, <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +6, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +16</p>
+<p class = "stat-block-1"><strong>Languages</strong> Aquan, Common; speak with sharks</p>
+<p class = "stat-block-1"><strong>SQ</strong> armor training 1</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em> ; <strong>Other Gear</strong> leather armor, <em>+1 trident</em>, dagger, mwk underwater heavy crossbow with 20 bolts, 421 gp</p>
+
+<p id = "sahuagin-baron" class = "stat-block-title">Sahuagin Baron <span class = "stat-block-cr">CR 9</span></p>
+<p class = "stat-block-xp">XP 6,400</p>
+<p class = "stat-block-1">Sahuagin fighter 7</p>
+<p class = "stat-block-1">LE Medium monstrous humanoid (aquatic)</p>
+<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Senses</strong> blindsense 30 ft., darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +13</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 25, touch 13, flat-footed 22 (+7 armor, +3 Dex, +5 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 101 (9d10+52)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +11, <strong>Ref</strong> +9, <strong>Will</strong> +7 (+2 vs. fear)</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> bravery +2</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light blindness</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft., swim 60 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk trident +17/+12 (1d8+7), claw +16 (1d4+6/19&ndash;20 plus 1d6 cold), bite +15 (1d4+4 plus 1d6 cold)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk underwater heavy crossbow +13 (1d10/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> blood frenzy, weapon training (natural +1)</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The sahuagin baron drinks its <em>potions of <a href = "../coreRulebook/spells/bearSEndurance.html#bear-s-endurance">bear's endurance</a> </em> and <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em> .</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> Without <em><a href = "../coreRulebook/spells/bearSEndurance.html#bear-s-endurance">bear's endurance</a></em> and <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em>, the baron's statistics are <strong>hp</strong> 83; <strong>Fort</strong> +9; <strong>Melee</strong> mwk trident +15/+10 (1d8+5), claw +14 (1d4+5/19&ndash;20 plus 1d6 cold), bite +13 (1d6+3 plus 1d6 cold); <strong>Str</strong> 20, <strong>Con</strong> 17; <strong>CMB</strong> +14, <strong>CMD</strong> 27</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 24, <strong>Dex</strong> 16, <strong>Con</strong> 21, <strong>Int</strong> 16, <strong>Wis</strong> 13, <strong>Cha</strong> 6</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +9; <strong>CMB</strong> +16; <strong>CMD</strong> 32</p>
+<p class = "stat-block-1"><strong>Feats</strong> Blood Tide*, <a href = "../coreRulebook/feats.html#combat-expertise">Combat Expertise</a>, Greater Blood Frenzy*, <a href = "../coreRulebook/feats.html#improved-critical">Improved Critical</a> (claw), <a href = "../coreRulebook/feats.html#lunge">Lunge</a>, <a href = "../bestiary/monsterFeats.html#multiattack">Multiattack</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (claw), <a href = "../coreRulebook/feats.html#weapon-specialization">Weapon Specialization</a> (claw)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +12, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +10, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nobility) +12, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +13, <a href = "../coreRulebook/skills/ride.html#ride">Ride</a> +14, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +10, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +18</p>
+<p class = "stat-block-1"><strong>Languages</strong> Aquan, Common, Infernal; speak with sharks</p>
+<p class = "stat-block-1"><strong>SQ</strong> armor training 2</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/bearSEndurance.html#bear-s-endurance">bear's endurance</a></em>, <em>potion of <a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em>, <em>potion of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em> ; <strong>Other Gear</strong> <em>+1 breastplate</em>, mwk trident, mwk underwater heavy crossbow with 20 bolts, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +1</em>, <em>frost amulet of mighty fists</em>, 1,033 gp</p>
+
+
+<h2>Sahuagin Prince</h2>
+<p>A sahuagin prince is a paragon of ferocity and political skill.</p>
+
+<p id = "sahuagin-prince" class = "stat-block-title">Sahuagin Prince <span class = "stat-block-cr">CR 13</span></p>
+<p class = "stat-block-xp">XP 25,600</p>
+<p class = "stat-block-1">Four-armed sahuagin cavalier (beast rider) 10</p>
+<p class = "stat-block-1">LE Medium monstrous humanoid (aquatic)</p>
+<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Senses</strong> blindsense 30 ft., darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +16</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 28, touch 14, flat-footed 25 (+7 armor, +1 deflection, +3 Dex, +7 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 148 (12d10+82)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +16, <strong>Ref</strong> +13, <strong>Will</strong> +11</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> light blindness</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 20 ft., swim 60 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em><a href = "../advancedPlayersGuide/magicItems/weapons.html#lance-of-jousting">lance of jousting</a></em> +20/+15/+10 (1d8+8/19&ndash;20/&times;3), bite +17 (1d6+2), 2 claws +19 (1d4+5)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk underwater heavy crossbow +18 (1d10/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> banner +3/+2, blood frenzy, cavalier's charge, challenge (+10, +3, 4/day)</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> Without <em><a href = "../coreRulebook/spells/barkskin.html#barkskin">barkskin</a></em> and <em><a href = "../coreRulebook/spells/heroism.html#heroism">heroism</a></em>, the prince's statistics are <strong>AC</strong> 26, touch 14, flat-footed 23; <strong>Fort</strong> +14, <strong>Ref</strong> +11, <strong>Will</strong> +9; <strong>Melee</strong> <em><a href = "../advancedPlayersGuide/magicItems/weapons.html#lance-of-jousting">lance of jousting</a></em> +18/+13/+8 (1d8+8/19&ndash;20/&times;3), bite +15 (1d6+2), 2 claws +17 (1d4+5) or 4 claws +17 (1d4+5), bite +17 (1d6+5); <strong>Ranged</strong> mwk underwater heavy crossbow +16 (1d10/19&ndash;20); <strong>Skills</strong> <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> +13, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nobility) +14, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +16, <a href = "../coreRulebook/skills/ride.html#ride">Ride</a> +13 (+16 with personal mount), <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +8, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +17.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 20, <strong>Dex</strong> 16, <strong>Con</strong> 20, <strong>Int</strong> 13, <strong>Wis</strong> 12, <strong>Cha</strong> 10</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +12; <strong>CMB</strong> +17; <strong>CMD</strong> 31</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../advancedPlayersGuide/advancedFeats.html#dreadful-carnage">Dreadful Carnage</a>, <a href = "../advancedPlayersGuide/advancedFeats.html#furious-focus">Furious Focus</a>, <a href = "../coreRulebook/feats.html#intimidating-prowess">Intimidating Prowess</a>, <a href = "../coreRulebook/feats.html#lookout">Lookout</a>, <a href = "../coreRulebook/feats.html#mounted-combat">Mounted Combat</a>, <a href = "../bestiary/monsterFeats.html#multiattack">Multiattack</a>, <a href = "../coreRulebook/feats.html#outflank">Outflank</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#ride-by-attack">Ride-By Attack</a>, <a href = "../coreRulebook/feats.html#spirited-charge">Spirited Charge</a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> +15, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nobility) +16, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +16, <a href = "../coreRulebook/skills/ride.html#ride">Ride</a> +15 (+18 with personal mount), <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +10, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +19</p>
+<p class = "stat-block-1"><strong>Languages</strong> Aquan, Common; speak with animals</p>
+<p class = "stat-block-1"><strong>SQ</strong> exotic mount (shark), greater tactician (3/day, 8 rounds, swift action), multiweapon mastery, order of the lion (for the king, lion's call)</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potions of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em> (2), <em>potions of <a href = "../coreRulebook/spells/barkskin.html#barkskin">barkskin</a></em> (2), <em>potion of <a href = "../coreRulebook/spells/heroism.html#heroism">heroism</a></em> ; <strong>Other Gear</strong> <em>+1 breastplate</em>, <em><a href = "../advancedPlayersGuide/magicItems/weapons.html#lance-of-jousting">lance of jousting</a></em>, mwk underwater heavy crossbow (20 bolts), <em>belt of mighty constitution +2</em>, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +2</em>, <em>ring of protection +1</em>, <em>+1 studded leather barding</em>, <em>stone of alliance</em> (swallowed by mount), exotic military saddle, 2,678 gp</p>
+
+<p id = "shark-mount" class = "stat-block-title">Shark Mount <span class = "stat-block-cr">CR &mdash;</span></p>
+<p class = "stat-block-1">Shark animal companion</p>
+<p class = "stat-block-1">N Large animal (aquatic)</p>
+<p class = "stat-block-1"><strong>Init</strong> +2; <strong>Senses</strong> blindsense 30 ft., low-light vision, scent; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +12</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 26, touch 12, flat-footed 23 (+4 armor, +2 Dex, +1 dodge, +10 natural, &ndash;1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 85 (9d8+45)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +10, <strong>Ref</strong> +10, <strong>Will</strong> +6</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> devotion, evasion</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> swim 60 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> bite +11/+6 (2d6+9)</p>
+<p class = "stat-block-1"><strong>Space</strong> 10 ft.; <strong>Reach</strong> 5 ft.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 22, <strong>Dex</strong> 14, <strong>Con</strong> 19, <strong>Int</strong> 3, <strong>Wis</strong> 12, <strong>Cha</strong> 2</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +6; <strong>CMB</strong> +13; <strong>CMD</strong> 26</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#dodge">Dodge</a>, <a href = "../bestiary/monsterFeats.html#improved-natural-attack">Improved Natural Attack</a> (bite), <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#lightning-reflexes"><a href = "../coreRulebook/feats.html#lightnin-reflexes">Lightning Reflexes</a></a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +12, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +18</p>
+<p class = "stat-block-1"><strong>Languages</strong> Aquan (can't speak)</p>
+<p class = "stat-block-1"><strong>SQ</strong> link</p>
+
+
+<h2 id = "feeder-in-the-depths">Feeder in the Depths</h2>
+<p><em>An immense gray-and-white shark glides through the water, its piercing red eyes revealing a <a href = "../coreRulebook/magicItems/weapons.html#_vicious">vicious</a> intelligence.</em> </p>
+
+<p class = "stat-block-title">Feeder in the Depths <span class = "stat-block-cr">CR 8</span></p>
+<p class = "stat-block-xp">XP 4,800</p>
+<p class = "stat-block-1">LE Huge magical beast</p>
+<p class = "stat-block-1"><strong>Init</strong> +2; <strong>Senses</strong> blindsense 30 ft., darkvision 60 ft., keen scent, low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +20</p>
+<p class = "stat-block-1"><strong>Aura</strong> blood feast (30 ft.)</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 20, touch 10, flat-footed 18 (+2 Dex, +10 natural, &ndash;2 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 105 (10d10+50); blood feast</p>
+<p class = "stat-block-1"><strong>Fort</strong> +12, <strong>Ref</strong> +9, <strong>Will</strong> +7</p>
+<p class = "stat-block-1"><strong>Resist</strong> cold 20; <strong>SR</strong> 19</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> swim 80 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> bite +15/+10 (2d6+10/19&ndash;20 plus deadly bleeding)</p>
+<p class = "stat-block-1"><strong>Space</strong> 15 ft.; <strong>Reach</strong> 10 ft.</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> swift bite</p>
+<p class = "stat-block-1"><strong>Spell-Like Abilities</strong> (CL 10th; concentration +12)</p>
+<p class = "stat-block-2">At will&mdash;<a href = "../advancedPlayersGuide/spells/bloodBiography.html#blood-biography-"><em>blood biography</em></a> (on any creature bitten in the past day, DC 15)</p>
+<p class = "stat-block-2">1/day&mdash;<em><a href = "../coreRulebook/spells/summonMonster.html#summon-monster-v">summon monster V</a></em> (summons 1d4+1 hammerhead sharks or 1d3 great white sharks)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 24, <strong>Dex</strong> 15, <strong>Con</strong> 20, <strong>Int</strong> 13, <strong>Wis</strong> 15, <strong>Cha</strong> 14</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +10; <strong>CMB</strong> +19; <strong>CMD</strong> 31 (can't be tripped)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#combat-reflexes">Combat Reflexes</a>, <a href = "../coreRulebook/feats.html#improved-critical">Improved Critical</a> (bite), <a href = "../coreRulebook/feats.html#intimidating-prowess">Intimidating Prowess</a>, <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#vital-strike">Vital Strike</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +19, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) +11, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +20, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +15; <strong>Racial Modifiers</strong> +5 <a href = "../coreRulebook/skills/perception.html#perception">Perception</a></p>
+<p class = "stat-block-1"><strong>Languages</strong> Aklo, Aquan, Infernal</p>
+<p class = "stat-block-breaker">Ecology</p>
+<p class = "stat-block-1"><strong>Environment</strong> any oceans</p>
+<p class = "stat-block-1"><strong>Organization</strong> solitary</p>
+<p class = "stat-block-1"><strong>Treasure</strong> none</p>
+<p class = "stat-block-breaker">Special Abilities</p>
+<p class = "stat-block-1"><strong>Blood Feast (Su)</strong> When a creature within 30 feet of a feeder in the depths takes bleed damage (including ongoing damage), the feeder heals an equal amount of damage.</p>
+<p class = "stat-block-1"><strong>Deadly Bleeding (Su)</strong> A feeder in the depth's bite causes bleeding wounds that resist healing. The first bite that damages a creature deals 1d4 points of bleed damage, and each subsequent bite increases the amount of bleed by 1d4. Stopping the bleeding requires a successful DC 20 <a href = "../coreRulebook/skills/heal.html#heal">Heal</a> check or the application of any magical healing. However, anyone attempting to cast a healing spell on a creature suffering from deadly bleeding must succeed at a DC 20 caster level check or the spell doesn't affect the bleeding creature. The save DC is Constitution-based.</p>
+<p class = "stat-block-1"><strong><a href = "../advancedPlayersGuide/advancedFeats.html#keen-scent">Keen Scent</a> (Ex)</strong> A feeder in the depths can notice creatures by scent in a 180-foot radius underwater, and can detect blood in the water at a distance of up to 1 mile.</p>
+<p class = "stat-block-1"><strong>Swift Bite (Ex)</strong> When making a full attack, a feeder in the depths can make a second bite attack at a &ndash;5 penalty.</p>
+
+<p>Feeders in the depths closely resemble ordinary sharks, but they are faster, stronger, and far more intelligent and malevolent. Feeders in the depths begin life as ordinary sharks, raised under the care of sahuagin priestesses. A would-be feeder feasts on the flesh of merfolk, sea elves, and other aquatic humanoids. As it dines on these sacrifices, the priestess chants blasphemous rituals, infusing the shark with malign power and the stolen intelligence of its victims. Over the course of 13 feedings over 13 midwinters, a new feeder in the depths arises.</p>
+<p>Feeders in the depths view themselves as equals to sahuagin, not as servants. They have no special affection for sharks, and can't communicate with them. Feeders act as loyal companions as long as they're respected and given the freedom to hunt. If not treated well, they rip their would-be masters apart and descend into the lightless depths of the ocean. Although able to breed, feeders in the depths give birth only to monstrosities or normal sharks, never to other feeders. A typical feeder in the depths is 24 feet long and weighs 5,500 pounds.</p>
+
+
+<h1 id = "sahuagin-encounters">Encounters</h1>
+<p>Despite their penchant for brutal competitions, sahuagin are communal creatures that live and hunt in groups for their mutual good; these groups range from small raiding parties to massive underwater cities. Here are some example encounters using the various types of sahuagin presented in this section.</p>
+<h2>Boarding Party (CR 5)</h2>
+<p>In the dead of night, sahuagin clamber up the sides of ships to spread fear and bring back a bounty for their lord.</p>
+
+<p class = "stat-block-title">Sahuagin (2) <span class = "stat-block-cr">CR 2</span></p>
+<p class = "stat-block-xp">XP 600 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 15 each</p>
+
+<p class = "stat-block-title">Sahuagin Brute <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1"><strong>hp</strong> 36</p>
+
+<h2>Sahuagin Garrison (CR 7)</h2>
+<p>Sahuagin guard a small outpost near a human port or subterranean city. A deep racer serves alongside them as a scout or courier for important messages.</p>
+
+<p class = "stat-block-title">Sahuagin (4) <span class = "stat-block-cr">CR 2</span></p>
+<p class = "stat-block-xp">XP 600 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 15 each</p>
+
+<p class = "stat-block-title">Sahuagin Deep Racer <span class = "stat-block-cr">CR 4</span></p>
+<p class = "stat-block-xp">XP 1,200</p>
+<p class = "stat-block-1"><strong>hp</strong> 40</p>
+
+<h2>Deep Ritual Cadre (CR 8)</h2>
+<p>A sahuagin underpriestess attends a profane sacrificial ritual with her retinue, and a scout to keep watch while she conducts her ceremony. She seeks to placate her god, influence the weather, or see portents of the future.</p>
+
+<p class = "stat-block-title">Sahuagin (4) <span class = "stat-block-cr">CR 2</span></p>
+<p class = "stat-block-xp">XP 600 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 15 each</p>
+
+<p class = "stat-block-title">Sahuagin Scout <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1"><strong>hp</strong> 34</p>
+
+<p class = "stat-block-title">Sahuagin Underpriestess <span class = "stat-block-cr">CR 5</span></p>
+<p class = "stat-block-xp">XP 1,600</p>
+<p class = "stat-block-1"><strong>hp</strong> 57</p>
+
+<h2>Hunting Party (CR 11)</h2>
+<p>Mounted on sharks, a sahuagin baron and his retinue hunt the dangerous game of the deeps. The prey they pursue might be a dangerous beast as well, and could be encountered before the hunting party is seen.</p>
+
+<p class = "stat-block-title">Hammerhead Sharks (4) <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800 each</p>
+<p class = "stat-block-1">Advanced shark</p>
+<p class = "stat-block-1"><strong>hp</strong> 30 each</p>
+
+<p class = "stat-block-title">Sahuagin Baron <span class = "stat-block-cr">CR 9</span></p>
+<p class = "stat-block-xp">XP 6,400</p>
+<p class = "stat-block-1"><strong>hp</strong> 101</p>
+
+<p class = "stat-block-title">Sahuagin Brutes (2) <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 36 each</p>
+
+<p class = "stat-block-title">Sahuagin Lieutenant <span class = "stat-block-cr">CR 5</span></p>
+<p class = "stat-block-xp">XP 1,600</p>
+<p class = "stat-block-1"><strong>hp</strong> 50</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Sahuagin",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

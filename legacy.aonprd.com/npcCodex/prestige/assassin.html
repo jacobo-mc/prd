@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Assassins</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "assassin.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "assassin.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "assassin.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "assassin.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "assassin.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "assassin.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "assassin.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "assassin.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "assassin.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "assassin.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../core/index.html">Core Classes</a></li>
+						<li><a  href = "index.html">Prestige Classes</a></li>
+						<li><a href = "../npc/index.html">NPC Classes</a></li>
+						<li><a href = "../appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "assassin.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "assassin.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "assassin.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "assassin.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "assassin.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "assassin.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "assassin.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "assassin.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "assassin.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "assassin.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "assassin.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id="assassins">Assassins</h1>
+
+<p id="sacred-killer" class="stat-block-title">Sacred Killer <span class="stat-block-cr">CR 8</span></p>
+<p class="stat-block-1"><b>XP</b> 4,800</p>
+<p class="stat-block-1"><b>Half-orc cleric</b> 1</p>
+<p class="stat-block-1"><b>Rogue</b> 6</p>
+<p class="stat-block-1"><b>Assassin</b> 2</p>
+<p class="stat-block-1">NE Medium humanoid (human, orc)</p>
+<p class="stat-block-1"><b>Init</b> +5; <b>Senses</b> darkvision 60 ft.; Perception +13</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 20, touch 16, flat-footed 14 (+4 armor, +5 Dex, +1 dodge)</p>
+<p class="stat-block-1"><b>hp</b> 68 (1d8+6d8+2d8+24)</p>
+<p class="stat-block-1"><b>Fort</b> +7, <b>Ref</b> +11, <b>Will</b> +6; +1 vs. poison</p>
+<p class="stat-block-1"><b>Defensive Abilities</b> evasion, improved uncanny dodge, orc ferocity, trap sense +2</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+<p class="stat-block-1"><b>Melee</b> <i>+1 short sword</i> +12 (1d6+1/19–20 plus poison)</p>
+<p class="stat-block-1"><b>Ranged</b> mwk dagger +11 (1d4/19–20 plus poison)</p>
+<p class="stat-block-1"><b>Special Attacks</b> channel negative energy 2/day (DC 9, 1d6), death attack (DC 14), sneak attack +4d6</p>
+<p class="stat-block-1"><b>Domain</b> <b>Spell-Like Abilities</b> (CL 1st; concentration +2)</p>
+<p class="stat-block-2">4/day&mdash;bleeding touch, copycat</p>
+<p class="stat-block-1"><b>Cleric Spells Prepared</b> (CL 1st; concentration +2)</p>
+<p class="stat-block-2">1st&mdash;<i><a href="../../coreRulebook/spells/bless.html#bless" >bless</a></i>, <i>disguise sel f</i><sup>D</sup>, <i><a href="../../coreRulebook/spells/divineFavor.html#divine-favor" >divine favor</a></i></p>
+<p class="stat-block-2">0 (at will)&mdash;<i><a href="../../coreRulebook/spells/bleed.html#bleed" >bleed</a></i> (DC 11), <i><a href="../../coreRulebook/spells/detectPoison.html#detect-poison" >detect poison</a></i>, <i><a href="../../coreRulebook/spells/guidance.html#guidance" >guidance</a></i></p>
+<p class="stat-block-2"><b>D</b> Domain spell; <b>Domains</b> Death, Trickery</p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>Before Combat</b> The assassin attempts to cast his <i>scroll of <a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i> and coats his short sword with greenblood oil.</p>
+<p class="stat-block-1"><b>During Combat</b> The assassin begins combat by studying his foe for a death attack. When making this attack, he uses <a href="../../coreRulebook/feats.html#channel-smite" >Channel Smite</a> and <a href="../../coreRulebook/feats.html#vital-strike" >Vital Strike</a> to do as much damage as possible.</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 10, <b>Dex</b> 20, <b>Con</b> 14, <b>Int</b> 14, <b>Wis</b> 12, <b>Cha</b> 8</p>
+<p class="stat-block-1"><b>Base Atk</b> +5; <b>CMB</b> +5; <b>CMD</b> 21</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#channel-smite" >Channel Smite</a>, <a href="../../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../../coreRulebook/feats.html#step-up" >Step Up</a>, <a href="../../coreRulebook/feats.html#vital-strike" >Vital Strike</a>, <a href="../../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a>, <a href="../../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a> (short sword)</p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/bluff.html#bluff" >Bluff</a> +11, <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a> +8, <a href="../../coreRulebook/skills/disguise.html#disguise" >Disguise</a> +7, <a href="../../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +9, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (local, nobility, religion) +10, Perception +13, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +13, <a href="../../coreRulebook/skills/sleightOfHand.html#sleight-of-hand" >Sleight of Hand</a> +13, <a href="../../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> +10, <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +17</p>
+<p class="stat-block-1"><b>Languages</b> Common, Dwarven, Orc</p>
+<p class="stat-block-1"><b>SQ</b> aura, orc blood, poison use, rogue talents (bleeding attack +4, finesse rogue, surprise attack), trapfinding +3, weapon familiarity</p>
+<p class="stat-block-1"><b>Combat Gear</b> <i>potion of <a href="../../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds" >cure serious wounds</a></i>, <i>scroll of <a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i>, black adder venom (2), giant wasp poison (2), greenblood oil (2); <b>Other Gear</b> <i>+1 studded leather</i>, <i>+1 short sword</i>, masterwork dagger, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#belt-of-incredible-dexterity" >belt of incredible dexterity</a> +2</i>, 303 gp</p>
+
+<p>Most evil temples and cults use sacred killers to enforce their twisted will or to eliminate annoying enemies.</p>
+<h3>Dulg Goldeneyes</h3>
+<p>When living on the streets as a young orphan, Dulg was abducted by a cult of the god of murder, who originally planned on using him as a test subject for new poisons they were creating. Intrigued by the young half-orc's spirit, resilience, and intelligence, however, the cult decided to cultivate him instead. They groomed him as an unholy assassin, and the half-orc has been an unquestioning killer for the cult ever since. Truly enjoying his murderous trade, Dulg leaves a grim calling card with each kill. Once his victim is dead, Dulg gouges out the eyes and leaves two polished golden coins in the sockets.</p>
+<p><b>Combat Encounters:</b>If Dulg comes calling, it typically means his marks have somehow crossed his cult, but this is not always the case. Sometimes he murders just to hone his craft and increase his grim renown.</p>
+<p><b>Roleplaying Suggestions:</b>Often silent and sullen, Dulg tends to see people only as potential targets of his foul art. He takes few freelance assignments, doing so only if he believes it can enhance his already fearsome reputation.</p>
+
+
+
+<p id="death-initiate" class="stat-block-title">Death Initiate <span class="stat-block-cr">CR 12</span></p>
+<p class="stat-block-1"><b>XP</b> 19,200</p>
+<p class="stat-block-1"><b>Human monk</b> 9</p>
+<p class="stat-block-1"><b>Assassin</b> 4</p>
+<p class="stat-block-1">LE Medium humanoid (human)</p>
+<p class="stat-block-1"><b>Init</b> +5; <b>Senses</b> Perception +18</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 25, touch 21, flat-footed 19 (+2 armor, +1 deflection, +5 Dex, +1 dodge, +2 monk, +2 natural, +2 Wis)</p>
+<p class="stat-block-1"><b>hp</b> 88 (9d8+4d8+22)</p>
+<p class="stat-block-1"><b>Fort</b> +9, <b>Ref</b> +14, <b>Will</b> +10; +2 vs. enchantments or poison</p>
+<p class="stat-block-1"><b>Defensive Abilities</b> improved evasion, uncanny dodge; <b>Immune</b> disease</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 60 ft.</p>
+<p class="stat-block-1"><b>Melee</b> unarmed strike +15/+10 (1d10+1 plus 1d6 electricity) or mwk quarterstaff +11/+6 (1d6+1) or flurry of blows (unarmed strike) +16/+16/+11/+11/+6 (1d10+1 plus 1d6 electricity)</p>
+<p class="stat-block-1"><b>Ranged</b> <i>+1 shuriken</i> +16/+11 (1d2+2) or flurry of blows (<i>+1 shuriken</i>) +17/+17/+12/+12/+7 (1d2+1)</p>
+<p class="stat-block-1"><b>Special Attacks</b> death attack (DC 16), flurry of blows, sneak attack +2d6, stunning fist (10/day, DC 18), true death (DC 19)</p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>Before Combat</b> The assassin drinks her <i>potion of <a href="../../coreRulebook/spells/barkskin.html#barkskin" >barkskin</a>,</i> attempts to study her victim for 3 rounds, and drinks her <i>potion of <a href="../../coreRulebook/spells/haste.html#haste" >haste</a></i>.</p>
+<p class="stat-block-1"><b>During Combat</b> Disguised as a modest pilgrim, the assassin sidles up to her mark and makes her death attack with a Stunning Fist attack. She then retreats to throw flurries of shuriken.</p>
+<p class="stat-block-1"><b>Base Statistics</b> Without<i> <a href="../../coreRulebook/spells/barkskin.html#barkskin" >barkskin</a></i>, the assassin's statistics are <b>AC</b> 23, touch 21, flat-footed 17.</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 12, <b>Dex</b> 21, <b>Con</b> 12, <b>Int</b> 14, <b>Wis</b> 14, <b>Cha</b> 8</p>
+<p class="stat-block-1"><b>Base Atk</b> +9; <b>CMB</b> +13; <b>CMD</b> 31</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#deadly-aim" >Deadly Aim</a>, Deflect Arrows, <a href="../../coreRulebook/feats.html#dodge" >Dodge</a>, Extra <i>Ki</i>, <a href="../../coreRulebook/feats.html#improved-unarmed-strike" >Improved Unarmed Strike</a>, <a href="../../coreRulebook/feats.html#nimble-moves" >Nimble Moves</a>, <a href="../../coreRulebook/feats.html#point-blank-shot" >Point-Blank Shot</a>, <a href="../../coreRulebook/feats.html#step-up" >Step Up</a>, Stunning Fist, <a href="../../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a>, <a href="../../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a> (shuriken, unarmed strike)</p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +21 (+42 when jumping), <a href="../../coreRulebook/skills/bluff.html#bluff" >Bluff</a> +6, <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a> +11, <a href="../../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> +2, <a href="../../coreRulebook/skills/disguise.html#disguise" >Disguise</a> +6, <a href="../../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +7, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (geography, local, nature) +5, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (history) +8, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (religion) +6, Perception +18, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +12, <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +21, <a href="../../coreRulebook/skills/swim.html#swim" >Swim</a> +7</p>
+<p class="stat-block-1"><b>Languages</b> Auran, Common, Infernal</p>
+<p class="stat-block-1"><b>SQ</b> fast movement, hidden weapons, high jump, <i>ki</i> pool (8 points, magic), maneuver training, poison use, slow fall 40 ft., wholeness of body</p>
+<p class="stat-block-1"><b>Combat Gear</b> <i>potion of <a href="../../coreRulebook/spells/barkskin.html#barkskin" >barkskin</a></i>, <i>potion of <a href="../../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds" >cure serious wounds</a></i>, <i>potion of <a href="../../coreRulebook/spells/haste.html#haste" >haste</a></i>; <b>Other Gear</b> <i>+1 human-bane shuriken</i> (5)<i>,</i> <i>+1 shuriken </i>(20), adamantine shuriken (10), cold iron shuriken (10), masterwork quarterstaff, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#belt-of-physical-might" >belt of physical might</a> +2 </i>(Str, Dex), <i><a href="../../coreRulebook/magicItems/wondrousItems.html#bracers-of-armor" >bracers of armor</a> +2</i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#cloak-of-resistance" >cloak of resistance</a> +1</i>, <i><a href="../../coreRulebook/magicItems/rings.html#ring-of-protection" >ring of protection</a> +1</i>, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-shock" >shock</a> <a href="../../coreRulebook/magicItems/wondrousItems.html#amulet-of-mighty-fists" >amulet of mighty fists</a></i>, 235 gp</p>
+<p>These monks deal swift and dispassionate death to those who threaten or cross their monastery.</p>
+<h3>Kel Sal Koth</h3>
+<p>Little is know about Kel Sal Koth's background or origins, even to her. Her first memories involve the monastery's early lessons about the deadly discipline she was chosen to follow. Kel's philosophy is simple, but her commitment to it is deep. She believes that only in suppressing emotion can one find true harmony with the universe&mdash;and the true test of such suppression is dispassionately taking other intelligent creatures' lives.</p>
+<p><b>Combat Encounters:</b>Kel prefers to work alone, but if a target is too strong, she handpicks other members of her monastery to cause diversions or run interference.</p>
+<p><b>Roleplaying Suggestions:</b>To call Kel unfeeling is an understatement. She only apes emotion as a ploy to get closer to her prey.</p>
+		
+
+		
+<p id="murderous-scythe" class="stat-block-title">Murderous Scythe <span class="stat-block-cr">CR 16</span></p>
+<p class="stat-block-1"><b>XP</b> 76,800</p>
+<p class="stat-block-1"><b>Half-elf druid</b> 4</p>
+<p class="stat-block-1"><b>Fighter</b> 6</p>
+<p class="stat-block-1"><b>Assassin</b> 7</p>
+<p class="stat-block-1">NE Medium humanoid (elf, human)</p>
+<p class="stat-block-1"><b>Init</b> +4; <b>Senses</b> low-light vision; Perception +24</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 26, touch 12, flat-footed 26 (+12 armor, +2 deflection, +2 natural)</p>
+<p class="stat-block-1"><b>hp</b> 144 (4d8+6d10+7d8+57)</p>
+<p class="stat-block-1"><b>Fort</b> +15, <b>Ref</b> +8, <b>Will</b> +11; +2 vs. enchantments, +2 vs. fear, +3 vs. poison, +4 vs. fey and plant-targeted effects</p>
+<p class="stat-block-1"><b>Defensive Abilities</b> bravery +2, improved uncanny dodge</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+<p class="stat-block-1"><b>Melee</b> <i>+2 scythe </i>+25/+20/+15 (2d4+15/19–20/×4 plus poison)</p>
+<p class="stat-block-1"><b>Special Attacks</b> death attack (DC 19), quiet death, sneak attack +4d6, true death (DC 22), weapon training (heavy blades +1), wild shape 1/day</p>
+<p class="stat-block-1"><b>Domain Spell-Like Abilities</b> (CL 4th; concentration +6)</p>
+<p class="stat-block-2">5/day&mdash;wooden fist</p>
+<p class="stat-block-1"><b>Druid Spells Prepared</b> (CL 4th; concentration +6)</p>
+<p class="stat-block-2">2nd&mdash;<i><a href="../../coreRulebook/spells/barkskin.html#barkskin" >barkskin</a></i><sup>D</sup>, <i><a href="../../coreRulebook/spells/resistEnergy.html#resist-energy" >resist energy</a></i> (DC 14), <i><a href="../../coreRulebook/spells/spiderClimb.html#spider-climb" >spider climb</a></i>, <i><a href="../../coreRulebook/spells/treeShape.html#tree-shape" >tree shape</a></i></p>
+<p class="stat-block-2">1st&mdash;<i><a href="../../coreRulebook/spells/entangle.html#entangle" >entangle</a></i><sup>D</sup> (DC 13), <i><a href="../../coreRulebook/spells/faerieFire.html#faerie-fire" >faerie fire</a></i> (2), <i><a href="../../coreRulebook/spells/longstrider.html#longstrider" >longstrider</a></i>, <i><a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist" >obscuring mist</a></i></p>
+<p class="stat-block-2">0 (at will)&mdash;<i><a href="../../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i>, <i><a href="../../coreRulebook/spells/guidance.html#guidance" >guidance</a></i>, <i><a href="../../coreRulebook/spells/light.html#light" >light</a></i>, <i><a href="../../coreRulebook/spells/knowDirection.html#know-direction" >know direction</a></i></p>
+<p class="stat-block-2"><b>Domain</b> Plant</p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>Before Combat</b> The assassin casts <i><a href="../../coreRulebook/spells/barkskin.html#barkskin" >barkskin</a></i> and <i><a href="../../coreRulebook/spells/longstrider.html#longstrider" >longstrider</a></i>. He applies poison to his scythe, and wild shapes into an eagle or dire rat.</p>
+<p class="stat-block-1"><b>During Combat</b> In animal form, the assassin studies an enemy spellcaster for 3 rounds before casting <i><a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist" >obscuring mist</a></i> to sow chaos among his foes. He then takes his real form to make a death attack against his target. In melee, he trips his foes.</p>
+<p class="stat-block-1"><b>Base Statistics</b> Without <i><a href="../../coreRulebook/spells/barkskin.html#barkskin" >barkskin</a></i> and <i><a href="../../coreRulebook/spells/longstrider.html#longstrider" >longstrider</a></i>, the assassin's statistics are <b>AC</b> 24, touch 12, flat-footed 24; <b>Speed</b> 20 ft.</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 24, <b>Dex</b> 10, <b>Con</b> 16, <b>Int</b> 14, <b>Wis</b> 14, <b>Cha</b> 8</p>
+<p class="stat-block-1"><b>Base Atk</b> +14; <b>CMB</b> +21 (+25 trip); <b>CMD</b> 33 (35 vs. trip)</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#combat-expertise" >Combat Expertise</a>, <a href="../../coreRulebook/feats.html#critical-focus" >Critical Focus</a>, <a href="../../coreRulebook/feats.html#disruptive" >Disruptive</a>, Greater Trip, <a href="../../coreRulebook/feats.html#improved-critical" >Improved Critical</a> (scythe), <a href="../../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a>, Improved Trip, Improved <a href="../../coreRulebook/feats.html#vital-strike" >Vital Strike</a>, <a href="../../coreRulebook/feats.html#natural-spell" >Natural Spell</a>, <a href="../../coreRulebook/feats.html#power-attack" >Power Attack</a>, <a href="../../coreRulebook/feats.html#skill-focus" >Skill Focus</a> (<a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a>), <a href="../../coreRulebook/feats.html#vital-strike" >Vital Strike</a>, <a href="../../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a> (scythe), Weapon Specialization (scythe)</p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a> +13, <a href="../../coreRulebook/skills/disguise.html#disguise" >Disguise</a> +1, <a href="../../coreRulebook/skills/fly.html#fly" >Fly</a> +3, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (geography) +10, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (local, religion) +7, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (nature) +12, Perception +24, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +19, <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +21, <a href="../../coreRulebook/skills/survival.html#survival" >Survival</a> +12, <a href="../../coreRulebook/skills/swim.html#swim" >Swim</a> +13</p>
+<p class="stat-block-1"><b>Languages</b> Common, Elven, Goblin, Sylvan</p>
+<p class="stat-block-1"><b>SQ</b> armor training 1, elf blood, hidden weapons, nature bond (Plant domain), nature sense, poison use, trackless step, wild empathy +3, woodland stride</p>
+<p class="stat-block-1"><b>Combat Gear</b> <i>potion of <a href="../../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds" >cure serious wounds</a></i>, deathblade poison, purple worm poison (3); <b>Other Gear</b> <i>+3 <a href="../../coreRulebook/magicItems/armor.html#armor-glamered" >glamered</a> darkwood full plate</i>, <i>+2 scythe</i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#belt-of-physical-might" >belt of physical might</a> +4</i> (Str, Con), <i><a href="../../coreRulebook/magicItems/wondrousItems.html#cloak-of-resistance" >cloak of resistance</a> +1</i>, <i><a href="../../coreRulebook/magicItems/rings.html#ring-of-protection" >ring of protection</a> +2</i>, 402 gp</p>
+
+<p>Many of these murderers serve as assassins for dark druid circles or dominate savage humanoid tribes.</p>
+<h3>Zelath the Reaper</h3>
+<p>Knowing that death is just part of the cycle of life, Zelath truly believes his murderous ways enforces the will of nature. Like a deadly gardener, he prunes those who dare thwart death's call or despoil nature.</p>
+<p><b>Combat Encounters:</b>Zelath aids other druids in the protection of their homes, bringing his unorthodox talents for mutual defense and strategic offense.</p>
+<p><b>Roleplaying Suggestions:</b>Zelath often offers his expert knowledge of poisons to friends of the natural order.</p>
+
+
+
+<p id="fatal-axe" class="stat-block-title">Fatal Axe <span class="stat-block-cr">CR 19</span></p>
+<p class="stat-block-1"><b>XP</b> 204,800</p>
+<p class="stat-block-1"><b>Dwarf rogue</b> 10</p>
+<p class="stat-block-1"><b>Assassin</b> 10</p>
+<p class="stat-block-1">NE Medium humanoid (dwarf)</p>
+<p class="stat-block-1"><b>Init</b> +0; <b>Senses</b> darkvision 60 ft.; Perception +25</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 24, touch 13, flat-footed 24 (+9 armor, +2 deflection, +1 insight, +2 natural)</p>
+<p class="stat-block-1"><b>hp</b> 183 (10d8+10d8+90)</p>
+<p class="stat-block-1"><b>Fort</b> +12, <b>Ref</b> +14, <b>Will</b> +12; +2 vs. spells and spell-like abilities; +7 vs. poison</p>
+<p class="stat-block-1"><b>Defensive Abilities</b> defensive training (+4 dodge bonus to AC vs. giants), evasion, improved uncanny dodge, trap sense +3, +5 vs. poison</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 25 ft.</p>
+<p class="stat-block-1"><b>Melee</b> <i>+1 <a href="../../coreRulebook/magicItems/weapons.html#weapons-flaming" >flaming</a> <a href="../../coreRulebook/magicItems/weapons.html#weapons-frost" >frost</a> <a href="../../coreRulebook/magicItems/weapons.html#weapons-shock" >shock</a> handaxe</i> +20/+15/+10 (1d6+5/19–20/×3 plus 1d6 cold and 1d6 electricity and 1d6 fire)</p>
+<p class="stat-block-1"><b>Ranged</b> <i>+1 <a href="../../coreRulebook/magicItems/weapons.html#weapons-returning" >returning</a> <a href="../../coreRulebook/magicItems/weapons.html#weapons-shock" >shock</a> <a href="../../coreRulebook/magicItems/weapons.html#throwing" >throwing</a> axe</i> +15 (1d6+5/×3 plus 1d6 electricity)</p>
+<p class="stat-block-1"><b>Special Attacks</b> +1 on attack rolls against goblinoid and orc humanoids, angel of death 1/day, death attack (DC 26), quiet death, sneak attack +10d6, swift death 1/day, true death (DC 25)</p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>Before Combat</b> The assassin uses <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> or <a href="../../coreRulebook/skills/disguise.html#disguise" >Disguise</a> to get close to her prey so she can study and strike with her death attack.</p>
+<p class="stat-block-1"><b>During Combat</b> Using her fast stealth and <i><a href="../../coreRulebook/magicItems/wondrousItems.html#boots-of-speed" >boots of speed</a></i> to rush into the fray, the assassin attacks the most threatening target using bleeding strike. Next, she moves out of melee to soften foes with throwing axe attacks before reentering melee.</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 18, <b>Dex</b> 10, <b>Con</b> 19, <b>Int</b> 22, <b>Wis</b> 14, <b>Cha</b> 6</p>
+<p class="stat-block-1"><b>Base Atk</b> +14; <b>CMB</b> +18; <b>CMD</b> 31 (35 vs. bull rush or trip)</p>
+<p class="stat-block-1"><b>Feats</b> Cleave, <a href="../../coreRulebook/feats.html#combat-expertise" >Combat Expertise</a>, <a href="../../coreRulebook/feats.html#fleet" >Fleet</a>, <a href="../../coreRulebook/feats.html#improved-critical" >Improved Critical</a> (handaxe), Improved Feint, Improved <a href="../../coreRulebook/feats.html#iron-will" >Iron Will</a>, Improved <a href="../../coreRulebook/feats.html#vital-strike" >Vital Strike</a>, <a href="../../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../../coreRulebook/feats.html#point-blank-shot" >Point-Blank Shot</a>, <a href="../../coreRulebook/feats.html#power-attack" >Power Attack</a>, <a href="../../coreRulebook/feats.html#vital-strike" >Vital Strike</a>, <a href="../../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a> (handaxe)</p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +12, <a href="../../coreRulebook/skills/bluff.html#bluff" >Bluff</a> +21, <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a> +16, <a href="../../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> +6, <a href="../../coreRulebook/skills/disableDevice.html#disable-device" >Disable Device</a> +12, <a href="../../coreRulebook/skills/disguise.html#disguise" >Disguise</a> +11, <a href="../../coreRulebook/skills/heal.html#heal" >Heal</a> +7, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (dungeoneering) +14, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (engineering, geography, history, nature, nobility, religion) +11, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (local) +19, <a href="../../coreRulebook/skills/linguistics.html#linguistics" >Linguistics</a> +14, Perception +25 (+27 to notice unusual stonework), <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +25, <a href="../../coreRulebook/skills/sleightOfHand.html#sleight-of-hand" >Sleight of Hand</a> +22, <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +22, <a href="../../coreRulebook/skills/survival.html#survival" >Survival</a> +12, <a href="../../coreRulebook/skills/swim.html#swim" >Swim</a> +16, <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device" >Use Magic Device</a> +21</p>
+<p class="stat-block-1"><b>Languages</b> Abyssal, Aklo, Celestial, Common, Draconic, Dwarven, Elven, Gnome, Goblin, Ignan, Infernal, Orc, Terran</p>
+<p class="stat-block-1"><b>SQ</b> hidden weapons, hide in plain sight, poison use, rogue talents (bleeding attack +10, combat trick, crippling strike, fast stealth, weapon training), trapfinding +5</p>
+<p class="stat-block-1"><b>Gear</b> <i>+5 chain shirt</i>, <i>+1 <a href="../../coreRulebook/magicItems/weapons.html#weapons-flaming" >flaming</a> <a href="../../coreRulebook/magicItems/weapons.html#weapons-frost" >frost</a> <a href="../../coreRulebook/magicItems/weapons.html#weapons-shock" >shock</a> handaxe</i>, <i>+1 <a href="../../coreRulebook/magicItems/weapons.html#weapons-returning" >returning</a> <a href="../../coreRulebook/magicItems/weapons.html#weapons-shock" >shock</a> handaxe</i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#amulet-of-natural-armor" >amulet of natural armor</a> +2</i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#belt-of-physical-might" >belt of physical might</a> +4 </i>(Str, Con), <i><a href="../../coreRulebook/magicItems/wondrousItems.html#boots-of-speed" >boots of speed</a></i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#cloak-of-resistance" >cloak of resistance</a> +2, dusty rose prism <a href="../../coreRulebook/magicItems/wondrousItems.html#ioun-stones" >ioun stone</a></i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#headband-of-vast-intelligence" >headband of vast intelligence</a> +2</i>, <i><a href="../../coreRulebook/magicItems/rings.html#ring-of-protection" >ring of protection</a> +2</i>, 2,138 gp</p>
+
+<p>Surprisingly quick and nimble for dwarves, fatal axes mix melee prowess with devastating throwing axe strikes to bring down their foes.</p>
+<h3>Thelan Stonebiter</h3>
+<p>In Thelan's mind, the task she performs serves the greater good of her clan and her fortress home. The dwarven people have many foes, from savage giants to sociopathic goblins to those capricious and deceptive elves. Her work, though unconventional, deceptive, and contrary to most dwarves' sense of honor and fair play, is essential in evening the odds. Not entirely without honor, she refuses to use her murderous art against fellow dwarves.</p>
+<p><b>Combat Encounters:</b>Though Thelan sometimes takes freelance assignments against non-dwarven targets, her true passion is protecting her people.</p>
+<p><b>Roleplaying Suggestions:</b>When not on a mission, Thelan acts like a normal dwarf. She is loyal to friends, her clan, and the thanes of her fortress. Few who know her suspect her of dark deeds.</p>
+
+
+</div>	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Assassins",globalNavPath=[{ href: '/pathfinderRPG/prd/npcCodex/prestige/index.html', name: 'Prestige Classes' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

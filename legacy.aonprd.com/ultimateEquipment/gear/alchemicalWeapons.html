@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Alchemical Weapons</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "alchemicalWeapons.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "alchemicalWeapons.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "alchemicalWeapons.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "alchemicalWeapons.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "alchemicalWeapons.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "alchemicalWeapons.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "alchemicalWeapons.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "alchemicalWeapons.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "alchemicalWeapons.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "alchemicalWeapons.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "alchemicalWeapons.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "alchemicalWeapons.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "alchemicalWeapons.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "alchemicalWeapons.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "alchemicalWeapons.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "index.html">Gear</a></li>
+						<li><a href = "../magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "alchemicalWeapons.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "alchemicalWeapons.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "alchemicalWeapons.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "alchemicalWeapons.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "alchemicalWeapons.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "alchemicalWeapons.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+
+<h1 id="alchemical-weapons">Alchemical Weapons</h1>
+<p>Alchemical weapons are designed to harm others, though they may have additional uses. Each of these substances can be made with the <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) skill.</p>
+
+<div class = "table"><table id="alchemical-weapons-table"><caption>Alchemical Weapons</caption>
+<thead><tr><th>Light Melee Weapons</th><th>Price</th><th>Dmg</th><th>Critical</th><th>Range</th><th>Weight</th><th>Type</th><th>Special</th></tr></thead>
+<tr><td>Liquid blade</td><td>40 gp</td><td>1d6</td><td>19&ndash;20/&times;2</td><td>&mdash;</td><td>2 lbs.</td><td>P</td><td>Fragile, see text</td></tr>
+<thead><tr><th colspan="8"><span style="float: left;">One-handed Melee Weapons</span></th></tr></thead>
+<tr><td>Flame fountain firework</td><td>100 gp</td><td>1d8</td><td>&times;2</td><td>&mdash;</td><td>&mdash;</td><td>Fire</td><td>See text</td></tr>
+<thead><tr><th colspan="8"><span style="float: left;">Ranged Weapons</span></th></tr></thead>
+<tr><td>Acid</td><td>10 gp</td><td>1d6</td><td>&times;2</td><td>10 ft.</td><td>1 lb.</td><td>Acid</td><td>Splash</td></tr>
+<tr><td>Alchemist's fire</td><td>20 gp </td><td>1d6</td><td>&times;2</td><td>10 ft.</td><td>1 lb.</td><td>Fire</td><td>Splash</td></tr>
+<tr><td>Alkali flask</td><td>15 gp </td><td>1d6</td><td>&times;2</td><td>10 ft.</td><td>1 lb.</td><td>Acid</td><td>Splash, see text</td></tr>
+<tr><td>Banshee ballerina firework</td><td>75 gp</td><td>&mdash;</td><td>&mdash;</td><td>10 ft.</td><td>&mdash;</td><td>Sonic</td><td>Area, see text</td></tr>
+<tr><td>Bottled lightning</td><td>40 gp</td><td>1d8/1</td><td>&times;2</td><td>20 ft.</td><td>1 lb.</td><td>Electricity/sonic</td><td>See text</td></tr>
+<tr><td>Burst jar</td><td>35 gp</td><td>1</td><td>&mdash;</td><td>10 ft.</td><td>1 lb.</td><td>Sonic</td><td>Splash, see text</td></tr>
+<tr><td>Flash powder</td><td>50 gp </td><td>&mdash;</td><td>&mdash;</td><td>10 ft.</td><td>&mdash;</td><td>Light</td><td>Area, see text</td></tr>
+<tr><td>Fuse grenade</td><td>100 gp </td><td>2d6/1d6</td><td>&times;2</td><td>10 ft.</td><td>1 lb.</td><td>B/fire</td><td>Area, see text</td></tr>
+<tr><td>Ghast retch flask</td><td>50 gp</td><td>&mdash;</td><td>&mdash;</td><td>10 ft.</td><td>1 lb.</td><td>Poison</td><td>Splash, see text</td></tr>
+<tr><td>Holy water</td><td>25 gp </td><td>2d4</td><td>&times;2</td><td>10 ft.</td><td>1 lb.</td><td>&mdash;</td><td>Splash, see text</td></tr>
+<tr><td>Itching powder</td><td>60 gp </td><td>&mdash;</td><td>&mdash;</td><td>10 ft.</td><td>2 lbs.</td><td>Poison</td><td>Splash, see text</td></tr>
+<tr><td>Keros oil</td><td>5 gp </td><td>1d3</td><td>&times;2</td><td>5 ft.</td><td>&mdash;</td><td>Fire</td><td>See text</td></tr>
+<tr><td>Liquid ice</td><td>40 gp </td><td>1d6</td><td>&times;2</td><td>10 ft.</td><td>2 lbs.</td><td>Cold</td><td>Splash</td></tr>
+<tr><td>Paper candle firework</td><td>1 gp </td><td>&mdash;</td><td>&mdash;</td><td>10 ft.</td><td>&mdash;</td><td>&mdash;</td><td>See text</td></tr>
+<tr><td>Pellet grenade, iron</td><td>50 gp</td><td>1d6/1d6/1d6</td><td>&mdash;</td><td>10 ft.</td><td>1 lb.</td><td>B/P/fire</td><td>Area, see text</td></tr>
+<tr><td>Pellet grenade, silver</td><td>70 gp</td><td>1d6/1d6/1d6</td><td>&mdash;</td><td>10 ft.</td><td>1 lb.</td><td>B/P/fire</td><td>Area, see text</td></tr>
+<tr><td>Pellet grenade, cold iron</td><td>100 gp</td><td>1d6/1d6/1d6</td><td>&mdash;</td><td>10 ft.</td><td>1 lb.</td><td>B/P/fire</td><td>Area, see text</td></tr>
+<tr><td>Pellet grenade, adamantine</td><td>150 gp</td><td>1d6/1d6/1d6</td><td>&mdash;</td><td>10 ft.</td><td>1 lb.</td><td>B/P/fire</td><td>Area, see text</td></tr>
+<tr><td>Shard gel</td><td>25 gp</td><td>1d4</td><td>&times;2</td><td>10 ft.</td><td>1 lb.</td><td>P</td><td>Splash</td></tr>
+<tr><td>Skyrocket firework</td><td>50 gp </td><td>2d6</td><td>&mdash;</td><td>10 ft.</td><td>1 lb.</td><td>Fire</td><td>Areas</td></tr>
+<tr><td>Sneezing powder</td><td>60 gp </td><td>&mdash;</td><td>&mdash;</td><td>10 ft.</td><td>2 lbs.</td><td>Poison</td><td>Splash, see text</td></tr>
+<tr><td>Star candle firework</td><td>5 gp </td><td>1/1</td><td>Blindness</td><td>5 ft.</td><td>&mdash;</td><td>Fire/nonlethal</td><td>See text</td></tr>
+<tr><td>Starfountain firework</td><td>500 gp </td><td>1d6</td><td>&mdash;</td><td>10 ft.</td><td>100 lbs.</td><td>Fire</td><td>Area</td></tr>
+<tr><td>Tangleburn bag</td><td>150 gp </td><td>1d6</td><td>&mdash;</td><td>10 ft.</td><td>5 lbs.</td><td>Fire</td><td>Entangle, see text</td></tr>
+<tr><td>Tanglefoot bag</td><td>50 gp </td><td>&mdash;</td><td>&mdash;</td><td>10 ft.</td><td>4 lbs.</td><td>&mdash;</td><td>Entangle</td></tr>
+<tr><td>Thunderstone</td><td>30 gp </td><td>&mdash;</td><td>&mdash;</td><td>20 ft.</td><td>1 lb.</td><td>Sonic</td><td>Area, see text</td></tr></table></div>
+
+<p id="acid" class="stat-block-title">Acid</p>
+<p class="stat-block-1"><b>Price</b> 10 gp; <b>Weight</b> 1 lb.</p>
+<p class="stat-block">You can throw a flask of acid as a splash weapon. Treat this attack as a ranged touch attack with a range increment of 10 feet. A direct hit deals 1d6 points of acid damage. Every creature within 5 feet of the point where the acid hits takes 1 point of acid damage from the splash.</p>
+				
+<p id="Alchemist's-Fire" class="stat-block-title">Alchemist's Fire</p>
+<p class="stat-block-1"><b>Price</b> 20 gp; <b>Weight</b> 1 lb.</p>
+<p class="stat-block">Alchemist's fire is a mix of several volatile liquids that ignite when exposed to air. You can throw a flask of alchemist's fire as a splash weapon. Treat this attack as a ranged touch attack with a range increment of 10 feet.</p>
+<p class="stat-block">A direct hit deals 1d6 points of fire damage. Every creature within 5 feet of the point where the flask hits takes 1 point of fire damage from the splash. On the round following a direct hit, the target takes an additional 1d6 points of damage. If desired, the target can use a full-round action to attempt to extinguish the flames before taking this additional damage. Extinguishing the flames requires a DC 15 Reflex save. Rolling on the ground provides the target a +2 bonus on the save. Leaping into a large body of water or magically extinguishing the flames automatically smothers the fire. Crafting this item is a DC 20 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check. </p>
+				
+<p id="alkali-flask" class="stat-block-title">Alkali Flask</p>
+<p class="stat-block-1"><b>Price</b> 15 gp; <b>Weight</b> 1 lb.</p>
+<p class="stat-block">This flask of caustic liquid reacts with an ooze's natural acids. You can throw an alkali flask as a splash weapon with a range increment of 10 feet. Against non-ooze creatures, an alkali flask functions as a normal flask of acid. Against oozes and other acid-based creatures, the alkali flask inflicts double damage. Crafting this item is a DC 20 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check.</p>
+				
+<p id="banshee-ballerina-firework" class="stat-block-title">banshee ballerina firework</p>
+<p class="stat-block-1"><b>Price</b> 75 gp; <b>Weight</b> &mdash;</p>
+<p class="stat-block">This small firework burns brightly and makes a loud, eerie whistling sound. It can be thrown to target an intersection as a splash weapon. Any creatures within 5 feet of the noise are effectively deafened while they remain in the area, as even the loudest sounds they make are drowned out by the piercing sound. A banshee ballerina firework burns for 1d4+1 rounds before extinguishing itself with a quiet puff of smoke. Crafting this item is a DC 30 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check.</p>
+				
+<p id="bottled-lightning" class="stat-block-title">Bottled Lightning</p>
+<p class="stat-block-1"><b>Price</b> 40 gp; <b>Weight</b> 1 lb.</p>
+<p class="stat-block">Electricity crackles along a metal filament inside this small glass bottle. You can open the bottle as a standard action, unleashing a small bolt of lightning toward an enemy within 20 feet of you. This is a ranged touch attack that deals 1d8 points of electricity damage. Any creature in a line between you and the target (including the target) takes 1 point of sonic damage from the terrific clap of thunder the bolt generates (Reflex DC 15 negates). Crafting bottled lightning is a DC 25 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check. </p>
+				
+<p id="burst-jar" class="stat-block-title">Burst Jar</p>
+<p class="stat-block-1"><b>Price</b> 35 gp; <b>Weight</b> 1 lb.</p>
+<p class="stat-block">This simple clay pot has two sealed, airtight inner chambers containing alchemical liquids. The jar is thrown as a splash weapon. It shatters on impact, covering the target with a mixture of the two liquids. One round later on your turn, the liquids react and explode with concussive force. The target takes 1 point of sonic damage, is deafened for 1d4 rounds, and must make a DC 12 Fortitude save or be stunned for 1 round. Creatures within 5 feet of the explosion take 1 point of sonic damage. The target can use a full-round action to scrape or wash off the liquid before it detonates, depositing the material in its square or an adjacent square; the material detonates as normal, though the original target only takes damage as if it were within 5 feet of the explosion. Crafting this item is a DC 25 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check.</p>
+				
+<p id="flame-fountain-firework" class="stat-block-title">Flame Fountain Firework</p>
+<p class="stat-block-1"><b>Price</b> 100 gp; <b>Weight</b> &mdash;</p>
+<p class="stat-block">This hollow metal or wooden tube contains slow-burning powder. When you light the fuse (a move action), it creates a 3-foot-long, blazing fountain of red-hot fiery sparks. You wield this fountain of sparks as if it were a heavy mace. Attacks with the fountain are melee touch attacks. The fountain deals 1d8 points of fire damage (your Strength modifier does not apply to the damage).</p>
+<p class="stat-block">The fountain sheds light as a torch and can ignite combustible materials such as parchment, straw, dry sticks, and cloth. Once ignited, it lasts for 1 minute. If extinguished before this time, the remaining duration is wasted. Crafting this item is a DC 25 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check.</p>
+				
+<p id="flash-powder" class="stat-block-title">Flash Powder</p>
+<p class="stat-block-1"><b>Price</b> 50 gp; <b>Weight</b> &mdash;</p>
+<p class="stat-block">This coarse gray powder ignites and burns almost instantly if exposed to flame, significant friction, or even simple force such as throwing it against a floor (a standard action). Creatures within a 10-foot-radius burst are blinded for 1 round (Fortitude DC 13 negates). Crafting this item is a DC 20 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check. </p>
+				
+<p id="fuse-grenade" class="stat-block-title">Fuse Grenade</p>
+<p class="stat-block-1"><b>Price</b> 100 gp; <b>Weight</b> 1 lb.</p>
+<p class="stat-block">This hollow clay container holds a small charge of black power and a slow-burning fuse. Lighting the fuse is a move action; 1d3 rounds later the grenade explodes, dealing 2d6 points of bludgeoning damage and 1d6 points of fire damage in a 10-foot-radius burst (Reflex DC 15 halves). You throw a fuse grenade as if it were a splash weapon. Crafting this item is a DC 25 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check.</p>
+				
+<p id="ghast-retch-flask" class="stat-block-title">Ghast Retch Flask</p>
+<p class="stat-block-1"><b>Price</b> 50 gp; <b>Weight</b> 1 lb.</p>
+<p class="stat-block">Harvested and concentrated from the remains of slain ghasts, this foul-smelling powder is kept in tightly sealed flasks. It is thrown as a splash weapon and the flask breaks on impact, releasing noxious dust. The target is nauseated for 1 round and sickened for 3 rounds after that. A successful DC 12 Fortitude save prevents the nauseated condition, but not the sickened condition. Creatures within 5 feet of where the flank hits are sickened for 1 round. This is a poison effect. Crafting this item is a DC 20 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check.</p>
+
+<p id="holy-water" class="stat-block-title">Holy Water</p>
+<p class="stat-block-1"><b>Price</b> 25 gp; <b>Weight</b> 1 lb.</p>
+<p class="stat-block">Holy water damages undead creatures and evil outsiders almost as if it were acid. A flask of holy water can be thrown as a splash weapon. </p>
+<p class="stat-block">Treat this attack as a ranged touch attack with a range increment of 10 feet. A flask breaks if thrown against the body of a corporeal creature, but to use it against an incorporeal creature, you must open the flask and pour the holy water out onto the target. Thus, you can douse an incorporeal creature with holy water only if you are adjacent to it. Doing so is a ranged touch attack that does not provoke attacks of opportunity. </p>
+<p class="stat-block">A direct hit by a flask of holy water deals 2d4 points of damage to an undead creature or an evil outsider. Each such creature within 5 feet of the point where the flask hits takes 1 point of damage from the splash. </p>
+<p class="stat-block">Temples to good deities sell holy water at cost (making no profit). Holy water is made using the <i><a href="../../coreRulebook/spells/blessWater.html#bless-water" >bless water</a></i> spell. </p>
+				
+<p id="itching-powder" class="stat-block-title">Itching Powder</p>
+<p class="stat-block-1"><b>Price</b> 60 gp; <b>Weight</b> 2 lbs.</p>
+<p class="stat-block">This fine gray powder causes targets to suffer from uncontrollable itching until they spend at least 1 round washing it off. Throwing a packet of itching powder is a splash attack with a range increment of 10 feet. Anyone standing on the square of impact must succeed at a DC 12 Fortitude save to resist the powder, while those in adjacent squares must make a DC 8 Fortitude save. Creatures that fail the save take a &ndash;2 penalty on attack rolls, saving throws, skill checks, and ability checks until they wash the powder off. This is a poison effect. Crafting this item is a DC 25 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check.</p>
+				
+<p id="keros-oil" class="stat-block-title">Keros Oil</p>
+<p class="stat-block-1"><b>Price</b> 5 gp; <b>Weight</b> &mdash;</p>
+<p class="stat-block">Also known as firebreather's oil, this bitter liquid is harder to ignite than common oil but burns quickly at a low temperature, making it ideal for exotic performers such as fire-spinners and flame-spitters. You may spit a mouthful of keros oil past an open flame (such as a candle, tindertwig, or torch) to ignite it, creating a brief burst of fire. If you use it to attack, the attack is a ranged touch attack with a maximum range of 5 feet that deals 1d3 points of fire damage. If you roll a 1 on your attack roll, you accidentally inhale or swallow some of the burning fuel; you take 1d6 points of fire damage and are nauseated for 1 round. A bottle of keros oil holds enough for 10 mouthfuls; taking a mouthful from the bottle is a standard action (the <a href="../../ultimateCombat/ultimateCombatFeats.html#rapid-reload" >Rapid Reload</a> feat reduces this to a move action). Crafting this item is a DC 15 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check. </p>
+<p id="liquid-blade" class="stat-block-title">Liquid Blade</p>
+<p class="stat-block-1"><b>Price</b> 40 gp; <b>Weight</b> 2 lbs.</p>
+<p class="stat-block">You can empty the contents of this palm-sized metal tube with a quick flick of your wrist (a move action), causing the bubbling transparent liquid within to instantly solidify into a jagged crystalline blade. By holding the tube, you can then use the crystalline blade as if it were a Medium short sword with the fragile quality (see page 22). The blade lasts for 10 minutes, after which it evaporates, leaving nothing behind but the tube. You can add one dose of poison to the liquid in the bottle, which acts like applying a dose of poison to a weapon except it is a full-round action; when the liquid turns into a solid blade, the weapon includes one application of that poison. When the blade evaporates, the poison does so as well. Crafting a liquid blade is a DC 15 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check.</p>
+				
+<p id="liquid-ice" class="stat-block-title">Liquid Ice</p>
+<p class="stat-block-1"><b>Price</b> 40 gp; <b>Weight</b> 2 lbs.</p>
+<p class="stat-block">Also known as "alchemist's ice," this sealed jar contains crystalline blue fluid that immediately starts to hiss and evaporate once opened. During the 1d6 rounds after it is opened but before it evaporates completely, you can use it to freeze a liquid or to coat an object in a thin layer of ice. You can also throw liquid ice as a splash weapon. A direct hit deals 1d6 points of cold damage; creatures within 5 feet of where it hits take 1 point of cold damage from the splash. Crafting this item is a DC 25 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check.</p>
+				
+<p id="paper-candle-firework" class="stat-block-title">Paper Candle Firework</p>
+<p class="stat-block-1"><b>Price</b> 1 gp; <b>Weight</b> &mdash;</p>
+<p class="stat-block">This finger-sized explosive detonates noisily 1 round after lighting. Anyone in the same square as a paper candle when it explodes must make a DC 15 Fortitude save or be dazzled for 1d4 rounds. Crafting this item is a DC 20 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check. </p>
+
+<p id="pellet-grenade" class="stat-block-title">pellet Grenade</p>
+<table><thead><tr><th>Type</th><th>Price</th><th>Weight</th></tr></thead>
+<tr><td>Iron</td><td>50 gp</td><td>1 lb.</td></tr>
+<tr><td>Silver</td><td>70 gp</td><td>1 lb.</td></tr>
+<tr><td>Cold iron</td><td>100 gp</td><td>1 lb.</td></tr>
+<tr><td>Adamantine</td><td>150 gp</td><td>1 lb.</td></tr></table>
+<p class="stat-block">This variant of a fuse grenade has most of the black powder replaced with metal pellets. When it explodes, it deals 1d6 points of bludgeoning damage, 1d6 points of piercing damage, and 1d6 points of fire damage in a 10-foot-radius burst (Reflex DC 15 halves). A typical pellet grenade uses iron pellets, but they can instead be packed with silver, cold iron, or adamantine, bypassing damage reduction as appropriate to that material type. Like ammunition, the pellets are destroyed after one use. Crafting a pellet grenade is a DC 25 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check.</p>
+				
+<p id="shard-gel" class="stat-block-title">Shard Gel</p>
+<p class="stat-block-1"><b>Price</b> 25 gp; <b>Weight</b> 1 lb.</p>
+<p class="stat-block">This vivid green gel instantly crystallizes into needle-like shards upon contact with the air. You can throw a flask of shard gel as a splash weapon. A direct hit deals 1d4 points of piercing damage as the shards penetrate the target's flesh. The target's square and each square adjacent to it are covered in shards that function like caltrops. The caltrops last for 5 rounds before dissolving into harmless green sludge. Any effect that deals sonic damage to an area (such as <i><a href="../../coreRulebook/spells/soundBurst.html#sound-burst" >sound burst</a></i> or <i><a href="../../coreRulebook/spells/shout.html#shout" >shout</a></i>) immediately destroys all gel shards in that area. Crafting a flask of shard gel is a DC 20 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check.</p>
+				
+<p id="skyrocket-firework" class="stat-block-title">Skyrocket Firework</p>
+<p class="stat-block-1"><b>Price</b> 50 gp; <b>Weight</b> 1 lb.</p>
+<p class="stat-block">When lit, this foot-long wooden tube begins to shake and emit a handful of white sparks, shedding light as a torch. One round later it takes flight, moving at a speed of 90 feet for 1d6 rounds before loudly exploding in a burst of light and sound, dealing 2d6 points of fire damage in a 10-foot-radius burst (Reflex DC 15 halves). Anyone who takes damage from the explosion is either blinded or deafened (50% chance of either) for 1 round. Crafting this item is a DC 25 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check.</p>
+				
+<p id="sneezing-powder" class="stat-block-title">Sneezing Powder</p>
+<p class="stat-block-1"><b>Price</b> 60 gp; <b>Weight</b> 2 lbs.</p>
+<p class="stat-block">This coarse yellowish-red powder is a splash weapon that causes uncontrollable sneezing for 1d4+1 rounds. Anyone standing in the square of impact must succeed at a DC 12 Fortitude save to resist the powder, while those in adjacent squares must make DC 8 Fortitude saves. Creatures affected by sneezing powder must make a DC 10 Fortitude save every round for the duration or be staggered until their next turn. This is a poison effect. Crafting this item is a DC 25 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check. </p>
+<p id="star-candle-firework" class="stat-block-title">Star Candle Firework</p>
+<p class="stat-block-1"><b>Price</b> 5 gp; <b>Weight</b> &mdash;</p>
+<p class="stat-block">When lit, this foot-long wooden tube launches a flaming pyrotechnic "candle" every round for 4 rounds. The projectiles deal 1 point of nonlethal damage and 1 point of fire damage if they hit; on a critical hit, the target is also blinded for 1 round. The projectiles shed light as candles for 1 round and have a range increment of 5 feet. Attacking with a star candle is a ranged touch attack and always has a &ndash;4 nonproficiency penalty. Crafting this item is a DC 20 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check. </p>
+				
+<p id="starfountain-firework" class="stat-block-title">Starfountain Firework</p>
+<p class="stat-block-1"><b>Price</b> 500 gp; <b>Weight</b> 100 lbs.</p>
+<p class="stat-block">This tree stump-sized bundle of tubes immediately begins to emit arcs of multi-colored sparks when lit. Starting 1d6 rounds after lighting, it loudly releases brightly colored streaks of tiny flaming particles for 4 rounds. Outdoors, these particles soar far up into the sky before dispersing. Indoors or in a closed area, the ricocheting fireworks deal 1d6 points of fire damage each round in a 20-foot-radius spread (Reflex DC 15 halves). Creatures who fail their save are blinded for 1d4 rounds and deafened for 1 hour. Crafting this item is a DC 25 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check. </p>
+				
+<p id="tangleburn-bag" class="stat-block-title">Tangleburn Bag</p>
+<p class="stat-block-1"><b>Price</b> 150 gp; <b>Weight</b> 5 lbs.</p>
+<p class="stat-block">This sack contains tanglefoot bag materials and alchemical powders that burn at a high temperature. It functions like a tanglefoot bag, plus a direct hit on a creature deals 1d6 points of fire damage, and the creature must make a DC 20 Reflex save or catch on fire. If it catches on fire, for the next 2 rounds extinguishing the flames is a DC 25 Reflex save instead of a DC 15 save, and using water to extinguish the flames creates a burst of burning material equivalent to alchemist's fire making a direct hit on the target (including splash damage). After the initial 2 rounds, the flames may be extinguished as normal. Crafting this item is a DC 30 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check.</p>
+				
+<p id="tanglefoot-bag" class="stat-block-title">Tanglefoot Bag</p>
+<p class="stat-block-1"><b>Price</b> 50 gp; <b>Weight</b> 4 lbs.</p>
+<p class="stat-block">A tanglefoot bag is a small sack filled with tar, resin, and other sticky substances. When you throw a tanglefoot bag at a creature (as a ranged touch attack with a range increment of 10 feet), the bag comes apart and goo bursts out, entangling the target and then becoming tough and resilient upon exposure to air. An entangled creature takes a &ndash;2 penalty on attack rolls and a &ndash;4 penalty to Dexterity and must make a DC 15 Reflex save or be glued to the floor, unable to move. Even on a successful save, it can move only at half speed. Huge or larger creatures are unaffected by a tanglefoot bag. A flying creature is not stuck to the floor, but it must make a DC 15 Reflex save or be unable to fly (assuming it uses its wings to fly) and fall to the ground. A tanglefoot bag does not function underwater. </p>
+<p class="stat-block">A creature that is glued to the floor (or unable to fly) can break free by making a DC 17 Strength check or by dealing 15 points of damage to the goo with a slashing weapon. A creature trying to scrape goo off itself, or another creature assisting, does not need to make an attack roll; hitting the goo is automatic, after which the creature that hit makes a damage roll to see how much of the goo was scraped off. Once free, the creature can move (including flying) at half speed. If the entangled creature attempts to cast a spell, it must make a concentration check with a DC of 15 + the spell's level or be unable to cast the spell. The goo becomes brittle and fragile after 2d4 rounds, cracking apart and losing its effectiveness. An application of <i><a href="../../coreRulebook/magicItems/wondrousItems.html#universal-solvent" >universal solvent</a></i> to a stuck creature dissolves the alchemical goo immediately. Crafting this item is a DC 25 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check.</p>
+				
+<p id="thunderstone" class="stat-block-title">Thunderstone</p>
+<p class="stat-block-1"><b>Price</b> 30 gp; <b>Weight</b> 1 lb.</p>
+<p class="stat-block">You can throw this stone as a ranged attack with a range increment of 20 feet. When it strikes a hard surface (or is struck hard), it creates a deafening bang that is treated as a sonic attack. Each creature within a 10-foot-radius spread must make a DC 15 Fortitude save or be deafened for 1 hour. A deafened creature, in addition to the obvious effects, takes a &ndash;4 penalty on initiative and has a 20% chance to miscast and lose any spell with a verbal component that it tries to cast. </p>
+<p class="stat-block">Since you don't need to hit a specific target, you can simply aim at a particular 5-foot square. Treat the target square as AC 5. Crafting this item is a DC 25 <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check.</p>
+
+	
+</div>	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Alchemical Weapons",globalNavPath=[{ href: '/pathfinderRPG/prd/ultimateEquipment/gear/index.html', name: 'Gear' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

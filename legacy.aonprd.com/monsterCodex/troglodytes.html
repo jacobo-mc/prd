@@ -1,0 +1,859 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Troglodytes</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "troglodytes.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "troglodytes.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "troglodytes.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "troglodytes.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "troglodytes.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "troglodytes.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "troglodytes.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "troglodytes.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "boggards.html">Boggards</a></li>
+						<li><a href = "bugbears.html">Bugbears</a></li>
+						<li><a href = "drow.html">Drow</a></li>
+						<li><a href = "duergar.html">Duergar</a></li>
+						<li><a href = "fireGiants.html">Fire Giants</a></li>
+						<li><a href = "frostGiants.html">Frost Giants</a></li>
+						<li><a href = "ghouls.html">Ghouls</a></li>
+						<li><a href = "gnolls.html">Gnolls</a></li>
+						<li><a href = "goblins.html">Goblins</a></li>
+						<li><a href = "hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "kobolds.html">Kobolds</a></li>
+						<li><a href = "lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "ogres.html">Ogres</a></li>
+						<li><a href = "orcs.html">Orcs</a></li>
+						<li><a href = "ratfolk.html">Ratfolk</a></li>
+						<li><a href = "sahuagin.html">Sahuagin</a></li>
+						<li><a href = "serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "troglodytes.html">Troglodytes</a></li>
+						<li><a href = "trolls.html">Trolls</a></li>
+						<li><a href = "vampires.html">Vampires</a></li>
+						<li><a href = "appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "troglodytes.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "troglodytes.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "troglodytes.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "troglodytes.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "troglodytes.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "troglodytes.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "troglodytes.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "troglodytes.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "troglodytes.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "troglodytes.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "troglodytes.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "troglodytes.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "troglodytes.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 class = "monster-header" id = "monster-codex-troglodytes">Troglodytes</h1>
+
+<p>Troglodytes are a race of feral, violent, reptilian cave dwellers. They are relatively common in the upper reaches of the great subterranean wilderness, and have a long history of raiding the settlements of other humanoids&mdash;particularly humans&mdash;for food and slaves.</p>
+<p>A typical troglodyte stands about 5 feet tall and weighs 150 pounds. Most are dull gray or gray-green, though other variations in coloration can appear depending on habitat. Troglodytes have short, stiff ridges running from the top of the head down to the base of the spine. They reach maturity at 10 years of age and have lifespans of about 50 to 60 years, though most troglodytes perish from violence much earlier than that. Troglodytes typically form primitive tribal societies, usually dominated by a powerful chieftain or a charismatic cleric or druid. Humans are a troglodyte's favored prey, and the very scent of a human is enough to drive troglodytes into a feeding frenzy. However, troglodytes are opportunistic predators that will hunt and devour other intelligent creatures if humans are unavailable. Troglodytes are also unapologetically cannibalistic, often eating the defeated members of rival tribes and the old and infirm members of their own tribe when other forms of prey are scarce.</p>
+<p>Modern troglodytes are the degenerate descendants of an incredibly ancient race of reptilian humanoids known to scholars as the xulgaths, and indeed many troglodytes continue to use that name when they refer to themselves. Though the ancient xulgaths resembled modern troglodytes in form, they were more gifted, both intellectually and magically. When the world was still young, the xulgaths erected great stone cities of towering ziggurats, twisting canals and aqueducts, and many other advanced examples of stonework and architecture. Some of these still stand today in the deepest caverns of the underworld. Though the society the xulgaths built would be considered primitive by modern standards, it far outpaced the progress other races had made. Xulgath society was ruled by a religious caste of exceptionally powerful divine spellcasters who used their supernatural gifts to dominate their lesser kin and enslave the primitive humanoid races. The xulgaths worshiped ancient and inhuman gods, most notably the dreadful qlippoth lords who ruled the Abyss before the demon lords usurped their place.</p>
+<p>However, the xulgaths were slow to progress and adapt, and lost their advantage. As hard as they fought against the rising civilizations of elves, dwarves, and other humanoids, they couldn't keep up with the technological progress the others had made. The xulgaths were finally cast down by one of the earliest human civilizations. All the xulgaths had created was lost, and many of them were enslaved. Now, not only have the troglodytes failed to keep up with other races, but they have in many ways regressed from what they once were.</p>
+<p>A few large settlements of unusually civilized and intelligent troglodytes do exist in the deepest reaches of the world's subterranean wilds. Ruled over by despotic tyrants, these settlements consist of great stone ziggurats and other monolithic stone structures that modern troglodytes would be incapable of engineering and building on their own. Strangely, though these realms appear to be of xulgath origin, they were ruins before the enlightened troglodytes came to live there. This suggests that the troglodytes didn't live there continuously and develop their society, but rather abandoned the settlements as their civilizations collapsed into savagery, returning only when they became enlightened once again. Home to hundreds of organized troglodytes, these settlements are typically warlike in nature. Fortunately, the surface world remains safe from these aggressive raiders since these settlements are all located deep underground and remain isolated from the surface-dwelling races by miles of subterranean wilderness.</p>
+<p>Troglodytes speak Draconic, though their vocabulary is limited because of their cultural isolation and stagnation. They are also adept at conveying information through gestures, guttural noises meant to convey their emotions, and culturally ubiquitous displays of dominance. Though troglodytes keep few written records, the creation of artwork has an important place within their culture as a leisure activity and religious practice. Troglodyte cave paintings and sculptures can be entirely abstract or loosely representational, and focus on expressing the creator's emotional state&mdash;joy and pride after a successful hunt, rage at a cunning enemy, or affection for family, for example&mdash;rather than conveying a complex narrative. Many troglodyte settlements keep lit torches so the vibrant colors of their art can be seen, since darkvision shows only black and white.</p>
+<p>Religion is a strong influence among troglodytes, and their clerics and druids are almost always the highest regarded members of a tribe. Most tribes are led by charismatic clerics or druids. Chieftains who are incapable of wielding divine power find themselves serving as mere mouthpieces for the most powerful religious figures in the tribe. Troglodyte worship is a disorganized affair; veneration of the tribe's chosen demon lords mainly consisting of superstitious rituals, crude carvings and drawings on cave walls, and religious stories told and retold down countless troglodyte generations. Clerics among the troglodytes typically keep religious knowledge and power for themselves, encouraging their tribemates to worship devoutly but concentrating religious authority among an elite few. Troglodyte clerics typically choose their favorite offspring as their successors, prompting the children of holy people to engage in fierce (and sometimes bloody) competition to win the favor of their parents.</p>
+<p>Full statistics for troglodytes can be found in their <a href = "../bestiary/troglodyte.html"><em>Bestiary</em> entry</a>.</p>
+
+<h1 id = "troglodyte-new-rules">New Rules</h1>
+<p>The following new rules include variant troglodytes and troglodyte-created spells.</p>
+
+<h2 id = "troglodyte-variants">Troglodyte Variants</h2>
+<p>Although most troglodytes are represented as cave-dwelling creatures, after untold millennia, several troglodyte variants have evolved from the ancient xulgath bloodline and adapted to life in different environments and climates.</p>
+<p id = "enlightened-troglodytes"><strong>Enlightened Troglodytes (CR 2)</strong>: These troglodytes dwell far deeper underground than most of their kind. Less bestial than other troglodytes but just as vile, they use their intelligence to enslave more primitive races. They become experts at taming beasts to serve as mounts and sentries.</p>
+<p>An enlightened troglodyte's ability scores are Str 14, Dex 17, Con 16, Int 12, Wis 13, and Cha 13. A typical enlightened troglodyte's skills (not counting ranks gained through class levels) are <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> +6, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +5 (+9 in rocky areas), and <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +3.</p>
+<p id = "kaergath"><strong>Kaergath (CR 1/2)</strong>: Squat, warty, and diminutive, these troglodytes average just under 4 feet tall and weigh 180 pounds. Kaergaths have dull reddish-brown scales and huge, square teeth, but lack the claws of the other troglodytes. Native to the upper reaches of the subterranean wilderness underneath trackless deserts and sun-scorched badlands, kaergaths are known for their ability to burrow through sand, their expertise with the javelin, and their preference for the flesh of humanoid children.</p>
+<p>Kaergaths are troglodytes with the young simple template and the ability to burrow through sand and loose earth (but not stone) at a rate of 20 feet per round. They gain a +1 racial bonus on attack rolls with javelins. Kaergaths have a bite attack that deals 1d8 points of damage, but do not have claw attacks.</p>
+<p id = "troglodyte-paragons"><strong>Troglodyte Paragons (CR 5)</strong>: Although most of the ancient xulgath race perished with the collapse of its great empire long ago, a few powerful individuals survived. These ancient troglodytes went into hiding in the deep places of the world, and though many of them perished, fled to other planes, or retreated into lichdom, a few sought refuge in magical stasis. Over the long centuries, troglodyte paragons have from time to time awakened from their magical slumber. Though some have sought out modern troglodytes in an effort to elevate them and reclaim the glory of their lost civilization, most troglodyte paragons despise their degenerate descendants. Distinguished from common troglodytes by their glowing, emerald eyes and gold-tinged scales, troglodyte paragons are long-lived, with maximum lifespans averaging 400 years. Troglodyte paragons are extremely paranoid and obsessed with self-preservation. Most troglodyte paragons have class levels in cleric or sorcerer.</p>
+<p>Troglodyte paragons are Large troglodytes with 7 Hit Dice. Their natural armor bonus increases by 2, their claw attacks deal 1d8 points of damage, and their bite attacks deal 1d6 points of damage. Troglodyte paragons have the following ability scores instead of the standard troglodyte ability scores: Str 22, Dex 9, Con 16, Int 13, Wis 10, and Cha 15. They can use the following spell-like abilities: constant&mdash;<em><a href = "../coreRulebook/spells/arcaneSight.html#arcane-sight">arcane sight</a></em> ; at will&mdash;<em><a href = "../coreRulebook/spells/hypnotism.html#hypnotism">hypnotism</a></em>, <em><a href = "../coreRulebook/spells/speakWithAnimals.html#speak-with-animals">speak with animals</a></em> (dinosaurs and reptiles only); 3/day&mdash;<em><a href = "../coreRulebook/spells/causeFear.html#cause-fear">cause fear</a></em>, <em><a href = "../coreRulebook/spells/charmMonster.html#charm-monster">charm monster</a></em> . Troglodyte paragons with at least 14 Hit Dice (including both racial HD and those from class levels) can also use <em><a href = "../coreRulebook/spells/dominateMonster.html#dominate-monster">dominate monster</a></em> once per day. A typical troglodyte paragon's skills (not counting ranks gained through class levels) are <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +9, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +7, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +10 (+14 in rocky areas).</p>
+
+<h2 id = "troglodyte-spells">Troglodyte Spells</h2>
+<p>Troglodyte spellcasters often learn the following spells.</p>
+
+<p id = "amplify-stench" class = "stat-block-title">Amplify Stench</p>
+<p class = "stat-block-1"><strong>School</strong> transmutation; <strong>Level</strong> cleric 2, druid 2, oracle 2, shaman 2, sorcerer/wizard 2</p>
+<p class = "stat-block-1"><strong>Casting Time</strong> 1 standard action</p>
+<p class = "stat-block-1"><strong>Components</strong> V, S</p>
+<p class = "stat-block-1"><strong>Range</strong> personal</p>
+<p class = "stat-block-1"><strong>Target</strong> you</p>
+<p class = "stat-block-1"><strong>Duration</strong> 10 minutes/level</p>
+<p>You amplify your natural stench special ability&mdash;its save DC increases by 2, and creatures that fail their saving throws against your stench become nauseated rather than sickened. If your stench ability normally causes a creature to become nauseated (such as with the foul stench ability), the radius of your stench doubles instead. This spell has no effect if you don't possess the stench special ability.</p>
+
+<p id = "mark-of-the-reptile-god" class = "stat-block-title">Mark of the Reptile God</p>
+<p class = "stat-block-1"><strong>School</strong> transmutation (curse); <strong>Level</strong> antipaladin 4, cleric 4, inquisitor 4, oracle 4</p>
+<p class = "stat-block-1"><strong>Casting Time</strong> 1 standard action</p>
+<p class = "stat-block-1"><strong>Components</strong> V, S, DF</p>
+<p class = "stat-block-1"><strong>Range</strong> close (25 ft. + 5 ft./2 levels)</p>
+<p class = "stat-block-1"><strong>Target</strong> one creature</p>
+<p class = "stat-block-1"><strong>Duration</strong> permanent</p>
+<p class = "stat-block-1"><strong>Saving Throw</strong> Fortitude negates; <strong>Spell Resistance</strong> yes</p>
+<p>If you succeed at a ranged touch attack, you burn your handprint onto the flesh of a creature, dealing 1d6 points of acid damage. The mark can be placed on any exposed portion of the creature, typically the head or forearm. The flesh around the handprint becomes rough and scaly, like the hide of a lizard. It also glows with a green radiance (shedding light as a torch) when brought within 60 feet of you. While the handprint glows, the target takes a <span class = "char-style-override-79">−</span>2 penalty to AC against your attacks and on saving throws to resist any spell you cast or spell-like ability you use.</p>
+<p>Additionally, each day the target remains cursed, more and more of its flesh becomes covered in reptilian scales. The target must succeed at a Fortitude save each day or take 1d4 points of Charisma damage, 1 point of which is Charisma drain instead. A creature reduced to 0 Charisma by this effect is immediately transformed into a small, harmless cave lizard, as the <em><a href = "../coreRulebook/spells/balefulPolymorph.html#baleful-polymorph">baleful polymorph</a></em> spell.</p>
+<p>As with the effects of <em><a href = "../coreRulebook/spells/bestowCurse.html#bestow-curse">bestow curse</a></em>, the curse inflicted by this spell cannot be dispelled, but it can be removed with a <em><a href = "../coreRulebook/spells/breakEnchantment.html#break-enchantment">break enchantment</a></em>, <em><a href = "../coreRulebook/spells/limitedWish.html#limited-wish">limited wish</a></em>, <em><a href = "../coreRulebook/spells/miracle.html#miracle">miracle</a></em>, <em><a href = "../coreRulebook/spells/removeCurse.html#remove-curse">remove curse</a></em>, or <em><a href = "../coreRulebook/spells/wish.html#wish">wish</a></em> spell.</p>
+
+<p id = "swarm-of-fangs" class = "stat-block-title">Swarm of Fangs</p>
+<p class = "stat-block-1"><strong>School</strong> conjuration (summoning); <strong>Level</strong> druid 3, sorcerer/wizard 3, summoner 3, witch 3</p>
+<p class = "stat-block-1"><strong>Casting Time</strong> 1 round</p>
+<p class = "stat-block-1"><strong>Components</strong> V, S, M (a lizard's tooth)</p>
+<p class = "stat-block-1"><strong>Range</strong> close (25 ft. + 5 ft./2 levels)</p>
+<p class = "stat-block-1"><strong>Effect</strong> one swarm of animate teeth</p>
+<p class = "stat-block-1"><strong>Duration</strong> 1 round/level</p>
+<p class = "stat-block-1"><strong>Saving Throw</strong> none; <strong>Spell Resistance</strong> no</p>
+<p>You summon a swarm consisting of thousands of animate, flying teeth in a 10-foot-by-10-foot cube. These fangs attack all creatures within the swarm's area. You can summon the swarm so that it shares an area with other creatures, and you can move the swarm up to 40 feet each round as a move action. If you choose not to move the swarm, it automatically moves up to 40 feet to envelop the nearest creature (including you) if it has not already done so.</p>
+<p>Creatures caught inside the swarm's area of effect take 2d6 points of damage. The fangs deal damage to all creatures sharing their area when they first appear, and at the end of their movement each round.</p>
+
+<h2 id = "troglodyte-magic-items">Troglodyte Magic Items</h2>
+<p>Though troglodytes possess only primitive technology, their magical traditions do include crafting magic items.</p>
+
+<p id = "cave-dweller-greataxe" class = "stat-block-title">Cave dweller's Greataxe</p>
+<p class = "stat-block-1"><strong>Price</strong> 8,305 gp; <strong>Slot</strong> none; <strong>CL</strong> 11th; <strong>Weight</strong> 9 lbs.; <strong>Aura</strong> moderate transmutation</p>
+<p class = "stat-block">A <em>cave dweller's greataxe</em> appears to be a thin slab of stone crudely lashed to a bone haft. It's as serviceable as a metal weapon of the same type would be, and functions as a <em>+1 greataxe</em> . Once per day when the wielder of a <em>cave dweller's greataxe</em> hits a creature, the wielder can speak a command word to force the hit creature to attempt a DC 16 Fortitude save. If the creature fails, it becomes slowed for 1 round. At the end of that round, the creature is no longer slowed, but it must succeed at a second saving throw or it becomes petrified for 1d4 rounds.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> 4,305 gp</p>
+<p class = "stat-block-1"><a href = "pathfinderRPG/prd/feats.html#craft-magic-arms-and-armor">Craft Magic Arms and Armor</a>, <em><a href = "../advancedPlayersGuide/spells/calcificTouch.html#_calcific-touch">calcific touch</a></em></p>
+
+<p id = "stench-spray-amulet" class = "stat-block-title">Stench Spray Amulet</p>
+<p class = "stat-block-1"><strong>Price</strong> 1,600 gp; <strong>Slot</strong> neck; <strong>CL</strong> 3rd; <strong>Weight</strong> &mdash;; <strong>Aura</strong> faint conjuration</p>
+<p class = "stat-block">This fetish of bone, shed reptilian skin, and small stones can be worn around the neck to convert a creature's stench into a breath weapon. It has no benefits for a creature that doesn't have the stench special ability. While a creature wears this amulet, its stench aura is suppressed. Once per hour as a standard action, the creature can spray a brown slime from its mouth in a 30-foot cone. Any creature hit by the slime must succeed at a Fortitude saving throw or become sickened for the same duration. The save DC and duration are the same as those of the wearer's stench aura.</p>
+<p class = "stat-block">Furthermore, the floor in the cone becomes coated in the slick slime for 1 minute. This has the same effects as coating a solid surface with a <em><a href = "../coreRulebook/spells/grease.html#grease">grease</a></em> spell (DC 11), but doesn't require creatures to attempt saving throws if they're in the area when the cone is created&mdash;only if they move through the area.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> 800 gp</p>
+<p class = "stat-block-1">Craft Wondrous Item, <em><a href = "../coreRulebook/spells/grease.html#grease">grease</a></em> </p>
+
+<h1 id = "example-troglodytes">Example Troglodytes</h1>
+
+<h2>Troglodyte Sneaks</h2>
+<p>Using their natural stealth or magical invisibility, these troglodytes sneak up on enemies, then either slip away to report what they've seen to the tribe or attack enemies that look weak.</p>
+
+<p id = "troglodyte-skulker" class = "stat-block-title">Troglodyte Skulker <span class = "stat-block-cr">CR 2</span></p>
+<p class = "stat-block-xp">XP 600</p>
+<p class = "stat-block-1">Troglodyte rogue 2</p>
+<p class = "stat-block-1">CE Medium humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +5; <strong>Senses</strong> darkvision 90 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +8</p>
+<p class = "stat-block-1"><strong>Aura</strong> stench (30 ft., DC 14, 10 rounds)</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 17, touch 11, flat-footed 16 (+1 Dex, +6 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 30 (4d8+12)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +6, <strong>Ref</strong> +4, <strong>Will</strong> +1</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> evasion</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk club +6 (1d6+3), bite +0 (1d4+1), claw +0 (1d4+1) or bite +5 (1d4+3), 2 claws +5 (1d4+3)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> javelin +3 (1d6+3)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> sneak attack +1d6</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 16, <strong>Dex</strong> 13, <strong>Con</strong> 16, <strong>Int</strong> 8, <strong>Wis</strong> 13, <strong>Cha</strong> 9</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +2; <strong>CMB</strong> +5; <strong>CMD</strong> 16</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#point-blank-shot">Point-Blank Shot</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +8, <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +7, <a href = "../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> +2, <a href = "../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> +8, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (dungeoneering) +3, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +8, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +12 (+16 in rocky areas)</p>
+<p class = "stat-block-1"><strong>Languages</strong> Draconic</p>
+<p class = "stat-block-1"><strong>SQ</strong> rogue talents (fast stealth), trapfinding +1</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em>, smokesticks (2); <strong>Other Gear</strong> javelins (4), mwk club, sack of uncut gems (worth 120 gp in total), 16 gp</p>
+
+<p>Far-ranging and mobile, troglodyte skulkers spend most of their time away from the tribe.</p>
+
+<p id = "troglodyte-sorcerer" class = "stat-block-title">Troglodyte Sorcerer <span class = "stat-block-cr">CR 4</span></p>
+<p class = "stat-block-xp">XP 1,200</p>
+<p class = "stat-block-1">Troglodyte sorcerer 4</p>
+<p class = "stat-block-1">CE Medium humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +1; <strong>Senses</strong> darkvision 90 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +1</p>
+<p class = "stat-block-1"><strong>Aura</strong> stench (30 ft., DC 13, 10 rounds)</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 17, touch 11, flat-footed 16 (+1 Dex, +6 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 39 (6 HD; 2d8+4d6+16)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +7, <strong>Ref</strong> +3, <strong>Will</strong> +6; +2 vs. poison</p>
+<p class = "stat-block-1"><strong>Resist</strong> electricity 5</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk club +4 (1d6), bite &ndash;2 (1d4), claw &ndash;2 (1d4) or bite +3 (1d4), 2 claws +3 (1d4)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> claws (1d6, 6 rounds/day)</p>
+<p class = "stat-block-1"><strong>Sorcerer Spells Known</strong> (CL 4th; concentration +7)</p>
+<p class = "stat-block-2">2nd (4/day)&mdash;<em><a href = "../coreRulebook/spells/acidArrow.html#acid-arrow">acid arrow</a></em> </p>
+<p class = "stat-block-2">1st (7/day)&mdash;<em><a href = "../coreRulebook/spells/causeFear.html#cause-fear">cause fear</a></em> (DC 15), <em><a href = "../ultimateMagic/spells/corrosiveTouch.html#_corrosive-touch">corrosive touch</a></em>, <em><a href = "../coreRulebook/spells/rayOfEnfeeblement.html#ray-of-enfeeblement">ray of enfeeblement</a></em> (DC 15), <em><a href = "../coreRulebook/spells/summonMonster.html#summon-monster-i">summon monster I</a></em> </p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/acidSplash.html#acid-splash">acid splash</a></em>, <em><a href = "../coreRulebook/spells/daze.html#daze">daze</a></em> (DC 13), <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/ghostSound.html#ghost-sound">ghost sound</a></em> (DC 13), <em><a href = "../coreRulebook/spells/mageHand.html#mage-hand">mage hand</a></em>, <em><a href = "../coreRulebook/spells/mending.html#mending">mending</a></em> </p>
+<p class = "stat-block-2"><strong>Bloodline</strong> Abyssal</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 10, <strong>Dex</strong> 13, <strong>Con</strong> 14, <strong>Int</strong> 10, <strong>Wis</strong> 13, <strong>Cha</strong> 16</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +3; <strong>CMB</strong> +3; <strong>CMD</strong> 14</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#combat-casting"><a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a></a>, <a href = "../coreRulebook/feats.html#eschew-materials">Eschew Materials</a>, <a href = "../coreRulebook/feats.html#silent-spell">Silent Spell</a>, <a href = "../coreRulebook/feats.html#spell-focus">Spell Focus</a> (evocation)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana) +7, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (planes) +4, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +6, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +9 (+13 in rocky areas)</p>
+<p class = "stat-block-1"><strong>Languages</strong> Draconic</p>
+<p class = "stat-block-1"><strong>SQ</strong> bloodline arcana (summoned creatures gain DR 2/good)</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></em>, <em>wand of <a href = "../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></em> (10 charges); <strong>Other Gear</strong> mwk club, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +1</em>, 150 gp</p>
+
+<p>Arcane casters often become scouts, as their divine counterparts monopolize the positions of power within the tribe. Most troglodyte sorcerers have the Abyssal, Deep Earth, Draconic, or Undead bloodline.</p>
+
+
+<h2>Troglodyte Holy Ones</h2>
+<p>Troglodyte divine spellcasters act as spiritual advisors for their tribes. Troglodyte clerics usually worship demon lords, particularly those associated with caverns and reptiles.</p>
+
+<p id = "troglodyte-beast-speaker" class = "stat-block-title">Troglodyte Beast-Speaker <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1">Troglodyte druid 3</p>
+<p class = "stat-block-1">CE Medium humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +4; <strong>Senses</strong> darkvision 90 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +10</p>
+<p class = "stat-block-1"><strong>Aura</strong> stench (30 ft., DC 13, 10 rounds)</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 16, touch 10, flat-footed 16 (+6 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 35 (5d8+13)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +8, <strong>Ref</strong> +3, <strong>Will</strong> +5</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft., climb 20 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk club +4 (1d6), bite &ndash;2 (1d4), claw &ndash;2 (1d4) or bite +3 (1d4), 2 claws +3 (1d4)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> javelin +3 (1d6)</p>
+<p class = "stat-block-1"><strong>Druid Spells Prepared</strong> (CL 3rd; concentration +5)</p>
+<p class = "stat-block-2">2nd&mdash;<em><a href = "../coreRulebook/spells/holdAnimal.html#hold-animal">hold animal</a></em> <sup>D</sup> (DC 14), <em><a href = "../coreRulebook/spells/spiderClimb.html#spider-climb">spider climb</a></em>, <em><a href = "../coreRulebook/spells/summonSwarm.html#summon-swarm">summon swarm</a></em> </p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/spells/calmAnimals.html#calm-animals">calm animals</a></em> <sup>D</sup> (DC 13), <em><a href = "../coreRulebook/spells/charmAnimal.html#charm-animal">charm animal</a></em> (DC 13), <em><a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></em>, <em><a href = "../coreRulebook/spells/entangle.html#entangle">entangle</a></em> (DC 13)</p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/createWater.html#create-water">create water</a></em>, <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/guidance.html#guidance">guidance</a></em>, <em><a href = "../coreRulebook/spells/knowDirection.html#know-direction">know direction</a></em> </p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The beast-speaker casts <em><a href = "../coreRulebook/spells/spiderClimb.html#spider-climb">spider climb</a></em> on himself and tries to ambush his prey from the ceiling, high wall, or ledge.</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> Without <em><a href = "../coreRulebook/spells/spiderClimb.html#spider-climb">spider climb</a></em>, the beast-speaker's statistics are <strong>Speed</strong> 30 ft.; Skills <strong><a href = "../coreRulebook/skills/climb.html#climb">Climb</a></strong> +0.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 10, <strong>Dex</strong> 11, <strong>Con</strong> 14, <strong>Int</strong> 10, <strong>Wis</strong> 15, <strong>Cha</strong> 15</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +3; <strong>CMB</strong> +3; <strong>CMD</strong> 13</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#combat-casting"><a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a></a>, <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#lightning-reflexes"><a href = "../coreRulebook/feats.html#lightnin-reflexes">Lightning Reflexes</a></a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +8, <a href = "../coreRulebook/skills/heal.html#heal">Heal</a> +7, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nature) +2, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +10, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +6, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +7 (+11 in rocky areas), <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +10</p>
+<p class = "stat-block-1"><strong>Languages</strong> Draconic, Druidic</p>
+<p class = "stat-block-1"><strong>SQ</strong> nature bond (Animal domain), nature sense, speak with animals (6 rounds/day), trackless step, wild empathy +5, woodland stride</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em>, <em>scroll of <a href = "../coreRulebook/spells/dominateAnimal.html#dominate-animal">dominate animal</a></em>, <em>scroll of <a href = "../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-ii">summon nature's ally II</a></em> ; <strong>Other Gear</strong> javelins (6), mwk club, headdress (worth 500 gp), 19 gp</p>
+
+<p id = "troglodyte-priest" class = "stat-block-title">Troglodyte Priest <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1">Troglodyte cleric 3</p>
+<p class = "stat-block-1">CE Medium humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> &ndash;1; <strong>Senses</strong> darkvision 90 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +2</p>
+<p class = "stat-block-1"><strong>Aura</strong> stench (30 ft., DC 14, 10 rounds)</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 19, touch 9, flat-footed 19 (+4 armor, &ndash;1 Dex, +6 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 30 (5d8+8)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +7, <strong>Ref</strong> +0, <strong>Will</strong> +5</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 20 ft.</p>
+<p class = "stat-block-1"><strong>Melee </strong><em>+1 obsidian spiked gauntlet</em> +10 (1d4+6), bite +3 (1d4+5), claw +3 (1d4+5) or bite +8 (1d4+5), 2 claws +8 (1d4+5)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> javelin +2 (1d6+5)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> channel negative energy 4/day (DC 14, 2d6), fury of the Abyss (+1, 5/day)</p>
+<p class = "stat-block-1"><strong>Domain Spell-Like Abilities</strong> (CL 3rd; concentration +5)</p>
+<p class = "stat-block-2">5/day&mdash;strength surge (+1)</p>
+<p class = "stat-block-1"><strong>Cleric Spells Prepared</strong> (CL 3rd; concentration +5)</p>
+<p class = "stat-block-2">2nd&mdash;<em>amplify stench</em> *, <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em> <sup>D</sup>,<em> <a href = "../coreRulebook/spells/holdPerson.html#hold-person">hold person</a></em> (DC 14)</p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/spells/bless.html#bless">bless</a></em>, <em><a href = "../coreRulebook/spells/command.html#command">command</a></em> (DC 13), <em><a href = "../coreRulebook/spells/doom.html#doom">doom</a></em> <sup>D</sup> (DC 13), <em><a href = "../coreRulebook/spells/magicWeapon.html#magic-weapon">magic weapon</a></em> </p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/bleed.html#bleed">bleed</a></em> (DC 12), <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/guidance.html#guidance">guidance</a></em>, <em><a href = "../advancedPlayersGuide/spells/spark.html#_spark-">spark</a></em></p>
+<p class = "stat-block-2"><strong>D</strong> domain spell; <strong>Domains</strong> Evil (Demon subdomain), Strength</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat </strong>The priest casts <em>amplify stench</em> and <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em> on herself, and <em><a href = "../coreRulebook/spells/magicWeapon.html#magic-weapon">magic weapon</a></em> on her spiked gauntlet.</p>
+<p class = "stat-block-1"><strong>Base Statistics </strong>Without <em>amplify stench</em>, <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em>, and <em><a href = "../coreRulebook/spells/magicWeapon.html#magic-weapon">magic weapon</a></em>, the priest's statistics are <strong>Aura</strong> stench (30 ft., DC 12, 10 rounds); <strong>Melee</strong> mwk obsidian spiked gauntlet +8 (1d4+3), bite +1 (1d4+3), claw +1 (1d4+3), or bite +6 (1d4+3), 2 claws +6 (1d4+3); <strong>Ranged</strong> javelin +2 (1d6+3); <strong>Str</strong> 16; <strong>CMB</strong> +6; <strong>CMD</strong> 15.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 20, <strong>Dex</strong> 9, <strong>Con</strong> 12, <strong>Int</strong> 10, <strong>Wis</strong> 15, <strong>Cha</strong> 13</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +3; <strong>CMB</strong> +8; <strong>CMD</strong> 17</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#combat-casting"><a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a></a>, <a href = "../coreRulebook/feats.html#improved-channel">Improved Channel</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (spiked gauntlet)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/heal.html#heal">Heal</a> +7, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (planes) +4, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) +6, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +7, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +5, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +1 (+5 in rocky areas)</p>
+<p class = "stat-block-1"><strong>Languages</strong> Draconic</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potions of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em> (2), <em>scroll of <a href = "../coreRulebook/spells/spiritualWeapon.html#spiritual-weapon">spiritual weapon</a></em>, <em>wand of <a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></em> (20 charges), thunderstone; <strong>Other Gear</strong> mwk hide armor, javelins (6), mwk obsidian spiked gauntlet, wooden holy symbol, 96 gp</p>
+
+
+
+<h2>Troglodyte Cavalry</h2>
+<p>These mounted warriors ride reptilian steeds such as giant monitor lizards or giant chameleons into combat.</p>
+
+<p id = "troglodyte-scale-rider" class = "stat-block-title">Troglodyte Scale-Rider <span class = "stat-block-cr">CR 6</span></p>
+<p class = "stat-block-xp">XP 2,400</p>
+<p class = "stat-block-1">Troglodyte ranger 5</p>
+<p class = "stat-block-1">CE Medium humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +2; <strong>Senses</strong> darkvision 90 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +10</p>
+<p class = "stat-block-1"><strong>Aura</strong> stench (30 ft., DC 14, 10 rounds)</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 19, touch 12, flat-footed 17 (+1 armor, +2 Dex, +6 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 69 (7 HD; 2d8+5d10+33)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +10, <strong>Ref</strong> +6, <strong>Will</strong> +2</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk club +10/+5 (1d6+3), bite +4 (1d4+1), claw +4 (1d4+1)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> javelin +8/+3 (1d6+3)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> combat style (mounted combat), favored enemy (dwarves +2, humans +4)</p>
+<p class = "stat-block-1"><strong>Ranger Spells Prepared</strong> (CL 2nd; concentration +3)</p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/spells/animalMessenger.html#animal-messenger">animal messenger</a></em>, <em><a href = "../coreRulebook/spells/entangle.html#entangle">entangle</a></em> (DC 12)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 16, <strong>Dex</strong> 14, <strong>Con</strong> 16, <strong>Int</strong> 8, <strong>Wis</strong> 13, <strong>Cha</strong> 9</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +6; <strong>CMB</strong> +9; <strong>CMD</strong> 21</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#deadly-aim">Deadly Aim</a>, <a href = "../coreRulebook/feats.html#endurance">Endurance</a>, <a href = "../coreRulebook/feats.html#mounted-archery">Mounted Archery</a>, <a href = "../coreRulebook/feats.html#mounted-combat">Mounted Combat</a>, <a href = "../coreRulebook/feats.html#point-blank-shot">Point-Blank Shot</a>, <a href = "../coreRulebook/feats.html#quick-draw">Quick Draw</a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> +8, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (dungeoneering) +5, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +10, <a href = "../coreRulebook/skills/ride.html#ride">Ride</a> +11, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +12 (+16 in rocky areas), <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +7</p>
+<p class = "stat-block-1"><strong>Languages</strong> Draconic</p>
+<p class = "stat-block-1"><strong>SQ</strong> favored terrain (underground +2), hunter's bond (companions), track +2, wild empathy +4</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potions of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em> (2), <em>potion of <a href = "../coreRulebook/spells/protectionFromArrows.html#protection-from-arrows">protection from arrows</a></em>, tanglefoot bags (2); <strong>Other Gear</strong> javelins (15), mwk club, <em>bracers of armor +1</em>, 85 gp</p>
+
+<p id = "troglodyte-champion" class = "stat-block-title">Troglodyte Champion <span class = "stat-block-cr">CR 7</span></p>
+<p class = "stat-block-xp">XP 3,200</p>
+<p class = "stat-block-1">Troglodyte fighter 6</p>
+<p class = "stat-block-1">CE Medium humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +1; <strong>Senses</strong> darkvision 90 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +3</p>
+<p class = "stat-block-1"><strong>Aura</strong> stench (30 ft., DC 15, 10 rounds)</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 23, touch 11, flat-footed 22 (+6 armor, +1 Dex, +6 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 82 (8 HD; 2d8+6d10+40)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +13, <strong>Ref</strong> +4, <strong>Will</strong> +4 (+2 vs. fear)</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> bravery +2</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk lance +13/+8 (1d8+5/&times;3), bite +6 (1d4+2), claw +6 (1d4+2)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> javelin +9/+4 (1d6+5)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> weapon training (spears +1)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 18, <strong>Dex</strong> 12, <strong>Con</strong> 18, <strong>Int</strong> 8, <strong>Wis</strong> 13, <strong>Cha</strong> 9</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +7; <strong>CMB</strong> +11 (+13 bull rush); <strong>CMD</strong> 22 (24 vs. bull rush)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#improved-bull-rush">Improved Bull Rush</a>, <a href = "../coreRulebook/feats.html#mounted-combat">Mounted Combat</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#quick-draw">Quick Draw</a>, <a href = "../coreRulebook/feats.html#ride-by-attack">Ride-By Attack</a>, <a href = "../coreRulebook/feats.html#spirited-charge">Spirited Charge</a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a>, <a href = "../coreRulebook/feats.html#unseat">Unseat</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> +6, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +6, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +3, <a href = "../coreRulebook/skills/ride.html#ride">Ride</a> +6, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +3 (+7 in rocky areas)</p>
+<p class = "stat-block-1"><strong>Languages</strong> Draconic</p>
+<p class = "stat-block-1"><strong>SQ</strong> armor training 1</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em> ; <strong>Other Gear</strong> mwk breastplate, javelins (7), mwk lance, <em>belt of giant strength +2</em>, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +1</em>, 33 gp</p>
+
+
+
+<h2 id = "troglodyte-chieftain">Troglodyte Chieftain</h2>
+<p>One chieftain usually leads each troglodyte tribe, ruling over the lesser members of the tribe with a strong and vengeful hand.</p>
+
+<p class = "stat-block-title">Troglodyte Chieftain <span class = "stat-block-cr">CR 8</span></p>
+<p class = "stat-block-xp">XP 4,800</p>
+<p class = "stat-block-1">Troglodyte barbarian 2/druid (cave druid) 6</p>
+<p class = "stat-block-1">CE Medium humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +4; <strong>Senses</strong> darkvision 90 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +12</p>
+<p class = "stat-block-1"><strong>Aura</strong> stench (30 ft., DC 14, 10 rounds)</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 21, touch 11, flat-footed 21 (+4 armor, +9 natural, &ndash;2 rage)</p>
+<p class = "stat-block-1"><strong>hp</strong> 100 (10 HD; 8d8+2d12+46)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +14, <strong>Ref</strong> +4, <strong>Will</strong> +10; +2 vs. abilities of aberrations and oozes</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> uncanny dodge; <strong>Resist</strong> fire 10</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 50 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 greataxe</em> +15/+10 (1d12+8/&times;3), <em>+1 bite</em> +10 (1d4+4) or <em>+1 bite</em> +15 (1d4+8), 2 <em>+1 claws</em> +15 (1d4+8)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> javelin +7 (1d6+7)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> fire bolt (1d6+3 fire, 6/day), rage (7 rounds/day), rage powers (moment of clarity), wild shape 1/day (can adopt ooze form but not plant form)</p>
+<p class = "stat-block-1"><strong>Druid Spells Prepared</strong> (CL 6th; concentration +9)</p>
+<p class = "stat-block-2">3rd&mdash;<em>firebal l</em> <sup>D</sup> (DC 16), <em><a href = "../coreRulebook/spells/magicFang.html#magic-fang-greater">greater magic fang</a></em> (2), <em>swarm of fangs</em> * (DC 16)</p>
+<p class = "stat-block-2">2nd&mdash;<em><a href = "../coreRulebook/spells/barkskin.html#barkskin">barkskin</a></em>, <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em> (2), <em><a href = "../coreRulebook/spells/produceFlame.html#produce-flame">produce flame</a></em> <sup>D</sup>, <em><a href = "../advancedPlayersGuide/spells/stoneCall.html#_stone-call">stone call</a></em></p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/spells/burningHands.html#burning-hands">burning hands</a></em> <sup>D</sup> (DC 14), <em><a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></em> (2), <em><a href = "../coreRulebook/spells/longstrider.html#longstrider">longstrider</a></em>, <em><a href = "../coreRulebook/spells/passWithoutTrace.html#pass-without-trace">pass without trace</a></em> </p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/createWater.html#create-water">create water</a></em>, <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/knowDirection.html#know-direction">know direction</a></em>, <em><a href = "../coreRulebook/spells/mending.html#mending">mending</a></em> </p>
+<p class = "stat-block-2"><strong>D</strong> domain spell; <strong>Domain</strong> Fire</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The chieftain casts <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em> and <em><a href = "../coreRulebook/spells/magicFang.html#magic-fang-greater">greater magic fang</a></em> on both himself and one ally, then casts <em><a href = "../coreRulebook/spells/barkskin.html#barkskin">barkskin</a></em> on himself.</p>
+<p class = "stat-block-1"><strong>During Combat</strong> While his enemies are still at range, the chieftain casts <em>swarm of fangs</em>, <em><a href = "../advancedPlayersGuide/spells/stoneCall.html#_stone-call">stone call</a></em>, and other attack spells. When cornered in melee, he rages and attacks with his greataxe.</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> When he's not raging, and without <em><a href = "../coreRulebook/spells/barkskin.html#barkskin">barkskin</a></em>, <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em>, and <em><a href = "../coreRulebook/spells/magicFang.html#magic-fang-greater">greater magic fang</a></em>, the chieftain's statistics are <strong>AC</strong> 20, touch 13, flat-footed 20; <strong>hp</strong> 84; <strong>Fort</strong> +12, <strong>Will</strong> +8; <strong>Melee</strong> <em>+1 greataxe</em> +13/+8 (1d12+6/&times;3), bite +7 (1d4+2) or bite +12 (1d4+5), 2 claws +12 (1d4+5); <strong>Ranged</strong> javelin +7 (1d6+7); <strong>Str</strong> 16, <strong>Con</strong> 13; <strong>CMB</strong> +12, <strong>CMD</strong> 22.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 24, <strong>Dex</strong> 11, <strong>Con</strong> 17, <strong>Int</strong> 10, <strong>Wis</strong> 16, <strong>Cha</strong> 13</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +7; <strong>CMB</strong> +14; <strong>CMD</strong> 22</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#combat-casting"><a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a></a>, <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#lightning-reflexes"><a href = "../coreRulebook/feats.html#lightnin-reflexes">Lightning Reflexes</a></a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> +7, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +10, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (dungeoneering) +2, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) +6, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +12, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +9, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +9, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +3, <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +5</p>
+<p class = "stat-block-1"><strong>Languages</strong> Draconic, Druidic</p>
+<p class = "stat-block-1"><strong>SQ</strong> fast movement, lightfoot, nature bond (Fire domain), nature sense, tunnelrunner, wild empathy +7 (influence oozes, not magical beasts)</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potions of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em> (2), <em>scroll of meld with stone</em> ; <strong>Other Gear</strong> mwk chain shirt, <em>+1 greataxe</em>, javelins (5), <em>belt of incredible dexterity +2</em>, bag of gemstones (worth 200 gp in total), 50 gp</p>
+
+<p>Most ferocious troglodyte chieftains earn their positions by killing and eating their predecessors. Almost all chieftains practice some form of divine magic, and they must be strong&mdash;and cruel&mdash;to reign over their fractious, savage tribes. Troglodyte chieftains often wear fine metal items claimed from other creatures that they or their subjects have killed.</p>
+
+
+<h2 id = "troglodyte-warren-guard">Troglodyte Warren Guard</h2>
+<p>The largest and most aggressive troglodytes are chosen to supervise the tribes' egg clutches and keep them safe from intruders.</p>
+
+<p class = "stat-block-title">Troglodyte Warren Guard <span class = "stat-block-cr">CR 9</span></p>
+<p class = "stat-block-xp">XP 6,400</p>
+<p class = "stat-block-1">Troglodyte barbarian (brutal pugilist) 8</p>
+<p class = "stat-block-1">CE Medium humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +1; <strong>Senses</strong> darkvision 90 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +14</p>
+<p class = "stat-block-1"><strong>Aura</strong> stench (30 ft., DC 16, 10 rounds)</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 19, touch 11, flat-footed 18 (+2 armor, +1 Dex, +8 natural, &ndash;2 rage)</p>
+<p class = "stat-block-1"><strong>hp</strong> 124 (10 HD; 2d8+8d12+58)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +15, <strong>Ref</strong> +4, <strong>Will</strong> +8</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> improved savage grapple; <strong>DR</strong> 1/&mdash;</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 40 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 bite</em> +16 (1d4+7), 2 <em>+1 claws</em> +16 (1d6+7)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> javelin +10 (1d6+6)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> rage (21 rounds/day), rage powers (intimidating glare, knockback, strength surge +8, terrifying howl [DC 20])</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The warren guard drinks her <em>potion of <a href = "../coreRulebook/spells/barkskin.html#barkskin">barkskin</a></em> if she believes danger is coming.</p>
+<p class = "stat-block-1"><strong>During Combat</strong> With a single-minded devotion to protecting the tribe's eggs, the warren guard rages and starts attacking with her natural attacks. She uses intimidating glare, following it up with terrifying howl once one or two enemies are shaken. If enemies approach the eggs, she uses knockback to drive them away or grapples them to get them under control.</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> Without barkskin and when she's not raging, the barbarian's statistics are <strong>AC</strong> 19, touch 13, flat-footed 18; <strong>hp</strong> 104; <strong>Fort</strong> +13, <strong>Will</strong> +6; <strong>Melee</strong> <em>+1 bite</em> +14 (1d4+5), 2 <em>+1 claws</em> +14 (1d6+5); <strong>Ranged</strong> javelin +10 (1d6+4); <strong>Str</strong> 18, <strong>Con</strong> 16; <strong>CMB</strong> +13 (+17 bull rush, +15 grapple).</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 22, <strong>Dex</strong> 13, <strong>Con</strong> 20, <strong>Int</strong> 8, <strong>Wis</strong> 13, <strong>Cha</strong> 9</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +9; <strong>CMB</strong> +15 (+19 bull rush, +17 grapple); <strong>CMD</strong> 24 (26 vs. bull rush)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#diehard">Diehard</a>, <a href = "../coreRulebook/feats.html#improved-bull-rush">Improved Bull Rush</a>, <a href = "../bestiary/monsterFeats.html#improved-natural-attack">Improved Natural Attack</a> (claws), <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +7 (+11 when jumping), <a href = "../coreRulebook/skills/heal.html#heal">Heal</a> +7, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +12, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +14, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +5 (+9 in rocky areas); <strong>Racial Modifiers</strong> +4 <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> when jumping, +4 <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> (+8 in rocky areas)</p>
+<p class = "stat-block-1"><strong>Languages</strong> Draconic</p>
+<p class = "stat-block-1"><strong>SQ</strong> fast movement</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/barkskin.html#barkskin">barkskin</a></em>, <em>potion of <a href = "../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds">cure serious wounds</a></em> ; <strong>Other Gear</strong> <em>amulet of mighty fists +1</em>, <em>bracers of armor +2</em>, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +1</em> </p>
+
+<p>Troglodyte tribes trust only their most powerful members to look after the tribe's future members. Warren guards care for all of the tribe's eggs except those that are badly flawed; the warren guards consume eggs that will not hatch or that will likely result in a weak or sickly hatchling to ensure the future strength of the tribe. Despite warren guards' usual impartiality, religious leaders in the tribe are sometimes able to arrange for preferential treatment for eggs they laid or fertilized. This stops, however, at getting a warmer position for their eggs. A leader who tries to destroy a rival's eggs by pressuring or bribing a warren guard almost invariably draws that guard's wrath. These hulking, savage troglodytes fight with only tooth and claw. They're devoted to guarding the egg clutches, and leave their warrens only if all of the eggs have been destroyed. When set loose from this obligation, warren guards are feral, uncontrolled, and extremely dangerous.</p>
+
+
+<h2 id = "troglodyte-tyrant">Troglodyte Tyrant</h2>
+<p>Troglodyte tyrants are sovereigns of advanced troglodyte societies found in the lowest depths of the world's subterranean wilderness.</p>
+
+<p class = "stat-block-title">Troglodyte Tyrant <span class = "stat-block-cr">CR 10</span></p>
+<p class = "stat-block-xp">XP 9,600</p>
+<p class = "stat-block-1">Enlightened troglodyte cleric 7/fighter 2</p>
+<p class = "stat-block-1">CE Medium humanoid (reptilian)</p>
+<p class = "stat-block-1"><strong>Init</strong> +2; <strong>Senses</strong> darkvision 90 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +13</p>
+<p class = "stat-block-1"><strong>Aura</strong> stench (30 ft., DC 21, 10 rounds)</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 24, touch 10, flat-footed 24 (+8 armor, +6 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 135 (11 HD; 9d8+2d10+84)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +17, <strong>Ref</strong> +6, <strong>Will</strong> +10 (+1 vs. fear)</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> bravery +1</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 20 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 battleaxe</em> +15/+10 (1d8+6/&times;3), bite +8 (1d4+2), claw +8 (1d4+2) or bite +13 (1d4+5), 2 claws +13 (1d4+5)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> javelin +10/+5 (1d6+5)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> channel negative energy 5/day (DC 15, 4d6), fury of the Abyss (+3, 8/day),</p>
+<p class = "stat-block-1"><strong>Domain Spell-Like Abilities</strong> (CL 7th; concentration +12)</p>
+<p class = "stat-block-2">8/day&mdash;strength surge (+3)</p>
+<p class = "stat-block-1"><strong>Cleric Spells Prepared</strong> (CL 7th; concentration +12)</p>
+<p class = "stat-block-2">4th&mdash;<em><a href = "../coreRulebook/spells/divinePower.html#divine-power">divine power</a></em>, <em>mark of the reptile god</em> * (DC 19), <a href = "../coreRulebook/spells/unholyBlight.html#unholy-blight"><em>unholy blight</em></a> <sup>D</sup> (DC 19)</p>
+<p class = "stat-block-2">3rd&mdash;<em><a href = "../coreRulebook/spells/bestowCurse.html#bestow-curse">bestow curse</a></em> (DC 18), <em><a href = "../coreRulebook/spells/prayer.html#prayer">prayer</a></em>, <em><a href = "../coreRulebook/spells/rage.html#rage">rage</a></em> <sup>D</sup>, <em><a href = "../coreRulebook/spells/searingLight.html#searing-light">searing light</a></em> </p>
+<p class = "stat-block-2">2nd&mdash;<em>amplify stench</em> *, <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em> <sup>D</sup>, <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds"><em>cure moderate wounds</em></a>, <em><a href = "../coreRulebook/spells/holdPerson.html#hold-person">hold person</a></em> (DC 17), <em><a href = "../coreRulebook/spells/spiritualWeapon.html#spiritual-weapon">spiritual weapon</a></em> </p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/spells/bless.html#bless">bless</a></em>, <em><a href = "../coreRulebook/spells/command.html#command">command</a></em> (DC 16), <em><a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></em> (3), <em><a href = "../coreRulebook/spells/entropicShield.html#entropic-shield">entropic shield</a></em>, <em><a href = "../coreRulebook/spells/protectionFromGood.html#protection-from-good">protection from good</a></em> <sup>D</sup></p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/bleed.html#bleed">bleed</a></em> (DC 15), <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/guidance.html#guidance">guidance</a></em>, <em><a href = "../coreRulebook/spells/stabilize.html#stabilize">stabilize</a></em> </p>
+<p class = "stat-block-2"><strong>D</strong> domain spell; <strong>Domains</strong> Evil (Demon subdomain), Strength</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The tyrant casts <em>amplify stench</em> on herself and <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em> on a trusted ally. She then uses her <em>wand of <a href = "../coreRulebook/spells/bearSEndurance.html#bear-s-endurance">bear's endurance</a></em> .</p>
+<p class = "stat-block-1"><strong>During Combat</strong> When combat begins, the tyrant casts <em><a href = "../coreRulebook/spells/rage.html#rage">rage</a></em> on her allies&mdash;though she doesn't concentrate on it. She then casts <em><a href = "../coreRulebook/spells/divinePower.html#divine-power">divine power</a></em> on herself if the enemies haven't reached her yet. She casts ma<em>rk of the reptile god</em> and <em><a href = "../coreRulebook/spells/bestowCurse.html#bestow-curse">bestow curse</a></em> on strong enemies, then fights in melee.</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> Without <em>amplify stench</em> and <em><a href = "../coreRulebook/spells/bearSEndurance.html#bear-s-endurance">bear's endurance</a></em>, the tyrant's statistics are <strong>Aura</strong> stench (30 ft., DC 19, 10 rounds); <strong>hp</strong> 113; <strong>Fort</strong> +15; <strong>Con</strong> 18.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 20, <strong>Dex</strong> 15, <strong>Con</strong> 22, <strong>Int</strong> 14, <strong>Wis</strong> 20, <strong>Cha</strong> 14</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +8; <strong>CMB</strong> +13; <strong>CMD</strong> 25</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../bestiary/monsterFeats.html#ability-focus">Ability Focus</a> (stench), <a href = "../coreRulebook/feats.html#combat-casting"><a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a></a>, <a href = "../coreRulebook/feats.html#lightning-reflexes"><a href = "../coreRulebook/feats.html#lightnin-reflexes">Lightning Reflexes</a></a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#quick-draw">Quick Draw</a>, <a href = "../coreRulebook/feats.html#selective-channeling">Selective Channeling</a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (battleaxe)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +13, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (planes) +11, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) +13, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +13, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +16, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +11, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +0 (+4 in rocky areas)</p>
+<p class = "stat-block-1"><strong>Languages</strong> Abyssal, Draconic, Undercommon</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potions of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em> (2), <em>wand of <a href = "../coreRulebook/spells/bearSEndurance.html#bear-s-endurance">bear's endurance</a></em> (6 charges); <strong>Other Gear</strong> mwk half-plate, <em>+1 battleaxe</em>, javelins (6), <em>belt of giant strength +2</em>, <em>headband of inspired wisdom +2</em>, gold crown set with jet and bloodstones (worth 500 gp), 44 gp</p>
+
+<p>Troglodyte tyrants come from the enlightened troglodytes who live far deeper underground than common troglodytes. Stronger, more intelligent, and longer-lived than their degenerate kin, they find it easy to assert dominance over tribes of normal troglodytes. Warlike in the extreme, tyrants are seasoned veterans of numerous military campaigns and they are expert tacticians, willing to sacrifice large numbers of troglodyte warriors to probe an enemy's strengths and weaknesses.</p>
+
+
+<h2 id = "slaugrak">Slaugrak</h2>
+<p><em>This hulking reptilian humanoid's torso bristles with twitching vestigial limbs, milk-white eyes, and drooling half-formed mouths. The creature's oversized maw is filled with curved teeth reminiscent of sickle blades.</em> </p>
+
+<p class = "stat-block-title">Slaugrak <span class = "stat-block-cr">CR 6</span></p>
+<p class = "stat-block-xp">XP 2,400</p>
+<p class = "stat-block-1">CE Large outsider (chaotic, evil, extraplanar, native)</p>
+<p class = "stat-block-1"><strong>Init</strong> +1; <strong>Senses</strong> darkvision 120 ft., see in darkness; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +1</p>
+<p class = "stat-block-1"><strong>Aura</strong> stench (30 ft., DC 17, 10 rounds)</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 19, touch 10, flat-footed 18 (+1 Dex, +9 natural, &ndash;1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 68 (8d10+24)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +9, <strong>Ref</strong> +7, <strong>Will</strong> +5</p>
+<p class = "stat-block-1"><strong>DR</strong> 10/cold iron or good; <strong>Immune</strong> acid, poison; <strong>Resist</strong> cold 10, electricity 10, fire 10</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> sunlight powerlessness</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> bite +13 (1d10+5/19&ndash;20 plus 1d6 acid and corrupting bite), 2 claws +12 (1d6+5)</p>
+<p class = "stat-block-1"><strong>Space</strong> 10 ft.; <strong>Reach</strong> 10 ft.</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> corrupting bite, vicious jaws</p>
+<p class = "stat-block-1"><strong>Spell-Like Abilities</strong> (CL 8th; concentration +10)</p>
+<p class = "stat-block-2">1/day&mdash;<em><a href = "../coreRulebook/spells/deeperDarkness.html#deeper-darkness">deeper darkness</a></em>, <em><a href = "../coreRulebook/spells/slow.html#slow">slow</a></em> (DC 15), <em><a href = "../coreRulebook/spells/unholyBlight.html#unholy-blight">unholy blight</a></em> (DC 16)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 20, <strong>Dex</strong> 12, <strong>Con</strong> 17, <strong>Int</strong> 5, <strong>Wis</strong> 13, <strong>Cha</strong> 14</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +8; <strong>CMB</strong> +14; <strong>CMD</strong> 25</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#diehard">Diehard</a>, <a href = "../coreRulebook/feats.html#endurance">Endurance</a>, <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (bite)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +12, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +13, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +8 (+12 in rocky areas), <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +12; <strong>Racial Modifiers</strong> +4 <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> in rocky areas</p>
+<p class = "stat-block-1"><strong>Languages</strong> Abyssal</p>
+<p class = "stat-block-breaker">Ecology</p>
+<p class = "stat-block-1"><strong>Environment</strong> any underground</p>
+<p class = "stat-block-1"><strong>Organization</strong> solitary</p>
+<p class = "stat-block-1"><strong>Treasure</strong> incidental</p>
+<p class = "stat-block-breaker">Special Abilities</p>
+<p class = "stat-block-1"><strong>Corrupting Bite (Su)</strong> A slaugrak's caustic saliva is infused with the corrupting power of the Abyss. Any living creature that takes acid damage from a slaugrak's bite must succeed at a DC 17 Fortitude save or take 2 points of Constitution bleed damage as its blood boils and its internal organs liquefy. Creatures without a discernible anatomy (blood and internal organs) are immune to the Constitution bleed. The save DC is Constitution-based.</p>
+<p class = "stat-block-1"><strong>Vicious Jaws (Ex)</strong> A slaugrak's bite attack threatens a critical hit on a roll of 19&ndash;20.</p>
+
+<p>The taint of demonkind has long corrupted the troglodyte bloodline. Each generation a few mutant creatures marked with the taint of the Abyss are born, and fiendish deformities and stillbirths reeking of brimstone are all too common. The rapacious slaugrak is one of these fiendish mutants.</p>
+<p>A slaugrak is born with an unnatural and incessant hunger for living flesh. Young slaugraks grow at an unnatural rate, reaching full and awful maturity in just 2 weeks. From birth, a slaugrak is little more than a walking collection of fangs and claws with no thought other than to slay and eat.</p>
+<p>Slaugraks are sterile and solitary, holding no special love for troglodytes. A well-fed captive slaugrak might form an affectionate bond with its troglodyte keeper, but this affection merely makes the slaugrak more likely to eat its keeper last.</p>
+<p>A typical slaugrak stands 12 to 14 feet tall and weighs 6,000 pounds.</p>
+
+
+<h1 id = "troglodyte-encounters">Encounters</h1>
+<p>Part of an intensely tribal structure, troglodytes rarely fight alone. If a single troglodyte sees enemies coming, it alerts its tribe. However, if it believes it's being followed, it attempts to lead pursuers into dangerous areas away from the tribe, even if doing so might prove fatal to the troglodyte itself.</p>
+<h2>Hunting Party (CR 5)</h2>
+<p>This type of small hunting party scouts the subterranean wilderness, typically venturing several days' travel from the troglodyte lair.</p>
+
+<p class = "stat-block-title">Troglodyte Beast-Speaker <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1"><strong>hp</strong> 35</p>
+
+<p class = "stat-block-title">Troglodyte Skulkers (2) <span class = "stat-block-cr">CR 2</span></p>
+<p class = "stat-block-xp">XP 600 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 30 each</p>
+
+<h2>Squad (CR 8)</h2>
+<p>This group of troglodytes represents a larger raiding party or a typical small clan or individual family unit, encountered on its own in the wilderness or in an isolated cave within a larger troglodyte lair.</p>
+
+<p class = "stat-block-title">Monitor Lizards (2) <span class = "stat-block-cr">CR 2</span></p>
+<p class = "stat-block-xp">XP 600 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 22 each</p>
+
+<p class = "stat-block-title">Troglodyte Priest <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1"><strong>hp</strong> 30</p>
+
+<p class = "stat-block-title">Troglodytes (7) <span class = "stat-block-cr">CR 1</span></p>
+<p class = "stat-block-xp">XP 400 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 13 each</p>
+
+<h2>Chieftain's Entourage (CR 10)</h2>
+<p>This encounter can represent the occupants of a troglodyte chieftain's audience cave or a chieftain and his bodyguards found traveling between troglodyte settlements in the subterranean wilds.</p>
+
+<p class = "stat-block-title">Troglodyte Chieftain <span class = "stat-block-cr">CR 8</span></p>
+<p class = "stat-block-xp">XP 4,800</p>
+<p class = "stat-block-1"><strong>hp</strong> 100</p>
+
+<p class = "stat-block-title">Troglodyte Priest <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1"><strong>hp</strong> 30</p>
+
+<p class = "stat-block-title">Troglodytes (10) <span class = "stat-block-cr">CR 1</span></p>
+<p class = "stat-block-xp">XP 400 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 13 each</p>
+
+<h2>Outriders (CR 11)</h2>
+<p>Found patrolling the fringes of troglodyte territory or leading the charge of a troglodyte attack, these outriders represent the devastating heavy cavalry of a troglodyte tribe.</p>
+
+<p class = "stat-block-title">Giant Monitor Lizards (4) <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 28 each</p>
+
+<p class = "stat-block-title">Troglodyte Champion <span class = "stat-block-cr">CR 7</span></p>
+<p class = "stat-block-xp">XP 3,200</p>
+<p class = "stat-block-1"><strong>hp</strong> 82</p>
+
+<p class = "stat-block-title">Troglodyte Scale-Riders (3) <span class = "stat-block-cr">CR 6</span></p>
+<p class = "stat-block-xp">XP 2,400 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 69 each</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Troglodytes",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

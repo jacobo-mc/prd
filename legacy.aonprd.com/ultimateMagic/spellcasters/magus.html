@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Magus</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "magus.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "magus.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "magus.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "magus.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "magus.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "magus.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "magus.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "magus.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "magus.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "magus.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "magus.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "magus.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "magus.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "magus.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "magus.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "magus.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "magus.html">Magus</a></li>
+						<li><a href = "../spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "magus.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "magus.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "magus.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "magus.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "magus.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+
+				<h1 id="magus" class="monster-header">Magus</h1>
+
+
+				<p>There are those who spend their lives poring over ancient tomes and texts, unlocking the power of magic, and there are those who spend their time perfecting the use of individual weapons, becoming masters without equal. The magus is at once a student of both philosophies, blending magical ability and martial prowess into something entirely unique, a discipline in which both spell and steel are used to devastating effect. As he grows in power, the magus unlocks powerful forms of arcana that allow him to merge his talents further, and at the pinnacle of his art, the magus becomes a blur of steel and magic, a force that few foes would dare to stand against.</p>
+				<p id="role"><b>Role</b>: Magi spend much of their time traveling the world, learning whatever martial or arcane secrets they can find. They might spend months learning a new sword-fighting style from a master warrior, while simultaneously moonlighting in the local library, poring through tomes of ancient lore. Most who take this path dabble in all sorts of lore, picking up anything that might aid them in their search for perfection.</p>
+				<p id="alignment"><b>Alignment</b>: Any.</p>
+				<p id="hit-die"><b>Hit Die</b>: d8.</p>
+				<h1 id="class-skills">Class Skills</h1>
+				<p>The magus's class skills are <a href="../../coreRulebook/skills/climb.html#climb">Climb</a> (Str), <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (Int), <a href="../../coreRulebook/skills/fly.html#fly">Fly</a> (Dex), <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> (Cha), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana) (Int), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (dungeoneering) (Int), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (planes) (Int), <a href="../../coreRulebook/skills/profession.html#profession">Profession</a> (Wis), <a href="../../coreRulebook/skills/ride.html#ride">Ride</a> (Dex), <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> (Int), <a href="../../coreRulebook/skills/swim.html#swim">Swim</a> (Str), and <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> (Cha).</p>
+				<p id="skill-ranks-per-level"><b>Skill Ranks per Level</b>: 2 + Int modifier.</p>
+				<h1>Starting Wealth</h1>
+				<p>The following table lists the starting gold piece value for magus characters. In addition, each character begins play with an outfit worth 10 gp or less.</p>
+
+				<table><tr><th>Class</th><th>Starting Wealth</th><th>Average</th></tr>
+				<tr><td>Magus</td><td>4d6&times;10 gp</td><td>140 gp</td></tr></table>
+				<h1 id="class-features">Class Features</h1>
+				<p>The following are the class features of the magus.</p>
+
+<div class="table"><table><caption>Table:  Magus</caption>
+<thead><tr><th rowspan="2">Level</th><th rowspan="2">Base Attack Bonus</th><th rowspan="2">Fort Save</th><th rowspan="2">Ref Save</th><th rowspan="2">Will Save</th><th rowspan="2">Special</th><th colspan="7">Spells per Day</th></tr>
+<tr><th>0</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th><th>6th</th></tr></thead>
+<tr><td>1st</td><td>+0</td><td>+2</td><td>+0</td><td>+2</td><td style="white-space: normal;"><a href="magus.html#arcane-pool">Arcane Pool</a>, <a href="magus.html#cantrips">Cantrips</a>, <a href="magus.html#spell-combat">Spell Combat</a></td><td>3</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>2nd</td><td>+1</td><td>+3</td><td>+0</td><td>+3</td><td style="white-space: normal;"><a href="magus.html#spellstrike">Spellstrike</a></td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>3rd</td><td>+2</td><td>+3</td><td>+1</td><td>+3</td><td style="white-space: normal;"><a href="magus.html#magus-arcana">Magus Arcana</a></td><td>4</td><td>3</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>4th</td><td>+3</td><td>+4</td><td>+1</td><td>+4</td><td style="white-space: normal;"><a href="magus.html#spell-recall">Spell Recall</a></td><td>4</td><td>3</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>5th</td><td>+3</td><td>+4</td><td>+1</td><td>+4</td><td style="white-space: normal;">Bonus Feat</td><td>4</td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>6th</td><td>+4</td><td>+5</td><td>+2</td><td>+5</td><td style="white-space: normal;"><a href="magus.html#magus-arcana">Magus Arcana</a></td><td>5</td><td>4</td><td>3</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>7th</td><td>+5</td><td>+5</td><td>+2</td><td>+5</td><td style="white-space: normal;"><a href="magus.html#knowledge-pool">Knowledge Pool</a>, <a href="magus.html#medium-armor">Medium Armor</a></td><td>5</td><td>4</td><td>3</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>8th</td><td>+6/+1</td><td>+6</td><td>+2</td><td>+6</td><td style="white-space: normal;"><a href="magus.html#improved-spell-combat">Improved Spell Combat</a></td><td>5</td><td>4</td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>9th</td><td>+6/+1</td><td>+6</td><td>+3</td><td>+6</td><td style="white-space: normal;"><a href="magus.html#magus-arcana">Magus Arcana</a></td><td>5</td><td>5</td><td>4</td><td>3</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>10th</td><td>+7/+2</td><td>+7</td><td>+3</td><td>+7</td><td style="white-space: normal;"><a href="magus.html#fighter-training">Fighter Training</a></td><td>5</td><td>5</td><td>4</td><td>3</td><td>1</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>11th</td><td>+8/+3</td><td>+7</td><td>+3</td><td>+7</td><td style="white-space: normal;">Bonus Feat, <a href="magus.html#improved-spell-recall">Improved Spell Recall</a></td><td>5</td><td>5</td><td>4</td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>12th</td><td>+9/+4</td><td>+8</td><td>+4</td><td>+8</td><td style="white-space: normal;"><a href="magus.html#magus-arcana">Magus Arcana</a></td><td>5</td><td>5</td><td>5</td><td>4</td><td>3</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>13th</td><td>+9/+4</td><td>+8</td><td>+4</td><td>+8</td><td style="white-space: normal;"><a href="magus.html#heavy-armor">Heavy Armor</a></td><td>5</td><td>5</td><td>5</td><td>4</td><td>3</td><td>1</td><td>&mdash;</td></tr>
+<tr><td>14th</td><td>+10/+5</td><td>+9</td><td>+4</td><td>+9</td><td style="white-space: normal;"><a href="magus.html#greater-spell-combat">Greater Spell Combat</a></td><td>5</td><td>5</td><td>5</td><td>4</td><td>4</td><td>2</td><td>&mdash;</td></tr>
+<tr><td>15th</td><td>+11/+6/+1</td><td>+9</td><td>+5</td><td>+9</td><td style="white-space: normal;"><a href="magus.html#magus-arcana">Magus Arcana</a></td><td>5</td><td>5</td><td>5</td><td>5</td><td>4</td><td>3</td><td>&mdash;</td></tr>
+<tr><td>16th</td><td>+12/+7/+2</td><td>+10</td><td>+5</td><td>+10</td><td style="white-space: normal;"><a href="magus.html#counterstrike">Counterstrike</a></td><td>5</td><td>5</td><td>5</td><td>5</td><td>4</td><td>3</td><td>1</td></tr>
+<tr><td>17th</td><td>+12/+7/+2</td><td>+10</td><td>+5</td><td>+10</td><td style="white-space: normal;">Bonus Feat</td><td>5</td><td>5</td><td>5</td><td>5</td><td>4</td><td>4</td><td>2</td></tr>
+<tr><td>18th</td><td>+13/+8/+3</td><td>+11</td><td>+6</td><td>+11</td><td style="white-space: normal;"><a href="magus.html#magus-arcana">Magus Arcana</a></td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>4</td><td>3</td></tr>
+<tr><td>19th</td><td>+14/+9/+4</td><td>+11</td><td>+6</td><td>+11</td><td style="white-space: normal;"><a href="magus.html#greater-spell-access">Greater Spell Access</a></td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>4</td></tr>
+<tr><td>20th</td><td>+15/+10/+5</td><td>+12</td><td>+6</td><td>+12</td><td style="white-space: normal;"><a href="magus.html#true-magus">True Magus</a></td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td></tr></table>
+</div><p></p>
+				<p id="weapon-and-armor-proficiency"><b>Weapon and Armor Proficiency</b>: A magus is proficient with all simple and martial weapons. A magus is also proficient with light armor. He can cast magus spells while wearing light armor without incurring the normal arcane spell failure chance. Like any other arcane spellcaster, a magus wearing medium armor, heavy armor, or a shield incurs a chance of arcane spell failure if the spell in question has a somatic component. A multiclass magus still incurs the normal arcane spell failure chance for arcane spells received from other classes.</p>
+				<p id="spells"><b>Spells</b>: A magus casts arcane spells drawn from the <a href="magus.html#magus-spell-list">magus spell list</a>. A magus must choose and prepare his spells ahead of time.</p>
+				<p>To learn, prepare, or cast a spell, the magus must have an Intelligence score equal to at least 10 + the spell level. The Difficulty Class for a saving throw against a magus's spell is 10 + the spell level + the magus's Intelligence modifier.</p>
+				<p>A magus can cast only a certain number of spells of each spell level per day. His base daily spell allotment is given on the table above. In addition, he receives bonus spells per day if he has a high Intelligence score (see the <a href="../../coreRulebook/gettingStarted.html#table-1-3-ability-modifiers-and-bonus-spells">Ability Modifiers and Bonus Spells Table</a>).</p>
+				<p>A magus may know any number of spells. He must choose and prepare his spells ahead of time by getting 8 hours of sleep and spending 1 hour studying his spellbook. While studying, the magus decides which spells to prepare.</p>
+				<p id="spellbooks"><b>Spellbooks</b>: A magus must study his spellbook each day to prepare his spells. He cannot prepare any spell not recorded in his spellbook except for <i><a href="../../coreRulebook/spells/readMagic.html#read-magic">read magic</a></i>, which all magi can prepare from memory. A magus begins play with a spellbook containing all 0-level magus spells plus three 1st-level magus spells of his choice. The magus also selects a number of additional 1st-level magus spells equal to his Intelligence modifier to add to his spellbook. At each new magus level, he gains two new magus spells of any spell level or levels that he can cast (based on his new magus level) for his spellbook. At any time, a magus can also add spells found in other spellbooks to his own (see <a href="../../coreRulebook/magic.html#arcane-spells">Arcane Spells</a>).</p>
+				<p>A magus can learn spells from a wizard's spellbook, just as a wizard can from a magus's spellbook. The spells learned must be on the magus spell list, as normal. An alchemist (see <a href="../../advancedPlayersGuide/baseClasses/alchemist.html">the Alchemist description</a>) can learn formulae from a magus's spellbook, if the spells are also on the alchemist spell list. A magus cannot learn spells from an alchemist.</p>
+				<p id="arcane-pool"><b>Arcane Pool (Su)</b>: At 1st level, the magus gains a reservoir of mystical arcane energy that he can draw upon to fuel his powers and enhance his weapon. This arcane pool has a number of points equal to 1/2 his magus level (minimum 1) + his Intelligence modifier. The pool refreshes once per day when the magus prepares his spells.</p>
+				<p>At 1st level, a magus can expend 1 point from his arcane pool as a swift action to grant any weapon he is holding a +1 enhancement bonus for 1 minute. For every four levels beyond 1st, the weapon gains another +1 enhancement bonus, to a maximum of +5 at 17th level. These bonuses can be added to the weapon, stacking with existing weapon enhancement to a maximum of +5. Multiple uses of this ability do not stack with themselves.</p>
+				<p>At 5th level, these bonuses can be used to add any of the following weapon properties: <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-dancing">dancing</a></i>, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-flaming">flaming</a></i>, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-flaming-burst">flaming burst</a></i>, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-frost">frost</a></i>, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-icy-burst">icy burst</a></i>, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-keen">keen</a></i>, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-shock">shock</a></i>, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-shocking-burst">shocking burst</a></i>, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-speed">speed</a></i>, or<i> <a href="../../coreRulebook/magicItems/weapons.html#vorpal">vorpal</a></i>. Adding these properties consumes an amount of bonus equal to the property's base price modifier (see the <a href="../../advancedPlayersGuide/magicItems/weapons.html#magic-weapon-special-ability-descriptions">Magic Weapon Special Ability Descriptions</a>). These properties are added to any the weapon already has, but duplicates do not stack. If the weapon is not magical, at least a +1 enhancement bonus must be added before any other properties can be added. These bonuses and properties are decided when the arcane pool point is spent and cannot be changed until the next time the magus uses this ability. These bonuses do not function if the weapon is wielded by anyone other than the magus.</p>
+				<p>A magus can only enhance one weapon in this way at one time. If he uses this ability again, the first use immediately ends.</p>
+				<p id="cantrips"><b>Cantrips</b>: A magus can prepare a number of cantrips, or 0-level spells, each day, as noted in the table above under “Spells per Day.” These spells are cast like any other spell, but they are not expended when cast and may be used again.</p>
+				<p id="spell-combat"><b>Spell Combat (Ex)</b>: At 1st level, a magus learns to cast spells and wield his weapons at the same time. This functions much like two-weapon fighting, but the off-hand weapon is a spell that is being cast. To use this ability, the magus must have one hand free (even if the spell being cast does not have somatic components), while wielding a light or one-handed melee weapon in the other hand. As a full-round action, he can make all of his attacks with his melee weapon at a &ndash;2 penalty and can also cast any spell from the magus spell list with a casting time of 1 standard action (any attack roll made as part of this spell also takes this penalty). If he casts this spell defensively, he can decide to take an additional penalty on his attack rolls, up to his Intelligence bonus, and add the same amount as a circumstance bonus on his concentration check. If the check fails, the spell is wasted, but the attacks still take the penalty. A magus can choose to cast the spell first or make the weapon attacks first, but if he has more than one attack, he cannot cast the spell between weapon attacks. </p>
+				<p id="spellstrike"><b>Spellstrike (Su)</b>: At 2nd level, whenever a magus casts a spell with a range of “touch” from the magus spell list, he can deliver the spell through any weapon he is wielding as part of a melee attack. Instead of the free melee touch attack normally allowed to deliver the spell, a magus can make one free melee attack with his weapon (at his highest base attack bonus) as part of casting this spell. If successful, this melee attack deals its normal damage as well as the effects of the spell. If the magus makes this attack in concert with spell combat, this melee attack takes all the penalties accrued by spell combat melee attacks. This attack uses the weapon's critical range (20, 19&ndash;20, or 18&ndash;20 and modified by the <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-keen">keen</a></i> weapon property or similar effects), but the spell effect only deals <span class="char-style-override-9">&times;</span>2 damage on a successful critical hit, while the weapon damage uses its own critical modifier. </p>
+				<p id="magus-arcana"><b>Magus Arcana</b>: As he gains levels, a magus learns arcane secrets tailored to his specific way of blending martial puissance and magical skill. Starting at 3rd level, a magus gains one magus arcana. He gains an additional magus arcana for every three levels of magus attained after 3rd level. Unless specifically noted in a magus arcana's description, a magus cannot select a particular magus arcana more than once. Magus arcana that affect spells can only be used to modify spells from the magus spell list unless otherwise noted.</p>
+				<p id="arcane-accuracy"><i>Arcane Accuracy (Su)</i>: The magus can expend 1 point from his arcane pool as a swift action to grant himself an insight bonus equal to his Intelligence bonus on all attack rolls until the end of his turn.</p>
+				<p id="broad-study-(ex):"><i>Broad Study (Ex):</i> The magus selects another one of his spellcasting classes. The magus can use his spellstrike and spell combat abilities while casting or using spells from the spell list of that class. This does not allow him to cast arcane spells from that class's spell list without suffering the normal chances of arcane spell failure, unless the spell lacks somatic components. The magus must be at least 6th level and must possess levels in at least one other spellcasting class before selecting this arcana.</p>
+				<p id="close-range"><i>Close Range (Ex)</i>: The magus can deliver ray spells that feature a ranged touch attack as melee touch spells. He can use a ranged touch attack spell that targets more than one creature (such as <i><a href="../../coreRulebook/spells/scorchingRay.html#scorching-ray">scorching ray</a></i>), but he makes only one melee touch attack to deliver one of these ranged touch effects; additional ranged touch attacks from that spell are wasted and have no effect. These spells can be used with the spellstrike class feature.</p>
+				<p id="concentrate"><i>Concentrate (Ex)</i>: The magus can reroll any concentration check he has just made with a +4 bonus. He must use this ability after the roll is made, but before the roll's outcome is determined. The magus must take the second roll, even if it is worse. The magus can use this ability once per day.</p>
+				<p id="critical-strike"><i>Critical Strike (Su)</i>: Whenever the magus scores a critical hit with a melee weapon, he may cast a spell with a range of touch as a swift action, then make a touch attack with that spell against the target of the critical hit as a free action. The magus can use this ability once per day. The magus must be at least 12th level before selecting this arcana.</p>
+				<p id="dispelling-strike"><i>Dispelling Strike (Su)</i>: The magus can spend 1 or more points from his arcane pool as a swift action to imbue his weapon with a special power. If the weapon strikes a creature within the next minute, that creature is the subject of a targeted <i><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic">dispel magic</a> </i>using the magus's level as the caster level, except that this effect cannot dispel a spell of a level higher than the number of arcane pool points expended to activate this ability (treat higher-level spells as if they do not exist and apply the dispel attempt to the remaining spells with the highest caster level). Once the strike is made, the power dissipates, even if the dispel attempt is unsuccessful. The magus must be at least 9th level before selecting this arcana.</p>
+				<p id="empowered-magic"><i>Empowered Magic (Su)</i>: The magus can cast one spell per day as if it were modified by the <a href="../../coreRulebook/feats.html#empower-spell">Empower Spell</a> feat. This does not increase the casting time or the level of the spell. The magus must be at least 6th level before selecting this magus arcana.</p>
+				<p id="familiar"><i>Familiar (Ex)</i>: The magus gains a familiar, using his magus level as his effective wizard level. This familiar follows the rules for familiars presented in the arcane bond wizard class feature.</p>
+				<p id="hasted-assault"><i>Hasted Assault (Su)</i>: The magus can expend 1 point from his arcane pool as a swift action to move more quickly. This functions as <i><a href="../../coreRulebook/spells/haste.html#haste">haste</a></i>, but only targets the magus and lasts for a number of rounds equal to the magus's Intelligence bonus. The magus must be at least 9th level before selecting this magus arcana.</p>
+				<p id="maneuver-mastery"><i>Maneuver Mastery (Ex)</i>: The magus has mastered one combat maneuver. He selects one maneuver when selecting this arcana. Whenever he is attempting the selected maneuver, he uses his magus level in place of his base attack bonus (in addition to any base attack bonus gained from other classes). A magus can select this magus arcana more than once. Its effects do not stack. Each time he selects this arcana, he selects another combat maneuver.</p>
+				<p id="maximized-magic"><i>Maximized Magic (Su)</i>: The magus can cast one spell per day as if it were modified by the <a href="../../coreRulebook/feats.html#maximize-spell">Maximize Spell</a> feat. This does not increase the casting time or the level of the spell. The magus must be at least 12th level before selecting this magus arcana.</p>
+				<p id="pool-strike"><i>Pool Strike (Su)</i>: The magus can expend 1 point from his arcane pool as a standard action to charge his free hand with energy. He can make a melee touch attack with that hand as a free action as part of activating this ability. If the touch attack hits, it releases the charge and deals 2d6 points of energy damage (acid, cold, electricity, or fire, chosen when he spends the arcane pool point to activate this ability). He can use this ability with the spellstrike class feature. If he misses with this attack, he can hold the charge for up to 1 minute before it dissipates. At 6th level, and every three levels thereafter, the amount of damage dealt by this attack increases by 1d6.</p>
+				<p id="quickened-magic"><i>Quickened Magic (Su)</i>: The magus can cast one spell per day as if it were modified by the <a href="../../coreRulebook/feats.html#quicken-spell">Quicken Spell</a> feat. This does not increase the level of the spell. The magus must be at least 15th level before selecting this magus arcana.</p>
+				<p id="reflection"><i>Reflection (Su)</i>: The magus can sacrifice 1 or more points from his arcane pool as an immediate action to reflect a spell back at its caster. This functions as <i><a href="../../coreRulebook/spells/spellTurning.html#spell-turning">spell turning</a></i>, but only if the targeted spell is of a level equal to or lower than the number of points expended. If insufficient points are expended, they instead grant an insight bonus on any saving throws allowed by the spell, equal to the number of points spent. The magus must be at least 15th level before selecting this magus arcana.</p>
+				<p id="silent-magic"><i>Silent Magic (Su)</i>: The magus can cast one spell per day as if it were modified by the <a href="../../coreRulebook/feats.html#silent-spell">Silent Spell</a> feat. This does not increase the casting time or the level of the spell.</p>
+				<p id="spell-blending"><i>Spell Blending (Ex)</i>: When a magus selects this arcana, he must select one spell from the wizard spell list that is of a magus spell level he can cast. He adds this spell to his spellbook and list of magus spells known as a magus spell of its wizard spell level. He can instead select two spells to add in this way, but both must be at least one level lower than the highest-level magus spell he can cast. A magus can select this magus arcana more than once.</p>
+				<p id="spell-shield"><i>Spell Shield (Su)</i>: The magus can expend a point from his arcane pool as an immediate action to grant himself a shield bonus to AC equal to his Intelligence bonus until the end of his next turn.</p>
+				<p id="still-magic"><i>Still Magic (Su)</i>: The magus can cast one spell per day as if it were modified by the <a href="../../coreRulebook/feats.html#still-spell">Still Spell</a> feat. This does not increase the casting time or the level of the spell.</p>
+				<p id="wand-mastery"><i>Wand Mastery (Su)</i>: Whenever The magus uses a wand, he calculates the DC for any spell it contains using his Intelligence modifier, instead of the minimum modifier needed to cast a spell of that level.</p>
+				<p id="wand-wielder"><i>Wand Wielder (Su)</i>: The magus can activate a wand or staff in place of casting a spell when using spell combat.</p>
+				<p id="spell-recall"><b>Spell Recall (Su)</b>: At 4th level, the magus learns to use his arcane pool to recall spells he has already cast. With a swift action he can recall any single magus spell that he has already prepared and cast that day by expending a number of points from his arcane pool equal to the spell's level (minimum 1). The spell is prepared again, just as if it had not been cast. </p>
+				<p id="bonus-feats"><b>Bonus Feats</b>: At 5th level, and every six levels thereafter, a magus gains a bonus feat in addition to those gained from normal advancement. These bonus feats must be selected from those listed as combat, item creation, or metamagic feats. He must meet the prerequisites for these feats as normal.</p>
+				<p id="knowledge-pool"><b>Knowledge Pool (Su)</b>: At 7th level, when a magus prepares his magus spells, he can decide to expend 1 or more points from his arcane pool, up to his Intelligence bonus. For each point he expends, he can treat any one spell from the magus spell list as if it were in his spellbook and can prepare that spell as normal that day. If he does not cast spells prepared in this way before the next time he prepares spells, he loses those spells. He can also cast spells added in this way using his spell recall ability, but only until he prepares spells again.</p>
+				<p id="medium-armor"><b>Medium Armor (Ex)</b>: At 7th level, a magus gains proficiency with medium armor. A magus can cast magus spells while wearing medium armor without incurring the normal arcane spell failure chance. Like any other arcane spellcaster, a magus wearing heavy armor or using a shield incurs a chance of arcane spell failure if the spell in question has a somatic component. </p>
+				<p id="improved-spell-combat"><b>Improved Spell Combat (Ex)</b>: At 8th level, the magus's ability to cast spells and make melee attacks improves. When using the spell combat ability, the magus receives a +2 circumstance bonus on concentration checks, in addition to any bonus granted by taking an additional penalty on the attack roll.</p>
+				<p id="fighter-training"><b>Fighter Training (Ex)</b>: Starting at 10th level, a magus counts 1/2 his total magus level as his fighter level for the purpose of qualifying for feats. If he has levels in fighter, these levels stack.</p>
+				<p id="improved-spell-recall"><b>Improved Spell Recall (Su):</b> At 11th level, the magus's ability to recall spells using his arcane pool becomes more efficient. Whenever he recalls a spell with spell recall, he expends a number of points from his arcane pool equal to 1/2 the spell's level (minimum 1). Furthermore, instead of recalling a used spell, as a swift action the magus can prepare a spell of the same level that he has in his spellbook. He does so by expending a number of points from his arcane pool equal to the spell's level (minimum 1). The magus cannot apply metamagic feats to a spell prepared in this way. The magus does not need to reference his spellbook to prepare a spell in this way.</p>
+				<p id="heavy-armor"><b>Heavy Armor (Ex)</b>: At 13th level, a magus gains proficiency with heavy armor. A magus can cast magus spells while wearing heavy armor without incurring the normal arcane spell failure chance. Like any other arcane spellcaster, a magus using a shield incurs a chance of arcane spell failure if the spell in question has a somatic component. </p>
+				<p id="greater-spell-combat"><b>Greater Spell Combat (Ex)</b>: At 14th level, the magus gains the ability to seamlessly cast spells and make melee attacks. Whenever he uses the spell combat ability, his concentration check bonus equals double the amount of the attack penalty taken.</p>
+				<p id="counterstrike"><b>Counterstrike (Ex)</b>: At 16th level, whenever an enemy within reach of the magus successfully casts a spell defensively, that enemy provokes an attack of opportunity from the magus after the spell is complete. This attack of opportunity cannot disrupt the spell.</p>
+				<p id="greater-spell-access"><b>Greater Spell Access (Su):</b> At 19th level, the magus gains access to an expanded spell list. He learns and places 14 spells from the wizard's spell list into his spellbook as magus spells of their wizard level. He gains two of each of the following wizard spells not on the magus spell list: 0-level, 1st-level, 2nd-level, 3rd-level, 4th-level, 5th-level, and 6th-level. He can ignore the somatic component of these spells, casting them without the normal chance of spell failure.</p>
+				<p id="true-magus"><b>True Magus (Su)</b>: At 20th level, the magus becomes a master of spells and combat. Whenever he uses his spell combat ability, he does not need to make a concentration check to cast the spell defensively. Whenever the magus uses spell combat and his spell targets the same creature as his melee attacks, he can choose to either increase the DC to resist the spell by +2, grant himself a +2 circumstance bonus on any checks made to overcome spell resistance, or grant himself a +2 circumstance bonus on all attack rolls made against the target during his turn.</p>
+				<h1 id="magus-spell-list">Magus Spell List</h1>
+				<p>Magi gain access to the following spells.</p>
+				<p id="0-level-magus-spells"><b>0-Level Magus Spells</b>&mdash;<i><a href="../../coreRulebook/spells/acidSplash.html#acid-splash">acid splash</a></i>, <i><a href="../../coreRulebook/spells/arcaneMark.html#arcane-mark">arcane mark</a></i>, <i><a href="../../coreRulebook/spells/dancingLights.html#dancing-lights">dancing lights</a></i>, <i><a href="../../coreRulebook/spells/daze.html#daze">daze</a></i>, <i><a href="../../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></i>, <i><a href="../../coreRulebook/spells/disruptUndead.html#disrupt-undead">disrupt undead</a></i>, <i><a href="../../coreRulebook/spells/flare.html#flare">flare</a></i>, <i><a href="../../coreRulebook/spells/ghostSound.html#ghost-sound">ghost sound</a></i>, <i><a href="../../coreRulebook/spells/light.html#light">light</a></i>, <i><a href="../../coreRulebook/spells/mageHand.html#mage-hand">mage hand</a></i>, <i><a href="../../coreRulebook/spells/openClose.html#open-close">open/close</a></i>, <i><a href="../../coreRulebook/spells/prestidigitation.html#prestidigitation">prestidigitation</a></i>, <i><a href="../../coreRulebook/spells/rayOfFrost.html#ray-of-frost">ray of frost</a></i>, <i><a href="../../coreRulebook/spells/readMagic.html#read-magic">read magic</a></i>, <i><a href="../../advancedPlayersGuide/spells/spark.html#spark-">spark</a></i>.</p>
+				<p id="1st-level-magus-spells"><b>1st-Level Magus Spells</b>&mdash;<i><a href="../../coreRulebook/spells/burningHands.html#burning-hands">burning hands</a></i>, <i><a href="../../coreRulebook/spells/chillTouch.html#chill-touch">chill touch</a></i>, <i><a href="../../coreRulebook/spells/colorSpray.html#color-spray">color spray</a></i>, <i><a href="../spells/corrosiveTouch.html#corrosive-touch">corrosive touch</a></i>, <i><a href="../../coreRulebook/spells/enlargePerson.html#enlarge-person">enlarge person</a></i>, <i><a href="../../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat">expeditious retreat</a></i>, <i><a href="../../coreRulebook/spells/featherFall.html#feather-fall">feather fall</a></i>, <i><a href="../../advancedPlayersGuide/spells/flareBurst.html#flare-burst">flare burst</a></i>, <i><a href="../../coreRulebook/spells/floatingDisk.html#floating-disk">floating disk</a></i>, <i><a href="../spells/frostbite.html#frostbite">frostbite</a></i>, <i><a href="../../coreRulebook/spells/grease.html#grease">grease</a></i>, <i><a href="../../advancedPlayersGuide/spells/hydraulicPush.html#hydraulic-push-">hydraulic push</a></i>, <i><a href="../../coreRulebook/spells/jump.html#jump">jump</a></i>, <i><a href="../../coreRulebook/spells/magicMissile.html#magic-missile">magic missile</a></i>, <i><a href="../../coreRulebook/spells/magicWeapon.html#magic-weapon">magic weapon</a></i>, <i><a href="../../coreRulebook/spells/mount.html#mount">mount</a></i>, <i><a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist">obscuring mist</a></i>, <i><a href="../../coreRulebook/spells/rayOfEnfeeblement.html#ray-of-enfeeblement">ray of enfeeblement</a></i>, <i><a href="../../coreRulebook/spells/reducePerson.html#reduce-person">reduce person</a></i>, <i><a href="../../coreRulebook/spells/shield.html#shield">shield</a></i>, <i><a href="../../coreRulebook/spells/shockingGrasp.html#shocking-grasp">shocking grasp</a></i>,<i> <a href="../../coreRulebook/spells/silentImage.html#silent-image">silent image</a></i>, <i><a href="../../advancedPlayersGuide/spells/stoneFist.html#stone-fist">stone fist</a></i>, <i><a href="../../coreRulebook/spells/trueStrike.html#true-strike">true strike</a></i>, <i><a href="../../coreRulebook/spells/unseenServant.html#unseen-servant">unseen servant</a></i>, <i><a href="../../advancedPlayersGuide/spells/vanish.html#vanish">vanish</a></i>.</p>
+				<p id="2nd-level-magus-spells"><b>2nd-Level Magus Spells</b>&mdash;<i><a href="../../coreRulebook/spells/acidArrow.html#acid-arrow">acid arrow</a></i>, <i><a href="../../coreRulebook/spells/alterSelf.html#alter-self">alter self</a></i>, <i><a href="../../coreRulebook/spells/bearSEndurance.html#bear-s-endurance">bear's endurance</a></i>, <i><a href="../spells/bloodTranscription.html#blood-transcription">blood transcription</a></i>, <i><a href="../../coreRulebook/spells/blur.html#blur">blur</a></i>, <i><a href="../../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></i>, <i><a href="../../advancedPlayersGuide/spells/burningGaze.html#burning-gaze">burning gaze</a></i>, <i><a href="../../coreRulebook/spells/catSGrace.html#cat-s-grace">cat's grace</a></i>, <i><a href="../../coreRulebook/spells/darkness.html#darkness">darkness</a></i>, <i><a href="../spells/defensiveShock.html#defensive-shock">defensive shock</a></i>, <i><a href="../../advancedPlayersGuide/spells/elementalTouch.html#elemental-touch">elemental touch</a></i>, <i><a href="../../advancedPlayersGuide/spells/fireBreath.html#fire-breath">fire breath</a></i>, <i><a href="../../coreRulebook/spells/flamingSphere.html#flaming-sphere">flaming sphere</a></i>, <i><a href="../../coreRulebook/spells/fogCloud.html">fog cloud</a></i>, <i><a href="../spells/frigidTouch.html#frigid-touch">frigid touch</a></i>, <i><a href="../../coreRulebook/spells/glitterdust.html#glitterdust">glitterdust</a></i>, <i><a href="../../coreRulebook/spells/gustOfWind.html#gust-of-wind">gust of wind</a></i>, <i><a href="../../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></i>, <i><a href="../../coreRulebook/spells/levitate.html#levitate">levitate</a></i>, <i><a href="../../coreRulebook/spells/minorImage.html#minor-image">minor image</a></i>, <i><a href="../../coreRulebook/spells/mirrorImage.html#mirror-image">mirror image</a></i>, <i><a href="../../coreRulebook/spells/pyrotechnics.html#pyrotechnics">pyrotechnics</a></i>, <i><a href="../../coreRulebook/spells/scorchingRay.html#scorching-ray">scorching ray</a></i>, <i><a href="../../coreRulebook/spells/shatter.html#shatter">shatter</a></i>, <i><a href="../../coreRulebook/spells/spiderClimb.html#spider-climb">spider climb</a></i>, <i><a href="../../advancedPlayersGuide/spells/stoneCall.html#stone-call">stone call</a></i>, <i><a href="../../coreRulebook/spells/web.html#web">web</a></i>.</p>
+				<p id="3rd-level-magus-spells"><b>3rd-Level Magus Spells</b>&mdash;<i><a href="../../advancedPlayersGuide/spells/aqueousOrb.html#aqueous-orb">aqueous orb</a></i>, <i><a href="../../coreRulebook/spells/arcaneSight.html#arcane-sight">arcane sight</a></i>, <i><a href="../../coreRulebook/spells/beastShape.html#beast-shape-i">beast shape I</a></i>, <i><a href="../../coreRulebook/spells/blink.html#blink">blink</a></i>, <i><a href="../../advancedPlayersGuide/spells/cloakOfWinds.html#cloak-of-winds">cloak of winds</a></i>, <i><a href="../../coreRulebook/spells/daylight.html#daylight">daylight</a></i>, <i><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic">dispel magic</a></i>, <i><a href="../../coreRulebook/spells/displacement.html#displacement">displacement</a></i>, <i><a href="../../advancedPlayersGuide/spells/elementalAura.html#elemental-aura">elemental aura</a></i>, <i><a href="../../coreRulebook/spells/fireball.html#fireball">fireball</a></i>, <i><a href="../../coreRulebook/spells/flameArrow.html#flame-arrow">flame arrow</a></i>, <i><a href="../../coreRulebook/spells/fly.html">fly</a></i>, <i><a href="../spells/forceHookCharge.html#force-hook-charge">force hook charge</a></i><span class="char-style-override-34">, </span><i><a href="../spells/forcePunch.html#force-punch">force punch</a></i>, <i><a href="../../coreRulebook/spells/gaseousForm.html#gaseous-form">gaseous form</a></i>, <i><a href="../../coreRulebook/spells/haste.html#haste">haste</a>, <a href="../../advancedPlayersGuide/spells/hydraulicTorrent.html#hydraulic-torrent-">hydraulic torrent</a></i>, <i><a href="../../coreRulebook/spells/keenEdge.html#keen-edge">keen edge</a></i>, <i><a href="../../coreRulebook/spells/lightningBolt.html#lightning-bolt">lightning bolt</a></i>, <i><a href="../../coreRulebook/spells/magicWeapon.html#magic-weapon-greater">magic weapon (greater)</a></i>, <i><a href="../../coreRulebook/spells/majorImage.html#major-image">major image</a></i>, <i><a href="../spells/monstrousPhysique.html#monstrous-physique-i">monstrous physique I</a></i>, <i><a href="../../coreRulebook/spells/phantomSteed.html#phantom-steed">phantom steed</a></i>, <i><a href="../../coreRulebook/spells/rayOfExhaustion.html#ray-of-exhaustion">ray of exhaustion</a></i>, <i><a href="../../coreRulebook/spells/sleetStorm.html#sleet-storm">sleet storm</a></i>, <i><a href="../../coreRulebook/spells/slow.html#slow">slow</a></i>, <i><a href="../../coreRulebook/spells/stinkingCloud.html#stinking-cloud">stinking cloud</a></i>, <i><a href="../spells/undeadAnatomy.html#undead-anatomy-i">undead anatomy I</a></i>, <i><a href="../../coreRulebook/spells/vampiricTouch.html#vampiric-touch">vampiric touch</a></i>, <i><a href="../../advancedPlayersGuide/spells/versatileWeapon.html#versatile-weapon">versatile weapon</a></i>, <i><a href="../../coreRulebook/spells/waterBreathing.html#water-breathing">water breathing</a></i>, <i><a href="../../coreRulebook/spells/windWall.html#wind-wall">wind wall</a></i>.</p>
+				<p id="4th-level-magus-spells"><b>4th-Level Magus Spells</b>&mdash;<i><a href="../spells/arcanaTheft.html#arcana-theft">arcana theft</a></i>, <i><a href="../../advancedPlayersGuide/spells/ballLightning.html#ball-lightning">ball lightning</a></i>, <i><a href="../../coreRulebook/spells/beastShape.html#beast-shape-ii">beast shape II</a></i>, <i><a href="../../coreRulebook/spells/blackTentacles.html#black-tentacles">black tentacles</a></i>, <i><a href="../../advancedPlayersGuide/spells/detonate.html#detonate">detonate</a></i>, <i><a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door">dimension door</a></i>, <i><a href="../../advancedPlayersGuide/spells/dragonSBreath.html#dragon's-breath">dragon's breath</a></i>, <i><a href="../../coreRulebook/spells/elementalBody.html#elemental-body-i">elemental body I</a></i>, <i><a href="../../coreRulebook/spells/enlargePerson.html#enlarge-person-mass">enlarge person (mass)</a></i>, <i><a href="../../coreRulebook/spells/fireShield.html#fire-shield">fire shield</a></i>, <i><a href="../../advancedPlayersGuide/spells/firefall.html#firefall">firefall</a></i>, <i><a href="../../coreRulebook/spells/iceStorm.html#ice-storm">ice storm</a></i>, <i><a href="../../coreRulebook/spells/invisibility.html#invisibility-greater">invisibility (greater)</a></i>, <i><a href="../spells/monstrousPhysique.html#monstrous-physique-ii">monstrous physique II</a></i>, <i><a href="../../coreRulebook/spells/phantasmalKiller.html#phantasmal-killer">phantasmal killer</a></i>, <i><a href="../../coreRulebook/spells/reducePerson.html#reduce-person-mass">reduce person (mass)</a></i>, <i><a href="../../advancedPlayersGuide/spells/riverOfWind.html#river-of-wind">river of wind</a></i>, <i><a href="../../coreRulebook/spells/shout.html#shout">shout</a></i>, <i><a href="../../coreRulebook/spells/solidFog.html#solid-fog">solid fog</a></i>, <i><a href="../../coreRulebook/spells/stoneskin.html#stoneskin">stoneskin</a></i>, <i><a href="../spells/verminShape.html#vermin-shape-i-">vermin shape I</a></i>, <i><a href="../../coreRulebook/spells/wallOfFire.html#wall-of-fire">wall of fire</a></i>, <i><a href="../../coreRulebook/spells/wallOfIce.html#wall-of-ice">wall of ice</a></i>, <i><a href="../spells/wallOfSound.html#wall-of-sound">wall of sound</a></i>.</p>
+				<p id="5th-level-magus-spells"><b>5th-Level Magus Spells</b>&mdash;<i><a href="../spells/acidicSpray.html#acidic-spray">acidic spray</a></i>, <i><a href="../../coreRulebook/spells/balefulPolymorph.html#baleful-polymorph">baleful polymorph</a></i>, <i><a href="../../coreRulebook/spells/beastShape.html#beast-shape-iii">beast shape III</a></i>, <i><a href="../../coreRulebook/spells/cloudkill.html#cloudkill">cloudkill</a></i>, <i><a href="../../coreRulebook/spells/coneOfCold.html#cone-of-cold">cone of cold</a></i>, <i><a href="../spells/corrosiveConsumption.html#corrosive-consumption">corrosive consumption</a></i>, <i><a href="../../coreRulebook/spells/elementalBody.html#elemental-body-ii">elemental body II</a></i>, <i><a href="../../advancedPlayersGuide/spells/fireSnake.html#fire-snake">fire snake</a></i>, <i><a href="../../advancedPlayersGuide/spells/geyser.html#geyser-">geyser</a></i>, <i><a href="../../coreRulebook/spells/interposingHand.html#interposing-hand">interposing hand</a></i>, <i><a href="../spells/monstrousPhysique.html#monstrous-physique-iii">monstrous physique III</a></i>, <i><a href="../../coreRulebook/spells/overlandFlight.html#overland-flight">overland flight</a></i>, <i><a href="../../coreRulebook/spells/telekinesis.html#telekinesis">telekinesis</a></i>, <i><a href="../../coreRulebook/spells/teleport.html#teleport">teleport</a></i>, <i><a href="../spells/undeadAnatomy.html#undead-anatomy-ii">undead anatomy II</a></i>, <i><a href="../spells/verminShape.html#vermin-shape-ii">vermin shape II</a></i>, <i><a href="../../coreRulebook/spells/wallOfForce.html#wall-of-force">wall of force</a></i>, <i><a href="../../coreRulebook/spells/wallOfStone.html#wall-of-stone">wall of stone</a></i>.</p>
+				<p id="6th-level-magus-spells"><b>6th-Level Magus Spells</b>&mdash;<i><a href="../../coreRulebook/spells/acidFog.html#acid-fog">acid fog</a></i>, <i><a href="../../coreRulebook/spells/bearSEndurance.html#bear-s-endurance-mass">bear's endurance (mass)</a></i>, <i><a href="../../coreRulebook/spells/beastShape.html#beast-shape-iv">beast shape IV</a></i>, <i><a href="../../coreRulebook/spells/bullSStrength.html#bull-s-strength-mass">bull's strength (mass)</a></i>, <i><a href="../../coreRulebook/spells/catSGrace.html#cat-s-grace-mass">cat's grace (mass)</a></i>, <i><a href="../../coreRulebook/spells/chainLightning.html#chain-lightning">chain lightning</a></i>, <i><a href="../../advancedPlayersGuide/spells/contagiousFlame.html#contagious-flame">contagious flame</a></i>, <i><a href="../../coreRulebook/spells/disintegrate.html#disintegrate">disintegrate</a></i>, <i><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic">dispel magic</a></i> (<i>greater)</i>, <i><a href="../../coreRulebook/spells/elementalBody.html#elemental-body-iii">elemental body III</a></i>, <i><a href="../../coreRulebook/spells/fleshToStone.html#flesh-to-stone">flesh to stone</a></i>, <i><a href="../../coreRulebook/spells/forcefulHand.html#forceful-hand">forceful hand</a></i>, <i><a href="../../coreRulebook/spells/formOfTheDragon.html#form-of-the-dragon-i">form of the dragon I</a></i>, <i><a href="../../coreRulebook/spells/freezingSphere.html#freezing-sphere">freezing sphere</a></i>, <i><a href="../../coreRulebook/spells/mislead.html#mislead">mislead</a></i>, <i><a href="../spells/monstrousPhysique.html#monstrous-physique-iv">monstrous physique IV</a></i>, <i><a href="../../advancedPlayersGuide/spells/sirocco.html#sirocco">sirocco</a></i>, <i><a href="../../coreRulebook/spells/stoneToFlesh.html#stone-to-flesh">stone to flesh</a></i>, <i><a href="../../coreRulebook/spells/transformation.html#transformation">transformation</a></i>, <i><a href="../../coreRulebook/spells/trueSeeing.html#true-seeing">true seeing</a></i>, <i><a href="../spells/undeadAnatomy.html#undead-anatomy-iii">undead anatomy III</a></i>, <i><a href="../../coreRulebook/spells/wallOfIron.html#wall-of-iron">wall of iron</a></i>.</p>
+
+
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Magus",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

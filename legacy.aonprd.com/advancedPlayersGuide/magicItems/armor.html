@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Armor</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "armor.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "armor.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "armor.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "armor.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="armor" class="monster-header">Armor</h1>
+				<p>The following armor and shield properties add to those presented in the <i>Pathfinder RPG Core Rulebook</i>.</p>
+				<h1 id="magic-armor-and-shield-ability-descriptions">Magic Armor and Shield Ability Descriptions</h1>
+                <div class = "table"><table id="table-7-1:-armor-special-abilities"><caption>Table:  Armor Special Abilities</caption>
+<thead><tr><th>Minor</th><th>Medium</th><th>Major</th><th>Special Ability</th><th>Base Price Modifier</th></tr></thead>
+<tr><td>01&ndash;40</td><td>01&ndash;35</td><td>01&ndash;19</td><td><i><a href="armor.html#champion" >Champion</a></i> </td><td>+1 bonus<sup>1</sup></td></tr>
+<tr><td>41&ndash;80</td><td>36&ndash;66</td><td>20&ndash;37</td><td><i><a href="armor.html#dastard" >Dastard</a></i> </td><td>+1 bonus<sup>1</sup></td></tr>
+<tr><td>81&ndash;99</td><td>67&ndash;70</td><td>38&ndash;39</td><td><i><a href="armor.html#jousting" >Jousting</a></i> </td><td>+3,750 gp</td></tr>
+<tr><td>&mdash;</td><td>71&ndash;83</td><td>40&ndash;61</td><td><i><a href="armor.html#righteous" >Righteous</a></i> </td><td>+27,000 gp</td></tr>
+<tr><td>&mdash;</td><td>84&ndash;96</td><td>62&ndash;80</td><td><i><a href="armor.html#unrighteous" >Unrighteous</a></i> </td><td>+27,000 gp</td></tr>
+<tr><td>&mdash;</td><td>97&ndash;99</td><td>81&ndash;90</td><td><a href="armor.html#determination" >Determination</a> </td><td>+30,000 gp</td></tr>
+<tr><td>100</td><td>100</td><td>91&ndash;100</td><td>Roll again twice2 </td><td>&mdash;</td></tr></table></div>
+				<p>A shield or suit of armor with a special ability must have at least a +1 enhancement bonus.</p>
+				<p id="champion"><b>Champion</b>: This armor property only works for good creatures with the challenge ability (such as cavaliers) or the smite evil ability (such as paladins, half-celestials, and creatures with the celestial creature template). When worn by such a creature that uses a challenge or smite ability, the wearer gains a +2 sacred bonus to AC against attacks from the chosen opponent. </p>
+				<p>Faint abjuration; CL 5th; <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <i><a href="../../coreRulebook/spells/protectionFromEvil.html#protection-from-evil" >protection from evil</a></i> or <i><a href="../../coreRulebook/spells/protectionFromGood.html#protection-from-good" >protection from good</a></i>; Price +1 bonus.</p>
+				<p id="dastard"><b>Dastard</b>: This armor property only works for evil creatures with the challenge ability (such as cavaliers) or the smite good ability (such as antipaladins, half-fiends, and creatures with the fiendish creature template). When worn by such a creature that uses a challenge or smite ability, the wearer gains a +2 profane bonus to AC against attacks from the chosen opponent. </p>
+				<p>Faint abjuration; CL 5th; <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <i><a href="../../coreRulebook/spells/protectionFromEvil.html#protection-from-evil" >protection from evil</a></i> or <i><a href="../../coreRulebook/spells/protectionFromGood.html#protection-from-good" >protection from good</a></i>; Price +1 bonus.</p>
+				<p id="determination"><b>Determination</b>: A shield or armor with this property provides the ability to fight on against seemingly impossible odds. Once per day, when the owner reaches 0 or fewer hit points, the item automatically provides a <i><a href="../../coreRulebook/spells/breathOfLife.html#breath-of-life" >breath of life</a></i> spell.</p>
+				<p>Moderate conjuration; CL 10th; <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <i><a href="../../coreRulebook/spells/breathOfLife.html#breath-of-life" >breath of life</a></i>; Price +30,000 gp.</p>
+				<p id="jousting"><b>Jousting</b>: This suit of armor helps its wearer remain mounted and in control of his mount. The wearer gains a +5 competence bonus on <a href="../../coreRulebook/skills/ride.html#ride" >Ride</a> skill checks.</p>
+				<p>Faint transmutation; CL 5th; <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, creator must have 5 ranks in the <a href="../../coreRulebook/skills/ride.html#ride" >Ride</a> skill; Price +3,750 gp.</p>
+				<p id="righteous"><b>Righteous</b>: Armor with this property is often engraved or enameled with religious symbols. On command once per day, the wearer can invoke an effect, as per the spell <i><a href="../../coreRulebook/spells/righteousMight.html#righteous-might" >righteous might</a></i>, lasting for 10 rounds. Righteous armor is always aligned toward good (positive energy), for the effects of <i><a href="../../coreRulebook/spells/righteousMight.html#righteous-might" >righteous might</a></i>. <i><a href="armor.html#righteous" >Righteous</a></i> armor bestows one permanent negative level on any evil creature attempting to wear it. The negative level remains as long as the armor is worn and disappears when it is removed. This negative level cannot be overcome in any way (including by <i><a href="../../coreRulebook/spells/restoration.html#restoration" >restoration</a></i> spells) while the armor is worn.</p>
+				<p>Moderate transmutation; CL 10th; <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <i><a href="../../coreRulebook/spells/righteousMight.html#righteous-might" >righteous might</a></i>; Cost +27,000 gp.</p>
+				<p id="unrighteous"><b>Unrighteous</b>: This armor is often sculpted with unholy symbols. On command once per day, the wearer can invoke an effect, as per the spell <i><a href="../../coreRulebook/spells/righteousMight.html#righteous-might" >righteous might</a></i>, lasting for 10 rounds. <i><a href="armor.html#unrighteous" >Unrighteous</a></i> armor is always aligned toward evil (negative energy), for the effects of <i><a href="../../coreRulebook/spells/righteousMight.html#righteous-might" >righteous might</a></i>. Unrighteous armor bestows one permanent negative level on any good creature attempting to wear it. The negative level remains as long as the armor is worn and disappears when it is removed. This negative level cannot be overcome in any way (including by <i><a href="../../coreRulebook/spells/restoration.html#restoration" >restoration</a></i> spells) while the armor is worn.</p>
+				<p>Moderate transmutation; CL 10th; <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <i><a href="../../coreRulebook/spells/righteousMight.html#righteous-might" >righteous might</a></i>; Cost +27,000 gp.</p>
+				<h1 id="specific-armors">Specific Armors</h1><table id="table-7-2:-specific-armors"><caption>Table:  Specific Armors</caption>
+<thead><tr><th>Medium</th><th>Major</th><th>Specific Armor</th><th>Market Price</th></tr></thead>
+<tr><td>01&ndash;20</td><td>01&ndash;02</td><td><i><a href="armor.html#mistmail-" >Mistmail</a></i></td><td>2,250 gp</td>
+<tr><td>21&ndash;35</td><td>03&ndash;05</td><td><i><a href="armor.html#soothsayer's-raiment" >Soothsayer's raiment</a></i></td><td>10,300 gp</td>
+<tr><td>36&ndash;50</td><td>06</td><td><i><a href="armor.html#boneless-leather-" >Boneless leather</a></i></td><td>12,160 gp</td>
+<tr><td>51&ndash;65</td><td>07</td><td><i><a href="armor.html#murderer's-blackcloth-" >Murderer's blackcloth</a></i></td><td>12,405 gp</td>
+<tr><td>66&ndash;90</td><td>08&ndash;12</td><td><i><a href="armor.html#folding-plate" >Folding plate</a></i></td><td>12,650 gp</td>
+<tr><td>91&ndash;100</td><td>13&ndash;27</td><td><i><a href="armor.html#armor-of-insults-" >Armor of insults</a></i></td><td>16,175 gp</td>
+<tr><td>&mdash;</td><td>28&ndash;42</td><td><i><a href="armor.html#buccaneer's-breastplate-" >Buccaneer's breastplate</a></i></td><td>23,850 gp</td>
+<tr><td>&mdash;</td><td>43&ndash;49</td><td><i><a href="armor.html#forsaken-banded-mail-" >Forsaken banded mail</a></i></td><td>25,400 gp</td>
+<tr><td>&mdash;</td><td>50&ndash;61</td><td><i><a href="armor.html#giant-hide-armor-" >Giant-hide armor</a> (ogre)</i></td><td>39,165 gp</td>
+<tr><td>&mdash;</td><td>62&ndash;71</td><td><i><a href="armor.html#giant-hide-armor-" >Giant-hide armor</a> (hill giant)</i></td><td>46,665 gp</td>
+<tr><td>&mdash;</td><td>72&ndash;81</td><td><i><a href="armor.html#giant-hide-armor-" >Giant-hide armor</a> (stone giant)</i></td><td>54,165 gp</td>
+<tr><td>&mdash;</td><td>82&ndash;86</td><td><i><a href="armor.html#giant-hide-armor-" >Giant-hide armor</a> (fire giant)</i></td><td>54,165 gp</td>
+<tr><td>&mdash;</td><td>87&ndash;91</td><td><i><a href="armor.html#giant-hide-armor-" >Giant-hide armor</a> (frost giant)</i></td><td>54,165 gp</td>
+<tr><td>&mdash;</td><td>92&ndash;96</td><td><i><a href="armor.html#giant-hide-armor-" >Giant-hide armor</a> (troll)</i></td><td>59,165 gp</td>
+<tr><td>&mdash;</td><td>97</td><td><i><a href="armor.html#giant-hide-armor-" >Giant-hide armor</a> (cloud giant)</i></td><td>69,165 gp</td>
+<tr><td>&mdash;</td><td>98</td><td><i><a href="armor.html#giant-hide-armor-" >Giant-hide armor</a> (storm giant)</i></td><td>76,665 gp</td>
+<tr><td>&mdash;</td><td>99&ndash;100</td><td><i><a href="armor.html#daystar-half-plate-" >Daystar half-plate</a></i></td><td>81,250 gp</td></table>
+
+				<p id="armor-of-insults-" class="stat-block-title"><b>Armor Of Insults </b></p>
+				<p class="stat-block-1"><b>Aura</b> moderate enchantment; <b>CL</b> 7th</p>
+				<p class="stat-block-1"><b>Slot</b> armor; <b>Price</b> 16,175 gp; <b>Weight</b> 20 lbs. </p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>Each metal bit of this suit of <i>+1 studded leather</i> looks more like a tiny sneering face than a simple stud. Once per day the wearer of the armor may command the mouths to unleash a torrent of verbal abuse directed against every hostile creature within 60 feet who can see and hear the wearer. Each such creature must make a DC 16 Will saving throw to avoid suffering an overwhelming compulsion to attack the wearer for the next 7 rounds. If the creature is unable to attack the wearer on its next turn, or attacking the wearer would put the creature at risk (moving through a threatened square, charging into a pit, and so on) it can act normally that turn. This is a mind-affecting sonic effect, and has no effect on creatures that do not use a spoken language. </p>
+				<p class = "stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <i><a href="../../coreRulebook/spells/confusion.html#confusion" >confusion</a></i>; <b>Cost</b> 7,675 gp </p>
+				<p id="boneless-leather-" class="stat-block-title"><b>Boneless Leather </b></p>
+				<p class="stat-block-1"><b>Aura</b> faint transmutation; <b>CL</b> 3rd</p>
+				<p class="stat-block-1"><b>Slot</b> armor; <b>Price</b> 12,160 gp; <b>Weight</b> 15 lbs. </p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>This suit of <i>+1 leather</i> gives its wearer the ability to twist and contort his body in virtually any direction. He gains a +5 bonus on <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> checks, a +5 bonus on <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> checks to reduce damage from falls, a +5 bonus to CMD, and DR 5/piercing or slashing.</p>
+				<p class = "stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <i><a href="../../coreRulebook/spells/alterSelf.html#alter-self" >alter self</a></i>, creator must have 5 ranks in the <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> and <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> skills; <b>Cost</b> 6,160 gp</p>
+				<p id="buccaneer's-breastplate-" class="stat-block-title"><b>Buccaneer's Breastplate </b></p>
+				<p class="stat-block-1"><b>Aura</b> moderate transmutation; <b>CL</b> 9th</p>
+				<p class="stat-block-1"><b>Slot</b> armor; <b>Price</b> 23,850 gp; <b>Weight</b> 30 lbs. </p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>This <i>+1 breastplate</i> is made of bluish metal and decorated with wave motifs. It allows the wearer to continually utilize the effects of the spell <i><a href="../../coreRulebook/spells/waterWalk.html#water-walk" >water walk</a></i>. If a creature puts on the armor while underwater, the wearer is borne toward the surface at a rate of 60 feet per round.</p>
+				<p class = "stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <i><a href="../../coreRulebook/spells/waterWalk.html#water-walk" >water walk</a></i>; <b>Cost</b> 12,100 gp </p>
+				<p id="daystar-half-plate-" class="stat-block-title"><b>Daystar Half-Plate </b></p>
+				<p class="stat-block-1"><b>Aura</b> strong evocation; <b>CL</b> 15th</p>
+				<p class="stat-block-1"><b>Slot</b> armor; <b>Price</b> 81,250 gp; <b>Weight</b> 50 lbs. </p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>The silvery sheen of this <i>+1 half-plate</i> causes it to sparkle in even the faintest light. At will, the wearer can command it to shine with a <i><a href="../../coreRulebook/spells/daylight.html#daylight" >daylight</a></i> spell for 10 minutes. Once per day, the wearer can command it to shine as per the <i><a href="../../coreRulebook/spells/sunburst.html#sunburst" >sunburst</a></i> spell.</p>
+				<p class = "stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <i><a href="../../coreRulebook/spells/daylight.html#daylight" >daylight</a></i>, <i><a href="../../coreRulebook/spells/sunburst.html#sunburst" >sunburst</a></i>; <b>Cost</b> 41,000 gp</p>
+				<p id="folding-plate" class="stat-block-title"><b>Folding Plate</b></p>
+				<p class="stat-block-1"><b>Aura</b> moderate conjuration (summoning); <b>CL</b> 10th</p>
+				<p class="stat-block-1"><b>Slot</b> neck (brooch) or armor (unfolded); <b>Price</b> 12,650 gp; <b>Weight</b> &mdash; (brooch), 50 lbs. (armor)</p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>This item normally looks like a heavy steel brooch or cloak clasp, often depicting a heavy helm or sturdy shield. On command, the brooch transforms in a clatter of metallic plates and panels to instantly cover the wearer in a complete suit of <i>+1 full plate</i>, with the design of the brooch displayed on the armor's breastplate. The same command word causes the armor to transform into the brooch. The brooch only transforms if the wearer's armor slot is unoccupied, thus it won't work if the wearer is already armored.</p>
+				<p class = "stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <i><a href="../../coreRulebook/spells/instantSummons.html#instant-summons" >instant summons</a></i>; <b>Cost</b> 7,650 gp</p>
+				<p id="forsaken-banded-mail-" class="stat-block-title"><b>Forsaken Banded Mail </b></p>
+				<p class="stat-block-1"><b>Aura</b> moderate evocation; <b>CL</b> 11th</p>
+				<p class="stat-block-1"><b>Slot</b> armor; <b>Price</b> 25,400 gp; <b>Weight</b> 35 lbs. </p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>Every inch of this suit of <i>+1 banded mail</i> bears a defaced holy symbol or a design equally offensive to one or more gods and their servants. The wearer of the armor cannot cast divine spells or use any spell-like supernatural ability gained from a connection to a deity. The wearer gains SR 19 against any divine-origin spell, spell-like ability, or supernatural ability (such as a domain granted power or ability from an outsider serving a deity), and treats the armor's enhancement bonus as +2 higher against creatures with these abilities.</p>
+				<p class = "stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, creator cannot be a divine spellcaster; <b>Cost</b> 12,900 gp </p>
+				<p id="giant-hide-armor-" class="stat-block-title"><b>Giant-Hide Armor </b></p>
+				<p class="stat-block-1"><b>Aura</b> strong transmutation; <b>CL</b> 15th</p>
+				<p class="stat-block-1"><b>Slot</b> armor; <b>Price</b> 39,165 gp (ogre), 46,665 gp (hill giant), 59,165 gp (troll), 54,165 gp (stone, fire, or frost giant), 69,165 gp (cloud giant), 76,665 gp (storm giant); <b>Weight</b> 25 lbs.</p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>This drooping, many-folded suit of <i>+3 hide armor</i> is made from the tanned skin of an actual giant. Once per day on command, the wearer can grow to match the size of the appropriate giant, as if using <i><a href="../../coreRulebook/spells/giantForm.html#giant-form-i" >giant form I</a></i> (ogre, troll, hill giant, stone giant, fire giant, or frost giant) or <i><a href="../../coreRulebook/spells/giantForm.html#giant-form-ii" >giant form II</a></i> (cloud giant or storm giant). This transformation lasts up to 15 minutes, and ends when the wearer commands. Most good folk consider wearing the skins of intelligent creatures to be abhorrent. Giants gain a +2 morale bonus on attack and damage rolls against the wearer, or +4 if the wearer's armor is made from the same kind of giant as the attacker.</p>
+				<p class = "stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <i><a href="../../coreRulebook/spells/giantForm.html#giant-form-i" >giant form I</a></i> (ogre, troll, hill giant, stone giant, fire giant, or frost giant) or <i><a href="../../coreRulebook/spells/giantForm.html#giant-form-ii" >giant form II</a></i> (cloud giant or storm giant); <b>Cost</b> 19,660 gp (ogre), 23,415 gp (hill giant), 29,665 gp (troll), 27,165 gp (stone, fire, or frost giant), 34,665 gp (cloud giant), 38,415 gp (storm giant)</p>
+				<p id="mistmail-" class="stat-block-title"><b>Mistmail </b></p>
+				<p class="stat-block-1"><b>Aura</b> faint conjuration; <b>CL</b> 3rd</p>
+				<p class="stat-block-1"><b>Slot</b> armor; <b>Price</b> 2,250 gp; <b>Weight</b> 25 lbs. </p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>The fine links of this <i>+1 chain shirt</i> form a pattern of roiling clouds. On command once per day, the wearer can transform it into thick fog that fills his space and provides concealment (20% miss chance). This mist moves with the character. Effects that disperse the mist or destroy it cause the armor to reform into its solid shape on the character's body, as does speaking the command word or entering a place where the fog-magic doesn't function (such as underwater). If the character tries to don another suit of armor while the <i>mistmail </i>is in fog form, it reforms at the character's feet.</p>
+				<p class = "stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <i><a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist" >obscuring mist</a></i>; <b>Cost</b> 1,250 gp </p>
+				<p id="murderer's-blackcloth-" class="stat-block-title"><b>Murderer's Blackcloth </b></p>
+				<p class="stat-block-1"><b>Aura</b> moderate necromancy; <b>CL</b> 9th</p>
+				<p class="stat-block-1"><b>Slot</b> armor; <b>Price</b> 12,405 gp; <b>Weight</b> 10 lbs. </p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>This silk <i>+1 <a href="../../coreRulebook/magicItems/armor.html#armor-shadow" >shadow</a> padded armor</i> is as dark as night and stitched with thread the color of dried blood. When worn by a rogue with the bleed talent, it increases the bleed damage of the rogue's sneak attacks by +1.</p>
+				<p class = "stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <i><a href="../../coreRulebook/spells/bleed.html#bleed" >bleed</a></i>, <i><a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i>, <i><a href="../../coreRulebook/spells/silence.html#silence" >silence</a></i>; <b>Cost</b> 6,280 gp</p>
+				<p id="soothsayer's-raiment" class="stat-block-title"><b>Soothsayer's Raiment</b></p>
+				<p class="stat-block-1"><b>Aura</b> faint divination; <b>CL</b> 5th</p>
+				<p class="stat-block-1"><b>Slot</b> armor; <b>Price</b> 10,300 gp; <b>Weight</b> 40 lbs.</p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>This <i>+1 chainmail</i> is attuned to a particular oracular mystery and contains a revelation associated with that mystery (see the oracle class description). While wearing the armor, an oracle has access to that revelation and may use it as if she had it as a normal class feature. The oracle must have the appropriate mystery to use the armor; for example, a <i>soothsayer's raiment (battlecry)</i> is only usable by an oracle of battle. If the wearer already has that revelation and the revelation gives an ability with a limited number of uses per day, the oracle can use that ability one additional time per day. This ability has no effect if worn by a non-oracle.</p>
+				<p>For divination spells with a percentage-based chance of success (such as <i><a href="../../coreRulebook/spells/augury.html#augury" >augury</a></i> and <i><a href="../../coreRulebook/spells/divination.html#divination" >divination</a></i>), the wearer's chance increases by +5.</p>
+				<p class = "stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <i><a href="../../coreRulebook/spells/augury.html#augury" >augury</a></i>, creator must be an oracle with the desired revelation; <b>Cost</b> 5,300 gp</p>
+				<h1 id="specific-shields">Specific Shields</h1><table id="table-7-3:-specific-shields"><caption>Table:  Specific Shields</caption>
+<thead><tr><th>Major</th><th>Specific Shield</th><th>Market Price</th></tr></thead>
+<tr><td>01&ndash;50</td><td><i><a href="armor.html#battlement-shield-">Battlement shield</a></i></td><td>16,180 gp</td></tr>
+<tr><td>51&ndash;100</td><td><i><a href="armor.html#fortress-shield-">Fortress shield</a></i></td><td>19,180 gp</td></tr></table>
+
+				<p id="battlement-shield-" class="stat-block-title"><b>Battlement Shield </b></p>
+				<p class="stat-block-1"><b>Aura</b> moderate conjuration; <b>CL</b> 9th</p>
+				<p class="stat-block-1"><b>Slot</b> shield; <b>Price</b> 16,180 gp; <b>Weight</b> 45 lbs. </p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>Once per day on command, this <i>+2 tower <a href="../../coreRulebook/spells/shield.html#shield" >shield</a></i> can transform into a solid, 10-foot by 10-foot by 1-foot wall of masonry with a battlement on top and an arrow slit in each 5-foot length. The wall acts as cover just like any physical wall. The wielder can touch the wall with one hand and command it to revert to a tower shield either resting on the ground and balanced against his hand or strapped to his arm in the normal fashion. The wall has all the characteristics of any other foot-thick wall of masonry (hardness 8, 90 hit points, break DC of 35). Attacks sufficient to destroy the wall cause it to immediately transform back into a shield, which loses half its hit points and gains the broken condition. The shield remains in wall form until destroyed or commanded to return to shield form. The wall cannot appear in a space too small to accommodate it. </p>
+				<p class = "stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <i><a href="../../coreRulebook/spells/wallOfStone.html#wall-of-stone" >wall of stone</a></i>; <b>Cost</b> 8,180 gp </p>
+				<p id="fortress-shield-" class="stat-block-title"><b>Fortress Shield </b></p>
+				<p class="stat-block-1"><b>Aura</b> moderate conjuration; <b>CL</b> 11th </p>
+				<p class="stat-block-1"><b>Slot</b> shield; <b>Price</b> 19,180 gp; <b>Weight</b> 45 lbs. </p>
+				<p class = "stat-block-breaker">Description</p>
+				<p>The wearer of this <i>+1 tower <a href="../../coreRulebook/spells/shield.html#shield" >shield</a></i> may, as a full-round action, transform the shield into a 1-inch thick cube of iron that springs into being around him, completely enclosing his space. The cube has hardness 10 and 30 hit points per side. This cube grants the wearer total cover against everything outside the cube, including (as it is perfectly sealed) swarms and gas attacks. The inside of the cube is dark, and air cannot get in or out so the wearer must hold his breath starting on the third round after activating the cube. Attacks sufficient to destroy one side of the cube cause it to immediately transform back into a shield, which loses half its hit points and gains the broken condition. Otherwise, the cube reverts to shield form upon command, if the wearer moves from his current space, or the wearer falls unconscious or dies.</p>
+				<p class = "stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <i><a href="../../coreRulebook/spells/wallOfIron.html#wall-of-iron" >wall of iron</a></i>; <b>Cost</b> 9,680 gp </p>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Armor",globalNavPath=[{ href: '/pathfinderRPG/prd/advancedPlayersGuide/advancedMagicItems.html', name: 'Advanced Magic Items' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

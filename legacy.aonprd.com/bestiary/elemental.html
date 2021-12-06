@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Elemental</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "elemental.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "elemental.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "elemental.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "elemental.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "elemental.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "elemental.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "creatureTypes.html">Creature Types</a></li>
+						<li><a href = "monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "elemental.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "elemental.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "elemental.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "elemental.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "elemental.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "elemental.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "elemental.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "elemental.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "elemental.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "elemental.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "elemental.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "elemental.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "elemental.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "elemental.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "elemental.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+			
+			<div>
+				<h1 id="elemental-air" class="monster-header">Elemental, Air</h1>
+			
+				<p class="flavor-text"><i>This cloud-like creature has dark hollows reminiscent of eyes and a mouth, and a howling wind whips it into ominous shapes.</i></p>
+			
+				<p class="stat-block-title"><b>Air Elemental</b></p>
+				<p class="stat-block-1"><b>Languages</b> Auran</p>
+				<p class = "stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> Plane of Air</p>
+				<p class="stat-block-1"><b>Organization</b> solitary, pair, or gang (3&ndash;8)</p>
+				<p class="stat-block-1"><b>Treasure</b> none</p>
+				<p class = "stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Air Mastery (Ex)</b> Airborne creatures take a &ndash;1 penalty on attack and damage rolls against an air elemental.</p>
+				<p class="stat-block-title"><b>Small Air Elemental <span class=stat-block-cr>CR 1</span></b></p>
+				<p class="stat-block-xp"><b>XP 400</b></p>
+				<p class="stat-block-1">N Small <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#air-subtype" >air</a>, <a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init </b>+7; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +4</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 17, touch 14, flat-footed 14 (+3 Dex, +3 natural, +1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 13 (2d10+2)</p>
+				<p class="stat-block-1"><b>Fort</b> +4, <b>Ref </b>+6, <b>Will </b>+0</p>
+				<p class="stat-block-1"><b>Defensive Abilities</b> air mastery; <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> fly 100 ft. (perfect)</p>
+				<p class="stat-block-1"><b>Melee </b>slam +6 (1d4+1)</p>
+				<p class="stat-block-1"><b>Special Attacks</b> <a href="universalMonsterRules.html#whirlwind" >whirlwind</a> (DC 12)</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 12, <b>Dex</b> 17, <b>Con</b> 12, <b>Int</b> 4, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk</b> +2; <b>CMB</b> +2; <b>CMD</b> 15</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="monsterFeats.html#flyby-attack" >Flyby Attack</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a><sup>B</sup>, <a href="../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a><sup>B</sup></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +7, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +7, <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> +17, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +1, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +4, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +11</p>
+				<p class="stat-block-title"><b>Medium Air Elemental <span class=stat-block-cr>CR 3</span></b></p>
+				<p class="stat-block-xp"><b>XP 800</b></p>
+				<p class="stat-block-1">N Medium <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#air-subtype" >air</a>, <a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +9; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +7</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 19, touch 16, flat-footed 13 (+5 Dex, +1 dodge, +3 natural)</p>
+				<p class="stat-block-1"><b>hp</b> 30 (4d10+8)</p>
+				<p class="stat-block-1"><b>Fort</b> +6, <b>Ref</b> +9, <b>Will</b> +1</p>
+				<p class="stat-block-1"><b>Defensive Abilities</b> air mastery; <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> fly 100 ft. (perfect)</p>
+				<p class="stat-block-1"><b>Melee</b> slam +9 (1d6+3)</p>
+				<p class="stat-block-1"><b>Special Attacks</b> <a href="universalMonsterRules.html#whirlwind" >whirlwind</a> (DC 14)</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str </b>14, <b>Dex</b> 21, <b>Con</b> 14, <b>Int</b> 4, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk</b> +4; <b>CMB</b> +6; <b>CMD</b> 22</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="monsterFeats.html#flyby-attack" >Flyby Attack</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a><sup>B</sup>, <a href="../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a><sup>B</sup></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +11, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +9, <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> +17, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +1, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +7, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +10</p>
+				<p class="stat-block-title"><b>Large Air Elemental <span class=stat-block-cr>CR 5</span></b></p>
+				<p class="stat-block-xp"><b>XP 1,600</b></p>
+				<p class="stat-block-1">N Large <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#air-subtype" >air</a>, <a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +11; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +11</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 21, touch 17, flat-footed 13 (+7 Dex, +1 dodge, +4 natural, &ndash;1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 68 (8d10+24)</p>
+				<p class="stat-block-1"><b>Fort</b> +9, <b>Ref</b> +13, <b>Will</b> +2</p>
+				<p class="stat-block-1"><b>Defensive Abilities</b> air mastery; <b>DR</b> 5/&mdash;; <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> fly 100 ft. (perfect)</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +14 (1d8+4)</p>
+				<p class="stat-block-1"><b>Space </b>10 ft.; <b>Reach</b> 10 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> <a href="universalMonsterRules.html#whirlwind" >whirlwind</a> (DC 18)</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 18, <b>Dex</b> 25, <b>Con</b> 16, <b>Int</b> 6, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk</b> +8, <b>CMB</b> +13; <b>CMD</b> 31</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#combat-reflexes" >Combat Reflexes</a>, <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="monsterFeats.html#flyby-attack" >Flyby Attack</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a><sup>B</sup>, <a href="../coreRulebook/feats.html#mobility" >Mobility</a>, <a href="../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a><sup>B</sup></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +15, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +15, <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> +21, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +5, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +11, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +11</p>
+				<p class="stat-block-title"><b>Huge Air Elemental <span class=stat-block-cr>CR 7</span></b></p>
+				<p class="stat-block-xp"><b>XP 3,200</b></p>
+				<p class="stat-block-1">N Huge <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#air-subtype" >air</a>, <a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +13; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +13</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 22, touch 18, flat-footed 12 (+9 Dex, +1 dodge, +4 natural, &ndash;2 size)</p>
+				<p class="stat-block-1"><b>hp</b> 95 (10d10+40)</p>
+				<p class="stat-block-1"><b>Fort</b> +11,<b> Ref</b> +16, <b>Will</b> +5</p>
+				<p class="stat-block-1"><b>Defensive Abilities</b> air mastery; <b>DR</b> 5/&mdash;; <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> fly 100 ft. (perfect)</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +17 (2d6+6)</p>
+				<p class="stat-block-1"><b>Space </b>15 ft.;<b> Reach</b> 15 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> <a href="universalMonsterRules.html#whirlwind" >whirlwind</a> (DC 21)</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 22, <b>Dex</b> 29,<b> Con </b>18, <b>Int </b>6, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk</b> +10; <b>CMB</b> +18; <b>CMD</b> 38</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#combat-reflexes" >Combat Reflexes</a>, <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="monsterFeats.html#flyby-attack" >Flyby Attack</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a><sup>B</sup>, <a href="../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../coreRulebook/feats.html#mobility" >Mobility</a>, <a href="../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a><sup>B</sup></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +18, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +18, <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> +23, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +7, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +13, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +9</p>
+				<p class="stat-block-title"><b>Greater Air Elemental <span class=stat-block-cr>CR 9</span></b></p>
+				<p class="stat-block-xp"><b>XP 6,400</b></p>
+				<p class="stat-block-1">N Huge <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#air-subtype" >air</a>, <a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +14; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +16</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 25, touch 19, flat-footed 14 (+10 Dex, +1 dodge, +6 natural, &ndash;2 size)</p>
+				<p class="stat-block-1"><b>hp</b> 123 (13d10+52)</p>
+				<p class="stat-block-1"><b>Fort</b> +12, <b>Ref</b> +18, <b>Will</b> +6</p>
+				<p class="stat-block-1"><b>Defensive Abilities</b> air mastery; <b>DR</b> 10/&mdash;; <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> fly 100 ft. (perfect)</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +21 (2d8+7)</p>
+				<p class="stat-block-1"><b>Space </b>15 ft.; <b>Reach </b>15 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> <a href="universalMonsterRules.html#whirlwind" >whirlwind</a> (DC 23)</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 24, <b>Dex</b> 31, <b>Con</b> 18, <b>Int</b> 8, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk</b>+13; <b>CMB</b> +22; <b>CMD</b> 43</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#blind-fight" >Blind-Fight</a>, <a href="../coreRulebook/feats.html#combat-reflexes" >Combat Reflexes</a>, <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="monsterFeats.html#flyby-attack" >Flyby Attack</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a><sup>B</sup>, <a href="../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../coreRulebook/feats.html#mobility" >Mobility</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a>, <a href="../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a><sup>B</sup></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +25, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +23, <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> +27, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +12, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +16, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +15</p>
+				<p class="stat-block-title"><b>Elder Air Elemental <span class=stat-block-cr>CR 11</span></b></p>
+				<p class="stat-block-xp"><b>XP 12,800</b></p>
+				<p class="stat-block-1">N Huge <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#air-subtype" >air</a>, <a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +15; <b>Senses</b> darkvision 60 ft.;<a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +19</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 28, touch 20, flat-footed 16 (+11 Dex, +1 dodge, +8 natural, &ndash;2 size)</p>
+				<p class="stat-block-1"><b>hp</b> 152 (16d10+64)</p>
+				<p class="stat-block-1"><b>Fort</b> +14, <b>Ref</b> +21, <b>Will</b> +7</p>
+				<p class="stat-block-1"><b>Defensive Abilities</b> air mastery; <b>DR</b> 10/&mdash;; <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> fly 100 ft. (perfect)</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +25 (2d8+9)</p>
+				<p class="stat-block-1"><b>Space </b>15 ft.; <b>Reach</b> 15 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> <a href="universalMonsterRules.html#whirlwind" >whirlwind</a> (DC 27)</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 28, <b>Dex</b> 33, <b>Con</b> 18, <b>Int</b> 10, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk</b> +16; <b>CMB</b> +27; <b>CMD</b> 49</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#blind-fight" >Blind-Fight</a>, <a href="../coreRulebook/feats.html#cleave" >Cleave</a>, <a href="../coreRulebook/feats.html#combat-reflexes" >Combat Reflexes</a>, <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="monsterFeats.html#flyby-attack" >Flyby Attack</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a><sup>B</sup>, <a href="../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../coreRulebook/feats.html#mobility" >Mobility</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a>, <a href="../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a><sup>B</sup></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +30, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +30, <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> +34, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +19, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +19, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +22</p>
+				<p>Air elementals are fast, flying creatures made of living air. Primitive and territorial, they resent being summoned or doing the bidding of mortals, and much prefer to spend their time on the Plane of Air, swooping and racing through the endless skies.</p>
+				<p>Although all air elementals of a similar size have identical statistics, the exact appearance of an air elemental can vary wildly between individuals. One might be an animated vortex of wind and smoke, while another might be a smoky bird-like creature with glowing eyes and wind for wings.</p>
+				<p>An air elemental prefers to attack flying or otherwise airbone targets, not only because its mastery over flight gives it a slight advantage, but also because it detests the thought of having to touch the ground. An air elemental can move underwater, and although it is an elemental and thus runs no risk of drowning, it has no ranks in <a href="../coreRulebook/skills/swim.html#swim" >Swim</a> and loses much of its speed and mobility when underwater.</p>
+				<table>
+<thead><tr><th>Elemental</th><th>Height</th><th>Weight</th><th>Whirlwind/Vortex Save DC</th><th>Whirlwind/Vortex Height</th><tr></thead>
+<tbody>
+<tr><td>Small</td><td>4 ft.</td><td>1 lb.</td><td>12</td><td>10&ndash;20 ft.</td></tr>
+<tr><td>Medium</td><td>8 ft.</td><td>2 lbs.</td><td>14</td><td>10&ndash;30 ft.</td></tr>
+<tr><td>Large</td><td>16 ft.</td><td>4 lbs.</td><td>18</td><td>10&ndash;40 ft.</td></tr>
+<tr><td>Huge</td><td>32 ft.</td><td>8 lbs.</td><td>22</td><td>10&ndash;50 ft.</td></tr>
+<tr><td>Greater</td><td>36 ft.</td><td>10 lbs.</td><td>23</td><td>10&ndash;60 ft.</td></tr>
+<tr><td>Elder</td><td>40 ft.</td><td>12 lbs.</td><td>27</td><td>10&ndash;60 ft.</td></tr></tbody>
+</table>
+
+			
+				<h1 id="elemental-earth" class="monster-header">Elemental, Earth</h1>
+			
+				<p class="flavor-text"><i>This hulking, roughly humanoid creature of dirt and stone explodes up from the earth, faceless save for two glowing gemstone eyes.</i></p>
+			
+				<p class="stat-block-title"><b>Earth Elemental</b></p>
+				<p class="stat-block-1"><b>Languages</b> Terran</p>
+				<p class = "stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any (Plane of Earth)</p>
+				<p class="stat-block-1"><b>Organization</b> solitary, pair, or gang (3&ndash;8)</p>
+				<p class="stat-block-1"><b>Treasure</b> none</p>
+				<p class = "stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Earth Glide (Ex)</b> A burrowing earth elemental can pass through stone, dirt, or almost any other sort of earth except metal as easily as a fish swims through water. If protected against fire damage, it can even glide through lava. Its burrowing leaves behind no tunnel or hole, nor does it create any ripple or other sign of its presence. A <i><a href="../coreRulebook/spells/moveEarth.html#move-earth" >move earth</a></i> spell cast on an area containing a burrowing earth elemental flings the elemental back 30 feet, stunning the creature for 1 round unless it succeeds on a DC 15 Fortitude save.</p>
+				<p class="stat-block-1"><b>Earth Mastery (Ex)</b> An earth elemental gains a +1 bonus on attack and damage rolls if both it and its foe are touching the ground. If an opponent is airborne or waterborne, the elemental takes a &ndash;4 penalty on attack and damage rolls. These modifiers apply to bull rush and overrun maneuvers, whether the elemental is initiating or resisting these kinds of attacks. (These modifiers are not included in the statistics block.)</p>
+				<p class="stat-block-title"><b>Small Earth Elemental <span class=stat-block-cr>CR 1</span></b></p>
+				<p class="stat-block-xp"><b>XP 400</b></p>
+				<p class="stat-block-1">N Small <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#earth-subtype" >earth</a>, <a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init</b> &ndash;1; <b>Senses</b> darkvision 60 ft., tremorsense 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +4</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 17, touch 10, flat-footed 17 (&ndash;1 Dex, +7 natural, +1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 13 (2d10+2)</p>
+				<p class="stat-block-1"><b>Fort</b> +4, <b>Ref</b> &ndash;1, <b>Will</b> +3</p>
+				<p class="stat-block-1"><b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 20 ft., burrow 20 ft., earth glide</p>
+				<p class="stat-block-1"><b>Melee</b> slam +6 (1d6+4)</p>
+				<p class="stat-block-1"><b>Special Attacks</b> earth mastery</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 16, <b>Dex</b> 8, <b>Con </b>13,<b> Int</b> 4,<b> Wis</b> 11,<b> Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk</b> +2; <b>CMB</b> +4; <b>CMD</b> 13</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#improved-bull-rush" >Improved Bull Rush</a><sup>B</sup>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/appraise.html#appraise" >Appraise</a> +1, <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +7, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (dungeoneering) +1, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +1, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +4, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +7</p>
+				<p class="stat-block-title"><b>Medium Earth Elemental <span class=stat-block-cr>CR 3</span></b></p>
+				<p class="stat-block-xp"><b>XP 800</b></p>
+				<p class="stat-block-1">N Medium <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#earth-subtype" >earth</a>, <a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init </b>&ndash;1; <b>Senses</b> darkvision 60 ft., tremorsense 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +7</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 18, touch 9, flat-footed 18 (&ndash;1 Dex, +9 natural)</p>
+				<p class="stat-block-1"><b>hp</b> 34 (4d10+12)</p>
+				<p class="stat-block-1"><b>Fort</b> +7, <b>Ref</b> +0, <b>Will</b> +4</p>
+				<p class="stat-block-1"><b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 20 ft., burrow 20 ft., earth glide</p>
+				<p class="stat-block-1"><b>Melee</b> slam +9 (1d8+7)</p>
+				<p class="stat-block-1"><b>Special Attacks</b> earth mastery</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 20, <b>Dex</b> 8, <b>Con </b>17, <b>Int</b> 4, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk </b>+4; <b>CMB</b> +9; <b>CMD</b> 18</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#cleave" >Cleave</a>, <a href="../coreRulebook/feats.html#improved-bull-rush" >Improved Bull Rush</a><sup>B</sup>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/appraise.html#appraise" >Appraise</a> +1, <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +10, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (dungeoneering) +2, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +2, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +7, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +3</p>
+				<p class="stat-block-title"><b>Large Earth Elemental <span class=stat-block-cr>CR 5</span></b></p>
+				<p class="stat-block-xp"><b>XP 1,600</b></p>
+				<p class="stat-block-1">N Large <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#earth-subtype" >earth</a>, <a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init </b>&ndash;1; <b>Senses</b> darkvision 60 ft., tremorsense 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +11</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 18, touch 8, flat-footed 18 (&ndash;1 Dex, +10 natural, &ndash;1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 68 (8d10+24)</p>
+				<p class="stat-block-1"><b>Fort</b> +9, <b>Ref</b> +1, <b>Will</b> +6</p>
+				<p class="stat-block-1"><b>DR</b> 5/&mdash;; <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 20 ft., burrow 20 ft., earth glide</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +14 (2d6+7)</p>
+				<p class="stat-block-1"><b>Space </b>10 ft.; <b>Reach</b> 10 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> earth mastery</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 24, <b>Dex</b> 8, <b>Con</b> 17, <b>Int</b> 6, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk </b>+8; <b>CMB</b> +16; <b>CMD</b> 25</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#cleave" >Cleave</a>, <a href="../coreRulebook/feats.html#greater-bull-rush" >Greater Bull Rush</a>, <a href="../coreRulebook/feats.html#improved-bull-rush" >Improved Bull Rush</a><sup>B</sup>, <a href="../coreRulebook/feats.html#improved-overrun" >Improved Overrun</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/appraise.html#appraise" >Appraise</a> +6, <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +15, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (dungeoneering) +3, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +6, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +11, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +5</p>
+				<p class="stat-block-title"><b>Huge Earth Elemental <span class=stat-block-cr>CR 7</span></b></p>
+				<p class="stat-block-xp"><b>XP 3,200</b></p>
+				<p class="stat-block-1">N Huge <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#earth-subtype" >earth</a>, <a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init </b>&ndash;1; <b>Senses</b> darkvision 60 ft., tremorsense 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +13</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 19, touch 7, flat-footed 19 (&ndash;1 Dex, +12 natural, &ndash;2 size)</p>
+				<p class="stat-block-1"><b>hp</b> 95 (10d10+40)</p>
+				<p class="stat-block-1"><b>Fort</b> +11, <b>Ref</b> +2, <b>Will</b> +7</p>
+				<p class="stat-block-1"><b>DR</b> 5/&mdash;; <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 20 ft., burrow 20 ft., earth glide</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +17 (2d8+9)</p>
+				<p class="stat-block-1"><b>Space </b>15 ft.; <b>Reach</b> 15 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> earth mastery</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 28, <b>Dex</b> 8, <b>Con </b>19, <b>Int</b> 6, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk</b> +10; <b>CMB</b> +21; <b>CMD</b> 30</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="monsterFeats.html#awesome-blow" >Awesome Blow</a>, <a href="../coreRulebook/feats.html#cleave" >Cleave</a>, <a href="../coreRulebook/feats.html#greater-bull-rush" >Greater Bull Rush</a>, <a href="../coreRulebook/feats.html#improved-bull-rush" >Improved Bull Rush</a><sup>B</sup>, <a href="../coreRulebook/feats.html#improved-overrun" >Improved Overrun</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/appraise.html#appraise" >Appraise</a> +6, <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +18, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (dungeoneering) +4, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +7, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +13, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +4</p>
+				<p class="stat-block-title"><b>Greater Earth Elemental <span class=stat-block-cr>CR 9</span></b></p>
+				<p class="stat-block-xp"><b>XP 6,400</b></p>
+				<p class="stat-block-1">N Huge <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#earth-subtype" >earth</a>, <a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init </b>&ndash;1; <b>Senses</b> darkvision 60 ft., tremorsense 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +16</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1">AC 21, touch 7, flat-footed 21, (&ndash;1 Dex, +14 natural, &ndash;2 size)</p>
+				<p class="stat-block-1"><b>hp</b> 136 (13d10+65)</p>
+				<p class="stat-block-1"><b>Fort</b> +13, <b>Ref</b> +3, <b>Will</b> +8</p>
+				<p class="stat-block-1"><b>DR</b> 10/&mdash;; <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 20 ft., burrow 20 ft., earth glide</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +21 (2d10+10)</p>
+				<p class="stat-block-1"><b>Space </b>15 ft.; <b>Reach </b>15 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> earth mastery</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 30, <b>Dex</b> 8, <b>Con</b> 21, <b>Int</b> 8, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk </b>+13; <b>CMB</b> +25; <b>CMD</b> 34</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="monsterFeats.html#awesome-blow" >Awesome Blow</a>, <a href="../coreRulebook/feats.html#cleave" >Cleave</a>, <a href="../coreRulebook/feats.html#greater-bull-rush" >Greater Bull Rush</a>, <a href="../coreRulebook/feats.html#greater-overrun" >Greater Overrun</a>, <a href="../coreRulebook/feats.html#improved-bull-rush" >Improved Bull Rush</a><sup>B</sup>, <a href="../coreRulebook/feats.html#improved-overrun" >Improved Overrun</a>, <a href="../coreRulebook/feats.html#improved-sunder" >Improved Sunder</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/appraise.html#appraise" >Appraise</a> +10, <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +25, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (dungeoneering) +10, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +13, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +16, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +7</p>
+				<p class="stat-block-title"><b>Elder Earth Elemental <span class=stat-block-cr>CR 11</span></b></p>
+				<p class="stat-block-xp"><b>XP 12,800</b></p>
+				<p class="stat-block-1">N Huge <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#earth-subtype" >earth</a>, <a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>)</p>
+				<p class="stat-block-1"><b>Init </b>&ndash;1; <b>Senses</b> darkvision 60 ft., tremorsense 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +19</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 23, touch 7, flat-footed 23 (&ndash;1 Dex, +16 natural, &ndash;2 size)</p>
+				<p class="stat-block-1"><b>hp</b> 168 (16d10+80)</p>
+				<p class="stat-block-1"><b>Fort</b> +15, <b>Ref</b> +4, <b>Will</b> +10</p>
+				<p class="stat-block-1"><b>DR</b> 10/&mdash;; <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 20 ft., burrow 20 ft., earth glide</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +26 (2d10+12/19&ndash;20)</p>
+				<p class="stat-block-1"><b>Space </b>15 ft.; <b>Reach</b> 15 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> earth mastery</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 34, <b>Dex</b> 8, <b>Con</b> 21, <b>Int</b> 10, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk</b> +16; <b>CMB</b> +30; <b>CMD</b> 39</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="monsterFeats.html#awesome-blow" >Awesome Blow</a>, <a href="../coreRulebook/feats.html#cleave" >Cleave</a>, <a href="../coreRulebook/feats.html#greater-bull-rush" >Greater Bull Rush</a>, <a href="../coreRulebook/feats.html#greater-overrun" >Greater Overrun</a>, <a href="../coreRulebook/feats.html#improved-bull-rush" >Improved Bull Rush</a><sup>B</sup>, <a href="../coreRulebook/feats.html#improved-critical" >Improved Critical</a> (slam), <a href="../coreRulebook/feats.html#improved-overrun" >Improved Overrun</a>, <a href="../coreRulebook/feats.html#improved-sunder" >Improved Sunder</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/appraise.html#appraise" >Appraise</a> +19, <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +31, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (dungeoneering) +19, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +19, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +19, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +10</p><table>
+<thead><tr><th>Elemental</th><th>Height</th><th>Weight</th><tr></thead>
+<tbody>
+<tr><td>Small</td><td>4 ft.</td><td>80 lbs.</td></tr>
+<tr><td>Medium</td><td>8 ft.</td><td>750 lbs.</td></tr>
+<tr><td>Large</td><td>16 ft.</td><td>6,000 lbs.</td></tr>
+<tr><td>Huge</td><td>32 ft.</td><td>48,000 lbs.</td></tr>
+<tr><td>Greater</td><td>36 ft.</td><td>54,000 lbs.</td></tr>
+<tr><td>Elder</td><td>40 ft.</td><td>60,000 lbs.</td></tr></tbody></table>
+
+				<p>Earth elementals are plodding, stubborn creatures made of living stone or earth. When utterly still, they resemble a heap of stone or a small hill.</p>
+				<p>When an earth elemental lumbers into action, its actual appearance can vary, although its statistics remain identical to other elementals of its size. Most earth elementals look like terrestrial animals made out of rock, earth, or even crystal, with glowing gemstones for eyes. Larger earth elementals often have a stony humanoid appearance. Bits of vegetation frequently grow in the soil that makes up parts of an earth elemental's body.</p>
+			
+				<h1 id="elemental-fire" class="monster-header">Elemental, Fire</h1>
+			
+				<p class="flavor-text"><i>This creature looks like a living, mobile bonfire, tongues of flame reaching out in search of things to burn.</i></p>
+			
+				<p class="stat-block-title"><b>Fire Elemental</b></p>
+				<p class="stat-block-1"><b>Languages</b> Ignan</p>
+				<p class = "stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any (Plane of Fire)</p>
+				<p class="stat-block-1"><b>Organization</b> solitary, pair, or gang (3&ndash;8)</p>
+				<p class="stat-block-1"><b>Treasure</b> none</p>
+				<p class="stat-block-title"><b>Small Fire Elemental <span class=stat-block-cr>CR 1</span></b></p>
+				<p class="stat-block-xp"><b>XP 400</b></p>
+				<p class="stat-block-1">N Small <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>, <a href="creatureTypes.html#fire-subtype" >fire</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +5; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +4</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 16, touch 13, flat-footed 14 (+1 Dex, +1 dodge, +3 natural, +1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 11 (2d10)</p>
+				<p class="stat-block-1"><b>Fort</b> +3, <b>Ref</b> +4, <b>Will</b> +0</p>
+				<p class="stat-block-1"><b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a>, fire</p>
+				<p class="stat-block-1"><b>Weaknesses</b> vulnerability to cold</p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 50 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> slam +4 (1d4 plus burn)</p>
+				<p class="stat-block-1"><b>Special Attacks</b> <a href="universalMonsterRules.html#burn" >burn</a> (1d4, DC 11)</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 10, <b>Dex</b> 13, <b>Con</b> 10, <b>Int</b> 4, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk</b> +2; <b>CMB </b>+1; <b>CMD</b> 13</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a><sup>B</sup>, <a href="../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a><sup>B</sup></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +5, <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +4, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +5, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +4, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +1, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +4</p>
+				<p class="stat-block-title"><b>Medium Fire Elemental <span class=stat-block-cr>CR 3</span></b></p>
+				<p class="stat-block-xp"><b>XP 800</b></p>
+				<p class="stat-block-1">N Medium <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>, <a href="creatureTypes.html#fire-subtype" >fire</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +7; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +7</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 17, touch 14, flat-footed 13 (+3 Dex, +1 dodge, +3 natural)</p>
+				<p class="stat-block-1"><b>hp</b> 30 (4d10+8)</p>
+				<p class="stat-block-1"><b>Fort</b> +6, <b>Ref</b> +7, <b>Will</b> +1</p>
+				<p class="stat-block-1"><b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a>, fire</p>
+				<p class="stat-block-1"><b>Weaknesses </b>vulnerability to cold</p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 50 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> slam +7 (1d6+1 plus burn)</p>
+				<p class="stat-block-1"><b>Special Attacks</b> <a href="universalMonsterRules.html#burn" >burn</a> (1d6, DC 14)</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 12, <b>Dex</b> 17, <b>Con</b> 14, <b>Int</b> 4, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk </b>+4; <b>CMB</b> +5; <b>CMD</b> 19</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a><sup>B</sup>, <a href="../coreRulebook/feats.html#mobility" >Mobility</a>, <a href="../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a><sup>B</sup></p>
+				<p class="stat-block-1"><b>Skills </b><a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +8, <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +5, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +8, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +5, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +1, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +7</p>
+				<p class="stat-block-title"><b>Large Fire Elemental <span class=stat-block-cr>CR 5</span></b></p>
+				<p class="stat-block-xp"><b>XP 1,600</b></p>
+				<p class="stat-block-1">N Large <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>, <a href="creatureTypes.html#fire-subtype" >fire</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +9; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +11</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 19, touch 15, flat-footed 13 (+5 Dex, +1 dodge, +4 natural, &ndash;1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 60 (8d10+16)</p>
+				<p class="stat-block-1"><b>Fort</b> +8, <b>Ref</b> +11, <b>Will</b> +4</p>
+				<p class="stat-block-1"><b>DR</b> 5/&mdash;; <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a>, fire</p>
+				<p class="stat-block-1"><b>Weaknesses </b>vulnerability to cold</p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 50 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +12 (1d8+2 plus burn)</p>
+				<p class="stat-block-1"><b>Space </b>10 ft.; <b>Reach</b> 10 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> <a href="universalMonsterRules.html#burn" >burn</a> (1d8, DC 16)</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 14, <b>Dex</b> 21, <b>Con</b> 14, <b>Int</b> 6, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk </b>+8; <b>CMB</b> +11; <b>CMD</b> 27</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a><sup>B</sup>, <a href="../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../coreRulebook/feats.html#mobility" >Mobility</a>, <a href="../coreRulebook/feats.html#spring-attack" >Spring Attack</a>, <a href="../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a><sup>B</sup></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +14, <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +9, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +12, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +9, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +5, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +11</p>
+				<p class="stat-block-title"><b>Huge Fire Elemental <span class=stat-block-cr>CR 7</span></b></p>
+				<p class="stat-block-xp"><b>XP 3,200</b></p>
+				<p class="stat-block-1">N Huge <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>, <a href="creatureTypes.html#fire-subtype" >fire</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +11; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +13</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 21, touch 16, flat-footed 13 (+7 Dex, +1 dodge, +5 natural, &ndash;2 size)</p>
+				<p class="stat-block-1"><b>hp</b> 85 (10d10+30)</p>
+				<p class="stat-block-1"><b>Fort</b> +10, <b>Ref</b> +14, <b>Will</b> +5</p>
+				<p class="stat-block-1"><b>DR</b> 5/&mdash;, <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a>, fire</p>
+				<p class="stat-block-1"><b>Weaknesses </b>vulnerability to cold</p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 60 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +15 (2d6+4 plus burn)</p>
+				<p class="stat-block-1"><b>Space </b>15 ft.; <b>Reach</b> 15 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> <a href="universalMonsterRules.html#burn" >burn</a> (2d6, DC 18)</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 18, <b>Dex</b> 25, <b>Con</b> 16, <b>Int</b> 6, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk</b> +10; <b>CMB</b> +16; <b>CMD</b> 34</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#combat-reflexes" >Combat Reflexes</a>, <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a><sup>B</sup>, <a href="../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../coreRulebook/feats.html#mobility" >Mobility</a>, <a href="../coreRulebook/feats.html#spring-attack" >Spring Attack</a>, <a href="../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a><sup>B</sup></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +16, <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +13, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +16, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +9, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +7, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +13</p>
+				<p class="stat-block-title"><b>Greater Fire Elemental <span class=stat-block-cr>CR 9</span></b></p>
+				<p class="stat-block-xp"><b>XP 6,400</b></p>
+				<p class="stat-block-1">N Huge <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>, <a href="creatureTypes.html#fire-subtype" >fire</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +12; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +16</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 23, touch 17, flat-footed 14 (+8 Dex, +1 dodge, +6 natural, &ndash;2 size)</p>
+				<p class="stat-block-1"><b>hp</b> 123 (13d10+52)</p>
+				<p class="stat-block-1"><b>Fort</b> +12, <b>Ref</b> +16, <b>Will</b> +6</p>
+				<p class="stat-block-1"><b>DR</b> 10/&mdash;, <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a>, fire</p>
+				<p class="stat-block-1"><b>Weaknesses </b>vulnerability to cold</p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 60 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +19 (2d8+7 plus burn)</p>
+				<p class="stat-block-1"><b>Space </b>15 ft.; <b>Reach</b> 15 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> <a href="universalMonsterRules.html#burn" >burn</a> (2d8, DC 20)</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 24, <b>Dex</b> 27, <b>Con</b> 18, <b>Int</b> 8, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk</b> +13; <b>CMB</b> +22; <b>CMD</b> 41</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#blind-fight" >Blind-Fight</a>, <a href="../coreRulebook/feats.html#combat-reflexes" >Combat Reflexes</a>, <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a><sup>B</sup>, <a href="../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../coreRulebook/feats.html#mobility" >Mobility</a>, <a href="../coreRulebook/feats.html#spring-attack" >Spring Attack</a>, <a href="../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a><sup>B</sup>, <a href="../coreRulebook/feats.html#wind-stance" >Wind Stance</a></p>
+				<p class="stat-block-1"><b>Skills </b><a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +23, <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +20, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +21, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +15, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +10, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +16</p>
+				<p class="stat-block-title"><b>Elder Fire Elemental <span class=stat-block-cr>CR 11</span></b></p>
+				<p class="stat-block-xp"><b>XP 12,800</b></p>
+				<p class="stat-block-1">N Huge <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>, <a href="creatureTypes.html#fire-subtype" >fire</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +13; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +19</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 26, touch 18, flat-footed 16 (+9 Dex, +1 dodge, +8 natural, &ndash;2 size)</p>
+				<p class="stat-block-1"><b>hp</b> 152 (16d10+64)</p>
+				<p class="stat-block-1"><b>Fort</b> +14, <b>Ref</b> +19, <b>Will</b> +7</p>
+				<p class="stat-block-1"><b>DR</b> 10/&mdash;, <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a>, fire</p>
+				<p class="stat-block-1"><b>Weaknesses </b>vulnerability to cold</p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 60 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +23 (2d8+8 plus burn)</p>
+				<p class="stat-block-1"><b>Space </b>15 ft.; <b>Reach</b> 15 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> <a href="universalMonsterRules.html#burn" >burn</a> (2d10, DC 22)</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 26, <b>Dex</b> 29, <b>Con</b> 18, <b>Int</b> 10, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk </b>+16; <b>CMB</b> +26; <b>CMD</b> 46</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#blind-fight" >Blind-Fight</a>, <a href="../coreRulebook/feats.html#combat-reflexes" >Combat Reflexes</a>, <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a><sup>B</sup>, <a href="../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../coreRulebook/feats.html#lightning-stance" >Lightning Stance</a>, <a href="../coreRulebook/feats.html#mobility" >Mobility</a>, <a href="../coreRulebook/feats.html#spring-attack" >Spring Attack</a>, <a href="../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a><sup>B</sup>, <a href="../coreRulebook/feats.html#wind-stance" >Wind Stance</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +28, <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +27, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +28, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +19, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +19, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +19</p>
+				<p>Fire elementals are quick, cruel creatures of living flame. They enjoy frightening beings weaker than themselves, and terrorizing any creature they can set on fire.</p>
+				<p>A fire elemental cannot enter water or any other nonflammable liquid. A body of water is an impassible barrier unless the fire elemental can step or jump over it or the water is covered with a flammable material (such as a layer of oil).</p>
+				<p>Fire elementals vary in appearance&mdash;they usually manifest as coiling serpentine forms made of smoke and flame, but some fire elementals take on shapes more akin to humans, demons, or other monsters in order to increase the terror of their sudden appearance. Features on a fire elemental's body are made by darker bits of flame or patches of semi-stable smoke, ash, and cinders.</p><table>
+<thead><tr><th>Elemental</th><th>Height</th><th>Weight</th><tr></thead>
+<tbody>
+<tr><td>Small</td><td>4 ft.</td><td>1 lb.</td></tr>
+<tr><td>Medium</td><td>8 ft.</td><td>2 lbs.</td></tr>
+<tr><td>Large</td><td>16 ft.</td><td>4 lbs.</td></tr>
+<tr><td>Huge</td><td>32 ft.</td><td>8 lbs.</td></tr>
+<tr><td>Greater</td><td>36 ft.</td><td>10 lbs.</td></tr>
+<tr><td>Elder</td><td>40 ft.</td><td>12 lbs.</td></tr></tbody></table>
+
+			
+				<h1 id="elemental-water" class="monster-header">Elemental, Water</h1>
+			
+				<p class="flavor-text"><i>This translucent creature's shape shifts between a spinning column of water and a crashing wave.</i></p>
+			
+				<p class="stat-block-title"><b>Water Elemental</b></p>
+				<p class="stat-block-1"><b>Languages</b> Aquan</p>
+				<p class = "stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any (Plane of Water)</p>
+				<p class="stat-block-1"><b>Organization</b> solitary, pair, or gang (3&ndash;8)</p>
+				<p class="stat-block-1"><b>Treasure</b> none</p>
+				<p class = "stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Drench (Ex)</b> The elemental's touch puts out nonmagical flames of Large size or smaller. The creature can dispel magical fire it touches as <i><a href="../coreRulebook/spells/dispelMagic.html#dispel-magic" >dispel magic</a></i> (caster level equals elemental's HD).</p>
+				<p class="stat-block-1"><b>Vortex (Su) </b>A water elemental can create a whirlpool as a standard action, at will. This ability functions identically to the <a href="universalMonsterRules.html#whirlwind">whirlwind special attack</a>, but can only form underwater and cannot leave the water.</p>
+				<p class="stat-block-1"><b>Water Mastery (Ex)</b> A water elemental gains a +1 bonus on attack and damage rolls if both it and its opponent are touching water. If the opponent or the elemental is touching the ground, the elemental takes a &ndash;4 penalty on attack and damage rolls. These modifiers apply to bull rush and overrun maneuvers, whether the elemental is initiating or resisting these kinds of attacks.</p>
+				<p class="stat-block-title"><b>Small Water Elemental <span class=stat-block-cr>CR 1</span></b></p>
+				<p class="stat-block-xp"><b>XP 400</b></p>
+				<p class="stat-block-1">N Small <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>, <a href="creatureTypes.html#water-subtype" >water</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +0; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +4</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 17, touch 11, flat-footed 17 (+6 natural, +1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 13 (2d10+2)</p>
+				<p class="stat-block-1"><b>Fort</b> +4, <b>Ref</b> +3, <b>Will</b> +0</p>
+				<p class="stat-block-1"><b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 20 ft., swim 90 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> slam +5 (1d6+3)</p>
+				<p class="stat-block-1"><b>Special Attacks</b> drench, vortex (DC 13), water mastery</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 14, <b>Dex</b> 10, <b>Con</b> 13, <b>Int</b> 4, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk</b> +2; <b>CMB</b> +3; <b>CMD</b> 13</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +4, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +4, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +1, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +4, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +8, <a href="../coreRulebook/skills/swim.html#swim" >Swim</a> +14</p>
+				<p class="stat-block-title"><b>Medium Water Elemental <span class=stat-block-cr>CR 3</span></b></p>
+				<p class="stat-block-xp"><b>XP 800</b></p>
+				<p class="stat-block-1">N Medium <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>, <a href="creatureTypes.html#water-subtype" >water</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +1; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +5</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 17, touch 11, flat-footed 16 (+1 Dex, +6 natural)</p>
+				<p class="stat-block-1"><b>hp</b> 30 (4d10+8)</p>
+				<p class="stat-block-1"><b>Fort</b> +6, <b>Ref</b> +5, <b>Will</b> +1</p>
+				<p class="stat-block-1"><b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 20 ft., swim 90 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> slam +7 (1d8+4)</p>
+				<p class="stat-block-1"><b>Special Attacks</b> drench, vortex (DC 15), water mastery</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 16, <b>Dex</b> 12, <b>Con</b> 15, <b>Int</b> 4, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk</b> +4; <b>CMB</b> +7; <b>CMD</b> 18</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#cleave" >Cleave</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +6, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +6, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +2, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +5, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +6, <a href="../coreRulebook/skills/swim.html#swim" >Swim</a> +16</p>
+				<p class="stat-block-title"><b>Large Water Elemental <span class=stat-block-cr>CR 5</span></b></p>
+				<p class="stat-block-xp"><b>XP 1,600</b></p>
+				<p class="stat-block-1">N Large <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>, <a href="creatureTypes.html#water-subtype" >water</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +2; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +9</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 18, touch 12, flat-footed 15 (+2 Dex, +1 dodge, +6 natural, &ndash;1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 68 (8d10+24)</p>
+				<p class="stat-block-1"><b>Fort</b> +9, <b>Ref</b> +8, <b>Will</b> +2</p>
+				<p class="stat-block-1"><b>DR</b> 5/&mdash;; <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 20 ft., swim 90 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +12 (1d8+5)</p>
+				<p class="stat-block-1"><b>Space </b>10 ft.; <b>Reach</b> 10 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> drench, vortex (DC 19), water mastery</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 20, <b>Dex</b> 14, <b>Con</b> 17, <b>Int</b> 6, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk </b>+8; <b>CMB</b> +14; <b>CMD</b> 27</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#cleave" >Cleave</a>, <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../coreRulebook/feats.html#great-cleave" >Great Cleave</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +9, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +11, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +5, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +9, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +5, <a href="../coreRulebook/skills/swim.html#swim" >Swim</a> +24</p>
+				<p class="stat-block-title"><b>Huge Water Elemental <span class=stat-block-cr>CR 7</span></b></p>
+				<p class="stat-block-xp"><b>XP 3,200</b></p>
+				<p class="stat-block-1">N Huge <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>, <a href="creatureTypes.html#water-subtype" >water</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +4; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +13</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 21, touch 13, flat-footed 16 (+4 Dex, +1 dodge, +8 natural, &ndash;2 size)</p>
+				<p class="stat-block-1"><b>hp</b> 95 (10d10+40)</p>
+				<p class="stat-block-1"><b>Fort</b> +11, <b>Ref</b> +11, <b>Will</b> +3</p>
+				<p class="stat-block-1"><b>DR</b> 5/&mdash;; <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 20 ft., swim 90 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +15 (2d6+7)</p>
+				<p class="stat-block-1"><b>Space </b>15 ft.; <b>Reach </b>15 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> drench, vortex (DC 22), water mastery</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 24, <b>Dex</b> 18, <b>Con</b> 19, <b>Int</b> 6, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk</b> +10; <b>CMB</b> +19; <b>CMD</b> 34</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#cleave" >Cleave</a>, <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../coreRulebook/feats.html#great-cleave" >Great Cleave</a>, <a href="../coreRulebook/feats.html#improved-bull-rush" >Improved Bull Rush</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +11, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +15, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +7, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +13, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +3, <a href="../coreRulebook/skills/swim.html#swim" >Swim</a> +26</p>
+				<p class="stat-block-title"><b>Greater Water Elemental <span class=stat-block-cr>CR 9</span></b></p>
+				<p class="stat-block-xp"><b>XP 6,400</b></p>
+				<p class="stat-block-1">N Huge <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>, <a href="creatureTypes.html#water-subtype" >water</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +5; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +16</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 23, touch 14, flat-footed 17 (+5 Dex, +1 dodge, +9 natural, &ndash;2 size)</p>
+				<p class="stat-block-1"><b>hp</b> 123 (13d10+52)</p>
+				<p class="stat-block-1"><b>Fort</b> +12, <b>Ref</b> +15, <b>Will</b> +4</p>
+				<p class="stat-block-1"><b>DR</b> 10/&mdash;; <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 20 ft., swim 90 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +20 (2d8+9)</p>
+				<p class="stat-block-1"><b>Space </b>15 ft.; <b>Reach </b>15 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> drench, vortex (DC 25), water mastery</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 28, <b>Dex</b> 20, <b>Con</b> 19, <b>Int</b> 8, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk</b> +13; <b>CMB</b> +24; <b>CMD</b> 40</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#cleave" >Cleave</a>, <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../coreRulebook/feats.html#great-cleave" >Great Cleave</a>, <a href="../coreRulebook/feats.html#improved-bull-rush" >Improved Bull Rush</a>, <a href="../coreRulebook/feats.html#improved-sunder" >Improved Sunder</a>, <a href="../coreRulebook/feats.html#lightning-reflexes" >Lightning Reflexes</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +18, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +20, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +12, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +16, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +10, <a href="../coreRulebook/skills/swim.html#swim" >Swim</a> +30</p>
+				<p class="stat-block-title"><b>Elder Water Elemental <span class=stat-block-cr>CR 11</span></b></p>
+				<p class="stat-block-xp"><b>XP 12,800</b></p>
+				<p class="stat-block-1">N Huge <a href="creatureTypes.html#outsider" >outsider</a> (<a href="creatureTypes.html#elemental-subtype" >elemental</a>, <a href="creatureTypes.html#extraplanar-subtype" >extraplanar</a>, <a href="creatureTypes.html#water-subtype" >water</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +6; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +19</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 24, touch 15, flat-footed 17 (+6 Dex, +1 dodge, +9 natural, &ndash;2 size)</p>
+				<p class="stat-block-1"><b>hp</b> 152 (16d10+64)</p>
+				<p class="stat-block-1"><b>Fort</b> +14, <b>Ref</b> +18, <b>Will</b> +5</p>
+				<p class="stat-block-1"><b>DR</b> 10/&mdash;; <b>Immune</b> <a href="creatureTypes.html#elemental-subtype" >elemental traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 20 ft., swim 90 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +24 (2d10+10/19&ndash;20)</p>
+				<p class="stat-block-1"><b>Space </b>15 ft.; <b>Reach </b>15 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> drench, vortex (DC 28), water mastery</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 30, <b>Dex</b> 22, <b>Con</b> 19, <b>Int</b> 10, <b>Wis</b> 11, <b>Cha</b> 11</p>
+				<p class="stat-block-1"><b>Base Atk</b> +16; <b>CMB</b> +28; <b>CMD</b> 45</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#cleave" >Cleave</a>, <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../coreRulebook/feats.html#great-cleave" >Great Cleave</a>, <a href="../coreRulebook/feats.html#improved-bull-rush" >Improved Bull Rush</a>, <a href="../coreRulebook/feats.html#improved-critical" >Improved Critical</a> (slam), <a href="../coreRulebook/feats.html#improved-sunder" >Improved Sunder</a>, <a href="../coreRulebook/feats.html#lightning-reflexes" >Lightning Reflexes</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +25, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +25, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +19, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +19, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +17, <a href="../coreRulebook/skills/swim.html#swim" >Swim</a> +37</p>
+				<p>Water elementals are patient, relentless creatures made of living fresh or salt water. They prefer to hide or drag their opponents into the water to gain an advantage.</p>
+				<p>As with other elementals, all water elementals have their own unique shapes and appearances. Most appear as wave-like creatures with vaguely humanoid faces and smaller wave "arms" to either side. Another common form is that of any aquatic creature, such as a shark or octopus, but made entirely out of water.</p><table>
+<thead><tr><th>Elemental</th><th>Height</th><th>Weight</th><th>Vortex Save DC</th><th>Vortex Height</th><tr></thead>
+<tbody><tr><td>Small</td><td>4 ft.</td><td>34 lb.</td><td>13</td><td>10&ndash;20 ft.</td></tr>
+<tr><td>Medium</td><td>8 ft.</td><td>280 lbs.</td><td>15</td><td>10&ndash;30 ft.</td></tr>
+<tr><td>Large</td><td>16 ft.</td><td>2,250 lbs.</td><td>19</td><td>10&ndash;40 ft.</td></tr>
+<tr><td>Huge</td><td>32 ft.</td><td>18,000 lbs.</td><td>22</td><td>10&ndash;50 ft.</td></tr></tbody>
+<tr><td>Greater</td><td>36 ft.</td><td>21,000 lbs.</td><td>25</td><td>10&ndash;60 ft.</td></tr>
+<tr><td>Elder</td><td>40 ft.</td><td>24,000 lbs.</td><td>28</td><td>10&ndash;60 ft.</td></tr></tbody></table>
+
+			</div>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Elemental",globalNavPath=[{ href: '/pathfinderRPG/prd/bestiary/monsterIndex.html', name: 'Monster Index' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

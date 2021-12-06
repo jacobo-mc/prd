@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Wizard</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "wizard.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../races.html">Races</a></li>
+						<li><a href = "../classes.html">Classes</a></li>
+						<li><a href = "../usingSkills.html">Using Skills</a></li>
+						<li><a href = "../skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../equipment.html">Equipment</a></li>
+						<li><a href = "../additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../combat.html">Combat</a></li>
+						<li><a href = "../magic.html">Magic</a></li>
+						<li><a href = "../spellLists.html">Spell Lists</a></li>
+						<li><a href = "../spellIndex.html">Spell Index</a></li>
+						<li><a href = "../prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../environment.html">Environment</a></li>
+						<li><a href = "../nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../magicItems.html">Magic Items</a></li>
+						<li><a href = "../glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "wizard.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "wizard.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "wizard.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="wizard">Wizard</h1>
+				<p>Beyond the veil of the mundane hide the secrets of absolute power. The works of beings beyond mortals, the legends of realms where gods and spirits tread, the lore of creations both wondrous and terrible&mdash;such mysteries call to those with the ambition and the intellect to rise above the common folk to grasp true might. Such is the path of the wizard. These shrewd magic-users seek, collect, and covet esoteric knowledge, drawing on cultic arts to work wonders beyond the abilities of mere mortals. While some might choose a particular field of magical study and become masters of such powers, others embrace versatility, reveling in the unbounded wonders of all magic. In either case, wizards prove a cunning and potent lot, capable of smiting their foes, empowering their allies, and shaping the world to their every desire.</p>
+				<p><b>Role</b>: While universalist wizards might study to prepare themselves for any manner of danger, specialist wizards research schools of magic that make them exceptionally skilled within a specific focus. Yet no matter their specialty, all wizards are masters of the impossible and can aid their allies in overcoming any danger.</p>
+				<p><b>Alignment</b>: Any.</p>
+				<p><b>Hit Die</b>: d6.</p>
+				<h2>Class Skills</h2>
+				<p>The wizard's class skills are <a href="../skills/appraise.html#appraise" >Appraise</a> (<a href = "../gettingStarted.html#intelligence" >Int</a>), <a href="../skills/craft.html#craft" >Craft</a> (<a href = "../gettingStarted.html#intelligence" >Int</a>), <a href="../skills/fly.html#fly" >Fly</a> (<a href = "../gettingStarted.html#dexterity" >Dex</a>), <a href="../skills/knowledge.html#knowledge" >Knowledge</a> (all) (<a href = "../gettingStarted.html#intelligence" >Int</a>), <a href="../skills/linguistics.html#linguistics" >Linguistics</a> (<a href = "../gettingStarted.html#intelligence" >Int</a>), <a href="../skills/profession.html#profession" >Profession</a> (<a href = "../gettingStarted.html#wisdom" >Wis</a>), and <a href="../skills/spellcraft.html#spellcraft" >Spellcraft</a> (<a href = "../gettingStarted.html#intelligence" >Int</a>). </p>
+				<p><b>Skill Ranks per Level</b>: 2 + <a href = "../gettingStarted.html#intelligence" >Int</a> modifier.</p>
+<div class = "table">
+<table id="table-3-16-wizard"><caption>Table: Wizard</caption>
+<thead><tr><th rowspan="2">Level</th><th rowspan="2">Base Attack Bonus</th><th rowspan="2">Fort Save</th><th rowspan="2">Ref Save</th><th rowspan="2">Will Save</th><th rowspan="2">Special</th><th colspan="10">Spells per Day</th></tr>
+<tr><th>0</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th><th>6th</th><th>7th</th><th>8th</th><th>9th</th></tr></thead>
+<tr><td>1st</td><td>+0</td><td>+0</td><td>+0</td><td>+2</td><td style="white-space: normal;"><a href="wizard.html#arcane-bond" >Arcane bond</a>, <a href="wizard.html#arcane-school" >arcane school</a>,<a href="wizard.html#cantrips-wizard" >cantrips</a>, <a href="wizard.html#scribe-scroll" >Scribe Scroll</a></td><td>3</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>2nd</td><td>+1</td><td>+0</td><td>+0</td><td>+3</td><td style="white-space: normal;"></td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>3rd</td><td>+1</td><td>+1</td><td>+1</td><td>+3</td><td style="white-space: normal;"></td><td>4</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>4th</td><td>+2</td><td>+1</td><td>+1</td><td>+4</td><td style="white-space: normal;"></td><td>4</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>5th</td><td>+2</td><td>+1</td><td>+1</td><td>+4</td><td style="white-space: normal;"><a href="wizard.html#bonus-feats-wizard" >Bonus feat</a></td><td>4</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>6th</td><td>+3</td><td>+2</td><td>+2</td><td>+5</td><td style="white-space: normal;"></td><td>4</td><td>3</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>7th</td><td>+3</td><td>+2</td><td>+2</td><td>+5</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>8th</td><td>+4</td><td>+2</td><td>+2</td><td>+6</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>9th</td><td>+4</td><td>+3</td><td>+3</td><td>+6</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>10th</td><td>+5</td><td>+3</td><td>+3</td><td>+7</td><td style="white-space: normal;"><a href="wizard.html#bonus-feats-wizard" >Bonus feat</a></td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>11th</td><td>+5</td><td>+3</td><td>+3</td><td>+7</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>12th</td><td>+6/+1</td><td>+4</td><td>+4</td><td>+8</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>13th</td><td>+6/+1</td><td>+4</td><td>+4</td><td>+8</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>14th</td><td>+7/+2</td><td>+4</td><td>+4</td><td>+9</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>15th</td><td>+7/+2</td><td>+5</td><td>+5</td><td>+9</td><td style="white-space: normal;"><a href="wizard.html#bonus-feats-wizard" >Bonus feat</a></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td></tr>
+<tr><td>16th</td><td>+8/+3</td><td>+5</td><td>+5</td><td>+10</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>&mdash;</td></tr>
+<tr><td>17th</td><td>+8/+3</td><td>+5</td><td>+5</td><td>+10</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td></tr>
+<tr><td>18th</td><td>+9/+4</td><td>+6</td><td>+6</td><td>+11</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td></tr>
+<tr><td>19th</td><td>+9/+4</td><td>+6</td><td>+6</td><td>+11</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td></tr>
+<tr><td>20th</td><td>+10/+5</td><td>+6</td><td>+6</td><td>+12</td><td style="white-space: normal;"><a href="wizard.html#bonus-feats-wizard" >Bonus feat</a></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td></tr></table>
+</div>
+				<h2>Class Features</h2>
+				<p>The following are the class features of the wizard.</p>
+				<p><b>Weapon and Armor Proficiency</b>: Wizards are proficient with the club, dagger, heavy crossbow, light crossbow, and quarterstaff, but not with any type of armor or shield. Armor interferes with a wizard's movements, which can cause his spells with somatic components to fail.</p>
+				<p id="spells-wizard"><b>Spells</b>: A wizard casts arcane spells drawn from the sorcerer/wizard spell list presented in <a href = "../spellLists.html">Spell Lists</a>. A wizard must choose and prepare his spells ahead of time.</p>
+				<p>To learn, prepare, or cast a spell, the wizard must have an <a href = "../gettingStarted.html#intelligence" >Intelligence</a> score equal to at least 10 + the spell level. The Difficulty Class for a <a href="../combat.html#saving-throws" >saving throw</a> against a wizard's spell is 10 + the spell level + the wizard's <a href = "../gettingStarted.html#intelligence" >Intelligence</a> modifier.</p>
+				<p>A wizard can cast only a certain number of spells of each spell level per day. His base daily spell allotment is given on Table: Wizard. In addition, he receives bonus spells per day if he has a high <a href = "../gettingStarted.html#intelligence" >Intelligence</a> score (see <a href = "../gettingStarted.html#table-1-3-ability-modifiers-and-bonus-spells" >Table: Ability Modifiers and Bonus Spells</a>).</p>
+				<p>A wizard may know any number of spells. He must choose and prepare his spells ahead of time by getting 8 hours of sleep and spending 1 hour studying his spellbook. While studying, the wizard decides which spells to prepare.</p>
+				<p id="bonus-languages-wizard"><b>Bonus Languages</b>: A wizard may substitute Draconic for one of the bonus languages available to the character because of his race.</p>
+				<p id="arcane-bond"><b>Arcane Bond (Ex or Sp)</b>: At 1st level, wizards form a powerful bond with an object or a creature. This bond can take one of two forms: a <a href="wizard.html#familiars" >familiar</a> or a bonded object. A familiar is a magical pet that enhances the wizard's skills and senses and can aid him in magic, while a bonded object is an item a wizard can use to cast additional spells or to serve as a magical item. Once a wizard makes this choice, it is permanent and cannot be changed. Rules for bonded items are given below, while rules for <a href="wizard.html#familiars">familiars</a> are at the end of this section.</p>
+				<p>Wizards who select a bonded object begin play with one at no cost. Objects that are the subject of an arcane bond must fall into one of the following categories: amulet, ring, staff, wand, or weapon. These objects are always masterwork quality. Weapons acquired at 1st level are not made of any special material. If the object is an amulet or ring, it must be worn to have effect, while staves, wands, and weapons must be held in one hand. If a wizard attempts to cast a spell without his bonded object worn or in hand, he must make a <a href = "../magic.html#concentration" >concentration check</a> or lose the spell. The DC for this check is equal to 20 + the spell's level. If the object is a ring or amulet, it occupies the ring or neck slot accordingly.</p>
+				<p>A bonded object can be used once per day to cast any one spell that the wizard has in his spellbook and is capable of casting, even if the spell is not prepared. This spell is treated like any other spell cast by the wizard, including casting time, duration, and other effects dependent on the wizard's level. This spell cannot be modified by metamagic feats or other abilities. The bonded object cannot be used to cast spells from the wizard's opposition schools (see arcane school).</p>
+				<p>A wizard can add additional magic abilities to his bonded object as if he has the required <a href="../feats.html#item-creation-feats" >item creation feats</a> and if he meets the level prerequisites of the feat. For example, a wizard with a bonded dagger must be at least 5th level to add magic abilities to the dagger (see the Craft Magic Arms and Armor feat in <a href="../feats.html">Feats</a>). If the bonded object is a wand, it loses its wand abilities when its last charge is consumed, but it is not destroyed and it retains all of its bonded object properties and can be used to craft a new wand. The magic properties of a bonded object, including any magic abilities added to the object, only function for the wizard who owns it. If a bonded object's owner dies, or the item is replaced, the object reverts to being an ordinary masterwork item of the appropriate type.</p>
+				<p>If a bonded object is damaged, it is restored to full hit points the next time the wizard prepares his spells. If the object of an arcane bond is lost or destroyed, it can be replaced after 1 week in a special ritual that costs 200 gp per wizard level plus the cost of the masterwork item. This ritual takes 8 hours to complete. Items replaced in this way do not possess any of the additional enchantments of the previous bonded item. A wizard can designate an existing magic item as his bonded item. This functions in the same way as replacing a lost or destroyed item except that the new magic item retains its abilities while gaining the benefits and drawbacks of becoming a bonded item.</p>
+				<p id="arcane-school"><b>Arcane School</b>: A wizard can choose to specialize in one school of magic, gaining additional spells and powers based on that school. This choice must be made at 1st level, and once made, it cannot be changed. A wizard that does not select a school receives the universalist school instead.</p>
+				<p>A wizard that chooses to specialize in one school of magic must select two other schools as his opposition schools, representing knowledge sacrificed in one area of arcane lore to gain mastery in another. A wizard who prepares spells from his opposition schools must use two spell slots of that level to prepare the spell. For example, a wizard with evocation as an opposition school must expend two of his available 3rd-level spell slots to prepare a <i>fireball</i>. In addition, a specialist takes a &ndash;4 penalty on any <a href = "../usingSkills.html#skill-checks" >skill checks</a> made when crafting a magic item that has a spell from one of his opposition schools as a prerequisite. A universalist wizard can prepare spells from any school without restriction.</p>
+				<p>Each arcane school gives the wizard a number of school powers. In addition, specialist wizards receive an additional spell slot of each spell level he can cast, from 1st on up. Each day, a wizard can prepare a spell from his specialty school in that slot. This spell must be in the wizard's spellbook. A wizard can select a spell modified by a metamagic feat to prepare in his school slot, but it uses up a higher-level spell slot. Wizards with the universalist school do not receive a school slot.</p>
+				<p id="cantrips-wizard"><b>Cantrips:</b> Wizards can prepare a number of cantrips, or 0-level spells, each day, as noted on Table: Wizard under "Spells per Day." These spells are cast like any other spell, but they are not expended when cast and may be used again. A wizard can prepare a cantrip from a prohibited school, but it uses up two of his available slots (see below).</p>
+				<p id="scribe-scroll"><b>Scribe Scroll</b>: At 1st level, a wizard gains <a href="../feats.html#scribe-scroll" >Scribe Scroll</a> as a bonus feat. </p>
+				<p id="bonus-feats-wizard"><b>Bonus Feats</b>: At 5th, 10th, 15th, and 20th level, a wizard gains a bonus feat. At each such opportunity, he can choose a <a href="../feats.html#metamagic-feats" >metamagic feat</a>, an <a href="../feats.html#item-creation-feats" >item creation feat</a>, or <a href="../feats.html#spell-mastery" >Spell Mastery</a>. The wizard must still meet all prerequisites for a bonus feat, including caster level minimums. These bonus feats are in addition to the feats that a character of any class gets from advancing levels. The wizard is not limited to the categories of item creation feats, metamagic feats, or Spell Mastery when choosing those feats.</p>
+				<p id="spellbooks"><b>Spellbooks</b>: A wizard must study his spellbook each day to prepare his spells. He cannot prepare any spell not recorded in his spellbook, except for <i><a href="../spells/readMagic.html#read-magic" >read magic</a></i>, which all wizards can prepare from memory.</p>
+				<p>A wizard begins play with a spellbook containing all 0-level wizard spells (except those from his prohibited schools, if any; see Arcane Schools) plus three 1st-level spells of his choice. The wizard also selects a number of additional 1st-level spells equal to his <a href = "../gettingStarted.html#intelligence" >Intelligence</a> modifier to add to the spellbook. At each new wizard level, he gains two new spells of any spell level or levels that he can cast (based on his new wizard level) for his spellbook. At any time, a wizard can also add spells found in other wizards' spellbooks to his own (see <a href = "../magic.html">Magic</a>).</p>
+				<h2 id="arcane-schools-list">Arcane Schools</h2>
+				<p>The following descriptions detail each arcane school and its corresponding powers.</p>
+				<h2 id="abjuration-school">Abjuration School</h2>
+				<p>The abjurer uses magic against itself, and masters the art of defensive and warding magics.</p>
+				<p><i>Resistance <a href = "../glossary.html#extraordinary-abilities-ex" >(Ex)</a></i>: You gain resistance 5 to an energy type of your choice, chosen when you prepare spells. This resistance can be changed each day. At 11th level, this resistance increases to 10. At 20th level, this resistance changes to immunity to the chosen energy type.</p>
+				<p><i>Protective Ward <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></i>: As a standard action, you can create a 10-foot-radius field of protective magic centered on you that lasts for a number of rounds equal to your <a href = "../gettingStarted.html#intelligence" >Intelligence</a> modifier. All allies in this area (including you) receive a +1 deflection bonus to their <a href="../combat.html#armor-class" >AC</a>. This bonus increases by +1 for every five wizard levels you possess. You can use this ability a number of times per day equal to 3 + your <a href = "../gettingStarted.html#intelligence" >Intelligence</a> modifier.</p>
+				<p><i>Energy Absorption <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></i>: At 6th level, you gain an amount of energy absorption equal to 3 times your wizard level per day. Whenever you take energy damage, apply immunity, vulnerability (if any), and resistance first and apply the rest to this absorption, reducing your daily total by that amount. Any damage in excess of your absorption is applied to you normally.</p>
+				<h2 id="conjuration-school">Conjuration School</h2>
+				<p>The conjurer focuses on the study of summoning monsters and magic alike to bend to his will.</p>
+				<p><i>Summoner's Charm <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></i>: Whenever you cast a conjuration (<a href = "../magic.html#summoning" >summoning</a>) spell, increase the duration by a number of rounds equal to 1/2 your wizard level (minimum 1). This increase is not doubled by Extend Spell. At 20th level, you can change the duration of all <i>summon monster</i> spells to permanent. You can have no more than one <i>summon monster</i> spell made permanent in this way at one time. If you designate another <i><a href="../spells/summonMonster.html#summon-monster-i" >summon monster</a> </i>spell as permanent, the previous spell immediately ends.</p>
+				<p><i>Acid Dart <a href = "../glossary.html#spell-like-abilities-sp" >(Sp)</a></i>: As a standard action you can unleash an acid dart targeting any foe within 30 feet as a ranged touch attack. The acid dart deals 1d6 points of acid damage + 1 for every two wizard levels you possess. You can use this ability a number of times per day equal to 3 + your <a href = "../gettingStarted.html#intelligence" >Intelligence</a> modifier. This attack ignores spell resistance.</p>
+				<p><i>Dimensional Steps <a href = "../glossary.html#spell-like-abilities-sp" >(Sp)</a></i>: At 8th level, you can use this ability to teleport up to 30 feet per wizard level per day as a standard action. This teleportation must be used in 5-foot increments and such movement does not provoke an <a href="../combat.html#attacks-of-opportunity" >attack of opportunity</a>. You can bring other willing creatures with you, but you must expend an equal amount of distance for each additional creature brought with you.</p>
+				<h2 id="divination-school">Divination School</h2>
+				<p>Diviners are masters of remote viewing, prophecies, and using magic to explore the world.</p>
+				<p><i>Forewarned <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></i>: You can always act in the surprise round even if you fail to make a <a href="../skills/perception.html#perception" >Perception</a> roll to notice a foe, but you are still considered <a href = "../glossary.html#flat-footed" >flat-footed</a> until you take an action. In addition, you receive a bonus on initiative checks equal to 1/2 your wizard level (minimum +1). At 20th level, anytime you roll initiative, assume the roll resulted in a natural 20.</p>
+				<p><i>Diviner's Fortune <a href = "../glossary.html#spell-like-abilities-sp" >(Sp)</a></i>: When you activate this school power, you can touch any creature as a standard action to give it an insight bonus on all of its attack rolls, <a href = "../usingSkills.html#skill-checks" >skill checks</a>, ability checks, and <a href="../combat.html#saving-throws" >saving throws</a> equal to 1/2 your wizard level (minimum +1) for 1 round. You can use this ability a number of times per day equal to 3 + your <a href = "../gettingStarted.html#intelligence" >Intelligence</a> modifier.</p>
+				<p><i>Scrying Adept <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></i>: At 8th level, you are always aware when you are being observed via magic, as if you had a permanent <i><a href="../spells/detectScrying.html#detect-scrying" >detect scrying</a></i>. In addition, whenever you scry on a subject, treat the subject as one step more familiar to you. Very familiar subjects get a &ndash;10 penalty on their save to avoid your scrying attempts.</p>
+				<h2 id="enchantment-school">Enchantment School</h2>
+				<p>The enchanter uses magic to control and manipulate the minds of his victims.</p>
+				<p><i>Enchanting Smile <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></i>: You gain a +2 enhancement bonus on <a href="../skills/bluff.html#bluff" >Bluff</a>, <a href="../skills/diplomacy.html#diplomacy" >Diplomacy</a>, and <a href="../skills/intimidate.html#intimidate" >Intimidate</a> <a href = "../usingSkills.html#skill-checks" >skill checks</a>. This bonus increases by +1 for every five wizard levels you possess, up to a maximum of +6 at 20th level. At 20th level, whenever you succeed at a <a href="../combat.html#saving-throws" >saving throw</a> against a spell of the enchantment school, that spell is reflected back at its caster, as per <i><a href="../spells/spellTurning.html#spell-turning" >spell turning</a></i>.</p>
+				<p><i>Dazing Touch <a href = "../glossary.html#spell-like-abilities-sp" >(Sp)</a></i>: You can cause a living creature to become <a href = "../glossary.html#dazed" >dazed</a> for 1 round as a melee touch attack. Creatures with more Hit Dice than your wizard level are unaffected. You can use this ability a number of times per day equal to 3 + your <a href = "../gettingStarted.html#intelligence" >Intelligence</a> modifier.</p>
+				<p><i>Aura of Despair <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></i>: At 8th level, you can emit a 30-foot aura of despair for a number of rounds per day equal to your wizard level. Enemies within this aura take a &ndash;2 penalty on ability checks, attack rolls, damage rolls, <a href="../combat.html#saving-throws" >saving throws</a>, and <a href = "../usingSkills.html#skill-checks" >skill checks</a>. These rounds do not need to be consecutive. This is a mind-affecting effect.</p>
+				<h2 id="evocation-school">Evocation School</h2>
+				<p>Evokers revel in the raw power of magic, and can use it to create and destroy with shocking ease.</p>
+				<p><i>Intense Spells <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></i>: Whenever you cast an evocation spell that deals hit point damage, add 1/2 your wizard level to the damage (minimum +1). This bonus only applies once to a spell, not once per missile or ray, and cannot be split between multiple missiles or rays. This bonus damage is not increased by <a href="../feats.html#empower-spell">Empower Spell</a> or similar effects. This damage is of the same type as the spell. At 20th level, whenever you cast an evocation spell you can roll twice to penetrate a creature's spell resistance and take the better result.</p>
+				<p><i>Force Missile</i> <i><a href = "../glossary.html#spell-like-abilities-sp" >(Sp)</a></i>: As a standard action you can unleash a force missile that automatically strikes a foe, as <i><a href="../spells/magicMissile.html#magic-missile" >magic missile</a></i>. The force missile deals 1d4 points of damage plus the damage from your intense spells evocation power. This is a force effect. You can use this ability a number of times per day equal to 3 + your <a href = "../gettingStarted.html#intelligence" >Intelligence</a> modifier.</p>
+				<p><i>Elemental Wall <a href = "../glossary.html#spell-like-abilities-sp" >(Sp)</a></i>: At 8th level, you can create a wall of energy that lasts for a number of rounds per day equal to your wizard level. These rounds do not need to be consecutive. This wall deals acid, cold, electricity, or fire damage, determined when you create it. The elemental wall otherwise functions like <i><a href="../spells/wallOfFire.html#wall-of-fire" >wall of fire</a></i>.</p>
+				<h2 id="illusion-school">Illusion School</h2>
+				<p>Illusionists use magic to weave confounding images, figments, and phantoms to baffle and vex their foes.</p>
+				<p><i>Extended Illusions <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></i>: Any illusion spell you cast with a duration of "concentration" lasts a number of additional rounds equal to 1/2 your wizard level after you stop maintaining concentration (minimum +1 round). At 20th level, you can make one illusion spell with a duration of "concentration" become permanent. You can have no more than one illusion made permanent in this way at one time. If you designate another illusion as permanent, the previous permanent illusion ends. </p>
+				<p><i>Blinding Ray <a href = "../glossary.html#spell-like-abilities-sp" >(Sp)</a></i>: As a standard action you can fire a shimmering ray at any foe within 30 feet as a ranged touch attack. The ray causes creatures to be <a href = "../glossary.html#blinded" >blinded</a> for 1 round. Creatures with more Hit Dice than your wizard level are <a href = "../glossary.html#dazzled" >dazzled</a> for 1 round instead. You can use this ability a number of times per day equal to 3 + your <a href = "../gettingStarted.html#intelligence" >Intelligence</a> modifier.</p>
+				<p><i>Invisibility Field <a href = "../glossary.html#spell-like-abilities-sp" >(Sp)</a></i>: At 8th level, you can make yourself <a href = "../glossary.html#invisible" >invisible</a> as a swift action for a number of rounds per day equal to your wizard level. These rounds do not need to be consecutive. This otherwise functions as <i><a href="../spells/invisibility.html#invisibility-greater" >greater invisibility</a>.</i></p>
+				<h2 id="necromancy-school">Necromancy School</h2>
+				<p>The dread and feared necromancer commands undead and uses the foul power of unlife against his enemies.</p>
+				<p><i>Power over Undead <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></i>: You receive <a href="../feats.html#command-undead" >Command Undead</a> or <a href="../feats.html#turn-undead" >Turn Undead</a> as a bonus feat. You can channel energy a number of times per day equal to 3 + your <a href = "../gettingStarted.html#intelligence" >Intelligence</a> modifier, but only to use the selected feat. You can take other feats to add to this ability, such as <a href="../feats.html#extra-channel" >Extra Channel</a> and <a href="../feats.html#improved-channel" >Improved Channel</a>, but not feats that alter this ability, such as <a href="../feats.html#elemental-channel" >Elemental Channel</a> and Alignment<a href="../feats.html#alignment-channel" > Channel</a>. The DC to save against these feats is equal to 10 + 1/2 your wizard level + your <a href = "../gettingStarted.html#charisma-new" >Charisma</a> modifier. At 20th level, undead cannot add their channel resistance to the save against this ability.</p>
+				<p><i>Grave Touch <a href = "../glossary.html#spell-like-abilities-sp" >(Sp)</a></i>: As a standard action, you can make a melee touch attack that causes a living creature to become <a href = "../glossary.html#shaken" >shaken</a> for a number of rounds equal to 1/2 your wizard level (minimum 1). If you touch a <a href = "../glossary.html#shaken" >shaken</a> creature with this ability, it becomes <a href = "../glossary.html#frightened" >frightened</a> for 1 round if it has fewer Hit Dice than your wizard level. You can use this ability a number of times per day equal to 3 + your <a href = "../gettingStarted.html#intelligence" >Intelligence</a> modifier.</p>
+				<p><i>Life Sight <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></i>: At 8th level, you gain blindsight to a range of 10 feet for a number of rounds per day equal to your wizard level. This ability only allows you to detect living creatures and undead creatures. This sight also tells you whether a creature is living or undead. Constructs and other creatures that are neither living nor undead cannot be seen with this ability. The range of this ability increases by 10 feet at 12th level, and by an additional 10 feet for every four levels beyond 12th. These rounds do not need to be consecutive.</p>
+				<h2 id="transmutation-school">Transmutation School</h2>
+				<p>Transmuters use magic to change the world around them.</p>
+				<p><i>Physical Enhancement <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></i>: You gain a +1 enhancement bonus to one physical ability score (<a href = "../gettingStarted.html#strength" >Strength</a>, <a href = "../gettingStarted.html#dexterity" >Dexterity</a>, or <a href = "../gettingStarted.html#constitution" >Constitution</a>). This bonus increases by +1 for every five wizard levels you possess to a maximum of +5 at 20th level. You can change this bonus to a new ability score when you prepare spells. At 20th level, this bonus applies to two physical ability scores of your choice.</p>
+				<p><i>Telekinetic Fist <a href = "../glossary.html#spell-like-abilities-sp" >(Sp)</a></i>: As a standard action you can strike with a telekinetic fist, targeting any foe within 30 feet as a ranged touch attack. The telekinetic fist deals 1d4 points of bludgeoning damage + 1 for every two wizard levels you possess. You can use this ability a number of times per day equal to 3 + your <a href = "../gettingStarted.html#intelligence" >Intelligence</a> modifier.</p>
+				<p><i>Change Shape <a href = "../glossary.html#spell-like-abilities-sp" >(Sp)</a></i>: At 8th level, you can change your shape for a number of rounds per day equal to your wizard level. These rounds do not need to be consecutive. This ability otherwise functions like <i><a href="../spells/beastShape.html#beast-shape-ii" >beast shape II</a></i> or <i><a href="../spells/elementalBody.html#elemental-body-i" >elemental body I</a>.</i> At 12th level, this ability functions like <i><a href="../spells/beastShape.html#beast-shape-iii" >beast shape III</a></i> or <i><a href="../spells/elementalBody.html#elemental-body-ii" >elemental body II</a></i>.</p>
+				<h2 id="universalist-school">Universalist School</h2>
+				<p>Wizards who do not specialize (known as universalists) have the most diversity of all arcane spellcasters.</p>
+				<p><i>Hand of the Apprentice <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></i>: You cause your melee weapon to fly from your grasp and strike a foe before instantly returning to you. As a standard action, you can make a single attack using a melee weapon at a range of 30 feet. This attack is treated as a ranged attack with a thrown weapon, except that you add your <a href = "../gettingStarted.html#intelligence" >Intelligence</a> modifier on the attack roll instead of your <a href = "../gettingStarted.html#dexterity" >Dexterity</a> modifier (damage still relies on <a href = "../gettingStarted.html#strength" >Strength</a>). This ability cannot be used to perform a combat maneuver. You can use this ability a number of times per day equal to 3 + your <a href = "../gettingStarted.html#intelligence" >Intelligence</a> modifier.</p>
+				<p><i>Metamagic Mastery <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></i>: At 8th level, you can apply any one <a href="../feats.html#metamagic-feats" >metamagic feat</a> that you know to a spell you are about to cast. This does not alter the level of the spell or the casting time. You can use this ability once per day at 8th level and one additional time per day for every two wizard levels you possess beyond 8th. Any time you use this ability to apply a metamagic feat that increases the spell level by more than 1, you must use an additional daily usage for each level above 1 that the feat adds to the spell. Even though this ability does not modify the spell's actual level, you cannot use this ability to cast a spell whose modified spell level would be above the level of the highest-level spell that you are capable of casting.</p>
+				<h2 id="familiars">Familiars</h2>
+				<p>A familiar is an animal chosen by a spellcaster to aid him in his study of magic. It retains the appearance, Hit Dice, base attack bonus, base save bonuses, skills, and feats of the normal animal it once was, but is now a magical beast for the purpose of effects that depend on its type. Only a normal, unmodified animal may become a familiar. An animal companion cannot also function as a familiar.</p>
+				<p>A familiar grants special abilities to its master, as given on the table below. These special abilities apply only when the master and familiar are within 1 mile of each other.</p>
+				<p>Levels of different classes that are entitled to familiars stack for the purpose of determining any familiar abilities that depend on the master's level.</p>
+				<p>If a familiar is dismissed, lost or dies, it can be replaced 1 week later through a specialized ritual that costs 200 gp per wizard level. The ritual takes 8 hours to complete.</p><table>
+<thead><tr><th>Familiar</th><th>Special Ability</th></tr></thead>
+<tbody>
+<tr><td>Bat</td><td>Master gains a +3 bonus on <a href="../skills/fly.html#fly" >Fly</a> checks</td></tr>
+<tr><td>Cat</td><td>Master gains a +3 bonus on <a href="../skills/stealth.html#stealth" >Stealth</a> checks</td></tr>
+<tr><td>Hawk</td><td>Master gains a +3 bonus on sight-based and opposed <a href="../skills/perception.html#perception" >Perception</a> checks in bright light</td></tr>
+<tr><td>Lizard</td><td>Master gains a +3 bonus on <a href="../skills/climb.html#climb" >Climb</a> checks</td></tr>
+<tr><td>Monkey</td><td>Master gains a +3 bonus on <a href="../skills/acrobatics.html#acrobatics" >Acrobatics</a> checks</td></tr>
+<tr><td>Owl</td><td>Master gains a +3 bonus on sight-based and opposed <a href="../skills/perception.html#perception" >Perception</a> checks in shadows or darkness</td></tr>
+<tr><td>Rat</td><td>Master gains a +2 bonus on <a href="../combat.html#fortitude" >Fortitude saves</a></td></tr>
+<tr><td>Raven*</td><td>Master gains a +3 bonus on <a href="../skills/appraise.html#appraise" >Appraise</a> checks</td></tr>
+<tr><td>Viper</td><td>Master gains a +3 bonus on <a href="../skills/bluff.html#bluff" >Bluff</a> checks</td></tr>
+<tr><td>Toad</td><td>Master gains +3 hit points</td></tr>
+<tr><td>Weasel</td><td>Master gains a +2 bonus on <a href="../combat.html#reflex" >Reflex saves</a></td></tr></tbody>
+<tfoot><tr><td colspan="2">*A raven familiar can speak one language of its master's choice as a supernatural ability.</td></tr>
+</tfoot></table>
+
+				<p><b>Familiar Basics</b>: Use the basic statistics for a creature of the familiar's kind, but with the following changes.</p>
+				<p><i>Hit Dice</i>: For the purpose of effects related to number of Hit Dice, use the master's character level or the familiar's normal HD total, whichever is higher.</p>
+				<p><i>Hit Points</i>: The familiar has half the master's total hit points (not including <a href="../combat.html#temporary-hit-points" >temporary hit points</a>), rounded down, regardless of its actual Hit Dice.</p>
+				<p><i>Attacks</i>: Use the master's base attack bonus, as calculated from all his classes. Use the familiar's <a href = "../gettingStarted.html#dexterity" >Dexterity</a> or <a href = "../gettingStarted.html#strength" >Strength</a> modifier, whichever is greater, to calculate the familiar's melee attack bonus with natural weapons. </p>
+				<p>Damage equals that of a normal creature of the familiar's kind.</p>
+				<p><i>Saving Throws</i>: For each <a href="../combat.html#saving-throws" >saving throw</a>, use either the familiar's base save bonus (<a href="../combat.html#fortitude" >Fortitude</a> +2, <a href="../combat.html#reflex" >Reflex</a> +2, <a href="../combat.html#will" >Will</a> +0) or the master's (as calculated from all his classes), whichever is better. The familiar uses its own ability modifiers to saves, and it doesn't share any of the other bonuses that the master might have on saves.</p>
+				<p><i>Skills</i>: For each skill in which either the master or the familiar has ranks, use either the normal skill ranks for an animal of that type or the master's skill ranks, whichever is better. In either case, the familiar uses its own ability modifiers. Regardless of a familiar's total skill modifiers, some skills may remain beyond the familiar's ability to use. Familiars treat <a href="../skills/acrobatics.html#acrobatics" >Acrobatics</a>, <a href="../skills/climb.html#climb" >Climb</a>, <a href="../skills/fly.html#fly" >Fly</a>, <a href="../skills/perception.html#perception" >Perception</a>, <a href="../skills/stealth.html#stealth" >Stealth</a>, and <a href="../skills/swim.html#swim" >Swim</a> as class skills.</p>
+				<p><b>Familiar Ability Descriptions</b>: All familiars have special abilities (or impart abilities to their masters) depending on the master's combined level in classes that grant familiars, as shown on the table below. The abilities are cumulative. </p><table>
+<thead><tr><th>Master Class Level</th><th>Natural Armor Adj.</th><th>Int</th><th>Special</th></tr></thead>
+<tr><td>1st&ndash;2nd</td><td>+1</td><td>6</td><td><a href="wizard.html#familiar-alertness" >Alertness</a>, <a href="wizard.html#familiar-improved-evasion" >improved evasion</a>, <a href="wizard.html#familiar-share-spells" >share spells</a>, <a href="wizard.html#familiar-empathic-link" >empathic link</a></td></tr>
+<tr><td>3rd&ndash;4th</td><td>+2</td><td>7</td><td><a href="wizard.html#familiar-deliver-touch-spells" >Deliver touch spells</a></td></tr>
+<tr><td>5th&ndash;6th</td><td>+3</td><td>8</td><td><a href="wizard.html#familiar-speak-with-master" >Speak with master</a></td></tr>
+<tr><td>7th&ndash;8th</td><td>+4</td><td>9</td><td><a href="wizard.html#familiar-speak-with-animals-of-its-kind" >Speak with animals of its kind</a></td></tr>
+<tr><td>9th&ndash;10th</td><td>+5</td><td>10</td><td>&mdash;</td></tr>
+<tr><td>11th&ndash;12th</td><td>+6</td><td>11</td><td><a href="wizard.html#familiar-spell-resistance" >Spell resistance</a></td></tr>
+<tr><td>13th&ndash;14th</td><td>+7</td><td>12</td><td><a href="wizard.html#familiar-scry-on-familiar" >Scry on familiar</a></td></tr>
+<tr><td>15th&ndash;16th</td><td>+8</td><td>13</td><td>&mdash;</td></tr>
+<tr><td>17th&ndash;18th</td><td>+9</td><td>14</td><td>&mdash;</td></tr>
+<tr><td>19th&ndash;20th</td><td>+10</td><td>15</td><td>&mdash;</td></tr></table>
+
+				<p><i>Natural Armor Adj.</i>: The number noted here is in addition to the familiar's existing natural armor bonus.</p>
+				<p><i>Int</i>: The familiar's <a href = "../gettingStarted.html#intelligence" >Intelligence</a> score.</p>
+				<p id="familiar-alertness"><i>Alertness <a href = "../glossary.html#extraordinary-abilities-ex" >(Ex)</a></i>: While a familiar is within arm's reach, the master gains the <a href="../feats.html#alertness" >Alertness</a> feat.</p>
+				<p id="familiar-improved-evasion"><i>Improved Evasion <a href = "../glossary.html#extraordinary-abilities-ex" >(Ex)</a></i>: When subjected to an attack that normally allows a <a href="../combat.html#reflex" >Reflex</a> saving throw for half damage, a familiar takes no damage if it makes a successful <a href="../combat.html#saving-throws" >saving throw</a> and half damage even if the <a href="../combat.html#saving-throws" >saving throw</a> fails.</p>
+				<p id="familiar-share-spells"><i>Share Spells</i>: The wizard may cast a spell with a target of "You" on his familiar (as a touch spell) instead of on himself. A wizard may cast spells on his familiar even if the spells do not normally affect creatures of the familiar's type (magical beast).</p>
+				<p id="familiar-empathic-link"><i>Empathic Link <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></i>: The master has an empathic link with his familiar to a 1 mile distance. The master can communicate empathically with the familiar, but cannot see through its eyes. Because of the link's limited nature, only general emotions can be shared. The master has the same connection to an item or place that his familiar does.</p>
+				<p id="familiar-deliver-touch-spells"><i>Deliver Touch Spells <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></i>: If the master is 3rd level or higher, a familiar can deliver touch spells for him. If the master and the familiar are in contact at the time the master casts a touch spell, he can designate his familiar as the "toucher." The familiar can then deliver the touch spell just as the master would. As usual, if the master casts another spell before the touch is delivered, the touch spell dissipates.</p>
+				<p id="familiar-speak-with-master"><i>Speak with Master <a href = "../glossary.html#extraordinary-abilities-ex" >(Ex)</a></i>: If the master is 5th level or higher, a familiar and the master can communicate verbally as if they were using a common language. Other creatures do not understand the communication without magical help.</p>
+				<p id="familiar-speak-with-animals-of-its-kind"><i>Speak with Animals of Its Kind <a href = "../glossary.html#extraordinary-abilities-ex" >(Ex)</a></i>: If the master is 7th level or higher, a familiar can communicate with animals of approximately the same kind as itself (including dire varieties): bats with bats, cats with felines, hawks and owls and ravens with birds, lizards and snakes with reptiles, monkeys with other simians, rats with rodents, toads with amphibians, and weasels with ermines and minks. Such communication is limited by the <a href = "../gettingStarted.html#intelligence" >Intelligence</a> of the conversing creatures.</p>
+				<p id="familiar-spell-resistance"><i>Spell Resistance <a href = "../glossary.html#extraordinary-abilities-ex" >(Ex)</a></i>: If the master is 11th level or higher, a familiar gains spell resistance equal to the master's level + 5. To affect the familiar with a spell, another spellcaster must get a result on a caster level check (1d20 + caster level) that equals or exceeds the familiar's spell resistance.</p>
+				<p id="familiar-scry-on-familiar"><i>Scry on Familiar <a href = "../glossary.html#spell-like-abilities-sp" >(Sp)</a></i>: If the master is 13th level or higher, he may scry on his familiar (as if casting the <i>scrying </i>spell) once per day.</p>
+				<h2 id="arcane-spells-and-armor">Arcane Spells and Armor</h2>
+				<p>Armor restricts the complicated gestures required while casting any spell that has a somatic component. The <a href = "../equipment.html#armor-descriptions">armor and shield descriptions</a> list the arcane spell failure chance for different armors and shields.</p>
+				<p>If a spell doesn't have a somatic component, an arcane spellcaster can cast it with no arcane spell failure chance while wearing armor. Such spells can also be cast even if the caster's hands are bound or he is grappling (although concentration checks still apply normally). The metamagic feat <a href="../feats.html#still-spell" >Still Spell</a> allows a spellcaster to prepare or cast a spell without the somatic component at one spell level higher than normal. This also provides a way to cast a spell while wearing armor without risking arcane spell failure.</p>
+
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Wizard",globalNavPath=[{ href: '/pathfinderRPG/prd/coreRulebook/classes.html', name: 'Classes' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

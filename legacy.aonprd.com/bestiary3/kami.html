@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Kami</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "kami.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "kami.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "kami.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "kami.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "kami.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "kami.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "kami.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "kami.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "kami.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "kami.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "kami.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "kami.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "kami.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "kami.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "kami.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "kami.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "kami.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "kami.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "kami.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "kami.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "kami.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+				<h1 id="kami" class="monster-header">Kami</h1>
+				<p>Kami are ancient, mystical, and otherworldly spirits created eons ago by the gods. Originally intended as guardians of those parts of nature that could not protect themselves, kami have proven remarkably adaptive. As the nature of reality changes, so do the kami.</p>
+				<p>There are countless species of kami&mdash;in theory, every type of animal, plant, object, and location could be served by its own type of kami. These are collectively called "wards" by kami, who often think of them similar to how a human might think of a young child placed into his or her care. In practice, there are far more wards in creation than there are kami. As such, all kami seek to reproduce and thus expand their influence&mdash;the more kami, the more wards what benefit from their protection. Accordingly, kami influence is usually regional in nature&mdash;the kami simply aren't numerous enough yet to protect all of creation.</p>
+				<p>Further complicating attempts to catalog and categorize kami is the fact that there seems to be no rhyme or reason as to what sorts of wards get specific types of kami. The jinushigami, for example, are a race of kami that associate with all manner of regions, while the kodama concern themselves narrowly with the protection of specific trees. To the kami, these apparently arbitrary classifications make perfect sense, and their attempts to explain the reasoning to others generally result in confused listeners and frustrated kami. One thing that does remain constant, though, is the relationship between a kami's size and the import of its ward. A kami associated with a knife, frog, or single pebble in a stream would generally be quite small and unimposing, while a kami associated with a mountain, redwood tree, or elephant would be proportionally larger and more powerful. Of course, even here there seem to be exceptions, and frustrated scholars often wonder only half-jokingly whether the gods themselves vary these rules only to cause scholastic arguments and frustration.</p>
+				<p>Kami come into existence either as a spontaneously manifesting spirit or as the reincarnation of a particularly noble soul. Souls of creatures who died to protect an element of nature are particularly prone to returning to life as a kami. In this latter way, many kami arise from the souls of dedicated rangers or druids who perished while defending their homelands, or monks who spent a lifetime meditating on the serenity of nature. Once reincarnated, however, few kami remember any of their former lives, and their forms never resemble their former bodies. The rare kami who do recall their prior lives are the kami most likely to become more than mere guardians&mdash;these kami often take class levels and grow quite powerful.</p>
+				<p>Kami exist as ever-morphing spirits rather than souls trapped in concrete forms. Most exist to watch over a single tree, stone, or bend of a stream, and can have no more influence on the world than a single insect. A kami spends the majority of its existence merged with its ward&mdash;in this shape, it has no ability to interact with the world at all, but it can observe its surroundings with ease. There is no reliable way to determine whether an object, plant, animal, or location is protected by a kami, so those who travel or live in regions where kami are common generally assume that everything has a kami guardian. The kami do little to dissuade this, since the belief that kami are present is often just as potent a protection as having a kami in the first place.</p>
+				<p>All kami can assume physical form. Most somewhat resemble their ward, but again, in apparent eagerness to baffle and frustrate scholars, this is not always the case. When a kami assumes physical form, it always initially appears adjacent to its ward, manifesting suddenly as if teleporting. It is considered impolite by kami to pop into view, though&mdash;most prefer to manifest bodies while hiding, such as behind a tree, then step out of hiding to reveal themselves to those they wish to speak to.</p>
+				<p>Kami are generally a peaceable race, cohabitating with friendly fey and other magical beings that reside in natural environments. Dryads and treants alike find the company of kami to be quite favorable, as these noble spirits are willing to defend their lands to the death. Being more destructive, troublesome fey find themselves unwelcome in lands overseen by kami, who use the power of nature itself to obliterate intruders who make a nuisance of themselves. Kami's peaceful nature never vanishes more quickly than when they face oni, however, for no other creature is as hated by the kami as these. Kami view oni as defilers of the natural world and monsters whose goals and actions are in direct conflict with those of the nature spirits. When oni are spotted in areas guarded by kami, all kami alert each other to this intrusion, and band together to root out the dark presence. The fact that when a kami falls from grace it runs the risk of becoming an oni has much to do with this hatred&mdash;essentially, kami see oni as physical proof of their race's capacity for failure and shame.</p>
+				<p>While kami are rarely evil, they place the protection of their wards above all else. Often, this puts them at odds with other creatures, and as a result, many tend to view kami as troublemakers at best and outright monsters at worst. The kami have little care for how they are viewed by non-kami, of course&mdash;what matters to them is the safety of their wards.</p>
+				<p>The most powerful kami are known as kami lords. These mysterious and unique creatures are fantastically powerful, often on par with demigods or greater entities. </p>
+
+				<h1 id="kami,-jinushigami" class="monster-header">Kami, Jinushigami</h1>
+				<p class="flavor-text">This enormous amalgamation of stone and plant matter takes the shape of an old man leaning on an equally huge staff.</p>
+				<p class="stat-block-title">Jinushigami <span class="stat-block-cr">CR 20</span></p>
+				<p class="stat-block-xp">XP 307,200</p>
+				<p class="stat-block-1">N Gargantuan outsider (<a href="../bestiary/creatureTypes.html#earth-subtype" >earth</a>, kami, <a href="../bestiary/creatureTypes.html#native-subtype" >native</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +11; <b>Senses</b> darkvision 60 ft., tremorsense 60 ft., <i><a href="../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a></i>; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +38</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 34, touch 14, flat-footed 26 (+7 Dex, +1 dodge, +20 natural, &ndash;4 size)</p>
+				<p class="stat-block-1"><b>hp</b> 348 (24d10+216); fast healing 20</p>
+				<p class="stat-block-1"><b>Fort</b> +25, <b>Ref</b> +17, <b>Will</b> +23</p>
+				<p class="stat-block-1"><b>DR</b> 15/cold iron and bludgeoning; <b>Immune</b> <a href="../bestiary/universalMonsterRules.html#bleed" >bleed</a>, mind-affecting effects, petrification, polymorph; <b>Resist</b> acid 10, electricity 10, <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> 10; <b>SR</b> 31</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 50 ft., burrow 40 ft.; <a href="../bestiary/universalMonsterRules.html#earth-glide" >earth glide</a></p>
+				<p class="stat-block-1"><b>Melee</b> <i>+5 quarterstaff</i> +32/+27/+22/+17 (3d6+14), <i>+5 quarterstaff</i> +32 (3d6+9) or 2 slams +29 (2d10+9)</p>
+				<p class="stat-block-1"><b>Space</b> 20 ft.; <b>Reach</b> 20 ft.</p>
+				<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 20th; concentration +30)</p>
+				<p class="stat-block-2">Constant&mdash;<i><a href="../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a></i>, <i><a href="../coreRulebook/spells/speakWithAnimals.html#speak-with-animals" >speak with animals</a></i>, <i><a href="../coreRulebook/spells/speakWithPlants.html#speak-with-plants" >speak with plants</a></i>, <i><a href="../coreRulebook/spells/stoneTell.html#stone-tell" >stone tell</a></i></p>
+				<p class="stat-block-2">At will&mdash;<i><a href="../coreRulebook/spells/detectThoughts.html#detect-thoughts" >detect thoughts</a></i> (DC 22), <i><a href="../coreRulebook/spells/teleport.html#teleport-greater" >greater teleport</a></i> (self only, only within the boundaries of its ward), <i><a href="../coreRulebook/spells/stoneShape.html#stone-shape" >stone shape</a></i>, <i><a href="../coreRulebook/spells/woodShape.html#wood-shape" >wood shape</a></i></p>
+				<p class="stat-block-2">3/day&mdash;<i><a href="../coreRulebook/spells/controlPlants.html#control-plants" >control plants</a></i> (DC 28), <i><a href="../coreRulebook/spells/earthquake.html#earthquake" >earthquake</a></i> (DC 28), <i><a href="../coreRulebook/spells/heal.html#heal" >heal</a></i>, <i><a href="../coreRulebook/spells/repelMetalOrStone.html#repel-metal-or-stone" >repel metal or stone</a></i>, <i><a href="../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-ix" >summon nature's ally IX</a></i></p>
+				<p class="stat-block-2">1/day&mdash;<i><a href="../coreRulebook/spells/trueResurrection.html#true-resurrection" >true resurrection</a></i></p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 28, <b>Dex</b> 25, <b>Con</b> 28, <b>Int</b> 23, <b>Wis</b> 24, <b>Cha</b> 31</p>
+				<p class="stat-block-1"><b>Base Atk</b> +24; <b>CMB</b> +37 (+39 bull rush and overrun); <b>CMD</b> 55 (57 vs. bull rush and overrun)</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#alertness" >Alertness</a>, <a href="../coreRulebook/feats.html#combat-casting" >Combat Casting</a>, <a href="../coreRulebook/feats.html#combat-reflexes" >Combat Reflexes</a>, <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../coreRulebook/feats.html#great-fortitude" >Great Fortitude</a>, <a href="../coreRulebook/feats.html#improved-bull-rush">Improved Bull Rush</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a>, <a href="../coreRulebook/feats.html#improved-overrun">Improved Overrun</a>, <a href="../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../coreRulebook/feats.html#lightning-reflexes" >Lightning Reflexes</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a>, <a href="../coreRulebook/feats.html#two-weapon-fighting" >Two-Weapon Fighting</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +31 (+39 when jumping), <a href="../coreRulebook/skills/bluff.html#bluff" >Bluff</a> +37, <a href="../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> +34, <a href="../coreRulebook/skills/heal.html#heal" >Heal</a> +34, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +34, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (geography) +33, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (nature) +33, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +38, <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +38, <a href="../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> +33, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +22, <a href="../coreRulebook/skills/survival.html#survival" >Survival</a> +31</p>
+				<p class="stat-block-1"><b>Languages</b> Common, Terran; <i><a href="../coreRulebook/spells/speakWithAnimals.html#speak-with-animals" >speak with animals</a>, <a href="../coreRulebook/spells/speakWithPlants.html#speak-with-plants" >speak with plants</a>, <a href="../coreRulebook/spells/stoneTell.html#stone-tell" >stone tell</a></i>, telepathy 300 ft.</p>
+				<p class="stat-block-1"><b>SQ</b> infused quarterstaff, manipulate terrain, merge with ward, ward (region)</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any</p>
+				<p class="stat-block-1"><b>Organization</b> solitary</p>
+				<p class="stat-block-1"><b>Treasure</b> triple</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Infused Quarterstaff (Su)</b> Any quarterstaff a jinushigami wields functions as a <i>+5 quarterstaff</i> (unless the quarterstaff already has a greater enhancement bonus). If a jinushigami is within its regional ward, it can create a Gargantuan quarterstaff out of the surrounding terrain as a standard action.</p>
+				<p class="stat-block-1"><b>Manipulate Terrain (Su)</b> A jinushigami can help any number of creatures travel within its territory. Creatures aided in this way receive a +10 bonus on <a href="../coreRulebook/skills/survival.html#survival" >Survival</a> checks and do not suffer reductions to overland movement from terrain or lack of a highway or other roadway, regardless of the presence of roads or the type of terrain they actually travel through. Alternatively, a jinushigami can make terrain more difficult for any number of creatures to travel through, imparting a &ndash;10 penalty on all <a href="../coreRulebook/skills/survival.html#survival" >Survival</a> checks and causing overland movement to be reduced to one-tenth its normal speed. A jinushigami can affect as many creatures as it wishes with this ability, selecting whether it aids or impedes travel for each, as long as it can notice the creature and the creature is within its regional ward. A jinushigami may use this ability while merged with its ward.</p>
+				<p class="stat-block-1"><b>Ward (Su)</b> A jinushigami treats an entire region as its ward. This region can be a single forest, swamp, mountain, lake, or any other natural feature, with a maximum radius of 5 miles. Most jinushigami have smaller regional wards, since not all regions are large enough to fill this area, but no region with a radius smaller than 1 mile radius can support (or deserves) a jinushigami. As long as it is within its territory (either merged with it or in its physical form), a jinushigami can observe the world from any point within its regional ward as if it were at that point. While merged with its ward, it can observe all points simultaneously in this way. As a standard action, it can convey information about a creature within its ward (effectively imparting a description and exact location) to all kami within its regional ward.</p>
+				
+				<p>Guardians of significant natural wonders like mountains, large lakes, forests, and so on, jinushigami (known also as land kami) are the most powerful and revered of all kami, commanding the very forces of nature itself to ensure the safety and security of their wards. These potent spirits garner the most respect among other kami, wielding great influence over both them and the native creatures that dwell within their territories. Jinushigami tend to stay hidden amongst their land, however, knowing that their intimate tie with the environment makes them highly desirable targets among those who would seek to do harm to nature.</p>
+				<p>Strangers to lands protected by jinushigami are well-advised to take the utmost care to not offend the powerful spirit creatures. When displeased, jinushigami can eradicate trails and warp the contours of their terrain, forcing travelers to endure unreasonable hardship in travel. These goliaths have little patience for those who would defile their efforts, and offenders who fail to listen to a jinushigami's initial hints quickly discover how devastating the kami's powers can be as they are forced from the land either by the lesser kami who serve their superior or by the towering jinushigami itself. Of course, those who respect and honor the jinushigami see the kami's other side, as the kami eases their travel by lessening undergrowth, shifting rivers, and otherwise providing subtle but incredible aid to travelers.</p>
+				<p>Jinushigami are ancient and wise, and while they are no fools, they prefer to give visitors to their domains the benefit of the doubt. Only when an individual makes known his disruptive intentions toward the structure and cohesion of nature does a jinushigami react with violence. Of course, those who align themselves with naturally opposing forces of the kami, such as the oni, do not receive this friendly grace period, and a jinushigami can perceive most treacherous thoughts, sensing a suspicious visitor through its connection with the land, then tracking it down to stealthily observe it more closely.</p>
+				<p>A jinushigami is 38 feet tall and weighs over 30,000 pounds. When they manifest physical bodies, they appear as lumbering humanoid forms made of earth and stone and plant matter, sometimes with strange humanoid affectations like hats or jewelry.</p>
+				<h1 id="elder-jinushigami">Elder Jinushigami</h1>
+				<p>Of all the kami, land kami are the most ancient and powerful, yet even among these immense outsiders there are variations in that power. Newly formed jinushigami have statistics as presented above, but a jinushigami grows more powerful as the legend and fame of the site it guards grows. For example, a jinushigami of part of a mountain range is impressive, but a jinushigami whose region includes the range's tallest mountain is even more so.</p>
+				<p>When a jinushigami becomes this powerful, it is known as an elder jinushigami. An elder jinushigami is generally a Colossal creature, and rarely has fewer than 28 Hit Dice&mdash;most are between CR 22 and CR 25, although exact details vary. An elder jinushigami's ward can cover a much larger area than that of a typical jinushigami, usually with a radius of 1 mile per CR possessed by the elder jinushigami. An elder jinushigami also gains additional spell-like abilities to more closely reflect its role in the world. Listed below are several examples.</p>
+				<p id="glacier-kami"><b>Glacier Kami</b>: An elder jinushigami associated with a vast glacier, be it one that carves mountains or runs along a polar coastline, appears as a humanoid made of blocks of ice. These kami have the cold subtype instead of the earth subtype (and thus gain immunity to cold and vulnerability to fire), and can use <i><a href="../coreRulebook/spells/coneOfCold.html#cone-of-cold" >cone of cold</a></i> and <i><a href="../coreRulebook/spells/wallOfIce.html#wall-of-ice" >wall of ice</a></i> as spell-like abilities three times per day each.</p>
+				<p id="great-reef-kami"><b>Great Reef Kami</b>: An elder jinushigami whose domain contains a sizable coral reef of considerable age appears as a humanoid constructed of living coral draped with seaweed. Great reef kami have the water subtype instead of the earth subtype, gain the aquatic subtype (and the amphibious special quality), gain a swim speed of 60 ft., and gain the ability to use <i><a href="../advancedPlayersGuide/spells/tsunami.html#tsunami" >tsunami</a></i> once per day as a spell-like ability.</p>
+				<p id="mountain-kami"><b>Mountain Kami</b>: When an elder jinushigami's ward includes the tallest peak in a range or region, it gains the use of <i><a href="../coreRulebook/spells/fleshToStone.html#flesh-to-stone" >flesh to stone</a></i> and <i><a href="../coreRulebook/spells/wallOfStone.html#wall-of-stone" >wall of stone</a></i> three times per day each.</p>
+				<p id="volcano-kami"><b>Volcano Kami</b>: An elder jinushigami that includes in its ward an active volcano appears as a humanoid made of equal parts molten rock and solid stone. A volcano kami has the fire subtype instead of the earth subtype (and thus gains immunity to fire and vulnerability to cold), can use <i><a href="../coreRulebook/spells/fireball.html#fireball" >fireball</a></i> three times per day as a spell-like ability, and can use <i><a href="../advancedPlayersGuide/spells/wallOfLava.html#wall-of-lava" >wall of lava</a></i> once per day as a spell-like ability.</p>
+
+				<h1 id="kami,-kodama" class="monster-header">Kami, Kodama</h1>
+				<p class="flavor-text">This little green humanoid figure stands only three feet tall. Its head is faceless save for two hollow pits for eyes.</p>
+				<p class="stat-block-title">Kodama <span class="stat-block-cr">CR 5</span></p>
+				<p class="stat-block-xp">XP 1,600</p>
+				<p class="stat-block-1">N Small outsider (kami, <a href="../bestiary/creatureTypes.html#native-subtype" >native</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +1; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +11</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 18, touch 14, flat-footed 15 (+1 Dex, +2 dodge, +4 natural, +1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 51 (6d10+18); fast healing 3</p>
+				<p class="stat-block-1"><b>Fort</b> +10, <b>Ref</b> +6, <b>Will</b> +4</p>
+				<p class="stat-block-1"><b>DR</b> 5/cold iron; <b>Immune</b> <a href="../bestiary/universalMonsterRules.html#bleed" >bleed</a>, mind-affecting effects, petrification, polymorph; <b>Resist</b> acid 10, electricity 10, <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> 10; <b>SR</b> 16</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 2 claws +9 (1d3+2)</p>
+				<p class="stat-block-1"><b>Special Attacks</b> distracting <a href="../bestiary/universalMonsterRules.html#gaze" >gaze</a>, sneak attack +2d6</p>
+				<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 6th; concentration +9)</p>
+				<p class="stat-block-2">At will&mdash;<i><a href="../coreRulebook/spells/speakWithPlants.html#speak-with-plants" >speak with plants</a></i> (trees only), <i><a href="../coreRulebook/spells/treeShape.html#tree-shape" >tree shape</a></i></p>
+				<p class="stat-block-2">3/day&mdash;<i><a href="../coreRulebook/spells/charmAnimal.html#charm-animal" >charm animal</a></i> (DC 14), <i><a href="../coreRulebook/spells/entangle.html#entangle" >entangle</a></i> (DC 14), <i><a href="../coreRulebook/spells/treeStride.html#tree-stride" >tree stride</a></i> (self plus 50 lbs. of objects only)</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 14, <b>Dex</b> 13, <b>Con</b> 16, <b>Int</b> 11, <b>Wis</b> 14, <b>Cha</b> 17</p>
+				<p class="stat-block-1"><b>Base Atk</b> +6; <b>CMB</b> +7; <b>CMD</b> 20</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#great-fortitude" >Great Fortitude</a>, <a href="../coreRulebook/feats.html#nimble-moves" >Nimble Moves</a>, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +11, <a href="../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +10, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +11, <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +11, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +14, <a href="../coreRulebook/skills/survival.html#survival" >Survival</a> +11</p>
+				<p class="stat-block-1"><b>Languages</b> Common; <i><a href="../coreRulebook/spells/speakWithPlants.html#speak-with-plants" >speak with plants</a></i>, telepathy 100 ft.</p>
+				<p class="stat-block-1"><b>SQ</b> merge with ward, ward (wild trees)</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any forest</p>
+				<p class="stat-block-1"><b>Organization</b> solitary, pair, group (3&ndash;7), or grove (8&ndash;16)</p>
+				<p class="stat-block-1"><b>Treasure</b> standard</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Distracting <a href="../bestiary/universalMonsterRules.html#gaze" >Gaze</a> (Su)</b> Staggered for 1d4 rounds, 30 feet, Will DC 16 negates. This is a mind-affecting effect that requires the kodama to be visible to those it wishes to affect. The save DC is Charisma-based.</p>
+				
+				<p>Revered by druids and rangers for their attunement with the wilds, kodama, known also as tree kami, are the guardians of the wild trees of the forest&mdash;they do not protect trees cultivated and grown in civilized areas. (Those trees are protected by different kami, if at all.) A kodama takes a single tree under its protection; typically, all of the trees in a forest that are protected by kodama are clustered together in one particular area. </p>
+				<p>A kodama in its physical form resembles a barely humanoid creature with only the vaguest of features on its semispherical head. A tree kami is 3 feet tall and weighs 60 pounds. While one might expect the kami of something as large as a tree to itself be larger, the fact that forests are made up of so many trees tends to diminish the singular "presence" any single tree might have. In cases where a tree is particularly ancient or immense, however, the kodama associated with it is much larger&mdash;statistics for such rare kodama can be generated by advancing the kodama given here by several Hit Dice and increasing its size&mdash;theoretically, a Colossal kodama with more than 20 Hit Dice could exist somewhere in the world. Not all kodama increase in power by gaining racial Hit Dice, though, as some instead progress by gaining class levels, particularly levels of druid, though a rare few kodama kami&mdash;those possessed of minds more ordered and structured than is normal for their race&mdash;take the path of the monk.</p>
+				<p>Kodama are more curious about visitors than most kami, and often manifest their physical bodies simply to watch and observe newcomers to their groves. A kodama usually manifests on the far side of its tree, or in the shadows of the undergrowth, so that it can slowly step out into visibility to quietly observe with its distracting, empty-eyed gaze. This gaze can be particularly unnerving. Those who have fallen under its supernatural effects often have different descriptions of how the gaze made them feel (ashamed, frightened, curious, amused, and nervous being the most common reactions), yet the end result is essentially the same. While under observation by a curious kodama, few are those who can continue their actions without being at least somewhat distracted by the kami's attention.</p>
+				<p>When a kodama must fight (typically in order to defend its tree or other kami), it moves quickly&mdash;kodama work best in groups, and when confronted alone generally use <i><a href="../coreRulebook/spells/treeStride.html#tree-stride" >tree stride</a></i> to travel to another part of the forest to raise a small host of allies to aid it in defending its home. </p>
+
+				<h1 id="kami,-shikigami" class="monster-header">Kami, Shikigami</h1>
+				<p class="flavor-text">This tiny, crudely carved statue of a robed man has glowing runes running across its surface.</p>
+				<p class="stat-block-title">Shikigami  <span class="stat-block-cr">CR 2</span></p>
+				<p class="stat-block-xp">XP 600</p>
+				<p class="stat-block-1">LN Tiny outsider (kami, <a href="../bestiary/creatureTypes.html#native-subtype" >native</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +1; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +11</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 15, touch 13, flat-footed 14 (+1 Dex, +2 natural, +2 size)</p>
+				<p class="stat-block-1"><b>hp</b> 19 (3d10+3); fast healing 2</p>
+				<p class="stat-block-1"><b>Fort</b> +4, <b>Ref</b> +2, <b>Will</b> +8</p>
+				<p class="stat-block-1"><b>DR</b> 5/cold iron; <b>Immune</b> <a href="../bestiary/universalMonsterRules.html#bleed" >bleed</a>, mind-affecting effects, petrification, polymorph; <b>Resist</b> acid 10, electricity 10, <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> 10</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> improvised weapon +4 (1d4+2/&times;3)</p>
+				<p class="stat-block-1"><b>Ranged</b> improvised weapon +6 (1d3+2/&times;3)</p>
+				<p class="stat-block-1"><b>Space</b> 2-1/2 ft.; <b>Reach</b> 0 ft.</p>
+				<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 6th; concentration +8)</p>
+				<p class="stat-block-2">At will&mdash;<i><a href="../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i> (self only), <i><a href="../coreRulebook/spells/statue.html#statue" >statue</a></i> (self only)</p>
+				<p class="stat-block-2">3/day&mdash;<i><a href="../coreRulebook/spells/hideFromAnimals.html#hide-from-animals" >hide from animals</a></i>, <i><a href="../coreRulebook/spells/purifyFoodAndDrink.html#purify-food-and-drink" >purify food and drink</a></i></p>
+				<p class="stat-block-2">1/week&mdash;<i><a href="../coreRulebook/spells/communeWithNature.html#commune-with-nature" >commune with nature</a> (</i>CL 12th)</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 8, <b>Dex</b> 13, <b>Con</b> 12, <b>Int</b> 11, <b>Wis</b> 17, <b>Cha</b> 14</p>
+				<p class="stat-block-1"><b>Base Atk</b> +3; <b>CMB</b> +2; <b>CMD</b> 11</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#alertness" >Alertness</a>, <a href="../coreRulebook/feats.html#catch-off-guard" >Catch Off-Guard</a><span class="char-style-override-27">B</span>, <a href="../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../coreRulebook/feats.html#throw-anything" >Throw Anything</a><span class="char-style-override-27">B</span></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/heal.html#heal" >Heal</a> +9, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (nature) +6, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +11, <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +11, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +15, <a href="../coreRulebook/skills/survival.html#survival" >Survival</a> +9</p>
+				<p class="stat-block-1"><b>Languages</b> Common</p>
+				<p class="stat-block-1"><b>SQ</b> improvised weapon mastery, merge with ward, ward (minor works of civilization)</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any</p>
+				<p class="stat-block-1"><b>Organization</b> solitary, pair, or gang (3&ndash;8)</p>
+				<p class="stat-block-1"><b>Treasure</b> standard</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Improvised Weapon Mastery (Ex)</b> A shikigami gains <a href="../coreRulebook/feats.html#catch-off-guard" >Catch Off-Guard</a> and <a href="../coreRulebook/feats.html#throw-anything" >Throw Anything</a> as bonus feats, and adds its Charisma modifier instead of its Strength modifier to damage done with any improvised weapon, as attacks it makes with such weapons seem supernaturally lucky in landing damaging blows. Although a shikigami is Tiny, it never provokes attacks of opportunity when it attacks an adjacent foe with a melee weapon. If a shikigami critically hits an opponent with an improvised weapon, it deals &times;3 damage. A shikigami is proficient with improvised weapons.</p>
+				
+				<p>Shikigami are the least of the kami, yet they make up for their lowly status with their loyalty and bravery. Unlike most other well-known types of kami, shikigami are more often associated with rural and urban regions than with natural settings. These kami are the protectors of the minor works of civilization&mdash;things like milestones, waymarkers, tiny garden statues, and other relatively mundane works of art crafted by humanoid hands.</p>
+				<p>No two shikigami look exactly alike, as befits a race of kami that associates with such a wide range of wards. While all shikigami have the ability to merge with their wards, these kami are also fond of spending time in their physical forms, watching over their wards either invisibly or in the form of a tiny statue. In combat, a shikigami fights with whatever objects it finds at hand. Although relatively weak, these improvised weapons have an uncanny knack for hitting harder than they should.</p>
+				<p>Shikigami are as friendly and curious as other kami, but they are quick to leave an area they see as being polluted by ideals that disrupt the virtues of nature. When they do, they generally take their wards with them. They do not engage humanoids who desecrate the environment, but their absence leaves a profound mark on the morale of perceptive villagers. Should the shikigami leave, town officials who know the function of the miniature kami are quick to change policies in their community to reflect a more naturalistic approach, hoping to rekindle the relationship between shikigami and people, lest the community fall into the disfavor of more powerful and less passive kami.</p>
+				<p>Shikigami typically stand 2 feet tall and weigh 30 pounds, or 50 pounds when taking their statue forms. A spellcaster must have the <a href="../coreRulebook/feats.html#improved-familiar" >Improved Familiar</a> feat, an alignment of lawful neutral, and an arcane caster level of 7th or higher to gain a shikigami familiar. Whenever a shikigami becomes a familiar, it treats its master as its ward.</p>
+
+				<h1 id="kami,-toshigami" class="monster-header">Kami, Toshigami</h1>
+				<p class="flavor-text">This strangely beautiful old woman is composed completely of blossoms, bark, and antlerlike branches.</p>
+				<p class="stat-block-title">Toshigami  <span class="stat-block-cr">CR 15</span></p>
+				<p class="stat-block-xp">XP 51,200</p>
+				<p class="stat-block-1">NG Medium outsider (kami, <a href="../bestiary/creatureTypes.html#native-subtype" >native</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +10; <b>Senses</b> darkvision 60 ft., deathwatch, true seeing; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +25</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC </b>30, touch 20, flat-footed 22 (+6 Dex, +2 dodge, +2 insight, +10 natural) </p>
+				<p class="stat-block-1"><b>hp</b> 210 (20d10+100); fast healing 10</p>
+				<p class="stat-block-1"><b>Fort</b> +11, <b>Ref</b> +23, <b>Will</b> +16</p>
+				<p class="stat-block-1"><b>DR</b> 10/cold iron and <a href="../bestiary/creatureTypes.html#evil-subtype" >evil</a>; <b>Immune</b> <a href="../bestiary/universalMonsterRules.html#bleed" >bleed</a>, mind-affecting effects, petrification, polymorph; <b>Resist</b> acid 10, electricity 10, <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> 10; <b>SR</b> 26</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 60 ft. (30 ft. without <i><a href="../coreRulebook/spells/haste.html#haste" >haste</a></i>), fly 90 ft. (good, 60 ft. without <i>haste</i>)</p>
+				<p class="stat-block-1"><b>Melee</b> <i>+2 quarterstaff</i> +24/+24/+19/+14/+9 (1d6+4 plus touch of ages), <i>+2 quarterstaff</i> +24/+19/+14 (1d6+3 plus touch of ages) or touch +23 (touch of ages)</p>
+				<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 20th; concentration +27)</p>
+				<p class="stat-block-2">Constant&mdash;<i><a href="../coreRulebook/spells/deathwatch.html#deathwatch" >deathwatch</a></i>, <i><a href="../coreRulebook/spells/fly.html" >fly</a></i>, <i><a href="../coreRulebook/spells/foresight.html#foresight" >foresight</a>, <a href="../coreRulebook/spells/haste.html#haste" >haste</a>, <a href="../coreRulebook/spells/speakWithPlants.html#speak-with-plants" >speak with plants</a>, <a href="../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a></i></p>
+				<p class="stat-block-2">At will&mdash;<i><a href="../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds" >cure moderate wounds</a>, <a href="../coreRulebook/spells/treeShape.html#tree-shape" >tree shape</a></i> (cherry tree only)<i>, <a href="../coreRulebook/spells/treeStride.html#tree-stride" >tree stride</a></i> (self plus 50 lbs. of objects only) </p>
+				<p class="stat-block-2">3/day&mdash;<i><a href="../coreRulebook/spells/restoration.html#restoration-greater" >greater restoration</a></i>, <i><a href="../coreRulebook/spells/slow.html#slow" >slow</a></i> (DC 20)</p>
+				<p class="stat-block-2">1/day&mdash;<i><a href="../coreRulebook/spells/fingerOfDeath.html#finger-of-death" >finger of death</a></i> (DC 24), <i><a href="../coreRulebook/spells/timeStop.html#time-stop" >time stop</a></i>, <i><a href="../coreRulebook/spells/wavesOfExhaustion.html#waves-of-exhaustion" >waves of exhaustion</a></i></p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 15, <b>Dex</b> 22, <b>Con</b> 20, <b>Int</b> 15, <b>Wis</b> 14, <b>Cha</b> 25</p>
+				<p class="stat-block-1"><b>Base Atk</b> +20; <b>CMB</b> +26; <b>CMD</b> 42</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#agile-maneuvers" >Agile Maneuvers</a>, <a href="../coreRulebook/feats.html#combat-reflexes" >Combat Reflexes</a>, <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, Greater <a href="../coreRulebook/feats.html#two-weapon-fighting" >Two-Weapon Fighting</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a>, <a href="../coreRulebook/feats.html#improved-two-weapon-fighting" >Improved Two-Weapon Fighting</a>, <a href="../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../coreRulebook/feats.html#lightning-reflexes" >Lightning Reflexes</a>, <a href="../coreRulebook/feats.html#two-weapon-fighting" >Two-Weapon Fighting</a>, <a href="../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a> (quarterstaff)</p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/bluff.html#bluff" >Bluff</a> +30, <a href="../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> +30, <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> +20, <a href="../coreRulebook/skills/heal.html#heal" >Heal</a> +25, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (nature) +25, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +25, <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +25, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +29, <a href="../coreRulebook/skills/survival.html#survival" >Survival</a> +25</p>
+				<p class="stat-block-1"><b>Languages</b> Common; <i><a href="../coreRulebook/spells/speakWithPlants.html#speak-with-plants" >speak with plants</a></i>, telepathy 100 ft.</p>
+				<p class="stat-block-1"><b>SQ</b> merge with ward, ward (cherry tree)</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any land</p>
+				<p class="stat-block-1"><b>Organization</b> solitary</p>
+				<p class="stat-block-1"><b>Treasure</b> standard (<i>+2 quarterstaff</i>, other treasure)</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Touch of Ages (Su)</b> When a toshigami hits a target with a touch attack or any melee weapon, the target must succeed at a DC 27 Fortitude save to avoid being magically aged. When a toshigami strikes a foe, it must decide whether it wishes to physically increase the target's age or mentally reduce the target's age. If it increases the target's physical age, the target takes 1 point of Strength, Dexterity, and Constitution drain. If it decreases the target's mental age, the target takes 1 point of Intelligence, Wisdom, and Charisma drain. Combined with the toshigami's numerous attacks, this can quickly devastate a target, but once a target succeeds at its saving throw against the touch of ages, it can no longer be affected by this ability for 1 round. This is a magical aging effect, but does not actually alter the victim's true age&mdash;it merely simulates the creeping effect of age on the flesh or the reversion to an increasingly infantile state of mind. The save DC is Charisma-based.</p>
+				
+				<p>Toshigami, known also as blossom kami, are associated with cherry trees&mdash;particularly those that grow in inhabited areas. Often, long after a city has fallen to ruin, these kami guardians are all that remain to remember the lost city's glory. In this way, the toshigami are also associated with the passing of time. </p>
+				<p>Toshigami rarely show themselves except to those in dire need or who are harming their trees. Still, they have a fascination with mortals, and have even been known to form romantic relationships with them on occasion. A toshigami is 5 feet tall and weighs 100 pounds.</p>
+
+				<h1 id="kami,-zuishin" class="monster-header">Kami, Zuishin</h1>
+				<p class="flavor-text">Within this elaborate suit of armor can be seen the partial form of a determined warrior.</p>
+				<p class="stat-block-title">Zuishin <span class="stat-block-cr">CR 10</span></p>
+				<p class="stat-block-xp">XP 9,600</p>
+				<p class="stat-block-1">LG Medium outsider (kami, <a href="../bestiary/creatureTypes.html#native-subtype" >native</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +9; <b>Senses</b> darkvision 60 ft., <i><a href="../coreRulebook/spells/detectEvil.html#detect-evil" >detect evil</a></i>, <i><a href="../coreRulebook/spells/seeInvisibility.html#see-invisibility" >see invisibility</a></i>; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +20</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 23, touch 13, flat-footed 20 (+6 armor, +3 Dex, +4 natural)</p>
+				<p class="stat-block-1"><b>hp</b> 123 (13d10+52); fast healing 5</p>
+				<p class="stat-block-1"><b>Fort</b> +8, <b>Ref</b> +13, <b>Will</b> +14</p>
+				<p class="stat-block-1"><b>DR</b> 10/cold iron; <b>Immune</b> <a href="../bestiary/universalMonsterRules.html#bleed" >bleed</a>, mind-affecting effects, petrification, polymorph; <b>Resist</b> acid 10, electricity 10, <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> 10; <b>SR</b> 21</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> fly 30 ft. (perfect, 40 ft. without armor)</p>
+				<p class="stat-block-1"><b>Melee</b> <i>+1 <a href="../coreRulebook/magicItems/weapons.html#weapons-holy" >holy</a> halberd</i> +18/+13/+8 (1d10+7/&times;3)</p>
+				<p class="stat-block-1"><b>Ranged</b> <i>+1 <a href="../coreRulebook/magicItems/weapons.html#weapons-holy" >holy</a> composite longbow</i> +20/+15/+10 (1d8+5/&times;3)</p>
+				<p class="stat-block-1"><b>Special Attacks</b> healing arrow, holy weapons</p>
+				<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 13th; concentration +18)</p>
+				<p class="stat-block-2">Constant&mdash;<i><a href="../coreRulebook/spells/detectEvil.html#detect-evil" >detect evil</a></i>, <i><a href="../coreRulebook/spells/seeInvisibility.html#see-invisibility" >see invisibility</a></i></p>
+				<p class="stat-block-2">At will&mdash;<i><a href="../coreRulebook/spells/cureLightWounds.html#cure-light-wounds" >cure light wounds</a></i>, <i><a href="../coreRulebook/spells/dimensionDoor.html#dimension-door" >dimension door</a></i></p>
+				<p class="stat-block-2">3/day&mdash;<i><a href="../coreRulebook/spells/alarm.html#alarm" >alarm</a></i>, <i><a href="../coreRulebook/spells/breathOfLife.html#breath-of-life" >breath of life</a></i>, <i><a href="../coreRulebook/spells/dispelMagic.html#dispel-magic" >dispel magic</a></i>, <i><a href="../coreRulebook/spells/neutralizePoison.html#neutralize-poison" >neutralize poison</a></i>, <i><a href="../coreRulebook/spells/removeCurse.html#remove-curse" >remove curse</a>, <a href="../coreRulebook/spells/removeDisease.html#remove-disease" >remove disease</a>, <a href="../coreRulebook/spells/restoration.html#restoration" >restoration</a></i></p>
+				<p class="stat-block-2">1/day&mdash;<i><a href="../coreRulebook/spells/dispelEvil.html#dispel-evil" >dispel evil</a></i> (DC 20), <i><a href="../coreRulebook/spells/heal.html#heal" >heal</a>, <a href="../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a></i></p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 18, <b>Dex</b> 21, <b>Con</b> 18, <b>Int</b> 11, <b>Wis</b> 18, <b>Cha</b> 21</p>
+				<p class="stat-block-1"><b>Base Atk</b> +13; <b>CMB</b> +17; <b>CMD</b> 32 (can't be tripped)</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a>, <a href="../coreRulebook/feats.html#improved-precise-shot">Improved Precise Shot</a>, <a href="../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../coreRulebook/feats.html#point-blank-shot" >Point-Blank Shot</a>, Precise Shot, Rapid Shot, <a href="../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a> (longbow)</p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> +10, <a href="../coreRulebook/skills/heal.html#heal" >Heal</a> +20, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +18, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (nature) +16, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +20, <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +20, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +18</p>
+				<p class="stat-block-1"><b>Languages</b> Common; telepathy 100 ft.</p>
+				<p class="stat-block-1"><b>SQ</b> merge with ward, ward (gate, doorway, or shrine)</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any</p>
+				<p class="stat-block-1"><b>Organization</b> solitary, pair, or warband (3&ndash;8)</p>
+				<p class="stat-block-1"><b>Treasure</b> double <i>(+1 composite longbow</i> [+4 Str], <i>+1 halberd</i>, masterwork breastplate, other treasure)</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Healing Arrow (Su)</b> As a swift action, a zuishin can infuse an arrow it fires to carry any of the following effects: <i><a href="../coreRulebook/spells/breathOfLife.html#breath-of-life" >breath of life</a></i>, <i><a href="../coreRulebook/spells/cureLightWounds.html#cure-light-wounds" >cure light wounds</a></i>, <i><a href="../coreRulebook/spells/heal.html#heal" >heal</a></i>, <i><a href="../coreRulebook/spells/neutralizePoison.html#neutralize-poison" >neutralize poison</a></i>, <i><a href="../coreRulebook/spells/removeCurse.html#remove-curse" >remove curse</a></i>, <i><a href="../coreRulebook/spells/removeDisease.html#remove-disease" >remove disease</a></i>, or <i><a href="../coreRulebook/spells/restoration.html#restoration" >restoration</a></i>. Using one of these effects consumes a use of the same spell-like ability. The zuishin must make a touch attack to deliver the effect to the target&mdash;the target takes no damage from the arrow.</p>
+				<p class="stat-block-1"><b>Holy Weapons (Su)</b> Any weapon wielded by a zuishin is treated as if it had the <i><a href="../coreRulebook/magicItems/weapons.html#weapons-holy" >holy</a></i> special ability. A zuishin creates arrows out of nothing as part of its attacks with any bow it wields.</p>
+				
+				<p>While all kami are enemies of oni, none are so fervent as the zuishin. Known also as shrine kami, zuishin take as their wards gates, doorways, religious places, and the spiritual archways known as torii, ensuring that the gates are respected. Zuishin can use many weapons, but tend to favor the bow. A zuishin treats its equipment with utmost care, viewing weapons as extensions of itself. It never discards its bow voluntarily; if the weapon is ever lost or destroyed, a zuishin can craft a new one in a month.</p>
+				<p>Zuishin treat other kami with respect, and are always willing to lend a helping hand. Creatures other than kami must earn a zuishin's trust before receiving its aid, and do so by honoring the gate it guards or providing an offering to the kami, such as a tree branch or other small piece of nature.</p>
+				<p>Zuishin manifest as suits of armor with a partly manifest warrior within, and wield glowing weapons. They stand 5 feet tall and weigh 120 pounds.</p>
+			</div>
+</div>	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Kami",globalNavPath=[{ href: '/pathfinderRPG/prd/bestiary3/monsterIndex.html', name: 'Bestiary 3 Index'}];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

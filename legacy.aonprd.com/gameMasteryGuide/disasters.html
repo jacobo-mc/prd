@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Disasters</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "disasters.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "disasters.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "disasters.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "disasters.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "disasters.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "disasters.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "disasters.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "settlements.html">Settlements</a></li>
+						<li><a href = "fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "chases.html">Chases</a></li>
+						<li><a href = "disasters.html">Disasters</a></li>
+						<li><a href = "drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "haunts.html">Haunts</a></li>
+						<li><a href = "hazards.html">Hazards</a></li>
+						<li><a href = "sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "disasters.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "disasters.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "disasters.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "disasters.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "disasters.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "disasters.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "disasters.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "disasters.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "disasters.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "disasters.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "disasters.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "disasters.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "disasters.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "disasters.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="disasters" class="monster-header">Disasters</h1>
+				<p>Natural disasters go far beyond any mere environmental hazard, leaving death and devastation in their wake. Supernatural disasters can be even more disruptive, with the potential to forever scar a world. A disaster is much more like an adventure than an encounter, and does not have a specific Challenge Rating. Rather, each portion of the disaster should be treated as a separate encounter designed with a CR appropriate to the PCs.</p>
+				<p>Presented below are rules for handling the effects of three different types of disasters, both natural and supernatural. Some disasters happen quickly, like earthquakes and tsunamis, while others progress through several stages, like forest fires, volcanoes, and undead uprisings. Adjust the pacing of the adventure to fit the disaster, allowing the events to unfold over mere minutes or over several days as your needs require.</p>
+				<h1 id="volcanoes">Volcanoes</h1>
+				<p>When the world's crust ruptures and expels its molten heart, one of the most dramatic natural disasters results: a volcano. Volcanic eruptions offer a wide range of options for the GM, including lava, lava bombs, poisonous gases, and pyroclastic flows. GMs might also consider presaging a dramatic volcanic eruption with existing hazards, like <a href = "../coreRulebook/environment.html#avalanches">avalanches</a> and minor <a href="../coreRulebook/spells/earthquake.html#earthquake">earthquakes</a>.</p>
+				<h2 id="lava">Lava</h2>
+				<p>Lava flows are usually associated with nonexplosive eruptions, and can be a permanent fixture of active volcanoes. Most lava flows are quite slow, moving at 15 feet per round. Hotter flows move faster, achieving speeds up to 60 feet per round. Lava in a channel such as a lava tube is especially dangerous, moving as fast as 120 feet per round (a CR 6 hazard). Creatures overrun by a lava flow must make a DC 20 Reflex save or be engulfed in the lava. Success indicates that they are in contact with the <a href = "../coreRulebook/environment.html#lava-effects">lava</a> but not immersed.</p>
+				<h2 id="lava-bombs-(cr-2-or-8)">Lava Bombs (CR 2 or 8)</h2>
+				<p>Blobs of molten rock may be hurled several miles from an erupting volcano, cooling into solid rock before they land. A typical lava bomb strikes a point designated by the GM and explodes in a 30-foot radius. All creatures in the area must make a DC 15 Reflex save or take 4d6 points of damage. Creatures under cover or capable of covering themselves (like with a shield) gain a +2 bonus on this save. Particularly large lava bombs might sometimes occur, dealing 12d6 points of damage. Normal lava bombs have a CR of 2, large lava bombs have a CR of 5.</p>
+				<h2 id="poisonous-gas-(cr-5)">Poisonous Gas (CR 5)</h2>
+				<p>One of the more insidious threats of a volcano is toxic gas, often escaping notice amid the fire and destruction. A wide variety of poisonous vapors can result from a volcanic eruption, some visible, some unseen. Poisonous gas causes 1d6 points of Constitution damage per round if inhaled (Fortitude DC 15 negates, the DC increases by 1 per previous save), and visible gases also function as <a href = "../coreRulebook/environment.html#smoke-effects">heavy smoke</a>. Poisonous gas clouds flow toward low ground, and are typically 50 feet high. Gale-force winds can divert gas clouds, as can high barriers&mdash;provided the gas has somewhere else to go.</p>
+				<h2 id="pyroclastic-flows-(cr-10)">Pyroclastic Flows (CR 10)</h2>
+				<p>Some volcanic eruptions create a devastating wave of burning ash, hot gases, and volcanic debris called a pyroclastic flow that can travel for miles. Treat a pyroclastic flow as an <a href = "../coreRulebook/environment.html#avalanches">avalanche</a> traveling at 500 feet per round, combined with the effects of poisonous gas listed above. Contact with the searing-hot debris of the flow causes 2d6 points of fire damage per round, while any creature buried in the flow suffers 10d6 points of damage per round. Only reality-warping magic like <i><a href="../coreRulebook/spells/miracle.html#miracle" >miracle</a></i> or <i><a href="../coreRulebook/spells/wish.html#wish" >wish</a></i> can turn aside or impede a pyroclastic flow.</p>
+				<h1 id="tsunamis">Tsunamis</h1>
+				<p>Tsunamis, sometimes referred to as tidal waves, are crushing waves of water caused by underwater earthquakes, volcanic explosions, landslides, or even asteroid impacts. Tsunamis are almost undetectable until they reach shallow water, at which point the mass of water builds up into a great wave. </p>
+				<p>Depending on the size of the tsunami and the slope of the shore, the wave can travel anywhere from hundreds of yards to more than a mile inland, leaving destruction in its wake. The water then drains back, dragging all manner of debris and creatures far out to sea.</p>
+				<p>The exact damage caused by a tsunami is subject to the GM's discretion, but a typical tsunami obliterates or displaces all temporary and poorly built structures in its path, destroys about 25% of well-built buildings (and causes significant damage to those that survive), and leaves serious fortifications only lightly damaged. As much as a quarter of the population living in the area (including animals and monsters) perishes in the disaster, either swept out to sea, drowned on shore, or buried under rubble. </p>
+				<p>A creature can avoid being pulled out to sea with a DC 25 <a href="../coreRulebook/skills/swim.html#swim" >Swim</a> check; otherwise it is pulled 6d6 &times; 10 feet away from shore. Waters after a tsunami are always treated as rough or stormy, barring magical influence. A creature caught in a collapsing building takes 6d6 points of damage (DC 15 Reflex save for half), or half that amount if the building is particularly small. There is a 50% chance that the creature is buried (as for a <a href = "../coreRulebook/environment.html#cave-ins-and-collapses">cave-in</a>), or the tsunami may tear the building apart, freeing the creature from the rubble. </p>
+				<h1 id="undead-uprising">Undead Uprising</h1>
+				<p>Whether from an ancient curse or fell necromancy, one of the most terrifying of all supernatural disasters is the undead uprising&mdash;the dead emerging from their graves to claim the living. This disaster can strike any area where the dead have been laid to rest, not just towns and cities. More than one blood-soaked battlefield has given rise to a legion of desiccated undead warriors.</p>
+				<p>Undead uprisings occur in waves, with the timing varying according to the underlying forces at play. The events may happen over the course of only a few days, devastating a city, or be spread out over weeks as the terrified populace cowers behind locked doors and struggles to survive. During the day, life often returns to some semblance of normalcy, as the light of day briefly suppresses the power of the undead.</p>
+				<h2 id="the-unquiet-dead">The Unquiet Dead</h2>
+				<p>On the first nights of an undead uprising, the bodies of the recently dead rise as zombies. Those interred in consecrated ground remain at rest, but bodies left unburied or in mass graves lurch out into the streets, wreaking havoc. At first, only a few corpses are able to free themselves from their coffins and tombs, but each night, more bodies return to walk the land of the living. When dawn breaks, the dead seek safety in their graves or other hidden places. Any caught in the daylight flail about <a href = "../coreRulebook/glossary.html#confused">confused</a> until they are destroyed or manage to stagger into shelter. At the GM's discretion, non-humanoid corpses may rise as undead on subsequent nights.</p>
+				<h2 id="skeletal-awakening">Skeletal Awakening</h2>
+				<p>As the uprising progresses, older and older corpses join the shambling ranks of the undead. Skeletons wearing traces of long-rotted funeral garb claw their way out of graveyards and crypts, and act with a malevolence and organization rarely encountered among their ilk.The undead remain mindless, but the magical power behind the incursion gives them the efficiency and tactical acumen of a living army. The skeletons seek out weapons and armor to gird themselves for battle. Elite skeletal champions lead the troops, wielding magic items scavenged from abandoned graves. Eventually, ghouls and wights prowl the streets after dark as well, along with other lesser, free-willed undead.</p>
+				<h2 id="lost-souls">Lost Souls</h2>
+				<p>As the uprising gathers strength, the unquiet souls of bodies long since turned to dust awaken as well. Ghosts, shadows, wraiths, and even spectres arise to prey upon the living. A handful of the ghosts might be free from the malevolent influence of the uprising, and enterprising PCs may be able to glean valuable intelligence from these troubled spirits. </p>
+				<p>The infusion of negative energy strengthens the undead within the area of the incursion, providing the benefits of a <i><a href="../coreRulebook/spells/desecrate.html#desecrate" >desecrate</a></i> spell. Areas that were once consecrated are now treated as normal ground, and may well provide new sources of corpses for the undead armies, but hallowed ground remains inviolate.</p>
+				<p>As the undead grow stronger, the growing flood of negative energy brings the Shadow Plane closer, leaving colors muted or gray except during the brightest hours of daylight. Even those undead most vulnerable to light can move about with impunity from late afternoon to mid-morning.</p>
+				<h2 id="necropolis">Necropolis</h2>
+				<p>If the flow of negative energy is not reversed, darkness finally claims the area, cloaking it in perpetual shadow. The entire area of the undead uprising functions as if under the effects of an <i><a href="../coreRulebook/spells/unhallow.html#unhallow" >unhallow</a></i> spell (with no additional spell effect tied to it). Hallowed ground remains a rare sanctuary, but only until destroyed by the malevolent forces without. </p>
+				<p>Heroes who perished in the battle against the uprising return as fearsome undead generals. The few living survivors are enslaved as thralls. The area becomes a city of the dead, or construction begins if no such city existed or survived. Free-willed undead flock to this new sanctuary, and only the greatest of heroes can return this now-blighted area to the world of the living.</p>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Disasters",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

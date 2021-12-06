@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Loremaster</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "loremaster.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "loremaster.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../races.html">Races</a></li>
+						<li><a href = "../classes.html">Classes</a></li>
+						<li><a href = "../usingSkills.html">Using Skills</a></li>
+						<li><a href = "../skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../equipment.html">Equipment</a></li>
+						<li><a href = "../additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../combat.html">Combat</a></li>
+						<li><a href = "../magic.html">Magic</a></li>
+						<li><a href = "../spellLists.html">Spell Lists</a></li>
+						<li><a href = "../spellIndex.html">Spell Index</a></li>
+						<li><a href = "../prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../environment.html">Environment</a></li>
+						<li><a href = "../nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../magicItems.html">Magic Items</a></li>
+						<li><a href = "../glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "loremaster.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "loremaster.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "loremaster.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "loremaster.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "loremaster.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "loremaster.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "loremaster.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "loremaster.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "loremaster.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "loremaster.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "loremaster.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "loremaster.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "loremaster.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "loremaster.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "loremaster.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "loremaster.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "loremaster.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "loremaster.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "loremaster.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="loremaster">Loremaster</h1>
+				<p>The loremaster is a gatherer and keeper of secrets. He is often obsessed by the written word, with cryptic and arcane lore serving as his devoted mistress. Holding to the adage that knowledge is power, the loremaster often forsakes material wealth and personal glory for rare or unusual information, an endless quest that brings him ever closer to his unattainable goal: perfection through edification. Often rejecting what he views as the pointless affectations and transitory pleasures of his short-sighted neighbors, the loremaster believes that the only worthwhile goal in life is the acquisition of intellectual might. After all, wealth is spent, passions fade, and the power of the body is limited by age, while the mind's capacity to grow greater with time is infinite.</p>
+				<p>The loremaster class holds little appeal for non-spellcasters&mdash;indeed, before one can devote a life to the studies and traditions of the loremaster, a character must first master several spells of the school of divination. Most loremasters begin their paths as clerics or wizards, but any character capable of casting enough divination spells can, eventually, become a loremaster.</p>
+				<p><b>Role</b>: Loremasters' lives are spent in study, research, and fieldwork. While the first two lend themselves to the loremaster's reputation as a bookish recluse, the latter oftentimes forces a loremaster to seek out the aid of adventurers who, through a mutually beneficial arrangement, might provide a degree of protection to the scholar while he seeks whatever knowledge he is after. For his part, the loremaster provides a wealth of information and arcane firepower to a party. Some loremasters actively deride those of their kind who fear to leave the safety of the temple or library, pointing out that only old lore can be discovered in books&mdash;new lore must be sought out in the world. These more active loremasters might join up with an adventuring party for the benefit of the journey, content with whatever knowledge might be picked up along the way. </p>
+				<p><b>Alignment</b>: Most loremasters cannot be bothered with distracting and pointless philosophies such as ethics, and so tend to be neutral, neutral good, or neutral evil.</p>
+				<p><b>Hit Die</b>: d6.</p>
+				<h2>Requirements</h2>
+				<p>To qualify to become a loremaster, a character must fulfill all the following criteria.</p>
+				<p><b>Skills</b>: <a href="../skills/knowledge.html#knowledge" >Knowledge</a> (any two) 7 ranks in each.</p>
+				<p><b>Feats</b>: Any three <a href="../feats.html#metamagic-feats" >metamagic</a> or <a href="../feats.html#item-creation-feats" >item creation feats</a>, plus <a href="../feats.html#skill-focus" >Skill Focus</a> (<a href="../skills/knowledge.html#knowledge" >Knowledge</a> [any individual <a href="../skills/knowledge.html#knowledge" >Knowledge</a> skill]).</p>
+				<p><b>Spells</b>: Able to cast seven different divination spells, one of which must be 3rd level or higher.</p>
+				<h2>Class Skills</h2>
+				<p>The loremaster's class skills (and the key ability for each skill) are <a href="../skills/appraise.html#appraise" >Appraise</a> (<a href = "../gettingStarted.html#intelligence" >Int</a>), <a href="../skills/diplomacy.html#diplomacy" >Diplomacy</a> (<a href = "../gettingStarted.html#charisma-new" >Cha</a>), <a href="../skills/handleAnimal.html#handle-animal" >Handle Animals</a> (<a href = "../gettingStarted.html#charisma-new" >Cha</a>), <a href="../skills/heal.html#heal" >Heal</a> (<a href = "../gettingStarted.html#wisdom" >Wis</a>), <a href="../skills/knowledge.html#knowledge" >Knowledge</a> (all skills taken individually) (<a href = "../gettingStarted.html#intelligence" >Int</a>), <a href="../skills/linguistics.html#linguistics" >Linguistics</a> (<a href = "../gettingStarted.html#intelligence" >Int</a>), <a href="../skills/perform.html#perform" >Perform</a> (<a href = "../gettingStarted.html#charisma-new" >Cha</a>), <a href="../skills/spellcraft.html#spellcraft" >Spellcraft</a> (<a href = "../gettingStarted.html#intelligence" >Int</a>), and <a href="../skills/useMagicDevice.html#use-magic-device" >Use Magic Device</a> (<a href = "../gettingStarted.html#charisma-new" >Cha</a>). </p>
+				<p><b>Skill Ranks at Each Level</b>: 4 + <a href = "../gettingStarted.html#intelligence" >Int</a> modifier.</p>
+<div class = "table"><table id="table-11-7-loremaster"><caption>Table: Loremaster</caption>
+<thead><tr><th>Level</th><th>Base Attack Bonus</th><th>Fort Save</th><th>Ref Save</th><th>Will Save</th><th>Special</th><th>Spells per Day</th></tr></thead>
+<tr><td>1st</td><td>+0</td><td>+0</td><td>+0</td><td>+1</td><td style="white-space: normal;"><a href="loremaster.html#secret" >Secret</a></td><td>+1 level of existing class</td></tr>
+<tr><td>2nd</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td><td style="white-space: normal;"><a href="loremaster.html#lore" >Lore</a></td><td>+1 level of existing class</td></tr>
+<tr><td>3rd</td><td>+1</td><td>+1</td><td>+1</td><td>+2</td><td style="white-space: normal;"><a href="loremaster.html#secret" >Secret</a></td><td>+1 level of existing class</td></tr>
+<tr><td>4th</td><td>+2</td><td>+1</td><td>+1</td><td>+2</td><td style="white-space: normal;"><a href="loremaster.html#bonus-languages-loremaster" >Bonus language</a></td><td>+1 level of existing class</td></tr>
+<tr><td>5th</td><td>+2</td><td>+2</td><td>+2</td><td>+3</td><td style="white-space: normal;"><a href="loremaster.html#secret" >Secret</a></td><td>+1 level of existing class</td></tr>
+<tr><td>6th</td><td>+3</td><td>+2</td><td>+2</td><td>+3</td><td style="white-space: normal;"><a href="loremaster.html#greater-lore" >Greater lore</a></td><td>+1 level of existing class</td></tr>
+<tr><td>7th</td><td>+3</td><td>+2</td><td>+2</td><td>+4</td><td style="white-space: normal;"><a href="loremaster.html#secret" >Secret</a></td><td>+1 level of existing class</td></tr>
+<tr><td>8th</td><td>+4</td><td>+3</td><td>+3</td><td>+4</td><td style="white-space: normal;"><a href="loremaster.html#bonus-languages-loremaster" >Bonus language</a></td><td>+1 level of existing class</td></tr>
+<tr><td>9th</td><td>+4</td><td>+3</td><td>+3</td><td>+5</td><td style="white-space: normal;"><a href="loremaster.html#secret" >Secret</a></td><td>+1 level of existing class</td></tr>
+<tr><td>10th</td><td>+5</td><td>+3</td><td>+3</td><td>+5</td><td style="white-space: normal;"><a href="loremaster.html#true-lore" >True lore</a></td><td>+1 level of existing class</td></tr></table></div>
+				<h2>Class Features</h2>
+				<p>All of the following are Class Features of the loremaster prestige class.</p>
+				<p><b>Weapon and Armor Proficiency</b>: Loremasters gain no proficiency with any weapon or armor.</p>
+				<p><b>Spells per Day/Spells Known</b>: When a new loremaster level is gained, the character gains new spells per day as if he had also gained a level in a spellcasting class he belonged to before adding the prestige class. He does not, however, gain other benefits a character of that class would have gained, except for additional spells per day, spells known (if he is a spontaneous spellcaster), and an increased effective level of spellcasting. If a character had more than one spellcasting class before becoming a loremaster, he must decide to which class he adds the new level for purposes of determining spells per day.</p>
+				<p id="secret"><b>Secret</b>: At 1st level and every two levels higher than 1st (3rd, 5th, 7th, and 9th), the loremaster chooses one secret from the Loremaster Secrets table. His level plus <a href = "../gettingStarted.html#intelligence" >Intelligence</a> modifier determines which secrets he can choose. He can't choose the same secret twice.</p>
+				<table id="loremaster-secrets-list"><caption>Loremaster Secrets</caption>
+<thead><tr><th>Level + Int Modifier</th><th>Secret</th><th>Effect</th></tr></thead>
+<tr><td>1</td><td>Instant mastery</td><td>4 ranks of a skill in which the character has no ranks</td></tr>
+<tr><td>2</td><td>Secret health</td><td><a href="../feats.html#toughness" >Toughness</a> bonus feat</td></tr>
+<tr><td>3</td><td>Secrets of inner strength</td><td>+2 bonus on Will saves</td></tr>
+<tr><td>4</td><td>The lore of true stamina</td><td>+2 bonus on Fortitude saves</td></tr>
+<tr><td>5</td><td>Secret knowledge of avoidance</td><td>+2 bonus on Reflex saves</td></tr>
+<tr><td>6</td><td>Weapon trick</td><td>+1 bonus on attack rolls</td></tr>
+<tr><td>7</td><td>Dodge trick</td><td>+1 dodge bonus to AC</td></tr>
+<tr><td>8</td><td>Applicable knowledge</td><td>Any one <a href="../feats.html#feat-descriptions" >feat</a></td></tr>
+<tr><td>9</td><td>Newfound arcana</td><td>1 bonus 1st-level spell*</td></tr>
+<tr><td>10</td><td>More newfound arcana</td><td>1 bonus 2nd-level spell*</td></tr>
+<tfoot><tr><td colspan="3">* As if gained through having a high ability score.</td></tr></tfoot></table>
+
+				<p id="lore"><b>Lore</b>: At 2nd level, a loremaster adds half his level to all <a href="../skills/knowledge.html#knowledge" >Knowledge</a> skill checks and may make such checks untrained. The bonuses gained from this ability stack with those gained from <a href = "../classes/bard.html#bardic-knowledge" >Bardic Knowledge</a>.</p>
+				<p id="bonus-languages-loremaster"><b>Bonus Languages</b>: A loremaster can learn any new language at 4th and 8th level.</p>
+				<p id="greater-lore"><b>Greater Lore (Ex)</b>: At 6th level, a loremaster gains the ability to understand magic items. Whenever a loremaster examines a magic item to determine its properties, he gains a +10 circumstance bonus on his <a href="../skills/spellcraft.html#spellcraft" >Spellcraft</a> skill check.</p>
+				<p id="true-lore"><b>True Lore (Ex)</b>: At 10th level, a loremaster's knowledge becomes vast indeed. Once per day a loremaster can use his knowledge to gain the effect of a <i><a href="../spells/legendLore.html#legend-lore" >legend lore</a> </i>spell or an <i><a href="../spells/analyzeDweomer.html#analyze-dweomer" >analyze dweomer</a> </i>spell. If used to create a <i><a href="../spells/legendLore.html#legend-lore" >legend lore</a></i> effect, this ability has a casting time of 1 minute, regardless of how much information is already known about the subject in question.</p>
+
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Loremaster",globalNavPath=[{ href: '/pathfinderRPG/prd/coreRulebook/prestigeClasses.html', name: 'Prestige Classes' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

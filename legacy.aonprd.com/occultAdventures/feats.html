@@ -1,0 +1,914 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Occult Adventures Feats</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "feats.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "feats.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "feats.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "feats.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "feats.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "feats.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "feats.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "feats.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "feats.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "feats.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "feats.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "feats.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "classes/index.html">Occult Classes</a></li>
+						<li><a href = "archetypes/index.html">Archetypes</a></li>
+						<li><a href = "feats.html">Feats</a></li>
+						<li><a href = "psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "spellLists.html">Spell Lists</a></li>
+						<li><a href = "spells/index.html">Spells</a></li>
+						<li><a href = "occultRules.html">Occult Rules</a></li>
+						<li><a href = "occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "feats.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "feats.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "feats.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "feats.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "feats.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "feats.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "feats.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "feats.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "feats.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id = "occult-adventures-feats">Feats</h1>
+<p>Feats represent special tricks and edges that characters have acquired though training, luck, or a quirk of birth.</p>
+
+<h2>Types of Feats</h2>
+<p>Though most of the feats presented in this section are general and have no special rules governing them, some feats belong to a type or types of feats that share special rules. A feat's types appear in parentheses after the feat's name. This section features the following types of feats.</p>
+
+
+<h3>Combat Feats</h3>
+<p>Some classes can select combat feats as bonus feats. Members of other classes can take combat feats provided they meet the prerequisites.</p>
+
+
+<h3>Metamagic Feats</h3>
+<p>Metamagic feats allow spellcasters to modify and change their spells, granting the spells new powers and effects. Such spells generally take up a higher-level spell slot than the normal spell. For complete rules on how to apply metamagic feats to spells, <a href = "../coreRulebook/feats.html#metamagic-feats">see here</a>.</p>
+
+
+<h3>Stare Feats</h3>
+<p>Stare feats allow a mesmerist to apply additional effects to his painful stare ability. Characters without the Compounded Pain feat can apply the effects of only one stare feat to an individual attack; a mesmerist with multiple stare feats must choose which to apply before the damage roll is made.</p>
+
+
+<h3>Teamwork Feats</h3>
+<p>Teamwork feats grant significant bonuses, but they function only under specific circumstances. In most cases, these feats require an ally with the same feat to have a specific position on the battlefield. Teamwork feats provide their benefits only if the given conditions are met. Allies who are paralyzed, stunned, unconscious, or otherwise unable to act don't count for the purposes of these feats. Cavaliers, hunters, and inquisitors have special class abilities that allow them to use teamwork feats even if their allies don't have those feats.</p>
+
+<h2>Feat Descriptions</h2>
+<p>The feats in this section are summarized in the table below. Note that the prerequisites and benefits of the feats listed in this table are abbreviated for ease of reference. See the feats' descriptions for full details.</p>
+<p>The following format is used for all feat descriptions.</p>
+<p><b>Feat Name</b>: The name entry indicates the feat's name as well as what type, if any, the feat belongs to, and is followed by a basic description of what the feat does.</p>
+<p><b>Prerequisite</b>: This entry gives the required minimum ability score, other feats, minimum base attack bonus, minimum number of ranks in one or more skills, or anything else required in order to take the feat. This entry is absent if a feat has no prerequisites. A feat can have more than one prerequisite. Many prerequisites&mdash;such as classes, class abilities, and feats&mdash;can be found elsewhere in this book.</p>
+<p><b>Benefit</b>: This entry describes what a feat enables the character ("you" in the feat description) to do. If a character takes the same feat more than once, its benefits don't stack unless indicated otherwise in the description.</p>
+<p><b>Normal</b>: This entry states what a character who doesn't have this feat is limited to or restricted from doing. It is typically included when a feat interacts with rules systems in an unusual way.</p>
+<p><b>Special</b>: Additional unusual facts about the feat, if any, appear here.</p>
+
+<table id = "occult-adventures-feats-table"><caption>Occult Adventures Feats</caption>
+<thead><tr><th>Feat</th><th>Prerequisites</th><th>Benefit</th></tr></thead>
+<tbody>
+<tr><td><a href = "feats.html#alter-binary-mindscape">Alter Binary Mindscape</a></td><td>Int 13, ability to cast <a href="spells/instigatePsychicDuel.html#instigate-psychic-duel"><em>instigate psychic duel</em></a></td><td>Opponent must spend 1 extra manifestation point to defend itself</td></tr>
+<tr><td><a href = "feats.html#chakra-initiate">Chakra Initiate</a></td><td>Ability to awaken root chakra</td><td>Gain 3 serpent-fire ki points for chakras</td></tr>
+<tr><td><a href = "feats.html#chakra-adept">Chakra Adept</a></td><td>Chakra Initiate, ability to awaken heart chakra</td><td>Gain 4 serpent-fire ki points for chakras, attempt one save to maintain chakras, and gain lingering benefits</td></tr>
+<tr><td><a href = "feats.html#chakra-master">Chakra Master</a></td><td>Chakra Adept, ability to awaken crown chakra</td><td>Gain 5 serpent-fire ki for chakras, can spend more ki to gain two chakra benefits</td></tr>
+<tr><td><a href = "feats.html#compounded-pain">Compounded Pain</a></td><td>Mesmerist level 13th, painful stare class feature</td><td>Apply the effects of two stare feats to painful stares</td></tr>
+<tr><td><a href = "feats.html#delay-blast">Delay Blast</a></td><td>Base attack bonus +3, kinetic blast class feature</td><td>Delay kinetic blast</td></tr>
+<tr><td><a href = "feats.html#disciplinary-devotee">Disciplinary Devotee</a></td><td>Psychic discipline class feature</td><td>Gain +1 on caster level checks, concentration checks, and saving throws for discipline spells</td></tr>
+<tr><td><a href = "feats.html#distant-delivery">Distant Delivery</a></td><td>Deliver touch spells class feature, phantom class feature</td><td>Phantom can deliver touch spells 20 feet farther</td></tr>
+<tr><td><a href = "feats.html#efficient-focus-shift">Efficient Focus Shift</a></td><td>Occultist level 7th</td><td>Shift mental focus points without losing any 2/day</td></tr>
+<tr><td><a href = "feats.html#elongated-cranium">Elongated Cranium</a></td><td>&mdash;</td><td>Gain bonuses and penalties based on head shape</td></tr>
+<tr><td><a href = "feats.html#emotional-conduit">Emotional Conduit</a></td><td>Shared consciousness class feature</td><td>Gain new spells tied to phantom's emotional focus</td></tr>
+<tr><td><a href = "feats.html#empath">Empath</a></td><td>Psychic Sensitivity or ability to cast psychic spells, Perception 1 rank or Sense Motive 1 rank</td><td>Read emotions quickly and often, but open your mind to risk</td></tr>
+<tr><td><a href = "feats.html#expanded-phrenic-pool">Expanded Phrenic Pool</a></td><td>Phrenic pool class feature</td><td>Gain 2 additional phrenic pool points</td></tr>
+<tr><td><a href = "feats.html#extend-resonant-power">Extend Resonant Power</a></td><td>Caster level 7th, mental focus class feature</td><td>Share resonant powers with an ally</td></tr>
+<tr><td><a href = "feats.html#extended-stare">Extended Stare</a></td><td>Hypnotic stare class feature</td><td>Increase hypnotic stare's range by 10 feet</td></tr>
+<tr><td><a href = "feats.html#extra-amplification">Extra Amplification</a></td><td>Phrenic amplification class feature</td><td>Gain one additional phrenic amplification</td></tr>
+<tr><td><a href = "feats.html#extra-focus-power">Extra Focus Power</a></td><td>Focus power class feature</td><td>Gain one additional focus power</td></tr>
+<tr><td><a href = "feats.html#extra-mental-focus">Extra Mental Focus</a></td><td>Mental focus class feature</td><td>Gain 2 additional points of mental focus</td></tr>
+<tr><td><a href = "feats.html#extra-mesmerist-tricks">Extra Mesmerist Tricks</a></td><td>Mesmerist trick class feature</td><td>Implant two additional tricks per day</td></tr>
+<tr><td><a href = "feats.html#extra-touch-treatment">Extra Touch Treatment</a></td><td>Touch treatment class feature</td><td>Use touch treatment two additional times per day</td></tr>
+<tr><td><a href = "feats.html#extra-wild-talent">Extra Wild Talent</a></td><td>Kineticist level 6th</td><td>Gain a wild talent at least 2 spell levels lower than maximum</td></tr>
+<tr><td><a href = "feats.html#focused-phantom">Focused Phantom</a></td><td>Spiritual interference class feature</td><td>Gain +4 on concentration checks while phantom is adjacent or within your consciousness</td></tr>
+<tr><td><a href = "feats.html#hidden-presence">Hidden Presence</a></td><td>Int or Cha 17, ability to cast <a href="spells/possession.html#possession"><em>possession</em></a> or <a href="spells/possession.html#possession-greater"><em>greater possession</em></a></td><td>Abjurations and divinations treat you as the possessed creature</td></tr>
+<tr><td><a href = "feats.html#manipulative-presence">Manipulative Presence</a></td><td>Int or Cha 19, Hidden Presence</td><td>Modify a possessed creature's memories</td></tr>
+<tr><td><a href = "feats.html#intrusive-presence">Intrusive Presence</a></td><td>Int or Cha 21, Hidden Presence, Manipulative Presence</td><td>Read the mind of a possessed creature</td></tr>
+<tr><td><a href = "feats.html#implement-focus">Implement Focus</a></td><td>Occultist level 3rd</td><td>Use generic focus efficiently with an implement</td></tr>
+<tr><td><a href = "feats.html#intimidating-glance">Intimidating Glance</a></td><td>Hypnotic stare class feature</td><td>Demoralize hypnotic stare target as a swift action</td></tr>
+<tr><td><a href = "feats.html#kinetic-counter">Kinetic Counter</a></td><td>Cold simple blast, fire simple blast, or water simple blast; </td><td>Use kinetic blast to counter an opposing element kinetic blast class feature</td></tr>
+<tr><td><a href = "feats.html#kinetic-leap">Kinetic Leap</a></td><td>Acrobatics 3 ranks, kinetic blast class feature</td><td>Use blast to add +10 on Acrobatics checks to jump (+20 at 10 ranks)</td></tr>
+<tr><td><a href = "feats.html#lucid-dreamer">Lucid Dreamer</a></td><td>Cha 13, Knowledge (planes) 3 ranks</td><td>Gain greater control during dreams</td><td></td></tr>
+<tr><td><a href = "feats.html#mesmerizing-feint">Mesmerizing Feint<sup>&dagger;</sup></a></td><td>Hypnotic stare class feature</td><td>Lower penalties for feinting against creatures of other types</td></tr>
+<tr><td><a href = "feats.html#greater-mesmerizing-feint">Greater Mesmerizing Feint<sup>&dagger;</sup></a></td><td>Mesmerizing Feint, Bluff 10 ranks, psychic inception bold stare</td><td>Feint against mindless creatures</td></tr>
+<tr><td><a href = "feats.html#parting-blast">Parting Blast</a></td><td>Kinetic blast class feature</td><td>Body explodes on death</td></tr>
+<tr><td><a href = "feats.html#phantom-fighter">Phantom Fighter</a></td><td>Phantom class feature, phantom with magic attacks ability</td><td>Phantom's natural weapon attacks and delivered spells have full effect on incorporeal creatures</td></tr>
+<tr><td><a href = "feats.html#phantom-fortification">Phantom Fortification</a></td><td>Phantom class feature, phantom with incorporeal flight ability</td><td>Phantom has a chance to ignore critical hits and precision-based damage</td></tr>
+<tr><td><a href = "feats.html#psychic-combatant">Psychic Combatant<sup>&dagger;</sup></a></td><td>Int 13, Psychic Sensitivity or ability to cast psychic spells</td><td>Gain free manifestation points in psychic duels or use psychic spell-like abilities, character level 3rd</td></tr>
+<tr><td><a href = "feats.html#psychic-defender">Psychic Defender</a></td><td>Int 13, Psychic Sensitivity or ability to cast psychic spells</td><td>Gain free temporary hit points when starting or use psychic spell-like abilities, character level 3rd a psychic duel</td></tr>
+<tr><td><a href = "feats.html#psychic-healing">Psychic Healing</a></td><td>Cha 11, Psychic Sensitivity or ability to cast psychic spells, Heal 3 ranks</td><td>Use faith healing to treat deadly wounds and grant temporary hit points</td></tr>
+<tr><td><a href = "feats.html#psychic-maestro">Psychic Maestro</a></td><td>Psychic Sensitivity or ability to cast psychic spells</td><td>Use occult skill unlocks more often</td></tr>
+<tr><td><a href = "feats.html#psychic-sensitivity">Psychic Sensitivity</a></td><td>&mdash;</td><td>Use occult skill unlocks for trained skills</td></tr>
+<tr><td><a href = "feats.html#psychic-adept">Psychic Adept</a></td><td>Int 11, Psychic Sensitivity</td><td>Cast a psychic knack 3/day as a spell-like ability</td></tr>
+<tr><td><a href = "feats.html#psychic-disciple">Psychic Disciple</a></td><td>Int 13, Psychic Adept, Psychic Sensitivity</td><td>Cast a 1st-level psychic spell 2/day as a spell-like ability</td></tr>
+<tr><td><a href = "feats.html#psychic-virtuoso">Psychic Virtuoso</a></td><td>Psychic Sensitivity or ability to cast psychic spells</td><td>+2 on checks for occult skill unlock (+4 at 10 ranks)</td></tr>
+<tr><td><a href = "feats.html#rapid-focus-shift">Rapid Focus Shift</a></td><td>Caster level 5th, mental focus class feature </td><td>Shift mental focus more quickly 1/day</td></tr>
+<tr><td><a href = "feats.html#ready-for-battle">Ready for Battle</a></td><td>Mesmerist trick class feature</td><td>+2 on initiative rolls for allies with implanted tricks</td></tr>
+<tr><td><a href = "feats.html#ready-for-pain">Ready for Pain</a></td><td>Mesmerist trick class feature</td><td>DR/&mdash; against nonlethal damage for allies with implanted tricks</td></tr>
+<tr><td><a href = "feats.html#shared-soul">Shared Soul</a></td><td>Shared consciousness class feature</td><td>Phantom protects against death effects, energy drain, and possession</td></tr>
+<tr><td><a href = "feats.html#shatter-mental-mask">Shatter Mental Mask</a></td><td>Psychic Sensitivity or ability to cast psychic spells or</td><td>Offensive manifestations with Will saves reveal use psychic spell-like abilities, character level 2nd opponent's true form</td></tr>
+<tr><td><a href = "feats.html#spirit-focus">Spirit Focus</a></td><td>Spirit bonus class feature</td><td>Increase spirit bonus from one legend by 1</td></tr>
+<tr><td><a href = "feats.html#spirit-sense">Spirit Sense</a></td><td>Psychic Sensitivity or ability to cast psychic spells</td><td>+5 on checks to notice haunts, 75% chance to affect incorporeal creatures</td></tr>
+<tr><td><a href = "feats.html#spiritual-balance">Spiritual Balance</a></td><td>Ki pool class feature, still mind class feature</td><td>Still mind applies against possession, spend ki to double the bonus</td></tr>
+<tr><td><a href = "feats.html#spiritualist-call">Spiritualist's Call</a></td><td>Phantom class feature</td><td>Phantom gets a bonus when summoned</td></tr>
+<tr><td><a href = "feats.html#strong-implement-link">Strong Implement Link</a></td><td>Implement class feature</td><td>Cast spells away from an implement more easily</td></tr>
+<tr><td><a href = "feats.html#third-eye">Third Eye</a></td><td>Psychic Sensitivity or ability to cast psychic spells</td><td>Use third eye to read auras and see the truth</td></tr>
+<tr><td><a href = "feats.html#vigilant-phantom">Vigilant Phantom</a></td><td>Phantom class feature</td><td>+4 on Perception checks within arm's reach of active phantom</td></tr>
+<tr><td><a href = "feats.html#xenoglossy">Xenoglossy</a></td><td>Int 13, Linguistics 3 ranks</td><td>Use Linguistics to communicate with creatures with which you don't share a language</td></tr>
+</tbody>
+<thead><tr><th>Metamagic Feats</th><th>Prerequisites</th><th>Benefits</th></tr></thead>
+<tbody>
+<tr><td><a href = "feats.html#fearsome-spell">Fearsome Spell</a></td><td>&mdash;</td><td>Spell damage causes the shaken condition</td></tr>
+<tr><td><a href = "feats.html#furious-spell">Furious Spell</a></td><td>&mdash;</td><td>Spell deals more damage and can be cast while in a rage</td></tr>
+<tr><td><a href = "feats.html#intuitive-spell">Intuitive Spell</a></td><td>&mdash;</td><td>Cast spell without thought components</td></tr>
+<tr><td><a href = "feats.html#logical-spell">Logical Spell</a></td><td>&mdash;</td><td>Cast spell without emotion components</td></tr>
+<tr><td><a href = "feats.html#scarring-spell">Scarring Spell</a></td><td>&mdash;</td><td>Emotion or fear spell gives penalties against further such spells</td></tr>
+<tr><td><a href = "feats.html#traumatic-spell">Traumatic Spell</a></td><td>&mdash;</td><td>Emotion or fear spell causes nightmares</td><td></td></tr>
+</tbody>
+<thead><tr><th>Stare Feats</th><th>Prerequisites</th><th>Benefits</th></tr></thead>
+<tbody>
+<tr><td><a href = "feats.html#bleeding-stare">Bleeding Stare<sup>&dagger;</sup></a></td><td>Mesmerist level 5th, painful stare class feature</td><td>Painful stare causes bleed damage</td></tr>
+<tr><td><a href = "feats.html#demoralizing-stare">Demoralizing Stare<sup>&dagger;</sup></a></td><td>Mesmerist level 9th, painful stare class feature</td><td>Painful stare causes the shaken condition</td></tr>
+<tr><td><a href = "feats.html#excoriating-stare">Excoriating Stare<sup>&dagger;</sup></a></td><td>Mesmerist level 11th, painful stare class feature</td><td>Painful stare causes the sickened condition</td></tr>
+<tr><td><a href = "feats.html#fatiguing-stare">Fatiguing Stare<sup>&dagger;</sup></a></td><td>Mesmerist level 7th, painful stare class feature</td><td>Painful stare causes the fatigued condition</td></tr>
+<tr><td><a href = "feats.html#intense-pain">Intense Pain<sup>&dagger;</sup></a></td><td>Mesmerist level 7th, painful stare class feature</td><td>Painful stare deals more damage</td></tr>
+</tbody>
+<thead><tr><th>Teamwork Feats</th><th>Prerequisites</th><th>Benefits</th></tr></thead>
+<tbody>
+<tr><td><a href = "feats.html#interweave-composite-blast">Interweave Composite Blast<sup>&dagger;</sup></a></td><td>Kinetic blast class feature</td><td>Work together to unleash a composite blast</td></tr>
+</tbody>
+<tfoot>
+<tr><td colspan = "3"><sup>&dagger;</sup></a>This is a combat feat, and can be selected as a brawler, fighter, gunslinger, swashbuckler, and warpriest bonus feat.</td></tr>
+</tfoot>
+</table>
+
+<h3 id = "alter-bindary-minscape">Alter Binary Mindscape</h3>
+<p>You can shift and change a binary mindscape to your advantage during a psychic duel.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Int 13, ability to cast <a href="spells/instigatePsychicDuel.html#instigate-psychic-duel"><em>instigate psychic duel</em></a>.</p>
+<p class = "stat-block-1"><b>Benefit</b>: When you cast <a href="spells/instigatePsychicDuel.html#instigate-psychic-duel"><em>instigate psychic duel</em></a> and create a binary mindscape, the arena you create puts your enemy at a disadvantage. Your opponent must spend 1 more manifestation point than normal when creating any defensive manifestations.</p>
+
+<h3 id = "bleeding-stare">Bleeding Stare (Combat, Stare)</h3>
+<p>Your stare causes your foe to bleed out of its eyes.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Mesmerist level 5th, painful stare class feature.</p>
+<p class = "stat-block-1"><b>Benefits</b>: When you trigger your painful stare, the target takes an amount of bleed damage equal to 1/3 your mesmerist level. Bleed damage from multiple uses of Bleeding Stare doesn't stack.</p>
+
+<h3 id = "chakra-adept">Chakra Adept</h3>
+<p>Your body and soul have grown more accustomed to kundalini energy.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Chakra Initiate, ability to awaken the heart chakra.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Your pool of serpent-fire ki increases to 4 points. When you maintain your chakras as a swift action without opening a new chakra, you can choose to attempt either the Fortitude save or the Will save instead of both.</p>
+<p class = "stat-block-1">In addition, after you stop spending ki to maintain your chakras, the kundalini energy lingers in your body. On the first round during which you spend no ki to maintain your chakras, your highest chakra closes and you can spend a swift action to use any one of the abilities of your remaining open chakras. On the next round after that, all of your chakras close, and you must spend 1 point of ki and a swift action to start again from your root chakra.</p>
+
+<h3 id = "chakra-initiate">Chakra Initiate</h3>
+<p>You have an extra wellspring of kundalini energy that you can use to open your chakras.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Ability to awaken the root chakra.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You gain a pool that holds 3 points of serpent-fire ki, which you can use only to open or maintain chakras. These serpent-fire ki points are replenished at the same time you replenish the points in your regular ki pool.</p>
+
+<h3 id = "chakra-master">Chakra Master</h3>
+<p>You have mastered all seven chakras, and use your ki to pull more power from the kundalini flow.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Chakra Adept, Chakra Initiate, ability to awaken the crown chakra.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Your pool of serpent-fire ki increases to 5 points. You can spend 3 ki points instead of 1 when you open or maintain a chakra to gain the benefits of two chakras instead of one in that round. If you are opening or maintaining your crown chakra, this stacks with the crown chakra's special power, allowing you to gain the benefits of three chakras in a round.</p>
+
+<h3 id = "compounded-pain">Compounded Pain (Combat)</h3>
+<p>Your painful stare causes two additional effects.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Mesmerist level 13th, painful stare class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You can apply the effects of two stare feats to your painful stares.</p>
+<p class = "stat-block-1"><b>Normal</b>: You can apply the effects of only one stare feat to a given painful stare.</p>
+
+<h3 id = "delay-blast">Delay Blast</h3>
+<p>You can delay your kinetic blasts.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Base attack bonus +3, kinetic blast class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: When you use a kinetic blast, you can specify a number of rounds between 1 and 5. When that number of rounds has passed, the kinetic blast takes effect at the beginning of your turn. In the interim, you can take a standard action that provokes attacks of opportunity to cause the blast to take effect earlier than you initially selected. If you delay another blast while you already have a delayed blast pending, the previous delayed blast dissipates harmlessly.</p>
+<p class = "stat-block-1">You must make any decisions you would make about the delayed blast&mdash;including designating target positions, choosing infusions, and determining or shaping the area&mdash;when you first use the blast. The blast originates from your position at the time you used the blast, not your current position when the blast takes effect, and it targets the position or area you had specified (which may or may not include any targets). A delayed blast radiates an aura of magic appropriate for its spell level even while it is delayed, and during that time, it can be dispelled by <a href="../coreRulebook/spells/dispelMagic.html#dispel-magic"><em>dispel magic</em></a>.</p>
+
+<h3 id = "demoralizing-stare">Demoralizing Stare (Combat, Stare)</h3>
+<p>Your painful stare inspires fear in your foes.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Mesmerist level 9th, painful stare class feature.</p>
+<p class = "stat-block-1"><b>Benefits</b>: When you trigger your painful stare, the target must succeed at a Will Save (DC = 10 + 1/2 your mesmerist level + your Charisma modifier) or become shaken for 1 round. This can't cause the target to become frightened, even if the target is already shaken.</p>
+
+
+<h3 id = "disciplinary-devotee">Disciplinary Devotee</h3>
+<p>Your careful study of mental magic grants you mastery in your discipline.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Psychic discipline class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You gain a +1 bonus on caster level checks and concentration checks when casting spells from your psychic discipline, and you gain a +1 insight bonus on saving throws against spells from your discipline.</p>
+
+
+<h3 id = "distant-delivery">Distant Delivery</h3>
+<p>Your phantom can deliver spells at a greater range than usual.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Phantom class feature, phantom with the deliver touch spells ability.</p>
+<p class = "stat-block-1"><b>Benefit</b>: The distance from you at which your phantom can deliver touch spells increases by 20 feet.</p>
+
+
+<h3 id = "efficient-focus-shift">Efficient Focus Shift</h3>
+<p>You are more adept than most at shifting mental focus between your implements.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Occultist level 7th.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Twice per day when you shift mental focus from one implement to another, you can add the same number of points to the latter implement that you removed from the former.</p>
+<p class = "stat-block-1"><b>Normal</b>: By removing points of mental focus from one implement, you can add the same amount &ndash; 1 to another.</p>
+<p class = "stat-block-1"><b>Special</b>: You can take this feat multiple times. Its effects stack.</p>
+
+
+<h3 id = "elongated-cranium">Elongated Cranium</h3>
+<p>You have undergone the painful and ancient art of cranial binding, deforming your skull to unlock the hidden potential of your psychic self.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Your cranium has been tightly bound with boards and wrappings to change its shape and attune your mind to your psychic discipline. If you take this feat after 1st level, you must undergo a painful 6-month regimen of increased tightening and head binding, during which you take a &ndash;1 penalty on Intelligence, Wisdom, and Charisma checks and on Intelligence-, Wisdom-, and Charisma-based skill checks. Once the binding is completed, your skull takes on one of three shapes of your choosing, each with a specific benefit. Once chosen, this shape cannot be changed.</p>
+<p class = "stat-block-1"><em>Fronto-Occipital Elongation</em>: Your head slopes severely in a high conical shape, tapering from your brow to the crown of your head. You take a &ndash;1 penalty on Intelligence and Wisdom checks and on Intelligence- and Wisdom-based skill checks, but gain a +2 bonus on Charisma checks and Charisma-based skill checks. In addition, once per day, you can extend the duration of a psychic spell you cast by 50% (minimum 0 additional rounds). The increased duration doesn't stack with the increase granted by the Extend Spell feat.</p>
+<p class = "stat-block-1"><em>Ovoid Compression</em>: Your head takes on a larger, more bulbous appearance than normal. You take a &ndash;1 penalty on Charisma and Wisdom checks and on Wisdom- and Charisma-based skill checks, but gain a +2 bonus on Intelligence checks and Intelligence-based skill checks. In addition, once per day you can cast one psychic magic spell you know with a +1 bonus to its caster level.</p>
+<p class = "stat-block-1"><em>Sagittal Elongation:</em> Your head slopes back in a gentle, elongated curve. You take a &ndash;1 penalty on Intelligence and Charisma checks and on Intelligence- and Charisma-based skill checks, but gain a +2 bonus on Wisdom checks and Wisdom-based skill checks. In addition, once per day, you can increase the DC of a psychic spell you cast by 1.</p>
+
+
+<h3 id = "emotional-conduit">Emotional Conduit</h3>
+<p>The deep emotional resonance you share with your phantom enables you to master the emotions of others.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Shared consciousness class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You gain familiarity with a number of additional spells based on the emotional focus of your phantom. These spells are added to both your class spell list (if not already on that list) and your list of spells known; they are in addition to the normal number of spells known for your level. The spells you gain are as follows (spells marked with a dagger [&dagger;] can be found on the <a href = "psychicMagic.html">Psychic Magic page</a>):</p>
+<p class = "stat-block-1"><em>Anger</em>: 1st&mdash;<a href="spells/burstOfAdrenaline.html#burst-of-adrenaline"><em>burst of adrenaline</em></a>, 2nd&mdash;<a href = "../coreRulebook/spells/rage.html"><em>rage</em></a>, 3rd&mdash;<a href="../ultimateMagic/spells/howlingAgony.html#howling-agony"><em>howling agony</em></a>, 4th&mdash;<a href="../ultimateCombat/spells/telekineticCharge.html#telekinetic-charge-"><em>telekinetic charge</em></a>, 5th&mdash;<a href="../ultimateMagic/spells/vengefulOutrage.html#vengeful-outrage"><em>vengeful outrage</em></a>, 6th&mdash;<a href = "../coreRulebook/spells/transformation.html"><em>transformation</em></a>.</p>
+<p class = "stat-block-1"><em>Despair</em>: 1st&mdash;<a href="../advancedPlayersGuide/spells/touchOfGracelessness.html#touch-of-gracelessness"><em>touch of gracelessness</em></a>, 2nd&mdash;<a href="../coreRulebook/spells/deathKnell.html#death-knell"><em>death knell</em></a>, 3rd&mdash;<a href="../coreRulebook/spells/rayOfExhaustion.html#ray-of-exhaustion"><em>ray of exhaustion</em></a>, 4th&mdash;<a href="../coreRulebook/spells/crushingDespair.html#crushing-despair"><em>crushing despair</em></a>, 5th&mdash;<a href = "../advancedPlayersGuide/spells/suffocation.html"><em>suffocation</em></a>, 6th&mdash;<a href = "../coreRulebook/spells/eyebite.html"><em>eyebite</em></a>.</p>
+<p class = "stat-block-1"><em>Devotion</em>: 1st&mdash;<a href="../advancedClassGuide/spells/invisibilityAlarm.html"><em>invisibility alarm</em></a>, 2nd&mdash;<a href="../coreRulebook/spells/spiritualWeapon.html#spiritual-weapon"><em>spiritual weapon</em></a>, 3rd&mdash;<a href="../coreRulebook/spells/cureLightWounds.html#cure-light-wounds"><em>cure light wounds</em></a>, 4th&mdash;<a href="../coreRulebook/spells/spellImmunity.html#spell-immunity"><em>spell immunity</em></a>, 5th&mdash;<a href="../advancedClassGuide/spells/vampiricShadowShield.html"><em>vampiric shadow shield</em></a>, 6th&mdash;<a href="../coreRulebook/spells/heroism.html#heroism-greater"><em>greater heroism</em></a>.</p>
+<p class = "stat-block-1"><em>Fear</em>: 1st&mdash;<a href="../advancedClassGuide/spells/heightenedAwareness.html"><em>heightened awareness</em></a>, 2nd&mdash;<a href = "../coreRulebook/spells/scare.html"><em>scare</em></a>, 3rd&mdash;<em>fear</em>, 4th&mdash;<a href="../advancedClassGuide/spells/feastOnFear.html"><em>feast on fear</em></a>, 5th&mdash;<a href = "../coreRulebook/spells/nightmare.html"><em>nightmare</em></a>, 6th&mdash;<a href="../ultimateCombat/spells/frightfulAspect.html#frightful-aspect"><em>frightful aspect</em></a>.</p>
+<p class = "stat-block-1"><em>Hatred</em>: 1st&mdash;<a href="../ultimateMagic/spells/murderousCommand.html#murderous-command"><em>murderous command</em></a>, 2nd&mdash;<a href="../ultimateMagic/spells/disfiguringTouch.html#disfiguring-touch-"><em>disfiguring touch</em></a>, 3rd&mdash;<a href="../coreRulebook/spells/bestowCurse.html#bestow-curse"><em>bestow curse</em></a>, 4th&mdash;<a href="../ultimateCombat/spells/debilitatingPortent.html#debilitating-portent"><em>debilitating portent</em></a>, 5th&mdash;<a href="spells/fosterHatred.html#foster-hatred"><em>foster hatred</em></a>, 6th&mdash;<a href="../advancedPlayersGuide/spells/phantasmalRevenge.html#phantasmal-revenge"><em>phantasmal revenge</em></a>.</p>
+<p class = "stat-block-1"><em>Jealousy</em>: 1st&mdash;<a href="../ultimateCombat/spells/compelHostility.html#compel-hostility"><em>compel hostility</em></a>, 2nd&mdash;<a href="../advancedClassGuide/spells/lifePact.html"><em>life pact</em></a>, 3rd&mdash;<a href="spells/ectoplasmicSnare.html#ectoplasmic-snare"><em>ectoplasmic snare</em></a>, 4th&mdash;<a href="spells/entrapSpirit.html#entrap-spirit"><em>entrap spirit</em></a>, 5th&mdash;<a href="../coreRulebook/spells/dominatePerson.html#dominate-person"><em>dominate person</em></a>, 6th&mdash;<a href="../advancedPlayersGuide/spells/unwillingShield.html#unwilling-shield"><em>unwilling shield</em></a>.</p>
+<p class = "stat-block-1"><em>Zeal</em>: 1st&mdash;<a href="../ultimateMagic/spells/delusionalPride.html#delusional-pride"><em>delusional pride</em></a>, 2nd&mdash;<a href="../coreRulebook/spells/falseLife.html#false-life"><em>false life</em></a>, 3rd&mdash;<em>heroism</em>, 4th&mdash;<a href="../coreRulebook/spells/freedomOfMovement.html#freedom-of-movement"><em>freedom of movement</em></a>, 5th&mdash;<a href="../ultimateMagic/spells/joyfulRapture.html#joyful-rapture"><em>joyful rapture</em></a>, 6th&mdash;<a href="../coreRulebook/spells/heroism.html#heroism-greater"><em>greater heroism</em></a>.</p>
+
+
+<h3 id = "empath">Empath</h3>
+<p>You have learned how to psychically sense an individual's mood or altered mental state.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Psychic Sensitivity or ability to cast psychic spells, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> 1 rank or <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> 1 rank.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You can use either <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> or <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> when reading an emotion aura with the read aura occult skill unlock. Reading a creature's emotion aura takes you only a full-round action instead of 10 minutes, and if you succeed at your check, you also determine whether that creature is currently affected by a fear or mind-affecting effect and the relative strength of that effect (minor, moderate, strong, as defined in <a href="../coreRulebook/spells/detectMagic.html#detect-magic"><em>detect magic</em></a>). You don't learn the source of the effect or the actual effect.</p>
+<p class = "stat-block-1">You can also use the read aura occult skill unlock to read emotion auras more than once per day by opening your innate mental defenses. For 1 minute after you use this feat, you take a &ndash;4 penalty on saving throws against fear and mind-affecting effects (regardless of whether you succeeded at the check). During this time, you're also unable to attempt to read emotion auras. Using this feat doesn't use up your one daily use of the read aura unlock, which you can still use either to read another type of aura or to read an emotion aura without taking the penalty associated with this feat.</p>
+
+<h3 id = "excoriating-stare">Excoriating Stare (Combat, Stare)</h3>
+<p>Your painful stare burns through your opponents.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Mesmerist level 11th, painful stare class feature.</p>
+<p class = "stat-block-1"><b>Benefits</b>: Whenever you trigger a painful stare, the target must succeed at a Will saving throw (DC = 10 + 1/2 your mesmerist level + your Charisma modifier) or become sickened by the pain for 1 round.</p>
+
+
+<h3 id = "expanded-phrenic-pool">Expanded Phrenic Pool</h3>
+<p>Your reservoir of mental energy is greater than normal.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Phrenic pool class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Your phrenic pool total increases by 2 points.</p>
+
+
+<h3 id = "extend-resonant-power">Extend Resonant Power</h3>
+<p>You can share the benefits of your resonant focus powers with nearby allies.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Caster level 7th, mental focus class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Select an implement school. When you place mental focus points into an implement of that school, you can choose to gain benefits from the resonant power as if you had placed only half as many points of mental focus into the implement. If you do, you can extend the same benefits to one additional ally within 30 feet at the time you invest mental focus. If the ally moves outside of the extended power's range, the power is suppressed, but it resumes functioning once the ally moves within range again. You can spend 1 point of mental focus from your implement to pass the effect to a new target, so long as both the original target and the new one are within 30 feet. This feat can affect only one implement from a given school at a time, even if you have selected the same implement school more than once.</p>
+<p class = "stat-block-1"><b>Special</b>: You can take this feat multiple times. Each time you take the feat, select a different implement school.</p>
+
+<h3 id = "extended-stare">Extended Stare</h3>
+<p>Your hypnotic stare has greater reach than normal.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Hypnotic stare class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: The range of your hypnotic stare increases by 10 feet.</p>
+<p class = "stat-block-1"><b>Special</b>: You can take this feat multiple times. Its effects stack.</p>
+
+
+<h3 id = "extra-amplification">Extra Amplification</h3>
+<p>You are a master at manipulating your mental energies to produce amplified effects.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Phrenic amplification class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You gain one additional phrenic amplification. This can't be a major amplification.</p>
+<p class = "stat-block-1"><b>Special</b>: You can take this feat multiple times. Each time you do, you gain another phrenic amplification.</p>
+
+
+<h3 id = "extra-focus-power">Extra Focus Power</h3>
+<p>You gain an additional focus power from your implements.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Focus power class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You gain one additional focus power from among those available from your chosen implement schools. You must select a power for which you normally qualify.</p>
+<p class = "stat-block-1"><b>Special</b>: You can choose this feat once for every implement school you know, up to a maximum of seven times at 18th level. Each time you do, you must choose a different focus power. If you have selected the same implement school more than once, you can select a focus power from that school once for each time you selected that school.</p>
+
+
+<h3 id = "extra-mental-focus">Extra Mental Focus</h3>
+<p>You possess increased mental focus.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Mental focus class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You gain 2 additional points of mental focus.</p>
+
+<h3 id = "extra-mesmerist-tricks">Extra Mesmerist Tricks</h3>
+<p>You can use your mesmerist tricks more often.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Mesmerist trick class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You can implant two additional mesmerist tricks per day.</p>
+<p class = "stat-block-1"><b>Special</b>: You can gain Extra Mesmerist Tricks multiple times. Its effects stack.</p>
+
+<h3 id = "extra-touch-treatment">Extra Touch Treatment</h3>
+<p>You can use your touch treatment more often.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Touch treatment class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You can use touch treatment two additional times per day.</p>
+
+<h3 id = "extra-wild-talent">Extra Wild Talent</h3>
+<p>You gain an additional wild talent.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Kineticist level 6th.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You gain a wild talent that's at least 2 levels lower than the highest-level wild talent you can currently use. You can select an infusion or a non-infusion wild talent, but not a blast or defense wild talent. If you have the expanded element class feature, you can select a wild talent from any of your elements that's at least 2 levels lower than the highest-level wild talent from your primary element that you can currently use.</p>
+<p class = "stat-block-1"><b>Special</b>: You can take this feat multiple times. Each time, you must choose a different wild talent.</p>
+
+<h3 id = "fatiguing-stare">Fatiguing Stare (Combat, Stare)</h3>
+<p>Your painful stare fatigues your opponent.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Mesmerist level 7th, painful stare class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: When a target takes damage from your painful stare, it must succeed at a Fortitude saving throw (DC = 10 + 1/2 your mesmerist level + your Charisma modifier) or become fatigued for 1 round. This can't cause the target to become exhausted, even if the target is already fatigued.</p>
+
+
+<h3 id = "fearsome-spell">Fearsome Spell (Metamagic)</h3>
+<p>Your spells inspire great fear in those harmed by them.</p>
+<p class = "stat-block-1"><b>Benefit</b>: When a creature takes damage from a fearsome spell, if that creature failed its save against the spell, it becomes shaken for a number of rounds equal to the spell's original level. If the spell doesn't allow a save, creatures harmed by it can attempt a Will save (against the same DC the spell would have if it did allow a save) to negate the shaken effect. If the spell effect already causes creatures to become shaken, on a failed save, add the duration of this metamagic effect to the duration of the shaken condition imposed by the spell. A fearsome spell can't cause a creature to become frightened, even if that creature is already shaken. A fearsome spell uses up a spell slot 2 levels higher than the spell's actual level.</p>
+
+
+<h3 id = "focused-phantom">Focused Phantom</h3>
+<p>Your close bond with your phantom helps you to focus your concentration.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Spiritual interference class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: While you are adjacent to your phantom or your phantom is within your consciousness, you receive a +4 bonus on concentration checks.</p>
+
+
+<h3 id = "furious-spell">Furious Spell (Metamagic)</h3>
+<p>Your spells seethe with the ferocious intensity of your blood-red rage.</p>
+<p class = "stat-block-1"><b>Benefit</b>: A furious spell that deals hit point damage adds twice the spell's original level to the amount of damage dealt by the spell. Spells that affect multiple targets deal the extra damage once to each target, regardless of whether the spell deals its damage all at once or in multiple hits (in the latter case, add the extra damage to the first hit against each target). In addition, a furious spell can be cast while the caster is enraged, including during a barbarian rage or while affected by a <a href = "../coreRulebook/spells/rage.html"><em>rage</em></a> spell. Even a furious spell that requires an emotion component can be cast while enraged. The caster gains a +2 circumstance bonus on concentration checks and caster level checks related to casting a furious spell if she is enraged. A furious spell uses up a spell slot 1 level higher than the spell's actual level.</p>
+
+<h3 id = "greater-mesmerizing-feint">Greater Mesmerizing Feint (Combat)</h3>
+<p>You can feint against nearly any creature.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Mesmerizing Feint, <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a> 10 ranks, hypnotic stare class feature, psychic inception bold stare.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You can feint against mindless creatures at a &ndash;4 penalty. Such a creature must be a subject of your hypnotic stare, and the creature has a 50% chance of ignoring the effects of your feint.</p>
+<p class = "stat-block-1"><b>Normal</b>: Feinting against a creature that is mindless is impossible.</p>
+
+
+<h3 id = "hidden-presence">Hidden Presence</h3>
+<p>You are adept at hiding within your host.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Int or Cha 17, ability to cast <a href="spells/possession.html#possession"><em>possession</em></a> or <a href="spells/possession.html#possession-greater"><em>greater possession</em></a>.</p>
+<p class = "stat-block-1"><b>Benefit</b>: While possessing another creature, you can hide yourself from divinations and pass through wards such as <a href="../coreRulebook/spells/magicCircleAgainstEvil.html#magic-circle-against-evil"><em>magic circle against evil</em></a> or the effects of a <a href="../coreRulebook/spells/forbiddance.html#forbiddance"><em>forbiddance</em></a> spell. You must attempt a Will save against the spell (even if it doesn't normally allow a saving throw). If you succeed, the spell treats you as if you were your host (for instance, divinations would reveal only the host's alignment, and <a href="../coreRulebook/spells/forbiddance.html#forbiddance"><em>forbiddance</em></a> keyed to the host's alignment wouldn't damage you). If your saving throw fails, the spell functions against you as normal; if the spell normally allows a save, your previous failure doesn't count as a failed save against the spell's normal effects.</p>
+
+
+<h3 id = "implement-focus">Implement Focus</h3>
+<p>You are more adept at spending generic focus on focus powers from your chosen school.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Occultist level 3rd.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Select one of your implement schools. When you spend generic focus to activate focus powers with one of that school's implements, the focus powers cost their listed amount of mental focus.</p>
+<p class = "stat-block-1"><b>Normal</b>: Any focus power activated with generic focus costs twice as much focus to use and maintain.</p>
+<p class = "stat-block-1"><b>Special</b>: You can take this feat multiple times. Each time, you must select a different implement school.</p>
+
+<h3 id = "intense-pain">Intense Pain (Combat, Stare)</h3>
+<p>You deal additional damage when using your painful stare.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Mesmerist level 7th, painful stare class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: When you use your painful stare ability to increase your own damage, you deal an additional 1d6 points of damage. This damage increases to 2d6 at mesmerist level 12th and to 3d6 at mesmerist level 18th. When you use painful stare to augment an ally's damage, the target of the painful stare takes 1 additional point of damage for every 4 mesmerist levels you possess.</p>
+
+<h3 id = "interweave-composite-blast">Interweave Composite Blast (Combat, Teamwork)</h3>
+<p>You can combine your blasts with those of another kineticist.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Kinetic blast class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Whenever you are within 15 feet of another character who has this feat, you can ready an action to activate a simple blast of your choice. When that character unleashes a simple blast, yours is triggered, creating a composite blast for which the two simple blasts meet the prerequisites. The composite blast's caster level is equal to the average of the caster levels of both participants and deals damage as the appropriate composite blast created by a kineticist of that level (for example, if a 10th-level pyrokineticist and a 6th-level hydrokineticist worked together to create a steam blast, its base damage would be 4d6+4 points of fire damage and 4d6+4 points of bludgeoning damage).</p>
+<p class = "stat-block-1">One participant can provide a form infusion appropriate for the composite blast, and the other can provide an appropriate substance infusion. Each participant accepts the burn cost for the infusion she provided. The participant who didn't take the special ready action can apply a metakinesis to the blast, and she is the only one who can gather power to reduce the blast's cost (since only she has a move action to take prior to the blast). However, whatever metakinesis she applies affects the entire composite blast.</p>
+<p class = "stat-block-1">If the two participants aren't adjacent to each other, the origin point of cones, lines, and other effects that normally originate from a character's square instead originate from a point in the square located halfway between the two participants in a straight line (where the two simple blasts meet and form the composite blast).</p>
+<p class = "stat-block-1">The blast uses the Constitution modifier of whoever provided the substance infusion and the Dexterity modifier of whoever provided the form infusion. If the blast includes only one infusion, the blast uses the Constitution or Dexterity modifier of the kineticist who supplied that infusion, as appropriate for the infusion provided. If no infusions are used, the two kineticists choose one of them to provide the Dexterity modifier, and the other provides the Constitution modifier.</p>
+
+<h3 id = "intimidating-glance">Intimidating Glance (Combat)</h3>
+<p>Your gaze strikes fear into your enemies.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Hypnotic stare class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You can attempt to demoralize the target of your hypnotic stare as a swift action.</p>
+<p class = "stat-block-1"><b>Normal</b>: Attempting to demoralize an opponent is a standard action.</p>
+
+
+<h3 id = "intrusive-presence">Intrusive Presence</h3>
+<p>You can rifle through the thoughts and memories of your host.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Int or Cha 21, Hidden Presence, Manipulative Presence, ability to cast <a href="spells/possession.html#possession"><em>possession</em></a> or <a href="spells/possession.html#possession-greater"><em>greater possession</em></a>.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You can use <a href = "../coreRulebook/spells/detectThoughts.html"><em>detect thoughts</em></a> at will as a spell-like ability against a host creature you possess. The host receives no saving throw, and the effect functions as if you had concentrated for 3 rounds. You can also use <a href="../advancedPlayersGuide/spells/seekThoughts.html#seek-thoughts"><em>seek thoughts</em></a> on your host as a spell-like ability once during the possession. The host can attempt a Will save with a DC equal to the DC of the original possession effect. If the host succeeds, the effect fails and the host become aware of the possession if it wasn't already.</p>
+
+
+<h3 id = "intuitive-spell">Intuitive Spell (Metamagic)</h3>
+<p>You can avoid the need for thought components by trusting your instincts.</p>
+<p class = "stat-block-1"><b>Benefit</b>: An intuitive spell can be cast with no thought components. Spells without thought components are not affected. An intuitive spell uses up a spell slot 1 level higher than the spell's actual level.</p>
+
+<h3 id = "kinetic-counter">Kinetic Counter</h3>
+<p>You can use your kinetic blast to counter your enemy's opposing elemental abilities.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Cold simple blast, fire simple blast, or water simple blast; kinetic blast class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You can ready an action to use your blast to counter an opponent's elemental abilities. If you ready a fire simple blast, you can counter any spell or activated extraordinary, supernatural, or spell-like ability that has the water or ice descriptor, and if you ready a cold or water simple blast, you can counter any spell or activated extraordinary, supernatural, or spell-like ability that has the fire descriptor. In order to successfully counter the effect, you must succeed at a caster level check with a DC equal to either 11 + the opponent's caster level (for spells and spell-like abilities) or 11 + the opponent's Hit Dice (for extraordinary and supernatural abilities). Against spells and spell-like abilities, treat a success as if you had counterspelled the effect using <a href="../coreRulebook/spells/dispelMagic.html#dispel-magic"><em>dispel magic</em></a>. Against activated supernatural and extraordinary abilities, a successful kinetic counter negates the ability's effect entirely while still expending the ability. For example, if a pyrokineticist succeeds at her caster level check against a white dragon's breath weapon, she negates the breath weapon's effect in the entire area, and the dragon must wait 1d4 rounds to use its breath weapon again.
+</p>
+
+<h3 id = "kinetic-leap">Kinetic Leap</h3>
+<p>Kinetic energy propels you when you jump.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> 3 ranks, kinetic blast class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Once per day as a swift action, you can conjure a burst of energy from your kinetic blast to help you jump a long distance, adding a +10 bonus on your <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> check to jump; if you have at least 10 ranks in <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a>, the bonus increases to +20. By accepting 1 point of burn, you can use this ability at will until your burn is removed.</p>
+
+
+<h3 id = "logical-spell">Logical Spell (Metamagic)</h3>
+<p>You can eschew emotional components by exercising logic.</p>
+<p class = "stat-block-1"><b>Benefit</b>: A logical spell can be cast without emotion components. Spells that don't require emotion components are not affected. A logical spell uses up a spell slot 1 level higher than the spell's actual level.</p>
+
+
+<h3 id = "lucid-dreamer">Lucid Dreamer</h3>
+<p>The Dimension of Dreams is open to those willing to risk crossing the threshold.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Cha 13, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (planes) 3 ranks.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You have greater control of the highly morphic qualities and wild magic of the Dimension of Dreams. You gain a +4 bonus on Charisma checks to determine your initial condition when your lucid body enters a dream and when attempting impossible feats in a dreamscape, and a +2 bonus on caster level checks to prevent a spell or spell-like ability from going awry because of wild magic. If someone casts a <a href="spells/dreamCouncil.html#dream-council"><em>dream council</em></a> spell that includes you as a target while you are dreaming, you can enter a shared dreamscape as described in that spell without spending a casting of <a href = "../coreRulebook/spells/dream.html"><em>dream</em></a> or <a href="spells/dreamCouncil.html#dream-council"><em>dream council</em></a>. If your lucid body dies while in a dreamscape, you wake up fatigued.</p>
+
+
+<h3 id = "manipulative-presence">Manipulative Presence</h3>
+<p>When you discard your host, you alter or obliterate its memory of your handiwork.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Int or Cha 19, Hidden Presence, ability to cast <a href="spells/possession.html#possession"><em>possession</em></a> or <a href="spells/possession.html#possession-greater"><em>greater possession</em></a>.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Upon completion of your possession, you can alter up to 5 minutes of your host's memories as you see fit. This functions as the <a href="../coreRulebook/spells/modifyMemory.html#modify-memory"><em>modify memory</em></a> spell. Your host's awareness of the possession doesn't impact this ability, and if your control of the host lasted less than 5 minutes, you can cause it to forget the possession entirely. The host can attempt a Will save with a DC equal to that of the original possession effect to resist this alteration.</p>
+
+<h3 id = "mesmerizing-feint">Mesmerizing Feint (Combat)</h3>
+<p>You're adept at feinting against even the least imaginative of creatures.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Hypnotic stare class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You take only a &ndash;2 penalty when feinting against a non-humanoid and a &ndash;4 penalty when feinting against creatures with animal intelligence, as long as the target is a subject of your hypnotic stare. If you have at least 10 ranks in <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a>, you instead take no penalty when feinting against non-humanoids and creatures of animal intelligence under your hypnotic stare.</p>
+<p class = "stat-block-1"><b>Normal</b>: When feinting against a non-humanoid, you take a &ndash;4 penalty. Against a creature of animal intelligence, you take a &ndash;8 penalty.</p>
+
+<h3 id = "parting-blast">Parting Blast</h3>
+<p>When you die, your body explodes in one final, destructive kinetic blast.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Kinetic blast class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You can accept 1 point of burn to prepare a kinetic blast that automatically triggers upon your death. If you are killed at any point before your burn is removed, your body instantly erupts in an explosion that deals an amount of damage equal to that of your simple blast to all creatures in a 5-foot radius. A parting blast destroys your body, which might prevent any magic that requires an intact corpse.</p>
+
+
+<h3 id = "phantom-fighter">Phantom Fighter</h3>
+<p>Your phantom is a deadly foe of incorporeal adversaries.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Phantom class feature, phantom with the magic attacks ability.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Your phantom's natural weapons are treated as having the <em>ghost touch</em> property. In addition, when you cast a touch spell to be delivered by your phantom, you can modify the spell as if you possessed the <a href = "../advancedPlayersGuide/advancedFeats.html#ectoplasmic-spell">Ectoplasmic Spell</a> metamagic feat.</p>
+
+
+<h3 id = "phantom-fortification">Phantom Fortification</h3>
+<p>Your phantom remains partly immaterial even when fully manifested in ectoplasmic form.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Phantom class feature, phantom with the incorporeal flight ability.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Your phantom has a 50% chance of ignoring critical hits and precision-based damage when fully manifested in its ectoplasmic form, as if wearing armor with the <em>moderate fortification</em> special ability. This doesn't stack with other similar effects, and doesn't apply against attacks made with <em>ghost touch</em> weapons or weaponlike constructs made of force (such as a <em>clenched fist, mage's sword</em>, or <a href="../coreRulebook/spells/spiritualWeapon.html#spiritual-weapon"><em>spiritual weapon</em></a>).</p>
+
+
+<h3 id = "psychic-adept">Psychic Adept </h3>
+<p>You have honed your mind to harness psychic power.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Int 11, Psychic Sensitivity.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You gain the ability to cast a 0-level knack from the psychic class's spell list. You can cast this spell three times per day as a spell-like ability. The caster level for this ability is equal to your character level, and the save DC is equal to 10 + your Intelligence modifier.</p>
+<p class = "stat-block-1"><b>Special</b>: You can choose this feat multiple times, choosing a different knack each time.</p>
+
+
+<h3 id = "psychic-combatant">Psychic Combatant (Combat)</h3>
+<p>You are skilled at attacking opponents in psychic duels.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Int 13, Psychic Sensitivity or the ability to cast psychic spells or use psychic spell-like abilities, character level 3rd.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You gain an extra pool of manifestation points with a number of points equal to 1/2 your character level. You can use these points at any time during a psychic duel. When you are not participating in a psychic duel, you can spend 1 of these extra manifestation points as a swift action to gain a +1 bonus on saving throws against psychic spells until the start of your next turn, or 3 points as a swift action to gain a +2 bonus on saving throws against psychic spells until the start of your next turn. This pool refreshes at the start of each day.</p>
+
+
+<h3 id = "psychic-defender">Psychic Defender</h3>
+<p>You are adept at defending yourself during psychic duels.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Int 13, Psychic Sensitivity or the ability to cast psychic spells or use psychic spell-like abilities, character level 3rd.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Each time you enter a psychic duel, you gain a number of temporary hit points equal to your manifesting level (see Psychic Duels). These temporary hit points last until the end of the psychic duel.</p>
+
+
+<h3 id = "psychic-disciple">Psychic Disciple </h3>
+<p>You have opened your mind to the more advanced disciplines of basic psychic magic.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Int 13, Psychic Adept, Psychic Sensitivity.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You gain the ability to cast a 1st-level psychic spell from the psychic class's spell list. You can cast this spell twice per day as a spell-like ability. The caster level for this ability is equal to your character level, and the save DC is equal to 11 + your Intelligence modifier.</p>
+<p class = "stat-block-1"><b>Special</b>: You can take this feat multiple times, choosing a different spell each time.</p>
+
+
+<h3 id = "psychic-healing">Psychic Healing</h3>
+<p>The spirit finds ways to heal the body, guided by your faith.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Cha 11, Psychic Sensitivity or the ability to cast psychic spells, <a href = "../coreRulebook/skills/heal.html#heal">Heal</a> 3 ranks.</p>
+<p class = "stat-block-1"><b>Benefit</b>: As an additional use of the faith healing skill unlock, you can attempt to manipulate a creature's psychic form to heal damage to its physical form. This works as the treat deadly wounds use of the <a href = "../coreRulebook/skills/heal.html#heal">Heal</a> skill, but also grants the creature a number of temporary hit points equal to the amount of damage healed. These temporary hit points last for 1 hour. Psychic healing doesn't require a healer's kit. A creature can benefit from psychic healing only once per day, and can't benefit from both this ability and treat deadly wounds in the same day.</p>
+
+
+<h3 id = "psychic-maestro">Psychic Maestro</h3>
+<p>You can use two occult skill unlocks more often.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Psychic Sensitivity or the ability to cast psychic spells.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Choose two occult skill unlocks. You can use each of those one additional time per day (or per week, in the case of automatic writing). You must have at least 1 rank in the skills associated with the chosen occult skill unlocks.</p>
+
+
+<h3 id = "psychic-sensitivity">Psychic Sensitivity </h3>
+<p>You unlock the secrets of the occult world.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You gain access to occult skill unlocks for any skills in which you have ranks. If you have no ranks in the appropriate skill, you can't use the occult skill unlock, even if that skill can be used untrained.</p>
+<p class = "stat-block-1"><b>Normal</b>: You must have the ability to cast psychic spells in order to use occult skill unlocks.</p>
+
+
+<h3 id = "psychic-virtuoso">Psychic Virtuoso </h3>
+<p>You can use all of your occult skill unlocks more often and you are more talented at using them.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Psychic Sensitivity or ability to cast psychic spells.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You gain a +2 bonus on checks to use occult skill unlocks. If you have more than 10 ranks in the base skill, this bonus increases to +4. This bonus doesn't apply on other checks using the base skills&mdash;only on checks for occult skill unlocks.</p>
+
+
+<h3 id = "rapid-focus-shift">Rapid Focus Shift</h3>
+<p>You can move mental focus from one implement to another more quickly than usual.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Caster level 5th, mental focus class ability.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Once per day, you can take a full-round action to shift mental focus from one implement to another. You must be undisturbed and able to concentrate. If you take any damage during the transfer, you must succeed at a concentration check (DC = 10 + the number of points of damage taken) to complete the transfer. If you fail this check, you lose the points of mental focus instead of moving them from one implement to the other.</p>
+<p class = "stat-block-1"><b>Normal</b>: Shifting focus between two implements takes 1 minute of quiet contemplation.</p>
+<p class = "stat-block-1"><b>Special</b>: You can take this feat multiple times. Each time you do, you gain an additional daily use of Rapid Focus Shift.</p>
+
+<h3 id = "ready-for-battle">Ready for Battle</h3>
+<p>Your implanted trick spurs the body in battle.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Mesmerist trick class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: When you implant a trick, the subject gains a +2 morale bonus on initiative checks until the trick is triggered or its duration ends.</p>
+
+<h3 id = "ready-for-pain">Ready for Pain</h3>
+<p>Your implanted trick hardens the body against damage.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Mesmerist trick class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: When you implant a trick, you can grant the subject DR 1/&mdash; against nonlethal damage until the trick is triggered or its duration ends. This DR increases by 1 for every 5 mesmerist levels you possess.</p>
+
+
+<h3 id = "scarring-spell">Scarring Spell (Metamagic)</h3>
+<p>Your emotion-affecting magic causes psychic trauma in your opponents.</p>
+<p class = "stat-block-1"><b>Benefit</b>: When a creature fails a saving throw against a scarring spell, for the next 24 hours that creature takes a &ndash;2 penalty on saving throws against emotion and fear effects you create, and a &ndash;1 penalty on saving throws against other emotion and fear effects. Penalties from multiple scarring spells don't stack. This metamagic feat can be applied only to spells with the emotion or fear descriptor. A scarring spell uses up a spell slot 1 level higher than the spell's actual level.</p>
+
+
+<h3 id = "shared-soul">Shared Soul</h3>
+<p>You and your phantom are deeply connected in heart, mind, and soul.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Shared consciousness class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: While your phantom is confined within your consciousness, you gain a +2 bonus on saving throws against death effects, energy drain, and possession. In addition, once per day when you fail a saving throw against a death effect or possession effect or gain a negative level, as an immediate action you can shunt that effect into the phantom's section of your soul instead. When you do so, you are not affected by that effect, but you also don't gain any of the normal benefits of your shared consciousness ability and can't manifest your phantom in any way for the normal duration of the spell or effect shunted into the phantom's consciousness. The phantom suffers the full effect you transferred, and as long as your phantom continues to suffer from the effect, you cannot shunt a death or possession effect or negative level onto your phantom.</p>
+
+
+<h3 id = "shatter-mental-mask">Shatter Mental Mask (Combat)</h3>
+<p>You are adept at ripping away an opponent's mental mask, exposing its true visage during a psychic duel.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Psychic Sensitivity or ability to cast psychic spells or use psychic spell-like abilities, character level 2nd.</p>
+<p class = "stat-block-1"><b>Benefit</b>: While in a psychic duel, when you create an offensive manifestation that can be negated or halved only with a successful Will saving throw, if your opponent fails that Will saving throw, its mental mask is shattered, revealing the opponent's true form.</p>
+<p class = "stat-block-1"><b>Special</b>: If you possess the Third Eye feat, your opponent's mental mask is shattered even on a successful Will saving throw.</p>
+
+
+<h3 id = "spirit-focus">Spirit Focus </h3>
+<p>You have a strong connection to a particular legend, which empowers the spirits you channel.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Spirit bonus class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Select a legend of spirits. Your spirit bonus from spirits of that legend increases by 1.</p>
+
+
+<h3 id = "spirit-sense">Spirit Sense </h3>
+<p>You sense the presence of the unseen.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Psychic Sensitivity or ability to cast psychic spells.</p>
+<p class = "stat-block-1"><b>Benefit</b>: You gain a +5 bonus on checks to notice haunts. In addition, when you target an incorporeal creature with a corporeal spell or effect that doesn't deal damage, you have a 75% chance of affecting the target.</p>
+<p class = "stat-block-1"><b>Normal</b>: Corporeal spells and effects that don't deal damage have only a 50% chance of affecting an incorporeal creature.</p>
+
+
+<h3 id = "spiritual-balance">Spiritual Balance</h3>
+<p>You focus your ki in order to quell the influence of outside spirits on you.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Ki pool class feature, still mind class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: The saving throw bonus from your still mind class feature applies against possession effects, and as an immediate action you can spend 1 point from your ki pool to double the saving throw bonus provided by still mind.</p>
+<p class = "stat-block-1"><b>Normal</b>: Your still mind class feature applies only against enchantment spells and effects.</p>
+
+
+<h3 id = "spiritualist-call">Spiritualist's Call</h3>
+<p>Whenever you summon your phantom, it is more powerful for a brief period of time.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Phantom class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Whenever you summon your phantom, you can give it a +2 enhancement bonus to its Strength, Dexterity, or Charisma. This bonus lasts for 10 minutes after the summoning ritual is complete.</p>
+
+
+<h3 id = "strong-implement-link">Strong Implement Link</h3>
+<p>Your connection to a particular implement allows you to draw on its power more efficiently even when it's not in your possession.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Implements class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: When you are within 30 feet of your implement, you don't need to attempt a concentration check to cast spells associated with that implement. When you are at a greater distance, the DC for the concentration check is equal to 15 + the spell's level.</p>
+<p class = "stat-block-1"><b>Normal</b>: Anytime you attempt to cast a spell using an implement that's not in your possession, you must succeed at a concentration check with a DC equal to 20 + the spell's level in order to cast the spell.</p>
+<p class = "stat-block-1"><b>Special</b>: You can take this feat multiple times. Its effects don't stack. Each time you take the feat, you gain the benefits for a different school of implements. If you have more than one implement of a single school, you can select that school multiple times and apply the benefits to another one of those implements each time you take this feat and select that school.</p>
+
+
+<h3 id = "third-eye">Third Eye </h3>
+<p>You possess and can open a third eye that permits you to see things as they really are and gain greater insight into auras.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Psychic Sensitivity or ability to cast psychic spells.</p>
+<p class = "stat-block-1"><b>Benefit</b>: Once per day as a standard action, you can open a spiritual third eye positioned on your forehead between and above your normal eyes. You can keep this eye open for up to 1 minute per character level you possess. This duration doesn't have to be consecutive, but it must be used in 1-minute increments. Once per day while your third eye is open, you can use the read aura occult skill unlock after 1 minute of intense concentration. This is in addition to the normal daily use of read aura (which still takes 10 minutes). While your third eye is open, you gain a +4 bonus on <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> checks to read auras, as well as a +8 bonus on <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> checks to detect invisible creatures or objects or see through magical disguises (both illusory ones and those provided by the change shape ability or polymorph magic). When you close your third eye, either voluntarily or at the end of the time limit, you are fatigued for an amount of time equal to the length of time you kept your third eye open.</p>
+<p class = "stat-block-1"><b>Normal</b>: Without this feat, you must spend 10 minutes in intense concentration to read one of a creature or item's four auras, and you can do so only once per day.</p>
+<p class = "stat-block-1"><b>Special</b>: You can take this feat multiple times. Its effects don't stack. Each time you take the feat, you increase the number of times per day you can open your third eye (and read an aura) by one.</p>
+
+
+<h3 id = "traumatic-spell">Traumatic Spell (Metamagic)</h3>
+<p>Creatures harmed by your spells relive their torments in nightly terrors.</p>
+<p class = "stat-block-1"><b>Benefit</b>: A traumatic spell causes lingering memories of pain and suffering in creatures harmed by it. When a creature fails a saving throw against a traumatic spell, the next time it sleeps it must succeed at a Will save with a DC equal to the original spell's DC or be affected as if by <a href = "../coreRulebook/spells/nightmare.html"><em>nightmare</em></a>. Each time the target fails its save, it must save again the following night or be affected by another <a href = "../coreRulebook/spells/nightmare.html"><em>nightmare</em></a>, though the save DC decreases by 2 each night after the first. This metamagic feat can be applied only to spells with the emotion or fear descriptor. A traumatic spell uses up a spell slot 2 levels higher than the spell's actual level.</p>
+
+
+<h3 id = "vigilant-phantom">Vigilant Phantom</h3>
+<p>Your phantom is highly observant, and its link with you increases your own watchfulness.</p>
+<p class = "stat-block-1"><b>Prerequisite</b>: Phantom class feature.</p>
+<p class = "stat-block-1"><b>Benefit</b>: While your phantom is within your reach, you gain a +4 bonus on <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> checks. If you have 10 or more ranks in <a href = "../coreRulebook/skills/perception.html#perception">Perception</a>, this bonus increases to +8. This doesn't apply if your phantom is helpless or unconscious.</p>
+
+
+<h3 id = "xenoglossy">Xenoglossy</h3>
+<p>People everywhere share a common tongue; they just don't always remember it.</p>
+<p class = "stat-block-1"><b>Prerequisites</b>: Int 13, <a href = "../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a> 3 ranks.</p>
+<p class = "stat-block-1"><b>Benefit</b>: With a successful DC 25 <a href = "../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a> check, you can speak with a single individual with whom you share no common languages. You cannot take 10 on this check, nor can anyone aid you. You believe you are speaking your native language, and the listener believes you are speaking its native language; however, to everyone else able to hear you, you sound like you are speaking gibberish. Creatures that have truespeech or that are under the effects of <a href = "../coreRulebook/spells/tongues.html"><em>tongues</em></a> can understand Xenoglossy, and other creatures who succeed at a DC 25 <a href = "../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a> check can pick up the gist of what you are saying. Xenoglossy lasts for the length of the conversation or for 1 minute per level, whichever is shorter. You can use Xenoglossy again to continue a longer conversation, and you gain a +2 on <a href = "../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a> checks to use Xenoglossy to communicate with someone with whom you previously communicated using this feat. If you fail a Xenoglossy check, you can't use the Xenoglossy feat to attempt further communication with that creature until you gain additional ranks in <a href = "../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a>.</p>
+
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Occult Adventures Feats",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

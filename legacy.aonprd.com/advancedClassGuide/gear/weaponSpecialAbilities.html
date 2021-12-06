@@ -1,0 +1,625 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Weapon Special Abilities</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "weaponSpecialAbilities.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "weaponSpecialAbilities.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "weaponSpecialAbilities.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "../classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../spells/index.html">Spells</a></li>
+						<li><a href = "../spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "index.html">Gear and Magic Items</a></li>
+						<li><a href = "../designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "weaponSpecialAbilities.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "weaponSpecialAbilities.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "weaponSpecialAbilities.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "weaponSpecialAbilities.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "weaponSpecialAbilities.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "weaponSpecialAbilities.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "weaponSpecialAbilities.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "weaponSpecialAbilities.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "weaponSpecialAbilities.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "weaponSpecialAbilities.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "weaponSpecialAbilities.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "weaponSpecialAbilities.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "weaponSpecialAbilities.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "weaponSpecialAbilities.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "weaponSpecialAbilities.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "weaponSpecialAbilities.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "weaponSpecialAbilities.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "weaponSpecialAbilities.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id = "advanced-class-guide-weapon-special-abilities">Weapon Special Abilities</h1>
+<p>The following are new weapon special abilities. Weapons with a special ability must have at least a +1 enhancement bonus.</p>
+
+<table>
+	<caption>Weapon Special Abilities</caption>
+	<thead>
+		<tr><th>+1 Weapon Special Ability</th><th>Base Price*</th></tr>
+	</thead>
+	<tbody>
+		<tr><td><a href = "weaponSpecialAbilities.html#phantom-ammunition"><em>Phantom ammunition</em></a></td><td>+2,000 gp</td></tr>
+		<tr><td><a href = "weaponSpecialAbilities.html#prehensile"><em>Prehensile</em></a></td><td>+2,500 gp</td></tr>
+		<tr><td><a href = "weaponSpecialAbilities.html#answering"><em>Answering</em></a></td><td>+1 bonus</td></tr>
+		<tr><td><a href = "weaponSpecialAbilities.html#blood-hunting"><em>Blood-hunting</em></a></td><td>+1 bonus</td></tr>
+		<tr><td><a href = "weaponSpecialAbilities.html#bloodsong"><em>Bloodsong</em></a></td><td>+1 bonus</td></tr>
+		<tr><td><a href = "weaponSpecialAbilities.html#brawling"><em>Brawling</em></a></td><td>+1 bonus</td></tr>
+		<tr><td><a href = "weaponSpecialAbilities.html#confounding"><em>Confounding</em></a></td><td>+1 bonus</td></tr>
+		<tr><td><a href = "weaponSpecialAbilities.html#distracting"><em>Distracting</em></a></td><td>+1 bonus</td></tr>
+		<tr><td><a href = "weaponSpecialAbilities.html#fate-stealing"><em>Fate-stealing</em></a></td><td>+1 bonus</td></tr>
+		<tr><td><a href = "weaponSpecialAbilities.html#flamboyant"><em>Flamboyant</em></a></td><td>+1 bonus</td></tr>
+		<tr><td><a href = "weaponSpecialAbilities.html#fortuitous"><em>Fortuitous</em></a></td><td>+1 bonus</td></tr>
+		<tr><td><a href = "weaponSpecialAbilities.html#inspired"><em>Inspired</em></a></td><td>+1 bonus</td></tr>
+		<tr><td><a href = "weaponSpecialAbilities.html#sacred"><em>Sacred</em></a></td><td>+1 bonus</td></tr>
+		<tr><td><a href = "weaponSpecialAbilities.html#spirit-hunting"><em>Spirit-hunting</em></a></td><td>+1 bonus</td></tr>
+	</tbody>
+	<thead>
+		<tr><th>+2 Weapon Special Ability</th><th>Base Price*</th></tr>
+	</thead>
+	<tbody>
+		<tr><td><a href = "weaponSpecialAbilities.html#exclusionary"><em>Exclusionary</em></a></td><td>+3,750 gp</td></tr>
+		<tr><td><a href = "weaponSpecialAbilities.html#sneaky"><em>Sneaky</em></a></td><td>+5,000 gp</td></tr>
+		<tr><td><a href = "weaponSpecialAbilities.html#greater-distracting"><em>Greater distracting</em></a></td><td>+2 bonus</td></tr>
+	</tbody>
+	<thead>
+		<tr><th>+3 Weapon Special Ability</th><th>Base Price*</th></tr>
+	</thead>
+	<tbody>
+		<tr><td><a href = "weaponSpecialAbilities.html#exhausting"><em>Exhausting</em></a></td><td>+3 bonus</td></tr>
+		<tr><td><a href = "weaponSpecialAbilities.html#greater-flamboyant"><em>Greater flamboyant</em></a></td><td>+3 bonus</td></tr>
+	</tbody>
+	<thead>
+		<tr><th>+5 Weapon Special Ability</th><th>Base Price*</th></tr>
+	</thead>
+	<tbody>
+		<tr><td><a href = "weaponSpecialAbilities.html#flying"><em>Flying</em></a></td><td>+5 bonus</td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "2">*Add to the enhancement bonus of the weapon to determine the total price.</td></tr>
+	</tfoot>
+</table>
+
+<p id = "answering-weapon-special-ability" class = "stat-block-title">Answering</p>
+<p class = "stat-block-1"><strong>Price</strong> +1 bonus; <strong>Slot</strong>none; <strong>CL</strong> 7th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> moderate enchantment</p>
+<p class = "stat-block">This ability can be placed only on melee weapons. For the purpose of the opportune parry and riposte deed, the weapon's enhancement bonus increases by 4 (to a maximum of +5).</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +1 bonus</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em><a href="../../coreRulebook/spells/goodHope.html#good-hope">good hope</a></em>, creator must have the opportune parry and riposte deed</p>
+
+
+<p id = "blood-hunting-weapon-special-ability" class = "stat-block-title">Blood-Hunting</p>
+<p class = "stat-block-1"><strong>Price</strong> +1 bonus; <strong>Slot</strong>none; <strong>CL</strong> 8th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> moderate conjuration</p>
+<p class = "stat-block">A <em>blood-hunting</em> weapon excels against enemies with the bloodline class feature. Against a designated foe, the weapon's enhancement bonus is 2 better than its actual bonus. It also deals an additional 2d6 points of damage against such foes. When combined with abilities like <em><a href="../../coreRulebook/magicItems/weapons.html#weapons-bane">bane</a></em> or <em>spirit-hunting</em>, the enhancement bonus increases granted by these abilities don't stack, but an extra 1d6 points of damage are added to the additional damage for each special ability beyond the first. (For example, a <em><a href="../../coreRulebook/magicItems/weapons.html#weapons-bane">bane</a> blood-hunting</em> weapon would deal 3d6 additional points of damage, and a <em><a href="../../coreRulebook/magicItems/weapons.html#weapons-bane">bane</a> blood-hunting spirit-hunting</em> weapon would deal 4d6 additional points of damage.) To randomly determine a weapon's designated foe, roll on the following table. Other designated foes are possible, but most of these weapons are tuned against creatures with the following bloodlines.</p>
+<table>
+	<thead>
+		<tr><th>d%</th><th>Designated Foe</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>01&ndash;05</td><td>Aberrant</td></tr>
+		<tr><td>06&ndash;15</td><td>Abyssal</td></tr>
+		<tr><td>16&ndash;30</td><td>Arcane</td></tr>
+		<tr><td>31&ndash;35</td><td>Celestial</td></tr>
+		<tr><td>36&ndash;40</td><td>Destined</td></tr>
+		<tr><td>41&ndash;50</td><td>Draconic</td></tr>
+		<tr><td>51&ndash;60</td><td>Elemental</td></tr>
+		<tr><td>61&ndash;70</td><td>Fey</td></tr>
+		<tr><td>71&ndash;80</td><td>Infernal</td></tr>
+		<tr><td>81&ndash;90</td><td>Undead</td></tr>
+		<tr><td>91&ndash;95</td><td>Other</td></tr>
+		<tr><td>96&ndash;100</td><td>All</td></tr>
+	</tbody>
+</table>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +1 bonus</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em><a href="../../coreRulebook/spells/summonMonster.html#summon-monster-i">summon monster I</a></em></p>
+
+
+<p id = "bloodsong-weapon-special-ability" class = "stat-block-title">Bloodsong</p>
+<p class = "stat-block-1"><strong>Price</strong> +1 bonus; <strong>Slot</strong>none; <strong>CL</strong> 6th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> moderate transmutation</p>
+<p class = "stat-block">This special ability can be placed only on slashing or piercing melee weapons. While the wielder benefits from a raging song performance (whether her own or from an ally), this weapon gains the <em><a href="../../coreRulebook/magicItems/weapons.html#weapons-keen">keen</a></em> weapon special ability. If the wearer confirms a critical hit while under the effects of a raging song, she gains 1d10 temporary hit points that last until they're reduced to 0 or the raging song ends, whichever comes first. If the weapon's critical multiplier is &times;3, add 2d10 temporary hit points instead; if the multiplier is &times;4, add 3d10 temporary hit points instead. While its powers are active, the weapon vibrates and makes a barely audible hum that rises to a shriek of triumph when it confirms a critical hit.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +1 bonus</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em><a href="../../coreRulebook/spells/keenEdge.html#keen-edge">keen edge</a></em>, creator must have the raging song class feature</p>
+
+
+<p id = "brawling-weapon-special-ability" class = "stat-block-title">Brawling</p>
+<p class = "stat-block-1"><strong>Price</strong> +1 bonus; <strong>Slot</strong>none; <strong>CL</strong> 7th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> moderate enchantment</p>
+<p class = "stat-block">This weapon special ability can be applied only to brass knuckles, a cestus, a sap, or a light bludgeoning weapon. The wielder of this weapon gains an enhancement bonus on combat maneuver checks equal to the enhancement bonus of the weapon.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +1 bonus</p>
+<p class = "stat-block">Craft Magic Arms and Armor, Improved Trip, <em><a href="../../coreRulebook/spells/guidance.html#guidance">guidance</a></em></p>
+
+
+<p id = "confounding-weapon-special-ability" class = "stat-block-title">Confounding</p>
+<p class = "stat-block-1"><strong>Price</strong> +1 bonus; <strong>Slot</strong> none<; <strong>CL</strong> 5th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> faint transmutation</p>
+<p class = "stat-block">When the wielder confirms a critical hit with a <em>confounding</em> weapon, she can spend 1 panache point to attempt a combat maneuver to disarm, reposition, sunder, or trip the target as an immediate action, gaining an enhancement bonus on the combat maneuver check equal to the enhancement bonus of the <em>confounding</em> weapon. This combat maneuver does not provoke an attack of opportunity. The wielder can't use panache gained by confirming the critical hit to activate this ability.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +1 bonus</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em><a href="../../coreRulebook/spells/eagleSSplendor.html#eagle-s-splendor">eagle's splendor</a></em></p>
+
+
+<p id = "distracting-weapon-special-ability" class = "stat-block-title">Distracting</p>
+<p class = "stat-block-1"><strong>Price</strong> +1 bonus; <strong>Slot</strong>none; <strong>CL</strong> 5th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> faint enchantment</p>
+<p class = "stat-block">Weapons with this special ability cause foes struck by them to have difficulty controlling their magic. Any time a creature that has been struck by a <em>distracting</em> weapon would have to succeed at a concentration check to complete a spell or use a special ability or item, the DC of that check increases by 5. This distraction lasts for 1 minute. Once a <em>distracting</em> weapon affects a creature in this way, that creature can't be affected by a <em>distracting</em> effect for 24 hours, though it can be affected by a <em>greater distracting</em> effect.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +1 bonus</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em><a href="../../ultimateCombat/spells/qualm.html#qualm">qualm</a></em></p>
+
+
+<p id = "distracting-greater-weapon-special-ability" class = "stat-block-title">Distracting, Greater</p>
+<p class = "stat-block-1"><strong>Price</strong> +2 bonus; <strong>Slot</strong>none; <strong>CL</strong> 8th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> moderate enchantment</p>
+<p class = "stat-block">Weapons with this special ability cause foes struck by them to have exceptional difficulty controlling their magic. Any time a creature that has been struck by a <em>greater distracting</em> weapon would have to succeed at a concentration check to complete a spell or use a special ability or item, the DC of that check increases by 10. This distraction lasts for 1 minute. Once a <em>greater distracting</em> weapon affects a creature in this way, that creature can't be affected by a <em>distracting</em> or <em>greater distracting</em> effect for 24 hours. If a <em>greater distracting</em> weapon is used on a creature already affected by a <em>distracting</em> weapon's effect, the two effects do not stack; the <em>distracting</em> effect ends, and the creature is affected by the <em>greater distracting</em> weapon's effect instead.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +2 bonus</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em><a href="../../ultimateCombat/spells/qualm.html#qualm">qualm</a></em></p>
+
+
+<p id = "exclusionary-weapon-special-ability" class = "stat-block-title">Exclusionary</p>
+<p class = "stat-block-1"><strong>Price</strong> +3,750 gp; <strong>Slot</strong>none; <strong>CL</strong> 1st; <strong>Weight</strong> &mdash;; <strong>Aura</strong> faint necromancy</p>
+<p class = "stat-block">When the wielder of an <em>exclusionary</em> weapon damages a creature with it, she can choose to not affect that creature with any channel energy ability she uses within the next minute. The maximum number of targets the wielder can exclude at one time is equal to her Wisdom bonus plus the enhancement bonus of the <em>exclusionary</em> weapon. If the wielder of an <em>exclusionary</em> weapon strikes a creature that would cause her to go over this limit, she loses the ability to exclude the target she has been excluding for the longest amount of time.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +1,875 gp</p>
+<p class = "stat-block">Craft Magic Arms and Armor, Selective Channeling, <em><a href="../../coreRulebook/spells/sanctuary.html#sanctuary">sanctuary</a></em></p>
+
+
+<p id = "exhausting-weapon-special-ability" class = "stat-block-title">Exhausting</p>
+<p class = "stat-block-1"><strong>Price</strong> +3 bonus; <strong>Slot</strong>none; <strong>CL</strong> 12th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> strong necromancy</p>
+<p class = "stat-block">This ability can be placed only on melee weapons. An <em>exhausting</em> weapon can bring a great weariness to opponents in battle. On a critical hit, the wielder can choose to forgo the additional damage dice to instead sap the struck creature's strength and stamina, causing it to become exhausted. Opponents that are already exhausted don't suffer any additional effects, and creatures immune to the effects of exhaustion or to critical hits are not affected.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +3 bonus</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em><a href="../../coreRulebook/spells/rayOfExhaustion.html#ray-of-exhaustion">ray of exhaustion</a></em></p>
+
+
+<p id = "fate-stealing-weapon-special-ability" class = "stat-block-title">Fate-Stealing</p>
+<p class = "stat-block-1"><strong>Price</strong> +1 bonus; <strong>Slot</strong>none; <strong>CL</strong> 5th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> faint necromancy</p>
+<p class = "stat-block">This special ability can be placed only on melee weapons. When a <em>fate-stealing</em> weapon strikes a creature that possesses either grit or panache, the wielder can steal 1 grit point or panache point as a swift action. When the wielder steals a grit or panache point, she can regain 1 grit point or 1 panache point (if the wielder has any). The wielder can use a foe's grit to restore her own panache, or use a foe's panache to restore her own grit.</p>
+<p class = "stat-block">If the wielder attempts to use this ability against a foe that isn't a grit or panache user, or that currently has no points of grit or panache remaining, the wielder doesn't expend an action, and the attempt fails. </p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +1 bonus</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em><a href="../../coreRulebook/spells/vampiricTouch.html#vampiric-touch">vampiric touch</a></em></p>
+
+
+<p id = "flamboyant-weapon-special-ability" class = "stat-block-title">Flamboyant</p>
+<p class = "stat-block-1"><strong>Price</strong> +1 bonus; <strong>Slot</strong>none; <strong>CL</strong> 8th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> moderate transmutation</p>
+<p class = "stat-block">This special ability can be placed only on one-handed or light piercing melee weapons. A <em>flamboyant</em> weapon has its own magical reservoir of panache that its wielder can spend to use her deeds. Usually this panache is stored within a jewel or other adornment. This reservoir holds 1 panache point, which is refreshed at the start of each day. </p>
+<p class = "stat-block">Whether or not the wielder of a <em>flamboyant</em> weapon has any deeds, she can always spend 1 panache point from the <em>flamboyant</em> weapon to reroll an attack made with it that missed due to rolling a natural 1. When the wielder does so, she must take the second result, even if it also misses. </p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +1 bonus</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em><a href="../../coreRulebook/spells/heroism.html#heroism">heroism</a></em>, creator must be a panache user</p>
+
+
+<p id = "flamboyant-greater-weapon-special-ability" class = "stat-block-title">Flamboyant, Greater</p>
+<p class = "stat-block-1"><strong>Price</strong> +3 bonus; <strong>Slot</strong>none; <strong>CL</strong> 5th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> moderate transmutation</p>
+<p class = "stat-block">This special ability can be placed only on one-handed or light piercing melee weapons. A <em>greater flamboyant</em> weapon is nearly identical to a <em>flamboyant</em> weapon, but its reservoir holds 3 panache points instead of 1. A weapon cannot have both this special ability and the <em>flamboyant</em> special ability.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +3 bonus</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em><a href="../../coreRulebook/spells/heroism.html#heroism-greater">greater heroism</a></em>, creator must be a panache user</p>
+
+
+<p id = "flying-weapon-special-ability" class = "stat-block-title">Flying</p>
+<p class = "stat-block-1"><strong>Price</strong> +5 bonus; <strong>Slot</strong>none; <strong>CL</strong> 16th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> strong transmutation</p>
+<p class = "stat-block">This ability can be placed only on melee weapons. A <em>flying</em> weapon acts as a <em><a href="../../coreRulebook/magicItems/weapons.html#weapons-dancing">dancing</a></em> weapon, but while dancing it can be directed to attack foes up to 30 feet away. Additionally, at any time (even if the weapon is not dancing), the last wielder to draw the weapon can will it to return to him as a swift action. It flies up to 500 feet per round to return to its wielder, making one sunder attempt per round to penetrate any barrier it can't fly around and a combat maneuver check (using its last wielder's CMB) against the CMD of any creature that attempts to hold or restrain it (bursting free on a successful check). When it returns to its wielder, the weapon flies into an empty hand or, if its wielder does not have a free hand, falls at his feet. If the weapon can't return after 4 rounds, it falls inert.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +5 bonus</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em>animate object</em></p>
+
+
+<p id = "fortuitious-weapon-special-ability" class = "stat-block-title">Fortuitous</p>
+<p class = "stat-block-1"><strong>Price</strong> +1 bonus; <strong>Slot</strong>none; <strong>CL</strong> 8th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> moderate transmutation</p>
+<p class = "stat-block">This special ability can be placed only on melee weapons. A <em>fortuitous</em> weapon grants the wielder more attacks of opportunity. Once per round, when the wielder of a <em>fortuitous</em> weapon hits with an attack of opportunity, he can make a second attack of opportunity with this weapon against that foe at a &ndash;5 penalty.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +1 bonus</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em><a href="../../coreRulebook/spells/haste.html#haste">haste</a></em></p>
+
+
+<p id = "inspired-weapon-special-ability" class = "stat-block-title">Inspired</p>
+<p class = "stat-block-1"><strong>Price</strong> +1 bonus; <strong>Slot</strong>none; <strong>CL</strong> 7th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> moderate enchantment</p>
+<p class = "stat-block">This special ability can be placed only on simple weapons, hand crossbows, rapiers, shortbows, short swords, and sword canes. In the hands of an investigator, an <em>inspired</em> weapon reduces the cost of using inspiration on attack rolls made with the weapon. The weapon's wielder needs to expend only one use of inspiration to augment his attack rolls with this weapon, as with the combat inspiration investigator talent. If the wielder already has the combat inspiration talent, the wielder must still expend one use of inspiration, but in addition to adding the result of the inspiration roll to the attack roll, the investigator adds twice the result of the inspiration roll to the weapon's damage roll.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +1 bonus</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em><a href="../../coreRulebook/spells/goodHope.html#good-hope">good hope</a></em></p>
+
+
+<p id = "phantom-ammunition-weapon-special-ability" class = "stat-block-title">Phantom Ammunition</p>
+<p class = "stat-block-1"><strong>Price</strong> +2,000 gp; <strong>Slot</strong>none; <strong>CL</strong> 7th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> moderate transmutation</p>
+<p class = "stat-block">This special ability can be placed only on ammunition. Ammunition with this weapon special ability dissolves 1 round after it is fired. Additionally, if the projectile strikes true, the wound closes after the ammunition disintegrates. The weapon deals normal damage, but leaves behind no visible trace of foul play.</p>
+<p class = "stat-block">The listed price is for 50 pieces of phantom ammunition.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +1,000 gp</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em><a href="../../coreRulebook/spells/disintegrate.html#disintegrate">disintegrate</a>, <a href="../../coreRulebook/spells/makeWhole.html#make-whole">make whole</a></em></p>
+
+
+<p id = "prehensile-weapon-special-ability" class = "stat-block-title">Prehensile</p>
+<p class = "stat-block-1"><strong>Price</strong> +2,500 gp; <strong>Slot</strong>none; <strong>CL</strong> 7th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> moderate enchantment</p>
+<p class = "stat-block">This special ability can be placed only on a whip. A prehensile whip can, as a swift action, be attached to an object as if it were a grappling hook. The whip can then be used to climb surfaces or to swing across a room or any open area. By spending 1 panache point as a free action, a swashbuckler increases a <em>prehensile</em> whip's reach to 20 feet for a single attack, and can use the whip with his precise strike ability even though it's not a light or one-handed piercing weapon.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +1,250 gp</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em><a href="../../coreRulebook/spells/ropeTrick.html#rope-trick">rope trick</a></em></p>
+
+
+<p id = "sacred-weapon-special-ability" class = "stat-block-title">Sacred</p>
+<p class = "stat-block-1"><strong>Price</strong> +1 bonus; <strong>Slot</strong>none; <strong>CL</strong> 16th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> strong transmutation</p>
+<p class = "stat-block">A <em>sacred</em> weapon is filled with divine energy, and acts as a holy symbol. When wielded by a creature that can cast divine spells, the weapon automatically displays an image of that creature's holy symbol, often as a glowing rune on the weapon's blade or along its haft.</p>
+<p class = "stat-block">Additionally, if the wielder has the blessings class feature, whenever he channels energy, he can choose one ally or ally's weapon within the area of the channeled energy and bestow upon that creature or weapon the benefits of one of his minor blessings at a cost of one use of that blessing. </p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +1 bonus</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em><a href="../../coreRulebook/spells/imbueWithSpellAbility.html#imbue-with-spell-ability">imbue with spell ability</a></em></p>
+
+<p id = "sneaky-weapon-special-ability" class = "stat-block-title">Sneaky</p>
+<p class = "stat-block-1"><strong>Price</strong> +5,000 gp; <strong>Slot</strong> none<; <strong>CL</strong> 7th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> moderate necromancy</p>
+<p class = "stat-block">This special ability can be placed only on a melee weapon. Once per day as a free action, the wielder of a <em>sneaky</em> weapon can designate a single foe within his melee reach as his prey. If the wielder has the sneak attack class feature, he adds his sneak attack damage to the next attack he makes against his prey, even if the wielder is not flanking and the target is not denied its Dexterity bonus to AC, as long as that attack is made before the end of the wielder's next turn. If the wielder is a rogue or slayer with the hunter's surprise talent, he can use that talent one additional time per day.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +2,500 gp</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em><a href="../../coreRulebook/spells/doom.html#doom">doom</a></em></p>
+
+
+<p id = "spirit-hunting-weapon-special-ability" class = "stat-block-title">Spirit-Hunting</p>
+<p class = "stat-block-1"><strong>Price</strong> +1 bonus; <strong>Slot</strong>none; <strong>CL</strong> 8th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> moderate conjuration</p>
+<p class = "stat-block">A <em>spirit-hunting</em> weapon excels against enemies with either the mystery or spirit class feature (but has no effect against a shaman who has a temporary bond to the appropriate spirit by way of the wandering spirit class feature or similar effect). Against a designated foe, the weapon's enhancement bonus is 2 better than its actual bonus. It also deals 2d6 additional points of damage against such foes. When combined with abilities like <em><a href="../../coreRulebook/magicItems/weapons.html#weapons-bane">bane</a></em> or <em>blood-hunting</em>, the enhancement bonus increases granted by these abilities do not stack, but an additional 1d6 points of damage are added to the additional damage for each special ability beyond the first. (For example, a <em><a href="../../coreRulebook/magicItems/weapons.html#weapons-bane">bane</a> spirit-hunting</em> weapon would deal 3d6 additional points of damage, and a <em><a href="../../coreRulebook/magicItems/weapons.html#weapons-bane">bane</a> blood-hunting spirit-hunting</em> weapon would deal 4d6 additional points of damage.) To randomly determine a weapon's designated foe, roll on the following table. Other designated foes are possible, but most of these weapons are tuned against creatures with the following mysteries or spirits.</p>
+<table>
+	<thead>
+		<tr><th>d%</th><th>Designated Foe</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>01&ndash;10</td><td>Battle</td></tr>
+		<tr><td>11&ndash;20</td><td>Bones</td></tr>
+		<tr><td>21&ndash;30</td><td>Flame</td></tr>
+		<tr><td>31&ndash;40</td><td>Heavens</td></tr>
+		<tr><td>41&ndash;50</td><td>Life</td></tr>
+		<tr><td>51&ndash;60</td><td>Lore</td></tr>
+		<tr><td>61&ndash;70</td><td>Nature</td></tr>
+		<tr><td>71&ndash;80</td><td>Stone</td></tr>
+		<tr><td>81&ndash;90</td><td>Waves</td></tr>
+		<tr><td>91&ndash;00</td><td>Wind</td></tr>
+	</tbody>
+</table>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +1 bonus</p>
+<p class = "stat-block">Craft Magic Arms and Armor, <em><a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-i">summon nature's ally I</a></em></p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Weapon Special Abilities",globalNavPath=[{ href: '/pathfinderRPG/prd/advancedClassGuide/gear/index.html', name: 'Gear and Magic Items'}];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

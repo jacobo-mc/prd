@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Advanced Class Guide Spell Lists</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "spellLists.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "../classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "index.html">Spells</a></li>
+						<li><a href = "spellLists.html">Spell Lists</a></li>
+						<li><a href = "../gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "spellLists.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "spellLists.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "spellLists.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id = "advanced-class-guide-spell-lists">Spell Lists</h1>
+<p>The following lists summarize the new spells presented in this book, arranged by class and level. A superscript "F" or "M" appearing at the end of a spell's name in the spell lists denotes a focus or material component not normally included in a spell component pouch.</p>
+<p><b>Order of Presentation</b>: These lists present the spells in alphabetical order by name, except when a spell's name begins with "communal," "lesser," "greater," or "mass," in which case it is alphabetized under the second word of the spell name.</p>
+<p><b>Hit Dice</b>: The term "Hit Dice" is used synonymously with "character levels" for effects that affect a specific number of Hit Dice of creatures.</p>
+<p><b>Caster Level</b>: A spell's power often depends on caster level, which is defined as the caster's class level for the purpose of casting a particular spell. The word "level" in the short spell descriptions that follow always refers to caster level.</p>
+<p><b>Creatures and Characters</b>: "Creature" and "character" are used synonymously in the short descriptions.</p>
+<p><b>Communal Spells</b>: Communal spells function like other spells, except they allow you to divide the duration among multiple targets, treating each target as a subject of the spell. When you divide the duration, you must divide it as evenly as possible among the targets. Furthermore, unless a communal spell's description indicates otherwise, no target can receive a duration increment smaller than the smallest increment of duration given in the spell description. For example, if you are 5th level, your communal spell's duration is 10 minutes per level, and you have four targets, then each target must receive 10 minutes of duration. The extra 10 minutes of duration must be assigned to one of the four targets (your choice) or it is wasted.</p>
+<p><b>A Note on Alchemists</b>: Alchemists can dispense communal formulae to creatures only if they have the infusion discovery. Without it, an alchemist cannot use communal spells as formulae.</p>
+
+<h2 id = "advanced-class-guide-alchemist-spells">Alchemist Spells</h2>
+<h3>1st-Level Alchemist Spells</h3>
+<p><b><a href = "adhesiveSpittle.html">Adhesive Spittle</a></b>: Spit a tanglefoot bag at a creature.</p>
+<p><b><a href = "blurredMovement.html">Blurred Movement</a></b>: As <i><a href="../../coreRulebook/spells/blur.html#blur" >blur</a></i>, but only while you are moving.</p>
+<p><b><a href = "bodyCapacitance.html">Body Capacitance</a></b>: Store electricity attacks used against you and release the energy as a touch attack.</p>
+<p><b><a href = "heightenedAwareness.html">Heightened Awareness</a></b>: Your recall and ability to process information improve.</p>
+<p><b><a href = "invisibilityAlarm.html">Invisibility Alarm</a></b>: As <i><a href="../../coreRulebook/spells/alarm.html#alarm" >alarm</a></i>, but reacting only to invisible creatures.</p>
+<p><b><a href = "longArm.html">Long Arm</a></b>: Your arms lengthen, giving you extra reach.</p>
+<p><b><a href = "monkeyFish.html">Monkey Fish</a></b>: Gain a climb speed and a swim speed of 10 ft. for a time.</p>
+<p><b><a href = "phantomBlood.html">Phantom Blood</a></b>: Gain temporary hp if Con loss would knock you out or kill you.</p>
+
+<h3>2nd-Level Alchemist Spells</h3>
+<p><b><a href = "adhesiveBlood.html">Adhesive Blood</a></b>: Attackers' weapons stick to your gluey blood.</p>
+<p><b><a href = "airStep.html">Air Step</a></b>: Tread unsteadily on air, with limitations.</p>
+<p><b><a href = "bloodArmor.html">Blood Armor</a></b>: Your blood hardens when you are wounded, increasing your AC.</p>
+<p><b><a href = "extremeFlexibility.html">Extreme Flexibility</a></b>: Gain a bonus to AC, on <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> checks, and when grappling.</p>
+<p><b><a href = "focusedScrutiny.html">Focused Scrutiny</a></b>: Gain skill bonuses when interacting with the target.</p>
+<p><b><a href = "investigativeMind.html">Investigative Mind</a></b>: Roll twice and take the higher roll when using certain mental skills.</p>
+
+<h3>3rd-Level Alchemist Spells</h3>
+<p><b><a href = "adjustableDisguise.html">Adjustable Disguise</a></b>: As <i><a href="../../coreRulebook/spells/disguiseSelf.html#disguise-self" >disguise self</a></i>, but you can change the disguise as a swift action.</p>
+<p><b><a href = "anchoredStep.html">Anchored Step</a></b>: Vines beneath your feet stabilize you but slow you down.</p>
+<p><b><a href = "auraSight.html">Aura Sight</a></b>: Alignment auras become visible to you.</p>
+<p><b><a href = "bloodSentinel.html">Blood Sentinel</a></b><sup>M</sup>: Animate an animal sculpture to be your temporary familiar.</p>
+<p><b><a href = "disableConstruct.html">Disable Construct</a></b>: Touch attack makes a construct helpless for 1 round/level.</p>
+<p><b><a href = "nauseatingTrail.html">Nauseating Trail</a>></b>: Creature leaves a trail of stinking cloud squares.</p>
+
+<h3>4th-Level Alchemist Spells</h3>
+<p><b><a href = "adjustablePolymorph.html">Adjustable Polymorph</a></b>: As <i><a href="../../coreRulebook/spells/alterSelf.html#alter-self" >alter self</a></i>, but you can change the shape as a swift action.</p>
+<p><b><a href = "enchantmentFoil.html">Enchantment Foil</a></b>: Trick opponents who try to cast enchantments on you.</p>
+<p><b><a href = "eyesOfTheVoid.html">Eyes of the Void</a></b>: See 60 ft. in darkness, including magical darkness.</p>
+<p><b><a href = "persistentVigor.html">Persistent Vigor</a></b>: Gain fast healing 2, immunity to bleed, and faster recovery from diseases and poisons.</p>
+<p><b><a href = "unbearableBrightness.html">Unbearable Brightness</a></b>: Your glowing body dazzles or blinds others.</p>
+
+<h3>6th-Level Alchemist Spells</h3>
+<p><b><a href = "sonicForm.html">Sonic Form</a></b>: Turn yourself into a creature of semisolid sound.</p>
+
+<h2 id = "advanced-class-guide-antipaladin-spells">Antipaladin Spells</h2>
+<h3>1st-Level Antipaladin Spells</p>
+<p><b><a href = "animalPurposeTraining.html">Animal Purpose Training</a></b>: Animal gains a new general purpose</p>
+
+<h3>2nd-Level Antipaladin Spells</h3>
+<p><b><a href = "bulletWard.html">Bullet Ward</a></b><sup>F</sup>: Adamantine bullets intercept firearm attacks.</p>
+<p><b><a href = "widenAuras.html">Widen Auras</a></b>: Increase the range of auras bestowed by your class.</p>
+
+<h3>3rd-Level Antipaladin Spells</h3>
+<p><b><a href = "adjustableDisguise.html">Adjustable Disguise</a></b>: As <i><a href="../../coreRulebook/spells/disguiseSelf.html#disguise-self" >disguise self</a></i>, but you can change the disguise as a swift action.</p>
+<p><b><a href = "bestowAuras.html">Bestow Auras</a></b>: Transfer your paladin or antipaladin auras to another creature.</p>
+
+<h3>4th-Level Antipaladin Spells</h3>
+<p><b><a href = "bloatbomb.html">Bloatbomb</a></b>: Kill a weak creature and turn its corpse into an explosive trap.</p>
+<p><b><a href = "eyesOfTheVoid.html">Eyes of the Void</a></b>: See 60 ft. in darkness, including magical darkness.<span class="char-style-override-38"></p>
+
+<h2 id = "advanced-class-guide-bard-spells">Bard Spells</h2>
+<h3>1st-Level Bard Spells</h3>
+<p><b><a href = "alterMusicalInstrument.html">Alter Musical Instrument</a>></b><sup>F</sup>: Make one instrument sound like a different kind of instrument.</p>
+<p><b><a href = "blurredMovement.html">Blurred Movement</a></b>: As <i><a href="../../coreRulebook/spells/blur.html#blur" >blur</a></i>, but only while you are moving.</p>
+<p><b><a href = "discernNextOfKin.html">Discern Next of Kin</a></b>: Read the target's mind to learn about its family.</p>
+<p><b><a href = "disguiseWeapon.html">Disguise Weapon</a></b>: Changes one weapon's appearance.</p>
+<p><b><a href = "glueSeal.html">Glue Seal</a></b>: Makes one 5-ft. square or one object sticky.</p>
+<p><b><a href = "heightenedAwareness.html">Heightened Awareness</a></b>: Your recall and ability to process information improve.</p>
+<p><b><a href = "invisibilityAlarm.html">Invisibility Alarm</a></b>: As <i><a href="../../coreRulebook/spells/alarm.html#alarm" >alarm</a></i>, but reacting only to invisible creatures.</p>
+<p><b><a href = "memorizePage.html">Memorize Page</a></b><sup>F</sup>: Target perfectly memorizes one page of information.</p>
+
+<h3>2nd-Level Bard Spells</h3>
+<p><b><a href = "airStep.html">Air Step</a></b>: Tread unsteadily on air, with limitations.</p>
+<p><b><a href = "animalPurposeTraining.html">Animal Purpose Training</a></b>: Animal gains a new general purpose.</p>
+<p><b><a href = "anonymousInteraction.html">Anonymous Interaction</a></b>: Creatures forget details about you and conversations with you.</p>
+<p><b><a href = "bulletWard.html">Bullet Ward</a></b><sup>M</sup>: Adamantine bullets intercept firearm attacks.</p>
+<p><b><a href = "buoyancy.html">Buoyancy</a></b>: Targets easily float on water.</p>
+<p><b><a href = "focusedScrutiny.html">Focused Scrutiny</a></b>: Gain skill bonuses when interacting with the target.</p>
+<p><b><a href = "heightenedReflexes.html">Heightened Reflexes</a></b>: Each ally in area gains a +10 bonus on one Reflex save.</p>
+<p><b><a href = "investigativeMind.html">Investigative Mind</a></b>: Roll twice and take the higher roll when using certain mental skills.</p>
+<p><b><a href = "marchingChant.html">Marching Chant</a></b>: Allies can hustle without penalty while you sing or chant.</p>
+<p><b><a href = "mindlockedMessenger.html">Mindlocked Messenger</a></b>: Target gains a message that can be given only to its intended recipient.</p>
+<p><b><a href = "muffleSound.html">Muffle Sound</a></b>: Allies gain a bonus on <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> checks but risk verbal spell failure.</p>
+<p><b><a href = "pathOfGlory.html">Path of Glory</a></b>: Create an expanding glow that heals allies within it of 1 hp of damage.</p>
+<p><b><a href = "silentTable.html">Silent Table</a></b>: Give yourself privacy by muffling sound leaving the area.</p>
+<p><b><a href = "sonicScream.html">Sonic Scream</a></b>: Create a cone of damaging sound at will.</p>
+<p><b><a href = "whipOfSpiders.html">Whip of Spiders</a></b>: Create a whip made of poisonous spiders.</p>
+
+<h3>3rd-Level Bard Spells</h3>
+<p><b><a href = "adjustableDisguise.html">Adjustable Disguise</a></b>: As <i><a href="../../coreRulebook/spells/disguiseSelf.html#disguise-self" >disguise self</a></i>, but you can change the disguise as a swift action.</p>
+<p><b><a href = "contingentAction.html">Contingent Action</a></b>: Set the condition for triggering a target's readied standard, move, or swift action.</p>
+<p><b><a href = "flexibleFury.html">Flexible Fury</a></b>: Swap one rage power for another.</p>
+<p><b><a href = "pierceDisguise.html">Pierce Disguise</a></b>: See through low-level magical disguises.</p>
+<p><b><a href = "triggeredSuggestion.html">Triggered Suggestion</a></b>: As <i><a href="../../coreRulebook/spells/suggestion.html#suggestion" >suggestion</a></i>, but triggered only and target doesn't remember the suggestion.</p>
+<p><b><a href = "wallOfNausea.html">Wall of Nausea</a></b>: Creatures that pass through the wall are nauseated and might fall prone.</p>
+
+<h3>4th-Level Bard Spells</h3>
+<p><b><a href = "adjustablePolymorph.html">Adjustable Polymorph</a></b>: As <i><a href="../../coreRulebook/spells/alterSelf.html#alter-self" >alter self</a></i>, but you can change the shape as a swift action.</p>
+<p><b><a href = "contingentScroll.html">Contingent Scroll</a></b><sup>F, M</sup>: Transfer a scroll's power to the target; the scroll is then triggered as <i><a href="../../coreRulebook/spells/contingency.html#contingency" >contingency</a></i>.</p>
+<p><b><a href = "feastOnFear.html">Feast on Fear</a></b>: Targets are panicked, and you gain temporary hit points.</p>
+<p><b><a href = "pathOfGlory.html">Path of Glory, Greater</a></b>: Create an expanding glow that heals allies within it of 5 hp of damage.</p>
+<p><b><a href = "wallOfBlindnessDeafness.html">Wall of Blindness/Deafness</a></b>: Translucent wall blinds or deafens creatures that pass through it.</p>
+
+<h3>5th-Level Bard Spells</h3>
+<p><b><a href = "whipOfCentipedes.html">Whip of Centipedes</a></b>: Create a whip made of poisonous centipedes.</p>
+
+<h3>6th-Level Bard Spells</h3>
+<p><b><a href = "magnifyingChime.html">Magnifying Chime</a></b>: Touched object deals increasing sonic damage each round.</p>
+<p><b><a href = "sonicForm.html">Sonic Form</a></b>: Turn yourself into a creature of semisolid sound.</p>
+<p><b><a href = "whipOfAnts.html">Whip of Ants</a></b>: Create a whip made of army ants.</p>
+
+<h2 id = "advanced-class-guide-bloodrager-spells">Bloodrager Spells</h2>
+<h3>1st-Level Bloodrager Spells</h3>
+<p><b><a href = "bladeLash.html">Blade Lash</a></b>: Use your weapon like a whip to trip an opponent.</p>
+<p><b><a href = "blurredMovement.html">Blurred Movement</a></b>: As <i><a href="../../coreRulebook/spells/blur.html#blur" >blur</a></i>, but only while you are moving.</p>
+<p><b><a href = "lineInTheSand.html">Line in the Sand</a></b>: Increase your attacks of opportunity per round.</p>
+<p><b><a href = "longArm.html">Long Arm</a></b>: Your arms lengthen, giving you extra reach.</p>
+<p><b><a href = "phantomBlood.html">Phantom Blood</a></b>: Gain temporary hp if Con loss would knock you out or kill you.</p>
+<p><b><a href = "sunderingShards.html">Sundering Shards</a></b>: Sundered item explodes, dealing 1d6 damage to adjacent creatures.</p>
+<p><b><a href = "thunderstomp.html">Thunderstomp</a></b>: Trip one creature within range.</p>
+<p><b><a href = "waveShield.html">Wave Shield</a></b>: Water blunts one incoming attack or fire effect.</p>
+
+<h3>2nd-Level Bloodrager Spells</h3>
+<p><b><a href = "adhesiveBlood.html">Adhesive Blood</a></b>: Attackers' weapons stick to your gluey blood.</p>
+<p><b><a href = "bloodArmor.html">Blood Armor</a></b>: Your blood hardens when you are wounded, increasing your AC.</p>
+<p><b><a href = "extremeFlexibility.html">Extreme Flexibility</a></b>: Gain a bonus to AC, on <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> checks, and when grappling.</p>
+<p><b><a href = "moltenOrb.html">Molten Orb</a></b>: Molten metal splash weapon deals 2d6 fire damage plus ongoing damage.</p>
+<p><b><a href = "sonicScream.html">Sonic Scream</a></b>: Create a cone of damaging sound at will.</p>
+<p><b><a href = "stoneDiscus.html">Stone Discus</a></b>: Flying discus deals bludgeoning or slashing damage.</p>
+
+<h3>3rd-Level Bloodrager Spells</h3>
+<p><b><a href = "airGeyser.html">Air Geyser</a></b>: Blast of air deals 2d6 bludgeoning damage and knocks opponent upward.</p>
+<p><b><a href = "silverDarts.html">Silver Darts</a></b>: Cone of silver darts deals 1d6 piercing damage/level, less against armored targets.</p>
+<p><b><a href = "thunderstomp.html">Thunderstomp, Greater</a></b>: Trip multiple creatures within range.</p>
+
+<h3>4th-Level Bloodrager Spells</h3>
+<p><b><a href = "flamingSphere.html">Flaming Sphere, Greater</a></b>: Rolling ball of fire deals 6d6 fire damage and ignites targets.</p>
+
+<h2 id = "advanced-class-guide-cleric-spells">Cleric Spells</h2>
+<h3>1st-Level Cleric Spells</h3>
+<p><b><a href = "blessedFist.html">Blessed Fist</a></b>: Target doesn't provoke attacks of opportunity with unarmed strikes.</p>
+<p><b><a href = "refineImprovisedWeapon.html">Refine Improvised Weapon</a></b>: Transform improvised weapon into a masterwork simple or martial weapon.</p>
+<p><b><a href = "stunningBarrier.html">Stunning Barrier</a></b>: Magical field grants a +1 bonus to AC and on saves, and stuns one creature attacking you.</p>
+
+<h3>2nd-Level Cleric Spells</h3>
+<p><b><a href = "airStep.html">Air Step</a></b>: Tread unsteadily on air, with limitations.</p>
+<p><b><a href = "holyIceWeapon.html">Holy Ice Weapon</a></b><sup>M</sup>: Create a masterwork weapon made of frozen holy water.</p>
+<p><b><a href = "lifePact.html">Life Pact</a></b>: Affected creatures automatically donate hp to stabilize fallen ally.</p>
+<p><b><a href = "marchingChant.html">Marching Chant</a></b>: Allies can hustle without penalty while you sing or chant.</p>
+<p><b><a href = "muffleSound.html">Muffle Sound</a></b>: Allies gain a bonus on <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> checks but risk verbal spell failure.</p>
+<p><b><a href = "pathOfGlory.html">Path of Glory</a></b>: Create an expanding glow that heals allies within it of 1 hp of damage.</p>
+<p><b><a href = "shieldOfFortification.html">Shield of Fortification</a></b>: Target gains a 25% chance to treat critical hits and sneak attacks as normal hits.</p>
+<p><b><a href = "silentTable.html">Silent Table</a></b>: Give yourself privacy by muffling sound.</p>
+<p><b><a href = "unholyIceWeapon.html">Unholy Ice Weapon</a></b><sup>M</sup>: Create a masterwork weapon made of frozen unholy water.</p>
+<p><b><a href = "unlivingRage.html">Unliving Rage</a></b>: As <i><a href="../../coreRulebook/spells/rage.html#rage" >rage</a></i>, except affecting only undead.</p>
+
+<h3>3rd-Level Cleric Spells</h3>
+<p><b><a href = "alignWeapon.html">Align Weapon, Communal</a></b>: As <i><a href="../../coreRulebook/spells/alignWeapon.html#align-weapon" >align weapon</a></i>, but you can divide the duration among weapons touched.</p>
+<p><b><a href = "auraSight.html">Aura Sight</a></b>: Alignment auras become visible to you.</p>
+<p><b><a href = "mantleOfCalm.html">Mantle of Calm</a></b>: Neutralize the rage effects of those who have attacked you.</p>
+<p><b><a href = "markOfObviousEthics.html">Mark of Obvious Ethics</a></b>: Other creatures can determine the target's alignment.</p>
+<p><b><a href = "stunningBarrier.html">Stunning Barrier, Greater</a></b>: Magical field grants a +2 bonus to AC and on saves, and stuns multiple creatures attacking you.</p>
+
+<h3>4th-Level Cleric Spells</h3>
+<p><b><a href = "antiIncorporealShell.html">Anti-Incorporeal Shell</a></b>: Incorporeal creatures stay 10 ft. away from you.</p>
+<p><b><a href = "bloatbomb.html">Bloatbomb</a></b>: Kill a weak creature and turn its corpse into an explosive trap.</p>
+<p><b><a href = "enchantmentFoil.html">Enchantment Foil</a></b>: Trick opponents who try to cast enchantments on you.</p>
+<p><b><a href = "guardianOfFaith.html">Guardian of Faith</a></b>: Target is protected by <i><a href="../../coreRulebook/spells/shieldOfFaith.html#shield-of-faith" >shield of faith</a></i> and a protection spell, and can transfer the effects to another creature.</p>
+<p><b><a href = "pathOfGlory.html">Path of Glory, Greater</a></b>: Create an expanding glow that heals allies within it of 5 hp of damage.</p>
+<p><b><a href = "persistentVigor.html">Persistent Vigor</a></b>: Gain fast healing 2, immunity to bleed, and faster recovery from diseases and poisons.</p>
+<p><b><a href = "shieldOfFortification.html#shield-of-fortification-greater">Shield of Fortification, Greater</a></b>: Target gains a 50% chance to treat critical hits and sneak attacks as normal hits.</p>
+<p><b><a href = "speakWithHaunt.html">Speak with Haunt</a></b>: Haunt answers one question/2 levels.</p>
+<p><b><a href = "spellcrash.html">Spellcrash, Lesser</a></b>: Target loses a 3rd-level prepared spell or spell slot.</p>
+
+<h3>5th-Level Cleric Spells</h3>
+<p><b><a href = "planeslayersCall.html">Planeslayer's Call</a></b>: Allies gain benefits against outsiders of an alignment you choose.</p>
+<p><b><a href = "wallOfBlindnessDeafness.html">Wall of Blindness/Deafness</a></b>: Translucent wall blinds or deafens creatures that pass through it.</p>
+
+<h3>6th-Level Cleric Spells</h3>
+<p><b><a href = "spellcrash.html">Spellcrash</a></b>: Target loses a 5th-level prepared spell or spell slot.</p>
+
+<h3>8th-Level Cleric Spells</h3>
+<p><b><a href = "spellcrash.html">Spellcrash, Greater</a></b>: Target loses a 7th-level prepared spell or spell slot.</p>
+
+<h2 id = "advanced-class-guide-druid-spells">Druid Spells</h2>
+<h3>1st-Level Druid Spells</h3>
+<p><b><a href = "gentleBreeze.html">Gentle Breeze</a></b>: Light wind protects one target from clouds, gases, heat, and vapors.</p>
+<p><b><a href = "heightenedAwareness.html">Heightened Awareness</a></b>: Your recall and ability to process information improve.</p>
+<p><b><a href = "monkeyFish.html">Monkey Fish</a></b>: Gain a climb speed and a swim speed of 10 ft. for a time.</p>
+<p><b><a href = "nauseatingDart.html">Nauseating Dart</a></b>: Poisonous stinger deals 1d2 damage and sickens target.</p>
+<p><b><a href = "thornJavelin.html">Thorn Javelin</a></b>: Wield a javelin that sickens opponents when it strikes.</p>
+<p><b><a href = "thunderstomp.html">Thunderstomp</a></b>: Trip one creature within range.</p>
+<p><b><a href = "waveShield.html">Wave Shield</a></b>: Water blunts one incoming attack or fire effect.</p>
+
+<h3>2nd-Level Druid Spells</h3>
+<p><b><a href = "aggressiveThundercloud.html">Aggressive Thundercloud</a></b>: Flying storm cloud deals 3d6 electricity damage.</p>
+<p><b><a href = "airStep.html">Air Step</a></b>: Tread unsteadily on air, with limitations.</p>
+<p><b><a href = "animalPurposeTraining.html">Animal Purpose Training</a></b>: Animal gains a new general purpose.</p>
+<p><b><a href = "beastspeak.html">Beastspeak</a></b>: Speak normally while in animal form.</p>
+<p><b><a href = "climbingBeanstalk.html">Climbing Beanstalk</a></b>: Create a beanstalk that is easy to climb.</p>
+<p><b><a href = "companionLifeLink.html">Companion Life Link</a></b>: Sense whenever your companion is wounded and call out to it in a time of need.</p>
+<p><b><a href = "euphoricCloud.html">Euphoric Cloud</a></b><sup>M</sup>: Fog obscures vision and fascinates living creatures.</p>
+<p><b><a href = "sickeningEntanglement.html">Sickening Entanglement</a></b>: As <i><a href="../../coreRulebook/spells/entangle.html#entangle" >entangle</a></i>, but plants have sickening sap.</p>
+<p><b><a href = "stoneDiscus.html">Stone Discus</a></b>: Flying discus deals bludgeoning or slashing damage.</p>
+<p><b><a href = "whipOfSpiders.html">Whip of Spiders</a></b>: Create a whip made of poisonous spiders.</p>
+
+<h3>3rd-Level Druid Spells</h3>
+<p><b><a href = "airGeyser.html">Air Geyser</a></b>: Blast of air deals 2d6 bludgeoning damage and knocks opponent upward.</p>
+<p><b><a href = "anchoredStep.html">Anchored Step</a></b>: Vines beneath your feet stabilize you but slow you down.</p>
+<p><b><a href = "longstrider.html">Longstrider, Greater</a></b>: As <i><a href="../../coreRulebook/spells/longstrider.html#longstrider" >longstrider</a></i>, plus the speeds of other movement modes increase.</p>
+<p><b><a href = "nauseatingTrail.html">Nauseating Trail</a></b>: Creature leaves a trail of <i>stinking cloud</i> squares.</p>
+<p><b><a href = "stenchOfPrey.html">Stench of Prey</a></b>: Predatory animals must successfully save or attack the target.</p>
+<p><b><a href = "thornyEntanglement.html">Thorny Entanglement</a></b>: As <i><a href="../../coreRulebook/spells/entangle.html#entangle" >entangle</a></i>, plus plants make ranged attacks.</p>
+<p><b><a href = "thunderstomp.html">Thunderstomp, Greater</a></b>: Trip multiple creatures within range.</p>
+
+<h3>4th-Level Druid Spells</h3>
+<p><b><a href = "aggressiveThundercloud.html">Aggressive Thundercloud, Greater</a></b>: Flying storm cloud deals 6d6 electricity damage.</p>
+<p><b><a href = "creepingIce.html">Creeping Ice</a></b>: Sheet of ice slowly spreads outward on a horizontal surface.</p>
+<p><b><a href = "flamingSphere.html">Flaming Sphere, Greater</a></b>: Rolling ball of fire deals 6d6 fire damage and ignites targets.</p>
+<p><b><a href = "slowingMud.html">Slowing Mud</a></b>: Targets are covered in mud that blinds them and acts like <i><a href="../../coreRulebook/spells/slow.html#slow" >slow</a></i>.</p>
+
+<h3>5th-Level Druid Spells</h3>
+<p><b><a href = "whipOfCentipedes.html">Whip of Centipedes</a></b>: Create a whip made of poisonous centipedes.</p>
+
+<h3>6th-Level Druid Spells</h3>
+<p><b><a href = "blazingRainbow.html">Blazing Rainbow</a></b>: Create bow with <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-brilliant-energy" >brilliant energy</a></i> arrows or a bridge that helps allies and hinders opponents.</p>
+<p><b><a href = "whipOfAnts.html">Whip of Ants</a></b>: Create a whip made of army ants.</p>
+
+<h3>7th-Level Druid Spells</h3>
+<p><b><a href = "fairyRingRetreat.html">Fairy Ring Retreat</a></b>: Toadstool circle leads to an extradimensional meadow.</p>
+
+<h2 id = "advanced-class-guide-inquisitor-spells">Inquisitor Spells</h2>
+<h3>1st-Level Inquisitor Spells</h3>
+<p><b><a href = "animalPurposeTraining.html">Animal Purpose Training</a></b>: Animal gains a new general purpose.</p>
+<p><b><a href = "heightenedAwareness.html">Heightened Awareness</a></b>: Your recall and ability to process information improve.</p>
+<p><b><a href = "invisibilityAlarm.html">Invisibility Alarm</a></b>: As <i><a href="../../coreRulebook/spells/alarm.html#alarm" >alarm</a></i>, but reacting only to invisible creatures.</p>
+<p><b><a href = "refineImprovisedWeapon.html">Refine Improvised Weapon</a></b>: Transform improvised weapon into a masterwork simple or martial weapon.</p>
+<p><b><a href = "shieldOfFortification.html">Shield of Fortification</a></b>: Target gains a 25% chance to treat critical hits and sneak attacks as normal hits.</p>
+<p><b><a href = "stunningBarrier.html">Stunning Barrier</a></b>: Magical field grants a +1 bonus to AC and on saves, and stuns one creature attacking you.</p>
+
+<h3>2nd-Level Inquisitor Spells</h3>
+<p><b><a href = "bulletWard.html">Bullet Ward</a></b><sup>F</sup>: Adamantine bullets intercept firearm attacks.</p>
+<p><b><a href = "focusedScrutiny.html">Focused Scrutiny</a></b>: Gain skill bonuses when interacting with the target.</p>
+<p><b><a href = "holyIceWeapon.html">Holy Ice Weapon</a></b><sup>M</sup>: Create a masterwork weapon made of frozen holy water.</p>
+<p><b><a href = "muffleSound.html">Muffle Sound</a></b>: Allies gain a bonus on <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> checks but risk verbal spell failure.</p>
+<p><b><a href = "strickenHeart.html">Stricken Heart</a></b>: Touch attack deals 2d6 damage and staggers target.</p>
+<p><b><a href = "unholyIceWeapon.html">Unholy Ice Weapon</a></b><sup>M</sup>: Create a masterwork weapon made of frozen unholy water.</p>
+
+<h3>3rd-Level Inquisitor Spells</h3>
+<p><b><a href = "adjustableDisguise.html">Adjustable Disguise</a></b>: As <i><a href="../../coreRulebook/spells/disguiseSelf.html#disguise-self" >disguise self</a></i>, but you can change the disguise as a swift action.</p>
+<p><b><a href = "alignWeapon.html">Align Weapon, Communal</a></b>: As <i><a href="../../coreRulebook/spells/alignWeapon.html#align-weapon" >align weapon</a></i>, but you can divide the duration among weapons touched.</p>
+<p><b><a href = "mantleOfCalm.html">Mantle of Calm</a></b>: Neutralize the rage effects of those who have attacked you.</p>
+<p><b><a href = "shieldOfFortification.html#shield-of-fortification-greater">Shield of Fortification, Greater</a></b>: Target gains a 50% chance to treat critical hits and sneak attacks as normal hits.</p>
+<p><b><a href = "stunningBarrier.html">Stunning Barrier, Greater</a></b>: Magical field grants a +2 bonus to AC and on saves, and stuns multiple creatures attacking you.</p>
+
+<h3>4th-Level Inquisitor Spells</h3>
+<p><b><a href = "auraSight.html">Aura Sight</a></b>: Alignment auras become visible to you.</p>
+<p><b><a href = "enchantmentFoil.html">Enchantment Foil</a></b>: Trick opponents who try to cast enchantments on you.</p>
+<p><b><a href = "persistentVigor.html">Persistent Vigor</a></b>: Gain fast healing 2, immunity to bleed, and faster recovery from diseases and poisons.</p>
+<p><b><a href = "planeslayersCall.html">Planeslayer's Call</a></b>: Allies gain benefits against outsiders of an alignment you choose.</p>
+
+<h2 id = "advanced-class-guide-magus-spells">Magus Spells</h2>
+<h3>1st-Level Magus Spells</h3>
+<p><b><a href = "bladeLash.html">Blade Lash</a></b>: Use your weapon like a whip to trip an opponent.</p>
+<p><b><a href = "blurredMovement.html">Blurred Movement</a></b>: As <i><a href="../../coreRulebook/spells/blur.html#blur" >blur</a></i>, but only while you are moving.</p>
+<p><b><a href = "disguiseWeapon.html">Disguise Weapon</a></b>: Changes one weapon's appearance.</p>
+<p><b><a href = "glueSeal.html">Glue Seal</a></b>: Makes one 5-ft. square or one object sticky.</p>
+<p><b><a href = "lineInTheSand.html">Line in the Sand</a></b>: Increase your attacks of opportunity per round.</p>
+<p><b><a href = "longArm.html">Long Arm</a></b>: Your arms lengthen, giving you extra reach.</p>
+<p><b><a href = "monkeyFish.html">Monkey Fish</a></b>: Gain a climb speed and a swim speed of 10 ft. for a time.</p>
+<p><b><a href = "phantomBlood.html">Phantom Blood</a></b>: Gain temporary hp if Con loss would knock you out or kill you.</p>
+<p><b><a href = "sunderBreaker.html">Sunder Breaker</a></b>: The next weapon that sunders an item belonging to the target takes damage.</p>
+<p><b><a href = "sunderingShards.html">Sundering Shards</a></b>: Sundered item explodes, dealing 1d6 damage to adjacent creatures.</p>
+<p><b><a href = "thunderstomp.html">Thunderstomp</a></b>: Trip one creature within range.</p>
+<p><b><a href = "waveShield.html">Wave Shield</a></b>: Water blunts one incoming attack or fire effect.</p>
+
+<h3>2nd-Level Magus Spells</h3>
+<p><b><a href = "aggressiveThundercloud.html">Aggressive Thundercloud</a></b>: Flying storm cloud deals 3d6 electricity damage.</p>
+<p><b><a href = "euphoricCloud.html">Euphoric Cloud</a></b><sup>M</sup>: Fog obscures vision and fascinates living creatures.</p>
+<p><b><a href = "extremeFlexibility.html">Extreme Flexibility</a></b>: Gain a bonus to AC, on <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> checks, and when grappling.</p>
+<p><b><a href = "moltenOrb.html">Molten Orb</a></b>: Molten metal splash weapon deals 2d6 fire damage plus ongoing damage.</p>
+<p><b><a href = "riverWhip.html">River Whip</a></b>: Create a whip of water that you wield as a weapon.</p>
+<p><b><a href = "sonicScream.html">Sonic Scream</a></b>: Create a cone of damaging sound at will.</p>
+<p><b><a href = "stoneDiscus.html">Stone Discus</a></b>: Flying discus deals bludgeoning or slashing damage.</p>
+<p><b><a href = "timeShudder.html">Time Shudder</a></b>: Nearby creatures are affected by <i><a href="../../coreRulebook/spells/haste.html#haste" >haste</a></i> or <i><a href="../../coreRulebook/spells/slow.html#slow" >slow</a></i> each round.</p>
+
+<h3>3rd-Level Magus Spells</h3>
+<p><b><a href = "airGeyser.html">Air Geyser</a></b>: Blast of air deals 2d6 bludgeoning damage and knocks opponent upward.</p>
+<p><b><a href = "heartOfTheMetal.html">Heart of the Metal</a></b><sup>M</sup>: Enable weapons to overcome DR like adamantine, cold iron, or silver.</p>
+<p><b><a href = "nauseatingTrail.html">Nauseating Trail</a>></b>: Creature leaves a trail of <i><a href="../../coreRulebook/spells/stinkingCloud.html#stinking-cloud" >stinking cloud</a></i> squares.</p>
+<p><b><a href = "silverDarts.html">Silver Darts</a></b>: Cone of silver darts deals 1d6 piercing damage/level, less against armored targets.</p>
+<p><b><a href = "thunderstomp.html">Thunderstomp, Greater</a></b>: Trip multiple creatures within range.</p>
+
+<h3>4th-Level Magus Spells</h3>
+<p><b><a href = "adjustablePolymorph.html">Adjustable Polymorph</a></b>: As <i><a href="../../coreRulebook/spells/alterSelf.html#alter-self" >alter self</a></i>, but you can change the shape as a swift action.</p>
+<p><b><a href = "aggressiveThundercloud.html">Aggressive Thundercloud, Greater</a></b>: Flying storm cloud deals 6d6 electricity damage.</p>
+<p><b><a href = "flamingSphere.html">Flaming Sphere, Greater</a></b>: Rolling ball of fire deals 6d6 fire damage and ignites targets.</p>
+
+<h3>5th-Level Magus Spells</h3>
+<p><b><a href = "vampiricShadowShield.html">Vampiric Shadow Shield</a></b>: As <i><a href="../../coreRulebook/spells/fireShield.html#fire-shield" >fire shield</a></i>, except attackers take negative energy damage and attacks heal you.</p>
+
+<h2 id = "advanced-class-guide-paladin-spells">Paladin Spells</h2>
+<h3>1st-Level Paladin Spells</h3>
+<p><b><a href = "animalPurposeTraining.html">Animal Purpose Training</a></b>: Animal gains a new general purpose.</p>
+<p><b><a href = "blessedFist.html">Blessed Fist</a></b>: Target doesn't provoke attacks of opportunity with unarmed strikes.</p>
+<p><b><a href = "shieldOfFortification.html">Shield of Fortification</a></b>: Target gains a 25% chance to treat critical hits and sneak attacks as normal hits.</p>
+<p><b><a href = "stunningBarrier.html">Stunning Barrier</a></b>: Magical field grants a +1 bonus to AC and on saves, and stuns one creature attacking you.</p>
+
+<h3>2nd-Level Paladin Spells</h3>
+<p><b><a href = "bulletWard.html">Bullet Ward</a></b><sup>F</sup>: Adamantine bullets intercept firearm attacks.</p>
+<p><b><a href = "shieldCompanion.html">Shield Companion</a></b>: As <i><a href="../../coreRulebook/spells/shieldOther.html#shield-other" >shield other</a></i>, but affecting your companion creature.</p>
+<p><b><a href = "widenAuras.html">Widen Auras</a></b>: Increase the range of auras bestowed by your class.</p>
+
+<h3>3rd-Level Paladin Spells</h3>
+<p><b><a href = "bestowAuras.html">Bestow Auras</a></b>: Transfer your paladin or antipaladin auras to another creature.</p>
+<p><b><a href = "mantleOfCalm.html">Mantle of Calm</a></b>: Neutralize the rage effects of those who have attacked you.</p>
+<p><b><a href = "shieldOfFortification.html">Shield of Fortification</a></b>: Target gains a 50% chance to treat critical hits and sneak attacks as normal hits.</p>
+<p><b><a href = "stunningBarrier.html">Stunning Barrier, Greater</a></b>: Magical field grants a +2 bonus to AC and on saves, and stuns multiple creatures attacking you.</p>
+
+<h3>4th-Level Paladin Spells</h3>
+<p><b><a href = "guardianOfFaith.html">Guardian of Faith</a></b>: Target is protected by <i><a href="../../coreRulebook/spells/shieldOfFaith.html#shield-of-faith" >shield of faith</a></i> and a protection spell, and can transfer the effects to another creature.</p>
+<p><b><a href = "planeslayersCall.html">Planslayer's Call</a></b>: Allies gain benefits against outsiders of an alignment you choose.</p>
+
+<h2 id = "advanced-class-guide-ranger-spells">Ranger Spells</h2>
+<h3>1st-Level Ranger Spells</h3>
+<p><b><a href = "animalPurposeTraining.html">Animal Purpose Training</a></b>: Animal gains a new general purpose.</p>
+<p><b><a href = "heightenedAwareness.html">Heightened Awareness</a></b>: Your recall and ability to process information improve.</p>
+<p><b><a href = "invisibilityAlarm.html">Invisibility Alarm</a></b>: As <i><a href="../../coreRulebook/spells/alarm.html#alarm" >alarm</a></i>, but reacting only to invisible creatures.</p>
+<p><b><a href = "refineImprovisedWeapon.html">Refine Improvised Weapon</a></b>: Transform improvised weapon into a masterwork simple or martial weapon.</p>
+<p><b><a href = "thornJavelin.html">Thorn Javelin</a></b>: Wield a javelin that sickens opponents when it strikes.</p>
+<p><b><a href = "thunderstomp.html">Thunderstomp</a></b>: Trip one creature within range.</p>
+
+<h3>2nd-Level Ranger Spells</h3>
+<p><b><a href = "airStep.html">Air Step</a></b>: Tread unsteadily on air, with limitations.</p>
+<p><b><a href = "bulletWard.html">Bullet Ward</a></b><sup>F</sup>: Adamantine bullets intercept firearm attacks.</p>
+<p><b><a href = "companionLifeLink.html">Companion Life Link</a></b>: Sense whenever your companion is wounded and call out to it in a time of need.</p>
+<p><b><a href = "enemyInsight.html">Enemy Insight</a></b>: Grant others a bonus against your favored enemies.</p>
+<p><b><a href = "shieldCompanion.html">Shield Companion</a></b>: As <i><a href="../../coreRulebook/spells/shieldOther.html#shield-other" >shield other</a></i>, but affecting your companion creature.</p>
+<p><b><a href = "sickeningEntanglement.html">Sickening Entanglement</a></b>: As <i><a href="../../coreRulebook/spells/entangle.html#entangle" >entangle</a></i>, but plants have sickening sap.</p>
+
+<h3>3rd-Level Ranger Spells</h3>
+<p><b><a href = "chameleonStride.html">Chameleon Stride, Greater</a></b>: As <i><a href="../../advancedPlayersGuide/spells/chameleonStride.html#chameleon-stride" >chameleon stride</a></i>, but affecting all nearby creatures.</p>
+<p><b><a href = "longstrider.html">Longstrider, Greater</a></b>: As <i><a href="../../coreRulebook/spells/longstrider.html#longstrider" >longstrider</a></i>, plus the speeds of other movement modes increase.</p>
+<p><b><a href = "stenchOfPrey.html">Stench of Prey</a></b>: Predatory animals must successfully save or attack the target.</p>
+<p><b><a href = "thornyEntanglement.html">Thorny Entanglement</a></b>: As <i><a href="../../coreRulebook/spells/entangle.html#entangle" >entangle</a></i>, plus plants make ranged attacks.</p>
+<p><b><a href = "thunderstomp.html">Thunderstomp, Greater</a></b>: Trip multiple creatures within range.</p>
+
+<h2 id = "advanced-class-guide-shaman-spells">Shaman Spells</h2>
+<h3>1st-Level Shaman Spells</h3>
+<p><b><a href = "discernNextOfKin.html">Discern Next of Kin</a></b>: Read the target's mind to learn about its family.</p>
+<p><b><a href = "gentleBreeze.html">Gentle Breeze</a></b>: Light wind protects one target from clouds, gases, heat, and vapors.</p>
+<p><b><a href = "heightenedAwareness.html">Heightened Awareness</a></b>: Your recall and ability to process information improve.</p>
+<p><b><a href = "hexVulnerability.html">Hex Vulnerability</a></b>: Reuse a hex on a specific target.</p>
+<p><b><a href = "monkeyFish.html">Monkey Fish</a></b>: Gain a climb speed and a swim speed of 10 ft. for a time.</p>
+<p><b><a href = "senseSpiritMagic.html">Sense Spirit Magic</a></b>: Gain bonuses on identifying and resisting spells associated with your spirits.</p>
+<p><b><a href = "thornJavelin.html">Thorn Javelin</a></b>: Wield a javelin that sickens opponents when it strikes.</p>
+<p><b><a href = "waveShield.html">Wave Shield</a></b>: Water blunts one incoming attack or fire effect.</p>
+
+<h3>2nd-Level Shaman Spells</h3>
+<p><b><a href = "animalPurposeTraining.html">Animal Purpose Training</a></b>: Animal gains a new general purpose.</p>
+<p><b><a href = "beastspeak.html">Beastspeak</a></b>: Speak normally while in animal form.</p>
+<p><b><a href = "buoyancy.html">Buoyancy</a></b>: Targets easily float on water.</p>
+<p><b><a href = "focusedScrutiny.html">Focused Scrutiny</a></b>: Gain skill bonuses when interacting with the target.</p>
+<p><b><a href = "lifePact.html">Life Pact</a></b>: Affected creatures automatically donate hp to stabilize fallen ally.</p>
+<p><b><a href = "shieldCompanion.html">Shield Companion</a></b>: As <i><a href="../../coreRulebook/spells/shieldOther.html#shield-other" >shield other</a></i>, but affecting your companion creature.</p>
+<p><b><a href = "sickeningEntanglement.html">Sickening Entanglement</a></b>: As <i><a href="../../coreRulebook/spells/entangle.html#entangle" >entangle</a></i>, but plants have sickening sap.</p>
+
+<h3>3rd-Level Shaman Spells</h3>
+<p><b><a href = "anchoredStep.html">Anchored Step</a></b>: Vines beneath your feet stabilize you but slow you down.</p>
+<p><b><a href = "auraSight.html">Aura Sight</a></b>: Alignment auras become visible to you.</p>
+<p><b><a href = "fontOfSpiritMagic.html">Font of Spirit Magic</a></b><sup>M</sup>: When allies cast your spirit's spells, they gain other bonuses.</p>
+<p><b><a href = "hexGlyph.html">Hex Glyph</a></b><sup>M</sup>: Inscription casts your hex on those who pass it.</p>
+<p><b><a href = "mantleOfCalm.html">Mantle of Calm</a></b>: Neutralize the rage effects of those who have attacked you.</p>
+<p><b><a href = "mindlockedMessenger.html">Mindlocked Messenger</a></b>: Target gains a message that can be given only to its intended recipient.</p>
+<p><b><a href = "nauseatingTrail.html">Nauseating Trail</a>></b>: Creature leaves a trail of <i><a href="../../coreRulebook/spells/stinkingCloud.html#stinking-cloud" >stinking cloud</a></i> squares.</p>
+<p><b><a href = "pierceDisguise.html">Pierce Disguise</a></b>: See through low-level magical disguises.</p>
+<p><b><a href = "polymorphFamiliar.html">Polymorph Familiar</a></b>: Give your familiar the shape of another animal.</p>
+<p><b><a href = "speakWithHaunt.html">Speak with Haunt</a></b>: Haunt answers one question/2 levels.</p>
+<p><b><a href = "stenchOfPrey.html">Stench of Prey</a></b>: Predatory animals must successfully save or attack the target.</p>
+<p><b><a href = "strickenHeart.html">Stricken Heart</a></b>: Touch attack deals 2d6 damage and staggers target.</p>
+<p><b><a href = "thornyEntanglement.html">Thorny Entanglement</a></b>: As <i><a href="../../coreRulebook/spells/entangle.html#entangle" >entangle</a></i>, plus plants make ranged attacks.</p>
+
+<h3>4th-Level Shaman Spells</h3>
+<p><b><a href = "adjustablePolymorph.html">Adjustable Polymorph</a></b>: As <i><a href="../../coreRulebook/spells/alterSelf.html#alter-self" >alter self</a></i>, but you can change the shape as a swift action.</p>
+<p><b><a href = "airGeyser.html">Air Geyser</a></b>: Blast of air deals 2d6 bludgeoning damage and knocks opponent upward.</p>
+<p><b><a href = "antiIncorporealShell.html">Anti-Incorporeal Shell</a></b>: Incorporeal creatures stay 10 ft. away from you.</p>
+<p><b><a href = "curseOfBurningSleep.html">Curse of Burning Sleep</a></b>: Creature catches fire the next time it sleeps for an hour.</p>
+<p><b><a href = "persistentVigor.html">Persistent Vigor</a></b>: Gain fast healing 2, immunity to bleed, and faster recovery from diseases and poisons.</p>
+<p><b><a href = "slowingMud.html">Slowing Mud</a></b>: Targets are covered in mud that blinds them and acts like <i><a href="../../coreRulebook/spells/slow.html#slow" >slow</a></i>.</p>
+
+<h3>5th-Level Shaman Spells</h3>
+<p><b><a href = "feastOnFear.html">Feast on Fear</a></b>: Targets are panicked, and you gain temporary hit points.</p>
+<p><b><a href = "hexGlyph.html">Hex Glyph, Greater</a></b><sup>M</sup>: Inscription casts your hex or major hex on those who pass it.</p>
+
+<h3>7th-Level Shaman Spells</h3>
+<p><b><a href = "fairyRingRetreat.html">Fairy Ring Retreat</a></b>: Toadstool circle leads to an extradimensional meadow.</p>
+
+<h2 id = "advanced-class-guide-sorcerer-wizard-spells">Sorcerer/Wizard Spells</h2>
+<h3>1st-Level Sorcerer/Wizard Spells</h3>
+<p><b><a href = "adhesiveSpittle.html">Adhesive Spittle</a></b>: Spit a tanglefoot bag at a creature.</p>
+<p><b><a href = "alterMusicalInstrument.html">Alter Musical Instrument</a>></b><sup>F</sup>: Make one instrument sound like a different kind of instrument.</p>
+<p><b><a href = "blurredMovement.html">Blurred Movement</a></b>: As <i><a href="../../coreRulebook/spells/blur.html#blur" >blur</a></i>, but only while you are moving.</p>
+<p><b><a href = "bodyCapacitance.html">Body Capacitance</a></b>: Store electricity attacks used against you and release the energy as a touch attack.</p>
+<p><b><a href = "discernNextOfKin.html">Discern Next of Kin</a></b>: Read the target's mind to learn about its family.</p>
+<p><b><a href = "disguiseWeapon.html">Disguise Weapon</a></b>: Changes one weapon's appearance.</p>
+<p><b><a href = "gentleBreeze.html">Gentle Breeze</a></b>: Light wind protects one target from clouds, gases, heat, and vapors.</p>
+<p><b><a href = "glueSeal.html">Glue Seal</a></b>: Makes one 5-ft. square or one object sticky.</p>
+<p><b><a href = "heightenedAwareness.html">Heightened Awareness</a></b>: Your recall and ability to process information improve.</p>
+<p><b><a href = "invisibilityAlarm.html">Invisibility Alarm</a></b>: As <i><a href="../../coreRulebook/spells/alarm.html#alarm" >alarm</a></i>, but reacting only to invisible creatures.</p>
+<p><b><a href = "lineInTheSand.html">Line in the Sand</a></b>: Increase your attacks of opportunity per round.</p>
+<p><b><a href = "longArm.html">Long Arm</a></b>: Your arms lengthen, giving you extra reach.</p>
+<p><b><a href = "memorizePage.html">Memorize Page</a></b><sup>F</sup>: Target perfectly memorizes one page of information.</p>
+<p><b><a href = "mirrorPolish.html">Mirror Polish</a></b>: Polish a metal item until it's usable as a mirror.</p>
+<p><b><a href = "monkeyFish.html">Monkey Fish</a></b>: Gain a climb speed and a swim speed of 10 ft. for a time.</p>
+<p><b><a href = "phantomBlood.html">Phantom Blood</a></b>: Gain temporary hp if Con loss would knock you out or kill you.</p>
+<p><b><a href = "refineImprovisedWeapon.html">Refine Improvised Weapon</a></b>: Transform improvised weapon into a masterwork simple or martial weapon.</p>
+<p><b><a href = "repairUndead.html">Repair Undead</a></b>: Heals one undead of 1d8 hp + 1/level (max +5).</p>
+<p><b><a href = "stunningBarrier.html">Stunning Barrier</a></b>: Magical field grants a +1 bonus to AC and on saves, and stuns one creature attacking you.</p>
+<p><b><a href = "sunderBreaker.html">Sunder Breaker</a></b>: The next weapon that sunders an item belonging to the target takes damage.</p>
+<p><b><a href = "sunderingShards.html">Sundering Shards</a></b>: Sundered item explodes, dealing 1d6 damage to adjacent creatures.</p>
+<p><b><a href = "thunderstomp.html">Thunderstomp</a></b>: Trip one creature within range.</p>
+<p><b><a href = "waveShield.html">Wave Shield</a></b>: Water blunts one incoming attack or fire effect.</p>
+
+<h3>2nd-Level Sorcerer/Wizard Spells</h3>
+<p><b><a href = "adhesiveBlood.html">Adhesive Blood</a></b>: Attackers' weapons stick to your gluey blood.</p>
+<p><b><a href = "aggressiveThundercloud.html">Aggressive Thundercloud</a></b>: Flying storm cloud deals 3d6 electricity damage.</p>
+<p><b><a href = "airStep.html">Air Step</a></b>: Tread unsteadily on air, with limitations.</p>
+<p><b><a href = "bloodArmor.html">Blood Armor</a></b>: Your blood hardens when you are wounded, increasing your AC.</p>
+<p><b><a href = "bulletWard.html">Bullet Ward</a></b><sup>F</sup>: Adamantine bullets intercept firearm attacks.</p>
+<p><b><a href = "buoyancy.html">Buoyancy</a></b>: Targets easily float on water.</p>
+<p><b><a href = "companionLifeLink.html">Companion Life Link</a></b>: Sense whenever your companion is wounded and call out to it in a time of need.</p>
+<p><b><a href = "crimsonConfession.html">Crimson Confession</a></b>: Touching the marked object or area turns one's skin red.</p>
+<p><b><a href = "euphoricCloud.html">Euphoric Cloud</a></b><sup>M</sup>: Fog obscures vision and fascinates living creatures.</p>
+<p><b><a href = "extremeFlexibility.html">Extreme Flexibility</a></b>: Gain a bonus to AC, on <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> checks, and when grappling.</p>
+<p><b><a href = "investigativeMind.html">Investigative Mind</a></b>: Roll twice and take the higher roll when using certain mental skills.</p>
+<p><b><a href = "lifePact.html">Life Pact</a></b>: Affected creatures automatically donate hp to stabilize fallen ally.</p>
+<p><b><a href = "mirrorHideaway.html">Mirror Hideaway</a></b>: As many as eight creatures hide in an extradimensional space.</p>
+<p><b><a href = "moltenOrb.html">Molten Orb</a></b>: Molten metal splash weapon deals 2d6 fire damage plus ongoing damage.</p>
+<p><b><a href = "riverWhip.html">River Whip</a></b>: Create a whip of water that you wield as a weapon.</p>
+<p><b><a href = "silentTable.html">Silent Table</a></b>: Give yourself privacy by muffling sound leaving the area.</p>
+<p><b><a href = "sonicScream.html">Sonic Scream</a></b>: Create a cone of damaging sound at will.</p>
+<p><b><a href = "stoneDiscus.html">Stone Discus</a></b>: Flying discus deals bludgeoning or slashing damage.</p>
+<p><b><a href = "strickenHeart.html">Stricken Heart</a></b>: Touch attack deals 2d6 damage and staggers target.</p>
+<p><b><a href = "timeShudder.html">Time Shudder</a></b>: Nearby creatures are affected by <i><a href="../../coreRulebook/spells/haste.html#haste" >haste</a></i> or <i><a href="../../coreRulebook/spells/slow.html#slow" >slow</a></i> each round.</p>
+<p><b><a href = "twilightHaze.html">Twilight Haze</a></b>: Illusory fog obscures vision.</p>
+<p><b><a href = "whipOfSpiders.html">Whip of Spiders</a></b>: Create a whip made of poisonous spiders.</p>
+
+<h3>3rd-Level Sorcerer/Wizard Spells</h3>
+<p><b><a href = "adjustableDisguise.html">Adjustable Disguise</a></b>: As <i><a href="../../coreRulebook/spells/disguiseSelf.html#disguise-self" >disguise self</a></i>, but you can change the disguise as a swift action.</p>
+<p><b><a href = "airGeyser.html">Air Geyser</a></b>: Blast of air deals 2d6 bludgeoning damage and knocks opponent upward.</p>
+<p><b><a href = "anchoredStep.html">Anchored Step</a></b>: Vines beneath your feet stabilize you but slow you down.</p>
+<p><b><a href = "auraSight.html">Aura Sight</a></b>: Alignment auras become visible to you.</p>
+<p><b><a href = "barrowHaze.html">Barrow Haze</a></b>: Fog obscures the vision of others and extends the range of your hexes.</p>
+<p><b><a href = "bloodSentinel.html">Blood Sentinel</a></b><sup>M</sup>: Animate an animal sculpture to be your temporary familiar.</p>
+<p><b><a href = "contingentAction.html">Contingent Action</a></b>: Set the condition for triggering a target's readied standard, move, or swift action.</p>
+<p><b><a href = "disableConstruct.html">Disable Construct</a></b>: Touch attack makes a construct helpless for 1 round/level.</p>
+<p><b><a href = "heartOfTheMetal.html">Heart of the Metal</a></b><sup>M</sup>: Enable weapons to overcome DR like adamantine, cold iron, or silver.</p>
+<p><b><a href = "mindlockedMessenger.html">Mindlocked Messenger</a></b>: Target gains a message that can be given only to its intended recipient.</p>
+<p><b><a href = "nauseatingTrail.html">Nauseating Trail</a>></b>: Creature leaves a trail of <i><a href="../../coreRulebook/spells/stinkingCloud.html#stinking-cloud" >stinking cloud</a></i> squares.</p>
+<p><b><a href = "pierceDisguise.html">Pierce Disguise</a></b>: See through low-level magical disguises.</p>
+<p><b><a href = "polymorphFamiliar.html">Polymorph Familiar</a></b>: Give your familiar the shape of another animal.</p>
+<p><b><a href = "shieldCompanion.html">Shield Companion</a></b>: As <i><a href="../../coreRulebook/spells/shieldOther.html#shield-other" >shield other</a></i>, but affecting your companion creature.</p>
+<p><b><a href = "silverDarts.html">Silver Darts</a></b>: Cone of silver darts deals 1d6 piercing damage/level, less against armored targets.</p>
+<p><b><a href = "stunningBarrier.html">Stunning Barrier, Greater</a></b>: Magical field grants a +2 bonus to AC and on saves, and stuns multiple creatures attacking you.</p>
+<p><b><a href = "thunderstomp.html">Thunderstomp, Greater</a></b>: Trip multiple creatures within range.</p>
+<p><b><a href = "unlivingRage.html">Unliving Rage</a></b>: As <i><a href="../../coreRulebook/spells/rage.html#rage" >rage</a></i>, except affecting only undead.</p>
+<p><b><a href = "wallOfNausea.html">Wall of Nausea</a></b>: Creatures that pass through the wall are nauseated and might fall prone.</p>
+
+<h3>4th-Level Sorcerer/Wizard Spells</h3>
+<p><b><a href = "adjustablePolymorph.html">Adjustable Polymorph</a></b>: As <i><a href="../../coreRulebook/spells/alterSelf.html#alter-self" >alter self</a></i>, but you can change the shape as a swift action.</p>
+<p><b><a href = "aggressiveThundercloud.html">Aggressive Thundercloud, Greater</a></b>: Flying storm cloud deals 6d6 electricity damage.</p>
+<p><b><a href = "bloatbomb.html">Bloatbomb</a></b>: Kill a weak creature and turn its corpse into an explosive trap.</p>
+<p><b><a href = "contingentScroll.html">Contingent Scroll</a></b><sup>F, M</sup>: Transfer a scroll's power to the target; the scroll is then triggered as <i><a href="../../coreRulebook/spells/contingency.html#contingency" >contingency</a></i>.</p>
+<p><b><a href = "creepingIce.html">Creeping Ice</a></b>: Sheet of ice slowly spreads outward on a horizontal surface.</p>
+<p><b><a href = "curseOfBurningSleep.html">Curse of Burning Sleep</a></b>: Creature catches fire the next time it sleeps for an hour.</p>
+<p><b><a href = "enchantmentFoil.html">Enchantment Foil</a></b>: Trick opponents who try to cast enchantments on you.</p>
+<p><b><a href = "eyesOfTheVoid.html">Eyes of the Void</a></b>: See 60 ft. in darkness, including magical darkness.</p>
+<p><b><a href = "flamingSphere.html">Flaming Sphere, Greater</a></b>: Rolling ball of fire deals 6d6 fire damage and ignites targets.</p>
+<p><b><a href = "mirrorTransport.html">Mirror Transport</a></b>: Mirror becomes a multiple-use <i><a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door" >dimension door</a></i>.</p>
+<p><b><a href = "spellcrash.html">Spellcrash, Lesser</a></b>: Target loses a 3rd-level prepared spell or spell slot.</p>
+<p><b><a href = "symbolOfLaughter.html">Symbol of Laughter</a></b><sup>M</sup>: Triggered rune makes nearby creatures lose actions for 1 round/level.</p>
+<p><b><a href = "triggeredSuggestion.html">Triggered Suggestion</a></b>: As <i><a href="../../coreRulebook/spells/suggestion.html#suggestion" >suggestion</a></i>, but triggered only and target doesn't remember the suggestion.</p>
+<p><b><a href = "unbearableBrightness.html">Unbearable Brightness</a></b>: Your glowing body dazzles or blinds others.</p>
+<p><b><a href = "wallOfBlindnessDeafness.html">Wall of Blindness/Deafness</a></b>: Translucent wall blinds or deafens creatures that pass through it.</p>
+
+<h3>5th-Level Sorcerer/Wizard Spells</h3>
+<p><b><a href = "feastOnFear.html">Feast on Fear</a></b>: Targets are panicked, and you gain temporary hit points.</p>
+<p><b><a href = "repairUndead.html">Repair Undead, Mass</a></b>: Heals undead of 1d8 hp + 1/level; affects 1 undead/level.</p>
+<p><b><a href = "vampiricShadowShield.html">Vampiric Shadow Shield</a></b>: As <i><a href="../../coreRulebook/spells/fireShield.html#fire-shield" >fire shield</a></i>, except attackers take negative energy damage and attacks heal you.</p>
+<p><b><a href = "whipOfCentipedes.html">Whip of Centipedes</a></b>: Create a whip made of poisonous centipedes.</p>
+
+<h3>6th-Level Sorcerer/Wizard Spells</h3>
+<p><b><a href = "bansheeBlast.html">Banshee Blast</a></b>: Cone deals 1d4 per level and panics creatures.</p>
+<p><b><a href = "sonicForm.html">Sonic Form</a></b>: Turn yourself into a creature of semisolid sound.</p>
+<p><b><a href = "spellcrash.html">Spellcrash</a></b>: Target loses a 5th-level prepared spell or spell slot.</p>
+<p><b><a href = "whipOfAnts.html">Whip of Ants</a></b>: Create a whip made of army ants.</p>
+
+<h3>7th-Level Sorcerer/Wizard Spells</h3>
+<p><b><a href = "dimensionalBounce.html">Dimensional Bounce</a></b>: Teleport multiple times between two designated locations.</p>
+
+<h3>8th-Level Sorcerer/Wizard Spells</h3>
+<p><b><a href = "spellcrash.html">Spellcrash, Greater</a></b>: Target loses a 7th-level prepared spell or spell slot.</p>
+
+<h2 id = "advanced-class-guide-summoner-spells">Summoner Spells</h2>
+<h3>1st-Level Summoner Spells</h3>
+<p><b><a href = "blurredMovement.html">Blurred Movement</a></b>: As <i><a href="../../coreRulebook/spells/blur.html#blur" >blur</a></i>, but only while you are moving.</p>
+<p><b><a href = "glueSeal.html">Glue Seal</a></b>: Makes one 5-ft.-square or one object sticky.</p>
+<p><b><a href = "longArm.html">Long Arm</a></b>: Your arms lengthen, giving you extra reach.</p>
+
+<h3>2nd-Level Summoner Spells</h3>
+<p><b><a href = "bloodArmor.html">Blood Armor</a></b>: Your blood hardens when you are wounded, increasing your AC.</p>
+<p><b><a href = "timeShudder.html">Time Shudder</a></b>: Nearby creatures are affected by <i><a href="../../coreRulebook/spells/haste.html#haste" >haste</a></i> or <i><a href="../../coreRulebook/spells/slow.html#slow" >slow</a></i> each round.</p>
+<p><b><a href = "whipOfSpiders.html">Whip of Spiders</a></b>: Create a whip made of poisonous spiders.</p>
+
+<h3>3rd-Level Summoner Spells</h3>
+<p><b><a href = "creepingIce.html">Creeping Ice</a></b>: Sheet of ice slowly spreads outward on a horizontal surface.</p>
+<p><b><a href = "shieldCompanion.html">Shield Companion</a></b>: As <i><a href="../../coreRulebook/spells/shieldOther.html#shield-other" >shield other</a></i>, but affecting your companion creature.</p>
+
+<h3>4th-Level Summoner Spells</h3>
+<p><b><a href = "adjustablePolymorph.html">Adjustable Polymorph</a></b>: As <i><a href="../../coreRulebook/spells/alterSelf.html#alter-self" >alter self</a></i>, but you can change the shape as a swift action.</p>
+
+<h3>5th-Level Summoner Spells</h3>
+<p><b><a href = "whipOfCentipedes.html">Whip of Centipedes</a></b>: Create a whip made of poisonous centipedes.</p>
+
+<h3>6th-Level Summoner Spells</h3>
+<p><b><a href = "dimensionalBounce.html">Dimensional Bounce</a></b>: Teleport multiple times between two designated locations.</p>
+<p><b><a href = "whipOfAnts.html">Whip of Ants</a></b>: Create a whip made of army ants.</p>
+
+<h2 id = "advanced-class-guide-witch-spells">Witch Spells</h2>
+<h3>1st-Level Witch Spells</h3>
+<p><b><a href = "adhesiveSpittle.html">Adhesive Spittle</a></b>: Spit a tanglefoot bag at a creature.</p>
+<p><b><a href = "alterMusicalInstrument.html">Alter Musical Instrument</a>></b><sup>F</sup>: Make one instrument sound like a different kind of instrument.</p>
+<p><b><a href = "animalPurposeTraining.html">Animal Purpose Training</a></b>: Animal gains a new general purpose.</p>
+<p><b><a href = "discernNextOfKin.html">Discern Next of Kin</a></b>: Read the target's mind to learn about its family.</p>
+<p><b><a href = "disguiseWeapon.html">Disguise Weapon</a></b>: Changes one weapon's appearance.</p>
+<p><b><a href = "gentleBreeze.html">Gentle Breeze</a></b>: Light wind protects one target from clouds, gases, heat, and vapors.</p>
+<p><b><a href = "hexVulnerability.html">Hex Vulnerability</a></b>: Reuse a hex on a specific target.</p>
+<p><b><a href = "longArm.html">Long Arm</a></b>: Your arms lengthen, giving you extra reach.</p>
+<p><b><a href = "memorizePage.html">Memorize Page</a></b><sup>F</sup>: Target perfectly memorizes one page of information.</p>
+<p><b><a href = "mirrorPolish.html">Mirror Polish</a></b>: Polish a metal item until it's usable as a mirror.</p>
+<p><b><a href = "nauseatingDart.html">Nauseating Dart</a></b>: Poisonous stinger deals 1d2 damage and sickens target.</p>
+<p><b><a href = "sunderingShards.html">Sundering Shards</a></b>: Sundered item explodes, dealing 1d6 damage to adjacent creatures.</p>
+<p><b><a href = "waveShield.html">Wave Shield</a></b>: Water blunts one incoming attack or fire effect.</p>
+
+<h3>2nd-Level Witch Spells</h3>
+<p><b><a href = "adhesiveBlood.html">Adhesive Blood</a></b>: Attackers' weapons stick to your blood.</p>
+<p><b><a href = "aggressiveThundercloud.html">Aggressive Thundercloud</a></b>: Flying storm cloud deals 3d6 electricity damage.</p>
+<p><b><a href = "airStep.html">Air Step</a></b>: Tread unsteadily on air, with limitations.</p>
+<p><b><a href = "anonymousInteraction.html">Anonymous Interaction</a></b>: Creatures forget details about you and conversations with you.</p>
+<p><b><a href = "beastspeak.html">Beastspeak</a></b>: Speak normally while in animal form.</p>
+<p><b><a href = "bloodArmor.html">Blood Armor</a></b>: Your blood hardens when you are wounded, increasing your AC.</p>
+<p><b><a href = "bulletWard.html">Bullet Ward</a></b><sup>F</sup>: Adamantine bullets intercept firearm attacks.</p>
+<p><b><a href = "buoyancy.html">Buoyancy</a></b>: Targets easily float on water.</p>
+<p><b><a href = "climbingBeanstalk.html">Climbing Beanstalk</a></b>: Create a beanstalk that is very easy to climb.</p>
+<p><b><a href = "companionLifeLink.html">Companion Life Link</a></b>: Sense whenever your companion is wounded and call out to it in a time of need.</p>
+<p><b><a href = "crimsonConfession.html">Crimson Confession</a></b>: Touching the marked object or area turns one's skin red.</p>
+<p><b><a href = "euphoricCloud.html">Euphoric Cloud</a></b><sup>M</sup>: Fog obscures vision and fascinates living creatures.</p>
+<p><b><a href = "extremeFlexibility.html">Extreme Flexibility</a></b>: Gain a bonus to AC, on <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> checks, and when grappling.</p>
+<p><b><a href = "investigativeMind.html">Investigative Mind</a></b>: Roll twice and take the higher roll when using certain mental skills.</p>
+<p><b><a href = "lifePact.html">Life Pact</a></b>: Affected creatures automatically donate hp to stabilize fallen ally.</p>
+<p><b><a href = "mirrorHideaway.html">Mirror Hideaway</a></b>: As many as eight creatures hide in an extradimensional space.</p>
+<p><b><a href = "moltenOrb.html">Molten Orb</a></b>: Molten metal splash weapon deals 2d6 fire damage plus ongoing damage.</p>
+<p><b><a href = "riverWhip.html">River Whip</a></b>: Create a whip of water that you wield as a weapon.</p>
+<p><b><a href = "silentTable.html">Silent Table</a></b>: Give yourself privacy by muffling sound leaving the area.</p>
+<p><b><a href = "stoneDiscus.html">Stone Discus</a></b>: Flying discus deals bludgeoning or slashing damage.</p>
+<p><b><a href = "strickenHeart.html">Stricken Heart</a></b>: Touch attack deals 2d6 damage and staggers target.</p>
+<p><b><a href = "twilightHaze.html">Twilight Haze</a></b>: Illusory fog obscures vision.</p>
+<p><b><a href = "whipOfSpiders.html">Whip of Spiders</a></b>: Create a whip made of poisonous spiders.</p>
+
+<h3>3rd-Level Witch Spells</h3>
+<p><b><a href = "adjustableDisguise.html">Adjustable Disguise</a></b>: As <i><a href="../../coreRulebook/spells/disguiseSelf.html#disguise-self" >disguise self</a></i>, but you can change the disguise as a swift action.</p>
+<p><b><a href = "airGeyser.html">Air Geyser</a></b>: Blast of air deals 2d6 bludgeoning damage and knocks opponent upward.</p>
+<p><b><a href = "anchoredStep.html">Anchored Step</a></b>: Vines beneath your feet stabilize you but slow you down.</p>
+<p><b><a href = "auraSight.html">Aura Sight</a></b>: Alignment auras become visible to you.</p>
+<p><b><a href = "barrowHaze.html">Barrow Haze</a></b>: Fog obscures the vision of others and extends the range of your hexes.</p>
+<p><b><a href = "disableConstruct.html">Disable Construct</a></b>: Touch attack makes a construct helpless for 1 round/level.</p>
+<p><b><a href = "heartOfTheMetal.html">Heart of the Metal</a></b><sup>M</sup>: Enable weapons to overcome DR like adamantine, cold iron, or silver.</p>
+<p><b><a href = "hexGlyph.html">Hex Glyph</a></b><sup>M</sup>: Inscription casts your hex on those who pass it.</p>
+<p><b><a href = "mindlockedMessenger.html">Mindlocked Messenger</a></b>: Target gains a message that can be given only to its intended recipient.</p>
+<p><b><a href = "nauseatingTrail.html">Nauseating Trail</a>></b>: Creature leaves a trail of <i><a href="../../coreRulebook/spells/stinkingCloud.html#stinking-cloud" >stinking cloud</a></i> squares.</p>
+<p><b><a href = "pierceDisguise.html">Pierce Disguise</a></b>: See through low-level magical disguises.</p>
+<p><b><a href = "polymorphFamiliar.html">Polymorph Familiar</a></b>: Give your familiar the shape of another animal.</p>
+<p><b><a href = "silverDarts.html">Silver Darts</a></b>: Cone of silver darts deals 1d6 piercing damage/level, more against unarmored targets.</p>
+<p><b><a href = "thornyEntanglement.html">Thorny Entanglement</a></b>: As <i><a href="../../coreRulebook/spells/entangle.html#entangle" >entangle</a></i>, plus plants make ranged attacks.</p>
+<p><b><a href = "unlivingRage.html">Unliving Rage</a></b>: As <i><a href="../../coreRulebook/spells/rage.html#rage" >rage</a></i>, except affecting only undead.</p>
+
+<h3>4th-Level Witch Spells</h3>
+<p><b><a href = "adjustablePolymorph.html">Adjustable Polymorph</a></b>: As <i><a href="../../coreRulebook/spells/alterSelf.html#alter-self" >alter self</a></i>, but you can change the shape as a swift action.</p>
+<p><b><a href = "aggressiveThundercloud.html">Aggressive Thundercloud, Greater</a></b>: Flying storm cloud deals 6d6 electricity damage.</p>
+<p><b><a href = "antiIncorporealShell.html">Anti-Incorporeal Shell</a></b>: Incorporeal creatures stay 10 ft. away from you.</p>
+<p><b><a href = "curseOfBurningSleep.html">Curse of Burning Sleep</a></b>: Creature catches fire the next time it sleeps for an hour.</p>
+<p><b><a href = "enchantmentFoil.html">Enchantment Foil</a></b>: Trick opponents who try to cast enchantments on you.</p>
+<p><b><a href = "mirrorTransport.html">Mirror Transport</a></b>: Mirror becomes a multiple-use <i><a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door" >dimension door</a></i>.</p>
+<p><b><a href = "persistentVigor.html">Persistent Vigor</a></b>: Gain fast healing 2, immunity to bleed, and faster recovery from diseases and poisons.</p>
+<p><b><a href = "speakWithHaunt.html">Speak with Haunt</a></b>: Haunt answers one question/2 levels.</p>
+<p><b><a href = "spellcrash.html">Spellcrash, Lesser</a></b>: Target loses a 3rd-level prepared spell or spell slot.</p>
+<p><b><a href = "symbolOfLaughter.html">Symbol of Laughter</a></b><sup>M</sup>: Triggered rune makes nearby creatures lose actions for 1 round/level.</p>
+<p><b><a href = "triggeredSuggestion.html">Triggered Suggestion</a></b>: As <i><a href="../../coreRulebook/spells/suggestion.html#suggestion" >suggestion</a></i>, but triggered only and target doesn't remember the suggestion.</p>
+<p><b><a href = "unbearableBrightness.html">Unbearable Brightness</a></b>: Your glowing body dazzles or blinds others.</p>
+<p><b><a href = "wallOfBlindnessDeafness.html">Wall of Blindness/Deafness</a></b>: Creatures that pass through a translucent wall are blinded or deafened.</p>
+
+<h3>5th-Level Witch Spells</h3>
+<p><b><a href = "feastOnFear.html">Feast on Fear</a></b>: Targets are panicked, and you gain temporary hit points.</p>
+<p><b><a href = "hexGlyph.html">Hex Glyph, Greater</a></b><sup>M</sup>: Inscription casts your hex or major hex on those who pass it.</p>
+<p><b><a href = "whipOfCentipedes.html">Whip of Centipedes</a></b>: Create a whip made of poisonous centipedes.</p>
+
+<h3>6th-Level Witch Spells</h3>
+<p><b><a href = "bansheeBlast.html">Banshee Blast</a></b>: Cone deals 1d4 per level and panics creatures.</p>
+<p><b><a href = "spellcrash.html">Spellcrash</a></b>: Target loses a 5th-level prepared spell or spell slot.</p>
+<p><b><a href = "whipOfAnts.html">Whip of Ants</a></b>: Create a whip made of army ants.</p>
+
+<h3>7th-Level Witch Spells</h3>
+<p><b><a href = "dimensionalBounce.html">Dimensional Bounce</a></b>: Teleport multiple times between two designated locations.</p>
+<p><b><a href = "fairyRingRetreat.html">Fairy Ring Retreat</a></b>: Toadstool circle leads to an extradimensional meadow.</p>
+<p><b><a href = "familiarDouble.html">Familiar Double</a></b>: As <i><a href="../../coreRulebook/spells/projectImage.html#project-image" >project image</a></i>, but the image follows your familiar.</p>
+
+<h3>8th-Level Witch Spells</h3>
+<p><b><a href = "spellcrash.html">Spellcrash, Greater</a></b>: Target loses a 7th-level prepared spell or spell slot.</p>
+
+
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Advanced Class Guide Spell Lists",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

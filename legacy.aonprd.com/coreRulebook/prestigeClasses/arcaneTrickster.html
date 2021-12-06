@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Arcane Trickster</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "arcaneTrickster.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "arcaneTrickster.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../races.html">Races</a></li>
+						<li><a href = "../classes.html">Classes</a></li>
+						<li><a href = "../usingSkills.html">Using Skills</a></li>
+						<li><a href = "../skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../equipment.html">Equipment</a></li>
+						<li><a href = "../additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../combat.html">Combat</a></li>
+						<li><a href = "../magic.html">Magic</a></li>
+						<li><a href = "../spellLists.html">Spell Lists</a></li>
+						<li><a href = "../spellIndex.html">Spell Index</a></li>
+						<li><a href = "../prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../environment.html">Environment</a></li>
+						<li><a href = "../nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../magicItems.html">Magic Items</a></li>
+						<li><a href = "../glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "arcaneTrickster.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "arcaneTrickster.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "arcaneTrickster.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "arcaneTrickster.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "arcaneTrickster.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "arcaneTrickster.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "arcaneTrickster.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "arcaneTrickster.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "arcaneTrickster.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "arcaneTrickster.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "arcaneTrickster.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "arcaneTrickster.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "arcaneTrickster.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "arcaneTrickster.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "arcaneTrickster.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "arcaneTrickster.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "arcaneTrickster.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "arcaneTrickster.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "arcaneTrickster.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="arcane-trickster">Arcane Trickster</h1>
+				<p>Few can match the guile and craftiness of arcane tricksters. These prodigious thieves blend the subtlest aspects of the arcane with the natural cunning of the bandit and the scoundrel, using spells to enhance their natural thieving abilities. Arcane tricksters can pick locks, disarm traps, and lift purses from a safe distance using their magical legerdemain, and as often as not seek humiliation as a goal to triumph over their foes than more violent solutions.</p>
+				<p>The path to becoming an arcane trickster is a natural progression for rogues who have supplemented their talents for theft with the study of the arcane. Multiclass rogue/sorcerers and rogue/bards are the most common arcane tricksters, although other combinations are possible. Arcane tricksters are most often found in large, cosmopolitan cities where their talents for magical larceny can be most effectively put to use, prowling the streets and stealing from the unwary.</p>
+				<p><b>Role</b>: With their mastery of magic, arcane tricksters can make for even more subtle or confounding opponents than standard rogues. Ranged legerdemain enhances their skill as thieves, and their ability to make sneak attacks without<a href="../combat.html#flanking" > flanking</a> or as part of a spell can make arcane tricksters formidable damage-dealers.</p>
+				<p><b>Alignment</b>: All arcane tricksters have a penchant for mischief and thievery, and are therefore never lawful. Although they sometimes acquire their magical abilities through the studious path of wizardry, their magical aptitude more often stems from a sorcerous bloodline. As such, many arcane tricksters are of a chaotic alignment.</p>
+				<p><b>Hit Die</b>: d6.</p>
+				<h2>Requirements</h2>
+				<p>To qualify to become an arcane trickster, a character must fulfill all of the following criteria.</p>
+				<p><b>Alignment</b>: Any nonlawful.</p>
+				<p><b>Skills</b>: <a href="../skills/disableDevice.html#disable-device" >Disable Device</a> 4 ranks, <a href="../skills/escapeArtist.html#escape-artist" >Escape Artist</a> 4 ranks, <a href="../skills/knowledge.html#knowledge" >Knowledge</a> (arcana) 4 ranks.</p>
+				<p><b>Spells</b>: Ability to cast <i><a href="../spells/mageHand.html#mage-hand" >mage hand</a> </i>and at least one arcane spell of 2nd level or higher.</p>
+				<p><b>Special</b>: <a href = "../classes/rogue.html#sneak-attack" >Sneak attack</a> +2d6.</p>
+				<h2>Class Skills</h2>
+				<p>The arcane trickster's class skills (and the key ability for each skill) are <a href="../skills/acrobatics.html#acrobatics" >Acrobatics</a> (<a href = "../gettingStarted.html#dexterity" >Dex</a>), <a href="../skills/appraise.html#appraise" >Appraise</a> (<a href = "../gettingStarted.html#intelligence" >Int</a>), <a href="../skills/bluff.html#bluff" >Bluff</a> (<a href = "../gettingStarted.html#charisma-new" >Cha</a>), <a href="../skills/climb.html#climb" >Climb</a> (<a href = "../gettingStarted.html#strength" >Str</a>), <a href="../skills/diplomacy.html#diplomacy" >Diplomacy</a> (<a href = "../gettingStarted.html#charisma-new" >Cha</a>), <a href="../skills/disableDevice.html#disable-device" >Disable Device</a> (<a href = "../gettingStarted.html#intelligence" >Int</a>), <a href="../skills/disguise.html#disguise" >Disguise</a> (<a href = "../gettingStarted.html#charisma-new" >Cha</a>), <a href="../skills/escapeArtist.html#escape-artist" >Escape Artist</a> (<a href = "../gettingStarted.html#dexterity" >Dex</a>), <a href="../skills/knowledge.html#knowledge" >Knowledge</a> (all skills taken individually) (<a href = "../gettingStarted.html#intelligence" >Int</a>), <a href="../skills/perception.html#perception" >Perception</a> (<a href = "../gettingStarted.html#wisdom" >Wis</a>), <a href="../skills/senseMotive.html#sense-motive" >Sense Motive</a> (<a href = "../gettingStarted.html#wisdom" >Wis</a>), <a href="../skills/sleightOfHand.html#sleight-of-hand" >Sleight of Hand</a> (<a href = "../gettingStarted.html#dexterity" >Dex</a>), <a href="../skills/spellcraft.html#spellcraft" >Spellcraft</a> (<a href = "../gettingStarted.html#intelligence" >Int</a>), <a href="../skills/stealth.html#stealth" >Stealth</a> (<a href = "../gettingStarted.html#dexterity" >Dex</a>), and <a href="../skills/swim.html#swim" >Swim</a> (<a href = "../gettingStarted.html#strength" >Str</a>).</p>
+				<p><b>Skill Ranks at Each Level</b>: 4 + <a href = "../gettingStarted.html#intelligence" >Int</a> modifier.</p>
+				
+<div class = "table"><table id="table-11-2-arcane-trickster"><caption>Table: Arcane Trickster</caption>
+<thead><tr><th>Level</th><th>Base Attack Bonus</th><th>Fort Save</th><th>Ref Save</th><th>Will Save</th><th>Special</th><th>Spells per Day</th></tr></thead>
+<tr><td>1st</td><td>+0</td><td>+0</td><td>+1</td><td>+1</td><td style="white-space: normal;"><a href="arcaneTrickster.html#ranged-legerdemain" >Ranged legerdemain</a></td><td>+1 level of existing class</td></tr>
+<tr><td>2nd</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td><td style="white-space: normal;"><a href = "../classes/rogue.html#sneak-attack" >Sneak attack</a> +1d6</td><td>+1 level of existing class</td></tr>
+<tr><td>3rd</td><td>+1</td><td>+1</td><td>+2</td><td>+2</td><td style="white-space: normal;"><a href="arcaneTrickster.html#impromptu-sneak-attack" >Impromptu sneak attack</a> 1/day</td><td>+1 level of existing class</td></tr>
+<tr><td>4th</td><td>+2</td><td>+1</td><td>+2</td><td>+2</td><td style="white-space: normal;"><a href = "../classes/rogue.html#sneak-attack" >Sneak attack</a> +2d6</td><td>+1 level of existing class</td></tr>
+<tr><td>5th</td><td>+2</td><td>+2</td><td>+3</td><td>+3</td><td style="white-space: normal;"><a href="arcaneTrickster.html#tricky-spells" >Tricky spells</a> 3/day</td><td>+1 level of existing class</td></tr>
+<tr><td>6th</td><td>+3</td><td>+2</td><td>+3</td><td>+3</td><td style="white-space: normal;"><a href = "../classes/rogue.html#sneak-attack" >Sneak attack</a> +3d6</td><td>+1 level of existing class</td></tr>
+<tr><td>7th</td><td>+3</td><td>+2</td><td>+4</td><td>+4</td><td style="white-space: normal;"><a href="arcaneTrickster.html#impromptu-sneak-attack" >Impromptu sneak attack</a> 2/day, <a href="arcaneTrickster.html#tricky-spells" >Tricky spells</a> 4/day</td><td>+1 level of existing class</td></tr>
+<tr><td>8th</td><td>+4</td><td>+3</td><td>+4</td><td>+4</td><td style="white-space: normal;"><a href = "../classes/rogue.html#sneak-attack" >Sneak attack</a> +4d6</td><td>+1 level of existing class</td></tr>
+<tr><td>9th</td><td>+4</td><td>+3</td><td>+5</td><td>+5</td><td style="white-space: normal;"><a href="arcaneTrickster.html#invisible-thief" >Invisible thief</a>, <a href="arcaneTrickster.html#tricky-spells" >Tricky spells</a> 5/day</td><td>+1 level of existing class</td></tr>
+<tr><td>10th</td><td>+5</td><td>+3</td><td>+5</td><td>+5</td><td style="white-space: normal;"><a href = "../classes/rogue.html#sneak-attack" >Sneak attack</a> +5d6, surprise spells</td><td>+1 level of existing class</td></tr></table></div>
+
+				<h2>Class Features</h2>
+				<p>All of the following are class features of the arcane trickster prestige class.</p>
+				<p><b>Weapon and Armor Proficiency</b>: Arcane tricksters gain no proficiency with any weapon or armor.</p>
+				<p><b>Spells per Day</b>: When a new arcane trickster level is gained, the character gains new spells per day as if she had also gained a level in a spellcasting class she belonged to before adding the prestige class. She does not, however, gain other benefits a character of that class would have gained, except for additional spells per day, spells known (if she is a spontaneous spellcaster), and an increased effective level of spellcasting. If a character had more than one spellcasting class before becoming an arcane trickster, she must decide to which class she adds the new level for purposes of determining spells per day.</p>
+				<p id="ranged-legerdemain"><b>Ranged Legerdemain (Su)</b>: An arcane trickster can use <a href="../skills/disableDevice.html#disable-device" >Disable Device</a> and <a href="../skills/sleightOfHand.html#sleight-of-hand" >Sleight of Hand</a> at a range of 30 feet. Working at a distance increases the normal skill check DC by 5, and an arcane trickster cannot take 10 on this check. Any object to be manipulated must weigh 5 pounds or less. She can only use this ability if she has at least 1 rank in the skill being used.</p>
+				<p><b>Sneak Attack</b>: This is exactly like the rogue ability of the same name. The extra damage dealt increases by +1d6 every other level (2nd, 4th, 6th, 8th, and 10th). If an arcane trickster gets a <a href = "../classes/rogue.html#sneak-attack" >sneak attack</a> bonus from another source, the bonuses on damage stack.</p>
+				<p id="impromptu-sneak-attack"><b>Impromptu Sneak Attack (Ex)</b>: Beginning at 3rd level, once per day an arcane trickster can declare one melee or ranged attack she makes to be a <a href = "../classes/rogue.html#sneak-attack" >sneak attack</a> (the target can be no more than 30 feet distant if the impromptu sneak attack is a ranged attack). The target of an impromptu sneak attack loses any <a href = "../gettingStarted.html#dexterity" >Dexterity</a> bonus to <a href="../combat.html#armor-class" >AC</a>, but only against that attack. The power can be used against any target, but creatures that are not subject to <a href="../combat.html#critical-hits" >critical hit</a>s take no extra damage (though they still lose any <a href = "../gettingStarted.html#dexterity" >Dexterity</a> bonus to <a href="../combat.html#armor-class" >AC</a> against the attack).</p>
+				<p>At 7th level, an arcane trickster can use this ability twice per day.</p>
+				<p id="tricky-spells"><b>Tricky Spells (Su)</b>: Starting at 5th level, an arcane trickster can cast her spells without their somatic or verbal components, as if using the <a href="../feats.html#still-spell" >Still Spell</a> and <a href="../feats.html#silent-spell" >Silent Spell</a> feats. Spells cast using this ability do not increase in spell level or casting time. She can use this ability 3 times per day at 5th level and one additional time per every two levels thereafter, to a maximum of 5 times per day at 9th level. The arcane trickster decides to use this ability at the time of casting.</p>
+				<p id="invisible-thief"><b>Invisible Thief (Su)</b>: At 9th level, an arcane trickster can become <a href = "../glossary.html#invisible" >invisible</a>, as if under the effects of <i><a href="../spells/invisibility.html#invisibility-greater" >greater invisibility</a>,</i> as a free action. She can remain <a href = "../glossary.html#invisible" >invisible</a> for a number of rounds per day equal to her arcane trickster level. Her caster level for this effect is equal to her caster level. These rounds need not be consecutive.</p>
+				<p id="surprise-spells"><b>Surprise Spells</b>: At 10th level, an arcane trickster can add her sneak attack damage to any spell that deals damage, if the targets are <a href = "../glossary.html#flat-footed" >flat-footed</a>. This additional damage only applies to spells that deal hit point damage, and the additional damage is of the same type as the spell. If the spell allows a saving throw to negate or halve the damage, it also negates or halves the sneak attack damage.</p>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Arcane Trickster",globalNavPath=[{ href: '/pathfinderRPG/prd/coreRulebook/prestigeClasses.html', name: 'Prestige Classes' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

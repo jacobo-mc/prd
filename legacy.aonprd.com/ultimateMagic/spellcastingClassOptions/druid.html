@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Druid</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "druid.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "druid.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "druid.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "druid.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "druid.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "druid.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "druid.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "druid.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "druid.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "druid.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "druid.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "druid.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "druid.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "druid.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "druid.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "druid.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "druid.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "druid.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "druid.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "druid.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "druid.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="druid" class="monster-header">Druid</h1>
+				
+				
+				<p>Druids are devotees of nature, protecting the bleakest deserts and most verdant forests. Through their kinship with animals and the elements, they learn the most potent secrets the natural world has to offer, and can call upon great power in the form of both magical abilities like wild shape and a wide array of thematic spells. Whether tapping the fundamental magic of the elements or relying on the teeth and claws of wild creatures to accomplish their goals, druids are forces to be reckoned with, and those whose actions threaten the wild places these nature folk hold dear had best be prepared to suffer the consequences.</p>
+				<p>The following section details new animal and terrain domains for druids, vermin companions for druids who don't want a more traditional animal companion, and new druid archetypes.</p>
+				<h1 id="animal-and-terrain-domains">Animal and Terrain Domains</h1>
+				<p>Presented in the section below are new rules for animal and terrain domains&mdash;domains for druids whose focus is more specific than the Animal, Plant, Weather, or elemental domains. A druid with the nature's bond ability can choose an animal domain or terrain domain. Just like cleric domains, animal and terrain domains have granted powers and domain spells, and a druid who selects an animal or terrain domain gains a domain spell slot at each level. A druid who worships a deity (as opposed to nature in general) cannot select an animal or terrain domain that contradicts or is outside of the portfolio of her deity.</p>
+				<p>If an animal or terrain domain ability calls for a saving throw, the DC of the save is equal to 10 + 1/2 the character's druid level + her Wisdom modifier.</p>
+				<p>Other nature-themed classes with access to domains may select an animal or terrain domain in place of a regular domain.</p>
+				<h2 id="aquatic-domain">Aquatic Domain</h2>
+				<p><b>Granted Powers</b>: You master the deeps of the sea, raging rivers, flowing falls, and relentless tides.</p>
+				<p id="sealord"><b>Sealord (Su)</b>: You can channel energy (as a cleric of your druid level) a number of times per day equal to 3 + your Charisma modifier, but only to heal creatures with the aquatic or water subtype or to command them (similar to using the <a href="../../coreRulebook/feats.html#command-undead" >Command Undead</a> feat against undead). You can take other feats to add to this ability, such as <a href="../../coreRulebook/feats.html#extra-channel" >Extra Channel</a> and <a href="../../coreRulebook/feats.html#improved-channel" >Improved Channel</a>, but not feats that alter this ability, such as <a href="../../coreRulebook/feats.html#elemental-channel" >Elemental Channel</a> and <a href="../../coreRulebook/feats.html#alignment-channel" >Alignment Channel</a>. The DC to save against this ability is equal to 10 + 1/2 your druid level + your Charisma modifier.</p>
+				<p id="seastrike"><b>Seastrike (Su)</b>: At 6th level, as a free action, you may use natural and manufactured weapons in water as if you had continuous <i><a href="../../coreRulebook/spells/freedomOfMovement.html#freedom-of-movement" >freedom of movement</a></i>. As a standard action, you can throw a weapon underwater without the normal penalties for throwing weapons; if your target is in or under the water, the weapon also acts as a <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-returning" >returning</a></i> weapon (see page 471 of the <i>Core Rulebook</i>) for that attack.</p>
+				<p id="domain-spells"><b>Domain Spells</b>: 1st&mdash;<i><a href="../../advancedPlayersGuide/spells/hydraulicPush.html#hydraulic-push-" >hydraulic push</a></i>, 2nd&mdash;<i><a href="../../advancedPlayersGuide/spells/slipstream.html#slipstream" >slipstream</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/waterBreathing.html#water-breathing" >water breathing</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/freedomOfMovement.html#freedom-of-movement" >freedom of movement</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/blackTentacles.html#black-tentacles" >black tentacles</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/freezingSphere.html#freezing-sphere" >freezing sphere</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/animalShapes.html#animal-shapes" >animal shapes</a></i> (aquatic creatures only), 8th&mdash;<i><a href="../../advancedPlayersGuide/spells/seamantle.html#seamantle" >seamantle</a></i>, 9th&mdash;<i><a href="../../advancedPlayersGuide/spells/tsunami.html#tsunami" >tsunami</a></i>.</p>
+				<h2 id="arctic-domain">Arctic Domain</h2>
+				<p><b>Granted Powers</b>: You master the might of the endless, snow-covered wastes beneath the midnight sun, where icy polar winds blow.</p>
+				<p id="call-cold"><b>Call Cold (Su)</b>: You can channel energy (as a cleric of your druid level) a number of times per day equal to 3 + your Charisma modifier, but only to heal creatures with the cold subtype or to command them (similar to using the <a href="../../coreRulebook/feats.html#command-undead" >Command Undead</a> feat against undead). You can take other feats that add to this ability, such as <a href="../../coreRulebook/feats.html#extra-channel" >Extra Channel</a> and <a href="../../coreRulebook/feats.html#improved-channel" >Improved Channel</a>, but not feats that alter this ability, such as <a href="../../coreRulebook/feats.html#elemental-channel" >Elemental Channel</a> and <a href="../../coreRulebook/feats.html#alignment-channel" >Alignment Channel</a>. The DC to save against this ability is equal to 10 + 1/2 your druid level + your Charisma modifier.</p>
+				<p id="banish-flame"><b>Banish Flame (Su)</b>: At 6th level, you may use your call cold ability to damage creatures with the fire subtype (as a cleric channeling negative energy) or to cause them to flee from you (as the <a href="../../coreRulebook/feats.html#turn-undead" >Turn Undead</a> feat). Alternatively, you may use this ability to negate magical fire effects as if using a targeted <i><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic" >dispel magic</a></i>; at 12th level, this functions as targeted or area <i><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic-greater" >greater dispel magic</a></i> instead of <i><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic" >dispel magic</a></i>.</p>
+				<p id="domain-spells"><b>Domain Spells</b>: 1st&mdash;<i><a href="../spells/frostbite.html#frostbite" >frostbite</a></i>, 2nd&mdash;<i><a href="../../advancedPlayersGuide/spells/aspectOfTheBear.html#aspect-of-the-bear" >aspect of the bear</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/sleetStorm.html#sleet-storm" >sleet storm</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/wallOfIce.html#wall-of-ice" >wall of ice</a></i>, 5th&mdash;<i><a href="../../advancedPlayersGuide/spells/aspectOfTheWolf.html#aspect-of-the-wolf" >aspect of the wolf</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/freezingSphere.html#freezing-sphere" >freezing sphere</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/windWalk.html#wind-walk" >wind walk</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/polarRay.html#polar-ray" >polar ray</a></i>, 9th&mdash;<i><a href="../spells/polarMidnight.html#polar-midnight" >polar midnight</a></i>.</p>
+				<h2 id="cave-domain">Cave Domain</h2>
+				<p><b>Granted Powers</b>: The wonders and dark secrets of the deepest caves give you strength.</p>
+				<p id="cavesight"><b>Cavesight (Sp)</b>: You can grant darkvision 60 feet to a willing creature you touch. This effect lasts 1 minute, or 1 hour if used on yourself. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p id="tremorsense"><b>Tremorsense (Ex)</b>: At 6th level, you gain tremorsense 30 feet. At 12th level, you gain tremorsense 60 feet.</p>
+				<p id="domain-spells"><b>Domain Spells</b>: 1st&mdash;<i><a href="../../advancedPlayersGuide/spells/detectAberration.html#detect-aberration" >detect aberration</a></i>, 2nd&mdash;<i><a href="../../advancedPlayersGuide/spells/stoneCall.html#stone-call" >stone call</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/deeperDarkness.html#deeper-darkness" >deeper darkness</a></i>, 4th&mdash;<i>echolocation</i>, 5th&mdash;<i><a href="../../coreRulebook/spells/wallOfStone.html#wall-of-stone" >wall of stone</a></i>, 6th&mdash;<i><a href="../spells/conjureBlackPudding.html#conjure-black-pudding" >conjure black pudding</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/statue.html#statue" >statue</a></i> (looking like a stalagmite or stalactite), 8th&mdash;<i><a href="../../coreRulebook/spells/earthquake.html#earthquake" >earthquake</a></i>, 9th&mdash;<i><a href="../../coreRulebook/spells/imprisonment.html#imprisonment" >imprisonment</a></i>.</p>
+				<h2 id="desert-domain">Desert Domain</h2>
+				<p><b>Granted Powers</b>: The spirits and secrets of the endless wastes are yours to command.</p>
+				<p id="heat-shimmer"><b>Heat Shimmer (Su)</b>: As a free action, you can surround yourself with heat distortion that acts as the <i><a href="../../coreRulebook/spells/blur.html#blur" >blur</a></i> spell. Creatures that strike you in melee while you're using this ability are dazzled for 1 round (Fortitude negates). You may use this ability for a number of rounds per day equal to 3 + your Wisdom modifier. These rounds need not be consecutive.</p>
+				<p id="servant-of-the-sands"><b>Servant of the Sands (Sp)</b>: At 8th level, once per day, you may call upon the aid of a janni as if using <i><a href="../../coreRulebook/spells/planarAlly.html#planar-ally-lesser" >lesser planar ally</a></i>. At 12th level, you may call upon the aid of any type of common (non-noble) genie as if using <i><a href="../../coreRulebook/spells/planarAlly.html#planar-ally" >planar ally</a></i>. At 16th level, you may call upon the aid of a noble genie as if using <i><a href="../../coreRulebook/spells/planarAlly.html#planar-ally-greater" >greater planar ally</a></i>. If you use this power while in desert terrain, you need not make an offering to call the creature(s), and the cost of any service is halved.</p>
+				<p id="domain-spells"><b>Domain Spells</b>: 1st&mdash;<i><a href="../../advancedPlayersGuide/spells/cloakOfShade.html#cloak-of-shade" >cloak of shade</a></i>, 2nd&mdash;<i><a href="../../advancedPlayersGuide/spells/shiftingSand.html#shifting-sand" >shifting sand</a></i>, 3rd&mdash;<i><a href="../../advancedPlayersGuide/spells/cupOfDust.html#cup-of-dust" >cup of dust</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/hallucinatoryTerrain.html#hallucinatory-terrain" >hallucinatory terrain</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/transmuteRockToMud.html#transmute-rock-to-mud" >transmute rock to mud</a></i> (creates loose sand instead of mud), 6th&mdash;<i><a href="../../advancedPlayersGuide/spells/sirocco.html#sirocco" >sirocco</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/sunbeam.html#sunbeam" >sunbeam</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/sunburst.html#sunburst" >sunburst</a></i>, 9th&mdash;<i><a href="../../coreRulebook/spells/horridWilting.html#horrid-wilting" >horrid wilting</a></i>.</p>
+				<h2 id="eagle-domain">Eagle Domain</h2>
+				<p><b>Granted Powers</b>: Your spirit soars with the mightiest and noblest of all winged creatures.</p>
+				<p id="familiar"><b>Familiar</b>: You gain a hawk familiar. Your effective wizard level for this ability is equal to your druid level. Your druid level stacks with levels from other classes that grant familiars when determining the powers of your familiar.</p>
+				<p id="hawkeye"><b>Hawkeye (Su)</b>: As a swift action, you may add a bonus equal to half your druid level (minimum +1) on one ranged attack or on one <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> check. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p id="aerial-evasion"><b>Aerial evasion (Ex)</b>: At 6th level, you gain the evasion ability (as a rogue) when you are flying. At 12th level, you gain improved evasion while flying.</p>
+				<p id="domain-spells"><b>Domain Spells</b>: 1st&mdash;<i><a href="../../advancedPlayersGuide/spells/aspectOfTheFalcon.html#aspect-of-the-falcon" >aspect of the falcon</a></i>, 2nd&mdash;<i><a href="../../coreRulebook/spells/eagleSSplendor.html#eagle-s-splendor" >eagle's splendor</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/fly.html" >fly</a></i>, 4th&mdash;<i><a href="../../advancedPlayersGuide/spells/riverOfWind.html#river-of-wind" >river of wind</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/overlandFlight.html#overland-flight" >overland flight</a></i>, 6th&mdash;<i><a href="../spells/eagleAerie.html#eagle-aerie" >eagle aerie</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/animalShapes.html#animal-shapes" >animal shapes</a></i> (birds only), 8th&mdash;<i><a href="../../coreRulebook/spells/sunburst.html#sunburst" >sunburst</a></i>, 9th&mdash;<i><a href="../../advancedPlayersGuide/spells/windsOfVengeance.html#winds-of-vengeance" >winds of vengeance</a></i>.</p>
+				<h2 id="frog-domain">Frog Domain</h2>
+				<p><b>Granted Powers</b>: You venerate the elder amphibians that first brought life to land.</p>
+				<p id="familiar"><b>Familiar</b>: You may gain a toad familiar. Your effective wizard level for this ability is equal to your druid level. Your druid level stacks with levels from other classes that grant familiars when determining the powers of your familiar.</p>
+				<p id="sticky-strike"><b>Sticky Strike (Su)</b>: As a standard action, you can attempt a ranged touch attack with a sticky tendril against a target up to 15 feet away, then use the pull universal monster ability to pull the target 5 feet toward you. You gain a bonus on the pull's combat maneuver check equal to 1/2 your druid level. If the target is larger than you, you may pull yourself 5 feet toward the target without making a check. The target can remove the tendril by making an opposed Strength check as a standard action, or by dealing enough slashing damage to the tendril (hit points equal to your druid level, Armor Class equal to your touch Armor Class). You can dissolve the tendril as a free action. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p id="webfoot"><b>Webfoot (Ex)</b>: At 6th level, you gain the amphibious special quality and a swim speed equal to your land speed. At 12th level, you gain a climb speed equal to your land speed.</p>
+				<p id="domain-spells"><b>Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/jump.html#jump" >jump</a></i>, 2nd&mdash;<i><a href="../../coreRulebook/spells/delayPoison.html#delay-poison" >delay poison</a></i>, 3rd&mdash;<i><a href="../../advancedPlayersGuide/spells/lilyPadStride.html#lily-pad-stride" >lily pad stride</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/shout.html#shout" >shout</a></i>, 5th&mdash;<i><a href="../../advancedPlayersGuide/spells/blessingOfTheSalamander.html#blessing-of-the-salamander" >blessing of the salamander</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/confusion.html#confusion" >confusion</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/animalShapes.html#animal-shapes" >animal shapes</a></i> (amphibians only), 8th&mdash;<i><a href="../../coreRulebook/spells/shout.html#shout-greater" >greater shout</a></i>, 9th&mdash;<i><a href="../spells/summonFroghemoth.html#summon-froghemoth" >summon froghemoth</a></i>.</p>
+				<h2 id="jungle-domain">Jungle Domain</h2>
+				<p><b>Granted Powers</b>: The spirits of the jungle, both of natural guardians and lost civilizations, whisper in your heart.</p>
+				<p id="brachiation"><b>Brachiation (Ex)</b>: As a free action for a number of rounds per day equal to your druid level, you may climb with a climb speed equal to your land speed, and gain a bonus on <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> checks equal to your druid level. These rounds do not have to be consecutive.</p>
+				<p id="trap-sense"><b>Trap Sense (Ex)</b>: At 3rd level, you gain the trap sense ability. This is identical to the rogue class ability. Your effective rogue level is equal to your druid level for the purpose of determining your trap sense bonus. Trap sense bonuses gained from multiple classes stack.</p>
+				<p id="domain-spells"><b>Domain Spells</b>: 1st&mdash;<i><a href="../../advancedPlayersGuide/spells/glide.html#glide-" >glide</a></i>, 2nd&mdash;<i><a href="../spells/tarBall.html#tar-ball" >tar ball</a></i>, 3rd&mdash;<i><a href="../../advancedPlayersGuide/spells/venomousBolt.html#venomous-bolt" >venomous bolt</a></i>, 4th&mdash;<i><a href="../spells/arborealHammer.html#arboreal-hammer" >arboreal hammer</a></i>, 5th&mdash;<i><a href="../../advancedPlayersGuide/spells/blessingOfTheSalamander.html#blessing-of-the-salamander" >blessing of the salamander</a></i>, 6th&mdash;<i><a href="../../advancedPlayersGuide/spells/swarmSkin.html#swarm-skin-" >swarm skin</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/creepingDoom.html#creeping-doom" >creeping doom</a></i>, 8th&mdash;<i><a href="../../advancedPlayersGuide/spells/wallOfLava.html#wall-of-lava" >wall of lava</a></i>, 9th&mdash;<i><a href="../../coreRulebook/spells/shambler.html#shambler" >shambler</a></i>.</p>
+				<h2 id="monkey-domain">Monkey Domain</h2>
+				<p><b>Granted Powers</b>: The balanced wisdom, skill, agility, and playfulness of the monkey are the model for your spiritual discipline.</p>
+				<p id="familiar"><b>Familiar</b>: You gain a monkey familiar. Your effective wizard level for this ability is equal to your druid level. Your druid level stacks with levels from other classes that grant familiars when determining the powers of your familiar.</p>
+				<p id="monkey-athletics"><b>Monkey Athletics (Su)</b>: As a free action, you may add a competence bonus equal to half your druid level (minimum of +1) on one <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a>, <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a>, <a href="../../coreRulebook/skills/disableDevice.html#disable-device" >Disable Device</a>, or <a href="../../coreRulebook/skills/sleightOfHand.html#sleight-of-hand" >Sleight of Hand</a> check. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p id="ranged-legerdemain"><b>Ranged Legerdemain (Su)</b>: At 6th level, you can use the <a href="../../coreRulebook/skills/disableDevice.html#disable-device" >Disable Device</a> and <a href="../../coreRulebook/skills/sleightOfHand.html#sleight-of-hand" >Sleight of Hand</a> skills at a range of 30 feet. Working at a distance increases the normal skill check DC by 5, and you cannot take 10 on this check. Any object to be manipulated must weigh 5 pounds or less. You can only use this ability if you have at least 1 rank in the skill being used.</p>
+				<p id="domain-spells"><b>Domain Spells</b>: 1st&mdash;<i><a href="../../advancedPlayersGuide/spells/beguilingGift.html#beguiling-gift" >beguiling gift</a></i>, 2nd&mdash;<i><a href="../../coreRulebook/spells/spiderClimb.html#spider-climb" >spider climb</a></i>, 3rd&mdash;<i><a href="../../advancedPlayersGuide/spells/cacophonousCall.html#cacophonous-call" >cacophonous call</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/freedomOfMovement.html#freedom-of-movement" >freedom of movement</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-v" >summon nature's ally V</a></i> (dire ape or girallon only), 6th&mdash;<i><a href="../../coreRulebook/spells/confusion.html#confusion" >confusion</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/animalShapes.html#animal-shapes" >animal shapes</a></i> (apes and monkeys only), 8th&mdash;<i><a href="../../coreRulebook/spells/clenchedFist.html#clenched-fist" >clenched fist</a></i>, 9th&mdash;<i><a href="../../coreRulebook/spells/foresight.html#foresight" >foresight</a></i>.</p>
+				<h2 id="mountain-domain">Mountain Domain</h2>
+				<p><b>Granted Powers</b>: You have mastered the mighty powers of the great mountains that pierce the sky and stand aloof above the lowlands.</p>
+				<p id="foothold"><b>Foothold (Su)</b>: As a standard action, you can cause an adjacent stone surface up to 10 feet square to mold itself into ridges and creases. A foothold that is created on a horizontal surface is treated as difficult terrain, and a Medium or smaller creature standing in the area or moving through it takes a &ndash;2 penalty on <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> checks and to CMD due to poor footing. A foothold that is created on a vertical surface grants a +10 bonus on <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a> checks to climb it. The stone remains altered for 1 hour. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p id="thin-air"><b>Thin Air (Su)</b>: At 8th level, as a free action, you can surround yourself with a 5-foot aura of supernaturally thin air that draws the breath from creatures adjacent to you. Creatures beginning their turn in the aura are fatigued (Fortitude negates). A fatigued creature that begins its turn in the aura must save or suffer from altitude sickness, taking 1 point of ability damage to all ability scores. At 16th level, the aura increases to 10 feet. Creatures that do not breathe are immune to this aura. You can use this ability for a number of rounds per day equal to your druid level; the rounds need not be consecutive.</p>
+				<p id="domain-spells"><b>Domain Spells</b>: 1st&mdash;<i>fist of stone</i>, 2nd&mdash;<i><a href="../../advancedPlayersGuide/spells/stoneCall.html#stone-call" >stone call</a></i>, 3rd&mdash;<i><a href="../../advancedPlayersGuide/spells/cloakOfWinds.html#cloak-of-winds" >cloak of winds</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/stoneskin.html#stoneskin" >stoneskin</a></i>, 5th&mdash;<i><a href="../../advancedPlayersGuide/spells/geyser.html#geyser-" >geyser</a></i>, 6th&mdash;<i>suffocate</i>, 7th&mdash;<i><a href="../../coreRulebook/spells/fleshToStone.html#flesh-to-stone" >flesh to stone</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/reverseGravity.html#reverse-gravity" >reverse gravity</a></i>, 9th&mdash;<i><a href="../../advancedPlayersGuide/spells/clashingRocks.html#clashing-rocks" >clashing rocks</a></i>.</p>
+				<h2 id="plains-domain">Plains Domain</h2>
+				<p><b>Granted Powers</b>: The wide open spaces of the prairie, savanna, and steppe are yours to master.</p>
+				<p id="migrating-herd"><b>Migrating Herd (Su)</b>: When you summon an aurochs, bison, elephant, horse, mastodon, pony, or similar quadruped herbivore with a summoning spell, the duration of the spell is increased by 100% (this does not stack with <a href="../../coreRulebook/feats.html#extend-spell" >Extend Spell</a>). The creature's land speed is increased by 10 feet.</p>
+				<p id="pounce"><b>Pounce (Ex)</b>: At 6th level, you may use the pounce special attack once per day. You may pounce one additional time per day for every 3 levels after 6th.</p>
+				<p id="domain-spells"><b>Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/mount.html#mount" >mount</a></i>, 2nd&mdash;<i><a href="../../advancedPlayersGuide/spells/chameleonStride.html#chameleon-stride" >chameleon stride</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/haste.html#haste" >haste</a></i>, 4th&mdash;<i><a href="../../advancedPlayersGuide/spells/aspectOfTheStag.html#aspect-of-the-stag" >aspect of the stag</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/controlWinds.html#control-winds" >control winds</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/findThePath.html#find-the-path" >find the path</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/whirlwind.html#whirlwind" >whirlwind</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/animalShapes.html#animal-shapes" >animal shapes</a></i>, 9th&mdash;<i>worldwave</i>.</p>
+				<h2 id="serpent-domain">Serpent Domain</h2>
+				<p><b>Granted Powers</b>: You serve ancient serpentine mysteries whose coils still encircle the world.</p>
+				<p id="familiar"><b>Familiar</b>: You gain a viper familiar. Your effective wizard level for this ability is equal to your druid level. Your druid level stacks with levels from other classes that grant familiars when determining the powers of your familiar.</p>
+				<p id="slither"><b>Slither (Ex)</b>: As a free action, you can distend and stretch your body to fit easily through narrow spaces for 1 round. You can move freely through a tight space that would normally require a creature of your size to squeeze through. While slithering, you gain a +2 dodge bonus to Armor Class against attacks of opportunity provoked by your movement and a +2 bonus on CMB and on <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> checks made to escape from a grapple. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p id="venom-immunity"><b>Venom Immunity (Ex)</b>: At 6th level, you gain immunity to poisons from snakes, reptiles, and creatures with the reptilian subtype. At 12th level, you gain immunity to all poisons. This replaces venom immunity.</p>
+				<p id="domain-spells"><b>Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/charmAnimal.html#charm-animal" >charm animal</a></i>, 2nd&mdash;<i><a href="../../coreRulebook/spells/animalTrance.html#animal-trance" >animal trance</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/poison.html#poison" >poison</a></i>, 4th&mdash;<i>strong</i> jaw, 5th&mdash;<i>snakestaff</i>, 6th&mdash;<i><a href="../../coreRulebook/spells/charmMonster.html#charm-monster" >charm monster</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/animalShapes.html#animal-shapes" >animal shapes</a></i> (reptiles and snakes only), 8th&mdash;<i><a href="../../coreRulebook/spells/scintillatingPattern.html#scintillating-pattern" >scintillating pattern</a></i>, 9th&mdash;<i><a href="../../coreRulebook/spells/crushingHand.html#crushing-hand" >crushing hand</a></i>.</p>
+				<h2 id="swamp-domain">Swamp Domain</h2>
+				<p><b>Granted Powers</b>: The sour-sweet depths of bogs, marshes, and swamps are your places of power.</p>
+				<p id="natural-healing"><b>Natural Healing (Su)</b>: You can channel energy (as a cleric of your druid level) a number of times per day equal to 3 + your Charisma modifier, but only to heal animals, plants, and vermin. You may reduce the number of dice healed to cure ability damage (your choice) to all affected creatures, curing 1 point of ability damage for each d6 that the channel energy is reduced. You can take other feats to add to this ability, such as <a href="../../coreRulebook/feats.html#extra-channel" >Extra Channel</a>, but not feats that alter this ability, such as <a href="../../coreRulebook/feats.html#elemental-channel" >Elemental Channel</a> and <a href="../../coreRulebook/feats.html#alignment-channel" >Alignment Channel</a>.</p>
+				<p id="reed-hunter"><b>Reed Hunter (Ex)</b>: At 6th level, you gain blindsense 30 feet with respect to concealment and cover from fog, vegetation, or water. At 12th level, this improves to blindsight 30 feet with respect to these conditions.</p>
+				<p id="domain-spells"><b>Domain Spells</b>: 1st&mdash;<i><a href="../../advancedPlayersGuide/spells/hydraulicPush.html#hydraulic-push-" >hydraulic push</a></i>, 2nd&mdash;<i><a href="../spells/burstOfNettles.html#burst-of-nettles" >burst of nettles</a></i>, 3rd&mdash;<i><a href="../../advancedPlayersGuide/spells/lilyPadStride.html#lily-pad-stride" >lily pad stride</a></i>, 4th&mdash;<i><a href="../spells/capeOfWasps.html#cape-of-wasps" >cape of wasps</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/insectPlague.html#insect-plague" >insect plague</a></i>, 6th&mdash;<i><a href="../../advancedPlayersGuide/spells/fester.html#fester,-mass" >mass fester</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/animatePlants.html#animate-plants" >animate plants</a></i>, 8th&mdash;<i><a href="../spells/bloodMist.html#blood-mist" >blood mist</a></i>, 9th&mdash;<i><a href="../../coreRulebook/spells/shambler.html#shambler" >shambler</a></i>.</p>
+				<h2 id="wolf-domain">Wolf Domain</h2>
+				<p><b>Granted Powers</b>: You run with the pack and are the master of the cold hunt of your spirit totem.</p>
+				<p id="improved-trip"><b><a href="../../coreRulebook/feats.html#improved-trip" >Improved Trip</a></b>: You gain <a href="../../coreRulebook/feats.html#improved-trip" >Improved Trip</a> as a bonus feat.</p>
+				<p id="pack-tactics"><b>Pack Tactics (Ex)</b>: At 8th level, as a free action on your turn, you can designate an adjacent square; your attacks are treated as coming from that square for the purposes of determining whether or not you are flanking (this applies even if that square is occupied by an object or creature). This ends at the start of your next turn or if you move. If you are flanking a creature without using this ability, you may add your Wisdom bonus to your attack roll rather than the normal +2 flanking bonus. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p id="domain-spells"><b>Domain Spells</b>: 1st&mdash;<i><a href="../../advancedPlayersGuide/spells/hunterSHowl.html#hunter's-howl" >hunter's howl</a></i>, 2nd&mdash;<i><a href="../../advancedPlayersGuide/spells/bloodhound.html#bloodhound" >bloodhound</a></i>, 3rd&mdash;<i><a href="../../advancedPlayersGuide/spells/aspectOfTheWolf.html#aspect-of-the-wolf" >aspect of the wolf</a></i>, 4th&mdash;<i><a href="../../advancedPlayersGuide/spells/strongJaw.html#strong-jaw" >strong jaw</a></i>, 5th&mdash;<i><a href="../../advancedPlayersGuide/spells/tirelessPursuers.html#tireless-pursuers" >tireless pursuers</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/findThePath.html#find-the-path" >find the path</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/animalShapes.html#animal-shapes" >animal shapes</a></i> (canines only), 8th&mdash;<i><a href="../../advancedPlayersGuide/spells/phantasmalRevenge.html#phantasmal-revenge" >phantasmal revenge</a></i>, 9th&mdash;<i><a href="../../coreRulebook/spells/freedom.html#freedom" >freedom</a></i>.</p>
+				<h1 id="vermin-companions">Vermin Companions</h1>
+				<p>In addition to the normal choices of animal companions, a druid who is so inclined may select a vermin as her companion. Vermin companions follow the same rules as animal companions, advancing their Hit Dice and other abilities per the <a href="../../coreRulebook/classes/druid.html#table-3-8-animal-companion-base-statistics">animal companion base statistics table</a>. Vermin companions can be trained as if they were animals using the <a href="../../coreRulebook/skills/handleAnimal.html#handle-animal" >Handle Animal</a> skill.</p>
+				<p id="mindless"><b>Mindless</b>: Vermin companions have no Intelligence score and possess the mindless trait. In spite of this, vermin companions may learn one trick, plus additional bonus tricks. If a vermin animal companion gains an ability score increase (at 4 Hit Dice, 8 Hit Dice, and so on), the druid can apply this increase to the companion's Intelligence, changing it from &mdash; to 1, at which point the companion loses the mindless quality and is able to know up to 3 tricks per point of Intelligence, plus the additional bonus tricks. Vermin companions have no skill points or feats as long as they have the mindless quality.</p>
+				<p id="trip"><b>Trip</b>: Because many vermin have multiple limbs, they are very difficult to trip. As a result, a CMD entry has been included for each, indicating the bonus to CMD such vermin receive against trip attacks.</p>
+				<h2 id="ant,-giant">Ant, Giant</h2>
+				<p id="starting-statistics"><b>Starting Statistics</b>: <b>Size</b> Small; <b>Speed</b> 30 ft., climb 20 ft.; <b>AC</b> +2 natural armor; <b>Attack</b> bite (1d4 plus grab); <b>Ability Scores</b> Str 10, Dex 12, Con 15, Int &mdash;, Wis 12, Cha 10; <b>Special Qualities</b> low-light vision, scent; <b>CMD</b> trip +8.</p>
+				<p id="4th-level-advancement"><b>4th-Level Advancement</b>: <b>Size</b> Medium; <b>Attack</b> bite (1d6 plus grab), sting (1d4 plus poison); <b>Ability Scores </b>Str +4, Dex &ndash;2, Con +2; <b>Special Attacks</b> poison (<i>frequency</i> 1 round [4], <i>effect</i> 1 Str damage, <i>cure</i> 1 save, Con-based DC).</p>
+				<h2 id="beetle,-giant">Beetle, Giant</h2>
+				<p id="starting-statistics"><b>Starting Statistics</b>: <b>Size</b> Small; <b>Speed</b> 20 ft., fly 20 ft. (poor); <b>AC</b> +6 natural armor; <b>Attack</b> bite (1d6); <b>Ability Scores</b> Str 13, Dex 12, Con 13, Int &mdash;, Wis 11, Cha 4; <b>Special Qualities</b> darkvision; <b>CMD</b> trip +8.</p>
+				<p id="4th-level-advancement"><b>4th-Level Advancement</b>: <b>Size</b> Medium; <b>Attack</b> bite (1d8); <b>Ability Scores</b> Str +4, Dex &ndash;2, Con +2; <b>Special Attacks</b> trample (1d4).</p>
+				<h2 id="centipede,-giant">Centipede, Giant</h2>
+				<p id="starting-statistics"><b>Starting Statistics</b>: <b>Size</b> Small; <b>Speed</b> 20 ft., climb 20 ft.; <b>AC</b> +2 natural armor; <b>Attack</b> bite (1d4 plus poison); <b>Ability Scores</b> Str 8, Dex 17, Con 11, Int &mdash;, Wis 10, Cha 2; <b>Special Attacks</b> poison (<i>frequency</i> 1 round [6], <i>effect</i> 1 Dex damage, <i>cure</i> 1 save, Con-based DC); <b>Special Qualities</b> darkvision 60 ft.; <b>CMD</b> can't be tripped.</p>
+				<p id="4th-level-advancement"><b>4th-Level Advancement</b>: <b>Size</b> Medium; <b>Attack</b> bite (1d6 plus poison); <b>Ability Scores</b> Str +4, Dex &ndash;2, Con +2.</p>
+				<h2 id="crab,-giant">Crab, Giant</h2>
+				<p id="starting-statistics"><b>Starting Statistics</b>: <b>Size</b> Small; <b>Speed</b> 30 ft., swim 20 ft.; <b>AC</b> +5 natural armor; <b>Attack</b> 2 claws (1d3 plus grab); <b>Ability Scores</b> Str 13, Dex 14, Con 13, Int &mdash;, Wis 11, Cha 4; <b>Special Attacks</b> constrict (1d3); <b>Special Qualities</b> aquatic, darkvision, water dependency (survive out of water for 1 hour per point of Con, after which it begins to suffocate as if it were drowning); <b>CMD</b> trip +12.</p>
+				<p id="4th-level-advancement"><b>4th-Level Advancement</b>: <b>Size</b> Medium; <b>Attack</b> 2 claws (1d4 plus grab); <b>Ability Scores</b> Str +2, Dex &ndash;2, Con +2; <b>Special Attacks</b> constrict (1d4).</p>
+				<h2 id="leech,-giant">Leech, Giant</h2>
+				<p id="starting-statistics"><b>Starting Statistics</b>: <b>Size</b> Small; <b>Speed</b> 5 ft., swim 20 ft.; <b>AC</b> +0 natural armor; <b>Attack</b> bite (1d4 plus attach); <b>Ability Scores</b> Str 9, Dex 14, Con 12, Int &mdash;, Wis 10, Cha 1; <b>Special Attacks</b> attach, blood drain (1 Str); <b>Special Qualities</b> amphibious, blindsense 30 ft., scent, susceptible to salt; <b>CMD</b> can't be tripped.</p>
+				<p id="7th-level-advancement"><b>7th-Level Advancement</b>: <b>Size</b> Medium; <b>Attack</b> bite (1d6 plus attach); <b>Ability Scores</b> Str +2, Dex &ndash;2, Con +2; <b>Special Attacks</b> blood drain (1 Str and 1 Con damage); <b>Special Qualities</b> blindsight 30 ft.</p>
+				<h2 id="mantis,-giant">Mantis, Giant</h2>
+				<p id="starting-statistics"><b>Starting Statistics</b>: <b>Size</b> Medium; Speed 30 ft., climb 30 ft., fly 40 ft. (average); <b>AC</b> +3 natural armor; <b>Attack</b> 2 claws (1d4 plus grab); <b>Ability Scores</b> Str 10, Dex 15, Con 10, Int &mdash;, Wis 12, Cha 7; <b>Special Attacks</b> lunge; <b>Special Qualities</b> darkvision; <b>CMD</b> trip +8.</p>
+				<p id="7th-level-advancement"><b>7th-Level Advancement</b>: <b>Size</b> Large; <b>AC</b> +2 natural armor; <b>Attack</b> 2 claws (1d6); <b>Ability Scores</b> Str +8, Dex &ndash;2, Con +4; <b>Special Attacks</b> mandibles (1d6 secondary attack against a grabbed target), sudden strike (may take a full attack in the surprise round).</p>
+				<h2 id="scorpion,-giant">Scorpion, Giant</h2>
+				<p id="starting-statistics"><b>Starting Statistics</b>: <b>Size</b> Medium; <b>Speed</b> 40 ft.; <b>AC</b> +1 natural armor; <b>Attack</b> 2 claws (1d4 plus grab) and sting (1d4 plus poison); <b>Ability Scores</b> Str 11, Dex 12, Con 12, Int &mdash;, Wis 10, Cha 2; <b>Special Attacks</b> poison (<i>frequency</i> 1 round (6), <i>effect</i> 1 Str damage, <i>cure</i> 1 save, Con-based DC); <b>Special Qualities</b> darkvision, tremorsense 30 ft; <b>CMD</b> trip +12.</p>
+				<p id="7th-level-advancement"><b>7th-Level Advancement</b>: <b>Size</b> Large; <b>AC</b> +3 natural armor; <b>Attack</b> 2 claws (1d6 plus grab) and sting (1d6 plus poison); <b>Ability Scores</b> Str +8, Dex &ndash;2, Con +4; <b>Special Attacks</b> poison (<i>frequency</i> 1 round [6], <i>effect</i> 1d2 Str damage, <i>cure</i> 1 save, Con-based DC); <b>Special Qualities</b> tremorsense 60 ft.</p>
+				<h2 id="slug,-giant">Slug, Giant</h2>
+				<p id="starting-statistics"><b>Starting Statistics</b>: <b>Size</b> Medium; <b>Speed</b> 20 ft.; <b>AC</b> +4 natural armor; <b>Attack</b> tongue (1d4 plus 1 acid); <b>Ability Scores</b> Str 13, Dex 8, Con 13, Int &mdash;, Wis 10, Cha 1; <b>Special Attacks</b> spit acid (ranged touch attack, 30 foot range, 1d6 acid damage); <b>Special Qualities</b> blindsense 30 ft., DR 5/slashing or piercing, susceptible to salt (<i>Bestiary</i> 254); <b>CMD</b> can't be tripped.</p>
+				<p id="7th-level-advancement"><b>7th-Level Advancement</b>: <b>Size</b> Large; <b>AC</b> +2 natural armor; <b>Attack</b> tongue (1d6 plus 1d2 acid); <b>Ability Scores</b> Str +2, Dex &ndash;2, Con +2; <b>Special Attacks</b> spit acid (ranged touch attack, 30-foot range, 1d8 acid damage); <b>Special Qualities</b> blindsight 30 ft.</p>
+				<h2 id="spider,-giant">Spider, Giant</h2>
+				<p id="starting-statistics"><b>Starting Statistics</b>: <b>Size</b> Small; <b>Speed</b> 30 ft., climb 30 ft.; <b>AC</b> +0 natural armor; <b>Attack</b> bite (1d4 plus poison); <b>Ability Scores</b> Str 6, Dex 17, Con 10, Int &mdash;, Wis 10, Cha 2; <b>Special Attacks</b> poison (<i>frequency</i> 1 round [4], <i>effect</i> 1 Str damage, <i>cure</i> 1 save, Con-based DC); <b>Special Qualities</b> darkvision, tremorsense 30 feet; <b>CMD</b> trip +12.</p>
+				<p id="4th-level-advancement"><b>4th-Level Advancement</b>: <b>Size</b> Medium; <b>AC </b>+1 natural armor; <b>Attack</b> bite (1d6 plus poison); <b>Ability Scores</b> Str +4, Dex &ndash;2, Con +2.</p>
+				<h2 id="wasp,-giant">Wasp, Giant</h2>
+				<p id="starting-statistics"><b>Starting Statistics</b>: <b>Size</b> Medium; <b>Speed</b> 20 ft., fly 60 ft. (good); <b>AC</b> +2 natural armor; <b>Attack</b> sting (1d6 plus poison); <b>Ability Scores</b> Str 10, Dex 14, Con 11, Int &mdash;, Wis 13, Cha 4; <b>Special Attacks</b> poison (<i>frequency</i> 1 round [6], <i>effect</i> 1 Dex damage, <i>cure</i> 1 save, Con-based DC); <b>Special Qualities</b> darkvision; <b>CMD</b> trip +8.</p>
+				<p id="7th-level-advancement"><b>7th-Level Advancement</b>: <b>Size</b> Large; <b>AC</b> +2 natural armor; <b>Attack</b> sting (1d8 plus poison); <b>Ability Scores</b> Str +8, Dex &ndash;2, Con +4.</p>
+				<h1 id="dragon-shaman-(archetype)">Dragon Shaman (Archetype)</h1>
+				<p>Your totem is the legendary dragon, fearsome and deadly yet cunning and wise, a creature born of pure magic and raw elemental fury, bound within a shell of fangs, claws, and scales that few dare to challenge. Though your initial focus is on dragons' mundane cousins, as your powers grow you become attuned to actual dragons.</p>
+				<p id="nature-bond"><b>Nature Bond</b>: A dragon shaman who chooses an animal companion must select a crocodile or monitor lizard. If choosing a domain, the dragon shaman must choose from the Air, Animal, Destruction, Earth, Fire, War, and Water domains.</p>
+				<p id="wild-empathy"><b>Wild Empathy (Ex)</b>: A dragon shaman can use her wild empathy ability with lizards as a full-round action with a +4 bonus. </p>
+				<p id="totem-transformation"><b>Totem Transformation (Su)</b>: At 2nd level, a dragon shaman may adopt an aspect of the dragon while retaining her normal form. She gains one of the following bonuses: movement (fly speed 30 feet [average], the druid must be 5th level to select this bonus), senses (low-light vision, +4 racial bonus to <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a>), toughness (+2 natural armor bonus to AC, <a href="../../coreRulebook/feats.html#endurance" >Endurance</a> feat), or natural weapons (bite [1d6] and 2 claws [1d4] for a Medium shaman, +2 bonus on CMB on grapple checks). While using totem transformation, the dragon shaman may speak normally and can cast <i><a href="../../coreRulebook/spells/speakWithAnimals.html#speak-with-animals" >speak with animals</a></i> (lizards only) at will. Using this ability is a standard action at 2nd level, a move action at 7th level, and a swift action at 12th level. The dragon shaman can use this ability for a number of minutes per day equal to her druid level. These minutes do not need to be consecutive, but they must be used in 1-minute increments. This is a polymorph effect and cannot be used while the druid is using another polymorph effect, such as wild shape.</p>
+				<p id="totemic-summons"><b>Totemic Summons (Su)</b>: At 5th level, a dragon shaman may cast <i>summon nature's ally</i> as a standard action when summoning lizards, and summoned lizards gain temporary hit points equal to her druid level. She can apply the young template to any lizard to reduce the level of the summoning spell required by one. She can also increase the level of summoning required by one in order to apply either the advanced or the giant template, or increase it by two to apply both the advanced and giant templates. This ability replaces a thousand faces.</p>
+				<p id="wild-shape"><b>Wild Shape (Su)</b>: At 6th level, a dragon shaman's wild shape ability functions at her druid level &ndash; 4. If she takes on the form of a lizard, she instead uses her unmodified druid level.</p>
+				<p id="dragon-bite"><b>Dragon Bite (Su)</b>: At 8th level, a dragon shaman's bite attack (whether using totem transformation or wild shape to take the form of a lizard) deals +1d6 points of energy damage (acid, cold, electricity, or fire). She chooses what kind of energy damage that she deals each time she bites. This ability replaces the additional use of wild shape at 8th level.</p>
+				<p id="bonus-feat"><b>Bonus Feat</b>: At 9th level and every 4 levels thereafter, a dragon shaman gains one of the following bonus feats: <a href="../../coreRulebook/feats.html#combat-casting" >Combat Casting</a>, <a href="../../coreRulebook/feats.html#dazzling-display" >Dazzling Display</a>, <a href="../../coreRulebook/feats.html#magical-aptitude" >Magical Aptitude</a>, <a href="../../coreRulebook/feats.html#skill-focus" >Skill Focus</a> (<a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> [arcana]), and <a href="../../coreRulebook/feats.html#spell-penetration" >Spell Penetration</a>. She must meet the prerequisites for these bonus feats. This ability replaces venom immunity. </p>
+				<h1 id="menhir-savant-(archetype)">Menhir Savant (Archetype)</h1>
+				<p>Some druids study the paths of nature's power through the nodes and ley lines that connect standing stones and megalithic circles, learning to tap into their energies.</p>
+				<p id="spirit-sense"><b>Spirit Sense (Sp)</b>: At 1st level, a menhir savant can detect the presence of undead; fey; outsiders; and astral, ethereal, or incorporeal creatures. This ability functions like <i><a href="../../coreRulebook/spells/detectUndead.html#detect-undead" >detect undead</a></i>, and the druid detects all of these creatures rather than trying to detect one kind. This ability replaces nature sense and wild empathy.</p>
+				<p id="place-magic"><b>Place Magic (Su)</b>: At 2nd level, a menhir savant learns to identify and tap into ley lines in different types of terrain. As a free action, she can tap into the magic of a nearby ley line and increase her caster level by +1 for 1 round. She can use this ability a number of times per day equal to 3 + her Wisdom bonus. This ability replaces woodland stride and trackless step.</p>
+				<p id="walk-the-lines"><b>Walk the Lines (Su)</b>: At 9th level, a menhir savant can use her connection to ley lines to cast <i><a href="../../coreRulebook/spells/transportViaPlants.html#transport-via-plants" >transport via plants</a></i> a number of times per day equal to her Wisdom bonus.</p>
+				<p id="empty-body"><b>Empty Body (Su)</b>: At 13th level, a menhir savant can become ethereal as a standard action, as if using <i><a href="../../coreRulebook/spells/etherealJaunt.html#ethereal-jaunt" >ethereal jaunt</a></i>. She can remain ethereal for a number of rounds per day equal to her druid level. These rounds do not need to be consecutive. This ability replaces a thousand faces. </p>
+				<h1 id="mooncaller-(archetype)">Mooncaller (Archetype)</h1>
+				<p>A mooncaller is bound to the subtle influences of the ever-changing moon and its endless cycles from light to dark and back again. </p>
+				<p id="night-sight"><b>Night Sight (Ex)</b>: At 2nd level, a mooncaller gains low-light vision. If she already has low-light vision, she gains darkvision with a range of 30 feet. If she already has darkvision, the range of her darkvision is increased by 30 feet. This ability replaces woodland stride. </p>
+				<p id="resist-call-of-the-wild"><b>Resist Call of the Wild (Ex)</b>: At 4th level, a mooncaller gains a +4 bonus on saving throws to avoid confusion, daze, feeblemind, and insanity effects. She also gains a +4 bonus against the exceptional, spell-like, and supernatural abilities of creatures with the shapechanger subtype. This ability replaces resist nature's lure. </p>
+				<p id="purity-of-body"><b>Purity of Body (Ex)</b>: At 9th level, a mooncaller gains immunity to all diseases, including supernatural and magical diseases. This ability replaces venom immunity. </p>
+				<p id="wolfsbane"><b>Wolfsbane (Su)</b>: At 13th level, a mooncaller gains DR 3/silver, increasing to DR 4/silver at 16th level and DR 5/silver at 19th level. This ability replaces a thousand faces. </p>
+				<h1 id="pack-lord-(archetype)">Pack Lord (Archetype)</h1>
+				<p>Some druids bond with many animal companions rather than just one, achieving a level of communion rare even in druidic circles and leading their pack brothers and pack sisters with total authority.</p>
+				<p id="pack-bond"><b>Pack Bond (Ex)</b>: A pack lord druid may not select a domain and must choose an animal companion. The druid gains a +2 bonus on wild empathy and <a href="../../coreRulebook/skills/handleAnimal.html#handle-animal" >Handle Animal</a> checks made regarding her animal companion. The pack lord may have more than one animal companion, but she must divide up her effective druid level between her companions to determine the abilities of each companion. For example, a 4th-level pack lord can have one 4th-level companion, two 2nd-level companions, or one 1st-level and one 3rd-level companion.</p>
+				<p>Each time a pack lord's druid level increases, she must decide how to allocate the increase among her animal companions (including the option of adding a new 1st-level companion). Once a druid level is allocated to a particular companion, it cannot be redistributed while that companion is in the pack lord's service (she must release the companion or wait until the companion dies to allocate its levels to another companion, which she can do the next time she prepares spells). The share spells animal companion ability only applies to one animal companion at a time&mdash;the pack lord cannot use it to cast a one-target spell and have it affect all of her animal companions. This ability replaces nature bond.</p>
+				<p id="improved-empathic-link"><b>Improved Empathic Link (Su)</b>: The pack lord gains an empathic link with all of her animal companions. This functions like an empathic link with a familiar. In addition, as a swift action the pack lord can shift her perception to one of her companions, allowing her to experience what it sees, hears, and so on. She can maintain this connection as long as she likes (as long as the companion is within 1 mile) and end it as a free action. The druid can only use this ability on one companion at a time, and cannot see, hear, or smell with her own body while maintaining this connection. This ability replaces the 6th-level additional use of wild shape.</p>
+				<h1 id="reincarnated-druid-(archetype)">Reincarnated Druid (Archetype)</h1>
+				<p>Spun off into the endless circle of life, an incarnate druid is an embodiment of nature's eternal renewal. She lives many lives and wanders the world devoid of attachments, a stranger to all yet one with all life.</p>
+				<p id="mysterious-stranger"><b>Mysterious Stranger (Ex)</b>: At 2nd level, a reincarnated druids adds 1/2 her druid level to the DC of <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a>, <a href="../../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a>, and <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> checks to learn about her. This ability replaces woodland stride.</p>
+				<p id="resist-death's-touch"><b>Resist Death's Touch (Ex)</b>: At 4th level, a reincarnated druid gains a +4 bonus on saving throws against death effects, energy drain, and necromancy effects, and on stabilization checks when dying. This ability replaces resist nature's lure.</p>
+				<p id="many-lives"><b>Many Lives (Ex)</b>: At 5th level, if a reincarnated druid is killed, she may automatically <i><a href="../../coreRulebook/spells/reincarnate.html#reincarnate" >reincarnate</a></i> (as the spell) 1 day later. The reincarnated druid appears in a safe location within 1 mile of her previous body. At will for the next 7 days, she can sense the presence of her remains as if using <i><a href="../../coreRulebook/spells/locateObject.html#locate-object" >locate object</a></i> as a spell-like ability. If she is killed during these 7 days, she remains dead and does not reincarnate. The many lives ability does not function ifthe reincarnated druid is slain by a death effect. A reincarnated druid cannot be raised from the dead or resurrected, though she can be reincarnated.</p>
+				<p id="wild-shape"><b>Wild Shape (Su)</b>: A reincarnated druid gains this ability at 6th level, and it functions at her druid level &ndash; 2.</p>
+				<p id="cheat-death"><b>Cheat Death (Ex)</b>: At 9th level, once per day, a reincarnated druid may reroll a save against a death effect, energy drain, or necromancy effect before the result of the roll is revealed, or reroll a failed stabilization check while dying. She must take the result of the second roll, even if it is worse than the original roll. This ability replaces venom immunity. </p>
+				<p id="tongue-of-the-sun-and-moon"><b>Tongue of the Sun and Moon (Ex)</b>: At 15th level, a reincarnated druid can speak with any living creature. This ability replaces timeless body.</p>
+				<h1 id="saurian-shaman">Saurian Shaman (Archetype)</h1>
+				<p>A shaman with this focus calls upon the primeval dinosaur, the archaic terror that lingers as a hungering, atavistic stranger at the fringes of the ecosystem, a destroyer and despoiler whose coming other animals dread. </p>
+				<p id="nature-bond"><b>Nature Bond</b>: A saurian shaman who chooses an animal companion must select a dinosaur. If choosing a domain, a saurian shaman must choose from the Animal, Destruction, Strength, and War domains.</p>
+				<p id="wild-empathy"><b>Wild Empathy (Ex)</b>: A saurian shaman can use wild empathy with dinosaurs and reptiles as a full-round action with a +4 bonus. </p>
+				<p id="totem-transformation"><b>Totem Transformation (Su)</b>: At 2nd level, a saurian shaman may adopt an aspect of the saurian while retaining her normal form. This ability functions as the dragon shaman's totem transformation ability, but the druid may select from the following bonuses: movement (+10 enhancement bonus to land speed), scales (+2 natural armor bonus to AC), senses (low-light vision, scent), or natural weapons (bite [1d6], 2 claws [1d4] for a Medium druid, rake, +2 CMB to grapple). While using totem transformation, a saurian shaman may speak normally and can cast <i><a href="../../coreRulebook/spells/speakWithAnimals.html#speak-with-animals" >speak with animals</a></i> (reptiles and dinosaurs only) at will. </p>
+				<p id="totemic-summons"><b>Totemic Summons (Su)</b>: At 5th level, a saurian shaman may cast <i>summon nature's ally</i> as a standard action when summoning reptiles and dinosaurs, and these summoned creatures gain temporary hit points equal to her druid level. This ability otherwise functions as the dragon shaman's totemic summons ability. </p>
+				<p id="wild-shape"><b>Wild Shape (Su)</b>: At 6th level, a saurian shaman's wild shape ability functions at her druid level &ndash;2. If she takes on the form of a reptile or a dinosaur, she instead uses her druid level +2.</p>
+				<p id="bonus-feat"><b>Bonus Feat</b>: At 9th level and every 4 levels thereafter, a saurian shaman gains one of the following bonus feats: <a href="../../coreRulebook/feats.html#improved-overrun" >Improved Overrun</a>, <a href="../../coreRulebook/feats.html#nimble-moves" >Nimble Moves</a>, <a href="../../coreRulebook/feats.html#power-attack" >Power Attack</a>, <a href="../../coreRulebook/feats.html#skill-focus" >Skill Focus</a> (<a href="../../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a>), or <a href="../../coreRulebook/feats.html#vital-strike" >Vital Strike</a>. She must meet the prerequisites for these bonus feats. This ability replaces venom immunity. </p>
+				<h1 id="shark-shaman-(archetype)">Shark Shaman (Archetype)</h1>
+				<p>Some druids emulate the deadly shark, a remorseless hunter that marine dwellers dread. Like a true shark, a shark shaman leaves blood and fear in her wake. </p>
+				<p id="nature-bond"><b>Nature Bond</b>: A shark shaman who chooses an animal companion must select a shark. If choosing a domain, a shark shaman may choose the Animal, Death, War, or Water domain.</p>
+				<p id="wild-empathy"><b>Wild Empathy (Ex)</b>: A shark shaman can use wild empathy with fish as a full-round action with a +4 bonus. </p>
+				<p id="totem-transformation"><b>Totem Transformation (Su)</b>: At 2nd level, a shark shaman may adopt an aspect of the shark while retaining her normal form. This ability functions as the dragon shaman's totem transformation ability, but the druid may select from the following bonuses: movement (can breathe water, swim speed 30 feet), senses (scent 30 feet, scent 90 feet in water), natural weapons (bite 1d6 for a Medium shaman), or shark skin (+2 natural armor, creatures grappling the shaman take 1 point of slashing damage per round of grapple). While using totem transformation, the shark shaman may speak normally and can cast <i><a href="../../coreRulebook/spells/speakWithAnimals.html#speak-with-animals" >speak with animals</a></i> (fish only) at will. </p>
+				<p id="totemic-summons"><b>Totemic Summons (Su)</b>: At 5th level, a shark shaman may use <i>summon nature's ally I</i> to summon a stingray and <i>summon nature's ally II</i> to summon a manta ray. She may cast <i>summon nature's ally</i> as a standard action when summoning rays and sharks, and summond rays and sharks gain a number of temporary hit points equal to her druid level. This ability otherwise functions as the dragon shaman's totemic summons ability.</p>
+				<p id="wild-shape"><b>Wild Shape (Su)</b>: At 6th level, a shark shaman's wild shape ability functions at her druid level &ndash;2. If she takes on the form of a shark, she instead uses her druid level +2. </p>
+				<p id="bonus-feat"><b>Bonus Feat</b>: At 9th level and every 4 levels thereafter, a shark shaman gains one of the following bonus feats: <a href="../../coreRulebook/feats.html#bleeding-critical" >Bleeding Critical</a>, <a href="../../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a>, <a href="../../coreRulebook/feats.html#lightning-reflexes" >Lightning Reflexes</a>, <a href="../../coreRulebook/feats.html#self-sufficient" >Self-Sufficient</a>, or <a href="../../coreRulebook/feats.html#skill-focus" >Skill Focus</a> (<a href="../../coreRulebook/skills/swim.html#swim" >Swim</a>). She must meet prerequisites for these bonus feats. This ability replaces venom immunity. </p>
+				<h1 id="storm-druid-(archetype)">Storm Druid (Archetype)</h1>
+				<p>While most druids focus their attention upon the rich earth and the bounty of nature that springs forth from it, the storm druid's eyes have ever been cast to the skies and the endless expanse of blue, channeling the most raw and untamed aspects of nature.</p>
+				<p id="spontaneous-domain-casting"><b>Spontaneous Domain Casting</b>: A storm druid can channel stored spell energy into domain spells that she has not prepared ahead of time. She can "lose" a prepared spell in order to cast any domain spell of the same level or lower. This replaces spontaneous casting.</p>
+				<p id="nature-bond"><b>Nature Bond (Ex)</b>: A storm druid may not choose an animal companion. A storm druid must choose the Air or Weather domain, or the Cloud, Storm, or Wind subdomain.</p>
+				<p id="windwalker"><b>Windwalker (Ex)</b>: At 2nd level, the penalties from natural or magical wind effects are treated as one step less severe for a storm druid. This ability replaces woodland stride.</p>
+				<p id="stormvoice"><b>Stormvoice (Ex)</b>: At 3rd level, a storm druid's voice can magically carry over howling winds and peals of thunder. Whenever a <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> check is needed to hear the druid's voice, the DC is reduced by an amount equal to the druid's level. This ability replaces trackless step.</p>
+				<p id="eyes-of-the-storm"><b>Eyes of the Storm (Ex)</b>: At 4th level, a storm druid can see through 10 feet of magical fog, mist, gas, wind, rain, or similar inclement weather conditions, ignoring any concealment it might grant. This distance increases by 5 feet for every 4 levels beyond 4th. This ability replaces resist nature's lure.</p>
+				<p id="windlord"><b>Windlord</b>: At 9th level, a storm druid can select another domain or subdomain from those available to her through her nature bond. This ability replaces venom immunity. </p>
+				<p id="storm-lord"><b>Storm Lord (Ex)</b>: At 13th level, a storm druid is unaffected by natural and magical wind effects. She also becomes immune to deafness and gains +2 bonus on saving throws against sonic effects. This ability replaces a thousand faces.</p>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Druid",globalNavPath=[{ href: '/pathfinderRPG/prd/ultimateMagic/spellcastingClassOptions.html', name: 'Spellcasting Class Options' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

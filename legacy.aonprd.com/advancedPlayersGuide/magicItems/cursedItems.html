@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Cursed Items</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "cursedItems.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "cursedItems.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "cursedItems.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "cursedItems.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "cursedItems.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="cursed-items" class="monster-header">Cursed Items</h1>
+				<p>The following are additional cursed items that may arise from faulty item crafting&mdash;or in some cases, deliberate construction. Many cannot be discarded unless a successful <i><a href="../../coreRulebook/spells/removeCurse.html#remove-curse" >remove curse</a></i>, <i><a href="../../coreRulebook/spells/breakEnchantment.html#break-enchantment" >break enchantment</a></i>, or similar magic is used on them.</p>
+				<p id="buffoon's-sword" class="stat-block-title"><b>Buffoon's Sword</b></p>
+				<p id="aura" class="stat-block-1"><b>Aura</b> moderate divination; <b>CL</b> 10th</p>
+				<p id="slot" class="stat-block-1"><b>Slot</b> none; <b>Weight</b> 2 lbs.</p>
+				<p id="description" class="stat-block-breaker"><b>Description</b></p>
+				<p>This blade seems and behaves in all ways as a <i><a href="../../coreRulebook/magicItems/weapons.html#sword-of-subtlety" >sword of subtlety</a></i> until actually used in combat. Once used in combat, it imposes a &ndash;10 penalty on all <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> checks made by its wielder. It also makes it nearly impossible for the owner to tell a lie or engage in any other sort of subterfuge. Each time he does so, he must make a DC 15 Will saving throw to avoid blurting out the truth or taking some other involuntary action that spoils his attempted ruse. Only curse-ending magic can rid the wielder of the sword once its curse activates.</p>
+				<p id="creation" class="stat-block-breaker"><b>Creation</b></p>
+				<p id="magic-items" class="stat-block-1"><b>Magic Items</b> <i><a href="../../coreRulebook/magicItems/weapons.html#sword-of-subtlety" >sword of subtlety</a></i></p>
+				<p id="cannibal-ring" class="stat-block-title"><b>Cannibal Ring</b></p>
+				<p id="aura" class="stat-block-1"><b>Aura</b> strong transmutation; <b>CL</b> 16th</p>
+				<p id="slot" class="stat-block-1"><b>Slot</b> ring; <b>Weight</b> &mdash;</p>
+				<p id="description" class="stat-block-breaker"><b>Description</b></p>
+				<p>This simple and unadorned copper ring appears slightly tarnished, but seemingly wards off the effects of hunger or other sorts of deprivation; all tests reveal it to be a <i><a href="../../coreRulebook/magicItems/rings.html#ring-of-sustenance" >ring of sustenance</a></i>. However, after wearing it for 7 days, its owner instead comes to suffer from almost constant hunger and thirst, which, if not sated, ultimately drives him mad enough to become a cannibal. The wearer must eat and drink a full day's worth of food and water each hour to avoid making a starvation or thirst check. Once the wearer starts to take lethal damage instead of nonlethal damage due to failed checks, he begins to experience ever more powerful cravings for the flesh of intelligent creatures (any living creature with an Intelligence of 3 or higher).</p>
+				<p>Once the wearer feasts in such a manner, he recovers all nonlethal damage sustained from hunger and thirst, though he continues to suffer lethal damage on failed starvation and thirst checks. The next time he is in a situation in which he could eat part of an intelligent being, he must make a DC 15 Will save or dine on the forbidden meat. If the wearer succumbs to this urge again, he recovers all lethal damage from failed starvation and thirst checks, and realizes cannibalism is the key to avoiding the increased hunger and thirst&mdash;on any day he eats at least one meal of flesh from an intelligent creature, he does not have to make hourly starvation and thirst checks, and recovers any accumulated damage from failing these checks. Once its curse activates, the ring cannot be removed until the curse is broken.</p>
+				<p id="creation" class="stat-block-breaker"><b>Creation</b></p>
+				<p id="magic-items" class="stat-block-1"><b>Magic Items</b> <i><a href="../../coreRulebook/magicItems/rings.html#ring-of-sustenance" >ring of sustenance</a></i></p>
+				<p id="cloak-of-immolation" class="stat-block-title"><b>Cloak of Immolation</b></p>
+				<p id="aura" class="stat-block-1"><b>Aura</b> strong evocation; <b>CL</b> 12th</p>
+				<p id="slot" class="stat-block-1"><b>Slot</b> shoulders; <b>Weight</b> 1 lb.</p>
+				<p id="description" class="stat-block-breaker"><b>Description</b></p>
+				<p>This cloak appears to be a finely made normal garment that radiates protective magic. The cloak can be handled or examined without harm, but when it is put on, it immediately bursts into flames that burn continuously but do not harm the cloak, only its wearer. The cloak deals 1d6 points of fire damage each round and cannot be removed unless the curse is broken. Sufficient amounts of water or other smothering materials can douse the flames temporarily, but the cloak reignites when exposed to air again. Spells like <i><a href="../../coreRulebook/spells/resistEnergy.html#resist-energy" >resist energy</a></i>, <i><a href="../../coreRulebook/spells/protectionFromEnergy.html#protection-from-energy" >protection from energy</a></i>, and similar effects can protect the wearer against the cloak's flames while they last.</p>
+				<p id="creation" class="stat-block-breaker"><b>Creation</b></p>
+				<p id="magic-items" class="stat-block-1"><b>Magic Items</b> any cloak</p>
+				<p id="crown-of-blindness" class="stat-block-title"><b>Crown of Blindness</b></p>
+				<p id="aura" class="stat-block-1"><b>Aura</b> moderate illusion; <b>CL</b> 10th</p>
+				<p id="slot" class="stat-block-1"><b>Slot</b> headband; <b>Weight</b> 1 lb.</p>
+				<p id="description" class="stat-block-breaker"><b>Description</b></p>
+				<p>This fine silver circlet is often set with a milky moonstone. When a wearer places it on his head, the stone quickly goes dark like the waning moon, and the wearer must make a DC 14 Fortitude saving throw or immediately go blind. The saving throw must be made each round that the crown is worn until the wearer succumbs to the blindness. Removing the circlet requires breaking the curse. The blindness can be cured using <i><a href="../../coreRulebook/spells/removeBlindnessDeafness.html#remove-blindness-deafness" >remove blindness/deafness</a></i> or any spell normally used to end a curse.</p>
+				<p id="creation" class="stat-block-breaker"><b>Creation</b></p>
+				<p id="magic-items" class="stat-block-1"><b>Magic Items</b> <i><a href="../../coreRulebook/magicItems/wondrousItems.html#headband-of-alluring-charisma" >headband of alluring charisma</a></i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#headband-of-inspired-wisdom" >headband of inspired wisdom</a></i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#headband-of-mental-prowess" >headband of mental prowess</a></i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#headband-of-mental-superiority" >headband of mental superiority</a></i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#headband-of-vast-intelligence" >headband of vast intelligence</a></i>,<i> moon circlet</i></p>
+				<p id="gravesoul-armor" class="stat-block-title"><b>Gravesoul Armor</b></p>
+				<p id="aura" class="stat-block-1"><b>Aura</b> moderate enchantment; <b>CL</b> 10th</p>
+				<p id="slot" class="stat-block-1"><b>Slot</b> armor; <b>Weight</b> 20 lbs.</p>
+				<p id="description" class="stat-block-breaker"><b>Description</b></p>
+				<p>This armor behaves in all ways as if it were <i>+1 <a href="../../coreRulebook/magicItems/armor.html#armor-undead-controlling" >undead controlling</a> studded leather</i> until its owner actually attempts to use its special property. At that point, the wearer and all living creatures within a 20-foot radius must each make a DC 15 Will saving throw to avoid believing that they are actually some sort of undead creature for the next 24 hours. The GM can either roll randomly (1d6; 1&ndash;3 zombies, 4&ndash;5 ghouls, 6 vampire) or choose which sorts of undead the affected creatures believe themselves to be, customizing to the personality and abilities of each creature. Creatures affected by the armor behave as normal for the sorts of undead they regard themselves&mdash;"zombies" mindlessly attack unassociated creatures near them, vampires attempt to bite victims on the neck, and so on&mdash;but gain none of the special abilities of that creature. The affected creatures react negatively to effects that harm "their" type of undead, so "vampires" avoid garlic, "wraiths" recoil from sunlight, and so on. The creatures otherwise continue to believe they are actually undead and ignore all evidence to the contrary. If attacked, they defend themselves, even if this requires using abilities they have but "their" type of undead normally lacks; for example, a barbarian who thinks she's a ghoul can still rage. Channel energy and other undead-affecting effects have no effect on creatures affected by <i>gravesoul armor</i>.</p>
+				<p>This is a mind-affecting, compulsion enchantment. The wearer of the armor can use this power up to three times per day, though it can only work on a particular creature once in any 24-hour period. Regardless of the curse, the armor is still <i>+1 studded leather</i>, and some characters may find it useful despite its (nonexistent) power over undead. Unlike most cursed items, this one is easily discarded without any magical assistance.</p>
+				<p id="creation" class="stat-block-breaker"><b>Creation</b></p>
+				<p id="magic-items" class="stat-block-1"><b>Magic Items</b> <i>+1 <a href="../../coreRulebook/magicItems/armor.html#armor-undead-controlling" >undead controlling</a> studded leather</i></p>
+				<p id="hat-of-hatreds" class="stat-block-title"><b>Hat of Hatreds</b></p>
+				<p id="aura" class="stat-block-1"><b>Aura</b> moderate illusion; <b>CL</b> 10th</p>
+				<p id="slot" class="stat-block-1"><b>Slot</b> head; <b>Weight</b> &mdash;</p>
+				<p id="description" class="stat-block-breaker"><b>Description</b></p>
+				<p>This hat performs in all ways like a <i><a href="../../coreRulebook/magicItems/wondrousItems.html#hat-of-disguise" >hat of disguise</a></i> until its owner attempts to use it to disguise himself in the presence of a hostile creature. Once he does, the hat causes him to assume the guise of the creature or person the hostile creature most wants to harm. The hat never causes the wearer to assume the appearance of someone the viewer wouldn't harm if he had the opportunity (for example, the greatly feared leader of the local temple).</p>
+				<p>Once the hat reveals its true abilities, it no longer responds to attempts by its wearer to change his appearance. Instead, it automatically causes him to take on the guise of someone known to and despised by those viewing him, complete with supplementary illusions that make that wearer appear disoriented, injured, or weak. For example, in a goblin lair, the wearer might look like the tribe's chief, but sleepy and vulnerable. In a human town, the wearer may look like the hated local bully, drunk and staggering. In an evil town, the wearer looks like a confused visitor and appears to be an ideal target to victimize with some crime.</p>
+				<p>Curse-breaking magic is necessary to remove the hat.</p>
+				<p id="creation" class="stat-block-breaker"><b>Creation</b></p>
+				<p id="magic-items" class="stat-block-1"><b>Magic Items</b> <i><a href="../../coreRulebook/magicItems/wondrousItems.html#hat-of-disguise" >hat of disguise</a></i></p>
+				<p id="girdle-of-opposite-gender" class="stat-block-title"><b>Girdle of Opposite Gender</b></p>
+				<p id="aura" class="stat-block-1"><b>Aura</b> moderate transmutation; <b>CL</b> 10th</p>
+				<p id="slot" class="stat-block-1"><b>Slot</b> belt; <b>Weight</b> 1 lb.</p>
+				<p id="description" class="stat-block-breaker"><b>Description</b></p>
+				<p>When this magical belt is put on, the wearer must immediately make a DC 20 Fortitude saving throw or be transformed into a person of the opposite gender. The character's abilities, mind, and spirit remain unaffected; only the character's sex changes. If the character's saving throw is a natural 1, the item actually removes all gender from the wearer, giving him an androgynous, neutered appearance. The change is permanent unless undone with curse-removing magic. Once its magic takes effect, the belt can be removed without effort. A creature can only be affected by a particular girdle once, though other girdles of this type can cause another transformation.</p>
+				<p id="creation" class="stat-block-breaker"><b>Creation</b></p>
+				<p id="magic-items" class="stat-block-1"><b>Magic Items</b> any belt</p>
+				<p id="planar-invasion-shield" class="stat-block-title"><b>Planar Invasion Shield</b></p>
+				<p id="aura" class="stat-block-1"><b>Aura</b> strong conjuration; <b>CL</b> 17th</p>
+				<p id="slot" class="stat-block-1"><b>Slot</b> shield; <b>Weight</b> 15 lbs.</p>
+				<p id="description" class="stat-block-breaker"><b>Description</b></p>
+				<p>This impressive shield seems to be and behaves in all ways as an <i><a href="../../coreRulebook/magicItems/armor.html#absorbing-shield" >absorbing shield</a></i> until its owner attempts to use its disintegration power in combat. Once he does, it instead causes one or more monsters to pour forth from the shield and attack the nearest creature each round (including the shield-bearer) for 1d6 rounds before retreating from the battle by the safest possible route. If there is no such path for them to escape, the monsters fight to the death. To determine the nature and number of the monsters, roll 2d4 to determine the level of the summon monster spell and roll 1d3 to determine the number of creatures that appear. Monsters conjured by this shield remain until killed, act as normal for their kind, and are treated as summoned creatures with a permanent duration.</p>
+				<p>Once its curse activates, the shield calls forth monsters three times per day, approximately every 8 hours. If the monsters cannot emerge directly from the shield and survive (for example, because it's buried or underwater), they instead appear at the nearest safe location within 50 feet. Successful curse-breaking magic cast on the shield restores it to its previous guise as an <i><a href="../../coreRulebook/magicItems/armor.html#absorbing-shield" >absorbing shield</a></i> and allows its wearer to abandon it.</p>
+				<p id="creation" class="stat-block-breaker"><b>Creation</b></p>
+				<p id="magic-items" class="stat-block-1"><b>Magic Items</b> <i><a href="../../coreRulebook/magicItems/armor.html#absorbing-shield" >absorbing shield</a></i></p>
+				<p id="one-way-window" class="stat-block-title"><b>One-Way Window</b></p>
+				<p id="aura" class="stat-block-1"><b>Aura</b> faint divination; <b>CL </b>5th</p>
+				<p id="slot" class="stat-block-1"><b>Slot</b> none; <b>Weight</b> 1 lb. (20 lbs. in larger form)</p>
+				<p id="description" class="stat-block-breaker"><b>Description</b></p>
+				<p>This small, 6-inch-square glass tablet grows to a 6-foot-by-3-foot window if placed on any sufficiently large vertical surface and returns to its original size if removed. The window melds ever so slightly into the surface, allowing it to ignore minor protrusions, curves, or anything else that would normally make it difficult to simply lay down a pane of glass. On command, the front of this glass displays all activities on the other side of this surface like a window, piercing wood, earth, or stone up to 10 feet deep, but not metal. The window does not reveal its existence to non-hostile creatures depicted within it, allowing observers to study them at their leisure.</p>
+				<p>However, once the owner of the window uses it to spy on hostile creatures, its curse activates. From that moment on, the window presents its owner and anyone looking through the window with an artificial image of the other side designed to lull them into a sense of false confidence&mdash;enemies appear sleeping or drunk, pits have obvious plank bridges for easy crossing, and so on. While presenting this image to those in front of the mirror, it reveals those viewers to the enemies being observed, creating a two-way window; however, viewed creatures see those using the mirror accurately and can read their thoughts as if using <i><a href="../../coreRulebook/spells/detectThoughts.html#detect-thoughts" >detect thoughts</a></i>. Furthermore, the image shown to those using the mirror does not reveal that the creatures they are watching can see them as well. Once the curse activates, the owner comes to regard using the mirror to spy ahead as his most effective tactic (after all, it has no limit to its duration) and does so whenever possible until curse-breaking magic frees him from its influence (anyone who uses the mirror to spy on hostiles, even if he wasn't the one to activate the mirror, is also subject to this desire to continue using it).</p>
+				<p id="creation" class="stat-block-breaker"><b>Creation</b></p>
+				<p id="requirements"><b>Requirements</b> <i><a href="../../coreRulebook/magicItems/wondrousItems.html#mirror-of-life-trapping" >mirror of life trapping</a></i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#mirror-of-opposition" >mirror of opposition</a></i></p>
+				<p id="ring-of-truth" class="stat-block-title"><b>Ring of Truth</b></p>
+				<p id="aura" class="stat-block-1"><b>Aura</b> moderate enchantment; <b>CL</b> 9th</p>
+				<p id="slot" class="stat-block-1"><b>Slot</b> ring; <b>Weight</b> &mdash;</p>
+				<p id="description" class="stat-block-breaker"><b>Description</b></p>
+				<p>Deceptively pleasant looking, a <i>ring of truth</i> bears images of childlike angels and broadly smiling divine creatures holding onto links of a heavy chain. The wearer of this cursed ring is rendered unable to tell a deliberate lie, in either speech or writing. The wearer may simply omit the truth or choose not to communicate, but even then must succeed on a DC 20 Will saving throw to avoid answering a direct question truthfully. The wearer cannot remove the ring unless the magic of the curse is negated.</p>
+				<p id="creation" class="stat-block-breaker"><b>Creation</b></p>
+				<p id="magic-items" class="stat-block-1"><b>Magic Items</b> <i><a href="../../coreRulebook/magicItems/rings.html#ring-of-mind-shielding" >ring of mind shielding</a></i>, <i><a href="../../coreRulebook/magicItems/rings.html#ring-of-x-ray-vision" >ring of x-ray vision</a></i></p>
+				<p id="riot-pipes" class="stat-block-title"><b>Riot Pipes</b></p>
+				<p id="aura" class="stat-block-1"><b>Aura</b> moderate enchantment; <b>CL</b> 10th</p>
+				<p id="slot" class="stat-block-1"><b>Slot</b> none; <b>Weight</b> 3 lbs.</p>
+				<p id="description" class="stat-block-breaker"><b>Description</b></p>
+				<p>This simple musical instrument seems and behaves in all ways like any other kind of magical pipes until its owner plays it in an urban setting. Once he does, it requires all people within hearing to make a DC 15 Will saving throw to avoid falling into a murderous fury. Those who fail their saves gain the effects of a <i><a href="../../coreRulebook/spells/rage.html#rage" >rage</a></i> spell for the next 1d6 hours and experience a strong compulsion (Will DC 15 negates) to attack any stranger or disliked person whom they encounter during this time. If the owner spends more than 3 consecutive days in an urban setting, he must make a DC 15 Will saving throw each day to avoid playing the <i>riot pipes</i> at some point during each subsequent day. The pipes remain with the player until the curse is broken.</p>
+				<p id="creation" class="stat-block-breaker"><b>Creation</b></p>
+				<p id="magic-items" class="stat-block-1"><b>Magic Items</b> <i><a href="../../coreRulebook/magicItems/wondrousItems.html#pipes-of-haunting" >pipes of haunting</a></i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#pipes-of-the-sewers" >pipes of the sewers</a></i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#pipes-of-sounding" >pipes of sounding</a></i></p>
+				<p id="rod-of-arson" class="stat-block-title"><b>Rod of Arson</b></p>
+				<p id="aura" class="stat-block-1"><b>Aura</b> strong evocation; <b>CL</b> 12th</p>
+				<p id="slot" class="stat-block-1"><b>Slot</b> none; <b>Weight</b> 5 lbs.</p>
+				<p id="description" class="stat-block-breaker"><b>Description</b></p>
+				<p>All tests indicate that this hollow metal tube is a <i><a href="../../coreRulebook/magicItems/rods.html#rod-of-flame-extinguishing" >rod of flame extinguishing</a></i> until its owner uses it to extinguish or suppress a fire in a combat or other sort of dangerous situation. Once he does, he discovers that rather than quenching the flame, the rod causes the flame to enter his body. This flame persists inside of him for the next 24 hours, causing minor discomfort and giving him the sickened condition, but causing no visible injury. However, when the wielder is adjacent to or within a flammable object or structure, he feels inclined to set the object ablaze, using whatever means at his disposal. Each round the wielder resists this urge, he takes 1d6 points of fire damage as the flame within him surges and roils. After 1 minute of this, he must make a DC 15 Will save or succumb to the temptation; if he saves, the urge passes, the internal fire stops harming him, and he can interact normally with the flammable target thereafter.</p>
+				<p>Once the curse reveals itself, the owner must make a DC 15 Will saving throw to avoid using it to extinguish or suppress any fire he encounters which he himself did not start. He cannot use the rod against fires that he personally started. Successful curse-breaking magic allows the wielder to get rid of the rod and harmlessly dissipates any fire persisting inside him from the action of the rod.</p>
+				<p id="creation" class="stat-block-breaker"><b>Creation</b></p>
+				<p id="magic-items" class="stat-block-1"><b>Magic Items</b> <i><a href="../../coreRulebook/magicItems/rods.html#rod-of-flame-extinguishing" >rod of flame extinguishing</a></i></p>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Cursed Items",globalNavPath=[{ href: '/pathfinderRPG/prd/advancedPlayersGuide/advancedMagicItems.html', name: 'Advanced Magic Items' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,443 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Hunter</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "hunter.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "hunter.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "hunter.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../spells/index.html">Spells</a></li>
+						<li><a href = "../spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "hunter.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "hunter.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "hunter.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "hunter.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "hunter.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "hunter.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "hunter.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "hunter.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "hunter.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "hunter.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "hunter.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "hunter.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "hunter.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "hunter.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "hunter.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "hunter.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "hunter.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "hunter.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+<h1>Hunter</h1>
+<p>A hunter typically partners with an animal companion and takes on aspects of beasts to pursue her quarry. But some become animals themselves, lead larger groups of animals in the hunt, or call upon the companionship and power of vermin.</p>
+
+	<h2 id="divine-hunter-archetype">Divine Hunter (Archetype)</h2>
+	<p>While most hunters heed the call of nature and fight to protect its bounty, some are inspired to serve a higher power. These divine hunters use faith to aid them in their struggles, and their faith infuses their animal companions, making these companions champions of their deities.</p>
+	<p id="divine-hunter-alignment"><strong>Alignment</strong>: A divine hunter's alignment must be within one step of her deity's, along either the law/chaos axis or the good/evil axis. A divine hunter can otherwise be of any alignment. This ability replaces alignment.</p>
+	<p id="divine-hunter-class-skills"><strong>Class Skills</strong>: A divine hunter gains <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) as a class skill, but she does not gain <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (dungeoneering) as a class skill.</p>
+	<p id="divine-hunter-domain"><strong>Domain</strong>: At 3rd level, a divine hunter learns to call upon the power of her deity. The divine hunter must select one domain from those available to her deity. She gains the granted powers of this domain, using her hunter level &ndash; 2 as her cleric level for determining when the powers are gained and what effects they have. Once she chooses this domain, it cannot be changed.</p>
+	<p>If the divine hunter selects the animal domain, she does not gain a second animal companion upon reaching an effective cleric level of 4th. When the divine hunter would gain that ability, her animal companion instead gains two ability score increases (gaining +1 to two different ability scores or +2 to one ability score). If her animal companion dies or is released, when she gains a new one, it benefits from this ability score increase.</p>
+	<p>In addition, the divine hunter adds the 1st-level domain spell from her domain to her list of spells known. She adds the 2nd-level domain spell at 6th level, the 3rd-level domain spell at 9th level, the 4th-level domain spell at 12th level, the 5th-level domain spell at 15th level, and the 6th-level domain spell at 18th level.</p>
+	<p>This ability replaces teamwork feat.</p>
+	<p id="otherworldly-companion"><strong>Otherworldly Companion (Su)</strong>: At 3rd level, a hunter's companion takes on otherworldly features. If the divine hunter is good (or worships a good deity), the animal companion gains the celestial template. If the hunter is evil (or worships an evil deity), the animal companion gains the fiendish template. If the hunter is neutral and worships a neutral deity, she must choose either the celestial or fiendish template; once this choice is made, it cannot be changed. The companion's CR is considered to be equal to its hit dice for the purpose of the celestial or fiendish template. This ability replaces hunter tactics.</p>
+
+	<h2 id="feral-hunter-archetype">Feral Hunter (Archetype)</h2>
+	<p>A feral hunter has forged a bond with nature that's so strong that she doesn't merely channel the aspects of animals&mdash;she actually becomes an animal herself. Though she lacks an animal companion, a feral hunter is in tune with the beast lurking within her flesh and spirit, and lives in a near-wild state of being. A feral hunter often resembles a lycanthrope, but her power comes from her own nature and is not influenced by moonlight or silver.</p>
+	<p id="solitary"><strong>Solitary</strong>: Unlike most hunters, a feral hunter does not gain an animal companion. </p>
+	<p id="feral-focus"><strong>Feral Focus (Su)</strong>: At 1st level, a feral hunter gains a limited ability to change her shape into hybrid animal forms. This ability functions as the animal focus class feature, except that the hunter always applies the animal aspect to herself, and there is no limit to this ability's duration. She can end this effect as a free action.</p>
+	<p>When a feral hunter uses this ability, her body takes on cosmetic aspects of an animal, such as furry skin, longer nails and teeth, and oddly colored eyes; these changes grant her no abilities other than what is stated in the animal focus class feature description, and they end when she takes on a different aspect or ends the effect. This physical change is a polymorph effect, though the effects of the animal focus are not.</p>
+	<p>This ability alters animal focus and replaces hunter tactics and speak with master.</p>
+	<p id="precise-summoned-animal"><strong>Precise Summoned Animal (Ex)</strong>: This ability functions as the precise companion class feature, except the hunter grants all her teamwork feats to all animals she summons with <em>summon nature's ally</em>. This ability alters precise companion.</p>
+	<p id="wild-shape"><strong>Wild Shape (Su)</strong>: At 4th level, a feral hunter gains the ability to change shape. This ability functions like the druid wild shape ability, except the hunter can take only animal forms (not elemental or plant forms). The hunter's effective druid level is equal to her class level. This ability replaces bonus tricks, improved empathic link, greater empathic link, one with the wild, and raise animal companion.</p>
+	<p id="summon-pack"><strong>Summon Pack (Sp)</strong>: Starting at 6th level, whenever a feral hunter casts a <em>summon nature's ally</em> spell to summon one or more animals, she summons one additional animal of the same type. The summoned creature or creatures must be animals and must be of the same type as the hunter's current animal aspect or of a similar type (bears for bear aspect, dogs or wolves for wolf aspect, great cats for tiger aspect, and so on). The additional creature immediately vanishes if the hunter chooses a different aspect or ends his feral focus ability. She can increase the duration of any one <em>summon nature's ally</em> spell affected by this ability to 1 minute per level. She can have only one spell with a duration increased by this ability active at a time. This ability replaces the teamwork feats gained at 6th, 9th, 12th, 15th, and 18th levels.</p>
+
+	<h2 id="packmaster-archetype">Packmaster (Archetype)</h2>
+	<p>Some hunters form bonds with packs of well-trained creatures. Whether such a hunter is a northern berserker running with a pack of timber wolves or a savage warrior dashing through the jungle alongside her herd of dimetrodons, the packmaster revels in the thrill of the hunt and the glory of the kill. A packmaster is more comfortable in groups than alone, and although her animal companions may be weaker than a typical hunter's, what they lack in strength they make up for in numbers.</p>
+	<p id="pack-bond"><strong>Pack Bond (Ex)</strong>: A packmaster can have more than one animal companion, but she must divide her effective druid level between her companions to determine the abilities of each one. For example, a 4th-level packmaster can have one 4th-level animal companion, or two 2nd-level companions, or one 3rd-level companion and one 1st-level companion, or four 1st-level companions.</p>
+	<p>When a packmaster gains a level, she must decide how to allocate the increase among her animal companions, including whether or not to add a new 1st-level companion. Once a hunter level is allocated to a particular companion, it cannot be redistributed while that companion is in the packmaster's service. She must release that companion or wait until the companion dies to allocate its levels to another companion, which she can then do the next time she refreshes her spell slots for the day. The share spells animal companion ability applies to only one animal companion at a time&mdash;the packmaster cannot use it to cast a spell that affects only a single target and have the spell affect all of her animal companions.</p>
+	<p>A packmaster's precise companion, woodland stride, and teamwork feats apply to only one of her animal companions at a time. (For example, a packmaster can apply precise companion to one companion, woodland stride to another, and a given teamwork feat to a third, but cannot apply one of those benefits to two animal companions at once.) As a swift action, she can change which companions gain any or all of these benefits. This ability replaces animal companion.</p>
+	<p id="pack-focus"><strong>Pack Focus (Su)</strong>: This ability functions like animal focus, with the following exceptions. A packmaster can apply her animal aspect to only one of her animal companions at a time without having it count against the number of minutes per day she can use that ability. When using animal focus on herself or any other animal companion, the ability counts against her minutes per day as normal. She can have only two animal aspects in effect at a time&mdash;one that counts against her minutes per day and one that doesn't&mdash;and they can't both be applied to the same companion. Unless all of her companions are dead, the hunter can't apply the companion's aspect to herself (and thereby gain the benefit of its unlimited duration). This ability replaces animal focus.</p>
+	<p id="teamwork-feat"><strong>Teamwork Feat (Ex)</strong>: At 3rd level or any level at which a packmaster would gain a bonus teamwork feat, she can instead increase the number of her animal companions that gain the benefits of her precise companion, woodland stride, and teamwork feats by 1. She can select this ability multiple times. This ability alters teamwork feat.</p>
+	<p id="second-pack-focus"><strong>Second Pack Focus (Su)</strong>: At 8th level, the hunter gains an ability that functions as per second animal focus, except the hunter can either apply one aspect to each companion or apply both aspects to the same companion. The foci on the companions don't need to be the same, nor do they need to be the same as the one applied to the packmaster. This ability replaces second animal focus.</p>
+	<p id="master-of-the-pack"><strong>Master of the Pack (Ex)</strong>: At 20th level, a packmaster and her animal companions can always move at full speed while using <a href="../../coreRulebook/skills/survival.html#survival">Survival</a> to follow tracks without penalty. Also, each day when a packmaster gains new spells for the day, she can apply one animal focus to herself or one of her animal companions for the entire day (if all of her animal companions are dead, she instead can apply two animal foci to herself for the entire day). These foci are in addition to any granted by her pack focus class ability. This ability replaces master hunter.</p>
+
+	<h2 id="primal-companion-hunter-archetype">Primal Companion Hunter (Archetype)</h2>
+	<p>Most hunters are skilled at awakening the primal beasts inside themselves. However, some can instead activate the primal essence within their animal companions. These primal companion hunters bestow upon their companions the ability to suddenly manifest new and terrifying powers&mdash;whether throwbacks to long-extinct beasts, bizarre mutations from extreme environments, or new abilities crafted through generations of selective breeding. </p>
+	<p id="primal-transformation"><strong>Primal Transformation (Su)</strong>: At 1st level, a primal companion hunter can awaken a primal creature from within his animal companion as a swift action. The animal companion gains a pool of 2 <a href="../../advancedPlayersGuide/baseClasses/summoner.html#evolutions">evolution points</a> that can be used to temporarily give the companion evolutions as if it were an eidolon. A primal companion hunter uses her hunter level to determine her effective summoner level for the purpose of qualifying for evolutions and determining their effects. At 8th level, the number of evolution points in her pool increases to 4, and at 15th level, it increases to 6.</p>
+	<p>Activating these evolutions on the animal companion is a swift action. A primal companion hunter can use this ability for 1 minute per day per hunter level. This duration does not need to be consecutive, but it must be spent in 1-minute increments. An animal companion that is transformed in this way cannot exceed the maximum number of attacks available to the eidolon of a summoner whose class level equals that of the hunter. While transformed in this way, the animal companion's type changes to magical beast, though the primal companion hunter still treats it as an animal for the purpose of the <a href="../../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> skill.</p>
+	<p>If a primal companion hunter's animal companion is dead, she can apply these evolutions to herself instead of to her animal companion. Uses of this ability count toward the hunter's maximum daily duration of evolution use. This ability replaces animal focus.</p>
+	<p id="primal-surge"><strong>Primal Surge (Su)</strong>: At 8th level, once per day as a swift action, a primal companion hunter can touch her animal companion and grant it one evolution that costs up to 4 points. The companion must meet the prerequisites of the selected evolution. Unlike the evolutions from primal transformation, this evolution is not set; it can be changed each time the hunter uses this ability. Using primal surge activates the primal transformation ability on the companion if it isn't already active. This effect lasts until the hunter ends the primal transformation. This ability does not allow a companion to exceed its maximum number of natural attacks.</p>
+	<p>This ability can grant only one evolution at a time, even if the chosen evolution could be selected multiple times.</p>
+	<p>This ability can grant an evolution that allows additional evolution points to be spent to upgrade that evolution (such as damage reduction or flight), and any points left over can be spent on such upgrades. This ability cannot be used to grant an upgrade to an evolution that the companion already possesses. This ability replaces second animal focus.</p>
+	<p id="primal-master"><strong>Primal Master (Su)</strong>: At 20th level, a primal companion hunter becomes in tune with his primal nature. He can activate his companion's primal aspect as a free action. When using primal surge, he can grant his companion two evolutions instead of one (each costing up to 4 evolution points). This ability replaces master hunter.</p>
+
+	<h2 id="verminous-hunter-archetype">Verminous Hunter (Archetype)</h2>
+	<p>A verminous hunter calls on the ceaseless, single-minded dedication of vermin to hunt and overwhelm her prey. Where other hunters invoke the cunning, animalistic powers of the alpha predators, she calls on the powers of the lowest life forms, reaching out to the spider instead of the monkey, the mantis instead of the snake, or the moth instead of the owl.</p>
+	<p id="vermin-companion"><strong>Vermin Companion (Ex)</strong>: At 1st level, a verminous hunter must choose a vermin companion (<em>Ultimate Magic</em> 36) instead of an animal companion. The hunter tactics class ability allows a verminous hunter to grant her teamwork feats to a mindless vermin companion. This ability alters animal companion.</p>
+	<p id="vermin-empathy"><strong>Vermin Empathy (Ex)</strong>: A verminous hunter gains the wild empathy ability, but can use it only to influence vermin (not animals or magical beasts). This ability alters wild empathy.</p>
+	<p id="vermin-focus"><strong>Vermin Focus (Su)</strong>: A verminous hunter can take on the aspect of a vermin. This ability functions as animal focus, but allows only the following choices.</p>
+		<ul>
+			<li><em>Ant</em>: The creature gains a +2 enhancement bonus to Strength. This bonus increases to +4 at 8th level and +6 at 15th level.</li>
+			<li><em>Beetle</em>: The creature gains a +2 enhancement bonus to its natural armor bonus. This bonus increases to +4 at 8th level and +6 at 15th level. (A creature without natural armor has an effective natural armor bonus of +0.)</li>
+			<li><em>Centipede</em>: The creature gains a +2 competence bonus on <a href="../../coreRulebook/skills/climb.html#climb">Climb</a> checks and a +2 bonus to CMD against pull, push, reposition, and trip combat maneuvers. These bonuses increase to +4 at 8th level and +6 at 15th level.</li>
+			<li><em>Cockroach</em>: The creature gains a +4 bonus on saves against cold dangers, disease, heat dangers, starvation, and thirst, and on Constitution checks to avoid suffocation. These bonuses increase to +6 at 8th level and +8 at 15th level.</li>
+			<li><em>Crab</em>: The creature gains a +4 competence bonus on <a href="../../coreRulebook/skills/swim.html#swim">Swim</a> checks and a +2 competence bonus on grapple combat maneuver checks. These bonuses increase to +6 and +4 respectively at 8th level, and +8 and +6 at 15th level.</li>
+			<li><em>Flea</em>: The creature gains a +4 competence bonus on saves against disease and on <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> checks to jump. These bonuses increase to +6 at 8th level and +8 at 15th level.</li>
+			<li><em>Fly</em>: The creature gains a +2 bonus on <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> checks and on <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> checks to balance or fall safely. These bonuses increase to +4 at 8th level and +6 at 15th level.</li>
+			<li><em>Leech</em>: The creature gains a +2 competence bonus on grapple combat maneuver checks, and deals 1 point of bleed damage every time it succeeds at a grapple combat maneuver check to damage an opponent. These benefits increase to a +4 bonus and 3 points of bleed damage at 8th level, and a +6 bonus and 5 points of bleed damage at 15th level. Bleed damage from this ability does not stack with itself.</li>
+			<li><em>Mantis</em>: The creature gains a +2 bonus on attacks of opportunity and a +2 competence bonus on grapple combat maneuver checks. These bonuses increase to +4 at 8th level and +6 at 15th level.</li>
+			<li><em>Moth</em>: The creature gains darkvision to a range of 60 feet. At 8th level, the range increases by 30 feet. At 15th level, the creature gains blindsense to a range of 10 feet.</li>
+			<li><em>Phasmid</em>: The creature gains low-light vision and a +4 competence bonus on <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> checks in forests or plains. This bonus increases to +6 at 8th level and +8 at 15th level.</li>
+			<li><em>Scorpion</em>: The creature gains a +2 competence bonus on <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> checks and on grapple combat maneuver checks. These bonuses increase to +6 and +4 respectively at 8th level, and to +8 and +6 at 15th level.</li>
+			<li><em>Spider</em>: The creature gains a +2 competence bonus on <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> checks, saving throws against web effects (magical or otherwise), and checks to break free of webs. This bonus increases to +4 at 8th level and +6 at 15th level.</li>
+			<li><em>Wasp</em>: The creature gains a +4 competence bonus on <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> checks. This bonus increases to +6 at 8th level and +8 at 15th level.</li>
+			<li><em>Worm</em>: The creature gains a 25% chance to treat any critical hit or sneak attack as a normal hit (as the <em>fortification</em> armor special ability). This chance increases to 50% at 8th level, and 75% at 15th level.</li>
+		</ul>
+	<p>This ability replaces animal focus.</p>
+	<p id="swarm-stride"><strong>Swarm Stride (Ex)</strong>: At 5th level, a verminous hunter learns to move through vermin without danger. He can safely pass through swarms of vermin and does not take swarm damage while within a vermin swarm's space. In addition, he is immune to a swarm's distraction ability. If the hunter or his animal companion attacks a swarm, they lose this protection against that swarm only. This ability replaces woodland stride.</p>
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Hunter",globalNavPath=[{ href: '/pathfinderRPG/prd/advancedClassGuide/classOptions/index.html', name: 'Archetypes and Class Options'}];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

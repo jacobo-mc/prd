@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Summoner</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "summoner.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "summoner.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "summoner.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "summoner.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "summoner.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "summoner.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "summoner.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "summoner.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "summoner.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "summoner.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "summoner.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "summoner.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "summoner.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "summoner.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "summoner.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "summoner.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "summoner.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "summoner.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "summoner.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "summoner.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "summoner.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="summoner" class="monster-header">Summoner</h1>
+				
+				
+				<p>The summoner is a complex and unusual class. Its most prominent class feature is the eidolon, a customizable monster that "always appears as some sort of fantastical creature." What kind of fantastical creature this is remains up to the player. Fortunately, mythology and the Pathfinder Roleplaying Game have many examples of fantastical creatures that an eidolon might resemble, from fish-people to angels, and from spider-centaurs to undead monsters.</p>
+				<p>This section features a new aquatic eidolon base form, allowing players to more quickly design water-themed eidolons. To make building eidolons easier, this section also presents eidolon "models"&mdash;a pre-set base form and list of evolutions to make an eidolon resemble a specific kind of creature. Finally, this section describes four new summoner archetypes</p>
+				<h1 id="aquatic-base-form">Aquatic Base Form</h1>
+				<p>A fourth base form, aquatic, is available to eidolons in addition to the biped, quadruped, and serpentine base forms. The aquatic base form follows all of the normal rules for base forms and can select the mount evolution.</p>
+				<h2 id="aquatic">Aquatic</h2>
+				<p id="starting-statistics"><b>Starting Statistics</b>: <b>Size</b> Medium; <b>Speed</b> 20 ft., swim 40 ft.; <b>AC</b> +4 natural armor; <b>Saves</b> Fort (good), Ref (good), Will (bad); <b>Attack</b> bite (1d6); <b>Ability Scores</b> Str 16, Dex 12, Con 13, Int 7, Wis 10, Cha 11; <b>Free Evolutions</b> bite, improved natural armor, gills, swim (2).</p>
+				<h1 id="eidolon-models">Eidolon Models</h1>
+				<p>An eidolon can look like almost anything its summoner desires. Eidolon models are pre-built examples of base forms and evolutions that provide an easy guide to building an eidolon with a specific appearance or theme.</p>
+				<p>Using a model does not change the eidolon's type or give it special abilities unavailable to other eidolons&mdash;it is basically a shortcut to allow a player or GM to quickly create an eidolon with a specific look in mind. Each model states the total number of evolution points required to build a complete eidolon with that model; in many cases this build requires most of the summoner's evolution points, so only a more powerful summoner's eidolon is a close approximation of the intended creature. For a low-level summoner, some of the eidolon's features (such as extra hydra heads) may be cosmetic until he gains evolution points to spend.</p>
+				<p>The <b>Base Form</b> lists the eidolon's recommended base form for that model. <b>Primary Evolutions </b>are a list of recommended evolutions to choose when you start building an eidolon with that model. <b>Additional Evolutions</b> are a list of other evolutions to complete the modeled eidolon's form and abilities.</p>
+				<h2 id="aboleth">Aboleth</h2>
+				<p>The eidolon looks like an aberrant aquatic creature such as an aboleth. </p>
+				<p id="25-points"><b>25 points</b>:<b> Base Form</b> aquatic; <b>Primary Evolutions</b> reach (tentacles), tentacles (2); <b>Secondary Evolutions</b> basic magic (<i><a href="../../coreRulebook/spells/ghostSound.html#ghost-sound" >ghost sound</a></i>), huge, large, major magic (<i><a href="../../coreRulebook/spells/minorImage.html#minor-image" >minor image</a></i>), minor magic (<i><a href="../../coreRulebook/spells/silentImage.html#silent-image" >silent image</a></i>), tentacles (2), ultimate magic (<i><a href="../../coreRulebook/spells/majorImage.html#major-image" >major image</a></i>).</p>
+				<h2 id="angel">Angel</h2>
+				<p>The eidolon looks like a celestial being such as an angel, archon, or azata. Angel eidolons usually appear as beautiful humanoids with large, feathered wings.</p>
+				<p id="24-points"><b>24 points</b>:<b> Base Form</b> biped; <b>Primary Evolutions</b> resistance (fire or electricity), weapon training; <b>Secondary Evolutions</b> basic magic (<i><a href="../../coreRulebook/spells/stabilize.html#stabilize" >stabilize</a></i>), damage reduction (evil), flight, immunity (acid or cold), major magic (<i><a href="../../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds" >cure moderate wounds</a></i> or <i><a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i>), minor magic (<i><a href="../../coreRulebook/spells/cureLightWounds.html#cure-light-wounds" >cure light wounds</a></i> or <i><a href="../../coreRulebook/spells/detectEvil.html#detect-evil" >detect evil</a></i>), spell resistance, ultimate magic (<i><a href="../../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds" >cure serious wounds</a></i>, <i><a href="../../coreRulebook/spells/daylight.html#daylight" >daylight</a></i>, or <i><a href="../../coreRulebook/spells/tongues.html#tongues" >tongues</a></i>) or <i><a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door" >dimension door</a></i>.</p>
+				<h2 id="behir">Behir</h2>
+				<p>This model creates a multi-legged, reptilian eidolon that looks like a behir.</p>
+				<p id="24-points"><b>24 points</b>: <b>Base Form</b> quadruped; <b>Primary Evolutions</b> climb, limbs (legs); <b>Secondary Evolutions</b> breath weapon (electricity), grab (bite), immunity (electricity), large, limbs (legs, 3), swallow whole.</p>
+				<h2 id="bodyguard">Bodyguard</h2>
+				<p>The eidolon looks like a humanoid warrior. The natural armor of a bodyguard eidolon appears to be a suit of metal plate, though this armor is actually part of the eidolon's body. <a href="../../advancedPlayersGuide/advancedFeats.html#bodyguard-(combat)" >Bodyguard</a> eidolons are normally trained in a variety of dangerous weapons.</p>
+				<p id="11-points"><b>11 points</b>: <b>Base Form</b> biped; <b>Primary Evolutions</b> improved natural armor, weapon training; <b>Secondary Evolutions</b> ability increase (Strength), fast healing, weapon training (martial).</p>
+				<h2 id="centaur">Centaur</h2>
+				<p>The eidolon has the upper torso of a humanoid and the lower body of a quadruped (such as a horse). A centaur eidolon's upper humanoid torso is smaller than its quadrupedal body. As a result, it wields weapons as if it were one size category smaller than its actual size (Medium for most centaur eidolons). The centaur model can also be used to create a lamia (a centaur eidolon with the upper body of a woman and the lower body of a lion) by replacing the hooves evolution with claws and taking basic magic (<i><a href="../../coreRulebook/spells/touchOfFatigue.html#touch-of-fatigue" >touch of fatigue</a></i>), minor magic (<i><a href="../../coreRulebook/spells/ventriloquism.html#ventriloquism" >ventriloquism</a></i>), major magic (<i><a href="../../coreRulebook/spells/dazeMonster.html#daze-monster" >daze monster</a></i>), and ultimate magic (<i><a href="../../coreRulebook/spells/majorImage.html#major-image" >major image</a></i>), resulting in a 23-point model.</p>
+				<p id="13-points"><b>13 points</b>: <b>Base Form</b> quadruped; <b>Primary Evolutions</b> limbs (arms), hooves; <b>Secondary Evolutions</b> large, trample, weapon training, weapon training (martial).</p>
+				<h2 id="chimera">Chimera</h2>
+				<p>The eidolon looks like chimera&mdash;a lion with wings and two additional heads, those of a dragon and a goat. The color of the dragon's head determines the chimera eidolon's breath weapon type.</p>
+				<p id="19-points"><b>19 points</b>: <b>Base Form</b> quadruped; <b>Primary Evolutions</b> claws, head; <b>Secondary Evolutions</b> bite, breath weapon, flight, gore, head, large, scent.</p>
+				<h2 id="demon">Demon</h2>
+				<p>The eidolon has a demonic appearance. Demon eidolons have no recommended base form, as demons can have almost any form. A marilith demon eidolon might have the serpentine base form, while a vrock demon eidolon would have the biped base form.</p>
+				<p id="26-points"><b>26 points</b>: <b>Base Form</b> any; <b>Primary Evolutions</b> resistance (acid, cold, fire); <b>Secondary Evolutions</b> basic magic (<i><a href="../../coreRulebook/spells/acidSplash.html#acid-splash" >acid splash</a></i>); bite, claws, slam, or tentacle; damage reduction (good); flight; immunity (electricity); magic attacks; major magic (<i><a href="../../coreRulebook/spells/darkness.html#darkness" >darkness</a></i> or <i><a href="../../coreRulebook/spells/seeInvisibility.html#see-invisibility" >see invisibility</a></i>); minor magic (<i><a href="../../coreRulebook/spells/detectGood.html#detect-good" >detect good</a></i> or <i><a href="../../advancedPlayersGuide/spells/vanish.html#vanish" >vanish</a></i>); spell resistance; ultimate magic (<i><a href="../../coreRulebook/spells/gaseousForm.html#gaseous-form" >gaseous form</a></i> or <i><a href="../../coreRulebook/spells/stinkingCloud.html#stinking-cloud" >stinking cloud</a></i>) or <i><a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door" >dimension door</a></i>.</p>
+				<h2 id="devil">Devil</h2>
+				<p>The eidolon has an infernal appearance. Devil eidolons might have large bat wings or could fly magically.</p>
+				<p id="26-points"><b>26 points</b>: <b>Base Form</b> biped; <b>Primary Evolutions</b> basic magic (<i><a href="../../coreRulebook/spells/daze.html#daze" >daze</a> </i>or <i><a href="../../coreRulebook/spells/rayOfFrost.html#ray-of-frost" >ray of frost</a></i>), magic attacks, resistance (acid or cold); <b>Secondary Evolutions</b> damage reduction (good), flight, immunity (fire), major magic (<i><a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i>, <i><a href="../../coreRulebook/spells/minorImage.html#minor-image" >minor image</a></i>, or <i><a href="../../coreRulebook/spells/scorchingRay.html#scorching-ray" >scorching ray</a></i>), minor magic (<i><a href="../../coreRulebook/spells/burningHands.html#burning-hands" >burning hands</a></i> or <i><a href="../../coreRulebook/spells/detectGood.html#detect-good" >detect good</a></i>), see in darkness, spell resistance, ultimate magic (<i><a href="../../coreRulebook/spells/fireball.html#fireball" >fireball</a></i>,<i> <a href="../../coreRulebook/spells/lightningBolt.html#lightning-bolt" >lightning bolt</a></i>, or <i><a href="../../coreRulebook/spells/majorImage.html#major-image" >major image</a></i>) or <i><a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door" >dimension door</a></i>.</p>
+				<h2 id="dragon">Dragon</h2>
+				<p>The eidolon appears to be a Medium dragon. Making a Small dragon eidolon creates a fairy dragon or pseudodragon. Large or Huge dragons can be created by exchanging one or more of the evolutions below for the large evolution.</p>
+				<p id="26-points"><b>26 points</b>: <b>Base Form</b> quadruped; <b>Primary Evolutions</b> claws, tail, tail slap; <b>Secondary Evolutions</b> basic magic (any), blindsense, breath weapon, flight, frightful presence, immunity, magic attacks, minor magic (any), spell resistance, wing buffet.</p>
+				<h2 id="drider">Drider</h2>
+				<p>This centaurlike eidolon has the upper torso of a humanoid and the lower body of a giant spider. A drider eidolon's upper humanoid torso is smaller than its spider body. As a result, it wields weapons as if it were one size category smaller than its actual size (Medium for most drider eidolons).</p>
+				<p id="25-points"><b>25 points</b>: <b>Base Form</b> quadruped; <b>Primary Evolutions</b> climb, limbs (arms); <b>Secondary Evolutions</b> basic magic (<i><a href="../../coreRulebook/spells/dancingLights.html#dancing-lights" >dancing lights</a></i> or <i><a href="../../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i>), large, limbs (legs, 2), minor magic (<i><a href="../../coreRulebook/spells/detectGood.html#detect-good" >detect good</a> or <a href="../../coreRulebook/spells/detectLaw.html#detect-law" >detect law</a></i>), poison, spell resistance, weapon training, web.</p>
+				<h2 id="fey">Fey</h2>
+				<p>The eidolon looks like a fey creature such as a dryad, nymph, pixie, or satyr. Fey eidolons usually appear as attractive humanoids and may have insect or butterfly wings. An aquatic fey such as a nixie can be created by adding the gills and swim evolutions, resulting in a 24-point model.</p>
+				<p id="22-points"><b>22 points</b>:<b> Base Form</b> biped; <b>Primary Evolutions</b> basic magic (<i><a href="../../coreRulebook/spells/daze.html#daze" >daze</a></i>, <i><a href="../../coreRulebook/spells/dancingLights.html#dancing-lights" >dancing lights</a></i>, <i><a href="../../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i>, or <i><a href="../../coreRulebook/spells/ghostSound.html#ghost-sound" >ghost sound</a></i>), weapon training; <b>Secondary Evolutions</b> damage reduction (lawful), <i><a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door" >dimension door</a></i>, flight, low-light vision, major magic (<i><a href="../../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds" >cure moderate wounds</a></i> or <i><a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i>), minor magic (<i><a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist" >obscuring mist</a></i> or vanish), spell resistance.</p>
+				<h2 id="genie">Genie</h2>
+				<p>The eidolon looks like a genie such as a djinni, efreeti, janni, marid, or shaitan. The eidolon's movement, energy attacks, and immunity depend on what type of genie is created&mdash;a djinni has flight, electricity attacks, and immunity to acid; an efreeti has flight, fire attacks, and immunity to fire; a marid has swim, cold attacks, and immunity to cold; and a shaitan has burrow, acid attacks, and immunity to electricity.</p>
+				<p id="21-23-points"><b>21&ndash;23 points</b>: <b>Base Form</b> biped; <b>Primary Evolutions</b> basic magic (<i><a href="../../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i>), weapon training; <b>Secondary Evolutions</b> burrow, flight, or swim; energy attacks; immunity; large; major magic (<i><a href="../../coreRulebook/spells/acidArrow.html#acid-arrow" >acid arrow</a></i>, <i><a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i>, or<i> <a href="../../coreRulebook/spells/scorchingRay.html#scorching-ray" >scorching ray</a></i>); minor magic (<i><a href="../../coreRulebook/spells/burningHands.html#burning-hands" >burning hands</a></i> or <i><a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist" >obscuring mist</a></i>); ultimate magic (<i><a href="../../coreRulebook/spells/createFoodAndWater.html#create-food-and-water" >create food and water</a></i>, <i><a href="../../coreRulebook/spells/gaseousForm.html#gaseous-form" >gaseous form</a></i>, or <i><a href="../../coreRulebook/spells/waterBreathing.html#water-breathing" >water breathing</a></i>).</p>
+				<h2 id="hydra">Hydra</h2>
+				<p>The eidolon looks like a multi-headed hydra. This model creates a five-headed hydra. A cryohydra or pyrohydra can be created by adding the breath weapon and immunity evolutions, resulting in a 26-point model.</p>
+				<p id="20-points"><b>20 points</b>: <b>Base Form</b> serpentine; <b>Primary Evolutions</b> bite, head; <b>Secondary Evolutions</b> bite (3), fast healing, head (3), large.</p>
+				<h2 id="linnorm">Linnorm</h2>
+				<p>The eidolon appears to be a Medium-sized linnorm. Large or Huge linnorms can be created by exchanging one or more of the evolutions below for the large evolution. This model can also be used to create a wingless dragon such as a Chinese dragon.</p>
+				<p id="23-points"><b>23 points</b>: <b>Base Form</b> serpentine; <b>Primary Evolutions</b> claws, limbs (legs); <b>Secondary Evolutions</b> breath weapon, fast healing, flight, flight (magic), immunity, poison, spell resistance.</p>
+				<h2 id="mammoth">Mammoth</h2>
+				<p>The eidolon is a large, powerful creature with tusks and a prehensile trunk (using the tentacle evolution), such as an elephant or mastodon.</p>
+				<p id="14-points"><b>14 points</b> (<b>20 points </b>for Huge):<b> Base Form</b> quadruped; <b>Primary Evolutions </b>gore, tentacle; <b>Secondary Evolutions</b> grab (tentacle), huge, large, mount, scent, slam, trample.</p>
+				<h2 id="merfolk">Merfolk</h2>
+				<p>The eidolon has the upper body of a humanoid and the lower body of a fish. This model can be used to create an aquatic humanoid such as a merfolk or sahuagin.</p>
+				<p id="18-points"><b>18 points</b>: <b>Base Form</b> aquatic; <b>Primary Evolutions</b> limbs (arms), tail; <b>Secondary Evolutions</b> blindsense, claws or pincers, immunity (cold), no breath, tail slap, weapon training, weapon training (martial).</p>
+				<h2 id="nightmare">Nightmare</h2>
+				<p>The eidolon is a fiery equine similar to a nightmare, possibly suitable for use as a mount.</p>
+				<p id="17-points"><b>17 points</b>: <b>Base Form</b> quadruped; <b>Primary Evolutions</b> energy attacks (fire), hooves; <b>Secondary Evolutions</b> flight (magic), large, minor magic (<i><a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist" >obscuring mist</a></i>), mount, resistance (fire), trample.</p>
+				<h2 id="sea-serpent">Sea Serpent</h2>
+				<p>This serpentine, aquatic eidolon looks like a sea serpent or aquatic worm.</p>
+				<p id="18-points"><b>18 points</b>, <b>24 points </b>(Huge): <b>Base Form</b> serpentine; <b>Primary Evolutions</b> gills, resist (fire), swim; <b>Secondary Evolutions</b> constrict, grab (bite and tail slap), immunity (cold), large, swallow whole.</p>
+				<h2 id="shark">Shark</h2>
+				<p>The eidolon looks like a sleek aquatic predator such as a shark or orca.</p>
+				<p id="16-points"><b>16 points</b>: <b>Base Form</b> aquatic; <b>Primary Evolutions</b> grab (bite), scent; <b>Secondary Evolutions</b> blindsense, improved damage (bite), keen scent, large, swallow whole.</p>
+				<h2 id="thing-from-beyond">Thing from Beyond</h2>
+				<p>The eidolon has a form that was not meant to be seen by mortal eyes, such as that of a shoggoth, mi-go, star-spawn, or something even worse. The Thing from Beyond can have any base form, with multiple mouths, eyes, claws, and tentacles.</p>
+				<p id="25-points"><b>25 points</b>: <b>Base Form</b> any; <b>Primary Evolutions</b> tentacles (3); <b>Secondary Evolutions</b> blindsense, bite, grab (bite or tentacle) immunity (cold, sonic), large, resist (acid, electricity, fire), swallow whole, tremorsense.</p>
+				<h2 id="undead">Undead</h2>
+				<p>The eidolon appears to be an undead creature, whether a skeleton, zombie, mummy, or even an incorporeal ghost or shadow. A summoner with an undead eidolon must select the undead appearance evolution at 1st level.</p>
+				<p id="19-points"><b>19 points</b>: <b>Base Form</b> any; <b>Primary Evolutions</b> undead appearance, unnatural aura; <b>Secondary Evolutions</b> channel resistance, immunity (cold), incorporeal form, lifesense, no breath.</p>
+				<h2 id="vermin">Vermin</h2>
+				<p>The eidolon looks like a large insect or other vermin. Taking the limbs (legs) evolution an additional time creates a giant spider. </p>
+				<p id="16-points"><b>16 points</b>,<b> 18 points </b>(spider),<b> 22 or 24 points </b>(Huge): <b>Base Form</b> quadruped; <b>Primary Evolutions</b> climb, limbs (legs); <b>Secondary Evolutions</b> flight, poison, sting, tail, trample, tremorsense, web.</p>
+				<h2 id="winged-snake">Winged Snake</h2>
+				<p>The eidolon looks like a serpent with wings, such as a couatl or lillend.</p>
+				<p id="23-points"><b>23 points</b> (couatl), <b>26 points</b> (lillend): <b>Base Form</b> serpentine; <b>Primary Evolutions</b> basic magic (any), grab; <b>Secondary Evolutions</b> couatl (constrict, flight, large, magic attacks, major magic [<i><a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i>], minor magic [<i><a href="../../coreRulebook/spells/detectChaos.html#detect-chaos" >detect chaos</a>/evil/good/law</i>], poison, ultimate magic [<i><a href="../../coreRulebook/spells/gaseousForm.html#gaseous-form" >gaseous form</a></i>]); lillend (constrict, flight, immunity [electricity], large, limbs [arms], magic attacks, major magic [<i><a href="../../coreRulebook/spells/darkness.html#darkness" >darkness</a></i> or <i><a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i>], minor magic [<i><a href="../../coreRulebook/spells/cureLightWounds.html#cure-light-wounds" >cure light wounds</a></i>], resistance [cold, fire], skilled [<a href="../../coreRulebook/skills/perform.html#perform" >Perform</a>], weapon training [martial]).</p>
+				<h1 id="evolutions">Evolutions</h1>
+				<p>The following new evolutions can be taken by any eidolon that meets the prerequisites. </p>
+				<h2 id="1-point-evolutions">1-Point Evolutions</h2>
+				<p>The following evolutions cost 1 point from the eidolon's evolution pool.</p>
+				<p id="basic-magic"><i>Basic Magic (Sp)</i>: An eidolon learns to cast a basic spell as a spell-like ability. Select one spell from the following list: <i><a href="../../coreRulebook/spells/acidSplash.html#acid-splash" >acid splash</a></i>, <i><a href="../../coreRulebook/spells/dancingLights.html#dancing-lights" >dancing lights</a></i>, <i><a href="../../coreRulebook/spells/daze.html#daze" >daze</a></i>, <i><a href="../../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i>, <i><a href="../../coreRulebook/spells/flare.html#flare" >flare</a></i>, <i><a href="../../coreRulebook/spells/ghostSound.html#ghost-sound" >ghost sound</a></i>, <i><a href="../../coreRulebook/spells/light.html#light" >light</a></i>, <i><a href="../../coreRulebook/spells/mageHand.html#mage-hand" >mage hand</a></i>, <i><a href="../../coreRulebook/spells/rayOfFrost.html#ray-of-frost" >ray of frost</a></i>, <i><a href="../../coreRulebook/spells/stabilize.html#stabilize" >stabilize</a></i>, or <i><a href="../../coreRulebook/spells/touchOfFatigue.html#touch-of-fatigue" >touch of fatigue</a></i>. This spell can be cast once per day as a spell-like ability. At 4th level, this spell can be cast three times per day by spending 2 additional evolution points. The caster level for this evolution is equal to the eidolon's Hit Dice. The save DC for this spell is 10 + the eidolon's Charisma modifier. The eidolon must have a Charisma score of at least 10 to take this evolution. This evolution can be selected more than once. Each time an eidolon selects this evolution, it applies to a new spell.</p>
+				<p id="hooves"><i>Hooves (Ex)</i>: An eidolon has a pair of sharp hooves at the end of its limbs, giving it two hoof attacks. These attacks are secondary attacks. The hooves deal 1d4 points of damage (1d6 if Large, 1d8 if Huge). The eidolon must have the limbs evolution to take this evolution. This evolution can only be applied to the limbs (legs) evolution once. Alternatively, the eidolon can replace the claws evolution from its base form with these hoof attacks (this still costs 1 evolution point). This evolution can be selected more than once, but the eidolon must possess an equal number of limbs evolutions.</p>
+				<p id="low-light-vision"><i><a href="../../bestiary/universalMonsterRules.html#low-light-vision">Low-Light Vision</a> (Ex)</i>: An eidolon gains low-light vision, enabling it to see twice as far as a human in conditions of dim light.</p>
+				<p id="unnatural-aura"><i>Unnatural Aura (Su)</i>: An eidolon is obviously of unnatural origin. Normal animals do not willingly approach the eidolon unless the animal's master makes a DC 25 <a href="../../coreRulebook/skills/handleAnimal.html#handle-animal" >Handle Animal</a>, <a href="../../coreRulebook/skills/ride.html#ride" >Ride</a>, or wild empathy check.</p>
+				<h2 id="2-point-evolutions">2-Point Evolutions</h2>
+				<p>The following evolutions each cost 2 points from the eidolon's evolution pool.</p>
+				<p id="channel-resistance"><a href="../../bestiary/universalMonsterRules.html#channel-resistance"><i>Channel Resistance</a> (Ex)</i>: An eidolon becomes less easily affected by the channel energy ability of clerics or paladins. The eidolon gains a +2 bonus on any saves that are made to resist the effects of channel energy, including effects that rely on the use of channel energy (such as the <a href="../../coreRulebook/feats.html#command-undead" >Command Undead</a> feat). At 7th level, this bonus can be increased to +4 by spending 2 additional evolution points. The eidolon must possess the undead appearance evolution to take this evolution.</p>
+				<p id="head"><i>Head (Ex)</i>: An eidolon grows an additional head. The eidolon does not gain any additional natural attacks for the additional head, but the additional head does allow the eidolon to take other evolutions that add an additional attack to a head (such as a bite, gore, or breath weapon). This evolution can be selected more than once.</p>
+				<p id="keen-scent"><i><a href="../../advancedPlayersGuide/advancedFeats.html#keen-scent" >Keen Scent</a> (Ex)</i>: An eidolon's sense of smell becomes even more acute. The eidolon can notice other creatures by scent in a 180-foot radius underwater and can detect blood in the water at ranges of up to a mile. The eidolon must possess the gills and scent evolutions to take this evolution.</p>
+				<p id="minor-magic"><i>Minor Magic (Sp)</i>: An eidolon learns to cast a minor spell as a spell-like ability. Select one spell from the following list: <i><a href="../../coreRulebook/spells/burningHands.html#burning-hands" >burning hands</a></i>, <i><a href="../../coreRulebook/spells/comprehendLanguages.html#comprehend-languages" >comprehend languages</a></i>, <i><a href="../../coreRulebook/spells/cureLightWounds.html#cure-light-wounds" >cure light wounds</a></i>, <i><a href="../../coreRulebook/spells/detectChaos.html#detect-chaos" >detect chaos</a>/evil/good/law</i>, <i><a href="../../coreRulebook/spells/magicMissile.html#magic-missile" >magic missile</a></i>, <i><a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist" >obscuring mist</a></i>, <i><a href="../../coreRulebook/spells/silentImage.html#silent-image" >silent image</a></i>, <i><a href="../../advancedPlayersGuide/spells/vanish.html#vanish" >vanish</a></i> (self only), or <i><a href="../../coreRulebook/spells/ventriloquism.html#ventriloquism" >ventriloquism</a></i>. This spell can be cast once per day as a spell-like ability. At 7th level, this spell can be cast three times per day by spending 2 additional evolution points. The caster level for this evolution is equal to the eidolon's Hit Dice &ndash; 2. The save DC for this spell is 10 + 1/2 the eidolon's HD + the eidolon's Charisma modifier. The eidolon must have a Charisma score of at least 11 and must possess the basic magic evolution to take this evolution.</p>
+				<p>The summoner must be at least 4th level before selecting this evolution. This evolution can be selected more than once. Each time an eidolon selects this evolution, it applies to a new spell from the above list.</p>
+				<p id="undead-appearance"><i>Undead Appearance (Ex)</i>: An eidolon appears as an undead creature, and mimics some of an undead creature's abilities and weaknesses. Negative energy heals the eidolon, and positive energy (including a cleric's channel energy ability) harms it. Spells and effects that target undead or have specific effects against undead (such as <a href="../../coreRulebook/feats.html#command-undead" >Command Undead</a>, <i>hold undead</i>, and <i><a href="../../coreRulebook/spells/searingLight.html#searing-light" >searing light</a></i>) affect the eidolon as if it were undead. The eidolon gains a +2 bonus on saves against disease, exhaustion, fatigue, paralysis, poison, sleep effects, and stunning.</p>
+				<p>At 7th level, this bonus on saves can be increased to +4 by spending 2 additional evolution points. At 12th level, this protection can be increased to immunity against these attacks by spending 2 additional evolution points (the summoner must pay for the 7th-level upgrade before paying for this 12th-level upgrade).</p>
+				<p>Although the eidolon appears undead, it is still an outsider.</p>
+				<h2 id="3-point-evolutions">3-Point Evolutions</h2>
+				<p>The following evolutions cost 3 points from the eidolon's evolution pool.</p>
+				<p id="major-magic"><i>Major Magic (Sp)</i>: An eidolon learns to cast a major spell as a spell-like ability. Select one spell from the following list: <i><a href="../../coreRulebook/spells/acidArrow.html#acid-arrow" >acid arrow</a></i>, <i><a href="../../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds" >cure moderate wounds</a></i>, <i><a href="../../coreRulebook/spells/darkness.html#darkness" >darkness</a></i>, <i><a href="../../coreRulebook/spells/dazeMonster.html#daze-monster" >daze monster</a></i>, <i><a href="../../advancedPlayersGuide/spells/glide.html#glide-" >glide</a></i>, <i><a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i> (self only), <i><a href="../../coreRulebook/spells/restoration.html#restoration-lesser" >lesser restoration</a></i>, <i><a href="../../coreRulebook/spells/levitate.html#levitate" >levitate</a></i>, <i><a href="../../coreRulebook/spells/minorImage.html#minor-image" >minor image</a></i>, <i><a href="../../coreRulebook/spells/scorchingRay.html#scorching-ray" >scorching ray</a></i>, <i><a href="../../coreRulebook/spells/seeInvisibility.html#see-invisibility" >see invisibility</a></i>, or <i><a href="../../coreRulebook/spells/spiderClimb.html#spider-climb" >spider climb</a></i>. This spell can be cast once per day as a spell-like ability.</p>
+				<p>At 10th level, this spell can be cast three times per day by spending 2 additional evolution points. The caster level for this evolution is equal to the eidolon's Hit Dice &ndash; 2. The save DC for this spell is 10 + 1/2 the eidolon's HD + the eidolon's Charisma modifier. The eidolon must have a Charisma score of at least 12 and must possess the minor magic evolution to take this evolution. The summoner must be at least 7th level before selecting this evolution. This evolution can be selected more than once. Each time an eidolon selects this evolution, it applies to a new spell from the above list.</p>
+				<p id="see-in-darkness"><i>See in <a href="../../coreRulebook/spells/darkness.html#darkness" >Darkness</a> (Su)</i>: An eidolon can see perfectly in darkness of any kind, including that created by <i><a href="../../coreRulebook/spells/deeperDarkness.html#deeper-darkness" >deeper darkness</a></i>. The summoner must be at least 9th level before selecting this evolution.</p>
+				<h2 id="4-point-evolutions">4-Point Evolutions</h2>
+				<p>The following evolutions cost 4 points from the eidolon's evolution pool.</p>
+				<p id="dimension-door"><i>Dimension Door (Sp)</i>: An eidolon learns to cast <i><a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door" >dimension door</a></i> as a spell-like ability once per day. The caster level for this evolution is equal to the eidolon's Hit Dice. The save DC for this spell is 10 + 1/2 the eidolon's HD + the eidolon's Charisma modifier. The eidolon must have a Charisma score of at least 14 to take this evolution. The summoner must be at least 13th level before selecting this evolution.</p>
+				<p id="incorporeal-form"><i>Incorporeal Form (Sp)</i>: Once per day, an eidolon can become incorporeal for 1 round per summoner level. While in this form, the eidolon gains the incorporeal subtype and incorporeal quality. It only takes half damage from corporeal sources as long as they are magic (it takes no damage from nonmagical weapons and objects). Likewise, its spells or spell-like abilities deal only half damage to corporeal creatures. Spells and other effects that do not deal damage function normally. The summoner must be at least 15th level before selecting this evolution.</p>
+				<p id="lifesense"><i>Lifesense (Su)</i>: An eidolon can pinpoint living creatures with ease. The eidolon notices and locates living creatures within 60 feet, just as if it possessed the blindsight evolution. The eidolon must possess the undead appearance evolution to take this evolution. The summoner must be at least 11th level before selecting this evolution.</p>
+				<p id="no-breath"><i>No Breath (Ex)</i>: An eidolon no longer needs to breathe. The eidolon does not breathe, and is immune to effects that require breathing (such as inhaled poison). This does not give immunity to cloud or gas attacks that do not require breathing. The summoner must be at least 11th level before selecting this evolution.</p>
+				<p id="ultimate-magic"><i>Ultimate Magic (Sp)</i>: An eidolon learns to cast a powerful spell as a spell-like ability. Select one spell from the following list: <i><a href="../../coreRulebook/spells/arcaneSight.html#arcane-sight" >arcane sight</a></i>, <i><a href="../../coreRulebook/spells/createFoodAndWater.html#create-food-and-water" >create food and water</a></i>, <i><a href="../../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds" >cure serious wounds</a></i>, <i><a href="../../coreRulebook/spells/daylight.html#daylight" >daylight</a></i>, <i><a href="../../coreRulebook/spells/fireball.html#fireball" >fireball</a></i>, <i><a href="../../coreRulebook/spells/fly.html" >fly</a></i>, <i><a href="../../coreRulebook/spells/gaseousForm.html#gaseous-form" >gaseous form</a></i>, <i><a href="../../coreRulebook/spells/lightningBolt.html#lightning-bolt" >lightning bolt</a></i>, <i><a href="../../coreRulebook/spells/majorImage.html#major-image" >major image</a></i>, <i><a href="../../coreRulebook/spells/stinkingCloud.html#stinking-cloud" >stinking cloud</a></i>, <i><a href="../../coreRulebook/spells/tongues.html#tongues" >tongues</a></i>, or <i><a href="../../coreRulebook/spells/waterBreathing.html#water-breathing" >water breathing</a></i>. This spell can be cast once per day as a spell-like ability. The caster level for this evolution is equal to the eidolon's Hit Dice &ndash; 2. The save DC for this spell is 10 + 1/2 the eidolon's HD + the eidolon's Charisma modifier. The eidolon must have a Charisma score of at least 13 and must possess the major magic evolution to take this evolution.</p>
+				<p>The summoner must be at least 11th level before selecting this evolution. This evolution can be selected more than once. Each time an eidolon selects this evolution, it applies to a new spell from the above list.</p>
+				<h1 id="broodmaster-(archetype)">Broodmaster (Archetype)</h1>
+				<p>Most summoners bond with one eidolon for their entire lives, but the broodmaster forges a link with multiple smaller eidolons that make up his brood. Separately, a broodmaster's eidolons are no match for a summoner's single eidolon, but taken as a whole, an eidolon brood makes up in quantity what it lacks in individual power.</p>
+				<h2>Hordes of Summoned Monsters</h2>
+<p>The broodmaster and master summoner archetypes can potentially have 5, 10, or even more summoned creatures in play. This is a deliberate feature of these archetypes, and means that the summoner can potentially be a strong candidate for "solo" adventuring by one player. However, in the hands of an inexperienced or moderately experienced player, dealing with all of those creatures in combat can take a long time, forcing other players to wait extended periods between their turns in the initiative. It is strongly recommended that GMs only allow these archetypes for experienced players, or decide on a way to speed up the summoner's turn (such as by allowing other players to control some of the summoned monsters).</p>
+				<p id="eidolon-brood"><b>Eidolon Brood</b>: At 2nd level, instead of a single eidolon, a broodmaster summons two Small eidolons to his side, each less powerful than the single eidolon of a standard summoner. Each eidolon has it own base form and associated base statistics and free evolutions. Regardless of the number of eidolons in the brood, each eidolon has the same base attack bonus and base saving throw bonuses, but the rest of the eidolons' base statistics must be divided between the eidolons, including Hit Dice (minimum 1), skill points, number of feats, armor bonus, Str/Dex bonus, evolution pool (but see below), and maximum number of natural attacks. Individual eidolons in the brood must purchase evolutions separately. Once a broodmaster decides on the forms and abilities of his eidolons, they cannot be changed until the summoner gains a level. </p>
+				<p id="example"><i>Example</i>: A 2nd-level broodmaster can summon two eidolons. Each eidolon has 1 Hit Dice, BAB +2, +3 on its two good saves and +0 on its bad save. The broodmaster decides to give the first eidolon 4 skill points, one feat, a +1 armor bonus, a +1 bonus to Strength, 2 points from the evolution pool, and a maximum of two attacks. The remaining 4 skill points, +1 armor bonus, +1 bonus to Dexterity, and 2 points from the evolution pool go to the second eidolon, but it gains no feats and can have only one natural attack.</p>
+				<p>The broodmaster must dismiss all of his eidolons at one time. Likewise, all of the eidolons in a brood are banished if the broodmaster is unconscious, asleep, or killed. However, each eidolon in the brood is sent back to its home plane individually when its hit points are reduced to a negative number equal to or greater than its Constitution score. This ability replaces the summoner's normal eidolon ability.</p>
+				<p>The following are new class features of the broodmaster archetype. Those with the same name as the standard summoner class have slightly different rules, but otherwise work as and replace the standard summoner class features of the same name.</p>
+				<p id="brood-link"><b>Brood Link (Su)</b>: At 2nd level, a broodmaster forms a close bond with his eidolons. This ability works like the standard summoner life link ability, except the broodmaster can only sacrifice hit points to prevent damage to one eidolon in the brood at a time. If two or more eidolons in the brood take enough damage to send them back to their home plane, the broodmaster can only sacrifice hit points to prevent damage to one of them. This ability replaces life link.</p>
+				<p id="bond-senses"><b>Bond Senses (Su)</b>: The broodmaster can only share the senses of one eidolon in his brood at a time.</p>
+				<p id="shield-ally"><b>Shield Ally (Ex)</b>: The broodmaster or an ally can only gain the bonuses from these abilities once, regardless of how many eidolons in the brood are within reach.</p>
+				<p id="maker's-call"><b>Maker's Call (Su)</b>: The broodmaster can only call one eidolon in the brood to his side with each use of this ability.</p>
+				<p id="transposition"><b>Transposition (Su)</b>: The broodmaster swaps his location with that of one eidolon in the brood with each use of this ability.</p>
+				<p id="larger-brood"><b>Larger Brood</b>: At 8th level, the broodmaster can spend 4 evolution points from the evolution pool for the large evolution; unlike with other evolutions, he spends these 4 points before he assigns evolution points to his individual eidolons (for an 8th-level broodmaster with 11 evolution points, this leaves 7 evolution points to distribute among the eidolons). This allows him to summon two Medium eidolons, four Small eidolons, or one Medium eidolon and two Small eidolons.</p>
+				<p>At 13th level, if the broodmaster has purchased the large evolution for his brood, he can spend an additional 6 evolution points from the evolution pool for the huge evolution, distributing the remaining points among his eidolons. This allows him to call two Large eidolons, four Medium eidolons, eight Small eidolons, or any similar combination in which two smaller eidolons count as one eidolon of one size larger.</p>
+				<p id="greater-shield-ally"><b>Greater Shield Ally (Su)</b>: The broodmaster or an ally can only gain the bonuses from these abilities once, regardless of how many eidolons in the brood are within reach.</p>
+				<p id="brood-bond"><b>Brood Bond (Su)</b>: At 14th level, a summoner's life becomes linked to his brood. This functions as the life bond ability, except the broodmaster can only transfer damage to one eidolon in the brood at a time. If that eidolon takes enough damage to send it back to its home plane, all excess damage remains with the broodmaster, killing him. This ability replaces life bond.</p>
+				<p id="merge-forms"><b>Merge Forms (Su)</b>: The broodmaster can only merge with one eidolon in the brood at a time. This ability otherwise works like and replaces merge forms.</p>
+				<h1 id="evolutionist-(archetype)">Evolutionist (Archetype)</h1>
+				<p>Changing an eidolon's evolutions is normally a slow process. As a summoner progresses in levels, his control over his eidolon's abilities increases. But an evolutionist possesses greater power over his eidolon's form, and is able to evolve his eidolon and its abilities to meet any challenge or face any threat as it comes up, seemingly on a whim.</p>
+				<p id="mutate-eidolon"><b>Mutate Eidolon (Su)</b>: At 6th level, an evolutionist can change his eidolon's evolutions as if he had gained a level. To mutate his eidolon, the evolutionist must perform an arcane ritual that requires 24 hours of uninterrupted concentration and costs 200 gp per summoner level in material components. This ability replaces maker's call.</p>
+				<p id="evolve-base-form"><b>Evolve Base Form (Su)</b>: Starting at 8th level, whenever he gains a level, the evolutionist can change his eidolon's base form to a new base form. Once chosen, this base form is set until the evolutionist gains another summoner level. This ability replaces transposition.</p>
+				<p id="transmogrify"><b>Transmogrify (Sp)</b>: At 12th level, the evolutionist can cast <i><a href="../../advancedPlayersGuide/spells/transmogrify.html#transmogrify" >transmogrify</a></i> as a spell-like ability once per day without the need for a material component. This ability has a casting time of 1 minute. This ability replaces greater shield ally.</p>
+				<h1 id="master-summoner-(archetype)">Master Summoner (Archetype)</h1>
+				<p>Most summoners forge a bond with a single, powerful eidolon, but some summoners seek to control a variety of creatures. The master summoner sacrifices the power of his eidolon in favor of summoning a plethora of otherworldly creatures to aid him.</p>
+				<p id="lesser-eidolon"><b>Lesser Eidolon</b>: A master summoner's class level is halved (minimum 1) for the purposes of determining his eidolon's abilities, Hit Dice, evolution pool, and so on. The eidolon otherwise functions as normal. This ability replaces the summoner's normal eidolon ability.</p>
+				<p id="summoning-mastery"><b>Summoning Mastery (Sp)</b>: Starting at 1st level, a master summoner can cast <i><a href="../../coreRulebook/spells/summonMonster.html#summon-monster-i" >summon monster I</a></i> as a spell-like ability a number of times per day equal to 5 + his Charisma modifier. The summoner can use this ability when his eidolon is summoned. Only one <i>summon monster</i> spell may be in effect while the eidolon is summoned. If the summoner's eidolon is not summoned, the number of creatures that can be summoned with this ability is only limited by its uses per day. This ability otherwise functions as the summoner's normal <i><a href="../../coreRulebook/spells/summonMonster.html#summon-monster-i" >summon monster I</a></i> ability. Other than these restrictions, there is no limit to how many <i>summon monster</i> or <i><a href="../../coreRulebook/spells/gate.html#gate" >gate</a></i> spells the summoner can have active at one time. This ability replaces the summoner's normal <i><a href="../../coreRulebook/spells/summonMonster.html#summon-monster-i" >summon monster I</a></i> ability and shield ally.</p>
+				<p id="augment-summoning"><b><a href="../../coreRulebook/feats.html#augment-summoning" >Augment Summoning</a></b>: At 2nd level, a master summoner gains <a href="../../coreRulebook/feats.html#augment-summoning" >Augment Summoning</a> as a bonus feat. He does not have to meet any requirements for this feat. This ability replaces bond senses.</p>
+				<h1 id="synthesist-(archetype)">Synthesist (Archetype)</h1>
+				<p>Rather than summon an eidolon to serve by his side, the synthesist fuses his eidolon's essence to his own. Instead of two creatures, the synthesist is a fusion of the summoner and eidolon into a single being.</p>
+				<p id="fused-eidolon"><b>Fused Eidolon</b>: A synthesist summons the essence of a powerful outsider to meld with his own being. The synthesist wears the eidolon like translucent, living armor. The eidolon mimics all of the synthesist's movements, and the synthesist perceives through the eidolon's senses and speaks through its voice, as the two are now one creature. The synthesist directs all of the eidolon's actions while fused, perceives through its senses, and speaks through its voice, as the two are now one creature.</p>
+				<p>While fused with his eidolon, the synthesist uses the eidolon's Strength, Dexterity, and Constitution, but retains his own Intelligence, Wisdom, and Charisma. The synthesist gains the eidolon's hit points as temporary hit points. When these hit points reach 0, the eidolon is killed and sent back to its home plane. The synthesist uses the eidolon's base attack bonus, and gains the eidolon's armor and natural armor bonuses and modifiers to ability scores. The synthesist also gains access to the eidolon's special abilities and the eidolon's evolutions. The synthesist is still limited to the eidolon's maximum number of natural attacks. The eidolon has no skills or feats of its own. The eidolon must be at least the same size as the synthesist. The eidolon must have limbs for the synthesist to cast spells with somatic components. The eidolon's temporary hit points can be restored with the rejuvenate eidolon spell.</p>
+				<p>While fused, the synthesist loses the benefits of his armor. He counts both as his original type and as an outsider for any effect related to type, whichever is worse for the synthesist. Spells such as banishment or dismissal work normally on the eidolon, but the synthesist is unaffected. Neither the synthesist nor his eidolon can be targeted separately, as they are fused into one creature. The synthesist and eidolon cannot take separate actions. While fused with his eidolon, the synthesist can use all of his own abilities and gear, except for his armor. In all other cases, this ability functions as the summoner's normal eidolon ability (for example, the synthesist cannot use his summon monster ability while the eidolon is present). This ability replaces the class's eidolon ability, bond senses, and life bond.</p>
+				<p>The following class abilities function differently for synthesist summoners.</p>
+				<p id="fused-link"><b>Fused Link (Su)</b>: Starting at 1st level, the synthesist forms a close bond with his eidolon. Whenever the temporary hit points from his eidolon would be reduced to 0, the summoner can, as a free action, sacrifice any number of his own hit points. Each hit point sacrificed this way prevents 1 point of damage done to the eidolon (thus preventing the loss of the summoner's temporary hit points), preventing the eidolon from being killed and sent back to its home plane. This ability replaces life link.</p>
+				<p id="shielded-meld"><b>Shielded Meld (Ex)</b>: At 4th level, whenever the synthesist is fused with his eidolon, he gains a +2 shield bonus to his Armor Class and a +2 circumstance bonus on his saving throws. This ability replaces shield ally.</p>
+				<p id="maker's-jump"><b>Maker's Jump (Sp)</b>: At 6th level, whenever the synthesist is fused with his eidolon, the synthesist can cast <i><a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door" >dimension door</a></i> as a spell-like ability using his caster level. This ability only affects the fused synthesist and eidolon. The synthesist can use this ability once per day at 6th level, plus one additional time per day for every six levels beyond 6th. This ability replaces maker's call and transposition.</p>
+				<p id="greater-shielded-meld"><b>Greater Shielded Meld (Ex)</b>: At 12th level, whenever the synthesist is fused with his eidolon, he gains a +4 shield bonus to his Armor Class and a +4 circumstance bonus on his saving throws. This ability replaces greater shield ally.</p>
+				<p id="split-forms"><b>Split Forms (Su)</b>: At 16th level, as a swift action, the synthesist and his fused eidolon can split into two creatures: the synthesist and the eidolon. Both have the same evolutions. The synthesist emerges in a square adjacent to the eidolon if possible. All effects and spells currently targeting the fused synthesist-eidolon affect both the synthesist and the eidolon.</p>
+				<p>The synthesist can use this ability for a number of rounds per day equal to his summoner level. He can end this effect at any time as a full-round action. For the duration of this effect, the eidolon functions as a normal eidolon of the summoner's class level. This ability replaces merge forms.</p>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Summoner",globalNavPath=[{ href: '/pathfinderRPG/prd/ultimateMagic/spellcastingClassOptions.html', name: 'Spellcasting Class Options' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

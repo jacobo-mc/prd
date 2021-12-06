@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Armor</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "armor.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "armor.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "skills.html">Skills</a></li>
+								<li><a href = "feats.html">Feats</a></li>
+								<li><a href = "spells.html">Spells</a></li>
+								<li><a href = "archetypes.html">Archetypes</a></li>
+								<li><a href = "technomancer.html">Technomancer</a></li>
+								<li><a href = "crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "armor.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "weapons.html">Weapons</a></li>
+								<li><a href = "armor.html">Armor</a></li>
+								<li><a href = "pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "cybertech.html">Cybertech</a></li>
+								<li><a href = "gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "armor.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "hazards.html">Hazards</a></li>
+								<li><a href = "ai.html">Artificial Intelligences</a></li>
+								<li><a href = "artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "armor.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id = "technology-guide-armor">Armor</h1>
+<p>Each suit of technological armor has a full description, including a set of abbreviated statistics. This information is organized as follows.</p>
+<p><b>Price</b>: This is the cost in gold pieces to purchase the suit of armor if it's available for sale. As with magic armor, a technological suit of armor can be sold by PCs for half this value.</p>
+<p><b>Weight</b>: The weight of the armor in pounds. Weight figures are for armor sized to fit Medium characters. Armor fitted for Small characters weighs half as much, and armor fitted for Large characters weighs twice as much.</p>
+<p><b>Type</b>: This indicates if the suit is light, medium, or heavy armor.</p>
+<p><b>AC</b>: The protective value of the armor. This armor bonus is added to the wearer's Armor Class.</p>
+<p><b>Max Dex</b>: This number is the maximum Dexterity bonus that this type of armor allows.</p>
+<p><b>Penalty</b>: This lists the armor check penalty of the suit of armor.</p>
+<p><b>Spell Failure</b>: This indicates the armor's arcane spell failure chance.</p>
+<p><b>Speed</b>: This lists a character's adjusted speed while wearing the armor. Adjusted speeds for characters with base speeds of 20 ft. and 30 ft. are included.</p>
+<p><b>Capacity</b>: The armor's charge capacity is listed here. If the armor doesn't use energy, this entry is omitted.</p>
+<p><b>Usage</b>: This value lists the number of charges the armor consumes over time while activated. (Activating powered armor is a standard action, and deactivating is a free action.) The charge is immediately spent at the beginning of the duration, and any time remaining when the armor is deactivated is lost. </p>
+<p><b>Description</b>: This describes the armor's appearance, powers, and abilities.</p>
+<p><b>Construction</b>: Certain requirements must be met for a character to craft a suit of technological armor. These requirements generally consist of having a feat and access to a manufacturing facility.</p>
+<p><b>Craft</b>: This is the Craft DC required to create the armor. It is also the Knowledge (engineering) DC to correctly identify the armor.</p>
+<p><b>Cost</b>: This is the cost in gold pieces to create the technological item. Generally, this cost is equal to half the price of the armor.</p>
+
+<table class = "table">
+	<caption>Technology Guide Armor</caption>
+	<thead>
+		<tr><th>Light Armor</th><th>Price</th><th>Armor/Shield Bonus</th><th>Max. Dex Bonus</th><th>Armor Check Penalty</th><th>Arcane Spell Failure Chance</th><th>Speed (30 ft.)</th><th>Speed (20 ft.)</th><th>Weight</th><th>Capacity</th><th>Usage</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>Heavy weapon harness</td><td>9,000 gp</td><td>+1</td><td>+6</td><td>-1</td><td>5%</td><td>30 ft.</td><td>20 ft.</td><td>10 lbs.</td><td>&mdash;</td><td>&mdash;</td></tr>
+		<tr><td>Scatterlight suit (brown)</td><td>100 gp</td><td>+1</td><td>+8</td><td>-1</td><td>5%</td><td>30 ft.</td><td>20 ft.</td><td>5 lbs.</td><td>24</td><td>1 charge/hour</td></tr>
+		<tr><td>Chameleon suit</td><td>15,000 gp</td><td>+2</td><td>+6</td><td>0</td><td>10%</td><td>30 ft.</td><td>20 ft.</td><td>5 lbs.</td><td>50</td><td>1 charge/minute</td></tr>
+		<tr><td>Scatterlight suit (black)</td><td>150 gp</td><td>+2*</td><td>+8</td><td>-1</td><td>5%</td><td>30 ft.</td><td>20 ft.</td><td>5 lbs.</td><td>24</td><td>1 charge/hour</td></tr>
+		<tr><td>Inssuit</td><td>19,250 gp</td><td>+3</td><td>+6</td><td>0</td><td>15%</td><td>30 ft.</td><td>20 ft.</td><td>10 lbs.</td><td>&mdash;</td><td>&mdash;</td></tr>
+		<tr><td>Deep diving suit</td><td>26,000 gp</td><td>+3</td><td>+5</td><td>-2</td><td>30%</td><td>30 ft.</td><td>20 ft.</td><td>20 lbs.</td><td>25</td><td>1 charge/hour</td></tr>
+		<tr><td>Scatterlight suit (white)</td><td>200 gp</td><td>+3*</td><td>+8</td><td>-1</td><td>5%</td><td>30 ft.</td><td>20 ft.</td><td>5 lbs.</td><td>24</td><td>1 charge/hour</td></tr>
+		<tr><td>Smart armor (compact form)</td><td>16,500 gp</td><td>+4</td><td>+4</td><td>-2</td><td>25%</td><td>30 ft.</td><td>20 ft.</td><td>20 lbs.</td><td>60</td><td>1 charge/10 minutes</td></tr>
+		<tr><td>Scatterlight suit (gray)</td><td>700 gp</td><td>+4*</td><td>+8</td><td>-1</td><td>5%</td><td>30 ft.</td><td>20 ft.</td><td>5 lbs.</td><td>24</td><td>1 charge/hour</td></tr>
+		<tr><td>Scatterlight suit (green)</td><td>1,000 gp</td><td>+5*</td><td>+8</td><td>-1</td><td>5%</td><td>30 ft.</td><td>20 ft.</td><td>5 lbs.</td><td>24</td><td>1 charge/hour</td></tr>
+		<tr><td>Scatterlight suit (red)</td><td>1,400 gp</td><td>+6*</td><td>+8</td><td>-1</td><td>5%</td><td>30 ft.</td><td>20 ft.</td><td>5 lbs.</td><td>24</td><td>1 charge/hour</td></tr>
+		<tr><td>Scatterlight suit (blue)</td><td>3,600 gp</td><td>+7*</td><td>+8</td><td>-1</td><td>5%</td><td>30 ft.</td><td>20 ft.</td><td>5 lbs.</td><td>24</td><td>1 charge/hour</td></tr>
+		<tr><td>Scatterlight suit (orange)</td><td>6,000 gp</td><td>+8*</td><td>+8</td><td>-1</td><td>5%</td><td>30 ft.</td><td>20 ft.</td><td>5 lbs.</td><td>24</td><td>1 charge/hour</td></tr>
+		<tr><td>Scatterlight suit (prismatic)</td><td>12,000 gp</td><td>+9*</td><td>+8</td><td>-1</td><td>5%</td><td>30 ft.</td><td>20 ft.</td><td>5 lbs.</td><td>24</td><td>1 charge/hour</td></tr>
+		<tr><td>Gravity suit</td><td>40,000 gp</td><td>Varies</td><td>+8</td><td>0</td><td>5%</td><td>30 ft.</td><td>20 ft.</td><td>5 lbs.</td><td>24</td><td>1 charge/hour</td></tr>
+	</tbody>
+	<thead>
+		<tr><th colspan = "11">Medium Armor</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>Panic suit</td><td>2,000 gp</td><td>+2</td><td>+2</td><td>-4</td><td>50%</td><td>20 ft.</td><td>15 ft.</td><td>2 lbs.</td><td>10</td><td>1 charge/hour, disposable</td></tr>
+		<tr><td>HEV suit</td><td>61,000 gp</td><td>+4</td><td>+3</td><td>-4</td><td>40%</td><td>20 ft.</td><td>15 ft.</td><td>20 lbs.</td><td>25</td><td>1 charge/hour</td></tr>
+		<tr><td>Nanite ablative armor</td><td>10,000 gp</td><td>+4</td><td>+4</td><td>-3</td><td>20%</td><td>20 ft.</td><td>15 ft.</td><td>35 lbs.</td><td>24</td><td>1 charge/hour</td></tr>
+	</tbody>
+	<thead>
+		<tr><th colspan = "11">Heavy Armor</th></tr>
+	</thead>
+	<tbody>		
+		<tr><td>Spacesuit</td><td>90,000 gp</td><td>+7</td><td>+0</td><td>-8</td><td>50%</td><td>20 ft.</td><td>15 ft.</td><td>35 lbs.</td><td>25</td><td>1 charge/hour</td></tr>
+		<tr><td>Smart armor (expanded form)</td><td>16,500 gp</td><td>+8</td><td>+1</td><td>-5</td><td>35%</td><td>20 ft.</td><td>15 ft.</td><td>20 lbs.</td><td>60</td><td>1 charge/10 minutes</td></tr>
+	</tbody>
+	<thead>
+		<tr><th colspan = "11">Shields</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>Hard light shield</td><td>6,400 gp</td><td>+2</td><td>&mdash;</td><td>0</td><td>10%</td><td>&mdash;</td><td>&mdash;</td><td>1 lb.</td><td>20</td><td>1 charge/minute</td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "11">* The full bonus applies only to touch AC. See item for details.</td></tr>
+	</tfoot>
+</table>
+
+<p class = "stat-block-title" id = "chameleon-suit">Chameleon Suit</p>
+<p class = "stat-block-1"><b>Price</b> 15,000 gp; <b>Type</b> light; <b>Weight</b> 5 lbs.; <b>Max Dex</b>  +6; <b>Penalty</b>  0; <b>Spell Failure</b> 10%; <b>Speed (30 ft.)</b>  30 ft.; <b>Speed (20 ft.)</b> 20 ft.; <b>Capacity</b> 50; <b>Usage</b> 1 charge/minute</p>
+<p class = "stat-block">This suit of light woven-fiber armor covers the wearer from ankle to wrist and includes a hooded cowl. Its surface consists of millions of tiny, scale-like lenses and LED screens. When powered on, a chameleon suit analyzes its environment and generates digital camouflage. The wearer gains a +10 competence bonus on Stealth checks and can hide in plain sight (as a ranger in his favored terrain).</p>
+<p class = "stat-block-breaker">Construction</p>
+<p class = "stat-block-1"><b>Craft</b> DC 29; <b>Cost</b> 7,500 gp</p>
+<p class = "stat-block">Craft Technological Arms and Armor, military lab</p>
+
+
+<p class = "stat-block-title" id = "deep-diving-suit">Deep Diving Suit</p>
+<p class = "stat-block-1"><b>Price</b> 26,000 gp; <b>Type</b> light; <b>Weight</b> 20 lbs.; <b>AC</b> +3; <b>Max Dex</b>  +5; <b>Penalty</b>  -2; <b>Spell Failure</b> 30%; <b>Speed (30 ft.)</b>  30 ft.; <b>Speed (20 ft.)</b> 20 ft.; <b>Capacity</b> 25; <b>Usage</b> 1 charge/hour</p>
+<p class = "stat-block">A deep diving suit is a body-tight mesh of reinforced rubber and polymer fitted with scrubbers that can draw and purify oxygen from its surrounding environment, extracting oxygen from water as easily as from air. The suit's helmet is close-fitting but offers excellent visibility, while the suit's fabric itself can flex while still remaining supportive against pressure&mdash;depths are treated as being 1,000 feet shallower than their actual depth for the purposes of determining pressure damage from deep water. The wearer is also immune to inhaled toxins and can breathe underwater with ease&mdash;the suit does not allow breathing in a vacuum.</p>
+<p class = "stat-block">A diving suit's hands and feet can activate webbing, long fins, and flippers, which the wearer can extend (and deactivate) as a move action. While in this mode, the wearer of the suit gains a swim speed of 20 feet and a +8 bonus on Swim checks, but the armor check penalty of the suit doubles to -4 and its land speed reduces to 20 feet (or 15 feet for slower characters, as appropriate). Swim checks are never penalized by a diving suit's armor check penalty.</p>
+<p class = "stat-block-breaker">Construction</p>
+<p class = "stat-block-1"><b>Craft</b> DC 26; <b>Cost</b> 13,000 gp</p>
+<p class = "stat-block">Craft Technological Arms and Armor, production lab</p>
+
+
+<p class = "stat-block-title" id = "gravity-suit">Gravity Suit</p>
+<p class = "stat-block-1"><b>Price</b> 40,000 gp; <b>Type</b> light; <b>Weight</b> 5 lbs.; <b>AC</b>  see text; <b>Max Dex</b>  +8; <b>Penalty</b>  0; <b>Spell Failure</b> 5%; <b>Speed (30 ft.)</b>  30 ft.; <b>Speed (20 ft.)</b> 20 ft.; <b>Capacity</b> 24; <b>Usage</b> 1 charge/hour</p>
+<p class = "stat-block">A gravity suit consists of several black, flexible straps attached to a framework of delicate servos, thin plates, and small strips of black polymer plastic&mdash;this give it an appearance of being ineffective armor. The armor bonus provided by an unpowered gravity suit is +0, but when activated, the suit generates a field of gravitons around the wearer that grants a +5 armor bonus (this bonus is a force effect). This bonus is doubled when it applies to the wearer's CMD score against bull rush, overrun, and trip attempts, and slows any fall as if the wearer were under the effect of a <a href = "../coreRulebook/spells/featherFall.html#feather-fall"><i>feather fall</i></a> spell.</p>
+<p class = "stat-block">At the cost of 1 additional charge per minute, the wearer of a gravity suit can fly at a speed of 60 ft. (average). Activating this ability is a standard action.</p>
+<p class = "stat-block-breaker">Construction</p>
+<p class = "stat-block-1"><b>Craft</b> DC 33; <b>Cost</b> 20,000 gp</p>
+<p class = "stat-block">Craft Technological Arms and Armor, graviton lab</p>
+
+
+<p class = "stat-block-title" id = "hard-light-shield">Hard Light Shield</p>
+<p class = "stat-block-1"><b>Price</b> 6,400 gp; <b>Type</b> shield; <b>Weight</b> 1 lb.; <b>Max Dex</b>  &mdash;; <b>Penalty</b>  0; <b>Spell Failure</b> 10%; <b>Speed (30 ft.)</b>  &mdash;; <b>Speed (20 ft.)</b> &mdash;; <b>Capacity</b> 20; <b>Usage</b> 1 charge/minute</p>
+<p class = "stat-block">This bulky bracelet is covered in blinking blue lights and pulsing holographic emitters. A hard light shield produces a translucent but substantial holographic barrier when activated. The shield bonus counts as a force effect and applies to the wielder's touch AC against beam and ray attacks (but not other touch attacks). As a transparent force effect, a hard light shield provides no bonus against lasers. A hard light shield can be used to deliver shield bash attacks like a heavy shield.</p>
+<p class = "stat-block">When turned off, a hard light shield provides no AC bonus and imposes no spell failure chance. Activating or deactivating a hard light shield is a move action. This item occupies the wearer's wrist slot.</p>
+<p class = "stat-block-breaker">Construction</p>
+<p class = "stat-block-1"><b>Craft</b> DC 27; <b>Cost</b> 3,200 gp</p>
+<p class = "stat-block">Craft Technological Arms and Armor, graviton lab</p>
+
+<p class = "stat-block-title" id = "heavy-weapon-harness">Heavy Weapon Harness</p>
+<p class = "stat-block-1"><b>Price</b> 9,000 gp; <b>Type</b> light; <b>Weight</b> 10 lbs.; <b>AC</b> +1; <b>Max Dex</b>  +6; <b>Penalty</b>  -1; <b>Spell Failure</b> 5%; <b>Speed (30 ft.)</b>  30 ft.; <b>Speed (20 ft.)</b> 20 ft.; <b>Capacity</b> &mdash;; <b>Usage</b> &mdash;</p>
+<p class = "stat-block">Known also as an "H-belt," a heavy weapon harness is an elaborate network of plastic and metal struts and straps. The harness can be worn in conjunction with any other suit of armor&mdash;the armor bonus granted by the heavy weapon harness does not stack with that granted by other suits of armor, but the armor check penalties and spell failure percentages do.</p>
+<p class = "stat-block">A heavy weapon harness provides its wearer with additional stability and support, allowing the user to wield heavy weapons as if they were regular firearms, using the Exotic Weapon (firearms) feat for proficiency rather than Exotic Weapon (heavy weaponry). A character with Exotic Weapon (heavy weaponry) who wears an H-belt finds the use of heavy weapons even easier, and gains a +1 circumstance bonus on all attack rolls made with harnessed heavy weapons.</p>
+<p class = "stat-block">Unlike most technological armors, a heavy weapon harness does not use power&mdash;its components are purely mechanical.</p>
+<p class = "stat-block-breaker">Construction</p>
+<p class = "stat-block-1"><b>Craft</b> DC 27; <b>Cost</b> 4,500 gp</p>
+<p class = "stat-block">Craft Technological Arms and Armor, military lab</p>
+
+
+<p class = "stat-block-title" id = "HEV-suit">HEV Suit</p>
+<p class = "stat-block-1"><b>Price</b> 61,000 gp; <b>Type</b> medium; <b>Weight</b> 20 lbs.; <b>AC</b> +4; <b>Max Dex</b>  +3; <b>Penalty</b>  -4; <b>Spell Failure</b> 40%; <b>Speed (30 ft.)</b>  20 ft.; <b>Speed (20 ft.)</b> 15 ft.; <b>Capacity</b> 25; <b>Usage</b> 1 charge/hour</p>
+<p class = "stat-block">Short for "hazardous environment," an HEV suit provides protection from radiation, disease, poisonous gas, cold, heat, and similar environmental dangers. The suit needs a power supply to work&mdash;while deactivated, none of the following abilities function at all.</p>
+<p class = "stat-block">While powered, the suit provides immunity to inhaled poisons and diseases, and provides resistance 10 against all forms of energy except for sonic damage. An HEV suit completely protects against low radiation, and reduces the effects of medium radiation to low radiation, but it offers no protection against high or severe radiation. The suit's self-repairing polymer resin fabric automatically seals secondary punctures or tears created by physical attacks to the wearer and damage dealt specifically against the suit. It repairs damage at the rate of 2d6 points of damage per charge consumed. While repairing damage in this manner, the suit's other protective functions listed above are any taken offline. An HEV suit has hardness 2 and 30 hit points.</p>
+<p class = "stat-block-breaker">Construction</p>
+<p class = "stat-block-1"><b>Craft</b> DC 28; <b>Cost</b> 30,500 gp</p>
+<p class = "stat-block">Craft Technological Arms and Armor, production lab</p>
+
+<p class = "stat-block-title" id = "inssuit">inssuit</p>
+<p class = "stat-block-1"><b>Price</b> 19,250 gp; <b>Type</b> light; <b>Weight</b> 10 lbs.; <b>AC</b> +3; <b>Max Dex</b>  +6; <b>Penalty</b>  0; <b>Spell Failure</b> 15%; <b>Speed (30 ft.)</b>  30 ft.; <b>Speed (20 ft.)</b> 20 ft.; <b>Capacity</b> &mdash;; <b>Usage</b> &mdash;</p>
+<p class = "stat-block">This padded jumpsuit is made of resilient polymers interwoven with superconducting thread. It provides modest protection from conventional and energy weapons. The wearer applies the armor's AC bonus (including enhancement bonus, if any) against touch and ranged touch attacks that deal energy damage. In addition, the inssuit provides resist energy 5 against cold, acid, and electricity.</p>
+<p class = "stat-block-breaker">Construction</p>
+<p class = "stat-block-1"><b>Craft</b> DC 24; <b>Cost</b> 9,625 gp</p>
+<p class = "stat-block">Craft Technological Arms and Armor, military lab</p>
+
+
+<p class = "stat-block-title" id = "nanite-ablative-armor">NANITE ABLATIVE ARMOR</p>
+<p class = "stat-block-1"><b>Price</b> 10,000 gp; <b>Type</b> medium; <b>Weight</b> 35 lbs.; <b>AC</b> +4; <b>Max Dex</b>  +4; <b>Penalty</b>  -3; <b>Spell Failure</b> 20%; <b>Speed (30 ft.)</b>  20 ft.; <b>Speed (20 ft.)</b> 15 ft.; <b>Capacity</b>  24; <b>Usage</b> 1 charge/hour</p>
+<p class = "stat-block">This suit of armor consists of several layers of scaly mesh over a thick, clothlike polymer weave. When activated, a suit of nanite ablative armor grants the wearer additional protection against nanites, through the use of imperceptible magnetic fields that repel the microscopic robots. An active suit of nanite ablative armor grants its armor bonus (including any enhancement bonuses) to the wearer's touch AC against nanites. The wearer gains a +4 resistance bonus on saving throws made against nanite-related effects delivered through means other than touch attacks.</p>
+<p class = "stat-block-breaker">Construction</p>
+<p class = "stat-block-1"><b>Craft</b> DC 30; <b>Cost</b> 5,000 gp</p>
+<p class = "stat-block">Craft Technological Arms and Armor, graviton lab</p>
+
+
+<p class = "stat-block-title" id = "panic-suit">PANIC Suit</p>
+<p class = "stat-block-1"><b>Price</b> 2,000 gp; <b>Type</b> medium; <b>Weight</b> 2 lbs.; <b>Max Dex</b>  +2; <b>Penalty</b>  -4; <b>Spell Failure</b> 50%; <b>Speed (30 ft.)</b>  20 ft.; <b>Speed (20 ft.)</b> 15 ft.; <b>Capacity</b>  10; <b>Usage</b> 1 charge/hour (disposable)</p>
+<p class = "stat-block">When not being worn, a panic suit is a fist-sized plastic sphere. When activated, it envelops the creature holding it in a full-body protective suit. While activated, it provides immunity to low radiation and resistance 5 against all forms of energy except sonic damage. Its air filters grant a +4 bonus on saving throws against inhaled poisons and diseases.</p>
+<p class = "stat-block">A panic suit is a single-use item. When its charges run out or its wearer deactivates it, it falls apart into useless fragments.</p>
+<p class = "stat-block-breaker">Construction</p>
+<p class = "stat-block-1"><b>Craft</b> DC 30; <b>Cost</b> 1,000 gp</p>
+<p class = "stat-block">Craft Technological Arms and Armor, military lab</p>
+
+<p class = "stat-block-title" id = "scatterlight-suit">Scatterlight Suit</p>
+<p class = "stat-block-1"><b>Price</b> varies; <b>Brown</b> 100 gp; <b>Black</b> 150 gp; <b>White</b> 200 gp; <b>Gray</b> 700 gp; <b>Green</b> 1,000 gp; <b>Red</b> 1,400 gp; <b>Blue</b> 3,600 gp; <b>Orange</b> 6,000 gp; <b>Prismatic</b> 12,000 gp; <b>Type</b> light; <b>Weight</b> 5 lbs.; <b>AC</b> +1; <b>Max Dex</b>  +8; <b>Penalty</b>  -1; <b>Spell Failure</b> 5%; <b>Speed</b> (30 ft.)</b>  30 ft.; <b>Speed</b> (20 ft.) 20 ft.; <b>Capacity</b>  24; <b>Usage</b>  1 charge/hour</p>
+<p class = "stat-block">A scatterlight suit is a tight, form-fitting suit of highly reflective polymers and synthetic metal fibers. It's designed to reflect beam weapon attacks, and provides only minimal protection against physical damage. Activating a scatterlight suit is a standard action; once activated, the suit diffuses and blurs light reflected from its surface, making the wearer appear hazy and indistinct.</p>
+<p class = "stat-block">While active, a scatterlight suit increases the wearer's touch AC by a variable amount&mdash;this bonus is an armor bonus, but does not increase the wearer's normal or flat-footed AC beyond the scatterlight suit's baseline armor bonus of +1. This bonus to touch AC only applies to attacks made by beam weapons and rays&mdash;it does not provide additional protection to other touch attacks.</p>
+
+<table>
+	<thead>
+		<tr><th>Color</th><th>Touch AC Bonus</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>Brown</td><td>+1</td></tr>
+		<tr><td>Black</td><td>+2</td></tr>
+		<tr><td>White</td><td>+3</td></tr>
+		<tr><td>Gray</td><td>+4</td></tr>
+		<tr><td>Green</td><td>+5</td></tr>
+		<tr><td>Red</td><td>+6</td></tr>
+		<tr><td>Blue</td><td>+7</td></tr>
+		<tr><td>Orange</td><td>+8</td></tr>
+		<tr><td>Prismatic</td><td>+9</td></tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr><th>Construction</th><th>Craft (varies)</th><th>Cost (varies)</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>Brown</td><td>DC 24</td><td>50 gp</td></tr>
+		<tr><td>Black</td><td>DC 25</td><td>75 gp</td></tr>
+		<tr><td>White</td><td>DC 26</td><td>100 gp</td></tr>
+		<tr><td>Gray</td><td>DC 27</td><td>350 gp</td></tr>
+		<tr><td>Green</td><td>DC 28</td><td>500 gp</td></tr>
+		<tr><td>Red</td><td>DC 29</td><td>700 gp</td></tr>
+		<tr><td>Blue</td><td>DC 30</td><td>1,800 gp</td></tr>
+		<tr><td>Orange</td><td>DC 31</td><td>3,000 gp</td></tr>
+		<tr><td>Prismatic</td><td>DC 32</td><td>6,000 gp</td></tr>
+	</tbody>
+</table>
+
+<p class = "stat-block">Craft Technological Arms and Armor, military lab</p>
+
+<p class = "stat-block-title" id = "smart-armor-compact-form">Smart Armor (Compact Form)</p>
+<p class = "stat-block-1"><b>Price</b> 16,500 gp; <b>Type</b> light; <b>Weight</b> 20 lbs.; <b>AC</b>  +4; <b>Max Dex</b>  +4; <b>Penalty</b>  -2; <b>Spell Failure</b> 25%; <b>Speed (30 ft.)</b>  30 ft.; <b>Speed (20 ft.)</b>  20 ft.; <b>Capacity</b>  60; <b>Usage</b>  1 charge/10 minutes</p>
+
+
+<p class = "stat-block-title" id = "smart-armor-expanded-form">Smart Armor (Expanded Form)</p>
+<p class = "stat-block-1"><b>Price</b> &mdash;; <b>Type</b> heavy; <b>Weight</b> 20 lbs.; <b>AC</b>  +8; <b>Max Dex</b>  +1; <b>Penalty</b>  -5; <b>Spell Failure</b> 35%; <b>Speed (30 ft.)</b>  20 ft.; <b>Speed (20 ft.)</b>  15 ft.; <b>Capacity</b>  60; <b>Usage</b>  1 charge/10 minutes</p>
+<p class = "stat-block">While inactive, smart armor resembles a breastplate of adamantine scales, which doesn't seem out of place among most metal armor, except for its alien aesthetics. When activated as an immediate action, smart armor expands to cover the wearer's legs and limbs, and a built-in magnetic generator hardens the armor into a rigid, plate-like form. When in this form, it uses the statistics of smart armor (expanded form). It can be collapsed back to breastplate form with a move action, and automatically retracts when it loses power. In either form, smart armor provides DR 2/&mdash; due to its adamantine construction. Smart armor is considered masterwork armor.</p>
+<p class = "stat-block-breaker">Construction</p>
+<p class = "stat-block-1"><b>Craft</b> DC 28; <b>Cost</b> 14,00 gp</p>
+<p class = "stat-block">Craft Technological Arms and Armor, military lab</p>
+
+
+<p class = "stat-block-title" id = "spacesuit">Spacesuit</p>
+<p class = "stat-block-1"><b>Price</b> 90,000 gp; <b>Type</b> heavy; <b>Weight</b> 35 lbs.; <b>AC</b> +7; <b>Max Dex</b>  +0; <b>Penalty</b>  -8; <b>Spell Failure</b> 50%; <b>Speed (30 ft.)</b>  20 ft.; <b>Speed (20 ft.)</b> 15 ft.; <b>Capacity</b>  25; <b>Usage</b> 1 charge/hour</p>
+<p class = "stat-block">This airtight suit of synthetic polymers includes a transparent, dome-like helmet that completely covers the wearer's head. A spacesuit is nearly identical in function to an <a href = "armor.html#HEV-suit">HEV suit</a>, except that as long as the spacesuit is charged, it provides a bit more armor protection as well as complete protection from all radiation and exposure to vacuum. A spacesuit repairs damage to itself at the rate of 4d6 points of damage per charge consumed. It has hardness 6 and 60 hit points.</p>
+<p class = "stat-block">A space suit is fitted with numerous small booster jets that grant the wearer a fly speed of 20 ft. (poor) in areas of zero gravity while the spacesuit is charged. The boosters impart no benefit in areas of high, low, or normal gravity.</p>
+<p class = "stat-block-breaker">Construction</p>
+<p class = "stat-block-1"><b>Craft</b> DC 30; <b>Cost</b> 45,000 gp</p>
+<p class = "stat-block">Craft Technological Arms and Armor, military lab</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Armor",globalNavPath=[{ href: '/pathfinderRPG/prd/technologyGuide/armor.html', name: 'Technology Guide' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

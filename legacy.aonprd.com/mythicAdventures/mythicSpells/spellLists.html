@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Mythic Spell Lists</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "spellLists.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../glossary.html">Glossary</a></li>
+						<li><a href = "../mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "spellLists.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "spellLists.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "spellLists.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "spellLists.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id="spell-lists">Spell Lists</h1>
+<p>The following lists summarize all the mythic versions of existing spells presented in this section, as well as new spells that draw upon, grant, or steal mythic power.</p>
+<p><b>Order of Presentation</b>: In the spell lists and the short descriptions that follow them, the spells are presented in alphabetical order by name except for those belonging to certain spell chains. When a spell's name begins with "lesser," "greater," or "mass," the spell is alphabetized under the second word of the spell name instead.</p>
+<p><b>Hit Dice</b>: The term "Hit Dice" is used synonymously with "character levels" for effects that affect a specific number of Hit Dice of creatures.</p>
+<p><b>Caster Level</b>: A spell's power often depends on caster level, which is defined as the caster's class level for the purpose of casting a particular spell.</p>
+<p><b>Creatures and Characters</b>: "Creature" and "character" are used synonymously in the spell descriptions.</p>
+<p><b>New Spells</b>: An asterisk (*) after a spell name indicates a new spell presented in <i>Mythic Adventures</i>.</p>
+<p><b>Augmented Mythic Spells</b>: A superscript "A" appearing at the end of a spell's name in these lists indicates the spell has an <a href="../mythicSpells.html#augmented-effect">augmented effect</a> when the caster expends additional uses of mythic power. See the individual spell descriptions for information on the augmented effect.</p>
+
+<h2 id="alchemist-mythic-formulae">Alchemist Mythic Formulae</h2>
+<p><b>1st-Level Alchemist Mythic Formulae</b>&mdash;<a href="anticipatePeril.html#anticipate-peril-mythic"><i>anticipate peril</i></a>, <a href="cureLightWounds.html#cure-light-wounds-mythic"><i>cure light wounds</i></a>, <a href="endureElements.html#endure-elements-mythic"><i>endure elements</i></a>, <a href="enlargePerson.html#enlarge-person-mythic"><i>enlarge person</i></a>, <a href="expeditiousRetreat.html#expeditious-retreat-mythic"><i>expeditious retreat</i></a>, <a href="reducePerson.html#reduce-person-mythic"><i>reduce person</i></a>, <a href="trueStrike.html#true-strike-mythic"><i>true strike</i></a><sup>A</sup>.</p>
+<p><b>2nd-Level Alchemist Mythic Formulae</b>&mdash;<a href="ablativeBarrier.html#ablative-barrier-mythic"><i>ablative barrier</i></a>, <a href="animalAspect.html#animal-aspect-mythic"><i>animal aspect</i></a>, <a href="barkskin.html#barkskin-mythic"><i>barkskin</i></a><sup>A</sup>, <a href="blisteringInvective.html#blistering-invective-mythic-mythic"><i>blistering invective</i></a><sup>A</sup>, <a href="cureModerateWounds.html#cure-moderate-wounds-mythic"><i>cure moderate wounds</i></a>, <a href="falseLife.html#false-life-mythic"><i>false life</i></a>, <a href="invisibility.html#invisibility-mythic"><i>invisibility</i></a><sup>A</sup>, <a href="levitate.html#levitate-mythic"><i>levitate</i></a><sup>A</sup>, <a href="protectionFromArrows.html#protection-from-arrows-mythic"><i>protection from arrows</i></a>, <a href="resistEnergy.html#resist-energy-mythic"><i>resist energy</i></a>, <a href="spiderClimb.html#spider-climb-mythic"><i>spider climb</i></a>, <a href="touchInjection.html#touch-injection-mythic"><i>touch injection</i></a>.</p>
+<p><b>3rd-Level Alchemist Mythic Formulae</b>&mdash;<a href="battleTrance.html#battle-trance-mythic"><i>battle trance</i></a><sup>A</sup>, <a href="beastShape.html#beast-shape-i-mythic"><i>beast shape I</i></a><sup>A</sup>, <a href="burrow.html#burrow-mythic"><i>burrow</i></a><sup>A</sup>, <a href="cureSeriousWounds.html#cure-serious-wounds-mythic"><i>cure serious wounds</i></a>, <a href="draconicReservoir.html#draconic-reservoir-mythic"><i>draconic reservoir</i></a><sup>A</sup>, <i><a href="fly.html" >fly</a></i><sup>A</sup>, <a href="gaseousForm.html#gaseous-form-mythic"><i>gaseous form</i></a><sup>A</sup>, <a href="haste.html#haste-mythic"><i>haste</i></a><sup>A</sup>, <a href="heroism.html#heroism-mythic"><i>heroism</i></a><sup>A</sup>, <a href="monstrousPhysique.html#monstrous-physique-i-mythic"><i>monstrous physique I</i></a><sup>A</sup>, <a href="vomitTwin.html#vomit-twin-mythic"><i>vomit twin</i></a><sup>A</sup>.</p>
+<p><b>4th-Level Alchemist Mythic Formulae</b>&mdash;<a href="beastShape.html#beast-shape-ii-mythic"><i>beast shape II</i></a><sup>A</sup>, <a href="cureCriticalWounds.html#cure-critical-wounds-mythic"><i>cure critical wounds</i></a>, <a href="deathless.html#deathless-mythic"><i>deathless</i></a><sup>A</sup>*, <a href="dragonsBreath.html#dragon's-breath-mythic"><i>dragon's breath</i></a>, <a href="elementalBody.html#elemental-body-i-mythic"><i>elemental body I</i></a><sup>A</sup>, <a href="fireShield.html#fire-shield-mythic"><i>fire shield</i></a>, <a href="monstrousPhysique.html#monstrous-physique-ii-mythic"><i>monstrous physique II</i></a><sup>A</sup>, <a href="scorchingAshForm.html#scorching-ash-form-mythic"><i>scorching ash form</i></a><sup>A</sup>, <a href="stoneskin.html#stoneskin-mythic"><i>stoneskin</i></a>.</p>
+<p><b>5th-Level Alchemist Mythic Formulae</b>&mdash;<a href="beastShape.html#beast-shape-iii-mythic"><i>beast shape III</i></a><sup>A</sup>, <a href="dream.html#dream-mythic"><i>dream</i></a>, <a href="elementalBody.html#elemental-body-ii-mythic"><i>elemental body II</i></a><sup>A</sup>, <a href="monstrousPhysique.html#monstrous-physique-iii-mythic"><i>monstrous physique III</i></a><sup>A</sup>, <a href="nightmare.html#nightmare-mythic"><i>nightmare</i></a><sup>A</sup>, <a href="sending.html#sending-mythic"><i>sending</i></a><sup>A</sup>.</p>
+<p><b>6th-Level Alchemist Mythic Formulae</b>&mdash;<a href="beastShape.html#beast-shape-iv-mythic"><i>beast shape IV</i></a><sup>A</sup>, <a href="elementalBody.html#elemental-body-iii-mythic"><i>elemental body III</i></a><sup>A</sup>, <a href="formOfTheDragon.html#form-of-the-dragon-i-mythic"><i>form of the dragon I</i></a><sup>A</sup>, <a href="heal.html#heal-mythic"><i>heal</i></a><sup>A</sup>, <a href="mislead.html#mislead-mythic"><i>mislead</i></a><sup>A</sup>, <a href="monstrousPhysique.html#monstrous-physique-iv-mythic"><i>monstrous physique IV</i></a><sup>A</sup>, <a href="transformation.html#transformation-mythic"><i>transformation</i></a>, <a href="walkThroughSpace.html#walk-through-space-mythic"><i>walk through space</i></a>.</p>
+
+<h2 id="antipaladin-mythic-spells">Antipaladin Mythic Spells</h2>
+<p><b>1st-Level Antipaladin Mythic Spells</b>&mdash;<a href="bane.html#bane-mythic"><i>bane</i></a>, <a href="command.html#command-mythic"><i>command</i></a>, <a href="deathKnell.html#death-knell-mythic"><i>death knell</i></a><sup>A</sup>, <a href="inflictLightWounds.html#inflict-light-wounds-mythic"><i>inflict light wounds</i></a>, <a href="murderousCommand.html#murderous-command-mythic"><i>murderous command</i></a><sup>A</sup>, <a href="protectionFrom.html#protection-from-mythic"><i>protection from good/law</i></a>.</p>
+<p><b>2nd-Level Antipaladin Mythic Spells</b>&mdash;<a href="blindnessDeafness.html#blindness-deafness-mythic"><i>blindness/deafness</i></a>, <a href="darkness.html#darkness-mythic"><i>darkness</i></a>, <a href="desecrate.html#desecrate-mythic"><i>desecrate</i></a>, <a href="invisibility.html#invisibility-mythic"><i>invisibility</i></a><sup>A</sup>, <a href="perniciousPoison.html#pernicious-poison-mythic"><i>pernicious poison</i></a><sup>A</sup>, <a href="silence.html#silence-mythic"><i>silence</i></a>.</p>
+<p><b>3rd-Level Antipaladin Mythic Spells</b>&mdash;<a href="animateDead.html#animate-dead-mythic"><i>animate dead</i></a><sup>A</sup>, <a href="battleTrance.html#battle-trance-mythic"><i>battle trance</i></a><sup>A</sup>, <a href="contagion.html#contagion-mythic"><i>contagion</i></a><sup>A</sup>, <a href="defileArmor.html#defile-armor-mythic"><i>defile armor</i></a><sup>A</sup>, <a href="dispelMagic.html#dispel-magic-mythic"><i>dispel magic</i></a>, <a href="inflictModerateWounds.html#inflict-moderate-wounds-mythic"><i>inflict moderate wounds</i></a>, <a href="magicWeaponGreater.html#magic-weapon-greater-mythic"><i>magic weapon (greater)</i></a><sup>A</sup>, <a href="vampiricTouch.html#vampiric-touch-mythic"><i>vampiric touch</i></a>.</p>
+<p><b>4th-Level Antipaladin Mythic Spells</b>&mdash;<a href="inflictSeriousWounds.html#inflict-serious-wounds-mythic"><i>inflict serious wounds</i></a>.</p>
+
+<h2 id="bard-mythic-spells">Bard Mythic Spells</h2>
+<p><b>1st-Level Bard Mythic Spells</b>&mdash;<a href="anticipatePeril.html#anticipate-peril-mythic"><i>anticipate peril</i></a>, <a href="chordOfShards.html#chord-of-shards-mythic"><i>chord of shards</i></a>, <a href="cureLightWounds.html#cure-light-wounds-mythic"><i>cure light wounds</i></a>, <a href="earPiercingScream.html#ear-piercing-scream-mythic"><i>ear-piercing scream</i></a><sup>A</sup>, <a href="expeditiousRetreat.html#expeditious-retreat-mythic"><i>expeditious retreat</i></a>, <a href="featherFall.html#feather-fall-mythic"><i>feather fall</i></a><sup>A</sup>, <a href="grease.html#grease-mythic"><i>grease</i></a><sup>A</sup>, <a href="hideousLaughter.html#hideous-laughter-mythic"><i>hideous laughter</i></a><sup>A</sup>, <a href="jitterbugs.html#jitterbugs-mythic"><i>jitterbugs</i></a>, <a href="memoryLapse.html#memory-lapse-mythic"><i>memory lapse</i></a><sup>A</sup>, <a href="savingFinale.html#saving-finale-mythic"><i>saving finale</i></a><sup>A</sup>, <a href="silentImage.html#silent-image-mythic"><i>silent image</i></a><sup>A</sup>, <a href="sleep.html#sleep-mythic"><i>sleep</i></a><sup>A</sup>.</p>
+<p><b>2nd-Level Bard Mythic Spells</b>&mdash;<a href="blindnessDeafness.html#blindness-deafness-mythic"><i>blindness/deafness</i></a>, <a href="blisteringInvective.html#blistering-invective-mythic-mythic"><i>blistering invective</i></a><sup>A</sup>, <a href="boilingBlood.html#boiling-blood-mythic"><i>boiling blood</i></a><sup>A</sup>, <a href="cureModerateWounds.html#cure-moderate-wounds-mythic"><i>cure moderate wounds</i></a>, <a href="darkness.html#darkness-mythic"><i>darkness</i></a>, <a href="dustOfTwilight.html#dust-of-twilight-mythic"><i>dust of twilight</i></a><sup>A</sup>, <a href="heroism.html#heroism-mythic"><i>heroism</i></a><sup>A</sup>, <a href="invisibility.html#invisibility-mythic"><i>invisibility</i></a><sup>A</sup>, <a href="mirrorImage.html#mirror-image-mythic"><i>mirror image</i></a>, <a href="shadowAnchor.html#shadow-anchor-mythic"><i>shadow anchor</i></a>, <a href="shareGlory.html#share-glory-mythic"><i>share glory</i></a>*, <a href="shatter.html#shatter-mythic"><i>shatter</i></a>, <a href="silence.html#silence-mythic"><i>silence</i></a>, <a href="suggestion.html#suggestion-mythic"><i>suggestion</i></a>, <a href="summonSwarm.html#summon-swarm-mythic"><i>summon swarm</i></a>.</p>
+<p><b>3rd-Level Bard Mythic Spells</b>&mdash;<a href="blink.html#blink-mythic"><i>blink</i></a><sup>A</sup>, <a href="confusion.html#confusion-mythic"><i>confusion</i></a><sup>A</sup>, <a href="cureSeriousWounds.html#cure-serious-wounds-mythic"><i>cure serious wounds</i></a>, <a href="daylight.html#daylight-mythic"><i>daylight</i></a>, <a href="deepSlumber.html#deep-slumber-mythic"><i>deep slumber</i></a><sup>A</sup>, <a href="dispelMagic.html#dispel-magic-mythic"><i>dispel magic</i></a>, <a href="divineFavor.html#divine-favor-mythic"><i>divine favor</i></a>, <a href="gaseousForm.html#gaseous-form-mythic"><i>gaseous form</i></a><sup>A</sup>, <a href="haste.html#haste-mythic"><i>haste</i></a><sup>A</sup>, <a href="phantomSteed.html#phantom-steed-mythic"><i>phantom steed</i></a><sup>A</sup>, <a href="restoreMythicPower.html#restore-mythic-power-mythic"><i>restore mythic power</i></a>*, <a href="slow.html#slow-mythic"><i>slow</i></a>.</p>
+<p><b>4th-Level Bard Mythic Spells</b>&mdash;<a href="breakEnchantment.html#break-enchantment-mythic"><i>break enchantment</i></a><sup>A</sup>, <a href="cureCriticalWounds.html#cure-critical-wounds-mythic"><i>cure critical wounds</i></a>, <a href="detectScrying.html#detect-scrying-mythic"><i>detect scrying</i></a><sup>A</sup>, <a href="dimensionDoor.html#dimension-door-mythic"><i>dimension door</i></a>, <a href="discordantBlast.html#discordant-blast-mythic"><i>discordant blast</i></a><sup>A</sup>, <a href="dominatePerson.html#dominate-person-mythic"><i>dominate person</i></a>, <a href="lendPath.html#lend-path"><i>lend path</i></a>, <a href="modifyMemory.html#modify-memory-mythic"><i>modify memory</i></a><sup>A</sup>, <a href="shout.html#shout-mythic"><i>shout</i></a>.</p>
+<p><b>5th-Level Bard Mythic Spells</b>&mdash;<a href="dream.html#dream-mythic"><i>dream</i></a>, <a href="mislead.html#mislead-mythic"><i>mislead</i></a><sup>A</sup>, <a href="nightmare.html#nightmare-mythic"><i>nightmare</i></a><sup>A</sup>, <a href="resonatingWord.html#resonating-word-mythic"><i>resonating word</i></a>.</p>
+<p><b>6th-Level Bard Mythic Spells</b>&mdash;<a href="animateObjects.html#animate-objects-mythic"><i>animate objects</i></a>, <a href="irresistibleDance.html#irresistible-dance"><i>irresistible dance</i></a></p>
+
+<h2 id="cleric-mythic-spells">Cleric Mythic Spells</h2>
+<p><b>1st-Level Cleric Mythic Spells</b>&mdash;<a href="bane.html#bane-mythic"><i>bane</i></a>, <a href="bless.html#bless-mythic"><i>bless</i></a>, <a href="command.html#command-mythic"><i>command</i></a>, <a href="cureLightWounds.html#cure-light-wounds-mythic"><i>cure light wounds</i></a>, <a href="divineFavor.html#divine-favor-mythic"><i>divine favor</i></a>, <a href="endureElements.html#endure-elements-mythic"><i>endure elements</i></a>, <a href="entropicShield.html#entropic-shield-mythic"><i>entropic shield</i></a>, <a href="inflictLightWounds.html#inflict-light-wounds-mythic"><i>inflict light wounds</i></a>, <a href="knowTheEnemy.html#know-the-enemy-mythic"><i>know the enemy</i></a>, <a href="mightyFistOfTheEarth.html#mighty-fist-of-the-earth-mythic"><i>fist of the earth</i></a>, <a href="murderousCommand.html#murderous-command-mythic"><i>murderous command</i></a><sup>A</sup>, <a href="obscuringMist.html#obscuring-mist-mythic"><i>obscuring mist</i></a><sup>A</sup>, <a href="protectionFrom.html#protection-from-mythic"><i>protection from chaos/evil/good/law</i></a>, <a href="sanctuary.html#sanctuary-mythic"><i>sanctuary</i></a><sup>A</sup>, <a href="shieldOfFaith.html#shield-of-faith-mythic"><i>shield of faith</i></a>, <a href="sunMetal.html#sun-metal-mythic"><i>sun metal</i></a>, <a href="theftWard.html#theft-ward-mythic"><i>theft ward</i></a>.</p>
+<p><b>2nd-Level Cleric Mythic Spells</b>&mdash;<a href="blindingRay.html#blinding-ray-mythic"><i>blinding ray</i></a>, <a href="boilingBlood.html#boiling-blood-mythic"><i>boiling blood</i></a><sup>A</sup>, <a href="consecrate.html#consecrate-mythic"><i>consecrate</i></a>, <a href="cureModerateWounds.html#cure-moderate-wounds-mythic"><i>cure moderate wounds</i></a>, <a href="darkness.html#darkness-mythic"><i>darkness</i></a>, <a href="deathKnell.html#death-knell-mythic"><i>death knell</i></a><sup>A</sup>, <a href="desecrate.html#desecrate-mythic"><i>desecrate</i></a>, <a href="disfiguringTouch.html#disfiguring-touch-mythic"><i>disfiguring touch</i></a><sup>A</sup>, <a href="inflictModerateWounds.html#inflict-moderate-wounds-mythic"><i>inflict moderate wounds</i></a>, <a href="makeWhole.html#make-whole-mythic"><i>make whole</i></a>, <a href="resistEnergy.html#resist-energy-mythic"><i>resist energy</i></a>, <a href="shatter.html#shatter-mythic"><i>shatter</i></a>, <a href="shieldOther.html#shield-other-mythic"><i>shield other</i></a>, <a href="silence.html#silence-mythic"><i>silence</i></a>, <a href="spiritualWeapon.html#spiritual-weapon-mythic"><i>spiritual weapon</i></a>, <a href="surmountAffliction.html#surmount-affliction-mythic"><i>surmount affliction</i></a><sup>A</sup>.</p>
+<p><b>3rd-Level Cleric Mythic Spells</b>&mdash;<a href="animateDead.html#animate-dead-mythic"><i>animate dead</i></a><sup>A</sup>, <a href="bleedGlory.html#bleed-glory-mythic"><i>bleed glory</i></a>*, <a href="blindnessDeafness.html#blindness-deafness-mythic"><i>blindness/deafness</i></a>, <a href="contagion.html#contagion-mythic"><i>contagion</i></a><sup>A</sup>, <a href="cureSeriousWounds.html#cure-serious-wounds-mythic"><i>cure serious wounds</i></a>, <a href="daybreakArrow.html#daybreak-arrow-mythic"><i>daybreak arrow</i></a>, <a href="daylight.html#daylight-mythic"><i>daylight</i></a>, <a href="dispelMagic.html#dispel-magic-mythic"><i>dispel magic</i></a>, <a href="glyphOfWarding.html#glyph-of-warding-mythic"><i>glyph of warding</i></a>, <a href="inflictSeriousWounds.html#inflict-serious-wounds-mythic"><i>inflict serious wounds</i></a>, <a href="magicVestment.html#magic-vestment-mythic"><i>magic vestment</i></a><sup>A</sup>, <a href="prayer.html#prayer-mythic"><i>prayer</i></a>, <a href="restoreMythicPower.html#restore-mythic-power-mythic"><i>restore mythic power</i></a>*, <a href="sacredBond.html#sacred-bond-mythic"><i>sacred bond</i></a><sup>A</sup>, <a href="sandsOfTime.html#sands-of-time-mythic"><i>sands of time</i></a><sup>A</sup>, <a href="searingLight.html#searing-light-mythic"><i>searing light</i></a>, <a href="shareGlory.html#share-glory-mythic"><i>share glory</i></a>*, <a href="stoneShape.html#stone-shape-mythic"><i>stone shape</i></a>.</p>
+<p><b>4th-Level Cleric Mythic Spells</b>&mdash;<a href="battleTrance.html#battle-trance-mythic"><i>battle trance</i></a><sup>A</sup>, <a href="blessingOfFervor.html#blessing-of-fervor-mythic"><i>blessing of fervor</i></a>, <a href="bloodCrowStrike.html#blood-crow-strike-mythic"><i>blood crow strike</i></a>, <a href="chaosHammer.html#chaos-hammer-mythic"><i>chaos hammer</i></a>, <a href="cureCriticalWounds.html#cure-critical-wounds-mythic"><i>cure critical wounds</i></a>, <a href="deathless.html#deathless-mythic"><i>deathless</i></a><sup>A</sup>*, <a href="giantVermin.html#giant-vermin-mythic"><i>giant vermin</i></a><sup>A</sup>, <a href="holySmite.html#holy-smite-mythic"><i>holy smite</i></a>, <a href="inflictCriticalWounds.html#inflict-critical-wounds-mythic"><i>inflict critical wounds</i></a>, <a href="magicWeaponGreater.html#magic-weapon-greater-mythic"><i>magic weapon (greater)</i></a><sup>A</sup>, <a href="mythicSeverance.html#mythic-severance"><i>mythic severance</i></a>*, <a href="ordersWrath.html#order-s-wrath-mythic"><i>order's wrath</i></a>, <a href="sending.html#sending-mythic"><i>sending</i></a><sup>A</sup>, <a href="unholyBlight.html#unholy-blight-mythic"><i>unholy blight</i></a>.</p>
+<p><b>5th-Level Cleric Mythic Spells</b>&mdash;<a href="breakEnchantment.html#break-enchantment-mythic"><i>break enchantment</i></a><sup>A</sup>, <a href="breathOfLife.html#breath-of-life-mythic"><i>breath of life</i></a><sup>A</sup>, <a href="flameStrike.html#flame-strike-mythic"><i>flame strike</i></a>, <a href="lendPath.html#lend-path"><i>lend path</i></a>, <a href="pillarOfLife.html#pillar-of-life-mythic"><i>pillar of life</i></a><sup>A</sup>, <a href="planeShift.html#plane-shift-mythic"><i>plane shift</i></a><sup>A</sup>, <a href="stealPower.html#steal-power-mythic"><i>steal power</i></a>*, <a href="wallOfStone.html#wall-of-stone-mythic"><i>wall of stone</i></a><sup>A</sup>.</p>
+<p><b>6th-Level Cleric Mythic Spells</b>&mdash;<a href="animateObjects.html#animate-objects-mythic"><i>animate objects</i></a>, <a href="bladeBarrier.html#blade-barrier-mythic"><i>blade barrier</i></a><sup>A</sup>, <a href="harm.html#harm-mythic"><i>harm</i></a><sup>A</sup>, <a href="heal.html#heal-mythic"><i>heal</i></a><sup>A</sup>.</p>
+<p><b>7th-Level Cleric Mythic Spells</b>&mdash;<a href="blasphemy.html#blasphemy-mythic"><i>blasphemy</i></a>, <a href="controlWeather.html#control-weather-mythic"><i>control weather</i></a><sup>A</sup>, <a href="dictum.html#dictum-mythic"><i>dictum</i></a>, <a href="holyWord.html#holy-word-mythic"><i>holy word</i></a>, <a href="regenerate.html#regenerate-mythic"><i>regenerate</i></a>, <a href="terraform.html#terraform-mythic"><i>terraform</i></a>*, <a href="wordOfChaos.html#word-of-chaos-mythic"><i>word of chaos</i></a>.</p>
+<p><b>8th-Level Cleric Mythic Spells</b>&mdash;<a href="antimagicField.html#antimagic-field-mythic"><i>antimagic field</i></a>, <a href="dimensionalLock.html#dimensional-lock-mythic"><i>dimensional lock</i></a><sup>A</sup>, <a href="earthquake.html#earthquake-mythic"><i>earthquake</i></a><sup>A</sup>, <a href="fireStorm.html#fire-storm-mythic"><i>fire storm</i></a><sup>A</sup>, <a href="orbOfTheVoid.html#orb-of-the-void-mythic"><i>orb of the void</i></a><sup>A</sup>.</p>
+<p><b>9th-Level Cleric Mythic Spells</b>&mdash;<a href="ascension.html#ascension-mythic"><i>ascension</i></a>*, <a href="stormOfVengeance.html#storm-of-vengeance-mythic"><i>storm of vengeance</i></a><sup>A</sup>.</p>
+
+<h2 id="druid-mythic-spells">Druid Mythic Spells</h2>
+<p><b>1st-Level Druid Mythic Spells</b>&mdash;<a href="callAnimal.html#call-animal-mythic"><i>call animal</i></a><sup>A</sup>, <a href="cureLightWounds.html#cure-light-wounds-mythic"><i>cure light wounds</i></a>, <a href="endureElements.html#endure-elements-mythic"><i>endure elements</i></a>, <a href="entangle.html#entangle-mythic"><i>entangle</i></a>, <a href="faerieFire.html#faerie-fire-mythic"><i>faerie fire</i></a><sup>A</sup>, <a href="goodberry.html#goodberry-mythic"><i>goodberry</i></a><sup>A</sup>, <a href="hydraulicPush.html#hydraulic-push-mythic"><i>hydraulic push</i></a><sup>A</sup>, <a href="magicFang.html#magic-fang-mythic"><i>magic fang</i></a>, <a href="mightyFistOfTheEarth.html#mighty-fist-of-the-earth-mythic"><i>fist of the earth</i></a>, <a href="obscuringMist.html#obscuring-mist-mythic"><i>obscuring mist</i></a><sup>A</sup>.</p>
+<p><b>2nd-Level Druid Mythic Spells</b>&mdash;<a href="animalAspect.html#animal-aspect-mythic"><i>animal aspect</i></a>, <a href="barkskin.html#barkskin-mythic"><i>barkskin</i></a><sup>A</sup>, <a href="burningGaze.html#burning-gaze-mythic"><i>burning gaze</i></a><sup>A</sup>, <a href="chillMetal.html#chill-metal-mythic"><i>chill metal</i></a>, <a href="feastOfAshes.html#feast-of-ashes-mythic"><i>feast of ashes</i></a><sup>A</sup>, <a href="flameBlade.html#flame-blade-mythic"><i>flame blade</i></a><sup>A</sup>, <i><a href="fogCloud.html" >fog cloud</a></i><sup>A</sup>, <a href="gustOfWind.html#gust-of-wind-mythic"><i>gust of wind</i></a><sup>A</sup>, <a href="heatMetal.html#heat-metal-mythic"><i>heat metal</i></a>, <a href="perniciousPoison.html#pernicious-poison-mythic"><i>pernicious poison</i></a><sup>A</sup>, <a href="poxPustules.html#pox-pustules-mythic"><i>pox pustules</i></a><sup>A</sup>, <a href="resistEnergy.html#resist-energy-mythic"><i>resist energy</i></a>, <a href="spiderClimb.html#spider-climb-mythic"><i>spider climb</i></a>, <a href="summonSwarm.html#summon-swarm-mythic"><i>summon swarm</i></a>, <a href="unshakableChill.html#unshakable-chill-mythic"><i>unshakable chill</i></a><sup>A</sup>.</p>
+<p><b>3rd-Level Druid Mythic Spells</b>&mdash;<a href="burrow.html#burrow-mythic"><i>burrow</i></a><sup>A</sup>, <a href="callLightning.html#call-lightning-mythic"><i>call lightning</i></a>, <a href="companionMindLink.html#companion-mind-link-mythic"><i>companion mind link</i></a>, <a href="contagion.html#contagion-mythic"><i>contagion</i></a><sup>A</sup>, <a href="cupOfDust.html#cup-of-dust-mythic"><i>cup of dust</i></a><sup>A</sup>, <a href="cureModerateWounds.html#cure-moderate-wounds-mythic"><i>cure moderate wounds</i></a>, <a href="daylight.html#daylight-mythic"><i>daylight</i></a>, <a href="hydraulicTorrent.html#hydraulic-torrent-mythic"><i>hydraulic torrent</i></a><sup>A</sup>, <a href="magicFang.html#magic-fang-greater-mythic"><i>magic fang (greater)</i></a><sup>A</sup>, <a href="shareGlory.html#share-glory-mythic"><i>share glory</i></a>*, <a href="stoneShape.html#stone-shape-mythic"><i>stone shape</i></a>.</p>
+<p><b>4th-Level Druid Mythic Spells</b>&mdash;<a href="arborealHammer.html#arboreal-hammer-mythic"><i>arboreal hammer</i></a><sup>A</sup>, <a href="capeOfWasps.html#cape-of-wasps-mythic"><i>cape of wasps</i></a>, <a href="cureSeriousWounds.html#cure-serious-wounds-mythic"><i>cure serious wounds</i></a>, <a href="dispelMagic.html#dispel-magic-mythic"><i>dispel magic</i></a>, <a href="flameStrike.html#flame-strike-mythic"><i>flame strike</i></a>, <a href="giantVermin.html#giant-vermin-mythic"><i>giant vermin</i></a><sup>A</sup>, <a href="iceStorm.html#ice-storm-mythic"><i>ice storm</i></a><sup>A</sup>, <a href="spikeStones.html#spike-stones-mythic"><i>spike stones</i></a>, <a href="trueForm.html#true-form-mythic"><i>true form</i></a><sup>A</sup>.</p>
+<p><b>5th-Level Druid Mythic Spells</b>&mdash;<a href="balefulPolymorph.html#baleful-polymorph-mythic"><i>baleful polymorph</i></a><sup>A</sup>, <a href="cureCriticalWounds.html#cure-critical-wounds-mythic"><i>cure critical wounds</i></a>, <a href="fireSnake.html#fire-snake-mythic"><i>fire snake</i></a><sup>A</sup>, <a href="lendPath.html#lend-path"><i>lend path</i></a>, <a href="stoneskin.html#stoneskin-mythic"><i>stoneskin</i></a>, <a href="wallOfFire.html#wall-of-fire-mythic"><i>wall of fire</i></a><sup>A</sup>, <a href="wallOfThorns.html#wall-of-thorns-mythic"><i>wall of thorns</i></a><sup>A</sup>.</p>
+<p><b>6th-Level Druid Mythic Spells</b>&mdash;<a href="fireSeeds.html#fire-seeds-mythic"><i>fire seeds</i></a>, <a href="moveEarth.html#move-earth-mythic"><i>move earth</i></a>, <a href="repelWood.html#repel-wood-mythic"><i>repel wood</i></a><sup>A</sup>, <a href="terraform.html#terraform-mythic"><i>terraform</i></a>*, <a href="wallOfStone.html#wall-of-stone-mythic"><i>wall of stone</i></a><sup>A</sup>.</p>
+<p><b>7th-Level Druid Mythic Spells</b>&mdash;<a href="animatePlants.html#animate-plants-mythic"><i>animate plants</i></a>, <a href="blackMark.html#black-mark-mythic"><i>black mark</i></a>, <a href="changestaff.html#changestaff-mythic"><i>changestaff</i></a><sup>A</sup>, <a href="controlWeather.html#control-weather-mythic"><i>control weather</i></a><sup>A</sup>, <a href="fireStorm.html#fire-storm-mythic"><i>fire storm</i></a><sup>A</sup>, <a href="heal.html#heal-mythic"><i>heal</i></a><sup>A</sup>, <a href="scouringWinds.html#scouring-winds-mythic"><i>scouring winds</i></a><sup>A</sup>, <a href="sunbeam.html#sunbeam-mythic"><i>sunbeam</i></a><sup>A</sup>.</p>
+<p><b>8th-Level Druid Mythic Spells</b>&mdash;<a href="earthquake.html#earthquake-mythic"><i>earthquake</i></a><sup>A</sup>, <a href="fingerOfDeath.html#finger-of-death-mythic"><i>finger of death</i></a>, <a href="reverseGravity.html#reverse-gravity-mythic"><i>reverse gravity</i></a><sup>A</sup>, <a href="whirlwind.html#whirlwind-mythic"><i>whirlwind</i></a><sup>A</sup>.</p>
+<p><b>9th-Level Druid Mythic Spells</b>&mdash;<a href="ascension.html#ascension-mythic"><i>ascension</i></a>*, <a href="foresight.html#foresight-mythic"><i>foresight</i></a>, <a href="regenerate.html#regenerate-mythic"><i>regenerate</i></a>, <a href="stormOfVengeance.html#storm-of-vengeance-mythic"><i>storm of vengeance</i></a><sup>A</sup>, <a href="tsunami.html#tsunami-mythic"><i>tsunami</i></a><sup>A</sup>.</p>
+
+<h2 id="inquisitor-mythic-spells">Inquisitor Mythic Spells</h2>
+<p><b>1st-Level Inquisitor Mythic Spells</b>&mdash;<a href="bane.html#bane-mythic"><i>bane</i></a>, <a href="bless.html#bless-mythic"><i>bless</i></a>, <a href="command.html#command-mythic"><i>command</i></a>, <a href="cureLightWounds.html#cure-light-wounds-mythic"><i>cure light wounds</i></a>, <a href="divineFavor.html#divine-favor-mythic"><i>divine favor</i></a>, <a href="earPiercingScream.html#ear-piercing-scream-mythic"><i>ear-piercing scream</i></a><sup>A</sup>, <a href="expeditiousRetreat.html#expeditious-retreat-mythic"><i>expeditious retreat</i></a>, <a href="hexWard.html#hex-ward-mythic"><i>hex ward</i></a><sup>A</sup>, <a href="inflictLightWounds.html#inflict-light-wounds-mythic"><i>inflict light wounds</i></a>, <a href="knowTheEnemy.html#know-the-enemy-mythic"><i>know the enemy</i></a>, <a href="protectionFrom.html#protection-from-mythic"><i>protection from chaos/evil/good/law</i></a>, <a href="sanctuary.html#sanctuary-mythic"><i>sanctuary</i></a><sup>A</sup>, <a href="shieldOfFaith.html#shield-of-faith-mythic"><i>shield of faith</i></a>, <a href="theftWard.html#theft-ward-mythic"><i>theft ward</i></a>, <a href="trueStrike.html#true-strike-mythic"><i>true strike</i></a><sup>A</sup>.</p>
+<p><b>2nd-Level Inquisitor Mythic Spells</b>&mdash;<a href="blisteringInvective.html#blistering-invective-mythic-mythic"><i>blistering invective</i></a><sup>A</sup>, <a href="consecrate.html#consecrate-mythic"><i>consecrate</i></a>, <a href="cureModerateWounds.html#cure-moderate-wounds-mythic"><i>cure moderate wounds</i></a>, <a href="darkness.html#darkness-mythic"><i>darkness</i></a>, <a href="deathKnell.html#death-knell-mythic"><i>death knell</i></a><sup>A</sup>, <a href="desecrate.html#desecrate-mythic"><i>desecrate</i></a>, <a href="flamesOfTheFaithful.html#flames-of-the-faithful-mythic"><i>flames of the faithful</i></a><sup>A</sup>, <a href="inflictModerateWounds.html#inflict-moderate-wounds-mythic"><i>inflict moderate wounds</i></a>, <a href="invisibility.html#invisibility-mythic"><i>invisibility</i></a><sup>A</sup>, <a href="knock.html#knock-mythic"><i>knock</i></a><sup>A</sup>, <a href="resistEnergy.html#resist-energy-mythic"><i>resist energy</i></a>, <a href="sacredBond.html#sacred-bond-mythic"><i>sacred bond</i></a><sup>A</sup>, <a href="shieldOther.html#shield-other-mythic"><i>shield other</i></a>, <a href="silence.html#silence-mythic"><i>silence</i></a>, <a href="spiritualWeapon.html#spiritual-weapon-mythic"><i>spiritual weapon</i></a>, <a href="surmountAffliction.html#surmount-affliction-mythic"><i>surmount affliction</i></a><sup>A</sup>.</p>
+<p><b>3rd-Level Inquisitor Mythic Spells</b>&mdash;<a href="battleTrance.html#battle-trance-mythic"><i>battle trance</i></a><sup>A</sup>, <a href="blindingRay.html#blinding-ray-mythic"><i>blinding ray</i></a>, <a href="cureSeriousWounds.html#cure-serious-wounds-mythic"><i>cure serious wounds</i></a>, <a href="daybreakArrow.html#daybreak-arrow-mythic"><i>daybreak arrow</i></a>, <a href="daylight.html#daylight-mythic"><i>daylight</i></a>, <a href="dispelMagic.html#dispel-magic-mythic"><i>dispel magic</i></a>, <a href="glyphOfWarding.html#glyph-of-warding-mythic"><i>glyph of warding</i></a>, <a href="heroism.html#heroism-mythic"><i>heroism</i></a><sup>A</sup>, <a href="inflictSeriousWounds.html#inflict-serious-wounds-mythic"><i>inflict serious wounds</i></a>, <a href="magicVestment.html#magic-vestment-mythic"><i>magic vestment</i></a><sup>A</sup>, <a href="magicWeaponGreater.html#magic-weapon-greater-mythic"><i>magic weapon (greater)</i></a><sup>A</sup>, <a href="mythicSeverance.html#mythic-severance"><i>mythic severance</i></a>*, <a href="prayer.html#prayer-mythic"><i>prayer</i></a>, <a href="searingLight.html#searing-light-mythic"><i>searing light</i></a>.</p>
+<p><b>4th-Level Inquisitor Mythic Spells</b>&mdash;<a href="battlemindLink.html#battlemind-link-mythic"><i>battlemind link</i></a>, <a href="chaosHammer.html#chaos-hammer-mythic"><i>chaos hammer</i></a>, <a href="cureCriticalWounds.html#cure-critical-wounds-mythic"><i>cure critical wounds</i></a>, <a href="deathless.html#deathless-mythic"><i>deathless</i></a><sup>A</sup>*, <a href="defileArmor.html#defile-armor-mythic"><i>defile armor</i></a><sup>A</sup>, <a href="detectScrying.html#detect-scrying-mythic"><i>detect scrying</i></a><sup>A</sup>, <a href="holySmite.html#holy-smite-mythic"><i>holy smite</i></a>, <a href="inflictCriticalWounds.html#inflict-critical-wounds-mythic"><i>inflict critical wounds</i></a>, <a href="namedBullet.html#named-bullet-mythic-mythic"><i>named bullet</i></a><sup>A</sup>, <a href="ordersWrath.html#order-s-wrath-mythic"><i>order's wrath</i></a>, <a href="sanctifyArmor.html#sanctify-armor-mythic"><i>sanctify armor</i></a><sup>A</sup>, <a href="sending.html#sending-mythic"><i>sending</i></a><sup>A</sup>, <a href="stoneskin.html#stoneskin-mythic"><i>stoneskin</i></a>, <a href="unholyBlight.html#unholy-blight-mythic"><i>unholy blight</i></a>.</p>
+<p><b>5th-Level Inquisitor Mythic Spells</b>&mdash;<a href="breakEnchantment.html#break-enchantment-mythic"><i>break enchantment</i></a><sup>A</sup>, <a href="divinePursuit.html#divine-pursuit-mythic"><i>divine pursuit</i></a>, <a href="flameStrike.html#flame-strike-mythic"><i>flame strike</i></a>.</p>
+<p><b>6th-Level Inquisitor Mythic Spells</b>&mdash;<a href="bladeBarrier.html#blade-barrier-mythic"><i>blade barrier</i></a><sup>A</sup>, <a href="blasphemy.html#blasphemy-mythic"><i>blasphemy</i></a>, <a href="circleOfDeath.html#circle-of-death-mythic"><i>circle of death</i></a><sup>A</sup>, <a href="dictum.html#dictum-mythic"><i>dictum</i></a>, <a href="harm.html#harm-mythic"><i>harm</i></a><sup>A</sup>, <a href="heal.html#heal-mythic"><i>heal</i></a><sup>A</sup>, <a href="holyWord.html#holy-word-mythic"><i>holy word</i></a>, <a href="wordOfChaos.html#word-of-chaos"><i>word of chaos</i></a></p>
+
+<h2 id="magus-mythic-spells">Magus Mythic Spells</h2>
+<p><b>1st-Level Magus Mythic Spells</b>&mdash;<a href="burningHands.html#burning-hands-mythic"><i>burning hands</i></a>, <a href="colorSpray.html#color-spray-mythic"><i>color spray</i></a>, <a href="enlargePerson.html#enlarge-person-mythic"><i>enlarge person</i></a>, <a href="expeditiousRetreat.html#expeditious-retreat-mythic"><i>expeditious retreat</i></a>, <a href="featherFall.html#feather-fall-mythic"><i>feather fall</i></a><sup>A</sup>, <a href="floatingDisk.html#floating-disk-mythic"><i>floating disk</i></a>, <a href="grease.html#grease-mythic"><i>grease</i></a><sup>A</sup>, <a href="hydraulicPush.html#hydraulic-push-mythic"><i>hydraulic push</i></a><sup>A</sup>, <a href="magicMissile.html#magic-missile-mythic"><i>magic missile</i></a><sup>A</sup>, <a href="obscuringMist.html#obscuring-mist-mythic"><i>obscuring mist</i></a><sup>A</sup>, <a href="rayOfEnfeeblement.html#ray-of-enfeeblement-mythic"><i>ray of enfeeblement</i></a>, <a href="reducePerson.html#reduce-person-mythic"><i>reduce person</i></a>, <a href="shockingGrasp.html#shocking-grasp-mythic"><i>shocking grasp</i></a><sup>A</sup>, <a href="silentImage.html#silent-image-mythic"><i>silent image</i></a><sup>A</sup>, <a href="trueStrike.html#true-strike-mythic"><i>true strike</i></a><sup>A</sup>.</p>
+<p><b>2nd-Level Magus Mythic Spells</b>&mdash;<a href="ablativeBarrier.html#ablative-barrier-mythic"><i>ablative barrier</i></a>, <a href="animalAspect.html#animal-aspect-mythic"><i>animal aspect</i></a>, <a href="burningGaze.html#burning-gaze-mythic"><i>burning gaze</i></a><sup>A</sup>, <a href="darkness.html#darkness-mythic"><i>darkness</i></a>, <i><a href="fogCloud.html" >fog cloud</a></i><sup>A</sup>, <a href="gustOfWind.html#gust-of-wind-mythic"><i>gust of wind</i></a><sup>A</sup>, <a href="invisibility.html#invisibility-mythic"><i>invisibility</i></a><sup>A</sup>, <a href="levitate.html#levitate-mythic"><i>levitate</i></a><sup>A</sup>, <a href="mirrorImage.html#mirror-image-mythic"><i>mirror image</i></a>, <a href="scorchingRay.html#scorching-ray-mythic"><i>scorching ray</i></a>, <a href="shatter.html#shatter-mythic"><i>shatter</i></a>, <a href="spiderClimb.html#spider-climb-mythic"><i>spider climb</i></a>, <a href="web.html#web-mythic"><i>web</i></a><sup>A</sup>.</p>
+<p><b>3rd-Level Magus Mythic Spells</b>&mdash;<a href="beastShape.html#beast-shape-i-mythic"><i>beast shape I</i></a><sup>A</sup>, <a href="blink.html#blink-mythic"><i>blink</i></a><sup>A</sup>, <a href="daylight.html#daylight-mythic"><i>daylight</i></a>, <a href="dispelMagic.html#dispel-magic-mythic"><i>dispel magic</i></a>, <a href="fireball.html#fireball-mythic"><i>fireball</i></a><sup>A</sup>, <a href="firestream.html#firestream-mythic"><i>firestream</i></a><sup>A</sup>, <i><a href="fly.html" >fly</a></i><sup>A</sup>, <a href="forcePunch.html#force-punch-mythic"><i>force punch</i></a><sup>A</sup>, <a href="gaseousForm.html#gaseous-form-mythic"><i>gaseous form</i></a><sup>A</sup>, <a href="haste.html#haste-mythic"><i>haste</i></a><sup>A</sup>, <a href="hydraulicTorrent.html#hydraulic-torrent-mythic"><i>hydraulic torrent</i></a><sup>A</sup>, <a href="lightningBolt.html#lightning-bolt-mythic"><i>lightning bolt</i></a><sup>A</sup>, <a href="magicWeaponGreater.html#magic-weapon-greater-mythic"><i>magic weapon (greater)</i></a><sup>A</sup>, <a href="monstrousPhysique.html#monstrous-physique-i-mythic"><i>monstrous physique I</i></a><sup>A</sup>, <a href="phantomSteed.html#phantom-steed-mythic"><i>phantom steed</i></a><sup>A</sup>, <a href="slow.html#slow-mythic"><i>slow</i></a>, <a href="stinkingCloud.html#stinking-cloud-mythic"><i>stinking cloud</i></a>, <a href="vampiricTouch.html#vampiric-touch-mythic"><i>vampiric touch</i></a>, <a href="vomitTwin.html#vomit-twin-mythic"><i>vomit twin</i></a><sup>A</sup>.</p>
+<p><b>4th-Level Magus Mythic Spells</b>&mdash;<a href="beastShape.html#beast-shape-ii-mythic"><i>beast shape II</i></a><sup>A</sup>, <a href="blackTentacles.html#black-tentacles-mythic"><i>black tentacles</i></a><sup>A</sup>, <a href="dimensionDoor.html#dimension-door-mythic"><i>dimension door</i></a>, <a href="dragonsBreath.html#dragon's-breath-mythic"><i>dragon's breath</i></a><sup>A</sup>, <a href="elementalBody.html#elemental-body-i-mythic"><i>elemental body I</i></a><sup>A</sup>, <a href="fireShield.html#fire-shield-mythic"><i>fire shield</i></a>, <a href="iceStorm.html#ice-storm-mythic"><i>ice storm</i></a><sup>A</sup>, <a href="lendPath.html#lend-path"><i>lend path</i></a>, <a href="monstrousPhysique.html#monstrous-physique-ii-mythic"><i>monstrous physique II</i></a><sup>A</sup>, <a href="phantasmalKiller.html#phantasmal-killer-mythic"><i>phantasmal killer</i></a><sup>A</sup>, <a href="shout.html#shout-mythic"><i>shout</i></a>, <a href="solidFog.html#solid-fog-mythic"><i>solid fog</i></a><sup>A</sup>, <a href="stoneskin.html#stoneskin-mythic"><i>stoneskin</i></a>, <a href="wallOfFire.html#wall-of-fire-mythic"><i>wall of fire</i></a><sup>A</sup>, <a href="wallOfIce.html#wall-of-ice-mythic"><i>wall of ice</i></a><sup>A</sup>.</p>
+<p><b>5th-Level Magus Mythic Spells</b>&mdash;<a href="balefulPolymorph.html#baleful-polymorph-mythic"><i>baleful polymorph</i></a><sup>A</sup>, <a href="beastShape.html#beast-shape-iii-mythic"><i>beast shape III</i></a><sup>A</sup>, <a href="cloudkill.html#cloudkill-mythic"><i>cloudkill</i></a><sup>A</sup>, <a href="coneOfCold.html#cone-of-cold-mythic"><i>cone of cold</i></a><sup>A</sup>, <a href="elementalBody.html#elemental-body-ii-mythic"><i>elemental body II</i></a><sup>A</sup>, <a href="fireSnake.html#fire-snake-mythic"><i>fire snake</i></a><sup>A</sup>, <a href="monstrousPhysique.html#monstrous-physique-iii-mythic"><i>monstrous physique III</i></a><sup>A</sup>, <a href="telekinesis.html#telekinesis-mythic"><i>telekinesis</i></a>, <a href="wallOfForce.html#wall-of-force-mythic"><i>wall of force</i></a>, <a href="wallOfStone.html#wall-of-stone-mythic"><i>wall of stone</i></a><sup>A</sup>.</p>
+<p><b>6th-Level Magus Mythic Spells</b>&mdash;<a href="beastShape.html#beast-shape-iv-mythic"><i>beast shape IV</i></a><sup>A</sup>, <a href="chainLightning.html#chain-lightning-mythic"><i>chain lightning</i></a>, <a href="disintegrate.html#disintegrate-mythic"><i>disintegrate</i></a><sup>A</sup>, <a href="elementalBody.html#elemental-body-iii-mythic"><i>elemental body III</i></a><sup>A</sup>, <a href="fleshToStone.html#flesh-to-stone-mythic"><i>flesh to stone</i></a><sup>A</sup>, <a href="formOfTheDragon.html#form-of-the-dragon-i-mythic"><i>form of the dragon I</i></a><sup>A</sup>, <a href="mislead.html#mislead-mythic"><i>mislead</i></a><sup>A</sup>, <a href="monstrousPhysique.html#monstrous-physique-iv-mythic"><i>monstrous physique IV</i></a><sup>A</sup>, <a href="transformation.html#transformation-mythic"><i>transformation</i></a>, <a href="walkThroughSpace.html#walk-through-space-mythic"><i>walk through space</i></a>, <a href="wallOfIron.html#wall-of-iron-mythic"><i>wall of iron</i></a><sup>A</sup>.</p>
+
+<h2 id="paladin-mythic-spells">Paladin Mythic Spells</h2>
+<p><b>1st-Level Paladin Mythic Spells</b>&mdash;<a href="bless.html#bless-mythic"><i>bless</i></a>, <a href="cureLightWounds.html#cure-light-wounds-mythic"><i>cure light wounds</i></a>, <a href="divineFavor.html#divine-favor-mythic"><i>divine favor</i></a>, <a href="endureElements.html#endure-elements-mythic"><i>endure elements</i></a>, <a href="knowTheEnemy.html#know-the-enemy-mythic"><i>know the enemy</i></a>, <a href="protectionFrom.html#protection-from-mythic"><i>protection from chaos/evil</i></a>, <a href="sunMetal.html#sun-metal-mythic"><i>sun metal</i></a>.</p>
+<p><b>2nd-Level Paladin Mythic Spells</b>&mdash;<a href="blindingRay.html#blinding-ray-mythic"><i>blinding ray</i></a>, <a href="resistEnergy.html#resist-energy-mythic"><i>resist energy</i></a>, <a href="sacredBond.html#sacred-bond-mythic"><i>sacred bond</i></a><sup>A</sup>, <a href="shieldOther.html#shield-other-mythic"><i>shield other</i></a>.</p>
+<p><b>3rd-Level Paladin Mythic Spells</b>&mdash;<a href="cureModerateWounds.html#cure-moderate-wounds-mythic"><i>cure moderate wounds</i></a>, <a href="daybreakArrow.html#daybreak-arrow-mythic"><i>daybreak arrow</i></a>, <a href="daylight.html#daylight-mythic"><i>daylight</i></a>, <a href="dispelMagic.html#dispel-magic-mythic"><i>dispel magic</i></a>, <a href="magicWeaponGreater.html#magic-weapon-greater-mythic"><i>magic weapon (greater)</i></a><sup>A</sup>, <a href="prayer.html#prayer-mythic"><i>prayer</i></a>, <a href="sanctifyArmor.html#sanctify-armor-mythic"><i>sanctify armor</i></a><sup>A</sup>.</p>
+<p><b>4th-Level Paladin Mythic Spells</b>&mdash;<a href="breakEnchantment.html#break-enchantment-mythic"><i>break enchantment</i></a><sup>A</sup>, <a href="cureSeriousWounds.html#cure-serious-wounds-mythic"><i>cure serious wounds</i></a>, <a href="oathOfPeace.html#oath-of-peace-mythic"><i>oath of peace</i></a><sup>A</sup>.</p>
+
+<h2 id="ranger-mythic-spells">Ranger Mythic Spells</h2>
+<p><b>1st-Level Ranger Mythic Spells</b>&mdash;<a href="anticipatePeril.html#anticipate-peril-mythic"><i>anticipate peril</i></a>, <a href="callAnimal.html#call-animal-mythic"><i>call animal</i></a><sup>A</sup>, <a href="endureElements.html#endure-elements-mythic"><i>endure elements</i></a>, <a href="entangle.html#entangle-mythic"><i>entangle</i></a>, <a href="knowTheEnemy.html#know-the-enemy-mythic"><i>know the enemy</i></a>, <a href="magicFang.html#magic-fang-mythic"><i>magic fang</i></a>, <a href="resistEnergy.html#resist-energy-mythic"><i>resist energy</i></a>, <a href="sunMetal.html#sun-metal-mythic"><i>sun metal</i></a>.</p>
+<p><b>2nd-Level Ranger Mythic Spells</b>&mdash;<a href="animalAspect.html#animal-aspect-mythic"><i>animal aspect</i></a>, <a href="animateDead.html#animate-dead-mythic"><i>animate dead</i></a><sup>A</sup>, <a href="cureLightWounds.html#cure-light-wounds-mythic"><i>cure light wounds</i></a>, <a href="barkskin.html#barkskin-mythic"><i>barkskin</i></a><sup>A</sup>, <a href="ricochetShot.html#ricochet-shot-mythic-mythic"><i>ricochet shot</i></a><sup>A</sup>.</p>
+<p><b>3rd-Level Ranger Mythic Spells</b>&mdash;<a href="battleTrance.html#battle-trance-mythic"><i>battle trance</i></a><sup>A</sup>, <a href="burrow.html#burrow-mythic"><i>burrow</i></a><sup>A</sup>, <a href="companionMindLink.html#companion-mind-link-mythic"><i>companion mind link</i></a>, <a href="cureModerateWounds.html#cure-moderate-wounds-mythic"><i>cure moderate wounds</i></a>, <a href="magicFang.html#magic-fang-greater-mythic"><i>magic fang (greater)</i></a><sup>A</sup>, <a href="namedBullet.html#named-bullet-mythic-mythic"><i>named bullet</i></a><sup>A</sup>.</p>
+<p><b>4th-Level Ranger Mythic Spells</b>&mdash;<a href="cureSeriousWounds.html#cure-serious-wounds-mythic"><i>cure serious wounds</i></a>.</p>
+
+<h2 id="sorcerer/wizard-mythic-spells">Sorcerer/Wizard Mythic Spells</h2>
+<p><b>1st-Level Sorcerer/Wizard Mythic Spells</b>&mdash;<a href="anticipatePeril.html#anticipate-peril-mythic"><i>anticipate peril</i></a>, <a href="break.html#break-mythic"><i>break</i></a><sup>A</sup>, <a href="burningHands.html#burning-hands-mythic"><i>burning hands</i></a>, <a href="colorSpray.html#color-spray-mythic"><i>color spray</i></a>, <a href="earPiercingScream.html#ear-piercing-scream-mythic"><i>ear-piercing scream</i></a><sup>A</sup>, <a href="endureElements.html#endure-elements-mythic"><i>endure elements</i></a>, <a href="enlargePerson.html#enlarge-person-mythic"><i>enlarge person</i></a>, <a href="expeditiousRetreat.html#expeditious-retreat-mythic"><i>expeditious retreat</i></a>, <a href="featherFall.html#feather-fall-mythic"><i>feather fall</i></a><sup>A</sup>, <a href="floatingDisk.html#floating-disk-mythic"><i>floating disk</i></a>, <a href="grease.html#grease-mythic"><i>grease</i></a><sup>A</sup>, <a href="holdPortal.html#hold-portal-mythic"><i>hold portal</i></a>, <a href="hydraulicPush.html#hydraulic-push-mythic"><i>hydraulic push</i></a><sup>A</sup>, <a href="mageArmor.html#mage-armor-mythic"><i>mage armor</i></a>, <a href="magicMissile.html#magic-missile-mythic"><i>magic missile</i></a><sup>A</sup>, <a href="memoryLapse.html#memory-lapse-mythic"><i>memory lapse</i></a><sup>A</sup>, <a href="obscuringMist.html#obscuring-mist-mythic"><i>obscuring mist</i></a><sup>A</sup>, <a href="protectionFrom.html#protection-from-mythic"><i>protection from chaos/evil/good/law</i></a>, <a href="rayOfEnfeeblement.html#ray-of-enfeeblement-mythic"><i>ray of enfeeblement</i></a>, <a href="reducePerson.html#reduce-person-mythic"><i>reduce person</i></a>, <a href="shadowWeapon.html#shadow-weapon-mythic"><i>shadow weapon</i></a>, <a href="shockingGrasp.html#shocking-grasp-mythic"><i>shocking grasp</i></a><sup>A</sup>, <a href="silentImage.html#silent-image-mythic"><i>silent image</i></a><sup>A</sup>, <a href="sleep.html#sleep-mythic"><i>sleep</i></a><sup>A</sup>, <a href="theftWard.html#theft-ward-mythic"><i>theft ward</i></a>, <a href="trueStrike.html#true-strike-mythic"><i>true strike</i></a><sup>A</sup>.</p>
+<p><b>2nd-Level Sorcerer/Wizard Mythic Spells</b>&mdash;<a href="animalAspect.html#animal-aspect-mythic"><i>animal aspect</i></a>, <a href="blindnessDeafness.html#blindness-deafness-mythic"><i>blindness/deafness</i></a>, <a href="boilingBlood.html#boiling-blood-mythic"><i>boiling blood</i></a><sup>A</sup>, <a href="burningGaze.html#burning-gaze-mythic"><i>burning gaze</i></a><sup>A</sup>, <a href="darkness.html#darkness-mythic"><i>darkness</i></a>, <a href="disfiguringTouch.html#disfiguring-touch-mythic"><i>disfiguring touch</i></a><sup>A</sup>, <a href="dustOfTwilight.html#dust-of-twilight-mythic"><i>dust of twilight</i></a><sup>A</sup>, <a href="falseLife.html#false-life-mythic"><i>false life</i></a>, <i><a href="fogCloud.html" >fog cloud</a></i><sup>A</sup>, <a href="gustOfWind.html#gust-of-wind-mythic"><i>gust of wind</i></a><sup>A</sup>, <a href="hideousLaughter.html#hideous-laughter-mythic"><i>hideous laughter</i></a><sup>A</sup>, <a href="invisibility.html#invisibility-mythic"><i>invisibility</i></a><sup>A</sup>, <a href="jitterbugs.html#jitterbugs-mythic"><i>jitterbugs</i></a>, <a href="knock.html#knock-mythic"><i>knock</i></a><sup>A</sup>, <a href="levitate.html#levitate-mythic"><i>levitate</i></a><sup>A</sup>, <a href="makeWhole.html#make-whole-mythic"><i>make whole</i></a>, <a href="mirrorImage.html#mirror-image-mythic"><i>mirror image</i></a>, <a href="perniciousPoison.html#pernicious-poison-mythic"><i>pernicious poison</i></a><sup>A</sup>, <a href="protectionFromArrows.html#protection-from-arrows-mythic"><i>protection from arrows</i></a>, <a href="resistEnergy.html#resist-energy-mythic"><i>resist energy</i></a>, <a href="ricochetShot.html#ricochet-shot-mythic-mythic"><i>ricochet shot</i></a><sup>A</sup>, <a href="scorchingRay.html#scorching-ray-mythic"><i>scorching ray</i></a>, <a href="shadowAnchor.html#shadow-anchor-mythic"><i>shadow anchor</i></a>, <a href="shatter.html#shatter-mythic"><i>shatter</i></a>, <a href="spiderClimb.html#spider-climb-mythic"><i>spider climb</i></a>, <a href="summonSwarm.html#summon-swarm-mythic"><i>summon swarm</i></a>, <a href="unshakableChill.html#unshakable-chill-mythic"><i>unshakable chill</i></a><sup>A</sup>, <a href="web.html#web-mythic"><i>web</i></a><sup>A</sup>.</p>
+<p><b>3rd-Level Sorcerer/Wizard Mythic Spells</b>&mdash;<a href="ablativeBarrier.html#ablative-barrier-mythic"><i>ablative barrier</i></a>, <a href="beastShape.html#beast-shape-i-mythic"><i>beast shape I</i></a><sup>A</sup>, <a href="bleedGlory.html#bleed-glory-mythic"><i>bleed glory</i></a>*, <a href="blink.html#blink-mythic"><i>blink</i></a><sup>A</sup>, <a href="burrow.html#burrow-mythic"><i>burrow</i></a><sup>A</sup>, <a href="daylight.html#daylight-mythic"><i>daylight</i></a>, <a href="deepSlumber.html#deep-slumber-mythic"><i>deep slumber</i></a><sup>A</sup>, <a href="devolution.html#devolution-mythic"><i>devolution</i></a><sup>A</sup>, <a href="dispelMagic.html#dispel-magic-mythic"><i>dispel magic</i></a>, <a href="draconicReservoir.html#draconic-reservoir-mythic"><i>draconic reservoir</i></a><sup>A</sup>, <a href="fireball.html#fireball-mythic"><i>fireball</i></a><sup>A</sup>, <a href="firestream.html#firestream-mythic"><i>firestream</i></a><sup>A</sup>, <i><a href="fly.html" >fly</a></i><sup>A</sup>, <a href="forcePunch.html#force-punch-mythic"><i>force punch</i></a><sup>A</sup>, <a href="gaseousForm.html#gaseous-form-mythic"><i>gaseous form</i></a><sup>A</sup>, <a href="haste.html#haste-mythic"><i>haste</i></a><sup>A</sup>, <a href="healingThief.html#healing-thief-mythic-mythic"><i>healing thief</i></a><sup>A</sup>, <a href="heroism.html#heroism-mythic"><i>heroism</i></a><sup>A</sup>, <a href="hydraulicTorrent.html#hydraulic-torrent-mythic"><i>hydraulic torrent</i></a><sup>A</sup>, <a href="lightningBolt.html#lightning-bolt-mythic"><i>lightning bolt</i></a><sup>A</sup>, <a href="magicWeaponGreater.html#magic-weapon-greater-mythic"><i>magic weapon (greater)</i></a><sup>A</sup>, <a href="monstrousPhysique.html#monstrous-physique-i-mythic"><i>monstrous physique I</i></a><sup>A</sup>, <a href="phantomSteed.html#phantom-steed-mythic"><i>phantom steed</i></a><sup>A</sup>, <a href="restoreMythicPower.html#restore-mythic-power-mythic"><i>restore mythic power</i></a>*, <a href="sandsOfTime.html#sands-of-time-mythic"><i>sands of time</i></a><sup>A</sup>, <a href="shareGlory.html#share-glory-mythic"><i>share glory</i></a>*, <a href="slow.html#slow-mythic"><i>slow</i></a>, <a href="stinkingCloud.html#stinking-cloud-mythic"><i>stinking cloud</i></a>, <a href="stranglingHair.html#strangling-hair-mythic"><i>strangling hair</i></a>, <a href="suggestion.html#suggestion-mythic"><i>suggestion</i></a>, <a href="touchInjection.html#touch-injection-mythic"><i>touch injection</i></a>, <a href="vampiricTouch.html#vampiric-touch-mythic"><i>vampiric touch</i></a>.</p>
+<p><b>4th-Level Sorcerer/Wizard Mythic Spells</b>&mdash;<a href="animateDead.html#animate-dead-mythic"><i>animate dead</i></a><sup>A</sup>, <a href="beastShape.html#beast-shape-ii-mythic"><i>beast shape II</i></a><sup>A</sup>, <a href="blackTentacles.html#black-tentacles-mythic"><i>black tentacles</i></a><sup>A</sup>, <a href="confusion.html#confusion-mythic"><i>confusion</i></a><sup>A</sup>, <a href="contagion.html#contagion-mythic"><i>contagion</i></a><sup>A</sup>, <a href="deathless.html#deathless-mythic"><i>deathless</i></a><sup>A</sup>*, <a href="detectScrying.html#detect-scrying-mythic"><i>detect scrying</i></a><sup>A</sup>, <a href="dimensionDoor.html#dimension-door-mythic"><i>dimension door</i></a>, <a href="dragonsBreath.html#dragon's-breath-mythic"><i>dragon's breath</i></a>, <a href="elementalBody.html#elemental-body-i-mythic"><i>elemental body I</i></a><sup>A</sup>, <a href="enervation.html#enervation-mythic"><i>enervation</i></a><sup>A</sup>, <a href="fireShield.html#fire-shield-mythic"><i>fire shield</i></a>, <a href="iceStorm.html#ice-storm-mythic"><i>ice storm</i></a><sup>A</sup>, <a href="monstrousPhysique.html#monstrous-physique-ii-mythic"><i>monstrous physique II</i></a><sup>A</sup>, <a href="mythicSeverance.html#mythic-severance"><i>mythic severance</i></a>*, <a href="namedBullet.html#named-bullet-mythic-mythic"><i>named bullet</i></a><sup>A</sup>, <a href="phantasmalKiller.html#phantasmal-killer-mythic"><i>phantasmal killer</i></a><sup>A</sup>, <a href="scorchingAshForm.html#scorching-ash-form-mythic"><i>scorching ash form</i></a><sup>A</sup>, <a href="shout.html#shout-mythic"><i>shout</i></a>, <a href="solidFog.html#solid-fog-mythic"><i>solid fog</i></a><sup>A</sup>, <a href="stoneShape.html#stone-shape-mythic"><i>stone shape</i></a>, <a href="stoneskin.html#stoneskin-mythic"><i>stoneskin</i></a>, <a href="trueForm.html#true-form-mythic"><i>true form</i></a><sup>A</sup>, <a href="vomitTwin.html#vomit-twin-mythic"><i>vomit twin</i></a><sup>A</sup>, <a href="wallOfFire.html#wall-of-fire-mythic"><i>wall of fire</i></a><sup>A</sup>, <a href="wallOfIce.html#wall-of-ice-mythic"><i>wall of ice</i></a><sup>A</sup>.</p>
+<p><b>5th-Level Sorcerer/Wizard Mythic Spells</b>&mdash;<a href="balefulPolymorph.html#baleful-polymorph-mythic"><i>baleful polymorph</i></a><sup>A</sup>, <a href="beastShape.html#beast-shape-iii-mythic"><i>beast shape III</i></a><sup>A</sup>, <a href="breakEnchantment.html#break-enchantment-mythic"><i>break enchantment</i></a><sup>A</sup>, <a href="cloudkill.html#cloudkill-mythic"><i>cloudkill</i></a><sup>A</sup>, <a href="coneOfCold.html#cone-of-cold-mythic"><i>cone of cold</i></a><sup>A</sup>, <a href="damnationStride.html#damnation-stride-mythic"><i>damnation stride</i></a><sup>A</sup>, <a href="dominatePerson.html#dominate-person-mythic"><i>dominate person</i></a>, <a href="dream.html#dream-mythic"><i>dream</i></a>, <a href="elementalBody.html#elemental-body-ii-mythic"><i>elemental body II</i></a><sup>A</sup>, <a href="fireSnake.html#fire-snake-mythic"><i>fire snake</i></a><sup>A</sup>, <a href="lendPath.html#lend-path"><i>lend path</i></a>, <a href="lightningArc.html#lightning-arc-mythic"><i>lightning arc</i></a><sup>A</sup>, <a href="monstrousPhysique.html#monstrous-physique-iii-mythic"><i>monstrous physique III</i></a><sup>A</sup>, <a href="nightmare.html#nightmare-mythic"><i>nightmare</i></a><sup>A</sup>, <a href="sending.html#sending-mythic"><i>sending</i></a><sup>A</sup>, <a href="stealPower.html#steal-power-mythic"><i>steal power</i></a>*, <a href="telekinesis.html#telekinesis-mythic"><i>telekinesis</i></a>, <a href="wallOfForce.html#wall-of-force-mythic"><i>wall of force</i></a>, <a href="wallOfStone.html#wall-of-stone-mythic"><i>wall of stone</i></a><sup>A</sup>.</p>
+<p><b>6th-Level Sorcerer/Wizard Mythic Spells</b>&mdash;<a href="antimagicField.html#antimagic-field-mythic"><i>antimagic field</i></a>, <a href="battlemindLink.html#battlemind-link-mythic"><i>battlemind link</i></a>, <a href="beastShape.html#beast-shape-iv-mythic"><i>beast shape IV</i></a><sup>A</sup>, <a href="chainLightning.html#chain-lightning-mythic"><i>chain lightning</i></a>, <a href="circleOfDeath.html#circle-of-death-mythic"><i>circle of death</i></a><sup>A</sup>, <a href="conjureBlackPudding.html#conjure-black-pudding-mythic"><i>conjure black pudding</i></a><sup>A</sup>, <a href="contingency.html#contingency-mythic"><i>contingency</i></a><sup>A</sup>, <a href="disintegrate.html#disintegrate-mythic"><i>disintegrate</i></a><sup>A</sup>, <a href="elementalBody.html#elemental-body-iii-mythic"><i>elemental body III</i></a><sup>A</sup>, <a href="enemyHammer.html#enemy-hammer-mythic"><i>enemy hammer</i></a><sup>A</sup>, <a href="fleshToStone.html#flesh-to-stone-mythic"><i>flesh to stone</i></a><sup>A</sup>, <a href="formOfTheDragon.html#form-of-the-dragon-i-mythic"><i>form of the dragon I</i></a><sup>A</sup>, <a href="globeOfInvulnerability.html#globe-of-invulnerability-mythic"><i>globe of invulnerability</i></a>, <a href="guardsAndWards.html#guards-and-wards-mythic"><i>guards and wards</i></a><sup>A</sup>, <a href="mislead.html#mislead-mythic"><i>mislead</i></a><sup>A</sup>, <a href="monstrousPhysique.html#monstrous-physique-iv-mythic"><i>monstrous physique IV</i></a><sup>A</sup>, <a href="moveEarth.html#move-earth-mythic"><i>move earth</i></a>, <a href="transformation.html#transformation-mythic"><i>transformation</i></a>, <a href="wallOfIron.html#wall-of-iron-mythic"><i>wall of iron</i></a><sup>A</sup>.</p>
+<p><b>7th-Level Sorcerer/Wizard Mythic Spells</b>&mdash;<a href="arcaneCannon.html#arcane-cannon-mythic"><i>arcane cannon</i></a>, <a href="controlWeather.html#control-weather-mythic"><i>control weather</i></a><sup>A</sup>, <a href="elementalBody.html#elemental-body-iv-mythic"><i>elemental body IV</i></a><sup>A</sup>, <a href="fingerOfDeath.html#finger-of-death-mythic"><i>finger of death</i></a>, <a href="formOfTheDragon.html#form-of-the-dragon-ii-mythic"><i>form of the dragon II</i></a><sup>A</sup>, <a href="limitedWish.html#limited-wish-mythic"><i>limited wish</i></a><sup>A</sup>, <a href="planeShift.html#plane-shift-mythic"><i>plane shift</i></a><sup>A</sup>, <a href="powerWordBlind.html#power-word-blind-mythic"><i>power word blind</i></a><sup>A</sup>, <a href="prismaticSpray.html#prismatic-spray-mythic"><i>prismatic spray</i></a><sup>A</sup>, <a href="resonatingWord.html#resonating-word-mythic"><i>resonating word</i></a>, <a href="reverseGravity.html#reverse-gravity-mythic"><i>reverse gravity</i></a><sup>A</sup>, <a href="scouringWinds.html#scouring-winds-mythic"><i>scouring winds</i></a><sup>A</sup>, <a href="terraform.html#terraform-mythic"><i>terraform</i></a>*, <a href="walkThroughSpace.html#walk-through-space-mythic"><i>walk through space</i></a>.</p>
+<p><b>8th-Level Sorcerer/Wizard Mythic Spells</b>&mdash;<a href="dimensionalLock.html#dimensional-lock-mythic"><i>dimensional lock</i></a><sup>A</sup>, <a href="formOfTheDragon.html#form-of-the-dragon-iii-mythic"><i>form of the dragon III</i></a><sup>A</sup>, <a href="irresistibleDance.html#irresistible-dance-mythic"><i>irresistible dance</i></a>, <a href="maze.html#maze-mythic"><i>maze</i></a>, <a href="orbOfTheVoid.html#orb-of-the-void-mythic"><i>orb of the void</i></a><sup>A</sup>, <a href="polarRay.html#polar-ray-mythic"><i>polar ray</i></a>, <a href="powerWordStun.html#power-word-stun-mythic"><i>power word stun</i></a><sup>A</sup>.</p>
+<p><b>9th-Level Sorcerer/Wizard Mythic Spells</b>&mdash;<a href="ascension.html#ascension-mythic"><i>ascension</i></a>*, <a href="foresight.html#foresight-mythic"><i>foresight</i></a>, <a href="magesDisjunction.html#mage-s-disjunction-mythic"><i>mage's disjunction</i></a>, <a href="meteorSwarm.html#meteor-swarm-mythic"><i>meteor swarm</i></a><sup>A</sup>, <a href="powerWordKill.html#power-word-kill-mythic"><i>power word kill</i></a><sup>A</sup>, <a href="prismaticSphere.html#prismatic-sphere-mythic"><i>prismatic sphere</i></a>, <a href="timeStop.html#time-stop-mythic"><i>time stop</i></a><sup>A</sup>, <a href="tsunami.html#tsunami-mythic"><i>tsunami</i></a><sup>A</sup>, <a href="wish.html#wish-mythic"><i>wish</i></a><sup>A</sup>.</p>
+
+<h2 id="summoner-mythic-spells">Summoner Mythic Spells</h2>
+<p><b>1st-Level Summoner Mythic Spells</b>&mdash;<a href="endureElements.html#endure-elements-mythic"><i>endure elements</i></a>, <a href="enlargePerson.html#enlarge-person-mythic"><i>enlarge person</i></a>, <a href="expeditiousRetreat.html#expeditious-retreat-mythic"><i>expeditious retreat</i></a>, <a href="featherFall.html#feather-fall-mythic"><i>feather fall</i></a><sup>A</sup>, <a href="grease.html#grease-mythic"><i>grease</i></a><sup>A</sup>, <a href="mageArmor.html#mage-armor-mythic"><i>mage armor</i></a>, <a href="magicFang.html#magic-fang-mythic"><i>magic fang</i></a>, <a href="protectionFrom.html#protection-from-mythic"><i>protection from chaos/evil/good/law</i></a>, <a href="reducePerson.html#reduce-person-mythic"><i>reduce person</i></a>.</p>
+<p><b>2nd-Level Summoner Mythic Spells</b>&mdash;<a href="ablativeBarrier.html#ablative-barrier-mythic"><i>ablative barrier</i></a>, <a href="barkskin.html#barkskin-mythic"><i>barkskin</i></a><sup>A</sup>, <a href="haste.html#haste-mythic"><i>haste</i></a><sup>A</sup>, <a href="invisibility.html#invisibility-mythic"><i>invisibility</i></a><sup>A</sup>, <a href="levitate.html#levitate-mythic"><i>levitate</i></a><sup>A</sup>, <a href="phantomSteed.html#phantom-steed-mythic"><i>phantom steed</i></a><sup>A</sup>, <a href="protectionFromArrows.html#protection-from-arrows-mythic"><i>protection from arrows</i></a>, <a href="resistEnergy.html#resist-energy-mythic"><i>resist energy</i></a>, <a href="shareGlory.html#share-glory-mythic"><i>share glory</i></a>*, <a href="slow.html#slow-mythic"><i>slow</i></a>, <a href="spiderClimb.html#spider-climb-mythic"><i>spider climb</i></a>, <a href="summonSwarm.html#summon-swarm-mythic"><i>summon swarm</i></a>.</p>
+<p><b>3rd-Level Summoner Mythic Spells</b>&mdash;<a href="blackTentacles.html#black-tentacles-mythic"><i>black tentacles</i></a><sup>A</sup>, <a href="devolution.html#devolution-mythic"><i>devolution</i></a><sup>A</sup>, <a href="dimensionDoor.html#dimension-door-mythic"><i>dimension door</i></a>, <a href="dispelMagic.html#dispel-magic-mythic"><i>dispel magic</i></a>, <a href="fireShield.html#fire-shield-mythic"><i>fire shield</i></a>, <i><a href="fly.html" >fly</a></i><sup>A</sup>, <a href="heroism.html#heroism-mythic"><i>heroism</i></a><sup>A</sup>, <a href="magicFang.html#magic-fang-greater-mythic"><i>magic fang (greater)</i></a><sup>A</sup>, <a href="stoneskin.html#stoneskin-mythic"><i>stoneskin</i></a>, <a href="vomitTwin.html#vomit-twin-mythic"><i>vomit twin</i></a><sup>A</sup>, <a href="wallOfFire.html#wall-of-fire-mythic"><i>wall of fire</i></a><sup>A</sup>, <a href="wallOfIce.html#wall-of-ice-mythic"><i>wall of ice</i></a><sup>A</sup>.</p>
+<p><b>4th-Level Summoner Mythic Spells</b>&mdash;<a href="balefulPolymorph.html#baleful-polymorph-mythic"><i>baleful polymorph</i></a><sup>A</sup>, <a href="damnationStride.html#damnation-stride-mythic"><i>damnation stride</i></a><sup>A</sup>, <a href="lendPath.html#lend-path"><i>lend path</i></a>, <a href="sending.html#sending-mythic"><i>sending</i></a><sup>A</sup>, <a href="wallOfStone.html#wall-of-stone-mythic"><i>wall of stone</i></a><sup>A</sup>.</p>
+<p><b>5th-Level Summoner Mythic Spells</b>&mdash;<a href="conjureBlackPudding.html#conjure-black-pudding-mythic"><i>conjure black pudding</i></a><sup>A</sup>, <a href="planeShift.html#plane-shift-mythic"><i>plane shift</i></a><sup>A</sup>, <a href="wallOfIron.html#wall-of-iron-mythic"><i>wall of iron</i></a><sup>A</sup>.</p>
+<p><b>6th-Level Summoner Mythic Spells</b>&mdash;<a href="dimensionalLock.html#dimensional-lock-mythic"><i>dimensional lock</i></a><sup>A</sup>, <a href="maze.html#maze-mythic"><i>maze</i></a>, <a href="walkThroughSpace.html#walk-through-space-mythic"><i>walk through space</i></a>.</p>
+
+<h2 id="witch-mythic-spells">Witch Mythic Spells</h2>
+<p><b>1st-Level Witch Mythic Spells</b>&mdash;<a href="burningHands.html#burning-hands-mythic"><i>burning hands</i></a>, <a href="command.html#command-mythic"><i>command</i></a>, <a href="cureLightWounds.html#cure-light-wounds-mythic"><i>cure light wounds</i></a>, <a href="earPiercingScream.html#ear-piercing-scream-mythic"><i>ear-piercing scream</i></a><sup>A</sup>, <a href="enlargePerson.html#enlarge-person-mythic"><i>enlarge person</i></a>, <a href="hexWard.html#hex-ward-mythic"><i>hex ward</i></a><sup>A</sup>, <a href="illOmen.html#ill-omen-mythic"><i>ill omen</i></a><sup>A</sup>, <a href="inflictLightWounds.html#inflict-light-wounds-mythic"><i>inflict light wounds</i></a>, <a href="mageArmor.html#mage-armor-mythic"><i>mage armor</i></a>, <a href="obscuringMist.html#obscuring-mist-mythic"><i>obscuring mist</i></a><sup>A</sup>, <a href="rayOfEnfeeblement.html#ray-of-enfeeblement-mythic"><i>ray of enfeeblement</i></a>, <a href="reducePerson.html#reduce-person-mythic"><i>reduce person</i></a>, <a href="shadowWeapon.html#shadow-weapon-mythic"><i>shadow weapon</i></a>, <a href="sleep.html#sleep-mythic"><i>sleep</i></a><sup>A</sup>, <a href="theftWard.html#theft-ward-mythic"><i>theft ward</i></a>.</p>
+<p><b>2nd-Level Witch Mythic Spells</b>&mdash;<a href="blindnessDeafness.html#blindness-deafness-mythic"><i>blindness/deafness</i></a>, <a href="boilingBlood.html#boiling-blood-mythic"><i>boiling blood</i></a><sup>A</sup>, <a href="burningGaze.html#burning-gaze-mythic"><i>burning gaze</i></a><sup>A</sup>, <a href="cureModerateWounds.html#cure-moderate-wounds-mythic"><i>cure moderate wounds</i></a>, <a href="deathKnell.html#death-knell-mythic"><i>death knell</i></a><sup>A</sup>, <a href="disfiguringTouch.html#disfiguring-touch-mythic"><i>disfiguring touch</i></a><sup>A</sup>, <a href="falseLife.html#false-life-mythic"><i>false life</i></a>, <a href="feastOfAshes.html#feast-of-ashes-mythic"><i>feast of ashes</i></a><sup>A</sup>, <i><a href="fogCloud.html" >fog cloud</a></i><sup>A</sup>, <a href="inflictModerateWounds.html#inflict-moderate-wounds-mythic"><i>inflict moderate wounds</i></a>, <a href="levitate.html#levitate-mythic"><i>levitate</i></a><sup>A</sup>, <a href="perniciousPoison.html#pernicious-poison-mythic"><i>pernicious poison</i></a><sup>A</sup>, <a href="poxPustules.html#pox-pustules-mythic"><i>pox pustules</i></a><sup>A</sup>, <a href="shadowAnchor.html#shadow-anchor-mythic"><i>shadow anchor</i></a>, <a href="summonSwarm.html#summon-swarm-mythic"><i>summon swarm</i></a>, <a href="unshakableChill.html#unshakable-chill-mythic"><i>unshakable chill</i></a><sup>A</sup>, <a href="web.html#web-mythic"><i>web</i></a><sup>A</sup>.</p>
+<p><b>3rd-Level Witch Mythic Spells</b>&mdash;<a href="bleedGlory.html#bleed-glory-mythic"><i>bleed glory</i></a>*, <a href="cupOfDust.html#cup-of-dust-mythic"><i>cup of dust</i></a><sup>A</sup>, <a href="deepSlumber.html#deep-slumber-mythic"><i>deep slumber</i></a><sup>A</sup>, <a href="dispelMagic.html#dispel-magic-mythic"><i>dispel magic</i></a>, <i><a href="fly.html" >fly</a></i><sup>A</sup>, <a href="glyphOfWarding.html#glyph-of-warding-mythic"><i>glyph of warding</i></a>, <a href="healingThief.html#healing-thief-mythic-mythic"><i>healing thief</i></a><sup>A</sup>, <a href="heroism.html#heroism-mythic"><i>heroism</i></a><sup>A</sup>, <a href="lightningBolt.html#lightning-bolt-mythic"><i>lightning bolt</i></a><sup>A</sup>, <a href="restoreMythicPower.html#restore-mythic-power-mythic"><i>restore mythic power</i></a>*, <a href="sandsOfTime.html#sands-of-time-mythic"><i>sands of time</i></a><sup>A</sup>, <a href="shareGlory.html#share-glory-mythic"><i>share glory</i></a>*, <a href="stinkingCloud.html#stinking-cloud-mythic"><i>stinking cloud</i></a>, <a href="stranglingHair.html#strangling-hair-mythic"><i>strangling hair</i></a>, <a href="suggestion.html#suggestion-mythic"><i>suggestion</i></a>, <a href="vampiricTouch.html#vampiric-touch-mythic"><i>vampiric touch</i></a>.</p>
+<p><b>4th-Level Witch Mythic Spells</b>&mdash;<a href="battleTrance.html#battle-trance-mythic"><i>battle trance</i></a><sup>A</sup>, <a href="blackTentacles.html#black-tentacles-mythic"><i>black tentacles</i></a><sup>A</sup>, <a href="capeOfWasps.html#cape-of-wasps-mythic"><i>cape of wasps</i></a>, <a href="confusion.html#confusion-mythic"><i>confusion</i></a><sup>A</sup>, <a href="cureSeriousWounds.html#cure-serious-wounds-mythic"><i>cure serious wounds</i></a>, <a href="deathless.html#deathless-mythic"><i>deathless</i></a><sup>A</sup>*, <a href="detectScrying.html#detect-scrying-mythic"><i>detect scrying</i></a><sup>A</sup>, <a href="dimensionDoor.html#dimension-door-mythic"><i>dimension door</i></a>, <a href="enervation.html#enervation-mythic"><i>enervation</i></a><sup>A</sup>, <a href="iceStorm.html#ice-storm-mythic"><i>ice storm</i></a><sup>A</sup>, <a href="inflictSeriousWounds.html#inflict-serious-wounds-mythic"><i>inflict serious wounds</i></a>, <a href="mythicSeverance.html#mythic-severance"><i>mythic severance</i></a>*, <a href="namedBullet.html#named-bullet-mythic-mythic"><i>named bullet</i></a><sup>A</sup>, <a href="phantasmalKiller.html#phantasmal-killer-mythic"><i>phantasmal killer</i></a><sup>A</sup>, <a href="solidFog.html#solid-fog-mythic"><i>solid fog</i></a><sup>A</sup>.</p>
+<p><b>5th-Level Witch Mythic Spells</b>&mdash;<a href="balefulPolymorph.html#baleful-polymorph-mythic"><i>baleful polymorph</i></a><sup>A</sup>, <a href="breakEnchantment.html#break-enchantment-mythic"><i>break enchantment</i></a><sup>A</sup>, <a href="cloudkill.html#cloudkill-mythic"><i>cloudkill</i></a><sup>A</sup>, <a href="cureCriticalWounds.html#cure-critical-wounds-mythic"><i>cure critical wounds</i></a>, <a href="damnationStride.html#damnation-stride-mythic"><i>damnation stride</i></a><sup>A</sup>, <a href="dominatePerson.html#dominate-person-mythic"><i>dominate person</i></a>, <a href="inflictCriticalWounds.html#inflict-critical-wounds-mythic"><i>inflict critical wounds</i></a>, <a href="lendPath.html#lend-path"><i>lend path</i></a>, <a href="stealPower.html#steal-power-mythic"><i>steal power</i></a>*.</p>
+<p><b>6th-Level Witch Mythic Spells</b>&mdash;<a href="animateObjects.html#animate-objects-mythic"><i>animate objects</i></a>, <a href="coneOfCold.html#cone-of-cold-mythic"><i>cone of cold</i></a><sup>A</sup>, <a href="fleshToStone.html#flesh-to-stone-mythic"><i>flesh to stone</i></a><sup>A</sup>, <a href="guardsAndWards.html#guards-and-wards-mythic"><i>guards and wards</i></a><sup>A</sup>, <a href="transformation.html#transformation-mythic"><i>transformation</i></a>.</p>
+<p><b>7th-Level Witch Mythic Spells</b>&mdash;<a href="blackMark.html#black-mark-mythic"><i>black mark</i></a>, <a href="chainLightning.html#chain-lightning-mythic"><i>chain lightning</i></a>, <a href="controlWeather.html#control-weather-mythic"><i>control weather</i></a><sup>A</sup>, <a href="harm.html#harm-mythic"><i>harm</i></a><sup>A</sup>, <a href="heal.html#heal-mythic"><i>heal</i></a><sup>A</sup>, <a href="planeShift.html#plane-shift-mythic"><i>plane shift</i></a><sup>A</sup>, <a href="powerWordBlind.html#power-word-blind-mythic"><i>power word blind</i></a><sup>A</sup>, <a href="regenerate.html#regenerate-mythic"><i>regenerate</i></a>, <a href="scouringWinds.html#scouring-winds-mythic"><i>scouring winds</i></a><sup>A</sup>, <a href="terraform.html#terraform-mythic"><i>terraform</i></a>*, <a href="walkThroughSpace.html#walk-through-space-mythic"><i>walk through space</i></a>.</p>
+<p><b>8th-Level Witch Mythic Spells</b>&mdash;<a href="irresistibleDance.html#irresistible-dance-mythic"><i>irresistible dance</i></a>, <a href="maze.html#maze-mythic"><i>maze</i></a>, <a href="powerWordStun.html#power-word-stun-mythic"><i>power word stun</i></a><sup>A</sup>.</p>
+<p><b>9th-Level Witch Mythic Spells</b>&mdash;<a href="ascension.html#ascension-mythic"><i>ascension</i></a>*, <a href="foresight.html#foresight-mythic"><i>foresight</i></a>, <a href="powerWordKill.html#power-word-kill-mythic"><i>power word kill</i></a><sup>A</sup>, <a href="stormOfVengeance.html#storm-of-vengeance-mythic"><i>storm of vengeance</i></a><sup>A</sup>.</p>
+
+</div>	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Mythic Spell Lists",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

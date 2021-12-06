@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Ranger</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "ranger.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "ranger.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "ranger.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "ranger.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "ranger.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "ranger.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "ranger.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "ranger.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "ranger.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "ranger.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "ranger.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "ranger.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "ranger.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "ranger.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "ranger.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "ranger.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "ranger.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "ranger.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "ranger.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "ranger.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "ranger.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="ranger" class="monster-header">Ranger</h1>
+				
+				
+				<p>Rangers are the masters of the borderlands, staunch and adaptable keepers of their chosen domains. Where druids seek solace in nature, rangers occupy the blurred lines between society and the wild, learning from their favored environments and hardening themselves into apex predators within their domains, whether they be scouts, trackers, bounty hunters, or other fringe-dwellers. Though most people think of rangers as physical warriors, in fact they possess many important spellcasting abilities as well.</p>
+				<p>The following section introduces ranger traps (simple improvised traps that sometimes incorporate the ranger's magical abilities) and a new ranger archetype&mdash;the trapper, who is an expert with all kinds of traps.</p>
+				<h1 id="ranger-traps">Ranger Traps</h1>
+				<p>Rangers are legendary for their ability to hunt down and capture their prey. Some rangers can create elaborate traps out of scraps, vines, and perhaps a little bit of specialized magic. Characters can learn how to set these traps by taking the <a href="../ultimateMagicFeats.html#learn-ranger-trap" >Learn Ranger Trap</a> feat or by having the trapper ranger archetype.</p>
+				<p>Setting a trap is a full-round action that provokes attacks of opportunity. A trap fills a single 5-foot square, and cannot be placed in the same area as another ranger trap or a magical trap such as a glyph of warding. The ranger only needs simple materials to create the trap, such as a piece of cloth, a small amount of metal (such as a dagger, iron spike, or a few nails), a foot of rope or vine, and so on. The DCs for <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> checks to notice the trap, <a href="../../coreRulebook/skills/disableDevice.html#disable-device" >Disable Device</a> checks to disable it, and for saving throws to avoid it are equal to 10 + 1/2 the character's level + the character's Wisdom bonus. All ranger traps are <b>Trigger</b>: location, and <b>Reset</b>: none.</p>
+				<p>Ranger traps are either extraordinary or supernatural; extraordinary traps are <b>Type</b>: mechanical, and supernatural traps are <b>Type</b>: magic. Some of the traps listed below may be set as extraordinary traps or as magical (supernatural) traps; learning such a trap lets a ranger set it either way. An extraordinary trap has a &ndash;2 penalty to its DC. An extraordinary trap lasts 1 day per ranger level or until it is triggered, whichever comes first. A magical trap lasts only 1 hour per level or until triggered, whichever comes first. A trap's DC decreases by 1 for each full day (or hour, for a magical trap) that passes after it is set. Traps marked with an asterisk (*) add to or modify the effects of another trap; a ranger can add one of these trap types to any standard ranger trap (this costs 1 additional use of the trap ability).</p>
+				<p id="alarm-trap*-(ex-or-su)" class="stat-block-title">Alarm Trap* (Ex or Su)</p>
+				<p class="stat-block-breaker">Effects</p>
+				<p id="effect" class="stat-block-1"><b>Effect</b> When the trap is triggered, it also creates a momentary loud noise equivalent to the audible alarm version of <i><a href="../../coreRulebook/spells/alarm.html#alarm" >alarm</a></i>.</p>
+				<p id="burning-trap*-(ex-or-su)" class="stat-block-title">Burning Trap* (Ex or Su)</p>
+				<p class="stat-block-breaker">Effects</p>
+				<p id="effect" class="stat-block-1"><b>Effect</b> A ranger can only add this to a fire trap. If the triggering creature fails its Reflex save, it catches on fire, taking 1d6 points of fire damage at the start of its turn for 1d4 rounds. The burning creature can attempt a new save as a full-round action. Dropping and rolling on the ground grants a +4 bonus on this save.</p>
+				<p id="exploding-trap*-(ex-or-su)" class="stat-block-title">Exploding Trap* (Ex or Su)</p>
+				<p class="stat-block-breaker">Effects</p>
+				<p id="effect" class="stat-block-1"><b>Effect</b> A ranger can only add this to a fire trap. The trap explodes in fire, filling all squares adjacent to the trap and dealing a number of points of fire damage equal to 1d6 + 1/2 the ranger's level (Reflex negates). If it is an extraordinary trap, the ranger must use an explosive material such as alchemist's fire when setting the trap.</p>
+				<p id="fire-trap-(ex-or-su)" class="stat-block-title">Fire Trap (Ex or Su)</p>
+				<p class="stat-block-breaker">Effects</p>
+				<p id="effect" class="stat-block-1"><b>Effect</b> The trap explodes in flames, dealing a number of points of fire damage equal to 1d6 + 1/2 the ranger's level to the triggering creature (Reflex negates). If it is an extraordinary trap, the ranger must use an explosive material such as alchemist's fire when setting the trap.</p>
+				<p id="freezing-trap-(su)" class="stat-block-title">Freezing Trap (Su)</p>
+				<p class="stat-block-breaker">Effects</p>
+				<p id="effect" class="stat-block-1"><b>Effect</b> The trap creates a burst of ice that damages and encases the triggering creature. The creature takes 1d3 points of cold damage + 1/4 the ranger's level and is entangled and stuck to the ground, similar to the effect of a tanglefoot bag. A successful Reflex save halves the damage and means the creature is not stuck to the floor by the ice. The ice is 1 inch thick per 2 Hit Dice of the ranger (minimum 1), has hardness 0 and 3 hit points per inch of thickness, and melts in 2d4 rounds.</p>
+				<p id="marking-trap*-(ex-or-su)" class="stat-block-title">Marking Trap* (Ex or Su)</p>
+				<p class="stat-block-breaker">Effects</p>
+				<p id="effect" class="stat-block-1"><b>Effect</b> If the triggering creature fails its save against the trap, it is marked with a dye and/or scent of the ranger's choosing. A scent mark decreases the DC of tracking the marked creature by scent by 4. The mark can be washed off with vigorous scrubbing, but fades on its own over several days. </p>
+				<p id="poison-trap-(ex-or-su)" class="stat-block-title">Poison Trap (Ex or Su)</p>
+				<p class="stat-block-breaker">Effects</p>
+				<p id="effect" class="stat-block-1"><b>Effect</b> The trap poisons the creature that triggers it. If it is a supernatural trap, the poison deals 1d2 Con damage per round for 6 rounds. If it is an extraordinary trap, the ranger must provide 1 dose of contact, inhaled, or injury poison when setting the trap, and the trap uses that poison's effects and DC.</p>
+				<p id="sleet-trap-(su)" class="stat-block-title">Sleet Trap (Su)</p>
+				<p class="stat-block-breaker">Effects</p>
+				<p id="effect" class="stat-block-1"><b>Effect</b> The detonating trap creates a 20-foot-radius burst of sleet with the effects of a <i><a href="../../coreRulebook/spells/sleetStorm.html#sleet-storm" >sleet storm</a></i>. The driving sleet lasts for 1 round, but the icy ground persists for 1 round per ranger level.</p>
+				<p id="snare-trap-(ex-or-su)" class="stat-block-title">Snare Trap (Ex or Su)</p>
+				<p class="stat-block-breaker">Effects</p>
+				<p id="effect" class="stat-block-1"><b>Effect</b> The trap constricts around a limb or other part of the triggering creature's body (Reflex avoids). The creature cannot move from the location of the trap, unless the ranger included a "leash" when setting the trap, in which case the creature is limited to the length of the leash. The trapped creature can escape with an <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> check (DC equal to the trap's DC) as a full-round action. The trap or its leash has a number of hit points equal to 1/2 the ranger's level, or can be burst as a full-round action with a DC 25 Strength check. The trap can hold up to a Medium creature; each extra daily use of the ranger's trap ability spent when the trap is set increases the maximum size of creature the trap can hold. At the ranger's option, if there is a tall object or structure nearby, she can have the trap lift the creature.</p>
+				<p id="swarm-trap-(ex-or-su)" class="stat-block-title">Swarm Trap (Ex or Su)</p>
+				<p class="stat-block-breaker">Effects</p>
+				<p id="effect" class="stat-block-1"><b>Effect</b> The trap releases a bat swarm, rat swarm, or spider swarm that attacks all creatures in the area. The swarm remains in the general area for no longer than 1 round per ranger level, after which it disperses. If the trap is an extraordinary trap, the ranger must provide the creatures of the swarm (typically in a small box, cage, or crate); these creatures may die of starvation before the trap is triggered (an extraordinary trap lasts 1 day per level).</p>
+				<h1 id="trapper-(archetype)">Trapper (Archetype)</h1>
+				<p>A trapper is a ranger who focuses exclusively on traps, rather than learning conventional magic. A trapper has the following class features.</p>
+				<p id="class-skills"><b>Class Skills</b>: A trapper adds <a href="../../coreRulebook/skills/disableDevice.html#disable-device" >Disable Device</a> to her list of class skills in addition to the normal ranger class skills.</p>
+				<p id="trapfinding"><b>Trapfinding</b>: A trapper adds 1/2 her ranger level on <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> skill checks made to locate traps and on <a href="../../coreRulebook/skills/disableDevice.html#disable-device" >Disable Device</a> skill checks (minimum +1). A trapper can use <a href="../../coreRulebook/skills/disableDevice.html#disable-device" >Disable Device</a> to disarm magic traps.</p>
+				<p id="trap"><b>Trap</b>: At 5th level, a trapper learns how to create a snare trap and one other ranger trap of her choice. At 7th level and every two levels thereafter, she learns another trap. The trapper can use these traps a total number of times per day equal to 1/2 her ranger level + her Wisdom modifier. Once a trap is learned, it can't be unlearned and replaced with a different type of trap. The trapper cannot select an individual trap more than once. This ability replaces the ranger's spells class feature. Trappers do not gain any spells or spellcasting ability, do not have a caster level, and cannot use spell trigger and spell completion magic items.</p>
+				<p id="launch-trap"><b>Launch Trap</b>: At 10th level, a trapper can affix a magical ranger trap to an arrow, crossbow bolt, or thrown weapon, allowing her to set the trap remotely or use it as a direct attack. Attaching the trap to the projectile is part of the full-round action of creating a new trap. The trapped projectile is fired or thrown in the normal manner. If fired at a square, the trap is treated as if the ranger had set the trap in that square, except the DC is 5 lower than normal. If fired at a creature, the target takes damage from the ranged weapon and is treated as if it had triggered the trap (saving throw applies, if any). The attack has a maximum range of 60 feet, and range increments apply to the attack roll. The duration of the trapped projectile starts from when it is created, not from when it is used.</p>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Ranger",globalNavPath=[{ href: '/pathfinderRPG/prd/ultimateMagic/spellcastingClassOptions.html', name: 'Spellcasting Class Options' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

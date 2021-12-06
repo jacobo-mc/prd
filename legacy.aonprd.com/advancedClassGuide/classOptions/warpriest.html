@@ -1,0 +1,439 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Warpriest</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "warpriest.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../spells/index.html">Spells</a></li>
+						<li><a href = "../spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "warpriest.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "warpriest.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "warpriest.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+<h1>Warpriest</h1>
+<p>While paladins are defenders of all that is lawful and good, a warpriest is the living embodiment of a faithful warrior. The warpriest comes in a multitude of forms: some bear the shining armor and upright stance usually associated with paladins, while others serve as cult leaders, exorcise harmful magic effects, or forge the weapons of the faith.</p>
+	<h2 id="champion-of-the-faith-archetype">Champion of the Faith (Archetype)</h2>
+	<p>Champions of the faith are crusaders who use the power of their divine patron to annihilate the faith's enemies. </p>
+	<p id="chosen-alignment"><strong>Chosen Alignment</strong>: At 1st level, a champion of the faith must select one of the following as his chosen alignment: chaos, evil, good, or law. This choice must be one of the alignments shared by the champion of the faith and his deity. Champions of the faith who are neutral with no other alignment components (or whose deity is) can choose any of the above alignments for this purpose. Additionally, a champion of the faith must select the blessing corresponding to his chosen alignment, even if it's not on his deity's list of domains.</p>
+	<p>His chosen alignment's opposite is referred to as his opposed alignment. Good and evil oppose one another, just as law and chaos oppose one another. This alters alignment.</p>
+	<p id="sacred-weapon"><strong>Sacred Weapon (Su)</strong>: At 1st level, a champion of the faith gains the sacred weapon class feature as normal. However, this ability does not grant the 4th-level ability to enhance the champion of the faith's weapon with divine power, nor does it grant any subsequent increases to that ability. Instead, at 4th level, any sacred weapon wielded by a champion of the faith counts as having his chosen alignment for the purpose of overcoming damage reduction.</p>
+	<p>At 12th level, once per day as a swift action, a champion of the faith can enhance any one sacred weapon with a weapon special ability based on his chosen alignment (<em>anarchic</em> for chaos, <em>unholy</em> for evil, <em>holy</em> for good, or <em>axiomatic</em> for law). This effect lasts for 1 minute. He can use this ability one additional time per day at 16th and 20th levels. </p>
+	<p>This ability alters sacred weapon.</p>
+	<p id="detect-alignment"><strong>Detect Alignment (Sp)</strong>: At 3rd level, a champion of the faith can detect his opposed alignment. As a move action, the champion of the faith can focus on a single item or creature within 60 feet and determine whether it possesses his opposed alignment, as <em>detect chaos/evil/good/law</em>, learning the strength of the aura as if he had studied it for 3 rounds. The champion of the faith does not detect the alignment of any other object or creature when using this ability in this way. This ability replaces the bonus feat gained at 3rd level.</p>
+	<p id="smite"><strong>Smite (Su)</strong>: At 4th level, a champion of the faith can focus his powers against his chosen foes. As a swift action, the champion of the faith chooses one target within sight that is of his opposed alignment. The champion of the faith adds his Charisma bonus to his attack rolls and adds extra damage equal to his warpriest level to all damage rolls made against the target of his smite. If the target of his smite is an outsider with a subtype corresponding to his opposed alignment, the extra damage on the first successful attack increases to twice his warpriest level. Regardless of the target, smite attacks automatically bypass any damage reduction the target possesses.</p>
+	<p>In addition, while his smite is in effect, the champion of the faith gains a deflection bonus equal to his Charisma bonus to his AC against attacks made by the target of the smite. If the smite targets a creature that's not of the champion of the faith's opposed alignment, the smite is wasted with no effect.</p>
+	<p>The smite effect remains until the target of the smite is dead or the next time the champion of the faith regains spells. The champion of the faith can use this ability once per day, plus one additional time per day for every 4 levels beyond 4th (to a maximum of five times per day at 20th level). Using this ability consumes two uses of fervor. </p>
+	<p>This ability replaces channel energy.</p>
+
+	<h2 id="cult-leader-archetype">Cult Leader (Archetype)</h2>
+	<p>Referred to as fanatics, lunatics, or obsessives, cultists see themselves as genuine devotees of their deity. And the hierarchs of those devotees, the cult leaders, are the most fanatical of them all. Cult leaders are known for turning reasonable hearts toward corrupted teachings and striking at those that get in the way of their agenda.</p>
+	<p id="cult-leader-class-skills"><strong>Class Skills</strong>: The cult leader's class skills are <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> (Dex), <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> (Cha), <a href="../../coreRulebook/skills/climb.html#climb">Climb</a> (Str), <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (Int), <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> (Cha), <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> (Cha), <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> (Dex), <a href="../../coreRulebook/skills/heal.html#heal">Heal</a> (Wis), <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> (Cha), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (local) (Int), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) (Int), <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> (Wis), <a href="../../coreRulebook/skills/profession.html#profession">Profession</a> (Wis), <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> (Wis), Slight of Hand (Dex), <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> (Int), and <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> (Dex). These skills replace the warpriest's class skills.</p>
+	<p><strong>Skill Ranks per Level</strong>: 4 + Int modifier.</p>
+	<p id="cult-leader-proficiencies"><strong>Weapon and Armor Proficiency</strong>: Cult leaders are proficient with all simple weapons, plus the hand crossbow, rapier, sap, shortbow, and short sword, as well as the favored weapon of their deity. They are proficient with light armor and light shields. The cult leader does not gain Weapon Focus as a bonus feat as a warpriest normally would. This ability replaces the warpriest's weapon and armor proficiency.</p>
+	<p id="well-hidden"><strong>Well-Hidden (Ex)</strong>: A cult leader gains a +2 bonus on <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> checks and <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> checks. This ability replaces focus weapon. </p>
+	<p id="sneak-attack"><strong>Sneak Attack (Ex)</strong>: At 3rd level, a cult leader gains the sneak attack ability, as the rogue class feature. If he already has sneak attack from another class, the extra damage from the classes that grant sneak attack stack for the purpose of determining the sneak attack's extra damage dice. This extra damage is 1d6 at 3rd level and increases by 1d6 every 3 levels thereafter. This ability replaces the bonus feats gained at 3rd, 9th, and 15th levels.</p>
+	<p id="enthrall"><strong>Enthrall (Sp)</strong>: At 4th level, a cult leader can cast <em>enthrall</em>. Using this ability consumes two uses of fervor. This ability replaces channel energy.</p>
+	<p id="hide-in-plain-sight"><strong>Hide in Plain Sight (Su)</strong>: At 12th level, a cult leader can use the <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> skill even while being observed. As long as he is within 10 feet of an area of dim light, a cult leader can hide himself from view in the open without having anything to actually hide behind. He cannot, however, hide in his own shadow. This ability replaces the bonus feat gained at 12th level.</p>
+
+	<h2 id="disenchanter-archetype">Disenchanter (Archetype)</h2>
+	<p>While many warpriests focus on threats to the body, the disenchanter focuses on dangers to the mind and the soul. Using the power of his patron, the disenchanter seeks to keep the powers of magic in check.</p>
+	<p id="disenchanter-bonus-feats"><strong>Bonus Feats (Ex)</strong>: Whenever a disenchanter gains a bonus feat, he must choose from the following list: Great Fortitude, Improved Counterspell, Iron Will, Lightning Reflexes, Skill Focus (<a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a>), or Spell Focus (abjuration). At 6th level, he adds the following feats to this list: <a href="../../ultimateCombat/ultimateCombatFeats.html#dispel-synergy">Dispel Synergy</a>, Improved Great Fortitude, Improved Iron Will, and Improved Lightning Reflexes. At 12th level, he adds the following feats to this list: <a href="../../ultimateCombat/ultimateCombatFeats.html#destructive-dispel">Destructive Dispel</a>, <a href="../../ultimateCombat/ultimateCombatFeats.html#dispelling-critical">Dispelling Critical</a>, <a href="../../advancedPlayersGuide/advancedFeats.html#parry-spell">Parry Spell</a>, and <a href="../../advancedPlayersGuide/advancedFeats.html#ray-shield">Ray Shield</a>. He does not need to meet the prerequisites for these feats. This ability alters bonus feats.</p>
+	<p id="mystic-interference"><strong>Mystic Interference (Su)</strong>: At 4th level, a disenchanter can channel a burst of pure abjuration magic to grant protection to himself and all allies with 30 feet. Affected creatures receive a +1 bonus on saving throws against spells and spell-like abilities for a number of rounds equal to his warpriest level. This is a sacred bonus if the warpriest is good-aligned or able to spontaneously cast cure spells, and a profane bonus if the warpriest is evil-aligned or able to spontaneously cast inflict spells. Using this ability consumes two uses of fervor. At 8th level and every 4 levels thereafter, the bonus granted by mystic interference increases by 1 (to a maximum of +5 at 20th level). This ability replaces channel energy.</p>
+	<p id="banish-enchantment"><strong>Banish Enchantment (Su)</strong>: At 6th level, a disenchanter learns to focus his mystic interference. As a standard action, he can consume two uses of his fervor ability to target a single creature within 30 feet with a targeted <a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic"><em>dispel magic</em></a>. This ability replaces the bonus feat gained at 6th level.</p>
+	<h2 id="divine-commander-archetype">Divine Commander (Archetype)</h2>
+	<p>Some warpriests are called to lead great armies and face legions of foes. These divine commanders live for war and fight for glory. Their hearts quicken at battle cries, and they charge forth with their deity's symbol held high. They assume the mantle of leadership to promote the agenda of their faith, and gather armies of devoted followers willing to give their lives for the cause. (Several of the divine commander's abilities reference and interact with the mass combat rules in <em>Pathfinder RPG Ultimate Campaign</em>.)</p>
+	<p id="mount"><strong>Mount (Ex)</strong>: A divine commander gains the service of a loyal and trusty steed to carry her into battle. This mount functions as a druid's animal companion, using the divine commander's level as her effective druid level. The creature must be one that she is capable of riding and must be suitable as a mount. A Medium divine commander can select a camel or a horse. A Small divine commander can select a pony or a wolf, and can also select a boar or a dog if she is at least 4th level. (The GM might approve other animals as suitable mounts.)</p>
+	<p>A divine commander does not take an armor check penalty on <a href="../../coreRulebook/skills/ride.html#ride">Ride</a> checks while riding this mount. The mount is always considered combat trained, and it begins play with Light Armor Proficiency as a bonus feat. A divine commander's mount does not gain the share spells special ability. If a divine commander's mount dies, she can find another mount to serve her after 1 week of mourning. This new mount does not gain the link, evasion, devotion, or improved evasion special abilities until the next time the divine commander gains a level. This ability replaces blessings.</p>
+	<p id="battle-tactician"><strong>Battle Tactician (Ex)</strong>: At 3rd level, a divine commander gains a teamwork feat as a bonus feat. She must meet the prerequisites of this feat. As a standard action, the divine commander can grant this feat to all allies within 30 feet who can see and hear her. Allies retain the use of this bonus feat for 4 rounds, plus 1 round for every 2 levels beyond 3rd that the divine commander possesses. Allies do not need to meet the prerequisites of this bonus feat. The divine commander can use this ability once per day at 3rd level, plus one additional time per day at 9th and 15th levels. This ability replaces the bonus feat gained at 3rd level.</p>
+	<p id="blessed-mount"><strong>Blessed Mount (Su)</strong>: At 6th level, a divine commander's mount is blessed by her deity. The divine commander's mount gains either the celestial, the entropic, the fiendish, or the resolute template, matching the alignment of the warpriest's deity (celestial for good, entropic for chaotic, fiendish for evil, or resolute for lawful). If deity's alignment includes more than one of these components, the divine commander can select which of the two templates the mount receives. Once the type of template is selected, it can't be changed.</p>
+	<p>If the divine commander's deity is neutral with no other alignment components, the mount receives spell resistance equal to the divine commander's level + 5, as well as resistance 10 against two types of energy damage of the divine commander's choice.</p>
+	<p>If a divine commander's mount dies and the divine commander finds another mount, the new mount becomes a blessed mount the next time the divine commander gains a level. This ability replaces the bonus feat gained at 6th level.</p>
+	<p id="greater-battle-tactician"><strong>Greater Battle Tactician (Ex)</strong>: At 12th level, the divine commander gains an additional teamwork feat as a bonus feat. She must meet the prerequisites for this feat. The divine commander can grant this feat to her allies using the battle tactician ability. Additionally, using the battle tactician ability is now a swift action for her. This ability replaces the bonus feat gained at 12th level.</p>
+	<p id="bless-army"><strong>Bless Army (Su)</strong>: At 15th level, a divine commander can raise her holy symbol high and give a blessing to the army she is leading. The divine commander's army gains a +1 bonus to the <a href="../../ultimateCampaign/kingdomsAndWar/massCombat.html#army-statistics">army's OM and DV</a>. This is a sacred bonus if the warpriest is good-aligned or able to spontaneously cast cure spells, and it is a profane bonus if the warpriest is evil-aligned or able to spontaneously cast inflict spells. Using this ability requires the divine commander to expend two uses of fervor. This bonus lasts for one battle, and it must be performed during the tactics phase of the battle. If this is performed when a mass combat is not imminent, the fervor is expended without granting any bonus. This ability replaces the bonus feat gained at 15th level.</p>
+
+	<h2 id="forgepriest-archetype">Forgepriest (Archetype)</h2>
+	<p>Armorers of exquisite skill, forgepriests take inspiration from their deity to produce the most perfect weapons and armor they can, the better to equip the armies of the faithful.</p>
+	<p id="blessings"><strong>Blessings</strong>: A forgepriest selects only one blessing. This ability alters the blessings class feature.</p>
+	<p id="smiths-spells"><strong>Smith's Spells</strong>: A forgepriest adds the following spells to his spell list: 1st&mdash;<em>jury rig</em>, <em>shield</em>; 2nd&mdash;<a href="../../coreRulebook/spells/heatMetal.html#heat-metal"><em>heat metal</em></a>, <em>shatter</em>; 3rd&mdash;<em>keen edge</em>, <em>quench</em>, <a href="../../advancedPlayersGuide/spells/versatileWeapon.html#versatile-weapon"><em>versatile weapon</em></a>; 4th&mdash;<a href="../../ultimateCombat/spells/wreathOfBlades.html#wreath-of-blades"><em>wreath of blades</em></a>; 5th&mdash;<em>fabricate</em>, <a href="../../coreRulebook/spells/majorCreation.html#major-creation"><em>major creation</em></a>; 6th&mdash;<a href="../../coreRulebook/spells/mageSSword.html#mage-s-sword"><em>mage's sword</em></a>.</p>
+	<p id="forge-mastery"><strong>Forge Mastery (Ex)</strong>: A 2nd level, the forgepriest adds a bonus equal to half his level to all <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> checks to make metal items, armor, and weapons. </p>
+	<p id="forgepriest-bonus-feats"><strong>Bonus Feats</strong>: A forgepriest can select item creation feats in addition to combat feats when he gains a bonus feat. This ability alters bonus feats.</p>
+	<p><strong>Craft Magic Arms and Armor</strong> At 3rd level, a forgepriest gains <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> Magic Arms and Armor as a bonus feat. This ability replaces the bonus feat gained at 3rd level.</p>
+	<p id="creators-bond"><strong>Creator's Bond (Su)</strong>: At 4th level, when a forgepriest uses his sacred weapon ability with an item he created personally, he can expend two uses of fervor to increase the bonus granted by 1. Once the forgepriest has the sacred armor ability, he can also use this ability in conjunction with that. This ability replaces channel energy.</p>
+	<p id="heat-of-the-forge"><strong>Heat of the Forge (Su)</strong>: At 6th level, a forgepriest gains fire resistance 5. At 13th level, this resistance increases to 10. This ability replaces the bonus feat gained at 6th level.</p>
+
+	<h2 id="sacred-fist-archetype">Sacred Fist (Archetype)</h2>
+	<p>Sacred fists leave behind armor and shield and instead rely on their fists and whatever protection their deity grants. </p>
+	<p id="sacred-fist-class-skills"><strong>Class Skills</strong>: The sacred fist's class skills are <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> (Dex), <a href="../../coreRulebook/skills/climb.html#climb">Climb</a> (Str), <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (Int), <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> (Cha), <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> (Dex), <a href="../../coreRulebook/skills/heal.html#heal">Heal</a> (Wis), <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> (Cha), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (history) (Int), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) (Int), <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> (Wis), <a href="../../coreRulebook/skills/profession.html#profession">Profession</a> (Wis), <a href="../../coreRulebook/skills/ride.html#ride">Ride</a> (Dex), <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> (Wis), <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> (Int), <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> (Dex), and <a href="../../coreRulebook/skills/swim.html#swim">Swim</a> (Str). This replaces the warpriest's class skills.</p>
+	<p id="sacred-fist-proficiencies"><strong>Weapon and Armor Proficiency</strong>: Sacred fists are proficient with the club, crossbow (light or heavy), dagger, handaxe, javelin, kama, nunchaku, quarterstaff, sai, shortspear, short sword, shuriken, siangham, sling, and spear. Sacred fists are not proficient with any armor or shields. When wearing armor, using a shield, or carrying a medium or heavy load, a sacred fist loses his AC bonus and flurry of blows. This ability replaces the warpriest's weapon and armor proficiency.</p>
+	<p id="sacred-fist-ac-bonus"><strong>AC Bonus (Su)</strong>: A deity protects her sacred fist as long as he is unarmored and unencumbered. A sacred fist adds his Wisdom modifier (minimum 0) to his AC and his CMD. In addition, a sacred fist gains a +1 dodge bonus to AC and CMD at 4th level. This bonus increases by 1 for every 4 levels thereafter (to a maximum of +5 at 20th level).</p>
+	<p>These bonuses to AC apply even against touch attacks or when the sacred fist is flat-footed. He loses these bonuses when he is immobilized or helpless, when he wears any armor, when he carries a shield, or when he carries a medium or heavy load. This counts as the monk ability of the same name, and the sacred fist's warpriest levels stack with monk levels for determining the benefits.</p>
+	<p id="sacred-fist-flurry-of-blows"><strong>Flurry of Blows (Ex)</strong>: At 1st level, a sacred fist can make a flurry of blows attack as a full-attack action. This ability works like the monk ability of the same name, except the sacred fist's attack bonus from warpriest levels does not count as his warpriest level. This ability replaces sacred weapon.</p>
+	<p id="sacred-fist-unarmed-strike"><strong>Unarmed Strike</strong>: At 1st level, a sacred fist gains Improved Unarmed Strike as a bonus feat. He uses his warpriest level as his monk level for determining the amount of damage dealt with an unarmed strike. This ability replaces focus weapon.</p>
+	<p id="blessed-fortitude"><strong>Blessed Fortitude (Su)</strong>: At 3rd level, a sacred fist can avoid even magical and unusual attacks with help from his deity. If he succeeds at a Fortitude saving throw against an attack that has a reduced effect on a successful save, he instead avoids the effect entirely. A helpless sacred fist does not gain the benefit of the blessed fortitude ability. This ability replaces the bonus feat gained at 3rd level.</p>
+	<p id="sacred-first-bonus-style-feat"><strong>Bonus Style Feat</strong>: At 6th level, the sacred fist gains a style feat as a bonus feat. The sacred fist must meet the style feat's prerequisites. He uses his warpriest level as his effective monk level for the purpose of meeting the feat's prerequisites. At 12th and 18th levels, a sacred fist gains either another style feat or a feat that requires a style feat as a prerequisite. This ability replaces the bonus feats gained at 6th, 12th, and 18th levels.</p>
+	<p id="sacred-fist-ki-pool"><strong>Ki Pool (Su)</strong>: At 7th level, the sacred fist gains a ki pool. This ability functions as the monk class feature, using the sacred fist's level &ndash; 3 as his effective monk level when determining the number of points in his pool and the bonuses granted to his unarmed strike. Additionally, the sacred fist can as a swift action spend 1 point from his ki pool to grant himself a +1 insight bonus to his AC for 1 minute. (This is in addition to the normal ki ability to gain a dodge bonus to AC.) This insight bonus increases by 1 for every 3 levels above 7th (to a maximum of +5 at 19th level). This ability replaces sacred armor.</p>
+	<p id="miraculous-fortitude"><strong>Miraculous Fortitude (Su)</strong>: At 9th level, the sacred fist's blessed fortitude ability improves. He still takes no damage or negative effect when he succeeds at a Fortitude save, but now when he fails a Fortitude saving throw against a spell or effect that deals damage (including ability damage and drain), he takes only half the amount of damage. A helpless sacred fist does not gain the benefit of miraculous fortitude. This ability replaces the bonus feat gained at 9th level.</p>
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Warpriest",globalNavPath=[{ href: '/pathfinderRPG/prd/advancedClassGuide/classOptions/index.html', name: 'Archetypes and Class Options'}];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

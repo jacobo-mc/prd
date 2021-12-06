@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Arcane Archers</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "arcaneArcher.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "arcaneArcher.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "arcaneArcher.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "arcaneArcher.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "arcaneArcher.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "arcaneArcher.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "arcaneArcher.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "arcaneArcher.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "arcaneArcher.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "arcaneArcher.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../core/index.html">Core Classes</a></li>
+						<li><a  href = "index.html">Prestige Classes</a></li>
+						<li><a href = "../npc/index.html">NPC Classes</a></li>
+						<li><a href = "../appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "arcaneArcher.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "arcaneArcher.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "arcaneArcher.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "arcaneArcher.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "arcaneArcher.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "arcaneArcher.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "arcaneArcher.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "arcaneArcher.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "arcaneArcher.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "arcaneArcher.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "arcaneArcher.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id="arcane-archers">Arcane Archers</h1>
+
+<p id="green-warden" class="stat-block-title">Green Warden <span class="stat-block-cr">CR 8</span></p>
+<p class="stat-block-1"><b>XP</b> 4,800</p>
+<p class="stat-block-1"><b>Elf fighter</b> 5</p>
+<p class="stat-block-1"><b>Conjurer</b> 2</p>
+<p class="stat-block-1"><b>Arcane archer</b> 2</p>
+<p class="stat-block-1">N Medium humanoid (elf)</p>
+<p class="stat-block-1"><b>Init</b> +5; <b>Senses</b> low-light vision; Perception +14</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 19, touch 15, flat-footed 14 (+4 armor, +5 Dex)</p>
+<p class="stat-block-1"><b>hp</b> 51 (5d10+2d6+2d10)</p>
+<p class="stat-block-1"><b>Fort</b> +7, <b>Ref</b> +9, <b>Will</b> +10; +2 vs. enchantments, +1 vs. fear </p>
+<p class="stat-block-1"><b>Defensive Abilities</b> bravery +1; <b>DR</b> 10/magic (ranged weapon attack only; 30 points); <b>Immune</b> sleep </p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+<p class="stat-block-1"><b>Melee </b><i>+2 short sword</i> +14/+9 (1d6+4/19–20)<b></b></p>
+<p class="stat-block-1"><b>Ranged </b>mwk composite longbow +18/+13 (1d8+5/×3)</p>
+<p class="stat-block-1"><b>Special Attacks</b> enhance arrows (magic), imbue arrow, weapon training (bows +1)</p>
+<p class="stat-block-1"><b>Conjurer Spell-Like Abilities</b> (CL 3rd; concentration +4)</p>
+<p class="stat-block-2">4/day&mdash;acid dart</p>
+<p class="stat-block-1"><b>Conjurer Spells Prepared</b> (CL 3rd; concentration +4; arcane spell failure 15%)</p>
+<p class="stat-block-2">2nd&mdash;<i><a href="../../coreRulebook/spells/glitterdust.html#glitterdust" >glitterdust</a></i> (DC 13), <i><a href="../../coreRulebook/spells/web.html#web" >web</a></i> (DC 13)</p>
+<p class="stat-block-2">1st&mdash;<i><a href="../../coreRulebook/spells/burningHands.html#burning-hands" >burning hands</a></i> (2, DC 12), <i><a href="../../coreRulebook/spells/colorSpray.html#color-spray" >color spray</a></i> (2, DC 12)</p>
+<p class="stat-block-2">0 (at will)&mdash;<i><a href="../../coreRulebook/spells/bleed.html#bleed" >bleed</a></i> (DC 11), <i><a href="../../coreRulebook/spells/dancingLights.html#dancing-lights" >dancing lights</a></i>, <i><a href="../../coreRulebook/spells/ghostSound.html#ghost-sound" >ghost sound</a></i> (DC 11), <i><a href="../../coreRulebook/spells/mageHand.html#mage-hand" >mage hand</a></i></p>
+<p class="stat-block-2"><b>Opposition Schools</b> divination, necromancy</p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>Before Combat</b> The arcane archer attempts to start combat from a hard-to-reach spot, such as a high tree branch or steep elevation. He casts <i><a href="../../coreRulebook/spells/heroism.html#heroism" >heroism</a></i> and <i><a href="../../coreRulebook/spells/protectionFromArrows.html#protection-from-arrows" >protection from arrows</a></i> on himself from scrolls. </p>
+<p class="stat-block-1"><b>During Combat</b> The archer keeps his distance and uses his magic arrows first. He casts <i><a href="../../coreRulebook/spells/glitterdust.html#glitterdust" >glitterdust</a></i> and <i><a href="../../coreRulebook/spells/web.html#web" >web</a></i> to slow down any approaching enemies, using imbue arrow to increase the range of such spells if needed. He uses <a href="../../coreRulebook/feats.html#arcane-armor-training" >Arcane Armor Training</a> each round.</p>
+<p class="stat-block-1"><b>Base Statistics</b> Without <i><a href="../../coreRulebook/spells/heroism.html#heroism" >heroism</a></i> and <i><a href="../../coreRulebook/spells/protectionFromArrows.html#protection-from-arrows" >protection from arrows</a></i>, the archer's base statistics are <b>Senses</b> Perception +12; <b>Fort</b> +5, <b>Ref</b> +7, <b>Will</b> +8; <b>DR </b>none; <b>Melee </b><i>+2 short sword</i> +12/+7 (1d6+4/19–20);<b> Ranged </b>mwk composite longbow +16/+11 (1d8+5/×3); <b>Skills</b> <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a> +8, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (arcana, nature) +7, Perception +12, <a href="../../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> +7 (+9 to identify magic item properties), <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +12, <a href="../../coreRulebook/skills/swim.html#swim" >Swim</a> +8.</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 14, <b>Dex</b> 21, <b>Con</b> 10, <b>Int</b> 12, <b>Wis</b> 13, <b>Cha</b> 8</p>
+<p class="stat-block-1"><b>Base Atk</b> +8; <b>CMB</b> +10; <b>CMD</b> 25</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#arcane-armor-training" >Arcane Armor Training</a>, <a href="../../coreRulebook/feats.html#iron-will" >Iron Will</a>, Manyshot, <a href="../../coreRulebook/feats.html#point-blank-shot" >Point-Blank Shot</a>, Precise Shot, Rapid Shot, <a href="../../coreRulebook/feats.html#scribe-scroll" >Scribe Scroll</a>, <a href="../../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a> (longbow), Weapon Specialization (longbow)</p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a> +10, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (arcana, nature) +9, Perception +14, <a href="../../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> +9 (+11 to identify magic items), <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +14, <a href="../../coreRulebook/skills/swim.html#swim" >Swim</a> +10</p>
+<p class="stat-block-1"><b>Languages</b> Common, Elven, Goblin</p>
+<p class="stat-block-1"><b>SQ</b> arcane bond (masterwork composite longbow), armor training 1, elven magic, summoner's charm (1 round), weapon familiarity</p>
+<p class="stat-block-1"><b>Combat Gear </b><i>+1 <a href="../../coreRulebook/magicItems/weapons.html#weapons-frost" >frost</a> arrows</i> (5), <i>+1 human-bane arrows </i>(5), <i>+1 <a href="../../coreRulebook/magicItems/weapons.html#weapons-shock" >shock</a>  arrows</i> (5), <i>potion of <a href="../../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds" >cure moderate wounds</a></i>, <i>scroll of <a href="../../coreRulebook/spells/heroism.html#heroism" >heroism</a></i>, <i>scrolls of  <a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i> (2), <i>scroll of <a href="../../coreRulebook/spells/protectionFromArrows.html#protection-from-arrows" >protection from arrows</a></i>;<b> Other Gear </b><i>+1 studded leather</i>, <i>+2 short sword</i>, masterwork composite longbow with 50 arrows, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#belt-of-incredible-dexterity" >belt of incredible dexterity</a> +2</i>, spell component pouch, spellbook, 165 gp</p>
+
+<p>Protectors of the forest, green wardens are sworn to defend their sylvan homes from enemy encroachment, using magic arrows to kill from the trees' canopy.</p>
+
+
+
+<p id="tournament-champion" class="stat-block-title">Tournament Champion <span class="stat-block-cr">CR 12</span></p>
+<p class="stat-block-1"><b>XP</b> 19,200</p>
+<p class="stat-block-1"><b>Half-elf bard</b> 7</p>
+<p class="stat-block-1"><b>Sorcerer</b> 2</p>
+<p class="stat-block-1"><b>Arcane archer</b> 4</p>
+<p class="stat-block-1">N Medium humanoid (elf, human)</p>
+<p class="stat-block-1"><b>Init</b> +7; <b>Senses</b> low-light vision; Perception +25</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 21, touch 15, flat-footed 17 (+6 armor, +1 deflection, +4 Dex)</p>
+<p class="stat-block-1"><b>hp</b> 86 (7d8+2d6+4d10+22)</p>
+<p class="stat-block-1"><b>Fort</b> +6, <b>Ref</b> +15, <b>Will</b> +11; +2 vs. enchantments, +4 vs. bardic performance, language-dependent, and sonic </p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+<p class="stat-block-1"><b>Melee</b> mwk rapier +11/+6 (1d6/18–20)</p>
+<p class="stat-block-1"><b>Ranged</b> <i>+2 longbow </i>+21/+16 (1d8+2/×3)</p>
+<p class="stat-block-1"><b>Special Attacks</b> bardic performance 19 rounds/day (move action; countersong, distraction, fascinate, inspire competence +3, inspire courage +2, <i><a href="../../coreRulebook/spells/suggestion.html#suggestion" >suggestion</a></i>), enhance arrows (elemental, magic), imbue arrow, seeker arrow (1/day).</p>
+<p class="stat-block-1"><b>Bard Spells Known</b> (CL 10th; concentration +13)</p>
+<p class="stat-block-2">4th (1/day)&mdash;<i><a href="../../coreRulebook/spells/invisibility.html#invisibility-greater" >greater invisibility</a></i>, <i><a href="../../coreRulebook/spells/shout.html#shout" >shout</a></i> (DC 17)</p>
+<p class="stat-block-2">3rd (4/day)&mdash;<i><a href="../../coreRulebook/spells/charmMonster.html#charm-monster" >charm monster</a></i> (DC 16), <i><a href="../../coreRulebook/spells/crushingDespair.html#crushing-despair" >crushing despair</a></i> (DC 16), <i><a href="../../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds" >cure serious wounds</a></i> (DC 16), <i><a href="../../coreRulebook/spells/deepSlumber.html#deep-slumber" >deep slumber</a> </i>(DC 16)</p>
+<p class="stat-block-2">2nd (5/day)&mdash;<i><a href="../../coreRulebook/spells/catSGrace.html#cat-s-grace" >cat's grace</a></i>, <i><a href="../../coreRulebook/spells/eagleSSplendor.html#eagle-s-splendor" >eagle's splendor</a></i>, <i><a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i>, <i><a href="../../coreRulebook/spells/shatter.html#shatter" >shatter</a></i>, <i><a href="../../coreRulebook/spells/silence.html#silence" >silence</a></i> (DC 15)</p>
+<p class="stat-block-2">1st (6/day)&mdash;<i><a href="../../coreRulebook/spells/charmPerson.html#charm-person" >charm person</a></i> (DC 14), <i><a href="../../coreRulebook/spells/featherFall.html#feather-fall" >feather fall</a></i>, <i><a href="../../coreRulebook/spells/grease.html#grease" >grease</a></i>, <i><a href="../../coreRulebook/spells/confusion.html#confusion-lesser" >lesser confusion</a></i> (DC 14), <i><a href="../../coreRulebook/spells/unseenServant.html#unseen-servant" >unseen servant</a></i></p>
+<p class="stat-block-2">0 (at will)&mdash;<i><a href="../../coreRulebook/spells/dancingLights.html#dancing-lights" >dancing lights</a></i>, <i><a href="../../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i>, <i><a href="../../coreRulebook/spells/flare.html#flare" >flare</a></i> (DC 13), <i><a href="../../coreRulebook/spells/mageHand.html#mage-hand" >mage hand</a></i>, <i><a href="../../coreRulebook/spells/mending.html#mending" >mending</a></i>, <i><a href="../../coreRulebook/spells/prestidigitation.html#prestidigitation" >prestidigitation</a></i></p>
+<p class="stat-block-1"><b>Sorcerer Spells Known</b> (CL 2nd; concentration +5; arcane spell failure 20%)</p>
+<p class="stat-block-2">1st (5/day)&mdash;<i><a href="../../coreRulebook/spells/magicMissile.html#magic-missile" >magic missile</a></i>, <i><a href="../../coreRulebook/spells/trueStrike.html#true-strike" >true strike</a></i></p>
+<p class="stat-block-2">0 (at will)&mdash;<i><a href="../../coreRulebook/spells/arcaneMark.html#arcane-mark" >arcane mark</a></i>, <i><a href="../../coreRulebook/spells/daze.html#daze" >daze</a></i> (DC 13), <i><a href="../../coreRulebook/spells/ghostSound.html#ghost-sound" >ghost sound</a></i> (DC 13), <i><a href="../../coreRulebook/spells/openClose.html#open-close" >open/close</a></i>, <i><a href="../../coreRulebook/spells/readMagic.html#read-magic" >read magic</a></i></p>
+<p class="stat-block-2"><b>Bloodline</b> arcane</p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>Before Combat</b> The arcane archer casts <i><a href="../../coreRulebook/spells/catSGrace.html#cat-s-grace" >cat's grace</a></i> and drinks her <i>potion of <a href="../../coreRulebook/spells/haste.html#haste" >haste</a></i>. She typically prepares <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-shock" >shock</a></i> arrows as her enhance arrows ability. </p>
+<p class="stat-block-1"><b>During Combat</b> The archer's favorite tactic is to cast <i><a href="../../coreRulebook/spells/invisibility.html#invisibility-greater" >greater invisibility</a></i>, then make shots from a distance using <i><a href="../../coreRulebook/spells/trueStrike.html#true-strike" >true strike</a></i>. </p>
+<p class="stat-block-1"><b>Base Statistics</b> Without <i><a href="../../coreRulebook/spells/catSGrace.html#cat-s-grace" >cat's grace</a></i>, the arcane archer's statistics are <b>Init</b> +5; <b>Ref</b> +13; <b>Ranged</b> <i>+2 longbow </i>+19/+14 (1d8+2/×3); <b>Dex</b> 20; <b>CMD</b> 26.</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 10, <b>Dex</b> 24, <b>Con</b> 13, <b>Int</b> 8, <b>Wis</b> 12, <b>Cha</b> 16</p>
+<p class="stat-block-1"><b>Base Atk</b> +10; <b>CMB</b> +10; <b>CMD</b> 28</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#deadly-aim" >Deadly Aim</a>, <a href="../../coreRulebook/feats.html#eschew-materials" >Eschew Materials</a>, Far Shot, Manyshot, <a href="../../coreRulebook/feats.html#point-blank-shot" >Point-Blank Shot</a>, Precise Shot, Rapid Shot, <a href="../../coreRulebook/feats.html#skill-focus" >Skill Focus</a> (Perception), <a href="../../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a> (longbow)</p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (geography) +6, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (local, nobility) +8, Perception +25, <a href="../../coreRulebook/skills/perform.html#perform" >Perform</a> (oratory, sing) +19, <a href="../../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> +3, <a href="../../coreRulebook/skills/swim.html#swim" >Swim</a> +0, <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device" >Use Magic Device</a> +7</p>
+<p class="stat-block-1"><b>Languages</b> Common, Elven</p>
+<p class="stat-block-1"><b>SQ</b> arcane bond (<i>+2 longbow</i>), bardic knowledge +3, bloodline arcana (+1 DC for spells with metamagic feats that increase spell level), elf blood, lore master 1/day, versatile performance (oratory, sing)</p>
+<p class="stat-block-1"><b>Combat Gear</b> <i>+1 human-bane arrow</i> (2), <i>+1 magical beast-bane arrow</i> (4),<i> potion of <a href="../../coreRulebook/spells/haste.html#haste" >haste</a></i>; <b>Other Gear</b> <i>+2 chain shirt</i>, <i>+2 longbow</i> with 40 arrows, masterwork rapier, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#belt-of-incredible-dexterity" >belt of incredible dexterity</a> +2</i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#cloak-of-resistance" >cloak of resistance</a> +1</i>, <i>lesser bracers of archery</i>, <i><a href="../../coreRulebook/magicItems/rings.html#ring-of-protection" >ring of protection</a> +1</i>, 309 gp</p>
+
+<p>These half-elves travel from fair to fair, entertaining crowds with archery prowess, arcane flourishes, and epic ballads.</p>
+<h3>Clairian Arrowsong </h3>
+<p>The daughter of a pair of academics, Clairian Arrowsong was never interested in the studious pursuits her parents encouraged. From an early age, Clairian showed promise as both an excellent archer and bard, despite her parents' misgivings about both "hobbies." In the hours she was supposed to be studying in solitude, she escaped to hear the orators and bards who congregated outside of the city's university. But not until she saw her first archery tournament did she find her real passion. None but her parents were surprised when, as a young woman, she ran away with a sorcerer who served as a soothsayer on the tournament circuit. </p>
+<p><b>Combat Encounters:</b> For extra coin and adventure, Clairian hires herself out as an archer to local princelings, bandit lords, and thieves' guilds. Though she serves with skill, she would rather surrender than die for another's cause. </p>
+<p><b>Roleplaying Suggestions:</b> Quick with song and laughter, Clairian doesn't take the plights of others too seriously. She would rather live the good life and have fun than be tied down to lords or obligations. </p>
+
+
+		
+<p id="undead-bane" class="stat-block-title">Undead Bane <span class="stat-block-cr">CR 16</span></p>
+<p class="stat-block-1"><b>XP</b> 76,800</p>
+<p class="stat-block-1"><b>Human ranger</b> 9</p>
+<p class="stat-block-1"><b>Sorcerer</b> 1</p>
+<p class="stat-block-1"><b>Arcane archer</b> 7</p>
+<p class="stat-block-1">N Medium humanoid (human)</p>
+<p class="stat-block-1"><b>Init</b> +9; <b>Senses</b> Perception +22</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 26, touch 17, flat-footed 21 (+6 armor, +1 deflection, +4 Dex, +1 dodge, +1 insight, +3 natural)</p>
+<p class="stat-block-1"><b>hp</b> 138 (9d10+1d6+7d10+43)</p>
+<p class="stat-block-1"><b>Fort</b> +16, <b>Ref</b> +17, <b>Will</b> +11</p>
+<p class="stat-block-1"><b>Defensive Abilities</b> evasion</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+<p class="stat-block-1"><b>Melee</b> <i>+1 short sword</i> +17/+12/+7/+2 (1d6+1/19–20)</p>
+<p class="stat-block-1"><b>Ranged</b> <i>+2 <a href="../../coreRulebook/magicItems/weapons.html#weapons-flaming" >flaming</a> <a href="../../coreRulebook/magicItems/weapons.html#weapons-shock" >shock</a> shortbow</i> +24/+19/+14/+9 (1d6+2/×3 plus 1d6 electricity and 1d6 fire)</p>
+<p class="stat-block-1"><b>Special Attacks</b> enhance arrows (<i><a href="../../coreRulebook/magicItems/weapons.html#weapons-distance" >distance</a></i>, elemental, elemental burst, magic), favored enemy (humans +2, undead +4), imbue arrow, phase arrow (1/day), seeker arrow (2/day)</p>
+<p class="stat-block-1"><b>Bloodline</b> <b>Spell-Like Abilities</b> (CL 6th; concentration +8)</p>
+<p class="stat-block-2">5/day&mdash;touch of destiny</p>
+<p class="stat-block-1"><b>Ranger Spells Prepared</b> (CL 6th; concentration +8)</p>
+<p class="stat-block-2">2nd&mdash;<i><a href="../../coreRulebook/spells/barkskin.html#barkskin" >barkskin</a></i>, <i><a href="../../coreRulebook/spells/snare.html#snare" >snare</a></i></p>
+<p class="stat-block-2">1st&mdash;<i><a href="../../coreRulebook/spells/alarm.html#alarm" >alarm</a></i>, <i><a href="../../coreRulebook/spells/entangle.html#entangle" >entangle</a></i>, <i><a href="../../coreRulebook/spells/resistEnergy.html#resist-energy" >resist energy</a></i></p>
+<p class="stat-block-1"><b>Sorcerer Spells Known</b>(CL 6th; concentration +8; arcane spell failure 20%)</p>
+<p class="stat-block-2">3rd (3/day)&mdash;<i><a href="../../coreRulebook/spells/slow.html#slow" >slow</a></i> (DC 15)</p>
+<p class="stat-block-2">2nd (6/day)&mdash;<i><a href="../../coreRulebook/spells/falseLife.html#false-life" >false life</a></i>, <i><a href="../../coreRulebook/spells/mirrorImage.html#mirror-image" >mirror image</a></i></p>
+<p class="stat-block-2">1st (7/day)&mdash;<i><a href="../../coreRulebook/spells/burningHands.html#burning-hands" >burning hands</a></i> (DC 13), <i><a href="../../coreRulebook/spells/detectUndead.html#detect-undead" >detect undead</a></i>, <i><a href="../../coreRulebook/spells/silentImage.html#silent-image" >silent image</a></i> (DC 13), <i><a href="../../coreRulebook/spells/trueStrike.html#true-strike" >true strike</a></i></p>
+<p class="stat-block-2">0 (at will)&mdash;<i><a href="../../coreRulebook/spells/acidSplash.html#acid-splash" >acid splash</a></i>, <i><a href="../../coreRulebook/spells/disruptUndead.html#disrupt-undead" >disrupt undead</a></i>, <i><a href="../../coreRulebook/spells/light.html#light" >light</a></i>, <i><a href="../../coreRulebook/spells/mageHand.html#mage-hand" >mage hand</a></i>, <i><a href="../../coreRulebook/spells/message.html#message" >message</a></i>, <i><a href="../../coreRulebook/spells/openClose.html#open-close" >open/close</a></i>, <i><a href="../../coreRulebook/spells/resistance.html#resistance" >resistance</a></i></p>
+<p class="stat-block-2"><b>Bloodline</b> destined</p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>Before Combat</b> The arcane archer casts <i><a href="../../coreRulebook/spells/barkskin.html#barkskin" >barkskin</a></i> and uses her <i>wand of <a href="../../coreRulebook/spells/shield.html#shield" >shield</a></i>. She prepares <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-frost" >frost</a> burst </i>arrows using her enhance arrows ability.</p>
+<p class="stat-block-1"><b>During Combat</b> Preferring to stay out of the reach and sight of powerful enemies, the arcane archer casts <i><a href="../../coreRulebook/spells/fly.html" >fly</a> </i>and <i><a href="../../coreRulebook/spells/invisibility.html#invisibility-greater" >greater invisibility</a></i> on herself, takes flight, and pelts her enemies with arrows from relative safety. </p>
+<p class="stat-block-1"><b>Base Statistics</b> Without <i><a href="../../coreRulebook/spells/barkskin.html#barkskin" >barkskin</a></i>, the arcane archer's statistics are <b>AC</b> 24, touch 17, flat-footed 19</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 10, <b>Dex</b> 20, <b>Con</b> 14, <b>Int</b> 8, <b>Wis</b> 14, <b>Cha</b> 14</p>
+<p class="stat-block-1"><b>Base Atk</b> +16; <b>CMB</b> +16; <b>CMD</b> 34</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#deadly-aim" >Deadly Aim</a>, <a href="../../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../../coreRulebook/feats.html#endurance" >Endurance</a>, <a href="../../coreRulebook/feats.html#eschew-materials" >Eschew Materials</a>, <a href="../../coreRulebook/feats.html#great-fortitude" >Great Fortitude</a>, Greater <a href="../../coreRulebook/feats.html#vital-strike" >Vital Strike</a>, <a href="../../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a>, Improved <a href="../../coreRulebook/feats.html#vital-strike" >Vital Strike</a>, Manyshot, <a href="../../coreRulebook/feats.html#point-blank-shot" >Point-Blank Shot</a>, Precise Shot, Rapid Shot, <a href="../../coreRulebook/feats.html#vital-strike" >Vital Strike</a>, <a href="../../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a> (shortbow)</p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a> +12, <a href="../../coreRulebook/skills/heal.html#heal" >Heal</a> +15, <a href="../../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +12, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (religion) +9, Perception +22, <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +17, <a href="../../coreRulebook/skills/survival.html#survival" >Survival</a> +15, <a href="../../coreRulebook/skills/swim.html#swim" >Swim</a> +12</p>
+<p class="stat-block-1"><b>Languages</b> Common</p>
+<p class="stat-block-1"><b>SQ</b> bloodline arcana (gains a luck bonus on saves when casting personal-range spells), evasion, favored terrain (forest +2, underground +4), hunter's bond (companions), swift tracker, track +4, wild empathy +11, woodland stride</p>
+<p class="stat-block-1"><b>Combat Gear </b><i>+1 <a href="../../coreRulebook/magicItems/weapons.html#weapons-ghost-touch" >ghost touch</a> arrows</i> (10), <i>+1 undead-bane arrows</i> (10), <i>potion of <a href="../../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds" >cure moderate wounds</a>,</i> <i>potion of <a href="../../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds" >cure serious wounds</a></i>, <i>potion of <a href="../../coreRulebook/spells/restoration.html#restoration-lesser" >lesser restoration</a></i>, <i>potion of remove  disease,</i> <i>scrolls of <a href="../../coreRulebook/spells/invisibility.html#invisibility-greater" >greater invisibility</a></i> (2), <i>scrolls of <a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i> (2), <i>wand of <a href="../../coreRulebook/spells/fly.html" >fly</a></i> (10 charges), <i>wand of <a href="../../coreRulebook/spells/shield.html#shield" >shield</a></i> (20 charges), holy water (10);<b> Other Gear </b><i>+2 chain shirt</i>, <i>+2 <a href="../../coreRulebook/magicItems/weapons.html#weapons-flaming" >flaming</a> <a href="../../coreRulebook/magicItems/weapons.html#weapons-shock" >shock</a> shortbow</i> with 20 arrows, <i>+1 short sword</i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#amulet-of-natural-armor" >amulet of natural armor</a> +1</i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#belt-of-physical-might" >belt of physical might</a> +2 </i>(Dex, Con), <i><a href="../../coreRulebook/magicItems/wondrousItems.html#cloak-of-resistance" >cloak of resistance</a> +2</i>, <i>dusky rose prism <a href="../../coreRulebook/magicItems/wondrousItems.html#ioun-stones" >ioun stone</a>, <a href="../../coreRulebook/magicItems/wondrousItems.html#efficient-quiver" >efficient quiver</a></i>, <i>ring of <a href="../../coreRulebook/spells/featherFall.html#feather-fall" >feather fall</a></i>,<i> <a href="../../coreRulebook/magicItems/rings.html#ring-of-protection" >ring of protection</a> +1</i>, 238 gp</p>
+
+<p>Though these archers primarily hunt undead, they are dangerous foes for any creatures.</p>
+<h3>Sorina Kalthorin </h3>
+<p>Sorina believes undeath is a scourge and corruption that must be purged. As long as the undead spread their filth, all other moral questions are moot. She sees it as her sacred duty to destroy all undead she comes across. To this end, she is constantly in search of crypts and ruins that hide her hated foes.</p>
+
+		
+<p id="chaos-arrow" class="stat-block-title">Chaos Arrow <span class="stat-block-cr">CR 19</span></p>
+<p class="stat-block-1"><b>XP</b> 204,800</p>
+<p class="stat-block-1"><b>Gnome rogue</b> 6</p>
+<p class="stat-block-1"><b>Sorcerer</b> 4</p>
+<p class="stat-block-1"><b>Arcane archer</b> 10</p>
+<p class="stat-block-1">CE Small humanoid (gnome)</p>
+<p class="stat-block-1"><b>Init</b> +11; <b>Senses</b> low-light vision, <i><a href="../../coreRulebook/spells/seeInvisibility.html#see-invisibility" >see invisibility</a></i>; Perception +26</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 31, touch 21, flat-footed 24 (+7 armor, +3 deflection, +6 Dex, +1 dodge, +3 natural, +1 size)</p>
+<p class="stat-block-1"><b>hp</b> 140 (6d8+4d6+10d10+40)</p>
+<p class="stat-block-1"><b>Fort</b> +13, <b>Ref</b> +21, <b>Will</b> +13; +2 vs. illusions</p>
+<p class="stat-block-1"><b>Defensive Abilities</b> defensive training (+4 dodge bonus to AC vs. giants), evasion, trap sense +2, uncanny dodge</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 20 ft.</p>
+<p class="stat-block-1"><b>Melee</b> dagger +17/+12/+7/+2 (1d3/19–20)</p>
+<p class="stat-block-1"><b>Ranged</b> <i>+2 <a href="../../coreRulebook/magicItems/weapons.html#weapons-frost" >frost</a> <a href="../../coreRulebook/magicItems/weapons.html#weapons-shock" >shock</a> shortbow</i> +27/+22/+17/+12 (1d4+2/×3 plus 1d6 cold and 1d6 electricity)</p>
+<p class="stat-block-1"><b>Special Attacks</b> +1 on attack rolls against goblinoid and reptilian humanoids, arrow of death, enhance arrows (aligned, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-distance" >distance</a></i>, elemental, elemental burst, magic), imbue arrow, phase arrow (3/day), seeker arrow (4/day), sneak attack +3d6</p>
+<p class="stat-block-1"><b>Gnome Spell-Like Abilities </b>(CL 20th; concentration +24)</p>
+<p class="stat-block-2">1/day&mdash;<i><a href="../../coreRulebook/spells/dancingLights.html#dancing-lights" >dancing lights</a></i>, <i><a href="../../coreRulebook/spells/ghostSound.html#ghost-sound" >ghost sound</a></i>, <i><a href="../../coreRulebook/spells/prestidigitation.html#prestidigitation" >prestidigitation</a></i>, <i><a href="../../coreRulebook/spells/speakWithAnimals.html#speak-with-animals" >speak with animals</a></i></p>
+<p class="stat-block-1"><b>Bloodline</b> <b>Spell-Like Abilities</b> (CL 11th; concentration +15)</p>
+<p class="stat-block-2">7/day&mdash;laughing touch</p>
+<p class="stat-block-1"><b>Sorcerer Spells Known</b> (CL 11th; concentration +15; arcane spell failure 10%)</p>
+<p class="stat-block-2">5th (4/day)&mdash;<i><a href="../../coreRulebook/spells/cloudkill.html#cloudkill" >cloudkill</a> </i>(DC 19), <i><a href="../../coreRulebook/spells/teleport.html#teleport" >teleport</a></i></p>
+<p class="stat-block-2">4th (7/day)&mdash;<i><a href="../../coreRulebook/spells/confusion.html#confusion" >confusion</a></i> (DC 20), <i><a href="../../coreRulebook/spells/invisibility.html#invisibility-greater" >greater invisibility</a></i>, <i><a href="../../coreRulebook/spells/shout.html#shout" >shout</a></i> (DC 18)</p>
+<p class="stat-block-2">3rd (7/day)&mdash;<i><a href="../../coreRulebook/spells/explosiveRunes.html#explosive-runes" >explosive runes</a></i>, <i><a href="../../coreRulebook/spells/haste.html#haste" >haste</a></i>, <i><a href="../../coreRulebook/spells/heroism.html#heroism" >heroism</a></i>, <i><a href="../../coreRulebook/spells/stinkingCloud.html#stinking-cloud" >stinking cloud</a></i> (DC 17)</p>
+<p class="stat-block-2">2nd (7/day)&mdash;<i><a href="../../coreRulebook/spells/darkvision.html#darkvision" >darkvision</a></i>, <i><a href="../../coreRulebook/spells/glitterdust.html#glitterdust" >glitterdust</a></i> (DC 16), <i><a href="../../coreRulebook/spells/ropeTrick.html#rope-trick" >rope trick</a></i>, <i><a href="../../coreRulebook/spells/seeInvisibility.html#see-invisibility" >see invisibility</a></i>, <i><a href="../../coreRulebook/spells/web.html#web" >web</a></i> (DC 16)</p>
+<p class="stat-block-2">1st (7/day)&mdash;<i><a href="../../coreRulebook/spells/colorSpray.html#color-spray" >color spray</a></i> (DC 16), <i><a href="../../coreRulebook/spells/entangle.html#entangle" >entangle</a></i> (DC 15), <i><a href="../../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat" >expeditious retreat</a></i>, <i><a href="../../coreRulebook/spells/magicMissile.html#magic-missile" >magic missile</a></i>, <i><a href="../../coreRulebook/spells/reducePerson.html#reduce-person" >reduce person</a></i> (DC 15), <i><a href="../../coreRulebook/spells/trueStrike.html#true-strike" >true strike</a></i></p>
+<p class="stat-block-2">0 (at will)&mdash;<i><a href="../../coreRulebook/spells/bleed.html#bleed" >bleed</a></i> (DC 14), <i><a href="../../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i>, <i><a href="../../coreRulebook/spells/flare.html#flare" >flare</a></i> (DC 14), <i><a href="../../coreRulebook/spells/light.html#light" >light</a></i>, <i><a href="../../coreRulebook/spells/mageHand.html#mage-hand" >mage hand</a></i>, <i><a href="../../coreRulebook/spells/message.html#message" >message</a></i>, <i><a href="../../coreRulebook/spells/prestidigitation.html#prestidigitation" >prestidigitation</a></i>, <i><a href="../../coreRulebook/spells/rayOfFrost.html#ray-of-frost" >ray of frost</a></i>, <i><a href="../../coreRulebook/spells/readMagic.html#read-magic" >read magic</a></i></p>
+<p class="stat-block-2"><b>Bloodline</b> fey</p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>Before Combat</b> The arcane archer casts <i><a href="../../coreRulebook/spells/seeInvisibility.html#see-invisibility" >see invisibility</a></i> and <i><a href="../../coreRulebook/spells/haste.html#haste" >haste</a></i>. She prepares <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-flaming-burst" >flaming burst</a></i> arrows as her enhance arrows ability.</p>
+<p class="stat-block-1"><b>During Combat</b> A arcane archer uses imbue arrows to fire off <i><a href="../../coreRulebook/spells/cloudkill.html#cloudkill" >cloudkill</a></i>, <i><a href="../../coreRulebook/spells/stinkingCloud.html#stinking-cloud" >stinking cloud</a></i>, and <i><a href="../../coreRulebook/spells/entangle.html#entangle" >entangle</a></i> from a distance.</p>
+<p class="stat-block-1"><b>Base Statistics</b> Without <i><a href="../../coreRulebook/spells/seeInvisibility.html#see-invisibility" >see invisibility</a></i>, the arcane archer's statistics are <b>Senses</b> low-light vision; Perception +26.</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 10, <b>Dex</b> 24, <b>Con</b> 14, <b>Int</b> 10, <b>Wis</b> 13, <b>Cha</b> 18</p>
+<p class="stat-block-1"><b>Base Atk</b> +16; <b>CMB</b> +15; <b>CMD</b> 36</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#deadly-aim" >Deadly Aim</a>, <a href="../../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../../coreRulebook/feats.html#eschew-materials" >Eschew Materials</a>, <a href="../../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a>, Mobility, Pinpoint Targeting, <a href="../../coreRulebook/feats.html#point-blank-shot" >Point-Blank Shot</a>, Precise Shot, Rapid Shot, Shot on the <a href="../../coreRulebook/feats.html#run" >Run</a>, <a href="../../coreRulebook/feats.html#vital-strike" >Vital Strike</a>, <a href="../../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a> (shortbow)</p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/bluff.html#bluff" >Bluff</a> +27, <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (bows) +8, <a href="../../coreRulebook/skills/disguise.html#disguise" >Disguise</a> +13, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (local, nature) +8, Perception +26, <a href="../../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> +8, <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +34, <a href="../../coreRulebook/skills/swim.html#swim" >Swim</a> +8, <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device" >Use Magic Device</a> +12</p>
+<p class="stat-block-1"><b>Languages</b> Common, Gnome</p>
+<p class="stat-block-1"><b>SQ</b> bloodline arcana (+2 DC for compulsion spells), rogue talents (bleeding attack +3, combat trick, surprise attack), trapfinding +3, woodland stride</p>
+<p class="stat-block-1"><b>Combat Gear</b> <i>+1 dwarf-bane arrows </i>(10), <i>+1 elf-bane arrows </i>(10), <i>+1 human-bane arrows</i> (10), <i>+1 <a href="../../coreRulebook/magicItems/weapons.html#weapons-holy" >holy</a> arrows</i> (5), <i>+1 <a href="../../coreRulebook/magicItems/weapons.html#unholy" >unholy</a> arrows</i> (5), <i><a href="../../coreRulebook/magicItems/wondrousItems.html#dust-of-illusion" >dust of illusion</a></i>, <i>potions of <a href="../../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds" >cure serious wounds</a></i> (3); <b>Other Gear</b> <i>+3 mithral chain shirt</i>, <i>+2 <a href="../../coreRulebook/magicItems/weapons.html#weapons-frost" >frost</a> <a href="../../coreRulebook/magicItems/weapons.html#weapons-shock" >shock</a> shortbow</i> with 20 arrows, daggers (3), <i><a href="../../coreRulebook/magicItems/wondrousItems.html#amulet-of-natural-armor" >amulet of natural armor</a> +3</i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#belt-of-physical-might" >belt of physical might</a> +4 </i>(Dex, Con), <i><a href="../../coreRulebook/magicItems/wondrousItems.html#cloak-of-resistance" >cloak of resistance</a> +3</i>, <i>deck of  illusions</i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#efficient-quiver" >efficient quiver</a></i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#hat-of-disguise" >hat of disguise</a></i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#headband-of-alluring-charisma" >headband of alluring charisma</a> +2</i>, <i><a href="../../coreRulebook/magicItems/rings.html#ring-of-protection" >ring of protection</a> +3</i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#rope-of-climbing" >rope of climbing</a></i>, 621 gp</p>
+
+<p>Often whimsical in their destruction, chaos arrows roam the world playing the cruelest pranks for their own twisted amusement. </p>
+<h3>Tris Darkjester</h3>
+<p>It's said that even a few demons that have crossed Tris's path found her a little too malicious for their taste. The gnome's odd looks hide the heart of a capricious and sadistic killer. She enjoys watching other creatures die, burning in arcane fire or crackling and freezing from the energy of her dangerous bow. </p>
+<p><b>Combat Encounters:</b> Tris often strikes without any clear reason or purpose. She does it just to feed her morbid sense of fun, or to see if she can find a new way to murder. </p>
+<p><b>Roleplaying Suggestions:</b> Though she doesn't like to be, Tris can be patient. She sometimes joins a group of adventurers on some quest or another just to see how she can subtly bring about the demise of a few members before they find her out and she can slay them with impunity. </p>
+
+
+</div>	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Arcane Archers",globalNavPath=[{ href: '/pathfinderRPG/prd/npcCodex/prestige/index.html', name: 'Prestige Classes' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

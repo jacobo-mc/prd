@@ -1,0 +1,836 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Vampires</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "vampires.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "vampires.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "vampires.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "vampires.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "vampires.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "vampires.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "vampires.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "vampires.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "boggards.html">Boggards</a></li>
+						<li><a href = "bugbears.html">Bugbears</a></li>
+						<li><a href = "drow.html">Drow</a></li>
+						<li><a href = "duergar.html">Duergar</a></li>
+						<li><a href = "fireGiants.html">Fire Giants</a></li>
+						<li><a href = "frostGiants.html">Frost Giants</a></li>
+						<li><a href = "ghouls.html">Ghouls</a></li>
+						<li><a href = "gnolls.html">Gnolls</a></li>
+						<li><a href = "goblins.html">Goblins</a></li>
+						<li><a href = "hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "kobolds.html">Kobolds</a></li>
+						<li><a href = "lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "ogres.html">Ogres</a></li>
+						<li><a href = "orcs.html">Orcs</a></li>
+						<li><a href = "ratfolk.html">Ratfolk</a></li>
+						<li><a href = "sahuagin.html">Sahuagin</a></li>
+						<li><a href = "serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "troglodytes.html">Troglodytes</a></li>
+						<li><a href = "trolls.html">Trolls</a></li>
+						<li><a href = "vampires.html">Vampires</a></li>
+						<li><a href = "appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "vampires.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "vampires.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "vampires.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "vampires.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "vampires.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "vampires.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "vampires.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "vampires.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "vampires.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "vampires.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "vampires.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "vampires.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "vampires.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 class = "monster-header" id = "monster-codex-vampires">Vampires</h1>
+
+<p>Whether they are considered terrifying, blood-sucking night-walkers, vicious brutes who steal their victims' lives, or creatures of eternal beauty and haunting allure, vampires feed upon the living to maintain their unnatural power and youth. Unlike many other undead creatures, vampires vary as widely as the creatures from which they originate. They come from all walks of life&mdash;some are civilized, preferring lives of opulence and splendor, amassing wealth as well as influence. Others act more like terrifying savages, feeding upon the local population and causing wanton destruction throughout the area. Vampires can be found anywhere intelligent, living creatures reside. The larger the population, the more potential victims and the more likely it is that vampires can be found there.</p>
+<p>In contrast to more grotesque undead, vampires can move among mortal society with relative ease. As long as their bodies are not excessively mangled or decayed, vampires can pass themselves off as unusually pale mortals. These vampires present themselves as nobility, criminal overlords, leaders of barbarian tribes, or other people of power or influence. But blending into mortal society isn't without risk, as subtle distinctions can give a vampire away. The inability to cast a shadow or show a reflection in a mirror can tip off astute mortals to the vampire's true nature.</p>
+<p>Due to these weaknesses, some vampires prefer to operate from the shadows, serving as advisors to those in power, trusted guardians for suspicious leaders, or fences for mortal thieves' guilds. Such vampires draw less attention, but are still able to manipulate the strings of the devious plans they concoct.</p>
+<p>Vampires that hide their undead natures from mortal society and don't want to feed on mortals have some options to help them survive. Alchemical blood is one, but a more common method is to drink the blood of animals. No one questions when someone purchases an animal, slaughters it, and serves it for dinner. Unlike mortals, a vampire does not eat the animal's remains, so it must take care not to leave carcasses drained of blood where they can be found, since these could point to the vampire's true nature.</p>
+<p>By contrast, other vampires live openly, making no effort to hide their undead nature at all. They generally possess such wealth and power that they don't fear angry mobs of mortals. A few such vampires are powerful spellcasters who use magic to dampen the light around them, allowing them to operate in broad daylight. Others openly act as subordinates to even more powerful undead, such as liches and raveners.</p>
+<p>Vampires can dominate the minds of mortals, compelling them to obey the vampire's every whim. Potent vampires can compel lifelong friends to turn on each other, or even force people to kill their own loved ones. Other mortals willingly give themselves over to vampires, either in exchange for a reward or a taste of power, or because the mortal falls for the vampire's dangerous mystique and romanticizes the act of the vampire's bite.</p>
+<p>Vampires often collectively refer to humans who willingly allow themselves to be bitten as a herd. Frequently, vampires view these humans as little more than livestock, since they serve the same purpose. However, they often need to provide their herds with other benefits to keep them around and docile. These can be anything from favors, to illegal alchemical narcotics, to bribes of gold and treasure.</p>
+<p>A few humans might provide vampires&mdash;especially exceptionally charismatic ones&mdash;with their blood for the thrill of the experience, but those that do so are rare. Vampires end up dominating most of the thralls in their herds, but value willing servants because of their autonomy and ability to function as envoys. The more willing the members in a herd are, the greater prestige a vampire holds among his fellow undead.</p>
+<p>Beyond their mortal minions, vampires can drain the blood or life energy from a victim to create spawn enslaved to their will&mdash;either full-fledged vampires or weaker vampire spawn. These servitors are stronger than mortals, but also consume blood the master could use.</p>
+<p>The frightening power of vampires is offset by their vulnerabilities. Vampires burn to ash in the light of the sun, a weakness that condemns them to feed and work at night. They cannot endure running water, and a simple wooden stake through the heart is enough to slay a vampire&mdash;at least until the stake is removed. Vampires also recoil from garlic, holy symbols, and mirrors. Furthermore, a vampire cannot enter a private home without first being invited inside, though nothing stops a vampire's mortal followers from breaking down a door and dragging a target out of a dwelling which the vampire cannot enter. A vampire is also tied to its coffin; if unable to return to its sarcophagus to recuperate, an injured vampire might very well be destroyed.</p>
+<p>From the typical vampire's perspective, her only equal is another vampire. They see themselves as inherently superior to living creatures, and this hubris extends to most other undead as well. Vampires view most other undead creatures as their inferiors at best, or as servants or slaves at worst. Reality sometimes intrudes on these perceptions, and especially powerful undead such as liches more readily earn the vampires' grudging respect.</p>
+<p>On rare occasions, vampires can conceive children with the living. These cursed creatures, the dhampirs, retain some traits of their vampire parent, and live as misunderstood outcasts. Often, they grow to become vampire hunters, using their natural gifts to resist the undead they despise. They seek vengeance upon their undead parent, and many vampires try to kill these offspring before they are hunted down.</p>
+<p>Full statistics for vampires can be found in their <a href = "../bestiary/vampire.html"><em>Bestiary</em> entry</a>.</p>
+
+<h1 id = "vampire-new-rules">New Rules</h1>
+<p>The following section describes the main types of vampires, gives templates for their minions, and details new feats, a piece of equipment, and magic items favored by vampires.</p>
+
+<h2 id = "vampire-templates">Vampire Templates</h2>
+<p>Game statistics for vampires are created by using vampire templates. Each template creates a different kind of vampire. Other types of vampire exist, some of them arising from rare or even unique circumstances, but the following are the most notable types.</p>
+<p id = "jiang-shi"><a href = "../bestiary3/vampire.html#vampire-jiang-shi"><strong>Jiang-Shi</strong></a>: Created when a restless spirit does not leave its corpse at the time of death, a jiang-shi more closely resembles a rotting corpse than other vampires do. Instead of feeding on blood, jiang-shi siphon chi from their victims' breath. Marked with a rune-inscribed parchment affixed to its head, a jiang-shi has different drawbacks than moroi and nosferatu.</p>
+<p id = "moroi"><a href = "../bestiary/vampire.html#vampire"><strong>Moroi</strong></a>: The standard vampire template creates what most people would consider a "common" vampire. They sometimes call themselves "moroi" to distinguish them from other kinds of vampires, which are inferior in their estimation.</p>
+<p id = "nosferatu"><a href = "../bestiary4/vampire.html#vampire-nosferatu"><strong>Nosferatu</strong></a>: Said by some to be the progenitors of all vampires, nosferatu are immortal but lack the eternal youthful beauty of the moroi. Resentful of their more attractive offshoot race, nosferatu tend to be hermits, keeping their hideous, withered visages out of mortal sight to avoid suspicion. Nosferatu cannot create others of their kind, thus their numbers are dwindling.</p>
+
+<h2 id = "vampire-minion-simple-templates">Vampire Minion Simple Templates</h2>
+<p>Vampires can change mortals that they frequently come into contact with. The following templates are indicative of such phenomena, and are available to creatures associated with or victims of vampires.</p>
+
+<h3 id = "addle-minded">Addle-Minded (CR +0)</h3>
+<p>A creature that remains dominated by vampires for long stretches begins to lose touch with his sense of identity. The creature no longer knows exactly what his own desires are anymore and he becomes easily confused. Should that mortal ever be the target of a mind-affecting spell, that mortal is just as likely to babble madly to himself as he is to lash out and strike anyone nearby. An addle-minded creature's quick and rebuild rules are the same.</p>
+<p><strong>Rebuild Rules</strong>: <strong>Saves</strong> &ndash;2 penalty on all Will saves. <strong>Special Qualities</strong> Gains the addled defensive ability.</p>
+<p><em>Addled (Su)</em> : Whenever the addle-minded creature fails a saving throw against a mind-affecting effect (other than <em><a href = "../coreRulebook/spells/dominatePerson.html#dominate-person">dominate person</a></em>, <em><a href = "../coreRulebook/spells/dominateMonster.html#dominate-monster">dominate monster</a></em>, or any other spell or spell-like ability with "dominate" in its name), it becomes confused as the <em><a href = "../coreRulebook/spells/confusion.html#confusion">confusion</a></em> spell, and it must roll on that spell's table to determine its behavior. Instead of acting normally on a roll of 01&ndash;25, the creature is instead normally affected by the spell or effect that round.</p>
+
+<h3 id = "repeatedly-drained">Repeatedly Drained (CR &ndash;1)</h3>
+<p>A creature from which a vampire routinely drinks blood usually adapts to the rapid and repeated blood loss, but a thirsty vampire can push too far, physically weakening her prey. The victim's skin turns pale and her eyes become listless; others describe the victim as "wasting away" or "a walking corpse." Few mortals realize that these descriptions are accurate, and the victim is, in fact, courting death.</p>
+<p><strong>Quick Rules</strong>: &ndash;2 on all rolls based on Con or Cha and to the DCs of all special abilities based on Con or Cha, &ndash;2 hp/HD, +2 on saving throws vs. energy drain.</p>
+<p><strong>Rebuild Rules</strong>: <strong>Defensive Abilities</strong> resist drain special ability; <strong>Ability Scores</strong> &ndash;4 Con, &ndash;4 Cha.</p>
+<p><em>Resist Drain (Ex)</em> : After having its blood sucked out over and over again by a vampire, the repeatedly drained creature becomes used to the effects and builds a natural tolerance for energy drain. The repeatedly drained creature gains a +4 bonus on saving throws against energy drain attacks and the saving throw to overcome negative levels. It suffers no penalties from negative levels, though it still dies if its negative levels equal or exceed its Hit Dice.</p>
+
+<h2 id = "vampire-feats">Vampire Feats</h2>
+<p>Vampires and their ilk can make use of the following feats to help them better survive.</p>
+
+<h3 id = "aversion-tolerance">Aversion Tolerance</h3>
+<p>You have been hunted for so long that you have developed resistances to slayers' usual scare tactics.</p>
+<p class = "stat-block-1"><strong>Prerequisite</strong>: Vampire.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: You gain a +2 bonus on saves made to resist aversions to objects, sounds, and materials appropriate to your vampire type (such as garlic, holy symbols, and mirrors for a moroi). When confronted with such things, you can attempt a saving throw immediately instead of after 1 round.</p>
+
+<h3 id = "vampiric-companion">Vampiric Companion</h3>
+<p>Just as your undead existence mocks nature, so too does your twisted companion reflect the vile nature of vampirism.</p>
+<p class = "stat-block-1"><strong>Prerequisites</strong>: Dhampir or vampire, nongood alignment, 10th level in a class that grants a familiar or animal companion.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: Your animal companion or familiar's type changes to "undead." The creature gains fast healing 5 as well as your vampire or dhampir weaknesses. If you are a vampire, the creature also gains the following abilities, depending on what type of vampire you are.</p>
+<p class = "stat-block-2"><em>Jiang-Shi</em> : While the creature is adjacent to or in your square, it gains the benefit of your prayer scroll ability. The creature crumbles into dust if destroyed (just like a jiang-shi), but is not permanently destroyed unless measures are taken that would destroy a jiang-shi.</p>
+<p class = "stat-block-2"><em>Moroi</em> : If the creature is adjacent to or in your square when you assume gaseous form, it transforms with you and follows you; its transformation ends when yours does. If reduced to 0 hit points, it's forced into gaseous form and must return to your coffin to reform (or the foot of your coffin if it cannot fit within it).</p>
+<p class = "stat-block-2"><em>Nosferatu</em> : If the creature is adjacent to or in your square when you assume swarm form, it transforms with you and follows you; its transformation ends when yours does. The creature can climb as if using the spider climb vampire ability, even if its anatomy is not suitable for climbing (such as a horse).</p>
+<p class = "stat-block-1"><strong>Special</strong>: If your animal companion or familiar is destroyed, dismissed, or lost, you can apply the effects of this feat to the replacement creature. If you are destroyed, the creature retains its undead type but loses all other special abilities from this feat. If you have more than one animal companion or familiar, choose one of them when you select this feat and apply its effects to that creature.</p>
+<p>You can select this feat more than once. Each time you select the feat, it applies to a different animal companion or familiar.</p>
+
+<h2 id = "vampire-equipment">Vampire Equipment</h2>
+<p>Some vampires make use of the following item.</p>
+
+<p id = "alchemical-blood" class = "stat-block-title">Alchemical Blood</p>
+<p class = "stat-block-1"><strong>Price</strong> 40 gp; <strong>Weight</strong> 1 lb.</p>
+<p class = "stat-block">This flask of red liquid is enough to for 1 day stave off a vampire's hunger for blood. Few vampires enjoy it; most describe it as tasting stale and artificial. Some, particularly weaker or newer ones, feel that it interferes with the unholy magic keeping their bodies animated. However, it's an option utilized by vampires that are running for their unlives and attempting to stay hidden from vampire hunters. Crafting this item requires a successful DC 40 <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (alchemy) check.</p>
+
+<h2 id = "vampire-magic-items">Vampire Magic Items</h2>
+<p>The following magic items are especially useful to vampires and vampire spawn.</p>
+
+<p id = "bloodfeast-shield" class = "stat-block-title">Bloodfeast shield</p>
+<p class = "stat-block-1"><strong>Price</strong> 18,770 gp; <strong>Slot</strong> shield; <strong>CL</strong> 12th; <strong>Weight</strong> 15 lbs.; <strong>Aura</strong> strong necromancy</p>
+<p class = "stat-block">Three flensed skulls jut from the face of this <em>+2 heavy steel <a href = "../coreRulebook/spells/shield.html#shield">shield</a></em> . Three times per day as a free action, the shield's wearer can command the heads to attack independently of her, biting with the wearer's base attack bonus (making multiple attacks if the wearer has a high enough base attack bonus). This attack is in addition to any actions performed by the wearer, and deals 1d6 points of damage plus 1 point of Constitution damage.</p>
+<p class = "stat-block">When using the <em>bloodfeast <a href = "../coreRulebook/spells/shield.html#shield">shield</a>'s</em> ability, if the wearer is a vampire (or regains hit points from blood drain in a similar manner), she also heals 5 hit points or gains 5 temporary hit points for 1 hour.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> 9,545 gp</p>
+<p class = "stat-block-1"><a href = "pathfinderRPG/prd/feats.html#craft-magic-arms-and-armor">Craft Magic Arms and Armor</a><em>, <a href = "../coreRulebook/spells/vampiricTouch.html#vampiric-touch">vampiric touch</a></em> </p>
+
+<p id = "bloodletting-thimble" class = "stat-block-title">Bloodletting Thimble</p>
+<p class = "stat-block-1"><strong>Price</strong> 2,000 gp; <strong>Slot</strong> ring; <strong>CL</strong> 3rd; <strong>Weight</strong> &mdash;; <strong>Aura</strong> faint enchantment</p>
+<p class = "stat-block">This platinum thimble, intricately crafted in the shape of an animal claw, is worn on one finger. A vampire wearer can use the thimble to inflict a tiny wound as part of the use of a blood drain, energy drain, or drain chi ability; use of the thimble in this way isn't an action. This wound deals no additional damage, but it turns the target's pain to pleasure. The target must succeed at a DC 14 Will save or become fascinated by the wearer and make no attempt to resist the draining on that round and the following 2 rounds. At the end of this time, the creature's senses return and it can react accordingly.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> 1,000 gp</p>
+<p class = "stat-block-1">Forge Ring,<em> <a href = "../coreRulebook/spells/enthrall.html#enthrall">enthrall</a></em> </p>
+
+<h1 id = "example-vampires">Example Vampires</h1>
+
+<h2>Vampire Servants</h2>
+<p>A vampire often needs mortal minions&mdash;especially during the day, when it must retreat to its coffin for safety.</p>
+
+<p id = "coffin-guard" class = "stat-block-title">Coffin Guard <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1">Elf ranger 4</p>
+<p class = "stat-block-1">NE Medium humanoid (elf)</p>
+<p class = "stat-block-1"><strong>Init</strong> +4; <strong>Senses</strong> low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +10</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 18, touch 14, flat-footed 14 (+4 armor, +4 Dex)</p>
+<p class = "stat-block-1"><strong>hp</strong> 38 (4d10+12)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +5, <strong>Ref</strong> +8, <strong>Will</strong> +2; +2 vs. enchantments</p>
+<p class = "stat-block-1"><strong>Immune</strong> sleep</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk rapier +7 (1d6+1/18&ndash;20), mwk rapier +7 (1d6/18&ndash;20)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk composite longbow +9 (1d8+2/&times;3)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> combat style (two-weapon), favored enemy (humans +2)</p>
+<p class = "stat-block-1"><strong>Ranger Spells Prepared</strong> (CL 1st; concentration +2)</p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/spells/entangle.html#entangle">entangle</a></em> (DC 12)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 12, <strong>Dex</strong> 18, <strong>Con</strong> 12, <strong>Int</strong> 12, <strong>Wis</strong> 13, <strong>Cha</strong> 8</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +4; <strong>CMB</strong> +5; <strong>CMD</strong> 19</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#endurance">Endurance</a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a>, <a href = "../coreRulebook/feats.html#two-weapon-fighting">Two-Weapon Fighting</a>, <a href = "../coreRulebook/feats.html#weapon-finesse"><a href = "../coreRulebook/feats.html#weapon-finesse">Weapon Finesse</a></a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +6, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (geography) +8, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (local) +5, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +10, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +5, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +10, <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +8</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Draconic, Elven</p>
+<p class = "stat-block-1"><strong>SQ</strong> elven magic, favored terrain (urban +2), hunter's bond (companions), track +2, wild empathy +3</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/catSGrace.html#cat-s-grace">cat's grace</a></em>, <em>potion of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em>, <em>potion of <a href = "../ultimateMagic/spells/protectivePenumbra.html#_protective-penumbra">protective penumbra</a></em>, <em>scroll of <a href = "../coreRulebook/spells/animalMessenger.html#animal-messenger">animal messenger</a></em>, <em>scroll of <a href = "../coreRulebook/spells/longstrider.html#longstrider">longstrider</a></em> ; <strong>Other Gear</strong> mwk chain shirt, mwk composite longbow with 20 arrows, mwk rapiers (2), sunrods (5), 9 gp</p>
+
+<p>Only the most trusted of servants are given the position of a vampire's coffin guard. This mortal stands watch over the vampire while his master is resting.</p>
+<p>The coffin guard isn't just tasked with protecting his master. He snatches corpses and ingredients required for the vampire's workings. He knows where to find many ingredients in the woods, away from the prying eyes of the city folk, though he's not afraid to coerce those same city-dwellers into doing his bidding for him.</p>
+
+<p id = "weird-butler" class = "stat-block-title">Weird Butler <span class = "stat-block-cr">CR 4</span></p>
+<p class = "stat-block-xp">XP 1,200</p>
+<p class = "stat-block-1">Halfling oracle 5</p>
+<p class = "stat-block-1">CE Small humanoid (halfling)</p>
+<p class = "stat-block-1"><strong>Init</strong> +7; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +7</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 19, touch 14, flat-footed 16 (+5 armor, +3 Dex, +1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 31 (5d8+5)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +3, <strong>Ref</strong> +5, <strong>Will</strong> +5; +2 vs. fear</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 20 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk dagger +3 (1d3&ndash;2/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> dagger +7 (1d3&ndash;2/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Oracle Spells Known</strong> (CL 5th; concentration +9)</p>
+<p class = "stat-block-2">2nd (5/day)&mdash;<em><a href = "../coreRulebook/spells/desecrate.html#desecrate">desecrate</a></em>, <em><a href = "../coreRulebook/spells/falseLife.html#false-life">false life</a></em>, <em><a href = "../coreRulebook/spells/holdPerson.html#hold-person">hold person</a></em> (DC 16), <em><a href = "../coreRulebook/spells/inflictModerateWounds.html#inflict-moderate-wounds">inflict moderate wounds</a> </em> (DC 16)</p>
+<p class = "stat-block-2">1st (7/day)&mdash;<em><a href = "../coreRulebook/spells/causeFear.html#cause-fear">cause fear</a></em> (DC 15), <a href = "../ultimateCombat/spells/compelHostility.html#compel-hostility"><em>compel hostility</em> (DC 15), <em><a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></em>, <em><a href = "../coreRulebook/spells/inflictLightWounds.html#inflict-light-wounds">inflict light wounds</a> </em> (DC 15),<em> <a href = "../coreRulebook/spells/obscuringMist.html#obscuring-mist">obscuring mist</a></em>, <em><a href = "../coreRulebook/spells/shieldOfFaith.html#shield-of-faith">shield of faith</a></em> </p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/bleed.html#bleed">bleed</a></em> (DC 14), <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/mending.html#mending">mending</a></em>, <em><a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a></em>, <em><a href = "../coreRulebook/spells/stabilize.html#stabilize">stabilize</a></em>, <em><a href = "../coreRulebook/spells/virtue.html#virtue">virtue</a></em> </p>
+<p class = "stat-block-2"><strong>Mystery</strong> bones</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 6, <strong>Dex</strong> 16, <strong>Con</strong> 12, <strong>Int</strong> 13, <strong>Wis</strong> 10, <strong>Cha</strong> 18</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +3; <strong>CMB</strong> +0; <strong>CMD</strong> 13</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#combat-casting"><a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a></a>, <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../advancedPlayersGuide/advancedFeats.html#lucky-halflin">Lucky Halfling</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +4, <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a> +12, <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> &ndash;1, <a href = "../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> +12, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +12, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (local) +6, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) +9, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +7</p>
+<p class = "stat-block-1"><strong>Languages</strong> Abyssal, Common, Halfling</p>
+<p class = "stat-block-1"><strong>SQ</strong> oracle's curse (clouded vision), revelations (bleeding wounds, death's touch)</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></em>, <em>scrolls of <a href = "../ultimateMagic/spells/dreadBolt.html#_dread-bolt">dread bolt</a></em> (2), <em>scroll of <a href = "../coreRulebook/spells/helpingHand.html#helping-hand">helping hand</a></em>, <em>scroll of <a href = "../coreRulebook/spells/hideFromUndead.html#hide-from-undead">hide from undead</a></em>, <em>scroll of <a href = "../ultimateMagic/spells/animateDead.html#_animate-dead,-lesser">lesser animate dead</a></em>, <em>scroll of <a href = "../ultimateMagic/spells/protectivePenumbra.html#_protective-penumbra">protective penumbra</a></em>, <em>scroll of <a href = "../coreRulebook/spells/silence.html#silence">silence</a></em>, <em>scroll of <a href = "../coreRulebook/spells/status.html#status">status</a></em>, unholy water (4); <strong>Other Gear</strong> <em>+1 chain shirt</em>, dagger, mwk dagger, spell component pouch, sunrods (2), silver dust (worth 50 gp), 92 gp</p>
+
+<p>The highest-ranked mortal servant of a vampire, the butler is responsible for maintaining order among the other servants. He knows all his master's secrets and guards them well. He's responsible for disposing bodies that result from his master's deadlier feeding sessions.</p>
+<p>A butler might work for a vampire because he wants to be rewarded with unlife himself. As many vampires collect vast fortunes over their long lives, some butlers are initially lured into service due to avarice.</p>
+
+
+<h2 id = "vampire-seducer">Vampire Seducer</h2>
+<p>Vampires trained in the bardic arts couple those skills with their vampiric abilities of domination and persuasion to freely mingle with mortal society.</p>
+
+<p class = "stat-block-title">Vampire Seducer <span class = "stat-block-cr">CR 6</span></p>
+<p class = "stat-block-xp">XP 2,400</p>
+<p class = "stat-block-1">Human vampire bard 5</p>
+<p class = "stat-block-1">NE Medium undead (augmented humanoid, human)</p>
+<p class = "stat-block-1"><strong>Init</strong> +8; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +19</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 25, touch 15, flat-footed 20 (+4 armor, +4 Dex, +1 dodge, +6 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 61 (5d8+35); fast healing 5</p>
+<p class = "stat-block-1"><strong>Fort</strong> +7, <strong>Ref</strong> +10, <strong>Will</strong> +5; +4 vs. bardic performance, language-dependent, and sonic</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> channel resistance +4; <strong>DR</strong> 10/magic and silver; <strong>Immune</strong> undead traits; <strong>Resist</strong> cold 10, electricity 10</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> vampire weaknesses</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> slam +7 (1d4+4 plus energy drain)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> bardic performance 24 rounds/day (countersong, distraction, fascinate [DC 18], inspire competence +2, inspire courage +2), blood drain, children of the night, create spawn, dominate (DC 18), energy drain (2 levels, DC 18)</p>
+<p class = "stat-block-1"><strong>Bard Spells Known</strong> (CL 5th; concentration +11)</p>
+<p class = "stat-block-2">2nd (4/day)&mdash;<em><a href = "../coreRulebook/spells/darkness.html#darkness">darkness</a></em>, <em><a href = "../coreRulebook/spells/enthrall.html#enthrall">enthrall</a></em> (DC 20), <em>share memor y</em> (DC 18)</p>
+<p class = "stat-block-2">1st (6/day)&mdash;<em><a href = "../coreRulebook/spells/charmPerson.html#charm-person">charm person</a></em> (DC 19), <em><a href = "../ultimateMagic/spells/earPiercingScream.html#_ear-piercing-scream">ear-piercing scream</a></em>, <em><a href = "../coreRulebook/spells/confusion.html#confusion-lesser">lesser confusion</a></em> (DC 19), <em><a href = "../advancedPlayersGuide/spells/memoryLapse.html#_memory-lapse">memory lapse</a></em> (DC 19)</p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/daze.html#daze">daze</a></em> (DC 18), <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/mageHand.html#mage-hand">mage hand</a></em>, <em><a href = "../coreRulebook/spells/openClose.html#open-close">open/close</a></em>, <em><a href = "../coreRulebook/spells/prestidigitation.html#prestidigitation">prestidigitation</a></em> (DC 16), <a href = "../advancedPlayersGuide/spells/unwittingAlly.html#unwitting-ally"><em>unwitting ally</em></a> (DC 18)</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The vampire seducer uses her dominate ability to make others defend her, calls for assistance using her children of the night ability, and attacks with her slams. She uses her <em>necklace of fireballs</em> when she can target multiple opponents.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 18, <strong>Dex</strong> 18, <strong>Con</strong> &mdash;, <strong>Int</strong> 15, <strong>Wis</strong> 12, <strong>Cha</strong> 22</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +3; <strong>CMB</strong> +7; <strong>CMD</strong> 22</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#alertness">Alertness</a>, <a href = "../coreRulebook/feats.html#combat-casting"><a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a></a>, <a href = "../coreRulebook/feats.html#dodge">Dodge</a>, <a href = "../coreRulebook/feats.html#extra-performance">Extra Performance</a>, <a href = "../coreRulebook/feats.html#greater-spell-focus">Greater Spell Focus</a> (enchantment), <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#lightning-reflexes"><a href = "../coreRulebook/feats.html#lightnin-reflexes">Lightning Reflexes</a></a>, <a href = "../coreRulebook/feats.html#spell-focus"><a href = "../coreRulebook/feats.html#spell-focus">Spell Focus</a></a> (enchantment), <a href = "../coreRulebook/feats.html#toughness">Toughness</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a> +22, <a href = "../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> +14, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +14, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (local) +12, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nobility) +12, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +19, <a href = "../coreRulebook/skills/perform.html#perform">Perform</a> (act) +14, <a href = "../coreRulebook/skills/perform.html#perform">Perform</a> (dance) +14, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +19, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +19; <strong>Racial Modifiers</strong> +8 <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a>, +8 <a href = "../coreRulebook/skills/perception.html#perception">Perception</a>, +8 <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a>, +8 <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a></p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Dwarven, Elven</p>
+<p class = "stat-block-1"><strong>SQ</strong> bardic knowledge +2, change shape (dire bat or wolf, <em><a href = "../coreRulebook/spells/beastShape.html#beast-shape-ii">beast shape II</a></em> ), gaseous form, lore master 1/day, shadowless, spider climb, versatile performance (dance)</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>feather token</em> (whip), <em>necklace of fireballs</em> (type I), <em>potion of <a href = "../coreRulebook/spells/inflictModerateWounds.html#inflict-moderate-wounds">inflict moderate wounds</a></em>, <em>potion of <a href = "../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></em>, <em>scroll of <a href = "../coreRulebook/spells/haste.html#haste">haste</a></em>, <em>wand of <a href = "../coreRulebook/spells/disguiseSelf.html#disguise-self">disguise self</a></em> (15 charges), smokesticks (2), thunderstones (2); <strong>Other Gear</strong> mwk chain shirt, <em><a href = "../coreRulebook/magicItems/armor.html#_armor-animated">animated</a> portrai t</em>, 450 gp</p>
+
+<p>A vampire seducer relies on getting others to do her bidding instead of acting in the open herself. Deception, manipulation, and spells are all tools of her trade. This does not mean that such a vampire cannot defend herself in combat&mdash;it simply means that she prefers to get others to risk their necks instead of taking matters into her own cold, dead hands.</p>
+<p>Through a blend of natural charm, physical beauty, and supernatural persuasion, the vampire seducer selects her prey from among her admirers and critics, takes her victim back to her home, and convinces them to let her bite them willingly&mdash;all part of her game. The vampire might dispose of her victims before they are too obviously afflicted by her unnatural appetites by forcing them to duel rivals for her affection or arranging for mysterious accidents and suicides (usually easily explained as the result of broken hearts).</p>
+<p>If the seducer's true nature is ever discovered, she has no qualms about abandoning the paramours she has acquired and relocating to a new city to begin her plots anew. Some seducers do this many times over the course of their long unlives, if only to stave off the eternal boredom that inevitably afflicts them all.</p>
+
+
+<h2 id = "vampire-warrior">Vampire Warrior</h2>
+<p>Some vampires learn the arts of war while alive, then carry on those traditions into undeath.</p>
+
+<p class = "stat-block-title">Vampire Warrior <span class = "stat-block-cr">CR 8</span></p>
+<p class = "stat-block-xp">XP 4,800</p>
+<p class = "stat-block-1">Vishkanya jiang-shi vampire fighter 7</p>
+<p class = "stat-block-1">LE Medium undead (augmented humanoid, vishkanya)</p>
+<p class = "stat-block-1"><strong>Init</strong> +9; <strong>Senses</strong> blindsight 60 ft. (breathing creatures only), darkvision 60 ft., low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +21</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 25, touch 15, flat-footed 20 (+8 armor, +4 Dex, +1 dodge, +2 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 78 (7d10+35); fast healing 5</p>
+<p class = "stat-block-1"><strong>Fort</strong> +9, <strong>Ref</strong> +7, <strong>Will</strong> +4 (+2 vs. fear); +2 vs. poison</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> bravery +2, channel resistance +4, prayer scroll; <strong>DR</strong> 10/magic and slashing; <strong>Immune</strong> undead traits; <strong>Resist</strong> cold 20</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> jiang-shi weaknesses</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 20 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk katana +15/+10 (1d8+8/15&ndash;20 plus poison) or bite +12 (1d6+5), 2 claws +12 (1d8+5/19&ndash;20 plus grab)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> shuriken +12/+7 (1d2+5)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> drain chi (DC 17), poison, weapon training (heavy blades +1)</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The warrior vampire uses her <em>oil of <a href = "../coreRulebook/spells/keenEdge.html#keen-edge">keen edge</a></em> on her katana and applies a dose of her racial poison to it.</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The warrior vampire uses her <em>scabbard of vigor</em> to grant her katana a +3 enhancement bonus for 3 rounds. Once that expires, or if her katana attacks are ineffective, she resorts to natural attacks, grappling, and her drain chi ability.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 20, <strong>Dex</strong> 20, <strong>Con</strong> &mdash;, <strong>Int</strong> 10, <strong>Wis</strong> 15, <strong>Cha</strong> 18</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +7; <strong>CMB</strong> +12; <strong>CMD</strong> 28</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#alertness">Alertness</a>, <a href = "../coreRulebook/feats.html#cleave">Cleave</a>, <a href = "../coreRulebook/feats.html#combat-reflexes"><a href = "../coreRulebook/feats.html#combat-reflexes">Combat Reflexes</a></a>, <a href = "../coreRulebook/feats.html#dodge">Dodge</a>, <a href = "../coreRulebook/feats.html#exotic-weapon-proficiency">Exotic Weapon Proficiency</a> (katana), <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#mobility">Mobility</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#quick-draw">Quick Draw</a>, <a href = "../coreRulebook/feats.html#skill-focus">Skill Focus</a> (<a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a>), <a href = "../coreRulebook/feats.html#spring-attack">Spring Attack</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (katana), <a href = "../coreRulebook/feats.html#weapon-specialization">Weapon Specialization</a> (katana)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +12, <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (calligraphy) +4, <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (paintings) +4, <a href = "../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> +3, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (local) +2, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nobility) +2, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +21, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +4, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +12; <strong>Racial Modifiers</strong> +8 <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a>, +8 <a href = "../coreRulebook/skills/perception.html#perception">Perception</a>, +10 <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a></p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Vishkanya</p>
+<p class = "stat-block-1"><strong>SQ</strong> armor training 2, poison use, toxic (4/day)</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>oil of <a href = "../coreRulebook/spells/keenEdge.html#keen-edge">keen edge</a></em>, <em>potion of <a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em>, <em>potion of <a href = "../coreRulebook/spells/fly.html">fly</a></em>, <em>potion of <a href = "../coreRulebook/spells/haste.html#haste">haste</a>, potion of <a href = "../coreRulebook/spells/inflictModerateWounds.html#inflict-moderate-wounds">inflict moderate wounds</a></em>, <em>potion of <a href = "../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></em> ; <strong>Other Gear</strong> o-yoroi, mwk katana, shuriken (20), <em>brooch of shielding</em> (50 points), <em>scabbard of vigo r</em>, 46 gp</p>
+<p class = "stat-block-breaker">Special Abilities</p>
+<p class = "stat-block-1"><strong>Drain Chi (Su)</strong> Instead of draining blood, a jiang-shi vampire drains "chi," or life energy, from a victim's breath. When a jiang-shi makes a successful grapple check (in addition to any other effects caused by a successful check, including additional damage), the jiang-shi can attempt to drain chi by drinking the victim's breath. The victim can resist this attack by succeeding at a DC 17 Fortitude save. On a failed save, the victim gains 1 negative level and is staggered for 1d4 rounds.</p>
+<p class = "stat-block-1"><strong>Poison (Ex)</strong> <em>Vishkanya Venom</em> : Weapon&mdash;injury; <em>save</em> Fort DC 17; <em>frequency</em> 1/round for 6 rounds; <em>effect</em> 1d2 Dex; <em>cure</em> 1 save.</p>
+<p class = "stat-block-1"><strong>Prayer Scroll (Su)</strong> The scroll attached to the brow of a jiang-shi grants immunity to any effects generated by spell-completion or spell-trigger magic items, such as scrolls and wands. Such magical effects treat the jiang-shi as if she had unbeatable spell resistance. A jiang-shi's prayer scroll can be removed with a successful steal combat maneuver, which immediately ends the jiang-shi's immunity to these effects. If a jiang-shi's prayer scroll is destroyed (a standard action), the vampire also loses her fast healing ability. A jiang-shi can create a replacement prayer scroll by using any strip of parchment and a writing instrument, but doing so requires 10 minutes of uninterrupted work.</p>
+<p class = "stat-block-1"><strong>Toxic (Ex)</strong> Four times per day as a swift action, a vishkanya can envenom a weapon that she wields with her toxic saliva or blood.</p>
+
+<p>When this vishkanya was alive, she pursued the path of the samurai, but wasn't allowed to join their honorable ranks. Her restless spirit remained trapped in her flesh after death, and eventually she animated her own rotting body and sought out those who had wronged her.</p>
+
+
+<h2 id = "vampire-savage">Vampire Savage</h2>
+<p>Not all vampires clothe themselves in the trappings of civilization. Some embrace their bestial natures.</p>
+
+<p class = "stat-block-title">Vampire Savage <span class = "stat-block-cr">CR 10</span></p>
+<p class = "stat-block-xp">XP 9,600</p>
+<p class = "stat-block-1">Half-orc vampire barbarian 9</p>
+<p class = "stat-block-1">CE Medium undead (augmented humanoid, human, orc)</p>
+<p class = "stat-block-1"><strong>Init</strong> +8; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +24</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 21, touch 14, flat-footed 16 (+1 deflection, +4 Dex, +1 dodge, +7 natural, &ndash;2 rage)</p>
+<p class = "stat-block-1"><strong>hp</strong> 136 (9d12+72); fast healing 5</p>
+<p class = "stat-block-1"><strong>Fort</strong> +13, <strong>Ref</strong> +10, <strong>Will</strong> +8</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> channel resistance +4, improved uncanny dodge, orc ferocity, trap sense +3; <strong>DR</strong> 10/magic and silver and DR 1/&mdash;; <strong>Immune</strong> undead traits; <strong>Resist</strong> cold 10, electricity 10</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> vampire weaknesses</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 40 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 greataxe</em> +20/+15 (1d12+16/&times;3), bite +14 (1d4+5 plus energy drain), slam +15 (1d4+5 plus energy drain)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> blood drain, children of the night, create spawn, dominate (DC 20), energy drain (2 levels, DC 20), rage (24 rounds/day), rage powers (animal fury, bleeding blow, no escape, powerful blow +3)</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The vampire savage drinks one or more of his potions as appropriate to the upcoming battle.</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The vampire savage rages and makes full attacks against his opponents, grappling an opponent and draining blood if he has an opportunity to do so.</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> When he's not raging, the savage's statistics are <strong>AC</strong> 23, touch 16, flat-footed 18; <strong>hp</strong> 118; <strong>Fort</strong> +11, <strong>Will</strong> +6; <strong>Melee</strong> <em>+1 greataxe</em> +18/+13 (1d12+13/&times;3), slam +13 (1d4+4 plus energy drain), bite +12 (1d4+4 plus energy drain); <strong>Str</strong> 26, <strong>Cha</strong> 18; <strong>CMB</strong> +17 (+21 bull rush); <strong>CMD</strong> 33 (33 vs. bull rush).</p>
+<p class = "stat-block-breaker">STATISTICS</p>
+<p class = "stat-block-1"><strong>Str</strong> 30, <strong>Dex</strong> 18, <strong>Con</strong> &mdash;, <strong>Int</strong> 10, <strong>Wis</strong> 14, <strong>Cha</strong> 22</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +9; <strong>CMB</strong> +19 (+23 bull rush); <strong>CMD</strong> 33 (35 vs. bull rush)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#alertness">Alertness</a>, <a href = "../coreRulebook/feats.html#cleave">Cleave</a>, <a href = "../coreRulebook/feats.html#dodge">Dodge</a>, <a href = "../coreRulebook/feats.html#greater-bull-rush">Greater Bull Rush</a>, <a href = "../coreRulebook/feats.html#improved-bull-rush">Improved Bull Rush</a>, <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#lightning-reflexes"><a href = "../coreRulebook/feats.html#lightnin-reflexes">Lightning Reflexes</a></a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (slam)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +16 (+20 when jumping), <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +20, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nature) +12, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +24, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +12; <strong>Racial Modifiers</strong> +8 <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a>, +8 <a href = "../coreRulebook/skills/perception.html#perception">Perception</a>, +8 <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a>, +8 <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a></p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Orc</p>
+<p class = "stat-block-1"><strong>SQ</strong> change shape (dire bat or wolf, <em><a href = "../coreRulebook/spells/beastShape.html#beast-shape-ii">beast shape II</a></em> ), fast movement, gaseous form, orc blood, shadowless, spider climb</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/blur.html#blur">blur</a>, potion of <a href = "../coreRulebook/spells/haste.html#haste">haste</a>, potion of <a href = "../coreRulebook/spells/resistEnergy.html#resist-energy">resist energy</a></em> (fire); <strong>Other Gear</strong> <em>+1 greataxe</em>, <em>amulet of natural armor +1</em>, <em>belt of giant strength +2</em>, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +1</em>, <em>ring of protection +1</em>, 80 gp</p>
+<p class = "stat-block-breaker">Special Abilities</p>
+<p class = "stat-block-1"><strong>Undead Barbarian</strong> An undead creature with the ability to enter a rage gains the morale bonuses from rage despite being immune to morale effects. The bonus to Constitution from the rage applies to an undead creature's Charisma instead.</p>
+
+<p>With razor-sharp fangs and the ability to drain the life out of his opponents, a vampire savage is a frightening sight to behold. This vampire tears his victims apart even as he bleeds them dry&mdash;savoring every scream he causes, enjoys the last heartbeat of each victim, and laughs at adventurers who dare to try stopping his murderous rampage. Because the vampire savage mangles the bodies of his victims so badly, many believe that his killings are the work of a wild animal. The carnage he leaves in his wake stands as an easy trail for a hunter to follow, but those would-be vampire slayers who get too close are not usually seen again.</p>
+<p>This sort of vampire often takes control of a violent tribe of orcs, gnolls, and similar creatures, driving them into a frenzy and demanding blood sacrifices from them to appease his appetite.</p>
+
+
+<h2 id = "enlightened-vampire">Enlightened Vampire</h2>
+<p>An enlightened vampire tries to live in peace with his surroundings, drinking the blood of the living only when he must do so to survive and trying not to kill his victims when he does.</p>
+
+<p class = "stat-block-title">Enlightened Vampire <span class = "stat-block-cr">CR 12</span></p>
+<p class = "stat-block-xp">XP 19,200</p>
+<p class = "stat-block-1">Human vampire monk (hungry ghost monk) 11</p>
+<p class = "stat-block-1">LE Medium undead (augmented humanoid, human)</p>
+<p class = "stat-block-1"><strong>Init</strong> +9; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +30</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 34, touch 25, flat-footed 28 (+2 armor, +1 deflection, +5 Dex, +1 dodge, +4 monk, +4 Wis, +7 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 108 (11d8+55); fast healing 5</p>
+<p class = "stat-block-1"><strong>Fort</strong> +10, <strong>Ref</strong> +14, <strong>Will</strong> +11; +2 vs. enchantments</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> channel resistance +4, improved evasion; <strong>DR</strong> 10/magic and silver; <strong>Immune</strong> disease, poison, undead traits; <strong>Resist</strong> cold 10, electricity 10</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> vampire weaknesses</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 60 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> unarmed strike +15/+10 (2d8+6/19&ndash;20 plus energy drain) or flurry of blows +15/+15/+10/+10/+5 (2d8+6/19&ndash;20 plus energy drain) or slam +14 (1d4+6 plus energy drain)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> blood drain, children of the night, create spawn, dominate (DC 18), energy drain (2 levels, DC 18), flurry of blows, life from a stone, life funnel, steal ki</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The enlightened vampire uses flurry of blows and ki strike to gain extra attacks, and uses steal ki and life funnel to replenish his ki and hit points. He uses <a href = "../advancedPlayersGuide/advancedFeats.html#punishing-kick">Punishing Kick</a> to knock his most dangerous opponent prone, then grapples it and drains its blood.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 22, <strong>Dex</strong> 20, <strong>Con</strong> &mdash;, <strong>Int</strong> 14, <strong>Wis</strong> 18, <strong>Cha</strong> 16</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +8; <strong>CMB</strong> +17 (+21 grapple); <strong>CMD</strong> 39 (41 vs. grapple)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#alertness">Alertness</a>, <a href = "../coreRulebook/feats.html#combat-expertise">Combat Expertise</a>, <a href = "../coreRulebook/feats.html#dodge">Dodge</a>, <a href = "../coreRulebook/feats.html#gorgon-s-fist">Gorgon's Fist</a>, <a href = "../coreRulebook/feats.html#greater-grapple">Greater Grapple</a>, <a href = "../coreRulebook/feats.html#improved-critical">Improved Critical</a> (unarmed strike), <a href = "../coreRulebook/feats.html#improved-grapple">Improved Grapple</a>, <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#improved-unarmed-strike">Improved Unarmed Strike</a>, <a href = "../ultimateMagic/ultimateMagicFeats.html#ki-stand">Ki Stand</a>, <a href = "../coreRulebook/feats.html#lightning-reflexes"><a href = "../coreRulebook/feats.html#lightnin-reflexes">Lightning Reflexes</a></a>, <a href = "../coreRulebook/feats.html#mobility">Mobility</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../advancedPlayersGuide/advancedFeats.html#punishing-kick">Punishing Kick</a>, <a href = "../coreRulebook/feats.html#scorpion-style">Scorpion Style</a>, <a href = "../coreRulebook/feats.html#step-up">Step Up</a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (unarmed strike)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +19 (+42 when jumping), <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +20, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +17, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (history) +16, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +30, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +30, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +27; <strong>Racial Modifiers</strong> +8 <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a>, +8 <a href = "../coreRulebook/skills/perception.html#perception">Perception</a>, +8 <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a>, +8 <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a></p>
+<p class = "stat-block-1"><strong>Languages</strong> Celestial, Common, Elven</p>
+<p class = "stat-block-1"><strong>SQ</strong> change shape (dire bat or wolf, <em><a href = "../coreRulebook/spells/beastShape.html#beast-shape-ii">beast shape II</a></em> ), fast movement, gaseous form, high jump, ki pool (9 points, cold iron/lawful/magic), life funnel, maneuver training, shadowless, slow fall 50 ft., spider climb</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/displacement.html#displacement">displacement</a></em>, <em>potion of <a href = "../coreRulebook/spells/haste.html#haste">haste</a></em> ; <strong>Other Gear</strong> <em>amulet of natural armor +1</em>, <em>belt of physical might +2</em> (Str, Dex), <em>bracers of armor +1</em>, <em>headband of alluring charisma +2</em>, <em>ring of protection +1</em>, 500 gp</p>
+
+<p>An enlightened vampire spends his nights in meditation. He tries to live an ascetic's life, in search of purity and wholeness, even if his very nature requires him to harm others on a regular basis. Because of this, he lives in a state of suffering, seeking to atone for his nature while exploring the mysteries of enlightenment. This outlook on unlife doesn't stop him from killing his enemies. Whenever someone harms his spawn or one of his herd, an enlightened vampire responds with deliberate and decisive action.</p>
+
+
+<h2 id = "vampire-lord">Vampire Lord</h2>
+<p>A vampire lord is a ruthless, calculating noble or other figure of authority that dominates her political landscape.</p>
+
+<p class = "stat-block-title">Vampire Lord <span class = "stat-block-cr">CR 15</span></p>
+<p class = "stat-block-xp">XP 51,200</p>
+<p class = "stat-block-1">Half-elf vampire magus 14</p>
+<p class = "stat-block-1">NE Medium undead (augmented humanoid, elf, human)</p>
+<p class = "stat-block-1"><strong>Init</strong> +6; <strong>Senses</strong> darkvision 60 ft., low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +35</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 28, touch 14, flat-footed 25 (+7 armor, +1 deflection, +2 Dex, +1 dodge, +7 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 150 (14d8+84); fast healing 5</p>
+<p class = "stat-block-1"><strong>Fort</strong> +16, <strong>Ref</strong> +10, <strong>Will</strong> +13; +2 vs. enchantments</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> channel resistance +4; <strong>DR</strong> 10/magic and silver; <strong>Immune</strong> sleep, undead traits; <strong>Resist</strong> cold 10, electricity 10</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> vampire weaknesses</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 20 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 frost longsword</em> +20/+15 (1d8+11/17&ndash;20 plus 2d6), slam +13 (1d4+8 plus energy drain)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> blood drain, children of the night, create spawn, dominate (DC 22), energy drain (2 levels, DC 22), greater spell combat, improved spell combat, spell combat (&ndash;2 attack, +2 concentration, double bonus), spellstrike</p>
+<p class = "stat-block-1"><strong>Magus Spells Prepared</strong> (CL 14th; concentration +18)</p>
+<p class = "stat-block-2">5th&mdash;<em><a href = "../coreRulebook/spells/balefulPolymorph.html#baleful-polymorph">baleful polymorph</a></em> (DC 19), <em><a href = "../ultimateMagic/spells/monstrousPhysique.html#_monstrous-physique-iii">monstrous physique III</a></em> </p>
+<p class = "stat-block-2">4th&mdash;<em><a href = "../coreRulebook/spells/fireShield.html#fire-shield">fire shield</a></em>, <em><a href = "../coreRulebook/spells/invisibility.html#invisibility-greater">greater invisibility</a></em>, <em><a href = "../coreRulebook/spells/iceStorm.html#ice-storm">ice storm</a></em>, <em><a href = "../coreRulebook/spells/shout.html#shout">shout</a></em> (DC 18), <em><a href = "../coreRulebook/spells/stoneskin.html#stoneskin">stoneskin</a></em> </p>
+<p class = "stat-block-2">3rd&mdash;<em>cloak of wind s</em>, <em><a href = "../coreRulebook/spells/dispelMagic.html#dispel-magic">dispel magic</a></em>, <em><a href = "../coreRulebook/spells/fireball.html#fireball">fireball</a></em> (DC 17), <em><a href = "../coreRulebook/spells/haste.html#haste">haste</a></em>, <em><a href = "../coreRulebook/spells/slow.html#slow">slow</a></em> (DC 17)</p>
+<p class = "stat-block-2">2nd&mdash;<em><a href = "../coreRulebook/spells/darkness.html#darkness">darkness</a></em>, <em><a href = "../ultimateMagic/spells/frigidTouch.html#_frigid-touch">frigid touch</a></em>, <em><a href = "../coreRulebook/spells/mirrorImage.html#mirror-image">mirror image</a></em>, <em><a href = "../coreRulebook/spells/scorchingRay.html#scorching-ray">scorching ray</a></em> (2), <em><a href = "../coreRulebook/spells/web.html#web">web</a></em> (DC 16)</p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat">expeditious retreat</a></em>, <em><a href = "../ultimateMagic/spells/frostbite.html#_frostbite">frostbite</a></em>, <em><a href = "../coreRulebook/spells/shield.html#shield">shield</a></em>, <em><a href = "../coreRulebook/spells/shockingGrasp.html#shocking-grasp">shocking grasp</a></em> (2), <em><a href = "../coreRulebook/spells/trueStrike.html#true-strike">true strike</a></em> </p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/arcaneMark.html#arcane-mark">arcane mark</a></em>, <em><a href = "../coreRulebook/spells/dancingLights.html#dancing-lights">dancing lights</a></em>, <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/ghostSound.html#ghost-sound">ghost sound</a></em> (DC 14), <em><a href = "../coreRulebook/spells/rayOfFrost.html#ray-of-frost">ray of frost</a></em> </p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The vampire lord casts <em><a href = "../coreRulebook/spells/stoneskin.html#stoneskin">stoneskin</a></em> on herself.</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The vampire casts <em><a href = "../advancedPlayersGuide/spells/cloakOfWinds.html#_cloak-of-winds">cloak of winds</a></em>, <em><a href = "../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat">expeditious retreat</a></em>, <em><a href = "../coreRulebook/spells/invisibility.html#invisibility-greater">greater invisibility</a></em>, and<em> <a href = "../coreRulebook/spells/shield.html#shield">shield</a></em> on herself. She uses accurate strike against better-defended opponents, <a href = "../coreRulebook/feats.html#mobility">Mobility</a> to avoid flanking, and <a href = "../ultimateCombat/ultimateCombatFeats.html#flanking-foil">Flanking Foil</a> to negate sneak attacks.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 26, <strong>Dex</strong> 14, <strong>Con</strong> &mdash;, <strong>Int</strong> 18, <strong>Wis</strong> 15, <strong>Cha</strong> 20</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +10; <strong>CMB</strong> +18; <strong>CMD</strong> 32</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#alertness">Alertness</a>, <a href = "../coreRulebook/feats.html#combat-casting"><a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a></a>, <a href = "../coreRulebook/feats.html#critical-focus">Critical Focus</a>, <a href = "../coreRulebook/feats.html#disruptive">Disruptive</a>, <a href = "../coreRulebook/feats.html#dodge">Dodge</a>, <a href = "../ultimateCombat/ultimateCombatFeats.html#flanking-foil">Flanking Foil</a>, <a href = "../coreRulebook/feats.html#improved-critical">Improved Critical</a> (longsword), <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#lightning-reflexes"><a href = "../coreRulebook/feats.html#lightnin-reflexes">Lightning Reflexes</a></a>, <a href = "../coreRulebook/feats.html#mobility">Mobility</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#skill-focus">Skill Focus</a> (<a href = "../coreRulebook/skills/perception.html#perception">Perception</a>), <a href = "../coreRulebook/feats.html#spellbreaker">Spellbreaker</a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (longsword), <a href = "../coreRulebook/feats.html#weapon-specialization">Weapon Specialization</a> (longsword)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> +12, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +22, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana) +21, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (dungeoneering) +21, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (local) +11, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nobility) +11, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +35, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +12, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +21, <a href = "../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> +15; <strong>Racial Modifiers</strong> +8 <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a>, +8 <a href = "../coreRulebook/skills/perception.html#perception">Perception</a>, +8 <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a>, +8 <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a></p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Dwarven, Elven, Giant, Sylvan, Undercommon</p>
+<p class = "stat-block-1"><strong>SQ</strong> arcane pool (11 points, +4), change shape (dire bat or wolf, <em><a href = "../coreRulebook/spells/beastShape.html#beast-shape-ii">beast shape II</a></em> ), elf blood, fighter training (fighter level 7), gaseous form, heavy armor proficiency, improved spell recall, knowledge pool, magus arcana (accurate strike, concentrate, spell shield, spellbreaker) medium armor proficiency, shadowless, spider climb</p>
+<p class = "stat-block-1"><strong>Gear</strong> <em>+1 breastplate</em>, <em>+1 frost longsword</em>, <em>amulet of natural armor +1</em>, <em>belt of physical might +2</em> (Str, Dex), <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +2</em>, <em>headband of alluring charisma +4</em>, <em>ring of protection +1</em>, granite and diamond dust (worth 500 gp), 835 gp</p>
+
+
+<h2 id = "vampire-spawn">Vampire Spawn</h2>
+<p><em>This pale humanoid has fangs and burning red eyes.</em> </p>
+
+<p class = "stat-block-title">Vampire Spawn <span class = "stat-block-cr">CR 2</span></p>
+<p class = "stat-block-xp">XP 600</p>
+<p class = "stat-block-1">Human rogue 2</p>
+<p class = "stat-block-1">NE Medium undead (human)</p>
+<p class = "stat-block-1"><strong>Init</strong> +6; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +9</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 20, touch 12, flat-footed 18 (+4 armor, +2 Dex, +4 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 18 (2d8+6); fast healing 2</p>
+<p class = "stat-block-1"><strong>Fort</strong> +2, <strong>Ref</strong> +5, <strong>Will</strong> +1</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> channel resistance +2, evasion; <strong>DR</strong> 5/silver; <strong>Immune</strong> undead traits; <strong>Resist</strong> cold 10, electricity 10</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> resurrection vulnerability, vampire weaknesses</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> slam +4 (1d4+4 plus energy drain)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> dagger +3 (1d4+3/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> blood drain, dominate (DC 13), energy drain (1 level, DC 13), sneak attack +1d6</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 17, <strong>Dex</strong> 14, <strong>Con</strong> &mdash;, <strong>Int</strong> 8, <strong>Wis</strong> 12, <strong>Cha</strong> 15</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +1; <strong>CMB</strong> +4; <strong>CMD</strong> 16</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#intimidating-prowess">Intimidating Prowess</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#skill-focus">Skill Focus</a> (<a href = "../coreRulebook/skills/perception.html#perception">Perception</a>)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +13, <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +6, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +10, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (local) +4, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +9, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +6, <a href = "../coreRulebook/skills/sleightOfHand.html#sleight-of-hand">Sleight of Hand</a> +5, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +13</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Halfling</p>
+<p class = "stat-block-1"><strong>SQ</strong> gaseous form, rogue talents (strong impression), shadowless, spider climb, trapfinding +1</p>
+<p class = "stat-block-breaker">Ecology</p>
+<p class = "stat-block-1"><strong>Environment</strong> any</p>
+<p class = "stat-block-1"><strong>Organization</strong> gang (2&ndash;8) or family (vampire plus 2&ndash;8)</p>
+<p class = "stat-block-1"><strong>Treasure</strong> NPC Gear (chain shirt, dagger, other treasure)</p>
+
+<p>The following template can be used to create unique vampire spawn with class levels.</p>
+
+<h3>Creating a Vampire Spawn</h3>
+<p>"Vampire spawn" is an acquired template that can be added to any living creature with 4 or more Hit Dice (referred to hereafter as the base creature). A vampire spawn uses the base creature's stats and abilities except as noted here.</p>
+<p class = "stat-block-1"><strong>CR</strong>: Same as the base creature + 1.</p>
+<p class = "stat-block-1"><strong>Alignment</strong>: Any evil.</p>
+<p class = "stat-block-1"><strong>Type</strong>: The creature's type changes to undead. Do not recalculate class Hit Dice, BAB, or saves.</p>
+<p class = "stat-block-1"><strong>Senses</strong>: A vampire spawn gains darkvision to 60 feet.</p>
+<p class = "stat-block-1"><strong>Armor Class</strong>: Natural armor increases to +4, unless the base creature's natural armor is already +4 or higher.</p>
+<p class = "stat-block-1"><strong>Hit Dice</strong>: Change all racial Hit Dice to d8s. Class Hit Dice are unaffected. As undead, vampire spawn use their Cha modifier to determine bonus hit points (instead of Con).</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong>: A vampire spawn gains channel resistance +2, DR 5/silver, resistance 10 against cold and electricity, and fast healing 2.</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong>: A vampire spawn has the same weaknesses of the vampire that created it.</p>
+<p class = "stat-block-2"><em>Resurrection Vulnerability (Su)</em> : A <em><a href = "../coreRulebook/spells/raiseDead.html#raise-dead">raise dead</a></em> or similar spell cast on a vampire spawn destroys it (Will negates). Using the spell in this way does not require a material component.</p>
+<p class = "stat-block-1"><strong>Melee</strong>: A vampire spawn gains a slam attack if the base creature didn't have one. Damage for the slam depends on the vampire spawn's size (see <em>Bestiary</em> 301).</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong>: A vampire spawn gains a vampire's blood drain and dominate special attacks. The vampire who created the spawn can influence a spawn's dominated creature as if she had dominated it herself.</p>
+<p class = "stat-block-2"><em>Energy Drain (Su)</em> : A creature hit by a vampire spawn's slam (or other natural weapon) gains 1 negative level. This ability only triggers only once per round.</p>
+<p class = "stat-block-1"><strong>Special Qualities</strong>: A vampire spawn gains the gaseous form, shadowless, and spider climb abilities of a vampire.</p>
+<p class = "stat-block-1"><strong>Ability Scores</strong>: Cha +2.</p>
+<p class = "stat-block-1"><strong>Skills</strong>: Spawn gain a +8 racial bonus on <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> and <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> checks.</p>
+<p class = "stat-block-1"><strong>Feats</strong>: Spawn gain <a href = "../coreRulebook/feats.html#skill-focus">Skill Focus</a> (<a href = "../coreRulebook/skills/perception.html#perception">Perception</a>) as a bonus feat.</p>
+
+<h1 id = "vampire-encounters">Encounters</h1>
+<p>Encounters with vampires can be as varied as a wandering group of hunting vampires or an established family that has been in residence for decades.</p>
+
+<h2>False Family (CR 5)</h2>
+<p>Many times, a true vampire sends mortal and undead minions to scout out an area, with a spawn pretending to be full vampire. If the group prospers, the vampire might visit. If the group is destroyed, the vampire knows it should proceed with caution. A vampire might also use this sort of team to claim a newly risen spawn from its coffin or crypt.</p>
+
+<p class = "stat-block-title">Shady Minions (5) <span class = "stat-block-cr">CR 1/2</span></p>
+<p class = "stat-block-xp">XP 200 each</p>
+<p class = "stat-block-1">Addle-minded brigand</p>
+<p class = "stat-block-1"><strong>hp </strong>15 each</p>
+
+<p class = "stat-block-title">Vampire Spawn <span class = "stat-block-cr">CR 2</span></p>
+<p class = "stat-block-xp">XP 600</p>
+<p class = "stat-block-1"><strong>hp</strong> 18</p>
+
+<h2>Celebration (CR 8)</h2>
+<p>When a vampire seducer throws a party, it is the talk of the town, and everyone hopes to be invited. The exotic pleasures are unforgettable. The vampire's herd works the party, ushering individuals away from the crowd to spend a few quiet moments with the vampire. Those partygoers return to the party feeling light headed, while the vampire feeds well that night.</p>
+
+<p class = "stat-block-title">Vampire Seducer <span class = "stat-block-cr">CR 6</span></p>
+<p class = "stat-block-xp">XP 2,400</p>
+<p class = "stat-block-1"><strong>hp</strong> 61</p>
+
+<p class = "stat-block-title">Vampire Spawn (2) <span class = "stat-block-cr">CR 2</span></p>
+<p class = "stat-block-xp">XP 600 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 18 each</p>
+
+<p class = "stat-block-title">Weird Butler <span class = "stat-block-cr">CR 4</span></p>
+<p class = "stat-block-xp">XP 1,200</p>
+<p class = "stat-block-1"><strong>hp</strong> 31</p>
+
+<h2>Hunger (CR 12)</h2>
+<p>When several vampires are on the prowl for blood, they collectively call themselves a hunger of vampires. This group constantly tries to creatively one up each other in the ways they seduce and kill their victims. At least one vampire brings along a butler to ensure any other desires are met.</p>
+
+<p class = "stat-block-title">Coffin Guard <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1"><strong>hp</strong> 38</p>
+
+<p class = "stat-block-title">Vampire Seducers (2) <span class = "stat-block-cr">CR 6</span></p>
+<p class = "stat-block-xp">XP 2,400 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 61 each</p>
+
+<p class = "stat-block-title">Vampires (2) <span class = "stat-block-cr">CR 9</span></p>
+<p class = "stat-block-xp">XP 6,400 each</p>
+<p class = "stat-block-1"><strong>hp </strong>102 each</p>
+
+<p class = "stat-block-title">Weird Butler <span class = "stat-block-cr">CR 4</span></p>
+<p class = "stat-block-xp">XP 1,200</p>
+<p class = "stat-block-1"><strong>hp</strong> 31</p>
+
+<h2>Family (CR 16)</h2>
+<p>A mockery of a mortal family, a vampire "family" consists of a powerful vampire lord along with several lesser vampires, spawn, and mortal minions. This family, all of whom are either dominated or enslaved by the vampire lord, follow their leader's directives without fail.</p>
+
+<p class = "stat-block-title">Coffin Guards (5) <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 38 each</p>
+
+<p class = "stat-block-title">Vampire <span class = "stat-block-cr">CR 9</span></p>
+<p class = "stat-block-xp">XP 6,400</p>
+<p class = "stat-block-1"><strong>hp</strong> 102</p>
+
+<p class = "stat-block-title">Vampire Lord <span class = "stat-block-cr">CR 15</span></p>
+<p class = "stat-block-xp">XP 51,200</p>
+<p class = "stat-block-1"><strong>hp</strong> 150</p>
+
+<p class = "stat-block-title">Vampire Warrior (2) <span class = "stat-block-cr">CR 8</span></p>
+<p class = "stat-block-xp">XP 4,800 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 78 each</p>
+
+<p class = "stat-block-title">Vampire Spawn (5) <span class = "stat-block-cr">CR 2</span></p>
+<p class = "stat-block-xp">XP 600 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 18 each</p>
+
+<p class = "stat-block-title">Weird Butler <span class = "stat-block-cr">CR 4</span></p>
+<p class = "stat-block-xp">XP 1,200</p>
+<p class = "stat-block-1"><strong>hp</strong> 31</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Vampires",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,464 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Occult Classes</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "index.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "index.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "index.html">Occult Classes</a></li>
+						<li><a href = "../archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../spellLists.html">Spell Lists</a></li>
+						<li><a href = "../spells/index.html">Spells</a></li>
+						<li><a href = "../occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "index.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "index.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "index.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "index.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id = "occult-adventures-classes">Occult Classes</h1>
+
+<p>Beyond the worship of the divine and the studies of arcane scholars lies the mysterious terrain of the mind, accessed through psychic magic. Classes that draw upon psychic magic do so via innate mental abilities, whether they directly cast spells, create elemental effects, or focus psychic energy through objects. Members of these occult classes find themselves drawn to the strange and the hidden; they have connections to the timeless Astral Plane, the haunted bleakness of the Ethereal Plane, and the history of the Material Plane chronicled as psychic impressions in places and objects.</p>
+<p>Psychic magic is a third type of magic that functions differently from arcane and divine magic. The rules for casting psychic spells appear in the <a href = "../psychicMagic.html">Psychic Magic section</a>. The occult classes' spell lists include many new spells from <em>Occult Adventures</em>, allowing them to fully express their mental powers. These spells, like other new rules elements, are marked with an asterisk (*).</p>
+
+<h2>Classes</h1>
+<p>The six new classes presented in this section all use psychic magic. In most cases, this means they cast psychic spells. The new classes are as follows.</p>
+<p><a href = "kineticist.html"><b>Kineticist</b></a>: With a connection to the elements, a kineticist can bring forth energy in the form of kinetic blasts. Instead of casting psychic spells, the kineticist uses unique psychic spell-like abilities called wild talents to manipulate elemental energy and matter.</p>
+<p><a href = "medium.html"><b>Medium</b></a>: By contacting spirits in places of power, the medium allows the personalities of legendary heroes to overcome his own, vastly changing his abilities and spells. He holds seances to benefit himself and his allies.</p>
+<p><a href = "mesmerist.html"><b>Mesmerist</b></a>: A mesmerist's piercing stare lets him insinuate himself into other people's minds. A master of enchantment and illusion, the mesmerist controls and influences the behavior of others.</p>
+<p><a href = "occultist.html"><b>Occultist</b></a>: To make use of his powers, an occultist channels psychic energy into a varied collection of antiques and mementos with storied pasts. Every type of implement allows him to use a different school of magic.</p>
+<p><a href = "psychic.html"><b>Psychic</b></a>: With her incredibly potent mind, the psychic can cast spells that are more powerful than those of members of any other occult class. She accesses these spells through a specific discipline, and can bend and amplify psychic spells as she casts them.</p>
+<p><a href = "spiritualist.html"><b>Spiritualist</b></a>: Attuned to the spirits of the dead, a spiritualist forms a bond with a phantom&mdash;a returned spirit that has unfinished business but did not become undead. This spectral ally can alternate between forms, emerging from the safety of the spiritualist's mind to take on an incorporeal form or an ectoplasmic body.</p>
+
+<h1 id = "occult-adventures-racial-favored-class-options">Racial Favored Class Options</h1>
+
+<p>The rules below allow members of races from the <em>Pathfinder RPG Core Rulebook</em> to take alternate rewards when they gain a level in a favored class chosen from among the classes in this book.</p>
+<p>Each of these rewards replaces the normal reward for having a level in a favored class (gaining 1 extra hit point or 1 extra skill rank). Unlike those general rewards, the alternate favored class options speak directly to the features of specific classes and the general tendencies of various races.</p>
+<p>Whenever you gain a level in a favored class, you can choose which favored class option you take. Unless otherwise noted, these benefits always stack with themselves.</p>
+<p>Many of these alternate class rewards add only 1/2, 1/3, 1/4, or 1/6 to a roll (rather than 1) each time the reward is selected, or add 1/2, 1/3, 1/4, or 1/6 to a class ability (such as adding to a mesmerist's number of mesmerist tricks per day or the total number of points in a psychic's phrenic pool). When applying such a benefit to a die roll or class ability, always round down (to a minimum of 0). You may thus need to select such an option several times before the benefit takes effect. If an alternate favored class option modifies a class feature or ability, it can't be taken before the character has that class feature or ability. For example, if a class gains a class feature at 6th level, a character couldn't take a racial favored class option that applies to that class feature until 6th level, even if the benefit from that option wouldn't be high enough to add a bonus until a later level.</p>
+<p>Some options may have a fixed numerical limit, after which selecting that favored class reward again has no effect. In these cases, you can always select from among the standard rewards when taking a level in a favored class (gaining 1 extra hit point or 1 extra skill rank).</p>
+<p>Abilities from favored class options that increase a character's caster level for the purpose of determining the duration of certain spells apply this increase after other effects that adjust a spell's duration, such as Extend Spell.</p>
+
+<h2 id = "occult-adventures-dwarf-class-options">Dwarves</h2>
+<p>Some dwarven communities place a social stigma on psychic abilities due to the association of such powers with their slaver cousins, the duergar. Occultists avoid this stigma by establishing a connection to the storied relics of dwarven history. Dwarven spiritualists might connect with spirits of dwarves who fell in battle, and dwarven mediums might hone their talents so they can contact the great heroes of dwarven lore. Still, the most common path for a psychic dwarf is a kineticist focusing on earth and metal wild talents. The following options are open to all dwarves who have the listed favored class.</p>
+<p><b>Kineticist</b>: Add 1/3 point of damage to earth element blasts that deal damage.</p>
+<p><b>Medium</b>: Gain a +1/2 bonus on saving throws against possession and a +1/2 bonus on saving throws to end haunt channeler, location channel, and spacious soul.</p>
+<p><b>Mesmerist</b>: Increase painful stare's damage by 1/4 point.</p>
+<p><b>Occultist</b>: Gain a +1/3 bonus on <a href = "../../coreRulebook/skills/appraise.html#appraise">Appraise</a> and <a href = "../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> checks involving stone and metal objects.</p>
+<p><b>Psychic</b>: When casting psychic abjuration spells, add 1/2 level to the effective caster level of the spell, but only to determine the spell's duration.</p>
+<p><b>Spiritualist</b>: Add 1/6 to the shield bonus granted by the 3rd-level ectoplasmic bonded manifestation ability.</p>
+
+<h2 id = "occult-adventures-elf-class-options">Elves</h2>
+<p>The same keen intellects and careful study elves use to explore the arcane arts also apply to their study of the occult and psychic magic. Elves who explore their own psyches typically embark on mental expeditions after thorough study of psychic phenomena. They approach their own minds deliberately, keeping detailed chronicles of what they experience both without and within. The following options are open to all elves who have the listed favored class.</p>
+<p><b>Kineticist</b>: Gain a +1/4 bonus on damage rolls that apply the kineticist's elemental overflow bonus.</p>
+<p><b>Medium</b>: Gain a +1/3 bonus on all skill checks using occult skill unlocks.</p>
+<p><b>Mesmerist</b>: Gain a +1/2 bonus on <a href = "../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> checks to move through a threatened area and a +1/2 bonus on <a href = "../../coreRulebook/skills/bluff.html#bluff">Bluff</a> checks to feint.</p>
+<p><b>Occultist</b>: Increase the occultist's total number of points of mental focus by 1/2 point.</p>
+<p><b>Psychic</b>: Increase the total number of points in the psychic's phrenic pool by 1/3 point.</p>
+<p><b>Spiritualist</b>: Add 1/6 to the shield bonus granted by the 3rd-level ectoplasmic bonded manifestation ability.</p>
+
+<h2 id = "occult-adventures-gnome-class-options">Gnomes</h2>
+<p>Mental trickery comes naturally to gnomes. They're predisposed to like psychic magic, with its offbeat and obscure practices. Each type of occult class holds its own appeal for gnomes, from the kineticist's innate feel for magic to the occultist's fascination with trinkets. The following options are open to all gnomes who have the listed favored class.</p>
+<p><b>Kineticist</b>: Gain a +1/2 bonus on <a href = "../../coreRulebook/skills/bluff.html#bluff">Bluff</a>, <a href = "../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a>, <a href = "../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a>, and <a href = "../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> skill checks against creatures with the elemental subtype matching the kineticist's primary element.</p>
+<p><b>Medium</b>: Gain a +1/2 bonus on <a href = "../../coreRulebook/skills/bluff.html#bluff">Bluff</a>, <a href = "../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a>, <a href = "../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a>, and <a href = "../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> skill checks against spirits, undead, phantoms, and creatures native to the Astral Plane.</p>
+<p><b>Mesmerist</b>: Increase the number of mesmerist tricks the mesmerist can use per day by 1/3.</p>
+<p><b>Occultist</b>: Increase the duration of the occultist's minor figment by 1 minute, and increase the total concealment miss chance from the occultist's distortion resonant power by 2%. This doesn't increase the maximum miss chance.</p>
+<p><b>Psychic</b>: Increase the total number of points in the psychic's phrenic pool by 1/3 point.</p>
+<p><b>Spiritualist</b>: Add 1/6 to the shield bonus granted to the spiritualist while under the effects of either spiritual interference or greater spiritual interference.</p>
+
+<h2 id = "occult-adventures-half-elf-class-options">Half-Elves</h2>
+<p>Many half-elves have a talent for forming and reinforcing social ties, and psychic half-elves find that mentally connecting to other creatures makes this even easier. They're especially skilled at the spiritual communication required for the medium class. Half-elves who hew more closely to their elven lineage often become psychics, and those with stronger human blood might become kineticists or mesmerists. The following options are open to all half-elves who have the listed favored class.</p>
+<p><b>Kineticist</b>: Gain a +1/4 bonus on damage rolls that apply the kineticist's elemental overflow bonus.</p>
+<p><b>Medium</b>: Gain a +1/3 bonus on all skill checks using occult skill unlocks.</p>
+<p><b>Mesmerist</b>: When casting mesmerist enchantment spells, add 1/2 to the effective caster level of the spell, but only to determine the spell's duration.</p>
+<p><b>Occultist</b>: Gain a +1/2 bonus on <a href = "../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> checks to identify the properties of magic items and a +1/2 bonus on <a href = "../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> checks to emulate a race.</p>
+<p><b>Psychic</b>: Gain 1/6 of a new phrenic amplification.</p>
+<p><b>Spiritualist</b>: Add 1 skill rank to the spiritualist's phantom.</p>
+
+<h2 id = "occult-adventures-half-orc-class-options">Half-Orcs</h2>
+<p>Abilities firmly rooted in the mind might not seem like a fit for half-orcs&mdash;at least, according to the common perception of half-orcs. However, psychic abilities sometimes get handed down, typically from a human parent. When orc blood contributes psychic talent, it usually manifests as kineticist abilities. The following options are open to all half-orcs who have the listed favored class.</p>
+<p><b>Kineticist</b>: Add 1/3 point of fire damage to fire-element blasts that deal fire damage.</p>
+<p><b>Medium</b>: When gaining a taboo, the medium can use spirit surge without incurring influence an additional 1/4 time per day.</p>
+<p><b>Mesmerist</b>: Increase the mesmerist's bonus damage from painful stare by 1/2 point.</p>
+<p><b>Occultist</b>: Deal an additional 1/2 point of damage with focus powers.</p>
+<p><b>Psychic</b>: Gain a +1 bonus on concentration checks required because of taking damage while casting spells from the psychic class.</p>
+<p><b>Spiritualist</b>: Add 1 hit point to the spiritualist's phantom.</p>
+
+<h2 id = "occult-adventures-halfling-class-options">Halflings</h2>
+<p>It's a common belief that halflings get out of scrapes because of their good fortune, but for some, "halfling luck" is really a reflection of psychic talent. Many develop this ability into something greater to compensate for their small stature, and become particularly adept at influencing or manipulating people. The following options are open to all halflings who have the listed favored class.</p>
+<p><b>Kineticist</b>: Increase the capacity of the kineticist's internal buffer by 1/6 point.</p>
+<p><b>Medium</b>: Increase the bonus the medium gains from its seance boon by 1/3 point. This doesn't increase the bonus allies gain from shared seance.</p>
+<p><b>Mesmerist</b>: Increase the number of mesmerist tricks the mesmerist can use per day by 1/3.</p>
+<p><b>Occultist</b>: Add 1/2 point of mental focus per day.</p>
+<p><b>Psychic</b>: The psychic treats her Charisma bonus as 1/3 point higher for the purpose of determining the number of uses or rounds per day of her discipline powers.</p>
+<p><b>Spiritualist</b>: Add 1/4 to the number of rounds that the spiritualist's incorporeal phantom can be out of sight and line of effect before being sent back to the Ethereal Plane.</p>
+
+<h2 id = "occult-adventures-human-class-options">Humans</h2>
+<p>Lacking traditions on which to base their understanding of the occult, psychic humans often join strange cults to develop their mental talents. Others engage in private study, collecting writings of questionable veracity that cover occult topics. A large number of humans are fascinated with occult topics even if they aren't sensitive to psychic phenomena, and they can be quick to follow anyone who demonstrates even minor abilities with psychic magic. The following options are open to all humans who have the listed favored class.</p>
+<p><b>Kineticist</b>: Gain 1/6 of an Extra Wild Talent feat.</p>
+<p><b>Medium</b>: When gaining a taboo, the medium can use spirit surge without incurring influence an additional 1/4 time per day.</p>
+<p><b>Mesmerist</b>: Increase the mesmerist's towering ego bonus by 1/3 point (to a maximum increase of +2).</p>
+<p><b>Occultist</b>: Gain 1/6 of a new focus power.</p>
+<p><b>Psychic</b>: Add one spell known from the psychic spell list. This spell must be at least 1 level lower than the highest spell level the psychic can cast.</p>
+<p><b>Spiritualist</b>: Add 1 skill rank or 1 hit point to the spiritualist's phantom.</p>
+		
+	
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Occult Classes",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

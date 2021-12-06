@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Ghost</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "ghost.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "ghost.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "ghost.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "ghost.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "ghost.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "ghost.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "creatureTypes.html">Creature Types</a></li>
+						<li><a href = "monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "ghost.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "ghost.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "ghost.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "ghost.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "ghost.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "ghost.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "ghost.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "ghost.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "ghost.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "ghost.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "ghost.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "ghost.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "ghost.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "ghost.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "ghost.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="ghost" class="monster-header">Ghost</h1>
+			
+				<p class="flavor-text"><i>This spectral, horrifying figure glides silently through the air, passing through solid objects as if they didn't exist.</i></p>
+			
+				<p class="stat-block-title"><b>Ghost <span class=stat-block-cr>CR 7</span></b></p>
+				<p class="stat-block-xp"><b>XP 3,200</b></p>
+				<p class="stat-block-1">Human ghost aristocrat 7</p>
+				<p class="stat-block-1">CE Medium <a href="creatureTypes.html#undead" >undead</a> (<a href="creatureTypes.html#augmented-subtype" >augmented</a> <a href="creatureTypes.html#humanoid" >humanoid</a>, <a href="creatureTypes.html#incorporeal-subtype" >incorporeal</a>)</p>
+				<p class="stat-block-1"><b>Init</b> +5; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +18</p>
+				<p class = "stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 17, touch 17, flat-footed 15 (+1 Dex, +1 dodge, +5 deflection)</p>
+				<p class="stat-block-1"><b>hp</b> 73 (7d8+42)</p>
+				<p class="stat-block-1"><b>Fort</b> +7, <b>Ref</b> +5, <b>Will</b> +7</p>
+				<p class="stat-block-1"><b>Defensive Abilities</b> <a href="universalMonsterRules.html#channel-resistance" >channel resistance</a> +4, <a href="universalMonsterRules.html#incorporeal" >incorporeal</a>, rejuvenation; <b>Immune</b> <a href="universalMonsterRules.html#undead-traits" >undead traits</a></p>
+				<p class = "stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> fly 30 ft. (perfect)</p>
+				<p class="stat-block-1"><b>Melee </b>corrupting touch +6 (7d6, Fort. DC 18 half)</p>
+				<p class="stat-block-1"><b>Special Attacks</b> frightful moan (DC 18)</p>
+				<p class = "stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> &mdash;, <b>Dex</b> 12, <b>Con</b> &mdash;, <b>Int</b> 10, <b>Wis</b> 11, <b>Cha</b> 20</p>
+				<p class="stat-block-1"><b>Base</b> <b>Atk</b> +5; <b>CMB</b> +5; <b>CMD</b> 22</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a>, <a href="../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../coreRulebook/feats.html#lightning-reflexes" >Lightning Reflexes</a>, <a href="../coreRulebook/feats.html#toughness" >Toughness</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> +9, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (history) +10, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (nobility) +10, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +18, <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +10, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +9; <b>Racial Modifiers</b> +8 <a href="../coreRulebook/skills/perception.html#perception" >Perception</a>, +8 <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a></p>
+				<p class="stat-block-1"><b>Languages</b> Common</p>
+				<p class = "stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment </b>any</p>
+				<p class="stat-block-1"><b>Organization</b> solitary</p>
+				<p class="stat-block-1"><b>Treasure</b> NPC gear</p>
+				<p>When a soul is not allowed to rest due to some great injustice, either real or perceived, it sometimes comes back as a ghost. Such beings are in eternal anguish, lacking in substance and unable to set things right. Although ghosts can be any alignment, the majority cling to the living world out of a powerful sense of rage and hatred, and as a result are chaotic evil&mdash;even the ghost of a good or lawful creature can become hateful and cruel in its afterlife.</p>
+				<p>More than most of the monsters in this book, a ghost benefits from a strong and detailed backstory. Why did this character become a ghost? What are the legends surrounding the ghost? An encounter with a ghost should never happen completely out of the blue&mdash;there are plenty of other incorporeal undead like wraiths and spectres to fill that role. A proper encounter with a ghost should be a climactic scene after a lengthy period of tension building with lesser minions or manifestations of the undead spirit. The sample ghost above is that of a human princess who was murdered by an unfaithful lover&mdash;after she confronted him, he murdered her by wrapping her in chains and throwing her into the castle well, where she drowned. The ghost's abilities were selected to fit this backstory, and it shows how potent a villain you can create with a simple NPC class. Applying the template to creatures with class levels or creatures with significant racial abilities can create even more powerful ghosts.</p>
+				<p>When a ghost is created, it retains incorporeal "copies" of any items that it particularly valued in life (provided the originals are not in another creature's possession). The equipment works normally for the ghost but passes harmlessly through material objects or creatures. A weapon of +1 or better magical enhancement, however, can harm material creatures, but any such attack deals only half as much damage (50%) unless it is a <i><a href="../coreRulebook/magicItems/weapons.html#weapons-ghost-touch" >ghost touch</a> weapon. </i>A ghost can use shields or armor only if they have the <i><a href="../coreRulebook/magicItems/weapons.html#weapons-ghost-touch" >ghost touch</a> </i>quality.</p>
+				<p>The original items remain behind, just as the ghost's physical remains do. If another creature seizes the original, the incorporeal copy fades away. This loss invariably angers the ghost, who stops at nothing to return the item to its original resting place (and thus regain the item's use).</p>
+				<h2>Creating a Ghost</h2>
+				<p>"Ghost" is an acquired template that can be added to any living creature that has a Charisma score of at least 6. A ghost retains all the base creature's statistics and special abilities except as noted here.</p>
+				<p><b>Challenge Rating</b>: Same as the base creature +2.</p>
+				<p><b>Type</b>: The creature's type changes to <a href="creatureTypes.html#undead" >undead</a>. Do not recalculate the creature's base attack bonus, saves, or skill points. It gains the incorporeal subtype.</p>
+				<p><b>Armor Class</b>: A ghost gains a deflection bonus equal to its Charisma modifier. It loses the base creature's natural armor bonus, as well as all armor and shield bonuses not from force effects or <i><a href="../coreRulebook/magicItems/weapons.html#weapons-ghost-touch" >ghost touch</a> </i>items.</p>
+				<p><b>Hit Dice</b>: Change all of the creature's racial Hit Dice to d8s. All Hit Dice derived from class levels remain unchanged. Ghosts use their Charisma modifiers to determine bonus hit points (instead of Constitution).</p>
+				<p><b>Defensive Abilities</b>: A ghost retains all of the defensive abilities of the base creature save those that rely on a corporeal form to function. Ghosts gain channel resistance +4, darkvision 60 ft., the incorporeal ability, and all of the immunities granted by its undead traits. Ghosts also gain the rejuvenation ability.</p>
+				<p class="stat-block-2"><i>Rejuvenation (Su): </i>In most cases, it's difficult to destroy a ghost through simple combat: the "destroyed" spirit restores itself in 2d4 days. Even the most powerful spells are usually only temporary solutions. The only way to permanently destroy a ghost is to determine the reason for its existence and set right whatever prevents it from resting in peace. The exact means varies with each spirit and may require a good deal of research, and should be created specifically for each different ghost by the GM.</p>
+				<p><b>Speed</b>: Ghosts lose their previous speeds and gain a fly speed of 30 feet (perfect), unless the base creature has a higher fly speed.</p>
+				<p><b>Melee and Ranged Attacks</b>: A ghost loses all of the base creature's attacks. If it could wield weapons in life, it can wield <i><a href="../coreRulebook/magicItems/weapons.html#weapons-ghost-touch" >ghost touch</a> weapons</i> as a ghost. </p>
+				<p><b>Special Attacks</b>: A ghost retains all the special attacks of the base creature, but any relying on physical contact do not function. In addition, a ghost gains one ghost special attack from the list below for every 3 points of CR (minimum 1&mdash;the first ability chosen must always be corrupting touch). The save DC against a ghost's special attack is equal to 10 + 1/2 ghost's HD + ghost's Charisma modifier unless otherwise noted. Additional ghost abilities beyond these can be designed at the GM's discretion.</p>
+				<p class="stat-block-2"><i>Corrupting Gaze (Su)</i>: The ghost is disfigured through age or violence, and has a gaze attack with a range of 30 feet that causes 2d10 damage and 1d4 Charisma <a href="universalMonsterRules.html#ability-damage-and-drain" >damage</a> (Fortitude save negates Charisma <a href="universalMonsterRules.html#ability-damage-and-drain" >damage</a> but not physical damage).</p>
+				<br><p class="stat-block-2"><i>Corrupting Touch (Su)</i>: All ghosts gain this incorporeal touch attack. By passing part of its incorporeal body through a foe's body as a standard action, the ghost inflicts a number of d6s equal to its CR in damage. This damage is not negative energy&mdash;it manifests in the form of physical wounds and aches from supernatural aging. Creatures immune to magical aging are immune to this damage, but otherwise the damage bypasses all forms of damage reduction. A Fortitude save halves the damage inflicted.</p>
+				<br><p class="stat-block-2"><i>Draining Touch (Su)</i>: The ghost died while insane or diseased. It gains a touch attack that <a href="universalMonsterRules.html#ability-damage-and-drain" >drains</a> 1d4 points from any one ability score it selects on a hit. On each such successful attack, the ghost heals 5 points of damage to itself. When a ghost makes a draining touch attack, it cannot use its standard ghostly touch attack.</p>
+				<br><p class="stat-block-2"><i>Frightful Moan (Su)</i>: The ghost died in the throes of crippling terror. It can emit a frightful moan as a standard action. All living creatures within a 30-foot spread must succeed on a Will save or become panicked for 2d4 rounds. This is a sonic mind-affecting fear effect. A creature that successfully saves against the moan cannot be affected by the same ghost's moan for 24 hours.</p>
+				<br><p class="stat-block-2"><i>Malevolence (Su)</i>: The ghost's jealousy of the living is particularly potent. Once per round, the ghost can merge its body with a creature on the Material Plane. This ability is similar to a <i><a href="../coreRulebook/spells/magicJar.html#magic-jar" >magic jar</a> </i>spell (caster level 10th or the ghost's Hit Dice, whichever is higher), except that it does not require a receptacle. To use this ability, the ghost must be adjacent to the target. The target can resist the attack with a successful Will save. A creature that successfully saves is immune to that same ghost's malevolence for 24 hours.</p>
+				<br><p class="stat-block-2"><i>Telekinesis (Su)</i>: The ghost's death involved great physical trauma. The ghost can use <i><a href="../coreRulebook/spells/telekinesis.html#telekinesis" >telekinesis</a> </i>as a standard action once every 1d4 rounds (caster level 12th or equal to the ghost's HD, whichever is higher).</p>
+				<p><b>Abilities</b>: Cha +4; as an incorporeal undead creature, a ghost has no Strength or Constitution score.</p>
+				<p><b>Skills</b>: Ghosts have a +8 racial bonus on <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> and <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> skill checks. A ghost always treats <a href="../coreRulebook/skills/climb.html#climb" >Climb</a>, <a href="../coreRulebook/skills/disguise.html#disguise" >Disguise</a>, <a href="../coreRulebook/skills/fly.html#fly" >Fly</a>, <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a>, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (arcana), <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (religion), <a href="../coreRulebook/skills/perception.html#perception" >Perception</a>, <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a>, <a href="../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a>, and <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> as class skills. Otherwise, skills are the same as the base creature.</p>
+			</div>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Ghost",globalNavPath=[{ href: '/pathfinderRPG/prd/bestiary/monsterIndex.html', name: 'Monster Index' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Elementals</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "elementals.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "elementals.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "elementals.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "elementals.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "elementals.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "elementals.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "elementals.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "elementals.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "elementals.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../glossary.html">Glossary</a></li>
+						<li><a href = "../mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "elementals.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "elementals.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "elementals.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "elementals.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "elementals.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "elementals.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "elementals.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "elementals.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "elementals.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "elementals.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "elementals.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "elementals.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id="elemental-air">Elemental, Air</h1>
+<p><i>This living tornado draws in all the air that surrounds it, hurling unrestrained objects as it moves.</i></p>
+			
+
+<p id="mythic-elder-air-elemental" class="stat-block-title">Mythic Elder Air Elemental <span class="stat-block-cr">CR 14/MR 5</span></p>
+<p class="stat-block-1">XP 38,400</p>
+<p class="stat-block-1">N Huge outsider (<a href="../../bestiary/creatureTypes.html#air-subtype" >air</a>, <a href="../../bestiary/creatureTypes.html#elemental-subtype" >elemental</a>, <a href="../../bestiary/creatureTypes.html#extraplanar-subtype" >extraplanar</a>, <a href="../mythicMonsters.html#mythic-subtype">mythic</a>)</p>
+<p class="stat-block-1"><b>Init</b> +15; <b>Senses</b> darkvision 60 ft.; <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> +20</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 33, touch 20, flat-footed 21 (+11 Dex, +1 dodge, +13 natural, &ndash;2 size)</p>
+<p class="stat-block-1"><b>hp</b> 202 (16d10+114)</p>
+<p class="stat-block-1"><b>Fort</b> +14, <b>Ref</b> +21, <b>Will</b> +8</p>
+<p class="stat-block-1"><b>Defensive Abilities</b> <a href="../../bestiary/creatureTypes.html#air-subtype" >air</a> mastery; <b>DR</b> 10/&mdash;; <b>Immune</b> <a href="../../bestiary/creatureTypes.html#elemental-subtype" >elemental</a> traits</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> fly 100 ft. (perfect)</p>
+<p class="stat-block-1"><b>Melee</b> 2 slams +25 (4d8+11 plus <a href="../../bestiary/universalMonsterRules.html#grab" >grab</a>)</p>
+<p class="stat-block-1"><b>Space</b> 15 ft.; <b>Reach</b> 15 ft.</p>
+<p class="stat-block-1"><b>Special Attacks</b> create vacuum, elevated ejection, <a href="../../bestiary/universalMonsterRules.html#fast-swallow" >fast swallow</a>, mythic power (5/day, surge +1d8), swallow whole (2d8+9 bludgeoning damage, AC 14, 20 hp, DR 10/&mdash;), <a href="../../bestiary/universalMonsterRules.html#whirlwind" >whirlwind</a> (at will, 10&ndash;60 ft. high, 2d8+9 damage, DC 27)</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 28, <b>Dex</b> 33, <b>Con</b> 18, <b>Int</b> 12, <b>Wis</b> 13, <b>Cha</b> 11</p>
+<p class="stat-block-1"><b>Base Atk</b> +16; <b>CMB</b> +27 (+31 grapple); <b>CMD</b> 49</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#blind-fight" >Blind-Fight</a>, <a href="../mythicFeats.html#cleave-mythic">Cleave</a><sup>M</sup>, <a href="../../coreRulebook/feats.html#combat-reflexes" >Combat Reflexes</a>, <a href="../../coreRulebook/feats.html#dodge" >Dodge</a>, <a href="../../bestiary/monsterFeats.html#flyby-attack" >Flyby Attack</a>, <a href="../../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a><sup>B</sup>, <a href="../mythicFeats.html#iron-will-mythic">Iron Will</a><sup>M</sup>, <a href="../../coreRulebook/feats.html#mobility">Mobility</a>, <a href="../../coreRulebook/feats.html#power-attack" >Power Attack</a>, <a href="../../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a><sup>B, M</sup></p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +30, <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +30, <a href="../../coreRulebook/skills/fly.html#fly" >Fly</a> +34, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +20, <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> +20, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +20, <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +22</p>
+<p class="stat-block-1"><b>Languages</b> Auran</p>
+<p class="stat-block-breaker">Ecology</p>
+<p class="stat-block-1"><b>Environment</b> any (Plane of Air)</p>
+<p class="stat-block-1"><b>Organization</b> solitary, pair, or gang (3&ndash;8)</p>
+<p class="stat-block-1"><b>Treasure</b> none</p>
+<p class="stat-block-breaker">Special Abilities</p>
+<p class="stat-block-1"><b>Air Mastery (Ex)</b> Airborne creatures take a &ndash;1 penalty on attack and damage rolls against a mythic air elemental.</p>
+<p class="stat-block-1"><b>Create Vacuum (Ex)</b> As a standard action, a mythic elder air elemental can suck the air out of the lungs of creatures it has swallowed or that are trapped in its whirlwind (Fortitude DC 27 negates). Creatures that fail the save take 2d6 points of damage and must attempt Constitution checks each round as if they had run out of breath. An affected character can't speak, use breath weapons, cast spells with verbal components, or do anything else that requires breathing. A trapped creature that succeeds at its save must succeed at a concentration check to cast spells. The air elemental can maintain this vacuum as a move action. If it stops, the trapped or swallowed creatures can breathe again. The save DC is Strength-based.</p>
+<p class="stat-block-1"><b>Elevated Ejection (Ex)</b> When a mythic air elemental in whirlwind form ejects a trapped creature, it can do so from any point up to the whirlwind's current height, dropping the creature into the whirlwind's space or within the elemental's normal reach. The creature takes falling damage as normal. If the elemental expends one use of mythic power, it can instead throw a trapped creature as if using the <a href="../mythicHeroes/champion.html#uncanny-grapple">uncanny grapple path ability</a> with no grapple check needed.</p>
+<p class="stat-block-1"><b>Swallow Whole (Ex)</b> A mythic air elemental can use this ability on a creature it has grabbed. If a trapped creature cuts itself free, the hole heals itself closed at the start of the elemental's next turn, allowing it to use swallow whole again.</p>
+
+<p>A mythic elder air elemental is pure fury and strength, capable of throwing wooden splinters through stone walls and tearing creatures apart with fists of solid wind. Its greatest speed is within its empty core, able to suffocate enemies in moments.</p>
+
+
+<h1 id="elemental-earth">Elemental, Earth</h1>
+<p><i>This humanoid mountain of stone and earth strides forward on legs like pillars, a vast grove covering its back.</i></p>
+			
+
+<p id="mythic-elder-earth-elemental" class="stat-block-title">Mythic Elder Earth Elemental <span class="stat-block-cr">CR 14/MR 5</span></p>
+<p class="stat-block-1">XP 38,400</p>
+<p class="stat-block-1">N Huge outsider (<a href="../../bestiary/creatureTypes.html#earth-subtype" >earth</a>, <a href="../../bestiary/creatureTypes.html#elemental-subtype" >elemental</a>, <a href="../../bestiary/creatureTypes.html#extraplanar-subtype" >extraplanar</a>, <a href="../mythicMonsters.html#mythic-subtype">mythic</a>)</p>
+<p class="stat-block-1"><b>Init</b> &ndash;1; <b>Senses</b> darkvision 60 ft., tremorsense 60 ft.; <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> +20</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 29, touch 7, flat-footed 29 (&ndash;1 Dex, +22 natural, &ndash;2 size)</p>
+<p class="stat-block-1"><b>hp</b> 218 (16d10+130)</p>
+<p class="stat-block-1"><b>Fort</b> +15, <b>Ref</b> +4, <b>Will</b> +11</p>
+<p class="stat-block-1"><b>Defensive Abilities</b> trap weapon; <b>DR</b> 10/&mdash;; <b>Immune</b> <a href="../../bestiary/creatureTypes.html#elemental-subtype" >elemental</a> traits</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 20 ft., burrow 20 ft., <a href="../../bestiary/universalMonsterRules.html#earth-glide" >earth glide</a></p>
+<p class="stat-block-1"><b>Melee</b> 2 slams +26 (4d6+18/18&ndash;20)</p>
+<p class="stat-block-1"><b>Space</b> 15 ft.; <b>Reach</b> 15 ft.</p>
+<p class="stat-block-1"><b>Special Attacks</b> <a href="../../bestiary/creatureTypes.html#earth-subtype" >earth</a> mastery, mythic power (5/day, surge +1d8), petrify, stun, trample (4d6+18, DC 30)</p>
+<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 16th; concentration +16)</p>
+<p class="stat-block-2">At will&mdash;<i><a href="../../coreRulebook/spells/stoneShape.html#stone-shape" >stone shape</a></i></p>
+<p class="stat-block-2">5/day&mdash;<i><a href="../../coreRulebook/spells/transmuteMudToRock.html#transmute-mud-to-rock" >transmute mud to rock</a></i> (DC 15)</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 34, <b>Dex</b> 8, <b>Con</b> 21, <b>Int</b> 12, <b>Wis</b> 13, <b>Cha</b> 11</p>
+<p class="stat-block-1"><b>Base Atk</b> +16; <b>CMB</b> +30 (+34 bull rush or overrun, +32 sunder); <b>CMD</b> 41 (43 vs. bull rush, overrun, or sunder)</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../bestiary/monsterFeats.html#awesome-blow" >Awesome Blow</a>, <a href="../mythicFeats.html#cleave-mythic">Cleave</a><sup>M</sup>, <a href="../../coreRulebook/feats.html#greater-bull-rush">Greater Bull Rush</a>, <a href="../../coreRulebook/feats.html#greater-overrun">Greater Overrun</a>, <a href="../../coreRulebook/feats.html#improved-bull-rush">Improved Bull Rush</a><sup>B</sup>, <a href="../mythicFeats.html#improved-critical-mythic" >Improved Critical</a> (slam)<sup>M</sup>, <a href="../../coreRulebook/feats.html#improved-overrun">Improved Overrun</a>, <a href="../../coreRulebook/feats.html#improved_sunder">Improved Sunder</a>, <a href="../mythicFeats.html#power-attack-mythic">Power Attack</a><sup>M</sup></p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/appraise.html#appraise" >Appraise</a> +20, <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a> +31, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (dungeoneering) +20, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +20, <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> +20, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +20, <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +10</p>
+<p class="stat-block-1"><b>Languages</b> Terran</p>
+<p class="stat-block-1"><b>SQ</b> powerful blows (slam)</p>
+<p class="stat-block-breaker">Ecology</p>
+<p class="stat-block-1"><b>Environment</b> any (Plane of Earth)</p>
+<p class="stat-block-1"><b>Organization</b> solitary, pair, or gang (3&ndash;8)</p>
+<p class="stat-block-1"><b>Treasure</b> none</p>
+<p class="stat-block-breaker">Special Abilities</p>
+<p class="stat-block-1"><b>Earth Mastery (Ex)</b> A earth elemental gains a +1 bonus on attack and damage rolls if both it and its foe are touching the ground. If an opponent is airborne or waterborne, the elemental takes a &ndash;4 penalty on attack and damage rolls. These modifiers apply to bull rush and overrun maneuvers, whether the elemental is initiating or resisting these kinds of attacks.</p>
+<p class="stat-block-1"><b>Petrify (Su)</b> If it hits a target with a slam attack, a mythic earth elemental can expend two uses of mythic power to permanently turn that target to stone. If the target succeeds at a DC 23 Fortitude save, it is slowed (as the spell) for 1d6 rounds instead of petrified. The save DC is Constitution-based.</p>
+<p class="stat-block-1"><b>Stun (Ex)</b> If a mythic earth elemental strikes an opponent with two slams in 1 round, that creature must succeed at a DC 30 Fortitude save or be stunned for 1d6 rounds. The save DC is Strength-based.</p>
+<p class="stat-block-1"><b>Trap Weapon (Ex)</b> A mythic earth elemental's body traps manufactured weapons that damage it. A manufactured weapon that deals hit point damage to the elemental (after subtracting its DR) is stuck fast unless the wielder succeeds at a DC 30 Reflex save. A creature can spend a standard action to attempt a DC 30 Strength check to remove a stuck weapon. Weapons that deal only bludgeoning damage are immune to this ability. The elemental can release any number of stuck weapons as a free action. The save DC is Strength-based.</p>
+
+<p>Infused with the power and wisdom of the deepest, oldest stone, a mythic elder earth elemental is a rocky bulwark against progress and change. They use innate magic and their very bodies to block enemy advances and preserve treasures of the earth.</p>
+
+
+<h1 id="elemental-fire">Elemental, Fire</h1>
+<p><i>This blazing conflagration is vaguely humanoid in shape, its horned visage almost too bright to look upon.</i></p>
+			
+
+<p id="mythic-elder-fire-elemental" class="stat-block-title">Mythic Elder Fire Elemental <span class="stat-block-cr">CR 14/MR 5</span></p>
+<p class="stat-block-1">XP 38,400</p>
+<p class="stat-block-1">N Huge outsider (<a href="../../bestiary/creatureTypes.html#elemental-subtype" >elemental</a>, <a href="../../bestiary/creatureTypes.html#extraplanar-subtype" >extraplanar</a>, <a href="../../bestiary/creatureTypes.html#fire-subtype" >fire</a>, <a href="../mythicMonsters.html#mythic-subtype">mythic</a>)</p>
+<p class="stat-block-1"><b>Init</b> +13; <b>Senses</b> darkvision 60 ft.; <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> +20</p>
+<p class="stat-block-1"><b>Aura</b> frightful presence (60 ft., DC 18), shroud of flame (15 ft., 2d6 <a href="../../bestiary/creatureTypes.html#fire-subtype" >fire</a>, DC 22), smoke cloud (10 ft., DC 22)</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 32, touch 19, flat-footed 21 (+9 Dex, +2 dodge, +13 natural, &ndash;2 size)</p>
+<p class="stat-block-1"><b>hp</b> 202 (16d10+114)</p>
+<p class="stat-block-1"><b>Fort</b> +14, <b>Ref</b> +19, <b>Will</b> +8</p>
+<p class="stat-block-1"><b>DR</b> 10/&mdash;; <b>Immune</b> <a href="../../bestiary/creatureTypes.html#elemental-subtype" >elemental</a> traits, <a href="../../bestiary/creatureTypes.html#fire-subtype" >fire</a></p>
+<p class="stat-block-1"><b>Weaknesses</b> vulnerable to <a href="../../bestiary/creatureTypes.html#cold-subtype" >cold</a></p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 60 ft.</p>
+<p class="stat-block-1"><b>Melee</b> 2 slams +23 (2d8+8 plus burn)</p>
+<p class="stat-block-1"><b>Space</b> 15 ft.; <b>Reach</b> 15 ft.</p>
+<p class="stat-block-1"><b>Special Attacks</b> blinding blaze, burn (2d10, DC 22), inferno, mythic power (5/day, surge +1d8)</p>
+<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 16th; concentration +16)</p>
+<p class="stat-block-2">At will&mdash;<i><a href="../../coreRulebook/spells/produceFlame.html#produce-flame" >produce flame</a></i></p>
+<p class="stat-block-2">5/day&mdash;<i><a href="../../coreRulebook/spells/flameArrow.html#flame-arrow" >flame arrow</a></i>, <i><a href="../../coreRulebook/spells/wallOfFire.html#wall-of-fire" >wall of fire</a></i></p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 26, <b>Dex</b> 29, <b>Con</b> 18, <b>Int</b> 12, <b>Wis</b> 13, <b>Cha</b> 11</p>
+<p class="stat-block-1"><b>Base Atk</b> +16; <b>CMB</b> +26; <b>CMD</b> 47</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#blind-fight" >Blind-Fight</a>, <a href="../mythicFeats.html#combat-reflexes-mythic">Combat Reflexes</a><sup>M</sup>, <a href="../mythicFeats.html#dodge-mythic">Dodge</a><sup>M</sup>, <a href="../../coreRulebook/feats.html#improved-initiative" >Improved Initiative</a><sup>B</sup>, <a href="../mythicFeats.html#iron-will-mythic">Iron Will</a><sup>M</sup>, <a href="../../coreRulebook/feats.html#lightning-stance">Lightning Stance</a>, <a href="../../coreRulebook/feats.html#mobility">Mobility</a>, <a href="../../coreRulebook/feats.html#spring-attack">Spring Attack</a>, <a href="../../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a><sup>B</sup>, <a href="../../coreRulebook/feats.html#wind-stance">Wind Stance</a></p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +28 (+40 when jumping), <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a> +27, <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +28, <a href="../../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +19, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +20, <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> +20, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +20</p>
+<p class="stat-block-1"><b>Languages</b> Ignan</p>
+<p class="stat-block-breaker">Ecology</p>
+<p class="stat-block-1"><b>Environment</b> any (Plane of Fire)</p>
+<p class="stat-block-1"><b>Organization</b> solitary, pair, or gang (3&ndash;8)</p>
+<p class="stat-block-1"><b>Treasure</b> none</p>
+<p class="stat-block-breaker">Special Abilities</p>
+<p class="stat-block-1"><b>Blinding Blaze (Su)</b> A mythic fire elemental can expend one use of mythic power as a swift action to burn brightly, granting it a blinding gaze attack. This gaze causes permanent blindness and has a range of 60 feet. A creature that succeeds at a DC 22 Fortitude save is instead dazzled for 1 round. Fire elementals are immune to this blindness. The save DC is Constitution-based.</p>
+<p class="stat-block-1"><b>Inferno (Ex)</b> A mythic fire elemental can expend one use of mythic power as an immediate action to lose its vulnerability to cold for 1 round. During this time, any fire damage it deals ignores fire resistance and fire immunity.</p>
+<p class="stat-block-1"><b>Shroud of Flame (Ex)</b> Any creature within a mythic fire elemental's reach must succeed at a DC 22 Reflex save at the start of its turn or take 2d6 points of fire damage. The elemental can suppress or reactivate this ability at will as a free action. The save DC is Constitution-based.</p>
+<p class="stat-block-1"><b>Smoke Cloud (Ex)</b> As a swift action, a mythic fire elemental can create a choking cloud of smoke. This cloud is equivalent to that of <i><a href="../../coreRulebook/spells/pyrotechnics.html#pyrotechnics" >pyrotechnics</a></i> and lasts 1 minute. Fire elementals are immune to the effects of this ability.</p>
+
+<p>A mythic elder fire elemental is a living fragment of the original fires at the heart of its home plane. Having learned the patience of a slow burn, it lacks both the recklessness of younger fire elementals and the urge to inspire fear in the hearts of flammable mortals. It enjoys using smoke to scatter opponents so it can chase them down and set them alight.</p>
+
+
+<h1 id="elemental-water">Elemental, Water</h1>
+<p><i>Thousands of gallons of water rise up to become a tentacled face, a bulbous body, and four long tentacular appendages. </i></p>
+			
+
+<p id="mythic-elder-water-elemental" class="stat-block-title">Mythic Elder Water Elemental <span class="stat-block-cr">CR 14/MR 5</span></p>
+<p class="stat-block-1">XP 38,400</p>
+<p class="stat-block-1">N Huge outsider (<a href="../../bestiary/creatureTypes.html#elemental-subtype" >elemental</a>, <a href="../../bestiary/creatureTypes.html#extraplanar-subtype" >extraplanar</a>, <a href="../mythicMonsters.html#mythic-subtype">mythic</a>, <a href="../../bestiary/creatureTypes.html#water-subtype" >water</a>)</p>
+<p class="stat-block-1"><b>Init</b> +6; <b>Senses</b> darkvision 60 ft.; <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> +20</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 30, touch 16, flat-footed 22 (+6 Dex, +2 dodge, +14 natural, &ndash;2 size)</p>
+<p class="stat-block-1"><b>hp</b> 202 (16d10+114)</p>
+<p class="stat-block-1"><b>Fort</b> +14, <b>Ref</b> +18, <b>Will</b> +6</p>
+<p class="stat-block-1"><b>DR</b> 10/&mdash;; <b>Immune</b> <a href="../../bestiary/creatureTypes.html#elemental-subtype" >elemental</a> traits</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 20 ft., swim 90 ft.</p>
+<p class="stat-block-1"><b>Melee</b> 4 slams +24 (2d10+10/18&ndash;20 plus <a href="../../bestiary/universalMonsterRules.html#grab" >grab</a>)</p>
+<p class="stat-block-1"><b>Space</b> 15 ft.; <b>Reach</b> 15 ft.</p>
+<p class="stat-block-1"><b>Special Attacks</b> drench, <a href="../../bestiary/universalMonsterRules.html#fast-swallow" >fast swallow</a>, mythic power (5/day, surge +1d8), pressure wave, smother, swallow whole (2d10+10 bludgeoning damage, AC 14, 20 hp, DR 10/&mdash;), vortex (at will, 10&ndash;60 ft., 2d10+10 damage, DC 28), water mastery</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 30, <b>Dex</b> 22, <b>Con</b> 19, <b>Int</b> 12, <b>Wis</b> 13, <b>Cha</b> 11</p>
+<p class="stat-block-1"><b>Base Atk</b> +16; <b>CMB</b> +28 (+30 bull rush or sunder, +32 grapple); <b>CMD</b> 48 (50 vs. bull rush or sunder)</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#cleave">Cleave</a>, <a href="../mythicFeats.html#dodge-mythic">Dodge</a><sup>M</sup>, <a href="../../coreRulebook/feats.html#great-cleave">Great Cleave</a>, <a href="../../coreRulebook/feats.html#improved-bull-rush"><a href="../../coreRulebook/feats.html#improved-bull-rush">Improved Bull Rush</a></a>, <a href="../mythicFeats.html#improved-critical-mythic" >Improved Critical</a> (slam)<sup>M</sup>, <a href="../../coreRulebook/feats.html#improved_sunder">Improved Sunder</a>, <a href="../../coreRulebook/feats.html#lightning-reflexes" >Lightning Reflexes</a>, <a href="../mythicFeats.html#power-attack-mythic">Power Attack</a><sup>M</sup></p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +25, <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +25, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (planes) +20, <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> +20, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +20, <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +17, <a href="../../coreRulebook/skills/swim.html#swim" >Swim</a> +37.</p>
+<p class="stat-block-1"><b>Languages</b> Aquan</p>
+<p class="stat-block-breaker">Ecology</p>
+<p class="stat-block-1"><b>Environment</b> any (Plane of Water)</p>
+<p class="stat-block-1"><b>Organization</b> solitary, pair, or gang (3&ndash;8)</p>
+<p class="stat-block-1"><b>Treasure</b> none</p>
+<p class="stat-block-breaker">Special Abilities</p>
+<p class="stat-block-1"><b>Drench (Ex)</b> The elemental's touch puts out nonmagical flames of Large size or smaller. The creature can dispel magical fire it touches as <i><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic" >dispel magic</a></i> (caster level 16th).</p>
+<p class="stat-block-1"><b>Pressure Wave (Su)</b> A mythic water elemental can expend one use of mythic power to create a 60-foot-radius bust of pressurized water. Creatures in the area must attempt a DC 22 Fort save. Success means the creature is sickened for 1d4 rounds; failure means the creature is nauseated for 1d4 rounds and sickened for 1d4 rounds after that. If the elemental expends two uses of mythic power, creatures nauseated by this ability also take slam damage. Creatures with the aquatic or water subtypes are immune to this ability. The save DC is Constitution-based.</p>
+<p class="stat-block-1"><b>Swallow Whole (Ex)</b> The elemental can use this ability on a creature it has grabbed. If a trapped creature cuts itself free, the hole heals itself closed at the start of the elemental's next turn, allowing it to use swallow whole again.</p>
+<p class="stat-block-1"><b>Vortex (Su)</b> A water elemental can create a whirlpool as a standard action, at will (as a whirlwind, but only underwater and cannot leave the water).</p>
+<p class="stat-block-1"><b>Water Mastery (Ex)</b> If a water elemental and its opponent are touching water, the elemental gains a +1 bonus on attack rolls, damage rolls, and bull rush and overrun combat maneuver checks. If it or the opponent are touching the ground, the elemental takes a &ndash;4 penalty on attack rolls, on damage rolls, and to its CMD to resist bull rush and overrun attempts. </p>
+
+<p>A mythic water elemental comes from the unknowable depths of its home plane, predating the current civilizations and gods. A witness to ancient and bizarre acts of life-creation, it is unconcerned about the interests of mortal creatures.</p>
+
+
+</div>	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Elementals",globalNavPath=[{ href: '/pathfinderRPG/prd/mythicAdventures/mythicMonsters.html', name: 'Mythic Monsters' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

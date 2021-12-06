@@ -1,0 +1,861 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Creature Type or Class Graft</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "step2.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "step2.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "step2.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "step2.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "step2.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "step2.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "step2.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "step2.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "step2.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "step2.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "step2.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "../skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../magic/index.html">Magic</a></li>
+						<li><a href = "index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "step2.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "step2.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "step2.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "step2.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "step2.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "step2.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "step2.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "step2.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "step2.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "step2.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+<h1>Step 2: Creature Type or Class Graft</h1>
+<p>With the normal monster creation system, foundational statistics such as base attack bonus, saving throw bonuses, and hit points are calculated from a monster's creature type and class levels. In this system, a monster's array sets its main statistics based on the broad role and CR it fits into. Creature types and classes then adjust those statistics to better resemble a particular monster concept.</p>
+<p>Creature types and character classes are represented by "grafts"&mdash;groups of adjustments applied to an array's statistics. A monster made with this system is primarily defined either by its creature type or a character class. For example, a ghoul that is a powerful cleric would most likely use the cleric class graft rather than being defined primarily as undead. A fire giant with 3 levels in bard, on the other hand, should use the humanoid creature type graft and later choose some monster options that grant bardlike abilities.</p>
+<p>If the focus is on a creature type, choose the appropriate creature type graft and apply the adjustments in that graft as described in the next section. If the focus is on a class, still choose a creature type graft but only apply its "automatic traits" entry, then apply the class graft. Even if a dragon has 20 levels in rogue (thus using the rogue class graft), for example, it still gets a dragon's normal vision types and immunities.</p>
+
+<h2 id="creature-type-grafts">Creature Type Grafts</h2>
+<p>Altering an array by creature type is a simple process that typically adds or changes some of the monster's statistics. Each creature type includes at least the first two entries.</p>
+<p><strong>Automatic Traits</strong>: All creatures of this type get these abilities, which typically include senses, immunities, and more detailed sets of traits that are defined in the creature type's <a href="../../bestiary/creatureTypes.html">full description</a>. This doesn't include forms of movement; see <a href="index.html#other-calculations">Speed</a>.</p>
+<p><strong>Statistic Adjustments</strong>: These modifications change the base numbers from the monster's array. These are adjustments, not replacements; increase or decrease the statistics you recorded from the array by the amount indicated. Apply these adjustments to your monster only if it doesn't have a class graft.</p>
+<p><strong>Elective Adjustments</strong>: These are optional changes that can better evoke the monster's type, frequently including changes to the array's list of skills, monster options typical for this creature type (see <a href="step7.html">Step 7</a>), suggested spell lists, or even suggested restrictions. These should point you toward abilities that typically appear among creatures of the listed type, but aren't an exhaustive list of possibilities for monsters of that type.</p>
+
+	<h3 id = "aberration">Aberration</h3>
+	<p>An aberration has a bizarre anatomy, strange abilities, an alien mindset, or any combination of the three.</p>
+	<p><strong>Automatic Traits</strong>: Darkvision 60 ft.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Will save bonus by 2.</p>
+	<p><strong>Elective Adjustments</strong>: Spells from the aberrant list.</p>
+
+
+	<h3 id = "animal">Animal</h3>
+	<p>An animal is a living, nonhuman creature, usually with no magical abilities and no innate capacity for language.</p>
+	<p><strong>Automatic Traits</strong>: Low-light vision; set Intelligence modifier to &ndash;4 or &ndash;5.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Fortitude and Reflex saving throw bonuses by 2.</p>
+
+
+	<h3 id = "construct">Construct</h3>
+	<p>A construct is an animated object or artificially created creature. Most constructs have little willpower of their own, but are exceptionally hardy.</p>
+	<p><strong>Automatic Traits</strong>: Darkvision 60 ft., low-light vision; construct immunities; set Constitution modifier to &mdash;.</p>
+	<p><strong>Statistic Adjustments</strong>: Decrease Fortitude, Reflex, and Will saving throw bonuses by 2; increase attack bonus by 2.</p>
+	<p><strong>Elective Adjustments</strong>: Mindless; set Intelligence modifier to &mdash; for mindless constructs; no master or good skills.</p>
+
+
+	<h3 id = "dragon">Dragon</h3>
+	<p>A dragon is a reptile-like creature, usually winged, with magical or unusual abilities.</p>
+	<p><strong>Automatic Traits</strong>: Darkvision 60 ft., low-light vision; immune to paralysis and sleep.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase low saving throw bonuses by 2; increase attack bonus by 2.</p>
+	<p><strong>Elective Adjustments</strong>: Breath weapon combat option (monstrous); secondary magic universal option; one additional master skill.</p>
+
+
+	<h3 id = "fey">Fey</h3>
+	<p>A fey is a supernatural creature that typically derives its power from its relationship to or guardianship of an area or natural feature. Fey usually resemble humans or gnomes, though fey animals exist.</p>
+	<p><strong>Automatic Traits</strong>: Low-light vision.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Reflex and Will saving throw bonuses by 2; decrease attack bonus by 2.</p>
+	<p><strong>Elective Adjustments</strong>: Spells from the fey list; one additional master skill.</p>
+
+
+	<h3 id = "humanoid">Humanoid</h3>
+	<p>A humanoid usually has two arms, two legs, and one head, or a humanlike torso, arms, and a head. Humanoids have few or no supernatural or extraordinary abilities, but most can speak and usually have well-developed societies. They are usually Small or Medium (with the exception of giants). Every humanoid creature also has a specific subtype to match its race, such as human, giant, goblinoid, reptilian, or tengu.</p>
+	<p><strong>Automatic Traits</strong>: None.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase any one saving throw bonus by 2.</p>
+
+
+	<h3 id = "magical beast">Magical Beast</h3>
+	<p>Magical beasts are similar to animals, but can have Intelligence scores higher than 2 (in which case the magical beast knows at least one language, but can't necessarily speak). In addition, magical beasts usually have supernatural or extraordinary abilities.</p>
+	<p><strong>Automatic Traits</strong>: Darkvision 60 ft., low-light vision.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Fortitude and Reflex saving throw bonuses by 2; increase attack bonus by 2.</p>
+
+
+	<h3 id = "monstrous humanoid">Monstrous Humanoid</h3>
+	<p>Monstrous humanoids are similar to humanoids, but with distorted or animalistic features. They often have magical abilities as well.</p>
+	<p><strong>Automatic Traits</strong>: Darkvision 60 ft.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Reflex and Will saving throw bonuses by 2; increase attack bonus by 2.</p>
+	<p><strong>Elective Adjustments</strong>: One additional good skill.</p>
+
+
+	<h3 id = "ooze">Ooze</h3>
+	<p>An ooze is an amorphous or mutable creature, usually without a mind of its own. Options for oozes typically reflect their diverse physical compositions and innate abilities.</p>
+	<p><strong>Automatic Traits</strong>: Blind, blindsight; mindless, ooze immunities, not subject to critical hits or flanking; set Intelligence modifier to &mdash;.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Fortitude saving throw bonus by 2, decrease Reflex and Will saving throw bonuses by 2.</p>
+	<p><strong>Elective Adjustments</strong>: No master or good skills.</p>
+
+
+	<h3 id = "outsider">Outsider</h3>
+	<p>Most outsiders are beings native to a plane other than the Material Plane, or mortal descendants of such creatures. All outsiders are at least partially composed of the essence of their home planes. Some creatures become outsiders when they attain a higher (or lower) state of spiritual existence.</p>
+	<p><strong>Automatic Traits</strong>: Darkvision 60 ft.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase one saving throw bonus by 2; increase attack bonus by 2.</p>
+	<p><strong>Elective Adjustments</strong>: Spells from the abyssal, celestial, or infernal list; one additional master skill.</p>
+
+
+	<h3 id = "plant">Plant</h3>
+	<p>This type comprises vegetable creatures. Note that regular plants, such those found growing in gardens and fields, lack Wisdom and Charisma scores and aren't creatures, but objects, even though they are alive.</p>
+	<p><strong>Automatic Traits</strong>: Low-light vision; plant immunities.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Fortitude saving throw bonus by 2.</p>
+	<p><strong>Elective Adjustments</strong>: No master or good skills.</p>
+
+
+	<h3 id = "undead">Undead</h3>
+	<p>Undead are once-living creatures that have been reanimated by spiritual or supernatural forces.</p>
+	<p><strong>Automatic Traits</strong>: Darkvision 60 ft.; undead immunities, set Constitution modifier to &mdash;.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Will saving throw bonus by 2.</p>
+	<p><strong>Elective Adjustments</strong>: Mindless; no master or good skills; set Intelligence modifier to &mdash; for mindless undead.</p>
+
+
+	<h3 id = "vermin">Vermin</h3>
+	<p>Concerned only with survival, vermin are common in nearly all environments. This type includes insects, arachnids, other arthropods, worms, and similar invertebrates.</p>
+	<p><strong>Automatic Traits</strong>: Darkvision 60 ft.; mindless; set Intelligence modifier to &mdash;.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Fortitude saving throw bonus by 2.</p>
+	<p><strong>Elective Adjustments</strong>: No master or good skills.</p>
+
+
+<h2 id="class-grafts">Class Grafts</h2>
+<p>Class grafts are more detailed than creature type grafts, ensuring that they more closely represent a PC class of the appropriate level. Each class graft is divided into the following sections.</p>
+<p><strong>Specific Rules</strong>: This section appears in only some entries, and describes the class's significant requirements or features.</p>
+<p><strong>Required Array</strong>: You should use a specific array when you create a monster of this class. This is one instance in which a graft has a prerequisite, meant to match the feel of the class.</p>
+<p>If you want to replicate a class without using the indicated array, do so without using the class graft. For example, if you wanted to create a cleric monster with the combatant array, you could still achieve a cleric's flavor by choosing the secondary magic option in Step 7. This essentially replicates a cleric built under the standard creation system that took combat feats and pre-casts many of its spells to give itself combat bonuses.</p>
+<p><strong>Statistic Adjustments</strong>: These change or replace some of the baseline numbers, skills, and options given by the monster's array. Apply the adjustments as written. Any skill listed replaces one of the choices of skills the monster gets from its array (with either a master or good bonus, as specified). If a monster gains additional skills above the normal allotment, this entry lists "one additional master skill" or "one additional good skill." The adjustments might also specify options, which replace the allotted options the monster gets from its array.</p>
+<p><strong>CR Entries</strong>: These adjustments replicate advancement by level. Apply only the highest entry to your monster: a CR 3 rogue would get the CR 3 line, but not the CR 1 line. Options gained from these entries replace options granted by the monster's array. It's possible the class graft will add more options than the monster's array allows; that's fine, and as usual you can selectively add or remove bonus options if you need to do so to make the monster function in a thematically appropriate way. See <a href="../monster/step7.html">Step 7</a> for descriptions of these options.</p>
+<p><strong>Suggested Ability Modifiers</strong>: This section lists the recommended assignments for the monster's ability score bonuses, in order from highest to lowest. For instance, the barbarian lists "Strength, Constitution, Dexterity," meaning that when making a CR 1/2 barbarian, you would give it a +3 Strength modifier, a +2 Constitution modifier, and a +1 Dexterity modifier.</p>
+<p><strong>Suggested Options</strong>: These entries offer suggestions for cases in which the monster's array grants additional monster options beyond those determined by the class graft. They typically mimic flexible character class options, such as barbarian rage powers or rogue talents (see <a href="../monster/step7.html">Step 7</a>).</p>
+<p><strong>Suggested Spell Lists</strong>: Found only in class grafts for spellcaster monsters, these entries point you toward the spell lists that best replicate that class's typical spells.</p>
+
+	<h3 id = "alchemist">Alchemist</h3>
+	<p>Alchemists stand at the crossroads of magic and science. They blend exotic chemicals and infuse them with magical power in order to create unusual and sometimes unpredictable effects.</p>
+	<p><strong>Specific Rules</strong>: The spellcasting ability granted by this graft simulates the extracts an alchemist makes. The alchemist must use the alchemy spell list. Furthermore, "spells" the alchemist casts count as supernatural effects rather than spells.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#expert-array">Expert</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Use the combatant array's saving throws; <em>skill</em>&mdash;master <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (alchemy); <em>options</em>&mdash;bombs, mutagen, secondary magic.</p>
+	<p><strong>CR 1</strong>: <em>Options</em>&mdash;energy infusion.</p>
+	<p><strong>CR 3</strong>: Replace secondary magic with spellcasting (as if CR 2); <em>options</em>&mdash;energy infusion, one any.</p>
+	<p><strong>CR 6</strong>: Replace secondary magic with spellcasting (as if CR 4); <em>options</em>&mdash;energy infusion, one any.</p>
+	<p><strong>CR 9</strong>: Replace secondary magic with spellcasting (as if CR 6); <em>options</em>&mdash;energy infusion, immunity (poison), one any.</p>
+	<p><strong>CR 12</strong>: Replace secondary magic with spellcasting (as if CR 8); <em>options</em>&mdash;energy infusion, immunity (poison), one magic, one any.</p>
+	<p><strong>CR 15</strong>: Replace secondary magic with spellcasting (as if CR 10); <em>options</em>&mdash;energy infusion, immunity (poison), one magic, one any.</p>
+	<p><strong>CR 18</strong>: Replace secondary magic with spellcasting (as if CR 12); <em>options</em>&mdash;energy infusion, immunity (poison), one magic, two any.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Intelligence, Constitution, Dexterity.</p>
+	<p><strong>Suggested Options</strong>: Extra attack (the alchemist can use this ability with bombs), knowledgeable, poison, spontaneous casting (cure), trap squares.</p>
+	<p><em>Suggested Spell List</em>: Alchemy.</p>
+
+
+	<h3 id = "barbarian">Barbarian</h3>
+	<p>Fueled by wrath, driven by fury, barbarians unleash their rage to become powerful killing machines. They revel in the carnage they create and pay no heed to danger.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#combatant-array">Combatant</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase speed by 10 feet; increase Fortitude saving throw bonus by 2; <em>skill</em>&mdash;master <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a>; <em>options</em>&mdash;extra hit points, rage.</p>
+	<p><strong>CR 1</strong>: <em>Options</em>&mdash;uncanny dodge, one combat.</p>
+	<p><strong>CR 5</strong>: <em>Options</em>&mdash;uncanny dodge, unflankable, one combat.</p>
+	<p><strong>CR 7</strong>: <em>Options</em>&mdash;damage reduction as if 5 CR lower, uncanny dodge, unflankable, one combat.</p>
+	<p><strong>CR 15</strong>: <em>Options</em>&mdash;damage reduction as if 5 CR lower, uncanny dodge, unflankable, two combat.</p>
+	<p><strong>CR 19</strong>: <em>Options</em>&mdash;damage reduction as if 5 CR lower, uncanny dodge, unflankable, three combat.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Strength, Constitution, Dexterity.</p>
+	<p><strong>Suggested Options</strong>: Combat reflexes, critical striker, diehard, improved combat maneuver (bull rush or grapple), mobile attack, power attack.</p>
+
+
+	<h3 id = "bard">Bard</h3>
+	<p>Bards infuse their performances with magic to bolster their allies. Bards supplement their music with spells, typically favoring those that enchant, beguile, and befuddle.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#expert-array">Expert</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Reflex saving throw bonuses by 2; <em>skills</em>&mdash;master <a href="../../coreRulebook/skills/perform.html#perform">Perform</a>, one additional master; <em>options</em>&mdash;inspire courage, knowledgeable, secondary magic, one social.</p>
+	<p><strong>CR 3</strong>: Replace secondary magic with spellcasting (as if CR 2); <em>option</em>&mdash;one any.</p>
+	<p><strong>CR 6</strong>: Replace secondary magic with spellcasting (as if CR 4); <em>option</em>&mdash;one any.</p>
+	<p><strong>CR 9</strong>: Replace secondary magic with spellcasting (as if CR 6); <em>option</em>&mdash;one any.</p>
+	<p><strong>CR 12</strong>: Replace secondary magic with spellcasting (as if CR 8); <em>options</em>&mdash;one social, one any.</p>
+	<p><strong>CR 15</strong>: Replace secondary magic with spellcasting (as if CR 10); <em>options</em>&mdash;one social, one any.</p>
+	<p><strong>CR 18</strong>: Replace secondary magic with spellcasting (as if CR 12); <em>options</em>&mdash;one social, two any.</p>
+	<p><strong>CR 19</strong>: Replace secondary magic with spellcasting (as if CR 14); <em>options</em>&mdash;slaying attack (requires performing for 1 full round instead of hitting with an attack), one social, two any.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Charisma, Intelligence, Dexterity.</p>
+	<p><strong>Suggested Options</strong>: Combat casting, countersong, fascinate, inspire competence, linguist, persuasive.</p>
+	<p><strong>Suggested Spell Lists</strong>: Charm, enchantment, fey, liberation, trickery.</p>
+
+
+	<h3 id = "cavalier">Cavalier</h3>
+	<p>When mounted on a warhorse or some other steed trained for battle, the cavalier dominates the battlefield. He might serve as a battle leader, rallying allies to his banner.</p>
+	<p><strong>Specific Rules</strong>: The cavalier works well with a mount. See <a href="step2.html#animal-companions-and-mounts">Animal Companions and Mounts</a>.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#combatant-array">Combatant</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Fortitude and Reflex saving throw bonuses by 1; <em>skill</em>&mdash;master <a href="../../coreRulebook/skills/ride.html#ride">Ride</a>; <em>options</em>&mdash;challenge, one any.</p>
+	<p><strong>CR 3</strong>: <em>Options</em>&mdash;mounted mastery.</p>
+	<p><strong>CR 4</strong>: <em>Options</em>&mdash;inspire courage, mounted mastery.</p>
+	<p><strong>CR 13</strong>: <em>Options</em>&mdash;aura of resistance (charm, compulsion), heroic recovery, inspire courage, mounted mastery, one combat.</p>
+	<p><strong>CR 17</strong>: <em>Options</em>&mdash;aura of resistance (charm, compulsion), heroic recovery, inspire courage, mounted mastery, two combat.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Strength, Dexterity, Constitution.</p>
+	<p><strong>Suggested Options</strong>: Critical striker, extra armor, improved combat maneuver, mounted master, powerful charge.</p>
+
+
+	<h3 id = "cleric">Cleric</h3>
+	<p>Clerics draw power from the gods they serve to advance their interests in the world. As varied as the gods, clerics possess a wide array of spells and abilities with which they fight the enemies of their faith. Many clerics focus on battle and choose various combat options.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#spellcaster-array">Spellcaster</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Fortitude saving throw bonus by 2; <em>skill</em>&mdash;master <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion); <em>options</em>&mdash;channel energy, spontaneous casting (cure or inflict), one any.</p>
+	<p><strong>CR 12</strong>: <em>Options</em>&mdash;one magic, one any.</p>
+	<p><strong>CR 18</strong>: <em>Options</em>&mdash;one magic, two any.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Wisdom, Strength, Charisma.</p>
+	<p><strong>Suggested Options</strong>: Combat casting, extra armor, protective ward, turn undead; see the Domain Options sidebar.</p>
+	<p><strong>Suggested Spell Lists</strong>: Chaos, evil, good, law, by domain.</p>
+
+
+	<h3 id = "druid">Druid</h3>
+	<p>Guardians of balance, protectors of nature, druids wield power drawn from the world around them. Equipped with magic that allows them to manipulate nature and assume different forms, druids have a bevy of methods in their arsenals to defeat their enemies. Change shape (marked in entries with an asterisk [*]) functions as the universal monster rule (Bestiary 298), allowing the druid to change into the listed creature types. A druid changed in this way can still cast spells.</p>
+	<p><strong>Specific Rules</strong>: Druids often have animal companions. See the Animal Companions and Mounts sidebar on page 209.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#spellcaster-array">Spellcaster</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Fortitude saving throw bonuses by 2; <em>skills</em>&mdash;master <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nature) and <a href="../../coreRulebook/skills/survival.html#survival">Survival</a>; <em>options</em>&mdash;spontaneous casting (summon nature's ally), one any.</p>
+	<p><strong>CR 1</strong>: <em>Options</em>&mdash;terrain stride (undergrowth).</p>
+	<p><strong>CR 3</strong>: <em>Options</em>&mdash;change shape* (Small or Medium animal), terrain stride (undergrowth).</p>
+	<p><strong>CR 5</strong>: <em>Options</em>&mdash;change shape* (Tiny, Small, Medium, or Large animal or Small elemental), terrain stride (undergrowth), one magic.</p>
+	<p><strong>CR 7</strong>: <em>Options</em>&mdash;change shape* (any size animal, Medium or smaller elemental, or Small or Medium plant), terrain stride (undergrowth), one magic.</p>
+	<p><strong>CR 9</strong>: <em>Options</em>&mdash;change shape* (any size animal, Large or smaller elemental, or Large or smaller plant), immunity (poison), terrain stride (undergrowth), one magic.</p>
+	<p><strong>CR 11</strong>: <em>Options</em>&mdash;change shape* (any size animal, Huge or smaller elemental, or Huge or smaller plant), immunity (poison), terrain stride (undergrowth), one magic, one any.</p>
+	<p><strong>CR 18</strong>: <em>Options</em>&mdash;change shape* (any size animal, Huge or smaller elemental, or Huge or smaller plant), immunity (poison), terrain stride (undergrowth), two magic, one any.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Wisdom, Constitution, Charisma.</p>
+	<p><strong>Suggested Options</strong>: Animal talker, combat casting, magic attack, powerful summons; see the Domain Options sidebar.</p>
+	<p><strong>Suggested Spell Lists</strong>: Air, animal, earth, fire, healing, nature, plant, water, weather.</p>
+
+
+	<h3 id = "fighter">Fighter</h3>
+	<p>Fighters excel in battle. Their training makes them the undisputed masters of arms and armor, and their grit and determination see them through almost any conflict.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#combatant-array">Combatant</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Fortitude and Reflex saving throw bonuses by 1; <em>option</em>&mdash;one combat.</p>
+	<p><strong>CR 1</strong>: <em>Options</em>&mdash;one combat.</p>
+	<p><strong>CR 3</strong>: <em>Options</em>&mdash;two combat.</p>
+	<p><strong>CR 5</strong>: <em>Options</em>&mdash;three combat.</p>
+	<p><strong>CR 7</strong>: <em>Options</em>&mdash;four combat.</p>
+	<p><strong>CR 11</strong>: <em>Options</em>&mdash;five combat.</p>
+	<p><strong>CR 15</strong>: <em>Options</em>&mdash;six combat.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Strength, Dexterity, Constitution.</p>
+	<p><strong>Suggested Options</strong>: Accuracy, combat reflexes, extra armor, extra attack, improved combat maneuver, extra armor, power attack.</p>
+
+
+	<h3 id = "gunslinger">Gunslinger</h3>
+	<p>Gunslingers focus their training on handling firearms, coaxing every advantage they can from the weapons they have mastered. Guns blazing, they tend to fearlessly lead the way in battle.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#combatant-array">Combatant</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Fortitude and Reflex saving throw bonuses by 1; <em>options</em>&mdash;firearm savvy, one combat.</p>
+	<p><strong>CR 3</strong>: <em>Options</em>&mdash;one any.</p>
+	<p><strong>CR 10</strong>: <em>Options</em>&mdash;fast reload, one combat, one any.</p>
+	<p><strong>CR 14</strong>: <em>Options</em>&mdash;evasion, fast reload, uncanny dodge, two combat, one any.</p>
+	<p><strong>CR 18</strong>: <em>Options</em>&mdash;evasion, fast reload, uncanny dodge, three combat, one any.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Dexterity, Constitution, Wisdom.</p>
+	<p><strong>Suggested Options</strong>: Bleed, fear attack (burst), improved initiative, magic weapon, stun attack.</p>
+
+
+	<h3 id = "inquisitor">Inquisitor</h3>
+	<p>The gods grant inquisitors the power to root out the enemies of their faith and destroy them. Implacable in their focus and driven by their devotion, inquisitors undertake their divine missions with the grim determination required to deal with those who oppose their deities.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#expert-array">Expert</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Fortitude and Reflex saving throw bonuses by 1, increase Will saving throw bonus by 2; <em>skills</em>&mdash;master <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> and <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a>; <em>options</em>&mdash;secondary magic, one any.</p>
+	<p><strong>CR 3</strong>: Replace secondary magic with spellcasting (as if CR 2); <em>options</em>&mdash;improved initiative, one combat.</p>
+	<p><strong>CR 4</strong>: Replace secondary magic with spellcasting (as if CR 2); <em>options</em>&mdash;improved initiative, magic weapon (bane), one combat.</p>
+	<p><strong>CR 6</strong>: Replace secondary magic with spellcasting (as if CR 4); <em>options</em>&mdash;improved initiative, magic weapon (bane), one combat.</p>
+	<p><strong>CR 9</strong>: Replace secondary magic with spellcasting (as if CR 6); <em>options</em>&mdash;improved initiative, magic weapon (bane), stalwart, one combat.</p>
+	<p><strong>CR 12</strong>: Replace secondary magic with spellcasting (as if CR 8); <em>options</em>&mdash;improved initiative, magic weapon (bane), stalwart, one combat, one social.</p>
+	<p><strong>CR 15</strong>: Replace secondary magic with spellcasting (as if CR 10); <em>options</em>&mdash;improved initiative, magic weapon (bane), stalwart, one combat, one social.</p>
+	<p><strong>CR 18</strong>: Replace secondary magic with spellcasting (as if CR 12); <em>options</em>&mdash;improved initiative, magic weapon (bane), stalwart, two combat, one social.</p>
+	<p><strong>CR 19</strong>: Replace secondary magic with spellcasting (as if CR 14); <em>options</em>&mdash;improved initiative, magic weapon (bane), slaying attack, stalwart, two combat, one social.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Wisdom, Strength or Dexterity, Charisma.</p>
+	<p><strong>Suggested Options</strong>: Accuracy, bypass DR (magic, plus one alignment type if CR 5 or higher, plus adamantine if CR 9 or higher), damage reduction (magic, or by alignment if CR 9 or higher), energy resistance, extra armor, fast healing, power attack, save boost, spell penetration.</p>
+	<p><em>Suggested Spell List</em>: By domain.</p>
+
+
+	<h3 id = "magus">Magus</h3>
+	<p>The magus blends weapon training and magic to become an effective master of both.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#expert-array">Expert</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Fortitude saving throw bonus by 2; <em>options</em>&mdash;magic weapon, secondary magic, spell combat, one magic.</p>
+	<p><strong>CR 1</strong>: <em>Options</em>&mdash;spellstrike.</p>
+	<p><strong>CR 3</strong>: Replace secondary magic with spellcasting (as if CR 2); <em>options</em>&mdash;spellstrike, one combat.</p>
+	<p><strong>CR 6</strong>: Replace secondary magic with spellcasting (as if CR 4); <em>options</em>&mdash;combat casting, spellstrike, one combat.</p>
+	<p><strong>CR 9</strong>: Replace secondary magic with spellcasting (as if CR 6); <em>options</em>&mdash;combat casting, spellstrike, one combat.</p>
+	<p><strong>CR 12</strong>: Replace secondary magic with spellcasting (as if CR 8); <em>options</em>&mdash;combat casting, spellstrike, one combat, one magic.</p>
+	<p><strong>CR 15</strong>: Replace secondary magic with spellcasting (as if CR 10); <em>options</em>&mdash;combat casting, mage punisher, spellstrike, one combat, one magic.</p>
+	<p><strong>CR 18</strong>: Replace secondary magic with spellcasting (as if CR 12); <em>options</em>&mdash;combat casting, mage punisher, spellstrike, two combat, one magic.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Intelligence, Strength, Dexterity.</p>
+	<p><strong>Suggested Options</strong>: Dodge expert, improved combat maneuver, magic attack (melee), metamagic spell, mobile attack (melee).</p>
+
+
+	<h3 id = "monk">Monk</h3>
+	<p>Masters of complex fighting techniques, monks supplement their physical training with mystical powers that help them push past mortal limits.</p>
+	<p><strong>Specific Rules</strong>: The monk's unarmed attacks use a specified die progression for damage, beginning at 1d6 and increasing based on CR. This alters only the damage calculation from Step 9: Damage on page 241; the total amount of damage is still based on the combatant array.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#combatant-array">Combatant</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Fortitude and Reflex saving throw bonuses by 1, increase Will saving throw bonus by 2; <em>skill</em>&mdash;master <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a>; <em>options</em>&mdash;extra attack, stun attack, one combat; monk unarmed damage 1d6.</p>
+	<p><strong>CR 1</strong>: <em>Options</em>&mdash;evasion, one combat.</p>
+	<p><strong>CR 3</strong>: Increase speed by 10 feet; <em>options</em>&mdash;bypass DR (magic), evasion, one combat.</p>
+	<p><strong>CR 5</strong>: Increase speed by 20 feet; <em>options</em>&mdash;bypass DR (magic), evasion, immunity (disease), unarmed damage 1d8, one combat.</p>
+	<p><strong>CR 7</strong>: Increase speed by 20 feet; <em>options</em>&mdash;bypass DR (magic), evasion, immunity (disease), unarmed damage 1d10, one combat.</p>
+	<p><strong>CR 9</strong>: Increase speed by 30 feet; <em>options</em>&mdash;bypass DR (lawful, magic), evasion, immunity (disease), unarmed damage 1d10, one combat.</p>
+	<p><strong>CR 11</strong>: Increase speed by 40 feet; <em>options</em>&mdash;bypass DR (lawful, magic), evasion, immunity (disease, poison), unarmed damage 2d6, one combat.</p>
+	<p><strong>CR 13</strong>: Increase speed by 40 feet; <em>options</em>&mdash;bypass DR (lawful, magic), evasion, immunity (disease, poison), spell resistance, unarmed damage 2d6, two combat.</p>
+	<p><strong>CR 15</strong>: Increase speed by 50 feet; <em>options</em>&mdash;bypass DR (adamantine, lawful, magic), evasion, immunity (disease, poison), spell resistance, unarmed damage 2d8, two combat.</p>
+	<p><strong>CR 17</strong>: Increase speed by 60 feet; <em>options</em>&mdash;bypass DR (adamantine, lawful, magic), evasion, immunity (disease, poison), spell resistance, unarmed damage 2d8, three combat.</p>
+	<p><strong>CR 19</strong>: Increase speed by 60 feet; <em>options</em>&mdash;bypass DR (adamantine, lawful, magic), damage reduction (chaotic), evasion, immunity (disease, falling damage, poison), spell resistance, unarmed damage 2d10, three combat.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Wisdom, Dexterity, Strength.</p>
+	<p><strong>Suggested Options</strong>: Deflect projectiles, improved combat maneuver, improved initiative, mobile attack (melee), quivering palm, secondary magic (dimension door and etherealness), whirlwind attack.</p>
+
+
+	<h3 id = "oracle">Oracle</h3>
+	<p>Rather than devote themselves to a single god, oracles serve diverse forces. In return for their devotion, oracles gain access to strange and mysterious mystical power.</p>
+	<p><strong>Specific Rules</strong>: The oracle has a unique curse that doesn't appear with the other monster options. The traits gained at each CR are cumulative. Choose one of the following.</p>
+	<ul>
+		<li><em>Clouded Vision</em>: The monster has darkvision to 30 feet, but can't see anything beyond that range. At CR 4, this increases to 60 feet. At CR 9, the monster also gains blindsense to 30 feet. At CR 14, the monster also gains blindsight to 15 feet.</li>
+		<li><em>Deaf</em>: The monster is permanently deafened. It ignores the verbal component of any spell it casts. At CR 4, the monster gains a master bonus on <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> checks that do not rely on hearing. At CR 9, the monster gains scent. At CR 14, the monster gains tremorsense to 30 feet.</li>
+		<li><em>Haunted</em>: The monster must use a standard action to retrieve a stored item unless doing so would normally take more time. Any item the monster drops lands 10 feet away from it in a random direction. The monster gains the at-will magic option (mage hand and ghost sound).</li>
+		<li><em>Lame</em>: Reduce the monster's speed by 10 feet. At CR 4, the monster is immune to the fatigued condition. At CR 14, the monster is immune to the exhausted condition.</li>
+		<li><em>Tongues</em>: Add one of the following languages to the list of languages the monster knows: Abyssal, Aklo, Aquan, Auran, Celestial, Ignan, Infernal, or Terran. In combat, the monster can speak and understand only this language. At CR 4, add another language from the list to the languages the monster can speak during combat. At CR 9, the monster can understand any spoken language, as if under the effects of tongues, even in combat. At CR 14, the monster can speak any language outside combat.</li>
+		<li><em>Wasting</em>: Decrease the monster's Charisma modifier by 4. At CR 4, the monster becomes immune to the sickened condition. At CR 9, the monster becomes immune to disease. At CR 14, the monster becomes immune to the nauseated condition.</li>
+	</ul>
+	<p><strong>Required Array</strong>: <a href="step1.html#spellcaster-array">Spellcaster</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Reflex and Will saving throw bonuses by 1; <em>options</em>&mdash;mystery (any), one any.</p>
+	<p><strong>CR 3</strong>: <em>Options</em>&mdash;one magic.</p>
+	<p><strong>CR 12</strong>: <em>Options</em>&mdash;one magic, one any.</p>
+	<p><strong>CR 18</strong>: <em>Options</em>&mdash;two magic, one any.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Charisma, Wisdom, Dexterity.</p>
+	<p><strong>Suggested Options</strong>: Combat casting, dodge expert, extra armor, spontaneous casting (cure); see the Mystery Options sidebar above.</p>
+	<p><strong>Suggested Spell Lists</strong>: Chaos, evil, good, law, by mystery.</p>
+
+	<h3 id = "paladin">Paladin</h3>
+	<p>Paladins champion law and good and bring divine power to bear against the agents of chaos and evil.</p>
+	<p><strong>Specific Rules</strong>: Some paladins have mounts. See the Animal Companions and Mounts sidebar on page 209.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#combatant-array">Combatant</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Fortitude saving throw bonus by 2, increase Will saving throw bonus by 3; detect evil at will; <em>options</em>&mdash;smite (evil), one any.</p>
+	<p><strong>CR 1</strong>: <em>Options</em>&mdash;healing touch.</p>
+	<p><strong>CR 3</strong>: <em>Options</em>&mdash;aura of resistance (fear), channel energy, immunity (disease, fear), healing touch, secondary magic (as if CR 1).</p>
+	<p><strong>CR 7</strong>: <em>Options</em>&mdash;aura of resistance (charm, fear), channel energy, immunity (charm, disease, fear), healing touch, save boost, secondary magic (as if CR 2).</p>
+	<p><strong>CR 9</strong>: <em>Options</em>&mdash;aura of resistance (charm, fear), channel energy, immunity (charm, disease, fear), healing touch, save boost, secondary magic (as if CR 4).</p>
+	<p><strong>CR 13</strong>: <em>Options</em>&mdash;aura of resistance (charm, fear), bypass DR (good), channel energy, immunity (charm, disease, fear), healing touch, save boost, secondary magic (as if CR 6), one combat.</p>
+	<p><strong>CR 15</strong>: <em>Options</em>&mdash;aura of resistance (charm, compulsion, fear), bypass DR (good), channel energy, damage reduction (evil), immunity (charm, compulsion, disease, fear), healing touch, save boost, secondary magic (as if CR 6), one combat.</p>
+	<p><strong>CR 19</strong>: <em>Options</em>&mdash;aura of resistance (charm, compulsion, fear), bypass DR (good), channel energy, damage reduction (evil), immunity (charm, compulsion, disease, fear), healing touch, save boost, secondary magic (as if CR 6), one combat, one any.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Strength, Charisma, Constitution.</p>
+	<p><strong>Suggested Options</strong>: Extra armor, inspire courage, magic weapon, mounted master, powerful charge.</p>
+	<p><strong>Suggested Spell Lists</strong>: Good, glory, war.</p>
+
+	<h3 id = "ranger">Ranger</h3>
+	<p>The guardians of the wild, blazers of trails, and destroyers of monsters, rangers are the first line of defense against the dangers of the wilderness. They have strong combat abilities and limited spellcasting.</p>
+	<p><strong>Specific Rules</strong>: Some rangers have an animal companion. See the Animal Companions and Mounts sidebar on page 209.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#combatant-array">Combatant</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Fortitude and Reflex saving throw bonuses by 1; <em>skills</em>&mdash;master <a href="../../coreRulebook/skills/perception.html#perception">Perception</a>, one additional master (typically <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> or <a href="../../coreRulebook/skills/survival.html#survival">Survival</a>); <em>options</em>&mdash;favored enemy, one any.</p>
+	<p><strong>CR 3</strong>: <em>Options</em>&mdash;secondary magic (as if CR 1), one combat.</p>
+	<p><strong>CR 7</strong>: <em>Options</em>&mdash;secondary magic (as if CR 2), terrain stride (undergrowth), one combat.</p>
+	<p><strong>CR 9</strong>: <em>Options</em>&mdash;secondary magic (as if CR 4), terrain stride (undergrowth), one combat.</p>
+	<p><strong>CR 11</strong>: <em>Options</em>&mdash;evasion (as if CR 4), secondary magic (as if CR 4), terrain stride (undergrowth), two combat.</p>
+	<p><strong>CR 15</strong>: <em>Options</em>&mdash;evasion, secondary magic (as if CR 6), terrain stride (undergrowth), two combat.</p>
+	<p><strong>CR 17</strong>: <em>Options</em>&mdash;evasion, secondary magic (as if CR 6), terrain stride (undergrowth), two combat, one any.</p>
+	<p><strong>CR 19</strong>: <em>Options</em>&mdash;evasion, secondary magic (as if CR 6), slaying attack (Fortitude), terrain stride (undergrowth), two combat, one any.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Strength or Dexterity, Constitution, Wisdom.</p>
+	<p><strong>Suggested Options</strong>: Animal talker, critical striker, extra attack, far shot, rend, trap squares.</p>
+	<p><strong>Suggested Spell Lists</strong>: Animal, nature, plant.</p>
+
+	<h3 id = "rogue">Rogue</h3>
+	<p>Rogues always have a trick up their sleeves. Armed with numerous skills and tricks to confound their adversaries, rogues can always stay one step ahead of the foe.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#expert-array">Expert</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Reflex saving throw bonus by 3; <em>skills</em>&mdash;master <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> and <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a>; <em>options</em>&mdash;improved initiative, sneak attack.</p>
+	<p><strong>CR 1</strong>: <em>Options</em>&mdash;evasion, one any.</p>
+	<p><strong>CR 3</strong>: <em>Options</em>&mdash;evasion, uncanny dodge, one combat, one social.</p>
+	<p><strong>CR 9</strong>: <em>Options</em>&mdash;evasion, uncanny dodge, unflankable, one combat, one social.</p>
+	<p><strong>CR 11</strong>: <em>Options</em>&mdash;evasion, uncanny dodge, unflankable, one combat, one social, one any.</p>
+	<p><strong>CR 19</strong>: <em>Options</em>&mdash;evasion, slaying attack (Fortitude), uncanny dodge, unflankable, two combat, one social, one any.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Dexterity, Charisma, Intelligence.</p>
+	<p><strong>Suggested Options</strong>: Constant invisibility, mobility, persuasive, poison, slippery mind, trap squares.</p>
+
+	<h3 id = "sorcerer">Sorcerer</h3>
+	<p>Sorcerers draw magical power from a quirk in their heritage, the remnant of a past, powerful ancestor whose magic traveled through the generations until it woke within the sorcerer.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#spellcaster-array">Spellcaster</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase either Fortitude or Reflex saving throw bonus by 1; <em>skill</em>&mdash;master <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana); <em>option</em>&mdash;one magic.</p>
+	<p><strong>CR 3</strong>: <em>Options</em>&mdash;one any.</p>
+	<p><strong>CR 12</strong>: <em>Options</em>&mdash;one magic, one any.</p>
+	<p><strong>CR 18</strong>: <em>Options</em>&mdash;two magic, one any.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Charisma, Constitution, Dexterity.</p>
+	<p><strong>Suggested Options</strong>: Combat casting, extra hit points, magic attack, metamagic spell, potent magic damage.</p>
+	<p><strong>Suggested Spell Lists</strong>: Arcane, magic, by bloodline.</p>
+
+	<h3 id = "summoner">Summoner</h3>
+	<p>Already endowed with considerable arcane might, a summoner can also call forth an eidolon, a powerful otherworldly entity, for aid and protection.</p>
+	<p><strong>Specific Rules</strong>: A summoner needs an eidolon. Decide the CR you want the summoner and eidolon to be together, and create the summoner and eidolon each at that CR &ndash; 2. Create an outsider with the same CR as the summoner using the combatant array, or use an existing outsider of the same CR. Treat the companion as an additional creature in the encounter, awarding XP for defeating it as if it were an independent creature; see the sidebar on page 209.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#spellcaster-array">Spellcaster</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Fortitude and Reflex saving throw bonuses by 1; <em>skill</em>&mdash;master <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (planes); <em>options</em>&mdash;spontaneous casting (summon monster), one magic.</p>
+	<p><strong>CR 3</strong>: <em>Options</em>&mdash;one any.</p>
+	<p><strong>CR 12</strong>: <em>Options</em>&mdash;one magic, one any.</p>
+	<p><strong>CR 18</strong>: <em>Options</em>&mdash;two magic, one any.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Charisma, Constitution, Dexterity.</p>
+	<p><strong>Suggested Options</strong>: Combat casting, improved initiative, magical aptitude, powerful summons, transfer hit points (self to ally).</p>
+	<p><em>Suggested Spell List</em>: Conjuration.</p>
+
+	<h3 id = "witch">Witch</h3>
+	<p>Witches commune with unknown forces to grow their magical power. These spellcasters forge pacts with otherworldly beings and draw magic from their mysterious patrons.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#spellcaster-array">Spellcaster</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase Fortitude and Reflex saving throw bonuses by 1; <em>skill</em>&mdash;<a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana); <em>option</em>&mdash;one magic.</p>
+	<p><strong>CR 1</strong>: <em>Options</em>&mdash;one any.</p>
+	<p><strong>CR 3</strong>: <em>Options</em>&mdash;one magic, one any.</p>
+	<p><strong>CR 12</strong>: <em>Options</em>&mdash;two magic, one any.</p>
+	<p><strong>CR 18</strong>: <em>Options</em>&mdash;two magic, two any.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Intelligence, Charisma, Dexterity.</p>
+	<p><strong>Suggested Options</strong>: Bestow major condition, bestow minor condition, bestow moderate condition, evil eye, fortune, healing touch, linguist, misfortune.</p>
+	<p><em>Suggested Spell List</em>: Choose a thematically appropriate list based on the witch's patron.</p>
+
+	<h3 id = "wizard">Wizard</h3>
+	<p>Wizards spend their lives delving into the mysteries of arcane magic, poring over scrolls and tomes to tease out true magical power. This academic approach allows wizards to learn some of the most varied and useful spells in existence.</p>
+	<p><strong>Required Array</strong>: <a href="step1.html#spellcaster-array">Spellcaster</a>.</p>
+	<p><strong>Statistic Adjustments</strong>: Increase either Fortitude or Reflex saving throw bonus by 1; <em>skill</em>&mdash;master <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana); <em>option</em>&mdash;one magic.</p>
+	<p><strong>CR 3</strong>: <em>Options</em>&mdash;one any.</p>
+	<p><strong>CR 12</strong>: <em>Options</em>&mdash;one magic, one any.</p>
+	<p><strong>CR 18</strong>: <em>Options</em>&mdash;two magic, one any.</p>
+	<p><strong>Suggested Ability Modifiers</strong>: Intelligence, Dexterity, Constitution.</p>
+	<p><strong>Suggested Options</strong>: Combat casting, magic attack, magical aptitude, knowledgeable, spell penetration; see the Arcane School Options sidebar above.</p>
+	<p><strong>Suggested Spell Lists</strong>: Arcane, magic, by arcane school.</p>
+
+<h2 id = "advanced-class-guide-classes">Advanced Class Guide Classes</h2>
+<p>To create a monster that mimics a class from <em>Pathfinder RPG Advanced Class Guide</em>, use one of the class grafts, but replace some of the options with those from a secondary class graft. In some cases, it's easiest to just use an existing class graft whole cloth and make it feel more like the <em>Advanced Class Guide</em> class by choosing appropriate monster options. Use the table below to determine which to use for each.</p>
+<table>
+	<thead>
+		<tr><th>Class</th><th>Primary Graft</th><th>Secondary Graft</th><th>Spellcasting</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>Arcanist</td><td>Wizard</td><td>&mdash;</td><td>Wizard</td></tr>
+		<tr><td>Bloodrager</td><td>Barbarian</td><td>Sorcerer</td><td>Secondary magic option</td></tr>
+		<tr><td>Brawler</td><td>Fighter</td><td>Monk</td><td>&mdash;</td></tr>
+		<tr><td>Hunter</td><td>Ranger</td><td>Druid</td><td>Bard</td></tr>
+		<tr><td>Investigator</td><td>Alchemist</td><td>Rogue</td><td>Alchemist</td></tr>
+		<tr><td>Shaman</td><td>Witch</td><td>Oracle</td><td>Witch</td></tr>
+		<tr><td>Skald</td><td>Bard</td><td>Barbarian</td><td>Bard</td></tr>
+		<tr><td>Slayer</td><td>Rogue</td><td>Ranger</td><td>&mdash;</td></tr>
+		<tr><td>Swashbuckler</td><td>Fighter</td><td>&mdash;</td><td>&mdash;</td></tr>
+		<tr><td>Warpriest</td><td>Fighter</td><td>Cleric</td><td>Inquisitor</td></tr>
+	</tbody>
+</table>
+
+<h2 id = "animal-companions-and-mounts">Animal Companions and Mounts</h2>
+<p>If you decide a monster should have an animal companion or mount, choose an animal from the list of a <em>summon nature's ally</em> spell. The spell must have a level no higher than 1/2 the monster's CR. Treat the companion as an additional creature in the encounter, awarding XP for defeating it as if it were an independent creature rather than an animal companion.</p>
+<p>Alternatively, you can create an animal from scratch using simple monster creation. This monster should have a CR no higher than 1 + 1/2 the primary monster's CR. Award XP for defeating it as if it were not an animal companion.</p>
+
+<h2 id = "arcane-school-options">Arcane School Options</h2>
+<p>Specialist wizards in particular are defined by the schools in which they focus. Consider the following monster options if an arcane school is particularly important to the wizard. Any creature that predominantly uses spells from a single school might also draw from the school's list of options. See <a href="../monster/step7.html">Step 7</a> for descriptions of monster options.</p>
+<p><strong>Abjuration</strong>: Energy resistance (acid, cold, electricity, fire, or sonic), protective ward.</p>
+<p><strong>Conjuration</strong>: Dimensional steps, magic attack (acid), powerful summons.</p>
+<p><strong>Divination</strong>: Bolstering touch, improved initiative.</p>
+<p><strong>Enchantment</strong>: Bestow major condition (dazed, 1 round), persuasive.</p>
+<p><strong>Evocation</strong>: Magic attack (force), potent magic damage.</p>
+<p><strong>Illusion</strong>: Bestow moderate condition (blinded, ranged touch attack, 1 round).</p>
+<p><strong>Necromancy</strong>: Bestow minor condition (shaken), turn undead.</p>
+<p><strong>Transmutation</strong>: Dodge expert, extra hit points, magic attack (bludgeoning), power attack.</p>
+<p><strong>Universalist</strong>: Magic attack (bludgeoning or piercing), metamagic spell.</p>
+
+<h2 id = "bloodline-options">Bloodline Options</h2>
+<p>A sorcerer's bloodline provides several additional powers. Consider the following options if a bloodline ability is particularly important to the sorcerer. Any creature with a theme similar to a sorcerer bloodline might also draw from the appropriate bloodline's list of options. See Step 7 for descriptions of monster options.</p>
+<p><strong>Aberrant</strong>: <a href="../../bestiary/universalMonsterRules.html#fortification">Fortification</a>, magic attack (acid).</p>
+<p><strong>Abyssal</strong>: Use two natural attacks instead of weapon attacks, resistance (electricity).</p>
+<p><strong>Arcane</strong>: At-will magic, metamagic spell.</p>
+<p><strong>Celestial</strong>: Energy resistance (acid, cold), fly 60 ft. (good) for a number of minutes per day equal to CR, magic attack (divine).</p>
+<p><strong>Destined</strong>: Bolstering touch.</p>
+<p><strong>Draconic</strong>: Use two natural attacks instead of weapon attacks, breath weapon, energy resistance, fly 60 ft. (average).</p>
+<p><strong>Elemental (Air)</strong>: Energy explosion (electricity), energy resistance (electricity), fly 60 ft. (average).</p>
+<p><strong>Elemental (Earth)</strong>: Burrow 30 ft., energy explosion (acid), energy resistance (acid).</p>
+<p><strong>Elemental (Fire)</strong>: Energy explosion (fire), energy resistance (fire), increase base speed by 30 ft.</p>
+<p><strong>Elemental (Water)</strong>: Energy explosion (cold), energy resistance (cold), swim 60 ft.</p>
+<p><strong>Fey</strong>: Damage reduction (cold iron), spell penetration, terrain stride (undergrowth).</p>
+<p><strong>Infernal</strong>: Bestow minor condition (shaken), energy resistance (fire), fly 60 ft. (average).</p>
+<p><strong>Undead</strong>: Bestow minor condition (shaken), energy resistance (cold), incorporeal (1/day).</p>
+
+<h2 id = "domain-options">Domain Options</h2>
+<p>The suggested options for a cleric vary based on the cleric's domains. Consider the following options if a specific domain ability is particularly important to the cleric. Other monsters that gain domains, such as druids, or any creature with a theme or feature similar to a cleric's domain might also draw from the appropriate domain's list of options. See <a href="step7.html">Step 7</a> for descriptions of monster options.</p>
+<p><strong>Air</strong>: Energy resistance (electricity), magic attack (electricity).</p>
+<p><strong>Animal</strong>: Animal talker.</p>
+<p><strong>Artifice</strong>: Magic weapon.</p>
+<p><strong>Chaos</strong>: Bypass DR (chaotic), misfortune (requires a melee touch attack).</p>
+<p><strong>Charm</strong>: Bestow moderate condition (dazed).</p>
+<p><strong>Community</strong>: Remove minor condition.</p>
+<p><strong>Darkness</strong>: <a href="../../bestiary/universalMonsterRules.html#see-in-darkness">See in darkness</a>.</p>
+<p><strong>Death</strong>: Bleed, negative healing.</p>
+<p><strong>Destruction</strong>: Power attack.</p>
+<p><strong>Earth</strong>: Energy resistance (acid), magic attack (acid).</p>
+<p><strong>Evil</strong>: Bestow minor condition (sickened, and the sickened creature counts as good for the purposes of spells with the evil descriptor), bypass DR (evil).</p>
+<p><strong>Fire</strong>: Energy resistance (fire), magic attack (fire).</p>
+<p><strong>Glory</strong>: Inspire competence (typically for Charisma-based skills).</p>
+<p><strong>Good</strong>: Bolstering touch, bypass DR (good).</p>
+<p><strong>Healing</strong>: Potent healing.</p>
+<p><strong>Knowledge</strong>: Knowledgeable.</p>
+<p><strong>Law</strong>: Bypass DR (lawful).</p>
+<p><strong>Liberation</strong>: Immunity (grappled, paralyzed).</p>
+<p><strong>Luck</strong>: Fortune (requires touching the subject).</p>
+<p><strong>Madness</strong>: Confusion aura.</p>
+<p><strong>Magic</strong>: Magic attack (bludgeoning, piercing, or slashing).</p>
+<p><strong>Nobility</strong>: Inspire courage (affects only one creature).</p>
+<p><strong>Plant</strong>: Damaging body (piercing).</p>
+<p><strong>Protection</strong>: Protective ward, save boost.</p>
+<p><strong>Repose</strong>: Bestow moderate condition (staggered, lasts only 1 round), immunity (death effects).</p>
+<p><strong>Rune</strong>: Trap squares (magical trap only).</p>
+<p><strong>Strength</strong>: Combatant's touch (Strength only).</p>
+<p><strong>Sun</strong>: Potent magic damage (healing).</p>
+<p><strong>Travel</strong>: Dimensional steps, terrain stride.</p>
+<p><strong>Trickery</strong>: Constant invisibility.</p>
+<p><strong>War</strong>: Replace a magic option from the cleric graft with a combat option.</p>
+<p><strong>Water</strong>: Energy resistance (cold), magic attack (cold).</p>
+<p><strong>Weather</strong>: Magic attack (electricity)<em>.</em></p>
+
+<h2 id = "mystery-options">Mystery Options</h2>
+<p>The mystery an oracle possesses can alter her abilities significantly. Consider the following options if a mystery ability is particularly important to the oracle. Any creature with a theme similar to a given oracle mystery might also draw from that mystery's list of options.</p>
+<p><strong>Battle</strong>: Damage reduction (adamantine), inspire courage.</p>
+<p><strong>Bones</strong>: At-will magic (<a href="../../coreRulebook/spells/animateDead.html#animate-dead"><em>animate dead</em></a>), constant invisibility, incorporeal.</p>
+<p><strong>Flame</strong>: Breath weapon (cone of fire), metamagic spell (fire spells only).</p>
+<p><strong>Heavens</strong>: Energy explosion (5-ft. burst).</p>
+<p><strong>Life</strong>: Blindsight 30 ft. (detects living creatures only), channel energy.</p>
+<p><strong>Lore</strong>: Knowledgeable.</p>
+<p><strong>Nature</strong>: Animal talker, vampiric attack (ranged).</p>
+<p><strong>Stone</strong>: <a href="../../bestiary/universalMonsterRules.html#earth-glide">Earth glide</a>, magic attack (bludgeoning), metamagic spell (earth spells only).</p>
+<p><strong>Waves</strong>: Magic attack (cold, melee touch attack), magic weapon (cold energy), metamagic spell (cold or water spell).</p>
+<p><strong>Wind</strong>: Extra armor, fly 90 ft. (good), metamagic spell (air or electricity spells only).</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Creature Type or Class Graft",globalNavPath=[{ href: '/pathfinderRPG/prd/unchained/monsters/index.html', name: 'Pathfinder Unchained: Monsters' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,516 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Unchained Rogue</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "rogue.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "rogue.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "rogue.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "rogue.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "rogue.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "rogue.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "rogue.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "rogue.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "rogue.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "rogue.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "rogue.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "index.html">Classes</a></li>
+						<li><a href = "../skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../magic/index.html">Magic</a></li>
+						<li><a href = "../monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "rogue.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "rogue.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "rogue.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "rogue.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "rogue.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "rogue.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "rogue.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "rogue.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "rogue.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "rogue.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1>Rogue</h1>
+<p>Thief, sneak, charmer, diplomat&mdash;all of these and more describe the rogue. When not skulking in the shadows, disarming traps, and stealing from the unaware, rogues may rub shoulders with powerful nobles or plot capers with fellow crooks. The rogue is the master of many faces, using her skills and talents to get herself both into and out of trouble with rakish aplomb. While others may call them charlatans and burglars, even the most larcenous rogues tend to consider themselves consummate professionals, willing to take on any job if the price is right.</p>
+<p><em>Unchained</em>: While much of the unchained rogue will be familiar to those who have played the class from the <em>Core Rulebook</em>, there are a number of new class features that greatly enhance the power and flexibility of the rogue. Chief among these is the debilitating injury class feature. A rogue with this ability can severely hamper her foes, giving her a much-needed boost to her offense or defense, depending on the situation. In addition, with finesse training, the rogue now gains Weapon Finesse for free at 1st level. This ability also lets her add her Dexterity to damage rolls with one weapon starting at 3rd level. Finally, the rogue's edge ability ties into a new system presented in Chapter 2 of this book called skill unlocks. With this feature, the rogue can master a small set of chosen skills, outperforming all those characters without access to such talents.</p>
+<p><em>Alignment</em>: Any.</p>
+<p><em>Hit Die</em>: d8.</p>
+
+
+<h1 id = "class-skills">Class Skills</h1>
+<p>The rogue's class skills are <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> (Dex), <a href="../../coreRulebook/skills/appraise.html#appraise">Appraise</a> (Int), <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> (Cha), <a href="../../coreRulebook/skills/climb.html#climb">Climb</a> (Str), <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (Int), <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> (Cha), <a href="../../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> (Dex), <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> (Cha), <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> (Dex), <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> (Cha), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (dungeoneering) (Int), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (local) (Int), <a href="../../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a> (Int), <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> (Wis), <a href="../../coreRulebook/skills/perform.html#perform">Perform</a> (Cha), <a href="../../coreRulebook/skills/profession.html#profession">Profession</a> (Wis), <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> (Wis), <a href="../../coreRulebook/skills/sleightOfHand.html#sleight-of-hand">Sleight of Hand</a> (Dex), <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> (Dex), <a href="../../coreRulebook/skills/swim.html#swim">Swim</a> (Str), and <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> (Cha).</p>
+<p><em>Skill Ranks per Level</em>: 8 + Int modifier.</p>
+
+<div class="table">
+
+	<table id="unchained-rogue-progression">
+		<caption>Unchained Rogue</caption>
+		<thead>
+			<tr>
+				<th>Level</th>
+				<th>Base Attack Bonus</th>
+				<th>Fort Save</th>
+				<th>Ref Save</th>
+				<th>Will Save</th>
+				<th>Special</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>1st</td><td>+0</td><td>+0</td><td>+2</td><td>+0</td><td><a href="rogue.html#finesse-training">Finesse training</a>, <a href="rogue.html#sneak-attack">sneak attack</a> +1d6, <a href="rogue.html#trapfinding">trapfinding</a></td></tr>
+			<tr><td>2nd</td><td>+1</td><td>+0</td><td>+3</td><td>+0</td><td><a href="rogue.html#evasion">Evasion</a>, <a href="rogue.html#rogue-talents">rogue talent</a></td></tr>
+			<tr><td>3rd</td><td>+2</td><td>+1</td><td>+3</td><td>+1</td><td><a href="rogue.html#danger-sense">Danger sense</a> +1, <a href="rogue.html#finesse-training">finesse training</a>, <a href="rogue.html#sneak-attack">sneak attack</a> +2d6</td></tr>
+			<tr><td>4th</td><td>+3</td><td>+1</td><td>+4</td><td>+1</td><td><a href="rogue.html#debilitating-injury">Debilitating injury</a>, <a href="rogue.html#rogue-talents">rogue talent</a>, <a href="rogue.html#uncanny-dodge">uncanny dodge</a></td></tr>
+			<tr><td>5th</td><td>+3</td><td>+1</td><td>+4</td><td>+1</td><td><a href="rogue.html#rogues-edge">Rogue's edge</a>, <a href="rogue.html#sneak-attack">sneak attack</a> +3d6</td></tr>
+			<tr><td>6th</td><td>+4</td><td>+2</td><td>+5</td><td>+2</td><td><a href="rogue.html#danger-sense">Danger sense</a> +2, <a href="rogue.html#rogue-talents">rogue talent</a></td></tr>
+			<tr><td>7th</td><td>+5</td><td>+2</td><td>+5</td><td>+2</td><td><a href="rogue.html#sneak-attack">sneak attack</a> +4d6</td></tr>
+			<tr><td>8th</td><td>+6/+1</td><td>+2</td><td>+6</td><td>+2</td><td><a href="rogue.html#improved-uncanny-dodge">Improved uncanny dodge</a>, <a href="rogue.html#rogue-talents">rogue talent</a></td></tr>
+			<tr><td>9th</td><td>+6/+1</td><td>+3</td><td>+6</td><td>+3</td><td><a href="rogue.html#danger-sense">Danger sense</a> +3, <a href="rogue.html#sneak-attack">sneak attack</a> +5d6</td></tr>
+			<tr><td>10th</td><td>+7/+2</td><td>+3</td><td>+7</td><td>+3</td><td><a href="rogue.html#advanced-talents">Advanced talents</a>, <a href="rogue.html#rogue-talents">rogue talent</a>, <a href="rogue.html#rogues-edge">rogue's edge</a></td></tr>
+			<tr><td>11th</td><td>+8/+3</td><td>+3</td><td>+7</td><td>+3</td><td><a href="rogue.html#finesse-training">Finesse training</a>, <a href="rogue.html#sneak-attack">sneak attack</a> +6d6</td></tr>
+			<tr><td>12th</td><td>+9/+4</td><td>+4</td><td>+8</td><td>+4</td><td><a href="rogue.html#danger-sense">Danger sense</a> +4, <a href="rogue.html#rogue-talents">rogue talent</a></td></tr>
+			<tr><td>13th</td><td>+9/+4</td><td>+4</td><td>+8</td><td>+4</td><td><a href="rogue.html#sneak-attack">sneak attack</a> +7d6</td></tr>
+			<tr><td>14th</td><td>+10/+5</td><td>+4</td><td>+9</td><td>+4</td><td><a href="rogue.html#rogue-talents">rogue talent</a></td></tr>
+			<tr><td>15th</td><td>+11/+6/+1</td><td>+5</td><td>+9</td><td>+5</td><td><a href="rogue.html#danger-sense">Danger sense</a> +5, <a href="rogue.html#rogues-edge">rogue's edge</a>, <a href="rogue.html#sneak-attack">sneak attack</a> +8d6</td></tr>
+			<tr><td>16th</td><td>+12/+7/+2</td><td>+5</td><td>+10</td><td>+5</td><td><a href="rogue.html#rogue-talents">rogue talent</a></td></tr>
+			<tr><td>17th</td><td>+12/+7/+2</td><td>+5</td><td>+10</td><td>+5</td><td><a href="rogue.html#sneak-attack">sneak attack</a> +9d6</td></tr>
+			<tr><td>18th</td><td>+13/+8/+3</td><td>+6</td><td>+11</td><td>+6</td><td><a href="rogue.html#danger-sense">Danger sense</a> +6, <a href="rogue.html#rogue-talents">rogue talent</a></td></tr>
+			<tr><td>19th</td><td>+14/+9/+4</td><td>+6</td><td>+11</td><td>+6</td><td><a href="rogue.html#finesse-training">Finesse training</a>, <a href="rogue.html#sneak-attack">sneak attack</a> +10d6</td></tr>
+			<tr><td>20th</td><td>+15/+10/+5</td><td>+6</td><td>+12</td><td>+6</td><td><a href="rogue.html#master-strike">Master strike</a>, <a href="rogue.html#rogue-talents">rogue talent</a>, <a href="rogue.html#rogues-edge">rogue's edge</a></td></tr>
+		</tbody>
+	</table>
+
+</div>
+
+<h2 id = "class-features">Class Features</h2>
+<p>The following are the class features of the rogue.</p>
+
+<p><strong>Weapon and Armor Proficiencies</strong>: Rogues are proficient with all simple weapons, plus the hand crossbow, rapier, sap, short sword, and shortbow. They are proficient with light armor, but not with shields.</p>
+
+<p id = "sneak-attack"><strong>Sneak Attack</strong>: If a rogue can catch an opponent when he is unable to defend himself effectively from her attack, she can strike a vital spot for extra damage.</p>
+	<p>The rogue's attack deals extra damage anytime her target would be denied a Dexterity bonus to AC (whether the target actually has a Dexterity bonus or not), or when the rogue flanks her target. This extra damage is 1d6 at 1st level, and increases by 1d6 every 2 rogue levels thereafter. Ranged attacks can count as sneak attacks only if the target is within 30 feet. This additional damage is precision damage and is not multiplied on a critical hit.</p>
+	<p>With a weapon that deals nonlethal damage (such as a sap, unarmed strike, or whip), a rogue can make a sneak attack that deals nonlethal damage instead of lethal damage. She cannot use a weapon that deals lethal damage to deal nonlethal damage in a sneak attack&mdash;not even with the usual &ndash;4 penalty.</p>
+	<p>The rogue must be able to see the target well enough to pick out a vital spot and must be able to reach such a spot. A rogue cannot sneak attack while striking a creature with total concealment.</p>
+
+<p id = "trapfinding"><strong>Trapfinding</strong>: A rogue adds 1/2 her level on <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> checks to locate traps and on <a href="../../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> checks (minimum +1). A rogue can use <a href="../../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> to disarm magic traps.</p>
+
+<p id = "finesse-training"><strong>Finesse Training (Ex)</strong>: At 1st level, a rogue gains Weapon Finesse as a bonus feat. In addition, starting at 3rd level, she can select any one type of weapon that can be used with Weapon Finesse (such as rapiers or daggers). Once this choice is made, it cannot be changed. Whenever she makes a successful melee attack with the selected weapon, she adds her Dexterity modifier instead of her Strength modifier to the damage roll. If any effect would prevent the rogue from adding her Strength modifier to the damage roll, she does not add her Dexterity modifier. The rogue can select a second weapon at 11th level and a third at 19th level. </p>
+
+<p id = "evasion"><strong>Evasion (Ex)</strong>: At 2nd level, a rogue can avoid even magical and unusual attacks with great agility. If she succeeds at a Reflex saving throw against an attack that normally deals half damage on a successful save, she instead takes no damage. Evasion can be used only if the rogue is wearing light armor or no armor. A helpless rogue does not gain the benefit of evasion.</p>
+
+<p id = "rogue-talents"><strong>Rogue Talents</strong>: As a rogue gains experience, she learns a number of talents that aid her and confound her foes. Starting at 2nd level, a rogue gains one rogue talent. She gains an additional rogue talent for every 2 levels of rogue attained after 2nd level. A rogue cannot select an individual talent more than once.</p>
+	<p>Talents marked with an asterisk add effects to a rogue's sneak attack. Only one of these talents can be applied to an individual attack, and the decision must be made before the attack roll is made. </p>
+	<p><em>Bleeding Attack</em>* <em>(Ex)</em>: A rogue with this ability can cause living opponents to bleed by hitting them with a sneak attack. This attack causes the target to take 1 additional point of damage each round for each die of the rogue's sneak attack (e.g., 4d6 equals 4 points of bleed). Bleeding creatures take that amount of damage every round at the start of each of their turns. The bleeding can be stopped by a successful DC 15 <a href="../../coreRulebook/skills/heal.html#heal">Heal</a> check or the application of any effect that heals hit point damage. Bleed damage from this ability does not stack with itself. Bleed damage bypasses any damage reduction the creature might possess.</p>
+	<p><em>Camouflage (Ex)</em>: A rogue with this talent can craft simple but effective camouflage from the surrounding foliage. The rogue needs 1 minute to prepare the camouflage, but once she does, it is effective for the rest of the day or until the rogue fails a saving throw against an area-effect spell that deals acid, cold, or fire damage, whichever comes first. The rogue gains a +4 bonus on <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> checks while within terrain that matches the foliage used to make the camouflage. This ability cannot be used in areas without natural foliage.</p>
+	<p><em>Certainty (Ex)</em>: The rogue chooses one of the skills she selected with rogue's edge (see page 23). Once per day, the rogue can reroll a skill check she just made with the selected skill and take the better result. She can use this reroll with the selected skill one additional time per day at 10th level and every 5 levels thereafter. A rogue can select this talent multiple times. Each time, the rogue must choose a different skill. A rogue must have the rogue's edge class feature before selecting this talent.</p>
+	<p><em>Coax Information (Ex)</em>: A rogue with this talent can use <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> or <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> in place of <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> to force an opponent to act friendly toward her. When the duration of the attitude shift ends, that opponents' attitude toward the rogue returns to its previous level, rather than dropping one level.</p>
+	<p><em>Combat Swipe</em>: A rogue with this talent gains <a href="../../advancedPlayersGuide/advancedFeats.html#improved-steal">Improved Steal</a> as a bonus feat. At 6th level, she is treated as if she met all the prerequisites for <a href="../../advancedPlayersGuide/advancedFeats.html#greater-steal">Greater Steal</a> (although she must take the feat as normal).</p>
+	<p><em>Combat Trick</em>: A rogue who selects this talent gains a bonus combat feat.</p>
+	<p><em>Esoteric Scholar (Ex)</em>: A rogue with this talent can attempt any <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> skill check, even if she is not trained in that <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> skill.</p>
+	<p><em>Expert Leaper (Ex)</em>: When using the <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> skill to jump, a rogue with this talent is always considered to have a running start and adds her rogue level to the check result. Whenever she deliberately falls, a successful DC 15 <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> check allows her to ignore the first 20 feet fallen. For every 5 by which she exceeds the DC of this check, she can ignore an additional 10 feet of distance fallen.</p>
+	<p><em>Fast Stealth (Ex)</em>: This ability allows a rogue to move at full speed using the <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> skill without penalty.</p>
+	<p><em>Follow Clues (Ex)</em>: A rogue with this talent can use <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> to follow tracks as per the <a href="../../coreRulebook/skills/survival.html#survival">Survival</a> skill.</p>
+	<p><em>Hold Breath (Ex)</em>: A rogue with this talent doubles the amount of time she can hold her breath.</p>
+	<p><em>Lasting Poison (Ex)</em>: A rogue with this talent can apply poison to a weapon in such a way that it is effective for a number of successful attacks equal to her Dexterity modifier (minimum two) instead of one. This poison has a reduced effect, however, and saves made against the poison gain a +2 circumstance bonus. Applying poison in this way is a full-round action, or a standard action if the rogue has the swift poison rogue talent.</p>
+	<p><em>Ledge Walker</em> (Ex): This ability allows a rogue to move along narrow, uneven, or slippery surfaces (such as ice) at full speed using the <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> skill without penalty. In addition, a rogue with this talent is not flat-footed when using <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> to move along such surfaces, and retains her Dexterity bonus to AC.</p>
+	<p><em>Major Magic (Sp)</em>: A rogue with this talent gains the ability to cast a 1st-level spell from the sorcerer/wizard spell list once per day as a spell-like ability for every 2 rogue levels she possesses. The rogue's caster level for this ability is equal to her rogue level. The save DC for this spell is 11 + the rogue's Intelligence modifier. A rogue must have the minor magic rogue talent and an Intelligence score of at least 11 to select this talent.</p>
+	<p><em>Minor Magic (Sp)</em>: A rogue with this talent gains the ability to cast a 0-level spell from the sorcerer/wizard spell list. This spell can be cast at will as a spell-like ability. The rogue's caster level for this ability is equal to her rogue level. The save DC for this spell is 10 + the rogue's Intelligence modifier. A rogue must have an Intelligence score of at least 10 to select this talent.</p>
+	<p><em>Multitalented (Ex)</em>: The rogue can use her rogue talents more often. Once per day, she can use a rogue talent that is normally only usable once per day one additional time. At 10th level and 18th level, she can use this talent one additional time per day (for a maximum total of 3 additional uses of a rogue talent that can normally only be used once per day). The uses of this talent do not have to be spent on the same rogue talent. This ability cannot be used with an advanced talent.</p>
+	<p><em>Nimble Climber (Ex)</em>: Whenever the rogue fails a <a href="../../coreRulebook/skills/climb.html#climb">Climb</a> check by 5 or more, she can attempt a Reflex save (using the same DC as the <a href="../../coreRulebook/skills/climb.html#climb">Climb</a> check) to catch herself and avoid falling.</p>
+	<p><em>Powerful Sneak* (Ex)</em>: Whenever a rogue with this talent takes a full-attack action, she can take a &ndash;2 penalty on all attack rolls until the start of her next turn. If she does, she can reroll any sneak attack damage dice that result in 1s. She can reroll multiple dice, but she can't reroll any individual die more than once per attack. </p>
+	<p><em>Quick Disable (Ex)</em>: It takes a rogue with this ability half the normal amount of time to disable a trap using the <a href="../../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> skill (minimum 1 round). When she uses <a href="../../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> to open a lock that would normally take a full-round action to open, she reduces the duration to a standard action.</p>
+	<p><em>Resiliency (Ex)</em>: Once per day, a rogue with this ability can gain a number of temporary hit points equal to twice her rogue level. Activating this ability is an immediate action that can be performed only when the rogue is brought to below 0 hit points. This ability can be used to prevent the rogue from dying. These temporary hit points last for 1 minute. If the rogue's hit points drop below 0 due to the loss of these temporary hit points, she falls unconscious and is dying as normal.</p>
+	<p><em>Rogue Crawl (Ex)</em>: While prone, a rogue with this ability can move at half speed. This movement provokes attacks of opportunity as normal. A rogue with this talent can take a 5-foot step while crawling, and she reduces her attack roll and AC penalties for being prone by 2.</p>
+	<p><em>Slow Reactions* (Ex)</em>: Opponents damaged by the rogue's sneak attack can't make attacks of opportunity for 1 round.</p>
+	<p><em>Stand Up (Ex)</em>: A rogue with this ability can stand up from a prone position as a swift action without provoking attacks of opportunity, or as a free action that provokes attacks of opportunity.</p>
+	<p><em>Surprise Attack (Ex)</em>: During the surprise round, a rogue with this ability always considers opponents flat-footed, even if they have already acted. A rogue with this ability adds 1/2 her rogue level to her sneak attack damage rolls made during the surprise round.</p>
+	<p><em>Terrain Mastery (Ex)</em>: A rogue with this talent gains a favored terrain, as the ranger class feature of the same name (<em>Core Rulebook</em> 65), but the bonus does not increase with her level. A rogue can select this talent multiple times, each time applying it to a new terrain.</p>
+	<p><em>Trap Spotter (Ex)</em>: Whenever a rogue with this talent comes within 10 feet of a trap, she can attempt an immediate <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> check to notice the trap. This check should be made in secret by the GM.</p>
+	<p><em>Weapon Training</em>: A rogue who selects this talent gains Weapon Focus as a bonus feat.</p>
+
+<p id = "danger-sense"><strong>Danger Sense (Ex)</strong>: At 3rd level, a rogue gains a +1 bonus on Reflex saves to avoid traps and a +1 dodge bonus to AC against attacks made by traps. In addition, she gains a +1 bonus on <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> checks to avoid being surprised by a foe. These bonuses increase by 1 every 3 rogue levels thereafter (to a maximum of +6 at 18th level). This ability counts as trap sense for the purpose of any feat or class prerequisite, and can be replaced by any archetype class feature that replaces trap sense. The bonuses gained from this ability stack with those gained from trap sense (from another class).</p>
+
+<p id = "debilitating-injury"><strong>Debilitating Injury (Ex)</strong>: At 4th level, whenever a rogue deals sneak attack damage to a foe, she can also debilitate the target of her attack, causing it to take a penalty for 1 round (this is in addition to any penalty caused by a rogue talent or other special ability). The rogue can choose to apply any one of the following penalties when the damage is dealt.</p>
+	<p><em>Bewildered</em>: The target becomes bewildered, taking a &ndash;2 penalty to AC. The target takes an additional &ndash;2 penalty to AC against all attacks made by the rogue. At 10th level and 16th level, the penalty to AC against attacks made by the rogue increases by &ndash;2 (to a total maximum of &ndash;8).</p>
+	<p><em>Disoriented</em>: The target takes a &ndash;2 penalty on attack rolls. In addition, the target takes an additional &ndash;2 penalty on all attack rolls it makes against the rogue. At 10th level and 16th level, the penalty on attack rolls made against the rogue increases by &ndash;2 (to a total maximum of &ndash;8).</p>
+	<p><em>Hampered</em>: All of the target's speeds are reduced by half (to a minimum of 5 feet). In addition, the target cannot take a 5-foot step.</p>
+	<p>These penalties do not stack with themselves, but additional attacks that deal sneak attack damage extend the duration by 1 round. A creature cannot suffer from more than one penalty from this ability at a time. If a new penalty is applied, the old penalty immediately ends. Any form of healing applied to a target suffering from one of these penalties also removes the penalty.</p>
+
+<p id = "uncanny-dodge"><strong>Uncanny Dodge (Ex)</strong>: At 4th level, a rogue can react to danger before her senses would normally allow her to do so. She cannot be caught flat-footed, nor does she lose her Dexterity bonus to AC if the attacker is invisible. She still loses her Dexterity bonus to AC if immobilized. A rogue with this ability can still lose her Dexterity bonus to AC if an opponent successfully uses the feint action against her.</p>
+	<p>If a rogue already has uncanny dodge from a different class, she automatically gains improved uncanny dodge (see below) instead.</p>
+
+<p id = "rogues-edge"><strong>Rogue's Edge (Ex)</strong>: At 5th level, a rogue has mastered a single skill beyond that skill's normal boundaries, gaining results that others can only dream about. She gains the <a href="../skillsAndOptions/skillUnlocks.html">skill unlock powers</a> for that skill as appropriate for her number of ranks in that skill. At 10th, 15th, and 20th levels, she chooses an additional skill and gains skill unlock powers for that skill as well.  </p>
+
+<p id = "improved-uncanny-dodge"><strong>Improved Uncanny Dodge (Ex)</strong>: At 8th level, a rogue can no longer be flanked.</p>
+	<p>This defense denies another rogue the ability to sneak attack the character by flanking her, unless the attacker has at least four more rogue levels than the target does.</p>
+	<p>If a character already has uncanny dodge (see above) from another class, the levels from the classes that grant uncanny dodge stack to determine the minimum rogue level required to flank the character.</p>
+
+<p id = "advanced-talents"><strong>Advanced Talents</strong>: At 10th level and every 2 levels thereafter, a rogue can choose one of the following advanced talents in place of a rogue talent.</p>
+	<p><em>Crippling Strike* (Ex)</em>: A rogue with this ability can sneak attack opponents with such precision that her blows weaken and hamper them. An opponent damaged by one of her sneak attacks also takes 2 points of Strength damage.</p>
+	<p><em>Cutting Edge (Ex)</em>: A rogue with this ability immediately selects two additional skills with her rogue's edge ability. She can select this advanced talent multiple times. </p>
+	<p><em>Deadly Sneak* (Ex)</em>: When a rogue with this talent uses the powerful sneak talent, she rerolls all sneak attack dice that resulted in 1s or 2s. She can reroll multiple dice, but she can't reroll any individual die more than once per attack. A rogue must have the powerful sneak talent before selecting this talent.</p>
+	<p><em>Defensive Roll (Ex)</em>: The rogue can roll with a potentially lethal blow to take less damage from it than she otherwise would. When she would be reduced to 0 or fewer hit points by damage in combat (from a weapon or other blow, not a spell or special ability), the rogue can attempt to roll with the damage. To use this ability, the rogue must attempt a Reflex saving throw (DC = damage dealt). If she succeeds, the rogue takes only half damage from the blow; if she fails, she takes full damage. She must be aware of the attack and able to react to it in order to execute her defensive roll; if she is denied her Dexterity bonus to AC, she can't use this ability. Since such damage would not normally allow a character to attempt a Reflex save for half damage, the rogue's evasion ability does not apply to the defensive roll.</p>
+	<p><em>Dispelling Attack* (Su)</em>: An opponent that is dealt sneak attack damage by a rogue with this ability is affected by a targeted <em>dispel magic </em>affecting the lowest-level spell effect active on the target. The caster level for this ability is equal to the rogue's level. A rogue must have the major magic rogue talent to select this advanced talent.</p>
+	<p><em>Double Debilitation* (Ex)</em>: Whenever the rogue inflicts a penalty against a target using the debilitating injury class feature, she can select two penalties to inflict. The target can never be subject to more than two penalties in this way at one time. If any additional penalties are inflicted, any previous penalties immediately end. Any effect that heals damage to the target negates both of the penalties.</p>
+	<p><em>Feat</em>: A rogue can gain any feat that she qualifies for in place of a rogue talent.</p>
+	<p><em>Improved Evasion (Ex)</em>: This works like evasion, except while the rogue still takes no damage on a successful Reflex saving throw against an attack, she also takes only half damage on a failed save. A helpless rogue does not gain the benefit of improved evasion.</p>
+	<p><em>Light Walker (Ex)</em>: The rogue can move at full speed through difficult terrain and can take 5-foot steps into difficult terrain. A rogue must have the ledge walker rogue talent before choosing light walker.</p>
+	<p><em>Master of Disguise (Ex)</em>: Once per day, a rogue with this talent can don a disguise as a standard action. While wearing that disguise, she gains a +10 bonus on all <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> checks. A rogue must have the Quick <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> talent to select this talent.</p>
+	<p><em>Multitalented, Greater (Ex)</em>: A rogue with this talent can use the multitalented rogue talent to gain additional uses of advanced talents. A rogue must have the multitalented talent to select this talent.</p>
+	<p><em>Opportunist (Ex)</em>: The rogue can make an attack of opportunity against an opponent who has just been struck for damage in melee by another character. This attack counts as an attack of opportunity for that round and can't be used more than once per round.</p>
+	<p><em>Skill Mastery</em>: The rogue becomes so confident in the use of certain skills that she can use them reliably even under adverse conditions. The rogue selects a number of skills equal to her Intelligence modifier. When making a skill check with one of the selected skills (or any of the skills selected through the rogue's edge class feature), she can take 10 even if stress and distractions would normally prevent her from doing so. A rogue can gain this special ability multiple times, selecting additional skills for skill mastery to apply to each time.</p>
+	<p><em>Slippery Mind (Ex)</em>: This ability represents the rogue's ability to wriggle free from magical effects that would otherwise control or compel her. If a rogue with slippery mind is affected by an enchantment spell or effect and fails her saving throw, she can attempt it again 1 round later at the same DC. She can attempt only one additional saving throw against any given effect using this ability.</p>
+	<p><em>Quick Shot (Ex)</em>: Whenever the rogue rolls initiative, she can also make a single attack with a ranged weapon as a swift action. She can use this ability only if she has a weapon in hand and it is loaded (if applicable). If more than one rogue has this talent, their initiative check results determine the order in which they make their attacks. After these attacks are resolved, the round proceeds as normal.</p>
+	<p><em>Terrain Mastery, Greater (Ex)</em>: A rogue with this talent can select a single favored terrain. Her bonuses in that terrain increase to +4. At 13th level and 18th level, they increase by an additional +2 (to a maximum of +8). A rogue must have the terrain mastery talent to select this advanced talent.</p>
+
+<p id = "master-strike"><strong>Master Strike (Ex)</strong>: At 20th level, a rogue becomes incredibly deadly when dealing sneak attack damage. Each time the rogue deals sneak attack damage, she can choose one of the following three effects: the target can be put to sleep for 1d4 hours, paralyzed for 2d6 rounds, or slain. Regardless of the effect chosen, the target can attempt a Fortitude save to negate the additional effect. The DC of this save is equal to 10 + 1/2 the rogue's level + the rogue's Dexterity modifier. Once a creature has been the target of a master strike, regardless of whether or not the save is successful, that creature is immune to that rogue's master strike for 24 hours. Creatures that are immune to sneak attack damage are also immune to this ability.</p>
+
+<h2 id="unmodified-rogue-talents">Unmodified Rogue Talents</h2>
+<p>The rogue talents in this chapter include replacements for all of those in the <em>Core Rulebook</em>, along with selected revised rogue talents from other sources. The following rogue talents can be used without modification.</p>
+<p><strong>Rogue Talents</strong>: <a href="../../advancedPlayersGuide/coreClasses/rogue.html#assault-leader">Assault leader</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#black-market-connections">black market connections</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#canny-observer">canny observer</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#cunning-trigger">cunning trigger</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#deft-palm">deft palm</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#distracting-attack">distracting attack</a>*, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#fast-getaway">fast getaway</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#firearm-training">firearm training</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#getaway-artist">getaway artist</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#grit">grit</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#iron-guts">iron guts</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#ninja-trick">ninja trick</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#positioning-attack">positioning attack</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#quick-disguise">quick disguise</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#quick-trapsmith">quick trapsmith</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#rope-master">rope master</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#strong-impression">strong impression</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#strong-stroke">strong stroke</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#survivalist">survivalist</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#swift-poison">swift poison</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#underhanded">underhanded</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#wall-scramble">wall scramble</a>.</p>
+<p><strong>Advanced Rogue Talents</strong>: <a href="../../advancedPlayersGuide/coreClasses/rogue.html#another-day">Another day</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#confounding-blades">confounding blades</a>*, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#deadly-cocktail">deadly cocktail</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#familiar">familiar</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#fast-tumble">fast tumble</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#frugal-trapsmith">frugal trapsmith</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#getaway-master">getaway master</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#hide-in-plain-sight">hide in plain sight</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#hunters-surprise">hunter's surprise</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#knock-out-blow">knock-out blow</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#redirect-attack">redirect attack</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#rumormonger">rumormonger</a>, <a href="../../advancedPlayersGuide/coreClasses/rogue.html#stealthy-sniper">stealthy sniper</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#unwitting-ally">unwitting ally</a>, <a href="../../ultimateCombat/classArchetypes/rogue.html#weapon-snatcher">weapon snatcher</a>.</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Unchained Rogue",globalNavPath=[{ href: '/pathfinderRPG/prd/unchained/classes/index.html', name: 'Pathfinder Unchained Classes'}];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

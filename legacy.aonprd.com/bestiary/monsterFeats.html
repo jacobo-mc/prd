@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Monster Feats</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "monsterFeats.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "monsterFeats.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "monsterFeats.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "monsterFeats.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "monsterFeats.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "monsterFeats.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "creatureTypes.html">Creature Types</a></li>
+						<li><a href = "monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "monsterFeats.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "monsterFeats.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "monsterFeats.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "monsterFeats.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "monsterFeats.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "monsterFeats.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "monsterFeats.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "monsterFeats.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "monsterFeats.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "monsterFeats.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "monsterFeats.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "monsterFeats.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "monsterFeats.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "monsterFeats.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "monsterFeats.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+
+
+
+<h1 id="appendix-5-monster-feats">Monster Feats</h1>
+<p>Most of the following feats apply specifically to monsters, although some player characters might qualify for them (particularly <a href="monsterFeats.html#craft-construct" >Craft Construct</a>).</p>
+
+
+<h2 id="ability-focus">Ability Focus</h2>
+<p>One of this creature's special attacks is particularly difficult to resist. </p>
+<p class="stat-block-1"><b>Prerequisite</b>: Special attack.</p>
+<p class="stat-block-1"><b>Benefit</b>: Choose one of the creature's special attacks. Add +2 to the DC for all saving throws against the special attack on which the creature focuses.</p>
+<p class="stat-block-1"><b>Special</b>: A creature can gain this feat multiple times. Its effects do not stack. Each time the creature takes the feat, it applies to a different special attack.</p>
+
+<h2 id="awesome-blow">Awesome Blow (Combat)</h2>
+<p>This creature can send opponents flying.</p>
+<p class="stat-block-1"><b>Prerequisites</b>: Str 25, <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a>, <a href="../coreRulebook/feats.html#improved-bull-rush" >Improved Bull Rush</a>, size Large or larger.</p>
+<p class="stat-block-1"><b>Benefit</b>: As a standard action, the creature may perform an awesome blow combat maneuver. If the creature's maneuver succeeds against a corporeal opponent smaller than itself, its opponent takes damage (typically slam damage plus Strength bonus) and is knocked flying 10 feet in a direction of the attacking creature's choice and falls prone. The attacking creature can only push the opponent in a straight line, and the opponent can't move closer to the attacking creature than the square it started in. If an obstacle prevents the completion of the opponent's move, the opponent and the obstacle each take 1d6 points of damage, and the opponent is knocked prone in the space adjacent to the obstacle.</p>
+
+<h2 id="craft-construct">Craft Construct (Item Creation)</h2>
+<p>You can create construct creatures like golems.</p>
+<p class="stat-block-1"><b>Prerequisites</b>: Caster level 5th, <a href="../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <a href="../coreRulebook/feats.html#craft-wondrous-item" >Craft Wondrous Item</a>.</p>
+<p class="stat-block-1"><b>Benefit</b>: You can create any <a href="creatureTypes.html#construct" >construct</a> whose prerequisites you meet. The act of animating a <a href="creatureTypes.html#construct" >construct</a> takes one day for each 1,000 gp in its market price. To create a <a href="creatureTypes.html#construct" >construct</a>, you must use up raw materials costing half of its base price, plus the full cost of the basic body created for the <a href="creatureTypes.html#construct" >construct</a>. Each <a href="creatureTypes.html#construct" >construct</a> has a special section that summarizes its costs and other prerequisites. A newly created <a href="creatureTypes.html#construct" >construct</a> has average hit points for its Hit Dice.</p>
+
+<h2 id="empower-spell-like-ability">Empower Spell-Like Ability</h2>
+<p>One of this creature's spell-like abilities is particularly potent and powerful.</p>
+<p class="stat-block-1"><b>Prerequisite</b>: Spell-like ability at caster level 6th or higher.</p>
+<p class="stat-block-1"><b>Benefit</b>: Choose one of the creature's spell-like abilities, subject to the restrictions below. The creature can use that ability as an empowered spell-like ability three times per day (or less, if the ability is normally usable only once or twice per day).</p>
+<p class="stat-block-2">When a creature uses an empowered spell-like ability, all variable, numeric effects of the spell-like ability are increased by half (+50%). Saving throws and opposed rolls are not affected. Spell-like abilities without random variables are not affected.</p>
+<p class="stat-block-2">The creature can only select a spell-like ability duplicating a spell with a level less than or equal to 1/2 its caster level (round down) &ndash; 2. For a summary, see the table in the description of the <a href="monsterFeats.html#quicken-spell-like-ability" >Quicken Spell-Like Ability</a>. </p>
+<p class="stat-block-1"><b>Special</b>: This feat can be taken multiple times. Each time it is taken, the creature can apply it to a different spell-like ability.</p>
+
+<h2 id="flyby-attack">Flyby Attack</h2>
+<p>This creature can make an attack before and after it moves while flying.</p>
+<p class="stat-block-1"><b>Prerequisite</b>: <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> speed.</p>
+<p class="stat-block-1"><b>Benefit</b>: When flying, the creature can take a move action and another standard action at any point during the move. The creature cannot take a second move action during a round when it makes a flyby attack.</p>
+<p class="stat-block-1"><b>Normal</b>: Without this feat, the creature takes a standard action either before or after its move.</p>
+
+<h2 id="hover">Hover</h2>
+<p>This creature can hover in place with ease and can kick up clouds of dust and debris.</p>
+<p class="stat-block-1"><b>Prerequisite</b>: <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> speed.</p>
+<p class="stat-block-1"><b>Benefit</b>: A creature with this feat can halt its movement while flying, allowing it to hover without needing to make a <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> skill check. </p>
+<p class="stat-block-2">If a creature of size Large or larger with this feat hovers within 20 feet of the ground in an area with lots of loose debris, the draft from its wings creates a hemispherical cloud with a radius of 60 feet. The winds generated can snuff torches, small campfires, exposed lanterns, and other small, open flames of non-magical origin. Clear vision within the cloud is limited to 10 feet. Creatures have concealment at 15 to 20 feet (20% miss chance). At 25 feet or more, creatures have total concealment (50% miss chance, and opponents cannot use sight to locate the creature).</p>
+<p class="stat-block-1"><b>Normal</b>: Without this feat, a creature must make a <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> skill check to hover and the creature does not create a cloud of debris while hovering.</p>
+
+<h2 id="improved-natural-armor">Improved Natural Armor</h2>
+<p>This creature's hide is tougher than most.</p>
+<p class="stat-block-1"><b>Prerequisites</b>: Natural armor, Con 13.</p>
+<p class="stat-block-1"><b>Benefit</b>: The creature's natural armor bonus increases by +1.</p>
+<p class="stat-block-1"><b>Special</b>: A creature can gain this feat multiple times. Each time the creature takes the feat, its natural armor bonus increases by another point.</p>
+
+<h2 id="improved-natural-attack">Improved Natural Attack</h2>
+<p>Attacks made by one of this creature's natural attacks leave vicious wounds.</p>
+<p class="stat-block-1"><b>Prerequisite</b>: Natural weapon, base attack bonus +4.</p>
+<p class="stat-block-1"><b>Benefit</b>: Choose one of the creature's natural attack forms (not an unarmed strike). The damage for this natural attack increases by one step on the following list, as if the creature's size had increased by one category. Damage dice increase as follows: 1d2, 1d3, 1d4, 1d6, 1d8, 2d6, 3d6, 4d6, 6d6, 8d6, 12d6. </p>
+				
+<p class="stat-block-2">A weapon or attack that deals 1d10 points of damage increases as follows: 1d10, 2d8, 3d8, 4d8, 6d8, 8d8, 12d8.</p>
+<p class="stat-block-1"><b>Special</b>: This feat can be taken multiple times. Each time it is taken, it applies to a different natural attack.</p>
+
+<h2 id="multiattack">Multiattack (Combat)</h2>
+<p>This creature is particularly skilled at making attacks with its natural weapons.</p>
+<p class="stat-block-1"><b>Prerequisite</b>: Three or more natural attacks.</p>
+<p class="stat-block-1"><b>Benefit</b>: The creature's secondary attacks with natural weapons take only a &ndash;2 penalty.</p>
+<p class="stat-block-1"><b>Normal</b>: Without this feat, the creature's secondary attacks with natural weapons take a &ndash;5 penalty.</p>
+
+<h2 id="multiweapon-fighting">Multiweapon Fighting (Combat)</h2>
+<p>This multi-armed creature is skilled at making attacks with multiple weapons.</p>
+<p class="stat-block-1"><b>Prerequisites</b>: Dex 13, three or more hands.</p>
+<p class="stat-block-1"><b>Benefit</b>: Penalties for fighting with multiple weapons are reduced by &ndash;2 with the primary hand and by &ndash;6 with off hands.</p>
+<p class="stat-block-1"><b>Normal</b>: A creature without this feat takes a &ndash;6 penalty on attacks made with its primary hand and a &ndash;10 penalty on attacks made with all of its off hands. (It has one primary hand, and all the others are off hands.) See <a href="../coreRulebook/feats.html#two-weapon-fighting" >Two-Weapon Fighting</a> in the <i>Pathfinder RPG Core Rulebook.</i></p>
+<p class="stat-block-1"><b>Special</b>: This feat replaces the <a href="../coreRulebook/feats.html#two-weapon-fighting" >Two-Weapon Fighting</a> feat for creatures with more than two arms.</p>
+
+<h2 id="quicken-spell-like-ability">Quicken Spell-Like Ability</h2>
+<p>This creature can use one of its spell-like abilities with next to no effort.</p>
+<p class="stat-block-1"><b>Prerequisite</b>: Spell-like ability at CL 10th or higher.</p>
+<p class="stat-block-1"><b>Benefit</b>: Choose one of the creature's spell-like abilities, subject to the restrictions described in this feat. The creature can use the chosen spell-like ability as a quickened spell-like ability three times per day (or less, if the ability is normally usable only once or twice per day).</p>
+<p class="stat-block-2">Using a quickened spell-like ability is a swift action that does not provoke an attack of opportunity. The creature can perform another action&mdash;including the use of another spell-like ability (but not another swift action)&mdash;in the same round that it uses a quickened spell-like ability. The creature may use only one quickened spell-like ability per round.</p>
+<p class="stat-block-2">The creature can only select a spell-like ability duplicating a spell with a level less than or equal to 1/2 its caster level (round down) &ndash; 4. For a summary, see the table below.</p>
+<p class="stat-block-2">A spell-like ability that duplicates a spell with a casting time greater than 1 full round cannot be quickened.</p>
+<p class="stat-block-1"><b>Normal</b>: The use of a spell-like ability normally requires a standard action (at the very least) and provokes an attack of opportunity.</p>
+<p class="stat-block-1"><b>Special</b>: This feat can be taken multiple times. Each time it is taken, the creature can apply it to a different one of its spell-like abilities.</p>
+<table><caption>Empowered and Quickened Spell-Like Abilities</caption>
+<thead><tr><th>Spell Level</th><th>Caster Level to Empower</th><th>Caster Level to Quicken</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>4th</td><td>8th</td></tr>
+<tr><td>1st</td><td>6th</td><td>10th</td></tr>
+<tr><td>2nd</td><td>8th</td><td>12th</td></tr>
+<tr><td>3rd</td><td>10th</td><td>14th</td></tr>
+<tr><td>4th</td><td>12th</td><td>16th</td></tr>
+<tr><td>5th</td><td>14th</td><td>18th</td></tr>
+<tr><td>6th</td><td>16th</td><td>20th</td></tr>
+<tr><td>7th</td><td>18th</td><td>&mdash;</td></tr>
+<tr><td>8th</td><td>20th</td><td>&mdash;</td></tr>
+<tr><td>9th</td><td>&mdash;</td><td>&mdash;</td></tr></tbody></table>
+
+
+<h2 id="snatch">Snatch</h2>
+<p>This creature can grab other creatures with ease.</p>
+<p class="stat-block-1"><b>Prerequisite:</b> Size Huge or larger.</p>
+<p class="stat-block-1"><b>Benefits:</b> The creature can start a grapple when it hits with a claw or bite attack, as though it had the grab ability. If it grapples a creature three or more sizes smaller, it squeezes each round for automatic bite or claw damage with a successful grapple check. A snatched opponent held in the creature's mouth is not allowed a Reflex save against the creature's breath weapon, if it has one.</p>
+<p class="stat-block-2">The creature can drop a creature it has snatched as a free action or use a standard action to fling it aside. A flung creature travels 1d6 &times; 10 feet, and takes 1d6 points of damage per 10 feet traveled. If the creature flings a snatched opponent while flying, the opponent takes this amount or falling damage, whichever is greater.</p>
+
+<h2 id="wingover">Wingover</h2>
+<p>This creature can make turns with ease while flying.</p>
+<p class="stat-block-1"><b>Prerequisite</b>: <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> speed.</p>
+<p class="stat-block-1"><b>Benefits</b>: Once each round, a creature with this feat can turn up to 180 degrees as a free action without making a <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> skill check. This free turn does not consume any additional movement from the creature.</p>
+<p class="stat-block-1"><b>Normal</b>: A flying creature can turn up to 90 degrees by making a DC 15 <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> skill check and expending 5 feet of movement. A flying creature can turn up to 180 degrees by making a DC 20 <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> skill check and expending 10 feet of movement.</p>
+
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Monster Feats",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

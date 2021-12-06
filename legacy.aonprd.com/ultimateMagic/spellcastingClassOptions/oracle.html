@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Oracle</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "oracle.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "oracle.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "oracle.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "oracle.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "oracle.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "oracle.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "oracle.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "oracle.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "oracle.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "oracle.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "oracle.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "oracle.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "oracle.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "oracle.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "oracle.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "oracle.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "oracle.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "oracle.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "oracle.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "oracle.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "oracle.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="oracle" class="monster-header">Oracle</h1>
+				
+				
+				<p>Not all vessels of the divine choose their path. Rather, some find themselves chosen, raised to a life of power and responsibility by forces they themselves may not understand. These are the oracles, agents gifted by providence and serving not a single deity, but rather many sources, venerating and drawing magic from all those patron deities who support their ideals. Whether a curse or a gift, the strange powers and unsettling mysteries of the oracles make them forces to be reckoned with, both in the halls of power and on the fields of battle.</p>
+				<p>This section introduces new oracle mysteries. Following these mysteries are six new oracle archetypes. Each archetype includes a list of recommended mysteries that are particularly suitable for that archetype, though the archetypes are not limited only to oracles of those mysteries. An archetype's bonus spells replace the normal bonus spells for the oracle's chosen mystery.</p>
+				<h1 id="mysteries">Mysteries</h1>
+				<p>The following are new mysteries for oracles. An oracle must pick one mystery upon taking her first level of oracle. Once made, this choice cannot be changed. Unless otherwise noted, the DC to save against these revelations is equal to 10 + 1/2 the oracle's class level + the oracle's Charisma modifier. Effects that duplicate spells use the oracle's class level as her caster level.</p>
+				<h2 id="ancestor">Ancestor</h2>
+				<p id="deities"><b>Deities</b></p>
+				<p id="class-skills:"><b>Class Skills:</b> An oracle with the ancestor mystery adds <a href="../../coreRulebook/skills/linguistics.html#linguistics" >Linguistics</a>, and all <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> skills to her list of class skills.</p>
+				<p id="bonus-spells"><b>Bonus Spells</b>: <i><a href="../../coreRulebook/spells/unseenServant.html#unseen-servant" >unseen servant</a></i> (2nd), <i><a href="../../coreRulebook/spells/spiritualWeapon.html#spiritual-weapon" >spiritual weapon</a></i> (4th), <i><a href="../../coreRulebook/spells/heroism.html#heroism" >heroism</a></i> (6th), <i><a href="../../advancedPlayersGuide/spells/spiritualAlly.html#spiritual-ally" >spiritual ally</a></i> (8th), <i><a href="../../coreRulebook/spells/telekinesis.html#telekinesis" >telekinesis</a></i> (10th), <i><a href="../../coreRulebook/spells/heroism.html#heroism-greater" >greater heroism</a></i> (12th), <i><a href="../../coreRulebook/spells/etherealJaunt.html#ethereal-jaunt" >ethereal jaunt</a></i> (14th), <i><a href="../../coreRulebook/spells/vision.html#vision" >vision</a></i> (16th), <i><a href="../../coreRulebook/spells/astralProjection.html#astral-projection" >astral projection</a></i> (18th).</p>
+				<p id="revelations"><b>Revelations</b>: An oracle with the ancestor mystery can choose from any of the following revelations.</p>
+				<p id="ancestral-weapon"><i>Ancestral Weapon (Su)</i>: You can summon a simple or martial weapon from your family's history that is appropriate for your current size. You are considered proficient with this weapon. At 3rd level, the weapon is considered masterwork. At 7th level, 15th level, and 19th level, the weapon gains a cumulative +1 enhancement bonus. At 11th level, the weapon gains the <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-ghost-touch" >ghost touch</a></i> weapon property. You can use this ability for a number of minutes per day equal to your oracle level. This duration does not need to be consecutive, but it must be used in 1-minute increments. The weapon disappears after 1 round if it leaves your grasp.</p>
+				<p id="blood-of-heroes"><i>Blood of Heroes (Su)</i>: As a move action, you can call upon your ancestors to grant you extra bravery in battle. You gain a +1 morale bonus on attack rolls, damage rolls, and Will saves against fear for a number of rounds equal to your Charisma bonus. At 7th level, this bonus increases to +2, and at 14th level this bonus increases to +3. You can use this ability once per day, plus one additional time per day at 5th level, and every five levels thereafter.</p>
+				<p id="phantom-touch"><i>Phantom Touch (Su)</i>: As a standard action, you can perform a melee touch attack that causes a living creature to become shaken. This ability lasts for a number of rounds equal to 1/2 your oracle level (minimum 1 round). You can use this ability a number of times per day equal to 3 + your Charisma modifier.</p>
+				<p id="sacred-council"><i>Sacred Council (Su)</i>: As a move action, you can call upon your ancestors to provide council. This advice grants you a +2 bonus on any one d20 roll. This effect lasts for 1 round. You can use this ability a number of times per day equal to your Charisma bonus.</p>
+				<p id="spirit-of-the-warrior"><i>Spirit of the Warrior (Su)</i>: You can summon the spirit of a great warrior ancestor and allow it to possess you, becoming a mighty warrior yourself. You gain a +4 enhancement bonus to Strength, Dexterity, and Constitution, and a +4 natural armor bonus to AC. Your base attack bonus while possessed equals your oracle level (which may give you additional attacks), and you gain the <a href="../../coreRulebook/feats.html#improved-critical" >Improved Critical</a> feat with a weapon of your choice. You can use this ability for 1 round for every 2 oracle levels you possess. This duration does not need to be consecutive, but it must be spent in 1-round increments. You must be at least 11th level to select this revelation.</p>
+				<p id="spirit-shield"><i>Spirit Shield (Su)</i>: You can call upon the spirits of your ancestors to form a shield around you that blocks incoming attacks and grants you a +4 armor bonus. At 7th level, and every four levels thereafter, this bonus increases by +2. At 13th level, this shield causes arrows, rays, and other ranged attacks requiring an attack roll against you to have a 50% miss chance. You can use this shield for 1 hour per day per oracle level. This duration does not need to be consecutive, but it must be spent in 1-hour increments.</p>
+				<p id="spirit-walk"><i>Spirit Walk (Su)</i>: You can become incorporeal and invisible. While in this form, you can move in any direction and pass through solid objects. You can take no action other than to move while in this form. You remain in this form for a number of rounds equal to your oracle level, but you can end this effect prematurely as a standard action. You can use this ability once per day at 11th level, and twice per day at 15th level. You must be at least 11th level to select this revelation.</p>
+				<p id="storm-of-souls"><i>Storm of Souls (Su)</i>: You can summon the spirits of your ancestors to attack in a ghostly barrage&mdash;their fury creates physical wounds on creatures in the area. The storm has a range of 100 feet and is a 20-foot-radius burst. Objects and creatures in the area take 1d8 hit points of damage for every two oracle levels you possess. Undead creatures in the area take 1d8 points of damage for every oracle level you possess. A successful Fortitude save reduces the damage to half. You must be at least 7th level to select this revelation. You can use this ability once per day, plus one additional time per day at 11th level and every four levels thereafter.</p>
+				<p id="voice-of-the-grave"><i>Voice of the Grave (Su)</i>: You can speak with the dead, as per the spell, for a number of rounds per day equal to your oracle level. These rounds do not need to be consecutive. At 5th level, and every five levels thereafter, the dead creature you question takes a cumulative &ndash;2 penalty on its Will save to resist this effect.</p>
+				<p id="wisdom-of-the-ancestors"><i>Wisdom of the Ancestors (Su)</i>: Once per day, you can enter a trance in which you commune with the spirits of your ancestors. This trance lasts for 10 minutes, which must be uninterrupted and during which you can take no other actions. When you come out of this trance, you have gained mystical insight into the future. At 1st level, this insight acts as an <i><a href="../../coreRulebook/spells/augury.html#augury" >augury</a></i> spell with 80% effectiveness. At 5th level, the insight takes the form of a <i><a href="../../coreRulebook/spells/divination.html#divination" >divination</a></i> with 90% effectiveness. At 8th level, the knowledge you gain is equivalent to a <i><a href="../../coreRulebook/spells/commune.html#commune" >commune</a></i> spell. None of these spell effects require material components.</p>
+				<p id="final-revelation"><b>Final Revelation</b>: Upon reaching 20th level, you become one with the spirits of your ancestors. You gain a bonus on Will saving throws equal to your Charisma modifier, blindsense out to a range of 60 feet, and a +4 bonus on your caster level for all divination spells. You can cast <i><a href="../../coreRulebook/spells/astralProjection.html#astral-projection" >astral projection</a></i> as a spell-like ability once per day without requiring material components.</p>
+				<h2 id="dark-tapestry">Dark Tapestry</h2>
+				<p id="deities"><b>Deities</b></p>
+				<p id="class-skills:"><b>Class Skills:</b> An oracle with the dark tapestry mystery adds <a href="../../coreRulebook/skills/disguise.html#disguise" >Disguise</a>, <a href="../../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a>, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (arcana), and <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> to her list of class skills.</p>
+				<p id="bonus-spells"><b>Bonus Spells</b>: <i><a href="../../coreRulebook/spells/entropicShield.html#entropic-shield" >entropic shield</a></i> (2nd), <i><a href="../../advancedPlayersGuide/spells/dustOfTwilight.html#dust-of-twilight" >dust of twilight</a></i> (4th), <i><a href="../../coreRulebook/spells/tongues.html#tongues" >tongues</a></i> (6th), <i><a href="../../coreRulebook/spells/blackTentacles.html#black-tentacles" >black tentacles</a></i> (8th), <i><a href="../../coreRulebook/spells/feeblemind.html#feeblemind" >feeblemind</a></i> (10th), <i><a href="../../coreRulebook/spells/planarBinding.html#planar-binding" >planar binding</a></i><span class="char-style-override-39"> </span>(12th), <i><a href="../../coreRulebook/spells/insanity.html#insanity" >insanity</a></i> (14th), <i><a href="../../coreRulebook/spells/reverseGravity.html#reverse-gravity" >reverse gravity</a></i> (16th), <i><a href="../spells/interplanetaryTeleport.html#interplanetary-teleport" >interplanetary teleport</a></i> (18th).</p>
+				<p id="revelations"><b>Revelations</b>: An oracle with the dark tapestry mystery can choose from any of the following revelations.</p>
+				<p id="brain-drain"><i>Brain Drain (Su)</i>: You can take a standard action to violently probe the mind of a single intelligent enemy within 100 feet. The target receives a Will save to negate the effect and immediately knows the source of this harmful mental prying. Those who fail this save are wracked with pain, taking 1d4 points of damage for every oracle level you possess. After successfully attacking with this ability, you may use a full-round action to sort through the jumble of stolen thoughts and memories to make a single <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> check using the victim's skill bonus. The randomly stolen thoughts remain in your mind for a number of rounds equal to your Charisma modifier. Treat the knowledge gained as if you had used <i><a href="../../coreRulebook/spells/detectThoughts.html#detect-thoughts" >detect thoughts</a></i>. This is a mind-affecting effect. You can use this ability once per day at 1st level, plus one additional time per day at 5th level and for every five levels beyond 5th.</p>
+				<p id="cloak-of-darkness"><i>Cloak of Darkness (Su)</i>: You conjure a cloak of shadowy darkness that grants you a +4 armor bonus and a +2 circumstance bonus on <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> checks. At 7th level, and every four levels thereafter, these bonuses increase by +2. You can use this cloak for 1 hour per day per oracle level. The duration does not need to be consecutive, but it must be spent in 1-hour increments.</p>
+				<p id="dweller-in-darkness"><i>Dweller in Darkness (Sp)</i>: Once per day, you cast your psyche into the void of space to attract the attention of a terrible otherworldly being. The dweller in darkness behaves in all ways as if you had cast <i><a href="../../coreRulebook/spells/phantasmalKiller.html#phantasmal-killer" >phantasmal killer</a></i>. At 17th level, the dweller in darkness can be perceived by more than one creature, as if you had cast <i><a href="../../coreRulebook/spells/weird.html#weird" >weird</a></i>. You must be at least 11th level to choose this revelation.</p>
+				<p id="gift-of-madness"><i>Gift of Madness (Su)</i>: You tap into the unthinkable void between the stars and cause a single living creature within 30 feet to become confused for 1 round. A successful Will save negates the effect. This is a mind-affecting compulsion effect. At 7th level, the confusion lasts for a number of rounds equal to your oracle level. You can use this ability a number of times per day equal to 3 + your Charisma modifier.</p>
+				<p id="interstellar-void"><i>Interstellar Void (Su)</i>: You call upon the frigid depths of outer space to bring a terrible chill to your enemies. As a standard action, one target within 30 feet is cloaked in the void and takes 1d6 points of cold damage for every oracle level you possess. A successful Fortitude save halves this damage. At 10th level, the interstellar void is so extreme that a creature that fails its save is fatigued. At 15th level, a creature that fail its save is exhausted and stunned for 1 round. You can use this ability once per day plus one additional time per day at 10th level.</p>
+				<p id="many-forms"><i>Many Forms (Su)</i>: As a standard action, you can assume the form of a Small or Medium humanoid, as the <i><a href="../../coreRulebook/spells/alterSelf.html#alter-self" >alter self</a></i> spell. At 7th level, you can assume the form of a Small or Medium animal, as <i><a href="../../coreRulebook/spells/beastShape.html#beast-shape-i" >beast shape I</a></i>. At 11th level, you can assume the form of a Small or Medium magical beast, as <i><a href="../../coreRulebook/spells/beastShape.html#beast-shape-iii" >beast shape III</a></i>. At 15th level, you can assume a variety of forms, as <i><a href="../../coreRulebook/spells/polymorph.html#polymorph-greater" >greater polymorph</a></i>. You can use this ability for 1 minute per day per oracle level. This duration does not need to be consecutive, but it must be spent in 1-minute increments. You must be at least 3rd level to select this revelation.</p>
+				<p id="pierce-the-veil"><i>Pierce the Veil (Su)</i>: Your bond with the alien denizens of the Dark Tapestry allows you to see in even the deepest darkness. You gain darkvision 60 feet. At 11th level, you can see perfectly in darkness of any kind, even in absolute darkness or the darkness created by a <i><a href="../../coreRulebook/spells/deeperDarkness.html#deeper-darkness" >deeper darkness</a></i> spell.</p>
+				<p> <i>Read the Tapestry (Sp)</i>: Once per day, you can spend 10 minutes meditating on the mysteries of the Dark Tapestry to send your mind to another plane and communicate with the strange or alien beings there. This functions as the <i><a href="../../coreRulebook/spells/contactOtherPlane.html#contact-other-plane" >contact other plane</a></i> spell. You must be at least 7th level to select this revelation.</p>
+				<p id="touch-of-the-void"><i>Touch of the Void (Su)</i>: As a standard action, you can perform a melee touch attack that deals 1d6 points of cold damage + 1 point for every two oracle levels you possess. At 7th level, the touched creature must also make a Fortitude saving throw or be fatigued for a number of rounds equal to 1/2 your oracle level. This has no effect on a creature that is already fatigued. You can use this ability a number of times per day equal to 3 + your Charisma modifier.</p>
+				<p id="wings-of-darkness"><i>Wings of Darkness (Su)</i>:As a swift action, you can manifest a set of translucent, inky wings that grant you a fly speed of 60 feet with good maneuverability. You can use these wings for 1 minute per day per oracle level. This duration does not need to be consecutive, but it must be spent in 1-minute increments. At 11th level, you can use these wings to fly as if with <i><a href="../../coreRulebook/spells/overlandFlight.html#overland-flight" >overland flight</a></i> once per day. Used in this way, the ability lasts for up to 1 hour per level, and counts as your total use of this ability for the day. You must be at least 7th level to select this revelation.</p>
+				<p id="final-revelation"><b>Final Revelation</b>: Upon reaching 20th level, you become a truly alien and unnatural creature. You gain damage reduction 5/&mdash; and immunity to acid, critical hits, and sneak attacks. Once per day, you can cast <i><a href="../../coreRulebook/spells/shapechange.html#shapechange" >shapechange</a></i> as a spell-like ability without requiring a material component.</p>
+				<h2 id="metal">Metal</h2>
+				<p id="deities"><b>Deities</b></p>
+				<p id="class-skills:"><b>Class Skills:</b> An oracle with the metal mystery adds <a href="../../coreRulebook/skills/appraise.html#appraise" >Appraise</a>, <a href="../../coreRulebook/skills/bluff.html#bluff" >Bluff</a>, <a href="../../coreRulebook/skills/disableDevice.html#disable-device" >Disable Device</a>, and <a href="../../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> to her list of class skills.</p>
+				<p id="bonus-spells"><b>Bonus Spells</b>: <i><a href="../../advancedPlayersGuide/spells/leadBlades.html#lead-blades-" >lead blades</a></i> (2nd), <i><a href="../../coreRulebook/spells/heatMetal.html#heat-metal" >heat metal</a></i> (4th), <i><a href="../../coreRulebook/spells/keenEdge.html#keen-edge" >keen edge</a></i> (6th), <i><a href="../../advancedPlayersGuide/spells/versatileWeapon.html#versatile-weapon" >versatile weapon</a></i> (8th), <i><a href="../../coreRulebook/spells/majorCreation.html#major-creation" >major creation</a></i> (metal items only) (10th), <i><a href="../../coreRulebook/spells/wallOfIron.html#wall-of-iron" >wall of iron</a></i> (12th), <i><a href="../../coreRulebook/spells/statue.html#statue" >statue</a></i> (metal statue instead of iron) (14th), <i><a href="../../coreRulebook/spells/repelMetalOrStone.html#repel-metal-or-stone" >repel metal or stone</a></i> (16th), <i><a href="../../coreRulebook/spells/ironBody.html#iron-body" >iron body</a></i> (18th).</p>
+				<p id="revelations"><b>Revelations</b>: An oracle with the Metal mystery can choose from any of the following revelations.</p>
+				<p id="armor-mastery"><i>Armor Mastery (Ex)</i>: You become more maneuverable while wearing armor. You can move at your normal speed in medium armor that is made of metal. This does not grant proficiency in armor. At 5th level, whenever you are wearing metal armor, you reduce the armor check penalty by 1 (to a minimum of 0) and increase the maximum Dexterity bonus allowed by your armor by 1. At 10th level, and again at 15th level, these bonuses increase by 1.</p>
+				<p id="dance-of-the-blades"><i>Dance of the Blades (Ex)</i>: Your base speed increases by 10 feet. At 7th level, you gain a +1 bonus on attack rolls with a metal weapon in any round in which you move at least 10 feet. This bonus increases by +1 at 11th level, and every four levels thereafter. At 11th level, as a move action, you can maneuver your weapon to create a shield of whirling steel around yourself until the start of your next turn; non-incorporeal melee and ranged attacks against you have a 20% miss chance while the shield is active. You must be wielding a metal weapon to use this ability.</p>
+				<p id="iron-constitution"><i>Iron Constitution (Su)</i>: You gain a +1 bonus on Fortitude saves. At 7th level, and again at 14th level, this bonus increases by +1.</p>
+				<p id="iron-skin"><i>Iron Skin (Sp)</i>: Once per day, your skin hardens and takes on the appearance of iron, granting you DR 10/adamantine. This ability functions as <i><a href="../../coreRulebook/spells/stoneskin.html#stoneskin" >stoneskin</a></i>, using your oracle level as the caster level, except it only affects you. At 15th level, you can use this ability twice per day. You must be at least 11th level to select this revelation.</p>
+				<p id="iron-weapon"><i>Iron Weapon (Su)</i>: You can create a melee simple or martial weapon that lasts for 1 minute for every oracle level you possess. This weapon is appropriate for your size and entirely made of metal (even if it would normally include non-metal parts, such as a spear's shaft) but functions as if it were a normal weapon of its type. You are considered proficient with this weapon. The weapon disappears after 1 round if it leaves your grasp. At 3rd level, the blade is made of cold iron. At 7th level, 15th level, and 19th level, the blade gains a +1 enhancement bonus. At 11th level, the blade is made of adamantine. You can use this ability a number of times per day equal to 3 + your Charisma modifier.</p>
+				<p id="riddle-of-steel"><i>Riddle of Steel (Su)</i>: Your sacred bond with metal gives you insight into its form and function. Once per day, you may spend 10 minutes meditating on the structure of a piece of unworked metal or ore to gain a +5 insight bonus on your next <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> check to make something using that metal.</p>
+				<p id="rusting-grasp"><i>Rusting Grasp (Sp)</i>: Once per day as a standard action, you can perform a melee touch attack that rusts iron, as the <i><a href="../../coreRulebook/spells/rustingGrasp.html#rusting-grasp" >rusting grasp</a></i> spell. At 11th level, and every four levels thereafter, you can use this ability an additional time per day. You must be at least 7th level to select this revelation.</p>
+				<p id="skill-at-arms"><i>Skill at Arms (Ex)</i>: You gain proficiency in all martial weapons and heavy armor.</p>
+				<p id="steel-scarf"><i>Steel Scarf (Su)</i>: As a swift action, you can harden a scarf, sleeve, cloak, or other piece of your clothing into something as hard as steel that stretches out to be up to 30 feet long. You can then strike outward with it as if it were a weapon making a melee attack. For the purpose of this ability, you are proficient with this weapon. You can use the weapon to perform combat maneuvers. Make a melee attack roll against a creature within 30 feet; you may use <a href="../../coreRulebook/feats.html#weapon-finesse" >Weapon Finesse</a> with this attack. If you hit, the weapon deals 1d8 points of slashing damage + 1 point for every two oracle levels you possess. After this attack, the clothing returns to its normal length and hardness. You do not threaten an area with this weapon and cannot use it to make attacks of opportunity. You can use this ability a number of times per day equal to 3 + your Charisma modifier.</p>
+				<p id="vision-in-iron"><i>Vision in Iron (Sp)</i>: You can use any piece of polished metal at least the size of a dagger as a scrying device, as if using the spell <i><a href="../../coreRulebook/spells/scrying.html#scrying" >scrying</a></i>. At 15th level, this functions like <i><a href="../../coreRulebook/spells/scrying.html#scrying-greater" >greater scrying</a></i>. You can scry for a number of rounds per day equal to your oracle level; these rounds do not need to be consecutive. You must be at least 7th level to select this revelation.</p>
+				<p id="final-revelation"><b>Final Revelation</b>: Upon reaching 20th level, you become a master of iron and steel. You gain the benefits of <a href="../../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a>, <a href="../../coreRulebook/feats.html#greater-weapon-focus" >Greater Weapon Focus</a>, and <a href="../../coreRulebook/feats.html#improved-critical" >Improved Critical</a> with any one metal weapon that you are proficient with. Your armor is like a second skin to you&mdash;while wearing metal armor you are proficient with, the armor's maximum Dexterity bonus increases by +5 and you take no armor check penalty. In addition, any metal you create with your magic (such as <i><a href="../../coreRulebook/spells/wallOfIron.html#wall-of-iron" >wall of iron</a></i>) has its hardness increased by +10.</p>
+				<h2 id="time">Time</h2>
+				<p id="deities"><b>Deities</b></p>
+				<p id="class-skills:"><b>Class Skills:</b> An oracle with the time mystery adds <a href="../../coreRulebook/skills/fly.html#fly" >Fly</a>, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (arcana), <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a>, and <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device" >Use Magic Device</a> to her list of class skills.</p>
+				<p id="bonus-spells"><b>Bonus Spells</b>: <i><a href="../../advancedPlayersGuide/spells/memoryLapse.html#memory-lapse" >memory lapse</a></i> (2nd), <i><a href="../../coreRulebook/spells/gentleRepose.html#gentle-repose" >gentle repose</a></i> (4th), <i><a href="../spells/sandsOfTime.html#sands-of-time" >sands of time</a></i> (6th), <i><a href="../../advancedPlayersGuide/spells/threefoldAspect.html#threefold-aspect" >threefold aspect</a></i> (8th), <i><a href="../../coreRulebook/spells/permanency.html#permanency" >permanency</a></i> (10th), <i><a href="../../coreRulebook/spells/contingency.html#contingency" >contingency</a></i> (12th), <i><a href="../../coreRulebook/spells/disintegrate.html#disintegrate" >disintegrate</a></i> (14th), <i><a href="../../coreRulebook/spells/temporalStasis.html#temporal-stasis" >temporal stasis</a></i> (16th), <i><a href="../../coreRulebook/spells/timeStop.html#time-stop" >time stop</a></i> (18th).</p>
+				<p id="revelations"><b>Revelations</b>: An oracle with the time mystery can choose from any of the following revelations.</p>
+				<p id="aging-touch"><i>Aging Touch (Su)</i>: Your touch ages living creatures and objects. As a melee touch attack, you can deal 1 point of Strength damage for every two oracle levels you possess to living creatures. Against objects or constructs, you can deal 1d6 points of damage per oracle level. If used against an object in another creature's possession, treat this attack as a sunder combat maneuver. You can use this ability once per day, plus one additional time per day for every five oracle levels you possess.</p>
+				<p id="erase-from-time"><i>Erase from Time (Su)</i>: As a melee touch attack, you can temporarily remove a creature from time altogether. The target creature must make a Fortitude save or vanish completely for a number of rounds equal to 1/2 your oracle level (minimum 1 round). No magic or divinations can detect the creature during this time, as it exists outside of time and space&mdash;in effect, the creature ceases to exist for the duration of this ability. At the end of the duration, the creature reappears unharmed in the space it last occupied (or the nearest possible space, if the original space is now occupied). You can use this ability once per day, plus one additional time per day at 11th level.</p>
+				<p id="knowledge-of-the-ages"><i>Knowledge of the Ages (Su)</i>: You can search through time to recall some bit of forgotten lore or information. You can retry any <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> skill check you have made within the past minute, gaining an insight bonus on the check equal to your Charisma modifier. You can use this ability a number times per day equal to your Charisma modifier.</p>
+				<p id="momentary-glimpse"><i>Momentary Glimpse (Su)</i>: Once per day, you can gain a glimpse into your immediate future. On the round after you use this ability, you gain a +2 insight bonus on a single attack roll, saving throw, or skill check or to your Armor Class until the start of your next turn. At 5th level, and every four levels thereafter, you can use this ability one additional time per day.</p>
+				<p id="rewind-time"><i>Rewind Time (Su)</i>: Once per day<span class="char-style-override-39"> </span>as an immediate action, you can reroll any one d20 roll that you have just made before the results of the roll are revealed. You must take the result of the reroll, even if it's worse than the original roll. At 11th level, and every four levels thereafter, you can use this ability an additional time per day. You must be at least 7th level to select this revelation.</p>
+				<p id="speed-or-slow-time"><i>Speed or Slow Time (Sp)</i>: As a standard action, you can speed up or slow down time, as either the <i><a href="../../coreRulebook/spells/haste.html#haste" >haste</a></i> or <i><a href="../../coreRulebook/spells/slow.html#slow" >slow</a></i> spell. You can use this ability once per day, plus one additional time per day at 12th level and 17th level. You must be at least 7th level before selecting this revelation.</p>
+				<p id="temporal-celerity"><i>Temporal Celerity (Su)</i>: Whenever you roll for initiative, you can roll twice and take either result. At 7th level, you can always act in the surprise round, but if you fail to notice the ambush, you act last, regardless of your initiative result (you act in the normal order in following rounds). At 11th level, you can roll for initiative three times and take any one of the results.</p>
+				<p id="time-flicker"><i>Time Flicker (Su)</i>: As a standard action, you can flicker in and out of time, gaining concealment (as the <i><a href="../../coreRulebook/spells/blur.html#blur" >blur</a></i> spell). You can use this ability for 1 minute per oracle level that you possess per day. This duration does not need to be consecutive, but it must be spent in 1-minute increments. At 7th level, each time you activate this ability, you can treat it as the <i><a href="../../coreRulebook/spells/blink.html#blink" >blink</a></i> spell, though each round spent this way counts as 1 minute of your normal time flicker duration. You must be at least 3rd level to select this revelation.</p>
+				<p id="time-hop"><i>Time Hop (Su)</i>: As a move action, you can teleport up to 10 feet per oracle level that you possess per day. This teleportation must be used in 5-foot increments. This movement does not provoke attacks of opportunity. You must have line of sight to your destination to use this ability. You can bring other willing creatures with you, but you must expend an equal amount of distance for each creature brought. You must be at least 7th level to select this revelation.</p>
+				<p id="time-sight"><i>Time Sight (Su)</i>: You can peer through the mists of time to see things as they truly are, as if using the <i><a href="../../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a></i> spell. At 15th level, this functions like <i><a href="../../coreRulebook/spells/momentOfPrescience.html#moment-of-prescience" >moment of prescience</a></i>. At 18th level, this functions like <i><a href="../../coreRulebook/spells/foresight.html#foresight" >foresight</a></i>. You can use this ability for a number of minutes per day equal to your oracle level, but these minutes do not need to be consecutive. You must be at least 11th level to select this revelation.</p>
+				<p id="final-revelation"><b>Final Revelation</b>: Upon reaching 20th level, you become a true master of time and stop aging. You cannot be magically aged and no longer take penalties to your ability scores for aging. Age bonuses still accrue, and any aging penalties that you have already accrued remain in place. You cannot die of old age, but you can be killed or die through accident, disease, poison, or other external effects. In addition, you can cast <i><a href="../../coreRulebook/spells/timeStop.html#time-stop" >time stop</a></i> once per day as a spell-like ability.</p>
+				<h2 id="wood">Wood</h2>
+				<p id="deities"><b>Deities</b></p>
+				<p id="class-skills"><b>Class Skills</b>: An oracle with the wood mystery adds <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a>, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (nature), <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a>, and <a href="../../coreRulebook/skills/survival.html#survival" >Survival</a> to her list of class skills.</p>
+				<p id="bonus-spells"><b>Bonus Spells</b>: <i><a href="../../coreRulebook/spells/shillelagh.html#shillelagh" >shillelagh</a></i> (2nd), <i><a href="../../coreRulebook/spells/barkskin.html#barkskin" >barkskin</a></i> (4th), <i><a href="../../coreRulebook/spells/minorCreation.html#minor-creation" >minor creation</a></i> (wood items only) (6th), <i><a href="../../advancedPlayersGuide/spells/thornBody.html#thorn-body" >thorn body</a></i> (8th), <i><a href="../../coreRulebook/spells/treeStride.html#tree-stride" >tree stride</a></i> (10th), <i><a href="../../coreRulebook/spells/ironwood.html#ironwood" >ironwood</a></i> (12th), <i><a href="../../coreRulebook/spells/transmuteMetalToWood.html#transmute-metal-to-wood" >transmute metal to wood</a></i> (14th), <i><a href="../../coreRulebook/spells/changestaff.html#changestaff" >changestaff</a></i> (16th), <i><a href="../spells/woodenPhalanx.html#wooden-phalanx" >wooden phalanx</a></i> (18th).</p>
+				<p id="revelations"><b>Revelations</b>: An oracle with the wood mystery can choose from any of the following revelations.</p>
+				<p id="bend-the-grain"><i>Bend the Grain (Sp)</i>: Once per day as a standard action, you can shape or warp wooden objects. This functions as either <i><a href="../../coreRulebook/spells/woodShape.html#wood-shape" >wood shape</a></i> or <i><a href="../../coreRulebook/spells/warpWood.html#warp-wood" >warp wood</a></i>. At 11th level, you can use this ability to push wood away from you, as <i><a href="../../coreRulebook/spells/repelWood.html#repel-wood" >repel wood</a></i>. At 7th level, and again at 14th level, you can use this ability an additional time per day.</p>
+				<p id="lignification"><i>Lignification (Su)</i>: Once per day, you can turn a creature into wood. As a standard action, you may direct your gaze against a single creature within 30 feet. The targeted creature (along with all its carried gear) must make a Fortitude save or turn into a mindless, inert statue made out of wood for a number of rounds equal to 1/2 your oracle level. This ability otherwise functions as a <i><a href="../../coreRulebook/spells/fleshToStone.html#flesh-to-stone" >flesh to stone</a> </i>spell, except the target turns to wood instead of stone. This can be reverse by any effect that can reverse <i><a href="../../coreRulebook/spells/fleshToStone.html#flesh-to-stone" >flesh to stone</a></i>. At 15th level, you can use this ability twice per day. You must be at least 11th level to select this revelation.</p>
+				<p id="speak-with-wood"><i>Speak with Wood (Sp)</i>: You can talk to wood and learn what it knows. You must spend 1 minute meditating on and communing with the wood. At the end of this time, you can speak with the wood. This functions as the <i><a href="../../coreRulebook/spells/stoneTell.html#stone-tell" >stone tell</a></i> spell, except with wood instead of stones. You can use this ability for 1 minute per oracle level. This duration does not need to be consecutive, but it must be used in 1-minute increments. You can speak with natural or worked wood. You must be at least 11th level to select this revelation.</p>
+				<p id="thorn-burst"><i>Thorn Burst (Su)</i>: As a swift action, you can cause sharp splinters of wood to explode outward from your body. These splinters deal 1d6 points of piercing damage per two oracle levels (minimum 1d6) to all creatures within a 10-foot burst. A Reflex save halves this damage. In addition, the sharp splinters count as <a href="../../coreRulebook/equipment.html#adventuring-gear">caltrops</a> in the area until your next turn. You can use this ability once per day, plus one additional time per day at 5th level and every five levels thereafter.</p>
+				<p id="tree-form"><i>Tree Form (Sp)</i>: As a standard action, you can assume the form of a Large living or dead tree or shrub, as <i><a href="../../coreRulebook/spells/treeShape.html#tree-shape" >tree shape</a></i>. At 9th level, you can assume the form of a Small or Medium plant creature, as <i><a href="../../coreRulebook/spells/plantShape.html#plant-shape-i" >plant shape I</a></i>. At 11th level, you can assume the form of a Large plant creature, as <i><a href="../../coreRulebook/spells/plantShape.html#plant-shape-ii" >plant shape II</a></i>. At 13th level, you can assume the form of a Huge plant creature, as <i><a href="../../coreRulebook/spells/plantShape.html#plant-shape-iii" >plant shape III</a></i>. You can use this ability once per day, but the duration is 1 hour/level. You must be at least 3rd level to select this revelation.</p>
+				<p id="wood-armor"><i>Wood Armor (Su)</i>: You can conjure wooden armor around yourself, which grants you a +4 armor bonus. At 7th level, and every four levels thereafter, this bonus increases by +2. At 13th level, this armor grants you DR 5/slashing. You can use this armor for 1 hour per day per oracle level. This duration does not need to be consecutive, but it must be spent in 1-hour increments. The armor vanishes if you remove it.</p>
+				<p id="wood-bond"><i>Wood Bond (Ex)</i>: Your mystical bond with wood is such that your weapons become an extension of your body. You gain a +1 competence bonus on attack rolls when wielding a weapon made of or mostly consisting of wood (such as a bow, club, quarterstaff, or spear). This bonus increases by +1 at 5th level and every five levels thereafter.</p>
+				<p id="wood-sight"><i>Wood Sight (Su)</i>: As a move action, you can alter your vision to see through underbrush and plant growth that would normally grant concealment, up to a range of 60 feet (though darkness and other obstacles still may block your sight). At 7th level, you can use this ability to see through wood or other plant material as easily as if it were transparent glass, penetrating a number of feet of wood equal to your oracle level. You can use this ability a number of rounds per day equal to your oracle level, but these rounds do not need to be consecutive.</p>
+				<p id="wooden-weapon"><i>Wooden Weapon (Su)</i>: You can create a wooden club, quarterstaff, longspear, shortspear, or spear that lasts for 1 minute for every oracle level you possess. This weapon is appropriate for your size. You are considered proficient with the weapon. The weapon disappears after 1 round if it leaves your grasp. At 3rd level, the weapon is considered masterwork. At 7th level, 15th level, and 19th level, the weapon gains a +1 enhancement bonus. At 11th level, the weapon gains the <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-keen" >keen</a></i> weapon property (or the equivalent increase to its critical threat range, if it is a bludgeoning weapon). You can use this ability a number of times per day equal to 3 + your Charisma modifier.</p>
+				<p id="woodland-stride"><i>Woodland Stride (Ex)</i>: You can move through any sort of undergrowth (such as natural thorns, briars, overgrown areas, and similar terrain) at your normal speed and without taking damage or suffering any other impairment. Thorns, briars, and overgrown areas that have been magically manipulated to impede motion, however, still affect you.</p>
+				<p id="final-revelation"><b>Final Revelation</b>: Upon reaching 20th level, you become a living creature of wood. You are forevermore treated as the plant type rather than your original type for the purpose of spells and magical effects. Your skin takes on the appearance of polished wood grain, and you gain a +4 natural armor bonus to your Armor Class and damage reduction 10/&mdash; against wooden weapons or any natural attacks made by a wooden or woodlike creature. You gain immunity to paralysis, poison, polymorph, sleep, and stunning. At will, you can meld with any tree or single block of wood (as <i><a href="../../coreRulebook/spells/meldIntoStone.html#meld-into-stone" >meld into stone</a></i>, except wood only, and with no limit to how long you can remain in the wood).</p>
+				<h1 id="dual-cursed-oracle-(archetype)">Dual-Cursed Oracle (Archetype)</h1>
+				<p>All oracles are cursed to some degree, but some oracles bear an even heavier burden. Though doubly afflicted with supernatural or physical hindrances, a dual-cursed oracle can manipulate fortune and gains greater insights into her mystery.</p>
+				<p id="recommended-mysteries"><b>Recommended Mysteries</b>: Any.</p>
+				<p id="oracle's-curse"><b>Oracle's Curse</b>: A dual-cursed oracle must choose two curses at 1st level. One of these curses (oracle's choice) never changes its abilities as the oracle gains levels; for example, an oracle with clouded vision never gains darkvision 60 feet, blindsense, or blindsight. The other curse comes with its normal benefits.</p>
+				<p id="class-skills"><b>Class Skills</b>: A dual-cursed oracle gains no additional class skills from her mystery.</p>
+				<p id="bonus-spells"><b>Bonus Spells</b>: <i><a href="../../advancedPlayersGuide/spells/illOmen.html#ill-omen" >ill omen</a></i> (2nd), <i><a href="../../advancedPlayersGuide/spells/oracleSBurden.html#oracle's-burden" >oracle's burden</a></i> (4th), <i><a href="../../coreRulebook/spells/bestowCurse.html#bestow-curse" >bestow curse</a></i> (6th). These bonus spells replace the oracle's mystery bonus spells at these levels.</p>
+				<p id="revelations"><b>Revelations</b>: A dual-cursed oracle gains a new revelation at 5th level and 13th level. These are in addition to the normal revelations she receives at 3rd level, 7th level, and so on. In addition, the cursed oracle may select the following revelations in place of a mystery revelation.</p>
+				<p id="misfortune"><i>Misfortune (Ex)</i>: At 1st level, as an immediate action, you can force a creature within 30 feet to reroll any one d20 roll that it has just made before the results of the roll are revealed. The creature must take the result of the reroll, even if it's worse than the original roll. Once a creature has suffered from your misfortune, it cannot be the target of this revelation again for 1 day.</p>
+				<p id="fortune"><i>Fortune (Ex)</i>: At 5th level, as an immediate action, you can reroll any one d20 roll that you have just made before the results of the roll are revealed. You must take the result of the reroll, even if it's worse than the original roll. You can use this ability once per day at 5th level, and one additional time per day for every six oracle levels beyond 5th.</p>
+				<h1 id="enlightened-philosopher-(archetype)">Enlightened Philosopher (Archetype)</h1>
+				<p>The enlightened philosopher seeks enlightenment through compassion, moderation, and humility. By following her philosophy's teachings, the enlightened philosopher seeks to reach enlightenment and become one with the universe.</p>
+				<p id="alignment"><b>Alignment</b>: Any lawful.</p>
+				<p id="recommended-mysteries"><b>Recommended Mysteries</b>: ancestor, fire, heavens, lore, metal, nature, stone, time, waves, wood.</p>
+				<p id="class-skills"><b>Class Skills</b>: An enlightened philosopher adds <a href="../../coreRulebook/skills/linguistics.html#linguistics" >Linguistics</a> and all <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> skills to her list of class skills. These replace the additional class skills from her mystery.</p>
+				<p id="bonus-spells"><b>Bonus Spells</b>: <i><a href="../../coreRulebook/spells/owlSWisdom.html#owl-s-wisdom" >owl's wisdom</a></i> (4th), <i><a href="../../coreRulebook/spells/waterWalk.html#water-walk" >water walk</a></i> (6th), <i><a href="../../coreRulebook/spells/discernLies.html#discern-lies" >discern lies</a></i> (8th), <i><a href="../../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a></i> (10th), <i><a href="../../coreRulebook/spells/windWalk.html#wind-walk" >wind walk</a></i> (12th), <i><a href="../../coreRulebook/spells/etherealJaunt.html#ethereal-jaunt" >ethereal jaunt</a></i> (14th), <i><a href="../../coreRulebook/spells/momentOfPrescience.html#moment-of-prescience" >moment of prescience</a></i> (16th), <i><a href="../../coreRulebook/spells/astralProjection.html#astral-projection" >astral projection</a></i> (18th). These bonus spells replace the oracle's mystery bonus spells at these levels.</p>
+				<p id="revelations"><b>Revelations</b>: An enlightened philosopher must take the following revelation at 7th level.</p>
+				<p id="mental-acuity"><i>Mental Acuity (Ex)</i>: As the lore mystery revelation.</p>
+				<p id="final-revelation"><b>Final Revelation</b>: Upon achieving 20th level, you achieve true enlightenment and become one with the universe. You receive a bonus on all saving throws equal to your Charisma modifier. You become immune to confusion, exhaustion, fatigue, nausea, and sickened effects. You can take 20 on all <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> skill checks. Should you die, you are reborn 3 days later as a living example of the summoning of your chosen philosophy (treat as the <i><a href="../../coreRulebook/spells/reincarnate.html#reincarnate" >reincarnate</a></i> spell). This replaces the final revelation of the oracle's mystery.</p>
+				<h1 id="planar-oracle-(archetype)">Planar Oracle (Archetype)</h1>
+				<p>A planar oracle has an affinity with one of the Outer Planes. She is at home on the multiple planes of the Great Beyond, and can eventually become an outsider herself.</p>
+				<p id="recommended-mysteries"><b>Recommended Mysteries</b>: dark tapestry, flame, heavens, stone, waves, wind.</p>
+				<p id="bonus-spells"><b>Bonus Spells</b>: <i><a href="../../coreRulebook/spells/endureElements.html#endure-elements" >endure elements</a></i> (2nd), <i><a href="../../advancedPlayersGuide/spells/elementalSpeech.html#elemental-speech" >elemental speech</a></i> (4th), <i><a href="../../coreRulebook/spells/tongues.html#tongues" >tongues</a></i> (6th), <i><a href="../../advancedPlayersGuide/spells/planarAdaptation.html#planar-adaptation" >planar adaptation</a></i> (8th), <i><a href="../../coreRulebook/spells/planeShift.html#plane-shift" >plane shift</a></i> (10th), <i><a href="../../advancedPlayersGuide/spells/planarAdaptation.html#planar-adaptation,-mass" >mass planar adaptation</a></i> (12th), <i><a href="../../coreRulebook/spells/shadowWalk.html#shadow-walk" >shadow walk</a></i> (14th), <i><a href="../../coreRulebook/magicItems/armor.html#armor-etherealness" >etherealness</a></i> (16th), <i><a href="../../coreRulebook/spells/gate.html#gate" >gate</a></i> (18th). These bonus spells replace the oracle's mystery bonus spells at these levels.</p>
+				<p id="revelations"><b>Revelations</b>: At 1st level, you must choose one Outer Plane with which you have an affinity. This choice cannot be changed. A planar oracle must take the following revelation at 3rd level.</p>
+				<p id="planar-resistance"><i>Planar <a href="../../coreRulebook/spells/resistance.html#resistance" >Resistance</a> (Su)</i>: At 3rd level, you gain energy resistance 10 against one energy type associated with your chosen plane. At 11th level, your energy resistance increases to 20.</p>
+				<p id="final-revelation"><b>Final Revelation</b>: At 20th level, you become an extraplanar creature. Choose one outer plane, such as Heaven or the Abyss. You gain superficial physical characteristics as appropriate to natives of your chosen outer plane. For example, if your chosen plane is Heaven, you gain angelic features such as a halo and metallic skin. This change does not alter your Hit Dice, hit points, saving throws, skill points, class skills, or proficiencies. Your type changes to "outsider (extraplanar)," except on your associated plane, where your type is "outsider (native)." In addition, you gain immunity to your associated energy type and gain damage reduction 10/magic. Unlike other outsiders, you can still be brought back from the dead as if you were a member of your previous creature type. This replaces the final revelation of the oracle's mystery.</p>
+				<h1 id="possessed-oracle-(archetype)">Possessed Oracle (Archetype)</h1>
+				<p>Some oracles are possessed by spirits, demons, or similar beings. Instead of the possessed oracle drawing her powers from deities, these otherworldly forces work their magic through her.</p>
+				<p id="recommended-mysteries"><b>Recommended Mysteries</b>: Any.</p>
+				<p id="oracle's-curse"><b>Oracle's Curse</b>: A possessed oracle must choose the haunted or tongues curse at 1st level.</p>
+				<p id="bonus-spells"><b>Bonus Spells</b>: <i><a href="../../coreRulebook/spells/ventriloquism.html#ventriloquism" >ventriloquism</a></i> (1st), <i><a href="../../coreRulebook/spells/spiderClimb.html#spider-climb" >spider climb</a></i> (4th), <i><a href="../../advancedPlayersGuide/spells/screech.html#screech" >screech</a></i> (6th), <i><a href="../../advancedPlayersGuide/spells/sleepwalk.html#sleepwalk" >sleepwalk</a></i> (8th), <i><a href="../../coreRulebook/spells/telekinesis.html#telekinesis" >telekinesis</a></i> (10th), <i><a href="../../coreRulebook/spells/animateObjects.html#animate-objects" >animate objects</a></i> (12th), <i><a href="../../advancedPlayersGuide/spells/divineVessel.html#divine-vessel" >divine vessel</a></i> (16th). These bonus spells replace the oracle's normal mystery bonus spells at these levels.</p>
+				<p id="revelations"><b>Revelations</b>: A possessed oracle must take the following revelation at 1st level.</p>
+				<p id="two-minds"><i>Two Minds (Su)</i>: You gain a +2 bonus on Will saves against enchantment spells or effects. At 7th level, you may reroll a failed Will save once per day as an immediate action. You must take the second result, even if it is worse.</p>
+				<h1 id="seer-(archetype)">Seer (Archetype)</h1>
+				<p>While all oracles possess some ability at divination, the seer is a true prophet, able to see things as they really are, or will be.</p>
+				<p id="recommended-mysteries"><b>Recommended Mysteries</b>: lore, nature, time.</p>
+				<p id="bonus-spells"><b>Bonus Spells</b>: <i><a href="../../coreRulebook/spells/detectThoughts.html#detect-thoughts" >detect thoughts</a></i> (4th), <i><a href="../../coreRulebook/spells/clairaudienceClairvoyance.html#clairaudience-clairvoyance" >clairaudience/clairvoyance</a></i> (6th), <i><a href="../../coreRulebook/spells/scrying.html#scrying" >scrying</a></i> (8th), <i><a href="../../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a></i> (10th), <i><a href="../../coreRulebook/spells/legendLore.html#legend-lore" >legend lore</a></i> (12th), <i><a href="../../coreRulebook/spells/scrying.html#scrying-greater" >greater scrying</a></i> (14th), <i><a href="../../coreRulebook/spells/vision.html#vision" >vision</a></i> (16th), <i><a href="../../coreRulebook/spells/foresight.html#foresight" >foresight</a></i> (18th). These bonus spells replace the oracle's mystery bonus spells at these levels.</p>
+				<p id="revelations"><b>Revelations</b>: A seer must take the following revelations at the listed levels.</p>
+				<p id="natural-divination"><i>Natural <a href="../../coreRulebook/spells/divination.html#divination" >Divination</a> (Ex)</i>: As the nature mystery revelation. You must take this revelation at 1st level.</p>
+				<p id="gift-of-prophecy"><i>Gift of Prophecy (Su)</i>: Once per day, you can enter a trance to gain a glimpse of the future. This trance lasts for 1 minute, which must be uninterrupted and during which you can take no other actions. At 3rd level, you gain the benefits of an <i><a href="../../coreRulebook/spells/augury.html#augury" >augury</a></i> spell with 90% effectiveness. At 5th level, you gain the benefits of a <i><a href="../../coreRulebook/spells/divination.html#divination" >divination</a></i> spell with 90% effectiveness. At 9th level, the knowledge you gain is equivalent to a <i><a href="../../coreRulebook/spells/commune.html#commune" >commune</a></i> spell. None of these spell effects require material components. You must take this revelation at 3rd level.</p>
+				<h1 id="stargazer-(archetype)">Stargazer (Archetype)</h1>
+				<p>Some oracles seek meaning in the pattern of the stars across the night sky, the trails of comets, and the eternal orbits of the planets.</p>
+				<p id="recommended-mysteries"><b>Recommended Mysteries</b>: dark tapestry, heavens, lore, nature, time.</p>
+				<p id="class-skills"><b>Class Skills</b>: A stargazer adds <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (nature), <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a>, and <a href="../../coreRulebook/skills/survival.html#survival" >Survival</a> to her list of class skills. These replace the additional class skills from her mystery.</p>
+				<p id="bonus-spells"><b>Bonus Spells</b>: <i><a href="../../coreRulebook/spells/faerieFire.html#faerie-fire" >faerie fire</a></i> (2nd), <i><a href="../../coreRulebook/spells/glitterdust.html#glitterdust" >glitterdust</a></i> (4th), <i><a href="../../advancedPlayersGuide/spells/guidingStar.html#guiding-star-" >guiding star</a></i> (6th), <i><a href="../../advancedPlayersGuide/spells/wanderingStarMotes.html#wandering-star-motes" >wandering star motes</a></i> (8th), <i><a href="../../coreRulebook/spells/meteorSwarm.html#meteor-swarm" >meteor swarm</a></i> (18th). These bonus spells replace the oracle's mystery bonus spells at these levels.</p>
+				<p id="revelations"><b>Revelations</b>: A stargazer must take the following revelations at the listed levels.</p>
+				<p id="guiding-star"><i>Guiding Star (Su)</i>: As the heavens mystery revelation. You must take this revelation at 1st level.</p>
+				<p id="star-chart"><i>Star Chart (Ex)</i>: As the heavens mystery revelation. You must take this revelation at 7th level.</p>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Oracle",globalNavPath=[{ href: '/pathfinderRPG/prd/ultimateMagic/spellcastingClassOptions.html', name: 'Spellcasting Class Options' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

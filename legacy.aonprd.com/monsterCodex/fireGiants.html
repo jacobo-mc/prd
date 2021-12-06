@@ -1,0 +1,794 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Fire Giants</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "fireGiants.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "fireGiants.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "fireGiants.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "fireGiants.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "fireGiants.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "fireGiants.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "fireGiants.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "fireGiants.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "boggards.html">Boggards</a></li>
+						<li><a href = "bugbears.html">Bugbears</a></li>
+						<li><a href = "drow.html">Drow</a></li>
+						<li><a href = "duergar.html">Duergar</a></li>
+						<li><a href = "fireGiants.html">Fire Giants</a></li>
+						<li><a href = "frostGiants.html">Frost Giants</a></li>
+						<li><a href = "ghouls.html">Ghouls</a></li>
+						<li><a href = "gnolls.html">Gnolls</a></li>
+						<li><a href = "goblins.html">Goblins</a></li>
+						<li><a href = "hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "kobolds.html">Kobolds</a></li>
+						<li><a href = "lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "ogres.html">Ogres</a></li>
+						<li><a href = "orcs.html">Orcs</a></li>
+						<li><a href = "ratfolk.html">Ratfolk</a></li>
+						<li><a href = "sahuagin.html">Sahuagin</a></li>
+						<li><a href = "serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "troglodytes.html">Troglodytes</a></li>
+						<li><a href = "trolls.html">Trolls</a></li>
+						<li><a href = "vampires.html">Vampires</a></li>
+						<li><a href = "appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "fireGiants.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "fireGiants.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "fireGiants.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "fireGiants.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "fireGiants.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "fireGiants.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "fireGiants.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "fireGiants.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "fireGiants.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "fireGiants.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "fireGiants.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "fireGiants.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "fireGiants.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 class = "monster-header" id = "monster-codex-fire-giants">Fire Giants</h1>
+
+<p>When orc raiders ransack a sleepy countryside settlement, it's a tragedy; when fire giants do the same, the result is utter devastation. The distinction between an apocalypse and a raid by fire giants is semantics alone, as the conflagrations caused by these terrible warlords can consume villages, strongholds, and entire cities.</p>
+<p>Fire giants simultaneously embody the tempered reserve of finely crafted steel and the fury of wildfires. They are both the most warlike and the most organized of the giant races. They are contemplative, strategic, and violent&mdash;a dangerous combination for those that fall beneath the fierce gaze of fire giant nobility and their bloodthirsty generals. Fire giants' military campaigns are always preceded by careful, lengthy deliberation. Their war rooms and courts churn with activity; indeed, the undercurrent of violence can be felt in every facet of fire giant society.</p>
+<p>Numerous societies mention fire giants in their fables and histories, though never in a flattering light. Always portrayed as ruthless soldiers and cunning warlords, and often placed at the heart of devastating legends and stories of catastrophe, fire giants exemplify the horrors of war. This isn't because they're gifted with supernatural strength or because the boulders they hurl at their enemies smolder with heat and anger&mdash;those traits are accessories at best. The truth is far more dire than can be illustrated in any apocryphal myth or children's story: fire giants are intimately associated with war and destruction in lore and legend simply because they are strong and they despise the weak. Unfortunately for most of the world's other races, fire giants automatically perceive anything smaller than themselves as weak and pathetic.</p>
+<p>Fire giants dwell among craggy mountains and rocky badlands. They make their workshops in the cores of volcanoes, powering their forges with energy tapped from flowing lava and quenching their blazing arms and armor with the blood of their quarry. The smog created by fire giants' immense smelting factories and smithies roils with lightning and thunder during the dry season, and the black soot that hangs over a fire giant settlement might be mistaken by smaller folk for volcano smoke, though few lowland dwellers hold this misconception for long.</p>
+<p>Love is a mostly foreign concept among fire giants. Procreation occurs rarely, and often only as a by-product of other passions&mdash;a fire giant might feel the stir of desire after a glorious battlefield victory or the public decapitation of a reviled enemy, for instance. Conception is celebrated in the clan, but only because the birth of a strong child means another hearty warrior to add to the fire giants' ranks.</p>
+<p>The formative years of a fire giant's life are as marked by war as are the lives of the adults in the tribe. From birth, a youth is outfitted in custom-forged armor that is remolded and replaced as needed to fit the youngster's growing frame. It takes nearly half a century for a fire giant to reach adulthood; this period is a time of endless, brutal, bloody training. Sparring matches and competitions of strength are common measures of young fire giants' skill and promise. Tribal leaders watch such matches carefully, ever on the lookout for prospective future generals. They also identify those who are to be relegated to lesser positions in the tribe, and weaklings destined to be culled from the group. Fire giant society has no room for those who cannot pull their own weight. All young fire giants must demonstrate their worth by surviving for a time in exile outside the tribe's holdings, or die trying.</p>
+<p>Fire giants revel in warfare on any scale. Massacres and genocides entertain these hungry brutes as much as do small-scale skirmishes or one-on-one wrestling bouts. Of course, the battles that result in the most spilled blood are the ones that make it into fire giants' own oral legends. They have virtually no written lore, because they consider transcribing tales of warfare a waste of time&mdash;to fire giants, writing is best used to tally the deaths of their foes, count their mounds of pillaged riches, and catalog the slaves captured from the latest raid. Such bookkeeping is usually the work of enslaved scribes, so that no fire giants need sully their hands with ink or paper.</p>
+<p>Possibly the only factor that has stopped fire giants from spreading to the farthest corners of the globe and dominating entire nations is their fractious nature&mdash;their clans and tribes are constantly at odds with one another. Even in regions where fire giant rule is already practically ensured, rival clans might be unable to secure control if they cannot select a single ruler to unify and guide them. Their quick tempers and great pride makes treaties and alliances rare, and more than once a powerful fire giant kingdom has crumbled beneath the weight of such arrogance.</p>
+<p>Battles between fire giant clans are dramatic spectacles to behold&mdash;gouts of lava burst from the earth as magmablades call upon their fell flame magic, and steam hog-riding cavalry create veritable earthquakes as they charge headlong into the fiery fray. Such skirmishes might take place anywhere&mdash;location makes no difference to feuding fire giants. Woe betide any innocent bystanders caught in the crossfire of these epic clashes; entire settlements have been obliterated in the collateral damage of a fire giant feud.</p>
+<p>Fire giants hold might as the surest way to determine one's right to rule. Rulers who do not impose their strength upon those beneath them are weak and deserve to be deposed, while those who enforce their will by fear and brawn are formidable kings and queens indeed. The monarchic structure of fire giant society ensures that the lowest members of the clan know their place among the forges and the anvils, and it entrenches members of the nobility in the upper echelons of this brutish hierarchy.</p>
+<p>Full statistics for fire giants can be found in their <a href = "../bestiary/giant.html#giant-fire"><em>Bestiary</em> entry</a>.</p>
+
+<h1 id = "fire-giant-new-rules">New Rules</h1>
+<p>The following section presents a new oracle mystery, new feats, and new magic items common among fire giants.</p>
+
+<h2 id = "fire-giant-oracle-mystery">Fire Giant Oracle Mystery</h2>
+<p>Among fire giants, the rare but blessed oracles of the apocalypse are favored emissaries of the divine.</p>
+
+<h3 id = "apocalypse">Apocalypse</h3>
+<p><strong>Class Skills</strong>: An oracle with the apocalypse mystery adds <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a>, <a href = "../coreRulebook/skills/disguise.html#disguise">Disguise</a>, <a href = "../coreRulebook/skills/survival.html#survival">Survival</a>, and <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> to her list of class skills.</p>
+<p><strong>Bonus Spells</strong>: <em><a href = "../coreRulebook/spells/deathwatch.html#deathwatch">deathwatch</a> </em> (2nd), <em><a href = "../coreRulebook/spells/summonSwarm.html#summon-swarm">summon swarm</a></em> (4th), <em><a href = "../coreRulebook/spells/explosiveRunes.html#explosive-runes">explosive runes</a> </em> (6th), <em><a href = "../coreRulebook/spells/iceStorm.html#ice-storm">ice storm</a></em> (8th), <em><a href = "../coreRulebook/spells/insectPlague.html#insect-plague">insect plague</a></em> (10th), <em><a href = "../coreRulebook/spells/circleOfDeath.html#circle-of-death">circle of death</a></em> (12th), <em><a href = "../coreRulebook/spells/vision.html#vision">vision</a></em> (14th), <em><a href = "../coreRulebook/spells/incendiaryCloud.html#incendiary-cloud">incendiary cloud</a></em> (16th), <em><a href = "../coreRulebook/spells/meteorSwarm.html#meteor-swarm">meteor swarm</a> </em> (18th).</p>
+<p><strong>Revelations</strong>: An oracle with the apocalypse mystery can choose from any of the following revelations.</p>
+<p id = "defy-elements"><em>Defy Elements (Ex)</em> : Choose one energy type (acid, cold, fire, electricity, or sonic). You gain resistance 5 to the selected energy type. At 5th level and every 5 levels thereafter, you can choose an additional energy type for which to gain resistance 5, or you can choose a previously chosen energy type and increase that resistance by 5 (to a maximum resistance of 20 for any one energy type).</p>
+<p id = "destructive-roots"><em>Destructive Roots (Su)</em> : You can root yourself to your current spot and cause the world around you to fall apart. As a standard action, you can cause the ground in a 5-foot radius burst centered on you to crumble and rupture, becoming difficult terrain. As a move action on subsequent rounds, you can continue to concentrate on this area as though concentrating on a spell; doing so increases the radius of difficult terrain by 5 feet (maximum 30-foot-radius).You immediately cease concentrating if you move from the square you started in when you activated this ability. Difficult terrain created by this ability remains for 24 hours before returning to its original state. You must be at least 7th level to select this revelation.</p>
+<p id = "doomsayer"><em>Doomsayer (Su)</em> : As a standard action, you can utter a dire prophecy that strikes fear in your enemies and causes them to become shaken. To be affected, an enemy must be within 30 feet and able to hear you. This effect persists as long as the enemy is within 30 feet and you use a move action each round to continue your doomsaying. This ability cannot cause a creature to become frightened or panicked, even if the target was already shaken from another effect. This is a mind-affecting fear effect that relies on audible components. At 15th level, continuing your doomsaying each round is a swift action instead. You must be at least 7th level to select this revelation.</p>
+<p id = "dust-to-dust"><em>Dust to Dust (Su)</em> : Once per day as a standard action, you can cause the weapons around you to shatter in their wielders' hands. When you use this ability, attempt a single sunder combat maneuver, using your caster level in place of your base attack bonus and your Charisma modifier in place of Strength. Every creature except you in a 10-foot radius that is wielding a manufactured weapon is targeted by the same attempt. You deal an amount of damage to each weapon affected equal to 1d4 &times; your Charisma modifier (minimum 1d4). At 11th level, this damage increases to 1d6 &times; your Charisma modifier (minimum 1d6). At 10th level, you can use this ability twice per day.</p>
+<p id = "erosion-touch"><em>Erosion Touch (Su)</em> : As the nature mystery revelation.</p>
+<p id = "near-death"><em>Near Death (Su)</em> : As the bones mystery revelation.</p>
+<p id = "pass-the-torch"><em>Pass the Torch (Su)</em> : Once per day as a swift action, you can channel the energy of the apocalypse into your body, causing you to ignite. You take 1d4 points of fire damage when you activate this ability and again at the beginning of your turn until you end the effect. Any creature that begins its turn adjacent to you takes 1d6 points of fire damage as the fire spreads, plus 1 additional point of fire damage for each previous round you have had this ability active. For example, adjacent creatures take 1d6+5 points of damage if you have had this ability active for 5 rounds. You can use this ability for a number of rounds equal to 1/2 your oracle level, and you can end this ability as a free action. At 5th level and every 5 levels thereafter, you can use this ability one additional time per day.</p>
+<p id = "power-of-the-fallen"><em>Power of the Fallen (Sp)</em> : You can touch a dying creature and channel its life energy into another living creature. This ability acts as <em><a href = "../coreRulebook/spells/deathKnell.html#death-knell">death knell</a></em>, except you can choose any ally (including yourself) within 30 feet to gain the benefit of this effect, and you can apply the +2 enhancement bonus to either Strength, Dexterity, or Constitution. You can use this ability a number of times per day equal to your Charisma modifier. You must be at least 5th level to select this revelation.</p>
+<p id = "spell-blast"><em>Spell Blast (Su)</em> : As a swift action whenever you confirm a critical hit against an opponent with a spell that requires an attack roll, you can immediately attempt to bull rush your opponent in any direction. You don't provoke an attack of opportunity for this bull rush attempt.</p>
+<p id = "unstoppable-overrun"><em>Unstoppable Overrun (Ex)</em> : You can attempt overrun combat maneuvers against opponents that are up to two size categories larger than you. At 5th level, you gain <a href = "../coreRulebook/feats.html#improved-overrun">Improved Overrun</a> as a bonus feat. At 10th level, you gain <a href = "../coreRulebook/feats.html#greater-overrun">Greater Overrun</a> as a bonus feat. You don't need to meet the prerequisites to gain these feats.</p>
+<p><strong>Final Revelation</strong>: Upon reaching 20th level, you become a herald of the apocalypse and wield the awesome power to fulfill such prophecy. Anytime you successfully cast a spell or use an ability that bestows 1 or more negative levels, the effect bestows 1d4 additional negative levels. Whenever you confirm a critical hit against a creature (including with a melee, ranged, or spell attack), as a swift action you can curse the target of your attack, as the <em><a href = "../coreRulebook/spells/bestowCurse.html#bestow-curse">bestow curse</a></em> spell, except the target doesn't receive a Will saving throw to negate the effects and spell resistance does not apply against this ability.</p>
+
+<h2 id = "fire-giant-feat">Fire Giant Feat</h2>
+<p>Fire giant warriors have access to the following feat.</p>
+
+<h3 id = "smoking-boulder">Smoking Boulder</h3>
+<p>The boulders you hurl burn so hot that they smoke.</p>
+<p class = "stat-block-1"><strong>Prerequisites</strong>: Base attack bonus +11, heated rock special ability.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: When you throw a rock as part of an attack action and hit your target, you can cause the boulder to emit a 10-foot-radius spread of heavy smoke. The smoke lasts for 1d4 rounds.</p>
+
+<h2 id = "fire-giant-magic-items">Fire Giant Magic Items</h2>
+<p>The <em>burning</em> weapon special ability and <em>steaming </em> armor special ability add the power of fire and steam to the arms and armor of fire giants.</p>
+
+<p id = "burning-weapon-special-ability" class = "stat-block-title">Burning</p>
+<p class = "stat-block-1"><strong>Price</strong> +2 bonus; <strong>Aura</strong> strong evocation; <strong>CL</strong> 12th; <strong>Weight</strong> &mdash;</p>
+<p class = "stat-block">A <em>burning</em> weapon causes an unattended flammable object to ignite when struck (Fortitude DC 13 negates for magic items), dealing 1d6+1 points of fire damage to the object each round after it's ignited. An item made mostly or entirely out of wood is even more susceptible to this effect, taking 2d6+2 points of fire damage. This effect lasts for 1d4 rounds. A creature that ends its turn in the same space as a burning object takes 1d6+1 points of fire damage.</p>
+<p class = "stat-block">Up to three times per day, the bearer of a <em>burning </em> weapon can, on command, cause a single object that has been ignited by the weapon to burn even brighter, increasing the duration of its burning effect by 1d4+1 rounds and causing the fire to expand in a burst that extends 5 feet from the object. This burst of fire deals 1d6+1 points of fire damage to each creature in that area, and it can ignite unattended flammable objects within that area as if they had been hit with the weapon.</p>
+<p class = "stat-block">Fire giants often make use of <em>burning</em> weapons in their fervid crusades against other races. </p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +2 bonus</p>
+<p class = "stat-block-1"><a href = "pathfinderRPG/prd/coreRulebook/feats.html#craft-magic-arms-and-armor">Craft Magic Arms and Armor</a>, <em><a href = "../advancedPlayersGuide/spells/elementalTouch.html#_elemental-touch">elemental touch</a></em></p>
+
+<p id = "steaming-armor-special-ability" class = "stat-block-title">Steaming</p>
+<p class = "stat-block-1"><strong>Price</strong> +2 bonus; <strong>Aura</strong> faint evocation; <strong>CL</strong> 3rd; <strong>Weight</strong> &mdash;</p>
+<p class = "stat-block">A suit of <em>steaming </em> armor features numerous sliding plates and movable pieces to aid in ventilation. Three times per day, the wearer of <em>steaming </em> armor can speak a command word that causes the armor to emit a cloud of scorching steam. The steam lasts for 5 rounds or until the wearer dismisses it by speaking a second command word.</p>
+<p class = "stat-block">When the wearer speaks the command word and at the start of the wearer's turn during subsequent rounds, the steam deals 1d6 points of fire damage to any creature grappling the wearer or occupying the wearer's square (though not to the wearer) and 1 point of damage to any creature within a 5-foot-radius burst of the wearer (except for those that have already taken damage because they are grappling the wearer). While the <em>steaming</em> ability is active, a creature that is within 5 feet of the wearer that makes a melee attack or attempts a combat maneuver against the wearer must succeed at a DC 14 Reflex saving throw or take 1d6 points of fire damage.</p>
+<p class = "stat-block">The <em>steaming</em> armor special ability can be applied only to medium and heavy armors.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> +2 bonus</p>
+<p class = "stat-block-1"><a href = "pathfinderRPG/prd/coreRulebook/feats.html#craft-magic-arms-and-armor">Craft Magic Arms and Armor</a>, <em><a href = "../advancedPlayersGuide/spells/elementalAura.html#_elemental-aura">elemental aura</a></em></p>
+
+<h1 id = "example-fire-giant">Example Fire Giants</h1>
+
+<h2>Fire Giant Vanguard</h2>
+<p>When the fire giants unleash their savagery, the glaives and the strongarms are often in the lead.</p>
+
+<p id = "fire-giant-glaive" class = "stat-block-title">Fire Giant Glaive <span class = "stat-block-cr">CR 12</span></p>
+<p class = "stat-block-xp">XP 19,200</p>
+<p class = "stat-block-1">Fire giant fighter (polearm master) 2</p>
+<p class = "stat-block-1">LE Large humanoid (fire, giant)</p>
+<p class = "stat-block-1"><strong>Init</strong> +5; <strong>Senses</strong> low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +23</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 24, touch 10, flat-footed 23 (+6 armor, +1 Dex, +8 natural, &ndash;1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 197 (17 HD; 15d8+2d10+119)</p>
+<p class = "stat-block-1"><strong>Fort </strong>+19, <strong>Ref </strong>+6, <strong>Will </strong>+10</p>
+<p class = "stat-block-1"><strong>Defensive Abilities </strong>rock catching; <strong>Immune</strong> fire</p>
+<p class = "stat-block-1"><strong>Weaknesses </strong>vulnerable to cold</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed </strong>40 ft.</p>
+<p class = "stat-block-1"><strong>Melee </strong><em>+2 glaive </em> +24/+19/+14 (2d8+15/&times;3)</p>
+<p class = "stat-block-1"><strong>Ranged </strong>rock +14 (1d8+13 plus 1d6 fire)</p>
+<p class = "stat-block-1"><strong>Space </strong>10 ft.; <strong>Reach </strong>20 ft. (10 ft. with pole fighting)</p>
+<p class = "stat-block-1"><strong>Special Attacks </strong>heated rock, pole fighting &ndash;4, rock throwing (120 ft.)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str </strong>29, <strong>Dex </strong>13, <strong>Con </strong>25, <strong>Int </strong>12, <strong>Wis </strong>16, <strong>Cha </strong>10</p>
+<p class = "stat-block-1"><strong>Base Atk </strong>+13; <strong>CMB </strong>+23 (+27 overrun, +25 sunder); <strong>CMD </strong>34 (36 vs. overrun, 36 vs. sunder)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#cleave">Cleave</a>, <a href = "../coreRulebook/feats.html#great-cleave">Great Cleave</a>, <a href = "../coreRulebook/feats.html#greater-overrun">Greater Overrun</a>, <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#improved-overrun">Improved Overrun</a>, <a href = "../coreRulebook/feats.html#improved-sunder">Improved Sunder</a>, <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, Smoking Boulder*, <a href = "../coreRulebook/feats.html#step-up">Step Up</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (glaive)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +22, <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (armor) +9, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +20, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +23, <a href = "../coreRulebook/skills/profession.html#profession">Profession</a> (soldier) +9</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Giant</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potions of <a href = "../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds">cure serious wounds</a> </em> (3), tangleburn bags (3); <strong>Other Gear </strong><em>+1 mithral scale mail</em>, <em>+2 glaive</em>, 82 gp</p>
+
+<p id = "fire-giant-strongarm" class = "stat-block-title">Fire Giant Strongarm <span class = "stat-block-cr">CR 13</span></p>
+<p class = "stat-block-xp">XP 25,600</p>
+<p class = "stat-block-1">Fire giant fighter 3</p>
+<p class = "stat-block-1">LE Large humanoid (fire, giant)</p>
+<p class = "stat-block-1"><strong>Init </strong>+1; <strong>Senses </strong>low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +24</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC </strong>31, touch 11, flat-footed 30 (+9 armor, +1 deflection, +1 Dex, +8 natural, +3 shield, &ndash;1 size)</p>
+<p class = "stat-block-1"><strong>hp </strong>158 (18 HD; 15d8+3d10+75)</p>
+<p class = "stat-block-1"><strong>Fort </strong>+16, <strong>Ref </strong>+7, <strong>Will </strong>+11 (+1 vs. fear)</p>
+<p class = "stat-block-1"><strong>Defensive Abilities </strong>bravery +1, rock catching; <strong>Immune </strong>fire</p>
+<p class = "stat-block-1"><strong>Weaknesses </strong>vulnerable to cold</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed </strong>30 ft.</p>
+<p class = "stat-block-1"><strong>Melee </strong><em>+1 flaming warhammer </em> +27/+22/+17 (2d6+13/&times;3)</p>
+<p class = "stat-block-1"><strong>Ranged </strong>rock +15/+10/+5 (1d8+18 plus 1d6 fire)</p>
+<p class = "stat-block-1"><strong>Space </strong>10 ft.; <strong>Reach </strong>10 ft.</p>
+<p class = "stat-block-1"><strong>Special Attacks </strong>heated rock, rock throwing (120 ft.)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str </strong>35, <strong>Dex </strong>13, <strong>Con </strong>19, <strong>Int </strong>12, <strong>Wis </strong>16, <strong>Cha </strong>10</p>
+<p class = "stat-block-1"><strong>Base Atk </strong>+14; <strong>CMB</strong> +27 (+29 overrun, +29 sunder); <strong>CMD</strong> 39 (41 vs. overrun, 41 vs. sunder)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#improved-overrun">Improved Overrun</a>, <a href = "../coreRulebook/feats.html#impact-critical-shot">Impact Critical Shot</a>, <a href = "../coreRulebook/feats.html#improved-sunder">Improved Sunder</a>, <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#point-blank-shot">Point-Blank Shot</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#precise-shot">Precise Shot</a>, <a href = "../coreRulebook/feats.html#quick-draw">Quick Draw</a>, Smoking Boulder*, <a href = "../coreRulebook/feats.html#target-of-opportunity">Target of Opportunity</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (warhammer)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +22, <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (weapons) +9, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +21, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +24</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Giant</p>
+<p class = "stat-block-1"><strong>SQ</strong> armor training 1</p>
+<p class = "stat-block-1"><strong>Combat Gear </strong><em>potions of <a href = "../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds">cure serious wounds</a> </em> (2), fuse grenades (3); <strong>Other Gear </strong><em>+1 steaming* half-plate</em>, <em>+1 <a href = "../coreRulebook/magicItems/armor.html#_armor-arrow-catching">arrow catching</a> heavy steel <a href = "../coreRulebook/spells/shield.html#shield">shield</a></em>, <em>+1 flaming warhammer</em>, <em>ring of protection +1</em>, 98 gp</p>
+
+<h2 id = "fire-giant-lieutenant">Fire Giant Lieutenant</h2>
+<p>After the vanguard does its work, elite fire giant lieutenants lead the ranks of common fire giants into the fray, hammering the targets of their lords' ire into twisted, burning wreckage.</p>
+
+<p class = "stat-block-title">Fire Giant Lieutenant <span class = "stat-block-cr">CR 16</span></p>
+<p class = "stat-block-xp">XP 76,800</p>
+<p class = "stat-block-1">Fire giant cavalier 6</p>
+<p class = "stat-block-1">LE Large humanoid (fire, giant)</p>
+<p class = "stat-block-1"><strong>Init</strong> +4; <strong>Senses</strong> low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +19</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 32, touch 10, flat-footed 32 (+10 armor, +1 deflection, +8 natural, +4 shield, &ndash;1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 253 (21 HD; 15d8+6d10+153)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +21, <strong>Ref</strong> +7, <strong>Will</strong> +12</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> rock catching; <strong>Immune</strong> fire</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> vulnerable to cold</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 bastard sword </em> +27/+22/+17/+12 (2d8+10/19&ndash;20) or <em>+1 valiant lance </em> +26/+21/+16/+11 (2d6+14/&times;3) or 2 slams +25 (1d8+9)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> rock +17 (1d8+14 plus 1d6 fire)</p>
+<p class = "stat-block-1"><strong>Space</strong> 10 ft.; <strong>Reach</strong> 10 ft.</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> banner +2/+1, cavalier's charge, challenge (+8, 3/day), heated rock, rock throwing (120 ft.)</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> This fire giant mounts her giant dire boar and approaches the battle.</p>
+<p class = "stat-block-1"><strong>During Combat</strong> Entering the battle, the fire giant lieutenant challenges the most powerful opponent, and charges that foe atop her steed with her <em>valiant lance</em> . Once in the thick of combat, she eschews her lance for her bastard sword, hewing foes surrounding her.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str </strong>29, <strong>Dex </strong>11, <strong>Con </strong>25, <strong>Int </strong>12, <strong>Wis </strong>16, <strong>Cha </strong>17</p>
+<p class = "stat-block-1"><strong>Base Atk </strong>+17; <strong>CMB </strong>+27 (+29 overrun, +29 sunder); <strong>CMD </strong>38 (40 vs. overrun, 40 vs. sunder)</p>
+<p class = "stat-block-1"><strong>Feats </strong><a href = "../coreRulebook/feats.html#cleave">Cleave</a>, <a href = "../coreRulebook/feats.html#exotic-weapon-proficiency">Exotic Weapon Proficiency</a> (bastard sword), <a href = "../coreRulebook/feats.html#great-cleave">Great Cleave</a>, <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#improved-overrun">Improved Overrun</a>, <a href = "../coreRulebook/feats.html#improved-sunder">Improved Sunder</a>, <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#mounted-combat">Mounted Combat</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#precise-strike">Precise Strike</a>, <a href = "../advancedPlayersGuide/advancedFeats.html#pushing-assault">Pushing Assault</a>, <a href = "../coreRulebook/feats.html#trample">Trample</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (bastard sword)</p>
+<p class = "stat-block-1"><strong>Skills </strong><a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +15, <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (weapons) +9, <a href = "../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> +14, <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> +17, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +14, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nobility) +12, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +19, <a href = "../coreRulebook/skills/ride.html#ride">Ride</a> +10</p>
+<p class = "stat-block-1"><strong>Languages </strong>Common, Giant, Orc</p>
+<p class = "stat-block-1"><strong>SQ </strong>expert trainer +3, mount (giant dire boar), order of the lion (lion's call), tactician (2/day, 6 rounds, standard action)</p>
+<p class = "stat-block-1"><strong>Combat Gear </strong><em>potions of <a href = "../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds">cure serious wounds</a> </em> (3), <em>potion of <a href = "../coreRulebook/spells/haste.html#haste">haste</a></em> ; <strong>Other Gear </strong><em>+1 human-defiant</em><em> full plate</em>, <em>+2 ramming</em><em> heavy steel <a href = "../coreRulebook/spells/shield.html#shield">shield</a></em>, <em>+1 bastard sword</em>, <em>+1 valiant</em><em> lance</em>, <em>headband of mental prowess +2</em> (Int, Cha), <em>horn of battle clarity</em>, <em>horn of fog</em>, <em>ring of protection +1</em>, <em>vambraces of the tactician</em></p>
+
+<p class = "stat-block-title">Giant Dire Boar Mount <span class = "stat-block-cr">CR &mdash;</span></p>
+<p class = "stat-block-1">Giant <a href = "../bestiary/boar.html#boar-dire">dire boar</a></p>
+<p class = "stat-block-1"><strong>hp</strong> 52</p>
+
+<p>Kings and queens direct the movements and strategies of entire armies, but fire giant lieutenants command the rank-and-file soldiers on the battlefield from atop their massive mounts. Fire giant lieutenants are superb tacticians, and they inspire the troops under their command. The lieutenants know that to flee battle is to incur the wrath of their king or queen.</p>
+<p>The giant dire boar presented above functions as a mount for the fire giant lieutenant's mount ability.</p>
+
+
+<h2>Fire Giant Magmablade</h2>
+<p>Mixing force of arms with fiery magic, a magmablade is a tornado of flame and carnage.</p>
+
+<p id = "fire-giant-magmablade" class = "stat-block-title">Fire Giant Magmablade <span class = "stat-block-cr">CR 17</span></p>
+<p class = "stat-block-xp">XP 102,400</p>
+<p class = "stat-block-1">Fire giant magus 14</p>
+<p class = "stat-block-1">LE Large humanoid (fire, giant)</p>
+<p class = "stat-block-1"><strong>Init </strong>+0; <strong>Senses </strong>low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +35</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC </strong>35, touch 10, flat-footed 35 (+11 armor, +1 deflection, +10 natural, +4 shield, &ndash;1 size)</p>
+<p class = "stat-block-1"><strong>hp </strong>253 (29d8+123)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +23, <strong>Ref </strong>+10, <strong>Will </strong>+20</p>
+<p class = "stat-block-1"><strong>Defensive Abilities </strong>rock catching; <strong>DR</strong> 10/adamantine (140 points); <strong>Immune </strong>fire, <em><a href = "../coreRulebook/spells/magicMissile.html#magic-missile">magic missile</a></em> </p>
+<p class = "stat-block-1"><strong>Weaknesses </strong>vulnerable to cold</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed </strong>40 ft.</p>
+<p class = "stat-block-1"><strong>Melee </strong><em>+1 dispelling <a href = "../coreRulebook/magicItems/weapons.html#_weapons-keen">keen</a> battleaxe</em> +35/+30/+25/+20 (2d6+16/19&ndash;20/&times;3) or bab2 slams +33 (1d8+13)</p>
+<p class = "stat-block-1"><strong>Ranged </strong>rock +21 (1d8+19 plus 1d6 fire)</p>
+<p class = "stat-block-1"><strong>Space </strong>10 ft.; <strong>Reach </strong>10 ft.</p>
+<p class = "stat-block-1"><strong>Special Attacks </strong>greater spell combat, heated rock, improved spell combat, rock throwing (120 ft.), spell combat (&ndash;2 attack, +2 concentration, double bonus), spellstrike</p>
+<p class = "stat-block-1"><strong>Magus Spells Prepared </strong>(CL 14th; concentration +19)</p>
+<p class = "stat-block-2">5th&mdash;<em>geyse r</em> (DC 20), <em><a href = "../coreRulebook/spells/telekinesis.html#telekinesis">telekinesis</a> </em> (DC 20), <em><a href = "../coreRulebook/spells/wallOfStone.html#wall-of-stone">wall of stone</a> </em> (DC 20)</p>
+<p class = "stat-block-2">4th&mdash;<em><a href = "../ultimateMagic/spells/arcanaTheft.html#_arcana-theft">arcana theft</a></em>, <em><a href = "../advancedPlayersGuide/spells/ballLightning.html#_ball-lightning">ball lightning</a></em> (DC 19), <em><a href = "../coreRulebook/spells/blackTentacles.html#black-tentacles">black tentacles</a></em>, <em><a href = "../coreRulebook/spells/stoneskin.html#stoneskin">stoneskin</a></em>, <em><a href = "../coreRulebook/spells/wallOfFire.html#wall-of-fire">wall of fire</a></em> </p>
+<p class = "stat-block-2">3rd&mdash;<em><a href = "../coreRulebook/spells/blink.html#blink">blink</a></em>, <em><a href = "../coreRulebook/spells/dispelMagic.html#dispel-magic">dispel magic</a></em>, <em><a href = "../coreRulebook/spells/fireball.html#fireball">fireball</a> </em> (DC 18), <em><a href = "../coreRulebook/spells/flameArrow.html#flame-arrow">flame arrow</a></em>, <em><a href = "../coreRulebook/spells/fly.html">fly</a></em> </p>
+<p class = "stat-block-2">2nd&mdash;<em><a href = "../coreRulebook/spells/alterSelf.html#alter-self">alter self</a></em>, <em><a href = "../coreRulebook/spells/blur.html#blur">blur</a></em>, <em><a href = "../ultimateCombat/spells/effortlessArmor.html#_effortless-armor">effortless armor</a></em>, <em><a href = "../advancedPlayersGuide/spells/elementalTouch.html#_elemental-touch">elemental touch</a></em> (DC 17), <em><a href = "../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></em>, <em><a href = "../coreRulebook/spells/scorchingRay.html#scorching-ray">scorching ray</a></em> </p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/spells/burningHands.html#burning-hands">burning hands</a> </em> (DC 16), <em><a href = "../coreRulebook/spells/enlargePerson.html#enlarge-person">enlarge person</a> </em> (DC 16), <em><a href = "../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat">expeditious retreat</a></em>, <em><a href = "../advancedPlayersGuide/spells/flareBurst.html#_flare-burst">flare burst</a></em> (DC 16), <em><a href = "../coreRulebook/spells/magicMissile.html#magic-missile">magic missile</a></em>, <em><a href = "../ultimateCombat/spells/mirrorStrike.html#_mirror-strike">mirror strike</a></em>, <em><a href = "../coreRulebook/spells/reducePerson.html#reduce-person">reduce person</a> </em> (DC 16)</p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/acidSplash.html#acid-splash">acid splash</a></em>, <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/flare.html#flare">flare</a> </em> (DC 15), <em><a href = "../coreRulebook/spells/light.html#light">light</a></em>, <em><a href = "../advancedPlayersGuide/spells/spark.html#_spark-">spark</a></em></p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The magmablade casts <em><a href = "../ultimateCombat/spells/effortlessArmor.html#_effortless-armor">effortless armor</a></em>, <em><a href = "../coreRulebook/spells/stoneskin.html#stoneskin">stoneskin</a></em>, and <em><a href = "../coreRulebook/spells/shield.html#shield">shield</a></em> from a scroll.</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The magmablade wades into battle, using a mix of spellstrike, spellcasting, and melee prowess, causing as much havoc as possible.</p>
+<p class = "stat-block-1"><strong>Base Statistics </strong>Without <em><a href = "../ultimateCombat/spells/effortlessArmor.html#_effortless-armor">effortless armor</a></em>, <em><a href = "../coreRulebook/spells/stoneskin.html#stoneskin">stoneskin</a></em>, and <em><a href = "../coreRulebook/spells/shield.html#shield">shield</a></em>, the magmablade's statistics are <strong>AC </strong>31, touch 10, flat-footed 31; <strong>DR</strong> none; <strong>Immune</strong> fire; <strong>Speed</strong> 30 ft.; <strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +39, <a href = "../coreRulebook/skills/fly.html#fly">Fly</a> +24.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str </strong>36, <strong>Dex</strong> 11, <strong>Con</strong> 19, <strong>Int</strong> 20, <strong>Wis</strong> 16, <strong>Cha</strong> 10</p>
+<p class = "stat-block-1"><strong>Base Atk </strong>+21; <strong>CMB</strong> +35 (+37 overrun, +37 sunder); <strong>CMD</strong> 46 (48 vs. overrun, 48 vs. sunder)</p>
+<p class = "stat-block-1"><strong>Feats </strong><a href = "../ultimateMagic/ultimateMagicFeats.html#burning-spell">Burning Spell</a>, <a href = "../coreRulebook/feats.html#cleave">Cleave</a>, <a href = "../coreRulebook/feats.html#combat-casting"><a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a></a>, <a href = "../coreRulebook/feats.html#critical-focus">Critical Focus</a>, <a href = "../coreRulebook/feats.html#disruptive">Disruptive</a>, <a href = "../coreRulebook/feats.html#great-cleave">Great Cleave</a>, <a href = "../coreRulebook/feats.html#improved-critical">Improved Critical</a> (battleaxe), <a href = "../coreRulebook/feats.html#improved-overrun">Improved Overrun</a>, <a href = "../coreRulebook/feats.html#improved-sunder">Improved Sunder</a>, <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#maximize-spell">Maximize Spell</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#quicken-spell">Quicken Spell</a>, <a href = "../coreRulebook/feats.html#staggering-critical">Staggering Critical</a>, <a href = "../coreRulebook/feats.html#stunning-critical">Stunning Critical</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (battleaxe), <a href = "../coreRulebook/feats.html#weapon-specialization">Weapon Specialization</a> (battleaxe)</p>
+<p class = "stat-block-1"><strong>Skills </strong><a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +41, <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (weapons) +37, <a href = "../coreRulebook/skills/fly.html#fly">Fly</a> +26, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +32, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana) +15, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +35, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +37, <a href = "../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> +32</p>
+<p class = "stat-block-1"><strong>Languages </strong>Common, Draconic, Giant, Infernal, Orc</p>
+<p class = "stat-block-1"><strong>SQ </strong>arcane pool (12 points, +4), fighter training (fighter level 7), heavy armor proficiency, improved spell recall, knowledge pool, magus arcana (arcane edge, critical strike, maximized magic, spell shield), medium armor proficiency</p>
+<p class = "stat-block-1"><strong>Combat Gear </strong><em>potions of <a href = "../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds">cure serious wounds</a></em> (2), <em>scroll of <a href = "../coreRulebook/spells/bearSEndurance.html#bear-s-endurance">bear's endurance</a></em>, <em>scroll of <a href = "../coreRulebook/spells/haste.html#haste">haste</a></em>, <em>scrolls of <a href = "../coreRulebook/spells/shield.html#shield">shield</a> </em> (2), <em>wand of <a href = "../coreRulebook/spells/trueStrike.html#true-strike">true strike</a> </em> (50 charges); <strong>Other Gear </strong><em>+3 <a href = "../coreRulebook/magicItems/weapons.html#_spell-storing">spell storing</a> stone coat</em> (<em><a href = "../coreRulebook/spells/scorchingRay.html#scorching-ray">scorching ray</a></em> ), <em>+1 dispelling</em><em> <a href = "../coreRulebook/magicItems/weapons.html#_weapons-keen">keen</a> battleaxe</em>, <em>amulet of natural armor +2</em>, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +1</em>, <em>headband of vast intelligence +4</em>, <em>pearl of power </em> (3rd level), <em>ring of protection +1</em>, granite and diamond dust worth 250 gp</p>
+
+
+<h2>Fire Giant Doombringer</h2>
+<p>With a single pronouncement from a doombringer, an entire settlement can be reduced to cinder and ash.</p>
+
+<p id = "fire-giant-doombringer" class = "stat-block-title">Fire Giant Doombringer <span class = "stat-block-cr">CR 18</span></p>
+<p class = "stat-block-xp">XP 153,600</p>
+<p class = "stat-block-1">Fire giant oracle 16</p>
+<p class = "stat-block-1">LE Large humanoid (fire, giant)</p>
+<p class = "stat-block-1"><strong>Init </strong>+6; <strong>Senses </strong>low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +32</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC </strong>32, touch 12, flat-footed 30 (+9 armor, +1 deflection, +2 Dex, +8 natural, +3 shield, &ndash;1 size)</p>
+<p class = "stat-block-1"><strong>hp </strong>341 (31d8+202)</p>
+<p class = "stat-block-1"><strong>Fort </strong>+20, <strong>Ref </strong>+12, <strong>Will </strong>+20; +4 vs. disease, death effects, mind-affecting effects, poison, sleep, stunning</p>
+<p class = "stat-block-1"><strong>Defensive Abilities </strong>rock catching; <strong>DR </strong>2/&mdash;; <strong>Immune </strong>fire</p>
+<p class = "stat-block-1"><strong>Weaknesses </strong>vulnerable to cold</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed </strong>30 ft.</p>
+<p class = "stat-block-1"><strong>Melee </strong><em>+2 <a href = "../advancedPlayersGuide/magicItems/weapons.html#conductive">conductive</a> flail</em> +35/+30/+25/+20 (2d6+12)</p>
+<p class = "stat-block-1"><strong>Ranged </strong>rock +25 (1d8+14 plus 1d6 fire)</p>
+<p class = "stat-block-1"><strong>Space </strong>10 ft.; <strong>Reach </strong>10 ft.</p>
+<p class = "stat-block-1"><strong>Special Attacks </strong>heated rock, rock throwing (120 ft.)</p>
+<p class = "stat-block-1"><strong>Oracle Spells Known</strong> (CL 16th; concentration +22)</p>
+<p class = "stat-block-2">8th (3/day)&mdash;<em><a href = "../coreRulebook/spells/fireStorm.html#fire-storm">fire storm</a> </em> (DC 24), <em><a href = "../coreRulebook/spells/incendiaryCloud.html#incendiary-cloud">incendiary cloud</a> </em> (DC 24), <em><a href = "../coreRulebook/spells/inflictCriticalWounds.html#inflict-critical-wounds-mass">mass inflict critical wounds</a> </em> (DC 24)</p>
+<p class = "stat-block-2">7th (5/day)&mdash;<em><a href = "../coreRulebook/spells/blasphemy.html#blasphemy">blasphemy</a> </em> (DC 23), <em><a href = "../coreRulebook/spells/destruction.html#destruction">destruction</a> </em> (DC 23), <em><a href = "../coreRulebook/spells/inflictSeriousWounds.html#inflict-serious-wounds-mass">mass inflict serious wounds</a> </em> (DC 23),<em> <a href = "../coreRulebook/spells/vision.html#vision">vision</a></em> (DC 23)</p>
+<p class = "stat-block-2">6th (7/day)&mdash;<em>barrier blade</em>, <em><a href = "../coreRulebook/spells/circleOfDeath.html#circle-of-death">circle of death</a></em> (DC 22), <em><a href = "../coreRulebook/spells/harm.html#harm">harm</a> </em> (DC 22), <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength-mass">mass bull's strength</a></em>, <em><a href = "../coreRulebook/spells/inflictModerateWounds.html#inflict-moderate-wounds-mass">mass inflict moderate wounds</a> </em> (DC 22)</p>
+<p class = "stat-block-2">5th (7/day)&mdash;<em><a href = "../coreRulebook/spells/dispelGood.html#dispel-good">dispel good</a> </em> (DC 21), <em><a href = "../coreRulebook/spells/command.html#command-greater">greater command</a> </em> (DC 21), <em><a href = "../coreRulebook/spells/insectPlague.html#insect-plague">insect plague</a></em> (DC 21), <em><a href = "../coreRulebook/spells/inflictLightWounds.html#inflict-light-wounds-mass">mass inflict light wounds</a> </em> (DC 21), <em><a href = "../coreRulebook/spells/righteousMight.html#righteous-might">righteous might</a></em>, <em><a href = "../coreRulebook/spells/slayLiving.html#slay-living">slay living</a> </em> (DC 21)</p>
+<p class = "stat-block-2">4th (7/day)&mdash;<em><a href = "../advancedPlayersGuide/spells/blessingOfFervor.html#_blessing-of-fervor">blessing of fervor</a></em>, <em><a href = "../coreRulebook/spells/magicWeapon.html#magic-weapon-greater">greater magic weapon</a></em>, <em><a href = "../coreRulebook/spells/iceStorm.html#ice-storm">ice storm</a></em> (DC 20), <em><a href = "../coreRulebook/spells/imbueWithSpellAbility.html#imbue-with-spell-ability">imbue with spell ability</a></em>, <em><a href = "../coreRulebook/spells/inflictCriticalWounds.html#inflict-critical-wounds">inflict critical wounds</a> </em> (DC 20), <em><a href = "../coreRulebook/spells/unholyBlight.html#unholy-blight">unholy blight</a> </em> (DC 20)</p>
+<p class = "stat-block-2">3rd (7/day)&mdash;<em><a href = "../coreRulebook/spells/dispelMagic.html#dispel-magic">dispel magic</a></em>, <em><a href = "../coreRulebook/spells/inflictSeriousWounds.html#inflict-serious-wounds">inflict serious wounds</a> </em> (DC 19),<em> <a href = "../coreRulebook/spells/invisibilityPurge.html#invisibility-purge">invisibility purge</a></em>, <em><a href = "../coreRulebook/spells/magicCircleAgainstGood.html#magic-circle-against-good">magic circle against good</a></em>, <em><a href = "../coreRulebook/spells/stoneShape.html#stone-shape">stone shape</a></em>, <em><a href = "../coreRulebook/spells/explosiveRunes.html#explosive-runes">explosive runes</a></em> </p>
+<p class = "stat-block-2">2nd (8/day)&mdash;<em><a href = "../coreRulebook/spells/bearSEndurance.html#bear-s-endurance">bear's endurance</a></em>, <em><a href = "../coreRulebook/spells/darkness.html#darkness">darkness</a></em>, <em><a href = "../coreRulebook/spells/deathKnell.html#death-knell">death knell</a> </em> (DC 18), <em><a href = "../coreRulebook/spells/inflictModerateWounds.html#inflict-moderate-wounds">inflict moderate wounds</a></em>,<em> <a href = "../advancedPlayersGuide/spells/oracleSBurden.html#_oracle's-burden">oracle's burden</a></em> (DC 18), <em><a href = "../advancedPlayersGuide/spells/shareLanguage.html#_share-language-">share language</a></em>, <em><a href = "../coreRulebook/spells/summonSwarm.html#summon-swarm">summon swarm</a></em> </p>
+<p class = "stat-block-2">1st (8/day)&mdash;<em><a href = "../coreRulebook/magicItems/weapons.html#_weapons-bane">bane</a> </em> (DC 17), <em><a href = "../coreRulebook/spells/causeFear.html#cause-fear">cause fear</a> </em> (DC 17), <em><a href = "../coreRulebook/spells/deathwatch.html#deathwatch">deathwatch</a></em>, <em><a href = "../coreRulebook/spells/doom.html#doom">doom</a> </em> (DC 17), <em><a href = "../coreRulebook/spells/inflictLightWounds.html#inflict-light-wounds">inflict light wounds</a> </em> (DC 17), <em><a href = "../coreRulebook/spells/obscuringMist.html#obscuring-mist">obscuring mist</a></em>, <em><a href = "../coreRulebook/spells/shieldOfFaith.html#shield-of-faith">shield of faith</a></em> </p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/bleed.html#bleed">bleed</a> </em> (DC 16), <em><a href = "../coreRulebook/spells/createWater.html#create-water">create water</a></em>, <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/detectPoison.html#detect-poison">detect poison</a></em>, <em><a href = "../coreRulebook/spells/purifyFoodAndDrink.html#purify-food-and-drink">purify food and drink</a></em>, <em><a href = "../coreRulebook/spells/guidance.html#guidance">guidance</a></em>, <em><a href = "../coreRulebook/spells/readMagic.html#read-magic">read magic</a></em>, <em><a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a></em>, <em><a href = "../advancedPlayersGuide/spells/spark.html#_spark-">spark</a></em></p>
+<p class = "stat-block-2"><strong>Mystery</strong> apocalypse*</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str </strong>31, <strong>Dex</strong> 15, <strong>Con </strong>23, <strong>Int </strong>10, <strong>Wis </strong>16, <strong>Cha </strong>22</p>
+<p class = "stat-block-1"><strong>Base Atk </strong>+23; <strong>CMB</strong> +34 (+36 overrun, +36 sunder); <strong>CMD</strong> 47 (49 vs. overrun, 49 vs. sunder)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#cleave">Cleave</a>, <a href = "../coreRulebook/feats.html#combat-casting"><a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a></a>, <a href = "../coreRulebook/feats.html#critical-focus">Critical Focus</a>, <a href = "../coreRulebook/feats.html#empower-spell">Empower Spell</a>, <a href = "../advancedPlayersGuide/advancedFeats.html#extra-revelation">Extra Revelation</a>, <a href = "../coreRulebook/feats.html#great-cleave">Great Cleave</a>, <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#improved-overrun">Improved Overrun</a>, <a href = "../coreRulebook/feats.html#improved-sunder">Improved Sunder</a>, <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#martial-weapon-proficiency">Martial Weapon Proficiency</a> (flail), <a href = "../coreRulebook/feats.html#maximize-spell">Maximize Spell</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#quicken-spell">Quicken Spell</a>, <a href = "../advancedPlayersGuide/advancedFeats.html#selective-spell">Selective Spell</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (flail)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +19, <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (armor) +8, <a href = "../coreRulebook/skills/heal.html#heal">Heal</a> +21, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +17, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +32, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +34</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Giant; <em><a href = "../coreRulebook/spells/tongues.html#tongues">tongues</a></em> </p>
+<p class = "stat-block-1"><strong>SQ</strong> oracle's curse (<em><a href = "../coreRulebook/spells/tongues.html#tongues">tongues</a></em> ), revelations (doomsayer [30 ft., swift action], erosion touch [16d6, 5/day], near death, pass the torch [4/day, up to 8 rounds], power of the fallen [6/day], spell blast)</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potions of <a href = "../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds">cure serious wounds</a> </em> (3), <em>scroll of <a href = "../coreRulebook/spells/bearSEndurance.html#bear-s-endurance-mass">mass bear's endurance</a></em>, <em>scroll of <a href = "../coreRulebook/spells/wallOfStone.html#wall-of-stone">wall of stone</a></em>, <em>wand of <a href = "../coreRulebook/spells/bestowCurse.html#bestow-curse">bestow curse</a> </em> (15 charges); <strong>Other Gear </strong><em>+3 <a href = "../advancedPlayersGuide/magicItems/armor.html#unrighteous">unrighteous</a></em> <em>adamantine breastplate</em>, <em>+2 <a href = "../coreRulebook/spells/light.html#light">light</a> steel <a href = "../coreRulebook/spells/shield.html#shield">shield</a></em>, <em>+2 <a href = "../advancedPlayersGuide/magicItems/weapons.html#conductive">conductive</a></em><em> flail</em>, <em>belt of physical might +2 </em> (Str, Dex), <em>headband of alluring charisma +4</em>, <em>ring of protection +1</em>, spell component pouch, 495 gp</p>
+
+
+<h2 id = "fire-giant-queen">Fire Giant Queen</h2>
+<p>Strong, regal, and deadly, a queen among the fire giants takes her place in battle, and like the namesake chess piece moves decisively and with ruthless malice.</p>
+
+<p class = "stat-block-title">Fire Giant Queen <span class = "stat-block-cr">CR 19</span></p>
+<p class = "stat-block-xp">XP 204,800</p>
+<p class = "stat-block-1">Fire giant fighter 5/sorcerer 8</p>
+<p class = "stat-block-1">LE Large humanoid (fire, giant)</p>
+<p class = "stat-block-1"><strong>Init</strong> +2; <strong>Senses</strong> low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +33</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 31, touch 14, flat-footed 28 (+7 armor, +2 deflection, +2 Dex, +1 dodge, +10 natural, &ndash;1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 326 (28 HD; 15d8+5d10+8d6+204)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +22, <strong>Ref</strong> +10, <strong>Will</strong> +16 (+1 vs. fear)</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> bravery +1, rock catching; <strong>Immune</strong> fire</p>
+<p class = "stat-block-1"><strong>Weaknesses</strong> vulnerable to cold</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 40 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 dispelling furyborn heavy mace </em> +32/+27/+22/+17 (2d6+12/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Ranged </strong>rock +22 (1d8+15 plus 1d6 fire)</p>
+<p class = "stat-block-1"><strong>Space </strong>10 ft.; <strong>Reach </strong>10 ft.</p>
+<p class = "stat-block-1"><strong>Special Attacks </strong>heated rock, rock throwing (120 ft.), weapon training (hammers +1)</p>
+<p class = "stat-block-1"><strong>Sorcerer Spells Known </strong>(CL 8th; concentration +13)</p>
+<p class = "stat-block-2">4th (4/day)&mdash;<em><a href = "../coreRulebook/spells/dimensionDoor.html#dimension-door">dimension door</a></em> </p>
+<p class = "stat-block-2">3rd (6/day)&mdash;<em><a href = "../coreRulebook/spells/dispelMagic.html#dispel-magic">dispel magic</a></em>, <em><a href = "../coreRulebook/spells/fireball.html#fireball">fireball</a> </em> (DC 18), <em><a href = "../coreRulebook/spells/fly.html">fly</a></em> </p>
+<p class = "stat-block-2">2nd (7/day)&mdash;<em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em>, <em><a href = "../advancedPlayersGuide/spells/dustOfTwilight.html#_dust-of-twilight">dust of twilight</a></em> (DC 17), <em><a href = "../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></em>,<em> <a href = "../coreRulebook/spells/scorchingRay.html#scorching-ray">scorching ray</a></em> </p>
+<p class = "stat-block-2">1st (8/day)&mdash;<em><a href = "../coreRulebook/spells/burningHands.html#burning-hands">burning hands</a> </em> (DC 16), <em><a href = "../coreRulebook/spells/colorSpray.html#color-spray">color spray</a> </em> (DC 16), <em><a href = "../coreRulebook/spells/endureElements.html#endure-elements">endure elements</a></em>, <em><a href = "../coreRulebook/spells/identify.html#identify">identify</a></em>,<em> <a href = "../coreRulebook/spells/rayOfEnfeeblement.html#ray-of-enfeeblement">ray of enfeeblement</a> </em> (DC 16), <em><a href = "../coreRulebook/spells/summonMonster.html#summon-monster-i">summon monster I</a></em> </p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/acidSplash.html#acid-splash">acid splash</a></em>, <em><a href = "../coreRulebook/spells/bleed.html#bleed">bleed</a> </em> (DC 15), <em><a href = "../coreRulebook/spells/daze.html#daze">daze</a> </em> (DC 15), <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/detectPoison.html#detect-poison">detect poison</a></em>, <em><a href = "../coreRulebook/spells/flare.html#flare">flare</a> </em> (DC 15), <em><a href = "../coreRulebook/spells/readMagic.html#read-magic">read magic</a></em>, <em><a href = "../coreRulebook/spells/touchOfFatigue.html#touch-of-fatigue">touch of fatigue</a> </em> (DC 15)</p>
+<p class = "stat-block-2"><strong>Bloodline </strong>arcane</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The fire giant queen uses a mix of spells and martial power to show her dominance in battle.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 31, <strong>Dex</strong> 15, <strong>Con</strong> 25, <strong>Int</strong> 17, <strong>Wis</strong> 14, <strong>Cha</strong> 20</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +20; <strong>CMB</strong> +31 (+33 overrun, +33 sunder); <strong>CMD</strong> 46 (48 vs. overrun, 48 vs. sunder)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#cleave">Cleave</a>, <a href = "../coreRulebook/feats.html#combat-casting"><a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a></a>, <a href = "../coreRulebook/feats.html#critical-focus">Critical Focus</a>, <a href = "../coreRulebook/feats.html#dodge">Dodge</a>, <a href = "../coreRulebook/feats.html#enlarge-spell">Enlarge Spell</a>, <a href = "../coreRulebook/feats.html#eschew-materials">Eschew Materials</a>, <a href = "../coreRulebook/feats.html#extend-spell">Extend Spell</a>, <a href = "../coreRulebook/feats.html#great-cleave">Great Cleave</a>, <a href = "../coreRulebook/feats.html#improved-critical">Improved Critical</a> (heavy mace), <a href = "../coreRulebook/feats.html#improved-overrun">Improved Overrun</a>, <a href = "../coreRulebook/feats.html#improved-sunder">Improved Sunder</a>, <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#maximize-spell">Maximize Spell</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#quicken-spell">Quicken Spell</a>, <a href = "../coreRulebook/feats.html#scribe-scroll">Scribe Scroll</a>, <a href = "../coreRulebook/feats.html#stunning-critical">Stunning Critical</a>, <a href = "../coreRulebook/feats.html#tiring-critical">Tiring Critical</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (heavy mace)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +22, <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (weapons) +11, <a href = "../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> +21, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +16, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana) +24, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +33, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +34, <a href = "../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> +36</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Giant, Infernal</p>
+<p class = "stat-block-1"><strong>SQ</strong> arcane bond (mace), armor training 1, bloodline arcana (+1 DC for metamagic spells that increase spell level), metamagic adept (2/day)</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potions of <a href = "../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds">cure serious wounds</a> </em> (3), <em>potions of <a href = "../coreRulebook/spells/invisibility.html#invisibility">invisibility</a> </em> (2), <em>scrolls of <a href = "../coreRulebook/spells/darkness.html#darkness">darkness</a> </em> (2), <em>scroll of <a href = "../coreRulebook/spells/flameArrow.html#flame-arrow">flame arrow</a></em>, <em>scrolls of <a href = "../coreRulebook/spells/lightningBolt.html#lightning-bolt">lightning bolt</a> </em> (2), <em>scroll of <a href = "../coreRulebook/spells/summonMonster.html#summon-monster-iv">summon monster IV</a></em>, <em>wand of <a href = "../coreRulebook/spells/scorchingRay.html#scorching-ray">scorching ray</a> </em> (22 charges); <strong>Other Gear </strong><em>+3 mithral <a href = "../coreRulebook/magicItems/weapons.html#_spell-storing">spell storing</a></em><em> chain shirt</em>, <em>+1 dispelling</em><em> furyborn</em><em> heavy mace</em>, <em>amulet of natural armor +2</em>, <em>belt of physical perfection +2</em>, <em>headband of mental prowess +4 </em> (Int, Cha), <em>ring of protection +2</em> </p>
+
+<p>Many fire giant queens rule their tribes alongside their husbands, whom they wed for life in marriages based on political power rather than romance. Other fire giant queens reign alone, bowing to no king and needing no partner to supplement their own considerable strength and power.</p>
+
+
+<h2 id = "fire-giant-king">Fire Giant King</h2>
+<p>A fire giant king is not content to loiter on his throne. He searches for his enemies and expands his territory with resourceful vigor.</p>
+
+<p class = "stat-block-title">Fire Giant King <span class = "stat-block-cr">CR 20</span></p>
+<p class = "stat-block-xp">XP 307,200</p>
+<p class = "stat-block-1">Fire giant ranger 10</p>
+<p class = "stat-block-1">LE Large humanoid (fire, giant)</p>
+<p class = "stat-block-1"><strong>Init</strong> +2; <strong>Senses</strong> low-light vision; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +38</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 34, touch 10, flat-footed 34 (+11 armor, +3 deflection, &ndash;2 Dex, +13 natural, &ndash;1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 382 (25 HD; 15d8+10d10+260)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +26, <strong>Ref</strong> +10, <strong>Will</strong> +14</p>
+<p class = "stat-block-1"><strong>Defensive Abilities </strong>evasion, rock catching; <strong>Immune </strong>fire</p>
+<p class = "stat-block-1"><strong>Weaknesses </strong>vulnerable to cold</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed </strong>30 ft.</p>
+<p class = "stat-block-1"><strong>Melee </strong><em>+1 <a href = "../coreRulebook/magicItems/weapons.html#_weapons-brilliant-energy">brilliant energy</a> greatsword</em> +36/+31/+26/+21 (3d6+22/17&ndash;20) or 2 slams +34 (1d8+14)</p>
+<p class = "stat-block-1"><strong>Ranged </strong>rock +19 (1d8+21 plus 1d6 fire)</p>
+<p class = "stat-block-1"><strong>Space </strong>10 ft.; <strong>Reach </strong>10 ft.</p>
+<p class = "stat-block-1"><strong>Special Attacks </strong>combat style (two-handed weapon), favored enemy (animals +2, dragons +4, dwarves +4), heated rock, rock throwing (120 ft.)</p>
+<p class = "stat-block-1"><strong>Ranger Spells Prepared </strong>(CL 7th; concentration +11)</p>
+<p class = "stat-block-2">3rd&mdash;<em><a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em> </p>
+<p class = "stat-block-2">2nd&mdash;<em><a href = "../advancedPlayersGuide/spells/aspectOfTheBear.html#_aspect-of-the-bear">aspect of the bear</a></em>, <em><a href = "../coreRulebook/spells/spikeGrowth.html#spike-growth">spike growth</a></em> (DC 16)</p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/spells/entangle.html#entangle">entangle</a> </em> (DC 15), <em><a href = "../coreRulebook/spells/longstrider.html#longstrider">longstrider</a></em>, <em><a href = "../coreRulebook/spells/resistEnergy.html#resist-energy">resist energy</a></em> </p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The fire giant king casts <em><a href = "../advancedPlayersGuide/spells/aspectOfTheBear.html#_aspect-of-the-bear">aspect of the bear</a></em> and <em><a href = "../coreRulebook/spells/longstrider.html#longstrider">longstrider</a></em> .</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The king typically leads his warriors into battle, supporting his troops and tearing through his enemies.</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> Without <em><a href = "../advancedPlayersGuide/spells/aspectOfTheBear.html#_aspect-of-the-bear">aspect of the bear</a></em> and <em><a href = "../coreRulebook/spells/longstrider.html#longstrider">longstrider</a></em>, the fire giant king's statistics are <strong>AC</strong> 32, touch 10, flat-footed 32, <strong>Speed</strong> 30 ft.; <strong>CMB</strong> +36 (+38 bull rush, +38 overrun, +38 sunder)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str </strong>39, <strong>Dex </strong>7, <strong>Con </strong>30, <strong>Int </strong>13, <strong>Wis </strong>18, <strong>Cha </strong>14</p>
+<p class = "stat-block-1"><strong>Base Atk </strong>+21; <strong>CMB </strong>+38 (+40 bull rush, +40 overrun, +40 sunder); <strong>CMD </strong>47 (49 vs. bull rush, 49 vs. overrun, 49 vs. sunder)</p>
+<p class = "stat-block-1"><strong>Feats </strong><a href = "../coreRulebook/feats.html#cleave">Cleave</a>, <a href = "../coreRulebook/feats.html#endurance">Endurance</a>, <a href = "../coreRulebook/feats.html#great-cleave">Great Cleave</a>, <a href = "../coreRulebook/feats.html#improved-bull-rush">Improved Bull Rush</a>, <a href = "../coreRulebook/feats.html#improved-critical">Improved Critical</a> (greatsword), <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../bestiary/monsterFeats.html#improved-natural-armor">Improved Natural Armor</a>, <a href = "../coreRulebook/feats.html#improved-overrun">Improved Overrun</a>, <a href = "../coreRulebook/feats.html#improved-sunder">Improved Sunder</a>, <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#skill-focus">Skill Focus</a> (<a href = "../coreRulebook/skills/perception.html#perception">Perception</a>), <a href = "../coreRulebook/feats.html#vital-strike">Vital Strike</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (greatsword)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +28, <a href = "../coreRulebook/skills/craft.html#craft">Craft</a> (armor) +9, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +30, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (geography) +14, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nobility) +11, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +38, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +17, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +7</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Giant</p>
+<p class = "stat-block-1"><strong>SQ </strong>favored terrain (mountain +4, underground +2), hunter's bond (companions), swift tracker, track +5, wild empathy +12, woodland stride</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>boots of <a href = "../coreRulebook/magicItems/weapons.html#_weapons-speed">speed</a></em>, <em>potions of <a href = "../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds">cure serious wounds</a> </em> (2); <strong>Other Gear</strong> <em>+5 breastplate</em>, <em>+1 <a href = "../coreRulebook/magicItems/weapons.html#_weapons-brilliant-energy">brilliant energy</a> greatsword</em>, <em>amulet of natural armor +2</em>, <em>belt of physical might +4 </em> (Str, Con), <em>headband of mental superiority +2</em>, <em>ring of protection +3</em> </p>
+
+<p>Fire giant kings rule over their volcanic dominions with a cruel and heavy hand. Most kings seek the hand of a queen to reign beside them, both to secure their own power and to provide heirs to accede to their thrones when they inevitably fall in battle. A fire giant king must always watch his back, however, for there are always claimants eager to seize his position.</p>
+
+
+<h1 id = "steam-hog">Steam Hog</h1>
+<p><em>This massive warthog is outfitted with all manner of steel armor and unnatural augmentations, including a pair of razor-sharp metal tusks.</em> </p>
+
+<p class = "stat-block-title">Steam Hog <span class = "stat-block-cr">CR 7</span></p>
+<p class = "stat-block-xp">XP 3,200</p>
+<p class = "stat-block-1">N Huge magical beast</p>
+<p class = "stat-block-1"><strong>Init </strong>+4; <strong>Senses</strong> darkvision 60 ft., low-light vision, scent; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +10</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC </strong>19, touch 8, flat-footed 19 (+5 armor, +6 natural, &ndash;2 size)</p>
+<p class = "stat-block-1"><strong>hp </strong>94 (9d10+45)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +10, <strong>Ref </strong>+6, <strong>Will </strong>+6</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> ferocity; <strong>DR </strong>2/&mdash;; <strong>Resist </strong>fire 15</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed </strong>30 ft., burrow 10 ft.</p>
+<p class = "stat-block-1"><strong>Melee </strong>gore +14 (2d6+7 plus 1d6 fire), 2 hooves +9 (1d8+3)</p>
+<p class = "stat-block-1"><strong>Space </strong>15 ft.; <strong>Reach </strong>10 ft.</p>
+<p class = "stat-block-1"><strong>Special Attacks </strong>steam cloud, trample (1d8+10, DC 21)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str </strong>24, <strong>Dex </strong>11, <strong>Con</strong> 18, <strong>Int </strong>1, <strong>Wis </strong>12, <strong>Cha </strong>9</p>
+<p class = "stat-block-1"><strong>Base Atk </strong>+9; <strong>CMB </strong>+18; <strong>CMD </strong>28 (32 vs. trip)</p>
+<p class = "stat-block-1"><strong>Feats </strong><a href = "../coreRulebook/feats.html#cleave">Cleave</a>, <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a></p>
+<p class = "stat-block-1"><strong>Skills </strong><a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +10, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +10</p>
+<p class = "stat-block-breaker">Ecology</p>
+<p class = "stat-block-1"><strong>Environment </strong>warm mountains</p>
+<p class = "stat-block-1"><strong>Organization </strong>solitary, cavalry (2&ndash;4 plus 2&ndash;4 fire giants), or stampede (5&ndash;8 plus 3&ndash;8 fire giants)</p>
+<p class = "stat-block-1"><strong>Treasure </strong>standard (Huge adamantine scale mail barding, other treasure)</p>
+<p class = "stat-block-breaker">Special Abilities</p>
+<p class = "stat-block-1"><strong>Steam Cloud (Ex) </strong>As a standard action, a steam hog can emit a cloud of steam from its snout in a 10-foot-radius spread. The initial burst of steam deals 2d6 points of fire damage to any creature in the area. The cloud remains for 1d4 rounds once created, acting as a 10-foot-radius <em><a href = "../coreRulebook/spells/obscuringMist.html#obscuring-mist">obscuring mist</a></em> . Any creature that begins its turn in the area of the steam must succeed at a DC 18 Fortitude save or take 1d6 points of fire damage. A steam hog can use its steam cloud only once every 1d6 rounds. The save DC is Constitution-based.</p>
+
+<p>The military advancements of fire giants aren't restricted only to arms and armor&mdash;just as ore is dredged from the mountains for these giants' cruel forges, animals are culled from the wilds to serve as fire giant weaponry. In addition to using hell hounds, red dragons, and other fiery fauna for their brutal campaigns, fire giants have created several unique species of war beasts all their own. Chief among these amalgamations of flesh and steel are the malformed swine known as steam hogs&mdash;enormous snorting brutes charged with heading the front lines of fire giant armies, each one capable of laying low an entire platoon of enemy soldiers.</p>
+<p>While fire giants are more than capable of crafting new armor for their steam hogs, they take great pleasure in bedecking their prized war beasts with the reforged arms and armor of their vanquished foes. In this way, the armor and accoutrements of a veteran steam hog serve as a record of the battles and wars the beast has fought in. When such a steam hog falls in battle, its armor&mdash;and thus its history&mdash;are often kept by sentimental fire giant handlers as treasured heirlooms.</p>
+<p>Steam hogs average 16 feet long from snout to tail and 8 feet tall at the shoulder. They can weigh up to 3 tons, or 4 tons when equipped with adamantine scale barding.</p>
+
+
+<h1 id = "fire-giant-encounters">Encounters</h1>
+<p>The following encounter groups represent some of the most common ways a band of adventurers might have a run-in with fire giants, or common military groupings when fire giants are on campaign.</p>
+
+<h2>Scouting Party (CR 15)</h2>
+<p>Before launching a full-scale assault, fire giants often determine the best means of attack by sending out a small group to perform reconnaissance.</p>
+
+<p class = "stat-block-title">Fire Giant Glaives (2) <span class = "stat-block-cr">CR 12</span></p>
+<p class = "stat-block-xp">XP 19,200 each</p>
+<p class = "stat-block-1"><strong>hp </strong>197 each</p>
+
+<p class = "stat-block-title">Fire Giants (2) <span class = "stat-block-cr">CR 10</span></p>
+<p class = "stat-block-xp">XP 9,600 each</p>
+<p class = "stat-block-1"><strong>hp </strong>142 each</p>
+
+<h2>Artillery (CR 17)</h2>
+<p>Rarely seen but surely felt, fire giant artillery squads hang back on the battlefield, throwing flaming boulders and launching assaults from afar. But these warriors are just as effective in closer combat as well.</p>
+
+<p class = "stat-block-title">Fire Giant Strongarms (3) <span class = "stat-block-cr">CR 13</span></p>
+<p class = "stat-block-xp">XP 25,600 each</p>
+<p class = "stat-block-1"><strong>hp </strong>158 each</p>
+
+<p class = "stat-block-title">Fire Giants (3) <span class = "stat-block-cr">CR 10</span></p>
+<p class = "stat-block-xp">XP 9,600 each</p>
+<p class = "stat-block-1"><strong>hp </strong>142 each</p>
+
+<h2>Raiding Party (CR 19)</h2>
+<p>Settlements that find themselves in the path of fire giants' territorial expansion have much to fear from the prospect of a fire giant raiding party.</p>
+
+<p class = "stat-block-title">Fire Giant Strongarms (4) <span class = "stat-block-cr">CR 13</span></p>
+<p class = "stat-block-xp">XP 25,600 each</p>
+<p class = "stat-block-1"><strong>hp </strong>158 each</p>
+
+<p class = "stat-block-title">Fire Giants (8) <span class = "stat-block-cr">CR 10</span></p>
+<p class = "stat-block-xp">XP 9,600 each</p>
+<p class = "stat-block-1"><strong>hp </strong>142 each</p>
+
+<p class = "stat-block-title">Hell Hounds (12) <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800 each</p>
+<p class = "stat-block-1"><strong>hp </strong>30 each</p>
+
+<p class = "stat-block-title">Steam Hogs (5) <span class = "stat-block-cr">CR 7</span></p>
+<p class = "stat-block-xp">XP 3,200 each</p>
+<p class = "stat-block-1"><strong>hp </strong>94 each</p>
+
+<h2>Royal Accompaniment (CR 23)</h2>
+<p>Some fire giant nobles deem it necessary to descend from their thrones to dally among the common laborers and soldiers of the clan, or to survey their newly conquered holdings. They're escorted by a small group of loyal lieutenants to ensure their safety from would-be assassins. When not traveling, these lieutenants serve as royal guards in fire giant throne rooms.</p>
+
+<p class = "stat-block-title">Fire Giant King <span class = "stat-block-cr">CR 20</span></p>
+<p class = "stat-block-xp">XP 307,200</p>
+<p class = "stat-block-1"><strong>hp</strong> 382</p>
+
+<p class = "stat-block-title">Fire Giant Lieutenants (4) <span class = "stat-block-cr">CR 16</span></p>
+<p class = "stat-block-xp">XP 76,800 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 253 each</p>
+
+<p class = "stat-block-title">Fire Giant Queen <span class = "stat-block-cr">CR 19</span></p>
+<p class = "stat-block-xp">XP 204,800</p>
+<p class = "stat-block-1"><strong>hp </strong>326</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Fire Giants",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

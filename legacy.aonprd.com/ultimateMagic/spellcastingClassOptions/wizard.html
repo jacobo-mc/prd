@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Wizard</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "wizard.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "wizard.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "wizard.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "wizard.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "wizard.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="wizard" class="monster-header">Wizard</h1>
+				
+				<p>Wizards have a diverse history from all over the world, and legends attribute to them many strange powers. This section features arcane discoveries (magical secrets wizards can learn), a new archetype (the scrollmaster), and two new wizard schools (elemental metal and elemental wood).</p>
+				<h1 id="arcane-discoveries">Arcane Discoveries</h1>
+				<p>Wizards spend much of their lives seeking deeper truths, hunting knowledge as if it were life itself. The wizard's power is not necessarily the spells he wields; spells are merely the outward, most visible manifestation of that power. A wizard's true power is in his fierce intelligence, his dedication to his craft, and his ability to peel back the surface truths of reality to understand the fundamental underpinnings of existence. A wizard spends much of his time researching spells, and would rather find an undiscovered library than a room full of gold. A wizard need not be a reclusive bookworm, but he must have a burning curiosity for the unknown. Arcane discoveries are the results of this obsession with magic. A wizard can learn an arcane discovery in place of a regular feat or wizard bonus feat.</p>
+				<p id="arcane-builder"><b>Arcane Builder</b>: You have an exceptional understanding of the theory behind creating magical items. Select one type of magic item (potions, wondrous items, and so on). You create items of this type 25% faster than normal, and gain a +4 bonus on <a href="../../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> checks (or other checks, as appropriate) to craft items of this type. You may select this discovery multiple times; its effects do not stack. Each time you select this discovery, it applies to a different type of magic item.</p>
+				<p id="fast-study"><b>Fast Study</b>: Normally, a wizard spends 1 hour preparing all of his spells for the day, or proportionately less if he only prepares some spells, with a minimum of 15 minutes of preparation. Thanks to mental discipline and clever mnemonics, you can prepare all of your spells in only 15 minutes, and your minimum preparation time is only 1 minute. You must be at least a 5th-level wizard to select this discovery.</p>
+				<p id="feral-speech"><b>Feral Speech (Su)</b>: You gain the ability to speak with and understand the response of any animal as if using <i><a href="../../coreRulebook/spells/speakWithAnimals.html#speak-with-animals" >speak with animals</a></i>, though each time you speak to animals, you must decide to communicate with either amphibians, birds, fish, mammals, or reptiles, and can only speak to and understand animals of that type. You can make yourself understood as far as your voice carries. This discovery does not predispose any animal addressed toward you in any way. When you reach 12th level, you can also use this ability to communicate with vermin. You must be at least a 5th-level wizard to select this discovery.</p>
+				<p id="golem-constructor"><b>Golem Constructor</b>: You have learned the art and craft of creating a single type of golem (such as stone golems or iron golems). When creating a golem of this type, you count as having the <a href="../../coreRulebook/feats.html#craft-wondrous-item" >Craft Wondrous Item</a>, <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, and <a href="../../bestiary/monsterFeats.html#craft-construct" >Craft Construct</a> feats. You must meet all other construction requirements for the golem as normal. You may select this discovery multiple times. Each time you select this discovery, it applies to a different kind of golem. You must be at least a 9th-level wizard to select this discovery.</p>
+				<p id="immortality"><b>Immortality (Ex)</b>: You discover a cure for aging, and from this point forward you take no penalty to your physical ability scores from advanced age. If you are already taking such penalties, they are removed at this time. You must be at least a 20th-level wizard to select this discovery.</p>
+				<p id="multimorph"><b>Multimorph (Su)</b>: Your studies in transmogrification have increased your control over shapechanging spells. When you cast a spell of the polymorph subschool on yourself, you may expend 1 minute of the spell's duration as a standard action to assume another form allowed by the spell. You can do this as often as you like, subject to the duration of the spell. You must be at least a 5th-level wizard to select this discovery.</p>
+				<p id="opposition-research"><b>Opposition Research</b>: By completing strenuous studies, you have broken through the mental barriers that made it hard for you to prepare spells from one of your opposition schools. Select one wizard opposition school; preparing spells of this school now only requires one spell slot of the appropriate level instead of two, and you no longer have the &ndash;4 <a href="../../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> penalty for crafting items from that school. You must be at least a 9th-level wizard to select this discovery.</p>
+				<p id="split-slot"><b>Split Slot</b>: Once per day when you prepare spells, you may treat any one of your open spell slots as if it were two spell slots that were two spell levels lower. For example, a 9th-level wizard can split a 5th-level slot into two 3rd-level slots, preparing <i><a href="../../coreRulebook/spells/fireball.html#fireball" >fireball</a></i> and <i><a href="../../coreRulebook/spells/lightningBolt.html#lightning-bolt" >lightning bolt</a></i> in those 3rd-level slots. For all purposes, the two lower-level slots are treated as that lower level (so the split 5th-level slot used for a <i><a href="../../coreRulebook/spells/fireball.html#fireball" >fireball</a></i> has a DC as if it were in a normal 3rd-level slot). Splitting a 2nd-level slot lets you prepare two additional cantrips (which you can cast over and over, just like normally prepared cantrips). This discovery has no effect on cantrips or 1st&ndash;level spells. You may select this discovery multiple times; each time you select it, you may split another spell slot when you prepare spells. You cannot split a slot that you created by splitting a higher-level slot. You must be at least 5th level to select this discovery.</p>
+				<p id="true-name"><b>True Name (Sp)</b>: Your researches into ancient tomes and your inquisitions of bound spirits have led you to one of the best-hidden secrets of the multiverse: the true name of an outsider&mdash;the name that defines the very essence of the creature and that gives the speaker control over the being. This outsider can have no more than 12 Hit Dice. Once per day, you can speak the common name by which the outsider is known, and the outsider travels to you as if you had cast <i><a href="../../coreRulebook/spells/planarBinding.html#planar-binding" >planar binding</a></i> upon it. It must obey you to the best of its ability, without pay or bargaining for its services, for its fear that you might release its true name to the wider world is enough to bring even the most recalcitrant of outsiders to bear.</p>
+				<p>If the creature is within 100 feet, as a move action, you may punish it by deliberately mispronouncing its name, wracking its very essence and giving it the sickened and staggered conditions for 1 round (even if the creature is normally immune to these conditions). You cannot use true name in an area of silence, but the creature does not have to be able to hear you for it to be harmed by the ability.</p>
+				<p>It is in your best interest to call this creature only sparingly, and occasionally reward it in some fashion to mollify its wrath. If you repeatedly fail to offer it a reward appropriate to its type and ethos, the creature may begin plotting ways to destroy the bond between you, whether by creating an accident that will destroy your memory of the name, by plaguing you with nuisances or dangers until you vow never to call on it again, or by actively seeking to destroy you through its own devices or those of an underling. If this creature is of a lawful type and you are violating its ethos, its superiors may even destroy it or you rather than allow you to contaminate their servant further. Worse, they may establish situations where it is necessary for you to summon this outsider, opening gateways to infernal or angelic interference, in order to gain a foothold on the Material Plane.</p>
+				<p>You may select this discovery multiple times. Each time you select this discovery, it applies to a different, specific outsider. You must be at least an 11th-level wizard to select this discovery. If you select this discovery at 15th level or higher, the creature may have up to 18 Hit Dice and the call acts as <i><a href="../../coreRulebook/spells/planarBinding.html#planar-binding-greater" >greater planar binding</a></i> instead of <i><a href="../../coreRulebook/spells/planarBinding.html#planar-binding" >planar binding</a></i>.</p>
+				<p id="staff-like-wand"><b>Staff-Like Wand</b>: Your research has unlocked a new power in conjunction with using a wand. Similar to using a magic staff, you use your own Intelligence score and relevant feats to set the DC for saves against spells you cast from a wand, and you can use your caster level when activating the power of a wand if it's higher than the caster level of the wand. You must be at least an 11th-level wizard and must have the <a href="../../coreRulebook/feats.html#craft-staff" >Craft Staff</a> feat to select this discovery.</p>
+				<h1 id="elemental-wizard-schools">Elemental Wizard Schools</h1>
+				<p>Some philosophers claim that the four-element structure of reality&mdash;air, earth, fire, water&mdash;is an erroneous belief. These scholars insist there are not four elements, but five: fire, earth, metal, water, and wood. Wizards who subscribe to these beliefs have developed the ability to tap into elemental sources of metal and wood, gaining magical powers normally limited to other kinds of spellcasters. </p>
+				<h2>Five Elements</h2>
+<p>In some lands, scholars of magic insist that material things consist of five elements, not four: fire, earth, metal, water, and wood. Rather than directly opposing each other, these five elements counter and generate each other in a wheel-like formation: wood overcomes earth, earth overcomes water, water overcomes fire, fire overcomes metal, and metal overcomes wood. Similar to the four types of elemental wizard schools, some wizards specialize in the schools of magic based on metal or wood. Like a normal arcane school, an elemental school grants a number of school powers and one bonus spell slot of each level the wizard can cast, from 1st on up. This bonus spell slot must be used to prepare a spell from the elemental school's spell list (see below). Unlike a normal arcane school, each elemental school requires the wizard to select his opposed element as his opposition school&mdash;in the case of the five-element system, he must choose the element that overcomes his element as his opposition element (so a metal elementalist must select fire as his opposition school because fire overcomes metal). He does not need to select a second opposition school. He must expend two spell slots to prepare a spell from his opposed elemental school as normal.</p>
+
+				<h1 id="metal-(elemental-school)">Metal (Elemental School)</h1>
+				<p>Metal represents firmness, rigidity, persistence, strength, determination, and electricity. It is commonly represented by gold and silver as its purest forms, though lower magic relating to iron and steel is part of the metal school.</p>
+				<p id="metal-magic"><i>Metal Magic</i>: At 1st level, add the following spells to your wizard spell list at the listed spell level: 3rd&mdash;<i><a href="../../coreRulebook/spells/chillMetal.html#chill-metal" >chill metal</a></i>, <i><a href="../../coreRulebook/spells/heatMetal.html#heat-metal" >heat metal</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/rustingGrasp.html#rusting-grasp" >rusting grasp</a></i>, 9th&mdash;<i><a href="../../coreRulebook/spells/repelMetalOrStone.html#repel-metal-or-stone" >repel metal or stone</a></i>.</p>
+				<p id="metal-rending"><i>Metal Rending (Su)</i>: Whenever you cast a spell that deals hit point damage, you deal extra damage to creatures made of metal or wearing medium or heavy metal armor. Affected creatures take additional damage equal to 1/2 your wizard level. This bonus damage is not increased by <a href="../../coreRulebook/feats.html#empower-spell" >Empower Spell</a> or similar effects. This bonus only applies once to a spell, not once per missile or ray, and cannot be split between multiple missiles or rays. The damage is of the same type as the spell.</p>
+				<p>At 20th level, whenever you cast a spell on a creature made of metal or wearing medium or heavy armor, you can roll twice to penetrate the creature's spell resistance and take the better result.</p>
+				<p id="iron-skin"><i>Iron Skin (Su)</i>: You gain a +2 armor bonus to your Armor Class for 10 minutes; this bonus increases by +1 for every 5 caster levels (maximum +6 at 20th level). You can use this ability a number of times per day equal to 3 + your Intelligence bonus.</p>
+				<p id="shrapnel-burst"><i>Shrapnel Burst (Su)</i>: At 8th level, as a swift action, you can cause jagged pieces of metal to explode outward from your body. These shards deal 1d6 points of piercing damage per two wizard levels (minimum 1d6) to all creatures within a 10-foot-radius burst. A Reflex save halves this damage. In addition, the twisted scraps of metal make the area difficult terrain until your next turn (at which time they disappear). You can use this ability once per day, plus one additional time per day at 13th and 18th level. At 10th-level, the shrapnel bypasses damage reduction as if it were a magic weapon.</p>
+				<p id="metal-elementalist-wizard-spells"><b>Metal Elementalist Wizard Spells</b>: 0&mdash;<i><a href="../../coreRulebook/spells/mending.html#mending" >mending</a></i>; 1st&mdash;<i><a href="../../advancedPlayersGuide/spells/gravityBow.html#gravity-bow-" >gravity bow</a></i>, <i><a href="../../coreRulebook/spells/magicWeapon.html#magic-weapon" >magic weapon</a></i>, <i><a href="../../coreRulebook/spells/shockingGrasp.html#shocking-grasp" >shocking grasp</a></i>; 2nd&mdash;<i><a href="../spells/defensiveShock.html#defensive-shock" >defensive shock</a></i>, <i><a href="../../coreRulebook/spells/glitterdust.html#glitterdust" >glitterdust</a></i>, <i><a href="../../coreRulebook/spells/makeWhole.html#make-whole" >make whole</a></i>, <i><a href="../../coreRulebook/spells/shatter.html#shatter" >shatter</a></i>, <i><a href="../spells/silkToSteel.html#silk-to-steel" >silk to steel</a></i>; 3rd&mdash;<i><a href="../../coreRulebook/spells/chillMetal.html#chill-metal" >chill metal</a></i>, <i><a href="../../coreRulebook/spells/heatMetal.html#heat-metal" >heat metal</a></i>, <i><a href="../../coreRulebook/spells/lightningBolt.html#lightning-bolt" >lightning bolt</a></i>, <i><a href="../../coreRulebook/spells/keenEdge.html#keen-edge" >keen edge</a></i>, <i><a href="../../coreRulebook/spells/magicWeapon.html#magic-weapon-greater" >magic weapon (greater)</a></i>, <i><a href="../../advancedPlayersGuide/spells/versatileWeapon.html#versatile-weapon" >versatile weapon</a></i>; 4th&mdash;<i><a href="../spells/malfunction.html#malfunction" >malfunction</a></i>, <i><a href="../../coreRulebook/spells/shout.html#shout" >shout</a></i>, <i><a href="../../coreRulebook/spells/stoneskin.html#stoneskin" >stoneskin</a></i>; 5th&mdash;<i><a href="../spells/lightningArc.html#lightning-arc" >lightning arc</a></i>, <i><a href="../../coreRulebook/spells/majorCreation.html#major-creation" >major creation</a></i>, <i><a href="../spells/rapidRepair.html#rapid-repair" >rapid repair</a></i>, <i><a href="../../coreRulebook/spells/rustingGrasp.html#rusting-grasp" >rusting grasp</a></i>, <i><a href="../spells/sootheConstruct.html#soothe-construct" >soothe construct</a></i>, <i><a href="../spells/unbreakableConstruct.html#unbreakable-construct" >unbreakable construct</a></i>; 6th&mdash;<i><a href="../../coreRulebook/spells/chainLightning.html#chain-lightning" >chain lightning</a></i>, <i><a href="../../coreRulebook/spells/disintegrate.html#disintegrate" >disintegrate</a></i>, <i><a href="../../coreRulebook/spells/wallOfIron.html#wall-of-iron" >wall of iron</a></i>; 7th&mdash;<i><a href="../spells/controlConstruct.html#control-construct" >control construct</a></i>, <i>lightning rod</i>, <i><a href="../../coreRulebook/spells/statue.html#statue" >statue</a></i>; 8th&mdash;<i><a href="../spells/callConstruct.html#call-construct" >call construct</a></i>, <i><a href="../../coreRulebook/spells/ironBody.html#iron-body" >iron body</a></i>, <i><a href="../../coreRulebook/spells/shout.html#shout-greater" >shout (greater)</a></i>, <i><a href="../../advancedPlayersGuide/spells/stormbolts.html#stormbolts" >stormbolts</a></i>; 9th&mdash;<i><a href="../../coreRulebook/spells/meteorSwarm.html#meteor-swarm" >meteor swarm</a></i>, <i><a href="../../coreRulebook/spells/repelMetalOrStone.html#repel-metal-or-stone" >repel metal or stone</a></i>, <i><a href="../spells/rideTheLightning.html#ride-the-lightning" >ride the lightning</a></i>.</p>
+				<h1 id="wood-(elemental-school)">Wood (Elemental School)</h1>
+				<p>Wood represents flexibility, warmth, wind, generosity, cooperation, and idealism. Practitioners of this elemental magic often resemble druids in character and in the use of their magic.</p>
+				<p id="wood-magic"><i>Wood Magic</i>: At 1st level, add the following spells to your wizard spell list at the listed spell level: 2nd&mdash;<i><a href="../../coreRulebook/spells/entangle.html#entangle" >entangle</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/treeShape.html#tree-shape" >tree shape</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/plantGrowth.html#plant-growth" >plant growth</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/commandPlants.html#command-plants" >command plants</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/treeStride.html#tree-stride" >tree stride</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/liveoak.html#liveoak" >liveoak</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/transmuteMetalToWood.html#transmute-metal-to-wood" >transmute metal to wood</a></i>, 9th&mdash;<i><a href="../../coreRulebook/spells/controlPlants.html#control-plants" >control plants</a></i>.</p>
+				<p id="flexible-enhancement"><i>Flexible Enhancement (Su)</i>: A master of the wood element is able to bend like bamboo when stressed and snap back into place. You gain a +1 enhancement bonus to your Dexterity, Constitution, or Wisdom ability score. This bonus increases by +1 for every five wizard levels you possess to a maximum of +5 at 20th level. You can change this bonus to a new ability score when you prepare spells. At 20th level, this bonus applies to two of these ability scores of your choice.</p>
+				<p id="splintered-spear"><i>Splintered Spear (Su)</i>: As a standard action, you can create a wooden shortspear appropriate to your size, which hurls itself as a ranged attack against one target within 100 feet (range penalties apply), using your Intelligence modifier as an attack bonus instead of your Strength or Dexterity modifier. The spear deals normal damage according to its size, plus your Intelligence modifier, then breaks into countless splinters; the target takes 1 point of bleed damage each round on its turn. At 6th-level and every 6 levels thereafter, the spear gains a +1 enhancement bonus and the bleed damage increases by +1. You can use this ability a number of times per day equal to 3 + your Intelligence modifier.</p>
+				<p id="cooperative-defense"><i>Cooperative Defense (Su)</i>: At 8th level, whenever a spell or effect targets you and one or more allies within 30 feet, you can use this ability to allow your allies to use your saving throw against the effect in place of their own. Each ally must make this choice individually before the rolls are made. Using this ability is an immediate action. You can use this ability once per day at 8th level, and one additional time per day for every four wizard levels beyond 8th.</p>
+				<p id="wood-elementalist-wizard-spells"><b>Wood Elementalist Wizard Spells</b>: 0&mdash;<i><a href="../../coreRulebook/spells/light.html#light" >light</a></i>; 1st&mdash;<i><a href="../../advancedPlayersGuide/spells/alterWinds.html#alter-winds" >alter winds</a></i>, <i><a href="../../coreRulebook/spells/animateRope.html#animate-rope" >animate rope</a></i>, <i><a href="../../coreRulebook/spells/charmPerson.html#charm-person" >charm person</a></i>; 2nd&mdash;<i><a href="../../coreRulebook/spells/catSGrace.html#cat-s-grace" >cat's grace</a></i>, <i><a href="../../coreRulebook/spells/entangle.html#entangle" >entangle</a></i>, <i><a href="../../coreRulebook/spells/protectionFromArrows.html#protection-from-arrows" >protection from arrows</a></i>, <i><a href="../../coreRulebook/spells/web.html#web" >web</a></i>, <i><a href="../../coreRulebook/spells/whisperingWind.html#whispering-wind" >whispering wind</a></i>; 3rd&mdash;<i><a href="../../advancedPlayersGuide/spells/cloakOfWinds.html#cloak-of-winds" >cloak of winds</a></i>, <i><a href="../../coreRulebook/spells/tongues.html#tongues" >tongues</a></i>, <i><a href="../../coreRulebook/spells/treeShape.html#tree-shape" >tree shape</a></i>, <i><a href="../../coreRulebook/spells/windWall.html#wind-wall" >wind wall</a></i>; 4th&mdash;<i><a href="../../coreRulebook/spells/charmMonster.html#charm-monster" >charm monster</a></i>, <i><a href="../../coreRulebook/spells/hallucinatoryTerrain.html#hallucinatory-terrain" >hallucinatory terrain</a></i>, <i><a href="../../coreRulebook/spells/minorCreation.html#minor-creation" >minor creation</a></i>, <i><a href="../../coreRulebook/spells/plantGrowth.html#plant-growth" >plant growth</a></i>, <i><a href="../../advancedPlayersGuide/spells/riverOfWind.html#river-of-wind" >river of wind</a></i>, <i><a href="../../coreRulebook/spells/secureShelter.html#secure-shelter" >secure shelter</a>, <a href="../../advancedPlayersGuide/spells/sirocco.html#sirocco" >sirocco</a></i>; 5th&mdash;<i><a href="../../coreRulebook/spells/commandPlants.html#command-plants" >command plants</a></i>, <i><a href="../../coreRulebook/spells/fabricate.html#fabricate" >fabricate</a></i>, <i><a href="../spells/fickleWinds.html#fickle-winds" >fickle winds</a></i>, <i><a href="../../coreRulebook/spells/mirageArcana.html#mirage-arcana" >mirage arcana</a></i>, <i><a href="../../coreRulebook/spells/sending.html#sending" >sending</a></i>, <i><a href="../../coreRulebook/spells/telepathicBond.html#telepathic-bond" >telepathic bond</a></i>; 6th&mdash;<i>battemind link</i>, <i><a href="../../coreRulebook/spells/catSGrace.html#cat-s-grace-mass" >cat's grace (mass)</a></i>, <i><a href="../../coreRulebook/spells/treeStride.html#tree-stride" >tree stride</a></i>; 7th&mdash;<i><a href="../../coreRulebook/spells/controlWeather.html#control-weather" >control weather</a></i>, <i><a href="../../coreRulebook/spells/liveoak.html#liveoak" >liveoak</a></i>, <i><a href="../spells/scouringWinds.html#scouring-winds" >scouring winds</a></i>; 8th&mdash;<i><a href="../../coreRulebook/spells/charmMonster.html#charm-monster-mass" >charm monster (mass)</a></i>, <i><a href="../../advancedPlayersGuide/spells/euphoricTranquility.html#euphoric-tranquility" >euphoric tranquility</a></i>, <i><a href="../../coreRulebook/spells/transmuteMetalToWood.html#transmute-metal-to-wood" >transmute metal to wood</a></i>; 9th&mdash;<i><a href="../../coreRulebook/spells/controlPlants.html#control-plants" >control plants</a></i>, <i><a href="../../coreRulebook/spells/refuge.html#refuge" >refuge</a></i>, <i><a href="../../advancedPlayersGuide/spells/windsOfVengeance.html#winds-of-vengeance" >winds of vengeance</a></i>.</p>
+				<h1 id="scrollmaster-(archetype)">Scrollmaster (archetype)</h1>
+				<p>To some wizards, a scroll is not just a written form of a spell, it is a physical weapon meant to be used in combat like a sword or a shield. These strange wizards enter battle armed with scrolls, often one in each in each hand, practicing combat techniques resembling some monk martial arts.</p>
+				<p id="scroll-blade"><b>Scroll Blade (Su)</b>: A scrollmaster can wield any paper, parchment, or cloth scroll as if it were a melee weapon. In the hands of the wizard, the scroll acts as a short sword with an enhancement bonus equal to 1/2 the level of the highest-level wizard spell on the scroll; a scroll with only a cantrip or 1st-level spell on it counts as a masterwork short sword. The scrollmaster is proficient in this weapon, and feats and abilities that affect short swords (such as <a href="../../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a>) apply to this weapon. A scrollmaster cannot wield two scrollblades at the same time.</p>
+				<p>Activating this ability is a free action. A scroll blade only retains its abilities in the hands of the scrollmaster. The scroll blade has hardness 0 and hit points equal to the highest-level wizard spell on the scroll. Each successful hit by the scroll blade reduces its hit points by 1; this damage cannot be repaired, but does not affect casting from the scroll. When its hit points reach 0, the scroll is destroyed. </p>
+				<p>If a scroll contains a spell with a metamagic feat, this ability uses the original spell level of the spell (a <i>scroll of empowered <a href="../../coreRulebook/spells/fireball.html#fireball" >fireball</a></i> counts as a 3rd-level spell).</p>
+				<p>At 3rd level, when using a 4th-level or higher wizard scroll as a scroll blade, the scrollmaster can choose to reduce its enhancement bonus by 1 (minimum +1 enhancement bonus) to treat it as a reach weapon. For example, he could use a <i>scroll of <a href="../../coreRulebook/spells/charmMonster.html#charm-monster" >charm monster</a></i> (a 4th-level wizard spell) as either a <i>+2 short sword</i> or a <i>+1 short sword</i> with reach.</p>
+				<p>At 5th level, when using a 4th-level or higher wizard scroll as a scroll blade, the scrollmaster can choose to reduce its enhancement bonus (to a minimum of a +1 enhancement bonus) to give any of the following weapon properties: <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-defending" >defending</a></i>, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-frost" >frost</a></i>, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-icy-burst" >icy burst</a></i>, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-keen" >keen</a></i>, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-ki-focus" >ki focus</a></i>, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-shock" >shock</a></i>, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-shocking-burst" >shocking burst</a></i>, <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-speed" >speed</a></i>. Adding any of these properties consumes an amount of enhancement bonus equal to the property's cost (see Table 15&ndash;9: Melee Weapon Special Abilities in the <i>Core Rulebook</i>). The scrollmaster must know the prerequisite spell or spells to craft the weapon property in question (for example, he must know <i><a href="../../coreRulebook/spells/haste.html#haste" >haste</a></i> to be able to give his scroll blade the <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-speed" >speed</a></i> property). This ability replaces the wizard's arcane bond.</p>
+				<p id="scroll-shield"><b>Scroll Shield (Su)</b>: A scrollmaster can wield any paper, parchment, or cloth scroll as if it were a light wooden shield. In the hands of the wizard, the scroll grants a +1 shield bonus with an enhancement bonus equal to 1/2 the level of the highest-level wizard spell on the scroll; a scroll with only a cantrip or 1st-level spell counts as a masterwork light shield sword. The scroll shield has no armor check penalty, arcane spell failure chance, or maximum Dexterity bonus. The scrollmaster is considered proficient in this shield. A scrollmaster can use a scrollblade in one hand and a scroll shield in the other hand.</p>
+				<p>Activating this ability is a free action. A scroll shield only retains its abilities in the hands of the scrollmaster. The scroll shield has hardness 0 and hit points equal to the highest-level wizard spell on the scroll. Each successful attack roll against the wizard reduces the scroll shield's hit points by 1; this damage cannot be repaired, but does not affect casting from the scroll. When its hit points reach 0, the scroll is destroyed.</p>
+				<p>At 5th level, when using a 3rd-level or higher wizard scroll as a scroll shield, the scrollmaster can choose to reduce its enhancement bonus (to a minimum of a +1 enhancement bonus) to give it any of the following shield properties: <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-ghost-touch" >ghost touch</a></i>, <i><a href="../../coreRulebook/spells/light.html#light" >light</a> <a href="../../coreRulebook/magicItems/armor.html#armor-fortification" >fortification</a></i>, <i>moderate <a href="../../coreRulebook/magicItems/armor.html#armor-fortification" >fortification</a></i>. Adding any of these properties consumes an amount of bonus equal to the property's cost (see Table 15&ndash;5: Shield Special Abilities in the <i>Core Rulebook</i>). The scrollmaster must know the prerequisite spell or spells to craft the shield property in question (for example, he must know <i><a href="../../coreRulebook/spells/limitedWish.html#limited-wish" >limited wish</a> </i>to be able to give his scroll shield the <i><a href="../../coreRulebook/magicItems/armor.html#armor-fortification" >fortification</a></i> property).</p>
+				<p>If a scroll contains a spell with a metamagic feat, this ability uses the original spell level of the spell (a <i>scroll of empowered <a href="../../coreRulebook/spells/fireball.html#fireball" >fireball</a></i> counts as a 3rd-level spell).</p>
+				<p id="improved-scroll-casting"><b>Improved Scroll Casting (Su)</b>: At 10th level, the scrollmaster can cast a wizard spell from a scroll and use his own Intelligence score and relevant feats to set the DC for the spell, and can use his own caster level if it is higher than that of the scroll (similar to a caster using a staff). The scrollmaster must have already deciphered the writing on the scroll to use this ability. This ability replaces the 10th-level wizard bonus feat.</p>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Wizard",globalNavPath=[{ href: '/pathfinderRPG/prd/ultimateMagic/spellcastingClassOptions.html', name: 'Spellcasting Class Options' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

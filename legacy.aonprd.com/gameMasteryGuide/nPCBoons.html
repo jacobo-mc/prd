@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>NPC Boons</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "nPCBoons.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "nPCBoons.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "nPCBoons.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "nPCBoons.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "nPCBoons.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "nPCBoons.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "nPCBoons.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "settlements.html">Settlements</a></li>
+						<li><a href = "fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "chases.html">Chases</a></li>
+						<li><a href = "disasters.html">Disasters</a></li>
+						<li><a href = "drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "haunts.html">Haunts</a></li>
+						<li><a href = "hazards.html">Hazards</a></li>
+						<li><a href = "sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "nPCBoons.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "nPCBoons.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "nPCBoons.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "nPCBoons.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "nPCBoons.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "nPCBoons.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "nPCBoons.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "nPCBoons.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "nPCBoons.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "nPCBoons.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "nPCBoons.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "nPCBoons.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "nPCBoons.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "nPCBoons.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="npc-boons" class="monster-header">NPC Boons</h1>
+				<p>Fantasy literature is filled with examples of characters with wondrous powers who have no interest in being heroes or villains. Sages content to watch events unfold as they will, clerics imbued by the gods with special powers, herbalists with knowledge of special concoctions, all have unique abilities and insights that are theirs alone and, should such characters come to favor friendly adventurers, might use their special influence and abilities to turn the course of entire campaigns. To represent the unique skills and powers of individual NPCs and to grant PCs an occasional rules-related benefit for their interaction with the characters of a campaign's setting, the GM might devise boons to have certain important NPCs grant those PCs they come to favor.</p>
+				<p>In short, a boon is a quantifiable, non-monetary way an NPC might help the PCs. This might take the form of a discount on goods or services, a one-time bonus on a specific skill check, or even a simple magical benefit that only that character can provide. The nature of a boon depends more on an NPC's role in a campaign world than any statistical element. As position in society doesn't necessarily correlate with class levels or specific rules, boons are largely based on a GM's sense of logic and campaign believability. A young prince who is merely a 1st-level aristocrat might thus be able to grant a far more favorable boon&mdash;granting a pardon, financing a voyage, decreeing a law&mdash;than a baker statted out as an 11th-level commoner. </p>
+				<p>Boons are not wantonly granted, and PCs should not expect to gain useful aid from every NPC they meet. Only NPCs with an attitude of helpful grant such benefits, and usually even then only to PCs they've come to trust over a significant period of time or those who have done them meaningful personal services. In such relationships, NPCs are more likely to favor an individual than an entire adventuring party, making it possible for only one party member to be granted a boon while less favored members are overlooked. PCs shouldn't expect all NPCs to grant boons; some just might not have anything special to provide or aren't important enough to have much to offer. The success of those who try to extort boons from characters using mind affecting magics is largely up to the GM, as the effects of mundane boons might easily be guessed, while more unique ones might only be known to the NPC. Regardless of the effect, PCs should never have direct control over the granting of boons&mdash;PCs never get boons they can grant and cannot force even the closest allies to grant benefits against their will. </p>
+				<p>What a boon entails varies widely, depending not just on the NPC who provides it, but the tastes of the GM and needs of a campaign. At their heart, boons are intended to be a simple way for GMs to provide PCs with a minor rules-related benefit in reward for developing bonds with NPCs. Boons are never monetary, though they often have a monetary value, and should feel like favors between friends, not something that would change the life of either the characters or NPC. They might occasionally involve established elements of the rules&mdash;like a discount on equipment or adding a bonus on a skill check in a specific situation&mdash;but such occurrences should prove minor. Boons tend to take three forms: favor boons, skill boons, and unique boons. </p>
+				<p><b>Favor</b>: Any character of any class or social level might seek to aid their friends, with favors embodying such benefits. A shopkeeper granting a 10% discount on his goods, a nobleman using his influence to set up a meeting with a local lord, or a retired adventurer loaning someone his masterwork longbow all count as favors.</p>
+				<p><b>Skill</b>: Certain NPCs can share their expertise in specific fields or pass their influence on to others. Skill boons are minor bonuses on skill checks that an NPC might pass on to a favored PC. As a guideline, skill bonuses usually grant either a +2 bonus on a skill in a very specific situation&mdash;never on all uses of a skill&mdash;or a one-time +4 bonus on a specific skill check. For example, a famous merchant might give a character his signet ring, providing a +2 bonus on <a href="../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> checks made with other merchants in his home city's marketplace; a scholar of a lost city's lore might instruct a PC, granting her a +2 bonus on <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (history) checks made regarding that ruin; or a guardsman might even allow a friendly PC to call in a favor he has with a local pickpocket, granting a one-time +4 bonus on an <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> check made against that individual.</p>
+				<p><b>Unique</b>: The rarest of all boons, unique boons are special powers an NPC might grant that are exclusive to that character and fall outside the purview of his class's typical abilities. Unique boons are special abilities too minor to be part of a character's class abilities or so specific to a story's details as to require a GM's customization. A ghost who can grant a favored PC the power to see through her evil illusionist husband's illusions; a cleric of the god of light who can grant a blessing that causes an ally's weapons to deal an additional +1 point of damage on all attacks made against the shadowy creatures haunting the nearby catacombs; or an alchemist who can concoct a potion making the drinker immune to brown mold for 24 hours, all might be example of unique boons. As such boons have the most flexibility and the widest potential for exploitation, GMs should limit unique boons to be useful only once or to prove relevant for but a single adventure.</p>
+				<p>What follows is a list of boons that might be offered by members of each of the NPC classes in the <i>Pathfinder RPG Core Rulebook</i>. As it would be impossible to cover all the possibilities of NPC situations and potential boons, the rest of this section should be considered a guide to creating your own boons or a shopping list from which you might choose boons to add to NPCs in a campaign. GMs looking for more specific examples should see Chapter 9, as each NPC therein includes an example boon that might be granted by such a character. Although the boons listed here detail some granted by characters with specific NPC classes, any NPC of any class can grant a boon.</p>
+				<h1 id="adept">Adept</h1>
+				<p>While users of divine magic are often regarded simply as healers, their wisdom and vaunted positions mean they can have much more to offer.</p>
+				<p><b>Favor</b>: Free healing on a single occasion.</p>
+				<p><b>Favor</b>: Letter of recommendation to lower-ranking priests, ordering them to help the PCs as required (granting the aid of a 1st-level adept hireling for 3 days).</p>
+				<p><b>Skill</b>: Favorable introductions to contacts in a local church, providing a PC a +2 bonus on <a href="../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> checks made to influence members of that specific church.</p>
+				<p><b>Skill</b>: Proves especially knowledgeable in mysterious alchemical techniques, granting a PC a +4 bonus on one <a href="../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check made to create an alchemical item.</p>
+				<p><b>Unique</b>: Can brew 4 unique potions that instantly heal the disease filth fever. </p>
+				<p><b>Unique</b>: Allows the PC to commune with the spirit animal of his tribe, granting the PC the ability to <i><a href="../coreRulebook/spells/speakWithAnimals.html#speak-with-animals" >speak with animals</a> </i>of a specific regional species once per day. </p>
+				<h1 id="aristocrat">Aristocrat</h1>
+				<p>Aristocrats vary in rank from village squires to emperors, with most having wealth and position that grants them great influence in a community.</p>
+				<p><b>Favor</b>: Provides an invitation to an aristocratic event, such as an estate party, royal gala, or public celebration.</p>
+				<p><b>Favor</b>: Use of influence to save the PCs from prosecution for a crime.</p>
+				<p><b>Skill</b>: Offering a day-long primer on local courtesy, granting the PC a +2 bonus on a <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (nobility) check for the city or region.</p>
+				<p><b>Skill</b>: Attends a character on his visit to the royal court, granting the PC a +4 <a href="../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> check on interactions with the court's members during that outing.</p>
+				<p><b>Unique</b>: Loans a ship and provides a crew for a voyage to a distant land.</p>
+				<p><b>Unique</b>: Grants a PC a minor, landless title that affords him access to certain local rights.</p>
+				<h1 id="commoner">Commoner</h1>
+				<p>Although not usual famous or wealthy, commoners have a wide variety of skills and can usually come up with creative ways to repay favors.</p>
+				<p><b>Favor</b>: Provides a room and prepares an elaborate feast in a PC's honor.</p>
+				<p><b>Favor</b>: Provides a 50% discount on a high quality, non-magical item made using one of his <a href="../coreRulebook/skills/craft.html#craft" >Craft</a> skills.</p>
+				<p><b>Skill</b>: Freely uses his highest <a href="../coreRulebook/skills/craft.html#craft" >Craft</a> or <a href="../coreRulebook/skills/profession.html#profession" >Profession</a> skill for the PC for a month of service (perhaps crewing a vehicle or ship, tending to a rare plant, or training an animal) .</p>
+				<p><b>Skill</b>: Shares rural remedies, granting the PC a +2 bonus when using <a href="../coreRulebook/skills/heal.html#heal" >Heal</a> to treat diseases.</p>
+				<p><b>Unique</b>: Creates a map or leads a PC through the local wilderness to a secret location only he knows about.</p>
+				<p><b>Unique</b>: Competently manages a home or business for an absentee PC.</p>
+				<h1 id="expert">Expert</h1>
+				<p>Skilled craftsmen, professionals, and learned members of society regularly have a wide range of specific talents and obscure information that can prove useful to PCs.</p>
+				<p><b>Favor</b>: Provides material for a PC, cutting the price to create a non-magical item in half.</p>
+				<p><b>Favor</b>: Can find a seller to buy any non-magic item or a buyer for any magic item. </p>
+				<p><b>Skill</b>: Grants access to an exceptionally well outfitted workspace, granting a PC a +4 bonus on a specific <a href="../coreRulebook/skills/craft.html#craft" >Craft</a> or <a href="../coreRulebook/skills/profession.html#profession" >Profession</a> check.</p>
+				<p><b>Skill</b>: Teaches a PC a trick of the trade, granting a perpetual +1 bonus on one <a href="../coreRulebook/skills/craft.html#craft" >Craft</a> or <a href="../coreRulebook/skills/profession.html#profession" >Profession</a> check that the PC and expert share.</p>
+				<p><b>Unique</b>: Obtains membership in a regional guild, providing a PC with a 10% discount on a certain kind of goods in a wide region.</p>
+				<p><b>Unique</b>: Can create a special tool that opens an ancient lock, circumvents an impassible trap, or replaces a part of a fabulous broken mechanism.</p>
+				<h1 id="warrior">Warrior</h1>
+				<p>Professional warriors typically have a wide range of experience and useful contacts among other career combatants, those they serve, and those they oppose.</p>
+				<p><b>Favor</b>: Gifts a PC one non-magical weapon, piece of armor, or adventuring gear.</p>
+				<p><b>Favor</b>: Can guard a precious object or hide it where none will find it.</p>
+				<p><b>Skill</b>: Relates his experience patrolling the local sewers, granting a PC a +2 bonus on <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (dungeoneering) checks in the city sewers.</p>
+				<p><b>Skill</b>: Provides information with which to blackmail a local criminal, granting a PC a +4 bonus on <a href="../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> checks against local street thugs.</p>
+				<p><b>Unique</b>: Can form a posse, bringing together a group of 2d4 low-level warriors to aid in one specific plan.</p>
+				<p><b>Unique</b>: Grants the secret of a specialized fighting style, providing a PC with a +1 bonus on initiative.</p>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="NPC Boons",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

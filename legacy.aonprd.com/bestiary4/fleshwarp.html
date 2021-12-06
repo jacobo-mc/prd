@@ -1,0 +1,545 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Fleshwarp</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "fleshwarp.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "fleshwarp.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "fleshwarp.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "fleshwarp.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "fleshwarp.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "fleshwarp.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "fleshwarp.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "fleshwarp.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "fleshwarp.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "fleshwarp.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "fleshwarp.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "fleshwarp.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "fleshwarp.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "fleshwarp.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "fleshwarp.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "fleshwarp.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "fleshwarp.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "fleshwarp.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "fleshwarp.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "fleshwarp.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "fleshwarp.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+
+
+<h1 id="fleshwarp" class="monster-header">Fleshwarp</h1>
+<p>The most fearsome drow aren't satisfied with the mere defeat and death of their foes, preferring to defile their enemies in horrific ways. The most gruesome form of transformation assaults their enemies' very essence through the complicated process of fleshwarping.</p>
+<p>Fleshwarping is the practice of altering a creature's physical form and mental state by way of a grisly mystical and alchemical process. It starts with submerging the subject in a vat filled with a magical and alchemical goo concocted of strange reagents, and infused with a multitude of living insects and other vermin. The goo dissolves and reshapes the flesh and bone of the subject while the vermin eat away at unwanted flesh, making way for the new, alchemically grown flesh to take hold. The process is torturous, and the subject is kept alive and conscious throughout it.</p>
+<p>Depending on the base creature being fleshwarped, the heinous process lasts days, weeks, or even months. The entire time, it's overseen by a fleshwarper&mdash;a craftsperson whose perverse curiosity trumps any regard for life or sanity. This fleshwarper pokes and prods at the subject, flaying the skin and committing other atrocious tortures when necessary, manipulating the vermin as needed, and making sure the mix of reagents in the fleshwarping goo is correct at every stage of the occult process. Once the process is complete, the transformed abomination is expected to free itself from the fleshwarping goo; those that fail to do so are summarily slaughtered.</p>
+<p>The end result is something both more and less than the base form. Though the process is basically the same for every type of creature the drow experiment on, the results are drastically different. A fleshwarped drow becomes a drider. A fleshwarped elf becomes an irnakurse, and a fleshwarped troglodyte becomes a ghonhatine. Some races seem to resist the process of fleshwarping altogether&mdash;dwarves have never been successfully fleshwarped, and most fey are particularly resilient to the process. What is generally true about fleshwarping is that inherently evil creatures that go through the process tend to be more useful to the drow than those who start out good. The most useful of the fleshwarps are those created from other drow. These unfortunate subjects are typically those who fail their house or are born with physical or mental defects. Unlike other fleshwarps, who tend to be sterile or lack the organs or ability to procreate, driders are a race unto themselves and are capable of procreation.</p>
+<p>The process of creating a fleshwarp is dangerous to the base creature and expensive for the creator. During the process, the subject is wracked with excruciating pain, and takes 2d6 points of Constitution damage (Fortitude DC 15 half). The reagents that constitute the goo cost at least 10,000 gp, and the rarer specimens of vermin used to facilitate fleshwarping can cost just as much if bought on the open market.</p>
+<p>It's often said that the drow learned the gruesome art of fleshwarping as a reward for obscene pacts they made with some demon lord, but the identity of the demon lord who bestowed knowledge of the foul process changes with each telling of the tale.</p>
+<p>There are other cultures that also understand and use fleshwarping, but they tend to be either ancient or very secretive and xenophobic. Sinspawn, fleshdregs, and the lamia-based hungerer are just some examples of non-drow fleshwarps.</p>
+
+<h2>Fleshwarp Bestiary</h2>
+<p class="Sidebar-Text">Drow fleshwarpers continually experiment to discover new fleshwarps. Here is a list of the most common fleshwarps.</p>
+<p><b>Drider (drow)</b>: Driders are the first and most numerous of the fleshwarped creatures created by the drow. They are the only fleshwarped creatures known to breed true.</p>
+<p><b>Ghonhatine (troglodytes)</b>: These fleshwarps are nearly twice the size of troglodytes and are far more bestial and fearsome.</p>
+<p><b>Gomnits (gnomes)</b>: Gnomes subjected to this process are transformed into something that resembles a vicious, mushroom-like humanoid.</p>
+<p><b>Grothlut (humans)</b>: Fleshwarped humans are transformed into mindless, sluglike things.</p>
+<p><b>Gublasks (goblins)</b>: Goblins transformed by fleshwarping grow a chitinous skin, and their arms are transformed into whiplike stingers.</p>
+<p><b>Halsora (vegepygmies)</b>: Fleshwarped vegepygmies grow stockier and stronger, and their sunken eyes release a stream of acidic black tears.</p>
+<p><b>Irnakurse (elves)</b>: Drow particularly prize these tentacled treelike horrors created from their hated kin.</p>
+<p><b>Jashoi (halfling)</b>: Fleshwarped halflings become bizarre, doglike quadrupeds which are annoying and difficult to control. As a result, drow rarely fleshwarp halflings.</p>
+<p><b>Oronci (orcs)</b>: An oronci has the upper body of an orc and the lower body of a centipede, complete with poisonous spittle.</p>
+<p><b>Urgoci (ogre)</b>: An ogre's hind legs shrink down to vestigial stumps. Its forearms lengthen, and are used to pull the vestigial lower body along. A mass of serpentine tentacles sprouts from its shoulders and upper torso.</p>
+
+
+<h1 id="fleshwarp-ghonhatine" class="monster-header">Fleshwarp, Ghonhatine</h1>
+<p class = "flavor-text">Even hunched and creeping upon all fours, this reptilian behemoth towers over its prey, its protruding teeth snapping wildly.</p>
+
+<p class = "stat-block-title">Ghonhatine <span class = "stat-block-cr">CR 10</span></p>
+<p class = "stat-block-xp">XP 9,600</p>
+<p class = "stat-block-1">CE Large aberration</p>
+<p class = "stat-block-1"><b>Init</b> –2; <b>Senses</b> darkvision 60 ft., scent; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +9</p>
+<p class = "stat-block-1"><b>Aura</b> powerful stench (10 ft., DC 24, 1d4 rounds)</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><b>AC</b> 24, touch 7, flat-footed 24 (–2 Dex, +17 natural, –1 size)</p>
+<p class = "stat-block-1"><b>hp</b> 162 (12d8+108)</p>
+<p class = "stat-block-1"><b>Fort</b> +13, <b>Ref</b> +2, <b>Will</b> +6</p>
+<p class = "stat-block-1"><b>Immune</b> acid, critical hits, disease, poison</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><b>Speed</b> 40 ft.</p>
+<p class = "stat-block-1"><b>Melee</b> 2 claws +16 (1d6+8), bite +16 (2d6+8), tail slap +14 (1d8+4)</p>
+<p class = "stat-block-1"><b>Ranged</b> regurgitate +6 (2d6 acid plus filth fever)</p>
+<p class = "stat-block-1"><b>Space</b> 10 ft.; <b>Reach</b> 10 ft. (15 ft. with tail)</p>
+<p class = "stat-block-1"><b>Special Attacks</b> feed, filth fever</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><b>Str</b> 27, <b>Dex</b> 7, <b>Con</b> 28, <b>Int</b> 4, <b>Wis</b> 7, <b>Cha</b> 8</p>
+<p class = "stat-block-1"><b>Base Atk</b> +9; <b>CMB</b> +18 (+20 bull rush); <b>CMD</b> 26 (28 vs. bull rush)</p>
+<p class = "stat-block-1"><b>Feats</b> <a href="../bestiary/monsterFeats.html#awesome-blow" >Awesome Blow</a>, Cleave, Improved Bull Rush, <a href="../bestiary/monsterFeats.html#multiattack" >Multiattack</a>, Power Attack, Vital Strike</p>
+<p class = "stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +12, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +9, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +0 (+4 when underground); <b>Racial Modifiers</b> +4 <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> when underground</p>
+<p class = "stat-block-1"><b>Languages</b> Draconic</p>
+<p class = "stat-block-breaker">Ecology</p>
+<p class = "stat-block-1"><b>Environment</b> any underground</p>
+<p class = "stat-block-1"><b>Organization</b> solitary or squad (2–8)</p>
+<p class = "stat-block-1"><b>Treasure</b> none</p>
+<p class = "stat-block-breaker">Special Abilities</p>
+<p class = "stat-block-1"><b>Feed (Su)</b> By spending a full-round action devouring the body of a dead or unconscious creature, a ghonhatine gains 1d8+9 temporary hit points and a +2 bonus on attack and damage rolls for 1 minute. The bonus to hit points is Constitution-based.</p>
+<p class = "stat-block-1"><b>Filth Fever (Ex)</b> Disease&mdash;injury; <i>save</i> Fort DC 25; <i>onset</i> 1d3 days; <i>frequency</i> 1 day; <i>effect</i> 1d3 Dex damage and 1d3 Con damage; <i>cure</i> 2 consecutive saves. The save DC is Constitution-based.</p>
+<p class = "stat-block-1"><b>Powerful Stench (Ex)</b> An enraged ghonhatine secretes a tarry, musk-like chemical. Any living, non-ghonhatine creature within 10 feet must succeed at a DC 24 Fortitude save or be nauseated as long as it remains within the affected area and for 1d4 rounds afterward. A creature that saves is sickened as long as it remains in the area, and can't be affected again by the same ghonhatine's stench for 24 hours. This is a poison effect. The save DC is Constitution-based.</p>
+<p class = "stat-block-1"><b>Regurgitate (Ex)</b> A ghonhatine can expel the contents of its stomach as a ranged attack with a splash weapon that has a range increment of 20 feet. It deals 2d6 acid damage to the target and splashes all adjacent creatures. In addition to taking damage, a target directly hit by a ghonhatine's regurgitation must make two DC 24 Fortitude saves, the first to resist contracting filth fever, and the second to avoid being nauseated for 1 minute. A nauseated creature can end its nausea early by dousing itself in a gallon of water. All creatures adjacent to the target must make DC 24 Fortitude saves to avoid being sickened for 1 minute. Once a ghonhatine uses this ability it can't use it again until it feeds. The save DCs are Constitution-based.</p>
+
+<p>Troglodytes forced to undergo fleshwarping by the drow, ghonhatines harken to what troglodytes might have been in savage prehistory. They stand over 10 feet tall (hunched to about 8 feet) and weigh upward of 5,000 pounds.</p>
+
+
+<h1 id="fleshwarp-crothlut" class="monster-header">Fleshwarp, Grothlut</h1>
+<p class = "flavor-text">Pale and glistening with moisture, this sluglike creature stares vacantly as a droning moan escapes its slobbering lips.</p>
+
+<p class = "stat-block-title">Grothlut <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1">CE Medium aberration</p>
+<p class = "stat-block-1"><b>Init</b> +2; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> –1</p>
+<p class = "stat-block-1"><b>Aura</b> piteous moan (30 ft.)</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><b>AC</b> 13, touch 8, flat-footed 13 (–2 Dex, +5 natural)</p>
+<p class = "stat-block-1"><b>hp</b> 42 (5d8+20)</p>
+<p class = "stat-block-1"><b>Fort</b> +7, <b>Ref</b> –1, <b>Will</b> +3</p>
+<p class = "stat-block-1"><b>Immune</b> acid, mind-affecting effects</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><b>Speed</b> 20 ft.</p>
+<p class = "stat-block-1"><b>Melee</b> 2 slams +6 (1d6+3)</p>
+<p class = "stat-block-1"><b>Special Attacks</b> digestive spew, disgusting demise, piteous moan</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><b>Str</b> 15, <b>Dex</b> 6, <b>Con</b> 18, <b>Int</b> 1, <b>Wis</b> 8, <b>Cha</b> 5</p>
+<p class = "stat-block-1"><b>Base Atk</b> +3; <b>CMB</b> +5; <b>CMD</b> 13 (can't be tripped)</p>
+<p class = "stat-block-1"><b>Feats</b> Great Fortitude, Improved Initiative, Weapon Focus (slam)</p>
+<p class = "stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +10</p>
+<p class = "stat-block-1"><b>SQ</b> compression</p>
+<p class = "stat-block-breaker">Ecology</p>
+<p class = "stat-block-1"><b>Environment</b> any underground</p>
+<p class = "stat-block-1"><b>Organization </b>solitary or rout (2–10)</p>
+<p class = "stat-block-1"><b>Treasure</b> none</p>
+<p class = "stat-block-breaker">Special Abilities</p>
+<p class = "stat-block-1"><b>Digestive Spew (Ex)</b> In order to ingest food, a grothlut must first regurgitate its digestive liquids upon its victim. As a standard action, it can spit these liquids on a creature within 5 feet. This spew deals 3d6 acid damage (Reflex DC 15 half). The save DC is Constitution-based.</p>
+<p class = "stat-block-1"><b>Disgusting Demise (Ex)</b> When a grothlut reaches 0 or fewer hit points, its digestive organs rupture, freeing alchemical agents that have a violent effect on the rest of the grothlut's internal organs and flesh. This causes an explosion of grothlut viscera within a 30-foot-radius burst of the creature. Though this viscera deals no damage, it's disgusting to behold and its smell can cause living creatures within that radius to become nauseated for 1d4 rounds (Fortitude DC 14 negates). This is a poison effect. The save DC is Constitution-based.</p>
+<p class = "stat-block-1"><b>Piteous Moan (Su)</b> Whenever a grothlut sees another creature, it begins to moan as free action. Anyone within 60 feet who can hear the moan must succeed at a DC 15 Will saving throw or become sickened by the moaning for as long as she can hear it. Every two additional grothluts with the area increase the DC by 1, to a maximum of DC 18. This is a mind-affecting sonic effect. The save DC is Constitution-based.</p>
+
+<p>Grothluts are sluglike abominations with vaguely human heads and torsos, and rubbery arms that move awkwardly at their sides. They shuffle mindlessly until other creatures come into view, then piteously moan before slithering forward to attack and feed. Those moans are the last vestige of their formerly human selves crying for release as slivers of the creatures' intellects are forced to continuously relive their transformation.</p>
+<p>Many fleshcrafters consider the grothlut a failure, as the transformation all but stamps out its human consciousness. Others disagree, arguing that warping the creature's mind makes it more useful, as its stupidity makes it pliable and easy to herd. The drow typically use grothluts only as guardians to slowly patrol the remote edges of their enclaves. Once in position, though, grothluts can be used as crude shock troops, unleashed to soften enemy forces before more valuable warriors wade in and cut down the enemies who have been nauseated by the grothluts' exploded organs and flesh.</p>
+
+
+<h1 id="fleshwarp-halsora" class="monster-header">Fleshwarp, Halsora</h1>
+<p>This small, plantlike creature is a bulging mass of viselike muscle with sunken eyes that constantly drip viscous, black tears.</p>
+
+<p class = "stat-block-title">Halsora <span class = "stat-block-cr">CR 7</span></p>
+<p class = "stat-block-xp">XP 3,200</p>
+<p class = "stat-block-1">CE Small aberration</p>
+<p class = "stat-block-1"><b>Init</b> +2; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +19</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><b>AC</b> 19, touch 13, flat-footed 17 (+2 Dex, +6 natural, +1 size)</p>
+<p class = "stat-block-1"><b>hp</b> 75 (10d8+30)</p>
+<p class = "stat-block-1"><b>Fort</b> +6, <b>Ref</b> +5, <b>Will</b> +9</p>
+<p class = "stat-block-1"><b>DR</b> 5/bludgeoning or slashing; <b>Immune</b> acid, disease</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><b>Speed</b> 30 ft.</p>
+<p class = "stat-block-1"><b>Melee</b> 2 claws +13 (1d8+4 plus spores)</p>
+<p class = "stat-block-1"><b>Special Attacks</b> acidic tears, sneak attack +2d6, spores</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><b>Str</b> 19, <b>Dex</b> 14, <b>Con</b> 17, <b>Int</b> 6, <b>Wis</b> 11, <b>Cha</b> 8</p>
+<p class = "stat-block-1"><b>Base Atk</b> +7; <b>CMB</b> +10; <b>CMD</b> 22</p>
+<p class = "stat-block-1"><b>Feats</b> Iron Will, Power Attack, Skill Focus (<a href="../coreRulebook/skills/perception.html#perception" >Perception</a>), Skill Focus (<a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a>), Weapon Focus (claw)</p>
+<p class = "stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +19, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +25</p>
+<p class = "stat-block-1"><b>Languages</b> Undercommon, Vegepygmy (can't speak)</p>
+<p class = "stat-block-breaker">Ecology</p>
+<p class = "stat-block-1"><b>Environment</b> any underground</p>
+<p class = "stat-block-1"><b>Organization</b> solitary or gang (2–6)</p>
+<p class = "stat-block-1"><b>Treasure</b> none</p>
+<p class = "stat-block-breaker">Special Abilities</p>
+<p class = "stat-block-1"><b>Acidic Tears (Ex)</b> A halsora's sunken eyes have oversized tear ducts that weep a constant stream of black, acidic tears. As a standard action that provokes attacks of opportunity, a halsora can jerk its head and flick the acidic tears on a single creature within 20 feet. That creature takes 2d6 acid damage (Reflex DC 18 half). A creature that fails its save takes an additional 1d4 points of acid damage at the end of the halsora's turn for 1d4 rounds or until the acid is scraped off, which requires a full-round action on the part of the creature taking the damage or a creature adjacent to that creature. The save DC is Constitution-based.</p>
+<p class = "stat-block-1"><b>Spores (Ex)</b> A halsora's claws are covered in mutated russet mold spores. A creature hit by a claw attack must succeed at a DC 18 Fortitude save or take 2 points of Constitution damage per round. It can attempt a new Fortitude save each round to halt the growth. A creature reduced to 0 Constitution by these spores explodes in a mess of viscera and spores. Creatures within the burst must succeed at a DC 18 Fortitude saving throw or be affected as if they were hit by the halsora's claw attack. This is a disease effect. The save is Constitution-based.</p>
+
+<p>Vegepygmies transformed by the vile fleshwarping process become halsoras, creatures twice cursed. The alchemical torture they undergo seems minor compared to what other fleshwarps suffer&mdash;it merely increases the mass and strength of the vegepygmy and deforms its eyes so they secrete acid. The process has a more interesting effect on the residual and previously inert russet mold within the body of the host vegepygmy. Mutating the mold, it creates a deadly spore that courses through the halsora's insides, is slowly excreted through the fingertips, and clumps on the claws of the creature.</p>
+<p>Though their sunken eyes and constant stream of acidic tears often make these creatures seem pitiful, they are fierce bundles of rage and self-hatred. The conditioning of the fleshwarpers causes them to attack and infect any enemy of the drow they come in contact with, but what's left of their consciousness rages against the mutated spores they carry. Worse still, many drow use these creatures to hunt down and even infect other tribes of vegepygmies.</p>
+
+
+<h1 id="fleshwarp-irnakurse" class="monster-header">Fleshwarp, Irnakurse</h1>
+<p class = "flavor-text">A mad-eyed mess of deformed limbs, misplaced features, and bone shards pulls itself along amid a cacophony of slapping flesh.</p>
+
+<p class = "stat-block-title">Irnakurse <span class = "stat-block-cr">CR 9</span></p>
+<p class = "stat-block-xp">XP 6,400</p>
+<p class = "stat-block-1">CE Large aberration</p>
+<p class = "stat-block-1"><b>Init</b> +7; <b>Senses</b> darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +15</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><b>AC</b> 23, touch 12, flat-footed 20 (+3 Dex, +11 natural, –1 size)</p>
+<p class = "stat-block-1"><b>hp</b> 105 (10d8+60)</p>
+<p class = "stat-block-1"><b>Fort</b> +9, <b>Ref</b> +8, <b>Will</b> +9</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><b>Speed</b> 10 ft.</p>
+<p class = "stat-block-1"><b>Melee</b> bite +8 14 (1d8+7), 4 tentacles +8 (1d6+3 plus mind lash)</p>
+<p class = "stat-block-1"><b>Space</b> 10 ft.; <b>Reach</b> 10 ft. (15 ft. with tentacles)</p>
+<p class = "stat-block-1"><b>Special Attacks</b> soul scream, rend (2 tentacles 2d6+10; 3 tentacles 3d6+10; 4 tentacles 4d6+10)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><b>Str</b> 24, <b>Dex</b> 17, <b>Con</b> 23, <b>Int</b> 8, <b>Wis</b> 14, <b>Cha</b> 18</p>
+<p class = "stat-block-1"><b>Base Atk</b> +7; <b>CMB</b> +15; <b>CMD</b> 28 (32 vs. trip)</p>
+<p class = "stat-block-1"><b>Feats</b> Combat Reflexes, Deflect Arrows, Improved Initiative, Lightning Reflexes, Weapon Focus (tentacle)</p>
+<p class = "stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +20, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +15, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +12</p>
+<p class = "stat-block-1"><b>Languages</b> Elven (can't speak)</p>
+<p class = "stat-block-breaker">Ecology</p>
+<p class = "stat-block-1"><b>Environment</b> any underground</p>
+<p class = "stat-block-1"><b>Organization</b> solitary</p>
+<p class = "stat-block-1"><b>Treasure</b> none</p>
+<p class = "stat-block-breaker">Special Abilities</p>
+<p class = "stat-block-1"><b>Mind Lash (Su)</b> Those struck by an irnakurse are overwhelmed with dark emotions and corrupted images of a ruined life. Any non-evil creature hit by an irnakurse's tentacle must succeed at a DC 19 Will save or be stunned for 1 round. A creature that successfully saves can't be affected by the same irnakurse's mind lash for 24 hours. The save DC is Charisma-based.</p>
+<p class = "stat-block-1"><b>Soul Scream (Su)</b> Capable of channeling all of its rage and terror into a single, unnatural noise, an irnakurse can unleash a sound of alien horror as a standard action. Any non-evil creature within 30 feet of a screaming irnakurse must succeed at a DC 19 Will save or take 1d4 points of Wisdom drain. Once it begins screaming, an irnakurse can continue as a free action for 6 rounds, but can't scream again for 5 minutes afterward. The save DC is Charisma-based.</p>
+
+<p>Irnakurse, meaning "perfect ones" in the Elven language, represent the sum outpouring of drow hatred for their surface-world brethren. These brainwashed, rage-filled abominations are the result of elves subjected to fleshwarping&mdash;and were the drow to have their way, embodiments of the elven race's future. Each irnakurse suffers long under the knife of the dark elves' most practiced fleshwarpers until its body and mind lie in total ruin. When the weeks of torture and transformation are complete, what was once an elf emerges as a shrieking mockery of its lost grace, a horror of reworked flesh and broken bones, a "perfect" elf to the drow and a sin against life to elvenkind.</p>
+<p>Through the blasphemous tortures that create them, irnakurse are made completely mad and become unable to harm drow. All non-drow, however, they view as targets to vent their terror and rage upon. Elves especially provoke irnakurses' ire.</p>
+<p>No two irnakurse look exactly the same&mdash;drow torturers take profane pride in sculpting their elven victims into unique masterpieces of agony&mdash;most stand between 8 and 9 feet tall and weigh upward of 300 pounds.</p>
+
+</div>
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Fleshwarp",globalNavPath=[{ href: '/pathfinderRPG/prd/bestiary4/monsterIndex.html', name: 'Bestiary 4 Index'}];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

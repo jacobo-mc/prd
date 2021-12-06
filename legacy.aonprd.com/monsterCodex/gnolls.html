@@ -1,0 +1,909 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Gnolls</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "gnolls.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "gnolls.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "gnolls.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "gnolls.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "gnolls.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "gnolls.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "gnolls.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "gnolls.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "boggards.html">Boggards</a></li>
+						<li><a href = "bugbears.html">Bugbears</a></li>
+						<li><a href = "drow.html">Drow</a></li>
+						<li><a href = "duergar.html">Duergar</a></li>
+						<li><a href = "fireGiants.html">Fire Giants</a></li>
+						<li><a href = "frostGiants.html">Frost Giants</a></li>
+						<li><a href = "ghouls.html">Ghouls</a></li>
+						<li><a href = "gnolls.html">Gnolls</a></li>
+						<li><a href = "goblins.html">Goblins</a></li>
+						<li><a href = "hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "kobolds.html">Kobolds</a></li>
+						<li><a href = "lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "ogres.html">Ogres</a></li>
+						<li><a href = "orcs.html">Orcs</a></li>
+						<li><a href = "ratfolk.html">Ratfolk</a></li>
+						<li><a href = "sahuagin.html">Sahuagin</a></li>
+						<li><a href = "serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "troglodytes.html">Troglodytes</a></li>
+						<li><a href = "trolls.html">Trolls</a></li>
+						<li><a href = "vampires.html">Vampires</a></li>
+						<li><a href = "appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "gnolls.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "gnolls.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "gnolls.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "gnolls.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "gnolls.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "gnolls.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "gnolls.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "gnolls.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "gnolls.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "gnolls.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "gnolls.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "gnolls.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "gnolls.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 class = "monster-header" id = "monster-codex-gnolls">Gnolls</h1>
+
+<p>Beyond the edge of their enemies' torchlight, the gnolls' tittering growls and snickering vocalizations disrupt the stillness. Occasionally, the light of reflective eyes dances in the darkness, but it is never enough to give a clear idea of the gnolls' number or plan of attack.</span></p>
+<p>Like the hyenas that hunt with them, these pack humanoids use misdirection, fear, and coordinated attacks to wear down their prey. With a cackling and irksome confidence, they murder at a leisurely pace, one spear strike at a time, ripping flesh and drawing blood until their enemy is too weak to resist their final onslaught.</p>
+<p>Creatures primarily of the burning desert and arid plain, gnolls know that survival relies on the pack. The matriarch of the pack enforces simple rules of gnoll cohesion. The struggle is not from within the pack, but outside of it. That which is weaker than the gnoll is food. Rest ensures sufficient strength for the hunt. Bite off only what you can chew, saving the rest for the survival of the pack&mdash;but always claim your share. Raise whelps to be strong, and discard the weak.</p>
+<p>Any creature that is not part of the pack is nothing more than moving meat. Even when a gnoll pack serves a powerful master from outside the pack, it does so with only its own survival in mind, and it quickly abandons that master if continued service would be suicidal. Other races might look down on the gnolls as selfish, lazy, and ultimately destructive, but gnolls merely cackle at such judgments. For gnolls, survival is the only morality, and eating one's enemies is the ultimate display of power.</p>
+<p>It was once believed that gnolls were a scourge of savannas and deserts alone, but while most gnolls prefer the regions favored by hyenas, they live and hunt in nearly every climate. Because gnolls' survival and pack cohesion rely on the hunt, if a pack becomes too large, it splinters. The weaker group is pushed beyond the borders of its former pack's hunting territory, often into regions with different ecologies and prey. While gnolls are numerous in arid climates, smaller and more desperate packs roam highlands, lowlands, forests, taigas, and even the Darklands.</p>
+<p>Gnolls are strictly carnivorous, even to the point of resorting to cannibalism in times of great need, during religious rituals, or to show their dominance after defeating a rival. The majority of their meat, however, comes from the hunt. Nearly any kind of meat can provide sustenance, but they have a strong preference for the flesh of sentient creatures. This preference is both practical (as sentient creatures are a great threat to the pack's stability and survival) and bound up with the common gnoll superstition that consuming a creature allows one to absorb its power. That said, there is a prevalent taboo among most gnolls against eating the flesh of the pugwampi (<em>Pathfinder RPG Bestiary 2</em> 144). Their disdain for these fawning fey is so great that most gnolls believe that eating pugwampi flesh weakens gnolls and can even curse the entire pack. It is better to kill them, weave their flesh into <em>pugwampi braids</em> &mdash;which at least have some use&mdash;and leave their meat to rot.</p>
+<p>Gnoll packs are matriarchal because female gnolls tend to be larger, more aggressive, and more cunning than males. Size aside, there are few physical differences in the appearances of female and male gnolls. On the average, a gnoll male is around 6 feet in height while the average gnoll female is closer to 6-1/2 feet, though gnolls of both genders appear shorter due to their stooping posture.</p>
+<p>The gnoll pack is a multilayered structure based on competing for dominance, with one alpha&mdash;typically the largest and most powerful female gnoll&mdash;at its apex. Rarely, a group of packs can mesh in an even more complex and ever shifting hierarchy in order to create a tribe or horde. This happens only when they're led by an extremely powerful leader, be it an alpha gnoll or a bullying outsider who can understand and manipulate the ever-shifting sands of gnoll dominance.</p>
+<p>Gnolls respect power and the ruthlessness to wield it successfully more than they do birth or station. A gnoll holds power over a pack because he or she is feared and revered, and only as long as he or she remains so. Because of this, when a pack leader dies, becomes infirm, or loses face, authority changes hands after a brief and bloody scramble for power between any gnolls with a thirst for power and the ability to assert dominance. Such scrambles for ascension often splinter a pack, as failed would-be alphas and their supporters are chased from the pack. This can create powerful rivalries between splintered packs, but often the ejected gnolls leave their pasts behind and pursue the hunt in new lands, attempting to build a new power base through increased breeding and rampaging hunts for new prey.</p>
+<p>Like hyenas, gnolls are nocturnal. During the day a gnoll encampment would seem slothful to outside observers, especially if they saw gnolls only during daylight hours. Such sightings, along with the fact that gnolls see little use in building permanent structures, have given gnolls the reputation for being lazy brutes. At night, though, the pack becomes a frenzy of murderous activity. Gnolls divide themselves into raiding parties, each of which scouts prey in the nighttime hours. When particularly powerful prey is located, the scouts vocalize to the pack in order to regroup and attack the prey in a swarming group. While the gnoll pack is usually interested only in the kill, some packs will take slaves for a time, using them as manual labor, and as a stock of food when prey is scarce. More often than not, such gnoll packs keep slaves while whelps are young, and when the captives have been sufficiently weakened from abuse, they're released as quarry so the whelps can engage in their first hunt with prey that have lost the ability to fight.</p>
+<p>Full statistics for gnolls can be found in their <a href = "../bestiary/gnoll.html"><em>Bestiary</em> entry</a>.</p>
+
+
+<h1 id = "gnoll-new-rules">New Rules</h1>
+<p>The methods, materials, and magic of the gnolls focus on their pack mentality and their brutal, savage nature.</p>
+
+<h2 id = "gnoll-archetypes">Gnoll Archetypes</h2>
+<p>The following archetypes are common among gnolls.</p>
+
+<h3 id = "bouda-(witch)">Bouda (Witch)</h3>
+<p>These strange and often solitary witches have a strong connection to curses, the evil eye, and hyenas.</p>
+<p><strong>Alignment</strong>: Because of the dark nature of her magic, a bouda must be of an evil alignment. If a character with the bouda archetype ceases to be evil, she loses the ability to use all alternate class features granted by this archetype (but still retains all other witch class features), though she's still considered to be a bouda when taking further levels in the witch class. A bouda regains use of all archetype alternate class features if she atones for her violations (see the <em><a href = "../coreRulebook/spells/atonement.html#atonement">atonement</a></em> spell).</p>
+<p><strong> Fetish</strong>: A bouda keeps a small fetish: sometimes a carved idol, other times a necklace adorned with teeth or bones. A bouda's spells come from the will of evil spirits residing in the fetish, and its ability to hold spells functions in a manner identical to the way a witch's spells are granted by her familiar. The bouda must commune with her fetish each day to prepare her spells and can only prepare spells stored in the fetish.</p>
+<p>At 3rd level, a bouda can use her fetish to deliver touch spells a number of times per day equal to 1/4 her witch level (minimum 1). When casting a touch spell, as a free action she can use this ability. When she does, she can deliver her spell as a ranged touch spell within a range of 30 feet. At 10th level, she can deliver these spells within a range of 60 feet. At 15th level and higher, she can deliver these spells within a range of 90 feet.</p>
+<p>This ability replaces the familiar class feature.</p>
+<p id = "bouda-eye"><strong>Bouda's Eye (Su)</strong>: A bouda's gaze can bestow ill fortune on her enemies. This hex can affect a creature within 30 feet that the bouda can see. The target takes a &ndash;2 penalty on one of the following (bouda's choice): AC, ability checks, attack rolls, saving throws, or skill checks. The hex lasts for a number of rounds equal to 3 + the bouda's Intelligence modifier. A successful Will saving throw reduces the duration of the hex to 1 round. Once per day when the bouda uses this hex, she can impose two different penalties on the target instead of just one. If the bouda takes the evil eye hex, it increases the number of different penalties she can impose on the hex's target by 1. At 8th level, the penalties imposed by this hex increase to &ndash;4. This is a mind-affecting effect.</p>
+<p>This hex must be taken as a bouda's 1st-level hex, and only a bouda can take this hex.</p>
+<p id = "hyena-shape"><strong>Hyena Shape (Su)</strong>: At 10th level, a bouda gains the ability to turn into a hyena or dire hyena and back again a number of times per day equal to her Intelligence modifier. This ability functions as <em><a href = "../coreRulebook/spells/beastShape.html#beast-shape-ii">beast shape II</a></em>, except for the following. The effect lasts for 1 hour per witch level, or until the bouda changes back. Changing form (to animal or back) is a standard action that does not provoke attacks of opportunity. At 20th level, a bouda can change her form at will. If a bouda dies while in hyena shape, she does not revert back to her true form.</p>
+<p>The bouda does not lose the ability to speak while in animal form, and can communicate with hyenas and dire hyenas as if under the effects of <em><a href = "../coreRulebook/spells/speakWithAnimals.html#speak-with-animals">speak with animals</a></em> . Furthermore, while in this form, the bouda gains the benefit of the <a href = "../coreRulebook/spells/protectionFromEnergy.html#natural-spell">Natural Spell</a> feat, even if she does not meet the prerequisites.</p>
+<p>This ability replaces the major hex granted at 10th level.</p>
+
+<h3 id = "pack-rager">Pack Rager (Barbarian)</h3>
+<p>Barbarian rages can be a thing of savage beauty, exhibiting a lethal grace. While such uncontrolled displays of carnage often disregard group tactics, there are those barbarians whose rages inspire and spur on their allies during the ferocious dance of death.</p>
+<p><strong>Bonus Feat</strong>: At 2nd level and every 4 levels thereafter, the pack rager can take a bonus teamwork feat. This teamwork feat must also be a combat feat. This ability replaces the rage powers gained at 2nd, 6th, 10th, 14th, and 18th level.</p>
+<p><strong>Raging Tactician</strong>: At 7th level, while a pack rager is raging, she grants a single teamwork feat she knows to all allies within 30 feet who can see and hear her. She chooses the feat at the start of the rage, and cannot change it during the rage. An ally who moves more than 30 feet away from the raging pack rager loses access to the feat, but regains it again each time he moves back within 30 feet of the raging pack rager. Allies do not need to meet the prerequisites of these teamwork feats.</p>
+<p>At 13th level, the pack rager chooses two teamwork feats when she enters a rage, and grants her allies the use of both of those feats when they are within 30 feet of her.</p>
+<p>At 16th level, the pack rager grants these teamwork feats as long as her allies are within 60 feet of her.</p>
+<p>At 19th level, the pack rager chooses three teamwork feats when she enters a rage, and grants her allies the use of all three feats when they are within 60 feet of her.</p>
+<p>This ability replaces the damage reduction class feature.</p>
+
+<h2 id = "gnoll-feats">Gnoll Feats</h2>
+<p>Gnolls have access to the following feats, some of which enhance the tactics of gnoll packs.</p>
+
+<h3 id = "coordinated-reposition">Coordinated Reposition (Teamwork)</h3>
+<p>You are skilled in coordinating combat positioning with your allies.</p>
+<p class = "stat-block-1"><strong>Prerequisite</strong>: Step-Up.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: Whenever an ally with this feat who is threatening a creature you are threatening takes a 5-foot step, you can move 5 feet as an immediate action. This movement does not provoke attacks of opportunity.</p>
+
+<h3 id = "disarm-partner">Disarm Partner (Combat, Teamwork)</h3>
+<p>When your ally fails to disarm an opponent within your reach, you can try to disarm that same foe.</p>
+<p class = "stat-block-1"><strong>Prerequisite</strong>: Base attack bonus +1.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: When an ally with this feat fails a disarm combat maneuver check made on his turn against an opponent within your melee reach, as an immediate action you can attempt a disarm combat maneuver check against that foe.</p>
+
+<h3 id = "improved-disarm-partner"><a href = "../coreRulebook/feats.html#improved-disarm">Improved Disarm</a> Partner (Combat, Teamwork)</h3>
+<p>You are ever the opportunist.</p>
+<p class = "stat-block-1"><strong>Prerequisites</strong>: Disarm Partner, base attack bonus +5.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: When an ally with this feat fails a disarm combat maneuver check made on his turn against a foe that's within your melee reach, you can make an attack of opportunity against that foe. If that attack of opportunity hits the foe, you can also attempt a disarm combat maneuver check against that opponent as part of that attack of opportunity.</p>
+
+<h3 id = "snapping-flank">Snapping Flank (Combat, Teamwork)</h3>
+<p>You can make a swift bite attack against a flanked foe.</p>
+<p class = "stat-block-1"><strong>Prerequisites</strong>: Base attack bonus +9, bite attack.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: Whenever you are flanking with an ally who also has this feat, as a swift action you can make a bite attack against the opponent you and your ally are flanking.</p>
+
+<h3 id = "snapping-jaws">Snapping Jaws (Combat)</h3>
+<p>When enemies get too close, your jaws tear flesh and bone.</p>
+<p class = "stat-block-1"><strong>Prerequisites</strong>: Base attack bonus +1, gnoll.</p>
+<p class = "stat-block-1"><strong>Benefits</strong>: You can use your bite as a natural weapon. This is a primary attack that deals 1d6 points of damage.</p>
+
+<h2 id = "gnoll-equipment">Gnoll Equipment</h2>
+<p>The following weapon is a favorite of flinds, but is sometimes used by other gnolls who master its use.</p>
+
+<p id = "" class = "stat-block-title">Flindbar</p>
+<p class = "stat-block-1"><strong>Price</strong> 9 gp; <strong>Type</strong> exotic</p>
+<p class = "stat-block">This one-handed weapon is similar to a nunchaku in that it consists of a pair of bars linked with heavy chain. However, a flindbar's bars are made of iron and are capped with a ring of spikes or studs. Since it's much heaver than a nunchaku, it is not a light weapon.</p>
+<table>
+	<thead>
+		<tr><th>Exotic Weapon</th><th>Price</th><th>Dmg (S)</th><th>Dmg (M)</th><th>Critical</th><th>Range</th><th>Weight</th><th>Type</th><th>Special</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>Flindbar</td><td>9 gp</td><td>1d6</td><td>1d8</td><td>&times;2</td><td>&mdash;</td><td>6 lbs.</td><td>B and P</td><td>Disarm, trip</td></tr>
+	</tbody>
+</table>
+
+<h2 id = "gnoll-magic-items">Gnoll Magic Items</h2>
+<p>The following magic items are favored by gnolls and flinds. </p>
+
+<p id = "hunter-nose-ring" class = "stat-block-title">Hunter's Nose Ring</p>
+<p class = "stat-block-1"><strong>Price</strong> 10,000 gp; <strong>Slot</strong> head; <strong>CL</strong> 3rd; <strong>Weight</strong> &mdash;; <strong>Aura</strong> faint transmutation</p>
+<p class = "stat-block">This nose ring seems to be braided from five platinum strands. It grants its wearer the scent ability along with a +4 competence bonus on <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> checks involving smell and on <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> checks to track using scent.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> 5,000 gp</p>
+<p class = "stat-block-1">Craft Wondrous Item, <em><a href = "../advancedPlayersGuide/spells/bloodhound.html#_bloodhound">bloodhound</a></em>, platinum ring worth 250 gp</p>
+
+<p id = "hyena-shawl" class = "stat-block-title">Hyena Shawl</p>
+<p class = "stat-block-1"><strong>Price</strong> 11,000 gp; <strong>Slot</strong> head; <strong>CL</strong> 8th; <strong>Weight</strong> &mdash;; <strong>Aura</strong> moderate abjuration and necromancy</p>
+<p class = "stat-block">When wrapped around the neck and jaw, this swath of black cloth lets its wearer see normally in a sandstorm (her vision isn't reduced, nor does she take the &ndash;4 penalty on <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> checks) and avoid taking nonlethal damage from the storm.</p>
+<p class = "stat-block">Once per day on command, the shawl's wearer can emit a strange cackling. Enemies within 30 feet of the shawl's wearer who can hear the cackling must succeed at a DC 16 Will saving throw or become frightened for 1 round. Those who succeed at the saving throw are shaken for 1d4 rounds instead. Both of the cackle's effects are sonic mind-affecting fear effects.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> 5,500 gp</p>
+<p class = "stat-block-1">Craft Wondrous Item, <em><a href = "../coreRulebook/spells/fear.html#fear">fear</a></em> </p>
+
+<p id = "pugwampi-braid" class = "stat-block-title">Pugwampi Braid</p>
+<p class = "stat-block-1"><strong>Price</strong> 9,000 gp; <strong>Slot</strong> none; <strong>CL</strong> 8th; <strong>Weight</strong> 1 lb.; <strong>Aura</strong> moderate necromancy</p>
+<p class = "stat-block">This braid, crafted from strips of pugwampi pelts, is 1 inch in diameter and 12 inches long. It can be carried in the hand like a riding crop or worn as an adornment.</p>
+<p class = "stat-block">Once per day with a command word, the owner of the braid can create a 5-foot-radius aura around the braid for 1 minute. Creatures other than the owner within the aura must roll twice and use the lower result whenever a situation calls for a d20 roll. This is a mind-affecting effect that does not work on humanoids with the gnoll subtype, animals, or gremlins. A creature under the effect of a luck bonus is immune to the aura.</p>
+<p class = "stat-block-breaker">Construction Requirements</p>
+<p class = "stat-block-1"><strong>Cost</strong> 4,500 gp</p>
+<p class = "stat-block-1">Craft Wondrous Item, <em><a href = "../coreRulebook/spells/bestowCurse.html#bestow-curse">bestow curse</a></em> </p>
+
+
+<h1 id = "example-gnolls">Example Gnolls</h1>
+
+<h2>Gnoll Barbarians</h2>
+<p>Gnoll barbarians feed off one another's rage, and use pack tactics to savage their enemies.</p>
+
+<p id = "gnoll-rageborn" class = "stat-block-title">Gnoll Rageborn <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1">Gnoll barbarian (pack rager) 2</p>
+<p class = "stat-block-1">CE Medium humanoid (gnoll)</p>
+<p class = "stat-block-1"><strong>Init</strong> +1; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +6</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 16, touch 9, flat-footed 15 (+6 armor, +1 Dex, +1 natural, &ndash;2 rage)</p>
+<p class = "stat-block-1"><strong>hp</strong> 49 (4 HD; 2d8+2d12+22)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +11, Ref +1, Will +3</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> uncanny dodge</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk greataxe +10 (1d12+9/&times;3), bite +4 (1d6+3) or bite +9 (1d6+9)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk javelin +5 (1d6+6)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> rage (9 rounds/day)</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> When he's not raging, the barbarian's statistics are <strong>AC</strong> 18, touch 11, flat-footed 17; <strong>hp</strong> 41; <strong>Fort</strong> +9, <strong>Will</strong> +1; <strong>Melee</strong> mwk greataxe +8 (1d12+6/&times;3), bite +7 (1d6+6); <strong>Str</strong> 19, <strong>Con</strong> 16; <strong>CMB</strong> +7, <strong>CMD</strong> 18; <strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +6.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 23, <strong>Dex</strong> 13, <strong>Con</strong> 20, <strong>Int</strong> 8, <strong>Wis</strong> 12, <strong>Cha</strong> 6</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +3; <strong>CMB</strong> +9; <strong>CMD</strong> 18</p>
+<p class = "stat-block-1"><strong>Feats</strong> Coordinated Reposition*, Snapping Jaws*, <a href = "../coreRulebook/feats.html#step-up">Step Up</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +3, <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +8, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +6, <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +6</p>
+<p class = "stat-block-1"><strong>Languages</strong> Gnoll</p>
+<p class = "stat-block-1"><strong>SQ</strong> fast movement</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em>, alchemist's fire (3); <strong>Other Gear</strong> mwk breastplate, mwk greataxe, mwk javelins (2), 18 gp</p>
+
+<p id = "gnoll-packlord" class = "stat-block-title">Gnoll Packlord <span class = "stat-block-cr">CR 9</span></p>
+<p class = "stat-block-xp">XP 6,400</p>
+<p class = "stat-block-1">Gnoll barbarian (pack rager) 8</p>
+<p class = "stat-block-1">CE Medium humanoid (gnoll)</p>
+<p class = "stat-block-1"><strong>Init</strong> +1; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +10</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 18, touch 9, flat-footed 17 (+7 armor, +1 Dex, +2 natural, &ndash;2 rage)</p>
+<p class = "stat-block-1"><strong>hp</strong> 124 (10 HD; 2d8+8d12+58)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +16, <strong>Ref</strong> +5, <strong>Will</strong> +7</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> improved uncanny dodge, trap sense +2; <strong>DR</strong> 1/&mdash;</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 falchion</em> +17/+12 (2d4+11/18&ndash;20), bite +11 (1d6+3) or bite +16 (1d6+10)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk javelin +11/+6 (1d6+7)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> rage (21 rounds/day), rage powers (quick reflexes, swift foot +5 feet), raging tactician* (30 ft.)</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> When she's not raging, the barbarian's statistics are <strong>AC</strong> 20, touch 11, flat-footed 19; <strong>hp</strong> 104; <strong>Fort</strong> +14, <strong>Will</strong> +5; <strong>Melee</strong> +1 falchion +15/+10 (2d4+8/18&ndash;20); <strong>Ranged</strong> mwk javelin +11/+6 (1d6+5) ; <strong>Str</strong> 20, <strong>Con</strong> 17; <strong>CMB</strong> +14, <strong>CMD</strong> 25.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 24, <strong>Dex</strong> 13, <strong>Con</strong> 21, <strong>Int</strong> 8, <strong>Wis</strong> 12, <strong>Cha</strong> 6</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +9; <strong>CMB</strong> +16; <strong>CMD</strong> 25</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#cleave">Cleave</a>, Disarm Partner*, <a href = "../coreRulebook/feats.html#improved-disarm">Improved Disarm</a> Partner*, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, Snapping Flank*, Snapping Jaws*, <a href = "../coreRulebook/feats.html#step-up">Step Up</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +11, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +10, <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +14</p>
+<p class = "stat-block-1"><strong>Languages</strong> Gnoll</p>
+<p class = "stat-block-1"><strong>SQ</strong> fast movement</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> alchemist's fire; <strong>Other Gear</strong> <em>+1 breastplate</em>, <em>+1 falchion</em>, mwk javelin, <em>amulet of natural armor +1</em>, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +2</em>, 4 gp</p>
+
+
+<h2>Gnoll Skirmishers</h2>
+<p>Employing a mix of cunning and brute force, skirmishers thrive in a pack hierarchy.</p>
+
+<p id = "gnoll-bruiser" class = "stat-block-title">Gnoll Bruiser <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1">Gnoll fighter 1/rogue 1</p>
+<p class = "stat-block-1">CE Medium humanoid (gnoll)</p>
+<p class = "stat-block-1"><strong>Init</strong> +2; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +5</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 14, touch 13, flat-footed 11 (+2 Dex, +1 dodge, +1 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 27 (4 HD; 3d8+1d10+9)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +7, <strong>Ref</strong> +4, <strong>Will</strong> +1</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> greatclub +6 (1d10+6)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> javelin +4 (1d6+4)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> sneak attack +1d6</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>During Combat</strong> A bruiser flanks with its packmates whenever possible, and takes time to reposition if separated from allies.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 19, <strong>Dex</strong> 14, <strong>Con</strong> 15, <strong>Int</strong> 6, <strong>Wis</strong> 12, <strong>Cha</strong> 8</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +2; <strong>CMB</strong> +6; <strong>CMD</strong> 19</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#dodge">Dodge</a>, <a href = "../coreRulebook/feats.html#mobility">Mobility</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +9, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +5, <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +8</p>
+<p class = "stat-block-1"><strong>Languages</strong> Gnoll</p>
+<p class = "stat-block-1"><strong>SQ</strong> trapfinding +1</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potions of <a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a> (2),</em> alchemist's fire (2), tanglefoot bags (2); <strong>Other Gear</strong> greatclub, javelins (5), <em>daredevil boots</em></p>
+
+<p>These massive gnolls pound enemies into submission.</p>
+
+<p id = "gnoll-warden" class = "stat-block-title">Gnoll Warden <span class = "stat-block-cr">CR 10</span></p>
+<p class = "stat-block-xp">XP 9,600</p>
+<p class = "stat-block-1">Gnoll ranger (skirmisher) 9</p>
+<p class = "stat-block-1">CE Medium humanoid (gnoll)</p>
+<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +15</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 22, touch 14, flat-footed 18 (+6 armor, +3 Dex, +1 dodge, +2 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 89 (11 HD; 2d8+9d10+31)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +13, <strong>Ref</strong> +11, <strong>Will</strong> +6</p>
+<p class = "stat-block-1"><strong>Defensive Abilities </strong>evasion</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 20 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 scimitar</em> +15/+10 (1d6+5/18&ndash;20)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> <em>+1 composite longbow</em> +15/+10 (1d8+5/&times;3)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> combat style (archery), favored enemy (dwarves +2, humans +4), hunter's tricks 5/day (aiding attack, hateful attack, trick shot)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 18, <strong>Dex</strong> 17, <strong>Con</strong> 15, <strong>Int</strong> 10, <strong>Wis</strong> 13, <strong>Cha</strong> 6</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +10; <strong>CMB</strong> +14; <strong>CMD</strong> 28</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#dodge">Dodge</a>, <a href = "../coreRulebook/feats.html#endurance">Endurance</a>, <a href = "../coreRulebook/feats.html#manyshot">Manyshot</a>, <a href = "../coreRulebook/feats.html#mobility">Mobility</a>, <a href = "../coreRulebook/feats.html#point-blank-shot">Point-Blank Shot</a>, <a href = "../coreRulebook/feats.html#precise-shot">Precise Shot</a>, <a href = "../coreRulebook/feats.html#rapid-shot">Rapid Shot</a>, <a href = "../coreRulebook/feats.html#shot-on-the-run">Shot on the Run</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (longbow)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +11 (+7 when jumping), <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +15, <a href = "../coreRulebook/skills/heal.html#heal">Heal</a> +7, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +15, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +14, <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +15</p>
+<p class = "stat-block-1"><strong>Languages</strong> Gnoll</p>
+<p class = "stat-block-1"><strong>SQ</strong> favored terrain (desert +4, jungle +2), hunter's bond (companions), swift tracker, track +4, wild empathy +7, woodland stride</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></em>, alchemist's fire (2); <strong>Other Gear</strong> <em>+1 scale mail, +1 composite longbow</em> (+4 Str) with 20 arrows, <em>+1 scimitar</em>, <em>amulet of natural armor +1</em>, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +2</em>, 94 gp</p>
+
+<p>The warden often serves as a gnoll pack's forward scout, tracking prey and wearing it down with pursuit before her packmates swoop in to attack.</p>
+
+
+<h2>Gnoll War Leaders</h2>
+<p>The alpha of a pack assigns leadership roles as she sees fit.</p>
+
+<p id = "gnoll-sergeant" class = "stat-block-title">Gnoll Sergeant <span class = "stat-block-cr">CR 4</span></p>
+<p class = "stat-block-xp">XP 1,200</p>
+<p class = "stat-block-1">Gnoll ranger 3</p>
+<p class = "stat-block-1">CE Medium humanoid (gnoll)</p>
+<p class = "stat-block-1"><strong>Init</strong> +2; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +9</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 17, touch 12, flat-footed 15 (+4 armor, +2 Dex, +1 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 38 (5 HD; 2d8+3d10+13)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +9, <strong>Ref</strong> +6, <strong>Will</strong> +3</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> spear +8 (1d8+6/&times;3)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk composite longbow +8 (1d8+4/&times;3)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> combat style (archery), favored enemy (humans +2)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 18, <strong>Dex</strong> 15, <strong>Con</strong> 15, <strong>Int</strong> 8, <strong>Wis</strong> 12, <strong>Cha</strong> 6</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +4; <strong>CMB</strong> +8; <strong>CMD</strong> 20</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#endurance">Endurance</a>, <a href = "../coreRulebook/feats.html#point-blank-shot">Point-Blank Shot</a>, <a href = "../coreRulebook/feats.html#precise-shot">Precise Shot</a>, <a href = "../coreRulebook/feats.html#rapid-shot">Rapid Shot</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (longbow)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +11, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nature) +4, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +9, <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +9</p>
+<p class = "stat-block-1"><strong>Languages</strong> Gnoll</p>
+<p class = "stat-block-1"><strong>SQ</strong> favored terrain (desert +2), track +1, wild empathy +1</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em>, tanglefoot bag; <strong>Other Gear</strong> mwk chain shirt, mwk composite longbow (+4 Str) with 20 arrows, spear, <em>c l oak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +1</em> </p>
+
+<p>The lowest of gnoll war leaders, sergeants are always eager to prove their mettle in order to move up in the dominance hierarchy of the pack.</p>
+
+<p id = "gnoll-lieutenant" class = "stat-block-title">Gnoll Lieutenant <span class = "stat-block-cr">CR 6</span></p>
+<p class = "stat-block-xp">XP 2,400</p>
+<p class = "stat-block-1">Gnoll fighter 5</p>
+<p class = "stat-block-1">CE Medium humanoid (gnoll)</p>
+<p class = "stat-block-1"><strong>Init</strong> +1; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +0</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 20, touch 11, flat-footed 19 (+7 armor, +1 Dex, +1 natural, +1 shield)</p>
+<p class = "stat-block-1"><strong>hp</strong> 55 (7 HD; 2d8+5d10+19)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +10, <strong>Ref</strong> +3, <strong>Will</strong> +2 (+1 vs. fear)</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> bravery +1</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 20 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 scorpion whip</em> +14/+9 (1d4 +9)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk javelin +8/+3 (1d6+5)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> weapon training (flails +1)</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The gnoll lieutenant demoralizes foes and lashes out with his scorpion whip from a distance.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 20, <strong>Dex</strong> 12, <strong>Con</strong> 15, <strong>Int</strong> 6, <strong>Wis</strong> 10, <strong>Cha</strong> 12</p>
+<p class = "stat-block-1"><strong>Base Atk </strong>+6; <strong>CMB</strong> +11; <strong>CMD</strong> 22</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#dazzling-display">Dazzling Display</a>, <a href = "../coreRulebook/feats.html#exotic-weapon-proficiency">Exotic Weapon Proficiency</a> (whip), <a href = "../ultimateCombat/ultimateCombatFeats.html#improved-whip-mastery">Improved Whip Mastery</a>, <a href = "../coreRulebook/feats.html#intimidating-prowess">Intimidating Prowess</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (whip), <a href = "../ultimateCombat/ultimateCombatFeats.html#whip-mastery">Whip Mastery</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +16</p>
+<p class = "stat-block-1"><strong>Languages</strong> Gnoll</p>
+<p class = "stat-block-1"><strong>SQ</strong> armor training 1</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potions of <a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></em> (2), <em>potion of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em>, alchemist's fire (3), thunderstones (2); <strong>Other Gear</strong> mwk splint mail, mwk light steel shield, <em>+1 scorpion whip</em>, mwk javelin, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +1</em>, 15 gp</p>
+
+<p>Gnoll lieutenants use intimidation and the crack of their scorpion whips to push lesser members of the pack into battle and to demoralize their enemies.</p>
+
+
+<h2>Gnoll Devotees</h2>
+
+<p id="gnoll-clerics" class = "stat-block-title">Gnoll Clerics</p>
+<p class = "stat-block-xp">XP 1,600</p>
+<p class = "stat-block-1">Gnoll cleric 4</p>
+<p class = "stat-block-1">CE Medium humanoid (gnoll)</p>
+<p class = "stat-block-1"><strong>Init</strong> +1; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +3</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 18, touch 11, flat-footed 17 (+5 armor, +1 Dex, +2 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 31 (6d8+4)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +7, <strong>Ref</strong> +2, <strong>Will</strong> +7</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 20 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk falchion +8 (2d4+4/18&ndash;20)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> javelin +5 (1d6+3)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> channel negative energy 6/day (DC 15, 2d6)</p>
+<p class = "stat-block-1"><strong>Domain Spell-Like Abilities</strong> (CL 4th; concentration +7)</p>
+<p class = "stat-block-2">6/day&mdash;copycat (4 rounds), strength surge (+2)</p>
+<p class = "stat-block-1"><strong>Cleric Spells Prepared</strong> (CL 4th; concentration +7)</p>
+<p class = "stat-block-2">2nd&mdash;<em><a href = "../coreRulebook/spells/deathKnell.html#death-knell">death knell</a></em> (DC 15), <em><a href = "../ultimateMagic/spells/dreadBolt.html#_dread-bolt">dread bolt</a></em> (DC 15), <em><a href = "../coreRulebook/spells/holdPerson.html#hold-person">hold person</a></em> (DC 15), <em><a href = "../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></em> <sup>D</sup></p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/magicItems/weapons.html#_weapons-bane">bane</a></em> (DC 14), <em><a href = "../coreRulebook/spells/doom.html#doom">doom</a></em> (DC 14), <em><a href = "../coreRulebook/spells/enlargePerson.html#enlarge-person">enlarge person</a></em> <sup>D</sup> (DC 14), <em><a href = "../coreRulebook/spells/entropicShield.html#entropic-shield">entropic shield</a></em>, <em><a href = "../ultimateMagic/spells/rayOfSickening.html#_ray-of-sickening">ray of sickening</a></em> (DC 14)</p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/bleed.html#bleed">bleed</a></em> (DC 13), <em><a href = "../coreRulebook/spells/guidance.html#guidance">guidance</a></em>, <em><a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a></em>, <em><a href = "../coreRulebook/spells/stabilize.html#stabilize">stabilize</a></em> </p>
+<p class = "stat-block-2"><strong>D</strong> domain spell; <strong>Domains</strong> Strength, Trickery</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 17, <strong>Dex</strong> 12, <strong>Con</strong> 10, <strong>Int</strong> 8, <strong>Wis</strong> 16, <strong>Cha</strong> 12</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +4; <strong>CMB</strong> +7; <strong>CMD</strong> 18</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#combat-casting"><a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a></a>, <a href = "../coreRulebook/feats.html#extra-channel">Extra Channel</a>, <a href = "../coreRulebook/feats.html#improved-channel">Improved Channel</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +8</p>
+<p class = "stat-block-1"><strong>Languages</strong> Gnoll</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></em>, <em>wand of <a href = "../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></em> (50 charges), alchemist's fire (2); <strong>Other Gear</strong> mwk scale mail, javelins (2), mwk falchion, <em>amulet of natural armor +1</em>, 33 gp</p>
+
+<p id = "gnoll-ravager" class = "stat-block-title">Gnoll Ravager <span class = "stat-block-cr">CR 11</span></p>
+<p class = "stat-block-xp">XP 12,800</p>
+<p class = "stat-block-1">Gnoll antipaladin 10</p>
+<p class = "stat-block-1">CE Medium humanoid (gnoll)</p>
+<p class = "stat-block-1"><strong>Init</strong> +0; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +1</p>
+<p class = "stat-block-1"><strong>Aura</strong> cowardice (10 ft.), despair (10 ft.)</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 21, touch 10, flat-footed 21 (+10 armor, +1 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 122 (12 HD; 2d8+10d10+46)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +16, <strong>Ref</strong> +5, <strong>Will</strong> +12</p>
+<p class = "stat-block-1"><strong>Immune</strong> disease</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 20 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 human-bane falchion </em> +19/+14/+9 (2d4+10/15&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> channel negative energy (DC 16, 5d6), smite good 4/day (+1 attack and AC, +10 damage)</p>
+<p class = "stat-block-1"><strong>Antipaladin Spell-Like Abilities</strong> (CL 10th; concentration +11)</p>
+<p class = "stat-block-2">At will&mdash;<em><a href = "../coreRulebook/spells/detectGood.html#detect-good">detect good</a></em> </p>
+<p class = "stat-block-1"><strong>Antipaladin Spells Prepared</strong> (CL 7th; concentration +8)</p>
+<p class = "stat-block-2">2nd&mdash;<em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em> </p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/spells/doom.html#doom">doom</a></em> (DC 12),<em> <a href = "../ultimateCombat/spells/litanyOfSloth.html#_litany-of-sloth">litany of sloth</a></em>, <em><a href = "../coreRulebook/spells/protectionFromGood.html#protection-from-good">protection from good</a></em> </p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The ravager casts <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em> on himself.</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> Without <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em>, the ravager's base statistics are <strong>Melee</strong> <em>+1 human-bane falchion </em> +17/+12/+7 (2d4+7/15&ndash;20); <strong>Str</strong> 19; <strong>CMB</strong> +15; <strong>CMD</strong> 25.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 23, <strong>Dex</strong> 10, <strong>Con</strong> 18, <strong>Int</strong> 6, <strong>Wis</strong> 12, <strong>Cha</strong> 13</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +11; <strong>CMB</strong> +17; <strong>CMD</strong> 27</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#cleave">Cleave</a>, <a href = "../coreRulebook/feats.html#great-cleave">Great Cleave</a>, <a href = "../coreRulebook/feats.html#improved-critical">Improved Critical</a> (falchion), <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (falchion)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +16</p>
+<p class = "stat-block-1"><strong>Languages</strong> Gnoll</p>
+<p class = "stat-block-1"><strong>SQ</strong> cruelties (fatigued, nauseated, staggered), fiendish boon (weapon +2, 2/day), touch of corruption (6/day, 5d6)</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em> ; <strong>Other Gear </strong><em>+1 full plate</em>, <em>+1 human-bane falchion</em>, <em>belt of mighty constitution +2</em>, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +1</em>, 125 gp</p>
+
+
+
+
+<p>Gnoll clerics, devoted to the goddess of monsters, serve the pack by culling the weak and enforcing pack hierarchy.</p>
+
+<p id = "gnoll-chosen" class = "stat-block-title">Chosen<span class = "stat-block-cr">CR 12</span></p>
+<p class = "stat-block-xp">XP 19,200</p>
+<p class = "stat-block-1">Gnoll cleric 11</p>
+<p class = "stat-block-1">CE Medium humanoid (gnoll)</p>
+<p class = "stat-block-1"><strong>Init</strong> &ndash;1; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +8</p>
+<p class = "stat-block-breaker">Defense </p>
+<p class = "stat-block-1"><strong>AC</strong> 22, touch 10, flat-footed 22 (+10 armor, +1 deflection, &ndash;1 Dex, +2 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 95 (13d8+37)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +13, <strong>Ref</strong> +3, <strong>Will</strong> +13</p>
+<p class = "stat-block-1"><strong>DR </strong>10/adamantine (110 hp)</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 20 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 falchion</em> +15/+10 (2d4+7/18&ndash;20), <em>+1 spear</em> +14/+9 (1d8+5/&times;3)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> <em>+1 spear</em> +9 (1d8+5/&times;3)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> channel negative energy 7/day (DC 17, 6d6), might of the gods (+11, 11 rounds/day), scythe of evil (5 rounds, 1/day)</p>
+<p class = "stat-block-1"><strong>Domain Spell-Like Abilities</strong> (CL 11th; concentration +14)</p>
+<p class = "stat-block-2">6/day&mdash;strength surge (+5), touch of evil (5 rounds)</p>
+<p class = "stat-block-1"><strong>Cleric Spells Prepared</strong> (CL 11th; concentration +14)</p>
+<p class = "stat-block-2">6th&mdash;<em><a href = "../coreRulebook/spells/stoneskin.html#stoneskin">stoneskin</a></em> <sup>D</sup>, <em>summon monster</em> VI</p>
+<p class = "stat-block-2">5th&mdash;<em><a href = "../coreRulebook/spells/breathOfLife.html#breath-of-life">breath of life</a></em>, <em><a href = "../coreRulebook/spells/righteousMight.html#righteous-might">righteous might</a></em> <sup>D</sup>, <em><a href = "../coreRulebook/spells/slayLiving.html#slay-living">slay living</a></em> (DC 18)</p>
+<p class = "stat-block-2">4th&mdash;<em><a href = "../coreRulebook/spells/confusion.html#confusion">confusion</a></em> (DC 17), <em><a href = "../coreRulebook/spells/divinePower.html#divine-power">divine power</a></em>, <em><a href = "../coreRulebook/spells/freedomOfMovement.html#freedom-of-movement">freedom of movement</a></em>, <em><a href = "../coreRulebook/spells/unholyBlight.html#unholy-blight">unholy blight</a></em> <sup>D</sup> (DC 17)</p>
+<p class = "stat-block-2">3rd&mdash;<em><a href = "../coreRulebook/spells/bestowCurse.html#bestow-curse">bestow curse</a></em> (DC 16), <em>blindness</em> (DC 16), <em>cure serious wounds, <a href = "../coreRulebook/spells/magicVestment.html#magic-vestment">magic vestment</a></em> <sup>D</sup>, <em><a href = "../ultimateMagic/spells/visionOfHell.html#_vision-of-hell">vision of hell</a></em> (DC 16), <em><a href = "../coreRulebook/spells/windWall.html#wind-wall">wind wall</a></em> </p>
+<p class = "stat-block-2">2nd&mdash;<em><a href = "../coreRulebook/spells/aid.html#aid">aid</a></em>, <em><a href = "../coreRulebook/magicItems/armor.html#_armor-blinding">blinding</a> ra y</em> (DC 15), <em><a href = "../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></em> <sup>D</sup>, <em><a href = "../coreRulebook/spells/deathKnell.html#death-knell">death knell</a></em> (DC 15), <em><a href = "../coreRulebook/spells/holdPerson.html#hold-person">hold person</a></em> (DC 15), <em><a href = "../coreRulebook/spells/soundBurst.html#sound-burst">sound burst</a></em> (DC 15)</p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/spells/causeFear.html#cause-fear">cause fear</a></em> (DC 14), <em><a href = "../coreRulebook/spells/enlargePerson.html#enlarge-person">enlarge person</a></em> (DC 14), <em><a href = "../coreRulebook/spells/entropicShield.html#entropic-shield">entropic shield</a></em>, <em><a href = "../ultimateMagic/spells/forbidAction.html#_forbid-action">forbid action</a></em> (DC 14), <a href = "../ultimateMagic/spells/murderousCommand.html#murderous-command"><em>murderous command</em></a> (DC 14), <em><a href = "../coreRulebook/spells/protectionFromGood.html#protection-from-good">protection from good</a></em> <sup>D</sup></p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/bleed.html#bleed">bleed</a></em> (DC 13), <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/readMagic.html#read-magic">read magic</a></em>, <em><a href = "../coreRulebook/spells/stabilize.html#stabilize">stabilize</a></em> </p>
+<p class = "stat-block-2"><strong>D</strong> domain spell; <strong>Domains</strong> Evil, Strength</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The gnoll casts <em><a href = "../coreRulebook/spells/magicVestment.html#magic-vestment">magic vestment</a></em> on an ally's armor or shield and <em><a href = "../coreRulebook/spells/stoneskin.html#stoneskin">stoneskin</a></em> on herself.</p>
+<p class = "stat-block-1"><strong>During Combat </strong>The gnoll provides more allies for her pack with <em><a href = "../coreRulebook/spells/summonMonster.html#summon-monster-vi">summon monster VI</a></em>, then uses her spells to empower her allies as they head into combat.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 18, <strong>Dex</strong> 8, <strong>Con</strong> 14, <strong>Int</strong> 8, <strong>Wis</strong> 16, <strong>Cha</strong> 14</p>
+<p class = "stat-block-1"><strong>Base Atk </strong>+9; <strong>CMB</strong> +13; <strong>CMD</strong> 23</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#cleave">Cleave</a>, <a href = "../coreRulebook/feats.html#combat-casting"><a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a></a>, <a href = "../coreRulebook/feats.html#extra-channel">Extra Channel</a>, <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#selective-channeling">Selective Channeling</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (falchion)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +8, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +10 </p>
+<p class = "stat-block-1"><strong>Languages</strong> Gnoll</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>wand of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em> (20 charges); <strong>Other Gear</strong> <em>+2 chainmail</em>, <em>+1 falchion</em>, <em>+1 spear</em>, <em>amulet of natural armor +1</em>, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +1</em>, <em>headband of alluring charisma +2</em>, <em>ring of protection +1</em>, silver holy symbol, granite and diamond dust (worth 750 gp), 448 gp</p>
+
+<p> In many cases, these powerful clerics are alphas, though even when they're not, they still hold prominent positions, typically as second-in-command.</p>
+<p> Gnoll clerics, who are almost always female, oversee gory rituals and sacrifices in the goddess's name. They believe unholy magic should not be wasted on everyday things, but that warfare is worthy of such blessings. Clerics attend the births of litters and other momentous events, as well as passing down stories to the young, though a cleric of high position might force lesser clerics to perform such duties.</p>
+
+
+<h2>Gnoll Bouda</h2>
+<p>Within gnoll society, a bouda is a source of power and mystery. Though she serves as the pack's advisor, a bouda often prepares her magic in secret.</p>
+
+<p id = "gnoll-bouda" class = "stat-block-title">Gnoll Bouda <span class = "stat-block-cr">CR 13</span></p>
+<p class = "stat-block-xp">XP 25,600</p>
+<p class = "stat-block-1">Gnoll witch (bouda) 12 (<em>Pathfinder RPG Advanced Player's Guide</em> 65, see page 92)</p>
+<p class = "stat-block-1">CE Medium humanoid (gnoll)</p>
+<p class = "stat-block-1"><strong>Init</strong> +5; <strong>Senses</strong> all-around vision, darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +16</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 19, touch 12, flat-footed 18 (+4 armor, +1 deflection, +1 Dex, +3 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 105 (14 HD; 2d8+12d6+54)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +11, <strong>Ref</strong> +9, <strong>Will</strong> +14</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+2 dagger</em> +10/+5 (1d4+3/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> hexes (blight [120 feet], bouda's eye, disguise [12 hours], evil eye [&ndash;4, 7 rounds], hag's eye [12 minutes/day], retribution [4 rounds])</p>
+<p class = "stat-block-1"><strong>Witch Spells Prepared</strong> (CL 12th; concentration +16)</p>
+<p class = "stat-block-2">6th&mdash;<em><a href = "../coreRulebook/spells/suggestion.html#suggestion-mass">mass suggestion</a></em> (DC 21), <em><a href = "../coreRulebook/spells/slayLiving.html#slay-living">slay living</a></em> (DC 20)</p>
+<p class = "stat-block-2">5th&mdash;<em><a href = "../coreRulebook/spells/balefulPolymorph.html#baleful-polymorph">baleful polymorph</a></em> (DC 19), <em><a href = "../coreRulebook/spells/cloudkill.html#cloudkill">cloudkill</a></em> (DC 19), <em><a href = "../coreRulebook/spells/wavesOfFatigue.html#waves-of-fatigue">waves of fatigue</a></em> </p>
+<p class = "stat-block-2">4th&mdash;<em><a href = "../ultimateMagic/spells/capeOfWasps.html#_cape-of-wasps">cape of wasps</a></em>, <em><a href = "../coreRulebook/spells/crushingDespair.html#crushing-despair">crushing despair</a></em> (DC 19), <em><a href = "../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds">cure serious wounds</a></em>, <em><a href = "../coreRulebook/spells/dimensionDoor.html#dimension-door">dimension door</a></em> </p>
+<p class = "stat-block-2">3rd&mdash;<em><a href = "../coreRulebook/spells/bestowCurse.html#bestow-curse">bestow curse</a></em> (DC 17), <em>countless eye s</em>, <em><a href = "../coreRulebook/spells/dispelMagic.html#dispel-magic">dispel magic</a></em>, <em><a href = "../coreRulebook/spells/stinkingCloud.html#stinking-cloud">stinking cloud</a></em> (DC 17), <em><a href = "../coreRulebook/spells/vampiricTouch.html#vampiric-touch">vampiric touch</a></em> </p>
+<p class = "stat-block-2">2nd&mdash;<em><a href = "../coreRulebook/spells/blindnessDeafness.html#blindness-deafness">blindness/deafness</a></em> (DC 16<em>), burning gaz e</em> (DC 16), <em><a href = "../coreRulebook/spells/glitterdust.html#glitterdust">glitterdust</a></em> (DC 16), <em><a href = "../coreRulebook/spells/seeInvisibility.html#see-invisibility">see invisibility</a></em>, <em><a href = "../coreRulebook/spells/touchOfIdiocy.html#touch-of-idiocy">touch of idiocy</a></em> </p>
+<p class = "stat-block-2">1st&mdash;<em>beguiling gif t</em> (DC 16), <em><a href = "../ultimateMagic/spells/bungle.html#_bungle">bungle</a></em> (DC 16), <em><a href = "../coreRulebook/spells/burningHands.html#burning-hands">burning hands</a></em> (DC 15), <em><a href = "../coreRulebook/spells/mageArmor.html#mage-armor">mage armor</a></em>, <em><a href = "../coreRulebook/spells/rayOfEnfeeblement.html#ray-of-enfeeblement">ray of enfeeblement</a> </em> (DC 15)</p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/bleed.html#bleed">bleed</a></em> (DC 14), <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em>putrefy food and drin k</em>, <em><a href = "../coreRulebook/spells/touchOfFatigue.html#touch-of-fatigue">touch of fatigue</a></em> (DC 14)</p>
+<p class = "stat-block-2"><strong>Patron</strong> trickery</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The gnoll casts <em><a href = "../ultimateMagic/spells/countlessEyes.html#_countless-eyes">countless eyes</a></em> and <em><a href = "../coreRulebook/spells/mageArmor.html#mage-armor">mage armor</a></em> on herself.</p>
+<p class = "stat-block-1"><strong>During Combat </strong>The bouda's favorite tactic is to use a spell such as <em><a href = "../coreRulebook/spells/cloudkill.html#cloudkill">cloudkill</a></em> or <em><a href = "../coreRulebook/spells/wavesOfFatigue.html#waves-of-fatigue">waves of fatigue</a></em> against multiple enemies to soften them up before her packmates attack. She then singles out enemies for <em><a href = "../coreRulebook/spells/slayLiving.html#slay-living">slay living</a></em> or <em><a href = "../coreRulebook/spells/balefulPolymorph.html#baleful-polymorph">baleful polymorph</a></em> .</p>
+<p class = "stat-block-1"><strong>Base Statistics </strong>Without <em><a href = "../ultimateMagic/spells/countlessEyes.html#_countless-eyes">countless eyes</a></em> and <em><a href = "../coreRulebook/spells/mageArmor.html#mage-armor">mage armor</a></em>, the gnoll's statistics are <strong>Senses</strong> no all-around vision; <strong>AC</strong> 15, touch 12, flat-footed 14.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 12, <strong>Dex</strong> 12, <strong>Con</strong> 15, <strong>Int</strong> 18, <strong>Wis</strong> 14, <strong>Cha</strong> 8</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +7; CMB +8; CMD 20</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#combat-casting"><a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a></a>, <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../bestiary/monsterFeats.html#improved-natural-armor">Improved Natural Armor</a>, <a href = "../coreRulebook/feats.html#iron-will">Iron Will</a>, <a href = "../coreRulebook/feats.html#lightning-reflexes"><a href = "../coreRulebook/feats.html#lightnin-reflexes">Lightning Reflexes</a></a>, <a href = "../coreRulebook/feats.html#spell-focus"><a href = "../coreRulebook/feats.html#spell-focus">Spell Focus</a></a> (enchantment), <a href = "../coreRulebook/feats.html#toughness">Toughness</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/heal.html#heal">Heal</a> +12, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +16, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana) +21, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +16, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +16, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +21, <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +12</p>
+<p class = "stat-block-1"><strong>Languages </strong>Abyssal, Common, Giant, Gnoll, Orc </p>
+<p class = "stat-block-1"><strong>SQ</strong> fetish, hyena shape</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potions of <a href = "../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></em> (2), <em>scrolls of <a href = "../coreRulebook/spells/blackTentacles.html#black-tentacles">black tentacles</a></em> (2), <em>wand of <a href = "../coreRulebook/spells/lightningBolt.html#lightning-bolt">lightning bolt</a></em> (20 charges); <strong>Other Gear</strong> <em>+2 dagger</em>, <em>amulet of natural armor +1</em>, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +2, headband of vast intelligence +2</em>, <em>ring of protection +1</em>, 198 gp</p>
+
+<p>Though she sees after the pack, a bouda is an unknowable and cryptic being even to gnolls who grew up with her, for arcane magic remains largely a mystery to gnolls, and most avoid it. Because a bouda's expertise seems so alien and odd, a witch must prove her toughness before she is accepted as a revered bouda. </p>
+
+
+<h2 id = "flind">Flind</h2>
+<p><em>This powerfully built, hyena-like humanoid is larger than the average gnoll and has a <a href = "../advancedPlayersGuide/magicItems/weapons.html#cunning">cunning</a>, cruel gaze.</em> </p>
+
+<p class = "stat-block-title">Flind <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1">NE Medium humanoid (gnoll)</p>
+<p class = "stat-block-1"><strong>Init</strong> +6; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +6</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 17, touch 12, flat-footed 15 (+3 armor, +2 Dex, +2 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 30 (4d8+12)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +7, <strong>Ref</strong> +3, <strong>Will</strong> +3</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> flindbar +6 (1d8+6/&times;2 plus disarm, trip)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> composite longbow +5 (1d8+4/&times;3)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 18, <strong>Dex</strong> 15, <strong>Con</strong> 16, <strong>Int</strong> 12, <strong>Wis</strong> 15, <strong>Cha</strong> 13</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +3; <strong>CMB</strong> +7; <strong>CMD</strong> 19</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> +8, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +5, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +6</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Gnoll</p>
+<p class = "stat-block-1"><strong>SQ</strong> weapon familiarity</p>
+<p class = "stat-block-breaker">Ecology</p>
+<p class = "stat-block-1"><strong>Environment</strong> warm plains or deserts</p>
+<p class = "stat-block-1"><strong>Organization </strong>solitary, pair, hunting party (1 flind, 1&ndash;4 gnolls and 1&ndash;2 hyenas), band (10&ndash;100 gnolls [30% flinds and 50% noncombatant children], 1 sergeant of 3rd level per 20 adults, 1 leader of 4th&ndash;6th level, and 5&ndash;8 hyenas), or tribe (20&ndash;200 gnolls [30% flinds and 50% noncombatant children] plus 1 sergeant of 3rd level per 20 gnolls, 1 or 2 lieutenants of 4th or 5th level, 1 leader of 6th&ndash;8th level, 7&ndash;12 hyenas, and 4&ndash;7 hyaenodons)</p>
+<p class = "stat-block-1"><strong>Treasure</strong> standard (studded leather, composite longbow [Str +4] with 20 arrows, flindbar*, other treasure)</p>
+<p class = "stat-block-breaker">Special Abilities</p>
+<p class = "stat-block-1"><strong>Weapon Familiarity</strong>: Flinds are always proficient with flindbars.</p>
+
+<p>Flinds are slightly larger, more intelligent, and of a stockier build than gnolls, and it's a common misconception that flinds are an entirely separate race. Though interbreeding may one day make them so, flinds are actually the product of controlled breeding practices by the dominant females of gnoll packs.</p>
+<p>The slyest and largest female gnolls sanctified by the chosen are paired with the most savage males, and a little more than half the time, the resulting litter includes at least one flind. The flind pup is often female. A breeding female flind produces only flinds, though flinds' litters tend to be smaller than those of normal gnolls. Male flinds who breed with female gnolls produce a litter with a flind about three quarters of the time.</p>
+<p>More capable of focus, cunning, and planning than gnolls, flinds are typically found in leadership roles within gnoll bands and tribes, and frequently lead hunting parties. Like gnolls, flinds use ambush tactics and often make slaves of surviving foes, yet a flind is more likely to go on the offensive when the odds are closer to even. Flinds still prefer the advantage of attacking in numbers&mdash;they just don't need the advantage to be overwhelming. In addition to using intimidation against enemies, flinds embrace flanking tactics and specialized uses of their unusual weapon, the flindbar.</p>
+<p>Flinds assign gnolls lower in the pack hierarchy the task of crafting flindbars. Flinds are very particular about these weapons, and a gnoll who fails to properly weight and polish a flindbar can expect a savage mauling from the flind who demanded the weapon.</p>
+<p>A flind is roughly 7 feet tall and weighs between 280 and 315 pounds. Flinds have brindled or spotted fur, and are primarily russet in color with patches of black.</p>
+
+
+<h1 id = "gnoll-encounters">Encounters</h1>
+<p>Most encounters with gnolls occur when a traveling band stumbles into their territory, with the most terrifying encounters occurring at night.</p>
+
+<h2>Hunting Party (CR 5)</h2>
+<p>This small group of gnoll warriors often wanders the fringes of the territory looking for small prey and threats to the pack. The gnolls retreat or call for allies if they're hard pressed.</p>
+
+<p class = "stat-block-title">Gnoll Rageborn <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1"><strong>hp</strong> 49 (page 94)</p>
+
+<p class = "stat-block-title">Gnolls (2) <span class = "stat-block-cr">CR 1</span></p>
+<p class = "stat-block-xp">XP 400 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 11 each</p>
+
+<h2>Wild Pack (CR 5)</h2>
+<p>This lone gnoll has thrown in with a pack of hyenas, becoming their alpha. The group hunts with savage ferocity.</p>
+
+<p class = "stat-block-title">Gnoll <span class = "stat-block-cr">CR 1</span></p>
+<p class = "stat-block-xp">XP 400</p>
+<p class = "stat-block-1"><strong>hp</strong> 11</p>
+
+<p class = "stat-block-title">Hyenas (3) <span class = "stat-block-cr">CR 1</span></p>
+<p class = "stat-block-xp">XP 400 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 13</p>
+
+<h2>Flind Pack (CR 7)</h2>
+<p>A flind has decided to create her own pack and has taken some powerful males with her.</p>
+
+<p class = "stat-block-title">Flind <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1"><strong>hp</strong> 30</p>
+
+<p class = "stat-block-title">Gnoll Bruisers (3) <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 27 each</p>
+
+<h2>Night Terrors (CR 10)</h2>
+<p>This hunting party patrols the hunting area of a gnoll pack looking for and eliminating intruders into their domain. </p>
+
+<p class = "stat-block-title"><span class = "stat-block-cr">CR 5</span></p>
+<p class = "stat-block-xp">XP 1,600</p>
+<p class = "stat-block-1"><strong>hp</strong> 31</p>
+
+<p class = "stat-block-title">Gnoll Bruisers (2) <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 27 each</p>
+
+<p class = "stat-block-title">Gnoll Packlord <span class = "stat-block-cr">CR 9</span></p>
+<p class = "stat-block-xp">XP 6,400</p>
+<p class = "stat-block-1"><strong>hp </strong>124</p>
+
+<h2>Warden and the Witch (CR 14)</h2>
+<p>On a quest far outside the pack's normal hunting grounds, the warden and the bouda seek out knowledge or are on a mission to assassinate a far-flung enemy seen in a witch's vision.</p>
+
+<p class = "stat-block-title">Gnoll Bouda <span class = "stat-block-cr">CR 13</span></p>
+<p class = "stat-block-xp">XP 25,600</p>
+<p class = "stat-block-1"><strong>hp</strong> 105</p>
+
+<p class = "stat-block-title">Gnoll Warden <span class = "stat-block-cr">CR 10</span></p>
+<p class = "stat-block-xp">XP 9,600</p>
+<p class = "stat-block-1"><strong>hp</strong> 89</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Gnolls",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

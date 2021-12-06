@@ -1,0 +1,469 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Shadow Creature</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "shadowCreature.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "shadowCreature.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "shadowCreature.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "shadowCreature.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "shadowCreature.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "shadowCreature.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "shadowCreature.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "shadowCreature.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "shadowCreature.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "shadowCreature.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "shadowCreature.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "shadowCreature.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "shadowCreature.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "shadowCreature.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "shadowCreature.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "shadowCreature.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "shadowCreature.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "shadowCreature.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "shadowCreature.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "shadowCreature.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "shadowCreature.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+
+
+<h1 id="shadow-creature" class="monster-header">Shadow Creature</h1>
+<p class = "flavor-text">A tentacled horror that seems to shift in and out of the shadows, this bizarre beast is an amalgamation of darkness and menace.</p>
+
+<p class = "stat-block-title">Shadow Roper <span class = "stat-block-cr">CR 13</span></p>
+<p class = "stat-block-xp">XP 25,600</p>
+<p class = "stat-block-1">CE Large outsider (augmented aberration)</p>
+<p class = "stat-block-1"><b>Init</b> +5; <b>Senses</b> darkvision 60 ft., low-light vision; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +24</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><b>AC</b> 27, touch 10, flat-footed 26 (+1 Dex, +17 natural, –1 size)</p>
+<p class = "stat-block-1"><b>hp</b> 162 (12d8+108)</p>
+<p class = "stat-block-1"><b>Fort</b> +13, <b>Ref</b> +5, <b>Will</b> +13</p>
+<p class = "stat-block-1"><b>Defensive Abilities</b> shadow blend; <b>DR</b> 10/magic; <b>Immune</b> electricity; <b>Resist</b> cold 15; <b>SR</b> 27</p>
+<p class = "stat-block-1"><b>Weaknesses</b> vulnerable to fire</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><b>Speed</b> 10 ft.</p>
+<p class = "stat-block-1"><b>Melee</b> bite +20 (4d8+18/19–20)</p>
+<p class = "stat-block-1"><b>Ranged</b> 6 strands +10 touch (1d6 Str)</p>
+<p class = "stat-block-1"><b>Space</b> 10 ft.; <b>Reach</b> 10 ft.</p>
+<p class = "stat-block-1"><b>Special Attacks</b> pull (strands, 5 ft.), strands</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><b>Str</b> 34, <b>Dex</b> 13, <b>Con</b> 29, <b>Int</b> 13, <b>Wis</b> 16, <b>Cha</b> 12</p>
+<p class = "stat-block-1"><b>Base Atk</b> +9; <b>CMB</b> +22; <b>CMD</b> 33 (can't be tripped)</p>
+<p class = "stat-block-1"><b>Feats</b> Improved Critical (bite), Improved Initiative, Iron Will, Skill Focus (<a href="../coreRulebook/skills/perception.html#perception" >Perception</a>), Skill Focus (<a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a>), Weapon Focus (strand)</p>
+<p class = "stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/climb.html#climb" >Climb</a> +27, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (dungeoneering) +13, <a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (religion) +13, <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +24, <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +18 (+44 in icy or stony areas); <b>Racial Modifiers</b> +26 <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> in icy or stony areas</p>
+<p class = "stat-block-1"><b>Languages</b> Aklo, Common</p>
+<p class = "stat-block-breaker">Ecology</p>
+<p class = "stat-block-1"><b>Environment</b> any underground</p>
+<p class = "stat-block-1"><b>Organization</b> solitary, pair, or cluster (3–6)</p>
+<p class = "stat-block-1"><b>Treasure</b> standard</p>
+<p class = "stat-block-breaker">Special Abilities</p>
+<p class = "stat-block-1"><b>Strands (Ex)</b> A shadow roper can extend up to six thin, sticky strands from its body at a time, launching them to a maximum range of 50 feet. A shadow roper's attacks with its strands resolve as ranged touch attacks. These strands are quite strong, but can be severed by any amount of slashing damage; each strand has an AC of 20. A creature struck by a strand is numbed and weakened by the strange material, and must succeed at a DC 25 Fortitude save or take 1d6 points of Strength damage. The save DC is Constitution-based.</p>
+
+<p>When a Material Plane creature is trapped on or chooses to remain on the Shadow Plane, it often finds that its offspring take on some of the eerie qualities of its new home dimension. Those who are born in that place become weird mockeries of their kin on the Material Plane.</p>
+<p>Their colorings become jet-black (or at best a hazy gray), their features become more menacing, and their eyes glow white, a dulled crimson, a dark green, or a strange violet. The variety of shadow creatures is as vast as that on the Material Plane, creating dangers that are similar but have additional defenses and abilities characteristic of creatures truly native to the Shadow Plane's perpetual gloom.</p>
+<p>Shadow creatures on the Material Plane will produce offspring, giving rise to shadow creature enclaves in dark corners of the world. Stranger still, a burgeoning ecology of shadow creatures that forms a colony on the Material Plane seems to create a small blighted realm of shadow where they dwell. As such, areas grow more and more overcast. Shadows become unnaturally deeper, darker, and more cloying until the land itself seems to assume the landscape and terrain of the Shadow Plane. As part of this transformation process, one of the more intelligent shadow creatures in the area becomes a shadow lord&mdash;a dread agent of shadow that controls powerful shadow abilities and works to expand its alien domain.</p>
+
+<h2 id="creating-a-shadow-creature">Creating a Shadow Creature</h2>
+<p>"Shadow creature" is an inherited template that can be added to any living creature, referred to hereafter as the base creature. A shadow creature retains all the base creature's statistics and abilities except as noted here.</p>
+<p><b>Challenge Rating</b>: Same as the base creature +1.</p>
+<p><b>Alignment</b>: Any (usually nongood).</p>
+<p><b>Type</b>: The base creature's type changes to outsider, and it gains the augmented subtype. Do not recalculate BAB, saves, or skill ranks.</p>
+<p><b>Senses</b>: As the base creature plus darkvision 60 feet and low-light vision.</p>
+<p><b>Defensive Abilities</b>: A shadow creature gains DR and resistance to cold and electricity based on its Hit Dice, as noted on the following table.</p>
+
+<table>
+	<thead>
+		<tr><th>Hit Dice</th><th>Resist Cold and Electricity</th><th>DR</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>1–4</td><td>5</td><td>&mdash;</td></tr>
+		<tr><td>5–10</td><td>10</td><td>5/magic</td></tr>
+		<tr><td>11+</td><td>15</td><td>10/magic</td></tr>
+	</tbody>
+</table>
+
+<p id="shadow-blend"><i><a href="../coreRulebook/magicItems/armor.html#armor-shadow" >Shadow</a> Blend (Su)</i>: In any illumination other than bright light, a shadow creature blends into the shadows, giving it concealment (20% miss chance). A shadow creature can suspend or resume this ability as a free action.</p>
+<p id="spell-resistance"><i>Spell <a href="../coreRulebook/spells/resistance.html#resistance" >Resistance</a> (Ex)</i>: A shadow creature gains spell resistance equal to the base creature's CR + 6.</p>
+
+<h2 id="creating-a-shadow-lord">Creating a Shadow Lord</h2>
+<p>"Shadow lord" is an acquired template that can be added to any shadow creature with 5 or more Hit Dice (referred to hereafter as the base creature). Most shadow lords were originally humanoids. A shadow lord retains all the base creature's statistics and abilities (including those granted by the shadow creature template) except as noted here.</p>
+<p><b>Challenge Rating</b>: Same as the base creature +2.</p>
+<p><b>Alignment</b>: Any evil.</p>
+<p><b>Senses</b>: A shadow lord gains the see in darkness ability.</p>
+<p><b>Armor Class</b>: Same as the base creature (see also the incorporeal step ability).</p>
+<p><b>Defensive Abilities</b>: A shadow lord gains the following defensive abilities.</p>
+<p><i>Energy Resistance and Damage Reduction (Su)</i>: A shadow lord gains damage reduction and resistance to cold and electricity based on its Hit Dice, as noted on the table below. This replaces the energy resistance and damage reduction granted by the shadow creature template.</p>
+
+<table>
+	<thead>
+		<tr><th>Hit Dice</th><th>Resist Cold and Electricity</th><th>DR</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>5–10</td><td>15</td><td>10/magic</td></tr>
+		<tr><td>11–15</td><td>20</td><td>15/magic</td></tr>
+		<tr><td>16+</td><td>30</td><td>20/magic</td></tr>
+	</tbody>
+</table>
+
+<p id="incorporeal-step"><i>Incorporeal Step (Su)</i>:<i> </i>When a shadow lord moves, it gains the incorporeal subtype and quality, including a deflection bonus to AC equal to its Charisma bonus. It loses the incorporeal subtype and special ability when it stops moving.</p>
+<p><b>Attacks</b>: A shadow lord gains a melee touch attack that deals 1d6 points of damage (Fortitude negates). The save DC is equal to 10 + 1/2 the shadow lord's Hit Dice + the shadow lord's Charisma modifier. On a critical hit, the shadow lord's touch attack also deals 1 point of Constitution damage (also negated by the saving throw).</p>
+<p><b>Special Attacks</b>: A shadow lord gains the following special attacks. Their saving throw DCs for these attacks are equal to 10 + 1/2 the shadow lord's Hit Dice + the shadow lord's Charisma modifier, unless otherwise noted.</p>
+<p id="cloying-gloom-blast"><i>Cloying Gloom Blast (Su)</i>: Three times per day, the shadow lord can unleash a 30-foot cone of cloying gloom. On a failed Fortitude saving throw, creatures in the cone are affected by a <i><a href="../coreRulebook/spells/slow.html#slow" >slow</a></i> spell (caster level equal to the shadow lord's Hit Dice) and are blinded for the duration of the <i><a href="../coreRulebook/spells/slow.html#slow" >slow</a></i> effect.</p>
+<p><b>Spell-Like Abilities</b>: A shadow lord gains the following spell-like abilities, with a caster level equal to its Hit Dice: at will&mdash;<i><a href="../ultimateMagic/spells/rayOfSickening.html#ray-of-sickening" >ray of sickening</a></i>; 3/day&mdash;<i><a href="../coreRulebook/spells/shadowConjuration.html#shadow-conjuration" >shadow conjuration</a></i>, <i><a href="../ultimateMagic/spells/shadowStep.html#shadow-step" >shadow step</a></i>; 1/day&mdash;<i>greater <a href="../coreRulebook/magicItems/armor.html#armor-shadow" >shadow</a> </i><i>conjuration</i> (if the shadow lord has 11 or more Hit Dice), <i><a href="../coreRulebook/spells/shadowWalk.html#shadow-walk" >shadow walk</a></i>.</p>
+<p>A creature created with <i><a href="../coreRulebook/spells/shadowConjuration.html#shadow-conjuration" >shadow conjuration</a></i> or <i><a href="../coreRulebook/spells/shadowConjuration.html#shadow-conjuration-greater" >greater <a href="../coreRulebook/magicItems/armor.html#armor-shadow" >shadow</a> conjuration</a></i> that would normally have a celestial or fiendish template (such as a bear) instead gains the shadow creature template.</p>
+<p><b>Special Qualities</b>: A shadow lord gains the following special quality.</p>
+<p id="planar-thinning"><i>Planar Thinning (Su)</i>: Once per day as a full-round action, a shadow lord can thin the barriers between the Material Plane and Shadow Plane, making it considerably easier for creatures to cross between the two. This functions like the planar travel aspect of the <i><a href="../coreRulebook/spells/gate.html#gate" >gate</a></i> spell (caster level equal to the shadow lord's Hit Dice). This planar thinning is immediately dispelled if in an area of normal or bright light.</p>
+<p><b>Ability Scores</b>: Dex +4, Cha +4.</p>
+<p><b>Skills</b>: A shadow lord gains a +8 racial bonus on all <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> checks.</p>
+
+</div>
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Shadow Creature",globalNavPath=[{ href: '/pathfinderRPG/prd/bestiary4/monsterIndex.html', name: 'Bestiary 4 Index'}];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

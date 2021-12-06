@@ -1,0 +1,432 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Brawler</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "brawler.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "brawler.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "brawler.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../spells/index.html">Spells</a></li>
+						<li><a href = "../spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "brawler.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "brawler.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "brawler.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "brawler.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "brawler.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "brawler.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "brawler.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "brawler.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "brawler.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "brawler.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "brawler.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "brawler.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "brawler.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "brawler.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "brawler.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "brawler.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "brawler.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "brawler.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+<h1>Brawler</h1>
+<p>Eschewing the rigor of discipline and the strange mystic traditions of the monk, brawlers are the embodiment of bare-fisted power and martial flexibility. Cut loose from the monastic traditions of their cousins, each brawler demonstrates her prowess in a different way.</p>
+
+	<h2 id="exemplar-archetype">Exemplar (Archetype)</h2>
+	<p>A versatile soldier who inspires her companions with her fighting prowess, an exemplar is at home on the front lines of battles anywhere.</p>
+	<p id="call-to-arms"><strong>Call to Arms (Ex)</strong>: At 1st level, an exemplar can expend a use of martial flexibility to rouse her allies into action. All allies within 30 feet are no longer flat-footed, even if they are surprised. Using this ability is a move action. At 6th level, the exemplar can use it as a swift action instead. At 10th level, she can use it as a free action. At 12th level, she can use it as an immediate action. This ability replaces unarmed strike and close weapon mastery.</p>
+	<p id="inspiring-prowess"><strong>Inspiring Prowess (Ex)</strong>: At 3rd level, an exemplar gains the ability to use certain kinds of bardic performance. She can use this ability for a number of rounds per day equal to 3 + her Charisma modifier; this number increases by 1 round per brawler level thereafter. The exemplar's effective bard level for this ability is equal to her brawler level &ndash; 2. At 3rd level, the exemplar can use inspire courage. At 11th level, the exemplar can use inspire greatness. At 15th level, the exemplar can use inspire heroics. Instead of the <a href="../../coreRulebook/skills/perform.html#perform">Perform</a> skill, she activates this ability with impressive flourishes and displays of martial talent (relying on visual components). This ability otherwise functions as bardic performance; feats and other effects that affect bardic performance (such as the Extra Performance feat) apply to it. This ability replaces maneuver training and AC bonus.</p>
+	<p id="field-instruction"><strong>Field Instruction (Ex)</strong>: At 5th level, as a standard action, an exemplar can grant a teamwork feat to all allies within 30 feet who can see and hear her. This teamwork feat must be one the exemplar knows or has gained with the martial flexibility ability. Allies retain the use of this teamwork feat for 3 rounds + 1 round for every 2 brawler levels. If the granted teamwork feat was gained from martial flexibility, this duration ends immediately if the exemplar loses access to that feat. Allies don't need to meet the prerequisites of this teamwork feat. The exemplar can use this ability once per day at 5th level, plus one additional time per day at 9th, 12th, and 17th level. This ability otherwise counts as the cavalier's tactician class feature; feats and other effects that affect tactician (such as <a href="../../advancedPlayersGuide/advancedFeats.html#practiced-tactician">Practiced Tactician</a>) apply to it. This ability replaces brawler's strike.</p>
+
+	<h2 id="mutagenic-mauler-archetype">Mutagenic Mauler (Archetype)</h2>
+	<p>Not content with perfecting her body through natural methods, a mutagenic mauler resorts to alchemy to unlock the primal beast within.</p>
+	<p id="mutagen"><strong>Mutagen (Su)</strong>: At 1st level, a mutagenic mauler discovers how to create a mutagen that she can imbibe in order to heighten her physical prowess, though at the cost of her personality. This ability functions as an alchemist's mutagen and uses the brawler's class level as her alchemist level (alchemist levels stack with brawler levels for determining the effect of this ability). A mutagenic mauler counts as an alchemist for the purpose of imbibing a mutagen prepared by someone else.</p>
+	<p>At 6th level, a mutagenic mauler gains a +2 bonus on damage rolls when she attacks in melee while in her mutagenic form. This bonus increases to +3 at 11th level and to +4 at 16th level. At 10th level, a mutagenic mauler learns one of the following alchemist discoveries: <a href="../../advancedPlayersGuide/baseClasses/alchemist.html#feral-mutagen">feral mutagen</a>, <a href="../../advancedPlayersGuide/baseClasses/alchemist.html#infuse-mutagen">infuse mutagen</a>, <a href="../../ultimateMagic/spellcastingClassOptions/alchemist.html#preserve-organs">preserve organs</a>, <a href="../../ultimateMagic/spellcastingClassOptions/alchemist.html#spontaneous-healing">spontaneous healing</a>. At 12th level, the mutagenic mauler learns the greater mutagen discovery.</p>
+	<p>This ability replaces martial flexibility.</p>
+	<p id="beastmorph"><strong>Beastmorph (Su)</strong>: Starting at 4th level, a mutagenic mauler gains additional abilities when using her mutagen. At 4th level, she gains low-light vision and a +10 enhancement bonus to her base speed. At 9th level, she gains darkvision to a range of 30 feet and a climb speed of 15 feet. At 13th level, the enhancement bonus to her base speed increases to +15 feet, and she gains the scent ability within 30 feet. At 18th level, her climb speed increases to 30 feet, and the enhancement bonus to her base speed increases to +20 feet. This ability replaces AC bonus.</p>
+
+	<h2 id="shield-champion-archetype">Shield Champion (Archetype)</h2>
+	<p>Stalwart in battle, a shield champion has perfected an entire martial discipline relying only on her hand-to-hand fighting skills and her ever-present shield. What she forgoes in weapon versatility and improved combat maneuvering, she makes up for in her ability to turn her defense into a weapon.</p>
+	<p id="shield-champion-proficiencies"><strong>Weapon and Armor Proficiency</strong>: A shield champion is proficient with all simple weapons and with shields as weapons. She is also proficient with light armor, and with bucklers, light shields, and heavy shields. This ability replaces the brawler's weapon and armor proficiency.</p>
+	<p id="throw-shield"><strong>Throw Shield (Ex)</strong>: At 3rd level, a shield champion can throw a heavy or light shield as a normal (non-improvised) thrown weapon with a range increment of 10 feet or the shield's range increment, whichever is greater. The thrown shield deals the same damage as a shield bash, and any damage increases from shield spikes apply to this attack. A shield champion is treated as having the Far Shot feat for the purpose of determining range increment penalties for throwing a shield.</p>
+	<p>At 7th level, a shield champion can use a thrown shield to perform a bull rush, dirty trick, disarm, reposition, or trip combat maneuver as if she were making a melee shield bash attack. At 11th level, a shield champion gains Shield Master as a bonus feat. She must meet the prerequisites before taking that feat.</p>
+	<p>This ability replaces maneuver training at 3rd, 7th, and 11th levels.</p>
+	<p id="returning-shield"><strong>Returning Shield (Ex)</strong>: At 5th level, a shield champion can throw a shield so it ricochets off her target (and possibly other solid objects) to return to her at the end of her turn. This ability functions whether or not the shield champion hits her opponent or moves on her turn. The shield deals no damage to targets it bounces off, other than the original target of the shield champion's attack. Certain circumstances can prevent the shield from returning to the shield champion, such as an opponent using a readied action to catch the shield, or the shield sticking to a mimic's adhesive. The shield champion can opt to not have a thrown shield return to her, in which case it falls to the ground as it normally would. If the shield has the <em>returning</em> ranged weapon special ability, she can use either that or this ability.</p>
+	<p>If a shield champion has additional attacks from a high base attack bonus, these additional attacks can be ricochets off an earlier target. The distance to each additional target counts toward the total range of the shield, and range penalties apply, but there are no additional penalties for attacking in this manner. Because ricocheting attacks are treated as separate attacks, effects and modifiers that apply to only one attack roll (such as <a href="../../coreRulebook/spells/trueStrike.html#true-strike"><em>true strike</em></a>) apply to only the first attack and not to the others. A shield champion can throw a shield as part of a brawler's flurry.</p>
+	<p>At 9th level, a shield champion gains Greater Shield Focus as a bonus feat. She must meet the prerequisites before taking that feat. At 12th level, a shield champion can use her unarmed strike damage when dealing damage with a shield (whether in melee or as a thrown weapon) or the shield's damage, whichever is greater. At 17th level, by ricocheting her shield off a nearby surface before hitting her intended target, she can treat that surface as the origin square of the attack to determine whether the target is flanked and whether the target gains a cover bonus to its AC. She can use this ability to attack a creature with total concealment from her if she knows what square it occupies, but the attack still has a 50% miss chance. This ability replaces brawler's strike.</p>
+	<p id="champion-defense"><strong>Champion Defense (Ex)</strong>: At 15th level, once per day when she would be reduced to 0 or fewer hit points by damage in combat from a weapon, unarmed, or natural attack, the shield champion can attempt to absorb all the damage with her shield. To use this ability, the shield champion must attempt a Fortitude saving throw, with the DC equal to the damage dealt. If it succeeds, she takes only half damage from the blow; otherwise, she takes full damage. She must be aware of the attack and able to react to it in order to use this ability&mdash;if she is denied her Dexterity bonus to AC, she can't use this ability. At 19th level, she can use this ability twice per day. This ability replaces the maneuver training gained at 15th and 19th levels.</p>
+
+	<h2 id="snakebite-striker-archetype">Snakebite Striker (Archetype)</h2>
+	<p>With her lightning quickness and guile, a snakebite striker keeps her foes' attention focused on her, because any one of her feints might be an actual attack. By giving up some of a brawler's versatility, she increases her damage potential and exposes her opponents to deadly and unexpected strikes.</p>
+	<p id="snakebite-striker-class-skills"><strong>Class Skills</strong>: A snakebite striker gains <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> and <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> as class skills, but does not gain <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> as a class skill.</p>
+	<p id="snakebite-striker-sneak-attack"><strong>Sneak Attack (Ex)</strong>: A snakebite striker can make a sneak attack, as per the rogue class feature of the same name. At 1st level, her sneak attack damage is 1d6. This extra damage increases by 1d6 at 6th, 10th, 12th, and 20th levels. If she gets a sneak attack bonus from another source, the bonuses on damage stack. This ability replaces martial flexibility.</p>
+	<p id="snake-feint"><strong>Snake Feint (Ex)</strong>: At 3rd level, a snakebite striker who uses a standard action to feint can move as part of that action. If she is able to feint as a move action (such as from having the Improved Feint feat), she can feint and move in the same action. At 11th level, once per round she can declare her square and one adjacent square as the origin of her attacks until her next turn (allowing her to use one or both squares to determine whether she or her allies are flanking an opponent). At 15th level, she counts an additional adjacent square for this purpose. This ability replaces the maneuver training gained at 3rd and 7th levels.</p>
+	<p id="opportunist"><strong>Opportunist (Ex)</strong>: At 11th level, once per round, a snakebite striker can make an attack of opportunity against an opponent who has just been struck for damage in melee by another character. This attack counts as an attack of opportunity for that round. She cannot use this ability more than once per round, even if she has the Combat Reflexes feat or a similar ability. At 19th level, she can use this ability twice per round. This ability replaces the maneuver training gained at 11th and 19th levels.</p>
+
+	<h2 id="steel-breaker-archetype">Steel-Breaker (Archetype)</h2>
+	<p>The steel-breaker studies destruction and practices it as an art form. She knows every defense has a breaking point, and can shatter those defenses with carefully planned strikes.</p>
+	<p id="steel-breaker-class-skills"><strong>Class Skills</strong>: The steel-breaker gains <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (engineering) as a class skill, and does not gain <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (dungeoneering) as a class skill.</p>
+	<p id="exploit-weakness"><strong>Exploit Weakness (Ex)</strong>: At 5th level, as a swift action a steel-breaker can observe a creature or an object and find its weak point by succeeding at a Wisdom check, adding her brawler level as a bonus on the check, against a DC of 10 + either the object's hardness or the target's CR. If she succeeds, the steel-breaker gains a +2 bonus on attack rolls until the end of her turn, and any attacks she makes until the end of her turn ignore the creature's or object's DR or hardness.</p>
+	<p>A steel-breaker can instead use this ability as a swift action to analyze the movements and expressions of one creature within 30 feet, granting a bonus on <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> checks and Reflex saving throws, as well as a dodge bonus to AC against that opponent equal to 1/2 her brawler level until the start of her next turn. This ability replaces brawler's strike.</p>
+	<p id="sunder-training"><strong>Sunder Training (Ex)</strong>: At 3rd level, a steel-breaker receives additional training in sunder combat maneuvers. She gains a +2 bonus when attempting sunder combat maneuver checks and a +2 bonus to her CMD when defending against this maneuver. At 7th level, these bonuses increase by 1, and she gains a +2 bonus on disarm combat maneuver checks and a +2 bonus to her CMD when defending against a disarm combat maneuver. At 11th, 15th, and 19th levels, all of these bonuses increase by 1. This ability replaces maneuver training.</p>
+
+	<h2 id="strangler-archetype">Strangler (Archetype)</h2>
+	<p>A strangler is trained to choke the life out of her victims with her vise-like grip. Some stranglers are self-taught and are little more than brutish murderers, unhinged sociopaths, or opportunistic alley-bashers. Others are members of murder cults or specialized schools of assassination, trained since childhood to kill with their bare hands.</p>
+	<p id="strangler-class-skills"><strong>Class Skills</strong>: A strangler gains <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> as a class skill.</p>
+	<p id="strangle"><strong>Strangle (Ex)</strong>: At 1st level, a strangler deals 1d6 points of sneak attack damage (as per the rogue ability of the same name) whenever she succeeds at a grapple combat maneuver check to damage or pin an opponent. The strangler is always considered to be flanking her target for the purpose of using this ability. This damage increases by 1d6 at 2nd, 8th, and 15th levels. This ability replaces unarmed strike and brawler's flurry.</p>
+	<p id="practiced-strangler"><strong>Practiced Strangler(Ex)</strong>: At 2nd level, when a strangler has the grappled condition, she does not take a &ndash;4 penalty to Dexterity and does not lose her Dexterity bonus to AC. At 9th level, a grappling or grappled strangler still threatens an area and is still able to make attacks of opportunity while grappling or grappled; when pinned, she is not denied her Dexterity bonus and does not take a &ndash;4 penalty to Armor Class. This ability replaces AC bonus.</p>
+	<p id="sleeper-hold"><strong>Sleeper Hold (Ex)</strong>: At 4th level, a strangler can instantly render a pinned opponent unconscious. This works like the knockout ability, but requires a successful grapple combat maneuver check against the pinned opponent and does not have to damage the opponent. Creatures that do not need to breathe, are immune to critical hits, or are immune to nonlethal damage are immune to this ability. At 10th level, a strangler can use this ability twice per day. At 16th level, she can use it three times per day. This ability alters knockout.</p>
+	<p id="neckbreaker"><strong>Neckbreaker (Ex)</strong>: At 16th level, a strangler can attempt to instantly kill a pinned opponent as a standard action. This works like the sleeper hold ability, but imposes a &ndash;5 penalty on her grapple combat maneuver check. If the opponent succeeds at its Fortitude save, the strangler deals damage as if she had attempted the grapple check to damage her opponent; if the opponent fails its Fortitude save, it dies. Creatures that are immune to critical hits are immune to this ability. At 20th level, the strangler can use this ability as a move action instead of a standard action. This ability replaces awesome blow and improved awesome blow.</p>
+
+	<h2 id="wild-child-archetype">Wild Child (Archetype)</h2>
+	<p>The wild child works with his sworn animal friend to conquer the challenges that lay before them. This kinship could come from being lost in the wilderness and raised by animals or growing up with an exotic pet.</p>
+	<p id="wild-child-class-skills"><strong>Class Skills</strong>: A wild child gains <a href="../../coreRulebook/skills/heal.html#heal">Heal</a> as a class skill.</p>
+	<p id="wild-child-animal-companion"><strong>Animal Companion (Ex)</strong>: At 1st level, a wild child forms a bond with a loyal companion that accompanies the wild child on his adventures. A wild child can begin play with any of the animals available to a druid. The wild child uses his brawler level as his effective druid level for determining the abilities of his animal companion. This ability replaces the bonus combat feats gained at 2nd, 8th, 14th, and 20th levels.</p>
+	<p id="hunters-tricks"><strong>Hunter's Tricks</strong>: At 5th level, a wild child can expend one use of martial flexibility to use a trick from the ranger skirmisher archetype (<em>Advanced Player's Guide</em> 128). Each time he activates this ability, the wild child can use a different trick. He cannot choose any tricks that rely on ranged attacks. Activating this ability is not an action, but using the trick might require the wild child to use an action of a different type. This ability replaces close weapon mastery.</p>
+	<p id="maneuver-training"><strong>Maneuver Training (Ex)</strong>: Whenever the wild child chooses a new maneuver for this ability, his animal companion also learns a trick that makes use of this combat maneuver. For example, if the wild child chooses maneuver training (dirty trick), his animal companion also learns a trick that allows it to use the dirty trick combat maneuver. He cannot choose any tricks that rely on ranged attacks. This bonus trick doesn't count against the animal companion's total tricks known and does not take any time or checks to train. Should the wild child gain a new animal companion (such as if the previous one dies), this new animal companion begins with the same number of bonus tricks. This ability alters maneuver training.</p>
+	<p id="wild-tricks"><strong>Wild Tricks (Ex)</strong>: The wild child has learned a number of tricks to aid his allies and his animal companion, as well as to hinder his opponents. At 5th level and every 6 levels thereafter, the wild child learns one hunter's trick. He cannot choose any tricks that rely on ranged attacks. The wild child can use these tricks a number of times per day equal to 1/2 his brawler level + his Constitution modifier. This ability otherwise follows the rules of the hunter's tricks ability, including all action costs. This ability replaces the bonus combat feats gained at 5th, 11th, and 17th levels.</p>
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Brawler",globalNavPath=[{ href: '/pathfinderRPG/prd/advancedClassGuide/classOptions/index.html', name: 'Archetypes and Class Options'}];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

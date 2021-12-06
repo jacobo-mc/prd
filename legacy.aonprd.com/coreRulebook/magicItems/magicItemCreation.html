@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>magic item Creation</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "magicItemCreation.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../races.html">Races</a></li>
+						<li><a href = "../classes.html">Classes</a></li>
+						<li><a href = "../usingSkills.html">Using Skills</a></li>
+						<li><a href = "../skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../equipment.html">Equipment</a></li>
+						<li><a href = "../additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../combat.html">Combat</a></li>
+						<li><a href = "../magic.html">Magic</a></li>
+						<li><a href = "../spellLists.html">Spell Lists</a></li>
+						<li><a href = "../spellIndex.html">Spell Index</a></li>
+						<li><a href = "../prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../environment.html">Environment</a></li>
+						<li><a href = "../nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../magicItems.html">Magic Items</a></li>
+						<li><a href = "../glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "magicItemCreation.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "magicItemCreation.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "magicItemCreation.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+
+				<h1 id="magic-item-creation">Magic Item Creation</h1>
+				<p>To create magic items, spellcasters use special feats which allow them to invest time and money in an item's creation. At the end of this process, the spellcaster must make a single skill check (usually <a href="../skills/spellcraft.html#spellcraft">Spellcraft</a>, but sometimes another skill) to finish the item. If an item type has multiple possible skills, you choose which skill to make the check with. The DC to create a magic item is 5 + the caster level for the item. Failing this check means that the item does not function and the materials and time are wasted. Failing this check by 5 or more results in a cursed item (see Cursed Items for more information).</p>
+				<p>Note that all items have prerequisites in their descriptions. These prerequisites must be met for the item to be created. Most of the time, they take the form of spells that must be known by the item's creator (although access through another magic item or spellcaster is allowed). The DC to create a magic item increases by +5 for each prerequisite the caster does not meet. The only exception to this is the requisite item creation feat, which is mandatory. In addition, you cannot create potions, spell-trigger, or spell-completion magic items without meeting their spell prerequisites.</p>
+				<p>While item creation costs are handled in detail below, note that normally the two primary factors are the caster level of the creator and the level of the spell or spells put into the item. A creator can create an item at a lower caster level than her own, but never lower than the minimum level needed to cast the needed spell. Using metamagic feats, a caster can place spells in items at a higher level than normal.</p>
+				<p>Magic supplies for items are always half of the base price in gp. For many items, the market price equals the base price. Armor, shields, weapons, and items with value independent of their magically enhanced properties add their item cost to the market price. The item cost does not influence the base price (which determines the cost of magic supplies), but it does increase the final market price.</p>
+				<p>In addition, some items cast or replicate spells with costly material components. For these items, the market price equals the base price plus an extra price for the spell component costs. The cost to create these items is the magic supplies cost plus the costs for the components. Descriptions of these items include an entry that gives the total cost of creating the item.</p>
+				<p>The creator also needs a fairly quiet, comfortable, and well-lit place in which to work. Any place suitable for preparing spells is suitable for making items. Creating an item requires 8 hours of work per 1,000 gp in the item's base price (or fraction thereof), with a minimum of at least 8 hours. Potions and scrolls are an exception to this rule; they can take as little as 2 hours to create (if their base price is 250 gp or less). Scrolls and potions whose base price is more than 250 gp, but less than 1,000 gp, take 8 hours to create, just like any other magic item. The character must spend the gold at the beginning of the construction process. Regardless of the time needed for construction, a caster can create no more than one magic item per day. This process can be accelerated to 4 hours of work per 1,000 gp in the item's base price (or fraction thereof) by increasing the DC to create the item by +5.</p>
+				<p>The caster can work for up to 8 hours each day. He cannot rush the process by working longer each day, but the days need not be consecutive, and the caster can use the rest of his time as he sees fit. If the caster is out adventuring, he can devote 4 hours each day to item creation, although he nets only 2 hours' worth of work. This time is not spent in one continuous period, but rather during lunch, morning preparation, and during watches at night. If time is dedicated to creation, it must be spent in uninterrupted 4-hour blocks. This work is generally done in a controlled environment, where distractions are at a minimum, such as a laboratory or shrine. Work that is performed in a distracting or dangerous environment nets only half the amount of progress (just as with the adventuring caster).</p>
+				<p>A character can work on only one item at a time. If a character starts work on a new item, all materials used on the under-construction item are wasted.</p>
+				<h2 id="magic-item-gold-piece-values">Magic Item Gold Piece Values</h2>
+				<p>Many factors must be considered when determining the price of new magic items. The easiest way to come up with a price is to compare the new item to an item that is already priced, using that price as a guide. Otherwise, use the guidelines summarized on Table: Estimating Magic Item Gold Piece Values.</p>
+
+<div class = "table">
+	<table id="table-15-29-estimating-magic-item-gold-piece-values">
+		<caption>Table: Estimating Magic Item Gold Piece Values</caption>
+		<thead>
+			<tr><th>Effect</th><th>Base Price</th><th>Example</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>Ability bonus (enhancement)</td><td>Bonus squared &times; 1,000 gp</td><td><i><a href="wondrousItems.html#belt-of-incredible-dexterity">Belt of incredible dexterity</a> +2</i></td></tr>
+			<tr><td>Armor bonus (enhancement)</td><td>Bonus squared &times; 1,000 gp</td><td><i>+1 chainmail</i></td></tr>
+			<tr><td>Bonus spell</td><td>Spell level squared &times; 1,000 gp</td><td> <i><a href="wondrousItems.html#pearl-of-power">Pearl of power</a></i></td></tr>
+			<tr><td>AC bonus (deflection)</td><td>Bonus squared &times; 2,000 gp</td><td><i><a href="rings.html#ring-of-protection">Ring of protection</a> +3</i></td></tr>
+			<tr><td>AC bonus (other)<sup>1</sup></td><td>Bonus squared &times; 2,500 gp</td><td><i><a href="wondrousItems.html#ioun-stones">Ioun stone</a> (dusty rose prism)</i></td></tr>
+			<tr><td>Natural armor bonus (enhancement)</td><td>Bonus squared &times; 2,000 gp</td><td><i><a href="wondrousItems.html#amulet-of-natural-armor">Amulet of natural armor</a> +1</i></td></tr>
+			<tr><td>Save bonus (resistance)</td><td>Bonus squared &times; 1,000 gp</td><td><i><a href="wondrousItems.html#cloak-of-resistance">Cloak of resistance</a> +5</i></td></tr>
+			<tr><td>Save bonus (other)<sup>1 </sup></td><td>Bonus squared &times; 2,000 gp</td><td><i><a href="wondrousItems.html#stone-of-good-luck">Stone of good luck</a></i></td></tr>
+			<tr><td>Skill bonus (competence)</td><td>Bonus squared &times; 100 gp</td><td><i><a href="wondrousItems.html#cloak-of-elvenkind">Cloak of elvenkind</a></i></td></tr>
+			<tr><td>Spell resistance</td><td>10,000 gp per point over SR 12; SR 13 minimum</td><td><i><a href="wondrousItems.html#mantle-of-spell-resistance">Mantle of spell resistance</a></i></td></tr>
+			<tr><td>Weapon bonus (enhancement)</td><td>Bonus squared &times; 2,000 gp</td><td><i>+1 longsword</i></td></tr>
+		</tbody>
+		<thead>
+			<tr><th>Spell Effect</th><th>Base Price</th><th>Example</td></tr>
+		</thead>
+		<tbody>
+			<tr><td>Single use, spell completion</td><td>Spell level &times; caster level &times; 25 gp</td><td><i>Scroll of haste</i></td></tr>
+			<tr><td>Single use, use-activated</td><td>Spell level &times; caster level &times; 50 gp</td><td><i>Potion of cure light wounds</i></td></tr>
+			<tr><td>50 charges, spell trigger</td><td>Spell level &times; caster level &times; 750 gp</td><td><i>Wand of fireball</i></td></tr>
+			<tr><td>Command word</td><td>Spell level &times; caster level &times; 1,800 gp</td><td><i><a href="wondrousItems.html#cape-of-the-mountebank">Cape of the mountebank</a></i></td></tr>
+			<tr><td>Use-activated or continuous</td><td>Spell level &times; caster level &times; 2,000 gp<sup>2</sup></td><td><i><a href="wondrousItems.html#lantern-of-revealing">Lantern of revealing</a></i></td></tr>
+		</tbody>
+		<thead>
+			<tr><th>Special</th><th>Base Price</th><th>Adjustment Example</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>Charges per day</td><td>Divide by (5 divided by charges per day)</td><td><i><a href="wondrousItems.html#boots-of-teleportation">Boots of teleportation</a></i></td></tr>
+			<tr><td>No space limitation<sup>3</sup></td><td>Multiply entire cost by 2</td><td><i><a href="wondrousItems.html#ioun-stones">Ioun stone</a></i></td></tr>
+			<tr><td>Multiple different abilities</td><td>Multiply lower item cost by 1.5 </td><td><i><a href="wondrousItems.html#helm-of-brilliance">Helm of brilliance</a></i></td></tr>
+			<tr><td>Charged (50 charges)</td><td>1/2 unlimited use base price</td><td><i><a href="rings.html#ring-of-the-ram">Ring of the ram</a></i></td></tr>
+		</tbody>
+		<thead>
+			<tr><th>Component</th><th>Extra Cost</th><th>Example</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>Armor, shield, or weapon</td><td>Add cost of masterwork item</td><td><i>+1 composite longbow</i></td></tr>
+			<tr><td>Spell has material component cost</td><td>Add directly into price of item per charge<sup>4</sup></td><td><i>Wand of stoneskin</i></td></tr>
+		</tbody>
+		<tfoot>
+			<tr><td colspan="3">Spell Level: A 0-level spell is half the value of a 1st-level spell for determining price.</td></tr>
+			<tr><td colspan="3"><sup>1</sup> Such as a luck, insight, sacred, or profane bonus.</td></tr>
+			<tr><td colspan="3"><sup>2</sup> If a continuous item has an effect based on a spell with a duration measured in rounds, multiply the cost by 4. If the duration of the spell is 1 minute/level, multiply the cost by 2, and if the duration is 10 minutes/level, multiply the cost by 1.5. If the spell has a 24-hour duration or greater, divide the cost in half.</td></tr>
+			<tr><td colspan="3"><sup>3</sup> An item that does not take up one of the spaces on a body costs double.</td></tr>
+			<tr><td colspan="3"><sup>4</sup> If item is continuous or unlimited, not charged, determine cost as if it had 100 charges. If it has some daily limit, determine as if it had 50 charges.</td></tr>
+		</tfoot>
+	</table>
+</div>
+				<p><b>Multiple Similar Abilities</b>: For items with multiple similar abilities that don't take up space on a character's body, use the following formula: Calculate the price of the single most costly ability, then add 75% of the value of the next most costly ability, plus 1/2 the value of any other abilities.</p>
+				<p><b>Multiple Different Abilities</b>: Abilities such as an attack roll bonus or saving throw bonus and a spell-like function are not similar, and their values are simply added together to determine the cost. For items that take up a space on a character's body, each additional power not only has no discount but instead has a 50% increase in price.</p>
+				<p><b>0-Level Spells</b>: When multiplying spell levels to determine value, 0-level spells should be treated as 1/2 level.</p>
+				<p><b>Other Considerations</b>: Once you have a cost figure, reduce that number if either of the following conditions applies:</p>
+				<p><i>Item Requires Skill to Use</i>: Some items require a specific skill to get them to function. This factor should reduce the cost about 10%.</p>
+				<p><i>Item Requires Specific Class or Alignment to Use</i>: Even more restrictive than requiring a skill, this limitation cuts the price by 30%.</p>
+				<p>Prices presented in the magic item descriptions (the gold piece value following the item's slot) are the market value, which is generally twice what it costs the creator to make the item.</p>
+				<p>Since different classes get access to certain spells at different levels, the prices for two characters to make the same item might actually be different. An item is only worth two times what the caster of the lowest possible level can make it for. Calculate the market price based on the lowest possible level caster, no matter who makes the item.</p>
+				<p>Not all items adhere to these formulas. First and foremost, these few formulas aren't enough to truly gauge the exact differences between items. The price of a magic item may be modified based on its actual worth. The formulas only provide a starting point. The pricing of scrolls assumes that, whenever possible, a wizard or cleric created it. Potions and wands follow the formulas exactly. Staves follow the formulas closely, and other items require at least some judgment calls.</p>
+				<h2 id="creating-magic-armor">Creating Magic Armor</h2>
+				<p>To create magic armor, a character needs a heat source and some iron, wood, or leatherworking tools. He also needs a supply of materials, the most obvious being the armor or the pieces of the armor to be assembled. Armor to be made into magic armor must be masterwork armor, and the masterwork cost is added to the base price to determine final market value. Additional magic supply costs for the materials are subsumed in the cost for creating the magic armor&mdash;half the base price of the item.</p>
+				<p>Creating magic armor has a special prerequisite: The creator's caster level must be at least three times the enhancement bonus of the armor. If an item has both an enhancement bonus and a special ability, the higher of the two caster level requirements must be met. Magic armor or a magic shield must have at least a +1 enhancement bonus to have any armor or shield special abilities.</p>
+				<p>If spells are involved in the prerequisites for making the armor, the creator must have prepared the spells to be cast (or must know the spells, in the case of a sorcerer or bard) and must provide any material components or focuses the spells require. The act of working on the armor triggers the prepared spells, making them unavailable for casting during each day of the armor's creation. (That is, those spell slots are expended from the caster's currently prepared spells, just as if they had been cast.)</p>
+				<p>Creating some armor may entail other prerequisites beyond or other than spellcasting. See the individual descriptions for details.</p>
+				<p>Crafting magic armor requires one day for each 1,000 gp value of the base price.</p>
+				<p><b>Item Creation Feat Required</b>: <a href="../feats.html#craft-magic-arms-and-armor">Craft Magic Arms and Armor</a>.</p>
+				<p><b>Skill Used in Creation</b>: <a href="../skills/spellcraft.html#spellcraft">Spellcraft</a> or <a href="../skills/craft.html#craft">Craft</a> (armor).</p>
+				<h2 id="creating-magic-weapons">Creating Magic Weapons</h2>
+				<p>To create a magic weapon, a character needs a heat source and some iron, wood, or leatherworking tools. She also needs a supply of materials, the most obvious being the weapon or the pieces of the weapon to be assembled. Only a masterwork weapon can become a magic weapon, and the masterwork cost is added to the total cost to determine final market value. Additional magic supplies costs for the materials are subsumed in the cost for creating the magic weapon&mdash;half the base price of the item based upon the item's total effective bonus.</p>
+				<p>Creating a magic weapon has a special prerequisite: The creator's caster level must be at least three times the enhancement bonus of the weapon. If an item has both an enhancement bonus and a special ability, the higher of the two caster level requirements must be met. A magic weapon must have at least a +1 enhancement bonus to have any melee or ranged special weapon abilities.</p>
+				<p>If spells are involved in the prerequisites for making the weapon, the creator must have prepared the spells to be cast (or must know the spells, in the case of a sorcerer or bard) but need not provide any material components or focuses the spells require. The act of working on the weapon triggers the prepared spells, making them unavailable for casting during each day of the weapon's creation. (That is, those spell slots are expended from the caster's currently prepared spells, just as if they had been cast.)</p>
+				<p>At the time of creation, the creator must decide if the weapon glows or not as a side-effect of the magic imbued within it. This decision does not affect the price or the creation time, but once the item is finished, the decision is binding.</p>
+				<p>Creating magic double-headed weapons is treated as creating two weapons when determining cost, time, and special abilities.</p>
+				<p>Creating some weapons may entail other prerequisites beyond or other than spellcasting. See the individual descriptions for details.</p>
+				<p>Crafting a magic weapon requires 1 day for each 1,000 gp value of the base price.</p>
+				<p><b>Item Creation Feat Required</b>: <a href="../feats.html#craft-magic-arms-and-armor">Craft Magic Arms and Armor</a>.</p>
+				<p><b>Skill Used in Creation</b>: <a href="../skills/spellcraft.html#spellcraft">Spellcraft</a>, <a href="../skills/craft.html#craft">Craft</a> (bows) (for magic bows and arrows), or <a href="../skills/craft.html#craft">Craft</a> (weapons) (for all other weapons).</p>
+				<h2 id="creating-potions">Creating Potions</h2><div class="table"><table><caption>Potion Base Costs (By Brewer's Class)</caption>
+<thead><tr><th>Spell Level</th><th>Cleric, Druid, Wizard</th><th>Sorcerer</th><th>Bard</th><th>Paladin, Ranger*</th></tr></thead>
+<tr><td>0</td><td>25 gp</td><td>25 gp</td><td>25 gp</td><td>&mdash;</td></tr>
+<tr><td>1st</td><td>50 gp</td><td>50 gp</td><td>50 gp</td><td>50 gp</td></tr>
+<tr><td>2nd</td><td>300 gp</td><td>400 gp</td><td>400 gp</td><td>400 gp</td></tr>
+<tr><td>3rd</td><td>750 gp</td><td>900 gp</td><td>1,050 gp</td><td>1,050 gp</td></tr>
+<tfoot><tr><td colspan="5">* Caster level is equal to class level &ndash;3.</td></tr>
+<tr><td colspan="5">Prices assume that the potion was made at the minimum caster level. The cost to create a potion is half the base price.</td></tr></tfoot></table>
+</div>
+				<p>The creator of a potion needs a level working surface and at least a few containers in which to mix liquids, as well as a source of heat to boil the brew. In addition, he needs ingredients. The costs for materials and ingredients are subsumed in the cost for brewing the potion: 25 gp &times; the level of the spell &times; the level of the caster.</p>
+				<p>All ingredients and materials used to brew a potion must be fresh and unused. The character must pay the full cost for brewing each potion. (Economies of scale do not apply.)</p>
+				<p>The imbiber of the potion is both the caster and the target. Spells with a range of personal cannot be made into potions.</p>
+				<p>The creator must have prepared the spell to be placed in the potion (or must know the spell, in the case of a sorcerer or bard) and must provide any material component or focus the spell requires.</p>
+				<p>Material components are consumed when he begins working, but a focus is not. (A focus used in brewing a potion can be reused.) The act of brewing triggers the prepared spell, making it unavailable for casting until the character has rested and regained spells. (That is, that spell slot is expended from the caster's currently prepared spells, just as if it had been cast.) Brewing a potion requires 1 day.</p>
+				<p><b>Item Creation Feat Required</b>: <a href="../feats.html#brew-potion">Brew Potion</a>.</p>
+				<p><b>Skill Used in Creation</b>: <a href="../skills/spellcraft.html#spellcraft">Spellcraft</a> or <a href="../skills/craft.html#craft">Craft</a> (alchemy)</p>
+				<h2 id="creating-rings">Creating Rings</h2>
+				<p>To create a magic ring, a character needs a heat source. He also needs a supply of materials, the most obvious being a ring or the pieces of the ring to be assembled. The cost for the materials is subsumed in the cost for creating the ring. Ring costs are difficult to determine. Refer to Table: Estimating Magic Item Gold Piece Values and use the ring prices in the ring descriptions as a guideline. Creating a ring generally costs half the ring's market price.</p>
+				<p>Rings that duplicate spells with costly material components add in the value of 50 &times; the spell's component cost. Having a spell with a costly component as a prerequisite does not automatically incur this cost. The act of working on the ring triggers the prepared spells, making them unavailable for casting during each day of the ring's creation. (That is, those spell slots are expended from the caster's currently prepared spells, just as if they had been cast.)</p>
+				<p>Creating some rings may entail other prerequisites beyond or other than spellcasting. See the individual descriptions for details.</p>
+				<p>Forging a ring requires 1 day for each 1,000 gp of the base price.</p>
+				<p><b>Item Creation Feat Required</b>: <a href="../feats.html#forge-ring">Forge Ring</a>.</p>
+				<p><b>Skill Used in Creation</b>: <a href="../skills/spellcraft.html#spellcraft">Spellcraft</a> or <a href="../skills/craft.html#craft">Craft</a> (jewelry).</p>
+				<h2 id="creating-rods">Creating Rods</h2>
+				<p>To create a magic rod, a character needs a supply of materials, the most obvious being a rod or the pieces of the rod to be assembled. The cost for the materials is subsumed in the cost for creating the rod. Rod costs are difficult to determine. Refer to Table: Estimating Magic Item Gold Piece Values and use the rod prices in the rod descriptions as a guideline. Creating a rod costs half the market value listed.</p>
+				<p>If spells are involved in the prerequisites for making the rod, the creator must have prepared the spells to be cast (or must know the spells, in the case of a sorcerer or bard) but need not provide any material components or focuses the spells require. The act of working on the rod triggers the prepared spells, making them unavailable for casting during each day of the rod's creation. (That is, those spell slots are expended from the caster's currently prepared spells, just as if they had been cast.)</p>
+				<p>Creating some rods may entail other prerequisites beyond or other than spellcasting. See the individual descriptions for details.</p>
+				<p>Crafting a rod requires 1 day for each 1,000 gp of the base price.</p>
+				<p><b>Item Creation Feat Required</b>: <a href="../feats.html#craft-rod">Craft Rod</a>.</p>
+				<p><b>Skill Used in Creation</b>: <a href="../skills/spellcraft.html#spellcraft">Spellcraft</a>, <a href="../skills/craft.html#craft">Craft</a> (jewelry), <a href="../skills/craft.html#craft">Craft</a> (sculptures), or <a href="../skills/craft.html#craft">Craft</a> (weapons).</p>
+				<h2 id="creating-scrolls">Creating Scrolls</h2><div class="table"><table><caption>Scroll Base Costs (By Scriber's Class)</caption>
+<thead><tr><th>Spell Level</th><th>Cleric, Druid, Wizard</th><th>Sorcerer</th><th>Bard</th><th>Paladin, Ranger*</th></tr></thead>
+<tr><td>0</td><td>12 gp 5 sp</td><td>12 gp 5 sp</td><td>12 gp 5 sp</td><td>&mdash;</td></tr>
+<tr><td>1st</td><td>25 gp</td><td>25 gp</td><td>25 gp</td><td>25 gp</td></tr>
+<tr><td>2nd</td><td>150 gp</td><td>200 gp</td><td>200 gp</td><td>200 gp</td></tr>
+<tr><td>3rd</td><td>375 gp</td><td>450 gp</td><td>525 gp</td><td>525 gp</td></tr>
+<tr><td>4th</td><td>700 gp</td><td>800 gp</td><td>1,000 gp</td><td>1,000 gp</td></tr>
+<tr><td>5th</td><td>1,125 gp</td><td>1,250 gp</td><td>1,625 gp</td><td>&mdash;</td></tr>
+<tr><td>6th</td><td>1,650 gp</td><td>1,800 gp</td><td>2,400 gp</td><td>&mdash;</td></tr>
+<tr><td>7th</td><td>2,275 gp</td><td>2,450 gp</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>8th</td><td>3,000 gp</td><td>3,200 gp</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>9th</td><td>3,825 gp</td><td>4,050 gp</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tfoot><tr><td colspan="5">* Caster level is equal to class level &ndash;3.</td></tr>
+<tr><td colspan="5">Prices assume that the scroll was made at the minimum caster level. The cost to create a scroll is half the base price.</td></tr></tfoot></table>
+</div>
+				<p>To create a scroll, a character needs a supply of choice writing materials, the cost of which is subsumed in the cost for scribing the scroll: 12.5 gp &times; the level of the spell &times; the level of the caster.</p>
+				<p>All writing implements and materials used to scribe a scroll must be fresh and unused. A character must pay the full cost for scribing each spell scroll no matter how many times she previously has scribed the same spell.</p>
+				<p>The creator must have prepared the spell to be scribed (or must know the spell, in the case of a sorcerer or bard) and must provide any material component or focus the spell requires. A material component is consumed when she begins writing, but a focus is not. (A focus used in scribing a scroll can be reused.) The act of writing triggers the prepared spell, making it unavailable for casting until the character has rested and regained spells. (That is, that spell slot is expended from the caster's currently prepared spells, just as if it had been cast.)</p>
+				<p>Scribing a scroll requires 1 day per 1,000 gp of the base price. Although an individual scroll might contain more than one spell, each spell must be scribed as a separate effort, meaning that no more than 1 spell can be scribed in a day.</p>
+				<p><b>Item Creation Feat Required</b>: <a href="../feats.html#scribe-scroll">Scribe Scroll</a>.</p>
+				<p><b>Skill Used in Creation</b>: <a href="../skills/spellcraft.html#spellcraft">Spellcraft</a>, <a href="../skills/craft.html#craft">Craft</a> (calligraphy), or <a href="../skills/profession.html#profession">Profession</a> (scribe).</p>
+				<h2 id="creating-staves">Creating Staves</h2>
+				<p>To create a magic staff, a character needs a supply of materials, the most obvious being a staff or the pieces of the staff to be assembled.</p>
+				<p>The materials cost is subsumed in the cost of creation: 400 gp &times; the level of the highest-level spell &times; the level of the caster, plus 75% of the value of the next most costly ability (300 gp &times; the level of the spell &times; the level of the caster), plus 1/2 the value of any other abilities (200 gp &times; the level of the spell &times; the level of the caster). Staves are always fully charged (10 charges) when created.</p>
+				<p>If desired, a spell can be placed into the staff at less than the normal cost, but then activating that particular spell drains additional charges from the staff. Divide the cost of the spell by the number of charges it consumes to determine its final price. Note that this does not change the order in which the spells are priced (the highest level spell is still priced first, even if it requires more than one charge to activate). The caster level of all spells in a staff must be the same, and no staff can have a caster level of less than 8th, even if all the spells in the staff are low-level spells.</p>
+				<p>The creator must have prepared the spells to be stored (or must know the spells, in the case of a sorcerer or bard) and must provide any focus the spells require as well as material component costs sufficient to activate the spell 50 times (divide this amount by the number of charges one use of the spell expends). Material components are consumed when he begins working, but focuses are not. (A focus used in creating a staff can be reused.) The act of working on the staff triggers the prepared spells, making them unavailable for casting during each day of the staff 's creation. (That is, those spell slots are expended from the caster's currently prepared spells, just as if they had been cast.)</p>
+				<p>Creating a few staves may entail other prerequisites beyond spellcasting. See the individual descriptions for details.</p>
+				<p>Crafting a staff requires 1 day for each 1,000 gp of the base price.</p>
+				<p><b>Item Creation Feat Required</b>: <a href="../feats.html#craft-staff">Craft Staff</a>.</p>
+				<p><b>Skill Used in Creation</b>: <a href="../skills/spellcraft.html#spellcraft">Spellcraft</a>, <a href="../skills/craft.html#craft">Craft</a> (jewelry), <a href="../skills/craft.html#craft">Craft</a> (sculptures), or <a href="../skills/profession.html#profession">Profession</a> (woodcutter).</p>
+				<h2 id="creating-wands">Creating Wands</h2><div class="table"><table><caption>Wand Base Costs (By Crafter's Class)</caption>
+<thead><tr><th>Spell Level</th><th>Cleric, Druid, Wizard</th><th>Sorcerer</th><th>Bard</th><th>Paladin, Ranger*</th></tr></thead>
+<tr><td>0</td><td>375 gp</td><td>375 gp</td><td>375 gp</td><td>&mdash;</td></tr>
+<tr><td>1st</td><td>750 gp</td><td>750 gp</td><td>750 gp</td><td>750 gp</td></tr>
+<tr><td>2nd</td><td>4,500 gp</td><td>6,000 gp</td><td>6,000 gp</td><td>6,000 gp</td></tr>
+<tr><td>3rd</td><td>11,250 gp</td><td>13,500 gp</td><td>15,750 gp</td><td>15,750 gp</td></tr>
+<tr><td>4th</td><td>21,000 gp</td><td>24,000 gp</td><td>30,000 gp</td><td>30,000 gp</td></tr>
+<tfoot><tr><td colspan="5">* Caster level is equal to class level &ndash;3.</td></tr>
+<tr><td colspan="5">Prices assume that the wand was made at the minimum caster level. The cost to create a wand is half the base price.</td></tr></tfoot></table>
+</div>
+				<p>To create a magic wand, a character needs a small supply of materials, the most obvious being a baton or the pieces of the wand to be assembled. The cost for the materials is subsumed in the cost for creating the wand: 375 gp &times; the level of the spell &times; the level of the caster. Wands are always fully charged (50 charges) when created.</p>
+				<p>The creator must have prepared the spell to be stored (or must know the spell, in the case of a sorcerer or bard) and must provide any focuses the spell requires. Fifty of each needed material component are required (one for each charge). Material components are consumed when work begins, but focuses are not. A focus used in creating a wand can be reused. The act of working on the wand triggers the prepared spell, making it unavailable for casting during each day devoted to the wand's creation. (That is, that spell slot is expended from the caster's currently prepared spells, just as if it had been cast.)</p>
+				<p>Crafting a wand requires 1 day per each 1,000 gp of the base price.</p>
+				<p><b>Item Creation Feat Required</b>: <a href="../feats.html#craft-wand">Craft Wand</a>.</p>
+				<p><b>Skill Used in Creation</b>: <a href="../skills/spellcraft.html#spellcraft">Spellcraft</a>, <a href="../skills/craft.html#craft">Craft</a> (jewelry), <a href="../skills/craft.html#craft">Craft</a> (sculptures), or <a href="../skills/profession.html#profession">Profession</a> (woodcutter).</p>
+				<h2 id="creating-wondrous-items">Creating Wondrous Items</h2>
+				<p>To create a wondrous item, a character usually needs some sort of equipment or tools to work on the item. She also needs a supply of materials, the most obvious being the item itself or the pieces of the item to be assembled. The cost for the materials is subsumed in the cost for creating the item. Wondrous item costs are difficult to determine. Refer to Table: Estimating Magic Item Gold Piece Values and use the item prices in the item descriptions as a guideline. Creating an item costs half the market value listed.</p>
+				<p>If spells are involved in the prerequisites for making the item, the creator must have prepared the spells to be cast (or must know the spells, in the case of a sorcerer or bard) but need not provide any material components or focuses the spells require. The act of working on the item triggers the prepared spells, making them unavailable for casting during each day of the item's creation. (That is, those spell slots are expended from the caster's currently prepared spells, just as if they had been cast.)</p>
+				<p>Creating some items may entail other prerequisites beyond or other than spellcasting. See the individual descriptions for details.</p>
+				<p>Crafting a wondrous item requires 1 day for each 1,000 gp of the base price.</p>
+				<p><b>Item Creation Feat Required</b>: Craft Wondrous Item.</p>
+				<p><b>Skill Used In Creation</b>: <a href="../skills/spellcraft.html#spellcraft">Spellcraft</a> or an applicable <a href="../skills/craft.html#craft">Craft</a> or <a href="../skills/profession.html#profession">Profession</a> skill check.</p>
+				<h2 id="adding-new-abilities">Adding New Abilities</h2>
+				<p>Sometimes, lack of funds or time make it impossible for a magic item crafter to create the desired item from scratch. Fortunately, it is possible to enhance or build upon an existing magic item. Only time, gold, and the various prerequisites required of the new ability to be added to the magic item restrict the type of additional powers one can place.</p>
+				<p>The cost to add additional abilities to an item is the same as if the item was not magical, less the value of the original item. Thus, a <i>+1 longsword</i> can be made into a <i>+2 <a href="weapons.html#vorpal">vorpal</a> longsword,</i> with the cost to create it being equal to that of a <i>+2 <a href="weapons.html#vorpal">vorpal</a> sword</i> minus the cost of a <i>+1 longsword</i>.</p>
+				<p>If the item is one that occupies a specific place on a character's body, the cost of adding any additional ability to that item increases by 50%. For example, if a character adds the power to confer invisibility to her <i><a href="rings.html#ring-of-protection">ring of protection</a> +2,</i> the cost of adding this ability is the same as for creating a <i><a href="rings.html#ring-of-invisibility">ring of invisibility</a></i> multiplied by 1.5. </p>
+
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="magic item Creation",globalNavPath=[{ href: '/pathfinderRPG/prd/coreRulebook/magicItems.html', name: 'Magic Items' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

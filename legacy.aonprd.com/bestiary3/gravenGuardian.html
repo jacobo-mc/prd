@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Graven Guardian</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "gravenGuardian.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "gravenGuardian.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "gravenGuardian.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "gravenGuardian.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "gravenGuardian.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "gravenGuardian.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "gravenGuardian.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "gravenGuardian.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "gravenGuardian.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "gravenGuardian.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "gravenGuardian.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "gravenGuardian.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "gravenGuardian.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "gravenGuardian.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "gravenGuardian.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "gravenGuardian.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "gravenGuardian.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "gravenGuardian.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "gravenGuardian.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "gravenGuardian.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "gravenGuardian.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+				<h1 id="graven-guardian" class="monster-header">Graven Guardian</h1>
+				<p class="flavor-text">This jackal-headed, brightly painted clay statue animates and lurches forward, hefting a wickedly hooked sword.</p>
+				<p class="stat-block-title">Graven Guardian <span class="stat-block-cr">CR 5</span></p>
+				<p class="stat-block-xp">XP 1,600</p>
+				<p class="stat-block-1">N Medium construct </p>
+				<p class="stat-block-1"><b>Init</b> +2; <b>Senses</b> darkvision 60 ft., low-light vision; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +1</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 20, touch 12, flat-footed 18 (+2 Dex, +8 natural)</p>
+				<p class="stat-block-1"><b>hp</b> 53 (6d10+20); fast healing 2</p>
+				<p class="stat-block-1"><b>Fort</b> +2, <b>Ref</b> +4, <b>Will</b> +3</p>
+				<p class="stat-block-1"><b>DR</b> 5/adamantine; <b>Immune</b> construct traits; <b>SR</b> 16</p>
+				<p class="stat-block-1"><b>Weaknesses</b> faith bound</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 40 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> <i>+1 <a href="../coreRulebook/magicItems/weapons.html#weapons-keen" >keen</a> scimitar</i> +10/+5 (1d6+5/15&ndash;20 plus <a href="../bestiary/universalMonsterRules.html#bleed" >bleed</a>) or slam +9 (1d6+4)</p>
+				<p class="stat-block-1"><b>Special Attacks</b> <a href="../bestiary/universalMonsterRules.html#bleed" >bleed</a> 2, magic weapon, rest eternal</p>
+				<p class="stat-block-1"><b>Spell-Like Abilities</b> (CL 6th; concentration +0)</p>
+				<p class="stat-block-2">1/day&mdash;<i><a href="../coreRulebook/spells/haste.html#haste" >haste</a></i> (self only)</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 16, <b>Dex</b> 15, <b>Con</b> &mdash;, <b>Int</b> &mdash;, <b>Wis</b> 12, <b>Cha</b> 1</p>
+				<p class="stat-block-1"><b>Base Atk</b> +6; <b>CMB</b> +9; <b>CMD</b> 21</p>
+				<p class="stat-block-1"><b>SQ</b> guardian domains (Death, Repose)</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any land</p>
+				<p class="stat-block-1"><b>Organization</b> solitary, band (2&ndash;4), or assembly (5&ndash;12)</p>
+				<p class="stat-block-1"><b>Treasure</b> incidental (masterwork scimitar, other treasure)</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Faith Bound (Su) </b>A graven guardian cannot attack any creature that openly wears or displays the holy or unholy symbol of the deity to which the graven guardian is dedicated unless that creature first attacks the graven guardian.</p>
+				<p class="stat-block-1"><b>Magic Weapon (Su) </b>A graven guardian that carries its deity's favored weapon treats that weapon as a <i>+1 </i>weapon as long as it is wielded by the guardian. If the weapon is a melee weapon, it gains the <i><a href="../coreRulebook/magicItems/weapons.html#weapons-keen" >keen</a> </i>weapon special ability (even if the weapon is a bludgeoning weapon). If it is a thrown weapon, it gains the <i><a href="../coreRulebook/magicItems/weapons.html#weapons-returning" >returning</a> </i>weapon special ability. If it is a ranged weapon, it gains the <i><a href="../coreRulebook/magicItems/weapons.html#weapons-seeking" >seeking</a> </i>weapon special ability, and generates new ammunition with each attack (this ammunition is destroyed whether or not it hits).</p>
+				
+				<p>Graven guardians are human-sized constructs of clay, stone, wood, or similar materials, crafted and painted to resemble a deity or a deity's favored servants. When not in motion, a graven guardian appears identical to a temple or crypt's statue, but while active, graven guardians look extremely lifelike.</p>
+				<p>Graven guardians are inexorably tied to a specific deity's faith. While unintelligent and thus lacking any real personality, a graven guardian has the ability to recognize fellow worshipers or minions of its deity and does not treat them as enemies unless they first attack. This recognition does not extend so far as to allow these worshipers (or those cunningly disguised as worshipers) to give a graven guardian new orders. As with all constructs, a graven guardian follows only the orders of its creator.</p>
+				
+				<h2 id="guardian-domains">Guardian Domains</h2>
+				<p>Each graven guardian gains a special ability from two domains assigned during construction. Save DCs for these abilities are Wisdom-based (DC 14 for most guardians). Caster level for these abilities is equal to the graven guardian's Hit Dice (CL 6th for most graven guardians).</p>
+				<p><b>Air</b>: <i>Flight (Su)</i>&mdash;The graven guardian gains a fly speed equal to its base speed with average maneuverability and a <a href="../coreRulebook/skills/fly.html#fly" >Fly</a> skill of +6 (this includes a +4 racial bonus).</p>
+				<p><b>Animal</b>: <i>Beast Ward (Su)</i>&mdash;Animals must make a Will save before they can attack the graven guardian. Any attack on an animal (but not its allies) by the graven guardian breaks this protection. Once the animal makes this Will save, it need not save again against that particular graven guardian on subsequent attacks.</p>
+				<p><b>Artifice</b>: <i>Repair (Ex)</i>&mdash;The graven guardian's fast healing increases to 5.</p>
+				<p><b>Chaos</b>: <i>Chaotic Weapons (Su)</i>&mdash;The graven guardian's weapon and slam attacks are treated as chaotic-aligned. Its magic weapon deals +1d6 points of damage to lawful targets.</p>
+				<p><b>Charm</b>: <i><a href="../coreRulebook/spells/command.html#command" >Command</a> (Su)</i>&mdash;The graven guardian can cast <i><a href="../coreRulebook/spells/command.html#command" >command</a></i> three times per day as a spell-like ability.</p>
+				<p><b>Community</b>: <i>Alliance (Su)</i>&mdash;Adjacent worshipers and graven guardians dedicated to the same god gain a +1 luck bonus on attack rolls, weapon damage rolls, and saves.</p>
+				<p><b>Darkness</b>: <i><a href="../coreRulebook/spells/darkness.html#darkness" >Darkness</a> (Su)</i>&mdash;The graven guardian can cast <i><a href="../coreRulebook/spells/darkness.html#darkness" >darkness</a></i> two times per day as a spell-like ability.</p>
+				<p><b>Death</b>: <i><a href="../coreRulebook/spells/bleed.html#bleed" >Bleed</a> (Ex)</i>&mdash;The graven guardian's weapon deals 2 points of bleed damage on a hit.</p>
+				<p><b>Destruction</b>: <i><a href="../coreRulebook/spells/shatter.html#shatter" >Shatter</a> (Ex)</i>&mdash;The graven guardian can cast <i><a href="../coreRulebook/spells/shatter.html#shatter" >shatter</a></i> two times per day as a spell-like ability.</p>
+				<p><b>Earth</b>: <i>Rocky (Ex)</i>&mdash;The graven guardian's natural armor bonus increases by +2.</p>
+				<p><b>Evil</b>: <i>Evil Weapons (Su)</i>&mdash;The graven guardian's weapon and slam attacks are treated as evil-aligned. Its magic weapon deals +1d6 points of damage to good targets.</p>
+				<p><b>Fire</b>: <i><a href="../coreRulebook/magicItems/weapons.html#weapons-flaming" >Flaming</a> (Su)</i>&mdash;The graven guardian's weapon gains the <i><a href="../coreRulebook/magicItems/weapons.html#weapons-flaming" >flaming</a></i> property. </p>
+				<p><b>Glory</b>: <i>Glorious </i>(Su)&mdash;The graven guardian's magic weapon and slam attack deal an additional 1d6 points of damage against undead creatures.</p>
+				<p><b>Good</b>: <i>Good Weapons (Su)</i>&mdash;The graven guardian's weapon and slam attacks are treated as good-aligned. Its magic weapon deals +1d6 points of damage to evil targets.</p>
+				<p><b>Healing</b>: <i>Recovery (Su)</i>&mdash;Once per day, when reduced below half hit points, the graven guardian automatically heals 3d10+6 points of damage.</p>
+				<p><b><a href="../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a></b>: <i>Familiarity (Su)</i>&mdash;The graven guardian gains a +2 bonus on attack rolls again any creature it attacked in the past round.</p>
+				<p><b>Law</b>: <i>Lawful Weapons (Su)</i>&mdash;The graven guardian's weapons and slam attacks are treated as lawful-aligned. Its magic weapon deals +1d6 points of damage to chaotic targets.</p>
+				<p><b>Liberation</b>: <i>Unfettered (Su)</i>&mdash;The graven guardian gains a +4 bonus to its CMD.</p>
+				<p><b>Luck</b>: <i>Lucky (Su)</i>&mdash;Once per day, the graven guardian may roll a saving throw twice and take the better of the two results as the actual result.</p>
+				<p><b>Madness</b>: <i><a href="../coreRulebook/spells/confusion.html#confusion" >Confusion</a> (Su)</i>&mdash;The graven guardian can cast <i><a href="../coreRulebook/spells/confusion.html#confusion" >confusion</a></i> once per day as a spell-like ability.</p>
+				<p><b>Magic</b>: <i>Resistant (Su)</i>&mdash;The graven guardian's SR increases by 5.</p>
+				<p><b>Nobility</b>: <i>Honored (Su)</i>&mdash;The graven guardian gains a +1 bonus on attack rolls and combat maneuver checks.</p>
+				<p><b>Plant</b>: <i><a href="../coreRulebook/spells/entangle.html#entangle" >Entangle</a> (Su)</i>&mdash;The graven guardian can cast <i><a href="../coreRulebook/spells/entangle.html#entangle" >entangle</a></i> three times per day as a spell-like ability.</p>
+				<p><b>Protection</b>: <i>Protected (Su)</i>&mdash;The graven guardian gains a +2 bonus on all saves.</p>
+				<p><b>Repose</b>: <i>Rest Eternal (Su)</i>&mdash;Damage dealt by the graven guardian resists any magical healing. Attempting to use magical healing to cure this damage requires a successful caster level check against the guardian's SR. This ability does not affect natural healing or healing provided by extraordinary abilities.</p>
+				<p><b>Rune</b>: <i>Rune Carved (Su)</i>&mdash;Runes cover the graven guardian. Whenever the graven guardian takes energy damage or energy damage fails to overcome its SR, for the next round, its attacks deal +1d6 points of damage of that energy type. If more than one type of energy attack occurs in a round, roll randomly to determine what kind of extra energy damage it deals.</p>
+				<p><b>Strength</b>: <i>Powerful (Ex)</i>&mdash;The graven guardian gains <a href="../coreRulebook/feats.html#power-attack" >Power Attack</a> as a bonus feat.</p>
+				<p><b>Sun</b>: <i>Dazzling (Su)</i>&mdash;When the graven guardian scores a critical hit with its magic weapon, a bright flash blinds the target for 1d4 rounds (Fortitude save negates).</p>
+				<p><b>Travel</b>: <i>Speedy (Su)</i>&mdash;The guardian gains Mobility as a bonus feat, and all of its modes of movement increase by +10 feet.</p>
+				<p><b>Trickery</b>: <i>Trip (Su)</i>&mdash;The graven guardian gains the trip ability with its melee weapon and slam attacks.</p>
+				<p><b>War</b>: <i>Enhanced (Su)</i>&mdash;The enhancement bonus of the graven guardian's weapon increases to +2.</p>
+				<p><b>Water</b>: <i>Swimmer (Ex)</i>&mdash;The guardian gains a swim speed equal to its base speed, and a <a href="../coreRulebook/skills/swim.html#swim" >Swim</a> skill of +11.</p>
+				<p><b>Weather</b>: <i>Shocking Weapon (Su)</i>&mdash;The graven guardian's weapon gains the <i><a href="../coreRulebook/magicItems/weapons.html#weapons-shock" >shock</a></i> special ability.</p>
+				
+				<h2>Construction</h2>
+				<p>A graven guardian's body must be sculpted from clay, stone, or wood, and adorned with precious stones, rare woods, or metal inlays worth 500 gp. The Hit Dice and size of graven guardians can be increased as though they were golems (<i>Bestiary</i> 158).</p>
+				<p class="stat-block-title">Graven Guardian</p>
+				<p class="stat-block-1"><b>CL</b> 7th; <b>Price</b> 18,500 gp</p>
+				<p class="stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../bestiary/monsterFeats.html#craft-construct" >Craft Construct</a>, <i><a href="../coreRulebook/spells/magicWeapon.html#magic-weapon-greater" >greater magic weapon</a></i>, <i><a href="../coreRulebook/spells/haste.html#haste" >haste</a></i>, <i><a href="../coreRulebook/spells/imbueWithSpellAbility.html#imbue-with-spell-ability" >imbue with spell ability</a></i>, <i><a href="../coreRulebook/spells/makeWhole.html#make-whole" >make whole</a></i>, <i><a href="../coreRulebook/spells/stoneShape.html#stone-shape" >stone shape</a></i>, creator must be caster level 7th; <b>Skill</b> <a href="../coreRulebook/skills/craft.html#craft" >Craft</a> (sculpture) or <a href="../coreRulebook/skills/craft.html#craft" >Craft</a> (pottery) DC 15; <b>Cost</b> 9,500 gp</p>
+			</div>
+</div>	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Graven Guardian",globalNavPath=[{ href: '/pathfinderRPG/prd/bestiary3/monsterIndex.html', name: 'Bestiary 3 Index'}];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

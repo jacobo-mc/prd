@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Golem</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "golem.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "golem.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "golem.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "golem.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "golem.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "golem.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "golem.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "golem.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "golem.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "golem.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "golem.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "golem.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "golem.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "golem.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "golem.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "golem.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "golem.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "golem.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "golem.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "golem.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "golem.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+			
+			
+			<div>
+				<h1 id="golem,-adamantine" class="monster-header">Golem, Adamantine</h1>
+                <div class="stat-block">
+				<p>This huge construct of black metal is all spikes and armor, save for several forge-like stacks that burn atop its crown and back.</p>
+				<p class="stat-block-title">Adamantine Golem <span class="stat-block-cr">CR 19</span></p>
+				<p class="stat-block-xp"><b>XP 204,800</b></p>
+				<p class="stat-block-1">N Huge <a href="../bestiary/creatureTypes.html#construct" >construct</a> </p>
+				<p class="stat-block-1"><b>Init</b> &ndash;1; <b>Senses</b> darkvision 60 ft., low-light vision; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +0</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 33, touch 7, flat-footed 33 (&ndash;1 Dex, +26 natural, &ndash;2 size)</p>
+				<p class="stat-block-1"><b>hp</b> 205 (30d10+40); fast healing 10</p>
+				<p class="stat-block-1"><b>Fort</b> +10, <b>Ref</b> +9, <b>Will</b> +10</p>
+				<p class="stat-block-1"><b>Defensive Abilities</b> indestructible; <b>DR</b> 15/epic; <b>Immune</b> <a href="../bestiary/creatureTypes.html#construct" >construct</a> traits, magic</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +41 (6d10+13/19&ndash;20)</p>
+				<p class="stat-block-1"><b>Space</b> 15 ft.; <b>Reach</b> 15 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> destructive strike, trample (6d10+19, DC 38)</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 36, <b>Dex</b> 9, <b>Con</b> &mdash;, <b>Int</b> &mdash;, <b>Wis</b> 11, <b>Cha</b> 1</p>
+				<p class="stat-block-1"><b>Base Atk</b> +30; <b>CMB</b> +45; <b>CMD</b> 54</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p id="environment" class="stat-block-1 para-style-override"><b>Environment</b> any</p>
+				<p id="organization" class="stat-block-1 para-style-override"><b>Organization</b> solitary or gang (2&ndash;4)</p>
+				<p id="treasure" class="stat-block-1 para-style-override"><b>Treasure</b> none</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Destructive Strike (Ex)</b> An adamantine golem's slam attacks threaten a critical hit on a 19 or 20. In addition, whenever an adamantine golem scores a critical hit, it deals 6d10+13 points of damage to the target's armor or shield in addition to the normal damage, as if it had also made a successful sunder combat maneuver.</p>
+				<p class="stat-block-1"><b>Indestructible (Ex)</b> An adamantine golem is nearly impossible to destroy. Even if reduced below 0 hit points, its fast healing continues to restore hit points, though the golem is helpless unless above 0 hit points. It can only be permanently destroyed if reduced to negative hit points and then decapitated using an adamantine <i><a href="../coreRulebookmagicItems/weapons.html#vorpal" >vorpal</a> </i>weapon&mdash;alternatively, <i><a href="../coreRulebook/spells/miracle.html#miracle" >miracle</a></i> or <i><a href="../coreRulebook/spells/wish.html#wish" >wish</a></i> can be used to slay it while it is at negative hit points.</p>
+				<p class="stat-block-1"><b><a href="../bestiary/universalMonsterRules.html#immunity-(ex-or-su)" >Immunity</a> to Magic (Ex)</b> An adamantine golem is immune to any spell or spell-like ability that allows spell <a href="../bestiary/universalMonsterRules.html#resistance" >resistance</a>, except as noted below.</p>
+				<p class="stat-block-2">• <i><a href="../coreRulebook/spells/transmuteMetalToWood.html#transmute-metal-to-wood" >Transmute metal to wood</a></i> slows an adamantine golem for 1d4 rounds, during which time its damage reduction is reduced to 15/adamantine (no save).</p>
+                </div>
+				
+				<p>Made using one of the hardest and most precious substances, the adamantine golem is a deadly work of art. It can crush the life from foes that dare to get in its way and is nearly impossible to permanently destroy. The vast amount of adamantine required to build even one of these destructive golems is so significant that most worlds do not have enough resources, forcing the creator to travel to the Plane of Earth or remote Outer Planes simply to gather the raw materials needed to build the golem's body.</p>
+				<h2>Construction</h2>
+				<p>A adamantine golem's body is made of more than 4,000 pounds of adamantine, mithral, gold, platinum, and other metals worth a total of 100,000 gp.</p>
+				
+				<p id="adamantine-golem" class="stat-block-title">Adamantine Golem</p>
+				<p class="stat-block-1"><b>CL </b>20th; <b>Price</b> 600,000 gp</p>
+				<p class="stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../bestiary/monsterFeats.html#craft-construct" >Craft Construct</a>, <i>crushing fist, <a href="../coreRulebook/spells/geasQuest.html#geas-quest" >geas/quest</a>, <a href="../coreRulebook/spells/heal.html#heal" >heal</a>, <a href="../coreRulebook/spells/stoneskin.html#stoneskin" >stoneskin</a>, <a href="../coreRulebook/spells/wish.html#wish" >wish</a></i>, creator must be caster level 20th; <b>Skill</b> <a href="../coreRulebook/skills/craft.html#craft" >Craft</a> (sculpture) DC 35; <b>Cost</b> 350,000 gp</p>
+				
+			</div>
+			
+			<div>
+				<h1 id="golem,-alchemical" class="monster-header">Golem, Alchemical</h1>
+				<p>A rickety construction of glass tubing, metal, and wood convey the brain and two eyes afloat in this figure's glass skull. </p>
+				<p class="stat-block-title">Alchemical Golem <span class="stat-block-cr">CR 9</span></p>
+				<p class="stat-block-xp"><b>XP 6,400</b></p>
+				<p class="stat-block-1">N Large <a href="../bestiary/creatureTypes.html#construct" >construct</a> </p>
+				<p class="stat-block-1"><b>Init</b> +4; <b>Senses</b> darkvision 60 ft., low-light vision; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +0</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 23, touch 13, flat-footed 19 (+4 Dex, +10 natural, &ndash;1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 96 (12d10+30)</p>
+				<p class="stat-block-1"><b>Fort</b> +4, <b>Ref</b> +8, <b>Will</b> +4</p>
+				<p class="stat-block-1"><b>DR</b> 10/adamantine or bludgeoning; <b>Immune</b> <a href="../bestiary/creatureTypes.html#construct" >construct</a> traits, magic</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +19 (2d8+8 plus alchemy)</p>
+				<p class="stat-block-1"><b>Ranged</b> bomb +15 (8d6 energy damage)</p>
+				<p class="stat-block-1"><b>Space</b> 10 ft.; <b>Reach</b> 10 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> alchemy, bombs, splash</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 27, <b>Dex</b> 18, <b>Con</b> &mdash;, <b>Int</b> &mdash;, <b>Wis</b> 11, <b>Cha</b> 1</p>
+				<p class="stat-block-1"><b>Base Atk </b>+12; <b>CMB</b> +21; <b>CMD</b> 35</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p id="environment" class="stat-block-1 para-style-override"><b>Environment</b> any</p>
+				<p id="organization" class="stat-block-1 para-style-override"><b>Organization</b> solitary or gang (2&ndash;4)</p>
+				<p id="treasure" class="stat-block-1 para-style-override"><b>Treasure</b> none</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Alchemy (Ex)</b> When an alchemical golem strikes a foe, the attack has an additional random effect, chosen from the options below. The attack can either deal 1d6 points of acid, <a href="../bestiary/creatureTypes.html#cold-subtype" >cold</a>, electricity, or <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> damage, or cause the target to become sickened (Fortitude DC 16 negates) or entangled (Reflex DC 16 negates) for 1d4 rounds. These save DCs are Constitution-based.</p>
+				<p class="stat-block-1"><b>Bombs (Ex)</b> As a standard action, an alchemical golem can throw a bomb as a ranged touch attack to a distance of 60 feet (no range increment). If the attack misses, treat it as a thrown splash weapon to determine where it lands. Anyone struck by an alchemical golem's bomb takes 8d6 points of acid, <a href="../bestiary/creatureTypes.html#cold-subtype" >cold</a>, electricity, or <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> damage (determine type randomly). All creatures adjacent to the location where the bomb hits take 1d6 points of energy damage of the same type.</p>
+				<p class="stat-block-1"><b><a href="../bestiary/universalMonsterRules.html#immunity-(ex-or-su)" >Immunity</a> to Magic (Ex)</b> An alchemical golem is immune to spells or spell-like abilities that allow spell <a href="../bestiary/universalMonsterRules.html#resistance" >resistance</a>, save for spells with the sonic descriptor. <i><a href="../coreRulebook/spells/shatter.html#shatter" >Shatter</a></i> damages an alchemical golem as if it were a crystalline creature.</p>
+				<p class="stat-block-1"><b>Splash (Ex)</b> Any strike on an alchemical golem with a non-reach melee weapon deals 1 point of acid, <a href="../bestiary/creatureTypes.html#cold-subtype" >cold</a>, electricity, or <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> damage (determine type randomly) to the attacker. This amount increases to 1d6 points of damage if the attack is a critical hit.</p>
+				<p>This golem is a walking alchemical nightmare, capable of inflicting all manner of painful wounds on its foes. Its ability to follow orders is granted by the otherwise mindless humanoid brain that floats in its dome-like head, while its animating force is a curious combination of alchemy and elemental spirits bound into the fluids and metals of its body.</p>
+				<h2>Construction</h2>
+				<p>An alchemical golem's body is made of alchemical gear weighing 1,000 pounds and worth a total of 3,000 gp.</p>
+				<p id="alchemical-golem" class="stat-block-title">Alchemical Golem</p>
+				<p class="stat-block-1"><b>CL </b>10th; <b>Price</b> 33,000 gp</p>
+				<p class="stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../bestiary/monsterFeats.html#craft-construct" >Craft Construct</a><i>, <a href="../coreRulebook/spells/geasQuest.html#geas-quest" >geas/quest</a>, <a href="../coreRulebook/spells/gentleRepose.html#gentle-repose" >gentle repose</a>, <a href="../coreRulebook/spells/majorCreation.html#major-creation" >major creation</a>, <a href="../coreRulebook/spells/resistEnergy.html#resist-energy" >resist energy</a>, <a href="../coreRulebook/spells/telekinesis.html#telekinesis" >telekinesis</a></i>, creator must be caster level 10th; <b>Skill</b> <a href="../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) DC 20; <b>Cost</b> 18,000 gp</p>
+				
+			</div>
+			
+			<div>
+				<h1 id="golem,-carrion" class="monster-header">Golem, Carrion</h1>
+				<p>A lurching mash-up of rotting flesh, jagged bone, and coarse hair, this humanoid monstrosity reeks of death and decay.</p>
+				<p class="stat-block-title">Carrion Golem <span class="stat-block-cr">CR 4</span></p>
+				<p class="stat-block-xp"><b>XP 1,200</b></p>
+				<p class="stat-block-1">N Medium <a href="../bestiary/creatureTypes.html#construct" >construct</a> </p>
+				<p class="stat-block-1"><b>Init</b> +1; <b>Senses</b> <a href="../bestiary/universalMonsterRules.html#blindsense" >blindsense</a> 10 ft., darkvision 60 ft., low-light vision; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +0</p>
+				<p class="stat-block-1"><b>Aura</b> foul stench (DC 12, 1 round)</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 17, touch 11, flat-footed 16 (+1 Dex, +6 natural)</p>
+				<p class="stat-block-1"><b>hp</b> 42 (4d10+20)</p>
+				<p class="stat-block-1"><b>Fort</b> +1, <b>Ref</b> +2, <b>Will</b> +1</p>
+				<p class="stat-block-1"><b>DR</b> 5/bludgeoning or slashing; <b>Immune</b> <a href="../bestiary/creatureTypes.html#construct" >construct</a> traits, magic</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +7 (1d8+3 plus <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>)</p>
+				<p class="stat-block-1"><b>Special Attacks</b> plague carrier</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 17, <b>Dex</b> 12, <b>Con</b> &mdash;, <b>Int</b> &mdash;, <b>Wis</b> 11, <b>Cha</b> 1</p>
+				<p class="stat-block-1"><b>Base Atk</b> +4; <b>CMB</b> +7; <b>CMD</b> 18</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any land</p>
+				<p class="stat-block-1"><b>Organization</b> solitary or gang (2&ndash;4)</p>
+				<p class="stat-block-1"><b>Treasure</b> none</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Foul Stench (Ex)</b> This functions as the stench ability, but causes affected creatures to be nauseated rather than sickened.</p>
+				<p class="stat-block-1"><b>Immune to Magic (Ex)</b> A carrion golem is immune to any spell or spell-like ability that allows spell <a href="../bestiary/universalMonsterRules.html#resistance" >resistance</a>. In addition, certain spells and effects function differently against the creature, as noted below.</p>
+				<p class="stat-block-2">•	<i><a href="../coreRulebook/spells/gentleRepose.html#gentle-repose" >Gentle repose</a></i> causes a carrion golem to become stiff and helpless for 1d4 rounds if it fails a Will save against the spell.</p>
+				<p class="stat-block-2">•	<i><a href="../coreRulebook/spells/animateDead.html#animate-dead" >Animate dead</a></i> causes the various parts of the golem's body to shudder and tear, dealing 1d6 points of damage per caster level to the golem (no save).</p>
+				<p class="stat-block-2">•	Any magical attack that deals <a href="../bestiary/creatureTypes.html#cold-subtype" >cold</a> or <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> damage slows a carrion golem (as the <i><a href="../coreRulebook/spells/slow.html#slow" >slow</a></i> spell) for 2d6 rounds (no save).</p>
+				<p class="stat-block-2">•	Any magical attack that deals electricity damage hastes a carrion golem (as the <i><a href="../coreRulebook/spells/haste.html#haste" >haste</a></i> spell) for 2d6 rounds.</p>
+				<p class="stat-block-1"><b>Plague Carrier (Ex)</b> When a carrion golem is created, its creator infects it with a specific <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>. The carrion golem can then infect those it strikes with its slams with this <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)" >disease</a>&mdash;most carrion golems inflict filth fever. The save DC is Constitution-based and includes a +2 racial bonus.</p>
+				<p><i>Filth Fever</i>: Slam&mdash;injury; <i>save</i> Fortitude DC 14; <i>onset</i> 1d3 days; <i>frequency</i> 1/day; <i>effect</i> 1d3 Dex damage and 1d3 Con damage; <i>cure</i> 2 consecutive saves.</p>
+				
+				<p>Carrion golems are made from the partially decayed parts of numerous dead creatures&mdash;no two carrion golems are exactly alike in appearance. Most are created from the corpses of humanoid creatures that are then augmented here and there with parts taken from animals, resulting in a monster that stands 6 feet tall and weighs 120 pounds.</p>
+				<h2>Construction</h2>
+				<p>A carrion golem's body can be constructed using at least two Medium corpses and four smaller corpses. Special reagents worth 500 gp are also required.</p>
+					
+				<p class="stat-block-title">Carrion Golem</p>
+				<p class="stat-block-1"><b>CL</b> 7th; <b>Price</b> 10,500 gp</p>
+				<p class="stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../bestiary/monsterFeats.html#craft-construct" >Craft Construct</a>, <i><a href="../coreRulebook/spells/animateDead.html#animate-dead" >animate dead</a></i>, <i><a href="../coreRulebook/spells/contagion.html#contagion" >contagion</a></i>, <i><a href="../coreRulebook/spells/falseLife.html#false-life" >false life</a></i>, <i><a href="../coreRulebook/spells/gentleRepose.html#gentle-repose" >gentle repose</a></i>, <i><a href="../coreRulebook/spells/geasQuest.html#geas-lesser" >lesser geas</a></i>, creator must be caster level 7th; <b>Skill</b> <a href="../coreRulebook/skills/craft.html#craft" >Craft</a> (leather) or <a href="../coreRulebook/skills/heal.html#heal" >Heal</a> DC 13; <b>Cost</b> 5,500 gp</p>
+			</div>
+			
+			<div>
+				<h1 id="golem,-clockwork" class="monster-header">Golem, Clockwork</h1>
+				<p>A vaguely humanoid shape made of metal lurches to life with the grinding whir and frantic ticking of hundreds of gears.</p>
+				<p class="stat-block-title">Clockwork Golem <span class="stat-block-cr">CR 12</span></p>
+				<p class="stat-block-xp"><b>XP 19,200</b></p>
+				<p class="stat-block-1">N Large <a href="../bestiary/creatureTypes.html#construct" >construct</a> </p>
+				<p class="stat-block-1"><b>Init</b> +1; <b>Senses</b> darkvision 60 ft., low-light vision; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +0</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 26, touch 10, flat-footed 25 (+1 Dex, +16 natural, &ndash;1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 118 (16d10+30)</p>
+				<p class="stat-block-1"><b>Fort</b> +5, <b>Ref</b> +6, <b>Will</b> +5</p>
+				<p class="stat-block-1"><b>DR</b> 10/adamantine; <b>Immune</b> <a href="../bestiary/creatureTypes.html#construct" >construct</a> traits, magic</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +23 (2d10+8 plus <a href="../bestiary/universalMonsterRules.html#grab" >grab</a>)</p>
+				<p class="stat-block-1"><b>Space</b> 10 ft.; <b>Reach</b> 10 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> death burst, grind, wall of gears</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 27, <b>Dex</b> 12, <b>Con</b> &mdash;, <b>Int</b> &mdash;, <b>Wis</b> 11, <b>Cha</b> 1</p>
+				<p class="stat-block-1"><b>Base Atk</b> +16; <b>CMB</b> +25 (+29 grapple); <b>CMD</b> 36</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p id="environment" class="stat-block-1 para-style-override"><b>Environment</b> any</p>
+				<p id="organization" class="stat-block-1 para-style-override"><b>Organization</b> solitary or gang (2&ndash;4)</p>
+				<p id="treasure" class="stat-block-1 para-style-override"><b>Treasure</b> none</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Death Burst (Ex)</b> When a clockwork golem is reduced to 0 or fewer hit points, it explodes in a shower of razor-sharp gears and debris. All creatures within a 10-foot burst take 12d6 points of slashing damage&mdash;a DC 18 Reflex save results in half damage. The save DC is Constitution-based.</p>
+				<p class="stat-block-1"><b>Grind (Ex) </b>A clockwork golem deals an additional 2d10+12 points of slashing damage when it makes a successful grapple check as razor-sharp gears and blades emerge from its body to grind and slice its foe.</p>
+				<p class="stat-block-1"><b><a href="../bestiary/universalMonsterRules.html#immunity-(ex-or-su)" >Immunity</a> to Magic (Ex)</b> A clockwork golem is immune to any spell or spell-like ability that allows spell <a href="../bestiary/universalMonsterRules.html#resistance" >resistance</a>. In addition, certain spells and effects function differently against a clockwork golem, as noted below.</p>
+				<p class="stat-block-2">•	A <i><a href="../coreRulebook/spells/grease.html#grease" >grease</a> </i>spell cast on the golem causes it to move quickly for 1d6 rounds, as if under the effects of <i><a href="../coreRulebook/spells/haste.html#haste" >haste</a>.</i></p>
+				<p class="stat-block-2">•	A <i><a href="../coreRulebook/spells/rustingGrasp.html#rusting-grasp" >rusting grasp</a> </i>spell deals damage to a clockwork golem normally, and makes the golem staggered for 1d6 rounds (no save).</p>
+				<p class="stat-block-1"><b>Wall of Gears (Su)</b> As a standard action, a clockwork golem can fold into a whirling wall of grinding gears measuring 10 feet by 10 feet or 5 feet by 20 feet. Anyone passing through the wall takes 15d6 points of slashing damage. If the wall appears in a creature's space, that creature can attempt a DC 18 Reflex save to leap to one side and avoid the damage entirely. The clockwork golem can take no actions while in this form except to resume its normal form as a move action. A clockwork golem's AC and immunities remain the same while it is in this form.</p>
+				
+				<p>Forged from thousands of gears, the clockwork golem is a precision creation. In combat, a clockwork golem is ruthlessly efficient, moving with swift conviction to grind and slice its foes to ribbons.</p>
+				
+				<h2>Construction</h2>
+				<p>A clockwork golem's body is made up of hundreds of carefully crafted copper, iron, and silver gears, weighing almost 1,500 pounds, and worth a total of 10,000 gp.</p>
+				<p id="clockwork-golem" class="stat-block-title">Clockwork Golem</p>
+				<p class="stat-block-1"><b>CL </b>15th; <b>Price</b> 120,000 gp</p>
+				<p class="stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../bestiary/monsterFeats.html#craft-construct" >Craft Construct</a>, <i><a href="../coreRulebook/spells/animateObjects.html#animate-objects" >animate objects</a></i>, <i><a href="../coreRulebook/spells/bladeBarrier.html#blade-barrier" >blade barrier</a>, <a href="../coreRulebook/spells/geasQuest.html#geas-quest" >geas/quest</a>, <a href="../coreRulebook/spells/grease.html#grease" >grease</a>, <a href="../coreRulebook/spells/telekinesis.html#telekinesis" >telekinesis</a></i>, creator must be caster level 15th; <b>Skill</b> <a href="../coreRulebook/skills/craft.html#craft" >Craft</a> (clocks) or <a href="../coreRulebook/skills/craft.html#craft" >Craft</a> (locks) DC 20; <b>Cost</b> 65,000 gp</p>
+				
+			</div>
+
+			<div>
+				<h1 id="golem,-glass" class="monster-header">Golem, Glass</h1>
+				<p>This jagged construct of glass has a human's shape, save that one arm ends in a jagged hammer and another in a spike of glass.</p>
+				<p class="stat-block-title">Glass Golem <span class="stat-block-cr">CR 8</span></p>
+				<p class="stat-block-xp"><b>XP 4,800</b></p>
+				<p class="stat-block-1">N Large <a href="../bestiary/creatureTypes.html#construct" >construct</a> </p>
+				<p class="stat-block-1"><b>Init</b> &ndash;1; <b>Senses</b> darkvision 60 ft., low-light vision; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +0</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 21, touch 8, flat-footed 21 (&ndash;1 Dex, +13 natural, &ndash;1 size)</p>
+				<p class="stat-block-1"><b>hp</b> 96 (12d10+30)</p>
+				<p class="stat-block-1"><b>Fort</b> +4, <b>Ref</b> +3, <b>Will</b> +4</p>
+				<p class="stat-block-1"><b>Defensive Abilities</b> reflect spells; <b>DR</b> 5/adamantine; <b>Immune</b> magic, <a href="../bestiary/creatureTypes.html#construct" >construct</a> traits</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +16 (2d8+5 plus <a href="../bestiary/universalMonsterRules.html#bleed" >bleed</a>)</p>
+				<p class="stat-block-1"><b>Space</b> 10 ft.; <b>Reach</b> 10 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> <a href="../bestiary/universalMonsterRules.html#bleed" >bleed</a> (1d8), dazzling brightness</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 20, <b>Dex</b> 9, <b>Con</b> &mdash;, <b>Int</b> &mdash;, <b>Wis</b> 11, <b>Cha</b> 1</p>
+				<p class="stat-block-1"><b>Base Atk</b> +12; <b>CMB</b> +18; <b>CMD</b> 27</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any land</p>
+				<p class="stat-block-1"><b>Organization</b> solitary or gang (2&ndash;5)</p>
+				<p class="stat-block-1"><b>Treasure</b> none</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Dazzling Brightness (Ex)</b> A glass golem in an area of bright light dazzles any creature within 30 feet that sees it for 1 round (Fortitude DC 16 negates). Once a creature makes its save against this ability, it is immune to that golem's brightness for 24 hours. The DC is Constitution-based.</p>
+				<p class="stat-block-1"><b>Immune to Magic (Ex)</b> A glass golem is immune to any spell or spell-like ability that allows spell <a href="../bestiary/universalMonsterRules.html#resistance" >resistance</a>. In addition, certain spells and effects function differently against a glass golem, as noted below.</p>
+				<p class="stat-block-2">•	A <i><a href="../coreRulebook/spells/shatter.html#shatter" >shatter</a></i> spell damages a glass golem as if it were a crystalline creature.</p>
+				<p class="stat-block-2">•	A <i><a href="../coreRulebook/spells/keenEdge.html#keen-edge" >keen edge</a></i> spell affects all of a glass golem's slam attacks as if they were slashing weapons.</p>
+				<p class="stat-block-2">•	A magical attack that deals <a href="../bestiary/creatureTypes.html#cold-subtype" >cold</a> damage slows a glass golem (as the <i><a href="../coreRulebook/spells/slow.html#slow" >slow</a></i> spell) for 3 rounds (no saving throw).</p>
+				<p class="stat-block-2">•	A magical attack that deals <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> damage ends any slow effect on the golem and heals 1 point of damage for each 3 points of damage the attack would otherwise deal. If the amount of healing would cause the golem to exceed its full normal hit points, it gains any excess as temporary hit points. A glass golem gets no saving throw against <a href="../bestiary/creatureTypes.html#fire-subtype" >fire</a> effects.</p>
+				<p class="stat-block-1"><b>Reflect Spells (Ex)</b> As a free action once every 1d4 rounds, a glass golem can align its internal structure to enhance its <a href="../bestiary/universalMonsterRules.html#resistance" >resistance</a> to magic for 1 round. During this time, the golem reflects spells (even spells that function differently against the golem as described in its immune to magic ability) as if under the effect of a <i><a href="../coreRulebook/spells/spellTurning.html#spell-turning" >spell turning</a></i> spell.</p>
+				
+				<p>A glass golem is a sizable guardian constructed by a powerful caster, usually in the shape of an armored humanoid. They are more common in desert lands where quartz-based sand is readily available, or in urban centers where glassblowing is commonplace.</p>
+				<p>A typical glass golem is 10 feet tall and weighs 2,500 pounds.</p>
+				<p id="stained-glass-golems-(+0-cr)"><b>Stained Glass Golems (+0 CR)</b>: Divine casters sometimes build glass golems that resemble the windowpanes commonly found in temples. Thin and agile, these colorful beings often act as spies, wielding powers of stealth that their other counterparts do not possess. A stained glass golem has a +8 racial bonus on <a href="../coreRulebook/skills/stealth.html#stealth" >Stealth</a> checks.</p>
+				
+				<h2>Construction</h2>
+				<p>A glass golem's body is made from 2,500 pounds of glass mixed with special salts and rare minerals worth 1,000 gp.</p>
+				<p class="stat-block-title">Glass Golem</p>
+				<p class="stat-block-1"><b>CL</b> 10th; <b>Price</b> 33,000 gp (glass); 39,400 (stained glass)</p>
+				<p class="stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../bestiary/monsterFeats.html#craft-construct" >Craft Construct</a>, <i><a href="../coreRulebook/spells/animateObjects.html#animate-objects" >animate objects</a></i>, <i><a href="../coreRulebook/spells/flameStrike.html#flame-strike" >flame strike</a></i>, <i><a href="../coreRulebook/spells/geasQuest.html#geas-quest" >geas/quest</a></i>, <i><a href="../coreRulebook/spells/spellTurning.html#spell-turning" >spell turning</a></i>, creator must be caster level 10th; <b>Skill</b> <a href="../coreRulebook/skills/craft.html#craft" >Craft</a> (sculptures) DC 17; <b>Cost</b> 17,000 gp (glass golem); 20,200 gp (stained glass golem)</p>
+			</div>
+			
+			<div>
+				<h1 id="golem,-mithral" class="monster-header">Golem, Mithral</h1>
+                <div class="stat-block">
+				<p>Made of polished silvery metal, this immense humanoid construct moves with shocking grace and speed.</p>
+				<p class="stat-block-title">Mithral Golem <span class="stat-block-cr">CR 16</span></p>
+				<p class="stat-block-xp"><b>XP 76,800</b></p>
+				<p class="stat-block-1">N Huge <a href="../bestiary/creatureTypes.html#construct" >construct</a> </p>
+				<p class="stat-block-1"><b>Init</b> +7; <b>Senses</b> darkvision 60 ft., low-light vision; <a href="../coreRulebook/skills/perception.html#perception" >Perception</a> +0</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 32, touch 16, flat-footed 24 (+7 Dex, +1 dodge, +16 natural, &ndash;2 size)</p>
+				<p class="stat-block-1"><b>hp</b> 172 (24d10+40)</p>
+				<p class="stat-block-1"><b>Fort</b> +8, <b>Ref</b> +15, <b>Will</b> +8</p>
+				<p class="stat-block-1"><b>DR</b> 15/adamantine, evasion; <b>Immune</b> <a href="../bestiary/creatureTypes.html#construct" >construct</a> traits, magic</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 50 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> 2 slams +33 (4d10+11)</p>
+				<p class="stat-block-1"><b>Space</b> 15 ft.; <b>Reach</b> 15 ft.</p>
+				<p class="stat-block-1"><b>Special Attacks</b> fluid form, quickness</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 33, <b>Dex</b> 24, <b>Con</b> &mdash;, <b>Int</b> &mdash;, <b>Wis</b> 11, <b>Cha</b> 1</p>
+				<p class="stat-block-1"><b>Base Atk</b> +24; <b>CMB</b> +37; <b>CMD</b> 55</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#dodge" >Dodge</a><sup>B</sup>, <a href="../coreRulebook/feats.html#mobility" >Mobility</a><sup>B</sup>, <a href="../coreRulebook/feats.html#run" >Run</a><sup>B</sup>, <a href="../coreRulebook/feats.html#spring-attack" >Spring Attack</a><sup>B</sup></p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p id="environment" class="stat-block-1 para-style-override"><b>Environment</b> any</p>
+				<p id="organization" class="stat-block-1 para-style-override"><b>Organization</b> solitary or gang (2&ndash;4)</p>
+				<p id="treasure" class="stat-block-1 para-style-override"><b>Treasure</b> none</p>
+				<p class="stat-block-breaker">Special Abilities</p>
+				<p class="stat-block-1"><b>Fluid Form (Ex)</b> A mithral golem's body can take on a form like liquid silver as a swift action. While in this form, the mithral golem's reach increases to 30 feet and its DR becomes 15/bludgeoning and adamantine. A mithral golem in this form can also move through any crack or hole in a wall or door, no matter how small, without impeding its movement. A mithral golem can maintain this form for up to 10 rounds per day, but these rounds do not need to be consecutive. Reverting to its normal form is a free action.</p>
+				<p class="stat-block-1"><b><a href="../bestiary/universalMonsterRules.html#immunity-(ex-or-su)" >Immunity</a> to Magic (Ex)</b> A mithral golem is immune to any spell or spell-like ability that allows spell <a href="../bestiary/universalMonsterRules.html#resistance" >resistance</a>. In addition, certain spells and effects function differently against a mithral golem, as noted below.</p>
+				<p class="stat-block-2">•	A <i><a href="../coreRulebook/spells/slow.html#slow" >slow</a> </i>spell cast on the golem causes it to lose its quickness ability for 1d6 rounds<i>.</i></p>
+				<p class="stat-block-2">•	A <i><a href="../coreRulebook/spells/haste.html#haste" >haste</a></i> spell heals the golem of 1d6 points of damage per level of the caster (maximum 10d6).</p>
+				<p class="stat-block-2">•	Hitting a mithral golem in fluid form with any spell of 6th level or higher with the <a href="../bestiary/creatureTypes.html#cold-subtype" >cold</a> descriptor causes the golem to take 10d6 points of damage (no save) and lose the use of its fluid form ability for 24 hours.</p>
+				<p class="stat-block-1"><b>Quickness (Ex)</b> A mithral golem is incredibly quick. It can take an extra move action during its turn each round. This means it can move up to its speed and still make a full attack.</p>
+                </div>
+				
+				<p>Created from a massive quantity of the purest mithral, this golem is a thing of shining beauty. Unlike most golems, mithral golems are extremely agile, capable of moving at great speed and striking swiftly.</p>
+				<h2>Construction</h2>
+				<p>A mithral golem's body is made of 3,000 pounds of mithral and other precious metals, worth a total of 50,000 gp.</p>
+				<p id="mithral-golem" class="stat-block-title">Mithral Golem</p>
+				<p class="stat-block-1"><b>CL </b>18th; <b>Price</b> 250,000 gp</p>
+				<p class="stat-block-breaker">Construction</p>
+				<p class="stat-block-1"><b>Requirements</b> <a href="../bestiary/monsterFeats.html#craft-construct" >Craft Construct</a>, <i><a href="../coreRulebook/spells/animateObjects.html#animate-objects" >animate objects</a>, <a href="../coreRulebook/spells/geasQuest.html#geas-quest" >geas/quest</a>, <a href="../coreRulebook/spells/haste.html#haste" >haste</a>, <a href="../coreRulebook/spells/polymorphAnyObject.html#polymorph-any-object" >polymorph any object</a>, <a href="../coreRulebook/spells/wish.html#wish" >wish</a></i>, creator must be caster level 18th; <b>Skill</b> <a href="../coreRulebook/skills/craft.html#craft" >Craft</a> (sculpture) DC 25; <b>Cost</b> 150,000 gp</p>
+			</div>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Golem",globalNavPath=[{ href: '/pathfinderRPG/prd/bestiary2/additionalMonsterIndex.html', name: 'Additional Monster Index' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,1064 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Dynamic Magic Item Creation</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "dynamicMagicItemCreation.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "dynamicMagicItemCreation.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "dynamicMagicItemCreation.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "dynamicMagicItemCreation.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "dynamicMagicItemCreation.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "dynamicMagicItemCreation.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "dynamicMagicItemCreation.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "dynamicMagicItemCreation.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "dynamicMagicItemCreation.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "dynamicMagicItemCreation.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "dynamicMagicItemCreation.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "../skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../gameplay/index.html">Gameplay</a></li>
+						<li><a href = "index.html">Magic</a></li>
+						<li><a href = "../monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "dynamicMagicItemCreation.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "dynamicMagicItemCreation.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "dynamicMagicItemCreation.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "dynamicMagicItemCreation.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "dynamicMagicItemCreation.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "dynamicMagicItemCreation.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "dynamicMagicItemCreation.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "dynamicMagicItemCreation.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "dynamicMagicItemCreation.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "dynamicMagicItemCreation.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id = "dynamic-magic-item-creation">Dynamic Magic Item Creation</h1>
+<p>In folklore, a major part of any magic item's mystique is the tale of its creation. With the dynamic magic item creation system, the crafting of magic items becomes a quick but interesting story in which the whole party can participate. Items created in this way have unusual properties that lend them character and remind the PCs of the choices they made during item creation.</p>
+<p>Along with adding flavor to the crafting of magic items, this system changes the average cost of magic item creation to be variable&mdash;generally more expensive for a single creator, and possibly less expensive for a group that works together. The standard system for the creation of magic items presented in the <em>Core Rulebook</em> leads to automatic successes during crafting, and given enough days of downtime, it can lead to a wild power imbalance between PCs who opt into the crafting system and all other characters. The system presented here encourages characters to work together to play out the story of the item's creation while also adding unique touches to the resulting item.</p>
+<p>For groups that prefer a more in-depth experience, replace the required skill checks below with roleplaying scenes.</p>
+
+
+<h2 id = "overview">Overview</h2>
+<p>The magic item creation system in this section divides the creation of magic items (other than potions and scrolls) into a series of challenges that the creators try to overcome. These challenges represent either setbacks or opportunities in the course of the creation process. The first and final challenges in the process are the same for every item: <a href="dynamicMagicItemCreation.html#prepare-the-vessel">preparing the vessel</a> and <a href="dynamicMagicItemCreation.html#complete-the-item">completing the item</a>.</p>
+<p>Between those steps, the characters face a number of random challenges based on the total market price of the item. The process includes one additional challenge per 5,000 gp in the item's market price (minimum 1), though the GM could increase or decrease the number. Having more challenges means it's more likely that an item will have unexpected properties, for good or ill. It also makes the item's creation more expensive or time consuming on average for less skilled characters, and conversely the process will likely be cheaper and faster for a highly skilled party.</p>
+
+
+<h2 id = "challenges">Challenges</h2>
+<p>Each challenge the PCs face represents a setback or opportunity in the magic item creation process. This system assumes that the PCs involved are gathering exotic ingredients, searching through the notes of others who have crafted similar items, and dealing with unexpected mystical variables. It allows the entire party to participate, so anyone who wishes to help counts as a creator, and only one creator needs to have the required item creation feat.</p>
+
+
+<h2 id = "attempting-challenges">Attempting Challenges</h2>
+<p>Each challenge presents two tasks. One creator can choose a single task to attempt, or two creators can each choose to do a different task. This choice of tasks to attempt must be made before rolling any associated checks. Creators can't take 10 or 20 (even with bardic knowledge or skill mastery) or benefit from aid another on item creation tasks.</p>
+<p>Some tasks don't require checks, but present other conditions for success. If a creator takes on such a task, it must be completed before attempting a task that involves a check.</p>
+<p>If the creators decide to attempt both tasks for a given challenge, each task must be attempted by a different creator. For instance, when faced with a <a href="dynamicMagicItemCreation.html#sesquipedalian-elucidation">sesquipedalian elucidation</a> challenge, a wizard might pull out his dictionary and attempt a <a href="../../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a> check, while a rogue might choose to make up her own big words and attempt a <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> check. The number of tasks attempted and their success or failure determines the outcome of the challenge, as detailed below.</p>
+<table>
+	<thead>
+		<tr><th>One Task Attempted</th><th>Both Tasks Attempted</th><th>Challenge Result</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>&mdash;</td><td>Succeed at both</td><td>Critical success</td></tr>
+		<tr><td>Succeed</td><td>Succeed at one and fail the other by less than 5</td><td>Success</td></tr>
+		<tr><td>Fail</td><td>Succeed at one and fail the other by 5 or more</td><td>Failure</td></tr>
+		<tr><td>&mdash;</td><td>Fail both</td><td>Critical failure</td></tr>
+	</tbody>
+</table>
+
+<h2 id = "challenge-format">Challenge Format</h2>
+<p>The stat block for a challenge includes a short description and the following sections.</p>
+<p><strong>Tasks</strong>: These are the options a creator can choose from when trying to complete the challenge. They contain only short titles, and the GM should interpret the specifics in an interesting way that makes sense based on the story.</p>
+<p><strong>Results</strong>: These entries cover the consequences of success or failure. Use the results from only one category; a critical success doesn't also give the benefits of a normal success, and a critical failure doesn't also impose the effects of a normal failure.</p>
+
+<h2 id = "paying-for-the-item">Paying for the Item</h2>
+<p>The default cost for item creation with this method is 85% of the item's market value. Various challenges can raise and lower this amount. A party encountering and critically succeeding at a large number of challenges can likely bring the cost below 50%.</p>
+<p>You must purchase weapons, armor, and other items that require masterwork or ingredient components separately to begin the process. Subtract those costs from the item's market value for the purposes of all cost calculations (though not for the purposes of the required creation time or number of challenges encountered).</p>
+<p>Before attempting the first challenge, the PCs purchase the initial materials by spending 25% of the item's market price. As part of the final challenge, the PCs must pay the remaining amount, accounting for any adjustments.</p>
+<p>The PCs can abandon an item at any time. They don't have to pay the remaining amount, but they can't use the materials from one attempt on another item.</p>
+
+<h2 id = "creation-time">Creation Time</h2>
+<p>The default amount of time it takes to create an item with this system is the same as in the normal <a href="../../coreRulebook/magicItems/magicItemCreation.html">item creation rules</a>. The process can't be accelerated by increasing check DCs as with the normal rules.</p>
+<p>Space the challenges out evenly. For instance, having four challenges for a 10,000 gp item (two base, two random) means having a challenge at the beginning, another after 3 days of work, the third challenge 7 days in, and the final on day 10.</p>
+
+<h2 id = "adjustments">Adjustments</h2>
+<p>The first challenge, preparing the vessel, sets some base statistics for the new magic item. Further challenges can cause adjustments to the magic item. The GM can create her own challenges, and should consider the DCs of the challenge's tasks when deciding adjustments. Challenges with lower DCs should typically have benefits that merely avoid negative adjustments, while challenges with higher DCs should be more likely to add beneficial adjustments.</p>
+<p><strong>Cost</strong>: Challenges that adjust the cost increase or decrease the crafting cost by increments of 5% of the final market price. The cost can go over 100%, meaning the item would cost more to make than its market price. The final cost can never be lower than the initial 25% investment; the characters can't get a refund of that expenditure.</p>
+<p><strong>Time</strong>: Challenges may add or subtract the number of remaining days of work required to create the item. When this happens, adjust the timing of challenges accordingly. The total number of days of work can never decrease below 1, nor can it decrease below the number of days the characters have already spent crafting the item. For example, if on day 3 of a 5-day process a successful challenge decreases the time by 1 day, the final challenge will happen on day 4 instead. But if the result says to decrease the time by 3 days, the PC is instead able to attempt the final challenge immediately.</p>
+<p><strong>Perks, Quirks, and Flaws</strong>: A challenge may add a beneficial <a href="dynamicMagicItemCreation.html#perks">perk</a>, a somewhat neutral <a href="dynamicMagicItemCreation.html#quirks">quirk</a>, or a detrimental <a href="dynamicMagicItemCreation.html#flaws">flaw</a> to the item. These three types of adjustments give an item a distinct flavor that sets it apart from others of its kind. The GM should secretly roll for perks, quirks, and flaws as they occur, rerolling duplicate or contradictory results. <a href="../../coreRulebook/spells/detectMagic.html#detect-magic"><em>detect magic</em></a> and <em>identify</em> typically don't reveal an item's perks, quirks, and flaws; <a href="../../coreRulebook/spells/analyzeDweomer.html#analyze-dweomer"><em>analyze dweomer</em></a> does, though only once the item is complete.</p>
+<p><strong>Destruction</strong>: A few challenges can, if critically failed, destroy the in-progress item, which costs the PCs their current investment. Such challenges come with enticing benefits for critically succeeding, making them potentially worth the risk.</p>
+
+<h2 id = "base-challenges">Base Challenges</h2>
+<p>The following two challenges bookend the dynamic magic item creation process. Preparing the vessel is always the first challenge, and completing the item is always last.</p>
+
+	<p id = "prepare-the-vessel" class = "stat-block-title">Prepare the Vessel</p>
+	<p class = "stat-block">You must create or prepare an item to handle the magic you intend to instill within it.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Forge a New Vessel </strong><a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (item's type) DC 15 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Mystical Preparations</strong> <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> DC 15 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> You have a superlative and efficient vessel. Set the base cost at 75% of the market price, and set the item's creation time to 1 day per 2,000 gp of the item's market price.</p>
+	<p class = "stat-block-1"><strong>Success</strong> You have a satisfactory vessel. Set the base cost at 85% of the market price, and set the item's creation time to 1 day per 1,000 gp of the item's market price.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> You have a flawed vessel. Set the base cost at 100% of the market price, set the item's creation time to 1 day per 500 gp of the item's market price, and add one flaw.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> The vessel is destroyed.</p>
+
+	<p id = "complete-the-item" class = "stat-block-title">Complete the Item</p>
+	<p class = "stat-block">You put the finishing touches on the item.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Improvise</strong> <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> DC 15 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Provide the Requirements</strong> Meet all the item's prerequisites</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> You complete the item with a masterful flourish. Reduce the item's cost by 10%.</p>
+	<p class = "stat-block-1"><strong>Success</strong> You have completed the item. </p>
+	<p class = "stat-block-1"><strong>Failure</strong> The item is destroyed.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> &mdash;</p>
+
+<h2 id = "random-challenges">Random Challenges</h2>
+<p>The Game Master should roll on the table below to determine which challenges the player characters face while making the item. Alternatively, the GM can instead choose a particular challenge based on the circumstances of the campaign.</p>
+<table>
+	<thead>
+		<tr><th>d%</th><th>Challenge</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>01&ndash;04</td><td><a href="dynamicMagicItemCreation.html#aberrant-mutation">Aberrant mutation</a></td></tr>
+		<tr><td>05&ndash;08</td><td><a href="dynamicMagicItemCreation.html#challenging-construction">Challenging construction</a></td></tr>
+		<tr><td>09&ndash;12</td><td><a href="dynamicMagicItemCreation.html#contradictory-instructions">Contradictory instructions</a></td></tr>
+		<tr><td>13&ndash;16</td><td><a href="dynamicMagicItemCreation.html#cryptic-cross-reference">Cryptic cross-reference</a></td></tr>
+		<tr><td>17&ndash;20</td><td><a href="dynamicMagicItemCreation.html#distracting-visitor">Distracting visitor</a></td></tr>
+		<tr><td>21&ndash;24</td><td><a href="dynamicMagicItemCreation.html#emotion-requirement">Emotion requirement</a></td></tr>
+		<tr><td>25&ndash;28</td><td><a href="dynamicMagicItemCreation.html#energy-overload">Energy overload</a></td></tr>
+		<tr><td>29&ndash;32</td><td><a href="dynamicMagicItemCreation.html#enticing-offer">Enticing offer</a></td></tr>
+		<tr><td>33&ndash;36</td><td><a href="dynamicMagicItemCreation.html#fragile-components">Fragile components</a></td></tr>
+		<tr><td>37&ndash;40</td><td><a href="dynamicMagicItemCreation.html#historic-stumbling-block">Historic stumbling block</a></td></tr>
+		<tr><td>41&ndash;44</td><td><a href="dynamicMagicItemCreation.html#illegal-ingredients">Illegal ingredients</a></td></tr>
+		<tr><td>45&ndash;48</td><td><a href="dynamicMagicItemCreation.html#infested-ingredients">Infested ingredients</a></td></tr>
+		<tr><td>49&ndash;52</td><td><a href="dynamicMagicItemCreation.html#ingredients-develop-quasi-sentience">Ingredients develop quasi-sentience</a></td></tr>
+		<tr><td>53&ndash;56</td><td><a href="dynamicMagicItemCreation.html#intrusive-spirit">Intrusive spirit</a></td></tr>
+		<tr><td>57&ndash;60</td><td><a href="dynamicMagicItemCreation.html#ley-line-convergence">Ley line convergence</a></td></tr>
+		<tr><td>61&ndash;64</td><td><a href="dynamicMagicItemCreation.html#magical-resonance">Magical resonance</a></td></tr>
+		<tr><td>65&ndash;68</td><td><a href="dynamicMagicItemCreation.html#planar-peculiarity">Planar peculiarity</a></td></tr>
+		<tr><td>69&ndash;72</td><td><a href="dynamicMagicItemCreation.html#rare-reference">Rare reference</a></td></tr>
+		<tr><td>73&ndash;76</td><td><a href="dynamicMagicItemCreation.html#reagent-shortage">Reagent shortage</a></td></tr>
+		<tr><td>77&ndash;80</td><td><a href="dynamicMagicItemCreation.html#regal-requisite">Regal requisite</a></td></tr>
+		<tr><td>81&ndash;84</td><td><a href="dynamicMagicItemCreation.html#sesquipedalian-elucidation">Sesquipedalian elucidation</a></td></tr>
+		<tr><td>85&ndash;88</td><td><a href="dynamicMagicItemCreation.html#structural-flaw">Structural flaw</a></td></tr>
+		<tr><td>89&ndash;92</td><td><a href="dynamicMagicItemCreation.html#sudden-inspiration">Sudden inspiration</a></td></tr>
+		<tr><td>93&ndash;100</td><td><a href="dynamicMagicItemCreation.html#class-specific-challenges">Class-specific challenge</a></td></tr>
+	</tbody>
+</table>
+
+	<p id = "aberrant-mutation" class = "stat-block-title">Aberrant Mutation</p>
+	<p>The item's components have mutated, and so has your item, evolving in strange new ways.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Alter Mutation</strong> <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> DC 15 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Analyze Mutation</strong> <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (dungeoneering) DC 25</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Mutation proves helpful. 1 perk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Mutation proves harmless. 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Mutation proves harmful. 1 flaw.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Mutation spirals out of control. Item switches to a random item of the same type or slot, but of lesser value. If none exists, the item is instead destroyed; you lose 25% of the item's market price and must start over.</p>
+
+	<p id = "challenging-construction" class = "stat-block-title">Challenging Construction</p>
+	<p class = "stat-block">One or more elements of your item's design are particularly difficult to execute.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Blueprint and Plan</strong> <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (engineering) DC 25</p>
+	<p class = "stat-block-1"><strong>Rely on Your Craftsmanship</strong> <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (item's type) DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Challenge exceeded. &ndash;1 day, &ndash;10% cost.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Challenge overcome. No adjustment.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Construction proved costly. +2 days, +5% cost.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Construction botched. +15% cost, 1 flaw.</p>
+
+	<p id = "contradictory-instructions" class = "stat-block-title">Contradictory Instructions</p>
+	<p class = "stat-block">Two respected sources disagree vehemently on the next step in the process.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Discern the Sounder Choice</strong> <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana) DC 15 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Take a Middle Path</strong> <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Best of both worlds. &ndash;3 days, &ndash;5% cost.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Contradiction resolved. No adjustment.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Misstep. +3 days, +5% cost.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Worst of both worlds. +7 days, +10% cost. </p>
+
+	<p id = "cryptic-cross-reference" class = "stat-block-title">Cryptic Cross-Reference</p>
+	<p class = "stat-block">You're having trouble figuring out where to find the information you need across multiple volumes.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Follow the Footnotes</strong> <a href="../../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a> DC 20</p>
+	<p class = "stat-block-1"><strong>Make Something Up</strong> <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> DC 15 + the item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Perfect coordination. &ndash;3 days, &ndash;5% cost.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Excellent notes. &ndash;1 day.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Lost in paperwork. +3 days.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Series of missteps. +3 days, 1 flaw.</p>
+
+	<p id = "distracting-visitor" class = "stat-block-title">Distracting Visitor</p>
+	<p>An unwanted interloper shows up while you're trying to work, making it challenging to concentrate.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Ignore the Distraction</strong> concentration DC 15 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Send the Visitor Away</strong> <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> or <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> DC 20</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Unexpected helpfulness. &ndash;1 day, &ndash;5% cost.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Short chat. No adjustment.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Distracted. +1 day, 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Offended visitor interferes. +2 days, +5% cost, 1 flaw. </p>
+
+	<p id = "emotion-requirement" class = "stat-block-title">Emotion Requirement</p>
+	<p class = "stat-block">In order to create the item, you need to harness a particular raw emotion.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Elicit through Performance</strong> <a href="../../coreRulebook/skills/perform.html#perform">Perform</a> (any) DC 20 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Manipulate Others</strong> <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Power from emotional surge. &ndash;5% cost, 1 perk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Harnessed emotions. No adjustment.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Tepid emotions. +1 day, +5% cost, 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Interference from opposing emotions. +3 days, +10% cost, 1 flaw.</p>
+
+	<p id = "energy-overload" class = "stat-block-title">Energy Overload</p>
+	<p class = "stat-block">A sudden surge of energy builds up within your item, threatening to damage or destroy it.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Channel into Your Body</strong> Fortitude DC 20 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Divert to Another Item</strong> <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (item's type) DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Overload leveraged. &ndash;2 days, &ndash;10% cost, 1 perk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Overload diverted. 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Expensive damage. +7 days, +15% cost.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Eldritch explosion. Item destroyed. Creators take 1d6 points of damage per caster level of the item.</p>
+
+	<p id = "enticing-offer" class = "stat-block-title">Enticing Offer</p>
+	<p class = "stat-block">A shady figure approaches you with an offer that would make completing your item faster and cheaper.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Discern True Worth</strong> <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> DC 20</p>
+	<p class = "stat-block-1"><strong>Incorporate Offer</strong> <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> It actually worked! &ndash;1 day, &ndash;5% cost, 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Avoid mischief. No adjustment.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Not exactly as advertised. &ndash;1 day, &ndash;5% cost, 2 flaws.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Completely duped. +1 day, +5% cost, 2 flaws. </p>
+
+	<p id = "fragile-components" class = "stat-block-title">Fragile Components</p>
+	<p class = "stat-block">Some of the most important components of your item are extremely fragile.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Reinforce Design </strong><a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (item's type) DC 15 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Use a Delicate Touch</strong> <a href="../../coreRulebook/skills/sleightOfHand.html#sleight-of-hand">Sleight of Hand</a> DC 15 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Flawless components. &ndash;10% cost.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Undamaged components. No adjustment.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Damaged components. +1 day, +5% cost.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Item destroyed. Lose 25% of the item's market price and start over.</p>
+
+	<p id = "historic-stumbling-block" class = "stat-block-title">Historic Stumbling Block</p>
+	<p class = "stat-block">Your creation techniques have run across a challenging difficulty experienced by many past crafters.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Learn from History</strong> <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (history) DC 25</p>
+	<p class = "stat-block-1"><strong>Solve It Yourself</strong> <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> An amazing workaround overcomes the issue. &ndash;3 days, &ndash;5% cost.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Stumble avoided. &ndash;1 day.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Doomed to repeat the same mistake. +3 days, +10% cost.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Misapplied techniques result in disaster. +7 days, +10% cost, 1 flaw.</p>
+
+	<p id = "illegal-ingredients" class = "stat-block-title">Illegal Ingredients</p>
+	<p class = "stat-block">One or more of the necessary ingredients is flagrantly illegal, and needs to be acquired through criminal means.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Entreat the Black Market</strong> <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (local) DC 25</p>
+	<p class = "stat-block-1"><strong>Smuggle It Yourself</strong> <a href="../../coreRulebook/skills/sleightOfHand.html#sleight-of-hand">Sleight of Hand</a> DC 30</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Sell surplus to a fence. &ndash;10% cost.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Found just enough. No adjustment.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Failed procurement. +5 days, +5% cost, 1 quirk. </p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Arrested and fined. +15% cost, creator attempting smuggling is arrested and sentenced to jail time or escapes custody and is on the run.</p>
+
+	<p id = "infested-ingredients" class = "stat-block-title">Infested Ingredients</p>
+	<p class = "stat-block">Critical ingredients were infested by an exotic rot or colony of vermin, rendering them unusable.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Procure Inexpensive Replacements</strong> <a href="../../coreRulebook/skills/appraise.html#appraise">Appraise</a> DC 25</p>
+	<p class = "stat-block-1"><strong>Purge the Infestation</strong> <a href="../../coreRulebook/skills/heal.html#heal">Heal</a> DC 30</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Seller's market. &ndash;5% cost.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Crisis averted. No adjustment.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Gouged on prices. +10% cost.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Infestation spreads into item. +5% cost, 1 quirk, 1 flaw.</p>
+
+	<p id = "ingredients-develop-quasi-sentience" class = "stat-block-title">Ingredients Develop Quasi-Sentience</p>
+	<p class = "stat-block">Somehow, one or more of your item's components have developed a limited intelligence.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Coax Ingredients to Greater Performance</strong> <a href="../../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> DC 30</p>
+	<p class = "stat-block-1"><strong>Magically Force Ingredients into Order</strong> <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> DC 15 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Item proceeds as normal but becomes an intelligent item of your alignment, and it likes you.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Ingredients work with you. 1 perk if you coaxed the ingredients; &ndash;5% cost if you coerced the ingredients.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Ingredients rebel against you and escape or sabotage the item. +15% cost, 1 flaw.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Item proceeds as normal but becomes an intelligent item of a contrary alignment, and it hates you.</p>
+
+	<p id = "intrusive-spirit" class = "stat-block-title">Intrusive Spirit</p>
+	<p class = "stat-block">Your item's creation draws the attention of a wandering spirit with some affinity for the item.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Exorcise Spirit</strong> <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) DC 25</p>
+	<p class = "stat-block-1"><strong>Seek Spirit's Aid</strong> <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Spirit's release. &ndash;3 days, &ndash;5% cost, 1 perk. </p>
+	<p class = "stat-block-1"><strong>Success</strong> No adjustment for exorcising the spirit; &ndash;1 day, &ndash;5% cost, 1 quirk for seeking the spirit's aid.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Spirit's interference. +3 days, +5% cost, 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Spirit's wrath. Item is cursed.</p>
+
+	<p id = "ley-line-convergence" class = "stat-block-title">Ley Line Convergence</p>
+	<p class = "stat-block">The item's creation is dependent on the energy of intersecting ley lines or of another magical location.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Adjust Accordingly</strong> <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana) DC 20 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Find the Perfect Spot</strong> <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (geography) DC 25</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Auspicious convergence. &ndash;2 days, 1 perk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Satisfactory location. No adjustment.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Misaligned location. +3 days, 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Deleterious convergence. +10% cost, 1 flaw.</p>
+
+	<p id = "magical-resonance" class = "stat-block-title">Magical Resonance</p>
+	<p class = "stat-block">The magical auras of several components thrum with a strange resonance whenever they are near each other.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Analyze the Cause</strong> <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> DC 15 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Follow the Rhythm</strong> <a href="../../coreRulebook/skills/perform.html#perform">Perform</a> (any) DC 15 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Resonant power revealed. &ndash;1 day, 1 perk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Resonance limited. 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Resonance interferes. +1 day, +5% cost, 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Out of control! +3 days, +10% cost, 1 flaw.</p>
+
+	<p id = "planar-peculiarity" class = "stat-block-title">Planar Peculiarity</p>
+	<p class = "stat-block">You realize that your item's creation is influenced by planar convergences or other peculiarities.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Consult a Planar Orrery</strong> <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (planes) DC 25</p>
+	<p class = "stat-block-1"><strong>Secure Outsider's Assistance</strong> <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Perfectly aligned. &ndash;3 days, &ndash;5% cost, 1 perk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Well aligned. &ndash;1 day.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Poorly aligned. +1 day, 1 quirk, 1 flaw.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Catastrophically aligned. +3 days, +5% cost, 1 flaw.</p>
+
+	<p id = "rare-reference" class = "stat-block-title">Rare Reference</p>
+	<p class = "stat-block">You uncovered a reference that a rare book located in a large library will help with the item's creation.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Check the Card Catalog</strong> <a href="../../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a> DC 20</p>
+	<p class = "stat-block-1"><strong>Scan the Shelves</strong> <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> DC 30</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Expedient search. &ndash;3 days.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Found it! &ndash;1 day.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Lengthy search. +3 days.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Huge delays and fees. +10 days, +5% cost.</p>
+
+	<p id = "reagent-shortage" class = "stat-block-title">Reagent Shortage</p>
+	<p class = "stat-block">You suddenly realize that you don't have enough stock of an important ingredient.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Improvise a Substitution</strong> <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (alchemy) DC 30</p>
+	<p class = "stat-block-1"><strong>Search for More</strong> <a href="../../coreRulebook/skills/survival.html#survival">Survival</a> DC 25</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Amazing combination. &ndash;5% cost, 1 perk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Sufficient components. No adjustment.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Missing component. +10% cost.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Terrible mix. +5% cost, 1 flaw.</p>
+
+	<p id = "regal-requisite" class = "stat-block-title">Regal Requisite</p>
+	<p class = "stat-block">Your item requires a king's hair, a prince's kiss, or some other participation from high-ranking nobility.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Exploit Noble Ties</strong> <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nobility) DC 25</p>
+	<p class = "stat-block-1"><strong>Falsify the Ingredients</strong> <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Regal synergy. 1 perk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> No adjustment for noble ties; 1 quirk for falsified ingredients.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Introduced impurities. 1 flaw.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Impurities and ostracism. +3 days, 1 flaw, creator attempting to exploit noble ties is ostracized at court.</p>
+
+	<p id = "sesquipedalian-elucidation" class = "stat-block-title">Sesquipedalian Elucidation</p>
+	<p class = "stat-block">The instructions for your next component are nearly impossible to understand due to abstruse language.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Consult a Dictionary</strong> <a href="../../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a> DC 15 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Make Up Your Own Big Words</strong> <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Master of erudition. &ndash;3 days, &ndash;5% cost.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Instructions elucidated. &ndash;1 day.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Nonplussed. +3 days, +5% cost.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Confounded. +7 days, +10% cost.</p>
+
+	<p id = "structural-flaw" class = "stat-block-title">Structural Flaw</p>
+	<p class = "stat-block">Partway through the creation process, you notice a flaw in the item's physical design.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Disassemble and Adjust</strong> <a href="../../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> DC 30</p>
+	<p class = "stat-block-1"><strong>Turn to Your Advantage</strong> <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (item's type) DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Surprising benefits. +1 day, &ndash;10% cost, 1 perk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Meticulousness pays off. +1 day, &ndash;5% cost.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Insurmountable flaw. +3 days, +5% cost, 1 flaw.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Item destroyed in disassembly. Lose 25% of the item's market price and start over.</p>
+
+	<p id = "sudden-inspiration" class = "stat-block-title">Sudden Inspiration</p>
+	<p class = "stat-block">You are struck with a sudden stroke of brilliance and alter the creation process.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Improve the Item</strong> <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> DC 20 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Improve the Methodology</strong> <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana) DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Incredible breakthrough. &ndash;2 days, &ndash;5% cost, 1 perk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Breakthrough. 1 perk for improved item; &ndash;2 days for improved methodology.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> False lead. +1 day, 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Terrible idea. +2 days, +5% cost, 1 flaw. </p>
+
+<h2 id = "class-specific-challenges">Class-Specific Challenges</h2>
+<p>To generate a class-specific challenge, determine which of the following challenges applies to at least one creator working on the item and pick one randomly from among those options. If none of these applies, choose a fitting challenge from the previous section (such as <a href="dynamicMagicItemCreation.html#illegal-ingredients">illegal ingredients</a> for a rogue or <a href="dynamicMagicItemCreation.html#rare-reference">rare reference</a> for a wizard).</p>
+
+<table>
+	<thead>
+		<tr><th>Challenge</th><th>Appropriate Creators</th></tr>
+	</thead>
+	<tbody>
+		<tr><td><a href="dynamicMagicItemCreation.html#crisis-of-faith">Crisis of faith</a></td><td>Divine spellcaster with a patron deity</td></tr>
+		<tr><td><a href="dynamicMagicItemCreation.html#instability-from-within">Instability from within</a></td><td>Spellcaster who draws power from within, such as an oracle or a sorcerer</td></tr>
+		<tr><td><a href="dynamicMagicItemCreation.html#natural-disaster">Natural disaster</a></td><td>Creator with a connection to nature, such as a druid or a ranger</td></tr>
+		<tr><td><a href="dynamicMagicItemCreation.html#natural-wonder">Natural wonder</a></td><td>Creator with a connection to nature, such as a druid or a ranger</td></tr>
+		<tr><td><a href="dynamicMagicItemCreation.html#otherworldly-aid">Otherworldly aid</a></td><td>Creator with a connection to outsiders, spirits, a patron, or a curse, such as an infernal sorcerer, an oracle, or a witch</td></tr>
+		<tr><td><a href="dynamicMagicItemCreation.html#otherworldly-interference">Otherworldly interference</a></td><td>Creator with a connection to outsiders, spirits, a patron, or a curse, such as an infernal sorcerer, an oracle, or a witch</td></tr>
+		<tr><td><a href="dynamicMagicItemCreation.html#personal-surge">Personal surge</a></td><td>Spellcaster who draws power from within, such as an oracle or a sorcerer</td></tr>
+		<tr><td><a href="dynamicMagicItemCreation.html#sign-from-the-gods">Sign from the gods</a></td><td>Divine spellcaster with a patron deity</td></tr>
+	</tbody>
+</table>
+
+	<p id = "crisis-of-faith" class = "stat-block-title">Crisis of Faith</p>
+	<p class = "stat-block">During the creation process, you experience ill omens from your patron deity that make you question your very faith.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Persevere</strong> Will DC 20 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Search for Answers</strong> <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) DC 15 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Perseverance pays off. 1 perk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Crisis overcome. No adjustment.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Shaken faith. +1 day, +5% cost, 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Patron's ire. +3 days, +10% cost, 1 flaw.</p>
+
+	<p id = "instability-from-within" class = "stat-block-title">Instability from Within</p>
+	<p class = "stat-block">Something within you emerges at an inopportune time and threatens the item's creation.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Account for the Instability</strong> <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana) DC 15 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Roll with It</strong> <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Instability exploited. &ndash;5% cost, 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Instability avoided. No adjustment.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Erratic item. +5% cost, 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Unstable item. +5% cost, 1 quirk, 1 flaw.</p>
+
+	<p id = "natural-disaster" class = "stat-block-title">Natural Disaster</p>
+	<p class = "stat-block">During a stage of the item's creation in a natural setting, there's an unexpected natural disaster.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Harness the Power </strong><a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> DC 20 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Take the Proper Precautions</strong> <a href="../../coreRulebook/skills/survival.html#survival">Survival</a> DC 15 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Shaped by the disaster's power. &ndash;10% cost, 1 quirk, 1 perk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Danger avoided. 1 quirk for harnessing the power; no adjustment for precautions.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Damaging disaster. +7 days, +10% cost.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Disastrous consequences. Item destroyed. Lose 25% of the item's market price and start over. Creators take 1d6 points of damage per item's caster level of an energy type appropriate to the disaster.</p>
+
+	<p id = "natural-wonder" class = "stat-block-title">Natural Wonder</p>
+	<p class = "stat-block">During a stage of the item's creation in a natural setting, a rare wonder of nature reveals itself.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Reflect on the Wonder's Beauty </strong><a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (item's type) DC 20 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Show Respect for Nature </strong><a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nature) DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Wondrous boon. &ndash;10% cost, 1 perk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Inspiring wonder. &ndash;5% cost, 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Ephemeral wonder. +1 day, 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Distracting wonder. +7 days, +5% cost, 1 quirk.</p>
+
+	<p id = "otherworldly-aid" class = "stat-block-title">Otherworldly Aid</p>
+	<p class = "stat-block">Otherworldly beings are tampering with your item's creation in an attempt to assist you.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Alter Construction Accordingly</strong> <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (item's type) DC 20 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Respectfully Redirect Their Efforts</strong> <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Incredible Aid. &ndash;6 days, &ndash;10% cost, 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Effective Aid. &ndash;3 days, &ndash;5% cost, 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Ineffective Aid. 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Disaster. +3 days, +10% cost, 1 quirk, 1 flaw.</p>
+
+	<p id = "otherworldly-interference" class = "stat-block-title">Otherworldly Interference</p>
+	<p class = "stat-block">Otherworldly beings are meddling with your item's creation, whether from near or afar.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Convince Them to Stop</strong> <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> DC 20 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Use Protective Measures</strong> <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion or planes) DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Otherworldly repairs. &ndash;3 days, &ndash;10% cost, 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Inconsequential interference. No adjustment.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Unrelenting interference. +5% cost, 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Severe interference. +3 days, +5% cost, 1 quirk, 1 flaw.</p>
+
+	<p id = "personal-surge" class = "stat-block-title">Personal Surge</p>
+	<p class = "stat-block">A surge of beneficial power springs up from unknown depths within you.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Embrace the Power</strong> <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> DC 20 + item's caster level</p>
+	<p class = "stat-block-1"><strong>Focus the Surge</strong> <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Incredible surge. &ndash;3 days, &ndash;5% cost, 1 perk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Surging boost. &ndash;1 day, &ndash;5% cost.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Squandered surge. 1 quirk.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> Overload. +5% cost, 1 quirk, 1 flaw.</p>
+
+	<p id = "sign-from-the-gods" class = "stat-block-title">Sign from the Gods</p>
+	<p class = "stat-block">During the creation process, you receive signs that indicate your patron's favor.</p>
+	<p class = "stat-block-breaker">Tasks</p>
+	<p class = "stat-block-1"><strong>Donate to the Faith</strong> Donate 5% of the item's market price or more to the patron's interests</p>
+	<p class = "stat-block-1"><strong>Offer Prayers of Thanks</strong> <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) DC 20 + item's caster level</p>
+	<p class = "stat-block-breaker">Results</p>
+	<p class = "stat-block-1"><strong>Critical Success</strong> Divine intervention. Halve the remaining number of days, 1 perk.</p>
+	<p class = "stat-block-1"><strong>Success</strong> Favor's blessing. 1 perk.</p>
+	<p class = "stat-block-1"><strong>Failure</strong> Ingratitude's comeuppance. 1 flaw.</p>
+	<p class = "stat-block-1"><strong>Critical Failure</strong> &mdash;</p>
+
+<h2 id = "perks">Perks</h2>
+<p>Perks are beneficial adjustments to an item, often gained from critical success at a challenge. The strongest perks tend to have the highest numbers on the table below. Reroll duplicates and perks that don't fit the item. Feel free to invent your own perks or apply an appropriate perk without rolling.</p>
+
+<table>
+	<thead>
+		<tr><th>d%</th><th>Perk</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>01&ndash;04</td><td><a href="dynamicMagicItemCreation.html#lightweight">Lightweight</a></td></tr>
+		<tr><td>05&ndash;08</td><td><a href="dynamicMagicItemCreation.html#durable">Durable</a></td></tr>
+		<tr><td>09&ndash;12</td><td><a href="dynamicMagicItemCreation.html#impervious">Impervious</a></td></tr>
+		<tr><td>13&ndash;16</td><td><a href="dynamicMagicItemCreation.html#energy-kissed">Energy-kissed</a></td></tr>
+		<tr><td>17&ndash;20</td><td><a href="dynamicMagicItemCreation.html#sacred">Sacred</a><sup>1</sup></td></tr>
+		<tr><td>21&ndash;24</td><td><a href="dynamicMagicItemCreation.html#faithful">Faithful</a><sup>1</sup></td></tr>
+		<tr><td>25&ndash;28</td><td><a href="dynamicMagicItemCreation.html#shielding">Shielding</a></td></tr>
+		<tr><td>29&ndash;32</td><td><a href="dynamicMagicItemCreation.html#tentacled-touch">Tentacled touch</a><sup>2</sup></td></tr>
+		<tr><td>33&ndash;36</td><td><a href="dynamicMagicItemCreation.html#inscribed">Inscribed</a></td></tr>
+		<tr><td>37&ndash;40</td><td><a href="dynamicMagicItemCreation.html#eager">Eager</a></td></tr>
+		<tr><td>41&ndash;44</td><td><a href="dynamicMagicItemCreation.html#enemy-glow">Enemy glow</a></td></tr>
+		<tr><td>45&ndash;48</td><td><a href="dynamicMagicItemCreation.html#hated-foe">Hated Foe</a><sup>3</sup></td></tr>
+		<tr><td>49&ndash;52</td><td><a href="dynamicMagicItemCreation.html#skillful">Skillful</a></td></tr>
+		<tr><td>53&ndash;56</td><td><a href="dynamicMagicItemCreation.html#exemplar">Exemplar</a><sup>4</sup></td></tr>
+		<tr><td>57&ndash;60</td><td><a href="dynamicMagicItemCreation.html#unassuming">Unassuming</a></td></tr>
+		<tr><td>61&ndash;64</td><td><a href="dynamicMagicItemCreation.html#lucky">Lucky</a></td></tr>
+		<tr><td>65&ndash;68</td><td><a href="dynamicMagicItemCreation.html#draconic">Draconic</a></td></tr>
+		<tr><td>69&ndash;72</td><td><a href="dynamicMagicItemCreation.html#mindlinked">Mindlinked</a><sup>5</sup></td></tr>
+		<tr><td>73&ndash;76</td><td><a href="dynamicMagicItemCreation.html#messenger">Messenger</a></td></tr>
+		<tr><td>77&ndash;79</td><td><a href="dynamicMagicItemCreation.html#healthful">Healthful</a></td></tr>
+		<tr><td>80&ndash;82</td><td><a href="dynamicMagicItemCreation.html#energetic">Energetic</a><sup>3</sup></td></tr>
+		<tr><td>83&ndash;85</td><td><a href="dynamicMagicItemCreation.html#lunar">Lunar</a></td></tr>
+		<tr><td>86&ndash;88</td><td><a href="dynamicMagicItemCreation.html#solar">Solar</a></td></tr>
+		<tr><td>89&ndash;91</td><td><a href="dynamicMagicItemCreation.html#potent">Potent</a></td></tr>
+		<tr><td>92&ndash;94</td><td><a href="dynamicMagicItemCreation.html#spying">Spying</a></td></tr>
+		<tr><td>95&ndash;97</td><td><a href="dynamicMagicItemCreation.html#resizing">Resizing</a></td></tr>
+		<tr><td>98&ndash;100</td><td><a href="dynamicMagicItemCreation.html#egoistic">Egoistic</a><sup>3</sup></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan="2"><sup>1</sup> Creator must have levels in a divine spellcasting class and have a patron deity.</td></tr>
+		<tr><td colspan="2"><sup>2</sup> Item must be one that delivers effects upon touch, such as a staff or a wand.</td></tr>
+		<tr><td colspan="2"><sup>3</sup> Item must be a weapon.</td></tr>
+		<tr><td colspan="2"><sup>4</sup> Item must be a weapon, armor, or an activated item.</td></tr>
+		<tr><td colspan="2"><sup>5</sup> Item must be activated by a command word.</td></tr>
+	</tfoot>
+</table>
+
+<p id = "draconic"><strong>Draconic</strong>:  Determine a random type of chromatic or metallic dragon. The item has a sheen in the color of that dragon's scales, and grants its bearer 3 points of energy resistance against the damage type that dragon's breath weapon deals.</p>
+<p id = "durable"><strong>Durable</strong>:  The item has twice as many hit points as it normally would.</p>
+<p id = "eager"><strong>Eager</strong>:  The item always wants to be worn or held by its owner. The owner can draw an eager weapon or handheld item as a swift action, don eager armor in half the time, and don any other eager item as a swift action, though it takes twice as long as normal to remove eager armor and 1 full round to remove or stow any other eager item. The DC to disarm or steal an eager item increases by 5.</p>
+<p id = "egoistic"><strong>Egoistic</strong>:  All of the bearer's feats and class features that affect a specific weapon or weapon group change to affect the egoistic weapon's type or group as long as she possesses the weapon. If the bearer can specify more than one type or group, she can choose which weapon or group she retains and which switch to the egoistic weapon's type or group. </p>
+<p id = "enemy-glow"><strong>Enemy Glow</strong>:  The item glows when a specific type of creature is nearby. Either choose an appropriate type or roll one randomly on the ranger's <a href="../../coreRulebook/classes/ranger.html#ranger-favored-enemies-table">favored enemy list</a>.</p>
+<p id = "energetic"><strong>Energetic</strong>:  The item deals 1 additional point of damage of an energy type randomly determined upon creation. This damage isn't multiplied on a critical hit.</p>
+<p id = "energy-kissed"><strong>Energy-Kissed</strong>:  The item is immune to a random type of energy, but doesn't grant this immunity to its bearer.</p>
+<p id = "exemplar"><strong>Exemplar</strong>:  The item is a perfect example of its kind, granting advantages against similar items. Exemplar weapons grant a +1 AC bonus against other weapons of that type (such as longswords), armors grant a +1 bonus on attack rolls against enemies wearing that type of armor (such as breastplates), and activated items grant a +1 bonus on saving throws against other items of that exact function (so a <em><a href="../../coreRulebook/magicItems/staves.html#_staff-of-fire">staff of fire</a> </em>would grant its benefit against other <em>staves of fire</em>, but not against any other staves).</p>
+<p id = "faithful"><strong>Faithful</strong>:  The item's caster level is treated as 1 higher when its effects benefit the faithful of its creator's patron deity or when used against worshipers of one faith hated by that deity (selected by the creator if the patron hates multiple faiths). The item also gains a +1 bonus on damage rolls against hated worshipers. If more than one creator qualifies, the creators must choose one of their patrons.</p>
+<p id = "hated-foe"><strong>Hated Foe</strong>:  The weapon deals 1 additional point of damage when it hits a specific type of creature. Either choose an appropriate type or roll one randomly on the ranger's <a href="../../coreRulebook/classes/ranger.html#ranger-favored-enemies-table">favored enemy list</a>.</p>
+<p id = "healthful"><strong>Healthful</strong>:  The bearer of this item regains 1 additional hit point from any magical effect that causes her to regain hit points.</p>
+<p id = "impervious"><strong>Impervious</strong>:  The item's hardness is 5 higher than usual.</p>
+<p id = "inscribed"><strong>Inscribed</strong>:  The item's bearer can spend a full-round action to inscribe a hidden message up to 25 words long on the item's surface. This message remains invisible until either the next time a creature holds the item or a specific passphrase is spoken. Inscribing a new message erases the previous one.</p>
+<p id = "lightweight"><strong>Lightweight</strong>:  The item weighs half as much as normal.</p>
+<p id = "lucky"><strong>Lucky</strong>:  Each day, there's a 50% chance the item grants its bearer a +1 luck bonus on a random type of saving throw for that day.</p>
+<p id = "lunar"><strong>Lunar</strong>:  While exposed to moonlight, this item causes any enemy adjacent to the bearer to take a &ndash;1 penalty on saving throws against <em>sleep</em> and similar effects.</p>
+<p id = "messenger"><strong>Messenger</strong>:  Once per week, the item can transform into an animal and deliver a message as the <em>animal messenger </em>spell.</p>
+<p id = "mindlinked"><strong>Mindlinked</strong>:  The item is linked to the owner, who can command it mentally. The action cost is the same, but it doesn't make noise and the activation is purely mental.</p>
+<p id = "potent"><strong>Potent</strong>:  The item's caster level is 1 higher than intended.</p>
+<p id = "resizing"><strong>Resizing</strong>:  This item automatically resizes itself to match the size of its bearer. The size change takes 1 minute. </p>
+<p id = "sacred"><strong>Sacred</strong>:  The item glows with the image of its creator's holy or unholy symbol, counting as a holy or unholy symbol for all purposes. If more than one creator qualifies, the creators choose one of their patrons' holy or unholy symbols.</p>
+<p id = "shielding"><strong>Shielding</strong>:  This item negates the first <a href="../../coreRulebook/spells/magicMissile.html#magic-missile"><em>magic missile</em></a> directed at it or its bearer each day. If a caster directs multiple missiles at the bearer simultaneously, reduce the number of missiles that strike the bearer by one.</p>
+<p id = "skillful"><strong>Skillful</strong>:  The item grants a +1 competence bonus on checks with a random skill.</p>
+<p id = "solar"><strong>Solar</strong>:  While exposed to sunlight, this item causes an enemy adjacent to the bearer to become dazzled for as long as the two remain adjacent.</p>
+<p id = "spying"><strong>Spying</strong>:  The item transmits sensory information to its owner, as if it were the sensor for a <em>clairaudience/clairvoyance</em> spell. The owner must concentrate on receiving this information instead of her own visual or auditory information as a standard action to gain this benefit, and the effect becomes inert while she isn't concentrating. Determine randomly upon the item's creation whether the item relays visual or auditory information.</p>
+<p id = "tentacled-touch"><strong>Tentacled Touch</strong>:  As the aberrant quirk, but the tentacles can extend, allowing the item to deliver any touch effects with an additional 5 feet of reach. This does not increase the weapon reach of a magic weapon. </p>
+<p id = "unassuming"><strong>Unassuming</strong>:  The item registers as though it were nonmagical, as though affected by a <em>magic aura</em> spell.</p>
+
+
+<h2 id = "quirks-">Quirks </h2>
+<p>Quirks are oddities that make an item unusual in a way that's generally neither positive nor negative, or may be a little of both. The more beneficial or double-edged quirks are higher on the following table. Feel free to invent your own quirks or apply an appropriate quirk without rolling.</p>
+<table>
+	<thead>
+		<tr><th>d%</th><th>Quirk</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>01</td><td><a href="dynamicMagicItemCreation.html#flaw">Flaw</a></td></tr>
+		<tr><td>02&ndash;04</td><td><a href="dynamicMagicItemCreation.html#infested">Infested</a></td></tr>
+		<tr><td>05&ndash;08</td><td><a href="dynamicMagicItemCreation.html#unusually-colored">Unusually colored</a></td></tr>
+		<tr><td>09&ndash;12</td><td><a href="dynamicMagicItemCreation.html#color-altering">Color-altering</a></td></tr>
+		<tr><td>13&ndash;16</td><td><a href="dynamicMagicItemCreation.html#mood coloration">Mood coloration</a></td></tr>
+		<tr><td>17&ndash;20</td><td><a href="dynamicMagicItemCreation.html#aberrant">Aberrant</a></td></tr>
+		<tr><td>21&ndash;24</td><td><a href="dynamicMagicItemCreation.html#decorous">Decorous</a>*</td></tr>
+		<tr><td>25&ndash;28</td><td><a href="dynamicMagicItemCreation.html#dirty">Dirty</a></td></tr>
+		<tr><td>29&ndash;32</td><td><a href="dynamicMagicItemCreation.html#junky">Junky</a></td></tr>
+		<tr><td>33&ndash;36</td><td><a href="dynamicMagicItemCreation.html#magnificent-appearance">Magnificent appearance</a></td></tr>
+		<tr><td>37&ndash;40</td><td><a href="dynamicMagicItemCreation.html#verdant">Verdant</a></td></tr>
+		<tr><td>41&ndash;44</td><td><a href="dynamicMagicItemCreation.html#noisy">Noisy</a></td></tr>
+		<tr><td>45&ndash;48</td><td><a href="dynamicMagicItemCreation.html#bloodthirsty">Bloodthirsty</a></td></tr>
+		<tr><td>49&ndash;52</td><td><a href="dynamicMagicItemCreation.html#levitating">Levitating</a></td></tr>
+		<tr><td>53&ndash;56</td><td><a href="dynamicMagicItemCreation.html#molting">Molting</a></td></tr>
+		<tr><td>57&ndash;60</td><td><a href="dynamicMagicItemCreation.html#soprano">Soprano</a></td></tr>
+		<tr><td>61&ndash;64</td><td><a href="dynamicMagicItemCreation.html#bass">Bass</a></td></tr>
+		<tr><td>65&ndash;68</td><td><a href="dynamicMagicItemCreation.html#giant-eared">Giant-eared</a></td></tr>
+		<tr><td>69&ndash;72</td><td><a href="dynamicMagicItemCreation.html#nose-enlarging">Nose-enlarging</a></td></tr>
+		<tr><td>73&ndash;76</td><td><a href="dynamicMagicItemCreation.html#spiritbound">Spiritbound</a></td></tr>
+		<tr><td>77&ndash;80</td><td><a href="dynamicMagicItemCreation.html#racially-attuned">Racially attuned</a></td></tr>
+		<tr><td>81&ndash;84</td><td><a href="dynamicMagicItemCreation.html#loyal">Loyal</a></td></tr>
+		<tr><td>85&ndash;87</td><td><a href="dynamicMagicItemCreation.html#wet">Wet</a></td></tr>
+		<tr><td>88&ndash;90</td><td><a href="dynamicMagicItemCreation.html#slimy">Slimy</a></td></tr>
+		<tr><td>91&ndash;93</td><td><a href="dynamicMagicItemCreation.html#unpredictable">Unpredictable</a>*</td></tr>
+		<tr><td>94&ndash;96</td><td><a href="dynamicMagicItemCreation.html#convergent">Convergent</a></td></tr>
+		<tr><td>97&ndash;99</td><td><a href="dynamicMagicItemCreation.html#glittering">Glittering</a></td></tr>
+		<tr><td>100</td><td><a href="dynamicMagicItemCreation.html#perk">Perk</a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "2">* Must be an activated item.</td></tr>
+	</tfoot>
+</table>
+
+	<p id = "aberrant"><strong>Aberrant</strong>:  The item has eyes, maws, and tentacles, though this has no additional effect.</p>
+	<p id = "bass"><strong>Bass</strong>:  The bearer's voice deepens an octave.</p>
+	<p id = "bloodthirsty"><strong>Bloodthirsty</strong>:  The item shakes slightly whenever blood is spilled within 20 feet of it.</p>
+	<p id = "color-altering"><strong>Color-Altering</strong>:  The color of the bearer's eyes, hair, or skin changes when she carries or wears the item.</p>
+	<p id = "convergent"><strong>Convergent</strong>:  The item is connected to another plane, bringing its bearer into telepathic contact with an otherworldly entity. The entity can communicate with the bearer to serve its own ends. Choose an appropriate entity or choose randomly from among outsider subtypes. The entity shouldn't be a being that can cause harm to the bearer through telepathic contact, such as a <a href="../../bestiary4/starSpawnOfCthulhu.html#star-spawn-of-cthulhu">star-spawn of Cthulhu</a>.</p>
+	<p id = "decorous"><strong>Decorous</strong>:  The item activates only if the user says "please" and ceases function for 1 hour if the user doesn't thank it afterward.</p>
+	<p id = "dirty"><strong>Dirty</strong>:  The item is always covered in dirt or mud, no matter how often it is washed or cleaned. </p>
+	<p id = "flaw"><strong>Flaw</strong>:  Roll on the table of <a href="dynamicMagicItemCreation.html#flaws">flaws</a> instead.</p>
+	<p id = "giant-eared"><strong>Giant-Eared</strong>:  The item's bearer's ears increase to five times their original length.</p>
+	<p id = "glittering"><strong>Glittering</strong>:  The item leaves a trail of glowing, magical motes as it moves. They dissipate after 1 round. This effect can be activated or deactivated with a command word.</p>
+	<p id = "infested"><strong>Infested</strong>:  The item is infested with vermin or other Fine creatures that do not interfere with its operation or harm the bearer.</p>
+	<p id = "junky"><strong>Junky</strong>:  The item looks extremely old, worn, rusted, or otherwise of low quality, hiding its true power.</p>
+	<p id = "levitating"><strong>Levitating</strong>:  This item always floats slightly above the ground when laid down, dropped, or otherwise unattended.</p>
+	<p id = "loyal"><strong>Loyal</strong>:  The item offers a perk (determined randomly upon creation) when used by one of its creators, but it presents a flaw (determined randomly upon creation) for all other users.</p>
+	<p id = "magnificent"><strong>Magnificent</strong>:  The item looks extremely powerful and valuable, even if it isn't.</p>
+	<p id = "molting"><strong>Molting</strong>:  Scaled skin covers this item, and the item occasionally sheds the skin and grows a new one.</p>
+	<p id = "mood-coloration"><strong>Mood Coloration</strong>:  The item changes colors to reflect the mood of the bearer. Each item has its own mapping of colors to emotions, but someone with knowledge of the item's quirk and its mapping who can see the color change gains a +2 circumstance bonus on <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> checks against the bearer.</p>
+	<p id = "noisy"><strong>Noisy</strong>:  The item makes an odd though not particularly loud noise when in use, such as a mace that squeaks when it's swung.</p>
+	<p id = "nose-enlarging"><strong>Nose-Enlarging</strong>:  The bearer's nose becomes five times longer than usual.</p>
+	<p id = "perk"><strong>Perk</strong>:  Roll on the table of <a href="dynamicMagicItemCreation.html#perks">perks</a> instead.</p>
+	<p id = "racially-attuned"><strong>Racially Attuned</strong>:  The item's bearer counts as the race of one of the item's creators (determined randomly upon creation) as well as her own.</p>
+	<p id = "slimy"><strong>Slimy</strong>:  The item is covered in putrid slime, which seeps out to cover the bearer as well. The bearer gains a +5 circumstance bonus on <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> checks, on combat maneuver checks to break grapples, and to CMD against grapples (these bonuses do not stack with <em>grease </em>or other similar effects), but takes a &ndash;2 penalty on <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a>, <a href="../../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a>, and <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> checks, as well as on <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> and <a href="../../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> checks except against creatures that aren't bothered by putrid slime.</p>
+	<p id = "soprano"><strong>Soprano</strong>:  The bearer's voice rises by an octave.</p>
+	<p id = "spiritbound"><strong>Spiritbound</strong>:  The item's reality is imprinted onto its intended owner (creator's choice), such that the item simply doesn't exist outside of that owner's possession. The item can't be lost or stolen, and it also can't be sold or transferred.</p>
+	<p id = "unpredictable"><strong>Unpredictable</strong>:  When activating the item, roll 1d6. On a 1 or 2, the DC and caster level of all the item's effects are treated as 1 lower for this activation; on a 3 or 4, there is no adjustment; and on a 5 or 6, the DC and caster level of all the item's effects are treated as 1 higher for this activation. If this puts the item below the minimum caster level for the intended effect, the activation fails but any charge or daily use is still consumed.</p>
+	<p id = "unusually-colored"><strong>Unusually Colored</strong>:  The item is an odd color for an item of its type, such as a sword that is bright pink.</p>
+	<p id = "verdant"><strong>Verdant</strong>:  Leaves, moss, and vines cover the item, and leaves sprout from the targets of the item's effects.</p>
+	<p id = "wet"><strong>Wet</strong>:  The item and bearer are constantly soaking wet. This imposes a &ndash;1 penalty on saves against environmental cold, cold effects, and electricity effects, but grants a +1 bonus on saves against environmental heat, fire effects, and catching on fire.</p>
+
+<h2 id = "flaws">Flaws</h2>
+<p>Flaws are adjustments to an item that are detrimental in nature. Most are similar to curses, but not nearly as damaging or restrictive to the bearer. Whenever a challenge would add a flaw to an item, roll on the following table. In general, the more harmful flaws have higher numbers on the table. Reroll duplicates and flaws that do not fit the item. Feel free to invent your own flaws or simply choose an appropriate one.</p>
+<p><strong>Accumulating Flaws</strong>: The more flaws the item has, the more likely it is to become cursed. For each flaw beyond the first, add a cumulative +5 modifier to the d% roll until the item gains a curse (after which the +5 modifiers no longer apply). When you decide to create a new flaw or choose an appropriate one rather than rolling, you should still roll first to determine whether the item gains a curse instead.</p>
+<table>
+	<thead>
+		<tr><th>d%</th><th>Flaw</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>01&ndash;04</td><td><a href="dynamicMagicItemCreation.html#heavy">Heavy</a></td></tr>
+		<tr><td>05&ndash;08</td><td><a href="dynamicMagicItemCreation.html#fragile">Fragile</a></td></tr>
+		<tr><td>09&ndash;12</td><td><a href="dynamicMagicItemCreation.html#vulnerable">Vulnerable</a></td></tr>
+		<tr><td>13&ndash;16</td><td><a href="dynamicMagicItemCreation.html#energy-weakened">Energy weakened</a></td></tr>
+		<tr><td>17&ndash;20</td><td><a href="dynamicMagicItemCreation.html#pungent">Pungent</a></td></tr>
+		<tr><td>21&ndash;24</td><td><a href="dynamicMagicItemCreation.html#faerie-lit">Faerie-lit</a></td></tr>
+		<tr><td>25&ndash;28</td><td><a href="dynamicMagicItemCreation.html#singing">Singing</a></td></tr>
+		<tr><td>29&ndash;32</td><td><a href="dynamicMagicItemCreation.html#vindictive">Vindictive</a></td></tr>
+		<tr><td>33&ndash;36</td><td><a href="dynamicMagicItemCreation.html#anomalous">Anomalous</a></td></tr>
+		<tr><td>37&ndash;40</td><td><a href="dynamicMagicItemCreation.html#extremely-infested">Extremely infested</a></td></tr>
+		<tr><td>41&ndash;44</td><td><a href="dynamicMagicItemCreation.html#addictive">Addictive</a></td></tr>
+		<tr><td>45&ndash;48</td><td><a href="dynamicMagicItemCreation.html#gluttonous">Gluttonous</a></td></tr>
+		<tr><td>49&ndash;52</td><td><a href="dynamicMagicItemCreation.html#slothful">Slothful</a></td></tr>
+		<tr><td>53&ndash;56</td><td><a href="dynamicMagicItemCreation.html#hallucinogenic">Hallucinogenic</a></td></tr>
+		<tr><td>57&ndash;60</td><td><a href="dynamicMagicItemCreation.html#obedient">Obedient</a></td></tr>
+		<tr><td>61&ndash;64</td><td><a href="dynamicMagicItemCreation.html#uncivilized">Uncivilized</a></td></tr>
+		<tr><td>65&ndash;68</td><td><a href="dynamicMagicItemCreation.html#allergic">Allergic</a></td></tr>
+		<tr><td>69&ndash;72</td><td><a href="dynamicMagicItemCreation.html#zealous">Zealous</a></td></tr>
+		<tr><td>73&ndash;76</td><td><a href="dynamicMagicItemCreation.html#impotent">Impotent</a></td></tr>
+		<tr><td>77&ndash;80</td><td><a href="dynamicMagicItemCreation.html#pacifistic">Pacifistic</a></td></tr>
+		<tr><td>81&ndash;84</td><td><a href="dynamicMagicItemCreation.html#backlashing">Backlashing</a></td></tr>
+		<tr><td>85&ndash;87</td><td><a href="dynamicMagicItemCreation.html#wrathful">Wrathful</a></td></tr>
+		<tr><td>88&ndash;90</td><td><a href="dynamicMagicItemCreation.html#proud">Proud</a></td></tr>
+		<tr><td>91&ndash;93</td><td><a href="dynamicMagicItemCreation.html#slippery">Slippery</a></td></tr>
+		<tr><td>94&ndash;96</td><td><a href="dynamicMagicItemCreation.html#enticing">Enticing</a></td></tr>
+		<tr><td>97&ndash;99</td><td><a href="dynamicMagicItemCreation.html#paranoid">Paranoid</a></td></tr>
+		<tr><td>100+</td><td><a href="dynamicMagicItemCreation.html#cursed">Cursed</a></td></tr>
+	</tbody>
+	<tfoot>
+		<tr><td colspan = "2"><sup>1</sup> Item must be a weapon.</td></tr>
+		<tr><td colspan = "2"><sup>2</sup> Creator must have levels in a divine spellcasting class and have a patron deity.</td></tr>
+		<tr><td colspan = "2"><sup>3</sup> Item must be a held item.</td></tr>
+	</tfoot>
+</table>
+
+	<p id = "addictive"><strong>Addictive</strong>:  The owner does not want to give up the item under any circumstances, and suffers the effects of <a href="../../gameMasteryGuide/drugsAndAddiction.html#severe-addiction">severe addiction</a> when denied access to the item.</p>
+	<p id = "allergic"><strong>Allergic</strong>:  The item is especially sensitive to the presence of a particular type of creature, and ceases all magical functions whenever it is within 30 feet of such a creature. To determine the creature type, roll randomly or choose an appropriate type on the ranger's <a href="../../coreRulebook/classes/ranger.html#ranger-favored-enemies-table">favored enemy list</a>.</p>
+	<p id = "anomalous"><strong>Anomalous</strong>:  The item is instead another random magic item of the same type or slot and the same or similar cost as the intended item.</p>
+	<p id = "backlashing"><strong>Backlashing</strong>:  When attacking with or activating the item, the user takes 1d6 points of damage from magical energy backlash.</p>
+	<p id = "cursed"><strong>Cursed</strong>:  The item gains a curse. Roll on <a href="../../coreRulebook/magicItems/cursedItems.html#table-15-27-common-item-curses">Table: Common Item Curses</a> to determine the curse, or choose an appropriate curse.</p>
+	<p id = "energy weakened"><strong>Energy Weakened</strong>:  The item is particularly vulnerable to one random energy type. That energy type ignores the item's hardness and deals double damage to the item (but not to the item's bearer). Determine the energy type randomly, or choose one thematically tied to the challenge that caused the item to have the weakness.</p>
+	<p id = "enticing"><strong>Enticing</strong>:  Others covet the item and seek to possess it. Upon touching or examining the item, any creature that does not possess the item must succeed at a DC 20 Will save or covet the item, seeking to gain it by whatever means is most expedient and advantageous, though it need not do so immediately. After one attempt to gain the item (or a successful save), a creature is immune to the item's enticing effect for 24 hours. </p>
+	<p id = "extremely infested"><strong>Extremely Infested</strong>:  As the infested quirk, but the vermin or other creatures crawl over the bearer, requiring her to succeed at concentration checks (DC = 15 + the spell's level) to cast spells or use other abilities that require concentration.</p>
+	<p id = "faerie-lit"><strong>Faerie-Lit</strong>:  The bearer is constantly surrounded by colorful light, as if affected by a <em>faerie fire </em>spell.</p>
+	<p id = "fragile"><strong>Fragile</strong>:  The item has half as many hit points as normal.</p>
+	<p id = "gluttonous"><strong>Gluttonous</strong>:  The bearer must gorge upon 10 times as much food as normal or suffer the effects of starvation, ignoring effects that reduce the amount of food required (such as <em>ring of sustenance</em>).</p>
+	<p id = "hallucinogenic"><strong>Hallucinogenic</strong>:  The bearer sees and hears mild hallucinations. While readily discernible as such, these hallucinations still impose a &ndash;2 penalty on <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> and initiative checks. </p>
+	<p id = "heavy"><strong>Heavy</strong>:  The item weighs twice as much as normal.</p>
+	<p id = "impotent"><strong>Impotent</strong>:  The item's caster level is 1 lower than intended. If this would cause a wand or staff to fall below the minimum required caster level, reroll this flaw.</p>
+	<p id = "obedient"><strong>Obedient</strong>:  The bearer takes a &ndash;2 penalty on all Will saves against effects that exercise mental control. This includes all mind-affecting charm or compulsion effects, as well as any effect the GM deems appropriate.</p>
+	<p id = "pacifistic"><strong>Pacifistic</strong>:  When using this weapon, the wielder can only choose to deal nonlethal damage (in most cases imposing a &ndash;4 penalty on attack rolls), except against constructs and undead.</p>
+	<p id = "paranoid"><strong>Paranoid</strong>:  The bearer no longer trusts anyone and must attempt saving throws against all abilities and spells but her own, even those that are harmless.</p>
+	<p id = "proud"><strong>Proud</strong>:  The bearer can't grant or gain any benefit from the aid another action.</p>
+	<p id = "pungent"><strong>Pungent</strong>:  The item emits a foul and obvious odor. No mundane means can remove the stench, which overcomes even magical effects such as <em><a href="../../advancedPlayersGuide/spells/negateAroma.html#_negate-aroma">negate aroma</a></em>.</p>
+	<p id = "singing"><strong>Singing</strong>:  The item constantly sings in a loud belting soprano or tenor. <em>Silence </em>and other such spells can suppress the sound as normal.</p>
+	<p id = "slippery"><strong>Slippery</strong>:  The creature holding the item must succeed at a DC 15 Reflex save each round or drop the item.</p>
+	<p id = "slothful"><strong>Slothful</strong>:  The bearer must rest for 12 hours each day to gain the benefits of a full night's rest, ignoring effects that reduce the amount of sleep needed (such as <em>ring of sustenance</em>). This can affect the bearer's ability to prepare  spells or regain spell slots.</p>
+	<p id = "uncivilized"><strong>Uncivilized</strong>:  The item doesn't function in any area that would count as urban terrain.</p>
+	<p id = "vindictive"><strong>Vindictive</strong>:  When using this weapon, the wielder can only choose to deal lethal damage, not nonlethal damage. If the item can normally deal only nonlethal damage, this flaw overrides that restriction.</p>
+	<p id = "vulnerable"><strong>Vulnerable</strong>:  The item has a hardness that is 5 lower than usual (to a minimum of 0).</p>
+	<p id = "wrathful"><strong>Wrathful</strong>:  In combat, the bearer's mind is clouded by rage, and she must succeed at a DC 20 Will save to use any ability that can't be used during a barbarian rage. This doesn't allow a barbarian to use those abilities when she is in a rage.</p>
+	<p id = "zealous"><strong>Zealous</strong>:  The item functions only for worshipers of the creator's patron deity. If more than one creator qualifies, roll randomly between their patron deities.</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Dynamic Magic Item Creation",globalNavPath=[{ href: '/pathfinderRPG/prd/unchained/magic/index.html', name: 'Pathfinder Unchained: Magic' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

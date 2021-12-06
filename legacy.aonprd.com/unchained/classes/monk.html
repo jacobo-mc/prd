@@ -1,0 +1,538 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Unchained Monk</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "monk.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "monk.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "monk.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "monk.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "monk.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "monk.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "monk.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "monk.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "monk.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "monk.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "monk.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "index.html">Classes</a></li>
+						<li><a href = "../skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../magic/index.html">Magic</a></li>
+						<li><a href = "../monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "monk.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "monk.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "monk.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "monk.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "monk.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "monk.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "monk.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "monk.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "monk.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "monk.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1>Monk</h1>
+<p>Physical and mental perfection&mdash;that is the life goal of every monk. For these skilled warriors, martial prowess and mental clarity are one and the same. Capable of pummeling foes with both fist and weapon, monks are among the more versatile combatants on the battlefield. Monks are also able to harness their ki, a spiritual life force that resides within, allowing them to perform amazing acts of acrobatics and mystical skill. All of this depends on incredible discipline and focus, and monks spend their entire lives perfecting these arts.</p>
+<p><strong>Unchained</strong>: Much of the monk has been reworked, including its base attack bonus, Hit Die, saves, and many of its special abilities. The result is a version of the monk that not only is easier to play, but also possesses a great deal more versatility. Flurry of blows is now much simpler to use in play. Many of the higher-level abilities of the monk, such as abundant step and quivering palm, have been incorporated into the new system of ki powers. As a monk advances in level, he can select from a variety of ki powers, allowing the player to truly customize his character.</p>
+<p><strong>Alignment</strong>: Any lawful.</p>
+<p><strong>Hit Die</strong>: d10.</p>
+
+
+<h1 id = "class-skills">Class Skills</h1>
+<p>The monk's class skills are <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> (Dex), <a href="../../coreRulebook/skills/climb.html#climb">Climb</a> (Str), <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (Int), <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> (Dex), <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> (Cha), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (history) (Int), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) (Int), <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> (Wis), <a href="../../coreRulebook/skills/perform.html#perform">Perform</a> (Cha), <a href="../../coreRulebook/skills/profession.html#profession">Profession</a> (Wis), <a href="../../coreRulebook/skills/ride.html#ride">Ride</a> (Dex), <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> (Wis), <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> (Dex), and <a href="../../coreRulebook/skills/swim.html#swim">Swim</a> (Str).</p>
+<p><strong>Skill Ranks per Level</strong>: 4 + Int modifier.</p>
+
+<div class="table">
+	<table id="unchained-monk-progression">
+		<caption>Unchained Monk</caption>
+		<thead>
+			<tr>
+				<th>Level</th>
+				<th>Base Attack Bonus</th>
+				<th>Fort Save</th>
+				<th>Ref Save</th>
+				<th>Will Save</th>
+				<th>Special</th>
+				<th><a href="monk.html#unarmed-damage">Unarmed Damage</a></th>
+				<th><a href="monk.html#ac-bonus">AC Bonus</a></th>
+				<th><a href="monk.html#fast-movement">Fast Movement</a></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>1st</td><td>+1</td><td>+2</td><td>+2</td><td>+0</td><td><a href="monk.html#bonus-feat">Bonus feat</a>, <a href="monk.html#flurry-of-blows">flurry of blows</a> (bonus attack), <a href="monk.html#stunning-fist">stunning fist</a>, <a href="monk.html#unarmed-strike">unarmed strike</a></td><td>1d6</td><td>+0</td><td>+0 ft.</td></tr>
+			<tr><td>2nd</td><td>+2</td><td>+3</td><td>+3</td><td>+0</td><td><a href="monk.html#bonus-feat">Bonus feat</a>, <a href="monk.html#evasion">evasion</a></td><td>1d6</td><td>+0</td><td>+0 ft.</td></tr>
+			<tr><td>3rd</td><td>+3</td><td>+3</td><td>+3</td><td>+1</td><td><a href="monk.html#fast-movement">Fast movement</a>, <a href="monk.html#ki-pool">ki pool</a>, <a href="monk.html#ki-pool">ki strike</a> (magic)</td><td>1d6</td><td>+0</td><td>+10 ft.</td></tr>
+			<tr><td>4th</td><td>+4</td><td>+4</td><td>+4</td><td>+1</td><td><a href="monk.html#ki-powers">Ki power</a>, <a href="monk.html#still-mind">still mind</a></td><td>1d8</td><td>+1</td><td>+10 ft.</td></tr>
+			<tr><td>5th</td><td>+5</td><td>+4</td><td>+4</td><td>+1</td><td><a href="monk.html#purity-of-body">Purity of body</a>, <a href="monk.html#style-strike">style strike</a> (1/round)</td><td>1d8</td><td>+1</td><td>+10 ft.</td></tr>
+			<tr><td>6th</td><td>+6/+1</td><td>+5</td><td>+5</td><td>+2</td><td><a href="monk.html#bonus-feat">Bonus feat</a>, <a href="monk.html#ki-power">ki power</a></td><td>1d8</td><td>+1</td><td>+20 ft.</td></tr>
+			<tr><td>7th</td><td>+7/+2</td><td>+5</td><td>+5</td><td>+2</td><td><a href="monk.html#ki-strike">Ki strike</a> (cold iron/silver)</td><td>1d8</td><td>+1</td><td>+20 ft.</td></tr>
+			<tr><td>8th</td><td>+8/+3</td><td>+6</td><td>+6</td><td>+2</td><td><a href="monk.html#ki-power">Ki power</a></td><td>1d10</td><td>+2</td><td>+20 ft.</td></tr>
+			<tr><td>9th</td><td>+9/+4</td><td>+6</td><td>+6</td><td>+3</td><td><a href="monk.html#improved-evasion">Improved evasion</a>, <a href="monk.html#style-strike">style strike</a></td><td>1d10</td><td>+2</td><td>+30 ft.</td></tr>
+			<tr><td>10th</td><td>+10/+5</td><td>+7</td><td>+7</td><td>+3</td><td><a href="monk.html#bonus-feat">Bonus feat</a>, <a href="monk.html#ki-power">ki power</a>, <a href="monk.html#ki-strike">ki strike</a> (lawful)</td><td>1d10</td><td>+2</td><td>+30 ft.</td></tr>
+			<tr><td>11th</td><td>+11/+6/+1</td><td>+7</td><td>+7</td><td>+3</td><td><a href="monk.html#flurry-of-blows">Flurry of blows</a> (bonus attack)</td><td>1d10</td><td>+2</td><td>+30 ft.</td></tr>
+			<tr><td>12th</td><td>+12/+7/+2</td><td>+8</td><td>+8</td><td>+4</td><td><a href="monk.html#ki-power">Ki power</a></td><td>2d6</td><td>+3</td><td>+40 ft.</td></tr>
+			<tr><td>13th</td><td>+13/+8/+3</td><td>+8</td><td>+8</td><td>+4</td><td><a href="monk.html#style-strike">Style strike</a>, <a href="monk.html#tongue-of-the-sun-and-moon">tongue of the sun and moon</a></td><td>2d6</td><td>+3</td><td>+40 ft.</td></tr>
+			<tr><td>14th</td><td>+14/+9/+4</td><td>+9</td><td>+9</td><td>+4</td><td><a href="monk.html#bonus-feat">Bonus feat</a>, <a href="monk.html#ki-power">ki power</a></td><td>2d6</td><td>+3</td><td>+40 ft.</td></tr>
+			<tr><td>15th</td><td>+15/+10/+5</td><td>+9</td><td>+9</td><td>+5</td><td><a href="monk.html#style-strike">Style strike</a> (2/round)</td><td>2d6</td><td>+3</td><td>+50 ft.</td></tr>
+			<tr><td>16th</td><td>+16/+11/+6/+1</td><td>+10</td><td>+10</td><td>+5</td><td><a href="monk.html#ki-power">Ki power</a>, <a href="monk.html#ki-strike">ki strike</a> (adamantine)</td><td>2d8</td><td>+4</td><td>+50 ft.</td></tr>
+			<tr><td>17th</td><td>+17/+12/+7/+2</td><td>+10</td><td>+10</td><td>+5</td><td><a href="monk.html#style-strike">Style strike</a>, <a href="monk.html#timeless-body">timeless body</a></td><td>2d8</td><td>+4</td><td>+50 ft.</td></tr>
+			<tr><td>18th</td><td>+18/+13/+8/+3</td><td>+11</td><td>+11</td><td>+6</td><td><a href="monk.html#bonus-feat">Bonus feat</a>, <a href="monk.html#ki-power">ki power</a></td><td>2d8</td><td>+4</td><td>+60 ft.</td></tr>
+			<tr><td>19th</td><td>+19/+14/+9/+4</td><td>+11</td><td>+11</td><td>+6</td><td><a href="monk.html#flawless-mind">Flawless mind</a></td><td>2d8</td><td>+4</td><td>+60 ft.</td></tr>
+			<tr><td>20th</td><td>+20/+15/+10/+5</td><td>+12</td><td>+12</td><td>+6</td><td><a href="monk.html#ki-power">Ki power</a>, <a href="monk.html#perfect-self">perfect self</a></td><td>2d10</td><td>+5</td><td>+60 ft.</td></tr>
+		</tbody>
+	</table>
+</div>
+
+
+<h2 id = "class-features">Class Features</h2>
+<p>All of the following are class features of the monk.</p>
+<p><strong>Weapon and Armor Proficiency</strong>: Monks are proficient with the club, crossbow (light or heavy), dagger, handaxe, javelin, kama, nunchaku, quarterstaff, sai, short sword, shortspear, shuriken, siangham, sling, spear, and any weapon with the monk special weapon quality.</p>
+<p>Monks are not proficient with any armor or shields.</p>
+<p>When wearing armor, using a shield, or carrying a medium or heavy load, a monk loses his AC bonus, as well as his fast movement and flurry of blows abilities.</p>
+
+<p id = "ac-bonus"><strong>AC Bonus (Ex)</strong>: When unarmored and unencumbered, the monk adds his Wisdom bonus (if any) to his AC and CMD. In addition, a monk gains a +1 bonus to AC and CMD at 4th level. This bonus increases by 1 for every four monk levels thereafter, up to a maximum of +5 at 20th level.</p>
+	<p>These bonuses to AC apply even against touch attacks or when the monk is flat-footed. He loses these bonuses when he is immobilized or helpless, when he wears any armor, when he carries a shield, or when he carries a medium or heavy load.</p>
+
+<p id = "bonus-feat"><strong>Bonus Feat</strong>: At 1st level, 2nd level, and every 4 levels thereafter, a monk can select a bonus feat. These feats must be taken from the following list: Catch Off-Guard, Combat Reflexes, Deflect Arrows, Dodge, Improved Grapple, Scorpion Style, and Throw Anything. At 6th level, the following feats are added to the list: Gorgon's Fist, Improved Bull Rush, Improved Disarm, Improved Feint, Improved Trip, and Mobility. At 10th level, the following feats are added to the list: Improved Critical, Medusa's Wrath, Snatch Arrows, and Spring Attack. A monk need not have any of the prerequisites normally required for these feats to select them.</p>
+
+<p id = "flurry-of-blows"><strong>Flurry of Blows (Ex)</strong>: At 1st level, a monk can make a flurry of blows as a full-attack action. When making a flurry of blows, the monk can make one additional attack at his highest base attack bonus. This additional attack stacks with the bonus attacks from <em>haste</em> and other similar effects. When using this ability, the monk can make these attacks with any combination of his unarmed strikes and weapons that have the monk special weapon quality. He takes no penalty for using multiple weapons when making a flurry of blows, but he does not gain any additional attacks beyond what's already granted by the flurry for doing so.  (He can still gain additional attacks from a high base attack bonus, from this ability, and from <em>haste</em> and similar effects).</p>
+	<p>At 11th level, a monk can make an additional attack at his highest base attack bonus whenever he makes a flurry of blows. This stacks with the first attack from this ability and additional attacks from <em>haste</em> and similar effects.</p>
+
+<p id = "stunning-fist"><strong>Stunning Fist (Ex)</strong>: At 1st level, the monk gains Stunning Fist as a bonus feat, even if he does not meet the prerequisites. At 4th level, and every 4 levels thereafter, the monk gains the ability to apply a new condition to the target of his Stunning Fist. This condition replaces stunning the target for 1 round, and a successful saving throw still negates the effect. At 4th level, the monk can choose to make the target fatigued. At 8th level, he can make the target sickened for 1 minute. At 12th level, he can make the target staggered for 1d6+1 rounds. At 16th level, he can permanently blind or deafen the target. At 20th level, he can paralyze the target for 1d6+1 rounds. The monk must choose which condition will apply before the attack roll is made. These effects do not stack with themselves (a creature fatigued by Stunning Fist cannot become exhausted if hit by Stunning Fist again), but additional hits do increase the duration.</p>
+
+<p id = "unarmed-strike"><strong>Unarmed Strike (Ex)</strong>: At 1st level, a monk gains Improved Unarmed Strike as a bonus feat. A monk's attacks can be with fists, elbows, knees, and feet. This means that a monk can make unarmed strikes with his hands full. There is no such thing as an off-hand attack for a monk striking unarmed. A monk can apply his full Strength bonus on damage rolls for all his unarmed strikes. A monk's unarmed strikes deal lethal damage, although he can choose to deal nonlethal damage with no penalty on his attack roll. He can make this choice while grappling as well.</p>
+	<p>A monk's unarmed strike is treated as both a manufactured weapon and a natural weapon for the purpose of spells and effects that enhance or improve either manufactured weapons or natural weapons.</p>
+	<p>The damage dealt by a monk's unarmed strike is determined by the unarmed damage column on Table 1&ndash;2: Monk. The damage listed is for Medium monks. The damage for Small or Large monks is listed below.</p>
+
+<table id = "small-or-large-monk-natural-damage">
+	<caption>Small or Large Monk Natural Damage</caption>
+	<thead>
+		<tr>
+			<th>Level</th>
+			<th>Damage<br />(Small Monk)</th>
+			<th>Damage<br />(Large Monk)</th>
+		</tr>
+	</thead>
+	<tr><td>1st&ndash;3rd</td><td>1d4</td><td>1d8</td></tr>
+	<tr><td>4th&ndash;7th</td><td>1d6</td><td>2d6</td></tr>
+	<tr><td>8th&ndash;11th</td><td>1d8</td><td>2d8</td></tr>
+	<tr><td>12th&ndash;15th</td><td>1d10</td><td>3d6</td></tr>
+	<tr><td>16th&ndash;19th</td><td>2d6</td><td>3d8</td></tr>
+	<tr><td>20th</td><td>2d8</td><td>4d8</td></tr>
+</table>
+
+<p id = "evasion"><strong>Evasion (Ex)</strong>: At 2nd level, a monk can avoid damage from many area-effect attacks. If a monk succeeds at a Reflex saving throw against an attack that normally deals half damage on a successful save, he instead takes no damage. Evasion can be used only if a monk is wearing light armor or no armor. A helpless monk does not gain the benefit of evasion.</p>
+
+<p id = "fast-movement"><strong>Fast Movement (Ex)</strong>: At 3rd level, a monk gains an enhancement bonus to his land speed, as shown on Table 1&ndash;2. A monk in armor or carrying a medium or heavy load loses this extra speed.</p>
+
+<p id = "ki-pool"><strong>Ki Pool (Su)</strong>: At 3rd level, a monk gains a pool of ki points, supernatural energy he can use to accomplish amazing feats. The number of points in a monk's ki pool is equal to 1/2 his monk level + his Wisdom modifier. As long as he has at least 1 point in his ki pool, he can make a ki strike. At 3rd level, ki strike allows his unarmed attacks to be treated as magic weapons for the purpose of overcoming damage reduction. At 7th level, his unarmed attacks are also treated as cold iron and silver for the purpose of overcoming damage reduction. At 10th level, his unarmed attacks are also treated as lawful weapons for the purpose of overcoming damage reduction. At 16th level, his unarmed attacks are treated as adamantine weapons for the purpose of overcoming damage reduction and bypassing hardness.</p>
+	<p>By spending 1 point from his ki pool as a swift action, a monk can make one additional unarmed strike at his highest attack bonus when making a flurry of blows attack. This bonus attack stacks with all bonus attacks gained from flurry of blows, as well as those from <em>haste </em>and similar effects. A monk gains additional powers that consume points from his ki pool as he gains levels.</p>
+	<p>The ki pool is replenished each morning after 8 hours of rest or meditation; these hours do not need to be consecutive.</p>
+
+<p id = "ki-powers"><strong>Ki Powers (Su)</strong>: At 4th level and every 2 levels thereafter, a monk can select one ki power. These powers allow the monk to perform amazing feats of mystical power and acrobatic prowess by expending points from his ki pool. Once a ki power is selected, it cannot be changed. Some ki powers require the monk to be of a specific level or higher before they can be chosen. Unless otherwise noted, a monk cannot select an individual ki power more than once.</p>
+	<p><em>Abundant Step (Su)</em>: A monk with this ki power can slip magically between spaces, as if using the spell <a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door"><em>dimension door</em></a>. Using this ability is a move action that consumes 2 points from his ki pool. The monk's caster level for this effect is equal to his monk level. He cannot take other creatures with him when he uses this ability. A monk must be at least 8th level before selecting this ki power.</p>
+	<p><em>Cobra Breath (Su)</em>: Whenever a monk with this ki power uses diamond body to neutralize a poison, he can instead release that poison as a ranged touch attack against a single foe within 30 feet. If the attack hits, the foe must succeed at a saving throw (using the poison's original DC) or suffer the poison's effects, even if it was not originally a contact poison. A monk must be at least 12th level and must possess the diamond body ki power before selecting this ki power.</p>
+	<p><em>Diamond Body (Su)</em>: By spending 1 point from his ki pool, a monk with this power can remove one toxin from his body as if using <a href="../../coreRulebook/spells/neutralizePoison.html#neutralize-poison"><em>neutralize poison</em></a>, using his monk level as his caster level. He can remove only one poison in this way per use of this ability. A monk must be at least 8th level before selecting this ki power.</p>
+	<p><em>Diamond Mind (Su)</em>: By spending 1 point from his ki pool as a swift action, a monk with this power can suppress a fear effect affecting him as if using <a href="../../coreRulebook/spells/removeFear.html#remove-fear"><em>remove fear</em></a>, using his monk level as his caster level. He can spend 2 ki points to activate this ability even when frightened or panicked. A monk must be at least 6th level before selecting this ki power.</p>
+	<p><em>Diamond Resilience (Ex)</em>: By spending 1 ki point as a swift action, the monk gains DR 2/&mdash;. At 16th level, the damage reduction increases to 4/&mdash;. At 19th level, it increases to DR 6/&mdash;. This DR lasts for 1 minute. A monk must be at least 12th level before selecting this ki power. </p>
+	<p><em>Diamond Soul (Ex)</em>: A monk can spend 2 points from his ki pool as a swift action to gain spell resistance equal to his monk level + 10. This spell resistance lasts for a number of rounds equal to the monk's level. A monk must be at least 12th level before selecting this ki power.</p>
+	<p><em>Elemental Fury (Su)</em>: A monk who selects this ki power must select one type of energy: acid, cold, electricity, or fire. Once this choice is made, it cannot be changed. The monk can expend 1 point from his ki pool as a swift action to imbue his natural attacks with this energy, causing them to deal 1d6 points of damage of the chosen type for a number of rounds equal to 1/2 his monk level. A monk must be at least 6th level before selecting this ki power.</p>
+	<p><em>Elemental Burst (Su)</em>: A monk with this ability can spend 4 ki points to unleash a gout of energy in a 30-foot cone. Creatures within the cone take 20d6 points of damage of the same type as the monk's elemental fury ki power. A Reflex save (DC = 10 + 1/2 the monk's level + his Wisdom modifier) halves the damage. A monk must be at least 18th level and must possess the elemental fury ki power before selecting this ki power.</p>
+	<p><em>Empty Body (Su)</em>: A monk with this ki power gains the ability to assume an ethereal state for 1 minute as though using the spell <a href="../../coreRulebook/spells/etherealness.html#etherealness"><em>etherealness</em></a>, using his monk level as his caster level. Using this ability is a move action that consumes 3 points from the monk's ki pool. This ability affects only the monk and cannot be used to make other creatures ethereal.</p>
+	<p><em>Feather Balance (Ex)</em>: A monk with this ability can spend 1 ki point as a swift action to achieve perfect balance. While this is active, the monk treats any <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> attempt made to balance as if he had rolled a 20. This ability lasts for 1 minute.</p>
+	<p><em>Formless Mastery (Ex)</em>: A monk with this ability varies his styles, never repeating the same move twice and capitalizing on the weaknesses of an opponent's style. As long as he does not possess any style feat, the monk can spend 1 point from his ki pool as an immediate action to gain the following against opponents in the stance of a style feat: a +4 dodge bonus to AC, a +4 circumstance bonus on attack rolls, and a bonus equal to his monk level on damage rolls. These bonuses last until the end of the monk's next turn (or his current turn if he uses this ability on his own turn). The monk can activate this ability and the furious defense ki power with the same immediate action for a total cost of 3 ki points. A monk must be at least 7th level before selecting this ki power.</p>
+	<p><em>Furious Defense (Ex)</em>: By spending 1 point from his ki pool as an immediate action, a monk with this ki power can grant himself a +4 dodge bonus to AC until the end of his next turn. The monk can activate this ability and the formless mastery ki power with the same immediate action for a total cost of 3 ki points. A monk must be at least 7th level before selecting this ki power.</p>
+	<p><em>High Jump (Ex)</em>: A monk with this ki power adds his level as a bonus on all <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> checks to jump, both for vertical jumps and horizontal jumps. In addition, he always counts as having a running start when attempting <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> checks to jump. By spending 1 point from his ki pool as a swift action, the monk gains a +20 bonus on <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> checks to jump for 1 round.</p>
+	<p><em>Insightful Wisdom (Su)</em>: A monk with this ability can spend 2 ki points as an immediate action to give another ally within 30 feet just the right word of advice to prevent disaster. If the ally can hear the monk, she can reroll a single attack roll or saving throw. The ally must take the second result, even if it is worse. A monk must be at least 8th level before selecting this ki power.</p>
+	<p><em>Ki Blocker (Su)</em>: A monk with this ability can spend 1 ki point as a free action before making an unarmed strike against a foe. If the attack hits, the monk can interrupt the target's flow of ki. If the monk successfully damages the target of his attack, that opponent's cost to activate abilities with ki increases by 1 ki point for 1 hour. If the monk spends 2 points from his ki pool, he can use this ability to affect the target's arcane pool, arcane reservoir, grit points, inspiration, or panache points instead of its ki pool. The effects of this ability do not stack, but multiple hits increase the duration by 1 hour for each hit. A monk must be at least 10th level before selecting this ki power. </p>
+	<p><em>Ki Guardian (Su)</em>: As an immediate action before he rolls a saving throw against a targeted effect that also targets other allies or an area effect whose area includes other allies, a monk with this ability can spend any number of ki points and designate a number of adjacent allies equal to the number of ki points spent. The monk rolls one saving throw for each designated ally, using his bonus instead of the ally's. For each successful saving throw, the corresponding ally treats the effect as if that ally had succeeded at the saving throw, and for each saving throw failed, the corresponding ally treats the effect as if that ally had failed the saving throw. If the monk fails any of the saving throws (including his own original saving throw), the monk treats the effect as if he had failed the saving throw. A monk must be at least 6th level before selecting this ki power.</p>
+	<p><em>Ki Hurricane (Ex)</em>: As a full-round action, a monk with this ability can move up to twice his speed. At any point in that movement, the monk can spend 1 ki point to make the first attack in his flurry of blows. He can later spend another ki point to make the next attack in his flurry of blows, and so on, until he either stops spending ki points or has exhausted all the attacks from his flurry of blows. A monk must be at least 10th level and possess the sudden speed ki power before selecting this ki power.</p>
+	<p><em>Ki Metabolism (Su)</em>: A monk with this ability uses his ki to control his metabolism. As long as he has at least 1 point remaining in his ki pool, the monk needs to eat and drink only 1/4 as often as normal, needs only 2 hours of sleep each night (including to replenish his ki pool), and can hold his breath for up to 1 hour per point of Constitution. As a move action, he can spend 1 ki point to enter a state of suspended animation, falling unconscious and appearing dead to all senses. At the time he enters this state, he indicates a preset period of time or a triggering condition, after which he awakens. </p>
+	<p><em>Ki Mount (Su)</em>: A monk with this ability can spend 1 ki point as a standard action to grant 2 temporary hit points per monk level he possesses to his mount for 1 hour per monk level. As long as the monk and his mount are adjacent or the monk is mounted, the mount shares the benefits of whichever of the AC bonus, evasion, high jump, improved evasion, ki strike, perfect self, and still mind abilities the monk possesses. A monk must be at least 6th level before selecting this ki power.</p>
+	<p><em>Ki Range (Su)</em>: A monk with this ability can spend 1 ki point as a swift action to increase the range increment of any thrown monk weapon by 20 feet. Apply this benefit before doubling the range increment with the Far Shot feat.</p>
+	<p><em>Ki Visions (Su)</em>: A monk with this ability often sees visions of spirits or hears the voice of his departed mentor in his dreams. On any given night during which the monk dreams, he can use this ability to gain the benefits of a <em>divination</em>. If he does, he spends 2 ki points from the next day's total. A monk must be at least 10th level before selecting this ki power.</p>
+	<p><em>Ki Volley (Su)</em>: When a targeted spell or spell-like ability fails to overcome the monk's spell resistance from diamond soul, he can spend 2 ki points as an immediate action to send that spell back at its caster as <a href="../../coreRulebook/spells/spellTurning.html#spell-turning"><em>spell turning</em></a>. A monk must be 16th level or higher and possess the diamond soul ki power before selecting this ki power.</p>
+	<p><em>Light Steps (Ex)</em>: A monk with this ki power can move effortlessly across nearly any surface. Whenever the monk activates his feather balance ki power, he can also ignore all difficult terrain. In addition, while active, he can cross any solid surface, even if it would normally not support his weight. This does not allow him to walk on liquids. A monk must be at least 8th level and have the feather balance ki power before selecting this ki power.</p>
+	<p><em>One Touch (Ex)</em>: As long as he has at least 1 point remaining in his ki pool, as a standard action, a monk with this power can make an unarmed strike against a foe as a touch attack. He adds 1/2 his monk level as a bonus on the damage roll. He can spend 1 ki point to double this bonus for that attack. A monk must be at least 12th level before selecting this ki power.</p>
+	<p><em>Qinggong Power (Su)</em>: A monk with this power selects any of the qinggong monk ki powers (<em>Pathfinder RPG Ultimate Magic </em>51) for which he qualifies based on his monk level. A monk can select this ability multiple times. Each time, he must select a different qinggong monk ki power.</p>
+	<p><em>Quivering Palm (Su)</em>: A monk can set up vibrations within the body of another creature that can thereafter be fatal if the monk so desires. Using this ability is a standard action that costs 4 ki points, and the monk must announce his intent to use this ability (and spend the ki points) before making the attack roll. Creatures immune to critical hits cannot be affected. Otherwise, if the attack hits and the target takes damage from the blow, the quivering palm attack succeeds. Thereafter, the monk can try to slay the victim at any time within a number of days equal to his monk level. To make such an attempt, the monk merely wills the target to die (a free action); unless the target succeeds at a Fortitude saving throw (DC = 10 + 1/2 the monk's level + the monk's Wisdom modifier), it dies. If the saving throw is successful, the target is no longer in danger from that particular quivering palm attack, but it can still be affected by another one at a later time. A monk can have no more than one quivering palm in effect at one time. If a monk uses quivering palm while another is still in effect, the previous one is negated. A monk must be at least 16th level before selecting this ki power.</p>
+	<p><em>Slow Fall (Su)</em>: A monk within arm's reach of a wall can use it to slow his descent by expending 1 point from his ki pool. When he uses this ability, he takes no damage from the fall (as if using <a href="../../coreRulebook/spells/featherFall.html#feather-fall"><em>feather fall</em></a>), but he must be adjacent to a wall for the length of the fall (although this can be used to reduce the damage from a fall if only part of it is adjacent to a wall).</p>
+	<p><em>Sudden Speed (Su)</em>: A monk with this ki power can spend 1 point from his ki pool as a swift action to grant himself a sudden burst of speed. This increases the monk's base land speed by 30 feet for 1 minute.</p>
+	<p><em>Water Sprint (Su)</em>: A monk with this ki power can spend 1 point from his ki pool as a swift action to gain the ability to walk on water, as if under the effects of <a href="../../coreRulebook/spells/waterWalk.html#water-walk"><em>water walk</em></a>. Once activated, this ability lasts for 1 minute per monk level. A monk must be at least 6th level before selecting this ki power.</p>
+	<p><em>Wind Jump (Su)</em>: A monk with this ki power can spend 1 point from his ki pool as a move action to grant himself a fly speed (with perfect maneuverability) equal to his base land speed. He must end his movement each round on solid ground (or some other surface that can support his weight) or fall as normal. Once activated, this ability lasts for 1 minute. A monk must be at least 8th level and have the high jump ki power before selecting this ki power.</p>
+	<p><em>Wholeness of Body (Su)</em>: A monk with this ki power can heal his own wounds as a standard action. By spending 2 points from his ki pool, he can heal an amount of damage equal to 1d8 + his monk level.</p>
+
+<p id = "still-mind"><strong>Still Mind (Ex)</strong>: At 4th level, a monk gains a +2 bonus on saving throws against enchantment spells and effects.</p>
+
+<p id = "purity-of-body"><strong>Purity of Body (Ex)</strong>: At 5th level, a monk gains immunity to all diseases, including supernatural and magical diseases.</p>
+
+<p id = "style-strike"><strong>Style Strike (Ex)</strong>: At 5th level, a monk can learn one type of style strike. Whenever he makes a flurry of blows, he can designate one of his unarmed strikes as a style strike. This attack is resolved as normal, but it has an additional effect depending on the type of strike chosen. At 9th level, and every 4 levels thereafter, a monk learns an additional style strike. He must choose which style strike to apply before the attack roll is made. At 15th level, he can designate up to two of his unarmed strikes each round as a style strike, and each one can be a different type. The monk can choose from any of the following strikes.</p>
+	<p><em>Defensive Spin</em>: The monk spins about, confounding his foe. If the attack hits, the monk gains a +4 dodge bonus to AC against any attacks made by the target of the style strike until the start of his next turn. This bonus does not stack with itself. The monk must attack with a fist to use this style strike.</p>
+	<p><em>Elbow Smash</em>: The monk follows up a punch with a strike from his elbow. If the attack hits, the monk can make an additional attack using the same attack bonus as the punch at a &ndash;5 penalty. If this second attack hits, it deals damage as normal, but all of the damage is nonlethal. The monk must attack with a fist to use this style strike.</p>
+	<p><em>Flying Kick</em>: The monk leaps through the air to strike a foe with a kick. Before the attack, the monk can move a distance equal to his fast movement bonus. This movement is made as part of the monk's flurry of blows attack and does not require an additional action. At the end of this movement, the monk must make an attack against an adjacent foe. This movement may be between attacks. This movement provokes an attack of opportunity as normal. The attack made after the movement must be a kick. </p>
+	<p><em>Foot Stomp</em>: The monk stomps on a foe's foot, preventing the opponent from escaping. If the attack hits and the monk ends his turn adjacent to that foe, the foe's movement is restricted. Until the start of the monk's next turn, the target of this attack can move only in such a way that the space it occupies is adjacent to the monk. Alternatively, it can attempt a combat maneuver check (against the monk's CMD) as a standard action to break free. This strike does not work against foes that cannot be tripped. The monk must attack with a kick to use this style strike.</p>
+	<p><em>Hammerblow</em>: The monk links his hands together, swinging both arms like a club and dealing tremendous damage. If the attack hits, the monk rolls his unarmed strike damage twice, adding both rolls together before applying Strength and other modifiers to the damage. This bonus damage is not multiplied on a critical hit. The monk must attack with a fist to use this style strike, but must have both hands free.</p>
+	<p><em>Head-Butt</em>: The monk slams his head into his enemy's head, leaving his foe reeling. If the attack hits and the foe is of the same size or one size smaller than the monk, the monk can make a free combat maneuver check against the target of this strike (using the base attack bonus of the attack used to hit the foe). If the foe is not of the same creature type as the monk, the monk takes a &ndash;8 penalty on this check. If the check is successful, the target is staggered for 1 round. Creatures without a discernible head are not affected by this style strike (subject to GM discretion). The monk must attack with a head-butt to use this style strike.</p>
+	<p><em>Knockback Kick</em>: The monk attempts to knock his foe back with a powerful kick. If the attack hits, the monk can attempt a free combat maneuver check against the foe (using the base attack bonus of the attack used to hit the foe). If the check is successful, the foe is knocked 10 feet directly away from the monk. This distance increases by 10 feet for every 5 by which the check exceeds the foe's CMD, to a maximum distance equal to the monk's fast movement bonus. This movement does not provoke an attack of opportunity. The foe stops moving if it strikes another creature, barrier, or otherwise solid object. The creature is not knocked prone by this movement. The monk must attack with a kick to use this style strike.</p>
+	<p><em>Leg Sweep</em>: The monk attempts to sweep his foe's leg, knocking the opponent down. If the attack hits, the monk can make a free trip attempt against the target of this strike (using the base attack bonus of the attack used to hit the foe). This trip attempt does not provoke an attack of opportunity. The monk must attack with a kick to use this style strike.</p>
+	<p><em>Shattering Punch</em>: The monk delivers a brutal punch that can penetrate defenses. If the attack hits, it bypasses any damage reduction or hardness possessed by the target of that attack. The monk must attack with a fist to use this style strike. </p>
+	<p><em>Spin Kick</em>: The monk spins about, delivering a kick his foe did not expect. The monk makes his attack against the foe's flat-footed AC. Creatures with the uncanny dodge class feature or a similar effect cannot be caught flat-footed by this style strike. The monk must attack with a kick to use this style strike.</p>
+
+<p id = "improved-evasion"><strong>Improved Evasion (Ex)</strong>: At 9th level, a monk's evasion ability improves. He still takes no damage on successful Reflex saving throws against attacks, but henceforth he takes only half damage on failed saves. A helpless monk does not gain the benefit of improved evasion.</p>
+
+<p id = "tongue-of-the-sun-and-moon"><strong>Tongue of the Sun and Moon (Ex)</strong>: At 13th level, a monk can understand and speak with any living creature, as if under a permanent <em>tongues</em> effect.</p>
+
+<p id = "timeless-body"><strong>Timeless Body (Ex)</strong>: At 17th level, a monk no longer takes penalties to his ability scores for aging and cannot be magically aged. Any such penalties that he has already taken, however, remain in place. Age bonuses still accrue, and the monk still dies of old age when his time is up.</p>
+
+<p id = "flawless-mind"><strong>Flawless Mind</strong>: At 19th level, a monk gains total control over his mental faculties. Whenever he attempts a Will save, he can roll twice and take the better result. If he fails a Will saving throw against a spell or effect that has a duration longer than 1 hour, the monk can attempt a new saving throw at the end of each hour to end the effect.</p>
+
+<p id = "perfect-self"><strong>Perfect Self</strong>: At 20th level, a monk becomes a magical creature. He is forevermore treated as an outsider rather than a humanoid (or whatever his original creature type was) for the purpose of spells and magical effects. Additionally, the monk gains damage reduction 10/chaotic, which allows him to ignore the first 10 points of damage from any attack made by a nonchaotic weapon. Unlike other outsiders, the monk can still be brought back from the dead as if he were a member of his previous creature type. Finally, the monk gains the ability to enter a state of perfect calm. During this time, the monk can take no actions, but he does regain ki at the rate of 1 point per 10 minutes spent at calm. He cannot use this ability to gain an amount of ki in excess of his maximum.</p>
+
+
+<h1 id = "ex-monks">Ex-Monks</h1>
+<p>A monk who becomes nonlawful cannot gain new levels as a monk but retains all monk abilities.</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Unchained Monk",globalNavPath=[{ href: '/pathfinderRPG/prd/unchained/classes/index.html', name: 'Pathfinder Unchained Classes'}];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

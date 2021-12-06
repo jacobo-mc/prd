@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Honor</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "honor.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "honor.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "honor.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "honor.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "honor.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "honor.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "honor.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "honor.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "honor.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "honor.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "honor.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "honor.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "honor.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../characterBackground.html">Character Background</a></li>
+						<li><a href = "../downtime.html">Downtime</a></li>
+						<li><a href = "../campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "honor.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "honor.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "honor.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "honor.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "honor.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "honor.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "honor.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "honor.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id="honor">Honor</h1>
+<p>Beyond life and death, beyond good and evil, there is honor. It is the abode of the eternal, which none can take but which can be destroyed through a single rash act. It is a measure of one's place within a society, a status known to all and sought by many. Whether in a samurai culture, the frozen viking wastes of the northlands, or the dizzying court intrigues of a byzantine kingdom, honor provides an anchor and stable foundations for your life's work. If you lack honor, others view you as faithless, untrustworthy, disloyal, and unfair. Honor influences reputation, status, and legend, but transcends them all.</p>
+<p>Who has honor varies from culture to culture. In some, anyone from the lowliest peasant to the emperor can pursue honor, and a life lived in accordance with honor is the highest achievement. In another land, honor is a game only for nobility, a scoring method in their battles over status. Honor may be purely a warrior's code or a more primitive, largely unspoken understanding between combatants.</p>
+<p>In some lands, the use of poison is an instant blight on one's honor. In others, its subtle and effective use might be a mark of the truly civilized person who wants to avert war and avoid innocent bloodshed. The general who fights until his last soldier falls is counted as honorable in some realms; in others, it is the general who surrenders, recognizing that sacrificing her soldiers' lives would be a waste. A criminal's code of honor is different from a priest's, and a school of wizards may have different rules for honor than a cabal of sorcerers.</p>
+<p>No matter what form it takes, honor is recognition of a code larger than the individual, a willingness to subsume one's desires in the service of that code. Honor requires self-sacrifice. It is often neither the most reasonable course of action nor the most practical. It comes with a cost, but is its own reward. Your honor must be protected and upheld at all times; allowing another to besmirch it is almost as great an affront as you performing a dishonorable act. A dishonorable person may try to use your honorable code against you, but honor does not equate to stupidity.</p>
+<p>This section presents a system for representing honor, as well as examples of various honor codes, including the chivalric code, the criminal code, and the samurai code.</p>
+
+<h2 id="honor-points">Honor Points</h2>
+<p>Honor is represented by points on a scale from 0 to 100. A score of 0 represents a person who is seen as completely untrustworthy, willing to sacrifice anything and anyone for even a momentary gain. A score of 100 represents a person of legendary stature whose reputation is without blemish. Honor is not a measurement of alignment, fame, or goodwill so much as a gauge of loyalty, trustworthiness, and fairness&mdash;one could be a kindhearted-but-flighty shogun with 0 honor points, or a cruel-but-stalwart monk with 100 honor points.</p>
+<p><b>NPC Base Honor Points</b>: An NPC's base number of honor points is equal to its CR × 5. The GM modifies this value according to the Gaining and Losing Honor section. An NPC who deviates from the strictures of his society may have an honor score very different from this base value. Most NPCs' honor scores rarely change, though the GM might choose to bestow fortune or disgrace on a particular NPC as a story or adventure hook for the PCs.</p>
+<p><b>PC Base Honor Points</b>: You start with a number of honor points equal to your Charisma score plus your character level. For example, a 1st-level PC with a Charisma score of 13 starts with an honor score of 14. Whenever your experience level or Charisma permanently changes, adjust your honor score accordingly. You can also gain or lose honor points during play.</p>
+
+<h2 id="gaining-and-losing-honor">Gaining and Losing Honor</h2>
+<p>You gain and lose honor points through events. Some events affect all PCs in the party (such as destroying a demon that's attacking a village), and others only affect you (such as losing a duel against a less honorable rival). Most of these events require witnesses who spread the word of what happened; if nobody outside sees the event, and nobody in the party speaks of it, it has no effect on your honor. The GM may decide that a delay of 1d6 days or more is appropriate for a change in honor, reflecting the time needed for news to travel.</p>
+<p>A single event can earn you honor points for multiple reasons. For example, if you're a paladin using the chivalric code and your party's APL is 8, defeating a CR 11 hezrou demon earns everyone in the party 1 honor point for the "party overcomes a challenging encounter" general event and you earn 2 honor points for the "defeat a challenging monster of the opposite alignment" chivalric event.</p>
+<p>The tables of honor point adjustments for the various types of codes provide examples of events that would cause you to gain or lose honor points. The honor point values are guidelines; the GM should adjust them as appropriate to the situation and campaign.</p>
+
+<h2 id="spending-honor">Spending Honor</h2>
+<p>You can spend honor points once per game session to gain a temporary advantage for yourself, such as a gift, loan, or introduction to an important person. Each expenditure reduces your honor score by an amount determined by the GM. If you try to spend honor points for an advantage that costs more points than you currently have, your honor score is reduced to 0 and you don't gain the advantage&mdash;by reaching too high, you lose honor and gain nothing. Examples of honor point expenditures include the following.</p>
+<p><b>Favor</b>: You call upon an allied NPC for a favor. Examples include access to private resources (such as a wizard's library), unhindered passage through enemy territory (such as getting an official to write you a letter of passage), or an audience with an important person (such as a high priest or city governor). <i>Cost</i>: 1d6 to 5d6 honor points, depending on the difficulty of the favor and the NPC's attitude toward you. If the GM is using the Contacts rules, the typical cost is 1d6 honor points per risk level of the task.</p>
+<p><b>Gift or Loan</b>: You ask an NPC ally to give or loan you something of value. The gift or loan must be in the form of wealth or a single item. The GM may rule that an NPC refuses to give away a particularly rare or expensive item. The item must be something the NPC can actually grant&mdash;you can't ask a peasant for a suit of armor or a ronin for the emperor's personal sword. A gift is permanent, but a loan lasts only for the game session in which it is granted. <i>Cost</i>: 1d6 honor points per 2,000 gp value of the gift. If the request is a loan instead of a gift, the honor point cost is halved, but if you do not return the item at the end of the session, you must pay this honor point cost at the start of each session until the item is returned. This counts as your one opportunity to spend honor points that session; you can't spend honor on anything else until you return the item.</p>
+<p><b>Skill Bonus</b>: Choose <a href="../../coreRulebook/skills/bluff.html#bluff" >Bluff</a>, <a href="../../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a>, or <a href="../../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a>. You gain a +5 circumstance bonus on checks for that skill for the rest of the game session. <i>Cost</i>: 1d6 honor points.</p>
+
+<h2 id="consequences-of-losing-honor">Consequences of Losing Honor</h2>
+<p>If your honor score reaches 0, you take a &mdash;2 penalty on Will saving throws and Charisma-based checks, representing your sense of shame. If you are part of an honor-bound institution, your lack of honor may bring shame upon the institution, and cause its leaders to punish you.</p>
+<p>You may renounce your code of honor at any time. You lose all honor points and benefits from honor, but do not take the penalty for having 0 honor points (not having a code is not the same as flaunting your code). Any characters who believe in that code refuse to speak or deal with you any more than they must. Your NPC allies avoid you. Your honorable institution declares you an enemy. Even those who have no association with your former code may steer clear of you, fearing retribution from your honorable institution.</p>
+
+<h3 id="general-honor-events">General Honor Events</h3>
+<p>These events are appropriate for most honor codes, including the individual codes listed below.</p>
+
+
+<table><thead><tr><th>Event</th><th>Honor Points</th></tr></thead>
+<tr><td>Complete a CR-appropriate Adventure Path</td><td>+10</td></tr>
+<tr><td>Complete a noble task for an honorable NPC (50+ honor points) and tell no one</td><td>+2</td></tr>
+<tr><td>Roll 30 or higher on a <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> check to create a work of art or masterwork item<sup>1</sup></td><td>+2</p>
+<tr><td>Roll 30 or higher on a <a href="../../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> or Intimidate check<sup>1</sup></td><td>+2</p>
+<tr><td>Roll 30 or higher on a <a href="../../coreRulebook/skills/perform.html#perform" >Perform</a> check<sup>1</sup></td><td>+2</td></tr>
+<tr><td>Complete a CR-appropriate adventure<sup>2</sup></td><td>+1</td></tr>
+<tr><td><a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> a powerful magic item</td><td>+1<sup>3</sup></td></tr>
+<tr><td>Destroy an evil or dangerous magic item</td><td>+1<sup>4</sup></td></tr>
+<tr><td>Party overcomes a challenging encounter (CR 3 or more higher than APL)</td><td>+1</td></tr>
+<tr><td>Willingly break one of the tenets of your code of honor</td><td>&mdash;2</td></tr>
+<tr><td>Party flees an easy combat challenge (CR lower than APL)</td><td>&mdash;3</td></tr>
+<tr><td>Slander a person with a higher honor score</td><td>&mdash;4</td></tr>
+<tr><td>Party loses an easy combat challenge (CR lower than APL)</td><td>&mdash;5</td></tr>
+<tr><td>Commit an act of treason or betray an honorable lord</td><td>&mdash;10</td></tr>
+<tr><td>Be directly responsible for the death of an honorable ally or loved one under your protection</td><td>&mdash;20</td></tr>
+<tfoot><tr><td colspan="2"><sup>1</sup> You can gain honor points this way once per month.<br />
+<sup>2</sup> About the length of a 32- or 48-page published adventure.<br />
+<sup>3</sup> Per 40,000 gp of the item's price.<br />
+<sup>4</sup> Per 40,000 gp of the item's price. Artifacts with no price grant 5 honor points for this purpose.</td></tr></tfoot></table>
+
+<h3 id="chivalric-code">Chivalric Code</h3>
+<p>These events apply to a chivalric or Arthurian knight's code.</p>
+
+
+<table><thead><tr><th>Event</th><th>Honor Points</th></tr></thead>
+<tr><td>Become a lord or similar rank</td><td>+50</td></tr>
+<tr><td>Defeat a noble lord in combat</td><td>+20</td></tr>
+<tr><td>Agree to protect and be responsible for the protection of an honorable ally</td><td>+10</td></tr>
+<tr><td>Redeem a dishonorable foe</td><td>+6</td></tr>
+<tr><td>Acquire vassals</td><td>+4</td></tr>
+<tr><td>Offer sanctuary and defend that offer</td><td>+3</td></tr>
+<tr><td>Swear fealty to a lord</td><td>+3</td></tr>
+<tr><td>Defeat a challenging monster of the opposite alignment (CR 2 or more higher than APL)</td><td>+2</td></tr>
+<tr><td>Protect a site holy to your religion against attackers</td><td>+2</td></tr>
+<tr><td>Protect an innocent against significant odds (CR 2 or more higher than APL)</td><td>+2</td></tr>
+<tr><td>Swear a major oath and uphold it</td><td>+2</td></tr>
+<tr><td>Win a tournament</td><td>+2</td></tr>
+<tr><td>Accept an enemy's parole</td><td>+1</td></tr>
+<tr><td>Participate in a tournament</td><td>+1</td></tr>
+<tr><td>Accept an enemy's parole and refuse to honor the ransom</td><td>&mdash;2</td></tr>
+<tr><td>Be betrayed by a "redeemed" foe</td><td>&mdash;2</td></tr>
+<tr><td>Be convicted of a petty crime</td><td>&mdash;2</td></tr>
+<tr><td>Offer sanctuary and betray it</td><td>&mdash;4</td></tr>
+<tr><td>Swear a major oath and break it</td><td>&mdash;4</td></tr>
+<tr><td>Win a tournament by cheating</td><td>&mdash;5</td></tr></table>
+
+<h3 id="criminal-code">Criminal Code</h3>
+<p>These events apply to a criminal code such as that used by a thieves' guild or ninja clan.</p>
+
+
+<table><thead><tr><th>Event</th><th>Honor Points</th></tr></thead>
+<tr><td>Become a guildmaster (city population 25,000+)<sup>1</sup></td><td>+50</td></tr>
+<tr><td>Become a guildmaster (city population 10,000+)<sup>1</sup></td><td>+25</td></tr>
+<tr><td>Adopt a specific criminal code<sup>2</sup></td><td>+4</td></tr>
+<tr><td>End a long-running feud (1+ years) with a criminal more honorable than you<sup>3</sup></td><td>+3</td></tr>
+<tr><td>Party humiliates an honorable noble<sup>4</sup></td><td>+3</td></tr>
+<tr><td>Corrupt a high-ranking public official<sup>5</sup></td><td>+2</td></tr>
+<tr><td>Willingly take the fall for a higher-ranking criminal</td><td>+2</td></tr>
+<tr><td>Minstrels willingly sing about your exploits<sup>5</sup></td><td>+1</td></tr>
+<tr><td>Defeat a legal challenge, be acquitted, or avoid sentencing</td><td>+1</td></tr>
+<tr><td>Party agrees to and then commits a significant crime</td><td>+1</td></tr>
+<tr><td>Steal a powerful magic item or valuable treasure</td><td>+1<sup>6</sup></td></tr>
+<tr><td>Be convicted of a significant crime</td><td>+1</td></tr>
+<tr><td>Pay minstrels to sing about your exploits</td><td>&mdash;2</td></tr>
+<tr><td>Willingly work with the authorities to prevent or solve a crime</td><td>&mdash;2</td></tr>
+<tr><td>Party agrees to commit a crime and then reneges</td><td>&mdash;3</td></tr>
+<tr><td>Engage in a long-running feud (1+ years) with a criminal less honorable than you<sup>3</sup></td><td>&mdash;4</td></tr>
+<tr><td>Refuse to punish an associate for becoming a turncoat</td><td>&mdash;4</td></tr>
+<tr><td>Party cooperates with authorities in helping dismantle a criminal enterprise</td><td>&mdash;5</td></tr>
+<tr><td>Violate your specific criminal code</td><td>&mdash;6</td></tr>
+<tr><td>Be toppled as guildmaster</td><td>&mdash;30</td></tr>
+<tfoot><tr><td colspan="2"><sup>1</sup> These events don't stack for the same city. If the city's population increases after you become guildmaster, you gain the difference in honor points between the two events.<br />
+<sup>2</sup> Such as "I commit only property crimes" or "I never steal, I only commit murder."<br />
+<sup>3</sup> Your honor score and the other criminal's must differ by at least 20 points.<br />
+<sup>4</sup> Non-criminal honor point score of 50 or more.<br />
+<sup>5</sup> You can gain honor points this way once per month.<br />
+<sup>6</sup> Per 40,000 gp of the item's price.</td></tr></tfoot></table>
+
+<h3 id="political-code">Political Code</h3>
+<p>These events apply to cultures favoring political intrigue, espionage, and diplomacy.</p>
+
+
+<table><thead><tr><th>Event</th><th>Honor Points</th></tr></thead>
+<tr><td>Become leader of a country</td><td>+50</td></tr>
+<tr><td>Become a duke (or equivalent rank)</td><td>+20</td></tr>
+<tr><td>Ascend the ranks of nobility</td><td>+15</td></tr>
+<tr><td>Receive an important appointment</td><td>+10</td></tr>
+<tr><td>Successfully negotiate a peace for a national dispute</td><td>+5</td></tr>
+<tr><td>Prevent a war</td><td>+5</td></tr>
+<tr><td>Successfully negotiate a peace for a familial dispute</td><td>+3</td></tr>
+<tr><td>Act as an ambassador</td><td>+2</td></tr>
+<tr><td>Gain the favor of an honorable NPC<sup>1</sup></td><td>+2</td></tr>
+<tr><td>Remove an enemy without bloodshed or death</td><td>+2</td></tr>
+<tr><td>Start a popular war</td><td>+2</td></tr>
+<tr><td>Write and deliver a treaty</td><td>+2</td></tr>
+<tr><td>Aid a political ally of lower status<sup>2</sup></td><td>+1</td></tr>
+<tr><td>Embarrass a rival</td><td>+1</td></tr>
+<tr><td>Make allies in the bureaucracy</td><td>+1</td></tr>
+<tr><td>Successfully negotiate a peace for a personal dispute</td><td>+1</td></tr>
+<tr><td>Make well-placed enemies in the bureaucracy</td><td>&mdash;1</td></tr>
+<tr><td>Refuse to use violence when negotiation fails</td><td>&mdash;2</td></tr>
+<tr><td>Fail as an ambassador to a neutral country</td><td>&mdash;3</td></tr>
+<tr><td>Refuse to aid someone who did you a favor</td><td>&mdash;3</td></tr>
+<tr><td>Receive an embarrassing appointment</td><td>&mdash;4</td></tr>
+<tr><td>Use violence to solve a problem when negotiation was an option</td><td>&mdash;5</td></tr>
+<tr><td>Start an unpopular war</td><td>&mdash;8</td></tr>
+<tr><td>Fail to keep a popular war popular</td><td>&mdash;10</td></tr>
+<tfoot><tr><td colspan="2"><sup>1</sup> You can gain this reward once per NPC. The NPC must have at least 10 more honor points than you.<br />
+<sup>2</sup> You can gain this reward once per month. The NPC must have at least 10 fewer honor points than you.</td></tr></tfoot></table>
+
+<h3 id="samurai-code">Samurai Code</h3>
+<p>These events apply to a samurai code.</p>
+
+
+<table><thead><tr><th>Event</th><th>Honor Points</th></tr></thead>
+<tr><td>Become a daimyo or temple master</td><td>+80</td></tr>
+<tr><td>Defeat an honorable daimyo or temple master in combat</td><td>+20</td></tr>
+<tr><td>Commit seppuku</td><td>+10</td></tr>
+<tr><td>Adopt a strict code of honor</td><td>+8</td></tr>
+<tr><td>Help a disgraced ally perform seppuku</td><td>+4</td></tr>
+<tr><td>Challenge and defeat in single combat someone who has publicly dishonored you</td><td>+3</td></tr>
+<tr><td>Party defeats a challenging oni (CR higher than APL)</td><td>+3</td></tr>
+<tr><td>Destroy a shrine that's dedicated to an opposing power</td><td>+2</td></tr>
+<tr><td>Protect a shrine from marauders</td><td>+2</td></tr>
+<tr><td>Roll 30 or higher on a <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> check to create a work of art or masterwork item<sup>1</sup></td><td>+2</td></tr>
+<tr><td>Roll 30 or higher on a <a href="../../coreRulebook/skills/perform.html#perform">Perform</a> check<sup>1</sup></td><td>+2</td></tr>
+<tr><td><a href="../../coreRulebook/skills/perform.html#perform" >Perform</a> an action against your alignment because of a sworn oath<sup>2</sup></td><td>+1</td></tr>
+<tr><td>Trick a kami in a battle of wits</td><td>+1</td></tr>
+<tr><td>Excessively brag of your accomplishments<sup>3</sup></td><td>&mdash;1</td></tr>
+<tr><td>Be convicted of a petty crime</td><td>&mdash;2</td></tr>
+<tr><td>Be drunk in public</td><td>&mdash;2</td></tr>
+<tr><td>Slay an honorable opponent who has surrendered</td><td>&mdash;5</td></tr>
+<tfoot><tr><td colspan="2"><sup>1</sup> You can gain honor points this way once per month. If this event recounts accomplishments of another PC or NPC, you and the subject gain 2 honor points each.<br />
+If the event mocks the subject and the subject has fewer honor points than you, you gain 2 honor points and the subject loses 2.<br />
+If the event mocks a target with more honor points than you, you risk the &mdash;4 slander penalty if the event can be associated with you.<br />Each additional subject the event would praise or mock gives the skill check a &mdash;5 penalty.<br />
+<sup>2</sup> The oath must be to someone with more honor points than you.<br />
+<sup>3</sup> Unless this is part of a class ability that requires you to brag about your accomplishments.</td></tr></tfoot></table>
+
+<h3 id="tribal-code">Tribal Code</h3>
+<p>These events apply to nomadic or tribal societies.</p>
+
+
+<table><thead><tr><th>Event</th><th>Honor Points</th></tr></thead>
+<tr><td>Become the leader of the clan</td><td>+50</td></tr>
+<tr><td>Defeat the leader of your tribe in single combat and become leader</td><td>+20</td></tr>
+<tr><td>Gain justice for a large slight to your family, tribe, or clan</td><td>+3</td></tr>
+<tr><td>Defend your village or camp from a raid</td><td>+2</td></tr>
+<tr><td>Develop a recognizable and feared persona</td><td>+2</td></tr>
+<tr><td>Go far beyond the basics of hospitality</td><td>+2</td></tr>
+<tr><td>Represent your tribe at a clan gathering</td><td>+2</td></tr>
+<tr><td>Stand against 10 opponents (whether the conflict is physical, social, or artistic)</td><td>+2</td></tr>
+<tr><td>Challenge the leader of your tribe to single combat for leadership</td><td>+1</td></tr>
+<tr><td>Develop a new tribal tradition</td><td>+1</td></tr>
+<tr><td>Enact tribal justice for a serious transgression</td><td>+1</td></tr>
+<tr><td>Gain justice for a small insult to your family, tribe, or clan</td><td>+1</td></tr>
+<tr><td>Party enforces the code of hospitality</td><td>+1</td></tr>
+<tr><td>Break tribal behavioral code</td><td>&mdash;1</td></tr>
+<tr><td>Speak ill of your clan outside your clan</td><td>&mdash;1</td></tr>
+<tr><td>Speak ill of your tribe outside your tribe</td><td>&mdash;2</td></tr>
+<tr><td>Back down from a one-on-one fight</td><td>&mdash;3</td></tr>
+<tr><td>Ignore tribal command structure</td><td>&mdash;3</td></tr>
+<tr><td>Party refuses hospitality to other travelers</td><td>&mdash;3</td></tr>
+<tr><td>Speak out against a member of your family</td><td>&mdash;3</td></tr>
+<tr><td>Party takes advantage of hospitality, then betrays the hosts</td><td>&mdash;5</td></tr></tfoot></table>
+
+</div>	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Honor",globalNavPath=[{ href: '/pathfinderRPG/prd/ultimateCampaign/campaignSystems.html', name: 'Campaign Systems' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

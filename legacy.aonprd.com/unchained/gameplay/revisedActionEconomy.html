@@ -1,0 +1,532 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Revised Action Economy</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "revisedActionEconomy.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "revisedActionEconomy.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "revisedActionEconomy.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "revisedActionEconomy.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "revisedActionEconomy.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "revisedActionEconomy.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "revisedActionEconomy.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "revisedActionEconomy.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "revisedActionEconomy.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "revisedActionEconomy.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "revisedActionEconomy.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "../skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "index.html">Gameplay</a></li>
+						<li><a href = "../magic/index.html">Magic</a></li>
+						<li><a href = "../monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "revisedActionEconomy.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "revisedActionEconomy.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "revisedActionEconomy.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "revisedActionEconomy.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "revisedActionEconomy.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "revisedActionEconomy.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "revisedActionEconomy.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "revisedActionEconomy.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "revisedActionEconomy.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "revisedActionEconomy.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id = "revised-action-economy">Revised Action Economy</h1>
+<p>The default action economy of the Pathfinder Roleplaying Game is intricate&mdash;full of exceptions, nonactions, and strange actions. This revised action economy streamlines the process of combat encounters. In many ways, it's a more active system that allows lower-level characters more options in a round while slightly limiting how much higher-level characters can do during their turns.</p>
+<p>In this system, a character can commit up to 3 acts on her turn; these can be committed individually as simple actions, or combined into advanced actions. When it's not her turn, a character can take a single reaction per round. Iterative attacks have been discarded in this action economy. Instead, any character can make multiple attacks during her turn simply by taking multiple actions to do so.</p>
+
+<h2 id = "overview">Overview</h1>
+<p>To illustrate this system, we start at the initiative check and go though the turns and rounds of an encounter. </p>
+
+	<h3 id = "initiative">Initiative</h3>
+	<p>At the start of combat, each participant rolls an initiative check as normal. Characters are flat-footed before they act in either the surprise round or the first round of combat.</p>
+
+	<h3 id = "surprise-round">Surprise Round</h3>
+	<p>When combat starts, if some but not all of the participants are aware of their opponents, a surprise round occurs before the first round of combat. Those who are aware can commit up to 2 acts during the surprise round, and gain a reaction when that round is over. If all combatants are aware of their opponents, skip the surprise round.</p>
+
+	<h3 id = "your-turn">Your Turn</h3>
+	<p>When your turn comes up in the initiative order, you can commit up to 3 acts. Sometimes, acts are committed discretely as simple actions, while other times 2 or more acts can be committed together as an advanced action. You can take these simple and advanced actions in any order you choose, except when the rules for individual actions state otherwise. You can also take a number of free actions your GM deems appropriate. Your turn ends once you have committed all 3 acts and any free actions you wish to take. Once your turn is over, you gain the ability to take one reaction before the start of your next turn. (Some abilities grant additional reactions; see <a href="revisedActionEconomy.html#final-considerations">Final Considerations</a>.)</p>
+	<p>When your turn comes up in the initiative order, you can choose to delay instead. When you do, you can't commit acts. You keep any reactions you haven't used since your previous turn, but don't gain any more. At any point after another combatant has taken its turn, you can choose to end your delay and reenter the initiative order. When you do so, your initiative changes to the point in the initiative order directly after the last acting creature's turn.</p>
+
+	<h3 id = "others-turns">Others' Turns</h3>
+	<p>Reactions are like actions, but can be taken only when they are triggered, and only during other characters' turns. Usually, reactions are triggered by actions taken by other combatants. For instance, the most common reaction you'll likely take is the attack of opportunity: an attack you can make when a foe in your threatened area drops his guard (typically by moving, making a ranged attack, or attempting a complicated attack for which he lacks the proper training). Some reactions may provoke attacks of opportunity&mdash;the reaction's subtype, if any, determines whether it provokes attacks of opportunity.</p>
+	<p>Other times, something that happens to you might grant you the ability to take a reaction. Spells and abilities that are used as immediate actions in the default action economy are reactions in this system. For example, the spell <a href="../../coreRulebook/spells/featherFall.html#feather-fall"><em>feather fall</em></a> is cast an immediate action in the default action economy&mdash;in this system, it's a reaction.</p>
+
+<h2 id = "action-types-and-subtypes">Action Types and Subtypes</h2>
+<p>This section describes the various actions in the game, their costs within this system, and new rules on how each one works. The sidebars throughout highlight exceptions and help you adjudicate situations that are not addressed directly in this section.</p>
+<p>There are a number of different simple actions, free actions, and advanced actions you can take during your turn. Taking a simple action requires 1 act. Free actions don't cost any acts; you just say you want to take them, though some must be taken alongside other simple or advanced actions. In addition, the GM may limit the number of free actions you're allowed during your turn.</p>
+<p>Advanced actions are more complicated; you must commit 2 or more acts to perform them. Some advanced actions require more acts than you can possibly commit during a single turn. In this case, you must continue committing acts toward that advanced action over multiple turns until the advanced action is complete. To take most advanced actions, you must commit all of their requisite acts consecutively. If you stop committing acts toward such an advanced action, it never comes to completion, and it must be started all over again in order to have a chance of success. Other advanced actions can be completed after committing the total requisite number of acts, which can be split up over time. In both cases, any roll attempted to determine whether an advanced action is successful is attempted after the appropriate number of acts are committed to that advanced action by the creature committing the final act. If an advanced action doesn't say whether it requires consecutive or nonconsecutive acts, all its acts must be consecutive.</p>
+<p>Some actions and reactions have one or more of the following subtypes. The subtypes are thematic, sometimes affect other actions taken later in the turn, and are used to determine whether (and at what point) an action provokes attacks of opportunity.</p>
+<p><strong>Attack Actions</strong>: Actions with the attack subtype involve making at least one attack roll against an opponent or object. They typically provoke attacks of opportunity only if the attack is a ranged attack or you don't have the appropriate feat to take that attack action without provoking attacks of opportunity, such as Improved Unarmed Strike for unarmed strikes or Improved Trip for trip attempts. In the latter case, the action provokes an attack of opportunity only from the creature you target. When an attack action provokes an attack of opportunity, the attack of opportunity is made before the provoking attack roll is made.</p>
+<p>The first time during your turn that you take an action with this subtype, you roll the attack as normal. Each subsequent attack action taken during your turn imposes a cumulative &ndash;5 penalty on the attack roll or combat maneuver check (so the second attack action has a &ndash;5 penalty on the attack roll, the third has a &ndash;10 penalty, and so on).</p>
+<p><strong>Complex Actions</strong>: These actions involve intense concentration, strenuous physical manipulation of objects, or some other source of complexity. A complex action always provokes attacks of opportunity, which are made before the complex action is taken. Complex actions that occur over multiple turns (whether consecutively or not) provoke attacks of opportunity on each turn that acts are committed toward their completion.</p>
+<p><strong>Move Actions</strong>: These actions involve moving through the encounter area in some way. Actions with the move subtype provoke attacks of opportunity when you attempt to either leave a square in an enemy's threatened area or stand up from a prone position in a space that has at least 1 square in a foe's threatened area. Not all actions that allow you to move have the move subtype. For example, a step is a very slow and careful movement that doesn't have this subtype, and thus doesn't provoke attacks of opportunity when you take that action to leave a square in a threatened area.</p>
+<p><strong>Actions without a Subtype</strong>: Actions without a subtype don't provoke attacks of opportunity.</p>
+
+	<h3 id = "simple-actions">Simple Actions</h3>
+	<p>The following are some of the more common actions. To take any of them, you need to commit only 1 act (though some can be taken as free actions under special circumstances).</p>
+	<p><strong>Aid Another</strong>: You take the aid another action. This action has all of the subtypes of the action you aid.</p>
+	<p><strong>Appraise a Single Item</strong>: You spend time using your senses to appraise a single item that you can see. If you are holding the item, you gain a +2 bonus on the check and this action has the complex subtype. </p>
+	<p><strong>Attack (Attack)</strong>: You make one or more attacks against a single foe within your melee reach (if making a melee attack) or range (if making a ranged attack).</p>
+	<p><strong>Bull Rush (Attack)</strong>: You push a foe that is at most one size category larger than you straight back. Attempt a bull rush combat maneuver check. If you're successful, you push the foe back 5 feet. For every 5 by which your check exceeds your foe's CMD, you push that foe back 5 additional feet. You can choose to move along with the target if you have the necessary acts to do so. The foe's movement doesn't provoke attacks of opportunity unless you have the Greater Bull Rush Feat.</p>
+	<p><strong>Cast a Swift Spell</strong>: You cast a single spell or use a single spell-like ability with a casting time of 1 swift action.</p>
+	<p><strong>Control a Frightened Mount (Complex)</strong>: You attempt to control a mount that's not trained for combat in battle. If you fail the <a href="../../coreRulebook/skills/ride.html#ride">Ride</a> check, you can't try again until your next turn.</p>
+	<p><strong>Crawl (Move)</strong>: You crawl 5 feet while prone.</p>
+	<p><strong>Demoralize</strong>: You shout threats at a foe within 30 feet that can see and hear you, attempting to demoralize it.</p>
+	<p><strong>Direct or Redirect a Spell</strong>: If a spell allows you to redirect an effect to a new target, you take this action to do so. </p>
+	<p><strong>Disarm (Attack)</strong>: You attempt to disarm your foe. If your disarm combat maneuver check is successful, your foe drops one item of your choice that it's carrying or wielding (even if it's holding the item with two hands). If you exceed your foe's CMD by 10 or more, the foe drops two items of your choice. If you fail your combat maneuver by 10 or more, you drop any weapon you were using to disarm your foe.</p>
+	<p><strong>Dismiss a Spell</strong>: You dismiss the effects of a dismissible spell.</p>
+	<p><strong>Draw or Sheathe a Weapon</strong>: You draw or sheathe a weapon. If your base attack bonus is +0, this action provokes an attack of opportunity.</p>
+	<p><strong>Escape a Grapple</strong>: You attempt to escape or gain control of a grapple by attempting either an <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> check or a combat maneuver check. The second time in a turn you take this action, you take a &ndash;5 penalty on the check. The third time, you take a &ndash;10 penalty on the check.</p>
+	<p><strong>Feint (Attack)</strong>: You use <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a> to attempt a feint against an opponent. If you succeed, that opponent is denied its Dexterity bonus to AC for the next attack you make against it this turn. If you have the Improved Feint feat, this action doesn't have the attack subtype.</p>
+	<p><strong>Handle an Animal</strong>: You command an animal to perform a trick it knows by attempting a <a href="../../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> check. Some class abilities let characters attempt this as a free action.</p>
+	<p><strong>Light a Torch with a Tindertwig or Open Flame</strong>: You ignite a torch with a tindertwig or an open flame.</p>
+	<p><strong>Load a Hand Crossbow or Light Crossbow (Complex)</strong>: You load a hand crossbow or a light crossbow with a bolt. If you have the <a href="../../ultimateCombat/ultimateCombatFeats.html#rapid-reload">Rapid Reload</a> feat with the weapon you are reloading, this is a free action.</p>
+	<p><strong>Lower or Reactivate Spell Resistance</strong>: You lower any spell resistance that is active, or reactivate a spell resistance that has been lowered.</p>
+	<p><strong>Manipulate an Item (Complex)</strong>: You grab an item that is in a backpack, pouch, pocket, or other similar container on your person; pick up an item; or move a heavy object. Sometimes, the GM might rule that manipulating an item is an advanced action and determine the number of acts that must be committed to succeed. Based on what you want to do, those actions may need to be committed consecutively.</p>
+	<p><strong>Move (Move)</strong>: You move up to your speed. Typically you move across the land at either a walk or a sprint, but this covers other movement modes, including burrowing, flying, jumping, and swimming.</p>
+	<p><strong>Mount or Dismount a Steed (Move)</strong>: You mount or dismount a steed. You can do this as a free action by attempting a DC 20 <a href="../../coreRulebook/skills/ride.html#ride">Ride</a> check; failure means you provoke attacks of opportunity.</p>
+	<p><strong>Open or Close a Door</strong>: You open or close a door that is within your reach (not counting expanded reach from reach weapons). You must have at least one hand free to take this action.</p>
+	<p><strong>Overrun (Attack)</strong>: You move up to your speed, and over the course of this action you attempt to move through the space of a foe that is no more than one size category larger than you. When attempting to move through your foe's space, your foe can choose to allow you to pass through and let you continue your movement. If the foe doesn't choose to or can't let you move past, you attempt an overrun combat maneuver check. If you succeed, you move through the target's space. If your check exceeds your foe's CMD by 5 or more, you move through the target's space and the target is knocked prone. If the target has more than two legs, it gains a bonus to its CMD against overrun combat maneuvers equal to +2 for each additional leg it possesses. If you fail this check, your movement stops in the space directly in front of the opponent.</p>
+	<p><strong>Ready a Simple Action or an Advanced Action</strong>: You ready a single simple or advanced action that you can take before the start of your next turn as a reaction. You must designate a definite trigger for that reaction (such as "if a foe attacks me," "if a foe casts a spell," or "if a foe moves adjacent to me"), and you must have enough acts left to complete the action you ready. Once you ready an action, your turn ends. If you don't take the action you readied as a reaction by the start of your next turn, you lose that reaction.</p>
+	<p><strong>Ready or Drop a Shield</strong>: You either strap a shield to your arm to gain its shield bonus to AC or unstrap and drop the shield. If you have a base attack bonus of +1 or higher, you can do either of these as a free action when you take the move simple action.</p>
+	<p><strong>Search</strong>: You use <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> to search a room for salient hidden creatures or clues, or you make a detailed search of a 10-foot-square area to detect traps, triggers, hidden objects, or footprints. When you search an area, this action has the complex subtype.</p>
+	<p><strong>Spell Combat (Attack, Complex)</strong>: You make an attack roll with a light or one-handed melee weapon, then cast a spell on the magus<span class="charoverride-10">UM</span> spell list with a casting time of 1 standard action. You take a &ndash;2 penalty on the melee attack, but the spell is cast regardless of whether the attack hits. If you cast the spell defensively, you can subtract your Intelligence bonus from the result of the attack roll to add the same value as a circumstance bonus on the concentration check. You must have the spell combat class feature to take this action, and can take this action only once per turn. To take this action, you must have one hand free. You can't also take the following actions this turn: cast a standard-action spell or cast a 1-round-action spell.</p>
+	<p><strong>Stand Up (Move)</strong>: You stand up from being prone. </p>
+	<p><strong>Step</strong>: You move 5 feet.</p>
+	<p><strong>Sunder (Attack)</strong>: You try to sunder an item held or worn by your foe. Attempt a sunder combat maneuver check. If you succeed, you deal damage to the item normally. Damage that exceeds the item's hardness is subtracted from its hit points. If an object has less than or equal to half its total hit points remaining, it gains the broken condition. If the damage you deal reduces the object to 0 or fewer hit points, you can choose to destroy the object. If you choose not to destroy it, the object is left with only 1 hit point.</p>
+	<p><strong>Trip (Attack)</strong>: You try to trip your opponent. Attempt a trip combat maneuver check against a foe that is no more than one size category larger than you. If you succeed, you knock the target prone. If you fail by 10 or more, you are knocked prone instead. If the target has more than two legs, it gains a +2 bonus to its CMD against this attempt for each additional leg it possesses.</p>
+	<p><strong>Use a Swift Ability</strong>: You use a single ability that can be used as a swift action. </p>
+
+	<h3 id = "advanced-actions">Advanced Actions</h3>
+	<p>The following is a list of the main advanced actions in this system. The number of acts required to take each advanced action is listed in parentheses after the action's subtype (if any). </p>
+	<p><strong>Administer a Potion or Elixir, or Apply an Oil, to an Unconscious Creature (Complex; 3 Acts)</strong>: You carefully administer a potion or elixir, or apply an oil, to an unconscious creature. </p>
+	<p><strong>Appraise a Hoard (3 Acts)</strong>: You examine a treasure hoard to determine the most valuable item in the hoard.</p>
+	<p><strong>Cast a 1-Round-Action Spell (Complex; 3 Acts)</strong>: You cast a spell with a casting time of 1 round. You can split the acts over 2 rounds, but those rounds must be consecutive. If you cast the entire spell in 1 turn, you can choose to have the spell's effects manifest at the end of that turn or at the start of your next turn. This isn't an attack action, even if the spell requires a ranged attack roll. If you provoke attacks of opportunity when casting the spell, you don't provoke attacks a second time when making the ranged attack roll. </p>
+	<p><strong>Cast a Standard-Action Spell (Complex; 2 Acts)</strong>: You cast a spell with a casting time of 1 standard action. This isn't an attack action, even if the spell requires a ranged attack roll. If you provoke attacks of opportunity when casting the spell, you don't provoke attacks a second time when making the ranged attack roll.</p>
+	<p><strong>Charge (Move; 2 Acts)</strong>: You move twice your speed directly toward a designated foe within your line of sight, ending the move in the closest space from which you can attack that foe. You must have a clear path to your foe. If anything hinders or blocks your movement along the path of a charge, you can't take the charge action. As long as you have a base attack bonus of +1 or higher, you can draw a weapon as a free action at any point during the charge. At the end of the charge, you gain a +2 bonus on any melee attacks, bull rush combat maneuver checks, or overrun combat maneuver checks you attempt until the end of your turn, as long as those attacks or combat maneuver checks are made against the creature you designated when you charged.</p>
+	<p><strong>Concentrate to Maintain an Active Spell (2 Acts)</strong>: You concentrate to maintain an active spell. </p>
+	<p><strong>Continue a Grapple (2 Acts)</strong>: You continue a grapple. If you initiated the grapple, you must either take this action at the start of each subsequent turn or end the grapple as a free action. When you take this action, you attempt a grapple combat maneuver check with a +5 bonus. If you're successful, you can either move, deal damage to, or pin the creature you are grappling. Alternatively, you can attempt to tie up the creature with a rope.</p>
+		<p><em>Move</em>: If you decide to move your target, immediately after the grapple, you can take a move simple action and move the creature you are grappling with you. At the end of that move action, you can place your target in any space adjacent to you. If you attempt to place your foe in a hazardous location, the target can attempt to free itself from the grapple as a reaction, and gains a +4 bonus on that attempt. </p>
+		<p><em>Damage</em>: If you decide to damage your opponent, you deal an amount of damage equal to that of your unarmed strike, natural attack, armor spikes, or a light or one-handed weapon you are holding. You can choose to make this damage either lethal or nonlethal. </p>
+		<p><em>Pin</em>: If you decide to pin your target, the target gains the pinned condition. You continue to have the grappled condition, but lose your Dexterity bonus to AC until you are no longer pinning the target. </p>
+		<p><em>Tie Up a Grappled or Pinned Creature</em>: If you have a rope in your hands, and you are grappling or pinning a foe, you can attempt a grapple combat maneuver check at a &ndash;10 penalty to tie up that foe. If you're successful, the ropes pin the creature until they are removed or the pinned foe succeeds at a combat maneuver check or <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> check (DC = 20 + your CMB).</p>
+	<p><strong>Deliver a Coup de Grace (Complex; 3 Acts)</strong>: You use a melee weapon to deliver a coup de grace to a helpless foe that isn't immune to critical hits. You can also use a ranged weapon, but you must be adjacent to the foe. When you take this action, you automatically hit and confirm a critical hit. If the foe survives the damage, it must succeed at a Fortitude save (DC = 10 + the damage dealt) or die.</p>
+	<p><strong>Detect Forgery (3 Acts)</strong>: You use <a href="../../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a> to examine a single page to detect a forgery.</p>
+	<p><strong>Dirty Trick (Combat; 2 Acts)</strong>: You attempt a dirty trick combat maneuver check. If you're successful, the target gains one of the following conditions: blinded, dazzled, deafened, entangled, shaken, or sickened. This condition lasts for 1 round. For every 5 by which your combat maneuver check exceeds the target's CMD, the condition lasts for 1 additional round. The target or an ally adjacent to the target can remove the condition by committing 1 act. Removing a condition applied by a dirty trick does not provoke attacks of opportunity.</p>
+	<p><strong>Disable Device (Complex; At Least 3 Acts)</strong>: You attempt to unlock a lock or disable another device. For every round the action takes, you must commit 3 acts. These acts may or may not need to be consecutive based on the nature of the device. For example, acts committed to open a lock or disable a trap must nearly always be consecutive. The GM may rule that some complex devices take more than 3 acts to disable; for example, a complex arcane machine that will cause a devastating calamity in 1 minute could take 10 acts to disable, though the acts may not need to be consecutive.</p>
+	<p><strong>Drag (Combat; 2 Acts)</strong>: You try to drag a foe that is no more than one size category larger than you 5 or more feet in a straight line. Attempt a drag combat maneuver check. If you succeed, you move 5 feet in one direction, and your opponent moves with you, staying adjacent to you. For every 5 by which your combat maneuver check exceeds the target's CMD, you can move 5 additional feet in the same direction. You can't drag a creature a distance greater than your speed with this advanced action. The target's movement does not provoke attacks of opportunity unless you have the <a href="../../advancedPlayersGuide/advancedFeats.html#greater-drag">Greater Drag</a> feat.</p>
+	<p><strong>Drink a Liquid or Apply an Oil (Complex; 2 Acts)</strong>: You drink a potion, elixir, or another liquid, or apply an oil, gaining that liquid or oil's effects when the drinking or application is complete.</p>
+	<p><strong>Escape from a Net (Complex; 2 Acts)</strong>: You attempt to escape from a net entangling you. Attempt a DC 20 <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> check; if you succeed, you escape from the net. </p>
+	<p><strong>Extinguish Flames (Complex; 2 Acts)</strong>: When on fire, you can roll on the ground or smother the fire with cloaks or similar objects to attempt another saving throw with a +4 bonus. If the saving throw is successful, you are no longer on fire.</p>
+	<p><strong>Find Tracks (At Least 3 Acts)</strong>: You use <a href="../../coreRulebook/skills/survival.html#survival">Survival</a> to find tracks. This requires at least 3 consecutive acts and may take more, as determined by the GM. If you lose a trail, it takes longer to try again.</p>
+	<p><strong>Initiate a Grapple (Attack; 2 Acts)</strong>: You initiate a grapple against a creature within your melee reach.</p>
+	<p><strong>Light a Torch (Complex; 3 Acts)</strong>: You light a torch with a flint and steel.</p>
+	<p><strong>Load a Heavy or Repeating Crossbow (Complex; 2 acts)</strong>: You load a bolt in a heavy crossbow or place a new case of 5 bolts into a repeating crossbow.</p>
+	<p><strong>Load a One-Handed Early Firearm (Complex; 2 Acts)</strong>: You load a single barrel of a one-handed early firearm. If you have the <a href="../../ultimateCombat/ultimateCombatFeats.html#rapid-reload">Rapid Reload</a> feat for that firearm, this is reduced to a simple action. </p>
+	<p><strong>Load a Two-Handed Early Firearm (Complex; 3 Acts)</strong>: You load a single barrel of a two-handed early firearm. If you have the <a href="../../ultimateCombat/ultimateCombatFeats.html#rapid-reload">Rapid Reload</a> feat for that firearm, you need commit only 2 acts to reload that firearm.</p>
+	<p><strong>Lock or Unlock a Weapon in a Locked Gauntlet (Complex; 2 Acts)</strong>: You either lock a weapon into a locked gauntlet or unlock a weapon already fastened to a locked gauntlet.</p>
+	<p><strong>Make All Natural Attacks (Attack; 3 Acts)</strong>: A creature that is using only its natural attacks can make all its natural attacks with this action instead of making separate attacks with attack simple actions.</p>
+	<p><strong>Prepare a Flask of Oil as a Splash Weapon (Complex; 2 Acts)</strong>: You prepare a flask of oil with a fuse so that you can throw it as a splash weapon.</p>
+	<p><strong>Provide First Aid, Treat a Wound, or Treat Poison (Complex; 2 Acts)</strong>: You provide first aid, treat a wound, or treat poison using the <a href="../../coreRulebook/skills/heal.html#heal">Heal</a> skill.</p>
+	<p><strong>Push an Animal (3 Acts)</strong>: You attempt a <a href="../../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> check to get an animal to perform a trick it doesn't know but is physically capable of doing, or to push the animal to its limits. If the animal has taken hit point damage, nonlethal damage, or ability score damage, the DC of this check increases by 2. Characters with animal companions, such as druids or rangers, can push their companions as simple actions instead.</p>
+	<p><strong>Reposition (Combat; 2 Acts)</strong>: You attempt a repositioncombat maneuver check against a foe that is no more than one size category larger than you. If you succeed, you force that foe to move 5 feet. For every 5 by which your check exceeds the target's Combat Maneuver Defense, you can move that target an additional 5 feet. When you reposition the target, it must stay within your threatened area during all but the last 5 feet of the reposition movement, which can be to a space adjacent to your threatened area.</p>
+	<p><strong>Run (Move; 3 Acts)</strong>: You move four times your speed in a straight line. When you do, you lose your Dexterity bonus to AC until the start of your next turn.</p>
+	<p>You can run for a number of rounds equal to your Constitution score; each round after that, you must succeed at a Constitution check to continue running (DC = 10 + 1 per previous check). If you fail, you stop running and are staggered for a number of minutes equal to 10 &ndash; your Constitution bonus (minimum 1). </p>
+	<p><strong>Sleight of Hand (Complex; 2 Acts)</strong>: You use <a href="../../coreRulebook/skills/sleightOfHand.html#sleight-of-hand">Sleight of Hand</a> to palm an object or perform some feat of legerdemain. You can attempt this as a simple action by taking a &ndash;20 penalty on the check. In either case, if your check fails by 5 or more, you provoke an attack of opportunity from any creature from which you are trying to take an object with this action.</p>
+	<p><strong>Spellstrike (Complex; 2 Acts)</strong>: You cast a spell from the magus spell list with a range of touch, but instead of making a touch attack, you make a melee attack with a weapon you are wielding. If the attack hits, the attack deals its normal damage as well as any effects of the spell. You must have the spellstrike class feature to take this action.</p>
+	<p><strong>Steal (Combat; 2 Acts)</strong>: You attempt a steal combat maneuver check against a foe within your melee reach (not counting expanded reach from reach weapons). You must have at least one hand free, and must select the item to be stolen before attempting the check. Items fastened to a foe grant the foe a +5 (or higher) bonus to its CMD against this attempt, and items securely worn can't be stolen in this way. If you're successful, you take the item you chose from the opponent.</p>
+	<p><strong>Total Defense (2 Acts)</strong>: You concentrate on defense rather than attacking. Until the start of your next turn, you can't take actions with the attack subtype, and you gain a +4 dodge bonus to AC. If you already took an attack action earlier in the turn, you gain only a +2 dodge bonus to AC. If you have at least 3 ranks in <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a>, these bonuses increase to +6 and +3, respectively.</p>
+	<p><strong>Use a Command Word Item (2 Acts)</strong>: You activate a magic item with a command word. </p>
+	<p><strong>Use a Spell Completion Item (Complex; 2 Acts)</strong>: You cast a spell with a casting time of 1 standard action from a spell completion item. This isn't an attack action, even if the spell requires a ranged attack roll. If you provoke attacks of opportunity when casting the spell, you don't provoke further attacks when making the ranged attack roll. </p>
+	<p><strong>Use a Spell Trigger Item (2 Acts)</strong>: You cast a spell from a spell trigger item. This isn't an attack action, even if the spell requires a ranged attack roll. If you provoke attacks of opportunity when casting the spell, you don't provoke further attacks when making the ranged attack roll.</p>
+	<p><strong>Use a Standard-Action Supernatural Ability (2 Acts)</strong>: You use a supernatural ability that can be used as a standard action in the default action economy. </p>
+	<p><strong>Use a Touch Spell on up to Six Allies (Complex; 3 Acts)</strong>: If you cast a spell that allows you to touch targets over multiple rounds, this action allows you to touch up to six willing creatures within your melee reach (not counting expanded reach from reach weapons). </p>
+
+	<h3 id = "free-actions">Free Actions</h3>
+	<p>Unless stated otherwise in the action's description, a free action can be taken only on your turn. Theoretically, you can take as many free actions in a turn as you wish, though the GM may apply reasonable limitations on free actions. For instance, although speaking is a free action, since a round is only 6 seconds in length, your GM might stop you from spouting off a long diatribe during your turn (or between turns), and may even rule that if you are casting a rather complex spell with a verbal component, you aren't able to verbally warn your companions of some danger that you notice before they do. Typically, this limitation shouldn't be applied to reloading ranged weapons as a free action. </p>
+	<p>Sometimes a free action stipulates that you can take it only in conjunction with another action, or at a certain time during your turn. In these cases, you must take any requisite actions before you can take the free action.</p>
+	<p>The following are the main free actions of this system.</p>
+	<p><strong>Cast Defensively</strong>: When casting a spell, you can take a free action to do so defensively. You must attempt a concentration check (DC = 15 + double the spell's level). If you succeed, that spell loses the complex subtype for that casting. If you fail, you lose the spell.</p>
+	<p><strong>Cease Concentrating on a Spell</strong>: You cease concentrating on a spell that you have cast.</p>
+	<p><strong>Draw and Nock an Arrow</strong>: You draw and nock an arrow to a longbow or shortbow.</p>
+	<p><strong>Drop an Item</strong>: You drop a held item into a square within your space or within your melee reach (not counting the expanded reach from a reach weapon, unless you are dropping that weapon). </p>
+	<p><strong>Drop Prone</strong>: You drop prone within your space. </p>
+	<p><strong>Fight Defensively</strong>: At the start of your turn, you can choose to fight defensively. When you do, you take a &ndash;4 penalty on all attack rolls, but gain a +2 dodge bonus to AC until the start of your next turn. If you have at least 3 ranks in <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a>, the dodge bonus increases to +3.</p>
+	<p><strong>Identify a Spell Being Cast</strong>: You use <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> to identify a spell being cast. Unlike other free actions, you can take this action even when it is not your turn.</p>
+	<p><strong>Prepare Spell Components or a Spell Focus</strong>: While casting a spell, you prepare a material spell component or a spell focus. If this component or spell focus is particularly large or unwieldy, your GM might rule that this instead takes a simple action, or even an advanced action.</p>
+	<p><strong>Recall <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a></strong>: You attempt a <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> check to recall a detail in one of your fields of study, or to identify a monster and its abilities. </p>
+	<p><strong>Speak</strong>: You speak for no more than a few words using one or more free actions. Unlike other free actions, this action can be taken even when it's not your turn.</p>
+	<p><strong>Use a Free-Action Ability</strong>: You use an ability that can be used as a free action in the default action economy. If the ability must be used as part of another action, you must take that action before taking this free action.</p>
+
+	<h3 id = "reactions">Reactions</h3>
+	<p>The following are the main reactions of this system. </p>
+	<p><strong>Complete a Readied Action (Varies)</strong>: When you have readied an action or advanced action, when the trigger you designate occurs, you can take that action. Unlike in the default action economy, your place in the initiative order does not change. This reaction's subtype is the same as the readied action's subtype.</p>
+	<p><strong>Make an Attack of Opportunity</strong>: When a foe you threaten provokes an attack of opportunity, you can make a single melee attack against that foe.</p>
+	<p><strong>Spend a Use of an Attack of Opportunity</strong>: If an ability you possess allows you to spend a use of an attack of opportunity to perform some other action in the default action economy, that action is a reaction in this system.</p>
+	<p><strong>Use an Immediate-Action Ability</strong>: You can use an ability that can be used as an immediate action in the default action economy, as long as any conditions to use that ability are met. </p>
+
+<h2 id = "two-weapon-fighting-and-flurry-of-blows">Two-Weapon Fighting and Flurry of Blows</h2>
+<p>When you fight with a second weapon in your off hand or with a double weapon, you can make two attacks with the first attack simple action you take during your turn: one with your primary hand and another with your off hand. You take penalties on these attack rolls as listed on <a href="../../coreRulebook/combat.html#table-8-7-two-weapon-fighting-penalties">Table: Two-Weapon Fighting Penalties</a> in the <em>Pathfinder RPG Core Rulebook</em>. Any other attack simple actions you take during your turn allow only one attack roll, using either the weapon in your primary hand or the one in your off hand.</p>
+<p>If you have the Improved Two-Weapon Fighting feat, you can make two attack rolls on both the first and second attack simple actions taken during your turn; both of the attacks made on the second attack action are made at a &ndash;5 penalty. Further attack simple actions taken during the same turn allow only one attack roll, using either the weapon in your primary hand or the one in your off hand. </p>
+<p>If you have the Greater Two-Weapon Fighting feat, you can make two attacks on each of your attack simple actions on your turn, though you take all the normal penalties for two-weapon fighting, as well as the cumulative &ndash;5 penalty per attack simple action (all attacks made as part of the same attack action have the same penalty).</p>
+<p>The flurry of blows class feature works in a similar way. At 1st level, you can make an additional attack with a &ndash;2 penalty on your first attack simple action during a turn. At 8th level, you can make an additional attack on both your first and second attack simple actions during your turn. At 15th level, you can make an additional attack on each of your attack simple actions during your turn. You must, of course, take all the penalties associated with those attacks.</p>
+
+<h2 id = "converting-other-actions">Converting Other Actions</h2>
+<p>While the list of actions in this section is long and covers most of the major actions in the game, it's not exhaustive. There are many actions that are not covered in these pages. The following are guidelines for converting such actions from the default action economy to this one.</p>
+<p><strong>Free Actions Are Always Free Actions</strong>: A free action in the default action economy is a free action in this one. Free actions typically don't have a subtype, and thus don't provoke attacks of opportunity. Keep in mind that some free actions are used in conjunction with other actions&mdash;that's still true in this system. To use such a free action, you must take the other action it supports.</p>
+<p><strong>Swift Actions Are Always Simple Actions</strong>: A swift action in the default action economy is always a simple action in this system. You need commit only 1 act to take that action. In rare cases, a GM might want to limit a given swift action to only once per turn.</p>
+<p><strong>Move Actions Are Always Simple Actions</strong>: A move action in the default action economy is always a simple action in this system.</p>
+<p><strong>Standard-Action Attacks Are Typically Simple Actions</strong>: Most actions that involve an attack roll or a combat maneuver check as a standard action in the standard economy are simple actions in this system. For combat maneuvers that can't be substituted for one attack in a full-attack action and other complicated attacks, consider making them attack actions that require further consecutive acts to complete. Look at combat maneuvers such as drag, grapple, and reposition for examples of such actions.</p>
+<p><strong>Standard-Action Supernatural and Spell-Like Abilities Are Advanced Actions</strong>: Typically, these actions are advanced actions that require 2 acts. Supernatural abilities tend not to have a subtype (unless they involve movement or attacking, in which case it might be fitting to grant them those subtypes), and spell-like abilities typically have the complex subtype.</p>
+<p><strong>Full-Round Actions Are Advanced Actions</strong>: Full-round actions are nearly always advanced actions that require a consecutive 3-act commitment. (See the charge <a href="revisedActionEconomy.html#advanced-actions">advanced action</a> for an example of one that doesn't require 3 acts.)</p>
+
+<h2 id = "final-considerations">Final Considerations</h2>
+<p>Some spells and abilities in the game grant extra actions. The two benchmark abilities are the Combat Reflexes feat and the <em>haste</em> spell. The following describes how to use these in this system, which should serve as a guide for how to fit in similar abilities.</p>
+<p><strong>Combat Reflexes</strong>: If you have this feat, you can take a number of additional reactions between your turns equal to your Dexterity bonus, but those reactions can be used only to make attacks of opportunity. You gain all the other abilities of this feat.</p>
+<p><strong><em>Haste</em></strong>: When under the effects of <em>haste</em>, you gain 1 additional act each round, which can be used only to take an attack simple action. This doesn't stack with any other effect that grants an increase in your number of acts per turn. If you have multiple effects that give you additional acts, you can pick only one such effect to benefit from each turn. You gain all the other benefits of the spell.</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Revised Action Economy",globalNavPath=[{ href: '/pathfinderRPG/prd/unchained/gameplay/index.html', name: 'Pathfinder Unchained: Gameplay' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

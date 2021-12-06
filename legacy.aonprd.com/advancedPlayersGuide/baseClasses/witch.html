@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Witch</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "witch.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "witch.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "witch.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "witch.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "witch.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "witch.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "witch.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "witch.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "witch.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "witch.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "witch.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "witch.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "witch.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "witch.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "witch.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "witch.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "witch.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "witch.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "witch.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "witch.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "witch.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id="witch" class="monster-header">Witch</h1>
+
+	<p>Some gain power through study, some through devotion, others through blood, but the witch gains power from her communion with the unknown. Generally feared and misunderstood, the witch draws her magic from a pact made with an otherworldly power. Communing with that source, using her familiar as a conduit, the witch gains not only a host of spells, but a number of strange abilities known as hexes. As a witch grows in power, she might learn about the source of her magic, but some remain blissfully unaware. Some are even afraid of that source, fearful of what it might be or where its true purposes lie.</p>
+
+	<p id="role"><b>Role</b>: While many witches are recluses, living on the edge of civilization, some live within society, openly or in hiding. The blend of witches' spells makes them adept at filling a number of different roles, from seer to healer, and their hexes grant them a number of abilities that are useful in a fight. Some witches travel about, seeking greater knowledge and better understanding of the mysterious powers that guide them.</p>
+
+	<p id="alignment"><b>Alignment</b>: Any.</p>
+
+	<p id="hit-die"><b>Hit Die</b>: d6.</p>
+
+<h1 id="class-skills">Class Skills</h1>
+	<p>The witch's class skills are <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (Int), <a href="../../coreRulebook/skills/fly.html#fly">Fly</a> (Dex), <a href="../../coreRulebook/skills/heal.html#heal">Heal</a> (Wis), <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> (Cha), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana) (Int), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (history) (Int), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (nature) (Int), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (planes) (Int), <a href="../../coreRulebook/skills/profession.html#profession">Profession</a> (Wis), <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> (Int), and <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> (Cha). </p>
+
+	<p id="skill-ranks-per-level"><b>Skill Ranks per Level</b>: 2 + Int modifier.</p>
+
+	<div class="table">
+		<table id="table-2-10:-witch">
+			<caption>Table:  Witch</caption>
+			<thead>
+				<tr>
+					<th rowspan="2">Level</th>
+					<th rowspan="2">Base Attack Bonus</th>
+					<th rowspan="2">Fort Save</th>
+					<th rowspan="2">Ref Save</th>
+					<th rowspan="2">Will Save</th>
+					<th rowspan="2">Special</th>
+					<th colspan="10">Spells per Day</th>
+				</tr>
+				<tr>
+					<th>0</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th><th>6th</th><th>7th</th><th>8th</th><th>9th</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td>1st</td><td>+0</td><td>+0</td><td>+0</td><td>+2</td><td style="white-space: normal;"><a href="witch.html#cantrips">Cantrips</a>, <a href="witch.html#hex">hex</a>, <a href="witch.html#witch's-familiar">witch's familiar</a></td><td>3</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+				<tr><td>2nd</td><td>+1</td><td>+0</td><td>+0</td><td>+3</td><td style="white-space: normal;"><a href="witch.html#hex">Hex</a></td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+				<tr><td>3rd</td><td>+1</td><td>+1</td><td>+1</td><td>+3</td><td style="white-space: normal;"></td><td>4</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+				<tr><td>4th</td><td>+2</td><td>+1</td><td>+1</td><td>+4</td><td style="white-space: normal;"><a href="witch.html#hex">Hex</a></td><td>4</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+				<tr><td>5th</td><td>+2</td><td>+1</td><td>+1</td><td>+4</td><td style="white-space: normal;"></td><td>4</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+				<tr><td>6th</td><td>+3</td><td>+2</td><td>+2</td><td>+5</td><td style="white-space: normal;"><a href="witch.html#hex">Hex</a></td><td>4</td><td>3</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+				<tr><td>7th</td><td>+3</td><td>+2</td><td>+2</td><td>+5</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+				<tr><td>8th</td><td>+4</td><td>+2</td><td>+2</td><td>+6</td><td style="white-space: normal;"><a href="witch.html#hex">Hex</a></td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+				<tr><td>9th</td><td>+4</td><td>+3</td><td>+3</td><td>+6</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+				<tr><td>10th</td><td>+5</td><td>+3</td><td>+3</td><td>+7</td><td style="white-space: normal;"><a href="witch.html#hex">Hex</a>, <a href="witch.html#major-hex">major hex</a></td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+				<tr><td>11th</td><td>+5</td><td>+3</td><td>+3</td><td>+7</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+				<tr><td>12th</td><td>+6/+1</td><td>+4</td><td>+4</td><td>+8</td><td style="white-space: normal;"><a href="witch.html#hex">Hex</a></td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+				<tr><td>13th</td><td>+6/+1</td><td>+4</td><td>+4</td><td>+8</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td></tr>
+				<tr><td>14th</td><td>+7/+2</td><td>+4</td><td>+4</td><td>+9</td><td style="white-space: normal;"><a href="witch.html#hex">Hex</a></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td></tr>
+				<tr><td>15th</td><td>+7/+2</td><td>+5</td><td>+5</td><td>+9</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td></tr>
+				<tr><td>16th</td><td>+8/+3</td><td>+5</td><td>+5</td><td>+10</td><td style="white-space: normal;"><a href="witch.html#hex">Hex</a></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>&mdash;</td></tr>
+				<tr><td>17th</td><td>+8/+3</td><td>+5</td><td>+5</td><td>+10</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td></tr>
+				<tr><td>18th</td><td>+9/+4</td><td>+6</td><td>+6</td><td>+11</td><td style="white-space: normal;"><a href="witch.html#hex">Hex</a>, <a href="witch.html#grand-hex">grand hex</a></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td></tr>
+				<tr><td>19th</td><td>+9/+4</td><td>+6</td><td>+6</td><td>+11</td><td style="white-space: normal;"></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td></tr>
+				<tr><td>20th</td><td>+10/+5</td><td>+6</td><td>+6</td><td>+12</td><td style="white-space: normal;"><a href="witch.html#hex">Hex</a></td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td></tr>
+			</tbody>
+		</table>
+	</div>
+
+<h1 id="class-features">Class Features</h1>
+
+<p>The following are the class features of the witch.</p>
+
+<p id="weapon-and-armor-proficiency"><b>Weapon and Armor Proficiency</b>: Witches are proficient with all simple weapons. They are not proficient with any type of armor or shield. Armor interferes with a witch's gestures, which can cause her spells with somatic components to fail.</p>
+
+<p id="spells"><b>Spells</b>: A witch casts arcane spells drawn from the witch spell list. A witch must choose and prepare her spells ahead of time.</p>
+	<p>To learn or cast a spell, a witch must have an Intelligence score equal to at least 10 + the spell level. The Difficulty Class for a saving throw against a witch's spell is 10 + the spell level + the witch's Intelligence modifier.</p>
+	<p>A witch can cast only a certain number of spells of each spell level per day. Her base daily spell allotment is given on Table 2&ndash;10. In addition, she receives bonus spells per day if she has a high Intelligence score (see Table 1&ndash;3 of the <i>Pathfinder RPG Core Rulebook</i>).</p>
+	<p>A witch may know any number of spells. She must choose and prepare her spells ahead of time by getting 8 hours of sleep and spending 1 hour communing with her familiar. While communing, the witch decides which spells to prepare.</p>
+
+<p id="cantrips"><b>Cantrips</b>: Witches can prepare a number of cantrips, or 0-level spells, each day, as noted on Table 2&ndash;10 under “Spells per Day.” These spells are cast like any other spell, but they are not expended when cast and may be used again. Cantrips prepared using other spell slots, due to metamagic feats for example, are expended normally.</p>
+
+<p id="hex"><b>Hex</b>: Witches learn a number of magic tricks, called hexes, that grant them powers or weaken foes. At 1st level, a witch gains one hex of her choice. She gains an additional hex at 2nd level and for every 2 levels attained after 2nd level, as noted on Table 2&ndash;10. A witch cannot select an individual hex more than once. </p>
+	<p>Unless otherwise noted, using a hex is a standard action that does not provoke an attack of opportunity. The save to resist a hex is equal to 10 + 1/2 the witch's level + the witch's Intelligence modifier.</p>
+
+	<p id="blight"><i>Blight (Su)</i>: The witch can curse an animal, plant creature, or plot of land, causing it to wither and die. Blighting an area takes 1 round, during which time the witch and her familiar must be in contact with the target. If it's used on a plot of land, the land begins to wither the following day, and over the next week all plants in the area die. Nothing will grow in that area so long as the curse persists. A witch can affect an area with a radius equal to her class level &times; 10 feet. Blighting a creature is a standard action that requires a melee touch attack. If used on a creature of the animal or plant type, the creature gains the following curse: Blight Hex&mdash;<i>type</i> curse; <i>save </i>Will negates; <i>frequency</i> 1/day; <i>effect</i> 1 Con damage. Both types of curse can be removed with a <i><a href="../../coreRulebook/spells/removeCurse.html#remove-curse">remove curse</a></i> or similar magic, using the save DC as the DC to remove the curse. A witch can only have one blight in effect at a time. If another blight hex is made, the first immediately ends.</p>
+
+	<p id="cackle"><i>Cackle (Su)</i>: A witch can cackle madly as a move action. Any creature that is within 30 feet that is under the effects of an agony hex, charm hex, evil eye hex, fortune hex, or misfortune hex caused by the witch has the duration of that hex extended by 1 round. </p>
+
+	<p id="cauldron"><i>Cauldron (Ex)</i>: The witch receives <a href="../../coreRulebook/feats.html#brew-potion">Brew Potion</a> as a bonus feat and a +4 insight bonus on <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (alchemy) skill checks.</p>
+
+	<p id="charm"><i>Charm (Su)</i>: A witch can charm an animal or humanoid creature within 30 feet by beckoning and speaking soothing words. This improves the attitude of an animal or humanoid creature by 1 step, as if the witch had successfully used the <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> skill. The effect lasts for a number of rounds equal to the Witch's Intelligence modifier. A Will save negates this effect. Whether or not the save is successful, a creature cannot be the target of this hex again for 1 day. At 8th level, this effect improves the attitude of the target creature by 2 steps. This is a mind-affecting charm effect.</p>
+
+	<p id="coven"><i>Coven (Ex)</i>: The witch counts as a hag for the purpose of joining a hag's coven. The coven must contain at least one hag. In addition, whenever the witch with this hex is within 30 feet of another witch with this hex, she can use the aid another action to grant a +1 bonus to the other witch's caster level for 1 round. This bonus applies to the witch's spells and all of her hexes.</p>
+
+	<p id="disguise"><i>Disguise (Su)</i>: A witch can change her appearance for a number of hours equal to her class level, as if using <i><a href="../../coreRulebook/spells/disguiseSelf.html#disguise-self">disguise self</a></i>. These hours do not need to be consecutive, but they must be spent in 1-hour increments.</p>
+
+	<p id="evil-eye"><i>Evil Eye (Su)</i>: The witch can cause doubt to creep into the mind of a foe within 30 feet that she can see. The target takes a &ndash;2 penalty on one of the following (witch's choice): AC, ability checks, attack rolls, saving throws, or skill checks. This hex lasts for a number of rounds equal to 3 + the witch's Intelligence modifier. A Will save reduces this to just 1 round. This is a mind-affecting effect. At 8th level the penalty increases to &ndash;4.</p>
+
+	<p id="flight"><i>Flight (Su)</i>: The witch grows lighter as she gains power, eventually gaining the ability to fly. At 1st level, the witch can use <i><a href="../../coreRulebook/spells/featherFall.html#feather-fall">feather fall</a></i> at will and gains a +4 racial bonus on <a href="../../coreRulebook/skills/swim.html#swim">Swim</a> checks. At 3rd level, she can cast <i><a href="../../coreRulebook/spells/levitate.html#levitate">levitate</a></i> once per day. At 5th level, she can fly, as per the spell, for a number of minutes per day equal to her level. These minutes do not need to be consecutive, but they must be spent in 1-minute increments. This hex only affects the witch.</p>
+
+	<p id="fortune"><i>Fortune (Su)</i>: The witch can grant a creature within 30 feet a bit of good luck for 1 round. The target can call upon this good luck once per round, allowing him to reroll any ability check, attack roll, saving throw, or skill check, taking the better result. He must decide to use this ability before the first roll is made. At 8th level and 16th level, the duration of this hex is extended by 1 round. Once a creature has benefited from the fortune hex, it cannot benefit from it again for 24 hours.</p>
+
+	<p id="healing"><i>Healing (Su)</i>: A witch can soothe the wounds of those she touches. This acts as a <i><a href="../../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a></i> spell, using the witch's caster level. Once a creature has benefited from the healing hex, it cannot benefit from it again for 24 hours. At 5th level, this hex acts like <i><a href="../../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a></i>.</p>
+
+	<p id="misfortune"><i>Misfortune (Su)</i>: The witch can cause a creature within 30 feet to suffer grave misfortune for 1 round. Anytime the creature makes an ability check, attack roll, saving throw, or skill check, it must roll twice and take the worse result. A Will save negates this hex. At 8th level and 16th level, the duration of this hex is extended by 1 round. This hex affects all rolls the target must make while it lasts. Whether or not the save is successful, a creature cannot be the target of this hex again for 1 day.</p>
+
+	<p id="slumber"><i>Slumber (Su):</i> A witch can cause a creature within 30 feet to fall into a deep, magical sleep, as per the spell <i><a href="../../coreRulebook/spells/sleep.html#sleep">sleep</a></i>. The creature receives a Will save to negate the effect. If the save fails, the creature falls asleep for a number of rounds equal to the witch's level. This hex can affect a creature of any HD. The creature will not wake due to noise or light, but others can rouse it with a standard action. This hex ends immediately if the creature takes damage. Whether or not the save is successful, a creature cannot be the target of this hex again for 1 day.</p>
+
+	<p id="tongues"><i>Tongues (Su)</i>: A witch with this hex can understand any spoken language for a number of minutes per day equal to her level, as <i><a href="../../coreRulebook/spells/comprehendLanguages.html#comprehend-languages">comprehend languages</a>. </i>This duration does not need to be consecutive, but it must be spent in 1-minute increments. At 5th level, a witch can use this ability to speak any language, as per <i><a href="../../coreRulebook/spells/tongues.html#tongues">tongues</a></i>.</p>
+
+	<p id="ward"><i>Ward (Su)</i>: A witch can use this hex to place a protective ward over one creature. The warded creature receives a +2 deflection bonus to AC and a +2 resistance bonus on saving throws. This ward lasts until the warded creature is hit or fails a saving throw. A witch knows when a warded creature is no longer protected. A witch can have only one ward active at a time. If the witch uses this ability again, the previous ward immediately ends. A witch cannot use this ability on herself. At 8th level and 16th level, the bonuses provided by this ward increase by +1.</p>
+
+<p id = "witch's-familiar"><b>Witch's Familiar (Ex)</b>: At 1st level, a witch forms a close bond with a familiar, a creature that teaches her magic and helps to guide her along her path. Familiars also aid a witch by granting her skill bonuses, additional spells, and help with some types of magic. This functions like the wizard's arcane bond class feature, except as noted in the <a href="witch.html#witchs-familiar">Witch's Familiar</a> section.</p>
+
+	<p>A witch must commune with her familiar each day to prepare her spells. Familiars store all of the spells that a witch knows, and a witch cannot prepare a spell that is not stored by her familiar. A witch's familiar begins play storing all of the 0-level witch spells plus three 1st-level spells of the witch's choice. The witch also selects a number of additional 1st-level spells equal to her Intelligence modifier to store in her familiar. At each new witch level, she adds two new spells of any spell level or levels that she can cast (based on her new witch level) to her familiar. A witch can also add additional spells to her familiar through a special ritual (see sidebar).</p>
+
+<p id="major-hex"><b>Major Hex</b>: Starting at 10th level, and every two levels thereafter, a witch can choose one of the following major hexes whenever she could select a new hex.</p>
+
+	<p id="agony"><i>Agony (Su)</i>: With a quick incantation, a witch can place this hex on one creature within 60 feet, causing them to suffer intense pain. The target is nauseated for a number of rounds equal to the witch's level. A Fortitude save negates this effect. If the saving throw is failed, the target can attempt a new save each round to end the effect. Whether or not the save is successful, a creature cannot be the target of this hex again for 1 day.</p>
+
+	<p id="hag's-eye"><i>Hag's Eye (Su)</i>: A witch with this hex can create a magic sensor that she can see through. This functions as per the spell <i><a href="../../coreRulebook/spells/arcaneEye.html#arcane-eye">arcane eye</a></i>. If the witch has the coven hex, all other witches within 10 feet who also have the coven hex can see through this sensor as well, although the witch that created it still controls it. The witch can use this eye for a number of minutes per day equal to her level. These minutes do not need to be consecutive, but they must be spent in 1-minute increments.</p>
+
+	<p id="major-healing"><i>Major Healing (Su)</i>: By calling upon eerie powers, the witch's touch can mend even the most terrible wounds of those she touches. This acts as <i><a href="../../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds">cure serious wounds</a></i>, using the witch's caster level. Once a creature has benefited from the major healing hex, it cannot benefit from it again for 24 hours. At 15th level, this hex acts like <i><a href="../../coreRulebook/spells/cureCriticalWounds.html#cure-critical-wounds">cure critical wounds</a></i>.</p>
+
+	<p id="nightmares"><i>Nightmares (Su)</i>: Calling upon fell powers, a witch can place a hex on a creature within 60 feet that causes its sleep to be tormented by terrible nightmares. This functions as the spell <i><a href="../../coreRulebook/spells/nightmare.html#nightmare">nightmare</a></i> each time the affected creature attempts to rest. A Will save negates this effect. If the save is failed, the target must make a new save each night or be unable to rest. </p>
+
+	<p id="retribution"><i>Retribution (Su)</i>: A witch can place a retribution hex on a creature within 60 feet, causing terrible wounds to open across the target's flesh whenever it deals damage to another creature in melee. Immediately after the hexed creature deals damage in melee, it takes half that damage (round down). This damage bypasses any resistances, immunities, or damage reduction the creature possesses. This effect lasts for a number of rounds equal to the witch's Intelligence modifier. A Will save negates this effect.</p>
+
+	<p id="vision"><i>Vision (Su)</i>: A witch with the vision hex can grant a glimpse of the future to a creature touched. Granting a vision takes 1 minute, during which time the witch and the target must remain in contact with one another. At the end of this time, the subject receives a brief image of the future, usually no more than 1 year from the time of the vision, subject to GM discretion. This is only one possible version of the future, making such visions unreliable at best. Most visions are slanted toward the alignment of the witch that granted them. For example, the visions granted by a chaotic evil witch often show scenes of death and destruction, while those of a neutral good witch tend to be of joyous events or occasions. A creature cannot be subject to another vision until the current vision has either come to pass or been prevented. A witch cannot use this ability on herself. Unwilling creatures receive a Will save to negate the vision. </p>
+
+	<p id="waxen-image"><i>Waxen Image (Su)</i>: The witch can spend a full-round action to create a crude and unnerving wax duplicate of a creature she can see within 30 feet. Once the image is complete, the subject must make a Will save. If the subject fails, the witch gains a small measure of control over the creature. Whenever she exercises this control, the creature receives a new Will save to end the effect. This effect occurs on the witch's turn and does not impede the creature's actions on its turn. The witch can use the waxen image a number of times equal to her Intelligence modifier before it melts. As a standard action, the witch can cause the subject to do any one of the following things: move up to the creature's speed in any direction, attack itself once with any weapon in hand (this attack automatically hits), lay down on the ground, or drop anything held. Alternatively, she can spend one of her uses to simply torture the image, causing the creature to be both sickened and staggered on its turn. As soon as the creature has succeeded on a saving throw against this effect, it is immune to it for 24 hours. The is an enchantment (compulsion) effect. </p>
+
+	<p id="weather-control"><i>Weather Control (Su)</i>: A witch with this hex can use <i><a href="../../coreRulebook/spells/controlWeather.html#control-weather">control weather</a></i> once per day, but creating the weather takes 1 full hour of chanting, dancing, and communing with her familiar.</p>
+
+<p id="grand-hex"><b>Grand Hex</b>: Starting at 18th level, and every two levels thereafter, a witch can choose one of the following grand hexes whenever she could select a new hex.</p>
+
+	<p id="death-curse"><i>Death Curse (Su)</i>: This powerful hex seizes a creature's heart, causing death within just a few moments. This hex has a range of 30 feet. The hexed creature receives a Will save to negate the effect. If this save is failed, the creature becomes fatigued the first round of the hex. On the second round of the hex, the creature becomes exhausted. On the third round, the creature dies unless it succeeds at a Fort save. Creatures that fail the first save but succeed at the second remain exhausted and take 4d6 points of damage + 1 point of damage per level of the witch. Slaying the witch that hexed the creature ends the effect, but any fatigue or exhaustion remains. Whether or not the saves are successful, a creature cannot be the target of this hex again for 1 day.</p>
+
+	<p id="eternal-slumber"><i>Eternal Slumber (Su)</i>: The witch can touch a creature, causing it to drift off into a permanent slumber. The creature receives a Will save to negate this effect. If the save fails, the creature falls asleep and cannot be woken. The effect can only be removed with a <i><a href="../../coreRulebook/spells/wish.html#wish">wish</a></i> or similar magic, although slaying the witch ends the effect. The witch can use this ability to poison food or drink, causing those who ingest it to make a save or fall into an eternal slumber. She can only have one such dose of poison at any one time, and it loses its potency after 1 minute if not consumed. Whether or not the save is successful, a creature cannot be the target of this hex again for 1 day. </p>
+
+	<p id="forced-reincarnation"><i>Forced Reincarnation (Su)</i>: The witch causes a creature within 30 feet to die and be immediately <i>reincarnated</i> into a new body. A Will save negates this effect. Those that fail are slain and immediately brought back to life with the spell <i><a href="../../coreRulebook/spells/reincarnate.html#reincarnate">reincarnate</a></i>. Whether or not the save is successful, a creature cannot be the target of this hex again for 1 day.</p>
+
+	<p id="life-giver"><i>Life Giver (Su)</i>: Once per day the witch can, as a full round action, touch a dead creature and bring it back to life. This functions as <i><a href="../../coreRulebook/spells/resurrection.html#resurrection">resurrection</a></i>, but it does not require a material component.</p>
+
+	<p id="natural-disaster"><i>Natural Disaster (Su)</i>: A witch using this hex calls down the forces of nature to wreak havoc on an area. This functions as a <i><a href="../../coreRulebook/spells/stormOfVengeance.html#storm-of-vengeance">storm of vengeance</a> </i>combined with an <i><a href="../../coreRulebook/spells/earthquake.html#earthquake">earthquake</a></i> that occurs on the second round of the effect (while acid is raining from the sky). A witch must concentrate for the duration of this effect. If disrupted, the effect immediately ends. A witch can only use this ability once per day.</p>
+
+<h1 id="witchs-familiar">Witch's Familiar</h1>
+
+	<p>By forging strange bonds with unnameable beings, witches gain the service of a mystical advisor, a familiar to both serve her and reveal to her secrets unknown to most mortals. A familiar is an animal chosen by a witch to aid her in her spellcasting and grant her special powers. This uses the same rules as the wizard's <a href="../../coreRulebook/classes/wizard.html#arcane-bond">arcane bond</a> class feature, except as noted below. A witch uses her level as her effective wizard level when determining the abilities of her familiar. A witch can choose any of the familiars available to a wizard in addition to the new familiars presented here. </p>
+
+	<p>Levels of different classes that are entitled to familiars stack for the purpose of determining any familiar abilities that depend on the witch's level. If a witch possesses such levels, her familiar always uses the witch rules for familiars, not those provided by other classes, such as wizards or sorcerers with the arcane bloodline. A witch's familiar only stores witch spells. All other spells are stored normally, as noted in their class features.</p>
+
+	<p>If a familiar is lost or dies, it can be replaced 1 day later through a special ritual that costs 500 gp per witch level. The ritual takes 8 hours to complete. A new familiar begins knowing all of the 0-level spells plus two spells of every level the witch is able to cast. These are in addition to any bonus spells known by the familiar based on the witch's level and her patron (see patron spells).</p>
+
+	<p id="store-spells"><i>Store Spells</i>: Starting at 1st level, a witch's familiar stores all of the spells that the witch knows. This does not allow the familiar to cast these spells or use spell-trigger or spell completion magic items. Starting at 2nd level, and every two levels thereafter, a witch's familiar adds new bonus spells to the witch's spell list based on her patron. These spells are automatically stored by the familiar and can be prepared as normal once they are gained.</p>
+
+	<p id="deliver-touch-spells"><i>Deliver Touch Spells (Su)</i>: If a witch is 3rd level or higher, her familiar can deliver touch spells or hexes for her. If the witch and the familiar are in contact at the time the witch casts a touch spell, she can designate her familiar as the “toucher.” The familiar can then deliver the touch spell just as the witch would. As usual, if the witch casts another spell before the touch is delivered, the touch spell dissipates. If the witch activates a hex, her familiar can be used to make the touch. She does not have to be in contact with the familiar to use this ability.</p>
+
+	<h2 id="adding-spells-to-a-witchs-familiar">Adding Spells to a Witch's Familiar</h2>
+
+		<p>Witches can add new spells to their familiars through several methods. A witch can only add spells to her familiar if those spells belong to the witch's spell list.</p>
+
+		<p><strong><a href="witch.html#spells">Spells</a> Gained at a New Level</strong>: A <a href="witch.html#witchs-familiar">witch's familiar</a> learns a certain amount of lore and magic as the witch adventures. Whenever a witch gains a level, she may add two <a href="witch.html#spells">spells</a> from the witch spell list to her familiar. The two free <a href="witch.html#spells">spells</a> must be of spell levels she can cast.</p>
+
+		<p><strong>Familiar Teaching Familiar</strong>: A <a href="witch.html#witchs-familiar">witch's familiar</a> can learn <a href="witch.html#spells">spells</a> from another <a href="witch.html#witchs-familiar">witch's familiar</a>. To accomplish this, the familiars must spend one hour per level of the spell being taught in communion with one another. At the end of this time, the witch whose familiar is learning a spell must make a <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> check (DC 15 + spell level). If the check succeeds, the familiar has learned the spell and the witch may utilize it the next time she prepares <a href="witch.html#spells">spells</a>. If the check fails, the familiar has failed to learn the spell and cannot try to learn that spell again until the witch has gained another rank in <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a>. Most witches require a spell of equal or greater level in return for this service. If a familiar belongs to a witch that has died, it only retains its knowledge of <a href="witch.html#spells">spells</a> for 24 hours, during which time it is possible to coerce or bribe the familiar into teaching its <a href="witch.html#spells">spells</a> to another, subject to GM discretion.</p>
+
+		<p><strong>Learn from a Scroll</strong>: A witch can use a scroll to teach her familiar a new spell. This process takes 1 hour per level of the spell to be learned, during which time the scroll is burned and its ashes used to create a special brew or powder that is consumed by the familiar. This process destroys the scroll. At the end of this time, the witch must make a <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> check (DC 15 + spell level). If the check fails, the process went awry in some way and the spell is not learned, although the scroll is still consumed.</p>
+
+<h1 id="new-familiars">New Familiars</h1>
+
+	<p>In addition to the familiars presented in the <i>Pathfinder RPG Core Rulebook</i>, witches might select any of the following animals as their familiar. Sorcerers and wizards might also adopt these new familiars, utilizing the same rules as for any other familiar. </p>
+
+	<p>These familiars make use these statistics: </i>the <a href="../../coreRulebook/bestiary/centipede.html">house centipede</a>, <a href="../../coreRulebook/bestiary/crab.html#crab-giant">king crab</a>, <a href="../../ultimateMagic/magic/newFamiliars.html#greensting-scorpion-cr-1/4">greensting scorpion</a>, fox (<a href="../../coreRulebook/bestiary/dog.html#dog">dog</a> with the <a href="../../coreRulebook/bestiary/monsterAdvancement.html#young-creature">young template</a>), octopus (<a href="../../coreRulebook/bestiary/octopus.html#octopus">octopus</a> with the <a href="../../coreRulebook/bestiary/monsterAdvancement.html#young-creature">young template</a>), and <a href="../../coreRulebook/bestiary/spider.html#spider-giant">scarlet spider</a>.</p>
+
+	<table>
+	<thead>
+		<tr><th>Familiar</th><th>Special Ability</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>Centipede</td><td>Master gains a +3 bonus on <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> checks</td></tr>
+		<tr><td>Crab</td><td>Master gains a +2 bonus on grapple checks</td></tr>
+		<tr><td>Fox</td><td>Master gains a +2 bonus on Reflex saves</td></tr>
+		<tr><td>Octopus</td><td>Master gains a +3 bonus on <a href="../../coreRulebook/skills/swim.html#swim">Swim</a> checks</td></tr>
+		<tr><td>Scorpion</td><td>Master gains a +2 bonus on initiative rolls</td></tr>
+		<tr><td>Spider</td><td>Master gains a +3 bonus on <a href="../../coreRulebook/skills/climb.html#climb">Climb</a> checks</td></tr>
+	</tbody>
+	</table>
+
+<h1 id="patron-spells">Patron Spells</h1>
+<p>At 1st level, when a witch gains her familiar, she must also select a patron. This patron is a vague and mysterious force, granting the witch power for reasons that she might not entirely understand. While these forces need not be named, they typically hold influence over one of the following forces. At 2nd level, and every two levels thereafter, a witch's patron adds new spells to a witch's list of spells known. These spells are also automatically added to the list of spells stored by the familiar. Spells marked with an asterisk (*) appear in Chapter 5 of this book. The spells gained depend upon the patron chosen. Each patron is listed by its theme. Its actual name is up to the GM and the witch to decide.</p>
+<p id="agility"><b>Agility</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/jump.html#jump">jump</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/catSGrace.html#cat-s-grace">cat's grace</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/haste.html#haste">haste</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/freedomOfMovement.html#freedom-of-movement">freedom of movement</a></i>, 10th&mdash;<i><a href="../../coreRulebook/spells/polymorph.html#polymorph">polymorph</a></i>, 12th&mdash;<i><a href="../../coreRulebook/spells/catSGrace.html#cat-s-grace-mass">cat's <a href="../spells/grace.html#grace">grace</a> (mass)</a></i>, 14th&mdash;<i><a href="../../coreRulebook/spells/etherealJaunt.html#ethereal-jaunt">ethereal jaunt</a></i>, 16th&mdash;<i><a href="../../coreRulebook/spells/animalShapes.html#animal-shapes">animal shapes</a></i>, 18th&mdash;<i><a href="../../coreRulebook/spells/shapechange.html#shapechange">shapechange</a></i>.</p>
+<p id="animals"><b>Animals</b>: 2nd&mdash;<i>charm animals</i>, 4th&mdash;<i><a href="../../coreRulebook/spells/speakWithAnimals.html#speak-with-animals">speak with animals</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/dominateAnimal.html#dominate-animal">dominate animal</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-iv">summon nature's ally IV</a></i>, 10th&mdash;<i><a href="../../coreRulebook/spells/animalGrowth.html#animal-growth">animal growth</a></i>, 12th&mdash;<i><a href="../../coreRulebook/spells/antilifeShell.html#antilife-shell">antilife shell</a></i>, 14th&mdash;<i><a href="../../coreRulebook/spells/beastShape.html#beast-shape-iv">beast shape IV</a></i>, 16th&mdash;<i><a href="../../coreRulebook/spells/animalShapes.html#animal-shapes">animal shapes</a></i>, 18th&mdash;<i><a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-ix">summon nature's ally IX</a></i>.</p>
+<p id="deception"><b>Deception</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/ventriloquism.html#ventriloquism">ventriloquism</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/blink.html#blink">blink</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/confusion.html#confusion">confusion</a></i>, 10th&mdash;<i><a href="../../coreRulebook/spells/passwall.html#passwall">passwall</a></i>, 12th&mdash;<i><a href="../../coreRulebook/spells/programmedImage.html#programmed-image">programmed image</a></i>, 14th&mdash;<i><a href="../../coreRulebook/spells/invisibility.html#invisibility-mass">invisibility (mass)</a></i>, 16th&mdash;<i><a href="../../coreRulebook/spells/scintillatingPattern.html#scintillating-pattern">scintillating pattern</a></i>, 18th&mdash;<i><a href="../../coreRulebook/spells/timeStop.html#time-stop">time stop</a></i>.</p>
+<p id="elements"><b>Elements</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/shockingGrasp.html#shocking-grasp">shocking grasp</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/flamingSphere.html#flaming-sphere">flaming sphere</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/fireball.html#fireball">fireball</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/wallOfIce.html#wall-of-ice">wall of ice</a></i>, 10th&mdash;<i><a href="../../coreRulebook/spells/flameStrike.html#flame-strike">flame strike</a></i>, 12th&mdash;<i><a href="../../coreRulebook/spells/freezingSphere.html#freezing-sphere">freezing sphere</a></i>, 14th&mdash;<i><a href="../spells/vortex.html#vortex">vortex*</a></i>, 16th&mdash;<i><a href="../../coreRulebook/spells/fireStorm.html#fire-storm">fire storm</a></i>, 18th&mdash;<i><a href="../../coreRulebook/spells/meteorSwarm.html#meteor-swarm">meteor swarm</a></i>.</p>
+<p id="endurance"><b><a href="../../coreRulebook/feats.html#endurance">Endurance</a></b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/endureElements.html#endure-elements">endure elements</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/bearSEndurance.html#bear-s-endurance">bear's endurance</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/protectionFromEnergy.html#protection-from-energy">protection from energy</a>,</i> 8th&mdash;<i><a href="../../coreRulebook/spells/spellImmunity.html#spell-immunity">spell immunity</a></i>, 10th&mdash;<i><a href="../../coreRulebook/magicItems/armor.html#armor-spell-resistance">spell resistance</a></i>, 12th&mdash;<i><a href="../../coreRulebook/spells/bearSEndurance.html#bear-s-endurance-mass">bear's endurance (mass)</a></i>, 14th&mdash;<i><a href="../../coreRulebook/spells/restoration.html#restoration-greater">restoration (greater)</a></i>, 16th&mdash;<i><a href="../../coreRulebook/spells/ironBody.html#iron-body">iron body</a>, </i>18th&mdash;<i><a href="../../coreRulebook/spells/miracle.html#miracle">miracle</a></i>.</p>
+<p id="plague"><b>Plague</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/detectUndead.html#detect-undead">detect undead</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/commandUndead.html#command-undead">command undead</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/contagion.html#contagion">contagion</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/animateDead.html#animate-dead">animate dead</a></i>, 10th&mdash;<i><a href="../../coreRulebook/spells/giantVermin.html#giant-vermin">giant vermin</a></i>, 12th&mdash;<i><a href="../../coreRulebook/spells/createUndead.html#create-undead">create undead</a></i>, 14th&mdash;<i><a href="../../coreRulebook/spells/controlUndead.html#control-undead">control undead</a></i>, 16th&mdash;<i><a href="../../coreRulebook/spells/createGreaterUndead.html#create-greater-undead">create greater undead</a></i>, 18th&mdash;<i><a href="../../coreRulebook/spells/energyDrain.html#energy-drain">energy drain</a></i>.</p>
+<p id="shadow"><b>Shadow</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/silentImage.html#silent-image">silent image</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/darkness.html#darkness">darkness</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/deeperDarkness.html#deeper-darkness">deeper darkness</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/shadowConjuration.html#shadow-conjuration">shadow conjuration</a></i>, 10th&mdash;<i><a href="../../coreRulebook/spells/shadowEvocation.html#shadow-evocation">shadow evocation</a></i>, 12th&mdash;<i><a href="../../coreRulebook/spells/shadowWalk.html#shadow-walk">shadow walk</a></i>, 14th&mdash;<i><a href="../../coreRulebook/spells/shadowConjuration.html#shadow-conjuration-greater">shadow conjuration (greater)</a></i>, 16th&mdash;<i><a href="../../coreRulebook/spells/shadowEvocation.html#shadow-evocation-greater">shadow evocation (greater)</a></i>, 18th&mdash;<i><a href="../../coreRulebook/spells/shades.html#shades">shades</a></i>.</p>
+<p id="strength"><b>Strength</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/divineFavor.html#divine-favor">divine favor</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/magicWeapon.html#magic-weapon-greater">greater magic weapon</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/divinePower.html#divine-power">divine power</a></i>, 10th&mdash;<i><a href="../../coreRulebook/spells/righteousMight.html#righteous-might">righteous might</a></i>, 12th&mdash;<i><a href="../../coreRulebook/spells/bullSStrength.html#bull-s-strength-mass">bull's strength (mass)</a></i>, 14th&mdash;<i><a href="../../coreRulebook/spells/giantForm.html#giant-form-i">giant form I</a></i>, 16th&mdash;<i><a href="../../coreRulebook/spells/giantForm.html#giant-form-ii">giant form II</a></i>, 18th&mdash;<i><a href="../../coreRulebook/spells/shapechange.html#shapechange">shapechange</a></i>.</p>
+<p id="transformation"><b>Transformation</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/jump.html#jump">jump</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/bearSEndurance.html#bear-s-endurance">bear's endurance</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/beastShape.html#beast-shape-i">beast shape I</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/beastShape.html#beast-shape-ii">beast shape II</a></i>, 10th&mdash;<i><a href="../../coreRulebook/spells/beastShape.html#beast-shape-iii">beast shape III</a></i>, 12th&mdash;<i><a href="../../coreRulebook/spells/formOfTheDragon.html#form-of-the-dragon-i">form of the dragon I</a></i>, 14th&mdash;<i><a href="../../coreRulebook/spells/formOfTheDragon.html#form-of-the-dragon-ii">form of the dragon II</a></i>, 16th&mdash;<i><a href="../../coreRulebook/spells/formOfTheDragon.html#form-of-the-dragon-iii">form of the dragon III</a></i>, 18th&mdash;<i><a href="../../coreRulebook/spells/shapechange.html#shapechange">shapechange</a></i>.</p>
+<p id="trickery"><b>Trickery</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/animateRope.html#animate-rope">animate rope</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/mirrorImage.html#mirror-image">mirror image</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/majorImage.html#major-image">major image</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/hallucinatoryTerrain.html#hallucinatory-terrain">hallucinatory terrain</a></i>, 10th&mdash;<i><a href="../../coreRulebook/spells/mirageArcana.html#mirage-arcana">mirage arcana</a></i>, 12th&mdash;<i><a href="../../coreRulebook/spells/mislead.html#mislead">mislead</a></i>, 14th&mdash;<i><a href="../../coreRulebook/spells/reverseGravity.html#reverse-gravity">reverse gravity</a></i>, 16th&mdash;<i><a href="../../coreRulebook/spells/screen.html#screen">screen</a></i>, 18th&mdash;<i><a href="../../coreRulebook/spells/timeStop.html#time-stop">time stop</a></i>.</p>
+<p id="water"><b>Water</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/blessWater.html#bless-water">bless water</a>/curse water</i>, 4th&mdash;<i><a href="../spells/slipstream.html#slipstream">slipstream*</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/waterBreathing.html#water-breathing">water breathing</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/controlWater.html#control-water">control water</a></i>, 10th&mdash;<i><a href="../spells/geyser.html#geyser-">geyser*</a></i>, 12th&mdash;<i><a href="../../coreRulebook/spells/elementalBody.html#elemental-body-iii">elemental body III</a></i> (water only), <i>14th&mdash;<a href="../../coreRulebook/spells/elementalBody.html#elemental-body-iv">elemental body IV</a></i> (water only), 16th&mdash;<i><a href="../spells/seamantle.html#seamantle">seamantle*</a></i>, 18th&mdash;<i><a href="../spells/tsunami.html#tsunami">tsunami*</a></i>.</p>
+<p id="wisdom"><b>Wisdom</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/shieldOfFaith.html#shield-of-faith">shield of faith</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/owlSWisdom.html#owl-s-wisdom">owl's wisdom</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/magicVestment.html#magic-vestment">magic vestment</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/globeOfInvulnerability.html#globe-of-invulnerability-lesser">globe of <a href="../../coreRulebook/magicItems/armor.html#armor-invulnerability">invulnerability</a> (lesser)</a></i>, 10th&mdash;<i><a href="../../coreRulebook/spells/dream.html#dream">dream</a></i>, 12th&mdash;<i><a href="../../coreRulebook/spells/globeOfInvulnerability.html#globe-of-invulnerability">globe of invulnerability</a> (greater)</i>, 14th&mdash;<i><a href="../../coreRulebook/spells/spellTurning.html#spell-turning">spell turning</a></i>, 16th&mdash;<i><a href="../../coreRulebook/spells/protectionFromSpells.html#protection-from-spells">protection from spells</a></i>, 18th&mdash;<i><a href="../../coreRulebook/spells/mageSDisjunction.html#mage-s-disjunction">mage's disjunction</a></i>.</p>
+<h1 id="witch-spells">Witch Spells</h1>
+<p>Witches gain access to the following spells. While most of these spells are found in the <i>Core Rulebook</i>, those marked with an asterisk (*) appear in Chapter 5 of this book.</p>
+<p id="0-level-witch-spells"><b>0-Level Witch Spells</b>&mdash;<i> <a href="../../coreRulebook/spells/arcaneMark.html#arcane-mark">arcane mark</a>, <a href="../../coreRulebook/spells/bleed.html#bleed">bleed</a>, <a href="../../coreRulebook/spells/dancingLights.html#dancing-lights">dancing lights</a>, <a href="../../coreRulebook/spells/daze.html#daze">daze</a>, <a href="../../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a>, <a href="../../coreRulebook/spells/detectPoison.html#detect-poison">detect poison</a>, <a href="../../coreRulebook/spells/guidance.html#guidance">guidance</a>, <a href="../../coreRulebook/spells/light.html#light">light</a>, <a href="../../coreRulebook/spells/mending.html#mending">mending</a>, <a href="../../coreRulebook/spells/message.html#message">message</a>, <a href="../spells/putrefyFoodAndDrink.html#putrefy-food-and-drink">putrefy food and drink*</a>, <a href="../../coreRulebook/spells/readMagic.html#read-magic">read magic</a>, <a href="../../coreRulebook/spells/resistance.html#resistance">resistance</a>, <a href="../spells/spark.html#spark-">spark*</a>, <a href="../../coreRulebook/spells/stabilize.html#stabilize">stabilize</a>, <a href="../../coreRulebook/spells/touchOfFatigue.html#touch-of-fatigue">touch of fatigue</a>.</i></p>
+<p id="1st-level-witch-spells"><b>1st-Level Witch Spells</b>&mdash;<i><a href="../spells/beguilingGift.html#beguiling-gift">beguiling gift*</a>, <a href="../../coreRulebook/spells/burningHands.html#burning-hands">burning hands</a>, <a href="../../coreRulebook/spells/causeFear.html#cause-fear">cause fear</a>, <a href="../../coreRulebook/spells/charmPerson.html#charm-person">charm person</a>, <a href="../../coreRulebook/spells/chillTouch.html#chill-touch">chill touch</a>, <a href="../../coreRulebook/spells/command.html#command">command</a>, <a href="../../coreRulebook/spells/comprehendLanguages.html#comprehend-languages">comprehend languages</a>, <a href="../../coreRulebook/spells/cureLightWounds.html#cure-light-wounds">cure light wounds</a>, <a href="../spells/dancingLantern.html#dancing-lantern-">dancing lantern*</a>, <a href="../../coreRulebook/spells/detectSecretDoors.html#detect-secret-doors">detect secret doors</a>, <a href="../../coreRulebook/spells/enlargePerson.html#enlarge-person">enlarge person</a>, <a href="../../coreRulebook/spells/hypnotism.html#hypnotism">hypnotism</a>, <a href="../../coreRulebook/spells/identify.html#identify">identify</a>, <a href="../spells/illOmen.html#ill-omen">ill omen*</a>, <a href="../../coreRulebook/spells/inflictLightWounds.html#inflict-light-wounds">inflict light wounds</a>, <a href="../../coreRulebook/spells/mageArmor.html#mage-armor">mage armor</a>, <a href="../spells/maskDweomer.html#mask-dweomer">mask dweomer*</a>, <a href="../../coreRulebook/spells/mount.html#mount">mount</a>, <a href="../../coreRulebook/spells/obscuringMist.html#obscuring-mist">obscuring mist</a>, <a href="../../coreRulebook/spells/rayOfEnfeeblement.html#ray-of-enfeeblement">ray of enfeeblement</a>, <a href="../../coreRulebook/spells/reducePerson.html#reduce-person">reduce person</a>, <a href="../../coreRulebook/spells/sleep.html#sleep">sleep</a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-i">summon monster I</a>, <a href="../../coreRulebook/spells/unseenServant.html#unseen-servant">unseen servant</a>.</i></p>
+<p id="2nd-level-witch-spells"><b>2nd-Level Witch Spells</b>&mdash;<i><a href="../../coreRulebook/spells/alterSelf.html#alter-self">alter self</a>, <a href="../../coreRulebook/spells/augury.html#augury">augury</a>, <a href="../../coreRulebook/spells/blindnessDeafness.html#blindness-deafness">blindness/deafness</a>, <a href="../spells/burningGaze.html#burning-gaze">burning gaze*</a>, <a href="../../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds">cure moderate wounds</a>, <a href="../../coreRulebook/spells/dazeMonster.html#daze-monster">daze monster</a>, <a href="../../coreRulebook/spells/deathKnell.html#death-knell">death knell</a>, <a href="../../coreRulebook/spells/delayPoison.html#delay-poison">delay poison</a>, <a href="../../coreRulebook/spells/detectThoughts.html#detect-thoughts">detect thoughts</a>, <a href="../../coreRulebook/spells/enthrall.html#enthrall">enthrall</a>, <a href="../../coreRulebook/spells/falseLife.html#false-life">false life</a>, <a href="../spells/feastOfAshes.html#feast-of-ashes">feast of ashes*</a>, <a href="../spells/fester.html#fester">fester*</a>, <a href="../../coreRulebook/spells/findTraps.html#find-traps">find traps</a>, <a href="../../coreRulebook/spells/fogCloud.html">fog cloud</a>, <a href="../../coreRulebook/spells/gentleRepose.html#gentle-repose">gentle repose</a>, <a href="../spells/glide.html#glide-">glide*</a>, <a href="../../coreRulebook/spells/glitterdust.html#glitterdust">glitterdust</a>, <a href="../spells/hiddenSpeech.html#hidden-speech">hidden speech*</a>, <a href="../../coreRulebook/spells/holdPerson.html#hold-person">hold person</a>, <a href="../../coreRulebook/spells/inflictModerateWounds.html#inflict-moderate-wounds">inflict moderate wounds</a>, <a href="../../coreRulebook/spells/levitate.html#levitate">levitate</a>, <a href="../spells/perceiveCues.html#perceive-cues">perceive cues*</a>, <a href="../spells/poxPustules.html#pox-pustules">pox pustules*</a>, <a href="../../coreRulebook/spells/scare.html#scare">scare</a>, <a href="../../coreRulebook/spells/seeInvisibility.html#see-invisibility">see invisibility</a>, <a href="../../coreRulebook/spells/spectralHand.html#spectral-hand">spectral hand</a>, <a href="../../coreRulebook/spells/status.html#status">status</a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-ii">summon monster II</a>, <a href="../../coreRulebook/spells/summonSwarm.html#summon-swarm">summon swarm</a>, <a href="../../coreRulebook/spells/touchOfIdiocy.html#touch-of-idiocy">touch of idiocy</a>, <a href="../spells/vomitSwarm.html#vomit-swarm">vomit swarm*</a>, <a href="../../coreRulebook/spells/web.html#web">web</a>, <a href="../../coreRulebook/spells/zoneOfTruth.html#zone-of-truth">zone of truth</a>.</i></p>
+<p id="3rd-level-witch-spells"><b>3rd-Level Witch Spells</b>&mdash;<i><a href="../../coreRulebook/spells/arcaneSight.html#arcane-sight">arcane sight</a>, <a href="../../coreRulebook/spells/bestowCurse.html#bestow-curse">bestow curse</a>, <a href="../../coreRulebook/spells/clairaudienceClairvoyance.html#clairaudience-clairvoyance">clairaudience/clairvoyance</a>, <a href="../spells/cupOfDust.html#cup-of-dust">cup of dust*</a>, <a href="../../coreRulebook/spells/deepSlumber.html#deep-slumber">deep slumber</a>, <a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic">dispel magic</a>, <a href="../../coreRulebook/spells/fly.html">fly</a>, <a href="../../coreRulebook/spells/glyphOfWarding.html#glyph-of-warding">glyph of warding</a>, <a href="../spells/guidingStar.html#guiding-star-">guiding star*</a>, <a href="../../coreRulebook/spells/heroism.html#heroism">heroism</a>, <a href="../../coreRulebook/spells/lightningBolt.html#lightning-bolt">lightning bolt</a>, <a href="../../coreRulebook/spells/locateObject.html#locate-object">locate object</a>, <a href="../spells/natureSExile.html#nature's-exile">nature's exile*</a>, <a href="../spells/painStrike.html#pain-strike">pain strike*</a>, <a href="../../coreRulebook/spells/rage.html#rage">rage</a>, <a href="../../coreRulebook/spells/rayOfExhaustion.html#ray-of-exhaustion">ray of exhaustion</a>, <a href="../../coreRulebook/spells/removeBlindnessDeafness.html#remove-blindness-deafness">remove blindness/deafness</a>, <a href="../../coreRulebook/spells/removeCurse.html#remove-curse">remove curse</a>, <a href="../../coreRulebook/spells/removeDisease.html#remove-disease">remove disease</a>, <a href="../spells/screech.html#screech">screech*</a>, <a href="../spells/seekThoughts.html#seek-thoughts">seek thoughts*</a>, <a href="../../coreRulebook/spells/sepiaSnakeSigil.html#sepia-snake-sigil">sepia snake sigil</a>, <a href="../spells/shareSenses.html#share-senses">share senses*</a>, <a href="../../coreRulebook/spells/sleetStorm.html#sleet-storm">sleet storm</a>, <a href="../../coreRulebook/spells/speakWithDead.html#speak-with-dead">speak with dead</a>, <a href="../../coreRulebook/spells/stinkingCloud.html#stinking-cloud">stinking cloud</a>, <a href="../../coreRulebook/spells/suggestion.html#suggestion">suggestion</a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-iii">summon monster III</a>, <a href="../../coreRulebook/spells/tongues.html#tongues">tongues</a>, <a href="../spells/twilightKnife.html#twilight-knife-">twilight knife*</a>, <a href="../../coreRulebook/spells/vampiricTouch.html#vampiric-touch">vampiric touch</a>, <a href="../../coreRulebook/spells/waterWalk.html#water-walk">water walk</a>.</i></p>
+<p id="4th-level-witch-spells"><b>4th-Level Witch Spells</b>&mdash;<i><a href="../../coreRulebook/spells/arcaneEye.html#arcane-eye">arcane eye</a>, <a href="../../coreRulebook/spells/blackTentacles.html#black-tentacles">black tentacles</a>, <a href="../../coreRulebook/spells/charmMonster.html#charm-monster">charm monster</a>, <a href="../../coreRulebook/spells/confusion.html#confusion">confusion</a>, <a href="../../coreRulebook/spells/crushingDespair.html#crushing-despair">crushing despair</a>, <a href="../../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds">cure serious wounds</a>, <a href="../../coreRulebook/spells/deathWard.html#death-ward">death ward</a>, <a href="../../coreRulebook/spells/detectScrying.html#detect-scrying">detect scrying</a>, <a href="../../coreRulebook/spells/dimensionDoor.html#dimension-door">dimension door</a>, <a href="../../coreRulebook/spells/discernLies.html#discern-lies">discern lies</a>, <a href="../../coreRulebook/spells/divination.html#divination">divination</a>, <a href="../../coreRulebook/spells/enervation.html#enervation">enervation</a>, <a href="../../coreRulebook/spells/fear.html#fear">fear</a>, <a href="../../coreRulebook/spells/geasQuest.html#geas-lesser">geas (lesser)</a>, <a href="../../coreRulebook/spells/iceStorm.html#ice-storm">ice storm</a>, <a href="../../coreRulebook/spells/inflictSeriousWounds.html#inflict-serious-wounds">inflict serious wounds</a>, <a href="../../coreRulebook/spells/locateCreature.html#locate-creature">locate creature</a>, <a href="../../coreRulebook/spells/minorCreation.html#minor-creation">minor creation</a>, <a href="../spells/moonstruck.html#moonstruck">moonstruck*</a>, <a href="../../coreRulebook/spells/neutralizePoison.html#neutralize-poison">neutralize poison</a>, <a href="../../coreRulebook/spells/phantasmalKiller.html#phantasmal-killer">phantasmal killer</a>, <a href="../../coreRulebook/spells/poison.html#poison">poison</a>, <a href="../../coreRulebook/spells/scrying.html#scrying">scrying</a>, <a href="../../coreRulebook/spells/secureShelter.html#secure-shelter">secure shelter</a>, <a href="../spells/sleepwalk.html#sleepwalk">sleepwalk*</a>, <a href="../../coreRulebook/spells/solidFog.html#solid-fog">solid fog</a>, <a href="../spells/spite.html#spite">spite*</a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-iv">summon monster IV</a>, <a href="../spells/threefoldAspect.html#threefold-aspect">threefold aspect*</a>, <a href="../spells/wanderingStarMotes.html#wandering-star-motes">wandering star motes*</a>.</i></p>
+<p id="5th-level-witch-spells"><b>5th-Level Witch Spells</b>&mdash;<i><a href="../../coreRulebook/spells/balefulPolymorph.html#baleful-polymorph">baleful polymorph</a>, <a href="../spells/banishSeeming.html#banish-seeming">banish <a href="../../coreRulebook/spells/seeming.html#seeming">seeming</a>*</a>, <a href="../../coreRulebook/spells/blight.html#blight">blight</a>, <a href="../../coreRulebook/spells/breakEnchantment.html#break-enchantment">break enchantment</a>, <a href="../../coreRulebook/spells/cloudkill.html#cloudkill">cloudkill</a>, <a href="../../coreRulebook/spells/contactOtherPlane.html#contact-other-plane">contact other plane</a>, <a href="../../coreRulebook/spells/cureCriticalWounds.html#cure-critical-wounds">cure critical wounds</a>, <a href="../../coreRulebook/spells/dominatePerson.html#dominate-person">dominate person</a>, <a href="../../coreRulebook/spells/feeblemind.html#feeblemind">feeblemind</a>, <a href="../../coreRulebook/spells/holdMonster.html#hold-monster">hold monster</a>, <a href="../../coreRulebook/spells/inflictCriticalWounds.html#inflict-critical-wounds">inflict critical wounds</a>, <a href="../../coreRulebook/spells/magicJar.html#magic-jar">magic jar</a>, <a href="../../coreRulebook/spells/majorCreation.html#major-creation">major creation</a>, <a href="../../coreRulebook/spells/markOfJustice.html#mark-of-justice">mark of justice</a>, <a href="../../coreRulebook/spells/mindFog.html#mind-fog">mind fog</a>, <a href="../../coreRulebook/spells/overlandFlight.html#overland-flight">overland flight</a>, <a href="../spells/painStrike.html#pain-strike,-mass">pain strike (mass)*</a>, <a href="../../coreRulebook/spells/pryingEyes.html#prying-eyes">prying eyes</a>, <a href="../../coreRulebook/spells/reincarnate.html#reincarnate">reincarnate</a>, <a href="../spells/restEternal.html#rest-eternal">rest eternal*</a>, <a href="../../coreRulebook/spells/secretChest.html#secret-chest">secret chest</a>, <a href="../spells/suffocation.html#suffocation">suffocation*</a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-v">summon monster V</a>, <a href="../../coreRulebook/spells/symbolOfPain.html#symbol-of-pain">symbol of pain</a>, <a href="../../coreRulebook/spells/symbolOfSleep.html#symbol-of-sleep">symbol of sleep</a>, <a href="../../coreRulebook/spells/telepathicBond.html#telepathic-bond">telepathic bond</a>, <a href="../../coreRulebook/spells/teleport.html#teleport">teleport</a>, <a href="../../coreRulebook/spells/wavesOfFatigue.html#waves-of-fatigue">waves of fatigue</a>.</i></p>
+<p id="6th-level-witch-spells"><b>6th-Level Witch Spells</b>&mdash;<i><a href="../../coreRulebook/spells/analyzeDweomer.html#analyze-dweomer">analyze dweomer</a>, <a href="../../coreRulebook/spells/animateObjects.html#animate-objects">animate objects</a>, <a href="../spells/cloakOfDreams.html#cloak-of-dreams">cloak of dreams*</a>, <a href="../../coreRulebook/spells/coneOfCold.html#cone-of-cold">cone of cold</a>, <a href="../../coreRulebook/spells/cureLightWounds.html#cure-light-wounds-mass">cure light wounds (mass)</a>, <a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic-greater">dispel magic (greater)</a>, <a href="../../coreRulebook/spells/eyebite.html#eyebite">eyebite</a>, <a href="../spells/fester.html#fester,-mass">fester (mass)*</a>, <a href="../../coreRulebook/spells/findThePath.html#find-the-path">find the path</a>, <a href="../../coreRulebook/spells/fleshToStone.html#flesh-to-stone">flesh to stone</a>, <a href="../../coreRulebook/spells/geasQuest.html#geas-quest">geas/quest</a>, <a href="../../coreRulebook/spells/guardsAndWards.html#guards-and-wards">guards and wards</a>, <a href="../../coreRulebook/spells/heroism.html#heroism-greater">heroism (greater)</a>, <a href="../../coreRulebook/spells/inflictLightWounds.html#inflict-light-wounds-mass">inflict light wounds (mass)</a>, <a href="../../coreRulebook/spells/legendLore.html#legend-lore">legend lore</a>, <a href="../../coreRulebook/spells/raiseDead.html#raise-dead">raise dead</a>, <a href="../../coreRulebook/spells/slayLiving.html#slay-living">slay living</a>, <a href="../../coreRulebook/spells/stoneToFlesh.html#stone-to-flesh">stone to flesh</a>, <a href="../../coreRulebook/spells/suggestion.html#suggestion-mass">suggestion (mass)</a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-vi">summon monster VI</a>, <a href="../spells/swarmSkin.html#swarm-skin-">swarm skin*</a>, <a href="../../coreRulebook/spells/symbolOfFear.html#symbol-of-fear">symbol of fear</a>, <a href="../../coreRulebook/spells/symbolOfPersuasion.html#symbol-of-persuasion">symbol of persuasion</a>, <a href="../../coreRulebook/spells/transformation.html#transformation">transformation</a>, <a href="../../coreRulebook/spells/trueSeeing.html#true-seeing">true seeing</a>, <a href="../spells/unwillingShield.html#unwilling-shield">unwilling shield*</a>.</i></p>
+<p id="7th-level-witch-spells"><b>7th-Level Witch Spells</b>&mdash;<i><a href="../../coreRulebook/spells/arcaneSight.html#arcane-sight-greater">arcane sight (greater)</a>, <a href="../../coreRulebook/spells/chainLightning.html#chain-lightning">chain lightning</a>, <a href="../../coreRulebook/spells/controlWeather.html#control-weather">control weather</a>, <a href="../../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds-mass">cure moderate wounds (mass)</a>, <a href="../../coreRulebook/spells/harm.html#harm">harm</a>, <a href="../../coreRulebook/spells/heal.html#heal">heal</a>, <a href="../../coreRulebook/spells/holdPerson.html#hold-person-mass">hold person (mass)</a>, <a href="../../coreRulebook/spells/inflictModerateWounds.html#inflict-moderate-wounds-mass">inflict moderate wounds (mass)</a>, <a href="../../coreRulebook/spells/insanity.html#insanity">insanity</a>, <a href="../../coreRulebook/spells/instantSummons.html#instant-summons">instant summons</a>, <a href="../../coreRulebook/spells/phaseDoor.html#phase-door">phase door</a>, <a href="../../coreRulebook/spells/planeShift.html#plane-shift">plane shift</a>, <a href="../../coreRulebook/spells/powerWordBlind.html#power-word-blind">power word blind</a>, <a href="../../coreRulebook/spells/regenerate.html#regenerate">regenerate</a>, <a href="../../coreRulebook/spells/scrying.html#scrying-greater">scrying (greater)</a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-vii">summon monster VII</a>, <a href="../../coreRulebook/spells/symbolOfStunning.html#symbol-of-stunning">symbol of stunning</a>, <a href="../../coreRulebook/spells/symbolOfWeakness.html#symbol-of-weakness">symbol of weakness</a>, <a href="../../coreRulebook/spells/teleport.html#teleport-greater">teleport (greater)</a>, <a href="../../coreRulebook/spells/teleportObject.html#teleport-object">teleport object</a>, <a href="../../coreRulebook/spells/vision.html#vision">vision</a>, <a href="../../coreRulebook/spells/wavesOfExhaustion.html#waves-of-exhaustion">waves of exhaustion</a>.</i></p>
+<p id="8th-level-witch-spells"><b>8th-Level Witch Spells</b>&mdash;<i><a href="../../coreRulebook/spells/antipathy.html#antipathy">antipathy</a>, <a href="../../coreRulebook/spells/charmMonster.html#charm-monster-mass">charm monster (mass)</a>, <a href="../../coreRulebook/spells/clone.html#clone">clone</a>, <a href="../../coreRulebook/spells/cureSeriousWounds.html#cure-serious-wounds-mass">cure serious wounds (mass)</a>, <a href="../../coreRulebook/spells/demand.html#demand">demand</a>, <a href="../../coreRulebook/spells/destruction.html#destruction">destruction</a>, <a href="../../coreRulebook/spells/discernLocation.html#discern-location">discern location</a>, <a href="../../coreRulebook/spells/horridWilting.html#horrid-wilting">horrid wilting</a>, <a href="../../coreRulebook/spells/inflictSeriousWounds.html#inflict-serious-wounds-mass">inflict serious wounds (mass)</a>, <a href="../../coreRulebook/spells/irresistibleDance.html#irresistible-dance">irresistible dance</a>, <a href="../../coreRulebook/spells/maze.html#maze">maze</a>, <a href="../../coreRulebook/spells/mindBlank.html#mind-blank">mind blank</a>, <a href="../../coreRulebook/spells/momentOfPrescience.html#moment-of-prescience">moment of prescience</a>, <a href="../../coreRulebook/spells/powerWordStun.html#power-word-stun">power word stun</a>, <a href="../../coreRulebook/spells/pryingEyes.html#prying-eyes-greater">prying eyes (greater)</a>, <a href="../../coreRulebook/spells/resurrection.html#resurrection">resurrection</a>, <a href="../spells/stormbolts.html#stormbolts">stormbolts*</a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-viii">summon monster VIII</a>, <a href="../../coreRulebook/spells/symbolOfDeath.html#symbol-of-death">symbol of death</a>, <a href="../../coreRulebook/spells/symbolOfInsanity.html#symbol-of-insanity">symbol of insanity</a>, <a href="../../coreRulebook/spells/sympathy.html#sympathy">sympathy</a>, <a href="../../coreRulebook/spells/trapTheSoul.html#trap-the-soul">trap the soul</a>.</i></p>
+<p id="9th-level-witch-spells"><b>9th-Level Witch Spells</b>&mdash;<i><a href="../../coreRulebook/spells/astralProjection.html#astral-projection">astral projection</a>, <a href="../../coreRulebook/spells/cureCriticalWounds.html#cure-critical-wounds-mass">cure critical wounds (mass)</a>, <a href="../../coreRulebook/spells/dominateMonster.html#dominate-monster">dominate monster</a>, <a href="../../coreRulebook/spells/elementalSwarm.html#elemental-swarm">elemental swarm</a>, <a href="../../coreRulebook/spells/foresight.html#foresight">foresight</a>, <a href="../../coreRulebook/spells/holdMonster.html#hold-monster-mass">hold monster (mass)</a>, <a href="../../coreRulebook/spells/inflictCriticalWounds.html#inflict-critical-wounds-mass">inflict critical wounds (mass)</a>, <a href="../../coreRulebook/spells/powerWordKill.html#power-word-kill">power word kill</a>, <a href="../../coreRulebook/spells/refuge.html#refuge">refuge</a>, <a href="../../coreRulebook/spells/soulBind.html#soul-bind">soul bind</a>, <a href="../../coreRulebook/spells/stormOfVengeance.html#storm-of-vengeance">storm of vengeance</a>, <a href="../spells/suffocation.html#suffocation,-mass">suffocation (mass)*</a>, <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-ix">summon monster IX</a>, <a href="../../coreRulebook/spells/teleportationCircle.html#teleportation-circle">teleportation circle</a>, <a href="../../coreRulebook/spells/wailOfTheBanshee.html#wail-of-the-banshee">wail of the banshee</a>.</i></p>
+
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Witch",globalNavPath=[{ href: '/pathfinderRPG/prd/advancedPlayersGuide/advancedBaseClasses.html', name: 'Advanced Base Classes' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

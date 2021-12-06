@@ -1,0 +1,858 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Ghouls</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "ghouls.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "ghouls.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "ghouls.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "ghouls.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "ghouls.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "ghouls.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "ghouls.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "ghouls.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "boggards.html">Boggards</a></li>
+						<li><a href = "bugbears.html">Bugbears</a></li>
+						<li><a href = "drow.html">Drow</a></li>
+						<li><a href = "duergar.html">Duergar</a></li>
+						<li><a href = "fireGiants.html">Fire Giants</a></li>
+						<li><a href = "frostGiants.html">Frost Giants</a></li>
+						<li><a href = "ghouls.html">Ghouls</a></li>
+						<li><a href = "gnolls.html">Gnolls</a></li>
+						<li><a href = "goblins.html">Goblins</a></li>
+						<li><a href = "hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "kobolds.html">Kobolds</a></li>
+						<li><a href = "lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "ogres.html">Ogres</a></li>
+						<li><a href = "orcs.html">Orcs</a></li>
+						<li><a href = "ratfolk.html">Ratfolk</a></li>
+						<li><a href = "sahuagin.html">Sahuagin</a></li>
+						<li><a href = "serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "troglodytes.html">Troglodytes</a></li>
+						<li><a href = "trolls.html">Trolls</a></li>
+						<li><a href = "vampires.html">Vampires</a></li>
+						<li><a href = "appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "ghouls.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "ghouls.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "ghouls.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "ghouls.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "ghouls.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "ghouls.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "ghouls.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "ghouls.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "ghouls.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "ghouls.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "ghouls.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "ghouls.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "ghouls.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 class = "monster-header" id = "monster-codex-ghouls">Ghouls</h1>
+
+<p>Fear of flesh-hungry ghouls keeps people away from graveyards at night. Though the creatures can reason, they seldom listen to what the living say, and would much rather treat them as meals than as friends. Ghouls figure prominently in superstitious tales, and their hunger is legendary. Stories of cannibals turning into ravenous undead still stop many people from eating the dead even in the most desperate of circumstances.</span></p>
+<p>Always searching for the flesh of humanoids, ghouls thrive where people live, and their domains steadily expand as the creatures infect new victims with ghoul fever. This spread can be abrupt or gradual, but either way it stops only when someone seeks out and slays all of the ghouls. Potential victims have good reason to fear ghouls, as dying of ghoul fever is a horrifying fate. From the onset of the disease, an insatiable hunger overcomes the victim, yet her body begins to reject all normal food and drink. If denied food, the victim becomes increasingly desperate and violent as her hunger grows. Feeding the victim flesh from a corpse temporarily alleviates her cravings, but does not slow the onset of the disease. Eventually, the victim's mortal body fails entirely. After the victim finally dies, she wakes up at the next stroke of midnight, obsessed with the hunger for flesh.</p>
+<p>Most ghouls are so filled with self-loathing that they have little love for others of their kind. They have a natural tendency to form into packs for defense and hunting, but no trust or love is shared between the members of these packs. Though a ghoul might serve a leader loyally for years, it won't hesitate to betray its leader if doing so results in more frequent meals. Though ghasts are, in their most basic state, more powerful than other ghouls, they rarely take on leadership roles because of their overwhelming aggression. However, when a ghast rises, opportunistic ghouls emboldened by its presence might make attacks against elven communities they would otherwise avoid as difficult targets.</p>
+<p>Graveyards have a natural allure to ghouls, and many wind up spending their undead existence dwelling in such places. Small packs of ghouls often live in warrens carved beneath cemeteries where they can dig up corpses to satisfy their cravings for flesh. Graves settling unnaturally or sinkholes in a cemetery are sure signs of a ghoul pack. Some ghouls are content to survive on the flesh of the dead for years at a time, but eventually almost all of them start to hunt the living.</p>
+<p>Not all ghouls live in dark warrens under cemeteries, however. In some remote regions, entire cities or nations are populated by ghouls and other undead. The ghouls in these cities consider living humanoids little more than livestock. Though these nations of undead are often ruled by liches or other, more powerful undead, ghouls are known to hold positions of power or even rule in some such places. The rulers of these nations recognize that they cannot hope to win a war against the much more populous nations of living creatures, so arrangements are made with neighbors to trade for slaves or even just corpses. Larger undead nations use humans as slave labor, forcing them to work the farms to feed themselves so they can in turn be served up as meals for their undead masters.</p>
+<p>Aquatic ghouls, called lacedons, live within secluded reefs and underground caves near communities of underwater humanoids like grindylows, locathahs, or merfolk. Lacedons are as notorious in the folktales of undersea peoples as ghouls are in those of surface races. Lacedons who prefer easier targets to prey upon primarily dwell near shores or along trade routes, where they suffer through hunger for long stretches of time until a shipwreck provides them with a glorious, gory feast. Lacedons are also more mobile than other ghouls. If they catch the taste of humanoid blood carried by the currents, they can trace it for miles back to the source.</p>
+<p>Full statistics for ghouls can be found in their <a href = "../bestiary/ghoul.html"><em>Bestiary</em> entry</a>.</p>
+
+<h1 id = "ghoul-new-rules">New Rules</h1>
+<p>The following section details a sorcerer bloodline and new feats and spells favored by ghouls.</p>
+
+<h2 id = "ghoul-sorcerer-bloodline">Ghoul Sorcerer Bloodline</h2>
+<p>Sorcerers whose ancestors were afflicted by ghoul fever but somehow survived often end up with this bloodline.</p>
+
+<h3>Ghoul</h3>
+<p>Your connection to the hungering undead shapes your magic.</p>
+<p><strong>Class Skill</strong>: <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a>.</p>
+<p><strong>Bonus Spells</strong>: <em><a href = "../coreRulebook/spells/rayOfEnfeeblement.html#ray-of-enfeeblement">Ray of enfeeblement</a></em> (3rd), <em><a href = "../advancedPlayersGuide/spells/feastOfAshes.html#_feast-of-ashes">feast of ashes</a></em> (5th), <em><a href = "../coreRulebook/spells/vampiricTouch.html#vampiric-touch">vampiric touch</a></em> (7th), <em><a href = "../coreRulebook/spells/fear.html#fear">fear</a></em> (9th), <em>hungry earth</em> * (11th), <em><a href = "../coreRulebook/spells/moveEarth.html#move-earth">move earth</a></em> (13th), <em><a href = "../coreRulebook/spells/controlUndead.html#control-undead">control undead</a></em> (15th), <em><a href = "../coreRulebook/spells/unholyAura.html#unholy-aura">unholy aura</a></em> (17th), <em><a href = "../coreRulebook/spells/wailOfTheBanshee.html#wail-of-the-banshee">wail of the banshee</a></em> (19th).</p>
+<p><strong>Bonus Feats</strong>: Arcane Strike, <a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#skill-focus">Skill Focus</a> (<a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> [religion]), <a href = "../coreRulebook/feats.html#spell-focus">Spell Focus</a> (necromancy), <a href = "../coreRulebook/feats.html#toughness">Toughness</a>, Warren Digger*, <a href = "../coreRulebook/feats.html#weapon-finesse">Weapon Finesse</a>.</p>
+<p><strong>Bloodline Arcana</strong>: Whenever you cast a spell of the necromancy school that deals hit point damage, you are healed of 1 hit point per spell level.</p>
+<p><strong>Bloodline Powers</strong>: The dark energies that fuel your existence and undying hunger form the basis of your power.</p>
+<p><em>Ghoulish Claws (Su)</em> : Starting at 1st level, you can grow claws as a free action. These claws are treated as natural weapons, allowing you to make two claw attacks as a full attack using your full base attack bonus. Each of these attacks deals 1d4 points of damage + your Strength modifier (1d3 if you are Small). At 5th level, creatures damaged with your claw attack are paralyzed for 1 round, as the ghoul ability (Fortitude negates). At 7th level, the duration of the paralysis increases to 1d4+1 rounds, and the claws are considered magic weapons for the purpose of overcoming DR. You can use your claws for a number of rounds per day equal to 3 + your Charisma modifier. These rounds do not need to be consecutive.</p>
+<p>If you're a ghoul with this bloodline, instead of gaining this ability, your levels in sorcerer stack with your racial Hit Dice when determining the DC of your paralysis and disease special abilities.</p>
+<p><em>Leathery Skin (Ex)</em> : At 3rd level, you gain cold resistance 5 and a +1 natural armor bonus to AC. At 9th level, your cold resistance increases to 10 and natural armor bonus increases to +2. At 15th level, your natural armor bonus increases to +4.</p>
+<p><em>Ravenous Frenzy (Ex)</em> : At 9th level, you gain the benefits of <em><a href = "../coreRulebook/spells/haste.html#haste">haste</a></em> for a number of rounds per day equal to your sorcerer level. These rounds don't need to be consecutive. Each time you hit a creature with two or more claw attacks during a full attack while affected by this ability, that creature takes 1d4 points of bleed damage.</p>
+<p><em>Earth Crawler (Su)</em> : At 15th level, you gain a burrow speed of 30 feet. Additionally, as long as you are surrounded by at least 5 feet of dirt or natural stone on all sides, you gain fast healing 10. You can heal a number of hit points per day equal to 10 &times; your sorcerer level with this ability.</p>
+<p><em>Ghoulish Aspect (Su)</em> : At 20th level, you take on aspects of the nature and appearance of ghouls. You no longer feel the need to eat and are immune to hunger (though you are still able to consume flesh if you choose to). You gain immunity to cold, nonlethal damage, paralysis, and sleep. You also gain DR 5/&mdash;. Additionally, you gain the stench ability with a radius of 10 feet. Creatures that fail their Fortitude saving throws are sickened for 1d6+4 minutes. Use half your sorcerer level instead of half your racial Hit Dice to determine the saving throw DC.</p>
+
+<h2 id = "ghoul-feats">Ghoul Feats</h2>
+<p>The following feats open up additional ability options for ghouls.</p>
+
+<h3 id = "bag-of-bones">Bag of Bones</h3>
+<p>Your undead form ignores the limits of mortal physiology.</p>
+<p class = "stat-block-1"><strong>Prerequisite</strong>: Ghoul.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: You are treated as one size smaller for the purpose of calculating penalties for squeezing, and gain a +5 competence bonus on <a href = "../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> checks. If you possess 10 or more Hit Dice, this bonus increases to +4.</p>
+
+<h3 id = "corpse-companion">Corpse Companion</h3>
+<p>You have an undead animal companion.</p>
+<p class = "stat-block-1"><strong>Prerequisites</strong>: Animal companion class feature, ghoul.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: Your animal companion's type changes to undead, but its Hit Dice, base attack bonus, saving throws, skills, and tricks are retained from the base creature. The creature loses its Constitution score and its Charisma score becomes 12. If your companion is destroyed, your new companion is undead as well, using these same modifications.</p>
+
+<h3 id = "old-as-dust">Old as Dust</h3>
+<p>You have been dead for so long you have become quite difficult to kill.</p>
+<p class = "stat-block-1"><strong>Prerequisites</strong>: Sleeper, Warren Digger, creature has been a ghoul for at least 500 years.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: When you are reduced to 0 hit points, you are not destroyed&#173;&mdash;you cannot be killed unless your body is completely destroyed with fire or doused in holy water, or you take damage from a cure spell or channeled positive energy after you've been reduced to 0 hit points. Anytime you are reduced to 0 hit points, you remain unconscious until you are healed or until the following midnight, at which time you regain 1 hit point per Hit Die and awaken.</p>
+
+<h3 id = "sleeper">Sleeper</h3>
+<p>By seeking solace in the grave, you are able to recuperate more quickly.</p>
+<p class = "stat-block-1"><strong>Prerequisites</strong>: Warren Digger, ghoul.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: You heal 1 hit point per 10 minutes as long as you are surrounded by at least 5 feet of dirt or stone on all sides and take no actions.</p>
+
+<h3 id = "warren-digger">Warren Digger</h3>
+<p>After years spent digging up graves, you are able to move through dirt almost as easily as a fish through water.</p>
+<p class = "stat-block-1"><strong>Prerequisite</strong>: Ghoul.</p>
+<p class = "stat-block-1"><strong>Benefit</strong>: You gain a burrow speed of 10 feet through earth, sand, or soil.</p>
+<p class = "stat-block-1"><strong>Special</strong>: You can gain this feat multiple times. Each time you take it, add 10 feet to your burrow speed, up to a maximum of your base land speed.</p>
+
+<h2 id = "ghoul-spells">Ghoul Spells</h2>
+<p>Ghoul spells reflect their obsession with hunger and death.</p>
+
+<p id = "fleshy-facade" class = "stat-block-title">Fleshy Facade</p>
+<p class = "stat-block-1"><strong>School</strong> transmutation (polymorph); <strong>Level</strong> alchemist 2, bard 2, inquisitor 2, sorcerer/wizard 2, witch 2</p>
+<p class = "stat-block-1"><strong>Casting Time</strong> 1 standard action</p>
+<p class = "stat-block-1"><strong>Components</strong> V, S</p>
+<p class = "stat-block-1"><strong>Range</strong> touch</p>
+<p class = "stat-block-1"><strong>Target</strong> corporeal undead creature touched</p>
+<p class = "stat-block-1"><strong>Duration</strong> 10 minutes/level (D)</p>
+<p class = "stat-block-1"><strong>Saving Throw</strong> yes (harmless); <strong>Spell Resistance</strong> yes (harmless)</p>
+<p>The target's flesh fills out and gains a healthy, natural color. This gives the target the appearance of a living creature of the type it was when it was still alive (if applicable). Creatures casting spells such as <em><a href = "../coreRulebook/spells/detectUndead.html#detect-undead">detect undead</a></em> must succeed at a saving throw (with a DC equal to the spell's save DC) to detect the target's presence, and if the target is intelligent, it gains a +10 bonus on <a href = "../coreRulebook/skills/disguise.html#disguise">Disguise</a> checks to appear alive or recently deceased. If the undead has any features different from those of the type of living creature it most resembles (such as a ghoul's elongated teeth and claws), those features shrink and become less prominent, and the subject deals damage as though it were one size smaller. This spell has no effect on creatures that are skeletal or otherwise lack flesh.</p>
+
+<p id = "hungry-earth" class = "stat-block-title">Hungry Earth</p>
+<p class = "stat-block-1"><strong>School</strong> transmutation; <strong>Level</strong> druid 5, sorcerer/wizard 5, witch 5</p>
+<p class = "stat-block-1"><strong>Casting Time</strong> 1 standard action</p>
+<p class = "stat-block-1"><strong>Components</strong> V, S</p>
+<p class = "stat-block-1"><strong>Range</strong> medium (100 ft. + 10 ft./level)</p>
+<p class = "stat-block-1"><strong>Area</strong> 20-foot-radius spread</p>
+<p class = "stat-block-1"><strong>Duration</strong> 1 round/level</p>
+<p class = "stat-block-1"><strong>Saving Throw</strong> none; <strong>Spell Resistance</strong> no</p>
+<p>The ground attempts to pull creatures beneath its surface as if hungry for the flesh of mortals.</p>
+<p>Immediately, and at the beginning of each of your turns, every creature touching the ground within the area of the spell is the target of a grapple combat maneuver. Creatures that enter the area of effect are also automatically attacked. The ground does not provoke attacks of opportunity. The earth's CMB is equal to 5 + your caster level for the purpose of this combat maneuver check. Attempt the combat maneuver check only once each round and apply the result to all creatures in the area of effect.</p>
+<p>Each time the ground succeeds at a combat maneuver check to grapple a foe, it drags the creature farther down, eventually forcing the creature below its surface. With the first successful check, the target gains the grappled condition. Grappled opponents can't move without first breaking the grapple (doing so requires a successful DC 20 combat maneuver or <a href = "../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> check). The ground receives a +5 bonus on combat maneuver checks to grapple opponents it is already grappling. After the second successful grapple combat maneuver check, the grappled creature is pulled to the ground and becomes prone. On the third successful grapple combat maneuver check, the creature is fully buried and must hold its breath or begin suffocating.</p>
+<p>A buried creature can't attempt to escape unless the effect ends or it breaks the grapple. The DC to escape the grapple increases to 25 for a creature that has been pulled beneath the earth.</p>
+
+<h1 id = "example-ghouls">Example Ghouls</h1>
+
+<h2>Sneaky Ghouls</h2>
+<p>While all ghouls are quiet and deadly in the night, these ghouls specialize in striking from cover or exploiting tactical advantages. They set up ambushes or fight using group tactics to claim their prey.</p>
+
+<p id = "ghoul-creeper" class = "stat-block-title">Ghoul Creeper <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1">Ghoul rogue 3</p>
+<p class = "stat-block-1">CE Medium undead</p>
+<p class = "stat-block-1"><strong>Init</strong> +4; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +11</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 18, touch 14, flat-footed 14 (+2 armor, +4 Dex, +2 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 37 (5d8+15)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +4, <strong>Ref</strong> +7, <strong>Will</strong> +7</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> channel resistance +2, evasion, trap sense +1; <strong>Immune</strong> undead traits</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> bite +7 (1d6+3 plus disease and paralysis), 2 claws +7 (1d6+3 plus paralysis)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk light crossbow +8 (1d8/19&ndash;20)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> disease (DC 14), paralysis (1d4+1 rounds, DC 14, elves are immune to this effect), sneak attack +2d6</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 17, <strong>Dex</strong> 19, <strong>Con</strong> &mdash;, <strong>Int</strong> 13, <strong>Wis</strong> 16, <strong>Cha</strong> 16</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +3; <strong>CMB</strong> +6; <strong>CMD</strong> 20</p>
+<p class = "stat-block-1"><strong>Feats</strong> Bag of Bones*, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#weapon-finesse">Weapon Finesse</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +12, <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a> +11, <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +11, <a href = "../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> +5, <a href = "../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> +17, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +11, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +11, <a href = "../coreRulebook/skills/sleightOfHand.html#sleight-of-hand">Sleight of Hand</a> +12, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +12</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Undercommon</p>
+<p class = "stat-block-1"><strong>SQ</strong> rogue talents (bleeding attack +2), trapfinding +1</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/magicFang.html#magic-fang-greater">greater magic fang</a></em>, <em>potion of <a href = "../coreRulebook/spells/inflictModerateWounds.html#inflict-moderate-wounds">inflict moderate wounds</a></em>, tanglefoot bag; <strong>Other Gear</strong> leather armor, mwk light crossbow with 20 arrows, 204 gp</p>
+
+<p id = "ghoul-stalker" class = "stat-block-title">Ghoul Stalker <span class = "stat-block-cr">CR 6</span></p>
+<p class = "stat-block-xp">XP 2,400</p>
+<p class = "stat-block-1">Ghoul rogue 6</p>
+<p class = "stat-block-1">CE Medium undead</p>
+<p class = "stat-block-1"><strong>Init</strong> +5; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +14</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 18, touch 15, flat-footed 13 (+1 armor, +5 Dex, +2 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 74 (8d8+38)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +5, <strong>Ref</strong> +10, <strong>Will</strong> +8</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> channel resistance +2, evasion, trap sense +2, uncanny dodge; <strong>Immune</strong> undead traits</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> bite +8 (1d6+3 plus disease and paralysis), 2 claws +8 (1d6+3 plus paralysis)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> <em>+1 composite shortbow</em> +10/+10 (1d6+4/&times;3) or <em>+1 composite shortbow</em> +12 (1d6+4/&times;3)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> disease (DC 14), paralysis (1d4+1 rounds, DC 14, elves are immune to this effect), sneak attack +3d6</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 17, <strong>Dex</strong> 20, <strong>Con</strong> &mdash;, <strong>Int</strong> 13, <strong>Wis</strong> 16, <strong>Cha</strong> 16</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +5; <strong>CMB</strong> +8; <strong>CMD</strong> 23</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#point-blank-shot">Point-Blank Shot</a>, <a href = "../coreRulebook/feats.html#precise-shot">Precise Shot</a>, <a href = "../coreRulebook/feats.html#rapid-shot">Rapid Shot</a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (composite shortbow)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +16, <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a> +10, <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +14, <a href = "../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> +8, <a href = "../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a> +16, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +10, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (dungeoneering) +12, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +14, <a href = "../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +14, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +16</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common</p>
+<p class = "stat-block-1"><strong>SQ</strong> rogue talents (finesse rogue, ledge walker, weapon training), trapfinding +3</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>+1 frost arrows</em> (4), <em>+1 human-bane arrows</em> (3), <em>potion of <a href = "../coreRulebook/spells/inflictLightWounds.html#inflict-light-wounds">inflict light wounds</a></em> ; <strong>Other Gear</strong> <em>+1 composite shortbow</em> with 20 arrows, <em>bracers of armor +1</em>, 62 gp</p>
+
+
+<h2 id = "ghoul-huntsmaster">Ghoul Huntsmaster</h2>
+<p>Though most ghouls hunt and kill to satiate their hunger, a huntsmaster relishes the chase as much as the feast after.</p>
+
+<p class = "stat-block-title">Ghoul Huntsmaster <span class = "stat-block-cr">CR 7</span></p>
+<p class = "stat-block-xp">XP 3,200</p>
+<p class = "stat-block-1">Ghoul ranger 6</p>
+<p class = "stat-block-1">CE Medium undead</p>
+<p class = "stat-block-1"><strong>Init</strong> +5; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +14</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 20, touch 15, flat-footed 15 (+3 armor, +5 Dex, +2 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 80 (8 HD; 2d8+6d10+38)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +9, <strong>Ref</strong> +10, <strong>Will</strong> +8</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> channel resistance +2; <strong>Immune</strong> undead traits</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 40 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 bite</em> +13 (1d6+3 plus disease and paralysis), 2 <em>+1 claws</em> +14 (1d8+3 plus paralysis)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk composite longbow +13/+8 (1d8+2/&times;3)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> combat style (archery), disease (DC 15), favored enemy (elves +2, humans +4), paralysis (1d4+1 rounds, DC 15, elves are immune to this effect)</p>
+<p class = "stat-block-1"><strong>Ranger Spells Prepared</strong> (CL 3rd; concentration +6)</p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/spells/longstrider.html#longstrider">longstrider</a></em>, <em><a href = "../coreRulebook/spells/magicFang.html#magic-fang">magic fang</a></em> </p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The huntsmaster casts <em><a href = "../coreRulebook/spells/longstrider.html#longstrider">longstrider</a></em> and uses his <em>wand of <a href = "../coreRulebook/spells/magicFang.html#magic-fang-greater">greater magic fang</a></em> on himself as well as on his animal companion.</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> Without <em><a href = "../coreRulebook/spells/longstrider.html#longstrider">longstrider</a></em> and <em><a href = "../coreRulebook/spells/magicFang.html#magic-fang-greater">greater magic fang</a></em>, the huntsmaster's statistics are <strong>Speed</strong> 30 ft.; <strong>Melee</strong> bite +12 (1d6+2 plus disease and paralysis), 2 claws +13 (1d8+2 plus paralysis).</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 15, <strong>Dex</strong> 20, <strong>Con</strong> &mdash;, <strong>Int</strong> 13, <strong>Wis</strong> 16, <strong>Cha</strong> 18</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +7; <strong>CMB</strong> +9; <strong>CMD</strong> 24</p>
+<p class = "stat-block-1"><strong>Feats</strong> Corpse Companion*, <a href = "../coreRulebook/feats.html#endurance">Endurance</a>, <a href = "../bestiary/monsterFeats.html#improved-natural-attack">Improved Natural Attack</a> (claw), <a href = "../coreRulebook/feats.html#point-blank-shot">Point-Blank Shot</a>, <a href = "../coreRulebook/feats.html#rapid-shot">Rapid Shot</a>, <a href = "../coreRulebook/feats.html#weapon-finesse">Weapon Finesse</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (claw)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +13 (+17 when jumping), <a href = "../coreRulebook/skills/climb.html#climb">Climb</a> +13, <a href = "../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> +13, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +14, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +16, <a href = "../coreRulebook/skills/survival.html#survival">Survival</a> +14, <a href = "../coreRulebook/skills/swim.html#swim">Swim</a> +9</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Undercommon</p>
+<p class = "stat-block-1"><strong>SQ</strong> favored terrain (underground +2), hunter's bond (animal), track +3, wild empathy +10</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>+1 human-bane arrows</em> (3), <em>+1 <a href = "../coreRulebook/magicItems/weapons.html#_weapons-seeking">seeking</a> arrows</em> (2), <em>potion of <a href = "../coreRulebook/spells/inflictModerateWounds.html#inflict-moderate-wounds">inflict moderate wounds</a></em>, <em>wand of <a href = "../coreRulebook/spells/magicFang.html#magic-fang-greater">greater magic fang</a></em> (12 charges); <strong>Other Gear</strong> mwk studded leather, mwk composite longbow with 50 arrows, 42 gp</p>
+
+<p id = "corpse-cat" class = "stat-block-title">Corpse Cat <span class = "stat-block-cr">CR &mdash;</span></p>
+<p class = "stat-block-xp">XP &mdash;</p>
+<p class = "stat-block-1">N Small undead</p>
+<p class = "stat-block-1"><strong>Init</strong> +6; <strong>Senses</strong> darkvision 60 ft., low-light vision, scent; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +5</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 20, touch 17, flat-footed 14 (+6 Dex, +3 natural, +1 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 16 (3d8+3)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +4, <strong>Ref</strong> +9, <strong>Will</strong> +2</p>
+<p class = "stat-block-1"><strong>Immune</strong> undead traits</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 50 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 bite</em> +10 (1d4+2 plus trip), 2 <em>+1 claws</em> +11 (1d2+2)</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> Without <em><a href = "../coreRulebook/spells/magicFang.html#magic-fang-greater">greater magic fang</a></em>, the cat's statistics are <strong>Melee</strong> bite +9 (1d4+1 plus trip), 2 claws +10 (1d2+1).</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 13, <strong>Dex</strong> 22, <strong>Con</strong> &mdash;, <strong>Int</strong> 2, <strong>Wis</strong> 12, <strong>Cha</strong> 12</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +2; <strong>CMB</strong> +2; <strong>CMD</strong> 18 (22 vs. trip)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#weapon-finesse">Weapon Finesse</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (claw)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a> +10 (+18 when jumping), <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +5, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +14</p>
+<p class = "stat-block-1"><strong>SQ</strong> tricks (attack [all creatures], come, fetch, guard, seek, stay, track)</p>
+
+
+<h2 id = "ghoul-commander">Ghoul Commander</h2>
+<p>Ghoul commanders have stoked a burning hatred for the living. A ghoul commander might lead a pack of ghouls or may serve as a guardian or lieutenant for a more powerful ghoul monarch.</p>
+
+<p class = "stat-block-title">Ghoul Commander <span class = "stat-block-cr">CR 8</span></p>
+<p class = "stat-block-xp">XP 4,800</p>
+<p class = "stat-block-1">Ghoul antipaladin 7</p>
+<p class = "stat-block-1">CE Medium undead</p>
+<p class = "stat-block-1"><strong>Init</strong> +3; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +15</p>
+<p class = "stat-block-1"><strong>Aura</strong> cowardice (10 ft.)</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 21, touch 13, flat-footed 18 (+6 armor, +3 Dex, +2 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 99 (9 HD; 2d8+7d10+52)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +13, <strong>Ref</strong> +9, <strong>Will</strong> +15</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> channel resistance +2; <strong>Immune</strong> disease, undead traits</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 20 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> mwk greataxe +15/+10 (1d12+7/19&ndash;20/&times;3), bite +8 (1d6+2 plus disease and paralysis) or bite +13 (1d6+5 plus disease and paralysis), 2 claws +13 (1d6+5 plus paralysis)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk composite shortbow +12/+7 (1d6+5/&times;3)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> channel negative energy (DC 17, 4d6), disease (DC 15), paralysis (1d4+1 rounds, DC 15, elves are immune to this effect), smite good 3/day (+4 attack and AC, +7 damage)</p>
+<p class = "stat-block-1"><strong>Antipaladin Spell-Like Abilities</strong> (CL 7th; concentration +11)</p>
+<p class = "stat-block-2">At will&mdash;<em><a href = "../coreRulebook/spells/detectGood.html#detect-good">detect good</a></em> </p>
+<p class = "stat-block-1"><strong>Antipaladin Spells Prepared</strong> (CL 4th; concentration +8)</p>
+<p class = "stat-block-2">2nd&mdash;<em><a href = "../coreRulebook/spells/desecrate.html#desecrate">desecrate</a></em> </p>
+<p class = "stat-block-2">1st&mdash;<em><a href = "../coreRulebook/spells/disguiseSelf.html#disguise-self">disguise self</a></em>, <em><a href = "../coreRulebook/spells/inflictLightWounds.html#inflict-light-wounds">inflict light wounds</a></em> (DC 15)</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The ghoul commander is usually accompanied by a fiendish dire boar mount. If he is defending an area, he casts <em><a href = "../coreRulebook/spells/desecrate.html#desecrate">desecrate</a></em> on the area (these bonuses are not included in his statistics).</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The commander begins combat by charging in on his boar. He prefers to attack with his greataxe.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 20, <strong>Dex</strong> 17, <strong>Con</strong> &mdash;, <strong>Int</strong> 13, <strong>Wis</strong> 16, <strong>Cha</strong> 18</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +8; <strong>CMB</strong> +13; <strong>CMD</strong> 26</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#cleave">Cleave</a>, <a href = "../coreRulebook/feats.html#improved-critical">Improved Critical</a> (greataxe), <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#toughness">Toughness</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (greataxe)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a> +11, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +16, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +15, <a href = "../coreRulebook/skills/ride.html#ride">Ride</a> +12</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Undercommon</p>
+<p class = "stat-block-1"><strong>SQ</strong> cruelties (fatigued, staggered), fiendish boon (fiendish dire boar servant), touch of corruption 7/day (3d6)</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>scroll of <a href = "../coreRulebook/spells/inflictSeriousWounds.html#inflict-serious-wounds">inflict serious wounds</a></em> ; <strong>Other Gear</strong> mwk breastplate, mwk composite shortbow with 20 arrows, mwk greataxe, <em>belt of giant strength +2</em>, 79 gp</p>
+
+<p class = "stat-block-title">Fiendish Dire Boar Servant <span class = "stat-block-cr">CR &mdash;</span></p>
+<p class = "stat-block-xp">XP &mdash;</p>
+<p class = "stat-block-1"><strong>hp</strong> 42</p>
+<p>When ghouls marshal themselves into organized groups, it is ghoul commanders who shoulder the responsibility of leadership and command. In "civilized" ghoul cities and nations, ghoul commanders serve as an elite officer class, directing and commanding units of more common ghouls in military maneuvers and on excursions. While they receive their orders from ghouls higher up the chain of command, ghoul commanders are responsible for translating those orders into concrete tactics, and enjoy great autonomy on the battlefield&mdash;so long as their strategies succeed, at least.</p>
+
+
+<h2 id = "masked-murderer">Masked Murderer</h2>
+<p>Some ghouls walk in villages and cities, using disguises and magic to hide their nature. The masked murderer strikes from the shadows against the living.</p>
+
+<p class = "stat-block-title">Masked Murderer <span class = "stat-block-cr">CR 8</span></p>
+<p class = "stat-block-xp">XP 4,800</p>
+<p class = "stat-block-1">Ghoul bard (dirge bard) 8</p>
+<p class = "stat-block-1">CE Medium undead</p>
+<p class = "stat-block-1"><strong>Init</strong> +7; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +15</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 20, touch 13, flat-footed 17 (+5 armor, +3 Dex, +2 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 113 (10d8+68)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +8, <strong>Ref</strong> +9, <strong>Will</strong> +11; +4 vs. necromantic effects;</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> channel resistance +2; <strong>Immune</strong> undead traits</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> bite +10 (1d6+2 plus disease and paralysis), 2 claws +11 (1d6+2 plus paralysis)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> mwk composite shortbow +11/+6 (1d6+2/&times;3)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> bardic performance 24 rounds/day (move action; countersong, dirge of doom [DC 20], distraction, fascinate [DC 20], inspire competence +3, inspire courage +2, <em><a href = "../coreRulebook/spells/suggestion.html#suggestion">suggestion</a></em> [DC 20]), disease (DC 17), paralysis (1d4+1 rounds, DC 19, elves are immune to this effect)</p>
+<p class = "stat-block-1"><strong>Bard Spells Known</strong> (CL 8th; concentration +14)</p>
+<p class = "stat-block-2">3rd (3/day)&mdash;<em><a href = "../coreRulebook/spells/confusion.html#confusion">confusion</a></em> (DC 19), <em><a href = "../coreRulebook/spells/crushingDespair.html#crushing-despair">crushing despair</a></em> (DC 19), <em><a href = "../coreRulebook/spells/glibness.html#glibness">glibness</a></em> </p>
+<p class = "stat-block-2">2nd (6/day)&mdash;<em><a href = "../ultimateMagic/spells/allegro.html#_allegro">allegro</a></em>, <em>fleshy facade</em> * (DC 18), <em><a href = "../coreRulebook/spells/inflictModerateWounds.html#inflict-moderate-wounds">inflict moderate wounds</a></em> (DC 18), <em><a href = "../coreRulebook/spells/mirrorImage.html#mirror-image">mirror image</a></em> </p>
+<p class = "stat-block-2">1st (6/day)&mdash;<em><a href = "../coreRulebook/spells/disguiseSelf.html#disguise-self">disguise self</a></em>, <em><a href = "../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat">expeditious retreat</a></em>, <em><a href = "../coreRulebook/spells/hideousLaughter.html#hideous-laughter">hideous laughter</a></em> (DC 17), <em><a href = "../coreRulebook/spells/rayOfEnfeeblement.html#ray-of-enfeeblement">ray of enfeeblement</a></em> (DC 17), <em><a href = "../coreRulebook/spells/silentImage.html#silent-image">silent image</a></em> (DC 17)</p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/ghostSound.html#ghost-sound">ghost sound</a></em> (DC 16), <em><a href = "../coreRulebook/spells/mageHand.html#mage-hand">mage hand</a></em>, <em><a href = "../coreRulebook/spells/message.html#message">message</a></em>, <em><a href = "../coreRulebook/spells/prestidigitation.html#prestidigitation">prestidigitation</a></em> (DC 16), <em><a href = "../coreRulebook/spells/summonInstrument.html#summon-instrument">summon instrument</a></em> </p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> This furtive killer disguises herself as a human while stalking her targets. If at all possible, she avoids conflict, though her hunger sometimes gets the best of her.</p>
+<p class = "stat-block-1"><strong>During Combat</strong> If her presence is detected, the murderer begins combat by casting <em><a href = "../coreRulebook/spells/confusion.html#confusion">confusion</a></em> . She then starts a bardic performance (typically dirge of doom). Before she actually enters melee, she casts <em><a href = "../ultimateMagic/spells/allegro.html#_allegro">allegro</a></em> to gain additional attacks.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 15, <strong>Dex</strong> 17, <strong>Con</strong> &mdash;, <strong>Int</strong> 17, <strong>Wis</strong> 14, <strong>Cha</strong> 22</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +7; <strong>CMB</strong> +9; <strong>CMD</strong> 22</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../bestiary/monsterFeats.html#ability-focus">Ability Focus</a> (paralysis), <a href = "../coreRulebook/feats.html#combat-casting">Combat Casting</a>, <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#weapon-finesse">Weapon Finesse</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (claw)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a> +19, <a href = "../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> +19, <a href = "../coreRulebook/skills/disguise.html#disguise">Disguise</a> +19, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +19, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana) +16, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (local) +20, <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) +15 (+19 to identify undead creatures and their abilities), <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +15, <a href = "../coreRulebook/skills/perform.html#perform">Perform</a> (oratory) +14, <a href = "../coreRulebook/skills/perform.html#perform">Perform</a> (percussion) +19; <strong>Racial Modifiers</strong> +4 <a href = "../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) to identify undead creatures and their abilities</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Dwarven, Elven, Undercommon</p>
+<p class = "stat-block-1"><strong>SQ</strong> bardic knowledge +4, haunting refrain (+4 to demoralize, &ndash;2 penalty on saves against bard's fear effects), secrets of the grave</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>+1 <a href = "../coreRulebook/magicItems/weapons.html#_thundering">thundering</a> arrows</em> (4), <em>potion of <a href = "../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></em>, <em>scroll of <a href = "../coreRulebook/spells/holdPerson.html#hold-person">hold person</a></em>, <em>wand of <a href = "../coreRulebook/spells/inflictLightWounds.html#inflict-light-wounds">inflict light wounds</a></em> (50 charges); <strong>Other Gear</strong> <em>+1 chain shirt</em>, mwk composite shortbow with 10 arrows, <em>headband of alluring charisma +2</em>, disguise kit, 10 gp</p>
+
+<p>The masked murderer uses deception to get closer to her human prey, mingling among them without arousing their suspicion until it is too late for them to escape her clutches. Magic, particularly the <em>fleshy facade</em> spell, allows her to craft her deceptive appearance, and she knows how to disguise herself using mundane means so that she can at least hide her gruesomeness long enough to get to safety if her magic fails her.</p>
+<p>Charm and lies pave the murderer's way through society. Typically, she begins small, making friends with low-class workers or farmers in taverns and alleyways, then luring them away to kill and devour them. This is rarely enough for a masked murderer, though, and in time she makes connections among the elite. This could be to satisfy her ego, but more often she wants to dine on the finer morsels of spoiled elites rather than the tough flesh of hard laborers.</p>
+<p>Unfortunately for ghouls, spending so much time among the living serves only to highlight the life they traded away for the unending hunger of their undead existence. Many masked murderers find themselves conflicted as a result, envying the vibrant lives of their prey. In the end, however, a masked murderer's ghoulish hunger always overwhelms any other emotion she might feel, and she hunts her prey with as much ravenous fervor as any other ghoul, if not more.</p>
+
+
+<h2 id = "ancient-gravedigger">Ancient Gravedigger</h2>
+<p>Years of digging up graves have given this ancient ghoul an affinity for earth magic. Powerful spellcasting ghouls usually rise to positions of leadership, and in his ghoul city, this gravedigger is a high-ranking member of the ruling elite.</p>
+
+<p class = "stat-block-title">Ancient Gravedigger <span class = "stat-block-cr">CR 10</span></p>
+<p class = "stat-block-xp">XP 9,600</p>
+<p class = "stat-block-1">Ghoul oracle 10</p>
+<p class = "stat-block-1">CE Medium undead</p>
+<p class = "stat-block-1"><strong>Init</strong> +4; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +17</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 22, touch 14, flat-footed 18 (+4 armor, +1 deflection, +4 Dex, +3 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 112 (12d8+58)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +8, <strong>Ref</strong> +8, <strong>Will</strong> +13</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> channel resistance +2; <strong>Immune</strong> undead traits</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> <em>+1 bite</em> +14 (1d6+6 plus disease and paralysis), 2 <em>+1 frost claws</em> +15 (1d6+6 plus 1d6 cold, disease, and paralysis)</p>
+<p class = "stat-block-1"><strong>Ranged</strong> rock +13/+8 (2d4+7)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> disease (DC 15), paralysis (1d4+1 rounds, DC 15, elves are immune to this effect)</p>
+<p class = "stat-block-1"><strong>Oracle Spells Known</strong> (CL 10th; concentration +14)</p>
+<p class = "stat-block-2">5th (3/day)&mdash;<em><a href = "../coreRulebook/spells/flameStrike.html#flame-strike">flame strike</a></em> (DC 19), <em><a href = "../coreRulebook/spells/inflictLightWounds.html#inflict-light-wounds-mass">mass inflict light wounds</a></em>, <em><a href = "../coreRulebook/spells/stoneskin.html#stoneskin">stoneskin</a></em> </p>
+<p class = "stat-block-2">4th (6/day)&mdash;<em><a href = "../coreRulebook/spells/divinePower.html#divine-power">divine power</a></em>, <em><a href = "../coreRulebook/spells/inflictCriticalWounds.html#inflict-critical-wounds">inflict critical wounds</a></em>, <em><a href = "../coreRulebook/spells/summonMonster.html#summon-monster-iv">summon monster IV</a></em>, <em><a href = "../coreRulebook/spells/wallOfStone.html#wall-of-stone">wall of stone</a></em> (DC 18)</p>
+<p class = "stat-block-2">3rd (7/day)&mdash;<em><a href = "../coreRulebook/spells/animateDead.html#animate-dead">animate dead</a></em>, <em><a href = "../coreRulebook/spells/blindnessDeafness.html#blindness-deafness">blindness/deafness</a></em> (DC 17), <em><a href = "../coreRulebook/spells/dispelMagic.html#dispel-magic">dispel magic</a></em>, <em><a href = "../coreRulebook/spells/inflictSeriousWounds.html#inflict-serious-wounds">inflict serious wounds</a></em>, <em><a href = "../coreRulebook/spells/meldIntoStone.html#meld-into-stone">meld into stone</a></em> </p>
+<p class = "stat-block-2">2nd (7/day)&mdash;<em><a href = "../coreRulebook/spells/darkness.html#darkness">darkness</a></em>, <em><a href = "../coreRulebook/spells/desecrate.html#desecrate">desecrate</a></em>, <em><a href = "../coreRulebook/spells/holdPerson.html#hold-person">hold person</a></em> (DC 16), <em><a href = "../coreRulebook/spells/inflictModerateWounds.html#inflict-moderate-wounds">inflict moderate wounds</a></em>, <em><a href = "../coreRulebook/spells/spiritualWeapon.html#spiritual-weapon">spiritual weapon</a></em>, <em><a href = "../advancedPlayersGuide/spells/stoneCall.html#_stone-call">stone call</a></em></p>
+<p class = "stat-block-2">1st (7/day)&mdash;<em><a href = "../coreRulebook/spells/command.html#command">command</a></em> (DC 15), <em><a href = "../coreRulebook/spells/entropicShield.html#entropic-shield">entropic shield</a></em>, <em><a href = "../coreRulebook/spells/inflictLightWounds.html#inflict-light-wounds">inflict light wounds</a></em>, <em><a href = "../ultimateCombat/spells/liberatingCommand.html#_liberating-command">liberating command</a></em>, <em><a href = "../coreRulebook/spells/magicStone.html#magic-stone">magic stone</a></em>, <em><a href = "../coreRulebook/spells/obscuringMist.html#obscuring-mist">obscuring mist</a></em>, <em><a href = "../coreRulebook/spells/shieldOfFaith.html#shield-of-faith">shield of faith</a></em> </p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/bleed.html#bleed">bleed</a></em> (DC 14), <em><a href = "../coreRulebook/spells/createWater.html#create-water">create water</a></em>, <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/detectPoison.html#detect-poison">detect poison</a></em>, <em><a href = "../coreRulebook/spells/guidance.html#guidance">guidance</a></em>, <em><a href = "../coreRulebook/spells/mending.html#mending">mending</a></em>, <em><a href = "../coreRulebook/spells/readMagic.html#read-magic">read magic</a></em>, <em><a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a></em>, <em><a href = "../advancedPlayersGuide/spells/spark.html#_spark-">spark</a></em></p>
+<p class = "stat-block-2"><strong>Mystery</strong> stone</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> The ancient gravedigger prepares for combat by quaffing <em>potions of <a href = "../coreRulebook/spells/magicFang.html#magic-fang-greater">greater magic fang</a></em> and <em><a href = "../coreRulebook/spells/mageArmor.html#mage-armor">mage armor</a></em> . He uses earth glide and crystal sight to observe foes fighting his underlings before he attacks.</p>
+<p class = "stat-block-1"><strong>During Combat</strong> The ancient gravedigger prefers to fight at range, relying on summoned creatures, <em><a href = "../coreRulebook/spells/flameStrike.html#flame-strike">flame strike</a></em>, and <em><a href = "../coreRulebook/spells/spiritualWeapon.html#spiritual-weapon">spiritual weapon</a></em> to deal damage while he uses earth glide and crystal sight to take cover from the fray. If he must enter melee, the gravedigger fights viciously.</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> Without <em><a href = "../coreRulebook/spells/magicFang.html#magic-fang-greater">greater magic fang</a></em> and <em><a href = "../coreRulebook/spells/mageArmor.html#mage-armor">mage armor</a></em>, the ancient gravedigger's statistics are <strong>AC</strong> 18, touch 15, flat-footed 14; <strong>Melee</strong> bite +13 (1d6+5 plus disease and paralysis), 2 <em>frost claws</em> +14 (1d6+5 plus 1d6 cold, disease, and paralysis).</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 20, <strong>Dex</strong> 18, <strong>Con</strong> &mdash;, <strong>Int</strong> 15, <strong>Wis</strong> 14, <strong>Cha</strong> 18</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +8; <strong>CMB</strong> +13 (+17 trip); <strong>CMD</strong> 27 (31 vs. bull rush, 33 vs. trip)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#combat-reflexes">Combat Reflexes</a>, <a href = "../coreRulebook/feats.html#extra-rage">Extra Rage</a>, <a href = "../coreRulebook/feats.html#greater-trip">Greater Trip</a>, <a href = "../bestiary/monsterFeats.html#improved-natural-armor">Improved Natural Armor</a>, <a href = "../coreRulebook/feats.html#improved-trip">Improved Trip</a>, <a href = "../coreRulebook/feats.html#power-attack">Power Attack</a>, <a href = "../coreRulebook/feats.html#quick-draw">Quick Draw</a>, <a href = "../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> (claw)</p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a> +16, <a href = "../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> +19, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +19, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +17, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +17, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +18</p>
+<p class = "stat-block-1"><strong>Languages</strong> Aklo, Common, Draconic, Terran, Undercommon; <em><a href = "../coreRulebook/spells/tongues.html#tongues">tongues</a></em> (understands only)</p>
+<p class = "stat-block-1"><strong>SQ</strong> oracle's curse (tongues [Aklo]), revelations (crystal sight, earth glide, rock throwing, stone stability)</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potion of <a href = "../coreRulebook/spells/magicFang.html#magic-fang-greater">greater magic fang</a></em>, <em>potion of <a href = "../coreRulebook/spells/mageArmor.html#mage-armor">mage armor</a></em> ; <strong>Other Gear</strong> <em>belt of giant strength +2</em>, <em>cloak of <a href = "../coreRulebook/spells/resistance.html#resistance">resistance</a> +1</em>, <em>frost amulet of mighty fists</em>, <em>ring of protection +1</em>, throwing stones (10), onyx gems (worth 1,000 gp total), silver dust (worth 25 gp)</p>
+
+
+<h2 id = "ghoul-monarch">Ghoul Monarch</h2>
+<p>These ancient sorcerers have attained their power by using those around them as puppets. They command mortals and undead using both their magic and force of personality.</p>
+
+<p class = "stat-block-title">Ghoul Monarch <span class = "stat-block-cr">CR 12</span></p>
+<p class = "stat-block-xp">XP 19,200</p>
+<p class = "stat-block-1">Ghoul sorcerer 12</p>
+<p class = "stat-block-1">CE Medium undead</p>
+<p class = "stat-block-1"><strong>Init</strong> +10; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +20</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 23, touch 17, flat-footed 17 (+4 armor, +1 deflection, +6 Dex, +2 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 176 (14 HD; 2d8+12d6+125)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +10, <strong>Ref</strong> +12, <strong>Will</strong> +14</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> channel resistance +2, <em><a href = "../coreRulebook/spells/nondetection.html#nondetection">nondetection</a></em> ; <strong>Immune</strong> undead traits; <strong>Resist</strong> cold 10</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 30 ft., burrow 10 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> bite +13 (1d6+1 plus disease and paralysis), 2 claws +13 (1d6+1 plus paralysis)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> disease (DC 23), paralysis (1d4+1 rounds, DC 23, elves are immune to this effect), ravenous frenzy (12/day)</p>
+<p class = "stat-block-1"><strong>Sorcerer Spells Known</strong> (CL 12th; concentration +18)</p>
+<p class = "stat-block-2">6th (4/day)&mdash;<em><a href = "../coreRulebook/spells/mislead.html#mislead">mislead</a></em> (DC 22), <em><a href = "../coreRulebook/spells/moveEarth.html#move-earth">move earth</a></em> </p>
+<p class = "stat-block-2">5th (6/day)&mdash;<em><a href = "../coreRulebook/spells/dominatePerson.html#dominate-person">dominate person</a></em> (DC 21), <em>hungry earth</em> * (DC 21), <em><a href = "../advancedPlayersGuide/spells/suffocation.html#_suffocation">suffocation</a></em> (DC 21)</p>
+<p class = "stat-block-2">4th (7/day)&mdash;<em><a href = "../coreRulebook/spells/beastShape.html#beast-shape-ii">beast shape II</a></em>, <em><a href = "../coreRulebook/spells/blackTentacles.html#black-tentacles">black tentacles</a></em>, <em><a href = "../coreRulebook/spells/dimensionDoor.html#dimension-door">dimension door</a></em>, <em><a href = "../coreRulebook/spells/fear.html#fear">fear</a></em> </p>
+<p class = "stat-block-2">3rd (7/day)&mdash;<em><a href = "../coreRulebook/spells/gaseousForm.html#gaseous-form">gaseous form</a></em>, <em><a href = "../coreRulebook/spells/lightningBolt.html#lightning-bolt">lightning bolt</a></em> (DC 19), <em><a href = "../coreRulebook/spells/nondetection.html#nondetection">nondetection</a></em>, <em><a href = "../coreRulebook/spells/stinkingCloud.html#stinking-cloud">stinking cloud</a></em> (DC 19), <em><a href = "../coreRulebook/spells/vampiricTouch.html#vampiric-touch">vampiric touch</a></em> </p>
+<p class = "stat-block-2">2nd (8/day)&mdash;<em><a href = "../coreRulebook/spells/alterSelf.html#alter-self">alter self</a></em>, <em><a href = "../coreRulebook/spells/commandUndead.html#command-undead">command undead</a></em> (DC 18), <em><a href = "../coreRulebook/spells/falseLife.html#false-life">false life</a></em>, <em><a href = "../advancedPlayersGuide/spells/feastOfAshes.html#_feast-of-ashes">feast of ashes</a></em> (DC 18), <em><a href = "../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></em>, <em><a href = "../coreRulebook/spells/mirrorImage.html#mirror-image">mirror image</a></em> </p>
+<p class = "stat-block-2">1st (8/day)&mdash;<em><a href = "../coreRulebook/spells/burningHands.html#burning-hands">burning hands</a></em> (DC 17), <em><a href = "../coreRulebook/spells/grease.html#grease">grease</a></em> (DC 17), <em><a href = "../coreRulebook/spells/mageArmor.html#mage-armor">mage armor</a></em>, <em><a href = "../coreRulebook/spells/obscuringMist.html#obscuring-mist">obscuring mist</a></em>, <em><a href = "../coreRulebook/spells/rayOfEnfeeblement.html#ray-of-enfeeblement">ray of enfeeblement</a></em> (DC 17), <em><a href = "../coreRulebook/spells/silentImage.html#silent-image">silent image</a></em> </p>
+<p class = "stat-block-2">0 (at will)&mdash;<em><a href = "../coreRulebook/spells/arcaneMark.html#arcane-mark">arcane mark</a></em>, <em><a href = "../coreRulebook/spells/dancingLights.html#dancing-lights">dancing lights</a></em>, <em><a href = "../coreRulebook/spells/daze.html#daze">daze</a></em> (DC 16), <em><a href = "../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></em>, <em><a href = "../coreRulebook/spells/light.html#light">light</a></em>, <em><a href = "../coreRulebook/spells/mageHand.html#mage-hand">mage hand</a></em>, <em><a href = "../coreRulebook/spells/prestidigitation.html#prestidigitation">prestidigitation</a></em> (DC 16), <em>ray of frost</em>, <em><a href = "../coreRulebook/spells/readMagic.html#read-magic">read magic</a></em> </p>
+<p class = "stat-block-2"><strong>Bloodline</strong> ghoul</p>
+<p class = "stat-block-breaker">Tactics</p>
+<p class = "stat-block-1"><strong>Before Combat</strong> Before combat, the monarch casts <em><a href = "../coreRulebook/spells/falseLife.html#false-life">false life</a></em>, <em><a href = "../coreRulebook/spells/mageArmor.html#mage-armor">mage armor</a></em>, and <em><a href = "../coreRulebook/spells/nondetection.html#nondetection">nondetection</a></em> on herself.</p>
+<p class = "stat-block-1"><strong>During Combat</strong> A ghoul monarch avoids direct confrontation unless she can fight using <em><a href = "../coreRulebook/spells/dominatePerson.html#dominate-person">dominate person</a></em> or <em><a href = "../coreRulebook/spells/magicJar.html#magic-jar">magic jar</a></em> . The ghoul monarch starts combat by casting quickened <em><a href = "../coreRulebook/spells/grease.html#grease">grease</a></em> and <em>hungry earth</em>, trapping as many spellcasters as she can in the effect. If the monarch has minions, she focuses on disabling and keeping enemies off guard rather than using direct damage spells. She targets powerful spellcasters with <em><a href = "../advancedPlayersGuide/spells/suffocation.html#_suffocation">suffocation</a></em> or <em><a href = "../coreRulebook/spells/blackTentacles.html#black-tentacles">black tentacles</a></em> .</p>
+<p class = "stat-block-1"><strong>Morale</strong> A ghoul monarch flees to a safe haven or attempts to flee by burrowing underground at the first sign she is in serious danger.</p>
+<p class = "stat-block-1"><strong>Base Statistics</strong> Without <em><a href = "../coreRulebook/spells/falseLife.html#false-life">false life</a></em>, <em><a href = "../coreRulebook/spells/mageArmor.html#mage-armor">mage armor</a></em>, and <em><a href = "../coreRulebook/spells/nondetection.html#nondetection">nondetection</a></em>, the monarch's statistics are <strong>AC</strong> 19, touch 17, flat-footed 13; <strong>hp</strong> 161; <strong>Defensive Abilities</strong> channel resistance +2.</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 13, <strong>Dex</strong> 22, <strong>Con</strong> &mdash;, <strong>Int</strong> 15, <strong>Wis</strong> 16, <strong>Cha</strong> 22</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +7; <strong>CMB</strong> +8; <strong>CMD</strong> 25</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#eschew-materials">Eschew Materials</a>, <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, <a href = "../coreRulebook/feats.html#lightning-reflexes">Lightning Reflexes</a>, Old as Dirt*, <a href = "../coreRulebook/feats.html#quicken-spell">Quicken Spell</a>, Sleeper*, <a href = "../coreRulebook/feats.html#toughness">Toughness</a>, Warren Digger*, <a href = "../coreRulebook/feats.html#weapon-finesse">Weapon Finesse</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/bluff.html#bluff">Bluff</a> +13, <a href = "../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +23, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +20, <a href = "../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +19, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +28</p>
+<p class = "stat-block-1"><strong>Languages</strong> Common, Draconic, Undercommon</p>
+<p class = "stat-block-1"><strong>SQ</strong> bloodline arcana (heal when casting necromancy spells)</p>
+<p class = "stat-block-1"><strong>Combat Gear</strong> <em>potions of <a href = "../coreRulebook/spells/inflictModerateWounds.html#inflict-moderate-wounds">inflict moderate wounds</a></em> (2), <em>scroll of <a href = "../coreRulebook/spells/magicJar.html#magic-jar">magic jar</a></em>, <em>scroll of <a href = "../coreRulebook/spells/teleport.html#teleport">teleport</a></em> ; <strong>Other Gear</strong> <em>+2 silken ceremonial armo r</em>, <em>belt of incredible dexterity +2</em>, <em>headband of alluring charisma +2</em>, <em>ring of protection +1</em>, <em>stalker's mask</em>, 470 gp</p>
+
+
+<h2 id = "ghoul-beasts">Ghoul Beasts</h2>
+<p>Ghouls often raise creatures on a special diet, then turn them into undead. These include the skaveling, the sootwing bat, and the ghoul hound.</p>
+
+<h3 id = "sootwing-bat">Sootwing Bat</h3>
+<p><em>This batlike creature has jagged points at the tips of its wings and a long, lashing tongue.</em> </p>
+
+<p class = "stat-block-title">Sootwing Bat <span class = "stat-block-cr">CR 1/2</span></p>
+<p class = "stat-block-xp">XP 200</p>
+<p class = "stat-block-1">CE Tiny undead</p>
+<p class = "stat-block-1"><strong>Init</strong> +1; <strong>Senses</strong> blindsense 20 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +5</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 14, touch 13, flat-footed 13 (+1 Dex, +1 natural, +2 size)</p>
+<p class = "stat-block-1"><strong>hp</strong> 7 (2d8&ndash;2)</p>
+<p class = "stat-block-1"><strong>Fort</strong> &ndash;1, <strong>Ref</strong> +1, <strong>Will</strong> +4</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> channel resistance +2; <strong>Immune</strong> undead traits</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 5 ft. fly 40 ft. (good)</p>
+<p class = "stat-block-1"><strong>Melee</strong> bite +4 (1d3&ndash;3 plus disease and paralysis)</p>
+<p class = "stat-block-1"><strong>Space</strong> 2 1/2 ft.; <strong>Reach</strong> 0 ft.</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> disease (DC 10), paralysis (1d4+1 rounds, DC 10, elves are immune to this effect)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 5, <strong>Dex</strong> 12, <strong>Con</strong> &mdash;, <strong>Int</strong> 2, <strong>Wis</strong> 13, <strong>Cha</strong> 8</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +1; <strong>CMB</strong> +0; <strong>CMD</strong> 7</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#weapon-finesse">Weapon Finesse</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/fly.html#fly">Fly</a> +9, <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +5 (+9 when using blindsense); <strong>Racial Modifiers</strong> +4 <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> when using blindsense</p>
+<p class = "stat-block-breaker">Ecology</p>
+<p class = "stat-block-1"><strong>Environment</strong> any land</p>
+<p class = "stat-block-1"><strong>Organization</strong> solitary or colony (4&ndash;12)</p>
+<p class = "stat-block-1"><strong>Treasure</strong> none</p>
+<p class = "stat-block-breaker">Special Abilities</p>
+<p class = "stat-block-1"><strong>Disease (Su) </strong><em>Ghoul Fever</em>.</p>
+
+<p>Ghoul spellcasters use these smaller cousins to skavelings as familiars. An evil spellcaster can gain a sootwing bat as a familiar at 5th level by taking the Improved Familiar feat. A sootwing bat familiar grants its master a +1 bonus to channel resistance (if the master has any).</p>
+
+<h3 id = "ghoul-hound">Ghoul Hound</h3>
+<p><em>This canine creature has sallow, dead skin stretched tight across its bones. Its teeth are long and yellowed.</em> </p>
+
+<p class = "stat-block-title">Ghoul Hound <span class = "stat-block-cr">CR 1</span></p>
+<p class = "stat-block-xp">XP 400</p>
+<p class = "stat-block-1">CE Medium undead</p>
+<p class = "stat-block-1"><strong>Init</strong> +6; <strong>Senses</strong> darkvision 60 ft.; <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +6</p>
+<p class = "stat-block-breaker">Defense</p>
+<p class = "stat-block-1"><strong>AC</strong> 14, touch 12, flat-footed 12 (+2 Dex, +2 natural)</p>
+<p class = "stat-block-1"><strong>hp</strong> 13 (2d8+4)</p>
+<p class = "stat-block-1"><strong>Fort</strong> +2, <strong>Ref</strong> +2, <strong>Will</strong> +5</p>
+<p class = "stat-block-1"><strong>Defensive Abilities</strong> channel resistance +2; <strong>Immune</strong> undead traits</p>
+<p class = "stat-block-breaker">Offense</p>
+<p class = "stat-block-1"><strong>Speed</strong> 50 ft.</p>
+<p class = "stat-block-1"><strong>Melee</strong> bite +5 (1d6+6 plus disease, paralysis, and trip)</p>
+<p class = "stat-block-1"><strong>Special Attacks</strong> disease (DC 13), paralysis (1d4+1 rounds, DC 13, elves are immune to this effect)</p>
+<p class = "stat-block-breaker">Statistics</p>
+<p class = "stat-block-1"><strong>Str</strong> 18, <strong>Dex</strong> 15, <strong>Con</strong> &mdash;, <strong>Int</strong> 2, <strong>Wis</strong> 14, <strong>Cha</strong> 14</p>
+<p class = "stat-block-1"><strong>Base Atk</strong> +1; <strong>CMB</strong> +5; <strong>CMD</strong> 17 (21 vs. trip)</p>
+<p class = "stat-block-1"><strong>Feats</strong> <a href = "../coreRulebook/feats.html#improved-initiative">Improved Initiative</a></p>
+<p class = "stat-block-1"><strong>Skills</strong> <a href = "../coreRulebook/skills/perception.html#perception">Perception</a> +6, <a href = "../coreRulebook/skills/stealth.html#stealth">Stealth</a> +6</p>
+<p class = "stat-block-breaker">Ecology</p>
+<p class = "stat-block-1"><strong>Environment</strong> any land</p>
+<p class = "stat-block-1"><strong>Organization</strong> solitary, guard (2&ndash;4 plus 2&ndash;4 ghouls), or pack (4&ndash;6 plus 2&ndash;4 ghouls)</p>
+<p class = "stat-block-1"><strong>Treasure</strong> none</p>
+<p class = "stat-block-breaker">Special Abilities</p>
+<p class = "stat-block-1"><strong>Disease (Su)</strong> <em>Ghoul Fever</em>.</p>
+
+<p>Ghouls keep ghoul hounds much as humans keep hunting dogs&mdash;some ghouls view these vicious beasts as little more than tools, while more sentimental ghouls treat them as favored pets. Ghoul hounds obediently follow their ghoul masters.</p>
+<p><strong>Grathkoll (CR 2)</strong>: A larger breed of ghoul hound, the grathkoll can be ridden by a Medium creature. A grathkoll is a ghoul hound with the giant simple template and a +10 bonus to its base land speed.</p>
+
+
+<h1 id = "ghoul-encounters">Encounters</h1>
+<p>Ghouls are cunning and versatile enemies, and can be used in many scenarios for an undead-focused campaign.</p>
+
+<h2>Second-Story Killers (CR 5)</h2>
+<p>These stealthy serial killers might live near the edge of a village or large city and terrorize the locals by breaking in and slaughtering entire families. After a few weeks of terror, they move on to another village and start the carnage anew.</p>
+
+<p class = "stat-block-title">Ghoul Creeper <span class = "stat-block-cr">CR 3</span></p>
+<p class = "stat-block-xp">XP 800</p>
+<p class = "stat-block-1"><strong>hp</strong> 37</p>
+
+<p class = "stat-block-title">Ghouls (2) <span class = "stat-block-cr">CR 1</span></p>
+<p class = "stat-block-xp">XP 400 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 13 each</p>
+
+<h2>Ghoul Hunting Party (CR 10)</h2>
+<p>This hunting party could be searching for someone in particular, or might just be out trying to fill the larders. A hunting party might attack a small caravan near a less traveled road or even a small village.</p>
+
+<p class = "stat-block-title">Corpse Cat <span class = "stat-block-cr">CR &mdash;</span></p>
+<p class = "stat-block-xp">XP &mdash;</p>
+<p class = "stat-block-1"><strong>hp</strong> 16</p>
+
+<p class = "stat-block-title">Ghoul Commander <span class = "stat-block-cr">CR 8</span></p>
+<p class = "stat-block-xp">XP 4,800</p>
+<p class = "stat-block-1"><strong>hp</strong> 99</p>
+
+<p class = "stat-block-title">Ghoul Huntsmaster <span class = "stat-block-cr">CR 7</span></p>
+<p class = "stat-block-xp">XP 3,200</p>
+<p class = "stat-block-1"><strong>hp</strong> 80</p>
+
+<p class = "stat-block-title">Ghouls (4) <span class = "stat-block-cr">CR 1</span></p>
+<p class = "stat-block-xp">XP 400 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 13 each</p>
+
+<h2>The Guild (CR 10)</h2>
+<p>A thieves' guild has a dark secret at its heart. The cost for crossing this guild is high, and apprentices who wash out are never seen again. This encounter works best as part of a series of encounters, and could be paired with the Second-Story Killers encounter or a selection of rogue stat blocks from <em>Pathfinder RPG NPC Codex</em> .</p>
+
+<p class = "stat-block-title">Ghoul Stalkers (2) <span class = "stat-block-cr">CR 6</span></p>
+<p class = "stat-block-xp">XP 2,400 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 74 each</p>
+
+<p class = "stat-block-title">Masked Murderer <span class = "stat-block-cr">CR 8</span></p>
+<p class = "stat-block-xp">XP 4,800</p>
+<p class = "stat-block-1"><strong>hp</strong> 113</p>
+
+<h2>Grave Trouble (CR 12)</h2>
+<p>This pair of ghoul spellcasters and their bodyguards are much more than casual thugs. They are likely to be at the heart of a larger plot or traveling to secure a source of fresh meat for themselves and their kin. This encounter works well following the ghoul hunting party detailed above.</p>
+
+<p class = "stat-block-title">Ancient GraveDigger <span class = "stat-block-cr">CR 10</span></p>
+<p class = "stat-block-xp">XP 9,600</p>
+<p class = "stat-block-1"><strong>hp</strong> 112</p>
+
+<p class = "stat-block-title">Carrion Golems (4) <span class = "stat-block-cr">CR 4</span></p>
+<p class = "stat-block-xp">XP 1,200 each</p>
+<p class = "stat-block-1"><strong>hp</strong> 42 each</p>
+
+<p class = "stat-block-title">Masked Murderer <span class = "stat-block-cr">CR 8</span></p>
+<p class = "stat-block-xp">XP 4,800</p>
+<p class = "stat-block-1"><strong>hp</strong> 113</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Ghouls",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

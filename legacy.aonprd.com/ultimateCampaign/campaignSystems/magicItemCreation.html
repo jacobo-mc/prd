@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Magic Item Creation</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "magicItemCreation.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../characterBackground.html">Character Background</a></li>
+						<li><a href = "../downtime.html">Downtime</a></li>
+						<li><a href = "../campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "magicItemCreation.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "magicItemCreation.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "magicItemCreation.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "magicItemCreation.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+
+<h1 id="magic-item-creation">Magic Item Creation</h1>
+<p>If you have item creation feats (or access to those feats from cohorts or other NPCs), you might want to use time between adventures to craft magic items, either to create new items from scratch or add abilities to existing items. If the desired item is something out of the <i>Pathfinder RPG Core Rulebook</i> and you have the appropriate feats, the GM's role is mainly to approve or disapprove the creation of the item (for example, if the GM has decided that the desired item is rare, requires exotic ingredients, or is illegal or forbidden where the downtime takes place). If there is a chance for you to accidentally create a cursed item by failing the skill check by 5 or more, the GM should roll the check in secret so you don't know whether or not the item is cursed.</p>
+<p>If you want to create an entirely new type of item (such as a ring that allows you to cast <i><a href="../../coreRulebook/spells/acidArrow.html#acid-arrow" >acid arrow</a></i> three times per day) or add properties to an existing item (such as adding the <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-flaming" >flaming</a></i> property to a <i><a href="../../coreRulebook/magicItems/weapons.html#holy-avenger" >holy avenger</a></i>), the process is more complex and requires discussion and cooperation between you and the GM. The following sections address common concerns and problems about magic item creation.</p>
+
+<h3 id="pricing-new-items">Pricing New Items</h3>
+<p>The correct way to price an item is by comparing its abilities to similar items (see <a href="../../coreRulebook/magicItems/magicItemCreation.html#magic-item-gold-piece-values">Magic Item Gold Piece Values</a>), and only if there are no similar items should you use the pricing formulas to determine an approximate price for the item. If you discover a loophole that allows an item to have an ability for a much lower price than is given for a comparable item in the <i>Core Rulebook</i>, the GM should require using the price of the <i>Core Rulebook</i> item, as that is the standard cost for such an effect. Most of these loopholes stem from trying to get unlimited uses per day of a spell effect from <a href="../../coreRulebook/magicItems.html#command-word">"command word"</a> or <a href="../../coreRulebook/magicItems.html#use-activated">"use-activated or continuous"</a> descriptions.</p>
+<p><i>Example</i>: Rob's cleric wants to create a heavy mace with a continuous <i><a href="../../coreRulebook/spells/trueStrike.html#true-strike" >true strike</a></i> ability, granting its wielder a +20 insight bonus on attack rolls. The formula for a continuous spell effect is spell level × caster level × 2,000 gp, for a total of 2,000 gp (spell level 1, caster level 1). Jessica, the GM, points out that a +5 enhancement bonus on a weapon costs 50,000 gp, and the +20 bonus from <i><a href="../../coreRulebook/spells/trueStrike.html#true-strike" >true strike</a></i> is much better than the +5 bonus from standard weapon enhancement, and suggests a price of 200,000 gp for the mace. Rob agrees that using the formula in this way is unreasonable and decides to craft a <i>+1 heavy mace</i> using the standard weapon pricing rules instead.</p>
+<p><i>Example</i>: Patrick's wizard wants to create bracers with a continuous <i><a href="../../coreRulebook/spells/mageArmor.html#mage-armor" >mage armor</a></i> ability, granting the wearer a +4 armor bonus to AC. The formula indicates this would cost 2,000 gp (spell level 1, caster level 1). Jessica reminds him that <i><a href="../../coreRulebook/magicItems/wondrousItems.html#bracers-of-armor" >bracers of armor</a> +4</i> are priced at 16,000 gp and Patrick's bracers should have that price as well. Patrick agrees, and because he only has 2,000 gp to spend, he decides to spend 1,000 gp of that to craft <i><a href="../../coreRulebook/magicItems/wondrousItems.html#bracers-of-armor" >bracers of armor</a> +1 </i>using the standard bracer prices.</p>
+<p>Some new items are really existing magic items with a different weapon or armor type, such as a <i><a href="../../coreRulebook/magicItems/weapons.html#dagger-of-venom" >dagger of venom</a></i> that is a rapier instead of a dagger or a <i><a href="../../coreRulebook/magicItems/armor.html#lion-s-shield" >lion's shield</a></i> that's a wooden shield instead of a metal shield. For these items, just replace the price of the nonmagical masterwork item with the cost of the new type of item. For example, a <i>rapier of venom</i> has a price of 8,320 gp instead of the <i><a href="../../coreRulebook/magicItems/weapons.html#dagger-of-venom" >dagger of venom</a></i>'s<i> </i>price of 8,302 gp.</p>
+
+<h3 id="cooperative-crafting">Cooperative Crafting</h3>
+<p>If you need another character to supply one of an item's requirements (such as if you're a wizard creating an item with a divine spell), both you and the other character must be present for the entire duration of the crafting process. If the GM is using the downtime system, both you and the other character must use downtime at the same time for this purpose. Only you make the skill check to complete the item&mdash;or, if there is a chance of creating a cursed item, the GM makes the check in secret.</p>
+<p>If the second character is providing a spell effect, that character's spell is expended for the day, just as if you were using one of your own spells for a requirement. If the second character is a hired NPC, you must pay for the NPC's spellcasting service for each day of the item creation.</p>
+
+<h3 id="upgrading-items">Upgrading Items</h3>
+<p>Adding more magic to an existing item can be quite simple or very math-intensive. If the item's current and proposed abilities follow the normal pricing rules (particularly with weapons, armor, and shields), adding the new abilities is a matter of subtracting the old price from the new price and determining how many days of crafting it takes to make up the difference.</p>
+<p><i>Example</i>: Patrick's wizard decides to use his downtime to increase the armor bonus on his <i><a href="../../coreRulebook/magicItems/wondrousItems.html#bracers-of-armor" >bracers of armor</a> +1</i> to +3. The price difference between the two types of bracers is 8,000 gp, so Patrick's wizard must spend 8 days and 4,000 gp (half the 8,000 gp price difference) upgrading his bracers' magic. If he has fewer than 8 days before the next adventure, he'll need to finish his crafting while traveling or use accelerated crafting in town to speed up the process.</p>
+<p>For most other items, GMs should use the multiple different abilities rule to determine the item's new price: increase the cost of the new ability by 50%, add that to the total price of the item to get the new price. Then subtract the old price from the new price to determine the difference, and determine how many days of crafting it takes to cover the difference.</p>
+<p><i>Example</i>: Lisa's paladin has <i><a href="../../coreRulebook/magicItems/wondrousItems.html#horseshoes-of-a-zephyr" >horseshoes of a zephyr</a></i> and wants to hire Patrick's wizard to add the powers of <i><a href="../../coreRulebook/magicItems/wondrousItems.html#horseshoes-of-speed" >horseshoes of speed</a></i> to her current horseshoes. Their GM, Jessica, decides that this is a suitable item and tells Lisa and Patrick they can proceed. The price of <i><a href="../../coreRulebook/magicItems/wondrousItems.html#horseshoes-of-speed" >horseshoes of speed</a></i> is 3,000 gp, increased by 50% for the multiple different abilities rule to 4,500 gp. Patrick's wizard must spend 5 days and Lisa's paladin must pay 2,250 gp (half the 4,500 gp price difference) to add the new property to the horseshoes, resulting in an item worth 10,500 gp (6,000 gp originally + 4,500 gp for the new property).</p>
+<p>For specific magic armor and weapons, the price for the base item may be hard to determine, as some abilities may have been priced as plus-based properties and some as gp-based properties. Without knowing which is which, how to increase the price (using the plus-based table or flat gp addition) can't be determined. If this happens and nobody can agree on a fair price, it's best to not upgrade the item, or ask the GM for permission to pseudo-upgrade the item by swapping it for a different item with a price that can be calculated with the normal rules.</p>
+<p><i>Example</i>: Lisa's paladin has a <i><a href="../../coreRulebook/magicItems/weapons.html#holy-avenger" >holy avenger</a></i> that she wants to upgrade with the <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-flaming" >flaming</a></i> special ability. A <i><a href="../../coreRulebook/magicItems/weapons.html#holy-avenger" >holy avenger</a></i> has a price of 120,630 gp, but when not in the hands of a paladin, it functions as a <i>+5 <a href="../../coreRulebook/magicItems/weapons.html#weapons-holy" >holy</a> cold iron longsword</i>, which has a price of 100,630 gp. The 20,000 gp difference in the prices of these two possible base weapons includes the sword's spell resistance, <i><a href="../../coreRulebook/spells/dispelMagic.html#dispel-magic-greater" >greater dispel magic</a></i> once per round, and the limitation that the extra powers don't work for non-paladins. Jessica and Lisa talk about pricing ideas for a while, but can't figure out a fair way to price the upgrade. Lisa decides to upgrade her character's armor instead.</p>
+<p>The multiple similar abilities rule is specifically for items that don't use a magic item slot (such as staves), and can't be used for items that do use a magic item slot. The existing staves in the <i>Core Rulebook</i> all use this rule for pricing the cost of their spells. When adding abilities to these items, remember that they're priced with the highest-level spell at 100% of the normal cost, the next-highest at 75%, and all others at 50%, which means that adding a new spell that's between the lowest and highest spell level can alter the cost of the other abilities in the item. Increasing the number of charges required for an ability also affects the cost of that ability (see <a href="../../coreRulebook/magicItems/magicItemCreation.html#creating-staves">Creating Staves</a>). Because staff pricing is so complex, a GM might want to forbid adding new abilities to staves, or limit new abilities to the lowest-level spell already present in the item.</p>
+
+<h3 id="recharging-charged-items">Recharging Charged Items</h3>
+<p>The <i>Core Rulebook</i> doesn't allow item creation feats to recharge charged items such as wands. This is because wands are the most cost-effective form of expendable spellcasting in the game (the minimum price is 15 gp per charge, as compared to a minimum price of 25 gp per use for a scroll or 50 gp per use for a potion). Allowing wand recharging devalues scrolls and potions in the game, especially as using a wand does not provoke attacks of opportunity. A wand's lower price increment would also mean that partially recharging the wand is easily done with a short downtime period (10 charges per day for a 2nd-level wand, 4 per day for a 3rd-level wand, and 2 per day for a 4th-level wand), making the wand even more useful and cost-effective.</p>
+<p>A GM who wants to allow wand recharging can require a minimum of 25 charges added to the item to help offset this advantage, as it forces you to spend a larger amount of gold at once instead of smaller amounts more frequently.</p>
+
+<h3 id="altering-existing-items">Altering Existing Items</h3>
+<p>The <i>Core Rulebook</i> doesn't allow item creation feats to alter the physical nature of an item, its default size, its shape, or its magical properties. For example, there is no mechanism for using crafting feats to change a steel <i>+1 longsword</i> into an adamantine <i>+1 longsword</i>, a Large <i>+1 chain shirt</i> into a Medium <i>+1 chain shirt</i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#boots-of-speed" >boots of speed</a></i> into an <i>amulet of <a href="../../coreRulebook/magicItems/weapons.html#weapons-speed" >speed</a></i>, or a <i>+1 <a href="../../coreRulebook/magicItems/weapons.html#unholy" >unholy</a> longsword</i> into a <i>+1 <a href="../../coreRulebook/magicItems/weapons.html#weapons-flaming" >flaming</a> <a href="../../coreRulebook/magicItems/weapons.html#weapons-shock" >shock</a> longsword</i>. Many GMs might decide that these kinds of transformations are impossible, beyond the scope of mortals, or not as cost-efficient as crafting a new item from scratch. Others might allow these sorts of transformations for free or a small surcharge. Keep in mind the following warnings.</p>
+<p><b>Not All Item Slots Have Equal Value</b>: This is true, even though it isn't expressed monetarily in the rules. Some item slots are very common and are shared by many useful items (boots, belts, rings, and amulets in particular), while some slots are used by only a few items (such as body, chest, and eyes). Allowing a character to alter or craft an item for one of these underused slots is allowing the character to bypass built-in choices between popular items.</p>
+<p><b>Some Abilities Are Assigned to Certain Slots</b>: Some of the magic items in the <i>Core Rulebook</i> are deliberately assigned to specific magic item slots for balance purposes, so that you have to make hard choices about what items to wear. In particular, the magic belts and circlets that give enhancement bonuses to ability scores are in this category&mdash;characters who want to enhance multiple physical or mental ability scores must pay extra for combination items like a <i><a href="../../coreRulebook/magicItems/wondrousItems.html#belt-of-physical-might" >belt of physical might</a></i> or <i><a href="../../coreRulebook/magicItems/wondrousItems.html#headband-of-mental-prowess" >headband of mental prowess</a></i>.</p>
+<p>If there is a trend of all <i>Core Rulebook</i> items of a particular type using a particular slot (such as items that grant physical ability score bonuses being belts or items that grant movement bonuses being boots), GMs should be hesitant to allow you to move those abilities to other slots; otherwise, they ignore these deliberate restrictions by cheaply spreading out these items over unused slots.</p>
+<p><b>Classes Value Some Slots More Than Others</b>: This is a combination of the two previous warnings. Because most belts enhance physical abilities, wizards rarely have need for standard belt items. This means a wizard can change an item that's useful to wizards into a belt and not have to worry about a future slot conflict by discovering a wizardly magic belt in a treasure hoard. Likewise, fighters have little use for most standard head items, so altering an existing fighter item to use the head slot means it has little risk of competition from found head slot items. GMs should consider carefully before allowing you to bypass these intentional, built-in item slot restrictions.</p>
+<p><b>Respect Each Crafting Feat's Niche</b>: You might be tempted to create rings that have charges like wands, or bracers with multiple charge-based effects like staves. A GM allowing this makes <a href="../../coreRulebook/feats.html#craft-wondrous-item" >Craft Wondrous Item</a> and <a href="../../coreRulebook/feats.html#forge-ring" >Forge Ring</a> even more versatile and powerful, and devalues <a href="../../coreRulebook/feats.html#craft-staff" >Craft Staff</a> and <a href="../../coreRulebook/feats.html#craft-wand" >Craft Wand</a> because those two feats can create only charged items.</p>
+<p>Before allowing such an item, consider whether the reverse idea would be appropriate&mdash;if someone with <a href="../../coreRulebook/feats.html#craft-wand" >Craft Wand</a> can't make a <i>wand of protection +1</i> that grants a deflection bonus like a <i><a href="../../coreRulebook/magicItems/rings.html#ring-of-protection" >ring of protection</a> +1</i>, and if someone with <a href="../../coreRulebook/feats.html#craft-staff" >Craft Staff</a> can't make a <i>handy haverstaff</i> that stores items like a <i><a href="../../coreRulebook/magicItems/wondrousItems.html#handy-haversack" >handy haversack</a></i>, then <a href="../../coreRulebook/feats.html#craft-wondrous-item" >Craft Wondrous Item</a> and <a href="../../coreRulebook/feats.html#forge-ring" >Forge Ring</a> shouldn't be able to poach item types from the other feats.</p>
+<p>GMs who wish to allow some of these sorts of alterations should consider using the original item as a talismanic component for the final item (see page 173).</p>
+
+<h3 id="adjusting-character-wealth-by-level">Adjusting Character Wealth by Level</h3>
+<p>You can take advantage of the item creation rules to hand-craft most or all of your magic items. Because you've spent gp equal to only half the price of these items, you could end up with more gear than what the Character Wealth by Level table suggests for you. This is especially the case if you're a new character starting above 1st level or one with the versatile <a href="../../coreRulebook/feats.html#craft-wondrous-item" >Craft Wondrous Item</a> feat. With these advantages, you can carefully craft optimized gear rather than acquiring GM-selected gear over the course of a campaign. For example, a newly created 4th-level character should have about 6,000 gp worth of gear, but you can craft up to 12,000 gp worth of gear with that much gold, all of it taking place before the character enters the campaign, making the time-cost of crafting irrelevant.</p>
+<p>Some GMs might be tempted to reduce the amount or value of the treasure you acquire to offset this and keep your overall wealth in line with the Character Wealth by Level table. Unfortunately, that has the net result of negating the main benefit of crafting magic items&mdash;in effect negating your choice of a feat. However, game balance for the default campaign experience expects you and all other PCs to be close to the listed wealth values, so the GM shouldn't just let you craft double the normal amount of gear. As a guideline, allowing a crafting PC to exceed the Character Wealth by Level guidelines by about 25% is fair, or even up to 50% if the PC has multiple crafting feats.</p>
+<p>If you are creating items for other characters in the party, the increased wealth for the other characters should come out of your increased allotment. Not only does this prevent you from skewing the wealth by level for everyone in the party, but it encourages other characters to learn item creation feats.</p>
+<p><i>Example</i>: The Character Wealth By Level table states that an 8th-level character should have about 33,000 gp worth of items. Using the above 25% rule, Patrick's 8th-level wizard with <a href="../../coreRulebook/feats.html#craft-wondrous-item" >Craft Wondrous Item</a> is allowed an additional 8,250 gp worth of crafted wondrous items. If he uses his feat to craft items for the rest of the party, any excess value the other PCs have because of those items should count toward Patrick's additional 8,250 gp worth of crafted items.</p>
+
+<h2 id="creating-items-for-profit">Creating Items For Profit</h2>
+<p>The expectation in a standard campaign is that the PCs go on quests to fighting monsters and collect treasure. In other words, you aren't supposed to stay at home, work at day jobs, and earn wages instead of adventuring. The game mechanics reinforce this by only allowing you to sell items for half their normal price because it assumes selling them to an NPC shopkeeper, so even if you craft a <i><a href="../../coreRulebook/magicItems/wondrousItems.html#bag-of-holding" >bag of holding</a></i>, you can't sell it yourself for full price because you don't have your own store to sell it in. This prevents you from profiting by crafting an item (and paying half the price to do so) and selling it for the full market price.</p>
+<p>However, the downtime system allows you to build a business such as a tavern or even a magic shop, and earn money from that business while you're away adventuring. You might want to use an appropriate business to sell crafted items for more than half price, but the downtime system already accounts for using a building to generate money, as well as spending personal time helping run the business (see <a href="../downtime/downtimeActivities.html#run-a-business">Run a Business</a>). A typical magic shop earns about 3 gp per day, or perhaps 4&mdash;5 gp per day if a skilled owner PC directly participates in running the business. Because magic items are very expensive (with the most common potions costing 50 gp or more, far higher than what most commoners can afford), this income represents many days where the business sells nothing, followed by selling one or two high-priced items, which averages out to a few gp of profit per day. In other words, just because you can craft one <i>+1 longsword</i> each day doesn't mean you're likely to sell one each day in your shop. The GM has two options for resolving this mercantile dilemma.</p>
+<p><b>Use the Downtime System</b>: This is the simplest solution, and assumes you are spending downtime running the business rather than crafting specific items.</p>
+<p><i>Example</i>: Patrick owns a magic shop and has 5 days free between adventures. Instead of crafting specific items for his own use, he uses that time on the run a business downtime activity, with the assumption that he is using his crafting feat to create minor magic items for customers to increase the money generated by his magic shop. Patrick doesn't have to specify what items he is creating, track inventory of completed items, or worry about interrupting his crafting&mdash;the details aren't important, just that he is using his skills to increase the profit of his business.</p>
+<p><b>Alter Wealth By Level</b>: Similar to using the item crafting rules to adjust wealth by level, this just applies a flat adjustment to your expected wealth. You don't even have to account for what specific items were crafted using this method.</p>
+<p><i>Example</i>: Rob's cleric has the <a href="../../coreRulebook/feats.html#brew-potion" >Brew Potion</a> feat and owns a magic shop. Jessica, the GM, allows him to exceed his wealth by level by 25%, and the extra doesn't all have to be in the form of potions&mdash;Rob's shop is selling potions, and he is using his profits to purchase other items for his character.</p>
+
+<h2 id="talismanic-components">Talismanic components</h2>
+<p>Fantasy and myth are rife with exotic materials used to create magic items&mdash;meteoric iron, unicorn horn, dragon blood, vampire ichor, and so on. The item creation system in the <i>Core Rulebook</i> is very abstract, however, and most item creation is just a matter of spending gold in town for the necessary supplies that are never quantified or described. This section provides details on incorporating talismanic components into a campaign, the effect they have on treasure hoards, examples of many talismanic components, and the sorts of items they are used for.</p>
+
+<h3 id="enriching-the-campaign">Enriching the Campaign</h3>
+<p>Using talismanic components is a fun way to provide more story flavor and local color to a campaign. They make magic items feel more unique and less mass-produced. A <i>+1 <a href="../../coreRulebook/magicItems/weapons.html#weapons-flaming" >flaming</a> longsword</i> is no longer an unremarkable magic item if giving a weapon a +1 enhancement bonus requires a sprinkle of dust from a dead star, and if crafting a <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-flaming" >flaming</a></i> weapon requires a fragment of a fire elemental's spirit. That gives the weapon a sense of history and opens the door to many questions about who originally created the sword, where the creator got the materials for it, and who it was crafted for. Interactions with merchants and traders likewise take on a new flavor if caravans full of goods from distant lands carry a small selection of these obscure crafting components.</p>
+
+<h3 id="using-components">Using Components</h3>
+<p>You spend talismanic components exactly like gp for the purpose of crafting magic items, and they're destroyed as part of the item's creation or incorporated into the item. Once used, they're expended and can't be used again. Talismanic components don't change the crafting time, DC, or any other aspects of creating a magic item; they are just a substitute for the gp cost to craft it.</p>
+<p><i>Example</i>: Dragon heartblood is a talismanic component useful for all magic items. Patrick's wizard wants to create a <i>wand of <a href="../../coreRulebook/spells/burningHands.html#burning-hands" >burning hands</a></i>, which has a price of 750 gp. Crafting the wand requires him to spend 375 gp on magic supplies. The wizard has a vial of dragon heartblood worth 300 gp. He decides to use all 300 gp worth of his heartblood to craft the wand, and uses his actual gold to cover the remaining cost of crafting the wand.</p>
+<p>Most components are only usable for crafting certain magic items, but some are usable for any kind of magic item. A component's description lists what kind of items it can be used for. Using an inappropriate component in crafting an item normally has no effect, but the GM might allow a desperate crafter to use an inappropriate component at a higher crafting DC, increasing the risk of failure or creating a cursed item.</p>
+
+<h3 id="requiring-components">Requiring Components</h3>
+<p>The GM might decide that some or all magic item creation requires talismanic components. These components could be available for purchase in civilized areas, or could be acquired only by hunting specific creatures or searching in remote locations. Some components might be illegal in some cities or countries and found only on the black market there. In this way, the GM can set different controls on item creation and create adventure opportunities for crafting-oriented PCs. For example, if crafting an <i><a href="../../coreRulebook/magicItems/weapons.html#weapons-anarchic" >anarchic</a></i> weapon requires the blood of a powerful demon, you can try to acquire some demon blood in town, arousing suspicion as to why you need such a foul substance, or you can travel to a location where demons are known to dwell and try to kill one&mdash;or maybe even bargain&mdash;for its blood.</p>
+
+<h3 id="components-as-commodities">Components as Commodities</h3>
+<p>These components are trade goods just like gems, wheat, spices, or cloth. Under normal circumstances, you can acquire these materials at the listed cost or sell what you find in a treasure hoard at the listed cost. For example, 500 gp worth of dragon heartblood costs 500 gp in a city, and if you take a flask of dragon heartblood worth 500 gp as your share of treasure, you can sell it in town for 500 gp. If there is a surplus or shortage of a particular component, the price could go up or down, or merchants might be more inclined to bargain over the price to try to get a better deal.</p>
+
+<h3 id="components-as-treasure">Components as Treasure</h3>
+<p>If the GM uses these rules for talismanic components, killing monsters shouldn't suddenly result in more treasure because you can loot suitable parts for components, in the same way that just because wyvern poison costs 3,000 gp doesn't mean that 3,000 gp worth of sellable poison can be obtained from every wyvern. The value of a talismanic component from a monster should be subtracted from the monster's total treasure award for the encounter, or later encounters should award a reduced amount of treasure to make up for the value of the talismanic component.</p>
+<p>Acquiring a talismanic component from a monster or natural feature might not be easy or automatic. Plucking a rare herb without damaging its magical properties might require a <a href="../../coreRulebook/skills/profession.html#profession" >Profession</a> (herbalist) check. Harvesting an intact glowing crystal from a mithral vein might require a <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (geology) check. Distilling heartblood from a dragon's corpse might require a <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) check. Gaining a tear of happiness from a lillend might require a <a href="../../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> or <a href="../../coreRulebook/skills/perform.html#perform" >Perform</a> check. The GM can use these kinds of skill checks to reward you for putting ranks in noncombat skills, and use similar checks for you to recognize that an object has value as a talismanic component.</p>
+<p>Talismanic components might be viable for only a limited time, or spoil under certain circumstances. For example, dragon heartblood loses its power if it's exposed to air for more than a few minutes, necessitating transporting it in sealed vials (and limiting how much can be taken from a slain dragon). Vampire ichor spoils instantly in sunlight or on holy ground. These kinds of limitations also provide additional plot hooks for quests involving the acquisition and retrieval of talismanic components.</p>
+
+<h3 id="example-components">Example Components</h3>
+<p>This section lists conventional and commonly known talismanic components. GMs should invent many other strange and mythical components such as "the first scent of the day" or "the sound of a cat's footfall," especially for very powerful items. Note that the substances don't necessarily have identical values per unit; dragon heartblood might be worth 10 gp per drop, mithral crystals worth 10 gp per pound, and the hands of murderers worth 10 gp each.</p>
+<p><b>Adamantine Ore</b>: Used for metal armor, metal weapons, and items that manipulate or create earth or metal.</p>
+<p><b>Arcane Residue</b>: Salvaged from destroyed magic items, often in crystalline or powder form; used for any kind of magic item.</p>
+<p><b>Astral Essence</b>: Scraped from creatures that are located deep within the Astral Plane; used for plane-traveling, teleportation, and time-manipulating items.</p>
+<p><b>Demon Blood</b>: Taken from powerful demons (though weak demons might have minute quantities); used for chaotic, evil, demon-summoning, electricity-resistance, and good- or lawful-repelling items.</p>
+<p><b>Devil Blood</b>: Taken from powerful devils (though weak devils may have minute quantities); used for lawful, evil, devil-summoning, and fire-resistance items.</p>
+<p><b>Dire Animal Brain</b>: Used in animal-influencing and physical enhancement items.</p>
+<p><b>Doppelganger Ichor</b>: Used for disguise and polymorph items.</p>
+<p><b>Dragon Bone</b>: Flawless, smooth bones are suitable for rods, staves, wands, and dragon-controlling items. Dragon bones can also be used for items with abilities or energy types appropriate to the dragon's breath weapon (copper dragons for <i><a href="../../coreRulebook/spells/slow.html#slow" >slow</a></i>, red dragons for fire, and so on).</p>
+<p><b>Dragon Heartblood</b>: The freshest blood from the dragon's heart; used for any kind of magic item.</p>
+<p><b>Elemental Spirit</b>: Taken from the remains of powerful elementals; used for items appropriate to the source's element or associated energy type.</p>
+<p><b>Ethereal Essence</b>: Dusted from creatures located deep within the Ethereal Plane; used for plane-traveling and dream items.</p>
+<p><b>Giant Squid Ink</b>: Used in scrolls and water items.</p>
+<p><b>Hand of a Murderer</b>: Must be taken shortly after the murderer's demise; used for death, evil, and undead-creating items, as well as items that specifically involve a preserved hand (such as a <i><a href="../../coreRulebook/magicItems/wondrousItems.html#hand-of-glory" >hand of glory</a></i>).</p>
+<p><b>Heart of the Mountain</b>: Mined from places deep underground or the Plane of Earth; used for metal armor, metal weapons, and items that manipulate or create earth or stone.</p>
+<p><b>Holy/Unholy Symbol</b>: Used for items that are appropriate to the religion associated with that symbol, items used to oppose enemies of that religion, or items especially suited for divine spellcasters of that religion (such as a <i><a href="../../coreRulebook/magicItems/wondrousItems.html#phylactery-of-faithfulness" >phylactery of faithfulness</a></i> or a <i><a href="../../coreRulebook/magicItems/wondrousItems.html#phylactery-of-positive-channeling" >phylactery of positive channeling</a></i>).</p>
+<p><b>Mithral Crystal</b>: A rare crystallized form of mithral ore; used for defensive, light, and lycanthrope-repelling items.</p>
+<p><b>Naga Brain</b>: Used in metamagic and poison items.</p>
+<p><b>Rare Herbs</b>: A broad category with individual uses depending on the nature of the particular herb. Nox mushrooms are used for shadow items, bloodvine for bleeding and healing items, wolfsbane for lycanthrope-repelling items, and so on.</p>
+<p><b>Stardust</b>: Collected from long-dead stars, meteorites, and strange beasts native to the dark void; used for cold, darkness, light, and shadow items.</p>
+<p><b>Troll Blood</b>: Used in healing and regenerative items.</p>
+<p><b>Unicorn Horn</b>: Used intact for healing and poison-resisting wands and staves, or powdered for evil-repelling, healing, and teleportation items.</p>
+<p><b>Vampire Dust/Ichor</b>: Dust is taken from a destroyed vampire, ichor from an active one; used for blood, life-draining, mind-controlling, and necromantic items.</p>
+<p><b>Virgin's Blood</b>: Typically acquired in quantities of a pint or more; used in blood, fiend-summoning, and purity items.</p>
+<p><b>Wyvern Poison</b>: Used in corruption and poison items.</p>
+
+</div>	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Magic Item Creation",globalNavPath=[{ href: '/pathfinderRPG/prd/ultimateCampaign/campaignSystems.html', name: 'Campaign Systems' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

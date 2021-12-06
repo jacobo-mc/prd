@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Encounter Tables</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "encounterTables.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "encounterTables.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "encounterTables.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "encounterTables.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "encounterTables.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "encounterTables.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "creatureTypes.html">Creature Types</a></li>
+						<li><a href = "monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "encounterTables.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "encounterTables.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "encounterTables.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "encounterTables.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "encounterTables.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "encounterTables.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "encounterTables.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "encounterTables.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "encounterTables.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "encounterTables.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "encounterTables.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "encounterTables.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "encounterTables.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "encounterTables.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "encounterTables.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="appendix-14-encounter-tables">Encounter Tables</h1>
+				<p>At times during a game when you're looking to liven things up (perhaps during a long overland journey, or maybe when the party's decided to camp in a dangerous dungeon), you can use the following encounter tables to randomly generate monster encounters. These tables do not include all of the monsters in this book&mdash;likewise, they don't cover all possible locations the PCs might find themselves in during the course of a game, but you can use these tables as models for generating additional encounter tables of your own design. Note that each of the following tables has been assigned a CR score&mdash;this indicates the average difficulty of the encounters that can be rolled up on the table. A CR 4 encounter table works well when challenging a group of 4th level PCs, for example.</p>
+				<h2>Desert CR 6</h2><table>
+<thead><tr><th>d%</th><th>Encounter</th><th>Avg. CR</th></tr></thead>
+<tbody>
+<tr><td>1&ndash;8</td><td>1 <a href="spider.html#spider-giant" >giant spider</a></td><td>1</td>
+<tr><td>9&ndash;12</td><td>1 <a href="skeletalChampion.html#skeletal-champion" >skeletal champion</a></td><td>2</td>
+<tr><td>13&ndash;18</td><td>1d8 <a href="skeleton.html#skeleton" >skeleton</a>s</td><td>2</td>
+<tr><td>19&ndash;22</td><td>1 <a href="bat.html#bat-swarm" >bat swarm</a></td><td>2</td>
+<tr><td>23&ndash;30</td><td>1 <a href="scorpion.html#scorpion-giant" >giant scorpion</a></td><td>3</td>
+<tr><td>31&ndash;34</td><td>1d3 <a href="bat.html#bat-dire" >dire bat</a>s</td><td>4</td>
+<tr><td>35&ndash;42</td><td>1d6 <a href="snake.html#snake-venomous" >venomous snake</a>s</td><td>4</td>
+<tr><td>43&ndash;46</td><td>1 <a href="basilisk.html#basilisk" >basilisk</a></td><td>5</td>
+<tr><td>47&ndash;52</td><td>1 <a href="mummy.html#mummy" >mummy</a></td><td>5</td>
+<tr><td>53&ndash;56</td><td>1d4 <a href="genie.html#genie-janni" >jann</a></td><td>6</td>
+<tr><td>57&ndash;60</td><td>1 <a href="lamia.html#lamia" >lamia</a></td><td>6</td>
+<tr><td>61&ndash;68</td><td>2d6 <a href="ant.html#ant-giant" >giant ant</a>s</td><td>6</td>
+<tr><td>69&ndash;72</td><td>1 <a href="dragon.html#metallic-dragon-brass" >brass dragon</a> (young)</td><td>7</td>
+<tr><td>73&ndash;80</td><td>2d6 <a href="gnoll.html#gnoll" >gnoll</a>s and 1d4 <a href="hyena.html#hyena" >hyena</a>s</td><td>7</td>
+<tr><td>81&ndash;84</td><td>1 <a href="remorhaz.html#remorhaz" >remorhaz</a> (cold desert only)</td><td>7</td>
+<tr><td>85&ndash;88</td><td>1 <a href="behir.html#behir" >behir</a></td><td>8</td>
+<tr><td>89&ndash;92</td><td>1 <a href="sphinx.html#sphinx" >sphinx</a></td><td>8</td>
+<tr><td>93&ndash;96</td><td>1 <a href="dragon.html#chromatic-dragon-blue" >blue dragon</a> (young)</td><td>9</td>
+<tr><td>97&ndash;98</td><td>1 <a href="dragon.html#metallic-dragon-brass" >brass dragon</a> (adult)</td><td>11</td>
+<tr><td>99&ndash;100</td><td>1 <a href="dragon.html#chromatic-dragon-blue" >blue dragon</a> (adult)</td><td>13</td></tbody></table>
+
+				<h2>Dungeon (Low-Level) CR 2</h2><table>
+<thead><tr><th>d%</th><th>Encounter</th><th>Avg. CR</th></tr></thead>
+<tbody>
+<tr><td>1&ndash;6</td><td>1d6 <a href="rat.html#rat-dire" >dire rat</a>s</td><td>1</td>
+<tr><td>7&ndash;12</td><td>1d6 <a href="beetle.html#beetle-fire" >fire beetle</a>s</td><td>1</td>
+<tr><td>13&ndash;20</td><td>1d6 <a href="skeleton.html#skeleton" >human skeleton</a>s</td><td>1</td>
+<tr><td>21&ndash;24</td><td>1d4 <a href="centipede.html#centipede-giant" >giant centipede</a>s</td><td>1</td>
+<tr><td>25&ndash;26</td><td>1 <a href="spider.html#spider-swarm" >spider swarm</a></td><td>1</td>
+<tr><td>27&ndash;32</td><td>1d6 <a href="zombie.html#zombie" >human zombie</a>s</td><td>2</td>
+<tr><td>33&ndash;34</td><td>1 <a href="choker.html#choker" >choker</a></td><td>2</td>
+<tr><td>35&ndash;36</td><td>1 <a href="skeletalChampion.html#skeletal-champion" >skeletal champion</a></td><td>2</td>
+<tr><td>37&ndash;44</td><td>2d6 <a href="goblin.html#goblin" >goblin</a>s</td><td>3</td>
+<tr><td>45&ndash;48</td><td>1d4 <a href="ghoul.html#ghoul" >ghoul</a>s</td><td>3</td>
+<tr><td>49&ndash;54</td><td>1d4 <a href="spider.html#spider-giant" >giant spider</a>s</td><td>3</td>
+<tr><td>55&ndash;56</td><td>1 <a href="cockatrice.html#cockatrice" >cockatrice</a></td><td>3</td>
+<tr><td>57&ndash;60</td><td>1 <a href="gelatinousCube.html#gelatinous-cube" >gelatinous cube</a></td><td>3</td>
+<tr><td>61&ndash;64</td><td>1 <a href="rustMonster.html#rust-monster" >rust monster</a></td><td>3</td>
+<tr><td>65&ndash;68</td><td>1 <a href="shadow.html#shadow" >shadow</a></td><td>3</td>
+<tr><td>69&ndash;70</td><td>1 <a href="wight.html#wight" >wight</a></td><td>3</td>
+<tr><td>71&ndash;76</td><td>2d4 <a href="stirge.html#stirge" >stirge</a>s</td><td>4</td>
+<tr><td>77&ndash;82</td><td>1d6 <a href="darkmantle.html#darkmantle" >darkmantle</a>s</td><td>4</td>
+<tr><td>83&ndash;86</td><td>1d6 <a href="troglodyte.html#troglodyte" >troglodyte</a>s</td><td>4</td>
+<tr><td>87&ndash;90</td><td>1d4 <a href="bugbear.html#bugbear" >bugbear</a>s</td><td>4</td>
+<tr><td>91&ndash;92</td><td>1d4 <a href="vargouille.html#vargouille" >vargouille</a>s</td><td>4</td>
+<tr><td>93&ndash;94</td><td>1 <a href="grayOoze.html#gray-ooze" >gray ooze</a></td><td>4</td>
+<tr><td>95&ndash;96</td><td>1 <a href="mimic.html#mimic" >mimic</a></td><td>4</td>
+<tr><td>97&ndash;100</td><td>1 <a href="ogre.html#ogre" >ogre</a></td><td>4</td></tbody></table>
+
+				<h2>Dungeon (Mid-Level) CR 5</h2><table>
+<thead><tr><th>d%</th><th>Encounter</th><th>Avg. CR</th></tr></thead>
+<tbody>
+<tr><td>1&ndash;4</td><td>1 <a href="gelatinousCube.html#gelatinous-cube" >gelatinous cube</a></td><td>3</td>
+<tr><td>5&ndash;8</td><td>1 <a href="rustMonster.html#rust-monster" >rust monster</a></td><td>3</td>
+<tr><td>9&ndash;16</td><td>2d4 <a href="stirge.html#stirge" >stirge</a>s</td><td>4</td>
+<tr><td>17&ndash;22</td><td>1 <a href="grayOoze.html#gray-ooze" >gray ooze</a></td><td>4</td>
+<tr><td>23&ndash;26</td><td>1 <a href="mimic.html#mimic" >mimic</a></td><td>4</td>
+<tr><td>27&ndash;30</td><td>1 <a href="basilisk.html#basilisk" >basilisk</a></td><td>5</td>
+<tr><td>31&ndash;34</td><td>1 <a href="cloaker.html#cloaker" >cloaker</a></td><td>5</td>
+<tr><td>35&ndash;38</td><td>1 <a href="gibberingMouther.html#gibbering-mouther" >gibbering mouther</a></td><td>5</td>
+<tr><td>39&ndash;42</td><td>1 <a href="ochreJelly.html#ochre-jelly" >ochre jelly</a></td><td>5</td>
+<tr><td>43&ndash;46</td><td>1 <a href="wraith.html#wraith" >wraith</a></td><td>5</td>
+<tr><td>47&ndash;48</td><td>1 <a href="devil.html#devil-bearded" >bearded devil</a></td><td>5</td>
+<tr><td>49&ndash;52</td><td>1d4 <a href="shadow.html#shadow" >shadow</a>s</td><td>5</td>
+<tr><td>53&ndash;56</td><td>1d4 <a href="wight.html#wight" >wight</a>s</td><td>5</td>
+<tr><td>57&ndash;62</td><td>1d8 <a href="skeletalChampion.html#skeletal-champion" >skeletal champion</a>s</td><td>6</td>
+<tr><td>63&ndash;68</td><td>2d4 <a href="ghoul.html#ghoul" >ghoul</a>s plus 1 <a href="ghoul.html#ghoul" >ghast</a></td><td>6</td>
+<tr><td>69&ndash;72</td><td>1 <a href="ettin.html#ettin" >ettin</a></td><td>6</td>
+<tr><td>73&ndash;78</td><td>1 <a href="minotaur.html#minotaur" >minotaur</a></td><td>4</td>
+<tr><td>79&ndash;84</td><td>1d4 <a href="ogre.html#ogre" >ogre</a>s</td><td>6</td>
+<tr><td>85&ndash;88</td><td>1d4 <a href="troll.html#troll" >troll</a>s</td><td>7</td>
+<tr><td>89&ndash;90</td><td>1 <a href="demon.html#demon-babau" >babau</a></td><td>7</td>
+<tr><td>91&ndash;94</td><td>1 <a href="blackPudding.html#black-pudding" >black pudding</a></td><td>7</td>
+<tr><td>95&ndash;96</td><td>1 <a href="medusa.html#medusa" >medusa</a></td><td>7</td>
+<tr><td>97&ndash;98</td><td>1 <a href="demon.html#demon-shadow" >shadow demon</a></td><td>7</td>
+<tr><td>99&ndash;100</td><td>1d4 <a href="xill.html#xill" >xill</a>s</td><td>8</td></tbody></table>
+
+				<h2>Dungeon (High-Level) CR 10</h2><table>
+<thead><tr><th>d%</th><th>Encounter</th><th>Avg. CR</th></tr></thead>
+<tbody>
+<tr><td>1&ndash;4</td><td>1 <a href="blackPudding.html#black-pudding" >black pudding</a></td><td>7</td>
+<tr><td>5&ndash;8</td><td>1 <a href="naga.html#naga-dark" >dark naga</a></td><td>8</td>
+<tr><td>9&ndash;14</td><td>1 <a href="mohrg.html#mohrg" >mohrg</a></td><td>8</td>
+<tr><td>15&ndash;18</td><td>1 <a href="demon.html#demon-nabasu" >nabasu</a></td><td>8</td>
+<tr><td>19&ndash;22</td><td>1d6 <a href="cloaker.html#cloaker" >cloaker</a>s</td><td>8</td>
+<tr><td>23&ndash;28</td><td>1d6 <a href="wraith.html#wraith" >wraith</a>s</td><td>8</td>
+<tr><td>29&ndash;36</td><td>1d4 <a href="ettin.html#ettin" >ettin</a>s</td><td>8</td>
+<tr><td>37&ndash;40</td><td>1 <a href="devil.html#devil-bone" >bone devil</a></td><td>9</td>
+<tr><td>41&ndash;44</td><td>1 <a href="nightHag.html#night-hag" >night hag</a></td><td>9</td>
+<tr><td>45&ndash;48</td><td>1 <a href="naga.html#naga-spirit" >spirit naga</a></td><td>9</td>
+<tr><td>49&ndash;54</td><td>1 <a href="vampire.html#vampire" >vampire</a></td><td>9</td>
+<tr><td>55&ndash;58</td><td>1 <a href="demon.html#demon-vrock" >vrock</a></td><td>9</td>
+<tr><td>59&ndash;66</td><td>1d6 <a href="minotaur.html#minotaur" >minotaur</a>s</td><td>9</td>
+<tr><td>67&ndash;72</td><td>2d4 <a href="troll.html#troll" >troll</a>s</td><td>9</td>
+<tr><td>73&ndash;76</td><td>1d4 <a href="shadow.html#shadow-greater" >greater shadow</a>s</td><td>10</td>
+<tr><td>77&ndash;78</td><td>1 <a href="bebilith.html#bebilith" >bebilith</a></td><td>10</td>
+<tr><td>79&ndash;82</td><td>1 <a href="devil.html#devil-barbed" >barbed devil</a></td><td>11</td>
+<tr><td>83&ndash;86</td><td>1 <a href="devourer.html#devourer" >devourer</a></td><td>11</td>
+<tr><td>87&ndash;88</td><td>1 <a href="demon.html#demon-hezrou" >hezrou</a></td><td>11</td>
+<tr><td>89&ndash;92</td><td>1d4 <a href="rakshasa.html#rakshasa" >rakshasa</a>s</td><td>12</td>
+<tr><td>93&ndash;94</td><td>1 <a href="lich.html#lich" >lich</a></td><td>12</td>
+<tr><td>95&ndash;96</td><td>1 <a href="demon.html#demon-glabrezu" >glabrezu</a></td><td>13</td>
+<tr><td>97&ndash;98</td><td>1 <a href="devil.html#devil-ice" >ice devil</a></td><td>13</td>
+<tr><td>99&ndash;100</td><td>1 <a href="demon.html#demon-nalfeshnee" >nalfeshnee</a></td><td>14</td></tbody></table>
+
+				<h2>Forest (Temperate Forest) CR 5</h2><table>
+<thead><tr><th>d%</th><th>Encounter</th><th>Avg. CR</th></tr></thead>
+<tbody>
+<tr><td>1&ndash;6</td><td>1 <a href="bat.html#bat-swarm" >bat swarm</a></td><td>2</td>
+<tr><td>7&ndash;8</td><td>1 <a href="yellowMuskCreeper.html#yellow-musk-creeper" >yellow musk creeper</a></td><td>2</td>
+<tr><td>9&ndash;12</td><td>1d4 <a href="spider.html#spider-giant" >giant spider</a>s</td><td>3</td>
+<tr><td>13&ndash;16</td><td>1 <a href="assassinVine.html#assassin-vine" >assassin vine</a></td><td>3</td>
+<tr><td>17&ndash;20</td><td>1 <a href="mantis.html#mantis-giant" >giant mantis</a></td><td>3</td>
+<tr><td>21&ndash;22</td><td>1 <a href="unicorn.html#unicorn" >unicorn</a></td><td>3</td>
+<tr><td>23&ndash;26</td><td>1d4 <a href="bat.html#bat-dire" >dire bat</a>s</td><td>4</td>
+<tr><td>27&ndash;32</td><td>1d4 <a href="boar.html#boar" >boar</a>s</td><td>4</td>
+<tr><td>33&ndash;34</td><td>1 <a href="boar.html#boar-dire" >dire boar</a></td><td>4</td>
+<tr><td>35&ndash;38</td><td>1 <a href="beetle.html#beetle-giant" >giant stag beetle</a></td><td>4</td>
+<tr><td>39&ndash;42</td><td>1 <a href="owlbear.html#owlbear" >owlbear</a></td><td>4</td>
+<tr><td>43&ndash;46</td><td>1 <a href="tiger.html#tiger" >tiger</a></td><td>4</td>
+<tr><td>47&ndash;52</td><td>1d6 <a href="lycanthrope.html#lycanthrope-werewolf" >werewolves</a></td><td>5</td>
+<tr><td>53&ndash;56</td><td>1d4 <a href="wolf.html#wolf-dire" >dire wolves</a></td><td>5</td>
+<tr><td>57&ndash;60</td><td>1 <a href="ettercap.html#ettercap" >ettercap</a> and 1d6 <a href="spider.html#spider-giant" >giant spider</a>s</td><td>5</td>
+<tr><td>61&ndash;70</td><td>2d6 <a href="goblin.html#goblin" >goblin</a>s and 1d4 <a href="goblinDog.html#goblin-dog" >goblin dog</a>s</td><td>5</td></tr>
+<tr><td>71&ndash;74</td><td>1 <a href="barghest.html#barghest" >barghest</a> and 2d6 <a href="goblin.html#goblin" >goblin</a>s</td><td>6</td>
+<tr><td>75&ndash;78</td><td>1d6 <a href="centaur.html#centaur" >centaur</a>s</td><td>6</td>
+<tr><td>79&ndash;86</td><td>2d6 <a href="wolf.html#wolf" >wolves</a></td><td>6</td>
+<tr><td>87&ndash;88</td><td>1 <a href="nymph.html#nymph" >nymph</a></td><td>7</td>
+<tr><td>89&ndash;92</td><td>1 <a href="tiger.html#tiger-dire" >dire tiger</a></td><td>8</td>
+<tr><td>93&ndash;94</td><td>1 <a href="dragon.html#chromatic-dragon-green" >green dragon</a> (young)</td><td>8</td>
+<tr><td>95&ndash;98</td><td>1d4 <a href="shamblingMound.html#shambling-mound" >shambling mound</a>s</td><td>8</td>
+<tr><td>99&ndash;100</td><td>1 <a href="treant.html#treant" >treant</a></td><td>8</td></tbody>
+</table>
+
+				<h2>Hill/Mountain CR 8</h2><table>
+<thead><tr><th>d%</th><th>Encounter</th><th>Avg. CR</th></tr></thead>
+<tbody>
+<tr><td>1&ndash;6</td><td>1d6 <a href="eagle.html#eagle" >eagle</a>s</td><td>2</td>
+<tr><td>7&ndash;14</td><td>2d6 <a href="orc.html#orc" >orc</a>s</td><td>3</td>
+<tr><td>15&ndash;22</td><td>2d6 <a href="tengu.html#tengu" >tengu</a>s</td><td>4</td>
+<tr><td>23&ndash;30</td><td>2d6 <a href="hobgoblin.html#hobgoblin" >hobgoblin</a>s</td><td>4</td>
+<tr><td>31&ndash;36</td><td>1d4 <a href="eagle.html#eagle-giant" >giant eagle</a>s</td><td>5</td>
+<tr><td>37&ndash;42</td><td>1d6 <a href="ogre.html#ogre" >ogre</a>s</td><td>6</td>
+<tr><td>43&ndash;44</td><td>1 <a href="dragon.html#chromatic-dragon-white" >white dragon</a> (young)</td><td>6</td>
+<tr><td>45&ndash;48</td><td>1 <a href="bulette.html#bulette" >bulette</a></td><td>7</td>
+<tr><td>49&ndash;52</td><td>1 <a href="chimera.html#chimera" >chimera</a></td><td>7</td>
+<tr><td>53&ndash;58</td><td>1d6 <a href="griffon.html#griffon" >griffon</a>s</td><td>7</td>
+<tr><td>59&ndash;64</td><td>2d4 <a href="bugbear.html#bugbear" >bugbear</a>s</td><td>7</td>
+<tr><td>65&ndash;66</td><td>1d6 <a href="cyclops.html#cyclops" >cyclopes</a></td><td>8</td>
+<tr><td>67&ndash;68</td><td>1 <a href="gorgon.html#gorgon" >gorgon</a></td><td>8</td>
+<tr><td>69&ndash;72</td><td>1d4 <a href="wyvern.html#wyvern" >wyvern</a>s</td><td>8</td>
+<tr><td>73&ndash;78</td><td>1d6 <a href="troll.html#troll" >troll</a>s</td><td>8</td>
+<tr><td>79&ndash;80</td><td>1 <a href="oni.html#oni-ogre-mage" >ogre mage</a></td><td>8</td>
+<tr><td>81&ndash;82</td><td>1 <a href="roc.html#roc" >roc</a></td><td>9</td>
+<tr><td>83&ndash;86</td><td>1d6 <a href="giant.html#giant-hill" >hill giant</a>s</td><td>10</td>
+<tr><td>87&ndash;88</td><td>1 <a href="dragon.html#metallic-dragon-silver" >silver dragon</a> (young)</td><td>10</td>
+<tr><td>89&ndash;90</td><td>1 <a href="dragon.html#chromatic-dragon-red" >red dragon</a> (young)</td><td>10</td>
+<tr><td>91&ndash;92</td><td>1d4 <a href="giant.html#giant-frost" >frost giant</a>s</td><td>11</td>
+<tr><td>93&ndash;96</td><td>1d6 <a href="giant.html#giant-stone" >stone giant</a>s</td><td>11</td>
+<tr><td>97&ndash;98</td><td>1 <a href="giant.html#giant-cloud" >cloud giant</a></td><td>11</td>
+<tr><td>99&ndash;100</td><td>1d4 <a href="giant.html#giant-fire" >fire giant</a>s</td><td>12</td></tbody></table>
+
+				<h2>Jungle (Warm Forest) <span class=stat-block-cr>CR 5</span></h2><table>
+<thead><tr><th>d%</th><th>Encounter</th><th>Avg. CR</th></tr></thead>
+<tbody>
+<tr><td>1&ndash;4</td><td>1 <a href="bat.html#bat-swarm" >bat swarm</a></td><td>2</td>
+<tr><td>5&ndash;8</td><td>1 <a href="yellowMuskCreeper.html#yellow-musk-creeper" >yellow musk creeper</a></td><td>2</td>
+<tr><td>9&ndash;14</td><td>1 <a href="snake.html#snake-constrictor" >constrictor snake</a></td><td>2</td>
+<tr><td>15&ndash;18</td><td>1d6 <a href="centipede.html#centipede-giant" >giant centipede</a>s</td><td>2</td>
+<tr><td>19&ndash;26</td><td>1 <a href="cat.html#cat-leopard" >leopard</a></td><td>2</td>
+<tr><td>27&ndash;30</td><td>1d4 <a href="spider.html#spider-giant" >giant spider</a>s</td><td>3</td>
+<tr><td>31&ndash;34</td><td>1d6 <a href="snake.html#snake-venomous" >venomous snake</a>s</td><td>4</td>
+<tr><td>35&ndash;40</td><td>1d4 <a href="boar.html#boar" >boars</a></td><td>4</td>
+<tr><td>41&ndash;44</td><td>1 <a href="boar.html#boar-dire" >dire boar</a></td><td>4</td>
+<tr><td>45&ndash;50</td><td>1 <a href="tiger.html#tiger" >tiger</a></td><td>4</td>
+<tr><td>51&ndash;54</td><td>1 <a href="lizard.html#lizard-giant-frilled" >giant frilled lizard</a></td><td>5</td>
+<tr><td>55&ndash;60</td><td>1d6 <a href="lizard.html#lizard-monitor" >monitor lizard</a>s</td><td>5</td>
+<tr><td>61&ndash;62</td><td>1 <a href="ant.html#army-ant-swarm" >army ant swarm</a></td><td>5</td>
+<tr><td>63&ndash;64</td><td>1 <a href="dinosaur.html#dinosaur-ankylosaurus" >ankylosaurus</a></td><td>6</td>
+<tr><td>65&ndash;70</td><td>1d6 <a href="ape.html#ape-dire" >dire ape</a>s</td><td>6</td>
+<tr><td>71&ndash;78</td><td>2d4 <a href="ape.html#ape-gorilla" >gorilla</a>s</td><td>6</td>
+<tr><td>79&ndash;82</td><td>2d4 <a href="dinosaur.html#dinosaur-deinonychus" >deinonychus</a>es</td><td>7</td>
+<tr><td>83&ndash;84</td><td>1 <a href="nymph.html#nymph" >nymph</a></td><td>7</td>
+<tr><td>85&ndash;86</td><td>1d4 <a href="girallon.html#girallon" >girallon</a>s</td><td>8</td>
+<tr><td>87&ndash;90</td><td>1 <a href="tiger.html#tiger-dire" >dire tiger</a></td><td>8</td>
+<tr><td>91&ndash;94</td><td>1d4 <a href="shamblingMound.html#shambling-mound" >shambling mound</a>s</td><td>8</td>
+<tr><td>95&ndash;96</td><td>1 <a href="treant.html#treant" >treant</a></td><td>8</td>
+<tr><td>97&ndash;98</td><td>1 <a href="dinosaur.html#dinosaur-tyrannosaurus" >tyrannosaurus</a></td><td>9</td>
+<tr><td>99&ndash;100</td><td>1 <a href="dinosaur.html#dinosaur-brachiosaurus" >brachiosaurus</a></td><td>10</td></tbody></table>
+
+				<h2>Ocean CR 8</h2><table>
+<thead><tr><th>d%</th><th>Encounter</th><th>Avg. CR</th></tr></thead>
+<tbody>
+<tr><td>1&ndash;4</td><td>1 <a href="octopus.html#octopus" >octopus</a></td><td>1</td>
+<tr><td>5&ndash;14</td><td>2d6 <a href="dolphin.html#dolphin" >dolphin</a>s</td><td>4</td>
+<tr><td>15&ndash;19</td><td>2d6 <a href="merfolk.html#merfolk" >merfolk</a></td><td>4</td>
+<tr><td>20&ndash;23</td><td>1 <a href="seaHag.html#sea-hag" >sea hag</a></td><td>4</td>
+<tr><td>24&ndash;31</td><td>1d6 <a href="squid.html#squid" >squid</a></td><td>4</td>
+<tr><td>32&ndash;36</td><td>1d6 <a href="mephit.html#mephit" >water mephit</a>s</td><td>6</td>
+<tr><td>37&ndash;38</td><td>1 <a href="aboleth.html#aboleth" >aboleth</a></td><td>7</td>
+<tr><td>39&ndash;42</td><td>1 <a href="octopus.html#octopus-giant" >giant octopus</a></td><td>8</td>
+<tr><td>43&ndash;50</td><td>2d6 <a href="sahuagin.html#sahuagin" >sahuagin</a></td><td>8</td>
+<tr><td>51&ndash;60</td><td>2d6 <a href="shark.html#shark" >shark</a>s</td><td>8</td>
+<tr><td>61&ndash;66</td><td>2d6 <a href="skum.html#skum" >skum</a></td><td>8</td>
+<tr><td>67&ndash;71</td><td>1d6 <a href="eel.html#eel-giant-moray" >giant moray eel</a>s</td><td>8</td>
+<tr><td>72&ndash;77</td><td>1d6 Large <a href="elemental.html#elemental-water" >water elemental</a>s</td><td>8</td>
+<tr><td>78&ndash;79</td><td>1 <a href="shark.html#shark-dire" >dire shark</a></td><td>9</td>
+<tr><td>80&ndash;81</td><td>1 <a href="dragonTurtle.html#dragon-turtle" >dragon turtle</a></td><td>9</td>
+<tr><td>82&ndash;83</td><td>1 <a href="spider.html#spider-giant" >giant squid</a></td><td>9</td>
+<tr><td>84&ndash;85</td><td>1d4 <a href="dinosaur.html#dinosaur-elasmosaurus" >elasmosaurus</a>es</td><td>9</td>
+<tr><td>86&ndash;91</td><td>2d4 <a href="dolphin.html#dolphin-orca" >orca</a>s</td><td>9</td>
+<tr><td>92&ndash;93</td><td>1 <a href="dragon.html#metallic-dragon-bronze" >bronze dragon</a> (young)</td><td>9</td>
+<tr><td>94&ndash;95</td><td>1 <a href="genie.html#genie-marid" >marid</a></td><td>9</td>
+<tr><td>96&ndash;97</td><td>1 elder <a href="elemental.html#elemental-water" >water elemental</a></td><td>11</td>
+<tr><td>98</td><td>1 <a href="seaSerpent.html#sea-serpent" >sea serpent</a></td><td>12</td>
+<tr><td>99</td><td>1 <a href="kraken.html#kraken" >kraken</a></td><td>18</td>
+<tr><td>100</td><td>1 <a href="shoggoth.html#shoggoth" >shoggoth</a></td><td>19</td></tbody></table>
+
+				<h2>Ruined City CR 6</h2><table>
+<thead><tr><th>d%</th><th>Encounter</th><th>Avg. CR</th></tr></thead>
+<tbody>
+<tr><td>1&ndash;4</td><td>1 <a href="spider.html#spider-swarm" >spider swarm</a></td><td>1</td>
+<tr><td>5&ndash;8</td><td>1 <a href="rat.html#rat-swarm" >rat swarm</a></td><td>1</td>
+<tr><td>9&ndash;16</td><td>2d6 <a href="skeleton.html#skeleton" >human skeleton</a>s</td><td>3</td>
+<tr><td>17&ndash;24</td><td>1d6 <a href="stirge.html#stirge" >stirge</a>s</td><td>3</td>
+<tr><td>25&ndash;28</td><td>1 <a href="assassinVine.html#assassin-vine" >assassin vine</a></td><td>3</td>
+<tr><td>29&ndash;36</td><td>1d6 <a href="ghoul.html#ghoul" >ghoul</a>s</td><td>4</td>
+<tr><td>37&ndash;38</td><td>1 <a href="barghest.html#barghest" >barghest</a></td><td>4</td>
+<tr><td>39&ndash;44</td><td>1d6 <a href="skeletalChampion.html#skeletal-champion" >skeletal champion</a>s</td><td>5</td>
+<tr><td>45&ndash;48</td><td>1d4 <a href="yethHound.html#yeth-hound" >yeth hound</a>s</td><td>5</td>
+<tr><td>49&ndash;54</td><td>1d6 <a href="ogre.html#ogre" >ogre</a>s</td><td>6</td>
+<tr><td>55&ndash;58</td><td>1d6 <a href="shadow.html#shadow" >shadow</a>s</td><td>6</td>
+<tr><td>59&ndash;62</td><td>1d6 <a href="wight.html#wight" >wight</a>s</td><td>6</td>
+<tr><td>63&ndash;64</td><td>1 <a href="lamia.html#lamia" >lamia</a></td><td>6</td>
+<tr><td>65&ndash;70</td><td>1d6 <a href="harpy.html#harpy" >harpies</a></td><td>7</td>
+<tr><td>71&ndash;72</td><td>1 <a href="medusa.html#medusa" >medusa</a></td><td>7</td>
+<tr><td>73&ndash;74</td><td>1 <a href="demon.html#demon-nabasu" >nabasu</a></td><td>8</td>
+<tr><td>75&ndash;76</td><td>1 <a href="naga.html#naga-dark" >dark naga</a></td><td>8</td>
+<tr><td>77&ndash;84</td><td>1d8 <a href="gargoyle.html#gargoyle" >gargoyle</a>s</td><td>8</td>
+<tr><td>85&ndash;88</td><td>1d6 <a href="cyclops.html#cyclops" >cyclopes</a></td><td>8</td>
+<tr><td>89&ndash;92</td><td>1d6 <a href="wraith.html#wraith" >wraith</a>s</td><td>8</td>
+<tr><td>93&ndash;94</td><td>1 <a href="behir.html#behir" >behir</a></td><td>8</td>
+<tr><td>95&ndash;96</td><td>1 <a href="sphinx.html#sphinx" >sphinx</a></td><td>8</td>
+<tr><td>97&ndash;98</td><td>1 <a href="naga.html#naga-spirit" >spirit naga</a></td><td>9</td>
+<tr><td>99&ndash;100</td><td>1d4 <a href="spectre.html#spectre" >spectre</a>s</td><td>9</td></tbody></table>
+
+				<h2>Savannah (Warm Plains) CR 7</h2><table>
+<thead><tr><th>d%</th><th>Encounter</th><th>Avg. CR</th></tr></thead>
+<tbody>
+<tr><td>1&ndash;6</td><td>1 <a href="cat.html#cat-cheetah" >cheetah</a></td><td>2</td>
+<tr><td>7&ndash;10</td><td>1 <a href="cockatrice.html#cockatrice" >cockatrice</a></td><td>3</td>
+<tr><td>11&ndash;16</td><td>1 <a href="scorpion.html#scorpion-giant" >giant scorpion</a></td><td>3</td>
+<tr><td>17&ndash;20</td><td>1 <a href="lion.html#lion-dire" >dire lion</a></td><td>5</td>
+<tr><td>21&ndash;26</td><td>1 <a href="lizard.html#lizard-giant-frilled" >giant frilled lizard</a></td><td>5</td>
+<tr><td>27&ndash;30</td><td>1d6 <a href="ankheg.html#ankheg" >ankheg</a>s</td><td>6</td>
+<tr><td>31&ndash;34</td><td>1d6 <a href="dinosaur.html#dinosaur-pteranodon" >pteranodon</a>s</td><td>6</td>
+<tr><td>35&ndash;40</td><td>1d8 <a href="lizard.html#lizard-monitor" >monitor lizard</a>s</td><td>6</td>
+<tr><td>41&ndash;44</td><td>1d6 <a href="hyena.html#hyena-dire" >dire hyena</a>s</td><td>6</td>
+<tr><td>45&ndash;52</td><td>2d6 <a href="hyena.html#hyena" >hyena</a>s</td><td>6</td>
+<tr><td>53&ndash;60</td><td>2d6 <a href="gnoll.html#gnoll" >gnoll</a>s</td><td>6</td>
+<tr><td>61&ndash;66</td><td>1d6 <a href="lion.html#lion" >lion</a>s</td><td>6</td>
+<tr><td>67&ndash;70</td><td>2d6 <a href="ant.html#ant-giant" >giant ant</a>s</td><td>7</td>
+<tr><td>71&ndash;74</td><td>2d4 <a href="pegasus.html#pegasus" >pegasi</a></td><td>7</td>
+<tr><td>75&ndash;78</td><td>2d6 <a href="centaur.html#centaur" >centaur</a>s</td><td>8</td>
+<tr><td>79&ndash;80</td><td>1 <a href="tiger.html#tiger-dire" >dire tiger</a></td><td>8</td>
+<tr><td>81&ndash;82</td><td>1d6 <a href="dinosaur.html#dinosaur-ankylosaurus" >ankylosaurus</a>es</td><td>9</td>
+<tr><td>83&ndash;84</td><td>1d6 <a href="dinosaur.html#dinosaur-stegosaurus" >stegosaurus</a>es</td><td>10</td>
+<tr><td>85&ndash;88</td><td>2d4 <a href="rhinoceros.html#rhinoceros" >rhinoceros</a>es</td><td>10</td>
+<tr><td>89&ndash;90</td><td>1 <a href="dragon.html#metallic-dragon-gold" >gold dragon</a> (young)</td><td>11</td>
+<tr><td>91&ndash;94</td><td>2d4 <a href="elephant.html#elephant" >elephant</a>s</td><td>11</td>
+<tr><td>95&ndash;96</td><td>1d6 <a href="dinosaur.html#dinosaur-tyrannosaurus" >tyrannosaurus</a>es</td><td>12</td>
+<tr><td>97&ndash;98</td><td>1d8 <a href="dinosaur.html#dinosaur-triceratops" >triceratops</a></td><td>12</td>
+<tr><td>99&ndash;100</td><td>1d6 <a href="dinosaur.html#dinosaur-brachiosaurus" >brachiosaurus</a>es</td><td>13</td></tbody></table>
+
+				<h2>Swamp CR 7</h2><table>
+<thead><tr><th>d%</th><th>Encounter</th><th>Avg. CR</th></tr></thead>
+<tbody>
+<tr><td>1&ndash;6</td><td>1 <a href="snake.html#snake-constrictor" >constrictor snake</a></td><td>2</td>
+<tr><td>7&ndash;10</td><td>1 <a href="hydra.html#hydra" >hydra</a></td><td>4</td>
+<tr><td>11&ndash;14</td><td>1 <a href="leech.html#leech-swarm" >leech swarm</a></td><td>4</td>
+<tr><td>15&ndash;18</td><td>1 <a href="grayOoze.html#gray-ooze" >gray ooze</a></td><td>4</td>
+<tr><td>19&ndash;22</td><td>1 <a href="greenHag.html#green-hag" >green hag</a></td><td>5</td>
+<tr><td>23&ndash;26</td><td>1 <a href="ochreJelly.html#ochre-jelly" >ochre jelly</a></td><td>5</td>
+<tr><td>27&ndash;32</td><td>2d6 <a href="stirge.html#stirge" >stirge</a>s</td><td>5</td>
+<tr><td>33&ndash;38</td><td>1d6 <a href="crocodile.html#crocodile" >crocodile</a>s</td><td>5</td>
+<tr><td>39&ndash;46</td><td>2d6 <a href="frog.html#frog-giant" >giant frog</a>s</td><td>6</td>
+<tr><td>47&ndash;52</td><td>2d6 <a href="goblinDog.html#goblin-dog" >goblin dog</a>s</td><td>6</td>
+<tr><td>53&ndash;56</td><td>1d4 <a href="harpy.html#harpy" >harpies</a></td><td>6</td>
+<tr><td>57&ndash;64</td><td>2d6 <a href="lizardfolk.html#lizardfolk" >lizardfolk</a></td><td>6</td>
+<tr><td>65&ndash;72</td><td>2d6 <a href="boggard.html#boggard" >boggard</a>s</td><td>7</td>
+<tr><td>73&ndash;74</td><td>1 <a href="chuul.html#chuul" >chuul</a></td><td>7</td>
+<tr><td>75&ndash;76</td><td>1 <a href="halfDragon.html#half-dragon" >dracolisk</a></td><td>7</td>
+<tr><td>77&ndash;80</td><td>2d6 <a href="leech.html#leech-giant" >giant leech</a>es</td><td>7</td>
+<tr><td>81&ndash;82</td><td>1 <a href="dragon.html#chromatic-dragon-black" >black dragon</a> (young)</td><td>7</td>
+<tr><td>83&ndash;84</td><td>1 <a href="slug.html#slug-giant" >giant slug</a></td><td>8</td>
+<tr><td>85&ndash;88</td><td>1d6 <a href="shamblingMound.html#shambling-mound" >shambling mound</a>s</td><td>9</td>
+<tr><td>89&ndash;90</td><td>1 <a href="naga.html#naga-spirit" >spirit naga</a></td><td>9</td>
+<tr><td>91&ndash;94</td><td>1d6 <a href="willOWisp.html#will-o-wisp" >will-o'-wisp</a>s</td><td>9</td>
+<tr><td>95&ndash;96</td><td>1 <a href="crocodile.html#crocodile-dire" >dire crocodile</a></td><td>9</td>
+<tr><td>97&ndash;98</td><td>1 <a href="flytrap.html#flytrap-giant" >giant flytrap</a></td><td>10</td>
+<tr><td>99&ndash;100</td><td>1 <a href="froghemoth.html#froghemoth" >froghemoth</a></td><td>13</td></tbody></table>
+
+				<h2>Underground CR 9</h2><table>
+<thead><tr><th>d%</th><th>Encounter</th><th>Avg. CR</th></tr></thead>
+<tbody>
+<tr><td>1&ndash;10</td><td>2d6 <a href="duergar.html#duergar" >duergar</a></td><td>4</td>
+<tr><td>11&ndash;16</td><td>1d6 <a href="caveFisher.html#cave-fisher" >cave fisher</a>s</td><td>5</td>
+<tr><td>17&ndash;22</td><td>1 <a href="basidirond.html#basidirond" >basidirond</a></td><td>5</td>
+<tr><td>23&ndash;32</td><td>2d6 <a href="drow.html#drow" >drow</a> and 1 drow noble</td><td>5</td>
+<tr><td>33&ndash;40</td><td>2d6 <a href="spider.html#spider-giant" >giant spider</a>s</td><td>6</td>
+<tr><td>41&ndash;46</td><td>1d6 <a href="violetFungus.html#violet-fungus" >violet fungi</a></td><td>6</td>
+<tr><td>47&ndash;52</td><td>1d8 <a href="derro.html#derro" >derro</a>s</td><td>7</td>
+<tr><td>53&ndash;60</td><td>2d6 <a href="morlock.html#morlock" >morlock</a>s</td><td>7</td>
+<tr><td>61&ndash;64</td><td>1 <a href="blackPudding.html#black-pudding" >black pudding</a></td><td>7</td>
+<tr><td>65&ndash;68</td><td>1 <a href="slug.html#slug-giant" >giant slug</a></td><td>8</td>
+<tr><td>69&ndash;72</td><td>1d6 <a href="cloaker.html#cloaker" >cloaker</a>s</td><td>8</td>
+<tr><td>73&ndash;82</td><td>2d6 <a href="darkCreeper.html#dark-creeper" >dark creeper</a>s, 1 <a href="darkStalker.html#dark-stalker" >dark stalker</a></td><td>8</td>
+<tr><td>83&ndash;86</td><td>1d6 <a href="drider.html#drider" >drider</a>s</td><td>10</td>
+<tr><td>87&ndash;90</td><td>1d6 <a href="intellectDevourer.html#intellect-devourer" >intellect devourer</a>s</td><td>11</td>
+<tr><td>91&ndash;92</td><td>1 <a href="purpleWorm.html#purple-worm" >purple worm</a></td><td>12</td>
+<tr><td>93&ndash;96</td><td>1d4 <a href="roper.html#roper" >roper</a>s</td><td>14</td>
+<tr><td>97&ndash;98</td><td>1 <a href="neothelid.html#neothelid" >neothelid</a></td><td>15</td>
+<tr><td>99&ndash;100</td><td>1 <a href="shoggoth.html#shoggoth" >shoggoth</a></td><td>19</td></tbody></table>
+
+				<h2>Urban (Dangerous City) CR 6</h2><table>
+<thead><tr><th>d%</th><th>Encounter</th><th>Avg. CR</th></tr></thead>
+<tbody>
+<tr><td>1&ndash;12</td><td>1d6 <a href="dog.html#dog" >dog</a>s</td><td>1</td>
+<tr><td>13&ndash;20</td><td>1 <a href="rat.html#rat-swarm" >rat swarm</a></td><td>2</td>
+<tr><td>21&ndash;30</td><td>1d6 <a href="dog.html#dog-riding" >riding dog</a>s</td><td>2</td>
+<tr><td>31&ndash;32</td><td>1 <a href="lycanthrope.html#lycanthrope-werewolf" >werewolf</a></td><td>2</td>
+<tr><td>33&ndash;40</td><td>3d6 <a href="rat.html#rat-dire" >dire rat</a>s</td><td>4</td>
+<tr><td>41&ndash;48</td><td>2d6 <a href="tengu.html#tengu" >tengu</a>s</td><td>4</td>
+<tr><td>49&ndash;56</td><td>2d6 <a href="tiefling.html#tiefling" >tiefling</a>s</td><td>4</td>
+<tr><td>57&ndash;62</td><td>1d6 <a href="ghoul.html#ghoul" >ghoul</a>s</td><td>4</td>
+<tr><td>63&ndash;68</td><td>1d6 <a href="doppelganger.html#doppelganger" >doppelganger</a>s</td><td>5</td>
+<tr><td>69&ndash;78</td><td>2d6 <a href="lycanthrope.html#lycanthrope-wererat" >wererat</a>s</td><td>7</td>
+<tr><td>79&ndash;82</td><td>1 <a href="demon.html#demon-succubus" >succubus</a></td><td>7</td>
+<tr><td>83&ndash;86</td><td>1d6 <a href="genie.html#genie-janni" >jann</a></td><td>7</td>
+<tr><td>87&ndash;90</td><td>1d8 <a href="gargoyle.html#gargoyle" >gargoyle</a>s</td><td>8</td>
+<tr><td>91&ndash;92</td><td>1 <a href="mohrg.html#mohrg" >mohrg</a></td><td>8</td>
+<tr><td>93&ndash;94</td><td>1 <a href="intellectDevourer.html#intellect-devourer" >intellect devourer</a> (body theft)</td><td>8</td>
+<tr><td>95&ndash;96</td><td>1 <a href="vampire.html#vampire" >vampire</a></td><td>9</td>
+<tr><td>97&ndash;98</td><td>1 <a href="nightHag.html#night-hag" >night hag</a></td><td>9</td>
+<tr><td>99&ndash;100</td><td>1 <a href="rakshasa.html#rakshasa" >rakshasa</a></td><td>10</td></tbody></table>
+
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Encounter Tables",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

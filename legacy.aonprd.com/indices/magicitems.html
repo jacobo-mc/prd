@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Magic Item Index</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "magicitems.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "magicitems.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "magicitems.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "magicitems.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "magicitems.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "magicitems.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "magicitems.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "magicitems.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "magicitems.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "magicitems.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "magicitems.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "magicitems.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "magicitems.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "magicitems.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "magicitems.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "magicitems.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "magicitems.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "magicitems.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "magicitems.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "magicitems.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "magicitems.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "bestiary.html">Bestiary Index</a></li>
+						<li><a href = "feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "spelllists.html">Spell List Index</a></li>
+						<li><a href = "templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+            <h1>Magic Item Index</h1>
+            <p>Each general type of magic item gets an overall description, followed by descriptions of specific items.</p>
+
+<p>General descriptions include notes on activation, random generation, and other material. The AC, hardness, hit points, and break DC are given for typical examples of some magic items. The AC assumes that the item is unattended and includes a –5 penalty for the item's effective Dexterity of 0. If a creature holds the item, use the creature's Dexterity modifier in place of the –5 penalty.</p>
+
+<p>Some individual items, notably those that just store spells, don't get full-blown descriptions. Reference the spell's description for details, modified by the form of the item (potion, scroll, wand, and so on). Assume that the spell is cast at the minimum level required to cast it.</p>
+            <p class="shortcut-bar"><a href ="magicitems.html#magicitems-combined-A">A</a> <a href ="magicitems.html#magicitems-combined-B">B</a> <a href ="magicitems.html#magicitems-combined-C">C</a> <a href ="magicitems.html#magicitems-combined-D">D</a> <a href ="magicitems.html#magicitems-combined-E">E</a> <a href ="magicitems.html#magicitems-combined-F">F</a> <a href ="magicitems.html#magicitems-combined-G">G</a> <a href ="magicitems.html#magicitems-combined-H">H</a> <a href ="magicitems.html#magicitems-combined-I">I</a> <a href ="magicitems.html#magicitems-combined-J">J</a> <a href ="magicitems.html#magicitems-combined-K">K</a> <a href ="magicitems.html#magicitems-combined-L">L</a> <a href ="magicitems.html#magicitems-combined-M">M</a> <a href ="magicitems.html#magicitems-combined-N">N</a> <a href ="magicitems.html#magicitems-combined-O">O</a> <a href ="magicitems.html#magicitems-combined-P">P</a> <a href ="magicitems.html#magicitems-combined-Q">Q</a> <a href ="magicitems.html#magicitems-combined-R">R</a> <a href ="magicitems.html#magicitems-combined-S">S</a> <a href ="magicitems.html#magicitems-combined-T">T</a> <a href ="magicitems.html#magicitems-combined-U">U</a> <a href ="magicitems.html#magicitems-combined-V">V</a> <a href ="magicitems.html#magicitems-combined-W">W</a> <a href ="magicitems.html#magicitems-combined-X">X</a><br />
+            </p>
+
+            <p class="shortcut-bar">
+                <span class="nowrap"><input id="core-checkbox" value="core" class="link-by-book" type="checkbox" checked />&nbsp;<label for="core-checkbox">Core Rulebook</label>&nbsp;&nbsp;</span>
+                <span class="nowrap"><input id="apg-checkbox" value="apg" class="link-by-book" type="checkbox" checked />&nbsp;<label for="apg-checkbox">Advanced Player's Guide</label>&nbsp;&nbsp;</span></p>
+                
+            <p class="shortcut-bar">
+                <span class="nowrap"><input id="armor-checkbox" value="armor" class="link-by-book" type="checkbox" checked />&nbsp;<label for="armor-checkbox">Armor</label>&nbsp;&nbsp;</span>
+                <span class="nowrap"><input id="cursed-checkbox" value="cursed" class="link-by-book" type="checkbox" checked />&nbsp;<label for="cursed-checkbox">Cursed Items</label>&nbsp;&nbsp;</span>
+                <span class="nowrap"><input id="rings-checkbox" value="rings" class="link-by-book" type="checkbox" checked />&nbsp;<label for="rings-checkbox">Rings</label>&nbsp;&nbsp;</span>
+                <span class="nowrap"><input id="rods-checkbox" value="rods" class="link-by-book" type="checkbox" checked />&nbsp;<label for="rods-checkbox">Rods</label>&nbsp;&nbsp;</span>
+                <span class="nowrap"><input id="staves-checkbox" value="staves" class="link-by-book" type="checkbox" checked />&nbsp;<label for="staves-checkbox">Staves</label>&nbsp;&nbsp;</span>
+                <span class="nowrap"><input id="weapons-checkbox" value="weapons" class="link-by-book" type="checkbox" checked />&nbsp;<label for="weapons-checkbox">Weapons</label>&nbsp;&nbsp;</span>
+                <span class="nowrap"><input id="wondrousItems-checkbox" value="wondrousItems" class="link-by-book" type="checkbox" checked />&nbsp;<label for="wondrousItems-checkbox">Wondrous Items</label>&nbsp;&nbsp;</p>
+                
+            <div id="spell-index-wrapper" class="index">
+<ul Id="magicitems-combined-A" Title="A Magic Items">
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-abjuration">Abjuration (Staff)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#absorbing-shield">Absorbing Shield</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#rod-of-absorption">Absorption (Rod)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#adamantine-battleaxe">Adamantine Battleaxe</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#adamantine-dagger">Adamantine Dagger</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#rod-of-alertness">Alertness (Rod)</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#all-tools-vest">All Tools Vest</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#allying">Allying (Weapon property)</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#amulet-of-inescapable-location">Amulet of Inescapable Location</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#amulet-of-magecraft">Amulet of Magecraft</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#amulet-of-mighty-fists">Amulet of Mighty Fists</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#amulet-of-natural-armor">Amulet of Natural Armor</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#amulet-of-proof-against-detection-and-location">Amulet of Proof Against Detection And Location</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#amulet-of-spell-cunning">Amulet of Spell Cunning</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#amulet-of-the-planes">Amulet of the Planes</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-anarchic">Anarchic (Weapon property)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-animal-friendship">Animal Friendship (Ring)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-animated">Animated (Armor property)</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#annihilation-spectacles">Annihilation Spectacles</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#apparatus-of-the-crab">Apparatus of the Crab</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#apple-of-eternal-sleep">Apple of Eternal Sleep</a></li>
+    <li class="link-rings link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rings.html#ring-of-arcane-signets-">Arcane Signets (Ring)</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#armor-of-arrow-attraction">Armor of Arrow Attraction</a></li>
+    <li class="link-armor link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/armor.html#armor-of-insults-">Armor of Insults</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#armor-of-rage">Armor of Rage</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-arrow-catching">Arrow Catching (Armor property)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-arrow-deflection">Arrow Deflection (Armor property)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#assassin-s-dagger">Assassin's Dagger</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#assisting-glove">Assisting Glove</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-axiomatic">Axiomatic (Weapon property)</a></li>
+</ul>
+<ul id="magicitems-combined-B" Title="B Magic Items">
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#bag-of-devouring">Bag of Devouring</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#bag-of-holding">Bag of Holding</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#bag-of-tricks">Bag of Tricks, Gray</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#bag-of-tricks">Bag of Tricks,</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#bag-of-tricks">Bag of Tricks</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#bandages-of-rapid-recovery">Bandages of Rapid Recovery</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-bane">Bane (Weapon property)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-bashing">Bashing (Armor property)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#bead-of-force">Bead of Force</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#beaststrike-club">Beaststrike Club</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#belt-of-dwarvenkind">Belt of Dwarvenkind</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#belt-of-giant-strength">Belt of Giant Strength</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#belt-of-incredible-dexterity">Belt of Incredible Dexterity</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#belt-of-mighty-constitution">Belt of Mighty Constitution</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#belt-of-physical-might">Belt of Physical Might</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#belt-of-physical-perfection">Belt of Physical Perfection</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#blade-of-binding">Blade of Binding</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#blessed-book">Blessed Book</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-blinding">Blinding (Armor property)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-blinking">Blinking (Ring)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#boat-folding">Boat, Folding</a></li>
+    <li class="link-staves link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/staves.html#staff-of-bolstering-">Bolstering (Staff)</a></li>
+    <li class="link-armor link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/armor.html#boneless-leather-">Boneless Leather</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#book-of-the-loremaster">Book of the Loremaster</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#boots-of-dancing">Boots of Dancing</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#boots-of-elvenkind">Boots of Elvenkind</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#boots-of-friendly-terrain">Boots of Friendly Terrain</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#boots-of-levitation">Boots of Levitation</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#boots-of-speed">Boots of Speed</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#boots-of-striding-and-springing">Boots of Striding And Springing</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#boots-of-teleportation">Boots of Teleportation</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#boots-of-the-winterlands">Boots of the Winterlands</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#boots-winged">Boots, Winged</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#bottle-of-air">Bottle of Air</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#bottle-of-messages">Bottle of Messages</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#boulderhead-mace">Boulderhead Mace</a></li>
+    <li class="link-rods link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rods.html#metamagic,-bouncing">Bouncing (Rod, Metamagic)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#bracelet-of-friends">Bracelet of Friends</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#bracelet-of-mercy">Bracelet of Mercy</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#bracers-of-archery-greater">Bracers of Archery, Greater</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#bracers-of-archery-lesser">Bracers of Archery, Lesser</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#bracers-of-armor">Bracers of Armor</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#bracers-of-defenselessness">Bracers of Defenselessness</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-brilliant-energy">Brilliant Energy (Weapon property)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#brooch-of-shielding">Brooch of Shielding</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#broom-of-animated-attack">Broom of Animated Attack</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#broom-of-flying">Broom of Flying</a></li>
+    <li class="link-armor link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/armor.html#buccaneer's-breastplate-">Buccaneer's Breastplate</a></li>
+</ul>
+<ul Id="magicitems-combined-C" Title="C Magic Items">
+    <li class="link-staves link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/staves.html#staff-of-cackling-wrath-">Cackling Wrath (Staff)</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#campfire-bead">Campfire Bead</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#rod-of-cancellation">Cancellation (Rod)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#candle-of-invocation">Candle of Invocation</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#candle-of-truth">Candle of Truth</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#cape-of-the-mountebank">Cape of the Mountebank</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#carpet-of-flying">Carpet of Flying</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#caster-s-shield">Caster's Shield</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#catching-cape">Catching Cape</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#cauldron-of-brewing">Cauldron of Brewing</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#cauldron-of-flying">Cauldron of Flying</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#cauldron-of-plenty">Cauldron of Plenty</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#cauldron-of-resurrection">Cauldron of Resurrection</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#cauldron-of-seeing">Cauldron of Seeing</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#cauldron-of-the-dead">Cauldron of the Dead</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-chameleon-power">Chameleon Power (Ring)</a></li>
+    <li class="link-armor link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/armor.html#champion">Champion (Armor property)</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-charming">Charming (Staff)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#chime-of-interruption">Chime of Interruption</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#chime-of-opening">Chime of Opening</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#circlet-of-persuasion">Circlet of Persuasion</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#clamor-box">Clamor Box</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-climbing-improved">Climbing, Improved (Ring)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-climbing">Climbing (Ring)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#cloak-of-arachnida">Cloak of Arachnida</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#cloak-of-displacement-major">Cloak of Displacement, Major</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#cloak-of-displacement-minor">Cloak of Displacement, Minor</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#cloak-of-elvenkind">Cloak of Elvenkind</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#cloak-of-etherealness">Cloak of Etherealness</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#cloak-of-resistance">Cloak of Resistance</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#cloak-of-the-bat">Cloak of the Bat</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#cloak-of-the-manta-ray">Cloak of the Manta Ray</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#longsword-cold-iron-masterwork">Cold Iron Longsword, Masterwork</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#conductive">Conductive (Weapon property)</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-conjuration">Conjuration (Staff)</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#construct-channel-brick">Construct Channel Brick</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#corrosive-burst">Corrosive Burst (Weapon property)</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#corrosive">Corrosive (Weapon property)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-counterspells">Counterspells (Ring)</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#cowardly-crouching-cloak">Cowardly Crouching Cloak</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#crown-of-blasting-major">Crown of Blasting, Major</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#crown-of-blasting-minor">Crown of Blasting, Minor</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#crystal-ball">Crystal Ball</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#crystal-hypnosis-ball">Crystal Hypnosis Ball</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#crystal-of-healing-hands">Crystal of Healing Hands</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#cube-of-force">Cube of Force</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#cube-of-frost-resistance">Cube of Frost Resistance</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#cubic-gate">Cubic Gate</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#cunning">Cunning (Weapon property)</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#sword-2-cursed">Cursed &ndash;2 Sword</a></li>
+</ul>
+<ul Id="magicitems-combined-D" Title="D Magic Items">
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#dagger-of-venom">Dagger of Venom</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-dancing">Dancing (Weapon property)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#darkskull">Darkskull</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#darkwood-buckler">Darkwood Buckler</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#darkwood-shield">Darkwood Shield</a></li>
+    <li class="link-armor link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/armor.html#dastard">Dastard (Armor property)</a></li>
+    <li class="link-armor link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/armor.html#daystar-half-plate-">Daystar Half-plate</a></li>
+    <li class="link-rods link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rods.html#metamagic,-dazing">Dazing (Rod, Metamagic)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#decanter-of-endless-water">Decanter of Endless Water</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#deck-of-illusions">Deck of Illusions</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-defending">Defending (Weapon property)</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-defense">Defense (Staff)</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#defoliant-polish">Defoliant Polish</a></li>
+    <li class="link-rings link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rings.html#ring-of-delayed-doom">Delayed Doom (Ring)</a></li>
+    <li class="link-armor link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/armor.html#determination">Determination (Armor property)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#dimensional-shackles">Dimensional Shackles</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-disruption">Disruption (Weapon property)</a></li>
+    <li class="link-rods link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rods.html#metamagic,-disruptive">Disruptive (Rod, Metamagic)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-distance">Distance (Weapon property)</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-divination">Divination (Staff)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-djinni-calling">Djinni Calling (Ring)</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#doomharp">Doomharp</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#drums-of-panic">Drums of Panic</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#dueling">Dueling (Weapon property)</a></li>
+    <li class="link-rings link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rings.html#dungeon-ring">Dungeon (Ring)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#dust-of-appearance">Dust of Appearance</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#dust-of-disappearance">Dust of Disappearance</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#dust-of-dryness">Dust of Dryness</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#dust-of-emulation">Dust of Emulation</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#dust-of-illusion">Dust of Illusion</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#dust-of-sneezing-and-choking">Dust of Sneezing And Choking</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#dust-of-tracelessness">Dust of Tracelessness</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#dustburst-bullet-">Dustburst Bullet</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#dwarven-thrower">Dwarven Thrower</a></li>
+</ul>
+<ul Id="magicitems-combined-E" Title="E Magic Items">
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-earth-and-stone">Earth And Stone (Staff)</a></li>
+    <li class="link-rods link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rods.html#metamagic,-ectoplasmic">Ectoplasmic (Rod, Metamagic)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#efficient-quiver">Efficient Quiver</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#efreeti-bottle">Efreeti Bottle</a></li>
+    <li class="link-rods link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rods.html#metamagic,-elemental">Elemental (Rod, Metamagic)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-elemental-command">Elemental Command (Ring)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#elemental-gem">Elemental Gem</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#elixir-of-fire-breath">Elixir of Fire Breath</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#elixir-of-hiding">Elixir of Hiding</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#elixir-of-love">Elixir of Love</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#elixir-of-swimming">Elixir of Swimming</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#elixir-of-truth">Elixir of Truth</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#elixir-of-tumbling">Elixir of Tumbling</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#elixir-of-vision">Elixir of Vision</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#metamagic-empower">Empower (Rod, Metamagic)</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-enchantment">Enchantment (Staff)</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#rod-of-enemy-detection">Enemy Detection (Rod)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-energy-resistance-greater">Energy Resistance, Greater (Armor property)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-energy-resistance-improved">Energy Resistance, Improved (Armor property)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-energy-resistance">Energy Resistance (Armor property)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-energy-resistance">Energy Resistance (Ring)</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#metamagic-enlarge">Enlarge (Rod, Metamagic)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-etherealness">Etherealness (Armor property)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-evasion">Evasion (Ring)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#eversmoking-bottle">Eversmoking Bottle</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-evocation">Evocation (Staff)</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#metamagic-extend">Extend (Rod, Metamagic)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#eyes-of-charming">Eyes of Charming</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#eyes-of-doom">Eyes of Doom</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#eyes-of-the-eagle">Eyes of the Eagle</a></li>
+</ul>
+<ul Id="magicitems-combined-F" Title="F Magic Items">
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-feather-falling">Feather Falling (Ring)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#feather-token">Feather Token</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#figurines-of-wondrous-power">Figurine of Wondrous Power</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-fire">Fire (Staff)</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#rod-of-flailing">Flailing (Rod)</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#rod-of-flame-extinguishing">Flame Extinguishing (Rod)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#flame-tongue">Flame Tongue</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-flaming-burst">Flaming Burst (Weapon property)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-flaming">Flaming (Weapon property)</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#flask-of-curses">Flask of Curses</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#flying-ointment">Flying Ointment</a></li>
+    <li class="link-rods link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rods.html#metamagic,-focused">Focused (Rod, Metamagic)</a></li>
+    <li class="link-armor link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/armor.html#folding-plate">Folding Plate</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-force-shield">Force Shield (Ring)</a></li>
+    <li class="link-rings link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rings.html#ring-of-forcefangs-">Forcefangs (Ring)</a></li>
+    <li class="link-armor link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/armor.html#forsaken-banded-mail-">Forsaken Banded Mail</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-fortification">Fortification (Armor property)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-freedom-of-movement">Freedom of Movement (Ring)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-friend-shield">Friend Shield (Ring)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#frost-brand">Frost Brand</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-frost">Frost (Staff)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-frost">Frost (Weapon property)</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#furious">Furious (Weapon property)</a></li>
+</ul>
+<ul Id="magicitems-combined-G" Title="G Magic Items">
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#gauntlet-of-rust">Gauntlet of Rust</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#gauntlets-of-fumbling">Gauntlets of Fumbling</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#gem-of-brightness">Gem of Brightness</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#gem-of-seeing">Gem of Seeing</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-ghost-touch">Ghost Touch (Armor property)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-ghost-touch">Ghost Touch (Weapon property)</a></li>
+    <li class="link-armor link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/armor.html#giant-hide-armor-">Giant-hide Armor</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-glamered">Glamered (Armor property)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#glove-of-storing">Glove of Storing</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#gloves-of-arrow-snaring">Gloves of Arrow Snaring</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#gloves-of-dueling">Gloves of Dueling</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#gloves-of-swimming-and-climbing">Gloves of Swimming And Climbing</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#glowing-glove">Glowing Glove</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#goggles-of-minute-seeing">Goggles of Minute Seeing</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#goggles-of-night">Goggles of Night</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#golem-manual">Golem Manual</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#grappler's-mask">Grappler's Mask</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#grayflame">Grayflame (Weapon property)</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#guarding-blade-">Guarding Blade</a></li>
+</ul>
+<ul Id="magicitems-combined-H" Title="H Magic Items">
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#hand-of-glory">Hand of Glory</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#hand-of-the-mage">Hand of the Mage</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#handy-haversack">Handy Haversack</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#harp-of-charming">Harp of Charming</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#hat-of-disguise">Hat of Disguise</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#headband-of-alluring-charisma">Headband of Alluring Charisma</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#headband-of-inspired-wisdom">Headband of Inspired Wisdom</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#headband-of-mental-prowess">Headband of Mental Prowess</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#headband-of-mental-superiority">Headband of Mental Superiority</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#headband-of-vast-intelligence">Headband of Vast Intelligence</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-healing">Healing (Staff)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#helm-of-comprehend-languages-and-read-magic">Helm of Comprehend Languages And Read Magic</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#helm-of-fearsome-mien">Helm of Fearsome Mien</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#helm-of-opposite-alignment">Helm of Opposite Alignment</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#helm-of-telepathy">Helm of Telepathy</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#helm-of-teleportation">Helm of Teleportation</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#helm-of-underwater-action">Helm of Underwater Action</a></li>
+    <li class="link-staves link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/staves.html#staff-of-hoarding-">Hoarding (Staff)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#holy-avenger">Holy Avenger</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-holy">Holy (Weapon property)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#horn-of-valhalla">Horn of Valhalla</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#horn-of-antagonism">Horn of Antagonism</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#horn-of-blasting-greater">Horn of Blasting, Greater</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#horn-of-blasting">Horn of Blasting</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#horn-of-fog">Horn of Fog</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#horn-of-goodness-evil">Horn of Goodness/evil</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#horn-of-the-huntmaster">Horn of the Huntmaster</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#horseshoes-of-a-zephyr">Horseshoes of a Zephyr</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#horseshoes-of-speed">Horseshoes of Speed</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#huntsman">Huntsman (Weapon property)</a></li>
+</ul>
+<ul Id="magicitems-combined-I" Title="I Magic Items">
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-icy-burst">Icy Burst (Weapon property)</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-illumination">Illumination (Staff)</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-illusion">Illusion (Staff)</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#immovable-rod">Immovable (Rod)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#incense-of-meditation">Incense of Meditation</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#incense-of-obsession">Incense of Obsession</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#instant-fortress">Instant Fortress</a></li>
+    <li class="link-rods link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rods.html#metamagic,-intensified">Intensified (Rod, Metamagic)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-invisibility">Invisibility (Ring)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-invulnerability">Invulnerability (Armor property)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#ioun-stones">Ioun Stone</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#ioun-torch">Ioun Torch</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#iron-bands-of-binding">Iron Bands of Binding</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#iron-flask">Iron Flask</a></li>
+</ul>
+<ul Id="magicitems-combined-J" Title="J Magic Items">
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#javelin-of-lightning">Javelin of Lightning</a></li>
+    <li class="link-staves link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/staves.html#staff-of-journeys-">Journeys (Staff)</a></li>
+    <li class="link-armor link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/armor.html#jousting">Jousting (Armor property)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-jumping-improved">Jumping, Improved (Ring)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-jumping">Jumping (Ring)</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#jurist">Jurist (Weapon property)</a></li>
+</ul>
+<ul Id="magicitems-combined-K" Title="K Magic Items">
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-keen">Keen (Weapon property)</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#key-of-lock-jamming">Key of Lock Jamming</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-ki-focus">Ki Focus (Weapon property)</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#ki-mat">Ki Mat</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#knight's-pennon">Knight's Pennon</a></li>
+</ul>
+<ul Id="magicitems-combined-L" Title="L Magic Items">
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#lance-of-jousting">Lance of Jousting</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#lantern-of-revealing">Lantern of Revealing</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#lens-of-detection">Lens of Detection</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#life-drinker">Life-drinker</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-life">Life (Staff)</a></li>
+    <li class="link-rods link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rods.html#metamagic,-lingering">Lingering (Rod, Metamagic)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#lion-s-shield">Lion's Shield</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#lord's-banner">Lord's Banner</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#rod-of-lordly-might">Lordly Might (Rod)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#luck-blade">Luck Blade</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#lyre-of-building">Lyre of Building</a></li>
+</ul>
+<ul Id="magicitems-combined-M" Title="M Magic Items">
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#mace-of-blood">Mace of Blood</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#mace-of-smiting">Mace of Smiting</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#mace-of-terror">Mace of Terror</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#manacles-of-cooperation">Manacles of Cooperation</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#mantle-of-faith">Mantle of Faith</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#mantle-of-spell-resistance">Mantle of Spell Resistance</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#manual-of-bodily-health">Manual of Bodily Health</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#manual-of-gainful-exercise">Manual of Gainful Exercise</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#manual-of-quickness-of-action">Manual of Quickness in Action</a></li>
+    <li class="link-staves link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/staves.html#staff-of-many-rays-">Many Rays (Staff)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#marvelous-pigments">Marvelous Pigments</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#mask-of-giants">Mask of Giants</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#mask-of-the-skull">Mask of the Skull</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#mattock-of-the-titans">Mattock of the Titans</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#maul-of-the-titans">Maul of the Titans</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#metamagic-maximize">Maximize (Rod, Metamagic)</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#medallion-of-thought-projection">Medallion of Thought Projection</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#medallion-of-thoughts">Medallion of Thoughts</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#menacing">Menacing (Weapon property)</a></li>
+    <li class="link-rods link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rods.html#metamagic,-merciful">Merciful (Rod, Metamagic)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-merciful">Merciful (Weapon property)</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#rod-of-metal-and-mineral-detection">Metal And Mineral Detection (Rod)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-mighty-cleaving (Weapon property)">Mighty Cleaving</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-mind-shielding">Mind Shielding (Ring)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#mirror-of-life-trapping">Mirror of Life Trapping</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#mirror-of-opposition">Mirror of Opposition</a></li>
+    <li class="link-armor link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/armor.html#mistmail-">Mistmail</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#mithral-heavy-shield">Mithral Heavy Shield</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#moon-circlet">Moon Circlet</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#muleback-cords">Muleback Cords</a></li>
+    <li class="link-armor link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/armor.html#murderer's-blackcloth-">Murderer's Blackcloth</a></li>
+</ul>
+<ul Id="magicitems-combined-N" Title="N Magic Items">
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#necklace-of-adaptation">Necklace of Adaptation</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#necklace-of-fireballs">Necklace of Fireballs</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#necklace-of-ki-serenity">Necklace of Ki Serenity</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#necklace-of-strangulation">Necklace of Strangulation</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#necromancer's-athame">Necromancer's Athame</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-necromancy">Necromancy (Staff)</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#rod-of-negation">Negation (Rod)</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#net-of-snaring">Net of Snaring</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#nine-lives-stealer">Nine Lives Stealer</a></li>
+</ul>
+<ul Id="magicitems-combined-O" Title="O Magic Items">
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#oathbow">Oathbow</a></li>
+    <li class="link-staves link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/staves.html#staff-of-obstacles-">Obstacles (Staff)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#orb-of-storms">Orb of Storms</a></li>
+</ul>
+<ul Id="magicitems-combined-P" Title="P Magic Items">
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-passage">Passage (Staff)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#pearl-of-power">Pearl of Power</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#pearl-of-the-sirines">Pearl of the Sirines</a></li>
+    <li class="link-staves link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/staves.html#staff-of-performance-">Performance (Staff)</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#periapt-of-foul-rotting">Periapt of Foul Rotting</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#periapt-of-health">Periapt of Health</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#periapt-of-proof-against-poison">Periapt of Proof Against Poison</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#periapt-of-wound-closure">Periapt of Wound Closure</a></li>
+    <li class="link-rods link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rods.html#metamagic,-persistent">Persistent (Rod, Metamagic)</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#philter-of-love">Philter of Love</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#phylactery-of-faithfulness">Phylactery of Faithfulness</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#phylactery-of-negative-channeling">Phylactery of Negative Channeling</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#phylactery-of-positive-channeling">Phylactery of Positive Channeling</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#pipes-of-haunting">Pipes of Haunting</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#pipes-of-sounding">Pipes of Sounding</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#pipes-of-the-sewers">Pipes of the Sewers</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#poisonous-cloak">Poisonous Cloak</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#portable-hole">Portable Hole</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#potion-of-poison">Potion of Poison</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-power">Power (Staff)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-protection">Protection (Ring)</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#rod-of-the-python">Python (Rod)</a></li>
+</ul>
+<ul Id="magicitems-combined-Q" Title="Q Magic Items">
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#metamagic-quicken">Quicken (Rod, Metamagic)</a></li>
+</ul>
+<ul Id="magicitems-combined-R" Title="R Magic Items">
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-the-ram">Ram (Ring)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#rapier-of-puncturing">Rapier of Puncturing</a></li>
+    <li class="link-rods link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rods.html#metamagic,-reach">Reach (Rod, Metamagic)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-reflecting">Reflecting (Armor property)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-regeneration">Regeneration (Ring)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#restorative-ointment">Restorative Ointment</a></li>
+    <li class="link-rings link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rings.html#ring-of-retribution-">Retribution (Ring)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-returning">Returning (Weapon property)</a></li>
+    <li class="link-rings link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rings.html#ring-of-revelation">Revelation (Ring)</a></li>
+    <li class="link-staves link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/staves.html#staff-of-revelations-">Revelations (Staff)</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#ricochet-hammer">Ricochet Hammer</a></li>
+    <li class="link-armor link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/armor.html#righteous">Righteous (Armor property)</a></li>
+    <li class="link-staves link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/staves.html#staff-of-rigor-">Rigor (Staff)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#ring-gates">Ring Gates</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#ring-of-clumsiness">Ring of Clumsiness</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#robe-of-bones">Robe of Blending</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#robe-of-bones">Robe of Bones</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#robe-of-eyes">Robe of Eyes</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#robe-of-powerlessness">Robe of Powerlessness</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#robe-of-scintillating-colors">Robe of Scintillating Colors</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#robe-of-stars">Robe of Stars</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#robe-of-the-archmagi">Robe of the Archmagi</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#robe-of-useful-items">Robe of Useful Items</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#robe-of-vermin">Robe of Vermin</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#robe-monk-s">Robe, Monk's</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#robes-of-arcane-heritage">Robes of Arcane Heritage</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#rope-of-climbing">Rope of Climbing</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#rope-of-entanglement">Rope of Entanglement</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#rod-of-rulership">Rulership (Rod)</a></li>
+</ul>
+<ul Id="magicitems-combined-S" Title="S Magic Items">
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#salve-of-slipperiness">Salve of Slipperiness</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#sash-of-the-war-champion">Sash of the War Champion</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#scabbard-of-keen-edges">Scabbard of Keen Edges</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#scabbard-of-vigor">Scabbard of Vigor</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#scarab-of-death">Scarab of Death</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#scarab-of-protection">Scarab of Protection</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#scarab-golembane">Scarab, Golembane</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#screaming-bolt">Screaming Bolt</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#searing-arrow-">Searing Arrow</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#rod-of-security">Security (Rod)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-seeking">Seeking (Weapon property)</a></li>
+    <li class="link-rods link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rods.html#metamagic,-selective">Selective (Rod, Metamagic)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-shadow-greater">Shadow, Greater (Armor property)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-shadow-improved">Shadow, Improved (Armor property)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-shadow">Shadow (Armor property)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#shatterspike">Shatterspike</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#sheath-of-bladestealth">Sheath of Bladestealth</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#shieldsplitter-lance-">Shieldsplitter Lance</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#shifter-s-sorrow">Shifter's Sorrow</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-shock">Shock</a></li>
+    <li class="link-rods link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rods.html#metamagic,-sickening">Sickening (Rod, Metamagic)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-shocking-burst">Shocking Burst (Weapon property)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-shooting-stars">Shooting Stars (Ring)</a></li>
+    <li class="link-staves link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/staves.html#staff-of-shrieking-">Shrieking (Staff)</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#metamagic-silent">Silent (Rod, Metamagic)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#silver-dagger-masterwork">Silver Dagger, Masterwork</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#silver-smite-bracelet">Silver Smite Bracelet</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#silversheen">Silversheen</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-size-alteration">Size Alteration (Staff)</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#sizzling-arrow-">Sizzling Arrow</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#slaying-arrow">Slaying Arrow</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#sleep-arrow">Sleep Arrow</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-slick-greater">Slick, Greater (Armor property)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-slick-improved">Slick, Improved (Armor property)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-slick">Slick (Armor property)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#slippers-of-spider-climbing">Slippers of Spider Climbing</a></li>
+    <li class="link-staves link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/staves.html#staff-of-slumber-">Slumber (Staff)</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#sniper-goggles">Sniper Goggles</a></li>
+    <li class="link-armor link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/armor.html#soothsayer's-raiment">Soothsayer's Raiment</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#soul-soap">Soul Soap</a></li>
+    <li class="link-staves link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/staves.html#staff-of-souls-">Souls (Staff)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#sovereign-glue">Sovereign Glue</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#sparkwake-starknife-">Sparkwake Starknife</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#spear-cursed-backbiter">Spear, Cursed Backbiter</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#weapons-speed">Speed (Weapon property)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-spell-resistance">Spell Resistance (Armor property)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-spell-storing-major">Spell Storing, Major (Ring)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-spell-storing-minor">Spell Storing, Minor (Ring)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-spell-storing-minor">Spell Storing (Ring)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#spell-storing">Spell Storing (Weapon property)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-spell-storing">Spell Turning (Ring)</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#spined-shield">Spined Shield</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#spirit-blade">Spirit Blade</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#rod-of-splendor">Splendor (Rod)</a></li>
+    <li class="link-staves link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/staves.html#staff-of-stealth-">Stealth (Staff)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#stone-of-alarm">Stone of Alarm</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#stone-of-good-luck">Stone of Good Luck</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#stone-of-weight">Stone of Weight</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#stone-salve">Stone Salve</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#strand-of-prayer-beads">Strand of Prayer Beads</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#sun-blade">Sun Blade</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#sustaining-spoon">Sustaining Spoon</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-sustenance">Sustenance (Ring)</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-swarming-insects">Swarming Insects (Staff)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-swimming-improved">Swimming, Improved (Ring)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-swimming">Swimming (Ring)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#sword-of-life-stealing">Sword of Life Stealing</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#sword-of-subtlety">Sword of Subtlety</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#sword-of-the-planes">Sword of the Planes</a></li>
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#sword-berserking">Sword, Berserking</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#sylvan-scimitar">Sylvan Scimitar</a></li>
+</ul>
+<ul Id="magicitems-combined-T" Title="T Magic Items">
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#tangle-bolt-">Tangle Bolt</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-telekinesis">Telekinesis (Ring)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-three-wishes">Three Wishes (Ring)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#throwing">Throwing (Weapon property)</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#rod-of-thunder-and-lightning">Thunder And Lightning (Rod)</a></li>
+    <li class="link-rods link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/rods.html#metamagic,-thundering">Thundering (Rod, Metamagic)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#thundering">Thundering (Weapon property)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#tome-of-clear-thought">Tome of Clear Thought</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#tome-of-leadership-and-influence">Tome of Leadership And Influence</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#tome-of-understanding">Tome of Understanding</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#torc-of-lionheart-fury">Torc of Lionheart Fury</a></li>
+    <li class="link-staves link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/staves.html#staff-of-toxins-">Toxins (Staff)</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#transformative">Transformative (Weapon property)</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-transmutation">Transmutation (Staff)</a></li>
+    <li class="link-staves link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/staves.html#staff-of-traps-">Traps (Staff)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#trident-of-fish-command">Trident of Fish Command</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#trident-of-stability-">Trident of Stability</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#trident-of-warning">Trident of Warning</a></li>
+</ul>
+<ul Id="magicitems-combined-U" Title="U Magic Items">
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-undead-controlling">Undead Controlling (Armor property)</a></li>
+    <li class="link-weapons link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/weapons.html#undercutting-axe">Undercutting Axe</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#unguent-of-timelessness">Unguent of Timelessness</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#unholy">Unholy (Weapon property)</a></li>
+    <li class="link-armor link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/armor.html#unrighteous">Unrighteous (Armor property)</a></li>
+</ul>
+<ul Id="magicitems-combined-V" Title="V Magic Items">
+    <li class="link-cursed link-core"><a target="_self" href="../coreRulebook/magicItems/specificCursedItems.html#vacuous-grimoire">Vacuous Grimoire</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#vest-of-escape">Vest of Escape</a></li>
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#vest-of-the-cockroach">Vest of the Cockroach</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#vestment-druid-s">Vestment, Druid's</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#vicious">Vicious (Weapon property)</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#rod-of-the-viper">Viper (Rod)</a></li>
+    <li class="link-staves link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/staves.html#staff-of-vision-">Vision (Staff)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#vorpal">Vorpal (Weapon property)</a></li>
+</ul>
+<ul Id="magicitems-combined-W" Title="W Magic Items">
+    <li class="link-wondrousItems link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/wondrousItems.html#war-paint-of-the-terrible-visage">War Paint of the Terrible Visage</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-water-walking">Water Walking (Ring)</a></li>
+    <li class="link-staves link-apg"><a target="_self" href="../advancedPlayersGuide/magicItems/staves.html#staff-of-weather-">Weather (Staff)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#well-of-many-worlds">Well of Many Worlds</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#armor-wild">Wild (Armor property)</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#wind-fan">Wind Fan</a></li>
+    <li class="link-armor link-core"><a target="_self" href="../coreRulebook/magicItems/armor.html#winged-shield">Winged Shield</a></li>
+    <li class="link-wondrousItems link-core"><a target="_self" href="../coreRulebook/magicItems/wondrousItems.html#wings-of-flying">Wings of Flying</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#rod-of-withering">Withering (Rod)</a></li>
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-wizardry">Wizardry (Ring)</a></li>
+    <li class="link-rods link-core"><a target="_self" href="../coreRulebook/magicItems/rods.html#rod-of-wonder">Wonder (Rod)</a></li>
+    <li class="link-staves link-core"><a target="_self" href="../coreRulebook/magicItems/staves.html#staff-of-the-woodlands">Woodlands (Staff)</a></li>
+    <li class="link-weapons link-core"><a target="_self" href="../coreRulebook/magicItems/weapons.html#wounding">Wounding (Weapon property)</a></li>
+</ul>
+<ul Id="magicitems-combined-X" Title="X Magic Items">
+    <li class="link-rings link-core"><a target="_self" href="../coreRulebook/magicItems/rings.html#ring-of-x-ray-vision">X-ray Vision (Ring)</a></li>
+</ul>
+
+            </div>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Magic Item Index",globalNavPath=[];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

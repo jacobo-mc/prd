@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Eyes Slot</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "eyes.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "eyes.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "eyes.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "eyes.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "eyes.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "eyes.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "eyes.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "eyes.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "eyes.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "eyes.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "eyes.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "eyes.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "eyes.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "eyes.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "eyes.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../gear/index.html">Gear</a></li>
+						<li><a href = "../magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "index.html">Wondrous Items</a></li>
+						<li><a href = "../artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "eyes.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "eyes.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "eyes.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "eyes.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "eyes.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "eyes.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id="eyes-slot-wondrous-items">Eyes Slot Wondrous Items</h1>
+<p>The eyes slot consists of eyes, goggles, lenses, monocles, spectacles, and other items that can be worn over the eyes.</p>
+<p>Anyone can use an eyes slot wondrous item unless specified otherwise by its description. These wondrous items are usually use-activated or triggered by a command word, but details vary from item to item.</p>
+
+<table id="eyes-slot-wondrous-items-table"><caption>Eyes Slot Wondrous Items</caption>
+<thead><tr><th>d%</th><th>Lesser Minor Eye Item</th><th>Price</th></tr></thead>
+<tr><td>01&ndash;18</td><td><i>Deathwatch eyes</i></td><td>2,000 gp</td></tr>
+<tr><td>19&ndash;38</td><td><i>Eyes of the eagle</i></td><td>2,500 gp</td></tr>
+<tr><td>39&ndash;58</td><td><i>Goggles of minute seeing</i></td><td>2,500 gp</td></tr>
+<tr><td>59&ndash;72</td><td><i>Pirate's eye patch</i></td><td>2,600 gp</td></tr>
+<tr><td>73&ndash;87</td><td><i>Spectacles of understanding</i></td><td>3,000 gp</td></tr>
+<tr><td>88&ndash;100</td><td><i>Lenses of detection</i></td><td>3,500 gp</td></tr>
+<thead><tr><th>d%</th><th>Greater Minor Eye Item</th><th>Price</th></tr></thead>
+<tr><td>01&ndash;20</td><td><i>Eyes of the owl</i></td><td>4,000 gp</td></tr>
+<tr><td>21&ndash;44</td><td><i>Eyes of keen sight</i></td><td>6,000 gp</td></tr>
+<tr><td>45&ndash;66</td><td><i>Treasure hunter's goggles</i></td><td>6,400 gp</td></tr>
+<tr><td>67&ndash;84</td><td><i>Inquisitor's monocle</i></td><td>6,800 gp</td></tr>
+<tr><td>85&ndash;100</td><td><i>Kinsight goggles</i></td><td>7,500 gp</td></tr>
+<thead><tr><th>d%</th><th>Lesser Medium Eye Item</th><th>Price</th></tr></thead>
+<tr><td>01&ndash;16</td><td><i>Goggles of elvenkind</i></td><td>8,500 gp</td></tr>
+<tr><td>17&ndash;31</td><td><i>Goggles of brilliant light</i></td><td>8,800 gp</td></tr>
+<tr><td>32&ndash;48</td><td><i>Blind man's fold</i></td><td>12,000 gp</td></tr>
+<tr><td>49&ndash;67</td><td><i>Goggles of night</i></td><td>12,000 gp</td></tr>
+<tr><td>68&ndash;82</td><td><i>Lenses of figment piercing</i></td><td>12,000 gp</td></tr>
+<tr><td>83&ndash;100</td><td><i>Arachnid goggles</i></td><td>15,000 gp</td></tr>
+<thead><tr><th>d%</th><th>Greater Medium Eye Item</th><th>Price</th></tr></thead>
+<tr><td>01&ndash;21</td><td><i>Darklands goggles</i></td><td>20,000 gp</td></tr>
+<tr><td>22&ndash;40</td><td><i>Sniper goggles</i></td><td>20,000 gp</td></tr>
+<tr><td>41&ndash;58</td><td><i>Rainbow lenses</i></td><td>21,000 gp</td></tr>
+<tr><td>59&ndash;77</td><td><i>Annihilation spectacles</i></td><td>25,000 gp</td></tr>
+<tr><td>78&ndash;100</td><td><i>Eyes of doom</i></td><td>25,000 gp</td></tr>
+<thead><tr><th>d%</th><th>Lesser Major Eye Item</th><th>Price</th></tr></thead>
+<tr><td>01&ndash;60</td><td><i>Eyes of eyebite</i></td><td>30,000 gp</td></tr>
+<tr><td>61&ndash;100</td><td><i>Sniper goggles, greater</i></td><td>50,000 gp</td></tr>
+<thead><tr><th>d%</th><th>Greater Major Eye Item</th><th>Price</th></tr></thead>
+<tr><td>01&ndash;18</td><td><i>Eyes of charming</i></td><td>56,000 gp</td></tr>
+<tr><td>19&ndash;34</td><td><i>Monocle of the investigator</i></td><td>66,000 gp</td></tr>
+<tr><td>35&ndash;48</td><td><i>Sea tyrant's patch</i></td><td>70,000 gp</td></tr>
+<tr><td>49&ndash;63</td><td><i>Swordmaster's blindfold</i></td><td>80,000 gp</td></tr>
+<tr><td>64&ndash;77</td><td><i>Mindmaster's eyes</i></td><td>95,000 gp</td></tr>
+<tr><td>78&ndash;90</td><td><i>Eyes of the dragon</i></td><td>110,000 gp</td></tr>
+<tr><td>91&ndash;100</td><td><i>Truesight goggles</i></td><td>184,800 gp</td></tr></table>
+
+<p id="annihilation-spectacles" class="stat-block-title">Annihilation Spectacles</p>
+<p class="stat-block-1"><b>Price</b>  25,000 gp; <b>Aura</b> moderate transmutation; <b>CL</b> 11th; <b>Weight</b> 1/4 lb.</p>
+<p class="stat-block">Creatures viewed through these darkly tinted glasses sometimes seem to flicker briefly in and out of existence. A transmuter can use these spectacles to spontaneously convert any prepared wizard transmutation spell into any other wizard transmutation spell he knows; the desired spell must be of the same level or lower than the prepared spell. Once per day, he may use the spectacles to spontaneously cast <i><a href="../../coreRulebook/spells/disintegrate.html#disintegrate" >disintegrate</a></i> in place of one of his prepared transmutation wizard spells of 6th level or higher, even if he doesn't know that spell.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 12,500 gp</p>
+<p class="stat-block">Craft Wondrous Item,<i> <a href="../../coreRulebook/spells/disintegrate.html#disintegrate" >disintegrate</a></i>, creator must be a transmuter</p>
+				
+<p id="arachnid-goggles" class="stat-block-title">Arachnid Goggles</p>
+<p class="stat-block-1"><b>Price</b> 15,000 gp; <b>Aura</b> moderate transmutation; <b>CL</b> 9th; <b>Weight</b>  2 lbs.</p>
+<p class="stat-block">This leather band is studded with dozens of faceted crystals of varying size, two of which fit over the eyes. When wearing these goggles, the wearer uses all the crystals as eyes, gaining all-around vision.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 7,500 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../ultimateMagic/spells/countlessEyes.html#countless-eyes" >countless eyes</a></i></p>
+				
+<p id="Blind-Man's-Fold" class="stat-block-title">Blind Man's Fold</p>
+<p class="stat-block-1"><b>Price</b> 12,000 gp; <b>Aura</b> moderate transmutation; <b>CL</b> 6th; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">Fashioned from a scrap of a blind beggar's clothing, a blind man's fold is often used by explorers who must traverse caves inhabited by invisible creatures, or those drawn to sources of light. A <i>blind man's fold</i> fully obscures normal vision while worn, but grants the effects of the <a href="../../advancedPlayersGuide/advancedFeats.html#improved-blind-fight" >Improved Blind-Fight</a> feat . Creatures which are unable to see normally gain no benefit from wearing a <i>blind man's fold.</i></p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 6,000 gp</p>
+<p class="stat-block">Craft Wondrous Item, <a href="../../advancedPlayersGuide/advancedFeats.html#improved-blind-fight" >Improved Blind-Fight</a>, <i><a href="../../coreRulebook/spells/darkness.html#darkness" >darkness</a></i></p>
+				
+				
+<p id="darklands-goggles" class="stat-block-title">Darklands Goggles</p>
+<p class="stat-block-1"><b>Price</b> 20,000 gp; <b>Aura</b> moderate transmutation; <b>CL</b> 6th; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">These goggles' dark lenses are made of round obsidian sheets thin enough to see through. They grant the wearer darkvision 120, as well as a +4 competence bonus on <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> checks and <a href="../../coreRulebook/skills/survival.html#survival" >Survival</a> checks made to track while underground.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 10,000 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/darkvision.html#darkvision" >darkvision</a></i>, <i><a href="../../ultimateCombat/spells/terrainBond.html#terrain-bond" >terrain bond</a></i></p>
+				
+<p id="deathwatch-eyes" class="stat-block-title">Deathwatch Eyes</p>
+<p class="stat-block-1"><b>Price</b> 2,000 gp; <b>Aura</b> faint necromancy; <b>CL</b> 1st; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">These blood red crystal lenses fit snugly over the wearer's eyes. The wearer gains the constant effects of the <i><a href="../../coreRulebook/spells/deathwatch.html#deathwatch" >deathwatch</a> </i>spell. </p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 1,000 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/deathwatch.html#deathwatch" >deathwatch</a></i></p>
+				
+				
+<p id="eyes-of-charming" class="stat-block-title">Eyes of Charming</p>
+<p class="stat-block-1"><b>Price</b> 56,000 gp; <b>Aura</b> moderate enchantment; <b>CL</b> 7th; <b>Weight</b> &mdash;</p>
+<p class="stat-block">These two crystal lenses fit over the user's eyes. The wearer is able to use <i><a href="../../coreRulebook/spells/charmPerson.html#charm-person" >charm person</a></i> (one target per round) merely by meeting a target's gaze. Those targets failing a DC 16 Will save are charmed as per the spell. Both lenses must be worn for the magic item to take effect.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 28,000 gp</p>
+<p class="stat-block">Craft Wondrous Item, <a href="../../coreRulebook/feats.html#heighten-spell" >Heighten Spell</a>, <i><a href="../../coreRulebook/spells/charmPerson.html#charm-person" >charm person</a></i></p>
+				
+<p id="eyes-of-doom" class="stat-block-title">Eyes of Doom</p>
+<p class="stat-block-1"><b>Price</b> 25,000 gp; <b>Aura</b> moderate necromancy; <b>CL</b> 11th; <b>Weight</b> &mdash;</p>
+<p class="stat-block">These crystal lenses fit over the user's eyes, enabling him to cast <i><a href="../../coreRulebook/spells/doom.html#doom" >doom</a></i> upon those around him (one target per round) as a gaze attack, except that the wearer must take a standard action, and those merely looking at the wearer are not affected. Those failing a DC 11 Will save are affected as by the <i><a href="../../coreRulebook/spells/doom.html#doom" >doom</a></i> spell. The wearer also gains the additional power of a continual <i><a href="../../coreRulebook/spells/deathwatch.html#deathwatch" >deathwatch</a></i> effect and can use <i><a href="../../coreRulebook/spells/fear.html#fear" >fear</a></i> (Will DC 16 partial) as a normal gaze attack once per week. Both lenses must be worn for the magic item to take effect.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 12,500 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/doom.html#doom" >doom</a></i>, <i><a href="../../coreRulebook/spells/deathwatch.html#deathwatch" >deathwatch</a></i>, <i><a href="../../coreRulebook/spells/fear.html#fear" >fear</a></i></p>
+				
+<p id="eyes-of-eyebite" class="stat-block-title">Eyes of Eyebite</p>
+<p class="stat-block-1"><b>Price</b> 30,000 gp; <b>Aura</b> moderate necromancy; <b>CL</b> 11th; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">These glasses look like golden teeth holding a pair of green-tinted lenses. The wearer may use <i><a href="../../coreRulebook/spells/eyebite.html#eyebite" >eyebite</a></i> 11 times per day on command, affecting one target for each use of the spell. The wearer does not need to use these rounds consecutively, but each activation is a standard action (unlike the spell, in which targeting a new foe is a swift action). If the wearer removes the glasses, the <i><a href="../../coreRulebook/spells/eyebite.html#eyebite" >eyebite</a></i> effects immediately end.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 15,000 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/eyebite.html#eyebite" >eyebite</a></i></p>
+
+<p id="eyes-of-keen-sight" class="stat-block-title">Eyes of Keen Sight</p>
+<p class="stat-block-1"><b>Price</b> 6,000 gp; <b>Aura</b> faint transmutation; <b>CL</b> 1st; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">These clear crystals fit over the wearer's eyes. They grant the wearer a +2 competence bonus on <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> checks, and the wearer gains low-light vision. If the wearer has low-light vision already, these lenses double the distance the wearer can see with this vision.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 3,000 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../advancedPlayersGuide/spells/keenSenses.html#keen-senses" >keen senses</a></i> </p>
+				
+				
+<p id="eyes-of-the-dragon" class="stat-block-title">Eyes of the Dragon</p>
+<p class="stat-block-1"><b>Price</b> 110,000 gp; <b>Aura</b> strong transmutation; <b>CL</b> 15th; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">These tigereye gems fit over and then meld into the eyes, transforming the wearer's eyes into something slitted and draconic. These eyes grant the wearer darkvision 120 ft. and blindsense 60 ft. The wearer sees four times as well as a human in dim light and twice as well in normal light.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 55,000 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/formOfTheDragon.html#form-of-the-dragon-iii" >form of the dragon III</a></i></p>
+				
+<p id="eyes-of-the-eagle" class="stat-block-title">Eyes of the Eagle</p>
+<p class="stat-block-1"><b>Price</b> 2,500 gp; <b>Aura</b> faint divination; <b>CL</b> 3rd; <b>Weight</b> &mdash;</p>
+<p class="stat-block">These lenses are made of special crystal and fit over the eyes of the wearer. They grant a +5 competence bonus on <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> checks. Both lenses must be worn to gain the benefit. Wearing only one causes a character to become dizzy and stunned for 1 round.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 1,250 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/clairaudienceClairvoyance.html#clairaudience-clairvoyance" >clairaudience/clairvoyance</a></i></p>
+				
+<p id="eyes-of-the-owl" class="stat-block-title">Eyes of the Owl</p>
+<p class="stat-block-1"><b>Price</b> 4,000 gp; <b>Aura</b> faint transmutation; <b>CL</b> 5th; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">These magical goggles are decorated with owl motifs, including clusters of feathers over the eyes. The wearer gains low-light vision.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 2,000 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/beastShape.html#beast-shape-i" >beast shape I</a></i></p>
+				
+<p id="goggles-of-brilliant-light" class="stat-block-title">Goggles of Brilliant Light</p>
+<p class="stat-block-1"><b>Price</b> 8,800 gp; <b>Aura</b> faint evocation; <b>CL</b> 3rd; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">These sturdy goggles have a mirror sheen on the outside of their lenses, a wrapping of leather holding them snugly in place. This tint blocks a considerable amount of natural light. Twice per day, the goggles' wearer can emit bright light on command to a range of 30 feet. Any creature within that area must succeed at a DC 13 Fortitude saving throw or be blinded for 1 hour. In addition, the wearer also gains a +2 resistance bonus on saving throws against visual effects.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 4,400 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/light.html#light" >light</a></i>, <i><a href="../../coreRulebook/spells/scorchingRay.html#scorching-ray" >scorching ray</a></i></p>
+				
+				
+<p id="goggles-of-elvenkind" class="stat-block-title">Goggles of Elvenkind</p>
+<p class="stat-block-1"><b>Price</b> 8,500 gp; <b>Aura</b> faint divination; <b>CL</b> 5th; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">These simple goggles, made of two emeralds attached to a twin frame, grant the wearer low-light vision and a +5 compentence bonus on <a href="../../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> checks to identify magic auras and items. If the wearer already has low-light vision, it grants the wearer double the normal range for low-light vision. </p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 4,250 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/beastShape.html#beast-shape-ii" >beast shape II</a></i>, <i><a href="../../coreRulebook/spells/guidance.html#guidance" >guidance</a></i></p>
+				
+<p id="goggles-of-minute-seeing" class="stat-block-title">Goggles of Minute Seeing</p>
+<p class="stat-block-1"><b>Price</b> 2,500 gp; <b>Aura</b> faint divination; <b>CL</b> 3rd; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">The lenses of this item are made of special crystal, its band woven with tiny patterns of metallic thread almost invisible to the naked eye. When placed over the eyes of the wearer, the lenses enable her to see much better than normal at distances of 1 foot or less, granting her a +5 competence bonus on <a href="../../coreRulebook/skills/disableDevice.html#disable-device" >Disable Device</a> checks. Both lenses must be worn for the magic to be effective.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 1,250 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a></i></p>
+				
+<p id="goggles-of-night" class="stat-block-title">Goggles of Night</p>
+<p class="stat-block-1"><b>Price</b> 12,000 gp; <b>Aura</b> faint transmutation; <b>CL</b> 3rd; <b>Weight</b> &mdash;</p>
+<p class="stat-block">The lenses of this item are made of violet crystal. Even though the lenses are opaque, when placed over the eyes of the wearer, they enable him to see normally and also grant him 60-foot darkvision. Both lenses must be worn for the magic to be effective.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 6,000 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/darkvision.html#darkvision" >darkvision</a></i></p>
+				
+				
+<p id="Inquisitor's-Monocle" class="stat-block-title">Inquisitor's Monocle</p>
+<p class="stat-block-1"><b>Price</b> 6,800 gp; <b>Aura</b> faint enchantment; <b>CL</b> 3rd; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">The thick glass lens of this golden-framed monocle is attached to the wearer by a weighty chain. This monocle helps draw out the truth of things, and was originally created to aid in the investigation of crimes and the questioning of witnesses. Twice per day on command, it can create a <i><a href="../../coreRulebook/spells/zoneOfTruth.html#zone-of-truth" >zone of truth</a>, </i>as per the spell. In addition, this monocle grants its wearer a +5 competence bonus on <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> checks. Though it fits over only one of the wearer's eyes, the item takes up the entire eyes slot.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 3,400 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/zoneOfTruth.html#zone-of-truth" >zone of truth</a></i></p>
+				
+				
+<p id="kinsight-goggles" class="stat-block-title">Kinsight Goggles</p>
+<p class="stat-block-1"><b>Price</b> 7,500 gp; <b>Aura</b> faint divination; <b>CL</b> 2nd; <b>Weight</b>  1 lb.</p>
+<p class="stat-block"><i>Kinsight goggles</i> are in fact two separate crystal monocles, linked together with a simple silver clasp that allows them to both be worn at once like pince-nez spectacles. The left and right halves may be separated and worn individually, allowing two people to see through one another's eyes. When separated, the wearer of either half of the goggles may speak a command word to see through the lens of the other half, so long as the halves of the goggles remain within 500 feet of one another. When the two lenses are attached and worn as one item, they offer no magical benefit&mdash;just some minor magnification.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 3,750 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../advancedPlayersGuide/spells/shareSenses.html#share-senses" >share senses</a> </i></p>
+				
+<p id="lenses-of-detection" class="stat-block-title">Lenses of Detection</p>
+<p class="stat-block-1"><b>Price</b> 3,500 gp; <b>Aura</b> moderate divination; <b>CL</b> 9th; <b>Weight</b> 1 lb.</p>
+<p class="stat-block">These circular prisms let their wearer detect minute details, gaining a +5 competence bonus on <a href="../../coreRulebook/skills/perception.html#perception" >Perception</a> checks. It also aids in tracking, adding a +5 competence bonus on <a href="../../coreRulebook/skills/survival.html#survival" >Survival</a> checks when tracking.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 1,750 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a></i></p>
+				
+<p id="lenses-of-figment-piercing" class="stat-block-title">Lenses of Figment Piercing</p>
+<p class="stat-block-1"><b>Price</b> 12,000 gp; <b>Aura</b> faint divination; <b>CL</b> 3rd; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">When the wearer first sees an illusion effect with the figment subschool with a visual element, and that figment allows a saving throw, she can immediately make any allowed saving throw to realize the image is illusory instead of waiting to interact with it. This has no effect on illusions of other subschools or on illusions that do not normally allow a saving throw. If the wearer fails to disbelieve the illusion and later interacts with it in such a way as to qualify normally for a saving throw to disbelieve, she gains a +4 competence bonus on this saving throw.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 6,000 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/seeInvisibility.html#see-invisibility" >see invisibility</a></i></p>
+				
+				
+				
+<p id="Mindmaster's-Eyes" class="stat-block-title">Mindmaster's Eyes</p>
+<p class="stat-block-1"><b>Price</b> 95,000 gp; <b>Aura</b> strong enchantment; <b>CL</b> 11th; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">This pair of thin and faceted ruby crystals fit over the wearer's eyes. On command, the wearer can use <i><a href="../../coreRulebook/spells/charmMonster.html#charm-monster" >charm monster</a></i> (Will DC 19 to negate), or once per day the wearer can use <i><a href="../../coreRulebook/spells/dominatePerson.html#dominate-person" >dominate person</a></i> (Will DC 20 to negate) instead.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 47,500 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/charmMonster.html#charm-monster" >charm monster</a></i>, <i><a href="../../coreRulebook/spells/dominatePerson.html#dominate-person" >dominate person</a></i></p>
+				
+<p id="monocle-of-the-investigator" class="stat-block-title">Monocle of the Investigator</p>
+<p class="stat-block-1"><b>Price</b> 66,000 gp; <b>Aura</b> moderate divination; <b>CL</b> 11th; <b>Weight</b> &mdash;</p>
+<p class="stat-block">This crystal lens fits over a single eye but takes up the entire eyes slot. Once per day, the wearer is able to gaze at a 10-foot-by-10-foot area and see exactly what occurred in that area during the past 24 hours. The vision of what occurred in the specified area comes to the user in a single minute of observation; if that minute is interrupted, the wearer must use the monocle again to get the full observation. All the visual details of the observed events are clear and memorable to the user, no matter how obscure. The monocle does not, however, provide any insight into the observed events besides what can be visually seen. Observed conversations cannot be heard, for example.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 33,000 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/legendLore.html#legend-lore" >legend lore</a></i>, <i><a href="../../coreRulebook/spells/vision.html#vision" >vision</a></i></p>
+				
+<p id="Pirate's-Eye-Patch" class="stat-block-title">Pirate's Eye Patch</p>
+<p class="stat-block-1"><b>Price</b> 2,600 gp; <b>Aura</b> faint transmutation; <b>CL</b> 2nd; <b>Weight</b> &mdash;</p>
+<p class="stat-block">This black silk eye patch is adorned by a skull and crossbones worked in silver thread. The wearer of this patch gains a +2 competence bonus on <a href="../../coreRulebook/skills/swim.html#swim" >Swim</a> and <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a> checks. In addition, once per day, the wearer of this eye patch can gain the effects of either <i><a href="../../advancedPlayersGuide/spells/touchOfTheSea.html#touch-of-the-sea" >touch of the sea</a> </i> or <i><a href="../../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat" >expeditious retreat</a></i> on command (wearer's choice).</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 1,300 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat" >expeditious retreat</a></i>, <i><a href="../../advancedPlayersGuide/spells/touchOfTheSea.html#touch-of-the-sea" >touch of the sea</a></i></p>
+				
+				
+				
+<p id="rainbow-lenses" class="stat-block-title">Rainbow Lenses</p>
+<p class="stat-block-1"><b>Price</b> 21,000 gp; <b>Aura</b> strong enchantment; <b>CL</b> 15th; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">These lenses interfere with the wearer's ability to see color, and everything appears in shades of black and white, as if the wearer were using darkvision. Once per day the wearer can use <i><a href="../../coreRulebook/spells/colorSpray.html#color-spray" >color spray</a></i>, <i><a href="../../coreRulebook/spells/hypnoticPattern.html#hypnotic-pattern" >hypnotic pattern</a></i>, and <i><a href="../../coreRulebook/spells/rainbowPattern.html#rainbow-pattern" >rainbow pattern</a></i>.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 10,500 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/colorSpray.html#color-spray" >color spray</a>, <a href="../../coreRulebook/spells/hypnoticPattern.html#hypnotic-pattern" >hypnotic pattern</a>, <a href="../../coreRulebook/spells/rainbowPattern.html#rainbow-pattern" >rainbow pattern</a></i></p>
+				
+				
+				
+<p id="Sea-Tyrant's-Patch" class="stat-block-title">Sea Tyrant's Patch</p>
+<p class="stat-block-1"><b>Price</b> 70,000 gp; <b>Aura</b> strong enchantment; <b>CL</b> 15th; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">This ornate silk eye patch is embroidered with gold thread and studded with pearls in a pattern representing a whirlpool. The wearer of this item, which is a favorite patch of ruthless or particularly driven pirate captains, is constantly affected as if subject to the <i><a href="../../advancedPlayersGuide/spells/touchOfTheSea.html#touch-of-the-sea" >touch of the sea</a></i>  and <i><a href="../../coreRulebook/spells/waterBreathing.html#water-breathing" >water breathing</a></i> spells. Furthermore, once per day on command, the wearer can use <i><a href="../../coreRulebook/spells/charmMonster.html#charm-monster-mass" >mass charm monster</a>,</i> as per the spell.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 35,000 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/charmMonster.html#charm-monster-mass" >mass charm monster</a></i>, <i><a href="../../advancedPlayersGuide/spells/touchOfTheSea.html#touch-of-the-sea" >touch of the sea</a>, <a href="../../coreRulebook/spells/waterBreathing.html#water-breathing" >water breathing</a></i></p>
+				
+				
+<p id="sniper-goggles" class="stat-block-title">Sniper Goggles</p>
+<p class="stat-block-1"><b>Price</b> 20,000 gp; <b>Aura</b> faint divination; <b>CL</b> 5th; <b>Weight</b> 1 lb.</p>
+<p class="stat-block">The leather strap attached to these bulbous lenses allows their wearer to fit them to his head. The wearer of these goggles can make ranged sneak attacks from any distance instead of the normal 30 feet. When making ranged sneak attacks within 30 feet, the wearer gains a +2 circumstance bonus on each sneak attack damage die.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 10,000 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/trueStrike.html#true-strike" >true strike</a></i></p>
+				
+				
+<p id="Sniper-Goggles-Greater" class="stat-block-title">Sniper Goggles, Greater</p>
+<p class="stat-block-1"><b>Price</b> 50,000 gp; <b>Aura</b> moderate divination; <b>CL</b> 8th; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">These goggles feature stubby periscopelike lenses that expand and retract depending on the needs of the wearer. These goggles function as <i>sniper goggles</i>, but the wearer gains the +2 circumstance bonus on each sneak attack when making a sneak attack at any range. </p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 25,000 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/trueStrike.html#true-strike" >true strike</a></i></p>
+				
+<p id="spectacles-of-understanding" class="stat-block-title">Spectacles of Understanding</p>
+<p class="stat-block-1"><b>Price</b> 3,000 gp; <b>Aura</b> faint divination; <b>CL</b> 2nd; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">When worn, these innocent-looking spectacles convert any written language to one known by the wearer, as the <i>comprehend language</i>s spell. The glasses are also good at detecting falsified documents, granting their wearer a +5 bonus to <a href="../../coreRulebook/skills/linguistics.html#linguistics" >Linguistics</a> checks to identify forgeries and the ability make such checks untrained.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 1,500 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/comprehendLanguages.html#comprehend-languages" >comprehend languages</a></i></p>
+				
+				
+				
+<p id="Swordmaster's-Blindfold" class="stat-block-title">Swordmaster's Blindfold</p>
+<p class="stat-block-1"><b>Price</b> 80,000 gp; <b>Aura</b> moderate transmutation; <b>CL</b> 9th; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">This black band of silk grants its wearer spectacular senses within a limited range. Some believe these items were made to grant lesser swordmasters the illusion of skill. When the wearer places the blindfold over her eyes, she becomes blinded, but gains blindsight  within the reach of her melee weapon, or 5 feet if the wearer is not wielding a melee weapon. Furthermore, the wearer is under the effect of a constant <i><a href="../../ultimateCombat/spells/locateWeakness.html#locate-weakness" >locate weakness</a></i> (<i>Ultimate Combat</i> 236) spell, but only when making melee attacks.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 40,000 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i>blindness</i>, <i><a href="../../ultimateCombat/spells/locateWeakness.html#locate-weakness" >locate weakness</a></i></p>
+				
+<p id="Treasure-Hunter's-Goggles" class="stat-block-title">Treasure Hunter's Goggles</p>
+<p class="stat-block-1"><b>Price</b> 6,400 gp; <b>Aura</b> faint divination; <b>CL</b> 3rd; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">These sturdy but plain goggles help the wearer locate secret doors and coins and identify treasure. While wearing these goggles, the wearer can use <i><a href="../../coreRulebook/spells/detectSecretDoors.html#detect-secret-doors" >detect secret doors</a></i> at will. The goggles do not aid in determining how secret doors are opened.</p>
+<p class="stat-block">Once per day on command, the wearer gains the ability to <i><a href="../../coreRulebook/spells/locateObject.html#locate-object" >locate object</a></i> as per the spell, but only to detect 100 or more coins in a small area, such as a backpack, chest, pouch, or sack.</p>
+<p class="stat-block">Three times per day, the wearer may use <i><a href="../../coreRulebook/spells/identify.html#identify" >identify</a></i>.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 3,200 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/detectSecretDoors.html#detect-secret-doors" >detect secret doors</a></i>, <i><a href="../../coreRulebook/spells/identify.html#identify" >identify</a>, <a href="../../coreRulebook/spells/locateObject.html#locate-object" >locate object</a></i></p>
+				
+				
+<p id="truesight-goggles" class="stat-block-title">Truesight Goggles</p>
+<p class="stat-block-1"><b>Price</b> 184,800 gp; <b>Aura</b> strong divination; <b>CL</b> 11th; <b>Weight</b>  &mdash;</p>
+<p class="stat-block">These goggles, constructed of a pair of perfect prisms held in place by golden frames and affixed to the head by a black leather strap, grants the wearer <i><a href="../../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a></i> continuously. Furthermore, once per day on command, the wearer can use <i><a href="../../coreRulebook/spells/analyzeDweomer.html#analyze-dweomer" >analyze dweomer</a></i> as the spell.</p>
+<p class="stat-block-breaker">Construction Requirements</p>
+<p class="stat-block-1"><b>Cost</b> 92,400 gp</p>
+<p class="stat-block">Craft Wondrous Item, <i><a href="../../coreRulebook/spells/analyzeDweomer.html#analyze-dweomer" >analyze dweomer</a></i>, <i><a href="../../coreRulebook/spells/trueSeeing.html#true-seeing" >true seeing</a></i></p>
+	
+</div>	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Eyes Slot",globalNavPath=[{ href: '/pathfinderRPG/prd/ultimateEquipment/wondrousItems/index.html', name: 'Wondrous Items' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Cleric</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "cleric.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "cleric.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "cleric.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "cleric.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "cleric.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "cleric.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "cleric.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "cleric.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "cleric.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "cleric.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "cleric.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "cleric.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "cleric.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "cleric.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "cleric.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "cleric.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "cleric.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "cleric.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "cleric.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "cleric.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "cleric.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+
+				<h1 id="cleric" class="monster-header">Cleric</h1>
+				<p>Clerics are messengers and servants of the gods, venturing forth into the world to spread their patrons' gospel through compassion, reason, bargaining, or righteous conquest. They are the bearers of divine guidance&mdash;and divine wrath. From gentle and penitent village priests to holy warriors and church heads whose decrees can rock nations and foment upheaval across entire worlds, clerics are everywhere, their callings and methods as varied as the gods they serve. They are living proof of the gods' power and interest in the world of mortals, and to deny them is to invite destruction, both in this world and the next.</p>
+				<h1 id="subdomains">Subdomains</h1>
+				<p>Presented in the section below are new rules for subdomains&mdash;more specific focuses for clerical worship and power that allow players greater flexibility in customizing their characters. Every domain has a number of subdomains associated with it (see <a href="cleric.html#table-2-11:-subdomains">Table: Subdomains</a> for a complete list). Each subdomain replaces a granted power and a number of spells in the domain's granted spell list. Spells marked with an asterisk (*) are detailed in Chapter 5 of this book. A cleric who chooses a subdomain must have access to both the domain and its subdomain from her deity. If a cleric selects a subdomain, she cannot select its associated domain as her other domain choice (in effect, the subdomain replaces its associated domain). Subdomains are treated as equivalent to their associated domain for any effect or prerequisite based on domains. If a subdomain has two associated domains, the cleric can only select the subdomain for one of her domains. Subdomains can be selected by Druids (except the metal subdomain) and inquisitors (if their deity allows it).</p>
+				<p>If a subdomain ability calls for a saving throw, the DC of the save is equal to 10 + 1/2 the character's cleric level + her Wisdom modifier.</p>
+				<table id="table-2-11:-subdomains"><caption>Table:  Subdomains</caption>
+<thead><tr><th>Domain</th><th>Subdomains</th></tr></thead>
+<tbody>
+<tr><td>Air</td><td>Cloud, Wind</td></tr>
+<tr><td>Animal</td><td>Feather, Fur</td></tr>
+<tr><td>Artifice</td><td>Construct, Toil</td></tr>
+<tr><td>Chaos</td><td>Azata, Demon, Protean</td></tr>
+<tr><td>Charm</td><td>Love, Lust</td></tr>
+<tr><td>Community</td><td>Family, Home</td></tr>
+<tr><td>Darkness</td><td>Loss, Night</td></tr>
+<tr><td>Death</td><td>Murder, Undead</td></tr>
+<tr><td>Destruction</td><td>Catastrophe, Rage</td></tr>
+<tr><td>Earth</td><td>Caves, Metal</td></tr>
+<tr><td>Evil</td><td>Daemon, Demon, Devil</td></tr>
+<tr><td>Fire</td><td>Ash, Smoke</td></tr>
+<tr><td>Glory</td><td>Heroism, Honor</td></tr>
+<tr><td>Good</td><td>Agathion, Archon, Azata</td></tr>
+<tr><td>Healing</td><td>Restoration, Resurrection</td></tr>
+<tr><td>Knowledge</td><td>Memory, Thought</td></tr>
+<tr><td>Law</td><td>Archon, Devil, Inevitable</td></tr>
+<tr><td>Liberation</td><td>Freedom, Revolution</td></tr>
+<tr><td>Luck</td><td>Curse, Fate</td></tr>
+<tr><td>Madness</td><td>Insanity, Nightmare</td></tr>
+<tr><td>Magic</td><td>Arcane, Divine</td></tr>
+<tr><td>Nobility</td><td>Leadership, Martyr</td></tr>
+<tr><td>Plant</td><td>Decay, Growth</td></tr>
+<tr><td>Protection</td><td>Defense, Purity</td></tr>
+<tr><td>Repose</td><td>Ancestors, Souls</td></tr>
+<tr><td>Rune</td><td>Language, Wards</td></tr>
+<tr><td>Strength</td><td>Ferocity, Resolve</td></tr>
+<tr><td>Sun</td><td>Day, Light</td></tr>
+<tr><td>Travel</td><td>Exploration, Trade</td></tr>
+<tr><td>Trickery</td><td>Deception, Thievery</td></tr>
+<tr><td>War</td><td>Blood, Tactics</td></tr>
+<tr><td>Water</td><td>Ice, Oceans</td></tr>
+<tr><td>Weather</td><td>Seasons, Storms</td></tr></tbody></table>
+				<h2 id="agathion-subdomain">Agathion Subdomain</h2>
+				<p><b>Associated Domain</b>: Good.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the holy lance power of the Good domain. Agathions are a race of neutral good outsiders.</p>
+				<p id="protective-aura"><i>Protective Aura (Su)</i>: At 8th level, you can emit a 30-foot protective aura as a standard action. Allies in this aura receive a +2 deflection bonus to AC and a +2 resistance bonus on all saving throws. In addition, allies in the area gain the benefits of <i><a href="../../coreRulebook/spells/protectionFromEvil.html#protection-from-evil">protection from evil</a></i> (although the AC bonus and saving throw bonus do not stack with those granted by this effect). You can use this ability for a number of rounds per day equal to your cleric level. These rounds do not have to be consecutive.</p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/shieldOfFaith.html#shield-of-faith">shield of faith</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/tongues.html#tongues">tongues</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/planarAlly.html#planar-ally">planar ally</a> </i>(agathions only).</p>
+				<h2 id="ancestors-subdomain">Ancestors Subdomain</h2>
+				<p><b>Associated Domain</b>: Repose.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the ward against death power of the Repose domain.</p>
+				<p id="speak-with-dead"><i>Speak With Dead (Su)</i>: At 8th level, as a standard action, you can ask one question of a dead creature as if using <i><a href="../../coreRulebook/spells/speakWithDead.html#speak-with-dead">speak with dead</a></i>. The dead creature you are questioning does not gain a Will saving throw if your alignments are different. You can use this ability a number of times per day equal to your cleric level.</p>
+				<p><b>Replacement Domain Spells</b>: 4th&mdash;<i><a href="../spells/restEternal.html#rest-eternal">rest eternal</a></i>*, 6th&mdash;<i><a href="../../coreRulebook/spells/geasQuest.html#geas-quest">geas/quest</a></i>.</p>
+				<h2 id="arcane-subdomain">Arcane Subdomain</h2>
+				<p><b>Associated Domain</b>: Magic.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the hand of the acolyte power of the Magic domain.</p>
+				<p id="arcane-beacon"><i>Arcane Beacon (Su)</i>: As a standard action you can become a beacon of arcane energy until the end of your next turn. The aura emanates 15 feet from you. All arcane spells cast within the aura either gain a +1 bonus to their caster level or increase their saving throw DC by +1. The caster chooses the benefit when she casts the spell. You can use this ability a number of times per day equal to 3 + your Wisdom modifier. </p>
+				<p><b>Replacement Domain Spells</b>: 1st level&mdash;<i><a href="../../coreRulebook/spells/magicAura.html#magic-aura">magic aura</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/arcaneEye.html#arcane-eye">arcane eye</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/analyzeDweomer.html#analyze-dweomer">analyze dweomer</a></i>.</p>
+				<h2 id="archon-subdomain">Archon Subdomain</h2>
+				<p><b>Associated Domains</b>: Good, Law.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the holy lance power of the Good domain or the staff of order power of the Law domain. <a href="../../coreRulebook/bestiary/archon.html">Archons</a> are a race of lawful good outsiders.</p>
+				<p id="aura-of-menace"><i>Aura of Menace (Su)</i>: At 8th level, you can emit a 30-foot aura of menace as a standard action. Enemies in this aura take a &ndash;2 penalty to AC and on attacks and saves as long as they remain inside the aura. You can use this ability for a number of rounds per day equal to your cleric level. These rounds do not need to be consecutive.</p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/divineFavor.html#divine-favor">divine favor</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/prayer.html#prayer">prayer</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/planarAlly.html#planar-ally">planar ally</a> </i>(archon only).</p>
+				<h2 id="ash-subdomain">Ash Subdomain</h2>
+				<p><b>Associated Domain</b>: Fire.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the fire resistance power of the Fire domain.</p>
+				<p id="wall-of-ashes"><i>Wall of Ashes (Su)</i>: At 8th level, you can create a wall of swirling ashes anywhere within 100 feet. This wall is up to 20 feet high and up to 10 feet long per cleric level you possess. The wall of ash blocks line of sight, and any creature passing through it must make a Fortitude save or be blinded for 1d4 rounds. The wall of ash reveals invisible creatures that are inside it or adjacent to it, although they become invisible again if they move away from the wall. You can use this ability for a number of minutes per day equal to your cleric level, but these minutes do not need to be consecutive.</p>
+				<p><b>Replacement Domain Spells</b>: 7th&mdash;<i><a href="../../coreRulebook/spells/disintegrate.html#disintegrate">disintegrate</a></i>, 9th&mdash;<i><a href="../spells/fieryBody.html#fiery-body">fiery body</a></i>*.</p>
+				<h2 id="azata-subdomain">Azata Subdomain</h2>
+				<p><b>Associated Domains</b>: Chaos, Good.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the touch of chaos power of the Chaos domain or the touch of good power of the Good domain. <a href="../../coreRulebook/bestiary/azata.html">Azatas</a> are a race of chaotic good outsiders.</p>
+				<p id="elysium's-call"><i>Elysium's Call (Su)</i>: With a touch, you can imbue creatures with the spirit of Elysium, lifting their spirits and freeing them from bonds. The creatures touched can immediately reroll any failed saving throws against spells and spell-like abilities of the enchantment (charm) and enchantment (compulsion) subschools. In addition, targets receive a +2 sacred bonus on such saving throws and a +2 sacred bonus on CMB checks to escape a grapple. Finally, targets can ignore up to 5 feet of difficult terrain each round, as if they had the <a href="../../coreRulebook/feats.html#nimble-moves">Nimble Moves</a> feat. These bonuses last for a number of rounds equal to 1/2 your cleric level (minimum 1), although the saving throw reroll only applies when the creature is touched. You can use this ability for a number of rounds per day equal to 3 + your Wisdom modifier. </p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat">expeditious retreat</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/fly.html">fly</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/planarAlly.html#planar-ally">planar ally</a> </i>(azata only).</p>
+				<h2 id="blood-subdomain">Blood Subdomain</h2>
+				<p><b>Associated Domain</b>: War.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the weapon master power of the War domain.</p>
+				<p id="wounding-blade"><i><a href="../../coreRulebook/magicItems/weapons.html#wounding">Wounding</a> Blade (Su)</i>: At 8th level, you can give a weapon that you touch the <i><a href="../../coreRulebook/magicItems/weapons.html#wounding">wounding</a></i> special weapon quality for a number of rounds equal to 1/2 your cleric level. You can use this ability once per day at 8th level, and an additional time per day for every four levels beyond 8th.</p>
+				<p><b>Replacement Domain Spells</b>: 3rd&mdash;<i><a href="../../coreRulebook/spells/vampiricTouch.html#vampiric-touch">vampiric touch</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/wallOfThorns.html#wall-of-thorns">wall of thorns</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/inflictSeriousWounds.html#inflict-serious-wounds-mass">inflict serious wounds (mass)</a></i>.</p>
+				<h2 id="catastrophe-subdomain">Catastrophe Subdomain</h2>
+				<p><b>Associated Domain</b>: Destruction.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the destructive aura power of the Destruction domain.</p>
+				<p id="deadly-weather"><i>Deadly Weather (Su)</i>: At 8th level, you can unleash a furious call to the heavens, summoning forth an ever-changing storm of destruction for a number of rounds per day equal to your cleric level. This storm has a radius of 5 feet per cleric level. Each round, the storm has one of the following effects: driving rain (&ndash;4 on all <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> checks and ranged attack rolls), howling winds (&ndash;8 on <a href="../../coreRulebook/skills/fly.html#fly">Fly</a> skill checks and ranged attack rolls), heavy snow (all terrain is considered difficult), or lightning bolt (as <i><a href="../../coreRulebook/spells/callLightning.html#call-lightning">call lightning</a></i>). Other effects depending on the weather might also apply (at the GM's discretion). You choose which effect takes place each round, but no effect may be repeated on the following round. These rounds do not need to be consecutive.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/gustOfWind.html#gust-of-wind">gust of wind</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/callLightning.html#call-lightning">call lightning</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/controlWeather.html#control-weather">control weather</a>.</i></p>
+				<h2 id="caves-subdomain">Caves Subdomain</h2>
+				<p><b>Associated Domain</b>: Earth.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the acid resistance power of the Earth domain.</p>
+				<p id="tunnel-runner"><i>Tunnel Runner (Su)</i>: At 8th level, you can move through tunnels and caves with ease. Activating this ability is a standard action. You can move across any stone surface as if under the effects of <i><a href="../../coreRulebook/spells/spiderClimb.html#spider-climb">spider climb</a></i>. You can also see very well in darkness, gaining darkvision out to a range of 60 feet. If you already possess darkvision, extend the range by 60 feet. While underground, you also gain an insight bonus equal to your cleric level on <a href="../../coreRulebook/skills/stealth.html#stealth">Stealth</a> skill checks and an insight bonus equal to your Wisdom modifier on initiative checks. You can use this ability for 1 minute per day per cleric level you possess. These minutes do not need to be consecutive, but they must be spent in 1-minute increments.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../spells/createPit.html#create-pit-">create pit*</a></i>, 3rd&mdash;<i><a href="../spells/spikedPit.html#spiked-pit">spiked pit</a></i>*, 6th&mdash;<i><a href="../spells/hungryPit.html#hungry-pit-">hungry pit*</a></i>. </p>
+				<h2 id="cloud-subdomain">Cloud Subdomain</h2>
+				<p><b>Associated Domain</b>: Air.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the electricity resistance power of the Air domain.</p>
+				<p id="thundercloud"><i>Thundercloud (Su)</i>: At 8th level, you can, as a standard action, summon a storm cloud. This power functions as <i><a href="../../coreRulebook/spells/fogCloud.html">fog cloud</a></i> except that creatures inside the cloud are deafened and take 2d6 points of electricity damage each round from the flashes of thunder and lightning. Once created, you can concentrate on the cloud to move it up to 30 feet each round. You can use this ability for a number of rounds per day equal to your cleric level. These rounds do not need to be consecutive.</p>
+				<p><b>Replacement Domain Spells</b>: 4th&mdash;<i><a href="../../coreRulebook/spells/solidFog.html#solid-fog">solid fog</a></i>, 9th&mdash;<i><a href="../../coreRulebook/spells/stormOfVengeance.html#storm-of-vengeance">storm of vengeance</a></i>.</p>
+				<h2 id="construct-subdomain">Construct Subdomain</h2>
+				<p><b>Associated Domain</b>: Artifice.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the dancing weapon power of the Artifice domain.</p>
+				<p id="animate-servant"><i>Animate Servant (Su)</i>: At 8th level, as a standard action, you can give life to inanimate objects. This ability functions as <i><a href="../../coreRulebook/spells/animateObjects.html#animate-objects">animate objects</a></i> using your cleric level as the caster level. You can use this ability once per day at 8th level, and one additional time per day for every four levels beyond 8th.</p>
+				<p><b>Replacement Domain Spells</b>: 7th&mdash;<i><a href="../../coreRulebook/spells/limitedWish.html#limited-wish">limited wish</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/polymorphAnyObject.html#polymorph-any-object">polymorph any object</a></i>. </p>
+				<h2 id="curse-subdomain">Curse Subdomain</h2>
+				<p><b>Associated Domain</b>: Luck.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the bit of luck power of the Luck domain.</p>
+				<p id="malign-eye"><i>Malign Eye (Su)</i>: As a standard action, you can afflict one target within 30 feet with your malign eye, causing it to take a &ndash;2 penalty on all saving throws against your spells. The effect lasts for 1 minute or until the target hits you with an attack. You can use this ability for a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 1st level&mdash;<i><a href="../../coreRulebook/magicItems/weapons.html#weapons-bane">bane</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/bestowCurse.html#bestow-curse">bestow curse</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/eyebite.html#eyebite">eyebite</a>.</i></p>
+				<h2 id="daemon-subdomain">Daemon Subdomain</h2>
+				<p><b>Associated Domain</b>: Evil.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the scythe of evil power of the Evil domain. Daemons are a race of neutral evil outsiders.</p>
+				<p id="whispering-evil"><i>Whispering Evil (Su)</i>: At 8th level, as a standard action, you can whisper a hypnotizing litany of empty promises. Each enemy within a 30-foot emanation that can hear you must succeed on a Will saving throw or become fascinated for as long as you continue the litany. You can use this power a number of rounds per day equal to your cleric level, but these rounds do not need to be consecutive. This is a mind-affecting effect. </p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/causeFear.html#cause-fear">cause fear</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/vampiricTouch.html#vampiric-touch">vampiric touch</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/planarBinding.html#planar-binding">planar binding</a> </i>(daemons only).</p>
+				<h2 id="day-subdomain">Day Subdomain</h2>
+				<p><b>Associated Domain</b>: Sun.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the nimbus of light power of the Sun domain.</p>
+				<p id="day's-resurgence"><i>Day's Resurgence (Su)</i>: At 8th level, you can restore a single creature as if it had just completed 8 hours of rest. It takes 10 minutes to use this power. If the use of this power is disrupted, it must be restarted, but it is not lost. At the end of the 10 minutes, a single willing creature that you have touched regains hit points as if it had rested for the night and may make new saving throws against effects that require a save once per day. The target does not suffer any negative effects if such saving throws are failed, but success counts toward removing the affliction (if possible). This ability does not allow a target to prepare spells an additional time per day. You can use this ability once per day at 8th level, plus one additional time per day for every 2 levels beyond 8th. </p>
+				<p><b>Replacement Domain Spells</b>: 2nd level&mdash;<i><a href="../../coreRulebook/spells/continualFlame.html#continual-flame">continual flame</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/daylight.html#daylight">daylight</a>.</i></p>
+				<h2 id="decay-subdomain">Decay Subdomain</h2>
+				<p><b>Associated Domain</b>: Plant.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the bramble armor power of the Plant domain.</p>
+				<p id="aura-of-decay"><i>Aura of Decay (Su)</i>: At 8th level, you can emit a 30-foot aura of decay as a standard action. Living creatures in this aura (except you) take 1d6 points of damage per round as their flesh rots. They also take a cumulative &ndash;1 penalty to Strength each round they remain in the aura. Once outside the aura, the penalty fades at the rate of &ndash;1 per round, but it begins building again if they reenter the aura. Plant creatures take 2d6 points of damage per round. You can use this ability for a number of rounds per day equal to your cleric level. These rounds do not need to be consecutive.</p>
+				<p><b>Replacement Domain Spells</b>: 3rd&mdash;<i><a href="../../coreRulebook/spells/contagion.html#contagion">contagion</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/poison.html#poison">poison</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/harm.html#harm">harm</a>.</i></p>
+				<h2 id="deception-subdomain">Deception Subdomain</h2>
+				<p><b>Associated Domain</b>: Trickery.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the copycat power of the Trickery domain.</p>
+				<p id="sudden-shift"><i>Sudden Shift (Sp)</i>: In the blink of an eye, you can appear somewhere else. As an immediate action, after you are missed by a melee attack, you can teleport up to 10 feet to a space that you can see. This space must be inside the reach of the creature that attacked you. You can use this power a number of times each day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/mirrorImage.html#mirror-image">mirror image</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/projectImage.html#project-image">project image</a></i>. </p>
+				<h2 id="defense-subdomain">Defense Subdomain</h2>
+				<p><b>Associated Domain</b>: Protection.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the resistant touch power of the Protection domain.</p>
+				<p id="deflection-aura"><i><a href="../spells/deflection.html#deflection-">Deflection</a> Aura (Su)</i>: Once each day, you can emit a 20-foot aura for a number of rounds equal to your cleric level. Allies within the aura gain a +2 deflection bonus to AC and combat maneuver defense. </p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/shield.html#shield">shield</a></i>, 2nd&mdash;<i><a href="../../coreRulebook/spells/barkskin.html#barkskin">barkskin</a></i>, 7th&mdash;<i><a href="../spells/deflection.html#deflection-">deflection</a></i>*<i>.</i></p>
+				<h2 id="demon-subdomain">Demon Subdomain</h2>
+				<p><b>Associated Domains</b>: Chaos, Evil.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the touch of chaos power of the Chaos domain or the touch of evil power of the Evil domain. <a href="../../coreRulebook/bestiary/demon.html">Demons</a> are a race of chaotic evil outsiders.</p>
+				<p id="fury-of-the-abyss"><i>Fury of the Abyss (Su)</i>: As a swift action, you can give yourself an enhancement bonus equal to 1/2 your cleric level (minimum +1) on melee attacks, melee damage rolls, and combat maneuver checks. This bonus lasts for 1 round. During this round, you take a &ndash;2 penalty to AC. You can use this ability for a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/doom.html#doom">doom</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/rage.html#rage">rage</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/planarBinding.html#planar-binding">planar binding</a> </i>(demons only).</p>
+				<h2 id="devil-subdomain">Devil Subdomain</h2>
+				<p><b>Associated Domains</b>: Evil, Law.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the touch of evil power of the Evil domain or the touch of law power of the Law domain. <a href="../../coreRulebook/bestiary/devil.html">Devils</a> are a race of lawful evil outsiders.</p>
+				<p id="hell's-corruption"><i>Hell's Corruption (Su)</i>: You can cause a creature to become more susceptible to corruption as a melee touch attack. Creatures touched take a &ndash;2 penalty on all saving throws and must roll all opposed skill checks twice, taking the worse result. This effect lasts for a number of rounds equal to 1/2 your cleric level (minimum 1). You can use this ability for a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/command.html#command">command</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/suggestion.html#suggestion">suggestion</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/planarBinding.html#planar-binding">planar binding</a> </i>(devils only). </p>
+				<h2 id="divine-subdomain">Divine Subdomain</h2>
+				<p><b>Associated Domain</b>: Magic.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the hand of the acolyte power of the Magic domain.</p>
+				<p id="divine-vessel"><i>Divine Vessel (Su)</i>: Whenever you are the target of a divine spell, you can, as a swift action, grant each ally within 15 feet of you a divine boon. This boon grants a +2 bonus on the next attack roll, skill check, or ability check made before the end of their next turn. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd level&mdash;<i><a href="../../coreRulebook/spells/blessWater.html#bless-water">bless water</a></i>, 5th&mdash;<i><a href="../spells/cleanse.html#cleanse">cleanse*</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/resurrection.html#resurrection">resurrection</a></i>, 9th<i>&mdash;<a href="../../coreRulebook/spells/miracle.html#miracle">miracle</a>.</i></p>
+				<h2 id="exploration-subdomain">Exploration Subdomain</h2>
+				<p><b>Associated Domain</b>: Travel.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the agile feet power of the Travel domain.</p>
+				<p id="door-sight"><i>Door Sight (Su)</i>: You can lay your hand upon any surface and see what is on the other side, as if using <i>clairvoyance</i>. Using this power takes 1 minute, during which time you must be touching the surface you want to see through. You can keep looking for as long as 10 minutes with each use of this power, but must touch the surface and take no other action the entire time. The surface cannot be thicker than 6 inches plus 1 inch per cleric level you possess. You can use this power a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat">expeditious retreat</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/locateCreature.html#locate-creature">locate creature</a></i>, 9th&mdash;<i><a href="../spells/worldWave.html#world-wave-">world wave*</a>.</i></p>
+				<h2 id="family-subdomain">Family Subdomain</h2>
+				<p><b>Associated Domain</b>: Community.</p>
+				<p><b>Replacement Power</b>: The following power replaces the calming touch power of the Community domain.</p>
+				<p id="binding-ties"><i><a href="../../coreRulebook/spells/binding.html#binding">Binding</a> Ties (Su)</i>: As a standard action, you can touch an ally and remove one condition affecting the ally by transferring it to yourself. This transfer lasts a number of rounds equal to your cleric level, but you can end it as a free action on your turn. At the end of this effect, the condition reverts to the original creature, unless it has ended or is removed by another effect. While this power is in use, the target is immune to the transferred condition. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/calmEmotions.html#calm-emotions">calm emotions</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/createFoodAndWater.html#create-food-and-water">create food and water</a></i>. </p>
+				<h2 id="fate-subdomain">Fate Subdomain</h2>
+				<p><b>Associated Domain</b>: Luck.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the good fortune power of the Luck domain.</p>
+				<p id="tugging-strands"><i>Tugging Strands (Su)</i>: At 8th level, you can force a creature within line of sight to reroll any one roll that it has just made before the result of the roll is revealed. The result of the reroll must be taken, even if it is worse than the original roll. You can use this ability once per day at 8th level, and one additional time per day for every 6 levels beyond 8th.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/augury.html#augury">augury</a></i>, 3rd&mdash;<i><a href="../spells/borrowFortune.html#borrow-fortune">borrow fortune</a></i>*.</p>
+				<h2 id="feather-subdomain">Feather Subdomain</h2>
+				<p><b>Associated Domain</b>: Animal.</p>
+				<p>Add <a href="../../coreRulebook/skills/fly.html#fly">Fly</a> to your list of class skills. In addition, whenever you cast a spell that grants you a fly speed, your maneuverability increases by one step (up to perfect).</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the speak with animals power of the Animal domain.</p>
+				<p id="eyes-of-the-hawk"><i>Eyes of the Hawk (Ex)</i>: You gain a racial bonus on <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> checks equal to 1/2 your cleric level (minimum +1). In addition, if you can act during a surprise round, you receive a +2 racial bonus on your Initiative check.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/featherFall.html#feather-fall">feather fall</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/fly.html">fly</a></i>, 6th&mdash;<i><a href="../spells/fly.html#fly,-mass">fly (mass)*</a></i>.</p>
+				<h2 id="ferocity-subdomain">Ferocity Subdomain</h2>
+				<p><b>Associated Domain</b>: Strength.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the strength surge power of the Strength domain.</p>
+				<p id="ferocious-strike"><i>Ferocious Strike (Su)</i>: Whenever you make a melee attack, you can designate that attack as a ferocious strike. If the attack hits, it deals additional damage equal to 1/2 your cleric level (minimum +1). You can use this ability a number of times per day equal to 3 + your Wisdom modifier. </p>
+				<p><b>Replacement Domain Spells</b>: 3rd&mdash;<i><a href="../../coreRulebook/spells/rage.html#rage">rage</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/bullSStrength.html#bull-s-strength-mass">bull's strength (mass)</a>.</i></p>
+				<h2 id="freedom-subdomain">Freedom Subdomain</h2>
+				<p><b>Associated Domain</b>: Liberation.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the liberation power of the Liberation domain.</p>
+				<p id="liberty's-blessing"><i>Liberty's Blessing (Sp)</i>: You touch a willing creature as a standard action, granting it a boon. A creature with this boon can, as a swift action, make a saving throw against a single spell or effect it is suffering from that grants a save. The DC of the saving throw is equal to the original DC of the spell or effect. If the saving throw is successful, the effect ends. This boon lasts for 1 minute or until successfully used to remove a spell or effect, whichever duration is shorter. You can use this ability for a number of times equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/sanctuary.html#sanctuary">sanctuary</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/planeShift.html#plane-shift">plane shift</a></i>.</p>
+				<h2 id="fur-subdomain">Fur Subdomain</h2>
+				<p><b>Associated Domain</b>: Animal.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the speak with animals power of the Animal domain.</p>
+				<p id="predator's-grace"><i>Predator's <a href="../spells/grace.html#grace">Grace</a> (Su)</i>: You can, as a swift action, grant yourself a +10-foot bonus to your base speed for 1 round. This bonus increases by 5 feet for every 5 cleric levels you possess. In addition, you gain low-light vision for 1 round. If you already possess low-light vision, the range of your sight becomes three times that of a human in dim light for 1 round. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/magicFang.html#magic-fang">magic fang</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/beastShape.html#beast-shape-i">beast shape I</a> </i>(animals only). </p>
+				<h2 id="growth-subdomain">Growth Subdomain</h2>
+				<p><b>Associated Domain</b>: Plant.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the wooden fist power of the Plant domain.</p>
+				<p id="enlarge"><i>Enlarge (Su)</i>: As a swift action you can enlarge yourself for 1 round, as if you were the target of the <i><a href="../../coreRulebook/spells/enlargePerson.html#enlarge-person">enlarge person</a></i> spell. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/enlargePerson.html#enlarge-person">enlarge person</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/righteousMight.html#righteous-might">righteous might</a>.</i></p>
+				<h2 id="heroism-subdomain">Heroism Subdomain</h2>
+				<p><b>Associated Domain</b>: Glory.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the divine presence power of the Glory domain.</p>
+				<p id="aura-of-heroism"><i>Aura of <a href="../../coreRulebook/spells/heroism.html#heroism">Heroism</a> (Su)</i>: At 8th level, you can emit a 30-foot aura of heroism for a number of rounds per day equal to your cleric level. Using this ability is a swift action. Allies in the area are treated as if they were under the effects of <i><a href="../../coreRulebook/spells/heroism.html#heroism">heroism</a></i>. These rounds do not need to be consecutive.</p>
+				<p><b>Replacement Domain Spells</b>: 3rd&mdash;<i><a href="../../coreRulebook/spells/heroism.html#heroism">heroism</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/heroism.html#heroism-greater">heroism (greater)</a></i>.</p>
+				<h2 id="home-subdomain">Home Subdomain</h2>
+				<p><b>Associated Domain</b>: Community.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the unity power of the Community domain.</p>
+				<p id="guarded-hearth"><i>Guarded Hearth (Su)</i>: At 8th level, you can create a ward that protects a specified area. Creating this ward takes 10 minutes of uninterrupted work. This ward has a maximum radius of 5 feet per 2 cleric levels you possess. When the ward is completed, you designate any number of creatures inside its area. Should any other creature enter the warded area, all of the selected creatures are immediately alerted (and awoken if they were asleep). The designated creatures also receive a sacred bonus equal to your Wisdom modifier on all saving throws and attack rolls while inside the warded area. This ward immediately ends if you leave the area. The ward lasts for 1 hour per cleric level. You can use this ability once per day.</p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/alarm.html#alarm">alarm</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/glyphOfWarding.html#glyph-of-warding">glyph of warding</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/guardsAndWards.html#guards-and-wards">guards and wards</a></i>.</p>
+				<h2 id="honor-subdomain">Honor Subdomain</h2>
+				<p><b>Associated Domain</b>: Glory.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the touch of glory power of the Glory domain.</p>
+				<p id="honor-bound"><i>Honor Bound (Su)</i>: With a touch, you can remind a creature of its duties and responsibilities, granting it a new saving throw against each enchantment (charm) or enchantment (compulsion) effect that currently affects it. If the saving throw is successful, the enchantment effect is ended. This power only affects effects that allow a save. If you fail a save against such an effect, you can use this ability as an immediate action to grant yourself an additional save. Once the target (either you or a touched creature) has made one additional save per effect, this ability has no further effect on that particular enchantment effect. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/zoneOfTruth.html#zone-of-truth">zone of truth</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/geasQuest.html#geas-quest">geas/quest</a>.</i></p>
+				<h2 id="ice-subdomain">Ice Subdomain</h2>
+				<p><b>Associated Domain</b>: Water.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the cold resistance power of the Water domain.</p>
+				<p id="body-of-ice"><i>Body of Ice (Su)</i>: At 8th level, you can transmute your body and equipment to ice for a period of time. It takes a standard action to take on the form of ice, and you can end the transmutation with a free action on your turn. When you take on the form of ice, you are immune to cold and have DR 5/&mdash;, but you take twice the normal amount of damage from fire. You can take on the form of ice for a number of rounds per day equal to your cleric level. The rounds need not be consecutive.</p>
+				<p><b>Replacement Domain Spells</b>: 7th&mdash;<i><a href="../../coreRulebook/spells/freezingSphere.html#freezing-sphere">freezing sphere</a></i>, 9th&mdash;<i><a href="../../coreRulebook/spells/polarRay.html#polar-ray">polar ray</a></i>.</p>
+				<h2 id="inevitable-subdomain">Inevitable Subdomain</h2>
+				<p><b>Associated Domain</b>: Law.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the touch of law power of the Law domain. Inevitables are a race of lawful neutral outsiders.</p>
+				<p id="command"><i><a href="../../coreRulebook/spells/command.html#command">Command</a> (Su)</i>: As a standard action, you can give a creature an emotionless yet undeniable order, as per the spell <i><a href="../../coreRulebook/spells/command.html#command">command</a></i>. A Will save negates this effect. You cannot target a creature more than once per day with this ability. You can use this ability a number of times per day equal to 3 + your Wisdom modifier. </p>
+				<p><b>Replacement Domain Spells</b>: 3rd&mdash;<i><a href="../../coreRulebook/spells/commandUndead.html#command-undead">command undead</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/command.html#command-greater">command (greater)</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/planarBinding.html#planar-binding">planar binding</a></i> (inevitables only).</p>
+				<h2 id="insanity-subdomain">Insanity Subdomain</h2>
+				<p><b>Associated Domain</b>: Madness.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the visions of madness power of the Madness domain.</p>
+				<p id="insane-focus"><i>Insane Focus (Su)</i>: You can touch a willing creature as a standard action, granting it a +4 bonus on all saving throws made against mind-affecting effects and immunity to confusion. This bonus lasts for 1 minute. If the creature fails a saving throw against a mind-affecting effect during this period, it loses its immunity to confusion and is immediately confused for one round. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 4th&mdash;<i><a href="../spells/moonstruck.html#moonstruck">moonstruck</a></i>*, 6th&mdash;<i><a href="../spells/phantasmalWeb.html#phantasmal-web">phantasmal web</a></i>*<i>.</i></p>
+				<h2 id="language-subdomain">Language Subdomain</h2>
+				<p><b>Associated Domain</b>: Rune.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the spell rune power of the Rune domain.</p>
+				<p id="rune-shift"><i>Rune Shift (Su)</i>: At 6th level, as a swift action, you can change the location of one of your blast runes. The rune must be within 30 feet. You can place the blast rune in any square adjacent to you, including one occupied by another creature. </p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/comprehendLanguages.html#comprehend-languages">comprehend languages</a></i>, 2nd&mdash;<i><a href="../spells/shareLanguage.html#share-language-">share language</a></i>*, 3rd&mdash;<i><a href="../../coreRulebook/spells/tongues.html#tongues">tongues</a></i>, 5th<i>&mdash;<a href="../../coreRulebook/spells/telepathicBond.html#telepathic-bond">telepathic bond</a>.</i></p>
+				<h2 id="leadership-subdomain">Leadership Subdomain</h2>
+				<p><b>Associated Domain</b>: Nobility.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the inspiring word power of the Nobility domain.</p>
+				<p id="inspiring-command"><i>Inspiring <a href="../../coreRulebook/spells/command.html#command">Command</a> (Su)</i>: As a standard action, you can issue an inspiring command to your allies. The inspiring command affects one ally plus one additional ally for every three cleric levels you possess, who must all be within 30 feet of you. Affected allies gain a +2 insight bonus on attack rolls, AC, combat maneuver defense, and skill checks for 1 round. This is a language-dependent mind-affecting effect.</p>
+				<p><b>Replacement Domain Spells</b>: 1st level&mdash;<i><a href="../../coreRulebook/spells/bless.html#bless">bless</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/prayer.html#prayer">prayer</a></i>, 6th&mdash;<i><a href="../spells/brilliantInspiration.html#brilliant-inspiration">brilliant inspiration</a></i>*<i>.</i></p>
+				<h2 id="light-subdomain">Light Subdomain</h2>
+				<p><b>Associated Domain</b>: Sun.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the sun's blessing power of the Sun domain.</p>
+				<p id="blinding-flash"><i><a href="../../coreRulebook/magicItems/armor.html#armor-blinding">Blinding</a> Flash (Su)</i>: As a standard action, you can emit a flash of light from your holy symbol or divine focus. The most powerful light emanates out 20 feet from you. Creatures with fewer Hit Dice than your cleric level within this area are blinded for 1d4 rounds unless they succeed at a Fortitude save. All creatures in this area are dazzled for a number of rounds equal to 1/2 your cleric level (minimum 1). You can use this ability a number of times per day equal to 3 + your Wisdom modifier</p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/faerieFire.html#faerie-fire">faerie fire</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/daylight.html#daylight">daylight</a>.</i></p>
+				<h2 id="loss-subdomain">Loss Subdomain</h2>
+				<p><b>Associated Domain</b>: Darkness.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the eyes of darkness power of the Darkness domain.</p>
+				<p id="aura-of-forgetfulness"><i>Aura of Forgetfulness (Su)</i>: At 8th level, you can emit a 30-foot aura of forgetfulness for a number of rounds per day equal to your cleric level. Creatures you target in this area must make a Will save or have no memory of any time spent inside the area. In addition, spellcasters in the area lose one prepared spell or available spell slot per round spent in the area, starting with 1st-level spells and going up through higher-level spells. Spellcasters are allowed a save each round to negate this loss (this save is separate from the memory loss save). These rounds do not need to be consecutive.</p>
+				<p><b>Replacement Domain Spells</b>: 5th&mdash;<i><a href="../../coreRulebook/spells/enervation.html#enervation">enervation</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/modifyMemory.html#modify-memory">modify memory</a></i>, 9th&mdash;<i><a href="../../coreRulebook/spells/energyDrain.html#energy-drain">energy drain</a></i>.</p>
+				<h2 id="love-subdomain">Love Subdomain</h2>
+				<p><b>Associated Domain</b>: Charm.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the dazing touch power of the Charm domain.</p>
+				<p id="adoration"><i>Adoration (Su)</i>: As an immediate action, you can attempt to thwart a melee or ranged attack that targets you. This ability functions as <i><a href="../../coreRulebook/spells/sanctuary.html#sanctuary">sanctuary</a></i>, but only against one individual attack. You must use the ability after the attack is declared but before the roll is made. The creature attacking you receives a Will save to negate this effect. If a creature has more than one attack, this ability only affects one of the attacks. You can use the ability a number of times per day equal to 3 + your Wisdom modifier. This is a mind-affecting effect.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/enthrall.html#enthrall">enthrall</a></i>, 8th&mdash;<i><a href="../spells/euphoricTranquility.html#euphoric-tranquility">euphoric tranquility</a></i>*. </p>
+				<h2 id="lust-subdomain">Lust Subdomain</h2>
+				<p><b>Associated Domain</b>: Charm.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the charming smile power of the Charm domain.</p>
+				<p id="anything-to-please"><i>Anything to Please (Su)</i>: At 8th level, you can compel a creature within 30 feet to attempt to please you as a standard action. The creature receives a Will save to negate this affect. If the save fails, the creature attacks your enemies for 1 round, gives you its most valuable item, or drops prone at your feet and grovels for 1d4 rounds (GM's choice). You can use this ability once per day at 8th level and one additional time per day for every four levels beyond 8th. This is a mind-affecting effect.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/touchOfIdiocy.html#touch-of-idiocy">touch of idiocy</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/confusion.html#confusion">confusion</a></i>. </p>
+				<h2 id="martyr-subdomain">Martyr Subdomain</h2>
+				<p><b>Associated Domain</b>: Nobility.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the leadership power of the Nobility domain.</p>
+				<p id="sacrificial-bond"><i>Sacrificial Bond (Su)</i>: At 8th level, when an ally within 30 feet takes damage from an attack, you can, as an immediate action, transfer this damage to yourself. This power also transfers any effects that accompany the damage. The damage done to you cannot be reduced in any way. You can use this ability once per day at 8th level, plus on additional time per day at 14th level and 20th level.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/shieldOther.html#shield-other">shield other</a></i>, 6th&mdash;<i><a href="../spells/sacrificialOath.html#sacrificial-oath">sacrificial oath*</a>.</i></p>
+				<h2 id="memory-subdomain">Memory Subdomain</h2>
+				<p><b>Associated Domain</b>: <a href="../../coreRulebook/classes/cleric.html#knowledge-domain">Knowledge</a>.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the lore keeper power of the <a href="../../coreRulebook/classes/cleric.html#knowledge-domain">Knowledge</a> domain.</p>
+				<p id="recall"><i>Recall (Su)</i>: With a touch, you can cause a creature to recall some bit of forgotten lore or information. The creature can retry any <a href="../../coreRulebook/classes/cleric.html#knowledge-domain">Knowledge</a> skill check it has made within the past minute, gaining a insight bonus on the check equal to your Wisdom modifier. You can use this ability a number times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../spells/memoryLapse.html#memory-lapse">memory lapse*</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/modifyMemory.html#modify-memory">modify memory</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/momentOfPrescience.html#moment-of-prescience">moment of prescience</a></i>.</p>
+				<h2 id="metal-subdomain">Metal Subdomain</h2>
+				<p><b>Associated Domain</b>: Earth.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the acid dart power of the Earth domain.</p>
+				<p id="metal-fist"><i>Metal Fist (Su)</i>: As a swift action, you can turn your fists into metal for 1 round, allowing you to make unarmed strikes that deal 1d6 points of bludgeoning damage plus your Strength modifier. These unarmed strikes do not provoke attacks of opportunity, but attacking with both uses the two-weapon fighting rules as normal. In addition, these unarmed strikes ignore the hardness of items with a hardness of 10 or less. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/heatMetal.html#heat-metal">heat metal</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/wallOfIron.html#wall-of-iron">wall of iron</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/ironBody.html#iron-body">iron body</a>.</i></p>
+				<h2 id="murder-subdomain">Murder Subdomain</h2>
+				<p><b>Associated Domain</b>: Death.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the death's embrace power of the Death domain.</p>
+				<p id="killing-blow"><i>Killing Blow (Su)</i>: At 8th level, weapons you use become infused with the power of death. Whenever you confirm a critical hit with a melee or ranged weapon, your attack deals an additional amount of bleed damage equal to half your cleric level. You can use this ability once per day at 8th level, plus one additional time per day for every four levels beyond 8th.</p>
+				<p><b>Replacement Domain Spells</b>: 3rd&mdash;<i><a href="../../coreRulebook/spells/keenEdge.html#keen-edge">keen edge</a></i>, 5th&mdash;<i><a href="../spells/suffocation.html#suffocation">suffocation</a></i>*, 9th&mdash;<i><a href="../spells/suffocation.html#suffocation,-mass">suffocation (mass)*</a></i>. </p>
+				<h2 id="night-subdomain">Night Subdomain</h2>
+				<p><b>Associated Domain</b>: Darkness.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the touch of darkness power of the Darkness domain.</p>
+				<p id="night-hunter"><i>Night Hunter (Su)</i>: As a standard action, you can blend into the shadows of the night, becoming nearly invisible<i>.</i> As long as you are in an area of dim light or darkness, you are invisible (as per <i><a href="../../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></i>) to creatures without darkvision. This ability lasts for a number of rounds equal to 1/2 your cleric level (minimum 1). You can use this ability for a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/sleep.html#sleep">sleep</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/nightmare.html#nightmare">nightmare</a>.</i></p>
+				<h2 id="nightmare-subdomain">Nightmare Subdomain</h2>
+				<p><b>Associated Domain</b>: Madness.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the vision of madness power of the Madness domain.</p>
+				<p id="fearful-touch"><i>Fearful Touch (Su)</i>: As a standard action, you can make a melee touch attack against a creature, causing it to experience terrible hallucinations for 1 round. During this time, the creature loses any immunity to fear effects it might possess and takes a &ndash;2 penalty on attack rolls made against you. In addition, the creature takes a penalty on Will saves made against fear effects equal to 1/2 your cleric level (minimum &ndash;1). This power is a mind-affecting effect. You can use this ability for a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 4th&mdash;<i><a href="../../coreRulebook/spells/phantasmalKiller.html#phantasmal-killer">phantasmal killer</a></i>, 6th&mdash;<i><a href="../spells/cloakOfDreams.html">cloak of dreams*</a></i>.</i></p>
+				<h2 id="oceans-subdomain">Oceans Subdomain</h2>
+				<p><b>Associated Domain</b>: Water.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the icicle power of the Water domain.</p>
+				<p id="surge"><i>Surge (Su)</i>: As a standard action, you can cause a mighty wave to appear that pushes or pulls a single creature. Make a combat maneuver check against the target, using your cleric level + your Wisdom modifier as your CMB. If successful, you may pull or push the creature as if using the bull rush or drag combat maneuver. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../spells/slipstream.html#slipstream">slipstream*</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/waterWalk.html#water-walk">water walk</a>, </i>9th&mdash;<i><a href="../spells/tsunami.html#tsunami">tsunami*</a>.</i></p>
+				<h2 id="protean-subdomain">Protean Subdomain</h2>
+				<p><b>Associated Domain</b>: Chaos.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the chaos blade power of the Chaos domain. Proteans are a race of chaotic neutral outsiders.</p>
+				<p id="aura-of-chaos"><i>Aura of Chaos (Su)</i>: At 8th level, you can surround yourself with a field wild energies. Thee energies manifest as a 30-foot aura of chaos for a number of rounds per day equal to your cleric level. All enemies within this aura must declare one type of action at the start of their turn (attack, cast a spell, move, use an item, or activate a special ability) and make a Will save. Creatures that fail the Will save must take an action other than their declared action. If they succeed, they must take the declared action. Creatures cannot select actions that they cannot perform.</p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/confusion.html#confusion-lesser">confusion (lesser)</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/displacement.html#displacement">displacement</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/planarBinding.html#planar-binding">planar binding</a> </i>(proteans only). </p>
+				<h2 id="purity-subdomain">Purity Subdomain</h2>
+				<p><b>Associated Domain</b>: Protection.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the aura of protection power of the Protection domain.</p>
+				<p id="purifying-touch"><i>Purifying Touch (Su)</i>: At 8th level, you can touch a willing creature with divine power, giving it a saving throw against each effect currently affecting it, using the original saving throw DC of the effect. Each successful saving throw ends the related effect. The creature can choose not to make a save against an effect. You can use this ability once per day at 8th level, plus one additional time per day at 14th and 20th level. </p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/protectionFromChaos.html#protection-from-chaos">protection from chaos</a>/evil/good/law</i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/removeBlindnessDeafness.html#remove-blindness-deafness">remove blindness/deafness</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/atonement.html#atonement">atonement</a></i>.</p>
+				<h2 id="rage-subdomain">Rage Subdomain</h2>
+				<p><b>Associated Domain</b>: Destruction.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the destructive aura power of the Destruction domain.</p>
+				<p id="rage"><i><a href="../../coreRulebook/spells/rage.html#rage">Rage</a> (Su)</i>: At 8th level, you can enter a fearsome rage, like a barbarian, for a number of rounds per day equal to your cleric level. At 12th and 16th level, you can select one rage power. You cannot select any rage power that possesses a level requirement, but otherwise your barbarian level is equal to 1/2 your cleric level. These rounds of rage stack with any rounds of rage you might have from levels of barbarian.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/bullSStrength.html#bull-s-strength">bull's strength</a></i>, 6th&mdash;<i><a href="../spells/moonstruck.html#moonstruck">moonstruck*</a></i>.</p>
+				<h2 id="resolve-subdomain">Resolve Subdomain</h2>
+				<p><b>Associated Domain</b>: Strength.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the might of the gods power of the Strength domain.</p>
+				<p id="bestow-resolve"><i>Bestow Resolve (Su)</i>: At 8th level, you can bless creatures with the boldness of your deity. You can bestow a number of temporary hit points equal to your level + your Wisdom modifier to all allies within 20 feet. The temporary hit points remain for 1 minute. You can use this ability once per day at 8th level, plus one additional time per day for every 4 levels you possess beyond 8th. </p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/bless.html#bless">bless</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/heroesFeast.html#heroes-feast">heroes' feast</a>.</i></p>
+				<h2 id="restoration-subdomain">Restoration Subdomain</h2>
+				<p><b>Associated Domain</b>: Healing.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the rebuke death power of the Healing domain.</p>
+				<p id="restorative-touch"><i>Restorative Touch (Su)</i>: You can touch a creature, letting the healing power of your deity flow through you to relieve the creature of a minor condition. Your touch can remove the dazed, fatigued, shaken, sickened, or staggered condition. You choose which condition is removed. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/removeDisease.html#remove-disease">remove disease</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/neutralizePoison.html#neutralize-poison">neutralize poison</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/breakEnchantment.html#break-enchantment">break enchantment</a></i>. </p>
+				<h2 id="resurrection-subdomain">Resurrection Subdomain</h2>
+				<p><b>Associated Domain</b>: Healing.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the healer's blessing power of the Healing domain.</p>
+				<p id="gift-of-life"><i>Gift of Life (Su)</i>: At 8th level, you can touch a creature that has died within the past minute to grant it a few moments of life. The dead creature returns to life for a number of rounds equal to your cleric level. Creatures returned to life in this way have a number of hit points equal to half your cleric level, and continue to be affected by any still-active spells, conditions, or afflictions present at the time of their death. At the end of this time, the creature dies again. The creature is free to act as it sees fit during this time. You are granted no control over it. You can use this power once per day at 8th level, plus one additional time per day for every four levels beyond 8th.</p>
+				<p><b>Replacement Domain Spells</b>: 5th&mdash;<i><a href="../../coreRulebook/spells/raiseDead.html#raise-dead">raise dead</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/resurrection.html#resurrection">resurrection</a></i>, 9th&mdash;<i><a href="../../coreRulebook/spells/trueResurrection.html#true-resurrection">true resurrection</a></i>.</p>
+				<h2 id="revolution-subdomain">Revolution Subdomain</h2>
+				<p><b>Associated Domain</b>: Liberation.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the freedom's call power of the Liberation domain.</p>
+				<p id="powerful-persuader"><i>Powerful Persuader (Su)</i>: At 8th level, when you make a <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> or <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> check, you can roll twice and take the higher result. Using this ability is a free action. You can use this ability once per day at 8th level, plus one additional time per day for every 2 levels beyond 8th.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/enthrall.html#enthrall">enthrall</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/symbolOfPersuasion.html#symbol-of-persuasion">symbol of persuasion</a>.</i></p>
+				<h2 id="seasons-subdomain">Seasons Subdomain</h2>
+				<p><b>Associated Domain</b>: Weather.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the storm burst power of the Weather domain.</p>
+				<p id="untouched-by-the-seasons"><i>Untouched by the Seasons (Su)</i>: By touching a creature, you can grant it the benefits of <i><a href="../../coreRulebook/spells/endureElements.html#endure-elements">endure elements</a></i>, which last for 1 hour per cleric level. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/goodberry.html#goodberry">goodberry</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/blight.html#blight">blight</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/sunburst.html#sunburst">sunburst</a>.</i></p>
+				<h2 id="smoke-subdomain">Smoke Subdomain</h2>
+				<p><b>Associated Domain</b>: Fire.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the fire bolt power of the Fire domain.</p>
+				<p id="cloud-of-smoke"><i>Cloud of Smoke (Su)</i>: As a standard action, you can create a 5-foot-radius cloud of smoke. This power has a range of 30 feet. Creatures inside the cloud take a &ndash;2 penalty on attack rolls and <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> skill checks for as long as they remain inside and for 1 round after exiting the cloud. Creatures inside the cloud gain concealment from attacks made by opponents that are not adjacent to them. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/pyrotechnics.html#pyrotechnics">pyrotechnics</a></i>, 3rd&mdash;<i><a href="../../coreRulebook/spells/stinkingCloud.html#stinking-cloud">stinking cloud</a></i>.</p>
+				<h2 id="souls-subdomain">Souls Subdomain</h2>
+				<p><b>Associated Domain</b>: Repose.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the gentle rest power of the Repose domain.</p>
+				<p id="touch-the-spirit-world"><i>Touch the Spirit World (Su)</i>: With a touch, you can empower a weapon to affect incorporeal creatures. The weapon touched deals half damage to incorporeal creatures, or full damage if it is a magic weapon. This benefit lasts for a number of rounds equal to your cleric level. You can use this ability a number of times per day equal to 3 + your Wisdom modifier. </p>
+				<p><b>Replacement Domain Spells</b>: 3rd&mdash;<i><a href="../../coreRulebook/spells/animateDead.html#animate-dead">animate dead</a></i>, 6th&mdash; <a href = "../../coreRulebook/spells/antilifeShell.html#_antilife-shell"><i>antilife shell</a>, </i>9th&mdash;<i><a href="../../coreRulebook/spells/trapTheSoul.html#trap-the-soul">trap the soul</a>.</i></p>
+				<h2 id="storms-subdomain">Storms Subdomain</h2>
+				<p><b>Associated Domain</b>: Weather.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the lightning lord power of the Weather domain.</p>
+				<p id="gale-aura"><i>Gale Aura (Su)</i>: At 6th level, as a standard action, you can create a 30-foot aura of gale-like winds that slows the progress of enemies. Creatures in the aura cannot take a 5-foot step. Enemies in the aura treat each square that brings them closer to you as difficult terrain. They can move normally in any other direction. You can use this ability for a number of rounds per day equal to your cleric level. The rounds do not need to be consecutive. </p>
+				<p><b>Replacement Domain Spells</b>: 5th&mdash;<i><a href="../../coreRulebook/spells/callLightningStorm.html#call-lightning-storm">call lightning storm</a></i>, 6th&mdash;<i><a href="../spells/sirocco.html#sirocco">sirocco*</a>.</i></p>
+				<h2 id="tactics-subdomain">Tactics Subdomain</h2>
+				<p><b>Associated Domain</b>: War.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the battle rage power of the War domain.</p>
+				<p id="seize-the-initiative"><i>Seize the Initiative (Su)</i>: Whenever you and your allies roll for initiative, you can grant one ally within 30 feet the ability to roll twice and take either result. This decision is made before results are revealed. You can use this ability a number of times per day equal to 3 + your Wisdom modifier. </p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/aid.html#aid">aid</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/command.html#command-greater">command (greater)</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/planarAlly.html#planar-ally-greater">planar ally (greater)</a></i>.</p>
+				<h2 id="thievery-subdomain">Thievery Subdomain</h2>
+				<p><b>Associated Domain</b>: Trickery.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the master's illusions power of the Trickery domain.</p>
+				<p id="thief-of-the-gods"><i>Thief of the Gods (Su)</i>: At 8th level, when you make a <a href="../../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> or <a href="../../coreRulebook/skills/sleightOfHand.html#sleight-of-hand">Sleight of Hand</a> check, you can roll twice and take the higher result. Using this ability is a free action. You can use this ability once per day at 8th level, plus one additional time per day for every 2 levels beyond 8th. </p>
+				<p><b>Replacement Domain Spells</b>: 3rd&mdash;<i><a href="../../coreRulebook/spells/locateObject.html#locate-object">locate object</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/etherealJaunt.html#ethereal-jaunt">ethereal jaunt</a></i>.</p>
+				<h2 id="thought-subdomain">Thought Subdomain</h2>
+				<p><b>Associated Domain</b>: <a href="../../coreRulebook/classes/cleric.html#knowledge-domain">Knowledge</a>.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the remote viewing power of the <a href="../../coreRulebook/classes/cleric.html#knowledge-domain">Knowledge</a> domain.</p>
+				<p id="read-minds"><i>Read Minds (Su)</i>: At 8th level, you can broaden your mental spectrum to encompass those around you. Doing so allows you to read the mind of every creature within 30 feet as if you had cast <i><a href="../../coreRulebook/spells/detectThoughts.html#detect-thoughts">detect thoughts</a></i>. This ability allows you to read the surface thoughts of any creature that you are aware of after only 1 round of concentration. Creatures in this area are allowed a Will save to negate the effect. The DC of this Will save is 10 + 1/2 your cleric level + your Wisdom modifier. You can use this ability for a number of rounds per day equal to your cleric level. These rounds do not need to be consecutive.</p>
+				<p><b>Replacement Domain Spells</b>: 3rd&mdash;<i><a href="../spells/seekThoughts.html#seek-thoughts">seek thoughts*</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/telepathicBond.html#telepathic-bond">telepathic bond</a></i>, 8th&mdash;<i><a href="../../coreRulebook/spells/mindBlank.html#mind-blank">mind blank</a></i>.</p>
+				<h2 id="toil-subdomain">Toil Subdomain</h2>
+				<p><b>Associated Domain</b>: Artifice.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the dancing weapon power of the Artifice domain.</p>
+				<p id="aura-of-repetition"><i>Aura of Repetition (Su)</i>: At 8th level, you can emit a 30-foot aura of repetition for a number of rounds per day equal to your cleric level. All enemies within this aura must make a Will save each round or repeat their action from the previous round (if possible). Creatures that attacked on the previous round attack again on the following round, although they may change their target. Creatures that moved the previous round must take the same move action again, although they may change their route. Creatures that drank a potion must do so again, even they can only drink from an empty bottle. Actions that cannot be repeated are wasted. These rounds do not need to be consecutive.</p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/command.html#command">command</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/wavesOfFatigue.html#waves-of-fatigue">waves of fatigue</a></i>, 7th&mdash;<i><a href="../../coreRulebook/spells/wavesOfExhaustion.html#waves-of-exhaustion">waves of exhaustion</a></i>. </p>
+				<h2 id="trade-subdomain">Trade Subdomain</h2>
+				<p><b>Associated Domain</b>: Travel.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the agile feet power of the Travel domain.</p>
+				<p id="silver-tongued-haggler"><i>Silver-Tongued Haggler (Su)</i>: Whenever you make a <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a>, <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a>, or <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> check, you can, as a free action, grant yourself a bonus on the roll equal to 1/2 your cleric level (minimum +1). You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/floatingDisk.html#floating-disk">floating disk</a></i>, 5th&mdash;<i><a href="../../coreRulebook/spells/overlandFlight.html#overland-flight">overland flight</a></i>, 9th&mdash;<i><a href="../../coreRulebook/spells/gate.html#gate">gate</a>.</i></p>
+				<h2 id="undead-subdomain">Undead Subdomain</h2>
+				<p><b>Associated Domain</b>: Death.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the bleeding touch power of the Death domain.</p>
+				<p id="death's-kiss"><i>Death's Kiss (Su)</i>: You can cause a creature to take on some of the traits of the undead with a melee touch attack. Touched creatures are treated as undead for the purposes of effects that heal or cause damage based on positive and negative energy. This effect lasts for a number of rounds equal to 1/2 your cleric level (minimum 1). It does not apply to the <a href="../../coreRulebook/feats.html#turn-undead">Turn Undead</a> or <a href="../../coreRulebook/feats.html#command-undead">Command Undead</a> feats. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 2nd&mdash;<i><a href="../../coreRulebook/spells/ghoulTouch.html#ghoul-touch">ghoul touch</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/enervation.html#enervation">enervation</a></i>, 9th&mdash;<i><a href="../../coreRulebook/spells/energyDrain.html#energy-drain">energy drain</a></i>.</p>
+				<h2 id="wards-subdomain">Wards Subdomain</h2>
+				<p><b>Associated Domain</b>: Rune.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the spell rune power of the Rune domain.</p>
+				<p id="warding-rune"><i>Warding Rune (Su)</i>: At 6th level, when a creature is damaged by your blast rune, it cannot attack you for a number of rounds equal to 1/2 your cleric level unless it succeeds at a Will save, as per the spell <i><a href="../../coreRulebook/spells/sanctuary.html#sanctuary">sanctuary</a></i>. Using this ability is an immediate action when a creature triggers one of your blast runes. The ability does not prevent you from being attacked or affected by area of effect spells or abilities. You can use this ability once per day at 8th level, plus one additional time per day at 14th level and 20th level.</p>
+				<p><b>Replacement Domain Spells</b>: 1st level&mdash;<i><a href="../../coreRulebook/spells/arcaneLock.html#arcane-lock">arcane lock</a></i>, 4th&mdash;<i><a href="../../coreRulebook/spells/dimensionalAnchor.html#dimensional">dimensional anchor</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/guardsAndWards.html#guards-and-wards">guards and wards</a>.</i></p>
+				<h2 id="wind-subdomain">Wind Subdomain</h2>
+				<p><b>Associated Domain</b>: Air.</p>
+				<p><b>Replacement Power</b>: The following granted power replaces the lightning arc power of the Air domain.</p>
+				<p id="wind-blast"><i>Wind Blast (Su)</i>: As a standard action, you can unleash a blast of air in a 30-foot line. Make a combat maneuver check against each creature in the line, using your caster level as your base attack bonus and your Wisdom modifier in place of your Strength modifier. Treat the results as a bull rush attempt. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>
+				<p><b>Replacement Domain Spells</b>: 1st&mdash;<i><a href="../../coreRulebook/spells/whisperingWind.html#whispering-wind">whispering wind</a></i>, 6th&mdash;<i><a href="../../coreRulebook/spells/windWalk.html#wind-walk">wind walk</a>, </i>9th&mdash;<i><a href="../spells/windsOfVengeance.html#winds-of-vengeance">winds of vengeance*</a></i>.</p>
+
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Cleric",globalNavPath=[{ href: '/pathfinderRPG/prd/advancedPlayersGuide/advancedCoreClasses.html', name: 'Advanced Core Classes' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

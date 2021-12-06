@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Worm That Walks</title>
+	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../index.html"><img src = "../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../index.html"><img src = "../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "wormThatWalks.html#menu" class = "menu-link has-subnav"><img src = "../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "wormThatWalks.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "wormThatWalks.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "wormThatWalks.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "wormThatWalks.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "wormThatWalks.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "wormThatWalks.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "wormThatWalks.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "wormThatWalks.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "wormThatWalks.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "wormThatWalks.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "wormThatWalks.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "wormThatWalks.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "wormThatWalks.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "wormThatWalks.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "wormThatWalks.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "wormThatWalks.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "wormThatWalks.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "wormThatWalks.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "wormThatWalks.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "wormThatWalks.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+
+
+
+			<div>
+				<h1 id="worm-that-walks" class="monster-header">Worm That Walks</h1>
+				<p>Although this robed wizard stands and moves like a man, his body is a writhing mass of squirming, slippery worms.</p>
+				<p class="stat-block-title">Worm that Walks <span class="stat-block-cr">CR 14</span></p>
+				<p class="stat-block-xp"><b>XP 38,400</b></p>
+				<p class="stat-block-1">Human worm that walks conjurer 13</p>
+				<p class="stat-block-1">NE Medium <a href="../bestiary/creatureTypes.html#vermin">vermin</a> (<a href="../bestiary/creatureTypes.html#augmented-subtype">augmented</a> human)</p>
+				<p class="stat-block-1"><b>Init</b> +8; <b>Senses</b> <a href="../bestiary/universalMonsterRules.html#blindsight">blindsight</a> 30 ft., darkvision 60 ft.; <a href="../coreRulebook/skills/perception.html#perception">Perception</a> +22</p>
+				<p class="stat-block-breaker">Defense</p>
+				<p class="stat-block-1"><b>AC</b> 23, touch 17, flat-footed 18 (+6 armor, +4 Dex, +1 dodge, +2 insight)</p>
+				<p class="stat-block-1"><b>hp</b> 113 (13d6+65); fast healing 14</p>
+				<p class="stat-block-1"><b>Fort</b> +11, <b>Ref</b> +12, <b>Will</b> +13</p>
+				<p class="stat-block-1"><b>Defensive Abilities</b> worm that walks traits; <b>DR</b> 15/&mdash;; <b>Immune</b> critical hits, <a href="../bestiary/universalMonsterRules.html#disease-(ex-or-su)">disease</a>, paralysis, <a href="../bestiary/universalMonsterRules.html#poison-(ex-or-su)">poison</a>, sleep</p>
+				<p class="stat-block-breaker">Offense</p>
+				<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+				<p class="stat-block-1"><b>Melee</b> slam +10 (1d4&ndash;1 plus <a href="../bestiary/universalMonsterRules.html#grab">grab</a>)</p>
+				<p class="stat-block-1"><b>Special Attacks</b> discorporate, <a href="../bestiary/universalMonsterRules.html#grab">grab</a> (Large), squirming embrace</p>
+				<p class="stat-block-1"><b>Arcane School Spell-Like Abilities</b> (CL 13th; concentration +18)</p>
+				<p class="stat-block-2">At will&mdash;dimensional steps (390 feet/day)</p>
+				<p class="stat-block-2">8/day&mdash;acid dart (1d6+6 acid)</p>
+				<p class="stat-block-1"><b>Conjurer Spells Prepared</b> (CL 13th; concentration +18)</p>
+				<p class="stat-block-2">7th&mdash;<i><a href="../coreRulebook/spells/planeShift.html#plane-shift">plane shift</a></i> (DC 22), <i><a href="../coreRulebook/spells/projectImage.html#project-image">project image</a></i></p>
+				<p class="stat-block-2">6th&mdash;<i><a href="../coreRulebook/spells/acidFog.html#acid-fog">acid fog</a></i>, <i><a href="../coreRulebook/spells/disintegrate.html#disintegrate">disintegrate</a></i> (DC 21), <i><a href="../coreRulebook/spells/summonMonster.html#summon-monster-vi">summon monster VI</a></i></p>
+				<p class="stat-block-2">5th&mdash;<i><a href="../coreRulebook/spells/cloudkill.html#cloudkill">cloudkill</a></i> (DC 20), <i><a href="../coreRulebook/spells/dismissal.html#dismissal">dismissal</a></i> (DC 20), <i><a href="../coreRulebook/spells/shadowEvocation.html#shadow-evocation">shadow evocation</a></i> (DC 20), <i><a href="../coreRulebook/spells/telekinesis.html#telekinesis">telekinesis</a></i> (DC 20), <i><a href="../coreRulebook/spells/teleport.html#teleport">teleport</a></i></p>
+				<p class="stat-block-2">4th&mdash;<i><a href="../coreRulebook/spells/blackTentacles.html#black-tentacles">black tentacles</a></i>, <i><a href="../coreRulebook/spells/confusion.html#confusion">confusion</a></i> (DC 19), <i><a href="../coreRulebook/spells/dimensionDoor.html#dimension-door">dimension door</a></i> (2), <i><a href="../coreRulebook/spells/phantasmalKiller.html#phantasmal-killer">phantasmal killer</a></i> (DC 19), <i><a href="../coreRulebook/spells/summonMonster.html#summon-monster-iv">summon monster IV</a></i></p>
+				<p class="stat-block-2">3rd&mdash;<i><a href="../coreRulebook/spells/dispelMagic.html#dispel-magic">dispel magic</a></i>, <i><a href="../coreRulebook/spells/fly.html">fly</a></i>, <i><a href="../coreRulebook/spells/protectionFromEnergy.html#protection-from-energy">protection from energy</a></i>, <i><a href="../coreRulebook/spells/slow.html#slow">slow</a></i> (DC 18), <i><a href="../coreRulebook/spells/stinkingCloud.html#stinking-cloud">stinking cloud</a></i> (DC 18), <i><a href="../coreRulebook/spells/summonMonster.html#summon-monster-iii">summon monster III</a></i></p>
+				<p class="stat-block-2">2nd&mdash;<i><a href="../coreRulebook/spells/acidArrow.html#acid-arrow">acid arrow</a></i>, <i><a href="../coreRulebook/spells/detectThoughts.html#detect-thoughts">detect thoughts</a></i> (DC 17), <i><a href="../coreRulebook/spells/fogCloud.html">fog cloud</a></i>, <i><a href="../coreRulebook/spells/glitterdust.html#glitterdust">glitterdust</a></i> (DC 17), <i><a href="../coreRulebook/spells/invisibility.html#invisibility">invisibility</a></i>, <i><a href="../coreRulebook/spells/summonSwarm.html#summon-swarm">summon swarm</a></i></p>
+				<p class="stat-block-2">1st&mdash;<i><a href="../coreRulebook/spells/charmPerson.html#charm-person">charm person</a></i> (DC 16), <i><a href="../coreRulebook/spells/featherFall.html#feather-fall">feather fall</a></i>, <i><a href="../coreRulebook/spells/grease.html#grease">grease</a></i> (DC 16), <i><a href="../coreRulebook/spells/obscuringMist.html#obscuring-mist">obscuring mist</a></i>, <i><a href="../coreRulebook/spells/protectionFromGood.html#protection-from-good">protection from good</a></i>, <i><a href="../coreRulebook/spells/reducePerson.html#reduce-person">reduce person</a></i> (DC 16), <i><a href="../coreRulebook/spells/shield.html#shield">shield</a></i></p>
+				<p class="stat-block-2">0 (at will)&mdash;<i><a href="../coreRulebook/spells/detectMagic.html#detect-magic">detect magic</a></i>, <i><a href="../coreRulebook/spells/mageHand.html#mage-hand">mage hand</a></i>, <i><a href="../coreRulebook/spells/prestidigitation.html#prestidigitation">prestidigitation</a></i>, <i><a href="../coreRulebook/spells/readMagic.html#read-magic">read magic</a></i></p>
+				<p class="stat-block-2"><b>Opposition Schools</b> Evocation, Necromancy</p>
+				<p class="stat-block-breaker">Statistics</p>
+				<p class="stat-block-1"><b>Str</b> 8, <b>Dex</b> 18, <b>Con</b> 17, <b>Int</b> 20, <b>Wis</b> 12, <b>Cha</b> 10</p>
+				<p class="stat-block-1"><b>Base Atk</b> +6; <b>CMB</b> +5 (+13 grapple); <b>CMD</b> 26</p>
+				<p class="stat-block-1"><b>Feats</b> <a href="../coreRulebook/feats.html#arcane-armor-training">Arcane Armor Training</a>, <a href="../coreRulebook/feats.html#combat-casting">Combat Casting</a>, <a href="../coreRulebook/feats.html#combat-reflexes">Combat Reflexes</a>, <a href="../coreRulebook/feats.html#craft-magic-arms-and-armor">Craft Magic Arms and Armor</a>, <a href="../coreRulebook/feats.html#craft-wondrous-item">Craft Wondrous Item</a>, <a href="../coreRulebook/feats.html#diehard">Diehard</a><sup>B</sup>, <a href="../coreRulebook/feats.html#dodge">Dodge</a>, <a href="../coreRulebook/feats.html#improved-initiative">Improved Initiative</a>, Light Armor Proficiency, <a href="../coreRulebook/feats.html#scribe-scroll">Scribe Scroll</a>, <a href="../coreRulebook/feats.html#toughness">Toughness</a>, <a href="../coreRulebook/feats.html#weapon-finesse">Weapon Finesse</a></p>
+				<p class="stat-block-1"><b>Skills</b> <a href="../coreRulebook/skills/craft.html#craft">Craft</a> (alchemy) +21, <a href="../coreRulebook/skills/fly.html#fly">Fly</a> +20, <a href="../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> +13, <a href="../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (arcana, dungeoneering, planes) +21, <a href="../coreRulebook/skills/perception.html#perception">Perception</a> +22, <a href="../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> +9, <a href="../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> +21, <a href="../coreRulebook/skills/stealth.html#stealth">Stealth</a> +12; <b>Racial Modifiers</b> +8 <a href="../coreRulebook/skills/perception.html#perception">Perception</a>, +8 <a href="../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a>, +8 <a href="../coreRulebook/skills/stealth.html#stealth">Stealth</a></p>
+				<p class="stat-block-1"><b>Languages</b> Abyssal, Aklo, Common, Infernal</p>
+				<p class="stat-block-1"><b>SQ</b> arcane bond (staff), summoner's charm (6 rounds)</p>
+				<p class="stat-block-breaker">Ecology</p>
+				<p class="stat-block-1"><b>Environment</b> any</p>
+				<p class="stat-block-1"><b>Organization</b> solitary</p>
+				<p class="stat-block-1"><b>Treasure</b> NPC Gear (<i>+4 leather armor</i>, <i><a href="../coreRulebook/magicItems/wondrousItems.html#cloak-of-resistance">cloak of resistance</a> +4</i>, <i><a href="../coreRulebook/magicItems/staves.html#staff-of-charming">staff of charming</a></i>)</p>
+
+				<p>When a powerful spellcaster with a strong personality, a lust for life, and a remorselessly evil soul dies and is buried in a graveyard infused with eldritch magic, a strange phenomenon sometimes occurs. The flesh of the decaying body fats and instructs the very worms that gnaw, and these graveworms quicken not only on corruption but upon the spellcaster's memories and magical power. The spellcaster's very soul is consumed in this vile process, only to be split apart to inhabit each of the individual chewing worms in so many fragments. The result is a hideous hive mind of slithering life known as a worm that walks&mdash;a mass of worms that clings to the vague shape of the body that granted it this new existence, and can wield the powers and magic the spellcaster had in life. A worm that walks retains memories of its life as a spellcaster before its death, but is not undead&mdash;it is a hideous new form of undulant life.</p>
+				<h2>Creating a Worm That Walks</h2>
+				<p>“Worm that walks” is a template that can be added to any evil spellcasting creature. A worm that walks retains all the base creature's statistics and abilities except as noted here.</p>
+				<p id="cr"><b>CR</b>: Same as the base creature +2.</p>
+				<p id="alignment"><b>Alignment</b>: Any evil.</p>
+				<p id="type"><b>Type</b>: The base creature's type changes to vermin. It gains the augmented subtype. Do not recalculate BAB, saves, or skill ranks. Worms that walk are intelligent and do not possess the standard mindless trait of most vermin. Note that while a worm that walks has the ability to discorperate into a swarm, and while its body is made up of countless wriggling worms, it does not itself gain the swarm subtype.</p>
+				<p id="size"><b>Size</b>: Although the worms that make up the worm that walks's body are Fine creatures, the worm that walks is treated as a creature the same size as the base creature.</p>
+				<p id="senses"><b>Senses</b>: As the base creature, plus darkvision 60 feet and blindsight 30 feet.</p>
+				<p id="ac"><b>AC</b>: The worm that walks loses any natural armor bonus the base creature may have had, but gains an insight bonus to its AC equal to its Wisdom bonus (minimum of +2).</p>
+				<p id="hit-dice"><b>Hit Dice</b>: Change the base creature's racial HD to d8s. All HD derived from class levels remain unchanged.</p>
+				<p id="defensive-abilities"><b>Defensive Abilities</b>: A worm that walks retains all of the base creature's defensive abilities and special qualities. It also gains the following additional defensive abilities. </p>
+				<p id="worm-that-walks-traits"><i>Worm that Walks Traits</i>: A worm that walks has no discernible anatomy, and is not subject to critical hits or flanking. Reducing a worm that walks to 0 hit points causes it to discorporate (see below)&mdash;a worm that walks at 0 hit points is staggered, and one at negative hit points is dying. Worms that walk are immune to any physical spell or effect that targets a specific number of creatures (including single-target spells such as <i><a href="../coreRulebook/spells/disintegrate.html#disintegrate">disintegrate</a></i>), with the exception of such spells and effects generated by the worm that walks itself, which treat the worm that walks as one single creature if it so chooses. Mind-affecting effects that target single creatures function normally against a worm that walks, since the creature's individual components share a hive mind. A worm that walks takes half again as much damage (+50%) from damaging area effects, such as <i><a href="../coreRulebook/spells/fireball.html#fireball">fireball</a></i> and splash weapons. Worms that walk are susceptible to high winds&mdash;treat a worm that walks as a Fine creature for the purposes of determining wind effects.</p>
+				<p id="damage-reduction"><i>Damage Reduction</i>: A worm that walks loses any damage reduction possessed by the base creature and gains damage reduction 15/&mdash;.</p>
+				<p id="fast-healing"><i>Fast Healing</i>: A worm that walks gains fast healing equal to its CR.</p>
+				<p id="immunities"><i>Immunities</i>: Worms that walk are immune to disease, paralysis, poison, and sleep effects.</p>
+				<p id="melee-attacks"><b>Melee Attacks</b>: A worm that walks loses any natural attacks the base creature had, but gains a slam attack that deals damage based on its size (see Table 3&ndash;1: Natural Attacks by Size, on page 299). This slam has the grab ability and affects creatures up to one size larger than the worm that walks. A worm that walks retains any weapon proficiencies the base creature had.</p>
+				<p id="special-attacks"><b>Special Attacks</b>: A worm that walks retains all of the base creature's special attacks. It also gains the following additional special attacks.</p>
+				<p id="discorporate"><i>Discorporate (Su)</i> A worm that walks can collapse into a shapeless swarm of worms as a free action. All held, worn, and carried items fall and its Strength score drops to 1. The worm that walks functions as a true swarm while discorporated, with a reach of 0 feet (its space remains unchanged). While discorporated, the worm that walks loses all of its defensive abilities and gains all of the standard swarm traits. It loses its slam attacks and all special abilities and special attacks, but can make a swarm attack that deals damage equal to its engulf attack. A worm that walks can reform into its true form (including equipping all gear in reach) as a full-round action as long as it has at least 1 hit point.</p>
+				<div class="table"><table><caption>Table: Engulf Damage</caption>
+				<thead><tr><th>HD</th><th>Engulf Damage</th></tr></thead>
+				<tr><td>1&ndash;5</td><td>1d6 + 1.5 Str bonus</td></tr>
+				<tr><td>6&ndash;10</td><td>2d6 + 1.5 Str bonus</td></tr>
+				<tr><td>11&ndash;15</td><td>3d6 + 1.5 Str bonus</td></tr>
+				<tr><td>16&ndash;20</td><td>4d6 + 1.5 Str bonus</td></tr>
+				<tr><td>21 or more</td><td>5d6 + 1.5 Str bonus</td></tr></table></div><br>
+				<p id="squirming-embrace"><i>Squirming Embrace (Ex)</i> If a worm that walks grapples a foe, as a swift action, it can cause a swarm of worms to squirm over the grappled creature. These worms deal automatic swarm damage with no attack roll needed (see the table below). If a creature takes damage from the swarm, it is also subject to the swarm's distraction ability, and must make a Fortitude save or be nauseated for 1 round. The save DC equals 10 + 1/2 the worm that walks's HD + its Con modifier).</p>
+				<p>A worm that walks can only have one embraced target at a time, but it does not have to continue grappling in order to maintain the embrace. If the worm that walks moves more than 5 feet from the swarm or dismisses the swarm (a free action), the swarm dies. Any area attack that damages the swarm or any severe or stronger wind effect that affects the swarm's target kills it.</p>
+				<p id="tenacious"><i>Tenacious (Ex)</i> A worm that walks gains a +4 racial bonus on CMB checks made to grapple and a +4 racial bonus to its CMD.</p>
+				<p id="abilities"><b>Abilities</b>: Dex +4, Con +4.</p>
+				<p id="skills"><b>Skills</b>: Worms that walk gain a +8 racial bonus on <a href="../coreRulebook/skills/perception.html#perception">Perception</a>, <a href="../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a>, and <a href="../coreRulebook/skills/stealth.html#stealth">Stealth</a> checks.</p>
+				<p id="feats"><b>Feats</b>: Worms that walk gain <a href="../coreRulebook/feats.html#diehard">Diehard</a> as a bonus feat.</p>
+			</div>
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Worm That Walks",globalNavPath=[{ href: '/pathfinderRPG/prd/bestiary2/additionalMonsterIndex.html', name: 'Additional Monster Index' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

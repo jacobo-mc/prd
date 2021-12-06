@@ -1,0 +1,478 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Investigator</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "investigator.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "investigator.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "investigator.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../classes/index.html">Classes</a></li>
+						<li><a href = "index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../spells/index.html">Spells</a></li>
+						<li><a href = "../spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "investigator.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "investigator.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "investigator.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "investigator.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "investigator.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "investigator.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "investigator.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "investigator.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "investigator.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "investigator.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "investigator.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "investigator.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "investigator.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "investigator.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "investigator.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "investigator.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "investigator.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "investigator.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+<h1>Investigator</h1>
+<p>Investigators trust in knowledge above all things. Often this is not solely the bookish knowledge and abstract formulae of arcane artists, nor the religious knowledge of clerics, nor even the martial knowledge of the soldier, but rather some parts of each of these. Sometimes this knowledge is esoteric, but often it's practical in nature. Investigators master knowledge that allows them to ferret out the secrets that lie behind the hidden code of evidence and speak the ironclad language of cause and effect. They use their knowledge to find those things hidden from others, whether by the passage of time, the rituals of occult orders, or guilty creatures seeking to obscure their trails. </p>
+<p>While most investigators use a mix of empirical science and alchemy to achieve these goals, there are other types of investigators as well. Some rely on different skills and information&mdash;such as the whispers of the dead, intuition, and luck&mdash;to uncover that which is hidden. The following is just a small sample of the myriad kinds of investigators.</p>
+
+	<h2 id="empiricist-archetype">Empiricist (Archetype)</h2>
+	<p>Champions of deductive reasoning and logical insight, empiricists put their faith in facts, data, confirmed observations, and consistently repeatable experiments&mdash;these things are their currency of truth.</p>
+	<p id="ceaseless-observation"><strong>Ceaseless Observation (Ex)</strong>: An empiricist's ability to notice the minutiae of almost everything that happens around him allows him to make shrewd and insightful calculations about people and even inanimate objects. At 2nd level, an empiricist uses his Intelligence modifier instead of the skill's normal key ability for all <a href="../../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a>, <a href="../../coreRulebook/skills/perception.html#perception">Perception</a>, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a>, and <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> checks. He can also use his Intelligence modifier instead of Charisma on any <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> checks made to gather information. This ability replaces poison lore and poison resistance.</p>
+	<p id="unfailing-logic"><strong>Unfailing Logic (Ex)</strong>: An empiricist's grasp of facts and data enables him to anchor himself in reality, granting resistance to even the most potent illusions. At 4th level, an empiricist gains a +2 insight bonus on all Will saving throws against illusion spells or spell-like abilities that allow a save to disbelieve their effects. In addition, he can expend one use of inspiration as an immediate action to use his Intelligence bonus instead of his Wisdom bonus on all such saves for 1 round. </p>
+	<p>At 8th level, the empiricist's insight bonus increases to +4. At 16th level, he gains immunity to all illusion spells and spell-like abilities that allow a save to disbelieve their effects. This ability replaces swift alchemy.</p>
+	<p id="master-intellect"><strong>Master Intellect (Ex)</strong>: An empiricist's powers of reason and deduction ultimately become almost superhuman, and he is able to use them in nearly all aspects of life. At 20th level, an empiricist can use inspiration on all skill checks (even for skills he is not trained in) and all ability checks (including initiative checks) without spending uses of inspiration. This ability replaces true inspiration.</p>
+
+	<h2 id="infiltrator-archetype">Infiltrator (Archetype)</h2>
+	<p>An infiltrator specializes in investigating or disrupting groups from within. He uses his specialized set of skills and alchemical abilities to take the shape of the people or creatures whose company he's infiltrating, or even of specific individuals. </p>
+	<p id="master-of-disguise"><strong>Master of Disguise (Ex)</strong>: At 1st level, an infiltrator can use disguise with great results. When disguising himself as a different gender, race, age category, or size category, an infiltrator lessens the penalties for each by 2. For example, if the infiltrator disguises himself as a female two age categories older than himself, he would take a &ndash;2 penalty on the check instead of a &ndash;6 penalty. Also, an infiltrator can disguise himself with 1d3 minutes of work (instead of 1d3 � 10 minutes of work). This ability replaces trapfinding.</p>
+	<p id="voice-mimicry"><strong>Voice Mimicry (Ex)</strong>: At 2nd level, an infiltrator learns to mimic voices and sounds around him. Using this ability requires a special <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> check, and creatures hearing the voice can make a <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> check to discover the ruse. An infiltrator can attempt to emulate any creature's voice or other sound he's heard clearly for at least 1 minute. The bonuses or penalties to this special <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> check are modified in the following ways, all of which are cumulative.</p>
+
+		<table id="infiltrator-voice-mimicry">
+			<thead>
+				<tr>
+					<th>Disguised Voices</th>
+					<th>Check Modifier</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Voice is not your own, but is not that of a distinct individual</td>
+					<td>+5</td>
+				</tr>
+				<tr>
+					<td>Voice is that of a different gender</td>
+					<td>&ndash;2</td>
+				</tr>
+				<tr>
+					<td>Voice is that of a different race</td>
+					<td>&ndash;2</td>
+				</tr>
+				<tr>
+					<td>Voice is that of a different age category</td>
+					<td>&ndash;2</td>
+				</tr>
+				<tr>
+					<td>Voice is that of a different size category</td>
+					<td>&ndash;5</td>
+				</tr>
+			</tbody>
+		</table>
+
+	<p>Also, the creature making the <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> check gains a bonus based on its familiarity with specific voices, just as if it were confronted with a normal disguise (<em>Core Rulebook</em> 95). This ability is a language-dependent effect, meaning that if a creature cannot hear or understand what the infiltrator is saying, the ruse fails. Magic items, feats, and traits that affect disguises do not affect this special <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> check. </p>
+	<p>At 8th level, the infiltrator gains the effects of his master of disguise class feature on this special use of the <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> skill (no penalty for a voice of a different gender, race, or age category, and only a &ndash;3 penalty for a different size category). This ability replaces poison lore.</p>
+	<p id="mimic-mastery"><strong>Mimic Mastery (Su)</strong>: At 2nd level, when an infiltrator uses <a href="../../coreRulebook/spells/disguiseSelf.html#disguise-self"><em>disguise self</em></a> or any polymorph extracts on himself, he is treated as 2 investigator levels higher for the purpose of determining the duration of that extract's effect. He can use these extracts to take the appearance of specific individuals of the form he chooses, gaining a +10 bonus on <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> checks even if that extract does not normally grant such a bonus. Furthermore, these extracts grant the infiltrator a +10 bonus on <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> checks that are made as part of his voice mimicry ability. This ability replaces poison resistance.</p>
+
+	<h2 id="mastermind-archetype">Mastermind (Archetype)</h2>
+	<p>Although many investigators use their honed senses and cunning insight for personal gain, no one excels at such endeavors like the mastermind. Typically, these investigators dwell at the centers of complex networks of lies, minions, or precious information, from which they dispense commands, threats, and rumors, all carefully crafted to increase the power of their peculiar empires. While masterminds often act as the heads organizations such as criminal families, thieves' guilds, or corruption-riddled bureaucracies, they aren't always evil.</p>
+	<p id="masterminds-Inspiration"><strong>Mastermind's Inspiration (Ex)</strong>: A mastermind can use inspiration on <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> and <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> checks without expending uses of inspiration, but can't do so on <a href="../../coreRulebook/skills/linguistics.html#linguistics">Linguistics</a> or <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> checks. This ability alters inspiration.</p>
+	<p id="a-quiet-word"><strong>A Quiet Word (Ex)</strong>: A mastermind's reputation precedes him. At 1st level, once per day a mastermind can spend 10 minutes preparing an ally to make a single <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> or <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> check (mastermind's choice when preparing the ally) within the next 24-hour period at the mastermind's behest. This skill check uses the mastermind's skill ranks instead of the ally's. The mastermind's affected ally still uses its own ability bonus for the check.</p>
+	<p>Furthermore, when a mastermind uses this ability, he can expend one use of inspiration to give the ally use of his inspiration die when making the check.</p>
+	<p>At 3rd level, a mastermind can use this ability an additional time each day, and the number of times he can use this ability per day increases by 1 at every third level thereafter. Multiple uses of this ability on the same ally grant that ally the benefit on additional <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> or <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> checks.</p>
+	<p>At 12th level, a mastermind can use this ability to bestow on his ally the use of his skill ranks, similar to the 1st-level effect of this ability but with a wider range of skills to choose from. The mastermind can bestow this benefit only on a skill check that he can use inspiration on without expending uses of inspiration. For instance, a mastermind with the underworld inspiration talent can bolster his ally's <a href="../../coreRulebook/skills/bluff.html#bluff">Bluff</a>, <a href="../../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a>, <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a>, or <a href="../../coreRulebook/skills/sleightOfHand.html#sleight-of-hand">Sleight of Hand</a> checks, selecting a particular skill for each use of the ability. This ability replaces trapfinding and trap sense.</p>
+	<p id="mastermind-defense"><strong>Mastermind Defense (Ex)</strong>: At 4th level, a mastermind can, as an immediate action, expend two uses of inspiration to make an inspired defense. He rolls his inspiration die and applies the result as a penalty on an attack roll made against him. If the mastermind has the combat inspiration talent, he can expend one use of inspiration on this ability instead of two. This ability replaces swift alchemy. </p>
+	<p id="impregnable-mind"><strong>Impregnable Mind (Su)</strong>: At 9th level, a mastermind's secrecy, obscurity, and mental conditioning reach superhuman levels. He becomes immune to any divination spell, spell-like ability, or effect that allows a saving throw (though he can still allow a divination effect to affect him if he wishes). Even divination effects that do not allow a saving throw have difficulty piercing a mastermind's barriers, since a mastermind can now choose to think in any language he speaks. Unless the opponent reading a mastermind's thoughts speaks all of the mastermind's languages, attempts at thought reading automatically fail. This ability replaces the investigator talent gained at 9th level.</p>
+
+	<h2 id="sleuth-archetype">Sleuth (Archetype)</h2>
+	<p>A sleuth is an investigator who relies on good fortune and guile rather than alchemy. Having no intrinsic mystical energy, she must forgo the more magical aspects of alchemy to solve her mysteries with wits, gumption, and the fickle consideration of luck. </p>
+	<p id="sleuths-luck"><strong>Sleuth's Luck (Ex)</strong>: At 1st level, a sleuth gains a pool of luck, measuring her ability to get out of scrapes. At the start of each day, a sleuth has a number of luck points equal to her Charisma modifier (minimum 1). Her luck goes up or down throughout the day, but usually cannot go higher than her Charisma modifier (minimum 1), though feats, magic items, and spells that grant either grit points or panache points can also grant a sleuth an equal number of luck points. A sleuth spends luck to accomplish deeds (see below), and regains luck in the following ways.</p>
+	<p><em>Rolling a Natural 20 on a <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> or <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> Check</em>: While on an investigation, a sleuth regains luck by uncovering secrets. Rolling a natural 20 on these skill checks while actively investigating causes the sleuth to regain 1 luck point. Such skill checks made for more mundane reasons (such as normal research or using <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> to gain information during normal bargaining or while gambling) do not cause the sleuth to regain luck. Determining which skill checks qualify is up to the GM. </p>
+	<p><em>Rolling a 6 or Higher on an Inspiration Die</em>: When a sleuth rolls an inspiration die while on an investigation and the result is 6 or higher, she regains 1 luck point. (If she rolls multiple inspiration dice at a time, she regains 1 luck point if the total is 6 or higher.) Like regaining luck via a natural 20 on a qualifying skill check, uses of inspiration for more mundane reasons don't qualify for regaining luck. The GM is the final arbitrator for what rolls qualify. It's possible for an investigator to regain 2 luck points on the same skill check if the qualifying skill check is a natural 20 and any inspiration die roll made results in a 6 or higher.</p>
+	<p>This ability and the 1st-level deeds described below replace alchemy. A sleuth cannot take the alchemist discovery talent or any investigator talent that affects alchemy.</p>
+	<p id="deeds"><strong>Deeds</strong>: Sleuths spend luck points to accomplish deeds. Most deeds grant a sleuth some momentary bonus or effect, but some provide longer-lasting effects. Some deeds stay in effect as long as a sleuth has at least 1 luck point.</p>
+	<p>At 1st level, a sleuth gains the following deeds. </p>
+		<p id="daring"><em>Daring:</em> A sleuth can spend 1 luck point when he makes an <a href="../../coreRulebook/skills/acrobatics.html#acrobatics">Acrobatics</a>, <a href="../../coreRulebook/skills/climb.html#climb">Climb</a>, <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist">Escape Artist</a>, <a href="../../coreRulebook/skills/fly.html#fly">Fly</a>, <a href="../../coreRulebook/skills/ride.html#ride">Ride</a>, or <a href="../../coreRulebook/skills/swim.html#swim">Swim</a> check to roll d6 and add the result to the check. He can choose to add this die after he attempts the check, but must to do before the result is revealed. If the d6 roll is a natural 6, he rolls another d6 and adds it to the result. He can continue to do this as long as he rolls natural 6s, up to a number of times equal to his Intelligence modifier (minimum 1).</p>
+		<p id="opportunistic-evasion"><em>Opportunistic Evasion</em>: When a sleuth succeeds at a Reflex saving throw against an effect that still deals damage on a successful save, he can spend 1 luck point as an immediate action to instead take no damage from that effect.</p>
+		<p id="sleuths-initiative"><em>Sleuth's Initiative</em>: As long as the sleuth has at least 1 luck point, he gains a +2 bonus on initiative checks. Furthermore, if he has the Quick Draw feat, his hands are free and unrestrained, and the weapon is not hidden, then he can draw a single light or one-handed melee weapon as part of the initiative check. (Unlike with swashbuckler deeds, this does not have to be a piercing weapon.)</p>
+		<p>At 4th level, a sleuth gains the following deeds. These abilities replace swift alchemy. </p>
+		<p id="make-it-count"><em>Make It Count </em>: When a sleuth uses studied strike, he can spend 1 luck point to apply an investigator talent that he doesn't already know and that affects studied strike to his studied strike. He must be able to meet that talent's prerequisites.</p>
+		<p id="run-like-hell"><em>Run Like Hell </em>: A sleuth can spend 1 luck point to gain a +20-foot bonus to his base speed for 1 minute. Furthermore, while under the effect of this bonus, if he moves more than his normal speed in a round, he gains a +4 bonus to AC until the start of his next turn. </p>
+		<p id="second-chance"><em>Second Chance </em>: When a sleuth rolls an inspiration die or uses the daring deed (see above), he can spend 1 luck point to reroll either the inspiration die or the daring deed die. If he rolls a 6 or higher on this reroll, he does not regain a luck point, and he must keep the result of the reroll, even if it is lower.</p>
+	<p id="sleuth-investigator-talents"><strong>Investigator Talents</strong>: The following investigator talents complement the sleuth archetype: <a href="../classes/investigator.html#amazing-inspiration">amazing inspiration</a>, <a href="../classes/investigator.html#combat-inspiration">combat inspiration</a>, <a href="../classes/investigator.html#device-talent">device talent</a>, <a href="../classes/investigator.html#effortless-aid">effortless aid</a>, <a href="../classes/investigator.html#expanded-inspiration">expanded inspiration</a>, <a href="../classes/investigator.html#hidden-agendas">hidden agendas</a>, <a href="../classes/investigator.html#inspirational-expertise">inspirational expertise</a>, <a href="../classes/investigator.html#inspired-alertness">inspired alertness</a>, <a href="../classes/investigator.html#inspired-intimidator">inspired intimidator</a>, <a href="../classes/investigator.html#perceptive-tracking">perceptive tracking</a>, <a href="../classes/investigator.html#quick-study">quick study</a>, <a href="../classes/investigator.html#rogue-talent">rogue talent</a>, <a href="../classes/investigator.html#tenacious-inspiration">tenacious inspiration</a>, and <a href="../classes/investigator.html#underworld-inspiration">underworld inspiration</a>.</p>
+
+		<h3 id = "grit-luck-panache">Grit, Luck, and Panache</h2>
+		<p>Grit, luck, and panache represent three different means by which heroes can gain access to the same heroic pool, using it to accomplish fantastic feats. For characters with a mix of grit, luck, and panache, they pool the three resources together into a combined pool. (Those who use panache and luck do not gain twice their Charisma bonuses in their pools.) For feats, magic items, and other effects, a panache user can spend and gain luck points in place of grit points or panache points, and vice versa.</p>
+		<p>A luck user does not count as a grit or panache user for the purpose of meeting feat prerequisites.</p>
+
+	<h2 id="spiritualist-archetype">Spiritualist (Archetype)</h2>
+	<p>While most investigators look to the physical world to gain their knowledge, there are those who seek out knowledge beyond the pale. Those who think that the dead tell no tales are quickly proven wrong by the spiritualist. Instead of toying with chemicals and reagents to find clues, he talks directly to the spirit world to uncover the ways and means of skulduggery and the desperate acts committed in the heat of dark passions. </p>
+	<p id="commune-with-spirits"><strong>Commune with Spirits (Sp)</strong>: Instead of relying on alchemical research to find clues, a spiritualist relies on communion with the world beyond death. At 1st level, a spiritualist gains the ability to use <a href="../../coreRulebook/spells/comprehendLanguages.html#comprehend-languages"><em>comprehend languages</em></a>, <a href="../../coreRulebook/spells/detectSecretDoors.html#detect-secret-doors"><em>detect secret doors</em></a>, and <em>identify</em>, but each has a casting time of 1 minute because the spiritualist needs to consult with the spirits of the dead that dwell in his area or that are attached to him in some way. The spiritualist can use this ability a number of times per day equal to his investigator level + his Wisdom modifier.</p>
+	<p>As he advances in level, the spiritualist gains the ability to use other spells, with the casting time as above. At 5th level, he can use <em>augury</em>. At 7th level, he can use <em>speak with dead </em>and <em>locate object</em>. At 9th level, he can use <em>legend lore</em>. </p>
+	<p>This ability replaces alchemy. A spiritualist cannot take the alchemist discovery talent or any investigator talent that affects alchemy.</p>
+	<p id="spirit-sense"><strong>Spirit Sense (Su)</strong>: At 2nd level, when a spiritualist attempts a saving throw against an ability or an effect delivered by an incorporeal creature, he can expend one use of inspiration instead of two to augment that saving throw. If the spiritualist has the combat inspiration investigator talent, he need not spend any inspiration to augment such saving throws. This ability replaces poison lore. </p>
+	<p id="strong-life"><strong>Strong Life (Ex)</strong>: At 2nd level, the spiritualist's dealings with the other side and knowledge of what lies beyond strengthen his will. He gains a +2 bonus on saving throws against death effects and negative energy damage. This bonus increases to +4 at 5th level and to +6 at 8th level. This ability replaces poison resistance.</p>
+	<p id="sixth-sense"><strong>Sixth Sense (Su)</strong>: At 3rd level, a spiritualist can spend one use of the commune with spirits ability to reroll a single saving throw that he has failed. He must take the result of the reroll, even if it is lower. This ability replaces trap sense.</p>
+	<p id="whispering-spirits"><strong>Whispering Spirits (Su)</strong>: At 4th level, the spiritualist can open a conduit with the spirit world that can aid him in combat for a short time. He can expend one use of his commune with spirits ability in order to gain an insight bonus to both AC and saving throws equal to his Wisdom modifier (minimum 1) for 1 minute. This ability replaces swift alchemy.</p>
+	<p id="touched-by-the-beyond"><strong>Touched by the Beyond (Su)</strong>: At 11th level, the spiritualist's ability to touch the beyond grants him further protection against the dangers of death and negative energy. The spiritualist becomes immune to death effects, and he takes half damage from negative energy. This ability replaces poison immunity.</p>
+	<p id="spiritualist-investigator-talents"><strong>Investigator Talents</strong>: The following investigator talents complement the spiritualist archetype: <a href="../classes/investigator.html#amazing-inspiration">amazing inspiration</a>, <a href="../classes/investigator.html#combat-inspiration">combat inspiration</a>, <a href="../classes/investigator.html#effortless-aid">effortless aid</a>, <a href="../classes/investigator.html#eidetic-recollection">eidetic recollection</a>, <a href="../classes/investigator.html#empathy">empathy</a>, <a href="../classes/investigator.html#expanded-inspiration">expanded inspiration</a>, <a href="../classes/investigator.html#hidden-agendas">hidden agendas</a>, <a href="../classes/investigator.html#inspirational-expertise">inspirational expertise</a>, <a href="../classes/investigator.html#item-lore">item lore</a>, <a href="../classes/investigator.html#studied-defense">studied defense</a>, and <a href="../classes/investigator.html#tenacious-inspiration">tenacious inspiration</a>.</p>
+
+	<h2 id="steel-hound-archetype">Steel Hound (Archetype)</h2>
+	<p>Black powder and firearms are a natural extension of the alchemical experimentation that investigators use on a regular basis. Steel hounds are investigators who have taken to using firearms in place of the more mundane weapons their counterparts favor.</p>
+	<p id="steel-hound-proficiencies"><strong>Weapon and Armor Proficiency</strong>: Steel hounds are proficient with simple weapons, plus the rapier, the sap, and one type of firearm selected at 1st level. They are proficient with light armor, but not with shields. This ability replaces the investigator's weapon and armor proficiency.</p>
+	<p id="packing-heat"><strong>Packing Heat (Ex)</strong>: At 2nd level, the steel hound gains both the <a href="../../ultimateCombat/ultimateCombatFeats.html#amateur-gunslinger">Amateur Gunslinger</a> and <a href="../../ultimateCombat/ultimateCombatFeats.html#gunsmithing">Gunsmithing</a> feats as bonus feats. He also gains a battered gun identical to the one gained by the gunslinger. This ability replaces poison lore.</p>
+	<p id="steel-hound-investigator-talents"><strong>Investigator Talents</strong>: Whenever he gains a new investigator talent, the steel hound can instead select one of the following feats: <a href="../../ultimateCombat/ultimateCombatFeats.html#extra-grit">Extra Grit</a> or <a href="../../ultimateCombat/ultimateCombatFeats.html#rapid-reload">Rapid Reload</a>.</p>
+	<p id="steel-hound-deed"><strong>Deed (Ex)</strong>: At 4th level, a steel hound gains the following deed. This deed works and interacts with grit the same way that gunslinger deeds do, but only the steel hound can use it. If the steel hound also has levels in gunslinger, he can spend grit points from that class to use this deed.</p>
+		<p id="blind-shot"><em>Blind Shot (Su)</em>: A steel hound can spend 1 grit point to ignore all miss chances due to concealment when making firearm attacks. This effect lasts until the end of his turn. This ability allows the steel hound to ignore concealment, but does not reveal the enemy or allow him to see the enemy. This ability replaces swift alchemy.</p>
+	<p id="talented-shot"><strong>Talented Shot (Ex)</strong>: At 11th level, a steel hound can select a gunslinger deed in place of an investigator talent. For this purpose, his effective gunslinger level is equal to his investigator level &ndash; 4.</p>
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Investigator",globalNavPath=[{ href: '/pathfinderRPG/prd/advancedClassGuide/classOptions/index.html', name: 'Archetypes and Class Options'}];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

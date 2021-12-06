@@ -1,0 +1,655 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Warpriest</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "warpriest.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "index.html">Classes</a></li>
+						<li><a href = "../classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../spells/index.html">Spells</a></li>
+						<li><a href = "../spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "warpriest.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "warpriest.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "warpriest.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "warpriest.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1>Warpriest</h1>
+	<p>Capable of calling upon the power of the gods in the form of blessings and spells, warpriests blend divine magic with martial skill. They are unflinching bastions of their faith, shouting gospel as they pummel foes into submission, and never shy away from a challenge to their beliefs. While clerics might be subtle and use diplomacy to accomplish their aims, warpriests aren't above using violence whenever the situation warrants it. In many faiths, warpriests form the core of the church's martial forces&mdash;reclaiming lost relics, rescuing captured clergy, and defending the church's tenets against all challenges.</p>
+	<p><strong>Role</strong>: Warpriests can serve as capable healers or spellcasters, calling upon their divine powers from the center of the fight, where their armor and martial skills are put to the test.</p>
+	<p><strong>Alignment</strong>: A warpriest's alignment must be within one step of his deity's, along either the law/chaos axis or the good/evil axis (<em>Core Rulebook </em>166). </p>
+	<p><strong>Hit Die</strong>: d8.</p>
+	<p><strong>Parent Classes</strong>: Cleric and fighter.</p>
+	<p><strong>Starting Wealth</strong>: 5d6 &times; 10 gp (average 175 gp).</p>
+
+<div class="table">
+
+	<table id = "warpriest-progression-table">
+		<caption>Warpriest</caption>
+		<thead>
+			<tr>
+				<th rowspan = "2">Level</th>
+				<th rowspan = "2">Base Attack Bonus</th>
+				<th rowspan = "2">Fort Save</th>
+				<th rowspan = "2">Ref Save</th>
+				<th rowspan = "2">Will Save</th>
+				<th rowspan = "2">Special</th>
+				<th rowspan = "2"><a href="warpriest.html#sacred-weapon">Sacred Weapon</a> Damage*</th>
+				<th colspan = "7" style="text-align: center;">Spells per Day</th>
+			</tr>
+			<tr>
+				<th>0</th>
+				<th>1st</th>
+				<th>2nd</th>
+				<th>3rd</th>
+				<th>4th</th>
+				<th>5th</th>
+				<th>6th</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>1st</td><td>+0</td><td>+2</td><td>+0</td><td>+2</td><td>Aura, blessings (minor), focus weapon, orisons, sacred weapon</td><td>1d6</td><td>3</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>2nd</td><td>+1</td><td>+3</td><td>+0</td><td>+3</td><td>Fervor 1d6</td><td>1d6</td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>3rd</td><td>+2</td><td>+3</td><td>+1</td><td>+3</td><td>Bonus feat</td><td>1d6</td><td>4</td><td>3</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>4th</td><td>+3</td><td>+4</td><td>+1</td><td>+4</td><td>Channel energy, sacred weapon +1</td><td>1d6</td><td>4</td><td>3</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>5th</td><td>+3</td><td>+4</td><td>+1</td><td>+4</td><td>Fervor 2d6</td><td>1d8</td><td>4</td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>6th</td><td>+4</td><td>+5</td><td>+2</td><td>+5</td><td>Bonus feat</td><td>1d8</td><td>5</td><td>4</td><td>3</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>7th</td><td>+5</td><td>+5</td><td>+2</td><td>+5</td><td>Sacred armor +1</td><td>1d8</td><td>5</td><td>4</td><td>3</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>8th</td><td>+6/+1</td><td>+6</td><td>+2</td><td>+6</td><td>Fervor 3d6, sacred weapon +2</td><td>1d8</td><td>5</td><td>4</td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>9th</td><td>+6/+1</td><td>+6</td><td>+3</td><td>+6</td><td>Bonus feat</td><td>1d8</td><td>5</td><td>5</td><td>4</td><td>3</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>10th</td><td>+7/+2</td><td>+7</td><td>+3</td><td>+7</td><td>Blessings (major), sacred armor +2</td><td>1d10</td><td>5</td><td>5</td><td>4</td><td>3</td><td>1</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>11th</td><td>+8/+3</td><td>+7</td><td>+3</td><td>+7</td><td>Fervor 4d6</td><td>1d10</td><td>5</td><td>5</td><td>4</td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>12th</td><td>+9/+4</td><td>+8</td><td>+4</td><td>+8</td><td>Bonus feat, sacred weapon +3</td><td>1d10</td><td>5</td><td>5</td><td>5</td><td>4</td><td>3</td><td>&mdash;</td><td>&mdash;</td></tr>
+			<tr><td>13th</td><td>+9/+4</td><td>+8</td><td>+4</td><td>+8</td><td>Sacred armor +3</td><td>1d10</td><td>5</td><td>5</td><td>5</td><td>4</td><td>3</td><td>1</td><td>&mdash;</td></tr>
+			<tr><td>14th</td><td>+10/+5</td><td>+9</td><td>+4</td><td>+9</td><td>Fervor 5d6</td><td>1d10</td><td>5</td><td>5</td><td>5</td><td>4</td><td>4</td><td>2</td><td>&mdash;</td></tr>
+			<tr><td>15th</td><td>+11/+6/+1</td><td>+9</td><td>+5</td><td>+9</td><td>Bonus feat</td><td>2d6</td><td>5</td><td>5</td><td>5</td><td>5</td><td>4</td><td>3</td><td>&mdash;</td></tr>
+			<tr><td>16th</td><td>+12/+7/+2</td><td>+10</td><td>+5</td><td>+10</td><td>Sacred armor +4, sacred weapon +4</td><td>2d6</td><td>5</td><td>5</td><td>5</td><td>5</td><td>4</td><td>3</td><td>1</td></tr>
+			<tr><td>17th</td><td>+12/+7/+2</td><td>+10</td><td>+5</td><td>+10</td><td>Fervor 6d6</td><td>2d6</td><td>5</td><td>5</td><td>5</td><td>5</td><td>4</td><td>4</td><td>2</td></tr>
+			<tr><td>18th</td><td>+13/+8/+3</td><td>+11</td><td>+6</td><td>+11</td><td>Bonus feat</td><td>2d6</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>4</td><td>3</td></tr>
+			<tr><td>19th</td><td>+14/+9/+4</td><td>+11</td><td>+6</td><td>+11</td><td>Sacred armor +5</td><td>2d6</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>4</td></tr>
+			<tr><td>20th</td><td>+15/+10/+5</td><td>+12</td><td>+6</td><td>+12</td><td>Aspect of war, fervor 7d6, sacred weapon +5</td><td>2d8</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td></tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="14">* The values shown are for Medium warpriests. See the <a href="warpriest.html#sacred-weapon">sacred weapon</a> class feature for Small and Large warpriests.</td>
+			</tr>
+		</tfoot>
+	</table>
+</div>
+
+<h1 id="class-skills">Class Skills</h1>
+	<p>The warpriest's class skills are <a href="../../coreRulebook/skills/climb.html#climb">Climb</a> (Str), <a href="../../coreRulebook/skills/craft.html#craft">Craft</a> (Int), <a href="../../coreRulebook/skills/diplomacy.html#diplomacy">Diplomacy</a> (Cha), <a href="../../coreRulebook/skills/handleAnimal.html#handle-animal">Handle Animal</a> (Cha), <a href="../../coreRulebook/skills/heal.html#heal">Heal</a> (Wis), <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> (Cha), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (engineering) (Int), <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> (religion) (Int), <a href="../../coreRulebook/skills/profession.html#profession">Profession</a> (Wis), <a href="../../coreRulebook/skills/ride.html#ride">Ride</a> (Dex), <a href="../../coreRulebook/skills/senseMotive.html#sense-motive">Sense Motive</a> (Wis), <a href="../../coreRulebook/skills/spellcraft.html#spellcraft">Spellcraft</a> (Int), <a href="../../coreRulebook/skills/survival.html#survival">Survival</a> (Wis), and <a href="../../coreRulebook/skills/swim.html#swim">Swim</a> (Str).</p>
+	<p><strong>Skill Ranks per Level</strong>: 2 + Int modifier.</p>
+
+<h2 id = "class-features">Class Features</h2>
+	<p>The following are the class features of the warpriest.</p>
+	<p><strong>Weapon and Armor Proficiencies</strong>: A warpriest is proficient with all simple and martial weapons, as well as the favored weapon of his deity, and with all armor (heavy, light, and medium) and shields (except tower shields). If the warpriest worships a deity with unarmed strike as its favored weapon, the warpriest gains Improved Unarmed Strike as a bonus feat.</p>
+
+	<p id="spells"><strong>Spells</strong>: A warpriest casts divine spells drawn from the <a href="../../indices/spelllists.html">cleric spell list</a>. His alignment, however, can restrict him from casting certain spells opposed to his moral or ethical beliefs (see the <a href="../../coreRulebook/classes/cleric.html#chaotic-evil-good-and-lawful-spells">Chaotic, Evil, Good, and Lawful Spells section</a>). A warpriest must choose and prepare his spells in advance.</p>
+		<p>A warpriest's highest level of spells is 6th. Cleric spells of 7th level or higher are not on the warpriest class spell list, and a warpriest cannot use spell completion or spell trigger magic items (without making a successful <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device">Use Magic Device</a> check) of cleric spells of 7th level or higher.</p>
+		<p>To prepare or cast a spell, a warpriest must have a Wisdom score equal to at least 10 + the spell's level. The saving throw DC against a warpriest's spell is equal to 10 + the spell's level + the warpriest's Wisdom modifier.</p>
+		<p>Like other spellcasters, a warpriest can cast only a certain number of spells of each spell level per day. His base daily spell allotment is given on the table above. In addition, he receives bonus spells per day if he has a high Wisdom score.</p>
+		<p>Warpriests meditate or pray for their spells. Each warpriest must choose a time when he spends 1 hour each day in quiet contemplation or supplication to regain his daily allotment of spells. A warpriest can prepare and cast any spell on the cleric spell list, provided that he can cast spells of that level, but he must choose which spells to prepare during his daily meditation.</p>
+
+	<p id="aura"><strong>Aura (Ex)</strong>: A warpriest of a chaotic, evil, good, or lawful deity has a particularly powerful aura (as a cleric) corresponding to the deity's alignment (see <a href="../../coreRulebook/spells/detectEvil.html#detect-evil"><em>detect evil</em></a>).</p>
+
+	<p id="blessings"><strong>Blessings (Su)</strong>: A warpriest's deity influences his alignment, the magic he can perform, his values, and how others see him. Each warpriest can select two blessings from among those granted by his deity (each deity grants the blessings tied to its domains). A warpriest can select an alignment blessing (Chaos, Evil, Good, or Law) only if his alignment matches that blessing. If a warpriest isn't devoted to a particular deity, he selects two blessings to represent his spiritual inclinations and abilities, subject to GM discretion. The restriction on alignment blessings still applies.</p>
+		<p>Each blessing grants a minor power at 1st level and a major power at 10th level. A warpriest can call upon his blessings a number of times per day (in any combination) equal to 3 + 1/2 his warpriest level (to a maximum of 13 times per day at 20th level). Each time he calls upon any one of his blessings, it counts against his daily limit. The save DC of these blessings is equal to 10 + 1/2 the warpriest's level + the warpriest's Wisdom modifier.</p>
+		<p>If a warpriest also has levels in a class that grants cleric domains, the blessings he chooses must match the domains selected by that class. Subject to GM discretion, the warpriest can change his previously selected blessings or domains to make all of them conform. Warpriest blessings are described at the end of this class entry.</p>
+
+	<p id="focus-weapon"><strong>Focus Weapon</strong>: At 1st level, a warpriest receives <a href="../../coreRulebook/feats.html#weapon-focus">Weapon Focus</a> as a bonus feat (he can choose any weapon, rather than only his deity's favored weapon).</p>
+
+	<p id="orisons"><strong>Orisons</strong>: Warpriests can prepare a number of orisons, or 0-level spells, each day as noted on the table above. These spells are cast as any other spell, but aren't expended when cast and can be used again.</p>
+
+	<p id="sacred weapon"><strong>Sacred Weapon (Su)</strong>: At 1st level, weapons wielded by a warpriest are charged with the power of his faith. In addition to the favored weapon of his deity, the warpriest can designate a weapon as a sacred weapon by selecting that weapon with the Weapon Focus feat; if he has multiple Weapon Focus feats, this ability applies to all of them. Whenever the warpriest hits with his sacred weapon, the weapon damage is based on his level and not the weapon type. The damage for Medium warpriests is given on the table above; see the table below for Small and Large warpriests. The warpriest can decide to use the weapon's base damage instead of the sacred weapon damage&mdash;this decision must be declared before the attack roll is made. (If the weapon's base damage exceeds the sacred weapon damage, its damage is unchanged.) This increase in damage does not affect any other aspect of the weapon, and doesn't apply to alchemical items, bombs, or other weapons that deal only energy damage.</p>
+		<p>At 4th level, the warpriest gains the ability to enhance one of his sacred weapons with divine power as a swift action. This ability grants the weapon a +1 enhancement bonus. For every 4 levels beyond 4th, this bonus increases by 1 (to a maximum of +5 at 20th level). If the warpriest has more than one sacred weapon, he can enhance another on the following round by using another swift action. The warpriest can use this ability a number of rounds per day equal to his warpriest level, but these rounds don't need to be consecutive.</p>
+		<p>These bonuses stack with any existing bonuses the weapon might have, to a maximum of +5. The warpriest can enhance a weapon to have any of the following special abilities: <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-brilliant-energy">brilliant energy</a></em>, <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-defending">defending</a></em>, <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-disruption">disruption</a></em>, <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-flaming">flaming</a></em>, <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-frost">frost</a></em>, <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-keen">keen</a></em>, or <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-shock">shock</a></em>. In addition, if the warpriest is chaotic, he can also add <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-anarchic">anarchic</a></em> or <em><a href="../../coreRulebook/magicItems/weapons.html#_vicious">vicious</a></em>. If he is evil, he can also add <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-mighty-cleaving">mighty cleaving</a></em> or <em><a href="../../coreRulebook/magicItems/weapons.html#_unholy">unholy</a></em>. If he is good, he can also add <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-ghost-touch">ghost touch</a> </em>or <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-holy">holy</a></em>. If he is lawful, he can also add <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-axiomatic">axiomatic</a></em> or <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-merciful">merciful</a></em>. If he is neutral (with no other alignment components), he can also add <em><a href="../../coreRulebook/magicItems/weapons.html#_spell-storing">spell storing</a></em> or <em><a href="../../coreRulebook/magicItems/weapons.html#_thundering">thundering</a></em>. Adding any of these special abilities consumes an amount of enhancement bonus equal to the special ability's base price modifier (see Table 15&ndash;9 on page 469 of the <em>Core Rulebook</em>). Duplicate special abilities don't stack. The weapon must have at least a +1 enhancement bonus before any special abilities can be added.</p>
+		<p>If multiple weapons are enhanced, each one consumes rounds of use individually. The enhancement bonus and special abilities are determined the first time the ability is used each day, and cannot be changed until the next day. These benefits do not apply if another creature is wielding the weapon, but they continue to be in effect if the weapon otherwise leaves the warpriest's possession (such as if the weapon is thrown). This ability can be ended as a free action at the start of the warpriest's turn (that round does not count against the total duration, unless the ability is resumed during the same round). If the warpriest uses this ability on a double weapon, the effects apply to only one end of the weapon.</p>
+
+
+		<table id = "small-or-large-warpriest-sacred-weapon-damage">
+			<caption>Small or Large Warpriest Sacred Weapon Damage</caption>
+			<thead>
+				<tr>
+					<th>Level</th>
+					<th>Damage (Small Warpriest)</th>
+					<th>Damage (Large Warpriest)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td>1st&ndash;4th</td><td>1d4</td><td>1d8</td></tr>
+				<tr><td>5th&ndash;9th</td><td>1d6</td><td>2d6</td></tr>
+				<tr><td>10th&ndash;14th</td><td>1d8</td><td>2d8</td></tr>
+				<tr><td>15th&ndash;19th</td><td>1d10</td><td>3d6</td></tr>
+				<tr><td>20th</td><td>2d6</td><td>3d8</td></tr>
+			</tbody>
+		</table>
+
+	<p id="spontaneous-casting"><strong>Spontaneous Casting</strong>: A good warpriest (or a neutral warpriest of a good deity) can channel stored spell energy into healing spells that he did not prepare ahead of time. The warpriest can expend any prepared spell that isn't an orison to cast any <em>cure</em> spell of the same spell level or lower. A <em>cure</em> spell is any spell with "cure" in its name.</p>
+		<p>An evil warpriest (or a neutral warpriest of an evil deity) can't convert prepared spells to <em>cure</em> spells, but can convert them to <em>inflict</em> spells. An <em>inflict</em> spell is any spell with "inflict" in its name.</p>
+		<p>A warpriest who is neither good nor evil and whose deity is neither good nor evil chooses whether he can convert spells into either <em>cure</em> spells or <em>inflict</em> spells. Once this choice is made, it cannot be changed. This choice also determines whether the warpriest channels positive or negative energy (see <a href="warpriest.html#channel-energy">Channel Energy</a>).</p>
+
+	<p id="chaotic-evil-good-and-lawful-spells"><strong>Chaotic, Evil, Good, and Lawful Spells</strong>: A warpriest cannot cast spells of an alignment opposed to his own or his deity's (if he has a deity). Spells associated with particular alignments are indicated by the chaotic, evil, good, and lawful descriptors in their spell descriptions.</p>
+
+	<p id="bonus-languages"><strong>Bonus Languages</strong>: A warpriest's bonus language options include Abyssal, Celestial, and Infernal. These choices are in addition to the bonus languages available to the character because of his race.</p>
+
+	<p id="fervor"><strong>Fervor (Su)</strong>: At 2nd level, a warpriest can draw upon the power of his faith to heal wounds or harm foes. He can also use this ability to quickly cast spells that aid in his struggles. This ability can be used a number of times per day equal to 1/2 his warpriest level + his Wisdom modifier. </p>
+		<p>By expending one use of fervor, a good warpriest (or one who worships a good deity) can touch a creature to heal it of 1d6 points of damage + an additional 1d6 points for every 3 warpriest levels he possesses beyond 2nd (to a maximum of 7d6 at 20th level). Using this ability is a standard action (unless the warpriest targets himself, in which case it's a swift action). Alternatively, the warpriest can use this ability to harm an undead creature, dealing the same amount of damage he would otherwise heal with a melee touch attack. Using fervor in this way is a standard action that provokes an attack of opportunity. Undead do not receive a saving throw against this damage. This use of fervor counts as positive energy.</p>
+		<p>An evil warpriest (or one who worships an evil deity) can use this ability to instead deal damage to living creatures with a melee touch attack and heal undead creatures with a touch. This use of fervor counts as negative energy.</p>
+		<p>A neutral warpriest who worships a neutral deity (or one who is not devoted to a particular deity) uses this ability as a good warpriest if he chose to spontaneously cast cure spells, or as an evil warpriest if he chose to spontaneously cast inflict spells. </p>
+		<p>As a swift action, a warpriest can expend one use of fervor to cast any one warpriest spell he has prepared with a casting time of 1 round or shorter. When cast in this way, the spell can target only the warpriest, even if it could normally affect other or multiple targets. Spells cast in this way don't require somatic components and do not provoke attacks of opportunity.</p>
+
+	<p id="bonus-feats"><strong>Bonus Feats</strong>: At 3rd level and every 3 levels thereafter, a warpriest gains a bonus feat in addition to those gained from normal advancement. These bonus feats must be selected from those categorized as combat feats. The warpriest must meet the prerequisites for these feats, but he treats his warpriest level as his base attack bonus (in addition to base attack bonuses gained from other classes and racial Hit Dice) for the purpose of qualifying for these feats. Finally, for the purposes of these feats, the warpriest can select feats that have a minimum number of fighter levels as a prerequisite, treating his warpriest level as his fighter level.</p>
+
+	<p id="channel-energy"><strong>Channel Energy (Su)</strong>: At 4th level, a warpriest can release a wave of energy by channeling the power of his faith through his holy (or unholy) symbol. This energy can be used for healing or to deal damage, depending on the type of energy channeled and the creatures targeted. Using this ability is a standard action that expends two uses of the warpriest's fervor and doesn't provoke an attack of opportunity. The warpriest must present a holy (or unholy) symbol to use this ability. </p>
+		<p>A good warpriest (or one who worships a good deity) channels positive energy and can choose either to heal living creatures or to deal damage to undead creatures. An evil warpriest (or one who worships an evil deity) channels negative energy and can choose to either deal damage to living creatures or heal undead creatures. A neutral warpriest who worships a neutral deity (or one who is not devoted to a particular deity) channels positive energy if he chose to spontaneously cast cure spells or negative energy if he chose to spontaneously cast inflict spells.</p>
+		<p>Channeling energy affects all creatures of the chosen type (either undead or living) in a 30-foot-radius burst centered on the warpriest. The amount of damage dealt or healed is equal to the amount listed in the fervor ability. A creature that takes damage from channeled energy can attempt a Will saving throw to halve the damage. The save DC is equal to 10 + 1/2 the warpriest's level + the warpriest's Wisdom modifier. A creature healed by channeled energy cannot exceed its maximum hit point total&mdash;all excess healing is lost. A warpriest can choose whether or not to include himself in this effect.</p>
+
+	<p id="sacred-armor"><strong>Sacred Armor (Su)</strong>: At 7th level, the warpriest gains the ability to enhance his armor (but not shields) with divine power as a swift action. This ability grants the armor a +1 enhancement bonus. For every 3 levels beyond 7th, this bonus increases by 1 (to a maximum of +5 at 19th level). The warpriest can use this ability for a number of minutes per day equal to his warpriest level. This duration does not need to be consecutive, but it must be spent in 1-minute increments.</p>
+		<p>These bonuses stack with any existing bonuses the armor might have, to a maximum of +5. The warpriest can enhance armor with any of the following special abilities: <em><a href="../../coreRulebook/magicItems/armor.html#_armor-energy-resistance">energy resistance</a></em> (normal, improved, and greater), <em><a href="../../coreRulebook/magicItems/armor.html#_armor-fortification">fortification</a> </em>(heavy, light, or moderate), <em><a href="../../coreRulebook/magicItems/armor.html#_armor-glamered">glamered</a>, </em>or <em><a href="../../coreRulebook/magicItems/armor.html#_armor-spell-resistance">spell resistance</a> </em>(13, 15, 17, or 19). Adding any of these special abilities consumes an amount of enhancement bonus equal to the special ability's base price modifier (see <a href="../../coreRulebook/magicItems/armor.html#table-15-4-armor-special-abilities">Table: Armor Special Abilities</a>). For this purpose, <em><a href="../../coreRulebook/magicItems/armor.html#_armor-glamered">glamered</a> </em>counts as a +1 bonus, <em><a href="../../coreRulebook/magicItems/armor.html#_armor-energy-resistance">energy resistance</a></em> counts as +2, <em>improved <a href="../../coreRulebook/magicItems/armor.html#_armor-energy-resistance">energy resistance</a> </em>counts as +4, and <em>greater <a href="../../coreRulebook/magicItems/armor.html#_armor-energy-resistance">energy resistance</a></em> counts as +5. Duplicate special abilities do not stack. The armor must have at least a +1 enhancement bonus before any special abilities can be added.</p>
+		<p>The enhancement bonus and armor special abilities are determined the first time the ability is used each day and cannot be changed until the next day. These benefits apply only while the warpriest is wearing the armor, and end immediately if the armor is removed or leaves the warpriest's possession. This ability can be ended as a free action at the start of the warpriest's turn.</p>
+		<p>When the warpriest uses this ability, he can also use his sacred weapon ability as a free action by expending one use of fervor.</p>
+
+	<p id="aspect-of-war"><strong>Aspect of War (Su)</strong>: At 20th level, the warpriest can embody an aspect of war, growing in power and martial ability. Once per day as a swift action, a warpriest can treat his level as his base attack bonus, gains DR 10/&mdash;, and can move at his full speed regardless of the armor he is wearing or his encumbrance. In addition, the blessings he calls upon during this time don't count against his daily limit. This ability lasts for 1 minute.</p>
+
+<h2 id="ex-warpriests">Ex-Warpriests</h2>
+	<p>A warpriest who grossly violates the code of conduct required by his god loses all spells and class features, except for his armor, shield, weapon proficiencies, and bonus feats. He cannot thereafter gain levels as a warpriest of that god until he atones for his deeds (see the <a href="../../coreRulebook/spells/atonement.html#atonement"><em>atonement</em></a> spell).</p>
+
+<h2 id="blessings">Blessings</h2>
+	<p>A warpriest can select any two blessings granted by his deity. The blessings a deity grants have the same names as the deity's domains. Unless otherwise noted, using a blessing is a standard action. A warpriest without a deity can select any two blessings (subject to GM discretion). If a blessing's power duplicates a spell effect, the warpriest's caster level for that power is equal to his warpriest level.</p>
+	<p>Blessings that affect weapons and armor benefit anyone who wields or wears affected items, not just the warpriest. </p>
+
+	<h3 id="air-blessing">Air Blessing</h3>
+		<p id="zephyrs-gift"><strong>Zephyr's Gift (minor)</strong>: At 1st level, you can touch any one ranged weapon and enhance it with the quality of air. For 1 minute, any attacks made with the weapon take no penalties due to range. In addition, making a ranged attack with this weapon doesn't provoke an attack of opportunity.</p>
+		<p id="soaring-assault"><strong>Soaring Assault (major)</strong>: At 10th level, you can touch an ally and give her the gift of flight for 1 minute (as <em>fly</em>). The ally gains a fly speed of 60 feet with average maneuverability. She gains a bonus on <a href="../../coreRulebook/skills/fly.html#fly">Fly</a> checks equal to your level. Whenever the ally succeeds at a charge attack while flying, that attack deals an amount of additional electricity damage equal to your level.</p>
+
+	<h3 id="animal-blessing">Animal Blessing</h3>
+		<p id="animal-fury"><strong>Animal Fury (minor)</strong>: At 1st level, you can touch one ally and grant it feral features for 1 minute. The ally gains two claw attacks that each deal 1d6 points of damage if the ally is Medium or 1d4 points if it's Small, or one bite attack that deals 1d8 points of damage if the ally is Medium or 1d6 points if it's Small. These are primary natural attacks that replace any similar primary natural attacks the ally might have.</p>
+		<p id="animal-battle-companion"><strong>Battle Companion (major)</strong>: At 10th level, you can summon a battle companion. This ability functions as <a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-v"><em>summon nature's ally V</em></a>, but with a duration of 1 minute. This ability can summon only one animal, regardless of the list used. For every 2 levels beyond 10th, the level of the <em>summon nature's ally</em> spell increases by 1 (to a maximum of <a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-ix"><em>summon nature's ally IX</em></a> at 18th level).</p>
+
+	<h3 id="artifice-blessing">Artifice Blessing</h3>
+		<p id="crafters-wrath"><strong>Crafter's Wrath (minor)</strong>: At 1st level, you can touch one melee weapon and grant it greater power to harm and destroy crafted objects. For 1 minute, whenever this weapon deals damage to constructs or objects, it bypasses hardness and damage reduction.</p>
+		<p id="transfer-magic"><strong>Transfer Magic (major)</strong>: At 10th level, you can temporarily transfer a weapon special ability from one weapon to another. The bearers of each of the weapons must be willing, and you must be touching both weapons to activate this ability. You can transfer a weapon special ability with a base price modifier of +1 or +2. If you are using this ability on a double weapon, only one end of the double weapon is affected. The transfer lasts for 1 minute, after which the transferred weapon special ability automatically returns to the source weapon. You can use this ability multiple times on the same weapon or weapons. Alternatively, you can use transfer magic to move a +1 or +2 armor enhancement bonus from one touched suit of armor to another, or move a +1 or +2 armor or weapon enhancement bonus to another suit of armor or weapon.</p>
+
+	<h3 id="chaos-blessing">Chaos Blessing</h3>
+		<p id="anarchic-strike"><strong>Anarchic Strike (minor)</strong>: At 1st level, you can touch one weapon and grant it a chaotic blessing. For 1 minute, this weapon glows yellow or purple and deals an additional 1d6 points of damage against lawful creatures. During this time, it's treated as chaotic for the purpose of overcoming damage reduction. This blessing's additional damage doesn't stack with the additional damage from the <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-anarchic">anarchic</a></em> weapon special ability.</p>
+		<p id="chaos-battle-companion"><strong>Battle Companion (major)</strong>: At 10th level, you can summon a battle companion. This ability functions as <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-iv"><em>summon monster IV</em></a>, but its duration is 1 minute, and it works only on a chaotic outsider or an animal with the <a href="../../bestiary/monsterAdvancement.html#entropic-creature">entropic creature</a> simple template. This ability can summon only one creature, regardless of the list used. For every 2 levels beyond 10th, the level of the <em>summon monster</em> spell increases by 1 (to a maximum of <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-ix"><em>summon monster ix</em></a> at 20th level).</p>
+
+	<h3 id="charm-blessing">Charm Blessing</h3>
+		<p id="charming-presence"><strong>Charming Presence (minor)</strong>: At 1st level, you can touch an ally and grant an entrancing blessing. For 1 minute, the ally becomes mesmerizing to her opponents, filling them with either abject admiration or paralyzing fear. This effect functions as <a href="../../coreRulebook/spells/sanctuary.html#sanctuary"><em>sanctuary</em></a>, except if the ally attacks an opponent, the effect ends for that opponent. This is a mind-affecting effect.</p>
+		<p id="dominance-aura"><strong>Dominance Aura (major)</strong>: At 10th level, you can surround yourself with a tangible aura of majesty for 1 minute. While this aura is active, once per round as a swift action you can issue a command (as the <a href="../../coreRulebook/spells/command.html#command"><em>command</em></a> spell) to one creature within 30 feet; the creature must succeed at a Will saving throw or submit for 1 round.</p>
+
+	<h3 id="community-blessing">Community Blessing</h3>
+		<p id="communal-aid"><strong>Communal Aid (minor)</strong>: At 1st level, you can touch an ally and grant it the blessing of community. For 1 minute, whenever that ally uses the aid another action, the bonus granted increases to +4. You can instead use this ability on yourself as a swift action.</p>
+		<p id="fight-as-one"><strong>Fight as One (major)</strong>: At 10th level, you can rally your allies to fight together. For 1 minute, whenever you make a successful melee or ranged attack against a foe, allies within 10 feet of you gain a +2 insight bonus on attacks of the same type you made against that foe&mdash;melee attacks if you made a melee attack, or ranged attacks if you made a ranged attack. If you score a critical hit, this bonus increases to +4 until the start of your next turn.</p>
+
+	<h3 id="darkness-blessing">Darkness Blessing</h3>
+		<p id="enshrouding-darkness"><strong>Enshrouding Darkness (minor)</strong>: At 1st level, you can touch an ally and bestow a darkness blessing. For 1 minute, the ally becomes enshrouded in shadows while in combat, granting it concealment (20% miss chance). Creatures that are normally able to see in supernatural darkness ignore this concealment.</p>
+		<p id="darkened-vision"><strong>Darkened Vision (major)</strong>: At 10th level, you can place a shroud of darkness around the eyes of one foe within 30 feet. The target must succeed at a Will saving throw or be blinded for 1 minute (as <a href="../../coreRulebook/spells/blindnessDeafness.html#blindness-deafness"><em>blindness/deafness</em></a>).</p>
+
+	<h3 id="death-blessing">Death Blessing</h3>
+		<p id="from-the-grave"><strong>From the Grave (minor)</strong>: At 1st level, you can take on a corpse-like visage for 1 minute, making you more intimidating and giving you undead-like protection from harm. You gain a +4 bonus on <a href="../../coreRulebook/skills/disguise.html#disguise">Disguise</a> checks to resemble an undead creature and on <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> checks, as well as a +2 profane bonus on saving throws against disease, mind-affecting effects, paralysis, poison, and stunning.</p>
+		<p id="deaths-touch"><strong>Death's Touch (major)</strong>: At 10th level, you can make a melee touch attack against an opponent to deliver grim suffering. If you succeed, you inflict 1 temporary negative level on the target for 1 minute. Alternatively, you can activate this ability as a swift action when you hit an opponent with a melee attack. These temporary negative levels stack. You gain no benefit from imposing these negative levels (such as the temporary hit points undead gain from <a href="../../coreRulebook/spells/enervation.html#enervation"><em>enervation</em></a>).</p>
+
+	<h3 id="destruction-blessing">Destruction Blessing</h3>
+		<p id="destructive-attacks"><strong>Destructive Attacks (minor)</strong>: At 1st level, you can touch an ally and bless it with the power of destruction. For 1 minute, the ally gains a morale bonus on weapon damage rolls equal to half your level (minimum 1).</p>
+		<p id="heart-of-carnage"><strong>Heart of Carnage (major)</strong>: At 10th level, you can touch an ally and bless it with even greater destructive power. For 1 minute, the ally gains a +4 insight bonus on attack rolls made to confirm critical hits and has a 50% chance to treat any critical hit or sneak attack against it as a normal hit.
+</p>
+
+	<h3 id="earth-blessing">Earth Blessing</h3>
+		<p id="acid-strike"><strong>Acid Strike (minor)</strong>: At 1st level, you can touch one weapon and enhance it with acidic potency. For 1 minute, the weapon emits acrid fumes that deal an additional 1d4 points of acid damage with each strike. This additional damage doesn't stack with the additional damage from the <em><a href="../../advancedPlayersGuide/magicItems/weapons.html#corrosive">corrosive</a></em> weapon special ability.</p>
+		<p id="armor-of-earth"><strong>Armor of Earth (major)</strong>: At 10th level, you can touch an ally and harden its armor or clothing. For 1 minute, the ally gains DR 1/&mdash;. For every 2 levels beyond 10th, this DR increases by 1 (to a maximum of DR 5/&mdash; at 18th level). This doesn't stack with any other damage resistance.</p>
+
+	<h3 id="evil-blessing">Evil Blessing</h3>
+		<p id="unholy-strike"><strong>Unholy Strike (minor)</strong>: At 1st level, you can touch one weapon and give it an evil blessing. For 1 minute, the weapon takes on a black, orange, or violet cast and deals an additional 1d6 points of damage against good creatures. During this time, it's treated as evil for the purpose of overcoming damage reduction. This additional damage doesn't stack with the additional damage from the <em><a href="../../coreRulebook/magicItems/weapons.html#_unholy">unholy</a></em> weapon special ability.</p>
+		<p id="evil-battle-companion"><strong>Battle Companion (major)</strong>: At 10th level, you can summon a battle companion. This ability functions as <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-iv"><em>summon monster iv</em></a>, but its duration is 1 minute, and it works only on an evil outsider or an animal with the fiendish creature simple template. This ability can summon only one creature, regardless of the list used. For every 2 levels beyond 10th, the level of the <em>summon monster</em> spell increases by 1 (to a maximum of <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-ix"><em>summon monster ix</em></a> at 20th level).</p>
+
+	<h3 id="fire-blessing">Fire Blessing</h3>
+		<p id="fire-strike"><strong>Fire Strike (minor)</strong>: At 1st level, you can touch one weapon and enhance it with the grandeur of fire. For 1 minute, the weapon glows red-hot and deals an additional 1d4 points of fire damage with each hit. This additional damage doesn't stack with the additional damage from the <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-flaming">flaming</a></em> or <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-flaming-burst">flaming burst</a></em> weapon special ability.</p>
+		<p id="armor-of-flame"><strong>Armor of Flame (major)</strong>: At 10th level, you can touch an ally to wreathe it in flames. This ability works as <a href="../../coreRulebook/spells/fireShield.html#fire-shield"><em>fire shield</em></a> (warm shield only), but with a duration of 1 minute.</p>
+
+	<h3 id="glory-blessing">Glory Blessing</h3>
+		<p id="glorious-presence"><strong>Glorious Presence (minor)</strong>: At 1st level, you can touch an ally and grant it a glorious blessing. For 1 minute, the ally becomes mesmerizing to her foes. This functions as <a href="../../coreRulebook/spells/sanctuary.html#sanctuary"><em>sanctuary</em></a>, except if the ally attacks an opponent, this effect ends for that opponent. This is a mind-affecting effect.</p>
+		<p id="demoralizing-glory"><strong>Demoralizing Glory (major)</strong>: At 10th level, when you successfully damage an opponent with a melee attack or attack spell, as a swift action you can attempt to demoralize that opponent with the <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> skill using your ranks in <a href="../../coreRulebook/skills/intimidate.html#intimidate">Intimidate</a> or your warpriest level, whichever is higher.</p>
+
+	<h3 id="good-blessing">Good Blessing</h3>
+		<p id="holy-strike"><strong>Holy Strike (minor)</strong>: At 1st level, you can touch one weapon and bless it with the power of purity and goodness. For 1 minute, this weapon glows green, white, or yellow-gold and deals an additional 1d6 points of damage against evil creatures. During this time, it's treated as good for the purpose of overcoming damage reduction. This additional damage doesn't stack with the additional damage from the <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-holy">holy</a></em> weapon special ability.</p>
+		<p id="good-battle-companion"><strong>Battle Companion (major)</strong>: At 10th level, you can summon a battle companion. This ability functions as <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-iv"><em>summon monster IV</em></a>, but its duration is 1 minute, and it works only on a good outsider or an animal with the celestial creature simple template. This ability can summon only one creature, regardless of the list used. For every 2 levels beyond 10th, the level of the <em>summon monster</em> spell increases by 1 (to a maximum of <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-ix"><em>summon monster IX</em></a> at 20th level).</p>
+
+	<h3 id="healing-blessing">Healing Blessing</h3>
+		<p id="powerful-healer"><strong>Powerful Healer (minor)</strong>: At 1st level, you can add power to a cure spell as you cast it. As a swift action, you can treat any cure spell as if it were empowered (as the Empower Spell feat), causing it to heal 50% more damage (or deal 50% more damage if used against undead). This ability doesn't stack with itself or the Empower Spell feat.</p>
+		<p id="fast-healing"><strong>Fast Healing (major)</strong>: At 10th level, you can touch an ally and grant it fast healing 3 for 1 minute.</p>
+
+	<h3 id="knowledge-blessing">Knowledge Blessing</h3>
+		<p id="lore-keeper"><strong>Lore Keeper (minor)</strong>: At 1st level, you can touch a creature to learn about its abilities and weaknesses. With a successful touch attack, you gain information as if your result on the appropriate <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> check were equal to 15 + your warpriest level + your Wisdom modifier. </p>
+		<p id-"monster-lore"><strong>Monster Lore (major)</strong>: At 10th level, when you succeed at a <a href="../../coreRulebook/skills/knowledge.html#knowledge">Knowledge</a> check against an opponent to learn about its abilities or weaknesses (or succeed at a touch attack using the lore keeper blessing, above), you can as a swift action gain a +2 insight bonus on attack rolls, saving throws, ability checks, and skill checks, as well as to your AC against that creature. This effect lasts for 1 minute.</p>
+
+	<h3 id="law-blessing">Law Blessing</h3>
+		<p id="axiomatic-strike"><strong>Axiomatic Strike (minor)</strong>: At 1st level, you can touch one weapon and enhance it with the essence of law. For 1 minute, this weapon glows blue, pale yellow, or white and deals an extra 1d6 points of damage against chaotic creatures. During this time, it's treated as lawful for the purposes of overcoming damage reduction. This extra damage doesn't stack with the additional damage from the <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-axiomatic">axiomatic</a></em> weapon special ability.</p>
+		<p id="law-battle-companion"><strong>Battle Companion (major)</strong>: At 10th level, you can summon a battle companion. This ability functions as <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-iv"><em>summon monster IV</em></a>, but its duration is 1 minute, and it works only on a lawful outsider or an animal with the <a href="../../bestiary/monsterAdvancement.html#resolute-creature">resolute creature</a> simple template. This ability can summon only one creature, regardless of the list used. For every 2 levels beyond 10th, the level of the <em>summon monster</em> spell increases by 1 (to a maximum of <a href="../../coreRulebook/spells/summonMonster.html#summon-monster-ix"><em>summon monster IX</em></a> at 20th level).</p>
+
+	<h3 id="liberation-blessing">Liberation Blessing</h3>
+		<p id="liberation"><strong>Liberation (minor)</strong>: At 1st level, as a swift action, you can ignore for 1 round impediments to your mobility and effects that cause paralysis (as <a href="../../coreRulebook/spells/freedomOfMovement.html#freedom-of-movement"><em>freedom of movement</em></a>). You can activate this blessing even if you're otherwise unable to take actions, but not if you're unconscious.</p>
+		<p id="freedoms-shout"><strong>Freedom's Shout (major)</strong>: At 10th level, as a swift action you can emit a 30-foot aura that affects all allies with the liberation blessing described above. This effect lasts for 1 round.</p>
+
+	<h3 id="luck-blessing">Luck Blessing</h3>
+		<p id="lucky-presence"><strong>Lucky Presence (minor)</strong>: At 1st level, you can touch an ally and grant it a lucky presence. The target of this luck can call upon it to roll any one ability check, attack roll, saving throw, or skill check twice and take the better result. The decision to use this benefit must be declared before the roll is made. Once used, or once 1 minute passes, the effect ends.</p>
+		<p id="unlucky-enemy"><strong>Unlucky Enemy (major)</strong>: At 10th level, as an immediate action you can force an adjacent opponent to reroll an ability check, an attack roll, a saving throw, or a skill check it just attempted; it must take the lower of the two rolls. The decision to use this benefit must be declared after the roll is made but before the result is revealed.</p>
+
+	<h3 id="madness-blessing">Madness Blessing</h3>
+		<p id="madness-supremacy"><strong>Madness Supremacy (minor)</strong>: At 1st level, as a swift action you can target a creature within 30 feet that has the cowering, frightened, panicked, or paralyzed condition. That condition is suspended for 1 round, and the chosen creature gains the confused condition instead. The confused creature rerolls any result other than "attack self" or "attack nearest creature." The round spent confused counts toward the duration of the suspended effect. At the end of that round, the suspended condition resumes.</p>
+		<p id="control-madness"><strong>Control Madness (major)</strong>: At 10th level, as a swift action you can choose one behavior for all confused creatures within 30 feet to exhibit (as if all creatures had rolled the same result). This effect lasts for 1 round. You can use this ability even while you are confused.</p>
+
+	<h3 id="magic-blessing">Magic Blessing</h3>
+		<p id="hand-of-the-acolyte"><strong>Hand of the Acolyte (minor)</strong>: At 1st level, you can cause your melee weapon to fly from your grasp and strike an opponent, then instantly return to you. You can make a single attack using a melee weapon at a range of 30 feet. This attack is treated as a ranged attack with a thrown weapon, except that you add your Wisdom modifier to the attack roll instead of your Dexterity modifier (you still add your Strength modifier to the damage roll as normal). This ability cannot be used to perform a combat maneuver.</p>
+		<p id="blessed-magic"><strong>Blessed Magic (major)</strong>: At 10th level, you can cast a prepared warpriest spell without expending its spell slot. The spell must have a casting time of 1 standard action and must use a spell slot that is at least 3 spell levels lower than the highest warpriest spell level you can cast. In addition, the spell must be one that damages a creature or causes a creature to take penalties (such as <a href="../../coreRulebook/spells/inflictLightWounds.html#inflict-light-wounds"><em>inflict light wounds</em></a> or <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-bane">bane</a></em>). For example, if you are 10th level and can cast 4th-level warpriest spells, you could use this blessing to cast a 1st-level warpriest spell without expending its spell slot.</p>
+
+	<h3 id="nobility-blessing">Nobility Blessing</h3>
+		<p id="inspiring-word"><strong>Inspiring Word (minor)</strong>: At 1st level, you can speak a few words to a creature within 30 feet that fill it with inspiration. You can grant that creature a +2 morale bonus on attack rolls, ability checks, skill checks, or saving throws (your choice). This effect lasts for 1 minute.</p>
+		<p id="lead-by-example"><strong>Lead by Example (major)</strong>: At 10th level, as a swift action you can inspire your allies to follow your lead. If the next action you take on the same turn is an attack or a skill check, every ally within 30 feet who takes the same action against the same foe or obstacle on her next turn gains a +4 morale bonus on that attack roll or skill check.</p>
+
+	<h3 id="plant-blessing">Plant Blessing</h3>
+		<p id="creeping-vines"><strong>Creeping Vines (minor)</strong>: At 1st level, when you hit with a melee attack, as a swift action you can cause the creature you hit to sprout vines that attempt to hold it in place, entangling it for 1 round (Reflex negates).</p>
+		<p id="plant-battle-companion"><strong>Battle Companion (major)</strong>: At 10th level, you can summon a battle companion. This ability functions as <em>summon nature's ally< IV</em>, but with a duration of 1 minute. This ability can summon only one animal, regardless of the list used, and the creature's type changes to plant instead of animal. For every 2 levels beyond 10th, the level of the <em>summon nature's ally</em> spell increases by 1, to a maximum of <a href="../../coreRulebook/spells/summonNatureSAlly.html#summon-nature-s-ally-ix"><em>summon nature's ally IX</em></a> at 20th level.</p>
+
+	<h3 id="protection-blessing">Protection Blessing</h3>
+		<p id="increased-defense"><strong>Increased Defense (minor)</strong>: At 1st level, you can gain a +1 sacred bonus on saving throws and a +1 sacred bonus to AC for 1 minute. The bonus increases to +2 at 10th level and +3 at 20th level. </p>
+		<p id="aura-of-protection"><strong>Aura of Protection (major)</strong>: At 10th level, you can emit a 30-foot aura of protection for 1 minute. You and your allies within this aura gain resistance 10 against acid, cold, electricity, fire, and sonic. At 15th level, the energy resistance increases to 20.</p>
+
+	<h3 id="repose-blessing">Repose Blessing</h3>
+		<p id="gentle-rest"><strong>Gentle Rest (minor)</strong>: At 1st level, you can fill a living creature with lethargy by hitting it with a melee touch attack, causing it to become staggered for 1 round. If the target is already staggered, it falls asleep for 1 round instead. An undead creature that's touched is staggered for a number of rounds equal to your Wisdom modifier (minimum 1).</p>
+		<p id="back-to-the-grave"><strong>Back to the Grave (major)</strong>: At 10th level, when using channel energy to heal living creatures, you can take a swift action on that same turn to also deal damage to undead creatures (as your channel energy ability). Undead take an amount of damage equal to half the number of hit points healed, and can attempt the normal saving throw to halve this damage.</p>
+
+	<h3 id="rune-blessing">Rune Blessing</h3>
+		<p id="blast-rune"><strong>Blast Rune (minor)</strong>: At 1st level, you can create a blast rune in any adjacent square. Any creature entering this square takes an amount of damage equal to 1d6 + 1/2 your warpriest level. This rune deals either acid, cold, electricity, or fire damage, designated when you create the rune. The rune is invisible, and lasts for a number of rounds equal to your warpriest level or until discharged. You cannot create a blast rune in a square occupied by another creature. This rune counts as a 1st-level spell for the purpose of dispelling it. It can be discovered with a successful DC 26 <a href="../../coreRulebook/skills/perception.html#perception">Perception</a> check and disarmed with a successful DC 26 <a href="../../coreRulebook/skills/disableDevice.html#disable-device">Disable Device</a> check.</p>
+		<p id="spell-storing-weapon"><strong>Spell Storing Weapon (major)</strong>: At 10th level, you can cast a spell into a magic weapon as if it had the <em><a href="../../coreRulebook/magicItems/weapons.html#_spell-storing">spell storing</a></em> weapon special ability. If the stored spell is not used within 10 minutes, it dissipates.</p>
+
+	<h3 id="strength-blessing">Strength Blessing</h3>
+		<p id="strength-surge"><strong>Strength Surge (minor)</strong>: At 1st level, as a swift action you can focus your own strength. You gain an enhancement bonus equal to 1/2 your warpriest level (minimum +1) on melee attack rolls, combat maneuver checks that rely on Strength, Strength-based skill checks, and Strength checks for 1 round.</p>
+		<p id="strength-of-will"><strong>Strength of Will (major)</strong>: At 10th level, as a swift action you can ignore the movement penalties caused by wearing medium or heavy armor or by carrying a medium or heavy load. This effect lasts for 1 minute. During this time, you can add your Strength modifier on saving throws against effects that would cause you to become entangled, staggered, or paralyzed.</p>
+
+	<h3 id="sun-blessing">Sun Blessing</h3>
+		<p id="blinding-strike"><strong>Blinding Strike (minor)</strong>: At 1st level, you can create a flash of sunlight in the eyes of one of your opponents. The target is blinded for 1 round. If it succeeds at a Reflex saving throw, it's instead dazzled for 1 round. Creatures with light blindness or light sensitivity take a &ndash;4 penalty on this saving throw. This is a light effect. Sightless creatures are unaffected by this ability.</p>
+		<p id="cleansing-fire"><strong>Cleansing Fire (major)</strong>: At 10th level, you can touch a weapon and grant it either the <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-flaming">flaming</a></em> or <em>undead-bane</em> weapon special ability for 1 minute. If you spend two uses of your blessing when activating this ability, the weapon can have both special abilities.</p>
+
+	<h3 id="travel-blessing">Travel Blessing</h3>
+		<p id="agile-feet"><strong>Agile Feet (minor)</strong>: At 1st level, as a swift action you gain increased mobility. For 1 round, you ignore all difficult terrain (including magical terrain) and take no penalties for moving through it.</p>
+		<p id="dimensional-hop"><strong>Dimensional Hop (major)</strong>: At 10th level, you can teleport up to 20 feet as a move action. You can increase this distance by expending another use of your blessing&mdash;each use spent grants an additional 20 feet. You must have line of sight to your destination. This teleportation doesn't provoke attacks of opportunity. You can bring other willing creatures with you, but each such creature requires expending one additional use of your blessing, regardless of the distance traveled. (For example, transporting yourself 40 feet costs 2 uses of your blessing, and transporting an additional creature this distance costs 1 more use.)</p>
+
+	<h3 id="trickery-blessing">Trickery Blessing</h3>
+		<p id="double"><strong>Double (minor)</strong>: At 1st level, as a move action you can create an illusory double of yourself. This double functions as a single <a href="../../coreRulebook/spells/mirrorImage.html#mirror-image"><em>mirror image</em></a>, and lasts for a number of rounds equal to your warpriest level, or until the illusory duplicate is dispelled or destroyed. You can have no more than one double at a time. The double created by this ability doesn't stack with the additional images from the <a href="../../coreRulebook/spells/mirrorImage.html#mirror-image"><em>mirror image</em></a> spell.</p>
+		<p id="greater-invisibility"><strong>Greater Invisibility (major)</strong>: At 10th level, as a swift action you can become invisible (as <a href="../../coreRulebook/spells/invisibility.html#invisibility-greater"><em>greater invisibility</em></a>) for 1 round.</p>
+
+	<h3 id="war-blessing">War Blessing</h3>
+		<p id="war-mind"><strong>War Mind (minor)</strong>: At 1st level, you can touch an ally and grant it a tactical advantage for 1 minute. Each round at the start of its turn, it can select one of the following bonuses: +10 feet to base land speed, a +1 dodge bonus to AC, a +1 insight bonus on attack rolls, or a +1 luck bonus on saving throws. Each bonus selected lasts for 1 round.</p>
+		<p id="battle-lust"><strong>Battle Lust (major)</strong>: At 10th level, you can touch an ally and grant it a thirst for battle. All of the ally's melee attacks are treated as if they had the <em><a href="../../coreRulebook/magicItems/weapons.html#_vicious">vicious</a></em> weapon special ability, but the additional damage dealt to the ally from that special ability is nonlethal. In addition, the ally receives a +4 insight bonus on attack rolls made to confirm critical hits. These benefits last for 1 minute.</p>
+
+	<h3 id="water-blessing">Water Blessing</h3>
+		<p id="ice-strike"><strong>Ice Strike (minor)</strong>: At 1st level, you can touch one weapon and enhance it with the power of water. For 1 minute, the weapon glows with a blue-white chill and deals an additional 1d4 points of cold damage with each strike. This additional damage doesn't stack with the additional damage from the <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-frost">frost</a></em> or <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-icy-burst">icy burst</a></em> weapon special ability.</p>
+		<p id="armor-of-ice"><strong>Armor of Ice (major)</strong>: At 10th level, you can touch an ally and wreathe it in freezing mist. This ability works as <a href="../../coreRulebook/spells/fireShield.html#fire-shield"><em>fire shield</em></a> (<em>chill shield</em> only), but with a duration of 1 minute.</p>
+
+	<h3 id="weather-blessing">Weather Blessing</h3>
+		<p id="storm-strike"><strong>Storm Strike (minor)</strong>: At 1st level, you can touch one weapon and grant it a blessing of stormy weather. For 1 minute, this weapon glows with blue or yellow sparks and deals an additional 1d4 points of electricity damage with each hit. This additional damage doesn't stack with the additional damage from the <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-shock">shock</a></em> or <em><a href="../../coreRulebook/magicItems/weapons.html#_weapons-shocking-burst">shocking burst</a></em> weapon special ability.</p>
+		<p id="wind-barrier"><strong>Wind Barrier (major)</strong>: At 10th level, you can create a barrier of fast winds around yourself for 1 minute. This acts as a <a href="../../coreRulebook/spells/windWall.html#wind-wall"><em>wind wall</em></a> on all sides of your square, protects you with <a href="../../coreRulebook/spells/featherFall.html#feather-fall"><em>feather fall</em></a>, and doesn't interfere with your ranged attacks.</p>
+
+	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Warpriest",globalNavPath=[{ href: '/pathfinderRPG/prd/advancedClassGuide/classes/index.html', name: 'Classes'}];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

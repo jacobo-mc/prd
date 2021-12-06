@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Experts</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "expert.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "expert.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../../coreRulebook/gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../../coreRulebook/races.html">Races</a></li>
+						<li><a href = "../../coreRulebook/classes.html">Classes</a></li>
+						<li><a href = "../../coreRulebook/usingSkills.html">Using Skills</a></li>
+						<li><a href = "../../coreRulebook/skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../../coreRulebook/feats.html">Feats</a></li>
+						<li><a href = "../../coreRulebook/equipment.html">Equipment</a></li>
+						<li><a href = "../../coreRulebook/additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../../coreRulebook/combat.html">Combat</a></li>
+						<li><a href = "../../coreRulebook/magic.html">Magic</a></li>
+						<li><a href = "../../coreRulebook/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../coreRulebook/spellIndex.html">Spell Index</a></li>
+						<li><a href = "../../coreRulebook/prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../coreRulebook/gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../../coreRulebook/environment.html">Environment</a></li>
+						<li><a href = "../../coreRulebook/nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../../coreRulebook/creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../../coreRulebook/magicItems.html">Magic Items</a></li>
+						<li><a href = "../../coreRulebook/glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "expert.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "expert.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "expert.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "expert.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "expert.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "expert.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "expert.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "expert.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../core/index.html">Core Classes</a></li>
+						<li><a  href = "../prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "index.html">NPC Classes</a></li>
+						<li><a href = "../appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "expert.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "expert.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "expert.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "expert.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "expert.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "expert.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "expert.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "expert.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "expert.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "expert.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "expert.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+<h1 id="experts">Experts</h1>
+
+<p id="apprentice-jeweler" class="stat-block-title">Apprentice Jeweler <span class="stat-block-cr">CR 1/3</span></p>
+<p class="stat-block-1"><b>XP</b> 135</p>
+<p class="stat-block-1"><b>Human expert</b> 1</p>
+<p class="stat-block-1">N Medium humanoid (human)</p>
+<p class="stat-block-1"><b>Init</b> +2; <b>Senses</b> Perception +4</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 13, touch 12, flat-footed 11 (+1 armor, +2 Dex)</p>
+<p class="stat-block-1"><b>hp</b> 4 (1d8)</p>
+<p class="stat-block-1"><b>Fort</b> +0, <b>Ref</b> +2, <b>Will</b> +2</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+<p class="stat-block-1"><b>Melee</b> dagger –1 (1d4–1/19–20)</p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>During Combat</b> The expert calls for help and makes a fighting retreat.</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 8, <b>Dex</b> 15, <b>Con</b> 11, <b>Int</b> 12, <b>Wis</b> 10, <b>Cha</b> 9</p>
+<p class="stat-block-1"><b>Base Atk</b> +0; <b>CMB</b> –1; <b>CMD</b> 11</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#run" >Run</a>, <a href="../../coreRulebook/feats.html#skill-focus" >Skill Focus</a> (<a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> [jewelry])</p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/appraise.html#appraise" >Appraise</a> +5, <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (jewelry) +8, <a href="../../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> +3, <a href="../../coreRulebook/skills/disableDevice.html#disable-device" >Disable Device</a> +6, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (history, local, nobility) +5, Perception +4, <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device" >Use Magic Device</a> +3</p>
+<p class="stat-block-1"><b>Languages</b> Common</p>
+<p class="stat-block-1"><b>Combat Gear</b> acid; <b>Other Gear</b> padded armor, dagger, masterwork artisan's tools, 188 gp</p>
+
+<p>An apprentice delivers orders when not practicing her craft. She usually begins her apprenticeship as a young adult, serves for 7 years, and is paid mostly in room and board at the master's home or shop. After this duration, the apprentice becomes a journeyman in the craft and is paid a daily wage by the master. Some, however may instead leave to start their own businesses with employees once they reach the journeyman stage. A typical artisan has only one apprentice at a time, but a famous or wealthy one may have multiple apprentices at once.</p>
+<p>The above stat block can be used for any sort of trade that requires fine skill but not great strength, such as cobbling, dyeing, weaving, glass-blowing, locksmithing, or pottery-making. It can also be used to represent skilled professionals such as carriage drivers and house servants.</p>
+
+
+
+<p id="old-sailor" class="stat-block-title">Old Sailor <span class="stat-block-cr">CR 1/2</span></p>
+<p class="stat-block-1"><b>XP</b> 200</p>
+<p class="stat-block-1"><b>Elf expert</b> 2</p>
+<p class="stat-block-1">CN Medium humanoid (elf)</p>
+<p class="stat-block-1"><b>Init</b> +1; <b>Senses</b> low-light vision; Perception +6</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 13, touch 11, flat-footed 12 (+2 armor, +1 Dex)</p>
+<p class="stat-block-1"><b>hp</b> 11 (2d8+2)</p>
+<p class="stat-block-1"><b>Fort</b> +0, <b>Ref</b> +1, <b>Will</b> +3; +2 vs. enchantments</p>
+<p class="stat-block-1"><b>Immune</b> sleep</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+<p class="stat-block-1"><b>Melee</b> mwk dagger +3 (1d4+1/19–20) or handaxe +2 (1d6+1/×3)</p>
+<p class="stat-block-1"><b>Ranged</b> mwk dagger +3 (1d4+1/19–20) or shortbow +2 (1d6/×3)</p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>During Combat</b> The expert keeps his back to the wall, seeks the high ground, and uses <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> to maintain a tactical advantage.</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 12, <b>Dex</b> 13, <b>Con</b> 11, <b>Int</b> 10, <b>Wis</b> 10, <b>Cha</b> 9</p>
+<p class="stat-block-1"><b>Base Atk</b> +1; <b>CMB</b> +2; <b>CMD</b> 13</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#athletic" >Athletic</a></p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +5, <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a> +8, <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (scrimshaw) +4, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (religion) +4, Perception +6, <a href="../../coreRulebook/skills/perform.html#perform" >Perform</a> (string) +3, <a href="../../coreRulebook/skills/profession.html#profession" >Profession</a> (sailor) +4, <a href="../../coreRulebook/skills/sleightOfHand.html#sleight-of-hand" >Sleight of Hand</a> +5, <a href="../../coreRulebook/skills/survival.html#survival" >Survival</a> +4, <a href="../../coreRulebook/skills/swim.html#swim" >Swim</a> +8</p>
+<p class="stat-block-1"><b>Languages</b> Common, Elven</p>
+<p class="stat-block-1"><b>SQ</b> elven magic, weapon familiarity</p>
+<p class="stat-block-1"><b>Other Gear</b> leather armor, handaxe, masterwork dagger, shortbow with 20 arrows, artisan's tools, 36 gp</p>
+
+<p>Quite weathered for an elf, a sailor spends most of his free time playing cards, making music, or whittling away at wood or ivory. Old sailors are superstitious and wary of bad omens before or during a voyage.</p>
+<p>Though an old sailor is able to defend himself if attacked, his work relates to ship maintenance and transporting cargo rather than repelling boarders. For an experienced military sailor, use the veteran buccaneer stat block (page 267) or apply the advanced creature simple template to the old sailor stat block. You can also use this stat block for laborers whose work requires strength and maneuverability, such as lumberjacks.</p>
+		
+<p id="seasoned-trapper" class="stat-block-title">Seasoned Trapper <span class="stat-block-cr">CR 1</span></p>
+<p class="stat-block-1"><b>XP</b> 400</p>
+<p class="stat-block-1"><b>Halfling expert</b> 3</p>
+<p class="stat-block-1">N Small humanoid (halfling)</p>
+<p class="stat-block-1"><b>Init</b> +2; <b>Senses</b> Perception +7</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 16, touch 13, flat-footed 14 (+3 armor, +2 Dex, +1 size)</p>
+<p class="stat-block-1"><b>hp</b> 13 (3d8)</p>
+<p class="stat-block-1"><b>Fort</b> +2, <b>Ref</b> +4, <b>Will</b> +4; +2 vs. fear</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 20 ft.</p>
+<p class="stat-block-1"><b>Melee</b> spear +3 (1d6/×3)</p>
+<p class="stat-block-1"><b>Ranged</b> mwk light crossbow +6 (1d6/19–20)</p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>During Combat</b> The expert seeks concealment or cover and attacks with her crossbow.</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 10, <b>Dex</b> 15, <b>Con</b> 10, <b>Int</b> 9, <b>Wis</b> 10, <b>Cha</b> 10</p>
+<p class="stat-block-1"><b>Base Atk</b> +2; <b>CMB</b> +1; <b>CMD</b> 13</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#deadly-aim" >Deadly Aim</a>, <a href="../../coreRulebook/feats.html#skill-focus" >Skill Focus</a> (<a href="../../coreRulebook/skills/survival.html#survival" >Survival</a>)</p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +3 (–1 when jumping), <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a> +5, <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (leather) +5, <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (traps) +7, <a href="../../coreRulebook/skills/heal.html#heal" >Heal</a> +6, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (nature) +3, Perception +7, <a href="../../coreRulebook/skills/ride.html#ride" >Ride</a> +5, <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +11, <a href="../../coreRulebook/skills/survival.html#survival" >Survival</a> +9, <a href="../../coreRulebook/skills/swim.html#swim" >Swim</a> +4</p>
+<p class="stat-block-1"><b>Languages</b> Common, Halfling</p>
+<p class="stat-block-1"><b>Combat Gear</b> <i>potion of <a href="../../coreRulebook/spells/cureLightWounds.html#cure-light-wounds" >cure light wounds</a></i>; <b>Other Gear</b> studded leather, masterwork light crossbow with 40 bolts, spear, masterwork artisan's tools (leather, traps), bit and bridle, riding dog, riding saddle, 92 gp</p>
+
+<p>A trapper catches animals with snares, then turns their hides into leather and fur goods. Most are independent folk, content to live on the edge of civilization so they don't have to deal with the niceties of polite society. A few find themselves trying to escape a past crime or tragedy, using the wilderness to hide and eking out a livelihood from the natural world. Most know the best places to hunt and trap, hidden paths that lead to observation points, and the locations of caves and dangerous natural hazards.</p>
+<p>In frontier areas, a seasoned trapper is the next best thing to a guide, scout, tracker, or sniper, and in wartime many serve in the local militia, using their keen eyes and deadly skills to keep villagers safe and provide food. In exchange for a few coins, they may lead adventurers to the edge of monster territory or provide food or shelter in a storm.</p>
+
+
+<p id="journeyman-carpenter" class="stat-block-title">Journeyman Carpenter <span class="stat-block-cr">CR 2</span></p>
+<p class="stat-block-1"><b>XP</b> 600</p>
+<p class="stat-block-1"><b>Half-orc expert</b> 4</p>
+<p class="stat-block-1">N Medium humanoid (human, orc)</p>
+<p class="stat-block-1"><b>Init</b> +0; <b>Senses</b> darkvision 60 ft.; Perception +4</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 10, touch 10, flat-footed 10</p>
+<p class="stat-block-1"><b>hp</b> 22 (4d8+4)</p>
+<p class="stat-block-1"><b>Fort</b> +2, <b>Ref</b> +1, <b>Will</b> +3</p>
+<p class="stat-block-1"><b>Defensive Abilities</b> orc ferocity</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+<p class="stat-block-1"><b>Melee</b> light hammer +4 (1d4+1)</p>
+<p class="stat-block-1"><b>Ranged</b> light hammer +3 (1d4+1)</p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>During Combat</b> The expert uses the terrain to his advantage, including ladders and narrow ledges.</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 13, <b>Dex</b> 10, <b>Con</b> 12, <b>Int</b> 12, <b>Wis</b> 8, <b>Cha</b> 11</p>
+<p class="stat-block-1"><b>Base Atk</b> +3; <b>CMB</b> +4; <b>CMD</b> 14</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#power-attack" >Power Attack</a>, <a href="../../coreRulebook/feats.html#skill-focus" >Skill Focus</a> (<a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> [carpentry])</p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +6, <a href="../../coreRulebook/skills/bluff.html#bluff" >Bluff</a> +5, <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a> +6, <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (carpentry) +11, <a href="../../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> +5, <a href="../../coreRulebook/skills/disableDevice.html#disable-device" >Disable Device</a> +6, <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +2, <a href="../../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +9, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (engineering, local) +8, Perception +4</p>
+<p class="stat-block-1"><b>Languages</b> Common, Orc</p>
+<p class="stat-block-1"><b>SQ</b> orc blood, weapon familiarity</p>
+<p class="stat-block-1"><b>Combat Gear</b> <i>oil of <a href="../../coreRulebook/spells/mending.html#mending" >mending</a></i> (5), <i>potions of <a href="../../coreRulebook/spells/cureLightWounds.html#cure-light-wounds" >cure light wounds</a></i> (2), <i>potions of <a href="../../coreRulebook/spells/spiderClimb.html#spider-climb" >spider climb</a></i> (2); <b>Other Gear</b> light hammer, block and tackle, chain (20 ft.), crowbars (2), everburning torch, hammers (2), ladder, masterwork artisan's tools, bits and bridles (2), mules (2), pack saddles (2), wagon, 561 gp</p>
+
+<p>A journeyman carpenter is skilled with a hammer, but tries to avoid violence except to defend himself and his family. Tools can be rebuilt or replaced, and he will not waste his life protecting mere objects.</p>
+<p>The above stat block can be used for any journeyman whose trade requires skill and strength, such as a blacksmith, stonemason, or teamster. The stat block can also be used for older warriors in orc or hobgoblin tribes who are not as vigorous but are still able to fight.</p>
+
+
+<p id="sapper" class="stat-block-title">Sapper <span class="stat-block-cr">CR 3</span></p>
+<p class="stat-block-1"><b>XP</b> 800</p>
+<p class="stat-block-1"><b>Human expert</b> 5</p>
+<p class="stat-block-1">LE Medium humanoid (human)</p>
+<p class="stat-block-1"><b>Init</b> +1; <b>Senses</b> Perception +8</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 13, touch 11, flat-footed 12 (+2 armor, +1 Dex)</p>
+<p class="stat-block-1"><b>hp</b> 27 (5d8+5)</p>
+<p class="stat-block-1"><b>Fort</b> +1, <b>Ref</b> +4, <b>Will</b> +4</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+<p class="stat-block-1"><b>Melee</b> mwk dagger +3 (1d4–1/19–20)</p>
+<p class="stat-block-1"><b>Ranged</b> mwk dagger +5 (1d4–1/19–20) or splash weapon +4 (varies)</p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>During Combat</b> The sapper throws alchemical splash weapons, avoiding melee combat as long as possible.</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 8, <b>Dex</b> 12, <b>Con</b> 10, <b>Int</b> 16, <b>Wis</b> 11, <b>Cha</b> 9</p>
+<p class="stat-block-1"><b>Base Atk</b> +3; <b>CMB</b> +2; <b>CMD</b> 13</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#lightning-reflexes" >Lightning Reflexes</a>, <a href="../../coreRulebook/feats.html#point-blank-shot" >Point-Blank Shot</a>, <a href="../../coreRulebook/feats.html#skill-focus" >Skill Focus</a> (<a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> [engineering], <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a>)</p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +9, <a href="../../coreRulebook/skills/climb.html#climb" >Climb</a> +7, <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (alchemy) +11, <a href="../../coreRulebook/skills/disableDevice.html#disable-device" >Disable Device</a> +9, <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +9, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (arcana, geography) +11, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (engineering) +14, Perception +8, <a href="../../coreRulebook/skills/stealth.html#stealth" >Stealth</a> +12</p>
+<p class="stat-block-1"><b>Languages</b> Common, Dwarven, Goblin</p>
+<p class="stat-block-1"><b>Combat Gear</b> <i>elixirs of hiding</i> (2), <i>potion of <a href="../../coreRulebook/spells/barkskin.html#barkskin" >barkskin</a></i>, <i>potion of <a href="../../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds" >cure moderate wounds</a></i>, <i>potion of <a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a>,</i> acid (4), alchemist's fire (4); <b>Other Gear</b> leather armor, masterwork dagger, alchemist's lab, antitoxin, everburning torch, masterwork thieves' tools, smokestick (2), tindertwig (4), 171 gp</p>
+
+<p>Sappers specialize in undermining fortifications and tunneling under walls. Using a combination of time, engineering, and explosives, sappers can rig a tunnel to collapse to protect a retreat or create a path over a mountainside. Their enthusiasm for blowing things up means they take unnecessary risks, and the lifespan of a professional sapper is often cut short in a dramatic blast.</p>
+
+
+<p id="expert-blacksmith" class="stat-block-title">Expert Blacksmith <span class="stat-block-cr">CR 4</span></p>
+<p class="stat-block-1"><b>XP</b> 1,200</p>
+<p class="stat-block-1"><b>Dwarf expert</b> 6</p>
+<p class="stat-block-1">N Medium humanoid (dwarf)</p>
+<p class="stat-block-1"><b>Init</b> +0; <b>Senses</b> darkvision 60 ft.; Perception +0</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 12, touch 10, flat-footed 12 (+2 armor)</p>
+<p class="stat-block-1"><b>hp</b> 39 (6d8+12)</p>
+<p class="stat-block-1"><b>Fort</b> +4, <b>Ref</b> +2, <b>Will</b> +5; +2 vs. poison, spells, and spell-like abilities</p>
+<p class="stat-block-1"><b>Defensive Abilities</b> defensive training (+4 dodge bonus to AC vs. giants)</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 20 ft.</p>
+<p class="stat-block-1"><b>Melee</b> <i>+1 warhammer</i> +6 (1d8+2/×3) or mwk cold iron warhammer +6 (1d8+1/×3)</p>
+<p class="stat-block-1"><b>Special Attacks</b> +1 on attack rolls against goblinoid and orc humanoids</p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>Before Combat</b> If she has at least 4 minutes to prepare to defend her shop, the expert dons her masterwork breastplate.</p>
+<p class="stat-block-1"><b>During Combat</b> The expert uses one of her warhammers in melee, but calls for help and tries to avoid combat.</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 13, <b>Dex</b> 10, <b>Con</b> 14, <b>Int</b> 12, <b>Wis</b> 11, <b>Cha</b> 6</p>
+<p class="stat-block-1"><b>Base Atk</b> +4; <b>CMB</b> +5; <b>CMD</b> 15 (19 vs. bull rush or trip)</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#craft-magic-arms-and-armor" >Craft Magic Arms and Armor</a>, <a href="../../coreRulebook/feats.html#master-craftsman" >Master Craftsman</a> (<a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> [weapons]), <a href="../../coreRulebook/feats.html#skill-focus" >Skill Focus</a> (<a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> [armor, weapons])<b></b></p>
+<p class="stat-block-1"><b>Skills </b><a href="../../coreRulebook/skills/appraise.html#appraise" >Appraise</a> +10 (+12 to assess nonmagical metals or gemstones), <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (armor, blacksmithing) +10, <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (weapons) +15, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (history) +8, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (local) +9, <a href="../../coreRulebook/skills/linguistics.html#linguistics" >Linguistics</a> +7, <a href="../../coreRulebook/skills/perform.html#perform" >Perform</a> (sing) +7, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +9</p>
+<p class="stat-block-1"><b>Languages</b> Common, Draconic, Dwarven, Giant, Gnome, Halfling</p>
+<p class="stat-block-1"><b>Combat Gear</b> <i>oil of <a href="../../coreRulebook/spells/mending.html#mending" >mending</a></i> (5), <i>potions of <a href="../../coreRulebook/spells/cureLightWounds.html#cure-light-wounds" >cure light wounds</a></i> (2), <i>potions of <a href="../../coreRulebook/spells/endureElements.html#endure-elements" >endure elements</a></i> (2), acid (2), alchemist's fire (2), thunderstone; <b>Other Gear</b> leather armor, <i>+1 warhammer</i>, masterwork cold iron warhammer, masterwork breastplate (not worn), <i><a href="../../coreRulebook/magicItems/wondrousItems.html#feather-token" >feather token</a></i> (fan), block and tackle, chain (20 ft.), masterwork artisan's tools, 1,211 gp</p>
+
+<p>A blacksmith enjoys talking about metal almost as much as working it. She is proud that her skill allows her to craft everything from mundane items to magic weapons.</p>
+		
+<p id="successful-merchant" class="stat-block-title">Successful Merchant <span class="stat-block-cr">CR 5</span></p>
+<p class="stat-block-1"><b>XP</b> 1,600</p>
+<p class="stat-block-1"><b>Human expert</b> 7</p>
+<p class="stat-block-1">N Medium humanoid (human)</p>
+<p class="stat-block-1"><b>Init</b> –1; <b>Senses</b> Perception +13</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 10, touch 9, flat-footed 10 (+1 armor, –1 Dex)</p>
+<p class="stat-block-1"><b>hp</b> 31 (7d8)</p>
+<p class="stat-block-1"><b>Fort</b> +3, <b>Ref</b> +2, <b>Will</b> +9</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+<p class="stat-block-1"><b>Melee</b> mwk silver dagger +5 (1d4–1/19–20)</p>
+<p class="stat-block-1"><b>Ranged</b> mwk silver dagger +5 (1d4–1/19–20)</p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>During Combat</b> The expert hides behind his bodyguards or tries to use his <i>potion of <a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i> to escape combat. The rapier he wears is only for show, and he defends himself with his dagger.</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 9, <b>Dex</b> 8, <b>Con</b> 10, <b>Int</b> 14, <b>Wis</b> 12, <b>Cha</b> 13</p>
+<p class="stat-block-1"><b>Base Atk</b> +5; <b>CMB</b> +4; <b>CMD</b> 13</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#alertness" >Alertness</a>, <a href="../../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../../coreRulebook/feats.html#persuasive" >Persuasive</a>, <a href="../../coreRulebook/feats.html#skill-focus" >Skill Focus</a> (<a href="../../coreRulebook/skills/appraise.html#appraise" >Appraise</a>, <a href="../../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a>)</p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/appraise.html#appraise" >Appraise</a> +15, <a href="../../coreRulebook/skills/bluff.html#bluff" >Bluff</a> +11, <a href="../../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> +13, <a href="../../coreRulebook/skills/handleAnimal.html#handle-animal" >Handle Animal</a> +6, <a href="../../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +11, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (geography) +7, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (history, nobility) +4, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (local) +12, Perception +13, <a href="../../coreRulebook/skills/profession.html#profession" >Profession</a> (merchant) +11, <a href="../../coreRulebook/skills/ride.html#ride" >Ride</a> +9, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +13, <a href="../../coreRulebook/skills/survival.html#survival" >Survival</a> +2</p>
+<p class="stat-block-1"><b>Languages</b> Common, Dwarven, Elven</p>
+<p class="stat-block-1"><b>Combat Gear</b> <i>potion of <a href="../../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds" >cure moderate wounds</a></i>, <i>potion of <a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i>; <b>Other Gear</b> masterwork silver dagger, masterwork rapier, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#bracers-of-armor" >bracers of armor</a> +1</i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#cloak-of-resistance" >cloak of resistance</a> +1</i>, guard dog, magnifying glass, merchant's scale, bit and bridle, heavy horses (2), light horse (combat trained), riding saddle, saddlebags, wagon, 720 gp</p>
+
+<p>A successful merchant is pleasant to customers but often an impatient taskmaster to his employees. He has spent a lifetime thinking of ways to avoid physical work and complains if expected to lend a hand. He considers himself better than anyone dumber or poorer than he is.</p>
+<p>The above stat block can be used for any skilled NPC whose profession relies on observation, intimidation, and diplomacy, such as a diplomat, innkeeper, lawyer, or caravan leader.</p>
+
+
+<p id="wise-sage" class="stat-block-title">Wise Sage <span class="stat-block-cr">CR 6</span></p>
+<p class="stat-block-1"><b>XP</b> 2,400</p>
+<p class="stat-block-1"><b>Human expert</b> 8</p>
+<p class="stat-block-1">N Medium humanoid (human)</p>
+<p class="stat-block-1"><b>Init</b> +0; <b>Senses</b> Perception +1</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 11, touch 11, flat-footed 11 (+1 deflection)</p>
+<p class="stat-block-1"><b>hp</b> 28 (8d8–8)</p>
+<p class="stat-block-1"><b>Fort</b> +2, <b>Ref</b> +3, <b>Will</b> +8</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+<p class="stat-block-1"><b>Melee</b> quarterstaff +5/+0 (1d6–1)</p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>During Combat</b> The expert uses magic items to defend herself and escape from combat as quickly as possible.</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 9, <b>Dex</b> 10, <b>Con</b> 8, <b>Int</b> 16, <b>Wis</b> 13, <b>Cha</b> 11</p>
+<p class="stat-block-1"><b>Base Atk</b> +6; <b>CMB</b> +5; <b>CMD</b> 16</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#magical-aptitude" >Magical Aptitude</a>, <a href="../../coreRulebook/feats.html#skill-focus" >Skill Focus</a> (<a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> [arcana, nature, planes], <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device" >Use Magic Device</a>)</p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/appraise.html#appraise" >Appraise</a> +14, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (arcana) +17, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (dungeoneering, engineering, local) +7, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (geography) +12, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (history) +14, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (nature, planes) +17, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (nobility) +5, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (religion) +10, <a href="../../coreRulebook/skills/linguistics.html#linguistics" >Linguistics</a> +14, <a href="../../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> +16, <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device" >Use Magic Device</a> +16</p>
+<p class="stat-block-1"><b>Languages</b> Abyssal, Aklo, Aquan, Auran, Celestial, Common, Draconic, Dwarven, Elven, Ignan, Infernal, Terran</p>
+<p class="stat-block-1"><b>Combat Gear</b> <i>potion of <a href="../../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds" >cure moderate wounds</a></i>, <i>scroll of <a href="../../coreRulebook/spells/expeditiousRetreat.html#expeditious-retreat" >expeditious retreat</a></i>, <i>scroll of <a href="../../coreRulebook/spells/glitterdust.html#glitterdust" >glitterdust</a></i>, <i>scrolls of <a href="../../coreRulebook/spells/identify.html#identify" >identify</a></i> (4), <i>scroll of <a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i>, <i>scroll of <a href="../../coreRulebook/spells/mageArmor.html#mage-armor" >mage armor</a></i>, <i>scroll of <a href="../../coreRulebook/spells/removeCurse.html#remove-curse" >remove curse</a></i>, <i>wand of <a href="../../coreRulebook/spells/detectMagic.html#detect-magic" >detect magic</a></i> (20 charges), <i>wand of <a href="../../coreRulebook/spells/scorchingRay.html#scorching-ray" >scorching ray</a></i> (10 charges); <b>Other Gear</b> quarterstaff, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#cloak-of-resistance" >cloak of resistance</a> +1</i>, <i><a href="../../coreRulebook/magicItems/rings.html#ring-of-protection" >ring of protection</a> +1</i>, everburning torch, bit and bridle, light horse, riding saddle, 628 gp</p>
+
+<p>A wise sage's cantankerous manner evaporates when she's expounding on matters of scholarly minutia. The sage's breadth of general knowledge allows her to speak on most topics, and her precious magic items let her gain enough clues to direct her further research. If she reaches her limit on a topic, she may refer the questioner to a specialist in that field&mdash;or she may not, in order to preserve her pride.</p>
+
+
+		
+<p id="cutthroat-lawyer" class="stat-block-title">Cutthroat Lawyer <span class="stat-block-cr">CR 7</span></p>
+<p class="stat-block-1"><b>XP</b> 3,200</p>
+<p class="stat-block-1"><b>Half-elf expert</b> 9</p>
+<p class="stat-block-1">N Medium humanoid (elf, human)</p>
+<p class="stat-block-1"><b>Init</b> –1; <b>Senses</b> low-light vision; Perception +12</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 9, touch 9, flat-footed 9 (–1 Dex)</p>
+<p class="stat-block-1"><b>hp</b> 40 (9d8)</p>
+<p class="stat-block-1"><b>Fort</b> +3, <b>Ref</b> +2, <b>Will</b> +9; +2 vs. enchantments</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 30 ft.</p>
+<p class="stat-block-1"><b>Melee</b> mwk rapier +6/+1 (1d6–1/18–20)</p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>During Combat</b> The expert fights defensively with her rapier, and attempts to persuade her opponents that it is in their best interest to stop fighting and let her escape.</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 9, <b>Dex</b> 8, <b>Con</b> 10, <b>Int</b> 12, <b>Wis</b> 12, <b>Cha</b> 16</p>
+<p class="stat-block-1"><b>Base Atk</b> +6; <b>CMB</b> +5; <b>CMD</b> 14</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#alertness" >Alertness</a>, <a href="../../coreRulebook/feats.html#iron-will" >Iron Will</a>, <a href="../../coreRulebook/feats.html#martial-weapon-proficiency" >Martial Weapon Proficiency</a> (rapier), <a href="../../coreRulebook/feats.html#persuasive" >Persuasive</a>, <a href="../../coreRulebook/feats.html#skill-focus" >Skill Focus</a> (<a href="../../coreRulebook/skills/bluff.html#bluff" >Bluff</a>, <a href="../../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a>)</p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/bluff.html#bluff" >Bluff</a> +21, <a href="../../coreRulebook/skills/diplomacy.html#diplomacy" >Diplomacy</a> +23, <a href="../../coreRulebook/skills/intimidate.html#intimidate" >Intimidate</a> +20, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (history) +8, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (local, nobility) +9, <a href="../../coreRulebook/skills/linguistics.html#linguistics" >Linguistics</a> +6, Perception +12, <a href="../../coreRulebook/skills/profession.html#profession" >Profession</a> (barrister) +13, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +15, <a href="../../coreRulebook/skills/spellcraft.html#spellcraft" >Spellcraft</a> +8</p>
+<p class="stat-block-1"><b>Languages</b> Celestial, Common, Draconic, Dwarven, Elven, Gnome, Halfling, Infernal</p>
+<p class="stat-block-1"><b>SQ</b> elf blood</p>
+<p class="stat-block-1"><b>Combat Gear</b> <i>potion of <a href="../../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds" >cure moderate wounds</a>, potion of <a href="../../coreRulebook/spells/heroism.html#heroism" >heroism</a></i>; <b>Other Gear</b> masterwork rapier, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#circlet-of-persuasion" >circlet of persuasion</a></i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#elixir-of-truth" >elixir of truth</a>,</i> antitoxin, courtier's outfit, light horses (2), carriage, 1,100 gp</p>
+
+<p>A cutthroat lawyer is a master of loopholes, doublespeak, intimidation, and litigation. She prides herself on doing whatever it takes&mdash;within the law&mdash;to win her case. Though this means she won't use illusions to falsify evidence or enchantments to alter a witness's memories or coerce a judge or juror to change a vote, it leaves her many opportunities to enhance her own ability to persuade and investigate. Given enough gold and access to the right potions, she destroys the opposition's arguments, eradicates the witnesses' credibility, discovers conflicts of interest in judges and jurors, digs up obscure laws that invalidate the charges of which her client is accused, suggests plausible conspiracies or mistaken identities, points fingers at other possible suspects, bogs down trial proceedings, and offers plea bargains to a trivially smaller sentence in order to get trials over with.</p>
+<p>She loves the intellectual and magical challenge of defeating her opponent within the bounds of the law, much as a paladin enjoys a victory without resorting to dishonorable tactics. She thrives on the attention and her ability to manipulate others to see things as she wants them to. If she worked as a prosecutor, her conviction record would be nearly perfect, but because she loves a good profit, she prefers aggressive litigation and defending the accused. Any magic she uses to achieve a win is added to her bill, and her favorite clients are rich adventurers because they have the deepest pockets.</p>
+<p>The lawyer does have standards, and will not defend those accused of crimes against children. Likewise, she prefers clients who are not actually guilty, or are guilty of crimes against property rather than against people.</p>
+<p>The lawyer has a network of contacts, observers, and expert witnesses ready to follow people, investigate crime scenes, badger city guards for information, testify in trials, and otherwise make themselves useful for her profession. She usually has the assistance of one or more less skilled lawyers (use the successful merchant stat block, expert 7) hoping to gain some prestige by association, and payrolls two or three investigator wizards (human diviner 4) at any one time. All of these agents are people she believes she can trust not to violate any laws in the pursuit of information, for one slip-up can invalidate her entire case and&mdash;worst of all&mdash;embarrass her professionally. An agent who shows a lack of discretion or discipline in this matter is cut off and disavowed; depending on the infraction, she might bring her litigious powers to bear against that person, in which case it is usually best for the target to flee the city, change his or her name, and attempt a new life somewhere else.</p>
+
+
+
+
+<p id="master-entertainer" class="stat-block-title">Master Entertainer <span class="stat-block-cr">CR 8</span></p>
+<p class="stat-block-1"><b>XP</b> 4,800</p>
+<p class="stat-block-1"><b>Gnome expert</b> 10</p>
+<p class="stat-block-1">CN Small humanoid (gnome)</p>
+<p class="stat-block-1"><b>Init</b> +1; <b>Senses</b> low-light vision; Perception +2</p>
+<p class="stat-block-breaker">Defense</p>
+<p class="stat-block-1"><b>AC</b> 12, touch 12, flat-footed 11 (+1 Dex, +1 size)</p>
+<p class="stat-block-1"><b>hp</b> 45 (10d8)</p>
+<p class="stat-block-1"><b>Fort</b> +3, <b>Ref</b> +6, <b>Will</b> +7; +2 vs. illusions</p>
+<p class="stat-block-1"><b>Defensive Abilities</b> defensive training (+4 dodge bonus to AC vs. giants)</p>
+<p class="stat-block-breaker">Offense</p>
+<p class="stat-block-1"><b>Speed</b> 20 ft.</p>
+<p class="stat-block-1"><b>Melee</b> dagger +7/+2 (1d3–2/19–20)</p>
+<p class="stat-block-1"><b>Ranged</b> dagger +10/+5 (1d3–2/19–20)</p>
+<p class="stat-block-1"><b>Special Attacks</b> +1 on attack rolls against goblinoid and reptilian humanoids</p>
+<p class="stat-block-1"><b>Gnome Spell-Like Abilities </b>(CL 10th; concentration +13)<b></b></p>
+<p class="stat-block-2">1/day&mdash;<i><a href="../../coreRulebook/spells/dancingLights.html#dancing-lights" >dancing lights</a></i>, <i><a href="../../coreRulebook/spells/ghostSound.html#ghost-sound" >ghost sound</a></i>, <i><a href="../../coreRulebook/spells/prestidigitation.html#prestidigitation" >prestidigitation</a></i>, <i><a href="../../coreRulebook/spells/speakWithAnimals.html#speak-with-animals" >speak with animals</a></i></p>
+<p class="stat-block-breaker">Tactics</p>
+<p class="stat-block-1"><b>During Combat</b> The expert uses thrown daggers and alchemical items to keep opponents at bay.</p>
+<p class="stat-block-breaker">Statistics</p>
+<p class="stat-block-1"><b>Str</b> 7, <b>Dex</b> 12, <b>Con</b> 10, <b>Int</b> 12, <b>Wis</b> 10, <b>Cha</b> 16</p>
+<p class="stat-block-1"><b>Base Atk</b> +7; <b>CMB</b> +4; <b>CMD</b> 15</p>
+<p class="stat-block-1"><b>Feats</b> <a href="../../coreRulebook/feats.html#lightning-reflexes" >Lightning Reflexes</a>, <a href="../../coreRulebook/feats.html#point-blank-shot" >Point-Blank Shot</a>, <a href="../../coreRulebook/feats.html#quick-draw" >Quick Draw</a>, Rapid Shot, <a href="../../coreRulebook/feats.html#weapon-focus" >Weapon Focus</a> (dagger)</p>
+<p class="stat-block-1"><b>Skills</b> <a href="../../coreRulebook/skills/acrobatics.html#acrobatics" >Acrobatics</a> +14 (+10 when jumping), <a href="../../coreRulebook/skills/bluff.html#bluff" >Bluff</a> +11, <a href="../../coreRulebook/skills/craft.html#craft" >Craft</a> (painting) +10, <a href="../../coreRulebook/skills/disguise.html#disguise" >Disguise</a> +9, <a href="../../coreRulebook/skills/escapeArtist.html#escape-artist" >Escape Artist</a> +9, <a href="../../coreRulebook/skills/knowledge.html#knowledge" >Knowledge</a> (local, nobility) +9, Perception +2, <a href="../../coreRulebook/skills/perform.html#perform" >Perform</a> (comedy) +16, <a href="../../coreRulebook/skills/perform.html#perform" >Perform</a> (dance) +11, <a href="../../coreRulebook/skills/perform.html#perform" >Perform</a> (wind) +8, <a href="../../coreRulebook/skills/senseMotive.html#sense-motive" >Sense Motive</a> +5, <a href="../../coreRulebook/skills/sleightOfHand.html#sleight-of-hand" >Sleight of Hand</a> +14, <a href="../../coreRulebook/skills/useMagicDevice.html#use-magic-device" >Use Magic Device</a> +16</p>
+<p class="stat-block-1"><b>Languages</b> Common, Elven, Gnome, Sylvan</p>
+<p class="stat-block-1"><b>Combat Gear</b> <i>potion of <a href="../../coreRulebook/spells/cureModerateWounds.html#cure-moderate-wounds" >cure moderate wounds</a></i>, <i>scrolls of <a href="../../coreRulebook/spells/catSGrace.html#cat-s-grace" >cat's grace</a></i> (2), <i>scroll of <a href="../../coreRulebook/spells/majorImage.html#major-image" >major image</a></i>, <i>scroll of <a href="../../coreRulebook/spells/shrinkItem.html#shrink-item" >shrink item</a></i>, <i>wand of <a href="../../coreRulebook/spells/invisibility.html#invisibility" >invisibility</a></i> (10 charges), <i>wand of <a href="../../coreRulebook/spells/prestidigitation.html#prestidigitation" >prestidigitation</a></i> (20 charges), <i>wand of <a href="../../coreRulebook/spells/pyrotechnics.html#pyrotechnics" >pyrotechnics</a></i> (10 charges), <i>wand of silent  image</i> (10 charges), alchemist's fire (2), thunderstones (2); <b>Other Gear</b> daggers (8), <i><a href="../../coreRulebook/magicItems/wondrousItems.html#elixir-of-love" >elixir of love</a></i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#hat-of-disguise" >hat of disguise</a></i>, <i><a href="../../coreRulebook/magicItems/wondrousItems.html#marvelous-pigments" >marvelous pigments</a></i>, masterwork artisan's tools, masterwork panpipes, smokesticks (2), tindertwigs (4), 335 gp</p>
+
+<p>Accomplished as an acrobat, clown, dancer, juggler, and piper, a master entertainer augments her performance with magical effects for audiences that pay high enough ticket prices. Odd-looking even by gnome standards, she is adept at making herself appear male or female, a human or elf child, or even something monstrous like a goblin or tiefling. When augmented by her magic cap, the disguise is instantaneous and flawless. It is often her practice to create a mundane disguise, then use the cap to create an identical disguise over it, so that any who magically detect or penetrate the disguise see the same thing underneath, leading them to believe their magic is erratic.</p>
+<p>If working for a wealthy patron, she uses her funding to create surreal and amusing backdrops, stages, and costumes, sometimes with colors only visible to certain races, or concealing words and images that appear only when viewed with darkvision. She uses these props to perform whimsical narratives that are suitable for children, but that can easily be altered into something haunting, disturbing, or even erotic or blasphemous with a word from her employer. She has been known to employ illusionists to add or subtract elements from a performance, or (like her habit with disguises) create identical illusions on top of actual scenery, perhaps altering it slightly to give the performance a sense of heightened unreality.</p>
+<p>Because of her experience traveling with unsavory characters, she has no qualms about being bribed to help with many crimes, such as smuggling goods into or out of a city, faking a person's death as an on-stage "accident," or mocking an effigy or caricature of a public official in a performance in front of hundreds of witnesses.</p>
+<p>She may travel alone or as part of a troupe of actors or musicians (use the journeyman carpenter stat block, expert 4), tavern singers (bards 1), street performers (bards 2), or laborers (use the ruffian stat block, commoner 7). During most of her travels she is content to cavort and entertain, but from time to time she sneaks out to burgle or rob the rich and split the money with her companions.</p>
+<p>The above stat block can be used for any kind of skilled nonmagical performer or artisan, such as an actor, musician, painter, or singer. Alter the NPC's magic items to suit the particular role; for example, <i>scrolls of <a href="../../coreRulebook/spells/eagleSSplendor.html#eagle-s-splendor" >eagle's splendor</a></i> instead of <i>scrolls of <a href="../../coreRulebook/spells/catSGrace.html#cat-s-grace" >cat's grace</a></i>.</p>
+
+
+</div>	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Experts",globalNavPath=[{ href: '/pathfinderRPG/prd/npcCodex/npc/index.html', name: 'NPC Classes' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>

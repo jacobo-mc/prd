@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Paladin</title>
+	<link rel = "stylesheet" type = "text/css" href = "../../include/prd-stylesheet.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery.dataTables.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "http://cdn.paizo.com/chrome/style/jquery-ui.min.css" />
+</head>
+
+<body>
+
+<div style="width: 100%; background: #c8433f; padding: 0.5rem;">
+<article style="color: #fffdf8;">
+<p style="font-size: 0.85rem; text-align: center;">You are viewing the legacy Pathfinder Reference Document website.<br />Paizo Inc. has now partnered with Archives of Nethys to provide the online version of the Pathfinder RPG rules at <a href = "http://pfrd.info" style = "color: #fffdf8;"><b>pfrd.info</b></a>.<br />
+<a href = "http://paizo.com/community/blog/v5748dyo6sg93?Big-PathfinderStarfinder-Reference-Document-News" style = "color: #fffdf8;">Learn more</a>.</p>
+</article>
+</div>
+
+<div class = "header">
+	<!-- Logos -->
+	<div class = "header-content">
+		<div id = "header-full">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo.png" alt = "Pathfinder Reference Document" style = "margin: 15px 0 0 0;" /></a>
+		</div>
+		<div id = "header-mobile">
+			<a href = "../../index.html"><img src = "../../include/PRD-Logo_Mobile.png" alt = "Pathfinder Reference Document" style = "margin: 5px 0 0 10px;" /></a>
+		</div>
+	</div>
+
+	<!-- Search & Navigation -->
+	<div id = "nav-menu" class = "nav-menu">
+		<a href = "paladin.html#menu" class = "menu-link has-subnav"><img src = "../../include/menu.png"></a>
+		<div id = "menu" class = "menu">
+			<ul>
+				<!-- Search -->
+				
+				<!-- Core Rulebook -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Core Rulebook</a>
+					<ul class = "level-2">
+						<li><a href = "../gettingStarted.html">Getting Started</a></li>
+						<li><a href = "../races.html">Races</a></li>
+						<li><a href = "../classes.html">Classes</a></li>
+						<li><a href = "../usingSkills.html">Using Skills</a></li>
+						<li><a href = "../skillDescriptions.html">Skill Descriptions</a></li>
+						<li><a href = "../feats.html">Feats</a></li>
+						<li><a href = "../equipment.html">Equipment</a></li>
+						<li><a href = "../additionalRules.html">Additional Rules</a></li>
+						<li><a href = "../combat.html">Combat</a></li>
+						<li><a href = "../magic.html">Magic</a></li>
+						<li><a href = "../spellLists.html">Spell Lists</a></li>
+						<li><a href = "../spellIndex.html">Spell Index</a></li>
+						<li><a href = "../prestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../gamemastering.html">Gamemastering</a></li>
+						<li><a href = "../environment.html">Environment</a></li>
+						<li><a href = "../nPCClasses.html">NPC Classes</a></li>
+						<li><a href = "../creatingNPCs.html">Creating NPCs</a></li>
+						<li><a href = "../magicItems.html">Magic Items</a></li>
+						<li><a href = "../glossary.html">Glossary</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Class Guide -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Advanced Class Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedClassGuide/classes/index.html">Classes</a></li>
+						<li><a href = "../../advancedClassGuide/classOptions/index.html">Archetypes and Class Options</a></li>
+						<li><a href = "../../advancedClassGuide/feats.html">Feats</a></li>
+						<li><a href = "../../advancedClassGuide/spells/index.html">Spells</a></li>
+						<li><a href = "../../advancedClassGuide/spells/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedClassGuide/gear/index.html">Gear and Magic Items</a></li>
+						<li><a href = "../../advancedClassGuide/designingClasses.html">Designing Classes</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Player's Guide -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Advanced Player's Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedPlayersGuide/advancedRaces.html">Races</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedBaseClasses.html">Base Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedCoreClasses.html">Core Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedPrestigeClasses.html">Prestige Classes</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedFeats.html">Feats</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedGear.html">Gear</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedMagicItems.html">Magic Items</a></li>
+						<li><a href = "../../advancedPlayersGuide/advancedNewRules.html">New Rules</a></li>
+					</ul>
+				</li>
+				<!-- Advanced Race Guide -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Advanced Race Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../advancedRaceGuide/coreRaces.html">Core Races</a></li>
+						<li><a href = "../../advancedRaceGuide/featuredRaces.html">Featured Races</a></li>
+						<li><a href = "../../advancedRaceGuide/uncommonRaces.html">Uncommon Races</a></li>
+						<li><a href = "../../advancedRaceGuide/raceBuilder.html">Race Builder</a></li>
+						<li><a href = "../../advancedRaceGuide/ageHeightWeight.html">Age, Height & Weight</a></li>
+						<li><a href = "../../advancedRaceGuide/spellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Bestiaries -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Bestiaries</a>
+					<ul class = "level-2">
+						<li><a href = "../../bestiary/introduction.html">Monster Introduction</a></li>
+						<li><a href = "../../indices/bestiary.html">Global Bestiary Indices</a></li>
+						<li><a href = "../../bestiary/monsterIndex.html"><i>Bestiary</i> Monster Index</a></li>
+						<li><a href = "../../bestiary2/additionalMonsterIndex.html"><i>Bestiary 2</i> Monster Index</a></li>
+						<li><a href = "../../bestiary3/monsterIndex.html"><i>Bestiary 3</i> Monster Index</a></li>
+						<li><a href = "../../bestiary4/monsterIndex.html"><i>Bestiary 4</i> Monster Index</a></li>
+						<li><a href = "../../bestiary5/index.html"><em>Bestiary 5</em> Monster Index</a></li>
+						<li><a href = "../../bestiary/variantMonsterIndex.html">Variant Monster Index</a></li>
+						<li><a href = "../../bestiary/monsterCohorts.html">Monster Cohorts</a></li>
+						<li><a href = "../../bestiary/animalCompanions.html">Animal Companions</a></li>
+						<li><a href = "../../bestiary/monstersAsPCs.html">Monsters as PCs</a></li>
+						<li><a href = "../../bestiary/monsterRoles.html">Monster Roles</a></li>
+						<li><a href = "../../bestiary/encounterTables.html"><i>Bestiary</i> Encounter Tables</a></li>
+						<li><a href = "../../bestiary/monsterCreation.html">Monster Creation</a></li>
+						<li><a href = "../../bestiary/monsterAdvancement.html">Monster Advancement</a></li>
+						<li><a href = "../../bestiary/universalMonsterRules.html">Universal Monster Rules</a></li>
+						<li><a href = "../../bestiary/creatureTypes.html">Creature Types</a></li>
+						<li><a href = "../../bestiary/monsterFeats.html">Monster Feats</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/bestiary/monstersByType.html"><i>Bestiary</i> Monsters by Type</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByCR.html"><i>Bestiary</i> Monsters by CR</a></li>
+						<li><a href = "/pathfinderRPG/prd/bestiary/monstersByTerrain.html"><i>Bestiary</i> Monsters by Terrain</a></li>-->
+					</ul>
+				</li>
+				<!-- Game Mastery Guide -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Game Mastery Guide</a>
+					<ul class = "level-2">
+						<li><a href = "../../gameMasteryGuide/planarAdventures.html">Planar Adventures</a></li>
+						<li><a href = "../../gameMasteryGuide/settlements.html">Settlements</a></li>
+						<li><a href = "../../gameMasteryGuide/fastPlayShipCombat.html">Fast Play Ship Combat</a></li>
+						<li><a href = "../../gameMasteryGuide/chases.html">Chases</a></li>
+						<li><a href = "../../gameMasteryGuide/disasters.html">Disasters</a></li>
+						<li><a href = "../../gameMasteryGuide/drugsAndAddiction.html">Drugs and Addiction</a></li>
+						<li><a href = "../../gameMasteryGuide/haunts.html">Haunts</a></li>
+						<li><a href = "../../gameMasteryGuide/hazards.html">Hazards</a></li>
+						<li><a href = "../../gameMasteryGuide/sanityAndMadness.html">Sanity and Madness</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCBoons.html">NPC Boons</a></li>
+						<li><a href = "../../gameMasteryGuide/nPCGallery.html">NPC Gallery</a></li>
+					</ul>
+				</li>
+				<!-- Monster Codex -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Monster Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../monsterCodex/boggards.html">Boggards</a></li>
+						<li><a href = "../../monsterCodex/bugbears.html">Bugbears</a></li>
+						<li><a href = "../../monsterCodex/drow.html">Drow</a></li>
+						<li><a href = "../../monsterCodex/duergar.html">Duergar</a></li>
+						<li><a href = "../../monsterCodex/fireGiants.html">Fire Giants</a></li>
+						<li><a href = "../../monsterCodex/frostGiants.html">Frost Giants</a></li>
+						<li><a href = "../../monsterCodex/ghouls.html">Ghouls</a></li>
+						<li><a href = "../../monsterCodex/gnolls.html">Gnolls</a></li>
+						<li><a href = "../../monsterCodex/goblins.html">Goblins</a></li>
+						<li><a href = "../../monsterCodex/hobgoblins.html">Hobgoblins</a></li>
+						<li><a href = "../../monsterCodex/kobolds.html">Kobolds</a></li>
+						<li><a href = "../../monsterCodex/lizardfolk.html">Lizardfolk</a></li>
+						<li><a href = "../../monsterCodex/ogres.html">Ogres</a></li>
+						<li><a href = "../../monsterCodex/orcs.html">Orcs</a></li>
+						<li><a href = "../../monsterCodex/ratfolk.html">Ratfolk</a></li>
+						<li><a href = "../../monsterCodex/sahuagin.html">Sahuagin</a></li>
+						<li><a href = "../../monsterCodex/serpentfolk.html">Serpentfolk</a></li>
+						<li><a href = "../../monsterCodex/troglodytes.html">Troglodytes</a></li>
+						<li><a href = "../../monsterCodex/trolls.html">Trolls</a></li>
+						<li><a href = "../../monsterCodex/vampires.html">Vampires</a></li>
+						<li><a href = "../../monsterCodex/appendix.html">Modifying Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Mythic Adventures -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Mythic Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../mythicAdventures/glossary.html">Glossary</a></li>
+						<li><a href = "../../mythicAdventures/mythicHeroes.html">Mythic Heroes</a></li>
+						<li><a href = "../../mythicAdventures/mythicFeats.html">Mythic Feats</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells.html">Mythic Spells</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellIndex.html">Mythic Spell Index</a></li>
+						<li><a href = "../../mythicAdventures/mythicSpells/spellLists.html">Mythic Spell Lists</a></li>
+						<li><a href = "../../mythicAdventures/mythicGame.html">Running a Mythic Game</a></li>
+						<li><a href = "../../mythicAdventures/mythicItems.html">Mythic Magic Items</a></li>
+						<li><a href = "../../mythicAdventures/mythicMonsters.html">Mythic Monsters</a></li>
+					</ul>
+				</li>
+				<!-- NPC Codex -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">NPC Codex</a>
+					<ul class = "level-2">
+						<li><a href = "../../npcCodex/core/index.html">Core Classes</a></li>
+						<li><a  href = "../../npcCodex/prestige/index.html">Prestige Classes</a></li>
+						<li><a href = "../../npcCodex/npc/index.html">NPC Classes</a></li>
+						<li><a href = "../../npcCodex/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Pathfinder Unchained -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Pathfinder Unchained</a>
+					<ul class = "level-2">
+						<li><a href = "../../unchained/classes/index.html">Classes</a></li>
+						<li><a href = "../../unchained/skillsAndOptions/index.html">Skills and Options</a></li>
+						<li><a href = "../../unchained/gameplay/index.html">Gameplay</a></li>
+						<li><a href = "../../unchained/magic/index.html">Magic</a></li>
+						<li><a href = "../../unchained/monsters/index.html">Monsters</a></li>
+					</ul>
+				</li>
+				<!-- Occult Adventures -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Occult Adventures</a>
+					<ul class = "level-2">
+						<li><a href = "../../occultAdventures/classes/index.html">Occult Classes</a></li>
+						<li><a href = "../../occultAdventures/archetypes/index.html">Archetypes</a></li>
+						<li><a href = "../../occultAdventures/feats.html">Feats</a></li>
+						<li><a href = "../../occultAdventures/psychicMagic.html">Psychic Magic</a></li>
+						<li><a href = "../../occultAdventures/spellLists.html">Spell Lists</a></li>
+						<li><a href = "../../occultAdventures/spells/index.html">Spells</a></li>
+						<li><a href = "../../occultAdventures/occultRules.html">Occult Rules</a></li>
+						<li><a href = "../../occultAdventures/occultGame.html">Running an Occult Game</a></li>
+						<li><a href = "../../occultAdventures/occultRewards.html">Occult Rewards</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Campaign -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Ultimate Campaign</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCampaign/characterBackground.html">Character Background</a></li>
+						<li><a href = "../../ultimateCampaign/downtime.html">Downtime</a></li>
+						<li><a href = "../../ultimateCampaign/campaignSystems.html">Campaign Systems</a></li>
+						<li><a href = "../../ultimateCampaign/kingdomsAndWar.html">Kingdoms and War</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Combat -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Ultimate Combat</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateCombat/classes/gunslinger.html">Gunslinger</a></li>
+						<li><a href = "../../ultimateCombat/classes/ninja.html">Ninja</a></li>
+						<li><a href = "../../ultimateCombat/classes/samurai.html">Samurai</a></li>
+						<li><a href = "../../ultimateCombat/classArchetypes.html">Class Archetypes</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateCombat/combat/introduction.html">Mastering Combat</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatVehicles.html">Vehicles</a></li>
+						<li><a href = "../../ultimateCombat/variants/introduction.html">Variant Rules</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellIndex.html">Spell Index</a></li>
+						<li><a href = "../../ultimateCombat/ultimateCombatSpellLists.html">Spell Lists</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Equipment -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Ultimate Equipment</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateEquipment/armsAndArmor/index.html">Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/gear/index.html">Gear</a></li>
+						<li><a href = "../../ultimateEquipment/magicArmsAndArmor/index.html">Magic Arms and Armor</a></li>
+						<li><a href = "../../ultimateEquipment/ringsRodsStaves/index.html">Rings, Rods, and Staves</a></li>
+						<li><a href = "../../ultimateEquipment/wondrousItems/index.html">Wondrous Items</a></li>
+						<li><a href = "../../ultimateEquipment/artifactsAndOthers/index.html">Artifacts and Other Items</a></li>
+						<li><a href = "../../ultimateEquipment/appendix.html">Appendix</a></li>
+					</ul>
+				</li>
+				<!-- Ultimate Magic -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Ultimate Magic</a>
+					<ul class = "level-2">
+						<li><a href = "../../ultimateMagic/spellcasters/magus.html">Magus</a></li>
+						<li><a href = "../../ultimateMagic/spellcastingClassOptions.html">Spellcasting Class Options</a></li>
+						<li><a href = "../../ultimateMagic/magic/introduction.html">Mastering Magic</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicFeats.html">Feats</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicWordsOfPower.html">Words of Power</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellIndex.html">Spells</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicSpellLists.html">Spell Lists</a></li>
+						<li><a href = "../../ultimateMagic/ultimateMagicAppendices.html">Updates</a></li>
+					</ul>
+				</li>
+				<!-- Technology Guide -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Technology Guide</a>
+					<ul class = "level-2">
+						<li class = "has-subnav">
+							<a href = "paladin.html#" style = "padding-left: 20px;">Technology in the World</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/skills.html">Skills</a></li>
+								<li><a href = "../../technologyGuide/feats.html">Feats</a></li>
+								<li><a href = "../../technologyGuide/spells.html">Spells</a></li>
+								<li><a href = "../../technologyGuide/archetypes.html">Archetypes</a></li>
+								<li><a href = "../../technologyGuide/technomancer.html">Technomancer</a></li>
+								<li><a href = "../../technologyGuide/crafting.html">Crafting</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "paladin.html#" style = "padding-left: 20px;">Equipment</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/equipmentIntroduction.html">Introduction</a></li>
+								<li><a href = "../../technologyGuide/weapons.html">Weapons</a></li>
+								<li><a href = "../../technologyGuide/armor.html">Armor</a></li>
+								<li><a href = "../../technologyGuide/pharmaceuticals.html">Pharmaceuticals</a></li>
+								<li><a href = "../../technologyGuide/cybertech.html">Cybertech</a></li>
+								<li><a href = "../../technologyGuide/gear.html">Gear</a></li>
+							</ul>
+						</li>
+						<li class = "has-subnav">
+							<a href = "paladin.html#" style = "padding-left: 20px;">Hazards and Artifacts</a>
+							<ul class = "level-3">
+								<li><a href = "../../technologyGuide/hazards.html">Hazards</a></li>
+								<li><a href = "../../technologyGuide/ai.html">Artificial Intelligences</a></li>
+								<li><a href = "../../technologyGuide/artifacts.html">Artifacts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<!-- Index -->
+				<li class = "has-subnav">
+					<a href = "paladin.html#">Index</a>
+					<ul class = "level-2">
+						<li><a href = "../../indices/bestiary.html">Bestiary Index</a></li>
+						<li><a href = "../../indices/feats.html">Feats Index</a></li>
+						<!--<li><a href = "/pathfinderRPG/prd/indices/spells.html">Spell Index</a></li>-->
+						<li><a href = "../../indices/spelllists.html">Spell List Index</a></li>
+						<li><a href = "../../indices/templates.html">Template Index</a></li>
+					</ul>
+				</li>
+				<!-- OGL -->
+				<li>
+					<a href = "../../openGameLicense.html">Open Game License</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class = "body-content">
+
+	<div id = "nav-path"></div>
+
+	<div class = "body">
+
+        
+				<h1 id="paladin">Paladin</h1>
+				<p>Through a select, worthy few shines the power of the divine. Called paladins, these noble souls dedicate their swords and lives to the battle against evil. Knights, crusaders, and law-bringers, paladins seek not just to spread divine justice but to embody the teachings of the virtuous deities they serve. In pursuit of their lofty goals, they adhere to ironclad laws of morality and discipline. As reward for their righteousness, these holy champions are blessed with boons to aid them in their quests: powers to banish evil, heal the innocent, and inspire the faithful. Although their convictions might lead them into conflict with the very souls they would save, paladins weather endless challenges of faith and dark temptations, risking their lives to do right and fighting to bring about a brighter future. </p>
+				<p><b>Role</b>: Paladins serve as beacons for their allies within the chaos of battle. While deadly opponents of evil, they can also empower goodly souls to aid in their crusades. Their magic and martial skills also make them well suited to defending others and blessing the fallen with the strength to continue fighting.</p>
+				<p><b>Alignment</b>: Lawful good.</p>
+				<p><b>Hit Die</b>: d10.</p>
+				<h2>Class Skills</h2>
+				<p>The paladin's class skills are <a href="../skills/craft.html#craft" >Craft</a> (<a href = "../gettingStarted.html#intelligence" >Int</a>), <a href="../skills/diplomacy.html#diplomacy" >Diplomacy</a> (<a href = "../gettingStarted.html#charisma-new" >Cha</a>), <a href="../skills/handleAnimal.html#handle-animal" >Handle Animal</a> (<a href = "../gettingStarted.html#charisma-new" >Cha</a>), <a href="../skills/heal.html#heal">Heal</a> (<a href = "../gettingStarted.html#wisdom" >Wis</a>), <a href="../skills/knowledge.html#knowledge" >Knowledge</a> (nobility) (<a href = "../gettingStarted.html#intelligence" >Int</a>), <a href="../skills/knowledge.html#knowledge" >Knowledge</a> (religion) (<a href = "../gettingStarted.html#intelligence" >Int</a>), <a href="../skills/profession.html#profession" >Profession</a> (<a href = "../gettingStarted.html#wisdom" >Wis</a>), <a href="../skills/ride.html#ride" >Ride</a> (<a href = "../gettingStarted.html#dexterity" >Dex</a>), <a href="../skills/senseMotive.html#sense-motive" >Sense Motive</a> (<a href = "../gettingStarted.html#wisdom" >Wis</a>), and <a href="../skills/spellcraft.html#spellcraft" >Spellcraft</a> (<a href = "../gettingStarted.html#intelligence" >Int</a>).</p>
+				<p><b>Skill Ranks per Level</b>: 2 + <a href = "../gettingStarted.html#intelligence" >Int</a> modifier.</p>
+<div class = "table">
+<table id="table-3-11-paladin"><caption>Table: Paladin</caption>
+<thead><tr><th rowspan="2">Level</th><th rowspan="2">Base Attack Bonus</th><th rowspan="2">Fort Save</th><th rowspan="2">Ref Save</th><th rowspan="2">Will Save</th><th rowspan="2">Special</th><th colspan="4">Spells per Day</th></tr>
+<tr><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th></tr></thead>
+<tr><td>1st</td><td>+1</td><td>+2</td><td>+0</td><td>+2</td><td style="white-space: normal;"><a href="paladin.html#aura-of-good" >Aura of good</a><i>, </i><a href="paladin.html#detect-evil" >detect evil</a>, <a href="paladin.html#smite-evil" >smite evil</a> 1/day</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>2nd</td><td>+2</td><td>+3</td><td>+0</td><td>+3</td><td style="white-space: normal;"><a href="paladin.html#divine-grace" >Divine grace</a>, <a href="paladin.html#lay-on-hands" >lay on hands</a></td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>3rd</td><td>+3</td><td>+3</td><td>+1</td><td>+3</td><td style="white-space: normal;"><a href="paladin.html#aura-of-courage" >Aura of courage</a>, <a href="paladin.html#divine-health" >divine health</a>, <a href="paladin.html#mercy" >mercy</a></td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>4th</td><td>+4</td><td>+4</td><td>+1</td><td>+4</td><td style="white-space: normal;"><a href="paladin.html#channel-positive-energy-paladin" >Channel positive energy</a>, <a href="paladin.html#smite-evil" >smite evil</a> 2/day</td><td>0</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>5th</td><td>+5</td><td>+4</td><td>+1</td><td>+4</td><td style="white-space: normal;"><a href="paladin.html#divine-bond" >Divine bond</a></td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>6th</td><td>+6/+1</td><td>+5</td><td>+2</td><td>+5</td><td style="white-space: normal;"><a href="paladin.html#mercy" >Mercy</a></td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>7th</td><td>+7/+2</td><td>+5</td><td>+2</td><td>+5</td><td style="white-space: normal;"><a href="paladin.html#smite-evil" >Smite evil</a> 3/day</td><td>1</td><td>0</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>8th</td><td>+8/+3</td><td>+6</td><td>+2</td><td>+6</td><td style="white-space: normal;"><a href="paladin.html#aura-of-resolve" >Aura of resolve</a></td><td>1</td><td>1</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>9th</td><td>+9/+4</td><td>+6</td><td>+3</td><td>+6</td><td style="white-space: normal;"><a href="paladin.html#mercy" >Mercy</a></td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td></tr>
+<tr><td>10th</td><td>+10/+5</td><td>+7</td><td>+3</td><td>+7</td><td style="white-space: normal;"><a href="paladin.html#smite-evil" >Smite evil</a> 4/day</td><td>2</td><td>1</td><td>0</td><td>&mdash;</td></tr>
+<tr><td>11th</td><td>+11/+6/+1</td><td>+7</td><td>+3</td><td>+7</td><td style="white-space: normal;"><a href="paladin.html#aura-of-justice" >Aura of justice</a></td><td>2</td><td>1</td><td>1</td><td>&mdash;</td></tr>
+<tr><td>12th</td><td>+12/+7/+2</td><td>+8</td><td>+4</td><td>+8</td><td style="white-space: normal;"><a href="paladin.html#mercy" >Mercy</a></td><td>2</td><td>2</td><td>1</td><td>&mdash;</td></tr>
+<tr><td>13th</td><td>+13/+8/+3</td><td>+8</td><td>+4</td><td>+8</td><td style="white-space: normal;"><a href="paladin.html#smite-evil" >Smite evil</a> 5/day</td><td>3</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>14th</td><td>+14/+9/+4</td><td>+9</td><td>+4</td><td>+9</td><td style="white-space: normal;"><a href="paladin.html#aura-of-faith-21" >Aura of faith</a></td><td>3</td><td>2</td><td>1</td><td>1</td></tr>
+<tr><td>15th</td><td>+15/+10/+5</td><td>+9</td><td>+5</td><td>+9</td><td style="white-space: normal;"><a href="paladin.html#mercy" >Mercy</a></td><td>3</td><td>2</td><td>2</td><td>1</td></tr>
+<tr><td>16th</td><td>+16/+11/+6/+1</td><td>+10</td><td>+5</td><td>+10</td><td style="white-space: normal;"><a href="paladin.html#smite-evil" >Smite evil</a> 6/day</td><td>3</td><td>3</td><td>2</td><td>1</td></tr>
+<tr><td>17th</td><td>+17/+12/+7/+2</td><td>+10</td><td>+5</td><td>+10</td><td style="white-space: normal;"><a href="paladin.html#aura-of-righteousness" >Aura of righteousness</a></td><td>4</td><td>3</td><td>2</td><td>1</td></tr>
+<tr><td>18th</td><td>+18/+13/+8/+3</td><td>+11</td><td>+6</td><td>+11</td><td style="white-space: normal;"><a href="paladin.html#mercy" >Mercy</a></td><td>4</td><td>3</td><td>2</td><td>2</td></tr>
+<tr><td>19th</td><td>+19/+14/+9/+4</td><td>+11</td><td>+6</td><td>+11</td><td style="white-space: normal;"><a href="paladin.html#smite-evil" >Smite evil</a> 7/day</td><td>4</td><td>3</td><td>3</td><td>2</td></tr>
+<tr><td>20th</td><td>+20/+15/+10/+5</td><td>+12</td><td>+6</td><td>+12</td><td style="white-space: normal;"><a href="paladin.html#holy-champion" >Holy champion</a></td><td>4</td><td>4</td><td>3</td><td>3</td></tr></table>
+</div>
+
+				<h2>Class Features</h2>
+				<p>All of the following are class features of the paladin.</p>
+				<p><b>Weapon and Armor Proficiency</b>: Paladins are proficient with all <a href = "../equipment.html#simple-martial-and-exotic-weapons" >simple</a> and <a href = "../equipment.html#simple-martial-and-exotic-weapons" >martial</a> weapons, with all types of armor (heavy, medium, and light), and with shields (except tower shields).</p>
+				<p id="aura-of-good"><b>Aura of Good <a href = "../glossary.html#extraordinary-abilities-ex" >(Ex)</a></b>: The power of a paladin's aura of good (see the <i><a href="../spells/detectGood.html#detect-good" >detect good</a></i> spell) is equal to her paladin level.</p>
+				<p id="detect-evil"><b>Detect Evil</b> <b><a href = "../glossary.html#spell-like-abilities-sp" >(Sp)</a></b>: At will, a paladin can use <i><a href="../spells/detectEvil.html#detect-evil" >detect evil</a>,</i> as the spell. A paladin can, as a move action, concentrate on a single item or individual within 60 feet and determine if it is evil, learning the strength of its aura as if having studied it for 3 rounds. While focusing on one individual or object, the paladin does not detect evil in any other object or individual within range.</p>
+				<p id="smite-evil"><b>Smite Evil <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></b>: Once per day, a paladin can call out to the powers of good to aid her in her struggle against evil. As a swift action, the paladin chooses one target within sight to smite. If this target is evil, the paladin adds her <a href = "../gettingStarted.html#charisma-new" >Charisma</a> bonus (if any) to her attack rolls and adds her paladin level to all damage rolls made against the target of her smite. If the target of smite evil is an outsider with the evil subtype, an evil-aligned dragon, or an undead creature, the bonus to damage on the first successful attack increases to 2 points of damage per level the paladin possesses. Regardless of the target, smite evil attacks automatically bypass any <a href = "../glossary.html#damage-reduction" >DR</a> the creature might possess.</p>
+				<p>In addition, while smite evil is in effect, the paladin gains a deflection bonus equal to her <a href = "../gettingStarted.html#charisma-new" >Charisma</a> modifier (if any) to her <a href="../combat.html#armor-class" >AC</a> against attacks made by the target of the smite. If the paladin targets a creature that is not evil, the smite is wasted with no effect.</p>
+				<p>The smite evil effect remains until the target of the smite is dead or the next time the paladin rests and regains her uses of this ability. At 4th level, and at every three levels thereafter, the paladin may smite evil one additional time per day, as indicated on Table: Paladin, to a maximum of seven times per day at 19th level.</p>
+				<p id="divine-grace"><b>Divine Grace <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></b>: At 2nd level, a paladin gains a bonus equal to her <a href = "../gettingStarted.html#charisma-new" >Charisma</a> bonus (if any) on all <a href="../combat.html#saving-throws" >saving throws</a>.</p>
+				<p id="lay-on-hands"><b>Lay On Hands <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></b>: Beginning at 2nd level, a paladin can heal wounds (her own or those of others) by touch. Each day she can use this ability a number of times equal to 1/2 her paladin level plus her <a href = "../gettingStarted.html#charisma-new" >Charisma</a> modifier. With one use of this ability, a paladin can heal 1d6 hit points of damage for every two paladin levels she possesses. Using this ability is a standard action, unless the paladin targets herself, in which case it is a swift action. Despite the name of this ability, a paladin only needs one free hand to use this ability.</p>
+				<p>Alternatively, a paladin can use this healing power to deal damage to undead creatures, dealing 1d6 points of damage for every two levels the paladin possesses. Using lay on hands in this way requires a successful melee touch attack and doesn't provoke an <a href="../combat.html#attacks-of-opportunity" >attack of opportunity</a>. Undead do not receive a <a href="../combat.html#saving-throws" >saving throw</a> against this damage.</p>
+				<p id="aura-of-courage"><b>Aura of Courage <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></b>: At 3rd level, a paladin is immune to fear (magical or otherwise). Each ally within 10 feet of her gains a +4 morale bonus on <a href="../combat.html#saving-throws" >saving throws</a> against fear effects. This ability functions only while the paladin is conscious, not if she is <a href = "../glossary.html#unconscious" >unconscious</a> or dead.</p>
+				<p id="divine-health"><b>Divine Health <a href = "../glossary.html#extraordinary-abilities-ex" >(Ex)</a></b>: At 3rd level, a paladin is immune to all diseases, including supernatural and magical diseases, including mummy rot.</p>
+				<p id="mercy"><b>Mercy <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></b>: At 3rd level, and every three levels thereafter, a paladin can select one mercy. Each mercy adds an effect to the paladin's lay on hands ability. Whenever the paladin uses lay on hands to heal damage to one target, the target also receives the additional effects from all of the mercies possessed by the paladin. A mercy can remove a condition caused by a curse, disease, or poison without curing the affliction. Such conditions return after 1 hour unless the mercy actually removes the affliction that causes the condition.</p>
+				<p>At 3rd level, the paladin can select from the following initial mercies. </p>
+				<p><i>• Fatigued</i>: The target is no longer <a href = "../glossary.html#fatigued" >fatigued</a>.</p>
+				<p><i>• Shaken</i>: The target is no longer <a href = "../glossary.html#shaken" >shaken</a>.</p>
+				<p><i>• Sickened</i>: The target is no longer <a href = "../glossary.html#sickened" >sickened</a>. </p>
+				<p>At 6th level, a paladin adds the following mercies to the list of those that can be selected. </p>
+				<p><i>• Dazed</i>: The target is no longer <a href = "../glossary.html#dazed" >dazed</a>.</p>
+				<p><i>• Diseased</i>: The paladin's lay on hands ability also acts as <i>remove disease</i>, using the paladin's level as the caster level.</p>
+				<p><i>• Staggered</i>: The target is no longer <a href = "../glossary.html#staggered" >staggered</a>, unless the target is at exactly 0 hit points.</p>
+				<p>At 9th level, a paladin adds the following mercies to the list of those that can be selected.</p>
+				<p><i>• Cursed</i>: The paladin's lay on hands ability also acts as <i><a href="../spells/removeCurse.html#remove-curse" >remove curse</a>,</i> using the paladin's level as the caster level.</p>
+				<p><i>• Exhausted</i>: The target is no longer <a href = "../glossary.html#exhausted" >exhausted</a>. The paladin must have the fatigue mercy before selecting this mercy.</p>
+				<p><i>• Frightened</i>: The target is no longer <a href = "../glossary.html#frightened" >frightened</a>. The paladin must have the <a href = "../glossary.html#shaken" >shaken</a> mercy before selecting this mercy.</p>
+				<p><i>• Nauseated</i>: The target is no longer <a href = "../glossary.html#nauseated" >nauseated</a>. The paladin must have the <a href = "../glossary.html#sickened" >sickened</a> mercy before selecting this mercy.</p>
+				<p><i>• Poisoned</i>: The paladin's lay on hands ability also acts as <i>neutralize poison</i>, using the paladin's level as the caster level.</p>
+				<p>At 12th level, a paladin adds the following mercies to the list of those that can be selected.</p>
+				<p><i>• Blinded</i>: The target is no longer <a href = "../glossary.html#blinded" >blinded</a>.</p>
+				<p><i>• Deafened</i>: The target is no longer <a href = "../glossary.html#deafened" >deafened</a>.</p>
+				<p><i>• Paralyzed</i>: The target is no longer <a href = "../glossary.html#paralyzed" >paralyzed</a>.</p>
+				<p><i>• Stunned</i>: The target is no longer <a href = "../glossary.html#stunned" >stunned</a>. </p>
+				<p>These abilities are cumulative. For example, a 12th-level paladin's lay on hands ability heals 6d6 points of damage and might also cure <a href = "../glossary.html#fatigued" >fatigued</a> and <a href = "../glossary.html#exhausted" >exhausted</a> conditions as well as removing diseases and neutralizing poisons<i>. </i>Once a condition or spell effect is chosen, it can't be changed.</p>
+				<p id="channel-positive-energy-paladin"><b>Channel Positive Energy <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></b>: When a paladin reaches 4th level, she gains the supernatural ability to channel positive energy like a cleric. Using this ability consumes two uses of her lay on hands ability. A paladin uses her level as her effective cleric level when channeling positive energy. This is a <a href = "../gettingStarted.html#charisma-new" >Charisma</a>-based ability.</p>
+				<p id="spells-paladin"><b>Spells</b>: Beginning at 4th level, a paladin gains the ability to cast a small number of divine spells which are drawn from the paladin spell list presented in <a href = "../spellLists.html">Spell Lists</a>. A paladin must choose and prepare her spells in advance.</p>
+				<p>To prepare or cast a spell, a paladin must have a <a href = "../gettingStarted.html#charisma-new" >Charisma</a> score equal to at least 10 + the spell level. The Difficulty Class for a <a href = "../magic.html#saving-throw" >saving throw</a> against a paladin's spell is 10 + the spell level + the paladin's <a href = "../gettingStarted.html#charisma-new" >Charisma</a> modifier.</p>
+				<p>Like other spellcasters, a paladin can cast only a certain number of spells of each spell level per day. Her base daily spell allotment is given on Table: Paladin. In addition, she receives bonus spells per day if she has a high <a href = "../gettingStarted.html#charisma-new" >Charisma</a> score (see <a href = "../gettingStarted.html#table-1-3-ability-modifiers-and-bonus-spells" >Table: Ability Modifiers and Bonus Spells</a>). When Table: Paladin indicates that the paladin gets 0 spells per day of a given spell level, she gains only the bonus spells she would be entitled to based on her <a href = "../gettingStarted.html#charisma-new" >Charisma</a> score for that spell level.</p>
+				<p>A paladin must spend 1 hour each day in quiet prayer and meditation to regain her daily allotment of spells. A paladin may prepare and cast any spell on the paladin spell list, provided that she can cast spells of that level, but she must choose which spells to prepare during her daily meditation.</p>
+				<p>Through 3rd level, a paladin has no caster level. At 4th level and higher, her caster level is equal to her paladin level &ndash; 3.</p>
+				<p id="divine-bond"><b>Divine Bond <a href = "../glossary.html#spell-like-abilities-sp" >(Sp)</a></b>: Upon reaching 5th level, a paladin forms a divine bond with her god. This bond can take one of two forms. Once the form is chosen, it cannot be changed.</p>
+				<p>The first type of bond allows the paladin to enhance her weapon as a standard action by calling upon the aid of a celestial spirit for 1 minute per paladin level. When called, the spirit causes the weapon to shed light as a torch. At 5th level, this spirit grants the weapon a +1 enhancement bonus. For every three levels beyond 5th, the weapon gains another +1 enhancement bonus, to a maximum of +6 at 20th level. These bonuses can be added to the weapon, stacking with existing weapon bonuses to a maximum of +5, or they can be used to add any of the following weapon properties: <i><a href="../magicItems/weapons.html#weapons-axiomatic" >axiomatic</a></i>, <i><a href="../magicItems/weapons.html#weapons-brilliant-energy" >brilliant energy</a>, <a href="../magicItems/weapons.html#weapons-defending" >defending</a>, <a href="../magicItems/weapons.html#weapons-disruption" >disruption</a>, <a href="../magicItems/weapons.html#weapons-flaming" >flaming</a>, <a href="../magicItems/weapons.html#weapons-flaming-burst" >flaming burst</a>, <a href="../magicItems/weapons.html#weapons-holy" >holy</a>, <a href="../magicItems/weapons.html#weapons-keen" >keen</a>, <a href="../magicItems/weapons.html#weapons-merciful" >merciful</a></i>, and <i><a href="../magicItems/weapons.html#weapons-speed" >speed</a></i>. Adding these properties consumes an amount of bonus equal to the property's cost (see Table: Melee Weapon Special Abilities). These bonuses are added to any properties the weapon already has, but duplicate abilities do not stack. If the weapon is not magical, at least a +1 enhancement bonus must be added before any other properties can be added. The bonus and properties granted by the spirit are determined when the spirit is called and cannot be changed until the spirit is called again. The celestial spirit imparts no bonuses if the weapon is held by anyone other than the paladin but resumes giving bonuses if returned to the paladin. These bonuses apply to only one end of a double weapon. A paladin can use this ability once per day at 5th level, and one additional time per day for every four levels beyond 5th, to a total of four times per day at 17th level.</p>
+				<p>If a weapon bonded with a celestial spirit is destroyed, the paladin loses the use of this ability for 30 days, or until she gains a level, whichever comes first. During this 30-day period, the paladin takes a &ndash;1 penalty on attack and weapon damage rolls.</p>
+				<p>The second type of bond allows a paladin to gain the service of an unusually intelligent, strong, and loyal steed to serve her in her crusade against evil. This mount is usually a heavy horse (for a Medium paladin) or a pony (for a Small paladin), although more exotic mounts, such as a boar, camel, or dog are also suitable. This mount functions as a druid's animal companion, using the paladin's level as her effective druid level. Bonded mounts have an <a href = "../gettingStarted.html#intelligence" >Intelligence</a> of at least 6. </p>
+				<p>Once per day, as a full-round action, a paladin may magically call her mount to her side. This ability is the equivalent of a spell of a level equal to one-third the paladin's level. The mount immediately appears adjacent to the paladin. A paladin can use this ability once per day at 5th level, and one additional time per day for every 4 levels thereafter, for a total of four times per day at 17th level.</p>
+				<p>At 11th level, the mount gains the celestial template and becomes a magical beast for the purposes of determining which spells affect it. At 15th level, a paladin's mount gains spell resistance equal to the paladin's level + 11.</p>
+				<p>Should the paladin's mount die, the paladin may not summon another mount for 30 days or until she gains a paladin level, whichever comes first. During this 30-day period, the paladin takes a &ndash;1 penalty on attack and weapon damage rolls. </p>
+				<p id="aura-of-resolve"><b>Aura of Resolve <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></b>: At 8th level, a paladin is immune to charm spells and spell-like abilities. Each ally within 10 feet of her gains a +4 morale bonus on <a href="../combat.html#saving-throws" >saving throws</a> against charm effects.</p>
+				<p>This ability functions only while the paladin is conscious, not if she is <a href = "../glossary.html#unconscious" >unconscious</a> or dead.</p>
+				<p id="aura-of-justice"><b>Aura of Justice <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></b>: At 11th level, a paladin can expend two uses of her smite evil ability to grant the ability to smite evil to all allies within 10 feet, using her bonuses. Allies must use this smite evil ability by the start of the paladin's next turn and the bonuses last for 1 minute. Using this ability is a free action. Evil creatures gain no benefit from this ability. </p>
+				<p id="aura-of-faith-21"><b>Aura of Faith <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></b>: At 14th level, a paladin's weapons are treated as good-aligned for the purposes of overcoming <a href = "../glossary.html#damage-reduction" >damage reduction</a>. Any attack made against an enemy within 10 feet of her is treated as good-aligned for the purposes of overcoming <a href = "../glossary.html#damage-reduction" >damage reduction</a>.</p>
+				<p>This ability functions only while the paladin is conscious, not if she is <a href = "../glossary.html#unconscious" >unconscious</a> or dead.</p>
+				<p id="aura-of-righteousness"><b>Aura of Righteousness <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></b>: At 17th level, a paladin gains <a href = "../glossary.html#damage-reduction" >DR</a> 5/evil and immunity to compulsion spells and spell-like abilities. Each ally within 10 feet of her gains a +4 morale bonus on <a href="../combat.html#saving-throws" >saving throws</a> against compulsion effects. </p>
+				<p>This ability functions only while the paladin is conscious, not if she is <a href = "../glossary.html#unconscious" >unconscious</a> or dead.</p>
+				<p id="holy-champion"><b>Holy Champion <a href = "../glossary.html#supernatural-abilities-su" >(Su)</a></b>: At 20th level, a paladin becomes a conduit for the power of her god. Her <a href = "../glossary.html#damage-reduction" >DR</a> increases to 10/evil. Whenever she uses smite evil and successfully strikes an evil outsider, the outsider is also subject to a <i><a href="../spells/banishment.html#banishment" >banishment</a>,</i> using her paladin level as the caster level (her weapon and holy symbol automatically count as objects that the subject hates). After the <i><a href="../spells/banishment.html#banishment" >banishment</a></i> effect and the damage from the attack is resolved, the smite immediately ends. In addition, whenever she channels positive energy or uses lay on hands to heal a creature, she heals the maximum possible amount.</p>
+				<p id="code-of-conduct"><b>Code of Conduct</b>: A paladin must be of lawful good <a href = "../additionalRules.html#alignment" >alignment</a> and loses all class features except proficiencies if she ever willingly commits an evil act.</p>
+				<p>Additionally, a paladin's code requires that she respect legitimate authority, act with honor (not lying, not cheating, not using poison, and so forth), help those in need (provided they do not use the help for evil or chaotic ends), and punish those who harm or threaten innocents.</p>
+				<p><b>Associates</b>: While she may adventure with good or neutral allies, a paladin avoids working with evil characters or with anyone who consistently offends her moral code. Under exceptional circumstances, a paladin can ally with evil associates, but only to defeat what she believes to be a greater evil. A paladin should seek an <i><a href="../spells/atonement.html#atonement" >atonement</a></i> spell periodically during such an unusual alliance, and should end the alliance immediately should she feel it is doing more harm than good. A paladin may accept only henchmen, followers, or cohorts who are lawful good.</p>
+				<h2 id="ex-paladins">Ex-Paladins</h2>
+				<p>A paladin who ceases to be lawful good, who willfully commits an evil act, or who violates the code of conduct loses all paladin spells and class features (including the service of the paladin's mount, but not weapon, armor, and shield proficiencies). She may not progress any further in levels as a paladin. She regains her abilities and advancement potential if she atones for her violations (see the <i><a href="../spells/atonement.html#atonement" >atonement</a></i> spell description in <a href = "../spellLists.html">Spell Lists</a>), as appropriate.</p>
+
+        	<div class = "footer">
+		<p>
+			<!--<a href = "/threads/rzs2soys">Report a Problem</a><br /><br />
+			&copy;2002-2016 Paizo, Inc.&reg;<br />
+			Paizo Inc., Paizo, Pathfinder, and the Pathfinder logo are registered trademarks of Paizo Inc., and<br />
+			Pathfinder Roleplaying Game and Pathfinder Campaign Setting are trademarks of Paizo Inc.<br />-->
+			<a href="../../openGameLicense.html">Open Game License</a>.
+		</p>
+	</div>
+
+	</div>
+</div>
+
+<script type = "text/javascript" src = "../../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/jquery.cookie.js"></script>
+<script type = "text/javascript" src = "http://cdn.paizo.com/chrome/js/jquery.dataTables.min.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-jquery.js"></script>
+<script type = "text/javascript" src = "../../include/js/prd-scripts.js"></script>
+<script type = "text/javascript">var globalTitle="Paladin",globalNavPath=[{ href: '/pathfinderRPG/prd/coreRulebook/classes.html', name: 'Classes' }];</script>
+<script type = "text/javascript">
+$(function () {
+	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			highlightNavLocation(globalNavPath);
+		}
+	});
+</script>
+</body>
+
+
+</html>
